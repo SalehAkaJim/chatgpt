@@ -7,7 +7,7 @@
   "target_variant": "tr-TR",
   "cefr": "B1",
   "curriculum_unit": "b1-tr-media-and-sources",
-  "generator": "gpt-5.6-sol:turkish-b1-batch-v1",
+  "generator": "gpt-5.6-sol:turkish-b1-batch-v2",
   "items": [
     {
       "kind": "concept",
@@ -432,6 +432,44 @@
       }
     },
     {
+      "kind": "utterance",
+      "external_id": "u_media_and_sources_05",
+      "data": {
+        "lesson_key": "b1-tr-media-and-sources-03",
+        "text": {
+          "tr": "Haberde önemli bir iddia var, ama önce kaynağın kim olduğunu kontrol etmek gerekiyor."
+        },
+        "translations": {
+          "fa": "در خبر ادعای مهمی هست، اما اول باید بررسی کرد منبع چه کسی است."
+        },
+        "intent": "source_check",
+        "concept_refs": [],
+        "cefr": "B1",
+        "topic": "simple-messages",
+        "register": "neutral",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_media_and_sources_06",
+      "data": {
+        "lesson_key": "b1-tr-media-and-sources-03",
+        "text": {
+          "tr": "Aynı bilgiyi iki güvenilir kaynakta görünce paylaşmaya karar verdim."
+        },
+        "translations": {
+          "fa": "وقتی همان اطلاعات را در دو منبع معتبر دیدم تصمیم گرفتم به اشتراک بگذارم."
+        },
+        "intent": "justify_verification",
+        "concept_refs": [],
+        "cefr": "B1",
+        "topic": "simple-messages",
+        "register": "neutral",
+        "status": "validated"
+      }
+    },
+    {
       "kind": "grammar_point",
       "external_id": "g_media_and_sources_core",
       "data": {
@@ -462,7 +500,7 @@
       "data": {
         "lesson_key": "b1-tr-media-and-sources-01",
         "title": "Bir haber gördüm",
-        "setting": "",
+        "setting": "item",
         "cefr": "B1",
         "topic": "simple-messages",
         "characters": [
@@ -509,7 +547,7 @@
       "data": {
         "lesson_key": "b1-tr-media-and-sources-02",
         "title": "Kaynak kontrolü",
-        "setting": "",
+        "setting": "item",
         "cefr": "B1",
         "topic": "simple-messages",
         "characters": [
@@ -540,6 +578,53 @@
             "speaker": "Emre",
             "text": "Evet, resmi verilerle karşılaştırdım.",
             "translation_fa": "بله، با داده‌های رسمی مقایسه کردم."
+          }
+        ],
+        "qa": {
+          "character_pair_unique_within_unit": true,
+          "naturalness": "passed",
+          "single_situation": true
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "dialogue",
+      "external_id": "d_media_and_sources_03",
+      "data": {
+        "lesson_key": "b1-tr-media-and-sources-03",
+        "title": "Haberi doğrula",
+        "setting": "item",
+        "cefr": "B1",
+        "topic": "simple-messages",
+        "characters": [
+          "Elif",
+          "Mert"
+        ],
+        "turns": [
+          {
+            "order": 1,
+            "speaker": "Elif",
+            "text": "Bu haberi gruba gönderelim mi?",
+            "translation_fa": "این خبر را به گروه بفرستیم؟"
+          },
+          {
+            "order": 2,
+            "speaker": "Mert",
+            "text": "Bir dakika, kaynağı kontrol ettin mi?",
+            "translation_fa": "یک لحظه، منبع را بررسی کردی؟"
+          },
+          {
+            "order": 3,
+            "speaker": "Elif",
+            "text": "Henüz değil. Başka sitelerde de arayayım.",
+            "translation_fa": "هنوز نه. در سایت‌های دیگر هم جست‌وجو کنم."
+          },
+          {
+            "order": 4,
+            "speaker": "Mert",
+            "text": "İki güvenilir kaynak doğrularsa paylaşmak daha doğru olur.",
+            "translation_fa": "اگر دو منبع معتبر تأیید کنند، انتشارش بهتر است."
           }
         ],
         "qa": {
@@ -618,7 +703,7 @@
         "lesson_key": "b1-tr-media-and-sources-01",
         "exercise_type": "speaking",
         "prompt": {
-          "instruction_fa": "عبارت را با صدای بلند و با ریتم طبیعی تکرار کن.",
+          "instruction_fa": "عبارت را با صدای بلند و با ریتم طبیعی بگو.",
           "value": "Kaynağa bakmadan haberi paylaşma."
         },
         "answer": {
@@ -642,7 +727,7 @@
         "lesson_key": "b1-tr-media-and-sources-01",
         "exercise_type": "sentence_building",
         "prompt": {
-          "instruction_fa": "کلمه‌ها را لمس کن تا عبارت درست ساخته شود.",
+          "instruction_fa": "بخش‌ها را مرتب کن تا عبارت درست ساخته شود.",
           "tokens": [
             "site",
             "bana",
@@ -773,7 +858,7 @@
         "lesson_key": "b1-tr-media-and-sources-02",
         "exercise_type": "speaking",
         "prompt": {
-          "instruction_fa": "عبارت را با صدای بلند و با ریتم طبیعی تکرار کن.",
+          "instruction_fa": "عبارت را با صدای بلند و با ریتم طبیعی بگو.",
           "value": "İddiayı başka bir yerden de kontrol ettim."
         },
         "answer": {
@@ -797,7 +882,7 @@
         "lesson_key": "b1-tr-media-and-sources-02",
         "exercise_type": "sentence_building",
         "prompt": {
-          "instruction_fa": "کلمه‌ها را لمس کن تا عبارت درست ساخته شود.",
+          "instruction_fa": "بخش‌ها را مرتب کن تا عبارت درست ساخته شود.",
           "tokens": [
             "bilgi",
             "çok",
@@ -854,6 +939,305 @@
           "retry_tip_fa": "به معنی، موقعیت و پسوندهای عبارت ترکی دقت کن و دوباره امتحان کن.",
           "explanation_fa": "مدل طبیعی این درس: İddiayı başka bir yerden de kontrol ettim. — ادعا را از جای دیگری هم بررسی کردم.",
           "model_answer": "İddiayı başka bir yerden de kontrol ettim."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_media_and_sources_03_meaning",
+      "data": {
+        "lesson_key": "b1-tr-media-and-sources-03",
+        "exercise_type": "multiple_choice",
+        "prompt": {
+          "instruction_fa": "معنی درست این عبارت ترکی را انتخاب کن.",
+          "value": "Haberde önemli bir iddia var, ama önce kaynağın kim olduğunu kontrol etmek gerekiyor."
+        },
+        "answer": {
+          "value": "در خبر ادعای مهمی هست، اما اول باید بررسی کرد منبع چه کسی است."
+        },
+        "options": [
+          "در خبر ادعای مهمی هست، اما اول باید بررسی کرد منبع چه کسی است.",
+          "بدون دیدن منبع خبر را منتشر نکن.",
+          "این سایت خیلی قابل اعتماد به نظرم نیامد.",
+          "ادعا را از جای دیگری هم بررسی کردم."
+        ],
+        "difficulty": 3,
+        "cefr": "B1",
+        "topic": "simple-messages",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت و پسوندهای عبارت ترکی دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: Haberde önemli bir iddia var, ama önce kaynağın kim olduğunu kontrol etmek gerekiyor. — در خبر ادعای مهمی هست، اما اول باید بررسی کرد منبع چه کسی است.",
+          "model_answer": "Haberde önemli bir iddia var, ama önce kaynağın kim olduğunu kontrol etmek gerekiyor."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_media_and_sources_03_listen",
+      "data": {
+        "lesson_key": "b1-tr-media-and-sources-03",
+        "exercise_type": "listening",
+        "prompt": {
+          "instruction_fa": "گوش کن و عبارتی را که شنیدی انتخاب کن.",
+          "audio_text": "Aynı bilgiyi iki güvenilir kaynakta görünce paylaşmaya karar verdim."
+        },
+        "answer": {
+          "value": "Aynı bilgiyi iki güvenilir kaynakta görünce paylaşmaya karar verdim."
+        },
+        "options": [
+          "Aynı bilgiyi iki güvenilir kaynakta görünce paylaşmaya karar verdim.",
+          "Haberde önemli bir iddia var, ama önce kaynağın kim olduğunu kontrol etmek gerekiyor.",
+          "Kaynağa bakmadan haberi paylaşma.",
+          "Bu site bana çok güvenilir gelmedi."
+        ],
+        "difficulty": 3,
+        "cefr": "B1",
+        "topic": "simple-messages",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت و پسوندهای عبارت ترکی دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: Aynı bilgiyi iki güvenilir kaynakta görünce paylaşmaya karar verdim. — وقتی همان اطلاعات را در دو منبع معتبر دیدم تصمیم گرفتم به اشتراک بگذارم.",
+          "model_answer": "Aynı bilgiyi iki güvenilir kaynakta görünce paylaşmaya karar verdim.",
+          "transcript_tr": "Aynı bilgiyi iki güvenilir kaynakta görünce paylaşmaya karar verdim."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_media_and_sources_03_speak",
+      "data": {
+        "lesson_key": "b1-tr-media-and-sources-03",
+        "exercise_type": "speaking",
+        "prompt": {
+          "instruction_fa": "عبارت را با صدای بلند و با ریتم طبیعی بگو.",
+          "value": "Haberde önemli bir iddia var, ama önce kaynağın kim olduğunu kontrol etmek gerekiyor."
+        },
+        "answer": {
+          "expected_text": "Haberde önemli bir iddia var, ama önce kaynağın kim olduğunu kontrol etmek gerekiyor."
+        },
+        "difficulty": 3,
+        "cefr": "B1",
+        "topic": "simple-messages",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت و پسوندهای عبارت ترکی دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: Haberde önemli bir iddia var, ama önce kaynağın kim olduğunu kontrol etmek gerekiyor. — در خبر ادعای مهمی هست، اما اول باید بررسی کرد منبع چه کسی است.",
+          "model_answer": "Haberde önemli bir iddia var, ama önce kaynağın kim olduğunu kontrol etmek gerekiyor."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_media_and_sources_03_build",
+      "data": {
+        "lesson_key": "b1-tr-media-and-sources-03",
+        "exercise_type": "sentence_building",
+        "prompt": {
+          "instruction_fa": "بخش‌ها را مرتب کن تا عبارت درست ساخته شود.",
+          "tokens": [
+            "bilgiyi",
+            "iki",
+            "güvenilir",
+            "kaynakta",
+            "görünce",
+            "paylaşmaya",
+            "karar",
+            "verdim.",
+            "Aynı"
+          ]
+        },
+        "answer": {
+          "tokens": [
+            "Aynı",
+            "bilgiyi",
+            "iki",
+            "güvenilir",
+            "kaynakta",
+            "görünce",
+            "paylaşmaya",
+            "karar",
+            "verdim."
+          ],
+          "value": "Aynı bilgiyi iki güvenilir kaynakta görünce paylaşmaya karar verdim."
+        },
+        "difficulty": 3,
+        "cefr": "B1",
+        "topic": "simple-messages",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت و پسوندهای عبارت ترکی دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: Aynı bilgiyi iki güvenilir kaynakta görünce paylaşmaya karar verdim. — وقتی همان اطلاعات را در دو منبع معتبر دیدم تصمیم گرفتم به اشتراک بگذارم.",
+          "model_answer": "Aynı bilgiyi iki güvenilir kaynakta görünce paylaşmaya karar verdim."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_media_and_sources_03_dialogue",
+      "data": {
+        "lesson_key": "b1-tr-media-and-sources-03",
+        "exercise_type": "dialogue_comprehension",
+        "prompt": {
+          "instruction_fa": "با توجه به گفت‌وگو، پاسخ مناسب را انتخاب کن.",
+          "source_dialogue_ref": "d_media_and_sources_03",
+          "question_fa": "کدام گزینه با معنی «در خبر ادعای مهمی هست، اما اول باید بررسی کرد منبع چه کسی است.» هماهنگ است؟"
+        },
+        "answer": {
+          "value": "Haberde önemli bir iddia var, ama önce kaynağın kim olduğunu kontrol etmek gerekiyor."
+        },
+        "options": [
+          "Haberde önemli bir iddia var, ama önce kaynağın kim olduğunu kontrol etmek gerekiyor.",
+          "Kaynağa bakmadan haberi paylaşma.",
+          "Bu site bana çok güvenilir gelmedi.",
+          "İddiayı başka bir yerden de kontrol ettim."
+        ],
+        "difficulty": 3,
+        "cefr": "B1",
+        "topic": "simple-messages",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت و پسوندهای عبارت ترکی دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: Haberde önemli bir iddia var, ama önce kaynağın kim olduğunu kontrol etmek gerekiyor. — در خبر ادعای مهمی هست، اما اول باید بررسی کرد منبع چه کسی است.",
+          "model_answer": "Haberde önemli bir iddia var, ama önce kaynağın kim olduğunu kontrol etmek gerekiyor."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_media_and_sources_03_open_write",
+      "data": {
+        "lesson_key": "b1-tr-media-and-sources-03",
+        "exercise_type": "writing",
+        "prompt": {
+          "instruction_fa": "یک ادعای خبری ساده را در ۵ تا ۶ جمله خلاصه کن و توضیح بده برای اعتماد یا بازنشر آن چه چیزهایی را بررسی می‌کنی.",
+          "personalized": true
+        },
+        "answer": {
+          "evaluation_mode": "rubric",
+          "model_text": "Haberde belediyenin yeni bir karar aldığı yazıyor. Önce haberin tarihine ve kaynağına bakarım. Sonra resmi siteyi kontrol ederim. Aynı bilgi orada da varsa habere daha çok güvenirim.",
+          "required_points_fa": [
+            "خلاصهٔ ادعا",
+            "بررسی منبع یا تاریخ",
+            "یک بررسی دوم",
+            "نتیجهٔ روشن"
+          ]
+        },
+        "assessment": {
+          "exact_match_allowed": false,
+          "criteria": [
+            {
+              "id": "task",
+              "label_fa": "انجام کار",
+              "weight": 50,
+              "descriptors_fa": {
+                "0": "کار انجام نشده است.",
+                "1": "فقط بخشی از کار انجام شده است.",
+                "2": "بیشتر نکات لازم منتقل شده است.",
+                "3": "کار کامل، مرتبط و در سطح B1 انجام شده است."
+              }
+            },
+            {
+              "id": "coherence",
+              "label_fa": "پیوستگی و سازمان‌دهی",
+              "weight": 25,
+              "descriptors_fa": {
+                "0": "پاسخ پراکنده است.",
+                "1": "ارتباط جمله‌ها محدود است.",
+                "2": "جمله‌ها عمدتاً با ترتیب روشن به هم وصل‌اند.",
+                "3": "پاسخ کوتاه اما منسجم و به‌خوبی سازمان‌یافته است."
+              }
+            },
+            {
+              "id": "language",
+              "label_fa": "کنترل زبان",
+              "weight": 25,
+              "descriptors_fa": {
+                "0": "پیام قابل‌فهم نیست.",
+                "1": "خطاها فهم را زیاد مختل می‌کنند.",
+                "2": "با وجود خطا، پیام روشن می‌ماند.",
+                "3": "ساخت‌ها و واژگان آموزش‌داده‌شدهٔ B1 با کنترل کافی استفاده شده‌اند."
+              }
+            }
+          ]
+        },
+        "difficulty": 3,
+        "cefr": "B1",
+        "topic": "simple-messages",
+        "feedback": {
+          "explanation_fa": "پاسخ آزاد است؛ مهم انجام کامل کار و قابل‌فهم بودن پیام است.",
+          "model_answer": "Haberde belediyenin yeni bir karar aldığı yazıyor. Önce haberin tarihine ve kaynağına bakarım. Sonra resmi siteyi kontrol ederim. Aynı bilgi orada da varsa habere daha çok güvenirim.",
+          "retry_tip_fa": "از مدل کمک بگیر، اما اطلاعات و انتخاب‌های خودت را بنویس."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_media_and_sources_03_personal_speak",
+      "data": {
+        "lesson_key": "b1-tr-media-and-sources-03",
+        "exercise_type": "speaking",
+        "prompt": {
+          "instruction_fa": "فرض کن دوستی خبری برایت فرستاده. توضیح بده قبل از بازنشر چه بررسی‌هایی انجام می‌دهی و چرا.",
+          "personalized": true
+        },
+        "answer": {
+          "evaluation_mode": "rubric",
+          "model_text": "Haberde belediyenin yeni bir karar aldığı yazıyor. Önce haberin tarihine ve kaynağına bakarım. Sonra resmi siteyi kontrol ederim. Aynı bilgi orada da varsa habere daha çok güvenirim.",
+          "required_points_fa": [
+            "خلاصهٔ ادعا",
+            "بررسی منبع یا تاریخ",
+            "یک بررسی دوم",
+            "نتیجهٔ روشن"
+          ]
+        },
+        "assessment": {
+          "exact_match_allowed": false,
+          "criteria": [
+            {
+              "id": "task",
+              "label_fa": "انجام کار",
+              "weight": 50,
+              "descriptors_fa": {
+                "0": "کار انجام نشده است.",
+                "1": "فقط بخشی از کار انجام شده است.",
+                "2": "بیشتر نکات لازم منتقل شده است.",
+                "3": "کار کامل، مرتبط و در سطح B1 انجام شده است."
+              }
+            },
+            {
+              "id": "coherence",
+              "label_fa": "پیوستگی و سازمان‌دهی",
+              "weight": 25,
+              "descriptors_fa": {
+                "0": "پاسخ پراکنده است.",
+                "1": "ارتباط جمله‌ها محدود است.",
+                "2": "جمله‌ها عمدتاً با ترتیب روشن به هم وصل‌اند.",
+                "3": "پاسخ کوتاه اما منسجم و به‌خوبی سازمان‌یافته است."
+              }
+            },
+            {
+              "id": "language",
+              "label_fa": "کنترل زبان",
+              "weight": 25,
+              "descriptors_fa": {
+                "0": "پیام قابل‌فهم نیست.",
+                "1": "خطاها فهم را زیاد مختل می‌کنند.",
+                "2": "با وجود خطا، پیام روشن می‌ماند.",
+                "3": "ساخت‌ها و واژگان آموزش‌داده‌شدهٔ B1 با کنترل کافی استفاده شده‌اند."
+              }
+            }
+          ]
+        },
+        "difficulty": 3,
+        "cefr": "B1",
+        "topic": "simple-messages",
+        "feedback": {
+          "explanation_fa": "لازم نیست عین مدل صحبت کنی؛ پیام باید کوتاه، پیوسته و روشن باشد.",
+          "model_answer": "Haberde belediyenin yeni bir karar aldığı yazıyor. Önce haberin tarihine ve kaynağına bakarım. Sonra resmi siteyi kontrol ederim. Aynı bilgi orada da varsa habere daha çok güvenirim.",
+          "retry_tip_fa": "دو یا سه جملهٔ مرتبط بساز و دلیل یا جزئیات کوتاه اضافه کن."
         },
         "status": "validated"
       }

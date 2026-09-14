@@ -7,7 +7,7 @@
   "target_variant": "tr-TR",
   "cefr": "B1",
   "curriculum_unit": "b1-tr-reported-information",
-  "generator": "gpt-5.6-sol:turkish-b1-batch-v1",
+  "generator": "gpt-5.6-sol:turkish-b1-batch-v2",
   "items": [
     {
       "kind": "concept",
@@ -432,6 +432,44 @@
       }
     },
     {
+      "kind": "utterance",
+      "external_id": "u_reported_information_05",
+      "data": {
+        "lesson_key": "b1-tr-reported-information-03",
+        "text": {
+          "tr": "Görevli, başvurunun cuma gününe kadar tamamlanması gerektiğini söyledi."
+        },
+        "translations": {
+          "fa": "مسئول گفت درخواست باید تا جمعه کامل شود."
+        },
+        "intent": "relay_instruction",
+        "concept_refs": [],
+        "cefr": "B1",
+        "topic": "simple-messages",
+        "register": "neutral",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_reported_information_06",
+      "data": {
+        "lesson_key": "b1-tr-reported-information-03",
+        "text": {
+          "tr": "Ben de ekibime toplantı saatinin değiştiğini haber verdim."
+        },
+        "translations": {
+          "fa": "من هم به تیمم خبر دادم ساعت جلسه تغییر کرده است."
+        },
+        "intent": "mediate_information",
+        "concept_refs": [],
+        "cefr": "B1",
+        "topic": "simple-messages",
+        "register": "neutral",
+        "status": "validated"
+      }
+    },
+    {
       "kind": "grammar_point",
       "external_id": "g_reported_information_core",
       "data": {
@@ -462,7 +500,7 @@
       "data": {
         "lesson_key": "b1-tr-reported-information-01",
         "title": "Toplantı haberi",
-        "setting": "",
+        "setting": "item",
         "cefr": "B1",
         "topic": "simple-messages",
         "characters": [
@@ -509,7 +547,7 @@
       "data": {
         "lesson_key": "b1-tr-reported-information-02",
         "title": "Doğrulanmamış haber",
-        "setting": "",
+        "setting": "item",
         "cefr": "B1",
         "topic": "simple-messages",
         "characters": [
@@ -540,6 +578,53 @@
             "speaker": "Mert",
             "text": "O bilgi henüz doğrulanmadı.",
             "translation_fa": "آن اطلاعات هنوز تأیید نشده است."
+          }
+        ],
+        "qa": {
+          "character_pair_unique_within_unit": true,
+          "naturalness": "passed",
+          "single_situation": true
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "dialogue",
+      "external_id": "d_reported_information_03",
+      "data": {
+        "lesson_key": "b1-tr-reported-information-03",
+        "title": "Bilgiyi aktar",
+        "setting": "item",
+        "cefr": "B1",
+        "topic": "simple-messages",
+        "characters": [
+          "Elif",
+          "Emre"
+        ],
+        "turns": [
+          {
+            "order": 1,
+            "speaker": "Elif",
+            "text": "İnsan kaynakları ne söyledi?",
+            "translation_fa": "منابع انسانی چه گفت؟"
+          },
+          {
+            "order": 2,
+            "speaker": "Emre",
+            "text": "Formun bugün gönderilmesi gerektiğini söylediler.",
+            "translation_fa": "گفتند فرم باید امروز فرستاده شود."
+          },
+          {
+            "order": 3,
+            "speaker": "Elif",
+            "text": "Başka bir şey var mı?",
+            "translation_fa": "چیز دیگری هم هست؟"
+          },
+          {
+            "order": 4,
+            "speaker": "Emre",
+            "text": "Evet, eksik belge varsa bize haber vermemizi istediler.",
+            "translation_fa": "بله، خواستند اگر مدرکی کم است به آن‌ها خبر بدهیم."
           }
         ],
         "qa": {
@@ -618,7 +703,7 @@
         "lesson_key": "b1-tr-reported-information-01",
         "exercise_type": "speaking",
         "prompt": {
-          "instruction_fa": "عبارت را با صدای بلند و با ریتم طبیعی تکرار کن.",
+          "instruction_fa": "عبارت را با صدای بلند و با ریتم طبیعی بگو.",
           "value": "Toplantının ertelendiğini söyledi."
         },
         "answer": {
@@ -642,7 +727,7 @@
         "lesson_key": "b1-tr-reported-information-01",
         "exercise_type": "sentence_building",
         "prompt": {
-          "instruction_fa": "کلمه‌ها را لمس کن تا عبارت درست ساخته شود.",
+          "instruction_fa": "بخش‌ها را مرتب کن تا عبارت درست ساخته شود.",
           "tokens": [
             "bir",
             "karar",
@@ -771,7 +856,7 @@
         "lesson_key": "b1-tr-reported-information-02",
         "exercise_type": "speaking",
         "prompt": {
-          "instruction_fa": "عبارت را با صدای بلند و با ریتم طبیعی تکرار کن.",
+          "instruction_fa": "عبارت را با صدای بلند و با ریتم طبیعی بگو.",
           "value": "Müdür değişikliğin nedenini açıkladı."
         },
         "answer": {
@@ -795,7 +880,7 @@
         "lesson_key": "b1-tr-reported-information-02",
         "exercise_type": "sentence_building",
         "prompt": {
-          "instruction_fa": "کلمه‌ها را لمس کن تا عبارت درست ساخته شود.",
+          "instruction_fa": "بخش‌ها را مرتب کن تا عبارت درست ساخته شود.",
           "tokens": [
             "kimse",
             "haberi",
@@ -850,6 +935,303 @@
           "retry_tip_fa": "به معنی، موقعیت و پسوندهای عبارت ترکی دقت کن و دوباره امتحان کن.",
           "explanation_fa": "مدل طبیعی این درس: Müdür değişikliğin nedenini açıkladı. — مدیر دلیل تغییر را اعلام کرد.",
           "model_answer": "Müdür değişikliğin nedenini açıkladı."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_reported_information_03_meaning",
+      "data": {
+        "lesson_key": "b1-tr-reported-information-03",
+        "exercise_type": "multiple_choice",
+        "prompt": {
+          "instruction_fa": "معنی درست این عبارت ترکی را انتخاب کن.",
+          "value": "Görevli, başvurunun cuma gününe kadar tamamlanması gerektiğini söyledi."
+        },
+        "answer": {
+          "value": "مسئول گفت درخواست باید تا جمعه کامل شود."
+        },
+        "options": [
+          "مسئول گفت درخواست باید تا جمعه کامل شود.",
+          "گفت که جلسه به تعویق افتاده است.",
+          "شنیدم تصمیم تازه‌ای گرفته شده است.",
+          "مدیر دلیل تغییر را اعلام کرد."
+        ],
+        "difficulty": 3,
+        "cefr": "B1",
+        "topic": "simple-messages",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت و پسوندهای عبارت ترکی دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: Görevli, başvurunun cuma gününe kadar tamamlanması gerektiğini söyledi. — مسئول گفت درخواست باید تا جمعه کامل شود.",
+          "model_answer": "Görevli, başvurunun cuma gününe kadar tamamlanması gerektiğini söyledi."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_reported_information_03_listen",
+      "data": {
+        "lesson_key": "b1-tr-reported-information-03",
+        "exercise_type": "listening",
+        "prompt": {
+          "instruction_fa": "گوش کن و عبارتی را که شنیدی انتخاب کن.",
+          "audio_text": "Ben de ekibime toplantı saatinin değiştiğini haber verdim."
+        },
+        "answer": {
+          "value": "Ben de ekibime toplantı saatinin değiştiğini haber verdim."
+        },
+        "options": [
+          "Ben de ekibime toplantı saatinin değiştiğini haber verdim.",
+          "Görevli, başvurunun cuma gününe kadar tamamlanması gerektiğini söyledi.",
+          "Toplantının ertelendiğini söyledi.",
+          "Yeni bir karar alındığını duydum."
+        ],
+        "difficulty": 3,
+        "cefr": "B1",
+        "topic": "simple-messages",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت و پسوندهای عبارت ترکی دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: Ben de ekibime toplantı saatinin değiştiğini haber verdim. — من هم به تیمم خبر دادم ساعت جلسه تغییر کرده است.",
+          "model_answer": "Ben de ekibime toplantı saatinin değiştiğini haber verdim.",
+          "transcript_tr": "Ben de ekibime toplantı saatinin değiştiğini haber verdim."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_reported_information_03_speak",
+      "data": {
+        "lesson_key": "b1-tr-reported-information-03",
+        "exercise_type": "speaking",
+        "prompt": {
+          "instruction_fa": "عبارت را با صدای بلند و با ریتم طبیعی بگو.",
+          "value": "Görevli, başvurunun cuma gününe kadar tamamlanması gerektiğini söyledi."
+        },
+        "answer": {
+          "expected_text": "Görevli, başvurunun cuma gününe kadar tamamlanması gerektiğini söyledi."
+        },
+        "difficulty": 3,
+        "cefr": "B1",
+        "topic": "simple-messages",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت و پسوندهای عبارت ترکی دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: Görevli, başvurunun cuma gününe kadar tamamlanması gerektiğini söyledi. — مسئول گفت درخواست باید تا جمعه کامل شود.",
+          "model_answer": "Görevli, başvurunun cuma gününe kadar tamamlanması gerektiğini söyledi."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_reported_information_03_build",
+      "data": {
+        "lesson_key": "b1-tr-reported-information-03",
+        "exercise_type": "sentence_building",
+        "prompt": {
+          "instruction_fa": "بخش‌ها را مرتب کن تا عبارت درست ساخته شود.",
+          "tokens": [
+            "de",
+            "ekibime",
+            "toplantı",
+            "saatinin",
+            "değiştiğini",
+            "haber",
+            "verdim.",
+            "Ben"
+          ]
+        },
+        "answer": {
+          "tokens": [
+            "Ben",
+            "de",
+            "ekibime",
+            "toplantı",
+            "saatinin",
+            "değiştiğini",
+            "haber",
+            "verdim."
+          ],
+          "value": "Ben de ekibime toplantı saatinin değiştiğini haber verdim."
+        },
+        "difficulty": 3,
+        "cefr": "B1",
+        "topic": "simple-messages",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت و پسوندهای عبارت ترکی دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: Ben de ekibime toplantı saatinin değiştiğini haber verdim. — من هم به تیمم خبر دادم ساعت جلسه تغییر کرده است.",
+          "model_answer": "Ben de ekibime toplantı saatinin değiştiğini haber verdim."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_reported_information_03_dialogue",
+      "data": {
+        "lesson_key": "b1-tr-reported-information-03",
+        "exercise_type": "dialogue_comprehension",
+        "prompt": {
+          "instruction_fa": "با توجه به گفت‌وگو، پاسخ مناسب را انتخاب کن.",
+          "source_dialogue_ref": "d_reported_information_03",
+          "question_fa": "کدام گزینه با معنی «مسئول گفت درخواست باید تا جمعه کامل شود.» هماهنگ است؟"
+        },
+        "answer": {
+          "value": "Görevli, başvurunun cuma gününe kadar tamamlanması gerektiğini söyledi."
+        },
+        "options": [
+          "Görevli, başvurunun cuma gününe kadar tamamlanması gerektiğini söyledi.",
+          "Toplantının ertelendiğini söyledi.",
+          "Yeni bir karar alındığını duydum.",
+          "Müdür değişikliğin nedenini açıkladı."
+        ],
+        "difficulty": 3,
+        "cefr": "B1",
+        "topic": "simple-messages",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت و پسوندهای عبارت ترکی دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: Görevli, başvurunun cuma gününe kadar tamamlanması gerektiğini söyledi. — مسئول گفت درخواست باید تا جمعه کامل شود.",
+          "model_answer": "Görevli, başvurunun cuma gününe kadar tamamlanması gerektiğini söyledi."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_reported_information_03_open_write",
+      "data": {
+        "lesson_key": "b1-tr-reported-information-03",
+        "exercise_type": "writing",
+        "prompt": {
+          "instruction_fa": "فرض کن از یک اداره، مدرس یا همکار دو اطلاعات گرفته‌ای. در ۴ تا ۶ جمله این اطلاعات را برای شخص دیگری به‌صورت غیرمستقیم منتقل کن.",
+          "personalized": true
+        },
+        "answer": {
+          "evaluation_mode": "rubric",
+          "model_text": "Görevli, randevunun pazartesiye alındığını söyledi. Ayrıca kimliğimizi getirmemiz gerektiğini belirtti. Ben de bu bilgiyi arkadaşlarıma ilettim.",
+          "required_points_fa": [
+            "منبع اطلاعات",
+            "حداقل یک گزارهٔ گزارش‌شده",
+            "یک جزئیات عملی",
+            "انتقال روشن به نفر سوم"
+          ]
+        },
+        "assessment": {
+          "exact_match_allowed": false,
+          "criteria": [
+            {
+              "id": "task",
+              "label_fa": "انجام کار",
+              "weight": 50,
+              "descriptors_fa": {
+                "0": "کار انجام نشده است.",
+                "1": "فقط بخشی از کار انجام شده است.",
+                "2": "بیشتر نکات لازم منتقل شده است.",
+                "3": "کار کامل، مرتبط و در سطح B1 انجام شده است."
+              }
+            },
+            {
+              "id": "coherence",
+              "label_fa": "پیوستگی و سازمان‌دهی",
+              "weight": 25,
+              "descriptors_fa": {
+                "0": "پاسخ پراکنده است.",
+                "1": "ارتباط جمله‌ها محدود است.",
+                "2": "جمله‌ها عمدتاً با ترتیب روشن به هم وصل‌اند.",
+                "3": "پاسخ کوتاه اما منسجم و به‌خوبی سازمان‌یافته است."
+              }
+            },
+            {
+              "id": "language",
+              "label_fa": "کنترل زبان",
+              "weight": 25,
+              "descriptors_fa": {
+                "0": "پیام قابل‌فهم نیست.",
+                "1": "خطاها فهم را زیاد مختل می‌کنند.",
+                "2": "با وجود خطا، پیام روشن می‌ماند.",
+                "3": "ساخت‌ها و واژگان آموزش‌داده‌شدهٔ B1 با کنترل کافی استفاده شده‌اند."
+              }
+            }
+          ]
+        },
+        "difficulty": 3,
+        "cefr": "B1",
+        "topic": "simple-messages",
+        "feedback": {
+          "explanation_fa": "پاسخ آزاد است؛ مهم انجام کامل کار و قابل‌فهم بودن پیام است.",
+          "model_answer": "Görevli, randevunun pazartesiye alındığını söyledi. Ayrıca kimliğimizi getirmemiz gerektiğini belirtti. Ben de bu bilgiyi arkadaşlarıma ilettim.",
+          "retry_tip_fa": "از مدل کمک بگیر، اما اطلاعات و انتخاب‌های خودت را بنویس."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_reported_information_03_personal_speak",
+      "data": {
+        "lesson_key": "b1-tr-reported-information-03",
+        "exercise_type": "speaking",
+        "prompt": {
+          "instruction_fa": "یک پیام شنیده‌شده را برای نفر سوم بازگو کن: چه کسی چه گفت، چه چیزی تغییر کرده و شنونده چه کاری باید انجام دهد.",
+          "personalized": true
+        },
+        "answer": {
+          "evaluation_mode": "rubric",
+          "model_text": "Görevli, randevunun pazartesiye alındığını söyledi. Ayrıca kimliğimizi getirmemiz gerektiğini belirtti. Ben de bu bilgiyi arkadaşlarıma ilettim.",
+          "required_points_fa": [
+            "منبع اطلاعات",
+            "حداقل یک گزارهٔ گزارش‌شده",
+            "یک جزئیات عملی",
+            "انتقال روشن به نفر سوم"
+          ]
+        },
+        "assessment": {
+          "exact_match_allowed": false,
+          "criteria": [
+            {
+              "id": "task",
+              "label_fa": "انجام کار",
+              "weight": 50,
+              "descriptors_fa": {
+                "0": "کار انجام نشده است.",
+                "1": "فقط بخشی از کار انجام شده است.",
+                "2": "بیشتر نکات لازم منتقل شده است.",
+                "3": "کار کامل، مرتبط و در سطح B1 انجام شده است."
+              }
+            },
+            {
+              "id": "coherence",
+              "label_fa": "پیوستگی و سازمان‌دهی",
+              "weight": 25,
+              "descriptors_fa": {
+                "0": "پاسخ پراکنده است.",
+                "1": "ارتباط جمله‌ها محدود است.",
+                "2": "جمله‌ها عمدتاً با ترتیب روشن به هم وصل‌اند.",
+                "3": "پاسخ کوتاه اما منسجم و به‌خوبی سازمان‌یافته است."
+              }
+            },
+            {
+              "id": "language",
+              "label_fa": "کنترل زبان",
+              "weight": 25,
+              "descriptors_fa": {
+                "0": "پیام قابل‌فهم نیست.",
+                "1": "خطاها فهم را زیاد مختل می‌کنند.",
+                "2": "با وجود خطا، پیام روشن می‌ماند.",
+                "3": "ساخت‌ها و واژگان آموزش‌داده‌شدهٔ B1 با کنترل کافی استفاده شده‌اند."
+              }
+            }
+          ]
+        },
+        "difficulty": 3,
+        "cefr": "B1",
+        "topic": "simple-messages",
+        "feedback": {
+          "explanation_fa": "لازم نیست عین مدل صحبت کنی؛ پیام باید کوتاه، پیوسته و روشن باشد.",
+          "model_answer": "Görevli, randevunun pazartesiye alındığını söyledi. Ayrıca kimliğimizi getirmemiz gerektiğini belirtti. Ben de bu bilgiyi arkadaşlarıma ilettim.",
+          "retry_tip_fa": "دو یا سه جملهٔ مرتبط بساز و دلیل یا جزئیات کوتاه اضافه کن."
         },
         "status": "validated"
       }

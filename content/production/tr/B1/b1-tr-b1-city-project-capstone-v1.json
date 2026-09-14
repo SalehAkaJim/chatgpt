@@ -7,7 +7,7 @@
   "target_variant": "tr-TR",
   "cefr": "B1",
   "curriculum_unit": "b1-tr-b1-city-project-capstone",
-  "generator": "gpt-5.6-sol:turkish-b1-batch-v1",
+  "generator": "gpt-5.6-sol:turkish-b1-batch-v2",
   "items": [
     {
       "kind": "concept",
@@ -431,6 +431,44 @@
       }
     },
     {
+      "kind": "utterance",
+      "external_id": "u_b1_city_project_capstone_05",
+      "data": {
+        "lesson_key": "b1-tr-b1-city-project-capstone-03",
+        "text": {
+          "tr": "Mahalle için iki öneriyi karşılaştırdım ve ulaşım için ikinci seçeneği daha uygun buldum."
+        },
+        "translations": {
+          "fa": "دو پیشنهاد برای محله را مقایسه کردم و برای رفت‌وآمد گزینهٔ دوم را مناسب‌تر دیدم."
+        },
+        "intent": "synthesize_project",
+        "concept_refs": [],
+        "cefr": "B1",
+        "topic": "places-town",
+        "register": "neutral",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_b1_city_project_capstone_06",
+      "data": {
+        "lesson_key": "b1-tr-b1-city-project-capstone-03",
+        "text": {
+          "tr": "Plan uygulanırsa ilk ay sonuçları takip edip gerekirse küçük değişiklikler önereceğim."
+        },
+        "translations": {
+          "fa": "اگر طرح اجرا شود ماه اول نتایج را پیگیری می‌کنم و اگر لازم باشد تغییرهای کوچکی پیشنهاد می‌دهم."
+        },
+        "intent": "action_plan",
+        "concept_refs": [],
+        "cefr": "B1",
+        "topic": "places-town",
+        "register": "neutral",
+        "status": "validated"
+      }
+    },
+    {
       "kind": "grammar_point",
       "external_id": "g_b1_city_project_capstone_core",
       "data": {
@@ -461,7 +499,7 @@
       "data": {
         "lesson_key": "b1-tr-b1-city-project-capstone-01",
         "title": "Proje fikri",
-        "setting": "",
+        "setting": "item",
         "cefr": "B1",
         "topic": "places-town",
         "characters": [
@@ -508,7 +546,7 @@
       "data": {
         "lesson_key": "b1-tr-b1-city-project-capstone-02",
         "title": "Planı netleştirmek",
-        "setting": "",
+        "setting": "item",
         "cefr": "B1",
         "topic": "places-town",
         "characters": [
@@ -539,6 +577,53 @@
             "speaker": "Emre",
             "text": "Anladım; önce önceliği belirleyelim diyorsun.",
             "translation_fa": "فهمیدم؛ می‌گویی اول اولویت را مشخص کنیم."
+          }
+        ],
+        "qa": {
+          "character_pair_unique_within_unit": true,
+          "naturalness": "passed",
+          "single_situation": true
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "dialogue",
+      "external_id": "d_b1_city_project_capstone_03",
+      "data": {
+        "lesson_key": "b1-tr-b1-city-project-capstone-03",
+        "title": "Projeyi sun ve savun",
+        "setting": "item",
+        "cefr": "B1",
+        "topic": "places-town",
+        "characters": [
+          "Selin",
+          "Emre"
+        ],
+        "turns": [
+          {
+            "order": 1,
+            "speaker": "Selin",
+            "text": "Son önerin hangisi?",
+            "translation_fa": "پیشنهاد نهایی‌ات کدام است؟"
+          },
+          {
+            "order": 2,
+            "speaker": "Emre",
+            "text": "Otobüs durağının yanına kapalı bir bisiklet alanı yapılmasını öneriyorum.",
+            "translation_fa": "پیشنهاد می‌کنم کنار ایستگاه اتوبوس یک فضای سرپوشیده دوچرخه ساخته شود."
+          },
+          {
+            "order": 3,
+            "speaker": "Selin",
+            "text": "Neden bu seçenek?",
+            "translation_fa": "چرا این گزینه؟"
+          },
+          {
+            "order": 4,
+            "speaker": "Emre",
+            "text": "Çünkü hem ulaşımı kolaylaştırıyor hem de maliyeti diğer plana göre daha düşük. İlk ay kullanımı takip edebiliriz.",
+            "translation_fa": "چون هم رفت‌وآمد را آسان می‌کند و هم هزینه‌اش از طرح دیگر کمتر است. ماه اول می‌توانیم میزان استفاده را پیگیری کنیم."
           }
         ],
         "qa": {
@@ -617,7 +702,7 @@
         "lesson_key": "b1-tr-b1-city-project-capstone-01",
         "exercise_type": "speaking",
         "prompt": {
-          "instruction_fa": "عبارت را با صدای بلند و با ریتم طبیعی تکرار کن.",
+          "instruction_fa": "عبارت را با صدای بلند و با ریتم طبیعی بگو.",
           "value": "Mahalle için küçük bir proje planlıyoruz."
         },
         "answer": {
@@ -641,7 +726,7 @@
         "lesson_key": "b1-tr-b1-city-project-capstone-01",
         "exercise_type": "sentence_building",
         "prompt": {
-          "instruction_fa": "کلمه‌ها را لمس کن تا عبارت درست ساخته شود.",
+          "instruction_fa": "بخش‌ها را مرتب کن تا عبارت درست ساخته شود.",
           "tokens": [
             "önce",
             "insanların",
@@ -770,7 +855,7 @@
         "lesson_key": "b1-tr-b1-city-project-capstone-02",
         "exercise_type": "speaking",
         "prompt": {
-          "instruction_fa": "عبارت را با صدای بلند و با ریتم طبیعی تکرار کن.",
+          "instruction_fa": "عبارت را با صدای بلند و با ریتم طبیعی بگو.",
           "value": "Bütçe yeterli olursa iki fikri de uygulayabiliriz."
         },
         "answer": {
@@ -794,7 +879,7 @@
         "lesson_key": "b1-tr-b1-city-project-capstone-02",
         "exercise_type": "sentence_building",
         "prompt": {
-          "instruction_fa": "کلمه‌ها را لمس کن تا عبارت درست ساخته شود.",
+          "instruction_fa": "بخش‌ها را مرتب کن تا عبارت درست ساخته شود.",
           "tokens": [
             "birkaç",
             "hafta",
@@ -853,6 +938,313 @@
           "retry_tip_fa": "به معنی، موقعیت و پسوندهای عبارت ترکی دقت کن و دوباره امتحان کن.",
           "explanation_fa": "مدل طبیعی این درس: Bütçe yeterli olursa iki fikri de uygulayabiliriz. — اگر بودجه کافی باشد می‌توانیم هر دو ایده را اجرا کنیم.",
           "model_answer": "Bütçe yeterli olursa iki fikri de uygulayabiliriz."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_b1_city_project_capstone_03_meaning",
+      "data": {
+        "lesson_key": "b1-tr-b1-city-project-capstone-03",
+        "exercise_type": "multiple_choice",
+        "prompt": {
+          "instruction_fa": "معنی درست این عبارت ترکی را انتخاب کن.",
+          "value": "Mahalle için iki öneriyi karşılaştırdım ve ulaşım için ikinci seçeneği daha uygun buldum."
+        },
+        "answer": {
+          "value": "دو پیشنهاد برای محله را مقایسه کردم و برای رفت‌وآمد گزینهٔ دوم را مناسب‌تر دیدم."
+        },
+        "options": [
+          "دو پیشنهاد برای محله را مقایسه کردم و برای رفت‌وآمد گزینهٔ دوم را مناسب‌تر دیدم.",
+          "برای محله یک پروژه کوچک برنامه‌ریزی می‌کنیم.",
+          "به‌نظر من اول باید پیشنهادهای مردم را بشنویم.",
+          "اگر بودجه کافی باشد می‌توانیم هر دو ایده را اجرا کنیم."
+        ],
+        "difficulty": 3,
+        "cefr": "B1",
+        "topic": "places-town",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت و پسوندهای عبارت ترکی دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: Mahalle için iki öneriyi karşılaştırdım ve ulaşım için ikinci seçeneği daha uygun buldum. — دو پیشنهاد برای محله را مقایسه کردم و برای رفت‌وآمد گزینهٔ دوم را مناسب‌تر دیدم.",
+          "model_answer": "Mahalle için iki öneriyi karşılaştırdım ve ulaşım için ikinci seçeneği daha uygun buldum."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_b1_city_project_capstone_03_listen",
+      "data": {
+        "lesson_key": "b1-tr-b1-city-project-capstone-03",
+        "exercise_type": "listening",
+        "prompt": {
+          "instruction_fa": "گوش کن و عبارتی را که شنیدی انتخاب کن.",
+          "audio_text": "Plan uygulanırsa ilk ay sonuçları takip edip gerekirse küçük değişiklikler önereceğim."
+        },
+        "answer": {
+          "value": "Plan uygulanırsa ilk ay sonuçları takip edip gerekirse küçük değişiklikler önereceğim."
+        },
+        "options": [
+          "Plan uygulanırsa ilk ay sonuçları takip edip gerekirse küçük değişiklikler önereceğim.",
+          "Mahalle için iki öneriyi karşılaştırdım ve ulaşım için ikinci seçeneği daha uygun buldum.",
+          "Mahalle için küçük bir proje planlıyoruz.",
+          "Bence önce insanların önerilerini dinlemeliyiz."
+        ],
+        "difficulty": 3,
+        "cefr": "B1",
+        "topic": "places-town",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت و پسوندهای عبارت ترکی دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: Plan uygulanırsa ilk ay sonuçları takip edip gerekirse küçük değişiklikler önereceğim. — اگر طرح اجرا شود ماه اول نتایج را پیگیری می‌کنم و اگر لازم باشد تغییرهای کوچکی پیشنهاد می‌دهم.",
+          "model_answer": "Plan uygulanırsa ilk ay sonuçları takip edip gerekirse küçük değişiklikler önereceğim.",
+          "transcript_tr": "Plan uygulanırsa ilk ay sonuçları takip edip gerekirse küçük değişiklikler önereceğim."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_b1_city_project_capstone_03_speak",
+      "data": {
+        "lesson_key": "b1-tr-b1-city-project-capstone-03",
+        "exercise_type": "speaking",
+        "prompt": {
+          "instruction_fa": "عبارت را با صدای بلند و با ریتم طبیعی بگو.",
+          "value": "Mahalle için iki öneriyi karşılaştırdım ve ulaşım için ikinci seçeneği daha uygun buldum."
+        },
+        "answer": {
+          "expected_text": "Mahalle için iki öneriyi karşılaştırdım ve ulaşım için ikinci seçeneği daha uygun buldum."
+        },
+        "difficulty": 3,
+        "cefr": "B1",
+        "topic": "places-town",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت و پسوندهای عبارت ترکی دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: Mahalle için iki öneriyi karşılaştırdım ve ulaşım için ikinci seçeneği daha uygun buldum. — دو پیشنهاد برای محله را مقایسه کردم و برای رفت‌وآمد گزینهٔ دوم را مناسب‌تر دیدم.",
+          "model_answer": "Mahalle için iki öneriyi karşılaştırdım ve ulaşım için ikinci seçeneği daha uygun buldum."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_b1_city_project_capstone_03_build",
+      "data": {
+        "lesson_key": "b1-tr-b1-city-project-capstone-03",
+        "exercise_type": "sentence_building",
+        "prompt": {
+          "instruction_fa": "بخش‌ها را مرتب کن تا عبارت درست ساخته شود.",
+          "tokens": [
+            "uygulanırsa",
+            "ilk",
+            "ay",
+            "sonuçları",
+            "takip",
+            "edip",
+            "gerekirse",
+            "küçük",
+            "değişiklikler",
+            "önereceğim.",
+            "Plan"
+          ]
+        },
+        "answer": {
+          "tokens": [
+            "Plan",
+            "uygulanırsa",
+            "ilk",
+            "ay",
+            "sonuçları",
+            "takip",
+            "edip",
+            "gerekirse",
+            "küçük",
+            "değişiklikler",
+            "önereceğim."
+          ],
+          "value": "Plan uygulanırsa ilk ay sonuçları takip edip gerekirse küçük değişiklikler önereceğim."
+        },
+        "difficulty": 3,
+        "cefr": "B1",
+        "topic": "places-town",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت و پسوندهای عبارت ترکی دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: Plan uygulanırsa ilk ay sonuçları takip edip gerekirse küçük değişiklikler önereceğim. — اگر طرح اجرا شود ماه اول نتایج را پیگیری می‌کنم و اگر لازم باشد تغییرهای کوچکی پیشنهاد می‌دهم.",
+          "model_answer": "Plan uygulanırsa ilk ay sonuçları takip edip gerekirse küçük değişiklikler önereceğim."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_b1_city_project_capstone_03_dialogue",
+      "data": {
+        "lesson_key": "b1-tr-b1-city-project-capstone-03",
+        "exercise_type": "dialogue_comprehension",
+        "prompt": {
+          "instruction_fa": "با توجه به گفت‌وگو، پاسخ مناسب را انتخاب کن.",
+          "source_dialogue_ref": "d_b1_city_project_capstone_03",
+          "question_fa": "کدام گزینه با معنی «دو پیشنهاد برای محله را مقایسه کردم و برای رفت‌وآمد گزینهٔ دوم را مناسب‌تر دیدم.» هماهنگ است؟"
+        },
+        "answer": {
+          "value": "Mahalle için iki öneriyi karşılaştırdım ve ulaşım için ikinci seçeneği daha uygun buldum."
+        },
+        "options": [
+          "Mahalle için iki öneriyi karşılaştırdım ve ulaşım için ikinci seçeneği daha uygun buldum.",
+          "Mahalle için küçük bir proje planlıyoruz.",
+          "Bence önce insanların önerilerini dinlemeliyiz.",
+          "Bütçe yeterli olursa iki fikri de uygulayabiliriz."
+        ],
+        "difficulty": 3,
+        "cefr": "B1",
+        "topic": "places-town",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت و پسوندهای عبارت ترکی دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: Mahalle için iki öneriyi karşılaştırdım ve ulaşım için ikinci seçeneği daha uygun buldum. — دو پیشنهاد برای محله را مقایسه کردم و برای رفت‌وآمد گزینهٔ دوم را مناسب‌تر دیدم.",
+          "model_answer": "Mahalle için iki öneriyi karşılaştırdım ve ulaşım için ikinci seçeneği daha uygun buldum."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_b1_city_project_capstone_03_open_write",
+      "data": {
+        "lesson_key": "b1-tr-b1-city-project-capstone-03",
+        "exercise_type": "writing",
+        "prompt": {
+          "instruction_fa": "یک پیشنهاد عملی برای محله، مدرسه یا محل کار در ۷ تا ۹ جمله بنویس: مشکل، پیشنهاد، دلیل، یک گزینهٔ مقایسه‌ای، یک شرط واقعی و روش پیگیری نتیجه را بیاور.",
+          "personalized": true
+        },
+        "answer": {
+          "evaluation_mode": "rubric",
+          "model_text": "Mahallemizde akşam otobüs beklemek zor. Durağa daha iyi aydınlatma eklenmesini öneriyorum. Bu çözüm pahalı bir bina yapmaktan daha kolay. Ayrıca güvenliği artırabilir. Bütçe yeterliyse iki durakta başlayabiliriz. İlk ay kullanıcıların görüşlerini toplarız ve sonra planı gözden geçiririz.",
+          "required_points_fa": [
+            "مشکل ملموس",
+            "پیشنهاد عملی",
+            "دلیل و مقایسه",
+            "یک شرط واقعی",
+            "روش پیگیری",
+            "پاسخ به نگرانی ساده"
+          ]
+        },
+        "assessment": {
+          "exact_match_allowed": false,
+          "criteria": [
+            {
+              "id": "task",
+              "label_fa": "انجام کار",
+              "weight": 50,
+              "descriptors_fa": {
+                "0": "کار انجام نشده است.",
+                "1": "فقط بخشی از کار انجام شده است.",
+                "2": "بیشتر نکات لازم منتقل شده است.",
+                "3": "کار کامل، مرتبط و در سطح B1 انجام شده است."
+              }
+            },
+            {
+              "id": "coherence",
+              "label_fa": "پیوستگی و سازمان‌دهی",
+              "weight": 25,
+              "descriptors_fa": {
+                "0": "پاسخ پراکنده است.",
+                "1": "ارتباط جمله‌ها محدود است.",
+                "2": "جمله‌ها عمدتاً با ترتیب روشن به هم وصل‌اند.",
+                "3": "پاسخ کوتاه اما منسجم و به‌خوبی سازمان‌یافته است."
+              }
+            },
+            {
+              "id": "language",
+              "label_fa": "کنترل زبان",
+              "weight": 25,
+              "descriptors_fa": {
+                "0": "پیام قابل‌فهم نیست.",
+                "1": "خطاها فهم را زیاد مختل می‌کنند.",
+                "2": "با وجود خطا، پیام روشن می‌ماند.",
+                "3": "ساخت‌ها و واژگان آموزش‌داده‌شدهٔ B1 با کنترل کافی استفاده شده‌اند."
+              }
+            }
+          ]
+        },
+        "difficulty": 3,
+        "cefr": "B1",
+        "topic": "places-town",
+        "feedback": {
+          "explanation_fa": "پاسخ آزاد است؛ مهم انجام کامل کار و قابل‌فهم بودن پیام است.",
+          "model_answer": "Mahallemizde akşam otobüs beklemek zor. Durağa daha iyi aydınlatma eklenmesini öneriyorum. Bu çözüm pahalı bir bina yapmaktan daha kolay. Ayrıca güvenliği artırabilir. Bütçe yeterliyse iki durakta başlayabiliriz. İlk ay kullanıcıların görüşlerini toplarız ve sonra planı gözden geçiririz.",
+          "retry_tip_fa": "از مدل کمک بگیر، اما اطلاعات و انتخاب‌های خودت را بنویس."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_b1_city_project_capstone_03_personal_speak",
+      "data": {
+        "lesson_key": "b1-tr-b1-city-project-capstone-03",
+        "exercise_type": "speaking",
+        "prompt": {
+          "instruction_fa": "پیشنهاد پروژهٔ کوچک خودت را ۱ تا ۲ دقیقه ارائه کن و به یک سؤال یا نگرانی احتمالی پاسخ بده. استدلال را عملی و ملموس نگه دار.",
+          "personalized": true
+        },
+        "answer": {
+          "evaluation_mode": "rubric",
+          "model_text": "Mahallemizde akşam otobüs beklemek zor. Durağa daha iyi aydınlatma eklenmesini öneriyorum. Bu çözüm pahalı bir bina yapmaktan daha kolay. Ayrıca güvenliği artırabilir. Bütçe yeterliyse iki durakta başlayabiliriz. İlk ay kullanıcıların görüşlerini toplarız ve sonra planı gözden geçiririz.",
+          "required_points_fa": [
+            "مشکل ملموس",
+            "پیشنهاد عملی",
+            "دلیل و مقایسه",
+            "یک شرط واقعی",
+            "روش پیگیری",
+            "پاسخ به نگرانی ساده"
+          ]
+        },
+        "assessment": {
+          "exact_match_allowed": false,
+          "criteria": [
+            {
+              "id": "task",
+              "label_fa": "انجام کار",
+              "weight": 50,
+              "descriptors_fa": {
+                "0": "کار انجام نشده است.",
+                "1": "فقط بخشی از کار انجام شده است.",
+                "2": "بیشتر نکات لازم منتقل شده است.",
+                "3": "کار کامل، مرتبط و در سطح B1 انجام شده است."
+              }
+            },
+            {
+              "id": "coherence",
+              "label_fa": "پیوستگی و سازمان‌دهی",
+              "weight": 25,
+              "descriptors_fa": {
+                "0": "پاسخ پراکنده است.",
+                "1": "ارتباط جمله‌ها محدود است.",
+                "2": "جمله‌ها عمدتاً با ترتیب روشن به هم وصل‌اند.",
+                "3": "پاسخ کوتاه اما منسجم و به‌خوبی سازمان‌یافته است."
+              }
+            },
+            {
+              "id": "language",
+              "label_fa": "کنترل زبان",
+              "weight": 25,
+              "descriptors_fa": {
+                "0": "پیام قابل‌فهم نیست.",
+                "1": "خطاها فهم را زیاد مختل می‌کنند.",
+                "2": "با وجود خطا، پیام روشن می‌ماند.",
+                "3": "ساخت‌ها و واژگان آموزش‌داده‌شدهٔ B1 با کنترل کافی استفاده شده‌اند."
+              }
+            }
+          ]
+        },
+        "difficulty": 3,
+        "cefr": "B1",
+        "topic": "places-town",
+        "feedback": {
+          "explanation_fa": "لازم نیست عین مدل صحبت کنی؛ پیام باید کوتاه، پیوسته و روشن باشد.",
+          "model_answer": "Mahallemizde akşam otobüs beklemek zor. Durağa daha iyi aydınlatma eklenmesini öneriyorum. Bu çözüm pahalı bir bina yapmaktan daha kolay. Ayrıca güvenliği artırabilir. Bütçe yeterliyse iki durakta başlayabiliriz. İlk ay kullanıcıların görüşlerini toplarız ve sonra planı gözden geçiririz.",
+          "retry_tip_fa": "دو یا سه جملهٔ مرتبط بساز و دلیل یا جزئیات کوتاه اضافه کن."
         },
         "status": "validated"
       }

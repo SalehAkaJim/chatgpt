@@ -7,7 +7,7 @@
   "target_variant": "tr-TR",
   "cefr": "B1",
   "curriculum_unit": "b1-tr-storytelling-sequence",
-  "generator": "gpt-5.6-sol:turkish-b1-batch-v1",
+  "generator": "gpt-5.6-sol:turkish-b1-batch-v2",
   "items": [
     {
       "kind": "concept",
@@ -431,6 +431,44 @@
       }
     },
     {
+      "kind": "utterance",
+      "external_id": "u_storytelling_sequence_05",
+      "data": {
+        "lesson_key": "b1-tr-storytelling-sequence-03",
+        "text": {
+          "tr": "Eve dönerken otobüsü kaçırdım, bu yüzden bir süre yürümek zorunda kaldım."
+        },
+        "translations": {
+          "fa": "وقتی به خانه برمی‌گشتم اتوبوس را از دست دادم، برای همین مجبور شدم مدتی پیاده بروم."
+        },
+        "intent": "narrate_complication",
+        "concept_refs": [],
+        "cefr": "B1",
+        "topic": "simple-messages",
+        "register": "neutral",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_storytelling_sequence_06",
+      "data": {
+        "lesson_key": "b1-tr-storytelling-sequence-03",
+        "text": {
+          "tr": "Sonunda başka bir otobüse bindim ve beklediğimden geç eve vardım."
+        },
+        "translations": {
+          "fa": "در نهایت سوار اتوبوس دیگری شدم و دیرتر از انتظار به خانه رسیدم."
+        },
+        "intent": "close_narrative",
+        "concept_refs": [],
+        "cefr": "B1",
+        "topic": "simple-messages",
+        "register": "neutral",
+        "status": "validated"
+      }
+    },
+    {
       "kind": "grammar_point",
       "external_id": "g_storytelling_sequence_core",
       "data": {
@@ -461,7 +499,7 @@
       "data": {
         "lesson_key": "b1-tr-storytelling-sequence-01",
         "title": "Sabah karmaşası",
-        "setting": "",
+        "setting": "item",
         "cefr": "B1",
         "topic": "simple-messages",
         "characters": [
@@ -508,7 +546,7 @@
       "data": {
         "lesson_key": "b1-tr-storytelling-sequence-02",
         "title": "Yolda ne oldu?",
-        "setting": "",
+        "setting": "item",
         "cefr": "B1",
         "topic": "simple-messages",
         "characters": [
@@ -539,6 +577,53 @@
             "speaker": "Burak",
             "text": "İnince seni geri aradım.",
             "translation_fa": "وقتی پیاده شدم دوباره زنگ زدم."
+          }
+        ],
+        "qa": {
+          "character_pair_unique_within_unit": true,
+          "naturalness": "passed",
+          "single_situation": true
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "dialogue",
+      "external_id": "d_storytelling_sequence_03",
+      "data": {
+        "lesson_key": "b1-tr-storytelling-sequence-03",
+        "title": "Kısa bir olayı aktar",
+        "setting": "item",
+        "cefr": "B1",
+        "topic": "simple-messages",
+        "characters": [
+          "Elif",
+          "Kaan"
+        ],
+        "turns": [
+          {
+            "order": 1,
+            "speaker": "Elif",
+            "text": "Dün neden toplantıya geç geldin?",
+            "translation_fa": "دیروز چرا دیر به جلسه رسیدی؟"
+          },
+          {
+            "order": 2,
+            "speaker": "Kaan",
+            "text": "Ofise gelirken metro birden durdu.",
+            "translation_fa": "وقتی به دفتر می‌آمدم مترو ناگهان ایستاد."
+          },
+          {
+            "order": 3,
+            "speaker": "Elif",
+            "text": "Sonra ne yaptın?",
+            "translation_fa": "بعد چه کار کردی؟"
+          },
+          {
+            "order": 4,
+            "speaker": "Kaan",
+            "text": "Bir sonraki durakta indim, otobüse bindim ve sonunda yetiştim.",
+            "translation_fa": "ایستگاه بعد پیاده شدم، سوار اتوبوس شدم و در نهایت رسیدم."
           }
         ],
         "qa": {
@@ -617,7 +702,7 @@
         "lesson_key": "b1-tr-storytelling-sequence-01",
         "exercise_type": "speaking",
         "prompt": {
-          "instruction_fa": "عبارت را با صدای بلند و با ریتم طبیعی تکرار کن.",
+          "instruction_fa": "عبارت را با صدای بلند و با ریتم طبیعی بگو.",
           "value": "Tam evden çıkacakken telefon çaldı."
         },
         "answer": {
@@ -641,7 +726,7 @@
         "lesson_key": "b1-tr-storytelling-sequence-01",
         "exercise_type": "sentence_building",
         "prompt": {
-          "instruction_fa": "کلمه‌ها را لمس کن تا عبارت درست ساخته شود.",
+          "instruction_fa": "بخش‌ها را مرتب کن تا عبارت درست ساخته شود.",
           "tokens": [
             "beklerken",
             "birden",
@@ -770,7 +855,7 @@
         "lesson_key": "b1-tr-storytelling-sequence-02",
         "exercise_type": "speaking",
         "prompt": {
-          "instruction_fa": "عبارت را با صدای بلند و با ریتم طبیعی تکرار کن.",
+          "instruction_fa": "عبارت را با صدای بلند و با ریتم طبیعی بگو.",
           "value": "Toplantıya biraz geç kaldım ama yetiştim."
         },
         "answer": {
@@ -794,7 +879,7 @@
         "lesson_key": "b1-tr-storytelling-sequence-02",
         "exercise_type": "sentence_building",
         "prompt": {
-          "instruction_fa": "کلمه‌ها را لمس کن تا عبارت درست ساخته شود.",
+          "instruction_fa": "بخش‌ها را مرتب کن تا عبارت درست ساخته شود.",
           "tokens": [
             "her",
             "şey",
@@ -851,6 +936,307 @@
           "retry_tip_fa": "به معنی، موقعیت و پسوندهای عبارت ترکی دقت کن و دوباره امتحان کن.",
           "explanation_fa": "مدل طبیعی این درس: Toplantıya biraz geç kaldım ama yetiştim. — کمی دیر به جلسه رسیدم اما رسیدم.",
           "model_answer": "Toplantıya biraz geç kaldım ama yetiştim."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_storytelling_sequence_03_meaning",
+      "data": {
+        "lesson_key": "b1-tr-storytelling-sequence-03",
+        "exercise_type": "multiple_choice",
+        "prompt": {
+          "instruction_fa": "معنی درست این عبارت ترکی را انتخاب کن.",
+          "value": "Eve dönerken otobüsü kaçırdım, bu yüzden bir süre yürümek zorunda kaldım."
+        },
+        "answer": {
+          "value": "وقتی به خانه برمی‌گشتم اتوبوس را از دست دادم، برای همین مجبور شدم مدتی پیاده بروم."
+        },
+        "options": [
+          "وقتی به خانه برمی‌گشتم اتوبوس را از دست دادم، برای همین مجبور شدم مدتی پیاده بروم.",
+          "درست وقتی می‌خواستم بیرون بروم تلفن زنگ زد.",
+          "وقتی منتظر اتوبوس بودم ناگهان باران شروع شد.",
+          "کمی دیر به جلسه رسیدم اما رسیدم."
+        ],
+        "difficulty": 3,
+        "cefr": "B1",
+        "topic": "simple-messages",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت و پسوندهای عبارت ترکی دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: Eve dönerken otobüsü kaçırdım, bu yüzden bir süre yürümek zorunda kaldım. — وقتی به خانه برمی‌گشتم اتوبوس را از دست دادم، برای همین مجبور شدم مدتی پیاده بروم.",
+          "model_answer": "Eve dönerken otobüsü kaçırdım, bu yüzden bir süre yürümek zorunda kaldım."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_storytelling_sequence_03_listen",
+      "data": {
+        "lesson_key": "b1-tr-storytelling-sequence-03",
+        "exercise_type": "listening",
+        "prompt": {
+          "instruction_fa": "گوش کن و عبارتی را که شنیدی انتخاب کن.",
+          "audio_text": "Sonunda başka bir otobüse bindim ve beklediğimden geç eve vardım."
+        },
+        "answer": {
+          "value": "Sonunda başka bir otobüse bindim ve beklediğimden geç eve vardım."
+        },
+        "options": [
+          "Sonunda başka bir otobüse bindim ve beklediğimden geç eve vardım.",
+          "Eve dönerken otobüsü kaçırdım, bu yüzden bir süre yürümek zorunda kaldım.",
+          "Tam evden çıkacakken telefon çaldı.",
+          "Otobüsü beklerken birden yağmur başladı."
+        ],
+        "difficulty": 3,
+        "cefr": "B1",
+        "topic": "simple-messages",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت و پسوندهای عبارت ترکی دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: Sonunda başka bir otobüse bindim ve beklediğimden geç eve vardım. — در نهایت سوار اتوبوس دیگری شدم و دیرتر از انتظار به خانه رسیدم.",
+          "model_answer": "Sonunda başka bir otobüse bindim ve beklediğimden geç eve vardım.",
+          "transcript_tr": "Sonunda başka bir otobüse bindim ve beklediğimden geç eve vardım."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_storytelling_sequence_03_speak",
+      "data": {
+        "lesson_key": "b1-tr-storytelling-sequence-03",
+        "exercise_type": "speaking",
+        "prompt": {
+          "instruction_fa": "عبارت را با صدای بلند و با ریتم طبیعی بگو.",
+          "value": "Eve dönerken otobüsü kaçırdım, bu yüzden bir süre yürümek zorunda kaldım."
+        },
+        "answer": {
+          "expected_text": "Eve dönerken otobüsü kaçırdım, bu yüzden bir süre yürümek zorunda kaldım."
+        },
+        "difficulty": 3,
+        "cefr": "B1",
+        "topic": "simple-messages",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت و پسوندهای عبارت ترکی دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: Eve dönerken otobüsü kaçırdım, bu yüzden bir süre yürümek zorunda kaldım. — وقتی به خانه برمی‌گشتم اتوبوس را از دست دادم، برای همین مجبور شدم مدتی پیاده بروم.",
+          "model_answer": "Eve dönerken otobüsü kaçırdım, bu yüzden bir süre yürümek zorunda kaldım."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_storytelling_sequence_03_build",
+      "data": {
+        "lesson_key": "b1-tr-storytelling-sequence-03",
+        "exercise_type": "sentence_building",
+        "prompt": {
+          "instruction_fa": "بخش‌ها را مرتب کن تا عبارت درست ساخته شود.",
+          "tokens": [
+            "başka",
+            "bir",
+            "otobüse",
+            "bindim",
+            "ve",
+            "beklediğimden",
+            "geç",
+            "eve",
+            "vardım.",
+            "Sonunda"
+          ]
+        },
+        "answer": {
+          "tokens": [
+            "Sonunda",
+            "başka",
+            "bir",
+            "otobüse",
+            "bindim",
+            "ve",
+            "beklediğimden",
+            "geç",
+            "eve",
+            "vardım."
+          ],
+          "value": "Sonunda başka bir otobüse bindim ve beklediğimden geç eve vardım."
+        },
+        "difficulty": 3,
+        "cefr": "B1",
+        "topic": "simple-messages",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت و پسوندهای عبارت ترکی دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: Sonunda başka bir otobüse bindim ve beklediğimden geç eve vardım. — در نهایت سوار اتوبوس دیگری شدم و دیرتر از انتظار به خانه رسیدم.",
+          "model_answer": "Sonunda başka bir otobüse bindim ve beklediğimden geç eve vardım."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_storytelling_sequence_03_dialogue",
+      "data": {
+        "lesson_key": "b1-tr-storytelling-sequence-03",
+        "exercise_type": "dialogue_comprehension",
+        "prompt": {
+          "instruction_fa": "با توجه به گفت‌وگو، پاسخ مناسب را انتخاب کن.",
+          "source_dialogue_ref": "d_storytelling_sequence_03",
+          "question_fa": "کدام گزینه با معنی «وقتی به خانه برمی‌گشتم اتوبوس را از دست دادم، برای همین مجبور شدم مدتی پیاده بروم.» هماهنگ است؟"
+        },
+        "answer": {
+          "value": "Eve dönerken otobüsü kaçırdım, bu yüzden bir süre yürümek zorunda kaldım."
+        },
+        "options": [
+          "Eve dönerken otobüsü kaçırdım, bu yüzden bir süre yürümek zorunda kaldım.",
+          "Tam evden çıkacakken telefon çaldı.",
+          "Otobüsü beklerken birden yağmur başladı.",
+          "Toplantıya biraz geç kaldım ama yetiştim."
+        ],
+        "difficulty": 3,
+        "cefr": "B1",
+        "topic": "simple-messages",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت و پسوندهای عبارت ترکی دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: Eve dönerken otobüsü kaçırdım, bu yüzden bir süre yürümek zorunda kaldım. — وقتی به خانه برمی‌گشتم اتوبوس را از دست دادم، برای همین مجبور شدم مدتی پیاده بروم.",
+          "model_answer": "Eve dönerken otobüsü kaçırdım, bu yüzden bir süre yürümek zorunda kaldım."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_storytelling_sequence_03_open_write",
+      "data": {
+        "lesson_key": "b1-tr-storytelling-sequence-03",
+        "exercise_type": "writing",
+        "prompt": {
+          "instruction_fa": "یک اتفاق روزمره را در ۵ تا ۷ جمله تعریف کن: زمینه را بگو، یک اتفاق ناگهانی یا مشکل را اضافه کن و نتیجه را روشن ببند.",
+          "personalized": true
+        },
+        "answer": {
+          "evaluation_mode": "rubric",
+          "model_text": "Dün işe giderken yağmur başladı. Şemsiyem yoktu, bu yüzden bir kafeye girdim. Yağmur biraz azalınca tekrar çıktım. Sonunda işe geç de olsa vardım.",
+          "required_points_fa": [
+            "زمینهٔ کوتاه",
+            "یک رخداد یا مشکل",
+            "ترتیب روشن",
+            "نتیجه"
+          ]
+        },
+        "assessment": {
+          "exact_match_allowed": false,
+          "criteria": [
+            {
+              "id": "task",
+              "label_fa": "انجام کار",
+              "weight": 50,
+              "descriptors_fa": {
+                "0": "کار انجام نشده است.",
+                "1": "فقط بخشی از کار انجام شده است.",
+                "2": "بیشتر نکات لازم منتقل شده است.",
+                "3": "کار کامل، مرتبط و در سطح B1 انجام شده است."
+              }
+            },
+            {
+              "id": "coherence",
+              "label_fa": "پیوستگی و سازمان‌دهی",
+              "weight": 25,
+              "descriptors_fa": {
+                "0": "پاسخ پراکنده است.",
+                "1": "ارتباط جمله‌ها محدود است.",
+                "2": "جمله‌ها عمدتاً با ترتیب روشن به هم وصل‌اند.",
+                "3": "پاسخ کوتاه اما منسجم و به‌خوبی سازمان‌یافته است."
+              }
+            },
+            {
+              "id": "language",
+              "label_fa": "کنترل زبان",
+              "weight": 25,
+              "descriptors_fa": {
+                "0": "پیام قابل‌فهم نیست.",
+                "1": "خطاها فهم را زیاد مختل می‌کنند.",
+                "2": "با وجود خطا، پیام روشن می‌ماند.",
+                "3": "ساخت‌ها و واژگان آموزش‌داده‌شدهٔ B1 با کنترل کافی استفاده شده‌اند."
+              }
+            }
+          ]
+        },
+        "difficulty": 3,
+        "cefr": "B1",
+        "topic": "simple-messages",
+        "feedback": {
+          "explanation_fa": "پاسخ آزاد است؛ مهم انجام کامل کار و قابل‌فهم بودن پیام است.",
+          "model_answer": "Dün işe giderken yağmur başladı. Şemsiyem yoktu, bu yüzden bir kafeye girdim. Yağmur biraz azalınca tekrar çıktım. Sonunda işe geç de olsa vardım.",
+          "retry_tip_fa": "از مدل کمک بگیر، اما اطلاعات و انتخاب‌های خودت را بنویس."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_storytelling_sequence_03_personal_speak",
+      "data": {
+        "lesson_key": "b1-tr-storytelling-sequence-03",
+        "exercise_type": "speaking",
+        "prompt": {
+          "instruction_fa": "یک خاطرهٔ کوتاه را با ترتیب روشن تعریف کن و از یک ساخت -ken برای پس‌زمینه و sonra/sonunda برای ادامه استفاده کن.",
+          "personalized": true
+        },
+        "answer": {
+          "evaluation_mode": "rubric",
+          "model_text": "Dün işe giderken yağmur başladı. Şemsiyem yoktu, bu yüzden bir kafeye girdim. Yağmur biraz azalınca tekrar çıktım. Sonunda işe geç de olsa vardım.",
+          "required_points_fa": [
+            "زمینهٔ کوتاه",
+            "یک رخداد یا مشکل",
+            "ترتیب روشن",
+            "نتیجه"
+          ]
+        },
+        "assessment": {
+          "exact_match_allowed": false,
+          "criteria": [
+            {
+              "id": "task",
+              "label_fa": "انجام کار",
+              "weight": 50,
+              "descriptors_fa": {
+                "0": "کار انجام نشده است.",
+                "1": "فقط بخشی از کار انجام شده است.",
+                "2": "بیشتر نکات لازم منتقل شده است.",
+                "3": "کار کامل، مرتبط و در سطح B1 انجام شده است."
+              }
+            },
+            {
+              "id": "coherence",
+              "label_fa": "پیوستگی و سازمان‌دهی",
+              "weight": 25,
+              "descriptors_fa": {
+                "0": "پاسخ پراکنده است.",
+                "1": "ارتباط جمله‌ها محدود است.",
+                "2": "جمله‌ها عمدتاً با ترتیب روشن به هم وصل‌اند.",
+                "3": "پاسخ کوتاه اما منسجم و به‌خوبی سازمان‌یافته است."
+              }
+            },
+            {
+              "id": "language",
+              "label_fa": "کنترل زبان",
+              "weight": 25,
+              "descriptors_fa": {
+                "0": "پیام قابل‌فهم نیست.",
+                "1": "خطاها فهم را زیاد مختل می‌کنند.",
+                "2": "با وجود خطا، پیام روشن می‌ماند.",
+                "3": "ساخت‌ها و واژگان آموزش‌داده‌شدهٔ B1 با کنترل کافی استفاده شده‌اند."
+              }
+            }
+          ]
+        },
+        "difficulty": 3,
+        "cefr": "B1",
+        "topic": "simple-messages",
+        "feedback": {
+          "explanation_fa": "لازم نیست عین مدل صحبت کنی؛ پیام باید کوتاه، پیوسته و روشن باشد.",
+          "model_answer": "Dün işe giderken yağmur başladı. Şemsiyem yoktu, bu yüzden bir kafeye girdim. Yağmur biraz azalınca tekrar çıktım. Sonunda işe geç de olsa vardım.",
+          "retry_tip_fa": "دو یا سه جملهٔ مرتبط بساز و دلیل یا جزئیات کوتاه اضافه کن."
         },
         "status": "validated"
       }

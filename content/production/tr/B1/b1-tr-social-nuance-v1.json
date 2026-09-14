@@ -7,7 +7,7 @@
   "target_variant": "tr-TR",
   "cefr": "B1",
   "curriculum_unit": "b1-tr-social-nuance",
-  "generator": "gpt-5.6-sol:turkish-b1-batch-v1",
+  "generator": "gpt-5.6-sol:turkish-b1-batch-v2",
   "items": [
     {
       "kind": "concept",
@@ -430,6 +430,44 @@
       }
     },
     {
+      "kind": "utterance",
+      "external_id": "u_social_nuance_05",
+      "data": {
+        "lesson_key": "b1-tr-social-nuance-03",
+        "text": {
+          "tr": "Seni yanlış anladıysam özür dilerim; ne demek istediğini tekrar açıklar mısın?"
+        },
+        "translations": {
+          "fa": "اگر بد فهمیدم عذر می‌خواهم؛ می‌توانی دوباره منظورت را توضیح بدهی؟"
+        },
+        "intent": "repair_interaction",
+        "concept_refs": [],
+        "cefr": "B1",
+        "topic": "likes-dislikes",
+        "register": "neutral",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_social_nuance_06",
+      "data": {
+        "lesson_key": "b1-tr-social-nuance-03",
+        "text": {
+          "tr": "Fikrine karşı değilim; sadece bu kısmın biraz daha açık olmasını istiyorum."
+        },
+        "translations": {
+          "fa": "با نظرت مخالف نیستم؛ فقط می‌خواهم این بخش کمی روشن‌تر باشد."
+        },
+        "intent": "soften_disagreement",
+        "concept_refs": [],
+        "cefr": "B1",
+        "topic": "likes-dislikes",
+        "register": "neutral",
+        "status": "validated"
+      }
+    },
+    {
       "kind": "grammar_point",
       "external_id": "g_social_nuance_core",
       "data": {
@@ -460,7 +498,7 @@
       "data": {
         "lesson_key": "b1-tr-social-nuance-01",
         "title": "Yanlış anlaşılma",
-        "setting": "",
+        "setting": "item",
         "cefr": "B1",
         "topic": "likes-dislikes",
         "characters": [
@@ -507,7 +545,7 @@
       "data": {
         "lesson_key": "b1-tr-social-nuance-02",
         "title": "Niyetini açıklamak",
-        "setting": "",
+        "setting": "item",
         "cefr": "B1",
         "topic": "likes-dislikes",
         "characters": [
@@ -538,6 +576,53 @@
             "speaker": "Burak",
             "text": "Süreyi değil, planı eleştiriyordum.",
             "translation_fa": "از زمان‌بندی نه، از برنامه انتقاد داشتم."
+          }
+        ],
+        "qa": {
+          "character_pair_unique_within_unit": true,
+          "naturalness": "passed",
+          "single_situation": true
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "dialogue",
+      "external_id": "d_social_nuance_03",
+      "data": {
+        "lesson_key": "b1-tr-social-nuance-03",
+        "title": "Yanlış anlamayı düzelt",
+        "setting": "item",
+        "cefr": "B1",
+        "topic": "likes-dislikes",
+        "characters": [
+          "Deniz",
+          "Kaan"
+        ],
+        "turns": [
+          {
+            "order": 1,
+            "speaker": "Deniz",
+            "text": "Sanırım önerimi gereksiz buldun.",
+            "translation_fa": "فکر کنم پیشنهادم را غیرضروری دانستی."
+          },
+          {
+            "order": 2,
+            "speaker": "Kaan",
+            "text": "Hayır, öyle demek istemedim. Sadece zamanlamayı sormak istedim.",
+            "translation_fa": "نه، منظورم این نبود. فقط می‌خواستم درباره زمان‌بندی بپرسم."
+          },
+          {
+            "order": 3,
+            "speaker": "Deniz",
+            "text": "Tamam, ben yanlış anlamışım.",
+            "translation_fa": "باشه، من بد فهمیده بودم."
+          },
+          {
+            "order": 4,
+            "speaker": "Kaan",
+            "text": "Sorun değil. İstersen neyi kastettiğimi tekrar açıklayayım.",
+            "translation_fa": "اشکالی ندارد. اگر بخواهی دوباره منظورم را توضیح می‌دهم."
           }
         ],
         "qa": {
@@ -616,7 +701,7 @@
         "lesson_key": "b1-tr-social-nuance-01",
         "exercise_type": "speaking",
         "prompt": {
-          "instruction_fa": "عبارت را با صدای بلند و با ریتم طبیعی تکرار کن.",
+          "instruction_fa": "عبارت را با صدای بلند و با ریتم طبیعی بگو.",
           "value": "Yanlış anlama, seni eleştirmiyorum."
         },
         "answer": {
@@ -640,7 +725,7 @@
         "lesson_key": "b1-tr-social-nuance-01",
         "exercise_type": "sentence_building",
         "prompt": {
-          "instruction_fa": "کلمه‌ها را لمس کن تا عبارت درست ساخته شود.",
+          "instruction_fa": "بخش‌ها را مرتب کن تا عبارت درست ساخته شود.",
           "tokens": [
             "istediğim",
             "şu:",
@@ -775,7 +860,7 @@
         "lesson_key": "b1-tr-social-nuance-02",
         "exercise_type": "speaking",
         "prompt": {
-          "instruction_fa": "عبارت را با صدای بلند و با ریتم طبیعی تکرار کن.",
+          "instruction_fa": "عبارت را با صدای بلند و با ریتم طبیعی بگو.",
           "value": "Aslında onu kastetmedim."
         },
         "answer": {
@@ -799,7 +884,7 @@
         "lesson_key": "b1-tr-social-nuance-02",
         "exercise_type": "sentence_building",
         "prompt": {
-          "instruction_fa": "کلمه‌ها را لمس کن تا عبارت درست ساخته شود.",
+          "instruction_fa": "بخش‌ها را مرتب کن تا عبارت درست ساخته شود.",
           "tokens": [
             "daha",
             "açık",
@@ -854,6 +939,309 @@
           "retry_tip_fa": "به معنی، موقعیت و پسوندهای عبارت ترکی دقت کن و دوباره امتحان کن.",
           "explanation_fa": "مدل طبیعی این درس: Aslında onu kastetmedim. — در واقع منظورم آن نبود.",
           "model_answer": "Aslında onu kastetmedim."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_social_nuance_03_meaning",
+      "data": {
+        "lesson_key": "b1-tr-social-nuance-03",
+        "exercise_type": "multiple_choice",
+        "prompt": {
+          "instruction_fa": "معنی درست این عبارت ترکی را انتخاب کن.",
+          "value": "Seni yanlış anladıysam özür dilerim; ne demek istediğini tekrar açıklar mısın?"
+        },
+        "answer": {
+          "value": "اگر بد فهمیدم عذر می‌خواهم؛ می‌توانی دوباره منظورت را توضیح بدهی؟"
+        },
+        "options": [
+          "اگر بد فهمیدم عذر می‌خواهم؛ می‌توانی دوباره منظورت را توضیح بدهی؟",
+          "بد برداشت نکن، من از تو انتقاد نمی‌کنم.",
+          "منظورم این است: کمی زمان بیشتری لازم داریم.",
+          "در واقع منظورم آن نبود."
+        ],
+        "difficulty": 3,
+        "cefr": "B1",
+        "topic": "likes-dislikes",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت و پسوندهای عبارت ترکی دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: Seni yanlış anladıysam özür dilerim; ne demek istediğini tekrar açıklar mısın? — اگر بد فهمیدم عذر می‌خواهم؛ می‌توانی دوباره منظورت را توضیح بدهی؟",
+          "model_answer": "Seni yanlış anladıysam özür dilerim; ne demek istediğini tekrar açıklar mısın?"
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_social_nuance_03_listen",
+      "data": {
+        "lesson_key": "b1-tr-social-nuance-03",
+        "exercise_type": "listening",
+        "prompt": {
+          "instruction_fa": "گوش کن و عبارتی را که شنیدی انتخاب کن.",
+          "audio_text": "Fikrine karşı değilim; sadece bu kısmın biraz daha açık olmasını istiyorum."
+        },
+        "answer": {
+          "value": "Fikrine karşı değilim; sadece bu kısmın biraz daha açık olmasını istiyorum."
+        },
+        "options": [
+          "Fikrine karşı değilim; sadece bu kısmın biraz daha açık olmasını istiyorum.",
+          "Seni yanlış anladıysam özür dilerim; ne demek istediğini tekrar açıklar mısın?",
+          "Yanlış anlama, seni eleştirmiyorum.",
+          "Demek istediğim şu: biraz daha zamana ihtiyacımız var."
+        ],
+        "difficulty": 3,
+        "cefr": "B1",
+        "topic": "likes-dislikes",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت و پسوندهای عبارت ترکی دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: Fikrine karşı değilim; sadece bu kısmın biraz daha açık olmasını istiyorum. — با نظرت مخالف نیستم؛ فقط می‌خواهم این بخش کمی روشن‌تر باشد.",
+          "model_answer": "Fikrine karşı değilim; sadece bu kısmın biraz daha açık olmasını istiyorum.",
+          "transcript_tr": "Fikrine karşı değilim; sadece bu kısmın biraz daha açık olmasını istiyorum."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_social_nuance_03_speak",
+      "data": {
+        "lesson_key": "b1-tr-social-nuance-03",
+        "exercise_type": "speaking",
+        "prompt": {
+          "instruction_fa": "عبارت را با صدای بلند و با ریتم طبیعی بگو.",
+          "value": "Seni yanlış anladıysam özür dilerim; ne demek istediğini tekrar açıklar mısın?"
+        },
+        "answer": {
+          "expected_text": "Seni yanlış anladıysam özür dilerim; ne demek istediğini tekrar açıklar mısın?"
+        },
+        "difficulty": 3,
+        "cefr": "B1",
+        "topic": "likes-dislikes",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت و پسوندهای عبارت ترکی دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: Seni yanlış anladıysam özür dilerim; ne demek istediğini tekrar açıklar mısın? — اگر بد فهمیدم عذر می‌خواهم؛ می‌توانی دوباره منظورت را توضیح بدهی؟",
+          "model_answer": "Seni yanlış anladıysam özür dilerim; ne demek istediğini tekrar açıklar mısın?"
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_social_nuance_03_build",
+      "data": {
+        "lesson_key": "b1-tr-social-nuance-03",
+        "exercise_type": "sentence_building",
+        "prompt": {
+          "instruction_fa": "بخش‌ها را مرتب کن تا عبارت درست ساخته شود.",
+          "tokens": [
+            "karşı",
+            "değilim;",
+            "sadece",
+            "bu",
+            "kısmın",
+            "biraz",
+            "daha",
+            "açık",
+            "olmasını",
+            "istiyorum.",
+            "Fikrine"
+          ]
+        },
+        "answer": {
+          "tokens": [
+            "Fikrine",
+            "karşı",
+            "değilim;",
+            "sadece",
+            "bu",
+            "kısmın",
+            "biraz",
+            "daha",
+            "açık",
+            "olmasını",
+            "istiyorum."
+          ],
+          "value": "Fikrine karşı değilim; sadece bu kısmın biraz daha açık olmasını istiyorum."
+        },
+        "difficulty": 3,
+        "cefr": "B1",
+        "topic": "likes-dislikes",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت و پسوندهای عبارت ترکی دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: Fikrine karşı değilim; sadece bu kısmın biraz daha açık olmasını istiyorum. — با نظرت مخالف نیستم؛ فقط می‌خواهم این بخش کمی روشن‌تر باشد.",
+          "model_answer": "Fikrine karşı değilim; sadece bu kısmın biraz daha açık olmasını istiyorum."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_social_nuance_03_dialogue",
+      "data": {
+        "lesson_key": "b1-tr-social-nuance-03",
+        "exercise_type": "dialogue_comprehension",
+        "prompt": {
+          "instruction_fa": "با توجه به گفت‌وگو، پاسخ مناسب را انتخاب کن.",
+          "source_dialogue_ref": "d_social_nuance_03",
+          "question_fa": "کدام گزینه با معنی «اگر بد فهمیدم عذر می‌خواهم؛ می‌توانی دوباره منظورت را توضیح بدهی؟» هماهنگ است؟"
+        },
+        "answer": {
+          "value": "Seni yanlış anladıysam özür dilerim; ne demek istediğini tekrar açıklar mısın?"
+        },
+        "options": [
+          "Seni yanlış anladıysam özür dilerim; ne demek istediğini tekrar açıklar mısın?",
+          "Yanlış anlama, seni eleştirmiyorum.",
+          "Demek istediğim şu: biraz daha zamana ihtiyacımız var.",
+          "Aslında onu kastetmedim."
+        ],
+        "difficulty": 3,
+        "cefr": "B1",
+        "topic": "likes-dislikes",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت و پسوندهای عبارت ترکی دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: Seni yanlış anladıysam özür dilerim; ne demek istediğini tekrar açıklar mısın? — اگر بد فهمیدم عذر می‌خواهم؛ می‌توانی دوباره منظورت را توضیح بدهی؟",
+          "model_answer": "Seni yanlış anladıysam özür dilerim; ne demek istediğini tekrar açıklar mısın?"
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_social_nuance_03_open_write",
+      "data": {
+        "lesson_key": "b1-tr-social-nuance-03",
+        "exercise_type": "writing",
+        "prompt": {
+          "instruction_fa": "یک گفت‌وگوی کوتاه ۵ تا ۷ جمله‌ای بنویس که در آن سوءبرداشتی رخ می‌دهد و با توضیح، عذرخواهی یا نرم‌کردن مخالفت حل می‌شود.",
+          "personalized": true
+        },
+        "answer": {
+          "evaluation_mode": "rubric",
+          "model_text": "Yanlış anlama, fikrini kötü bulmuyorum. Demek istediğim, biraz daha zamana ihtiyacımız olduğu. Ben de önce daha açık söylemeliydim. Umarım şimdi daha net oldu.",
+          "required_points_fa": [
+            "تشخیص سوءبرداشت",
+            "روشن‌کردن منظور",
+            "لحن نرم",
+            "پایان تعامل"
+          ]
+        },
+        "assessment": {
+          "exact_match_allowed": false,
+          "criteria": [
+            {
+              "id": "task",
+              "label_fa": "انجام کار",
+              "weight": 50,
+              "descriptors_fa": {
+                "0": "کار انجام نشده است.",
+                "1": "فقط بخشی از کار انجام شده است.",
+                "2": "بیشتر نکات لازم منتقل شده است.",
+                "3": "کار کامل، مرتبط و در سطح B1 انجام شده است."
+              }
+            },
+            {
+              "id": "coherence",
+              "label_fa": "پیوستگی و سازمان‌دهی",
+              "weight": 25,
+              "descriptors_fa": {
+                "0": "پاسخ پراکنده است.",
+                "1": "ارتباط جمله‌ها محدود است.",
+                "2": "جمله‌ها عمدتاً با ترتیب روشن به هم وصل‌اند.",
+                "3": "پاسخ کوتاه اما منسجم و به‌خوبی سازمان‌یافته است."
+              }
+            },
+            {
+              "id": "language",
+              "label_fa": "کنترل زبان",
+              "weight": 25,
+              "descriptors_fa": {
+                "0": "پیام قابل‌فهم نیست.",
+                "1": "خطاها فهم را زیاد مختل می‌کنند.",
+                "2": "با وجود خطا، پیام روشن می‌ماند.",
+                "3": "ساخت‌ها و واژگان آموزش‌داده‌شدهٔ B1 با کنترل کافی استفاده شده‌اند."
+              }
+            }
+          ]
+        },
+        "difficulty": 3,
+        "cefr": "B1",
+        "topic": "likes-dislikes",
+        "feedback": {
+          "explanation_fa": "پاسخ آزاد است؛ مهم انجام کامل کار و قابل‌فهم بودن پیام است.",
+          "model_answer": "Yanlış anlama, fikrini kötü bulmuyorum. Demek istediğim, biraz daha zamana ihtiyacımız olduğu. Ben de önce daha açık söylemeliydim. Umarım şimdi daha net oldu.",
+          "retry_tip_fa": "از مدل کمک بگیر، اما اطلاعات و انتخاب‌های خودت را بنویس."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_social_nuance_03_personal_speak",
+      "data": {
+        "lesson_key": "b1-tr-social-nuance-03",
+        "exercise_type": "speaking",
+        "prompt": {
+          "instruction_fa": "نقش‌آفرینی کن: طرف مقابل حرفت را اشتباه فهمیده است. منظورت را روشن کن، مخالفت را نرم بیان کن و گفت‌وگو را آرام ببند.",
+          "personalized": true
+        },
+        "answer": {
+          "evaluation_mode": "rubric",
+          "model_text": "Yanlış anlama, fikrini kötü bulmuyorum. Demek istediğim, biraz daha zamana ihtiyacımız olduğu. Ben de önce daha açık söylemeliydim. Umarım şimdi daha net oldu.",
+          "required_points_fa": [
+            "تشخیص سوءبرداشت",
+            "روشن‌کردن منظور",
+            "لحن نرم",
+            "پایان تعامل"
+          ]
+        },
+        "assessment": {
+          "exact_match_allowed": false,
+          "criteria": [
+            {
+              "id": "task",
+              "label_fa": "انجام کار",
+              "weight": 50,
+              "descriptors_fa": {
+                "0": "کار انجام نشده است.",
+                "1": "فقط بخشی از کار انجام شده است.",
+                "2": "بیشتر نکات لازم منتقل شده است.",
+                "3": "کار کامل، مرتبط و در سطح B1 انجام شده است."
+              }
+            },
+            {
+              "id": "coherence",
+              "label_fa": "پیوستگی و سازمان‌دهی",
+              "weight": 25,
+              "descriptors_fa": {
+                "0": "پاسخ پراکنده است.",
+                "1": "ارتباط جمله‌ها محدود است.",
+                "2": "جمله‌ها عمدتاً با ترتیب روشن به هم وصل‌اند.",
+                "3": "پاسخ کوتاه اما منسجم و به‌خوبی سازمان‌یافته است."
+              }
+            },
+            {
+              "id": "language",
+              "label_fa": "کنترل زبان",
+              "weight": 25,
+              "descriptors_fa": {
+                "0": "پیام قابل‌فهم نیست.",
+                "1": "خطاها فهم را زیاد مختل می‌کنند.",
+                "2": "با وجود خطا، پیام روشن می‌ماند.",
+                "3": "ساخت‌ها و واژگان آموزش‌داده‌شدهٔ B1 با کنترل کافی استفاده شده‌اند."
+              }
+            }
+          ]
+        },
+        "difficulty": 3,
+        "cefr": "B1",
+        "topic": "likes-dislikes",
+        "feedback": {
+          "explanation_fa": "لازم نیست عین مدل صحبت کنی؛ پیام باید کوتاه، پیوسته و روشن باشد.",
+          "model_answer": "Yanlış anlama, fikrini kötü bulmuyorum. Demek istediğim, biraz daha zamana ihtiyacımız olduğu. Ben de önce daha açık söylemeliydim. Umarım şimdi daha net oldu.",
+          "retry_tip_fa": "دو یا سه جملهٔ مرتبط بساز و دلیل یا جزئیات کوتاه اضافه کن."
         },
         "status": "validated"
       }

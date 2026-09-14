@@ -7,7 +7,7 @@
   "target_variant": "tr-TR",
   "cefr": "B1",
   "curriculum_unit": "b1-tr-opinions-and-evidence",
-  "generator": "gpt-5.6-sol:turkish-b1-batch-v1",
+  "generator": "gpt-5.6-sol:turkish-b1-batch-v2",
   "items": [
     {
       "kind": "concept",
@@ -431,6 +431,44 @@
       }
     },
     {
+      "kind": "utterance",
+      "external_id": "u_opinions_and_evidence_05",
+      "data": {
+        "lesson_key": "b1-tr-opinions-and-evidence-03",
+        "text": {
+          "tr": "Bence bu uygulama yararlı, çünkü günlük işleri gerçekten hızlandırıyor."
+        },
+        "translations": {
+          "fa": "به‌نظر من این برنامه مفید است چون واقعاً کارهای روزانه را سریع‌تر می‌کند."
+        },
+        "intent": "support_opinion",
+        "concept_refs": [],
+        "cefr": "B1",
+        "topic": "simple-messages",
+        "register": "neutral",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_opinions_and_evidence_06",
+      "data": {
+        "lesson_key": "b1-tr-opinions-and-evidence-03",
+        "text": {
+          "tr": "Yine de herkes için aynı sonucu vereceğinden emin değilim."
+        },
+        "translations": {
+          "fa": "با این حال مطمئن نیستم برای همه همان نتیجه را بدهد."
+        },
+        "intent": "qualify_opinion",
+        "concept_refs": [],
+        "cefr": "B1",
+        "topic": "simple-messages",
+        "register": "neutral",
+        "status": "validated"
+      }
+    },
+    {
       "kind": "grammar_point",
       "external_id": "g_opinions_and_evidence_core",
       "data": {
@@ -461,7 +499,7 @@
       "data": {
         "lesson_key": "b1-tr-opinions-and-evidence-01",
         "title": "Bir karar",
-        "setting": "",
+        "setting": "item",
         "cefr": "B1",
         "topic": "simple-messages",
         "characters": [
@@ -508,7 +546,7 @@
       "data": {
         "lesson_key": "b1-tr-opinions-and-evidence-02",
         "title": "Kesin misin?",
-        "setting": "",
+        "setting": "item",
         "cefr": "B1",
         "topic": "simple-messages",
         "characters": [
@@ -539,6 +577,53 @@
             "speaker": "Emre",
             "text": "Kaynak güvenilir görünmüyor.",
             "translation_fa": "منبع قابل اعتماد به نظر نمی‌رسد."
+          }
+        ],
+        "qa": {
+          "character_pair_unique_within_unit": true,
+          "naturalness": "passed",
+          "single_situation": true
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "dialogue",
+      "external_id": "d_opinions_and_evidence_03",
+      "data": {
+        "lesson_key": "b1-tr-opinions-and-evidence-03",
+        "title": "Görüşünü gerekçelendir",
+        "setting": "item",
+        "cefr": "B1",
+        "topic": "simple-messages",
+        "characters": [
+          "Deniz",
+          "Burak"
+        ],
+        "turns": [
+          {
+            "order": 1,
+            "speaker": "Deniz",
+            "text": "Sence bu sistem devam etmeli mi?",
+            "translation_fa": "به‌نظرت این سیستم باید ادامه پیدا کند؟"
+          },
+          {
+            "order": 2,
+            "speaker": "Burak",
+            "text": "Bence evet, çünkü bekleme süresi azaldı.",
+            "translation_fa": "به‌نظر من بله، چون زمان انتظار کم شده."
+          },
+          {
+            "order": 3,
+            "speaker": "Deniz",
+            "text": "Hiç olumsuz yanı yok mu?",
+            "translation_fa": "هیچ نکته منفی ندارد؟"
+          },
+          {
+            "order": 4,
+            "speaker": "Burak",
+            "text": "Var. Özellikle yaşlı kullanıcılar için kolay olduğundan tam emin değilim.",
+            "translation_fa": "دارد. مخصوصاً مطمئن نیستم برای کاربران مسن آسان باشد."
           }
         ],
         "qa": {
@@ -617,7 +702,7 @@
         "lesson_key": "b1-tr-opinions-and-evidence-01",
         "exercise_type": "speaking",
         "prompt": {
-          "instruction_fa": "عبارت را با صدای بلند و با ریتم طبیعی تکرار کن.",
+          "instruction_fa": "عبارت را با صدای بلند و با ریتم طبیعی بگو.",
           "value": "Bence asıl sorun zamanlama."
         },
         "answer": {
@@ -641,7 +726,7 @@
         "lesson_key": "b1-tr-opinions-and-evidence-01",
         "exercise_type": "sentence_building",
         "prompt": {
-          "instruction_fa": "کلمه‌ها را لمس کن تا عبارت درست ساخته شود.",
+          "instruction_fa": "بخش‌ها را مرتب کن تا عبارت درست ساخته شود.",
           "tokens": [
             "veriler",
             "bunu",
@@ -768,7 +853,7 @@
         "lesson_key": "b1-tr-opinions-and-evidence-02",
         "exercise_type": "speaking",
         "prompt": {
-          "instruction_fa": "عبارت را با صدای بلند و با ریتم طبیعی تکرار کن.",
+          "instruction_fa": "عبارت را با صدای بلند و با ریتم طبیعی بگو.",
           "value": "Bundan tamamen emin değilim."
         },
         "answer": {
@@ -792,7 +877,7 @@
         "lesson_key": "b1-tr-opinions-and-evidence-02",
         "exercise_type": "sentence_building",
         "prompt": {
-          "instruction_fa": "کلمه‌ها را لمس کن تا عبارت درست ساخته شود.",
+          "instruction_fa": "بخش‌ها را مرتب کن تا عبارت درست ساخته شود.",
           "tokens": [
             "mantıklı",
             "seçenek",
@@ -851,6 +936,305 @@
           "retry_tip_fa": "به معنی، موقعیت و پسوندهای عبارت ترکی دقت کن و دوباره امتحان کن.",
           "explanation_fa": "مدل طبیعی این درس: Bundan tamamen emin değilim. — کاملاً از این مطمئن نیستم.",
           "model_answer": "Bundan tamamen emin değilim."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_opinions_and_evidence_03_meaning",
+      "data": {
+        "lesson_key": "b1-tr-opinions-and-evidence-03",
+        "exercise_type": "multiple_choice",
+        "prompt": {
+          "instruction_fa": "معنی درست این عبارت ترکی را انتخاب کن.",
+          "value": "Bence bu uygulama yararlı, çünkü günlük işleri gerçekten hızlandırıyor."
+        },
+        "answer": {
+          "value": "به‌نظر من این برنامه مفید است چون واقعاً کارهای روزانه را سریع‌تر می‌کند."
+        },
+        "options": [
+          "به‌نظر من این برنامه مفید است چون واقعاً کارهای روزانه را سریع‌تر می‌کند.",
+          "به‌نظر من مشکل اصلی زمان‌بندی است.",
+          "چون داده‌ها این را نشان می‌دهند.",
+          "کاملاً از این مطمئن نیستم."
+        ],
+        "difficulty": 3,
+        "cefr": "B1",
+        "topic": "simple-messages",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت و پسوندهای عبارت ترکی دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: Bence bu uygulama yararlı, çünkü günlük işleri gerçekten hızlandırıyor. — به‌نظر من این برنامه مفید است چون واقعاً کارهای روزانه را سریع‌تر می‌کند.",
+          "model_answer": "Bence bu uygulama yararlı, çünkü günlük işleri gerçekten hızlandırıyor."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_opinions_and_evidence_03_listen",
+      "data": {
+        "lesson_key": "b1-tr-opinions-and-evidence-03",
+        "exercise_type": "listening",
+        "prompt": {
+          "instruction_fa": "گوش کن و عبارتی را که شنیدی انتخاب کن.",
+          "audio_text": "Yine de herkes için aynı sonucu vereceğinden emin değilim."
+        },
+        "answer": {
+          "value": "Yine de herkes için aynı sonucu vereceğinden emin değilim."
+        },
+        "options": [
+          "Yine de herkes için aynı sonucu vereceğinden emin değilim.",
+          "Bence bu uygulama yararlı, çünkü günlük işleri gerçekten hızlandırıyor.",
+          "Bence asıl sorun zamanlama.",
+          "Çünkü veriler bunu gösteriyor."
+        ],
+        "difficulty": 3,
+        "cefr": "B1",
+        "topic": "simple-messages",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت و پسوندهای عبارت ترکی دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: Yine de herkes için aynı sonucu vereceğinden emin değilim. — با این حال مطمئن نیستم برای همه همان نتیجه را بدهد.",
+          "model_answer": "Yine de herkes için aynı sonucu vereceğinden emin değilim.",
+          "transcript_tr": "Yine de herkes için aynı sonucu vereceğinden emin değilim."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_opinions_and_evidence_03_speak",
+      "data": {
+        "lesson_key": "b1-tr-opinions-and-evidence-03",
+        "exercise_type": "speaking",
+        "prompt": {
+          "instruction_fa": "عبارت را با صدای بلند و با ریتم طبیعی بگو.",
+          "value": "Bence bu uygulama yararlı, çünkü günlük işleri gerçekten hızlandırıyor."
+        },
+        "answer": {
+          "expected_text": "Bence bu uygulama yararlı, çünkü günlük işleri gerçekten hızlandırıyor."
+        },
+        "difficulty": 3,
+        "cefr": "B1",
+        "topic": "simple-messages",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت و پسوندهای عبارت ترکی دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: Bence bu uygulama yararlı, çünkü günlük işleri gerçekten hızlandırıyor. — به‌نظر من این برنامه مفید است چون واقعاً کارهای روزانه را سریع‌تر می‌کند.",
+          "model_answer": "Bence bu uygulama yararlı, çünkü günlük işleri gerçekten hızlandırıyor."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_opinions_and_evidence_03_build",
+      "data": {
+        "lesson_key": "b1-tr-opinions-and-evidence-03",
+        "exercise_type": "sentence_building",
+        "prompt": {
+          "instruction_fa": "بخش‌ها را مرتب کن تا عبارت درست ساخته شود.",
+          "tokens": [
+            "de",
+            "herkes",
+            "için",
+            "aynı",
+            "sonucu",
+            "vereceğinden",
+            "emin",
+            "değilim.",
+            "Yine"
+          ]
+        },
+        "answer": {
+          "tokens": [
+            "Yine",
+            "de",
+            "herkes",
+            "için",
+            "aynı",
+            "sonucu",
+            "vereceğinden",
+            "emin",
+            "değilim."
+          ],
+          "value": "Yine de herkes için aynı sonucu vereceğinden emin değilim."
+        },
+        "difficulty": 3,
+        "cefr": "B1",
+        "topic": "simple-messages",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت و پسوندهای عبارت ترکی دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: Yine de herkes için aynı sonucu vereceğinden emin değilim. — با این حال مطمئن نیستم برای همه همان نتیجه را بدهد.",
+          "model_answer": "Yine de herkes için aynı sonucu vereceğinden emin değilim."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_opinions_and_evidence_03_dialogue",
+      "data": {
+        "lesson_key": "b1-tr-opinions-and-evidence-03",
+        "exercise_type": "dialogue_comprehension",
+        "prompt": {
+          "instruction_fa": "با توجه به گفت‌وگو، پاسخ مناسب را انتخاب کن.",
+          "source_dialogue_ref": "d_opinions_and_evidence_03",
+          "question_fa": "کدام گزینه با معنی «به‌نظر من این برنامه مفید است چون واقعاً کارهای روزانه را سریع‌تر می‌کند.» هماهنگ است؟"
+        },
+        "answer": {
+          "value": "Bence bu uygulama yararlı, çünkü günlük işleri gerçekten hızlandırıyor."
+        },
+        "options": [
+          "Bence bu uygulama yararlı, çünkü günlük işleri gerçekten hızlandırıyor.",
+          "Bence asıl sorun zamanlama.",
+          "Çünkü veriler bunu gösteriyor.",
+          "Bundan tamamen emin değilim."
+        ],
+        "difficulty": 3,
+        "cefr": "B1",
+        "topic": "simple-messages",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت و پسوندهای عبارت ترکی دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: Bence bu uygulama yararlı, çünkü günlük işleri gerçekten hızlandırıyor. — به‌نظر من این برنامه مفید است چون واقعاً کارهای روزانه را سریع‌تر می‌کند.",
+          "model_answer": "Bence bu uygulama yararlı, çünkü günlük işleri gerçekten hızlandırıyor."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_opinions_and_evidence_03_open_write",
+      "data": {
+        "lesson_key": "b1-tr-opinions-and-evidence-03",
+        "exercise_type": "writing",
+        "prompt": {
+          "instruction_fa": "دربارهٔ یک موضوع روزمره یا محلی ۵ تا ۶ جمله بنویس: نظرت را بگو، دو دلیل یا مثال بیاور و یک محدودیت یا تردید کوتاه اضافه کن.",
+          "personalized": true
+        },
+        "answer": {
+          "evaluation_mode": "rubric",
+          "model_text": "Bence bisiklet yolları faydalı. Çünkü kısa mesafelerde trafiği azaltıyor ve ulaşımı kolaylaştırıyor. Benim mahallemde de işe yaradı. Ama her sokak için uygun olduğundan emin değilim.",
+          "required_points_fa": [
+            "نظر روشن",
+            "دست‌کم یک دلیل",
+            "یک مثال یا تجربه",
+            "یک محدودیت یا تردید"
+          ]
+        },
+        "assessment": {
+          "exact_match_allowed": false,
+          "criteria": [
+            {
+              "id": "task",
+              "label_fa": "انجام کار",
+              "weight": 50,
+              "descriptors_fa": {
+                "0": "کار انجام نشده است.",
+                "1": "فقط بخشی از کار انجام شده است.",
+                "2": "بیشتر نکات لازم منتقل شده است.",
+                "3": "کار کامل، مرتبط و در سطح B1 انجام شده است."
+              }
+            },
+            {
+              "id": "coherence",
+              "label_fa": "پیوستگی و سازمان‌دهی",
+              "weight": 25,
+              "descriptors_fa": {
+                "0": "پاسخ پراکنده است.",
+                "1": "ارتباط جمله‌ها محدود است.",
+                "2": "جمله‌ها عمدتاً با ترتیب روشن به هم وصل‌اند.",
+                "3": "پاسخ کوتاه اما منسجم و به‌خوبی سازمان‌یافته است."
+              }
+            },
+            {
+              "id": "language",
+              "label_fa": "کنترل زبان",
+              "weight": 25,
+              "descriptors_fa": {
+                "0": "پیام قابل‌فهم نیست.",
+                "1": "خطاها فهم را زیاد مختل می‌کنند.",
+                "2": "با وجود خطا، پیام روشن می‌ماند.",
+                "3": "ساخت‌ها و واژگان آموزش‌داده‌شدهٔ B1 با کنترل کافی استفاده شده‌اند."
+              }
+            }
+          ]
+        },
+        "difficulty": 3,
+        "cefr": "B1",
+        "topic": "simple-messages",
+        "feedback": {
+          "explanation_fa": "پاسخ آزاد است؛ مهم انجام کامل کار و قابل‌فهم بودن پیام است.",
+          "model_answer": "Bence bisiklet yolları faydalı. Çünkü kısa mesafelerde trafiği azaltıyor ve ulaşımı kolaylaştırıyor. Benim mahallemde de işe yaradı. Ama her sokak için uygun olduğundan emin değilim.",
+          "retry_tip_fa": "از مدل کمک بگیر، اما اطلاعات و انتخاب‌های خودت را بنویس."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_opinions_and_evidence_03_personal_speak",
+      "data": {
+        "lesson_key": "b1-tr-opinions-and-evidence-03",
+        "exercise_type": "speaking",
+        "prompt": {
+          "instruction_fa": "دربارهٔ یک تصمیم عملی نظر بده و با دلیل یا تجربه پشتیبانی‌اش کن؛ در پایان میزان اطمینانت را کوتاه مشخص کن.",
+          "personalized": true
+        },
+        "answer": {
+          "evaluation_mode": "rubric",
+          "model_text": "Bence bisiklet yolları faydalı. Çünkü kısa mesafelerde trafiği azaltıyor ve ulaşımı kolaylaştırıyor. Benim mahallemde de işe yaradı. Ama her sokak için uygun olduğundan emin değilim.",
+          "required_points_fa": [
+            "نظر روشن",
+            "دست‌کم یک دلیل",
+            "یک مثال یا تجربه",
+            "یک محدودیت یا تردید"
+          ]
+        },
+        "assessment": {
+          "exact_match_allowed": false,
+          "criteria": [
+            {
+              "id": "task",
+              "label_fa": "انجام کار",
+              "weight": 50,
+              "descriptors_fa": {
+                "0": "کار انجام نشده است.",
+                "1": "فقط بخشی از کار انجام شده است.",
+                "2": "بیشتر نکات لازم منتقل شده است.",
+                "3": "کار کامل، مرتبط و در سطح B1 انجام شده است."
+              }
+            },
+            {
+              "id": "coherence",
+              "label_fa": "پیوستگی و سازمان‌دهی",
+              "weight": 25,
+              "descriptors_fa": {
+                "0": "پاسخ پراکنده است.",
+                "1": "ارتباط جمله‌ها محدود است.",
+                "2": "جمله‌ها عمدتاً با ترتیب روشن به هم وصل‌اند.",
+                "3": "پاسخ کوتاه اما منسجم و به‌خوبی سازمان‌یافته است."
+              }
+            },
+            {
+              "id": "language",
+              "label_fa": "کنترل زبان",
+              "weight": 25,
+              "descriptors_fa": {
+                "0": "پیام قابل‌فهم نیست.",
+                "1": "خطاها فهم را زیاد مختل می‌کنند.",
+                "2": "با وجود خطا، پیام روشن می‌ماند.",
+                "3": "ساخت‌ها و واژگان آموزش‌داده‌شدهٔ B1 با کنترل کافی استفاده شده‌اند."
+              }
+            }
+          ]
+        },
+        "difficulty": 3,
+        "cefr": "B1",
+        "topic": "simple-messages",
+        "feedback": {
+          "explanation_fa": "لازم نیست عین مدل صحبت کنی؛ پیام باید کوتاه، پیوسته و روشن باشد.",
+          "model_answer": "Bence bisiklet yolları faydalı. Çünkü kısa mesafelerde trafiği azaltıyor ve ulaşımı kolaylaştırıyor. Benim mahallemde de işe yaradı. Ama her sokak için uygun olduğundan emin değilim.",
+          "retry_tip_fa": "دو یا سه جملهٔ مرتبط بساز و دلیل یا جزئیات کوتاه اضافه کن."
         },
         "status": "validated"
       }

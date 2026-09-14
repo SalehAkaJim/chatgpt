@@ -7,7 +7,7 @@
   "target_variant": "tr-TR",
   "cefr": "B1",
   "curriculum_unit": "b1-tr-conditions-and-consequences",
-  "generator": "gpt-5.6-sol:turkish-b1-batch-v1",
+  "generator": "gpt-5.6-sol:turkish-b1-batch-v2",
   "items": [
     {
       "kind": "concept",
@@ -429,6 +429,44 @@
       }
     },
     {
+      "kind": "utterance",
+      "external_id": "u_conditions_and_consequences_05",
+      "data": {
+        "lesson_key": "b1-tr-conditions-and-consequences-03",
+        "text": {
+          "tr": "Toplantı erken biterse raporu bugün tamamlayabiliriz."
+        },
+        "translations": {
+          "fa": "اگر جلسه زود تمام شود می‌توانیم گزارش را امروز تمام کنیم."
+        },
+        "intent": "realistic_condition",
+        "concept_refs": [],
+        "cefr": "B1",
+        "topic": "future-plans",
+        "register": "neutral",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_conditions_and_consequences_06",
+      "data": {
+        "lesson_key": "b1-tr-conditions-and-consequences-03",
+        "text": {
+          "tr": "Yetişmezse önce en önemli bölümü göndeririz."
+        },
+        "translations": {
+          "fa": "اگر نرسید اول بخش مهم‌تر را می‌فرستیم."
+        },
+        "intent": "contingency_plan",
+        "concept_refs": [],
+        "cefr": "B1",
+        "topic": "future-plans",
+        "register": "neutral",
+        "status": "validated"
+      }
+    },
+    {
       "kind": "grammar_point",
       "external_id": "g_conditions_and_consequences_core",
       "data": {
@@ -459,7 +497,7 @@
       "data": {
         "lesson_key": "b1-tr-conditions-and-consequences-01",
         "title": "Hava değişirse",
-        "setting": "",
+        "setting": "item",
         "cefr": "B1",
         "topic": "future-plans",
         "characters": [
@@ -506,7 +544,7 @@
       "data": {
         "lesson_key": "b1-tr-conditions-and-consequences-02",
         "title": "Yol planı",
-        "setting": "",
+        "setting": "item",
         "cefr": "B1",
         "topic": "future-plans",
         "characters": [
@@ -537,6 +575,53 @@
             "speaker": "Burak",
             "text": "Tamam, plana göre hareket ederiz.",
             "translation_fa": "باشه، طبق برنامه پیش می‌رویم."
+          }
+        ],
+        "qa": {
+          "character_pair_unique_within_unit": true,
+          "naturalness": "passed",
+          "single_situation": true
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "dialogue",
+      "external_id": "d_conditions_and_consequences_03",
+      "data": {
+        "lesson_key": "b1-tr-conditions-and-consequences-03",
+        "title": "Plan B oluştur",
+        "setting": "item",
+        "cefr": "B1",
+        "topic": "future-plans",
+        "characters": [
+          "Deniz",
+          "Kaan"
+        ],
+        "turns": [
+          {
+            "order": 1,
+            "speaker": "Deniz",
+            "text": "Ya dosyalar zamanında gelmezse?",
+            "translation_fa": "اگر فایل‌ها به‌موقع نرسند چه؟"
+          },
+          {
+            "order": 2,
+            "speaker": "Kaan",
+            "text": "Önce elimizdeki kısmı hazırlarız.",
+            "translation_fa": "اول بخشی را که داریم آماده می‌کنیم."
+          },
+          {
+            "order": 3,
+            "speaker": "Deniz",
+            "text": "Müşteriye ne söyleyelim?",
+            "translation_fa": "به مشتری چه بگوییم؟"
+          },
+          {
+            "order": 4,
+            "speaker": "Kaan",
+            "text": "Gecikme olursa hemen haber veririz ve yeni tarih öneririz.",
+            "translation_fa": "اگر تأخیر شد فوراً خبر می‌دهیم و تاریخ جدید پیشنهاد می‌کنیم."
           }
         ],
         "qa": {
@@ -615,7 +700,7 @@
         "lesson_key": "b1-tr-conditions-and-consequences-01",
         "exercise_type": "speaking",
         "prompt": {
-          "instruction_fa": "عبارت را با صدای بلند و با ریتم طبیعی تکرار کن.",
+          "instruction_fa": "عبارت را با صدای بلند و با ریتم طبیعی بگو.",
           "value": "Erken çıkarsak yetişiriz."
         },
         "answer": {
@@ -639,7 +724,7 @@
         "lesson_key": "b1-tr-conditions-and-consequences-01",
         "exercise_type": "sentence_building",
         "prompt": {
-          "instruction_fa": "کلمه‌ها را لمس کن تا عبارت درست ساخته شود.",
+          "instruction_fa": "بخش‌ها را مرتب کن تا عبارت درست ساخته شود.",
           "tokens": [
             "artarsa",
             "başka",
@@ -770,7 +855,7 @@
         "lesson_key": "b1-tr-conditions-and-consequences-02",
         "exercise_type": "speaking",
         "prompt": {
-          "instruction_fa": "عبارت را با صدای بلند و با ریتم طبیعی تکرار کن.",
+          "instruction_fa": "عبارت را با صدای بلند و با ریتم طبیعی بگو.",
           "value": "Bir aksilik olursa beni ara."
         },
         "answer": {
@@ -794,7 +879,7 @@
         "lesson_key": "b1-tr-conditions-and-consequences-02",
         "exercise_type": "sentence_building",
         "prompt": {
-          "instruction_fa": "کلمه‌ها را لمس کن تا عبارت درست ساخته شود.",
+          "instruction_fa": "بخش‌ها را مرتب کن تا عبارت درست ساخته شود.",
           "tokens": [
             "değişirse",
             "planı",
@@ -851,6 +936,297 @@
           "retry_tip_fa": "به معنی، موقعیت و پسوندهای عبارت ترکی دقت کن و دوباره امتحان کن.",
           "explanation_fa": "مدل طبیعی این درس: Bir aksilik olursa beni ara. — اگر مشکلی پیش آمد به من زنگ بزن.",
           "model_answer": "Bir aksilik olursa beni ara."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_conditions_and_consequences_03_meaning",
+      "data": {
+        "lesson_key": "b1-tr-conditions-and-consequences-03",
+        "exercise_type": "multiple_choice",
+        "prompt": {
+          "instruction_fa": "معنی درست این عبارت ترکی را انتخاب کن.",
+          "value": "Toplantı erken biterse raporu bugün tamamlayabiliriz."
+        },
+        "answer": {
+          "value": "اگر جلسه زود تمام شود می‌توانیم گزارش را امروز تمام کنیم."
+        },
+        "options": [
+          "اگر جلسه زود تمام شود می‌توانیم گزارش را امروز تمام کنیم.",
+          "اگر زود راه بیفتیم می‌رسیم.",
+          "اگر ترافیک زیاد شود مسیر دیگری می‌رویم.",
+          "اگر مشکلی پیش آمد به من زنگ بزن."
+        ],
+        "difficulty": 3,
+        "cefr": "B1",
+        "topic": "future-plans",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت و پسوندهای عبارت ترکی دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: Toplantı erken biterse raporu bugün tamamlayabiliriz. — اگر جلسه زود تمام شود می‌توانیم گزارش را امروز تمام کنیم.",
+          "model_answer": "Toplantı erken biterse raporu bugün tamamlayabiliriz."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_conditions_and_consequences_03_listen",
+      "data": {
+        "lesson_key": "b1-tr-conditions-and-consequences-03",
+        "exercise_type": "listening",
+        "prompt": {
+          "instruction_fa": "گوش کن و عبارتی را که شنیدی انتخاب کن.",
+          "audio_text": "Yetişmezse önce en önemli bölümü göndeririz."
+        },
+        "answer": {
+          "value": "Yetişmezse önce en önemli bölümü göndeririz."
+        },
+        "options": [
+          "Yetişmezse önce en önemli bölümü göndeririz.",
+          "Toplantı erken biterse raporu bugün tamamlayabiliriz.",
+          "Erken çıkarsak yetişiriz.",
+          "Trafik artarsa başka bir yol kullanırız."
+        ],
+        "difficulty": 3,
+        "cefr": "B1",
+        "topic": "future-plans",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت و پسوندهای عبارت ترکی دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: Yetişmezse önce en önemli bölümü göndeririz. — اگر نرسید اول بخش مهم‌تر را می‌فرستیم.",
+          "model_answer": "Yetişmezse önce en önemli bölümü göndeririz.",
+          "transcript_tr": "Yetişmezse önce en önemli bölümü göndeririz."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_conditions_and_consequences_03_speak",
+      "data": {
+        "lesson_key": "b1-tr-conditions-and-consequences-03",
+        "exercise_type": "speaking",
+        "prompt": {
+          "instruction_fa": "عبارت را با صدای بلند و با ریتم طبیعی بگو.",
+          "value": "Toplantı erken biterse raporu bugün tamamlayabiliriz."
+        },
+        "answer": {
+          "expected_text": "Toplantı erken biterse raporu bugün tamamlayabiliriz."
+        },
+        "difficulty": 3,
+        "cefr": "B1",
+        "topic": "future-plans",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت و پسوندهای عبارت ترکی دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: Toplantı erken biterse raporu bugün tamamlayabiliriz. — اگر جلسه زود تمام شود می‌توانیم گزارش را امروز تمام کنیم.",
+          "model_answer": "Toplantı erken biterse raporu bugün tamamlayabiliriz."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_conditions_and_consequences_03_build",
+      "data": {
+        "lesson_key": "b1-tr-conditions-and-consequences-03",
+        "exercise_type": "sentence_building",
+        "prompt": {
+          "instruction_fa": "بخش‌ها را مرتب کن تا عبارت درست ساخته شود.",
+          "tokens": [
+            "önce",
+            "en",
+            "önemli",
+            "bölümü",
+            "göndeririz.",
+            "Yetişmezse"
+          ]
+        },
+        "answer": {
+          "tokens": [
+            "Yetişmezse",
+            "önce",
+            "en",
+            "önemli",
+            "bölümü",
+            "göndeririz."
+          ],
+          "value": "Yetişmezse önce en önemli bölümü göndeririz."
+        },
+        "difficulty": 3,
+        "cefr": "B1",
+        "topic": "future-plans",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت و پسوندهای عبارت ترکی دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: Yetişmezse önce en önemli bölümü göndeririz. — اگر نرسید اول بخش مهم‌تر را می‌فرستیم.",
+          "model_answer": "Yetişmezse önce en önemli bölümü göndeririz."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_conditions_and_consequences_03_dialogue",
+      "data": {
+        "lesson_key": "b1-tr-conditions-and-consequences-03",
+        "exercise_type": "dialogue_comprehension",
+        "prompt": {
+          "instruction_fa": "با توجه به گفت‌وگو، پاسخ مناسب را انتخاب کن.",
+          "source_dialogue_ref": "d_conditions_and_consequences_03",
+          "question_fa": "کدام گزینه با معنی «اگر جلسه زود تمام شود می‌توانیم گزارش را امروز تمام کنیم.» هماهنگ است؟"
+        },
+        "answer": {
+          "value": "Toplantı erken biterse raporu bugün tamamlayabiliriz."
+        },
+        "options": [
+          "Toplantı erken biterse raporu bugün tamamlayabiliriz.",
+          "Erken çıkarsak yetişiriz.",
+          "Trafik artarsa başka bir yol kullanırız.",
+          "Bir aksilik olursa beni ara."
+        ],
+        "difficulty": 3,
+        "cefr": "B1",
+        "topic": "future-plans",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت و پسوندهای عبارت ترکی دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: Toplantı erken biterse raporu bugün tamamlayabiliriz. — اگر جلسه زود تمام شود می‌توانیم گزارش را امروز تمام کنیم.",
+          "model_answer": "Toplantı erken biterse raporu bugün tamamlayabiliriz."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_conditions_and_consequences_03_open_write",
+      "data": {
+        "lesson_key": "b1-tr-conditions-and-consequences-03",
+        "exercise_type": "writing",
+        "prompt": {
+          "instruction_fa": "برای یک برنامهٔ واقعی ۴ تا ۶ جمله بنویس و دو شرط ممکن و پیامد یا راه‌حل هرکدام را بیان کن.",
+          "personalized": true
+        },
+        "answer": {
+          "evaluation_mode": "rubric",
+          "model_text": "Hava iyi olursa dışarıda buluşuruz. Yağmur yağarsa kafeye geçeriz. Kafe dolu olursa yakındaki başka bir yere gideriz.",
+          "required_points_fa": [
+            "دو شرط واقعی",
+            "پیامد یا اقدام برای هر شرط",
+            "ترتیب قابل‌فهم"
+          ]
+        },
+        "assessment": {
+          "exact_match_allowed": false,
+          "criteria": [
+            {
+              "id": "task",
+              "label_fa": "انجام کار",
+              "weight": 50,
+              "descriptors_fa": {
+                "0": "کار انجام نشده است.",
+                "1": "فقط بخشی از کار انجام شده است.",
+                "2": "بیشتر نکات لازم منتقل شده است.",
+                "3": "کار کامل، مرتبط و در سطح B1 انجام شده است."
+              }
+            },
+            {
+              "id": "coherence",
+              "label_fa": "پیوستگی و سازمان‌دهی",
+              "weight": 25,
+              "descriptors_fa": {
+                "0": "پاسخ پراکنده است.",
+                "1": "ارتباط جمله‌ها محدود است.",
+                "2": "جمله‌ها عمدتاً با ترتیب روشن به هم وصل‌اند.",
+                "3": "پاسخ کوتاه اما منسجم و به‌خوبی سازمان‌یافته است."
+              }
+            },
+            {
+              "id": "language",
+              "label_fa": "کنترل زبان",
+              "weight": 25,
+              "descriptors_fa": {
+                "0": "پیام قابل‌فهم نیست.",
+                "1": "خطاها فهم را زیاد مختل می‌کنند.",
+                "2": "با وجود خطا، پیام روشن می‌ماند.",
+                "3": "ساخت‌ها و واژگان آموزش‌داده‌شدهٔ B1 با کنترل کافی استفاده شده‌اند."
+              }
+            }
+          ]
+        },
+        "difficulty": 3,
+        "cefr": "B1",
+        "topic": "future-plans",
+        "feedback": {
+          "explanation_fa": "پاسخ آزاد است؛ مهم انجام کامل کار و قابل‌فهم بودن پیام است.",
+          "model_answer": "Hava iyi olursa dışarıda buluşuruz. Yağmur yağarsa kafeye geçeriz. Kafe dolu olursa yakındaki başka bir yere gideriz.",
+          "retry_tip_fa": "از مدل کمک بگیر، اما اطلاعات و انتخاب‌های خودت را بنویس."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_conditions_and_consequences_03_personal_speak",
+      "data": {
+        "lesson_key": "b1-tr-conditions-and-consequences-03",
+        "exercise_type": "speaking",
+        "prompt": {
+          "instruction_fa": "برای یک موقعیت روزمره یا کاری یک Plan B توضیح بده: اگر مشکل اول رخ دهد چه می‌کنی و اگر ادامه پیدا کند قدم بعد چیست؟",
+          "personalized": true
+        },
+        "answer": {
+          "evaluation_mode": "rubric",
+          "model_text": "Hava iyi olursa dışarıda buluşuruz. Yağmur yağarsa kafeye geçeriz. Kafe dolu olursa yakındaki başka bir yere gideriz.",
+          "required_points_fa": [
+            "دو شرط واقعی",
+            "پیامد یا اقدام برای هر شرط",
+            "ترتیب قابل‌فهم"
+          ]
+        },
+        "assessment": {
+          "exact_match_allowed": false,
+          "criteria": [
+            {
+              "id": "task",
+              "label_fa": "انجام کار",
+              "weight": 50,
+              "descriptors_fa": {
+                "0": "کار انجام نشده است.",
+                "1": "فقط بخشی از کار انجام شده است.",
+                "2": "بیشتر نکات لازم منتقل شده است.",
+                "3": "کار کامل، مرتبط و در سطح B1 انجام شده است."
+              }
+            },
+            {
+              "id": "coherence",
+              "label_fa": "پیوستگی و سازمان‌دهی",
+              "weight": 25,
+              "descriptors_fa": {
+                "0": "پاسخ پراکنده است.",
+                "1": "ارتباط جمله‌ها محدود است.",
+                "2": "جمله‌ها عمدتاً با ترتیب روشن به هم وصل‌اند.",
+                "3": "پاسخ کوتاه اما منسجم و به‌خوبی سازمان‌یافته است."
+              }
+            },
+            {
+              "id": "language",
+              "label_fa": "کنترل زبان",
+              "weight": 25,
+              "descriptors_fa": {
+                "0": "پیام قابل‌فهم نیست.",
+                "1": "خطاها فهم را زیاد مختل می‌کنند.",
+                "2": "با وجود خطا، پیام روشن می‌ماند.",
+                "3": "ساخت‌ها و واژگان آموزش‌داده‌شدهٔ B1 با کنترل کافی استفاده شده‌اند."
+              }
+            }
+          ]
+        },
+        "difficulty": 3,
+        "cefr": "B1",
+        "topic": "future-plans",
+        "feedback": {
+          "explanation_fa": "لازم نیست عین مدل صحبت کنی؛ پیام باید کوتاه، پیوسته و روشن باشد.",
+          "model_answer": "Hava iyi olursa dışarıda buluşuruz. Yağmur yağarsa kafeye geçeriz. Kafe dolu olursa yakındaki başka bir yere gideriz.",
+          "retry_tip_fa": "دو یا سه جملهٔ مرتبط بساز و دلیل یا جزئیات کوتاه اضافه کن."
         },
         "status": "validated"
       }

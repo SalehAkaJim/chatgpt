@@ -7,7 +7,7 @@
   "target_variant": "tr-TR",
   "cefr": "B1",
   "curriculum_unit": "b1-tr-goals-and-effort",
-  "generator": "gpt-5.6-sol:turkish-b1-batch-v1",
+  "generator": "gpt-5.6-sol:turkish-b1-batch-v2",
   "items": [
     {
       "kind": "concept",
@@ -432,6 +432,44 @@
       }
     },
     {
+      "kind": "utterance",
+      "external_id": "u_goals_and_effort_05",
+      "data": {
+        "lesson_key": "b1-tr-goals-and-effort-03",
+        "text": {
+          "tr": "Hedefime yaklaşmak için haftada üç gün düzenli pratik yapıyorum."
+        },
+        "translations": {
+          "fa": "برای نزدیک شدن به هدفم هفته‌ای سه روز منظم تمرین می‌کنم."
+        },
+        "intent": "describe_effort_plan",
+        "concept_refs": [],
+        "cefr": "B1",
+        "topic": "future-plans",
+        "register": "neutral",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_goals_and_effort_06",
+      "data": {
+        "lesson_key": "b1-tr-goals-and-effort-03",
+        "text": {
+          "tr": "Geçen aya göre ilerledim, ama dinleme konusunda daha çok çalışmam gerekiyor."
+        },
+        "translations": {
+          "fa": "نسبت به ماه قبل پیشرفت کرده‌ام، اما در شنیدن باید بیشتر کار کنم."
+        },
+        "intent": "evaluate_progress",
+        "concept_refs": [],
+        "cefr": "B1",
+        "topic": "future-plans",
+        "register": "neutral",
+        "status": "validated"
+      }
+    },
+    {
       "kind": "grammar_point",
       "external_id": "g_goals_and_effort_core",
       "data": {
@@ -462,7 +500,7 @@
       "data": {
         "lesson_key": "b1-tr-goals-and-effort-01",
         "title": "Yeni hedef",
-        "setting": "",
+        "setting": "item",
         "cefr": "B1",
         "topic": "future-plans",
         "characters": [
@@ -509,7 +547,7 @@
       "data": {
         "lesson_key": "b1-tr-goals-and-effort-02",
         "title": "İlerleme",
-        "setting": "",
+        "setting": "item",
         "cefr": "B1",
         "topic": "future-plans",
         "characters": [
@@ -540,6 +578,53 @@
             "speaker": "Kaan",
             "text": "Düzenli çalışmak en çok işe yaradı.",
             "translation_fa": "تمرین منظم بیشتر از همه کمک کرد."
+          }
+        ],
+        "qa": {
+          "character_pair_unique_within_unit": true,
+          "naturalness": "passed",
+          "single_situation": true
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "dialogue",
+      "external_id": "d_goals_and_effort_03",
+      "data": {
+        "lesson_key": "b1-tr-goals-and-effort-03",
+        "title": "İlerlemeyi değerlendir",
+        "setting": "item",
+        "cefr": "B1",
+        "topic": "future-plans",
+        "characters": [
+          "Elif",
+          "Emre"
+        ],
+        "turns": [
+          {
+            "order": 1,
+            "speaker": "Elif",
+            "text": "Sunum hedefin nasıl gidiyor?",
+            "translation_fa": "هدف ارائه‌ات چطور پیش می‌رود؟"
+          },
+          {
+            "order": 2,
+            "speaker": "Emre",
+            "text": "Daha rahat konuşuyorum ama süreyi hâlâ iyi ayarlayamıyorum.",
+            "translation_fa": "راحت‌تر صحبت می‌کنم اما هنوز زمان را خوب تنظیم نمی‌کنم."
+          },
+          {
+            "order": 3,
+            "speaker": "Elif",
+            "text": "Bunun için ne yapacaksın?",
+            "translation_fa": "برای این چه کار می‌کنی؟"
+          },
+          {
+            "order": 4,
+            "speaker": "Emre",
+            "text": "Her prova sonrası süreyi not edip tekrar deneyeceğim.",
+            "translation_fa": "بعد از هر تمرین زمان را یادداشت می‌کنم و دوباره امتحان می‌کنم."
           }
         ],
         "qa": {
@@ -618,7 +703,7 @@
         "lesson_key": "b1-tr-goals-and-effort-01",
         "exercise_type": "speaking",
         "prompt": {
-          "instruction_fa": "عبارت را با صدای بلند و با ریتم طبیعی تکرار کن.",
+          "instruction_fa": "عبارت را با صدای بلند و با ریتم طبیعی بگو.",
           "value": "Daha akıcı konuşabilmek için her gün çalışıyorum."
         },
         "answer": {
@@ -642,7 +727,7 @@
         "lesson_key": "b1-tr-goals-and-effort-01",
         "exercise_type": "sentence_building",
         "prompt": {
-          "instruction_fa": "کلمه‌ها را لمس کن تا عبارت درست ساخته شود.",
+          "instruction_fa": "بخش‌ها را مرتب کن تا عبارت درست ساخته شود.",
           "tokens": [
             "ulaşmak",
             "için",
@@ -775,7 +860,7 @@
         "lesson_key": "b1-tr-goals-and-effort-02",
         "exercise_type": "speaking",
         "prompt": {
-          "instruction_fa": "عبارت را با صدای بلند و با ریتم طبیعی تکرار کن.",
+          "instruction_fa": "عبارت را با صدای بلند و با ریتم طبیعی بگو.",
           "value": "Yavaş ilerliyorum ama geliştiğimi hissediyorum."
         },
         "answer": {
@@ -799,7 +884,7 @@
         "lesson_key": "b1-tr-goals-and-effort-02",
         "exercise_type": "sentence_building",
         "prompt": {
-          "instruction_fa": "کلمه‌ها را لمس کن تا عبارت درست ساخته شود.",
+          "instruction_fa": "بخش‌ها را مرتب کن تا عبارت درست ساخته شود.",
           "tokens": [
             "almak",
             "biraz",
@@ -856,6 +941,311 @@
           "retry_tip_fa": "به معنی، موقعیت و پسوندهای عبارت ترکی دقت کن و دوباره امتحان کن.",
           "explanation_fa": "مدل طبیعی این درس: Yavaş ilerliyorum ama geliştiğimi hissediyorum. — آهسته پیش می‌روم ولی حس می‌کنم بهتر شده‌ام.",
           "model_answer": "Yavaş ilerliyorum ama geliştiğimi hissediyorum."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_goals_and_effort_03_meaning",
+      "data": {
+        "lesson_key": "b1-tr-goals-and-effort-03",
+        "exercise_type": "multiple_choice",
+        "prompt": {
+          "instruction_fa": "معنی درست این عبارت ترکی را انتخاب کن.",
+          "value": "Hedefime yaklaşmak için haftada üç gün düzenli pratik yapıyorum."
+        },
+        "answer": {
+          "value": "برای نزدیک شدن به هدفم هفته‌ای سه روز منظم تمرین می‌کنم."
+        },
+        "options": [
+          "برای نزدیک شدن به هدفم هفته‌ای سه روز منظم تمرین می‌کنم.",
+          "برای اینکه روان‌تر صحبت کنم هر روز تمرین می‌کنم.",
+          "برای رسیدن به هدفم باید منظم‌تر باشم.",
+          "آهسته پیش می‌روم ولی حس می‌کنم بهتر شده‌ام."
+        ],
+        "difficulty": 3,
+        "cefr": "B1",
+        "topic": "future-plans",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت و پسوندهای عبارت ترکی دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: Hedefime yaklaşmak için haftada üç gün düzenli pratik yapıyorum. — برای نزدیک شدن به هدفم هفته‌ای سه روز منظم تمرین می‌کنم.",
+          "model_answer": "Hedefime yaklaşmak için haftada üç gün düzenli pratik yapıyorum."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_goals_and_effort_03_listen",
+      "data": {
+        "lesson_key": "b1-tr-goals-and-effort-03",
+        "exercise_type": "listening",
+        "prompt": {
+          "instruction_fa": "گوش کن و عبارتی را که شنیدی انتخاب کن.",
+          "audio_text": "Geçen aya göre ilerledim, ama dinleme konusunda daha çok çalışmam gerekiyor."
+        },
+        "answer": {
+          "value": "Geçen aya göre ilerledim, ama dinleme konusunda daha çok çalışmam gerekiyor."
+        },
+        "options": [
+          "Geçen aya göre ilerledim, ama dinleme konusunda daha çok çalışmam gerekiyor.",
+          "Hedefime yaklaşmak için haftada üç gün düzenli pratik yapıyorum.",
+          "Daha akıcı konuşabilmek için her gün çalışıyorum.",
+          "Hedefime ulaşmak için daha düzenli olmam gerekiyor."
+        ],
+        "difficulty": 3,
+        "cefr": "B1",
+        "topic": "future-plans",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت و پسوندهای عبارت ترکی دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: Geçen aya göre ilerledim, ama dinleme konusunda daha çok çalışmam gerekiyor. — نسبت به ماه قبل پیشرفت کرده‌ام، اما در شنیدن باید بیشتر کار کنم.",
+          "model_answer": "Geçen aya göre ilerledim, ama dinleme konusunda daha çok çalışmam gerekiyor.",
+          "transcript_tr": "Geçen aya göre ilerledim, ama dinleme konusunda daha çok çalışmam gerekiyor."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_goals_and_effort_03_speak",
+      "data": {
+        "lesson_key": "b1-tr-goals-and-effort-03",
+        "exercise_type": "speaking",
+        "prompt": {
+          "instruction_fa": "عبارت را با صدای بلند و با ریتم طبیعی بگو.",
+          "value": "Hedefime yaklaşmak için haftada üç gün düzenli pratik yapıyorum."
+        },
+        "answer": {
+          "expected_text": "Hedefime yaklaşmak için haftada üç gün düzenli pratik yapıyorum."
+        },
+        "difficulty": 3,
+        "cefr": "B1",
+        "topic": "future-plans",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت و پسوندهای عبارت ترکی دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: Hedefime yaklaşmak için haftada üç gün düzenli pratik yapıyorum. — برای نزدیک شدن به هدفم هفته‌ای سه روز منظم تمرین می‌کنم.",
+          "model_answer": "Hedefime yaklaşmak için haftada üç gün düzenli pratik yapıyorum."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_goals_and_effort_03_build",
+      "data": {
+        "lesson_key": "b1-tr-goals-and-effort-03",
+        "exercise_type": "sentence_building",
+        "prompt": {
+          "instruction_fa": "بخش‌ها را مرتب کن تا عبارت درست ساخته شود.",
+          "tokens": [
+            "aya",
+            "göre",
+            "ilerledim,",
+            "ama",
+            "dinleme",
+            "konusunda",
+            "daha",
+            "çok",
+            "çalışmam",
+            "gerekiyor.",
+            "Geçen"
+          ]
+        },
+        "answer": {
+          "tokens": [
+            "Geçen",
+            "aya",
+            "göre",
+            "ilerledim,",
+            "ama",
+            "dinleme",
+            "konusunda",
+            "daha",
+            "çok",
+            "çalışmam",
+            "gerekiyor."
+          ],
+          "value": "Geçen aya göre ilerledim, ama dinleme konusunda daha çok çalışmam gerekiyor."
+        },
+        "difficulty": 3,
+        "cefr": "B1",
+        "topic": "future-plans",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت و پسوندهای عبارت ترکی دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: Geçen aya göre ilerledim, ama dinleme konusunda daha çok çalışmam gerekiyor. — نسبت به ماه قبل پیشرفت کرده‌ام، اما در شنیدن باید بیشتر کار کنم.",
+          "model_answer": "Geçen aya göre ilerledim, ama dinleme konusunda daha çok çalışmam gerekiyor."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_goals_and_effort_03_dialogue",
+      "data": {
+        "lesson_key": "b1-tr-goals-and-effort-03",
+        "exercise_type": "dialogue_comprehension",
+        "prompt": {
+          "instruction_fa": "با توجه به گفت‌وگو، پاسخ مناسب را انتخاب کن.",
+          "source_dialogue_ref": "d_goals_and_effort_03",
+          "question_fa": "کدام گزینه با معنی «برای نزدیک شدن به هدفم هفته‌ای سه روز منظم تمرین می‌کنم.» هماهنگ است؟"
+        },
+        "answer": {
+          "value": "Hedefime yaklaşmak için haftada üç gün düzenli pratik yapıyorum."
+        },
+        "options": [
+          "Hedefime yaklaşmak için haftada üç gün düzenli pratik yapıyorum.",
+          "Daha akıcı konuşabilmek için her gün çalışıyorum.",
+          "Hedefime ulaşmak için daha düzenli olmam gerekiyor.",
+          "Yavaş ilerliyorum ama geliştiğimi hissediyorum."
+        ],
+        "difficulty": 3,
+        "cefr": "B1",
+        "topic": "future-plans",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت و پسوندهای عبارت ترکی دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: Hedefime yaklaşmak için haftada üç gün düzenli pratik yapıyorum. — برای نزدیک شدن به هدفم هفته‌ای سه روز منظم تمرین می‌کنم.",
+          "model_answer": "Hedefime yaklaşmak için haftada üç gün düzenli pratik yapıyorum."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_goals_and_effort_03_open_write",
+      "data": {
+        "lesson_key": "b1-tr-goals-and-effort-03",
+        "exercise_type": "writing",
+        "prompt": {
+          "instruction_fa": "یک هدف واقعی را در ۵ تا ۶ جمله توضیح بده: هدفت چیست، چه کارهایی انجام می‌دهی، چه پیشرفتی کرده‌ای و قدم بعدی چیست.",
+          "personalized": true
+        },
+        "answer": {
+          "evaluation_mode": "rubric",
+          "model_text": "Hedefim Türkçe daha rahat konuşmak. Bunun için her gün kısa bir podcast dinliyorum. Son haftalarda daha çok kelime anlıyorum. Ama konuşurken hâlâ yavaşım. Bu yüzden haftada iki kez konuşma pratiği yapacağım.",
+          "required_points_fa": [
+            "هدف",
+            "روش یا تلاش",
+            "پیشرفت",
+            "چالش باقی‌مانده",
+            "قدم بعد"
+          ]
+        },
+        "assessment": {
+          "exact_match_allowed": false,
+          "criteria": [
+            {
+              "id": "task",
+              "label_fa": "انجام کار",
+              "weight": 50,
+              "descriptors_fa": {
+                "0": "کار انجام نشده است.",
+                "1": "فقط بخشی از کار انجام شده است.",
+                "2": "بیشتر نکات لازم منتقل شده است.",
+                "3": "کار کامل، مرتبط و در سطح B1 انجام شده است."
+              }
+            },
+            {
+              "id": "coherence",
+              "label_fa": "پیوستگی و سازمان‌دهی",
+              "weight": 25,
+              "descriptors_fa": {
+                "0": "پاسخ پراکنده است.",
+                "1": "ارتباط جمله‌ها محدود است.",
+                "2": "جمله‌ها عمدتاً با ترتیب روشن به هم وصل‌اند.",
+                "3": "پاسخ کوتاه اما منسجم و به‌خوبی سازمان‌یافته است."
+              }
+            },
+            {
+              "id": "language",
+              "label_fa": "کنترل زبان",
+              "weight": 25,
+              "descriptors_fa": {
+                "0": "پیام قابل‌فهم نیست.",
+                "1": "خطاها فهم را زیاد مختل می‌کنند.",
+                "2": "با وجود خطا، پیام روشن می‌ماند.",
+                "3": "ساخت‌ها و واژگان آموزش‌داده‌شدهٔ B1 با کنترل کافی استفاده شده‌اند."
+              }
+            }
+          ]
+        },
+        "difficulty": 3,
+        "cefr": "B1",
+        "topic": "future-plans",
+        "feedback": {
+          "explanation_fa": "پاسخ آزاد است؛ مهم انجام کامل کار و قابل‌فهم بودن پیام است.",
+          "model_answer": "Hedefim Türkçe daha rahat konuşmak. Bunun için her gün kısa bir podcast dinliyorum. Son haftalarda daha çok kelime anlıyorum. Ama konuşurken hâlâ yavaşım. Bu yüzden haftada iki kez konuşma pratiği yapacağım.",
+          "retry_tip_fa": "از مدل کمک بگیر، اما اطلاعات و انتخاب‌های خودت را بنویس."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_goals_and_effort_03_personal_speak",
+      "data": {
+        "lesson_key": "b1-tr-goals-and-effort-03",
+        "exercise_type": "speaking",
+        "prompt": {
+          "instruction_fa": "دربارهٔ یک هدف شخصی/تحصیلی/کاری حدود یک دقیقه صحبت کن و تلاش، پیشرفت و یک مشکل باقی‌مانده را توضیح بده.",
+          "personalized": true
+        },
+        "answer": {
+          "evaluation_mode": "rubric",
+          "model_text": "Hedefim Türkçe daha rahat konuşmak. Bunun için her gün kısa bir podcast dinliyorum. Son haftalarda daha çok kelime anlıyorum. Ama konuşurken hâlâ yavaşım. Bu yüzden haftada iki kez konuşma pratiği yapacağım.",
+          "required_points_fa": [
+            "هدف",
+            "روش یا تلاش",
+            "پیشرفت",
+            "چالش باقی‌مانده",
+            "قدم بعد"
+          ]
+        },
+        "assessment": {
+          "exact_match_allowed": false,
+          "criteria": [
+            {
+              "id": "task",
+              "label_fa": "انجام کار",
+              "weight": 50,
+              "descriptors_fa": {
+                "0": "کار انجام نشده است.",
+                "1": "فقط بخشی از کار انجام شده است.",
+                "2": "بیشتر نکات لازم منتقل شده است.",
+                "3": "کار کامل، مرتبط و در سطح B1 انجام شده است."
+              }
+            },
+            {
+              "id": "coherence",
+              "label_fa": "پیوستگی و سازمان‌دهی",
+              "weight": 25,
+              "descriptors_fa": {
+                "0": "پاسخ پراکنده است.",
+                "1": "ارتباط جمله‌ها محدود است.",
+                "2": "جمله‌ها عمدتاً با ترتیب روشن به هم وصل‌اند.",
+                "3": "پاسخ کوتاه اما منسجم و به‌خوبی سازمان‌یافته است."
+              }
+            },
+            {
+              "id": "language",
+              "label_fa": "کنترل زبان",
+              "weight": 25,
+              "descriptors_fa": {
+                "0": "پیام قابل‌فهم نیست.",
+                "1": "خطاها فهم را زیاد مختل می‌کنند.",
+                "2": "با وجود خطا، پیام روشن می‌ماند.",
+                "3": "ساخت‌ها و واژگان آموزش‌داده‌شدهٔ B1 با کنترل کافی استفاده شده‌اند."
+              }
+            }
+          ]
+        },
+        "difficulty": 3,
+        "cefr": "B1",
+        "topic": "future-plans",
+        "feedback": {
+          "explanation_fa": "لازم نیست عین مدل صحبت کنی؛ پیام باید کوتاه، پیوسته و روشن باشد.",
+          "model_answer": "Hedefim Türkçe daha rahat konuşmak. Bunun için her gün kısa bir podcast dinliyorum. Son haftalarda daha çok kelime anlıyorum. Ama konuşurken hâlâ yavaşım. Bu yüzden haftada iki kez konuşma pratiği yapacağım.",
+          "retry_tip_fa": "دو یا سه جملهٔ مرتبط بساز و دلیل یا جزئیات کوتاه اضافه کن."
         },
         "status": "validated"
       }

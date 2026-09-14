@@ -7,7 +7,7 @@
   "target_variant": "tr-TR",
   "cefr": "B1",
   "curriculum_unit": "b1-tr-problems-and-solutions",
-  "generator": "gpt-5.6-sol:turkish-b1-batch-v1",
+  "generator": "gpt-5.6-sol:turkish-b1-batch-v2",
   "items": [
     {
       "kind": "concept",
@@ -431,6 +431,44 @@
       }
     },
     {
+      "kind": "utterance",
+      "external_id": "u_problems_and_solutions_05",
+      "data": {
+        "lesson_key": "b1-tr-problems-and-solutions-03",
+        "text": {
+          "tr": "İki çözüm de mümkün; önce daha az maliyetli olanı deneyebiliriz."
+        },
+        "translations": {
+          "fa": "هر دو راه‌حل ممکن‌اند؛ اول می‌توانیم گزینه کم‌هزینه‌تر را امتحان کنیم."
+        },
+        "intent": "compare_solutions",
+        "concept_refs": [],
+        "cefr": "B1",
+        "topic": "requests",
+        "register": "neutral",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_problems_and_solutions_06",
+      "data": {
+        "lesson_key": "b1-tr-problems-and-solutions-03",
+        "text": {
+          "tr": "Bu işe yaramazsa ikinci seçeneğe geçeriz."
+        },
+        "translations": {
+          "fa": "اگر این جواب نداد سراغ گزینه دوم می‌رویم."
+        },
+        "intent": "negotiate_fallback",
+        "concept_refs": [],
+        "cefr": "B1",
+        "topic": "requests",
+        "register": "neutral",
+        "status": "validated"
+      }
+    },
+    {
       "kind": "grammar_point",
       "external_id": "g_problems_and_solutions_core",
       "data": {
@@ -461,7 +499,7 @@
       "data": {
         "lesson_key": "b1-tr-problems-and-solutions-01",
         "title": "Rezervasyon sorunu",
-        "setting": "",
+        "setting": "item",
         "cefr": "B1",
         "topic": "requests",
         "characters": [
@@ -508,7 +546,7 @@
       "data": {
         "lesson_key": "b1-tr-problems-and-solutions-02",
         "title": "Plan değişikliği",
-        "setting": "",
+        "setting": "item",
         "cefr": "B1",
         "topic": "requests",
         "characters": [
@@ -539,6 +577,53 @@
             "speaker": "Mert",
             "text": "Gerekirse akşam buluşabiliriz.",
             "translation_fa": "اگر لازم شد عصر همدیگر را ببینیم."
+          }
+        ],
+        "qa": {
+          "character_pair_unique_within_unit": true,
+          "naturalness": "passed",
+          "single_situation": true
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "dialogue",
+      "external_id": "d_problems_and_solutions_03",
+      "data": {
+        "lesson_key": "b1-tr-problems-and-solutions-03",
+        "title": "Çözüm üzerinde anlaş",
+        "setting": "item",
+        "cefr": "B1",
+        "topic": "requests",
+        "characters": [
+          "Deniz",
+          "Zeynep"
+        ],
+        "turns": [
+          {
+            "order": 1,
+            "speaker": "Deniz",
+            "text": "Teslimatı bugün yapamıyoruz. Ne önerirsin?",
+            "translation_fa": "امروز نمی‌توانیم تحویل بدهیم. چه پیشنهاد می‌کنی؟"
+          },
+          {
+            "order": 2,
+            "speaker": "Zeynep",
+            "text": "Müşteriye iki seçenek sunalım: yarın teslimat ya da mağazadan teslim alma.",
+            "translation_fa": "دو گزینه به مشتری بدهیم: تحویل فردا یا تحویل گرفتن از فروشگاه."
+          },
+          {
+            "order": 3,
+            "speaker": "Deniz",
+            "text": "Sence hangisi daha uygun?",
+            "translation_fa": "به‌نظرت کدام مناسب‌تر است؟"
+          },
+          {
+            "order": 4,
+            "speaker": "Zeynep",
+            "text": "Önce müşterinin tercihine göre karar verelim.",
+            "translation_fa": "اول بر اساس ترجیح مشتری تصمیم بگیریم."
           }
         ],
         "qa": {
@@ -617,7 +702,7 @@
         "lesson_key": "b1-tr-problems-and-solutions-01",
         "exercise_type": "speaking",
         "prompt": {
-          "instruction_fa": "عبارت را با صدای بلند و با ریتم طبیعی تکرار کن.",
+          "instruction_fa": "عبارت را با صدای بلند و با ریتم طبیعی بگو.",
           "value": "Bunu başka türlü çözebiliriz."
         },
         "answer": {
@@ -641,7 +726,7 @@
         "lesson_key": "b1-tr-problems-and-solutions-01",
         "exercise_type": "sentence_building",
         "prompt": {
-          "instruction_fa": "کلمه‌ها را لمس کن تا عبارت درست ساخته شود.",
+          "instruction_fa": "بخش‌ها را مرتب کن تا عبارت درست ساخته شود.",
           "tokens": [
             "ikinci",
             "seçeneği",
@@ -768,7 +853,7 @@
         "lesson_key": "b1-tr-problems-and-solutions-02",
         "exercise_type": "speaking",
         "prompt": {
-          "instruction_fa": "عبارت را با صدای بلند و با ریتم طبیعی تکرار کن.",
+          "instruction_fa": "عبارت را با صدای بلند و با ریتم طبیعی بگو.",
           "value": "Bu alternatif ikimiz için de daha uygun."
         },
         "answer": {
@@ -792,7 +877,7 @@
         "lesson_key": "b1-tr-problems-and-solutions-02",
         "exercise_type": "sentence_building",
         "prompt": {
-          "instruction_fa": "کلمه‌ها را لمس کن تا عبارت درست ساخته شود.",
+          "instruction_fa": "بخش‌ها را مرتب کن تا عبارت درست ساخته شود.",
           "tokens": [
             "bir",
             "noktada",
@@ -847,6 +932,299 @@
           "retry_tip_fa": "به معنی، موقعیت و پسوندهای عبارت ترکی دقت کن و دوباره امتحان کن.",
           "explanation_fa": "مدل طبیعی این درس: Bu alternatif ikimiz için de daha uygun. — این گزینه برای هر دوی ما مناسب‌تر است.",
           "model_answer": "Bu alternatif ikimiz için de daha uygun."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_problems_and_solutions_03_meaning",
+      "data": {
+        "lesson_key": "b1-tr-problems-and-solutions-03",
+        "exercise_type": "multiple_choice",
+        "prompt": {
+          "instruction_fa": "معنی درست این عبارت ترکی را انتخاب کن.",
+          "value": "İki çözüm de mümkün; önce daha az maliyetli olanı deneyebiliriz."
+        },
+        "answer": {
+          "value": "هر دو راه‌حل ممکن‌اند؛ اول می‌توانیم گزینه کم‌هزینه‌تر را امتحان کنیم."
+        },
+        "options": [
+          "هر دو راه‌حل ممکن‌اند؛ اول می‌توانیم گزینه کم‌هزینه‌تر را امتحان کنیم.",
+          "می‌توانیم این را به شکل دیگری حل کنیم.",
+          "اگر لازم شد گزینه دوم را امتحان کنیم.",
+          "این گزینه برای هر دوی ما مناسب‌تر است."
+        ],
+        "difficulty": 3,
+        "cefr": "B1",
+        "topic": "requests",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت و پسوندهای عبارت ترکی دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: İki çözüm de mümkün; önce daha az maliyetli olanı deneyebiliriz. — هر دو راه‌حل ممکن‌اند؛ اول می‌توانیم گزینه کم‌هزینه‌تر را امتحان کنیم.",
+          "model_answer": "İki çözüm de mümkün; önce daha az maliyetli olanı deneyebiliriz."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_problems_and_solutions_03_listen",
+      "data": {
+        "lesson_key": "b1-tr-problems-and-solutions-03",
+        "exercise_type": "listening",
+        "prompt": {
+          "instruction_fa": "گوش کن و عبارتی را که شنیدی انتخاب کن.",
+          "audio_text": "Bu işe yaramazsa ikinci seçeneğe geçeriz."
+        },
+        "answer": {
+          "value": "Bu işe yaramazsa ikinci seçeneğe geçeriz."
+        },
+        "options": [
+          "Bu işe yaramazsa ikinci seçeneğe geçeriz.",
+          "İki çözüm de mümkün; önce daha az maliyetli olanı deneyebiliriz.",
+          "Bunu başka türlü çözebiliriz.",
+          "Gerekirse ikinci seçeneği deneyelim."
+        ],
+        "difficulty": 3,
+        "cefr": "B1",
+        "topic": "requests",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت و پسوندهای عبارت ترکی دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: Bu işe yaramazsa ikinci seçeneğe geçeriz. — اگر این جواب نداد سراغ گزینه دوم می‌رویم.",
+          "model_answer": "Bu işe yaramazsa ikinci seçeneğe geçeriz.",
+          "transcript_tr": "Bu işe yaramazsa ikinci seçeneğe geçeriz."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_problems_and_solutions_03_speak",
+      "data": {
+        "lesson_key": "b1-tr-problems-and-solutions-03",
+        "exercise_type": "speaking",
+        "prompt": {
+          "instruction_fa": "عبارت را با صدای بلند و با ریتم طبیعی بگو.",
+          "value": "İki çözüm de mümkün; önce daha az maliyetli olanı deneyebiliriz."
+        },
+        "answer": {
+          "expected_text": "İki çözüm de mümkün; önce daha az maliyetli olanı deneyebiliriz."
+        },
+        "difficulty": 3,
+        "cefr": "B1",
+        "topic": "requests",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت و پسوندهای عبارت ترکی دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: İki çözüm de mümkün; önce daha az maliyetli olanı deneyebiliriz. — هر دو راه‌حل ممکن‌اند؛ اول می‌توانیم گزینه کم‌هزینه‌تر را امتحان کنیم.",
+          "model_answer": "İki çözüm de mümkün; önce daha az maliyetli olanı deneyebiliriz."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_problems_and_solutions_03_build",
+      "data": {
+        "lesson_key": "b1-tr-problems-and-solutions-03",
+        "exercise_type": "sentence_building",
+        "prompt": {
+          "instruction_fa": "بخش‌ها را مرتب کن تا عبارت درست ساخته شود.",
+          "tokens": [
+            "işe",
+            "yaramazsa",
+            "ikinci",
+            "seçeneğe",
+            "geçeriz.",
+            "Bu"
+          ]
+        },
+        "answer": {
+          "tokens": [
+            "Bu",
+            "işe",
+            "yaramazsa",
+            "ikinci",
+            "seçeneğe",
+            "geçeriz."
+          ],
+          "value": "Bu işe yaramazsa ikinci seçeneğe geçeriz."
+        },
+        "difficulty": 3,
+        "cefr": "B1",
+        "topic": "requests",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت و پسوندهای عبارت ترکی دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: Bu işe yaramazsa ikinci seçeneğe geçeriz. — اگر این جواب نداد سراغ گزینه دوم می‌رویم.",
+          "model_answer": "Bu işe yaramazsa ikinci seçeneğe geçeriz."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_problems_and_solutions_03_dialogue",
+      "data": {
+        "lesson_key": "b1-tr-problems-and-solutions-03",
+        "exercise_type": "dialogue_comprehension",
+        "prompt": {
+          "instruction_fa": "با توجه به گفت‌وگو، پاسخ مناسب را انتخاب کن.",
+          "source_dialogue_ref": "d_problems_and_solutions_03",
+          "question_fa": "کدام گزینه با معنی «هر دو راه‌حل ممکن‌اند؛ اول می‌توانیم گزینه کم‌هزینه‌تر را امتحان کنیم.» هماهنگ است؟"
+        },
+        "answer": {
+          "value": "İki çözüm de mümkün; önce daha az maliyetli olanı deneyebiliriz."
+        },
+        "options": [
+          "İki çözüm de mümkün; önce daha az maliyetli olanı deneyebiliriz.",
+          "Bunu başka türlü çözebiliriz.",
+          "Gerekirse ikinci seçeneği deneyelim.",
+          "Bu alternatif ikimiz için de daha uygun."
+        ],
+        "difficulty": 3,
+        "cefr": "B1",
+        "topic": "requests",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت و پسوندهای عبارت ترکی دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: İki çözüm de mümkün; önce daha az maliyetli olanı deneyebiliriz. — هر دو راه‌حل ممکن‌اند؛ اول می‌توانیم گزینه کم‌هزینه‌تر را امتحان کنیم.",
+          "model_answer": "İki çözüm de mümkün; önce daha az maliyetli olanı deneyebiliriz."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_problems_and_solutions_03_open_write",
+      "data": {
+        "lesson_key": "b1-tr-problems-and-solutions-03",
+        "exercise_type": "writing",
+        "prompt": {
+          "instruction_fa": "یک مشکل واقعی یا فرضی را در ۵ تا ۶ جمله توضیح بده، دو راه‌حل پیشنهاد کن، مزیت کوتاه هرکدام را بگو و یکی را انتخاب کن.",
+          "personalized": true
+        },
+        "answer": {
+          "evaluation_mode": "rubric",
+          "model_text": "Toplantı odası dolu. Küçük odada buluşabiliriz ya da toplantıyı çevrim içi yapabiliriz. Küçük oda daha kolay, ama herkes sığmayabilir. Bence çevrim içi yapmak daha uygun.",
+          "required_points_fa": [
+            "تعریف مشکل",
+            "دو راه‌حل",
+            "مقایسهٔ کوتاه",
+            "انتخاب یا توافق"
+          ]
+        },
+        "assessment": {
+          "exact_match_allowed": false,
+          "criteria": [
+            {
+              "id": "task",
+              "label_fa": "انجام کار",
+              "weight": 50,
+              "descriptors_fa": {
+                "0": "کار انجام نشده است.",
+                "1": "فقط بخشی از کار انجام شده است.",
+                "2": "بیشتر نکات لازم منتقل شده است.",
+                "3": "کار کامل، مرتبط و در سطح B1 انجام شده است."
+              }
+            },
+            {
+              "id": "coherence",
+              "label_fa": "پیوستگی و سازمان‌دهی",
+              "weight": 25,
+              "descriptors_fa": {
+                "0": "پاسخ پراکنده است.",
+                "1": "ارتباط جمله‌ها محدود است.",
+                "2": "جمله‌ها عمدتاً با ترتیب روشن به هم وصل‌اند.",
+                "3": "پاسخ کوتاه اما منسجم و به‌خوبی سازمان‌یافته است."
+              }
+            },
+            {
+              "id": "language",
+              "label_fa": "کنترل زبان",
+              "weight": 25,
+              "descriptors_fa": {
+                "0": "پیام قابل‌فهم نیست.",
+                "1": "خطاها فهم را زیاد مختل می‌کنند.",
+                "2": "با وجود خطا، پیام روشن می‌ماند.",
+                "3": "ساخت‌ها و واژگان آموزش‌داده‌شدهٔ B1 با کنترل کافی استفاده شده‌اند."
+              }
+            }
+          ]
+        },
+        "difficulty": 3,
+        "cefr": "B1",
+        "topic": "requests",
+        "feedback": {
+          "explanation_fa": "پاسخ آزاد است؛ مهم انجام کامل کار و قابل‌فهم بودن پیام است.",
+          "model_answer": "Toplantı odası dolu. Küçük odada buluşabiliriz ya da toplantıyı çevrim içi yapabiliriz. Küçük oda daha kolay, ama herkes sığmayabilir. Bence çevrim içi yapmak daha uygun.",
+          "retry_tip_fa": "از مدل کمک بگیر، اما اطلاعات و انتخاب‌های خودت را بنویس."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_problems_and_solutions_03_personal_speak",
+      "data": {
+        "lesson_key": "b1-tr-problems-and-solutions-03",
+        "exercise_type": "speaking",
+        "prompt": {
+          "instruction_fa": "یک مشکل عملی را نقش‌آفرینی کن و با طرف مقابل روی راه‌حل توافق کن؛ دست‌کم یک گزینهٔ جایگزین هم داشته باش.",
+          "personalized": true
+        },
+        "answer": {
+          "evaluation_mode": "rubric",
+          "model_text": "Toplantı odası dolu. Küçük odada buluşabiliriz ya da toplantıyı çevrim içi yapabiliriz. Küçük oda daha kolay, ama herkes sığmayabilir. Bence çevrim içi yapmak daha uygun.",
+          "required_points_fa": [
+            "تعریف مشکل",
+            "دو راه‌حل",
+            "مقایسهٔ کوتاه",
+            "انتخاب یا توافق"
+          ]
+        },
+        "assessment": {
+          "exact_match_allowed": false,
+          "criteria": [
+            {
+              "id": "task",
+              "label_fa": "انجام کار",
+              "weight": 50,
+              "descriptors_fa": {
+                "0": "کار انجام نشده است.",
+                "1": "فقط بخشی از کار انجام شده است.",
+                "2": "بیشتر نکات لازم منتقل شده است.",
+                "3": "کار کامل، مرتبط و در سطح B1 انجام شده است."
+              }
+            },
+            {
+              "id": "coherence",
+              "label_fa": "پیوستگی و سازمان‌دهی",
+              "weight": 25,
+              "descriptors_fa": {
+                "0": "پاسخ پراکنده است.",
+                "1": "ارتباط جمله‌ها محدود است.",
+                "2": "جمله‌ها عمدتاً با ترتیب روشن به هم وصل‌اند.",
+                "3": "پاسخ کوتاه اما منسجم و به‌خوبی سازمان‌یافته است."
+              }
+            },
+            {
+              "id": "language",
+              "label_fa": "کنترل زبان",
+              "weight": 25,
+              "descriptors_fa": {
+                "0": "پیام قابل‌فهم نیست.",
+                "1": "خطاها فهم را زیاد مختل می‌کنند.",
+                "2": "با وجود خطا، پیام روشن می‌ماند.",
+                "3": "ساخت‌ها و واژگان آموزش‌داده‌شدهٔ B1 با کنترل کافی استفاده شده‌اند."
+              }
+            }
+          ]
+        },
+        "difficulty": 3,
+        "cefr": "B1",
+        "topic": "requests",
+        "feedback": {
+          "explanation_fa": "لازم نیست عین مدل صحبت کنی؛ پیام باید کوتاه، پیوسته و روشن باشد.",
+          "model_answer": "Toplantı odası dolu. Küçük odada buluşabiliriz ya da toplantıyı çevrim içi yapabiliriz. Küçük oda daha kolay, ama herkes sığmayabilir. Bence çevrim içi yapmak daha uygun.",
+          "retry_tip_fa": "دو یا سه جملهٔ مرتبط بساز و دلیل یا جزئیات کوتاه اضافه کن."
         },
         "status": "validated"
       }

@@ -7,7 +7,7 @@
   "target_variant": "tr-TR",
   "cefr": "B1",
   "curriculum_unit": "b1-tr-experiences-and-change",
-  "generator": "gpt-5.6-sol:turkish-b1-batch-v1",
+  "generator": "gpt-5.6-sol:turkish-b1-batch-v2",
   "items": [
     {
       "kind": "concept",
@@ -432,6 +432,44 @@
       }
     },
     {
+      "kind": "utterance",
+      "external_id": "u_experiences_and_change_05",
+      "data": {
+        "lesson_key": "b1-tr-experiences-and-change-03",
+        "text": {
+          "tr": "Eskiden topluluk önünde konuşmaktan çekinirdim, ama zamanla daha rahat oldum."
+        },
+        "translations": {
+          "fa": "قبلاً از صحبت جلوی جمع خجالت می‌کشیدم، اما به‌مرور راحت‌تر شدم."
+        },
+        "intent": "reflect_on_change",
+        "concept_refs": [],
+        "cefr": "B1",
+        "topic": "daily-routine",
+        "register": "neutral",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_experiences_and_change_06",
+      "data": {
+        "lesson_key": "b1-tr-experiences-and-change-03",
+        "text": {
+          "tr": "Bu değişimde düzenli pratik yapmanın büyük etkisi oldu."
+        },
+        "translations": {
+          "fa": "تمرین منظم در این تغییر تأثیر زیادی داشت."
+        },
+        "intent": "explain_change_factor",
+        "concept_refs": [],
+        "cefr": "B1",
+        "topic": "daily-routine",
+        "register": "neutral",
+        "status": "validated"
+      }
+    },
+    {
       "kind": "grammar_point",
       "external_id": "g_experiences_and_change_core",
       "data": {
@@ -462,7 +500,7 @@
       "data": {
         "lesson_key": "b1-tr-experiences-and-change-01",
         "title": "Eski alışkanlıklar",
-        "setting": "",
+        "setting": "item",
         "cefr": "B1",
         "topic": "daily-routine",
         "characters": [
@@ -509,7 +547,7 @@
       "data": {
         "lesson_key": "b1-tr-experiences-and-change-02",
         "title": "Fikir değişikliği",
-        "setting": "",
+        "setting": "item",
         "cefr": "B1",
         "topic": "daily-routine",
         "characters": [
@@ -540,6 +578,53 @@
             "speaker": "Kaan",
             "text": "Ben de ilk başta alışamamıştım.",
             "translation_fa": "من هم اولش نتوانسته بودم عادت کنم."
+          }
+        ],
+        "qa": {
+          "character_pair_unique_within_unit": true,
+          "naturalness": "passed",
+          "single_situation": true
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "dialogue",
+      "external_id": "d_experiences_and_change_03",
+      "data": {
+        "lesson_key": "b1-tr-experiences-and-change-03",
+        "title": "Değişimi anlat",
+        "setting": "item",
+        "cefr": "B1",
+        "topic": "daily-routine",
+        "characters": [
+          "Deniz",
+          "Zeynep"
+        ],
+        "turns": [
+          {
+            "order": 1,
+            "speaker": "Deniz",
+            "text": "Son yıllarda sende en çok ne değişti?",
+            "translation_fa": "در سال‌های اخیر چه چیزی بیشتر از همه در تو تغییر کرده؟"
+          },
+          {
+            "order": 2,
+            "speaker": "Zeynep",
+            "text": "Eskiden yeni insanlarla konuşmakta zorlanırdım.",
+            "translation_fa": "قبلاً صحبت با آدم‌های جدید برایم سخت بود."
+          },
+          {
+            "order": 3,
+            "speaker": "Deniz",
+            "text": "Peki ne yardımcı oldu?",
+            "translation_fa": "چه چیزی کمک کرد؟"
+          },
+          {
+            "order": 4,
+            "speaker": "Zeynep",
+            "text": "İşim gereği sık sık konuşunca zamanla alıştım.",
+            "translation_fa": "چون به‌خاطر کارم زیاد صحبت کردم، کم‌کم عادت کردم."
           }
         ],
         "qa": {
@@ -618,7 +703,7 @@
         "lesson_key": "b1-tr-experiences-and-change-01",
         "exercise_type": "speaking",
         "prompt": {
-          "instruction_fa": "عبارت را با صدای بلند و با ریتم طبیعی تکرار کن.",
+          "instruction_fa": "عبارت را با صدای بلند و با ریتم طبیعی بگو.",
           "value": "Eskiden işe arabayla giderdim."
         },
         "answer": {
@@ -642,7 +727,7 @@
         "lesson_key": "b1-tr-experiences-and-change-01",
         "exercise_type": "sentence_building",
         "prompt": {
-          "instruction_fa": "کلمه‌ها را لمس کن تا عبارت درست ساخته شود.",
+          "instruction_fa": "بخش‌ها را مرتب کن تا عبارت درست ساخته شود.",
           "tokens": [
             "çoğu",
             "yere",
@@ -771,7 +856,7 @@
         "lesson_key": "b1-tr-experiences-and-change-02",
         "exercise_type": "speaking",
         "prompt": {
-          "instruction_fa": "عبارت را با صدای بلند و با ریتم طبیعی تکرار کن.",
+          "instruction_fa": "عبارت را با صدای بلند و با ریتم طبیعی بگو.",
           "value": "Zamanla fikrim değişti."
         },
         "answer": {
@@ -795,7 +880,7 @@
         "lesson_key": "b1-tr-experiences-and-change-02",
         "exercise_type": "sentence_building",
         "prompt": {
-          "instruction_fa": "کلمه‌ها را لمس کن تا عبارت درست ساخته شود.",
+          "instruction_fa": "بخش‌ها را مرتب کن تا عبارت درست ساخته شود.",
           "tokens": [
             "alıştığımı",
             "yeni",
@@ -852,6 +937,303 @@
           "retry_tip_fa": "به معنی، موقعیت و پسوندهای عبارت ترکی دقت کن و دوباره امتحان کن.",
           "explanation_fa": "مدل طبیعی این درس: Zamanla fikrim değişti. — به‌مرور نظرم عوض شد.",
           "model_answer": "Zamanla fikrim değişti."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_experiences_and_change_03_meaning",
+      "data": {
+        "lesson_key": "b1-tr-experiences-and-change-03",
+        "exercise_type": "multiple_choice",
+        "prompt": {
+          "instruction_fa": "معنی درست این عبارت ترکی را انتخاب کن.",
+          "value": "Eskiden topluluk önünde konuşmaktan çekinirdim, ama zamanla daha rahat oldum."
+        },
+        "answer": {
+          "value": "قبلاً از صحبت جلوی جمع خجالت می‌کشیدم، اما به‌مرور راحت‌تر شدم."
+        },
+        "options": [
+          "قبلاً از صحبت جلوی جمع خجالت می‌کشیدم، اما به‌مرور راحت‌تر شدم.",
+          "قبلاً با ماشین به محل کار می‌رفتم.",
+          "حالا بیشتر جاها را پیاده می‌روم.",
+          "به‌مرور نظرم عوض شد."
+        ],
+        "difficulty": 3,
+        "cefr": "B1",
+        "topic": "daily-routine",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت و پسوندهای عبارت ترکی دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: Eskiden topluluk önünde konuşmaktan çekinirdim, ama zamanla daha rahat oldum. — قبلاً از صحبت جلوی جمع خجالت می‌کشیدم، اما به‌مرور راحت‌تر شدم.",
+          "model_answer": "Eskiden topluluk önünde konuşmaktan çekinirdim, ama zamanla daha rahat oldum."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_experiences_and_change_03_listen",
+      "data": {
+        "lesson_key": "b1-tr-experiences-and-change-03",
+        "exercise_type": "listening",
+        "prompt": {
+          "instruction_fa": "گوش کن و عبارتی را که شنیدی انتخاب کن.",
+          "audio_text": "Bu değişimde düzenli pratik yapmanın büyük etkisi oldu."
+        },
+        "answer": {
+          "value": "Bu değişimde düzenli pratik yapmanın büyük etkisi oldu."
+        },
+        "options": [
+          "Bu değişimde düzenli pratik yapmanın büyük etkisi oldu.",
+          "Eskiden topluluk önünde konuşmaktan çekinirdim, ama zamanla daha rahat oldum.",
+          "Eskiden işe arabayla giderdim.",
+          "Artık çoğu yere yürüyerek gidiyorum."
+        ],
+        "difficulty": 3,
+        "cefr": "B1",
+        "topic": "daily-routine",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت و پسوندهای عبارت ترکی دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: Bu değişimde düzenli pratik yapmanın büyük etkisi oldu. — تمرین منظم در این تغییر تأثیر زیادی داشت.",
+          "model_answer": "Bu değişimde düzenli pratik yapmanın büyük etkisi oldu.",
+          "transcript_tr": "Bu değişimde düzenli pratik yapmanın büyük etkisi oldu."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_experiences_and_change_03_speak",
+      "data": {
+        "lesson_key": "b1-tr-experiences-and-change-03",
+        "exercise_type": "speaking",
+        "prompt": {
+          "instruction_fa": "عبارت را با صدای بلند و با ریتم طبیعی بگو.",
+          "value": "Eskiden topluluk önünde konuşmaktan çekinirdim, ama zamanla daha rahat oldum."
+        },
+        "answer": {
+          "expected_text": "Eskiden topluluk önünde konuşmaktan çekinirdim, ama zamanla daha rahat oldum."
+        },
+        "difficulty": 3,
+        "cefr": "B1",
+        "topic": "daily-routine",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت و پسوندهای عبارت ترکی دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: Eskiden topluluk önünde konuşmaktan çekinirdim, ama zamanla daha rahat oldum. — قبلاً از صحبت جلوی جمع خجالت می‌کشیدم، اما به‌مرور راحت‌تر شدم.",
+          "model_answer": "Eskiden topluluk önünde konuşmaktan çekinirdim, ama zamanla daha rahat oldum."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_experiences_and_change_03_build",
+      "data": {
+        "lesson_key": "b1-tr-experiences-and-change-03",
+        "exercise_type": "sentence_building",
+        "prompt": {
+          "instruction_fa": "بخش‌ها را مرتب کن تا عبارت درست ساخته شود.",
+          "tokens": [
+            "değişimde",
+            "düzenli",
+            "pratik",
+            "yapmanın",
+            "büyük",
+            "etkisi",
+            "oldu.",
+            "Bu"
+          ]
+        },
+        "answer": {
+          "tokens": [
+            "Bu",
+            "değişimde",
+            "düzenli",
+            "pratik",
+            "yapmanın",
+            "büyük",
+            "etkisi",
+            "oldu."
+          ],
+          "value": "Bu değişimde düzenli pratik yapmanın büyük etkisi oldu."
+        },
+        "difficulty": 3,
+        "cefr": "B1",
+        "topic": "daily-routine",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت و پسوندهای عبارت ترکی دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: Bu değişimde düzenli pratik yapmanın büyük etkisi oldu. — تمرین منظم در این تغییر تأثیر زیادی داشت.",
+          "model_answer": "Bu değişimde düzenli pratik yapmanın büyük etkisi oldu."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_experiences_and_change_03_dialogue",
+      "data": {
+        "lesson_key": "b1-tr-experiences-and-change-03",
+        "exercise_type": "dialogue_comprehension",
+        "prompt": {
+          "instruction_fa": "با توجه به گفت‌وگو، پاسخ مناسب را انتخاب کن.",
+          "source_dialogue_ref": "d_experiences_and_change_03",
+          "question_fa": "کدام گزینه با معنی «قبلاً از صحبت جلوی جمع خجالت می‌کشیدم، اما به‌مرور راحت‌تر شدم.» هماهنگ است؟"
+        },
+        "answer": {
+          "value": "Eskiden topluluk önünde konuşmaktan çekinirdim, ama zamanla daha rahat oldum."
+        },
+        "options": [
+          "Eskiden topluluk önünde konuşmaktan çekinirdim, ama zamanla daha rahat oldum.",
+          "Eskiden işe arabayla giderdim.",
+          "Artık çoğu yere yürüyerek gidiyorum.",
+          "Zamanla fikrim değişti."
+        ],
+        "difficulty": 3,
+        "cefr": "B1",
+        "topic": "daily-routine",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت و پسوندهای عبارت ترکی دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: Eskiden topluluk önünde konuşmaktan çekinirdim, ama zamanla daha rahat oldum. — قبلاً از صحبت جلوی جمع خجالت می‌کشیدم، اما به‌مرور راحت‌تر شدم.",
+          "model_answer": "Eskiden topluluk önünde konuşmaktan çekinirdim, ama zamanla daha rahat oldum."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_experiences_and_change_03_open_write",
+      "data": {
+        "lesson_key": "b1-tr-experiences-and-change-03",
+        "exercise_type": "writing",
+        "prompt": {
+          "instruction_fa": "در ۴ تا ۶ جمله یک عادت یا توانایی گذشته‌ات را با امروز مقایسه کن. بگو قبلاً چه‌طور بود، چه چیزی تغییر کرد و چه عاملی کمک کرد.",
+          "personalized": true
+        },
+        "answer": {
+          "evaluation_mode": "rubric",
+          "model_text": "Eskiden erken kalkmakta zorlanırdım. Yeni işime başladıktan sonra düzenim değişti. Şimdi hafta içi erken kalkıyorum. Zamanla buna alıştım.",
+          "required_points_fa": [
+            "یک عادت یا وضعیت گذشته",
+            "وضعیت فعلی",
+            "یک عامل یا دلیل تغییر",
+            "چند جملهٔ مرتبط"
+          ]
+        },
+        "assessment": {
+          "exact_match_allowed": false,
+          "criteria": [
+            {
+              "id": "task",
+              "label_fa": "انجام کار",
+              "weight": 50,
+              "descriptors_fa": {
+                "0": "کار انجام نشده است.",
+                "1": "فقط بخشی از کار انجام شده است.",
+                "2": "بیشتر نکات لازم منتقل شده است.",
+                "3": "کار کامل، مرتبط و در سطح B1 انجام شده است."
+              }
+            },
+            {
+              "id": "coherence",
+              "label_fa": "پیوستگی و سازمان‌دهی",
+              "weight": 25,
+              "descriptors_fa": {
+                "0": "پاسخ پراکنده است.",
+                "1": "ارتباط جمله‌ها محدود است.",
+                "2": "جمله‌ها عمدتاً با ترتیب روشن به هم وصل‌اند.",
+                "3": "پاسخ کوتاه اما منسجم و به‌خوبی سازمان‌یافته است."
+              }
+            },
+            {
+              "id": "language",
+              "label_fa": "کنترل زبان",
+              "weight": 25,
+              "descriptors_fa": {
+                "0": "پیام قابل‌فهم نیست.",
+                "1": "خطاها فهم را زیاد مختل می‌کنند.",
+                "2": "با وجود خطا، پیام روشن می‌ماند.",
+                "3": "ساخت‌ها و واژگان آموزش‌داده‌شدهٔ B1 با کنترل کافی استفاده شده‌اند."
+              }
+            }
+          ]
+        },
+        "difficulty": 3,
+        "cefr": "B1",
+        "topic": "daily-routine",
+        "feedback": {
+          "explanation_fa": "پاسخ آزاد است؛ مهم انجام کامل کار و قابل‌فهم بودن پیام است.",
+          "model_answer": "Eskiden erken kalkmakta zorlanırdım. Yeni işime başladıktan sonra düzenim değişti. Şimdi hafta içi erken kalkıyorum. Zamanla buna alıştım.",
+          "retry_tip_fa": "از مدل کمک بگیر، اما اطلاعات و انتخاب‌های خودت را بنویس."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_experiences_and_change_03_personal_speak",
+      "data": {
+        "lesson_key": "b1-tr-experiences-and-change-03",
+        "exercise_type": "speaking",
+        "prompt": {
+          "instruction_fa": "حدود یک دقیقه دربارهٔ تغییری واقعی در زندگی یا عادت‌هایت صحبت کن و گذشته، امروز و علت تغییر را به هم وصل کن.",
+          "personalized": true
+        },
+        "answer": {
+          "evaluation_mode": "rubric",
+          "model_text": "Eskiden erken kalkmakta zorlanırdım. Yeni işime başladıktan sonra düzenim değişti. Şimdi hafta içi erken kalkıyorum. Zamanla buna alıştım.",
+          "required_points_fa": [
+            "یک عادت یا وضعیت گذشته",
+            "وضعیت فعلی",
+            "یک عامل یا دلیل تغییر",
+            "چند جملهٔ مرتبط"
+          ]
+        },
+        "assessment": {
+          "exact_match_allowed": false,
+          "criteria": [
+            {
+              "id": "task",
+              "label_fa": "انجام کار",
+              "weight": 50,
+              "descriptors_fa": {
+                "0": "کار انجام نشده است.",
+                "1": "فقط بخشی از کار انجام شده است.",
+                "2": "بیشتر نکات لازم منتقل شده است.",
+                "3": "کار کامل، مرتبط و در سطح B1 انجام شده است."
+              }
+            },
+            {
+              "id": "coherence",
+              "label_fa": "پیوستگی و سازمان‌دهی",
+              "weight": 25,
+              "descriptors_fa": {
+                "0": "پاسخ پراکنده است.",
+                "1": "ارتباط جمله‌ها محدود است.",
+                "2": "جمله‌ها عمدتاً با ترتیب روشن به هم وصل‌اند.",
+                "3": "پاسخ کوتاه اما منسجم و به‌خوبی سازمان‌یافته است."
+              }
+            },
+            {
+              "id": "language",
+              "label_fa": "کنترل زبان",
+              "weight": 25,
+              "descriptors_fa": {
+                "0": "پیام قابل‌فهم نیست.",
+                "1": "خطاها فهم را زیاد مختل می‌کنند.",
+                "2": "با وجود خطا، پیام روشن می‌ماند.",
+                "3": "ساخت‌ها و واژگان آموزش‌داده‌شدهٔ B1 با کنترل کافی استفاده شده‌اند."
+              }
+            }
+          ]
+        },
+        "difficulty": 3,
+        "cefr": "B1",
+        "topic": "daily-routine",
+        "feedback": {
+          "explanation_fa": "لازم نیست عین مدل صحبت کنی؛ پیام باید کوتاه، پیوسته و روشن باشد.",
+          "model_answer": "Eskiden erken kalkmakta zorlanırdım. Yeni işime başladıktan sonra düzenim değişti. Şimdi hafta içi erken kalkıyorum. Zamanla buna alıştım.",
+          "retry_tip_fa": "دو یا سه جملهٔ مرتبط بساز و دلیل یا جزئیات کوتاه اضافه کن."
         },
         "status": "validated"
       }
