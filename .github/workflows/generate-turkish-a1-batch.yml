@@ -60,7 +60,7 @@ jobs:
                       key=(lk,frozenset(chars))
                       assert key not in seen_lesson_pairs, f'duplicate dialogue pair in lesson: {lk} {chars}'
                       seen_lesson_pairs.add(key); ordered.append((lk,chars))
-                      norm=' '.join(re.sub(r'[^\w\s]',' ',t.get('text','').lower(),flags=re.UNICODE).split() for t in item['data'].get('turns',[]))
+                      norm=' '.join(' '.join(re.sub(r'[^\w\s]',' ',t.get('text','').lower(),flags=re.UNICODE).split()) for t in item['data'].get('turns',[]))
                       dialogue_texts.append((lk,norm))
           assert unit_count==30, unit_count
           assert len(lessons)==60, len(lessons)
