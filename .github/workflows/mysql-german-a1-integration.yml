@@ -3,7 +3,7 @@ name: MySQL German Pre-A1 + A1 Integration
 on:
   push:
     branches:
-      - language/german-a1
+      - main
     paths:
       - '.github/german-mysql-validation-trigger'
       - 'database/seed/german-prea1-curriculum.sql'
@@ -85,7 +85,7 @@ jobs:
           prea1=$($DB -Nse "SELECT COUNT(*) FROM curriculum_units cu JOIN courses c ON c.id=cu.course_id JOIN cefr_levels l ON l.id=cu.cefr_level_id WHERE c.slug='fa-de-de' AND l.code='Pre-A1'")
           a1=$($DB -Nse "SELECT COUNT(*) FROM curriculum_units cu JOIN courses c ON c.id=cu.course_id JOIN cefr_levels l ON l.id=cu.cefr_level_id WHERE c.slug='fa-de-de' AND l.code='A1'")
           echo "German Pre-A1 units: $prea1; A1 units: $a1"
-          test "$prea1" = 10
+          test "$prea1" = 13
           test "$a1" = 30
       - name: Validate all German beginner production batches
         run: |
