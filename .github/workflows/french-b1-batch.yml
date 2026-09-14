@@ -1,0 +1,54 @@
+name: Generate French B1 Batch
+on:
+  push:
+    branches: [main]
+    paths: ['.github/french-b1-batch-trigger']
+  workflow_dispatch:
+permissions: {contents: write}
+concurrency: {group: french-b1-content-generation-v1, cancel-in-progress: false}
+jobs:
+  generate-batch:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with: {ref: main, fetch-depth: 0}
+      - uses: actions/setup-python@v5
+        with: {python-version: '3.12'}
+      - run: pip install -r requirements.txt
+      - name: Generate French B1 batch 1
+        run: python scripts/generate_french_b1_batch.py
+      - name: Validate complete French B1 batch
+        run: |
+          set -euo pipefail
+          test "$(find content/production/fr/B1 -maxdepth 1 -name '*.json' | wc -l)" -eq 10
+          for f in content/production/fr/B1/*.json; do python scripts/validate_content.py "$f"; done
+          python scripts/validate_character_cast.py --cast audio/cast/fr-FR.json
+          python database/import/fr/b1.py --dry-run
+      - name: Cumulative educational batch QA
+        run: |
+          python - <<'PY'
+          import collections,json
+          from pathlib import Path
+          counts=collections.Counter(); lessons=set(); ordered=[]; keyed=[]
+          spec=json.loads(Path('content/specs/fr/B1/batch-01.json').read_text())
+          assert len(spec['units'])==10
+          for unit in spec['units']:
+              b=json.loads((Path('content/production/fr/B1')/f"b1-fr-{unit['slug']}-v1.json").read_text()); ds=[]
+              for item in b['items']:
+                  counts[item['kind']]+=1; lk=item.get('data',{}).get('lesson_key')
+                  if lk: lessons.add(lk)
+                  if item['kind']=='dialogue': ds.append(item)
+              for item in sorted(ds,key=lambda x:x['data']['lesson_key']):
+                  pair=tuple(item['data'].get('characters',[])[:2]); ordered.append(pair); keyed.append((item['data']['lesson_key'],pair))
+          assert len(lessons)==20,len(lessons)
+          assert len(set(keyed))==len(keyed)
+          for p,c in zip(ordered,ordered[1:]): assert set(p)!=set(c),f'consecutive dialogue pair repeated: {p}'
+          expected={'concept':60,'lexeme':60,'word_form':60,'grammar_point':10,'utterance':40,'dialogue':20,'exercise':100}
+          for k,v in expected.items(): assert counts[k]==v,(k,counts[k],v)
+          print(json.dumps({'units':10,'lessons':len(lessons),'counts':dict(counts),'dialogue_pairs':ordered},ensure_ascii=False))
+          PY
+      - name: Commit French B1 production
+        run: |
+          git config user.name 'github-actions[bot]'; git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add content/specs/fr/B1/batch-01.json content/production/fr/B1
+          if ! git diff --cached --quiet; then git commit -m 'Generate French B1 batch 1 production content [skip ci]'; git fetch origin main; git rebase origin/main; git push origin HEAD:main; fi
