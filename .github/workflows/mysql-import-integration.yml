@@ -5,6 +5,7 @@ on:
     paths:
       - 'database/**'
       - 'scripts/materialize_level.py'
+      - 'scripts/audit_prea1_cefr_readiness.py'
       - 'content/production/en/Pre-A1/**'
       - 'content/production/en/A1/**'
       - 'content/production/en/A2/**'
@@ -18,6 +19,7 @@ on:
     paths:
       - 'database/**'
       - 'scripts/materialize_level.py'
+      - 'scripts/audit_prea1_cefr_readiness.py'
       - 'content/production/en/Pre-A1/**'
       - 'content/production/en/A1/**'
       - 'content/production/en/A2/**'
@@ -79,22 +81,16 @@ jobs:
           $DB < database/seed/english-c1-curriculum.sql
           $DB < database/seed/english-c2-curriculum.sql
           $DB < database/seed/turkish-prea1-curriculum.sql
-      - name: Verify Turkish course foundation
+      - name: Verify expanded Pre-A1 foundations
         env:
           MYSQL_PWD: rootpass
         run: |
-          mysql -h127.0.0.1 -P3306 -uroot language_learning -e "
-            SELECT l.code, lv.code AS variant_code, c.slug
-            FROM languages l
-            JOIN language_variants lv ON lv.language_id=l.id AND lv.code='tr-TR'
-            JOIN courses c ON c.target_language_id=l.id AND c.target_variant_id=lv.id AND c.slug='fa-tr-tr'
-            WHERE l.code='tr';
-            SELECT COUNT(*) AS turkish_prea1_units
-            FROM curriculum_units cu
-            JOIN courses c ON c.id=cu.course_id AND c.slug='fa-tr-tr'
-            JOIN cefr_levels lvl ON lvl.id=cu.cefr_level_id AND lvl.code='Pre-A1';
-          "
-          test "$(mysql -N -s -h127.0.0.1 -P3306 -uroot language_learning -e "SELECT COUNT(*) FROM curriculum_units cu JOIN courses c ON c.id=cu.course_id AND c.slug='fa-tr-tr' JOIN cefr_levels lvl ON lvl.id=cu.cefr_level_id AND lvl.code='Pre-A1';")" = "10"
+          python scripts/audit_prea1_cefr_readiness.py
+          english=$(mysql -N -s -h127.0.0.1 -P3306 -uroot language_learning -e "SELECT COUNT(*) FROM curriculum_units cu JOIN courses c ON c.id=cu.course_id AND c.slug='fa-en-us' JOIN cefr_levels lvl ON lvl.id=cu.cefr_level_id AND lvl.code='Pre-A1';")
+          turkish=$(mysql -N -s -h127.0.0.1 -P3306 -uroot language_learning -e "SELECT COUNT(*) FROM curriculum_units cu JOIN courses c ON c.id=cu.course_id AND c.slug='fa-tr-tr' JOIN cefr_levels lvl ON lvl.id=cu.cefr_level_id AND lvl.code='Pre-A1';")
+          echo "English Pre-A1 units=$english Turkish Pre-A1 units=$turkish"
+          test "$english" = "17"
+          test "$turkish" = "18"
       - name: Import complete English Pre-A1 through C2
         run: |
           python database/import/en/pre_a1.py --allow-unreviewed
