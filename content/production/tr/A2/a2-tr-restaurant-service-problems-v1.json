@@ -568,14 +568,14 @@
           {
             "order": 2,
             "speaker": "Mert",
-            "text": "Ne sipariş etmiştiniz?",
-            "translation_fa": "چه سفارش داده بودید؟"
+            "text": "Ne sipariş ettiniz?",
+            "translation_fa": "چه سفارش دادید؟"
           },
           {
             "order": 3,
             "speaker": "Elif",
-            "text": "Tavuk istemiştim, bu balık.",
-            "translation_fa": "مرغ خواسته بودم، این ماهی است."
+            "text": "Tavuk istedim, bu balık.",
+            "translation_fa": "مرغ سفارش دادم، این ماهی است."
           },
           {
             "order": 4,
@@ -1100,7 +1100,7 @@
         },
         "answer": {
           "evaluation_mode": "rubric",
-          "model_text": "Affedersiniz, bu sipariş yanlış geldi. Ben tavuk istemiştim. Bunu değiştirebilir misiniz?",
+          "model_text": "Affedersiniz, bu sipariş yanlış geldi. Ben tavuk istedim. Bunu değiştirebilir misiniz?",
           "required_points_fa": [
             "بیان مشکل",
             "جزئیات کافی",
@@ -1139,7 +1139,7 @@
         "topic": "restaurants",
         "feedback": {
           "explanation_fa": "پاسخ آزاد است؛ مهم انجام کامل کار و قابل‌فهم بودن پیام است.",
-          "model_answer": "Affedersiniz, bu sipariş yanlış geldi. Ben tavuk istemiştim. Bunu değiştirebilir misiniz?",
+          "model_answer": "Affedersiniz, bu sipariş yanlış geldi. Ben tavuk istedim. Bunu değiştirebilir misiniz?",
           "retry_tip_fa": "از مدل کمک بگیر، اما اطلاعات و انتخاب‌های خودت را بنویس."
         },
         "status": "validated"
@@ -1157,7 +1157,7 @@
         },
         "answer": {
           "evaluation_mode": "rubric",
-          "model_text": "Affedersiniz, bu sipariş yanlış geldi. Ben tavuk istemiştim. Bunu değiştirebilir misiniz?",
+          "model_text": "Affedersiniz, bu sipariş yanlış geldi. Ben tavuk istedim. Bunu değiştirebilir misiniz?",
           "required_points_fa": [
             "بیان مشکل",
             "جزئیات کافی",
@@ -1196,7 +1196,7 @@
         "topic": "restaurants",
         "feedback": {
           "explanation_fa": "لازم نیست عین مدل صحبت کنی؛ پیام باید کوتاه، پیوسته و روشن باشد.",
-          "model_answer": "Affedersiniz, bu sipariş yanlış geldi. Ben tavuk istemiştim. Bunu değiştirebilir misiniz?",
+          "model_answer": "Affedersiniz, bu sipariş yanlış geldi. Ben tavuk istedim. Bunu değiştirebilir misiniz?",
           "retry_tip_fa": "دو یا سه جملهٔ مرتبط بساز و دلیل یا جزئیات کوتاه اضافه کن."
         },
         "status": "validated"

@@ -25,7 +25,7 @@
         ["buyumek","büyümek","بزرگ شدن","verb",1],
         ["tasinmak","taşınmak","اسباب‌کشی کردن","verb",2],
         ["beri","beri","از ... تا حالا","postposition",2],
-        ["cocukken","çocukken","وقتی بچه بودم","expression",3],
+        ["eskiden","eskiden","قبلاً","adverb",3],
         ["simdi","şimdi","حالا","adverb",3]
       ],
       "utterances": [
@@ -33,14 +33,14 @@
         ["u2","İzmir'de büyüdüm.","در ازمیر بزرگ شدم.","state_background",["buyumek"],1],
         ["u3","Üç yıl önce İstanbul'a taşındım.","سه سال پیش به استانبول نقل مکان کردم.","state_life_change",["tasinmak"],2],
         ["u4","O zamandan beri burada yaşıyorum.","از آن زمان تا حالا اینجا زندگی می‌کنم.","state_duration",["beri"],2],
-        ["u5","Çocukken küçük bir şehirde yaşadım.","وقتی بچه بودم در یک شهر کوچک زندگی کردم.","describe_childhood",["cocukken"],3],
+        ["u5","Eskiden küçük bir şehirde yaşadım.","قبلاً در یک شهر کوچک زندگی کردم.","describe_past_background",["eskiden"],3],
         ["u6","Şimdi iş için İstanbul'dayım.","حالا برای کار در استانبول هستم.","describe_present",["simdi"],3]
       ],
       "grammar": ["-den beri","Use -den beri to connect a starting point in the past to the present.","برای گفتن «از یک زمان تا حالا» از -den beri استفاده می‌کنیم: O zamandan beri burada yaşıyorum.",[["2024'ten beri burada çalışıyorum.","از ۲۰۲۴ تا حالا اینجا کار می‌کنم."],["O zamandan beri görüşmedik.","از آن زمان تا حالا همدیگر را ندیده‌ایم."]]],
       "dialogues": [
-        ["Tanışırken","یک دورهمی",[["Elif","Nerede doğdun?","کجا به دنیا آمدی؟"],["Mert","Ankara'da doğdum.","در آنکارا به دنیا آمدم."],["Elif","Orada mı büyüdün?","همان‌جا بزرگ شدی؟"],["Mert","Hayır, İzmir'de büyüdüm.","نه، در ازمیر بزرگ شدم."]],1],
+        ["Tanışma","یک دورهمی",[["Elif","Nerede doğdun?","کجا به دنیا آمدی؟"],["Mert","Ankara'da doğdum.","در آنکارا به دنیا آمدم."],["Elif","Orada mı büyüdün?","همان‌جا بزرگ شدی؟"],["Mert","Hayır, İzmir'de büyüdüm.","نه، در ازمیر بزرگ شدم."]],1],
         ["Yeni şehir","محل کار",[["Selin","İstanbul'a ne zaman taşındın?","کی به استانبول نقل مکان کردی؟"],["Kaan","Üç yıl önce.","سه سال پیش."],["Selin","O zamandan beri burada mı yaşıyorsun?","از آن زمان اینجا زندگی می‌کنی؟"],["Kaan","Evet, burada yaşıyorum.","بله، اینجا زندگی می‌کنم."]],2],
-        ["Kısa hikâye","کافه",[["Deniz","Çocukken nerede yaşadın?","وقتی بچه بودی کجا زندگی کردی؟"],["Zeynep","Küçük bir şehirde yaşadım.","در یک شهر کوچک زندگی کردم."],["Deniz","Şimdi neden İstanbul'dasın?","حالا چرا در استانبولی؟"],["Zeynep","İş için buradayım.","برای کار اینجا هستم."]],3]
+        ["Kısa hikâye","کافه",[["Deniz","Eskiden nerede yaşadın?","قبلاً کجا زندگی کردی؟"],["Zeynep","Küçük bir şehirde yaşadım.","در یک شهر کوچک زندگی کردم."],["Deniz","Şimdi neden İstanbul'dasın?","حالا چرا در استانبولی؟"],["Zeynep","İş için buradayım.","برای کار اینجا هستم."]],3]
       ],
       "production": {
         "lesson": 3,
@@ -224,14 +224,14 @@
       "grammar": ["Sorun + kibar çözüm isteği","State the problem briefly, then use -ebilir misiniz? to request a practical solution.","اول مشکل را کوتاه و روشن بگو، بعد با -ebilir misiniz? راه‌حل بخواه: Bu yanlış geldi. Değiştirebilir misiniz?",[["Çorba soğuk geldi. Değiştirebilir misiniz?","سوپ سرد آمده. می‌توانید عوضش کنید؟"],["Bir su eksik. Getirebilir misiniz?","یک آب کم است. می‌توانید بیاورید؟"]]],
       "dialogues": [
         ["Geciken sipariş","رستوران",[["Deniz","Affedersiniz, siparişim henüz gelmedi.","ببخشید، سفارشم هنوز نرسیده."],["Emre","Hemen kontrol edeyim.","الان بررسی می‌کنم."],["Deniz","Teşekkür ederim.","ممنونم."],["Emre","Birkaç dakika içinde gelecek.","تا چند دقیقه دیگر می‌آید."]],1],
-        ["Yanlış sipariş","رستوران",[["Elif","Affedersiniz, bu sipariş yanlış geldi.","ببخشید، این سفارش اشتباه آمده."],["Mert","Ne sipariş etmiştiniz?","چه سفارش داده بودید؟"],["Elif","Tavuk istemiştim, bu balık.","مرغ خواسته بودم، این ماهی است."],["Mert","Haklısınız, hemen düzeltiyorum.","حق با شماست، الان اصلاح می‌کنم."]],2],
+        ["Yanlış sipariş","رستوران",[["Elif","Affedersiniz, bu sipariş yanlış geldi.","ببخشید، این سفارش اشتباه آمده."],["Mert","Ne sipariş ettiniz?","چه سفارش دادید؟"],["Elif","Tavuk istedim, bu balık.","مرغ سفارش دادم، این ماهی است."],["Mert","Haklısınız, hemen düzeltiyorum.","حق با شماست، الان اصلاح می‌کنم."]],2],
         ["Çözüm istemek","کافه",[["Selin","Bir içecek eksik.","یک نوشیدنی کم است."],["Kaan","Özür dilerim.","عذر می‌خواهم."],["Selin","Getirebilir misiniz?","می‌توانید بیاورید؟"],["Kaan","Tabii, hemen getiriyorum.","حتماً، الان می‌آورم."]],3]
       ],
       "production": {
         "lesson": 3,
         "writing_prompt_fa": "یک پیام کوتاه یا دیالوگ ۳ تا ۴ جمله‌ای بنویس که در آن یک مشکل سادهٔ رستوران را توضیح بدهی و مؤدبانه راه‌حل بخواهی.",
         "speaking_prompt_fa": "فرض کن سفارش تو اشتباه یا ناقص آمده. مشکل را روشن بگو و یک درخواست مؤدبانه برای حلش مطرح کن.",
-        "model_text": "Affedersiniz, bu sipariş yanlış geldi. Ben tavuk istemiştim. Bunu değiştirebilir misiniz?",
+        "model_text": "Affedersiniz, bu sipariş yanlış geldi. Ben tavuk istedim. Bunu değiştirebilir misiniz?",
         "required_points_fa": ["بیان مشکل", "جزئیات کافی", "درخواست مؤدبانهٔ راه‌حل"]
       }
     }

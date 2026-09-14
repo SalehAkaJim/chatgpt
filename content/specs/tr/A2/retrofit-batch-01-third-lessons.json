@@ -92,16 +92,16 @@
       "slug": "health-and-advice",
       "utterances": [
         ["u5", "İki gündür boğazım ağrıyor ve kendimi yorgun hissediyorum.", "دو روز است گلویم درد می‌کند و احساس خستگی دارم.", "describe_symptoms_with_duration", [], 3],
-        ["u6", "Bence bugün dinlenmelisin; düzelmezse doktora gidebilirsin.", "به نظرم امروز باید استراحت کنی؛ اگر بهتر نشد می‌توانی پیش پزشک بروی.", "give_conditional_health_advice", [], 3]
+        ["u6", "Bence bugün dinlenmelisin. Sonra doktora gidebilirsin.", "به نظرم امروز باید استراحت کنی. بعد می‌توانی پیش پزشک بروی.", "give_simple_health_advice", [], 3]
       ],
       "dialogues": [
-        ["Belirtiyi anlat, öneri al", "دو نفر دربارهٔ یک مشکل سادهٔ سلامتی صحبت می‌کنند", [["Elif", "İyi görünmüyorsun, ne oldu?", "خوب به نظر نمی‌رسی، چه شده؟"], ["Kaan", "İki gündür boğazım ağrıyor.", "دو روز است گلویم درد می‌کند."], ["Elif", "Bugün dinlenmelisin ve bol su içmelisin.", "امروز باید استراحت کنی و آب زیاد بنوشی."], ["Kaan", "Haklısın, düzelmezse doktora giderim.", "درست می‌گویی، اگر بهتر نشد پیش پزشک می‌روم."]], 3]
+        ["Belirtiyi anlat, öneri al", "دو نفر دربارهٔ یک مشکل سادهٔ سلامتی صحبت می‌کنند", [["Elif", "İyi görünmüyorsun, ne oldu?", "خوب به نظر نمی‌رسی، چه شده؟"], ["Kaan", "İki gündür boğazım ağrıyor.", "دو روز است گلویم درد می‌کند."], ["Elif", "Bugün dinlenmelisin ve bol su içmelisin.", "امروز باید استراحت کنی و آب زیاد بنوشی."], ["Kaan", "Haklısın. Bugün dinleneceğim. Sonra doktora gidebilirim.", "درست می‌گویی. امروز استراحت می‌کنم. بعد می‌توانم پیش پزشک بروم."]], 3]
       ],
       "production": {
         "lesson": 3,
         "writing_prompt_fa": "یک پیام ۳ تا ۴ جمله‌ای بنویس: یک مشکل سادهٔ سلامتی و مدت آن را توضیح بده، سپس یک توصیهٔ مناسب بنویس.",
         "speaking_prompt_fa": "نقش بیمار یا دوست را بگیر: علائم ساده را توضیح بده و دو توصیهٔ عملی و سطح A2 ارائه کن.",
-        "model_text": "İki gündür başım ağrıyor ve biraz yorgunum. Bugün dinlenmeliyim. Çok su içmeliyim. Düzelmezsem doktora gidebilirim.",
+        "model_text": "İki gündür başım ağrıyor ve biraz yorgunum. Bugün dinlenmeliyim. Çok su içmeliyim. Sonra doktora gidebilirim.",
         "required_points_fa": ["حداقل یک علامت", "مدت یا زمان", "حداقل یک توصیهٔ عملی"]
       }
     },
@@ -118,7 +118,7 @@
         "lesson": 3,
         "writing_prompt_fa": "یک پیام کوتاه به هتل بنویس: مشکل اتاق یا رزرو را روشن توضیح بده و یک راه‌حل مشخص و مؤدبانه درخواست کن.",
         "speaking_prompt_fa": "یک گفت‌وگوی پذیرش هتل را نقش‌آفرینی کن: مشکل را بگو، راه‌حل بخواه و دربارهٔ گزینهٔ پیشنهادی به توافق برس.",
-        "model_text": "Merhaba, odam çok gürültülü. Mümkünse daha sessiz bir oda istiyorum. Başka bir oda varsa değiştirebilir miyiz?",
+        "model_text": "Merhaba, odam çok gürültülü. Mümkünse daha sessiz bir oda istiyorum. Başka bir oda rica ediyorum. Odayı değiştirebilir miyiz?",
         "required_points_fa": ["شرح روشن مشکل", "درخواست مؤدبانه", "راه‌حل مشخص"]
       }
     },
@@ -169,7 +169,7 @@
         "lesson": 3,
         "writing_prompt_fa": "برای یک روز در شهر یک برنامهٔ کوتاه ۴ تا ۵ جمله‌ای بنویس. دو فعالیت را ترتیب بده، یک تغییر یا مشکل را توضیح بده و برنامه را با یک انتخاب یا درخواست عملی اصلاح کن.",
         "speaking_prompt_fa": "یک روز شهری را در حدود ۴۵ ثانیه برنامه‌ریزی و توضیح بده. ترتیب کارها، یک دلیل، یک ترجیح و واکنش به یک تغییر برنامه را در صحبتت بیاور.",
-        "model_text": "Sabah müzeye gideceğiz. Sonra merkezde arkadaşımızla buluşacağız. Müze kapalı olursa sahile gidebiliriz. Akşam daha yakın bir restoranı tercih ederim çünkü çok yürümek istemiyorum.",
+        "model_text": "Sabah müzeye gideceğiz. Sonra merkezde arkadaşımızla buluşacağız. Müze bugün kapalı. Bu yüzden sahile gidebiliriz. Akşam daha yakın bir restoranı tercih ederim çünkü çok yürümek istemiyorum.",
         "required_points_fa": ["ترتیب حداقل دو فعالیت", "یک دلیل یا علت", "یک تغییر/مشکل و راه‌حل", "یک انتخاب یا ترجیح"]
       }
     }

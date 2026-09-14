@@ -455,12 +455,12 @@
       "data": {
         "lesson_key": "a2-tr-health-and-advice-03",
         "text": {
-          "tr": "Bence bugün dinlenmelisin; düzelmezse doktora gidebilirsin."
+          "tr": "Bence bugün dinlenmelisin. Sonra doktora gidebilirsin."
         },
         "translations": {
-          "fa": "به نظرم امروز باید استراحت کنی؛ اگر بهتر نشد می‌توانی پیش پزشک بروی."
+          "fa": "به نظرم امروز باید استراحت کنی. بعد می‌توانی پیش پزشک بروی."
         },
-        "intent": "give_conditional_health_advice",
+        "intent": "give_simple_health_advice",
         "concept_refs": [],
         "cefr": "A2",
         "topic": "health",
@@ -622,8 +622,8 @@
           {
             "order": 4,
             "speaker": "Kaan",
-            "text": "Haklısın, düzelmezse doktora giderim.",
-            "translation_fa": "درست می‌گویی، اگر بهتر نشد پیش پزشک می‌روم."
+            "text": "Haklısın. Bugün dinleneceğim. Sonra doktora gidebilirim.",
+            "translation_fa": "درست می‌گویی. امروز استراحت می‌کنم. بعد می‌توانم پیش پزشک بروم."
           }
         ],
         "qa": {
@@ -970,13 +970,13 @@
         "exercise_type": "listening",
         "prompt": {
           "instruction_fa": "گوش کن و عبارتی را که شنیدی انتخاب کن.",
-          "audio_text": "Bence bugün dinlenmelisin; düzelmezse doktora gidebilirsin."
+          "audio_text": "Bence bugün dinlenmelisin. Sonra doktora gidebilirsin."
         },
         "answer": {
-          "value": "Bence bugün dinlenmelisin; düzelmezse doktora gidebilirsin."
+          "value": "Bence bugün dinlenmelisin. Sonra doktora gidebilirsin."
         },
         "options": [
-          "Bence bugün dinlenmelisin; düzelmezse doktora gidebilirsin.",
+          "Bence bugün dinlenmelisin. Sonra doktora gidebilirsin.",
           "İki gündür boğazım ağrıyor ve kendimi yorgun hissediyorum.",
           "Başım ağrıyor.",
           "Biraz dinlenmelisin."
@@ -986,9 +986,9 @@
         "topic": "health",
         "feedback": {
           "retry_tip_fa": "به معنی، موقعیت و پسوندهای عبارت ترکی دقت کن و دوباره امتحان کن.",
-          "explanation_fa": "مدل طبیعی این درس: Bence bugün dinlenmelisin; düzelmezse doktora gidebilirsin. — به نظرم امروز باید استراحت کنی؛ اگر بهتر نشد می‌توانی پیش پزشک بروی.",
-          "model_answer": "Bence bugün dinlenmelisin; düzelmezse doktora gidebilirsin.",
-          "transcript_tr": "Bence bugün dinlenmelisin; düzelmezse doktora gidebilirsin."
+          "explanation_fa": "مدل طبیعی این درس: Bence bugün dinlenmelisin. Sonra doktora gidebilirsin. — به نظرم امروز باید استراحت کنی. بعد می‌توانی پیش پزشک بروی.",
+          "model_answer": "Bence bugün dinlenmelisin. Sonra doktora gidebilirsin.",
+          "transcript_tr": "Bence bugün dinlenmelisin. Sonra doktora gidebilirsin."
         },
         "status": "validated"
       }
@@ -1027,8 +1027,8 @@
           "instruction_fa": "بخش‌ها را مرتب کن تا عبارت درست ساخته شود.",
           "tokens": [
             "bugün",
-            "dinlenmelisin;",
-            "düzelmezse",
+            "dinlenmelisin.",
+            "Sonra",
             "doktora",
             "gidebilirsin.",
             "Bence"
@@ -1038,20 +1038,20 @@
           "tokens": [
             "Bence",
             "bugün",
-            "dinlenmelisin;",
-            "düzelmezse",
+            "dinlenmelisin.",
+            "Sonra",
             "doktora",
             "gidebilirsin."
           ],
-          "value": "Bence bugün dinlenmelisin; düzelmezse doktora gidebilirsin."
+          "value": "Bence bugün dinlenmelisin. Sonra doktora gidebilirsin."
         },
         "difficulty": 2,
         "cefr": "A2",
         "topic": "health",
         "feedback": {
           "retry_tip_fa": "به معنی، موقعیت و پسوندهای عبارت ترکی دقت کن و دوباره امتحان کن.",
-          "explanation_fa": "مدل طبیعی این درس: Bence bugün dinlenmelisin; düzelmezse doktora gidebilirsin. — به نظرم امروز باید استراحت کنی؛ اگر بهتر نشد می‌توانی پیش پزشک بروی.",
-          "model_answer": "Bence bugün dinlenmelisin; düzelmezse doktora gidebilirsin."
+          "explanation_fa": "مدل طبیعی این درس: Bence bugün dinlenmelisin. Sonra doktora gidebilirsin. — به نظرم امروز باید استراحت کنی. بعد می‌توانی پیش پزشک بروی.",
+          "model_answer": "Bence bugün dinlenmelisin. Sonra doktora gidebilirsin."
         },
         "status": "validated"
       }
@@ -1099,7 +1099,7 @@
         },
         "answer": {
           "evaluation_mode": "rubric",
-          "model_text": "İki gündür başım ağrıyor ve biraz yorgunum. Bugün dinlenmeliyim. Çok su içmeliyim. Düzelmezsem doktora gidebilirim.",
+          "model_text": "İki gündür başım ağrıyor ve biraz yorgunum. Bugün dinlenmeliyim. Çok su içmeliyim. Sonra doktora gidebilirim.",
           "required_points_fa": [
             "حداقل یک علامت",
             "مدت یا زمان",
@@ -1138,7 +1138,7 @@
         "topic": "health",
         "feedback": {
           "explanation_fa": "پاسخ آزاد است؛ مهم انجام کامل کار و قابل‌فهم بودن پیام است.",
-          "model_answer": "İki gündür başım ağrıyor ve biraz yorgunum. Bugün dinlenmeliyim. Çok su içmeliyim. Düzelmezsem doktora gidebilirim.",
+          "model_answer": "İki gündür başım ağrıyor ve biraz yorgunum. Bugün dinlenmeliyim. Çok su içmeliyim. Sonra doktora gidebilirim.",
           "retry_tip_fa": "از مدل کمک بگیر، اما اطلاعات و انتخاب‌های خودت را بنویس."
         },
         "status": "validated"
@@ -1156,7 +1156,7 @@
         },
         "answer": {
           "evaluation_mode": "rubric",
-          "model_text": "İki gündür başım ağrıyor ve biraz yorgunum. Bugün dinlenmeliyim. Çok su içmeliyim. Düzelmezsem doktora gidebilirim.",
+          "model_text": "İki gündür başım ağrıyor ve biraz yorgunum. Bugün dinlenmeliyim. Çok su içmeliyim. Sonra doktora gidebilirim.",
           "required_points_fa": [
             "حداقل یک علامت",
             "مدت یا زمان",
@@ -1195,7 +1195,7 @@
         "topic": "health",
         "feedback": {
           "explanation_fa": "لازم نیست عین مدل صحبت کنی؛ پیام باید کوتاه، پیوسته و روشن باشد.",
-          "model_answer": "İki gündür başım ağrıyor ve biraz yorgunum. Bugün dinlenmeliyim. Çok su içmeliyim. Düzelmezsem doktora gidebilirim.",
+          "model_answer": "İki gündür başım ağrıyor ve biraz yorgunum. Bugün dinlenmeliyim. Çok su içmeliyim. Sonra doktora gidebilirim.",
           "retry_tip_fa": "دو یا سه جملهٔ مرتبط بساز و دلیل یا جزئیات کوتاه اضافه کن."
         },
         "status": "validated"

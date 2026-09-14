@@ -237,15 +237,15 @@
       "kind": "concept",
       "external_id": "c_personal_background_05",
       "data": {
-        "slug": "tr_a2_personal_background_cocukken",
+        "slug": "tr_a2_personal_background_eskiden",
         "lesson_key": "a2-tr-personal-background-03",
         "concept_type": "lexical",
-        "part_of_speech": "expression",
+        "part_of_speech": "adverb",
         "forms": {
-          "tr": "çocukken"
+          "tr": "eskiden"
         },
         "translations": {
-          "fa": "وقتی بچه بودم"
+          "fa": "قبلاً"
         },
         "cefr": "A2",
         "topic": "introductions",
@@ -262,13 +262,13 @@
       "external_id": "lx_personal_background_05",
       "data": {
         "lesson_key": "a2-tr-personal-background-03",
-        "lemma": "çocukken",
-        "display_lemma": "çocukken",
+        "lemma": "eskiden",
+        "display_lemma": "eskiden",
         "language": "tr",
         "language_variant": "tr-TR",
-        "part_of_speech": "expression",
+        "part_of_speech": "adverb",
         "concept_refs": [
-          "tr_a2_personal_background_cocukken"
+          "tr_a2_personal_background_eskiden"
         ],
         "cefr": "A2",
         "status": "validated"
@@ -280,8 +280,8 @@
       "data": {
         "lesson_key": "a2-tr-personal-background-03",
         "lexeme_ref": "lx_personal_background_05",
-        "surface_form": "çocukken",
-        "display_form": "çocukken",
+        "surface_form": "eskiden",
+        "display_form": "eskiden",
         "grammatical_features": {},
         "is_lemma": true,
         "is_preferred": true,
@@ -435,14 +435,14 @@
       "data": {
         "lesson_key": "a2-tr-personal-background-03",
         "text": {
-          "tr": "Çocukken küçük bir şehirde yaşadım."
+          "tr": "Eskiden küçük bir şehirde yaşadım."
         },
         "translations": {
-          "fa": "وقتی بچه بودم در یک شهر کوچک زندگی کردم."
+          "fa": "قبلاً در یک شهر کوچک زندگی کردم."
         },
-        "intent": "describe_childhood",
+        "intent": "describe_past_background",
         "concept_refs": [
-          "tr_a2_personal_background_cocukken"
+          "tr_a2_personal_background_eskiden"
         ],
         "cefr": "A2",
         "topic": "introductions",
@@ -501,7 +501,7 @@
       "external_id": "d_personal_background_01",
       "data": {
         "lesson_key": "a2-tr-personal-background-01",
-        "title": "Tanışırken",
+        "title": "Tanışma",
         "setting": "item",
         "cefr": "A2",
         "topic": "introductions",
@@ -607,8 +607,8 @@
           {
             "order": 1,
             "speaker": "Deniz",
-            "text": "Çocukken nerede yaşadın?",
-            "translation_fa": "وقتی بچه بودی کجا زندگی کردی؟"
+            "text": "Eskiden nerede yaşadın?",
+            "translation_fa": "قبلاً کجا زندگی کردی؟"
           },
           {
             "order": 2,
@@ -945,13 +945,13 @@
         "exercise_type": "multiple_choice",
         "prompt": {
           "instruction_fa": "معنی درست این عبارت ترکی را انتخاب کن.",
-          "value": "Çocukken küçük bir şehirde yaşadım."
+          "value": "Eskiden küçük bir şehirde yaşadım."
         },
         "answer": {
-          "value": "وقتی بچه بودم در یک شهر کوچک زندگی کردم."
+          "value": "قبلاً در یک شهر کوچک زندگی کردم."
         },
         "options": [
-          "وقتی بچه بودم در یک شهر کوچک زندگی کردم.",
+          "قبلاً در یک شهر کوچک زندگی کردم.",
           "در آنکارا به دنیا آمدم.",
           "در ازمیر بزرگ شدم.",
           "سه سال پیش به استانبول نقل مکان کردم."
@@ -961,8 +961,8 @@
         "topic": "introductions",
         "feedback": {
           "retry_tip_fa": "به معنی، موقعیت و پسوندهای عبارت ترکی دقت کن و دوباره امتحان کن.",
-          "explanation_fa": "مدل طبیعی این درس: Çocukken küçük bir şehirde yaşadım. — وقتی بچه بودم در یک شهر کوچک زندگی کردم.",
-          "model_answer": "Çocukken küçük bir şehirde yaşadım."
+          "explanation_fa": "مدل طبیعی این درس: Eskiden küçük bir şehirde yaşadım. — قبلاً در یک شهر کوچک زندگی کردم.",
+          "model_answer": "Eskiden küçük bir şehirde yaşadım."
         },
         "status": "validated"
       }
@@ -982,7 +982,7 @@
         },
         "options": [
           "Şimdi iş için İstanbul'dayım.",
-          "Çocukken küçük bir şehirde yaşadım.",
+          "Eskiden küçük bir şehirde yaşadım.",
           "Ankara'da doğdum.",
           "İzmir'de büyüdüm."
         ],
@@ -1006,18 +1006,18 @@
         "exercise_type": "speaking",
         "prompt": {
           "instruction_fa": "عبارت را با صدای بلند و با ریتم طبیعی بگو.",
-          "value": "Çocukken küçük bir şehirde yaşadım."
+          "value": "Eskiden küçük bir şehirde yaşadım."
         },
         "answer": {
-          "expected_text": "Çocukken küçük bir şehirde yaşadım."
+          "expected_text": "Eskiden küçük bir şehirde yaşadım."
         },
         "difficulty": 2,
         "cefr": "A2",
         "topic": "introductions",
         "feedback": {
           "retry_tip_fa": "به معنی، موقعیت و پسوندهای عبارت ترکی دقت کن و دوباره امتحان کن.",
-          "explanation_fa": "مدل طبیعی این درس: Çocukken küçük bir şehirde yaşadım. — وقتی بچه بودم در یک شهر کوچک زندگی کردم.",
-          "model_answer": "Çocukken küçük bir şehirde yaşadım."
+          "explanation_fa": "مدل طبیعی این درس: Eskiden küçük bir şehirde yaşadım. — قبلاً در یک شهر کوچک زندگی کردم.",
+          "model_answer": "Eskiden küçük bir şehirde yaşadım."
         },
         "status": "validated"
       }
@@ -1066,13 +1066,13 @@
         "prompt": {
           "instruction_fa": "با توجه به گفت‌وگو، پاسخ مناسب را انتخاب کن.",
           "source_dialogue_ref": "d_personal_background_03",
-          "question_fa": "کدام گزینه با معنی «وقتی بچه بودم در یک شهر کوچک زندگی کردم.» هماهنگ است؟"
+          "question_fa": "کدام گزینه با معنی «قبلاً در یک شهر کوچک زندگی کردم.» هماهنگ است؟"
         },
         "answer": {
-          "value": "Çocukken küçük bir şehirde yaşadım."
+          "value": "Eskiden küçük bir şehirde yaşadım."
         },
         "options": [
-          "Çocukken küçük bir şehirde yaşadım.",
+          "Eskiden küçük bir şehirde yaşadım.",
           "Ankara'da doğdum.",
           "İzmir'de büyüdüm.",
           "Üç yıl önce İstanbul'a taşındım."
@@ -1082,8 +1082,8 @@
         "topic": "introductions",
         "feedback": {
           "retry_tip_fa": "به معنی، موقعیت و پسوندهای عبارت ترکی دقت کن و دوباره امتحان کن.",
-          "explanation_fa": "مدل طبیعی این درس: Çocukken küçük bir şehirde yaşadım. — وقتی بچه بودم در یک شهر کوچک زندگی کردم.",
-          "model_answer": "Çocukken küçük bir şehirde yaşadım."
+          "explanation_fa": "مدل طبیعی این درس: Eskiden küçük bir şehirde yaşadım. — قبلاً در یک شهر کوچک زندگی کردم.",
+          "model_answer": "Eskiden küçük bir şehirde yaşadım."
         },
         "status": "validated"
       }
