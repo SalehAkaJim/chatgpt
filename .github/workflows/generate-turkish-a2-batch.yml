@@ -1,4 +1,4 @@
-name: Generate Turkish A2 Batch
+name: Generate Turkish A2 Curriculum
 
 on:
   push:
@@ -10,11 +10,11 @@ permissions:
   contents: write
 
 concurrency:
-  group: turkish-a2-content-generation-v1
+  group: turkish-a2-content-generation-v2
   cancel-in-progress: false
 
 jobs:
-  generate-batch:
+  generate-curriculum:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout main branch
@@ -27,48 +27,97 @@ jobs:
           python-version: '3.12'
       - name: Install dependencies
         run: pip install -r requirements.txt
-      - name: Generate Turkish A2 batch 1
-        run: python scripts/generate_turkish_a2_batch.py
-      - name: Validate complete Turkish A2 batch
+
+      - name: Generate all authored Turkish A2 batches
+        run: python scripts/generate_turkish_a2_curriculum.py
+
+      - name: Validate cumulative Turkish A2 content
         run: |
           set -euo pipefail
-          test "$(find content/production/tr/A2 -maxdepth 1 -name '*.json' | wc -l)" -eq 10
-          for f in content/production/tr/A2/*.json; do python scripts/validate_content.py "$f"; done
+          for f in content/production/tr/A2/*.json; do
+            python scripts/validate_content.py "$f"
+          done
           python scripts/validate_character_cast.py --cast audio/cast/tr-TR.json
           python database/import/tr/a2.py --dry-run
-      - name: Educational batch summary
+
+      - name: Coverage-driven educational checks
         run: |
           python - <<'PY'
-          import collections,json
+          import collections, json
           from pathlib import Path
-          counts=collections.Counter(); lessons=set(); ordered=[]; pairs=[]
-          spec=json.loads(Path('content/specs/tr/A2/batch-01.json').read_text())
-          for unit in spec['units']:
-              p=Path('content/production/tr/A2') / f"a2-tr-{unit['slug']}-v1.json"
-              b=json.loads(p.read_text()); dialogues=[]
-              for item in b['items']:
-                  counts[item['kind']]+=1
-                  lk=item.get('data',{}).get('lesson_key')
-                  if lk: lessons.add(lk)
-                  if item['kind']=='dialogue': dialogues.append(item)
-              for item in sorted(dialogues,key=lambda x:x['data']['lesson_key']):
-                  lk=item['data']['lesson_key']; chars=tuple(item['data'].get('characters',[])[:2])
-                  pairs.append((lk,chars)); ordered.append(chars)
-          assert len(lessons)==20, len(lessons)
-          assert len(set(pairs))==len(pairs), 'duplicate dialogue pair in a lesson'
-          for previous,current in zip(ordered,ordered[1:]):
-              assert set(previous)!=set(current), f'consecutive dialogue pair repeated: {previous}'
-          assert counts['concept']==60 and counts['utterance']==40 and counts['dialogue']==20 and counts['exercise']==100, counts
-          print(json.dumps({'units':10,'lessons':len(lessons),'counts':dict(counts),'dialogues':len(ordered)},ensure_ascii=False,indent=2))
+
+          specs=[]
+          for p in sorted(Path('content/specs/tr/A2').glob('batch-*.json')):
+              payload=json.loads(p.read_text(encoding='utf-8'))
+              for u in payload.get('units',[]):
+                  specs.append((int(payload['batch']),u))
+          authored={f"a2-tr-{u['slug']}" for _,u in specs}
+          if len(authored) != len(specs):
+              raise SystemExit('duplicate authored Turkish A2 unit slug')
+
+          files=sorted(Path('content/production/tr/A2').glob('*.json'))
+          batches=[json.loads(p.read_text(encoding='utf-8')) for p in files]
+          actual={b.get('curriculum_unit') for b in batches}
+          if actual != authored:
+              raise SystemExit(f'production/spec mismatch; missing={sorted(authored-actual)} extra={sorted(actual-authored)}')
+
+          batch_ids=[b.get('batch_id') for b in batches]
+          if len(batch_ids) != len(set(batch_ids)):
+              raise SystemExit('duplicate Turkish A2 batch_id')
+
+          by_unit={b['curriculum_unit']:b for b in batches}
+          report={}
+          for batch_no,spec in specs:
+              unit=f"a2-tr-{spec['slug']}"
+              b=by_unit[unit]
+              lesson_counts={}
+              for item in b.get('items',[]):
+                  d=item.get('data',{})
+                  lk=d.get('lesson_key')
+                  if not lk: continue
+                  c=lesson_counts.setdefault(lk,collections.Counter())
+                  c[item.get('kind')]+=1
+                  if item.get('kind')=='exercise':
+                      c['exercise:'+str(d.get('exercise_type'))]+=1
+              if not lesson_counts:
+                  raise SystemExit(f'{unit}: no lessons')
+              for lk,c in lesson_counts.items():
+                  for required in ('dialogue','exercise:listening','exercise:speaking','exercise:multiple_choice'):
+                      if c[required] < 1:
+                          raise SystemExit(f'{unit}:{lk}: missing {required}')
+              if spec.get('production'):
+                  open_write=sum(
+                      1 for i in b['items'] if i.get('kind')=='exercise'
+                      and i.get('data',{}).get('exercise_type')=='writing'
+                      and i.get('data',{}).get('answer',{}).get('evaluation_mode')=='rubric'
+                  )
+                  personal_speak=sum(
+                      1 for i in b['items'] if i.get('kind')=='exercise'
+                      and i.get('data',{}).get('exercise_type')=='speaking'
+                      and i.get('data',{}).get('prompt',{}).get('personalized') is True
+                      and i.get('data',{}).get('answer',{}).get('evaluation_mode')=='rubric'
+                  )
+                  if open_write < 1 or personal_speak < 1:
+                      raise SystemExit(f'{unit}: authored production gate not materialized')
+              report[unit]={
+                  'batch':batch_no,
+                  'lessons':len(lesson_counts),
+                  'items':len(b.get('items',[])),
+                  'has_open_production':bool(spec.get('production')),
+              }
+          print(json.dumps({'units':len(report),'details':report},ensure_ascii=False,indent=2))
           PY
-      - name: Commit Turkish A2 production content
+
+      - name: Commit cumulative Turkish A2 production content
         run: |
           set -euo pipefail
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git add content/specs/tr/A2/batch-01.json content/production/tr/A2
-          if git diff --cached --quiet; then echo 'No generated content changes.'; else
-            git commit -m 'Generate Turkish A2 batch 1 production content [skip ci]'
+          git add content/production/tr/A2
+          if git diff --cached --quiet; then
+            echo 'No generated content changes.'
+          else
+            git commit -m 'Generate cumulative Turkish A2 production content [skip ci]'
             git fetch origin main
             git rebase origin/main
             git push origin HEAD:main
