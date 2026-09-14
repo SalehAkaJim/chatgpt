@@ -11,18 +11,22 @@ CONTENT_DIR = ROOT / "content" / "production" / "ko" / "Pre-A1"
 EXPECTED = {
     "prea1-ko-first-greetings": 2,
     "prea1-ko-my-name": 2,
+    "prea1-ko-about-me": 2,
     "prea1-ko-numbers-0-10": 2,
+    "prea1-ko-real-life-numbers": 2,
     "prea1-ko-hangul-basics": 2,
     "prea1-ko-essential-jamo": 2,
     "prea1-ko-build-syllables": 2,
     "prea1-ko-first-sounds": 2,
     "prea1-ko-how-are-you": 2,
     "prea1-ko-first-objects": 2,
+    "prea1-ko-forms-signs": 2,
     "prea1-ko-polite-words": 2,
     "prea1-ko-meaning-help": 1,
     "prea1-ko-survival-words": 2,
     "prea1-ko-first-conversation": 2,
     "prea1-ko-ready-for-a1": 2,
+    "prea1-ko-real-world-gate": 2,
 }
 
 DIALOGUE_OPTIONAL_UNITS = {
@@ -69,6 +73,9 @@ for unit, expected_lessons in EXPECTED.items():
     lessons: list[str] = []
     dialogues = 0
     exercises = Counter()
+    open_writing = 0
+    personalized_speaking = 0
+    visual_tasks = 0
     for item in b.get("items", []):
         d = item.get("data", {})
         lk = d.get("lesson_key")
@@ -96,7 +103,14 @@ for unit, expected_lessons in EXPECTED.items():
                     errors.append(f"{p}: dialogue turn missing Persian translation")
 
         if item.get("kind") == "exercise":
-            exercises[d.get("exercise_type")] += 1
+            typ = d.get("exercise_type")
+            exercises[typ] += 1
+            if typ == "writing" and (d.get("answer") or {}).get("evaluation_mode") == "rubric":
+                open_writing += 1
+            if typ == "speaking" and (d.get("prompt") or {}).get("personalized") is True:
+                personalized_speaking += 1
+            if (d.get("prompt") or {}).get("visual_asset"):
+                visual_tasks += 1
 
     if len(lessons) != expected_lessons:
         errors.append(f"{p}: expected {expected_lessons} lessons, found {len(lessons)}: {lessons}")
@@ -106,6 +120,10 @@ for unit, expected_lessons in EXPECTED.items():
         errors.append(f"{p}: needs listening coverage")
     if exercises["speaking"] < 1:
         errors.append(f"{p}: needs speaking coverage")
+
+    if unit == "prea1-ko-real-world-gate":
+        if open_writing < 1 or personalized_speaking < 1 or visual_tasks < 1:
+            errors.append(f"{p}: final gate must include open writing, personalized speaking and visual reading")
 
 for prev, cur in zip(sequence, sequence[1:]):
     if prev[1] == cur[1]:
