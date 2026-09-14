@@ -1,0 +1,855 @@
+{
+  "batch_id": "fr-fr-prea1-first-conversation-v1",
+  "course": "fa-fr-fr",
+  "learner_language": "fa",
+  "learner_variant": "fa-IR",
+  "target_language": "fr",
+  "target_variant": "fr-FR",
+  "cefr": "Pre-A1",
+  "curriculum_unit": "prea1-fr-first-conversation",
+  "generator": "gpt-5.6-sol:french-prea1-batch-v1",
+  "items": [
+    {
+      "kind": "concept",
+      "external_id": "c_first_conversation_01",
+      "data": {
+        "slug": "fr_pre_a1_first_conversation_bonjour",
+        "lesson_key": "prea1-fr-first-conversation-01",
+        "concept_type": "lexical",
+        "part_of_speech": "expression",
+        "forms": {
+          "fr": "bonjour"
+        },
+        "translations": {
+          "fa": "سلام / روز بخیر"
+        },
+        "cefr": "Pre-A1",
+        "topic": "introductions",
+        "tags": [
+          "core",
+          "beginner",
+          "high_frequency"
+        ],
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_first_conversation_01",
+      "data": {
+        "lesson_key": "prea1-fr-first-conversation-01",
+        "lemma": "bonjour",
+        "display_lemma": "bonjour",
+        "language": "fr",
+        "language_variant": "fr-FR",
+        "part_of_speech": "expression",
+        "concept_refs": [
+          "fr_pre_a1_first_conversation_bonjour"
+        ],
+        "cefr": "Pre-A1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_first_conversation_01",
+      "data": {
+        "lesson_key": "prea1-fr-first-conversation-01",
+        "lexeme_ref": "lx_first_conversation_01",
+        "surface_form": "bonjour",
+        "display_form": "bonjour",
+        "grammatical_features": {},
+        "is_lemma": true,
+        "is_preferred": true,
+        "cefr": "Pre-A1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_first_conversation_02",
+      "data": {
+        "slug": "fr_pre_a1_first_conversation_je_m_appelle",
+        "lesson_key": "prea1-fr-first-conversation-01",
+        "concept_type": "lexical",
+        "part_of_speech": "expression",
+        "forms": {
+          "fr": "je m'appelle"
+        },
+        "translations": {
+          "fa": "اسمم ... است"
+        },
+        "cefr": "Pre-A1",
+        "topic": "introductions",
+        "tags": [
+          "core",
+          "beginner",
+          "high_frequency"
+        ],
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_first_conversation_02",
+      "data": {
+        "lesson_key": "prea1-fr-first-conversation-01",
+        "lemma": "je m'appelle",
+        "display_lemma": "je m'appelle",
+        "language": "fr",
+        "language_variant": "fr-FR",
+        "part_of_speech": "expression",
+        "concept_refs": [
+          "fr_pre_a1_first_conversation_je_m_appelle"
+        ],
+        "cefr": "Pre-A1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_first_conversation_02",
+      "data": {
+        "lesson_key": "prea1-fr-first-conversation-01",
+        "lexeme_ref": "lx_first_conversation_02",
+        "surface_form": "je m'appelle",
+        "display_form": "je m'appelle",
+        "grammatical_features": {},
+        "is_lemma": true,
+        "is_preferred": true,
+        "cefr": "Pre-A1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_first_conversation_03",
+      "data": {
+        "slug": "fr_pre_a1_first_conversation_ca_va",
+        "lesson_key": "prea1-fr-first-conversation-01",
+        "concept_type": "lexical",
+        "part_of_speech": "expression",
+        "forms": {
+          "fr": "ça va"
+        },
+        "translations": {
+          "fa": "خوبی؟ / خوبم"
+        },
+        "cefr": "Pre-A1",
+        "topic": "introductions",
+        "tags": [
+          "core",
+          "beginner",
+          "high_frequency"
+        ],
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_first_conversation_03",
+      "data": {
+        "lesson_key": "prea1-fr-first-conversation-01",
+        "lemma": "ça va",
+        "display_lemma": "ça va",
+        "language": "fr",
+        "language_variant": "fr-FR",
+        "part_of_speech": "expression",
+        "concept_refs": [
+          "fr_pre_a1_first_conversation_ca_va"
+        ],
+        "cefr": "Pre-A1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_first_conversation_03",
+      "data": {
+        "lesson_key": "prea1-fr-first-conversation-01",
+        "lexeme_ref": "lx_first_conversation_03",
+        "surface_form": "ça va",
+        "display_form": "ça va",
+        "grammatical_features": {},
+        "is_lemma": true,
+        "is_preferred": true,
+        "cefr": "Pre-A1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_first_conversation_04",
+      "data": {
+        "slug": "fr_pre_a1_first_conversation_merci",
+        "lesson_key": "prea1-fr-first-conversation-02",
+        "concept_type": "lexical",
+        "part_of_speech": "expression",
+        "forms": {
+          "fr": "merci"
+        },
+        "translations": {
+          "fa": "ممنون"
+        },
+        "cefr": "Pre-A1",
+        "topic": "introductions",
+        "tags": [
+          "core",
+          "beginner",
+          "high_frequency"
+        ],
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_first_conversation_04",
+      "data": {
+        "lesson_key": "prea1-fr-first-conversation-02",
+        "lemma": "merci",
+        "display_lemma": "merci",
+        "language": "fr",
+        "language_variant": "fr-FR",
+        "part_of_speech": "expression",
+        "concept_refs": [
+          "fr_pre_a1_first_conversation_merci"
+        ],
+        "cefr": "Pre-A1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_first_conversation_04",
+      "data": {
+        "lesson_key": "prea1-fr-first-conversation-02",
+        "lexeme_ref": "lx_first_conversation_04",
+        "surface_form": "merci",
+        "display_form": "merci",
+        "grammatical_features": {},
+        "is_lemma": true,
+        "is_preferred": true,
+        "cefr": "Pre-A1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_first_conversation_05",
+      "data": {
+        "slug": "fr_pre_a1_first_conversation_au_revoir",
+        "lesson_key": "prea1-fr-first-conversation-02",
+        "concept_type": "lexical",
+        "part_of_speech": "expression",
+        "forms": {
+          "fr": "au revoir"
+        },
+        "translations": {
+          "fa": "خداحافظ"
+        },
+        "cefr": "Pre-A1",
+        "topic": "introductions",
+        "tags": [
+          "core",
+          "beginner",
+          "high_frequency"
+        ],
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_first_conversation_05",
+      "data": {
+        "lesson_key": "prea1-fr-first-conversation-02",
+        "lemma": "au revoir",
+        "display_lemma": "au revoir",
+        "language": "fr",
+        "language_variant": "fr-FR",
+        "part_of_speech": "expression",
+        "concept_refs": [
+          "fr_pre_a1_first_conversation_au_revoir"
+        ],
+        "cefr": "Pre-A1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_first_conversation_05",
+      "data": {
+        "lesson_key": "prea1-fr-first-conversation-02",
+        "lexeme_ref": "lx_first_conversation_05",
+        "surface_form": "au revoir",
+        "display_form": "au revoir",
+        "grammatical_features": {},
+        "is_lemma": true,
+        "is_preferred": true,
+        "cefr": "Pre-A1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_first_conversation_06",
+      "data": {
+        "slug": "fr_pre_a1_first_conversation_a_bientot",
+        "lesson_key": "prea1-fr-first-conversation-02",
+        "concept_type": "lexical",
+        "part_of_speech": "expression",
+        "forms": {
+          "fr": "à bientôt"
+        },
+        "translations": {
+          "fa": "به‌زودی می‌بینمت"
+        },
+        "cefr": "Pre-A1",
+        "topic": "introductions",
+        "tags": [
+          "core",
+          "beginner",
+          "high_frequency"
+        ],
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_first_conversation_06",
+      "data": {
+        "lesson_key": "prea1-fr-first-conversation-02",
+        "lemma": "à bientôt",
+        "display_lemma": "à bientôt",
+        "language": "fr",
+        "language_variant": "fr-FR",
+        "part_of_speech": "expression",
+        "concept_refs": [
+          "fr_pre_a1_first_conversation_a_bientot"
+        ],
+        "cefr": "Pre-A1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_first_conversation_06",
+      "data": {
+        "lesson_key": "prea1-fr-first-conversation-02",
+        "lexeme_ref": "lx_first_conversation_06",
+        "surface_form": "à bientôt",
+        "display_form": "à bientôt",
+        "grammatical_features": {},
+        "is_lemma": true,
+        "is_preferred": true,
+        "cefr": "Pre-A1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_first_conversation_01",
+      "data": {
+        "lesson_key": "prea1-fr-first-conversation-01",
+        "text": {
+          "fr": "Bonjour, je m'appelle Claire."
+        },
+        "translations": {
+          "fa": "سلام، اسمم کلر است."
+        },
+        "intent": "greet_and_introduce",
+        "concept_refs": [
+          "fr_pre_a1_first_conversation_bonjour",
+          "fr_pre_a1_first_conversation_je_m_appelle"
+        ],
+        "cefr": "Pre-A1",
+        "topic": "introductions",
+        "register": "neutral",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_first_conversation_02",
+      "data": {
+        "lesson_key": "prea1-fr-first-conversation-01",
+        "text": {
+          "fr": "Ça va ?"
+        },
+        "translations": {
+          "fa": "خوبی؟"
+        },
+        "intent": "ask_wellbeing",
+        "concept_refs": [
+          "fr_pre_a1_first_conversation_ca_va"
+        ],
+        "cefr": "Pre-A1",
+        "topic": "introductions",
+        "register": "neutral",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_first_conversation_03",
+      "data": {
+        "lesson_key": "prea1-fr-first-conversation-02",
+        "text": {
+          "fr": "Ça va bien, merci."
+        },
+        "translations": {
+          "fa": "خوبم، ممنون."
+        },
+        "intent": "answer_wellbeing",
+        "concept_refs": [
+          "fr_pre_a1_first_conversation_ca_va",
+          "fr_pre_a1_first_conversation_merci"
+        ],
+        "cefr": "Pre-A1",
+        "topic": "introductions",
+        "register": "neutral",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_first_conversation_04",
+      "data": {
+        "lesson_key": "prea1-fr-first-conversation-02",
+        "text": {
+          "fr": "Au revoir, à bientôt."
+        },
+        "translations": {
+          "fa": "خداحافظ، به‌زودی می‌بینمت."
+        },
+        "intent": "farewell",
+        "concept_refs": [
+          "fr_pre_a1_first_conversation_au_revoir",
+          "fr_pre_a1_first_conversation_a_bientot"
+        ],
+        "cefr": "Pre-A1",
+        "topic": "introductions",
+        "register": "neutral",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "grammar_point",
+      "external_id": "g_first_conversation_core",
+      "data": {
+        "lesson_key": "prea1-fr-first-conversation-01",
+        "slug": "prea1-fr-first-conversation-grammar",
+        "title": "Assembler les expressions",
+        "rule_summary": "Combine familiar chunks into a short real exchange. The aim is fluent retrieval, not new grammar.",
+        "explanation": {
+          "fa": "در این واحد قرار نیست دستور تازه‌ای اضافه شود؛ هدف این است که تکه‌های آشنا را بدون مکث زیاد در یک گفت‌وگوی کوتاه کنار هم بگذاری."
+        },
+        "examples": [
+          {
+            "fr": "Bonjour, je m'appelle Claire.",
+            "fa": "سلام، اسمم کلر است."
+          },
+          {
+            "fr": "Au revoir, à bientôt.",
+            "fa": "خداحافظ، به‌زودی می‌بینمت."
+          }
+        ],
+        "cefr": "Pre-A1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "dialogue",
+      "external_id": "d_first_conversation_01",
+      "data": {
+        "lesson_key": "prea1-fr-first-conversation-01",
+        "title": "Première rencontre",
+        "setting": "item",
+        "cefr": "Pre-A1",
+        "topic": "introductions",
+        "characters": [
+          "Léa",
+          "Inès"
+        ],
+        "turns": [
+          {
+            "order": 1,
+            "speaker": "Léa",
+            "text": "Bonjour ! Je m'appelle Léa.",
+            "translation_fa": "سلام! اسمم لئاست."
+          },
+          {
+            "order": 2,
+            "speaker": "Inès",
+            "text": "Bonjour ! Moi, c'est Inès.",
+            "translation_fa": "سلام! من اینس هستم."
+          },
+          {
+            "order": 3,
+            "speaker": "Léa",
+            "text": "Ça va ?",
+            "translation_fa": "خوبی؟"
+          },
+          {
+            "order": 4,
+            "speaker": "Inès",
+            "text": "Très bien, merci.",
+            "translation_fa": "خیلی خوبم، ممنون."
+          }
+        ],
+        "qa": {
+          "character_pair_unique_within_unit": true,
+          "naturalness": "passed",
+          "single_situation": true
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "dialogue",
+      "external_id": "d_first_conversation_02",
+      "data": {
+        "lesson_key": "prea1-fr-first-conversation-02",
+        "title": "À bientôt",
+        "setting": "item",
+        "cefr": "Pre-A1",
+        "topic": "introductions",
+        "characters": [
+          "Nicolas",
+          "Julien"
+        ],
+        "turns": [
+          {
+            "order": 1,
+            "speaker": "Nicolas",
+            "text": "Je ne comprends pas.",
+            "translation_fa": "نمی‌فهمم."
+          },
+          {
+            "order": 2,
+            "speaker": "Julien",
+            "text": "Je répète lentement.",
+            "translation_fa": "آهسته تکرار می‌کنم."
+          },
+          {
+            "order": 3,
+            "speaker": "Nicolas",
+            "text": "Merci. Au revoir !",
+            "translation_fa": "ممنون. خداحافظ!"
+          },
+          {
+            "order": 4,
+            "speaker": "Julien",
+            "text": "Au revoir, à bientôt !",
+            "translation_fa": "خداحافظ، به‌زودی می‌بینمت!"
+          }
+        ],
+        "qa": {
+          "character_pair_unique_within_unit": true,
+          "naturalness": "passed",
+          "single_situation": true
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_first_conversation_01_meaning",
+      "data": {
+        "lesson_key": "prea1-fr-first-conversation-01",
+        "exercise_type": "multiple_choice",
+        "prompt": {
+          "instruction_fa": "معنی درست این عبارت فرانسوی را انتخاب کن.",
+          "value": "Bonjour, je m'appelle Claire."
+        },
+        "answer": {
+          "value": "سلام، اسمم کلر است."
+        },
+        "options": [
+          "سلام، اسمم کلر است.",
+          "خوبی؟",
+          "خوبم، ممنون.",
+          "خداحافظ، به‌زودی می‌بینمت."
+        ],
+        "difficulty": 1,
+        "cefr": "Pre-A1",
+        "topic": "introductions",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت، ریتم و شکل دقیق عبارت فرانسوی دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: Bonjour, je m'appelle Claire. — سلام، اسمم کلر است.",
+          "model_answer": "Bonjour, je m'appelle Claire."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_first_conversation_01_listen",
+      "data": {
+        "lesson_key": "prea1-fr-first-conversation-01",
+        "exercise_type": "listening",
+        "prompt": {
+          "instruction_fa": "گوش کن و عبارتی را که شنیدی انتخاب کن.",
+          "audio_text": "Ça va ?"
+        },
+        "answer": {
+          "value": "Ça va ?"
+        },
+        "options": [
+          "Ça va ?",
+          "Bonjour, je m'appelle Claire.",
+          "Ça va bien, merci.",
+          "Au revoir, à bientôt."
+        ],
+        "difficulty": 1,
+        "cefr": "Pre-A1",
+        "topic": "introductions",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت، ریتم و شکل دقیق عبارت فرانسوی دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: Ça va ? — خوبی؟",
+          "model_answer": "Ça va ?",
+          "transcript_fr": "Ça va ?"
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_first_conversation_01_speak",
+      "data": {
+        "lesson_key": "prea1-fr-first-conversation-01",
+        "exercise_type": "speaking",
+        "prompt": {
+          "instruction_fa": "عبارت را با صدای بلند و با ریتم طبیعی فرانسوی تکرار کن.",
+          "value": "Bonjour, je m'appelle Claire."
+        },
+        "answer": {
+          "expected_text": "Bonjour, je m'appelle Claire."
+        },
+        "difficulty": 1,
+        "cefr": "Pre-A1",
+        "topic": "introductions",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت، ریتم و شکل دقیق عبارت فرانسوی دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: Bonjour, je m'appelle Claire. — سلام، اسمم کلر است.",
+          "model_answer": "Bonjour, je m'appelle Claire."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_first_conversation_01_build",
+      "data": {
+        "lesson_key": "prea1-fr-first-conversation-01",
+        "exercise_type": "sentence_building",
+        "prompt": {
+          "instruction_fa": "کلمه‌ها را لمس کن تا عبارت درست ساخته شود.",
+          "tokens": [
+            "va",
+            "?",
+            "Ça"
+          ]
+        },
+        "answer": {
+          "tokens": [
+            "Ça",
+            "va",
+            "?"
+          ],
+          "value": "Ça va ?"
+        },
+        "difficulty": 1,
+        "cefr": "Pre-A1",
+        "topic": "introductions",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت، ریتم و شکل دقیق عبارت فرانسوی دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: Ça va ? — خوبی؟",
+          "model_answer": "Ça va ?"
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_first_conversation_01_dialogue",
+      "data": {
+        "lesson_key": "prea1-fr-first-conversation-01",
+        "exercise_type": "dialogue_comprehension",
+        "prompt": {
+          "instruction_fa": "با توجه به گفت‌وگو، پاسخ مناسب را انتخاب کن.",
+          "source_dialogue_ref": "d_first_conversation_01",
+          "question_fa": "کدام گزینه با معنی «سلام، اسمم کلر است.» هماهنگ است؟"
+        },
+        "answer": {
+          "value": "Bonjour, je m'appelle Claire."
+        },
+        "options": [
+          "Bonjour, je m'appelle Claire.",
+          "Ça va ?",
+          "Ça va bien, merci.",
+          "Au revoir, à bientôt."
+        ],
+        "difficulty": 1,
+        "cefr": "Pre-A1",
+        "topic": "introductions",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت، ریتم و شکل دقیق عبارت فرانسوی دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: Bonjour, je m'appelle Claire. — سلام، اسمم کلر است.",
+          "model_answer": "Bonjour, je m'appelle Claire."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_first_conversation_02_meaning",
+      "data": {
+        "lesson_key": "prea1-fr-first-conversation-02",
+        "exercise_type": "multiple_choice",
+        "prompt": {
+          "instruction_fa": "معنی درست این عبارت فرانسوی را انتخاب کن.",
+          "value": "Ça va bien, merci."
+        },
+        "answer": {
+          "value": "خوبم، ممنون."
+        },
+        "options": [
+          "خوبم، ممنون.",
+          "سلام، اسمم کلر است.",
+          "خوبی؟",
+          "خداحافظ، به‌زودی می‌بینمت."
+        ],
+        "difficulty": 1,
+        "cefr": "Pre-A1",
+        "topic": "introductions",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت، ریتم و شکل دقیق عبارت فرانسوی دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: Ça va bien, merci. — خوبم، ممنون.",
+          "model_answer": "Ça va bien, merci."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_first_conversation_02_listen",
+      "data": {
+        "lesson_key": "prea1-fr-first-conversation-02",
+        "exercise_type": "listening",
+        "prompt": {
+          "instruction_fa": "گوش کن و عبارتی را که شنیدی انتخاب کن.",
+          "audio_text": "Au revoir, à bientôt."
+        },
+        "answer": {
+          "value": "Au revoir, à bientôt."
+        },
+        "options": [
+          "Au revoir, à bientôt.",
+          "Bonjour, je m'appelle Claire.",
+          "Ça va ?",
+          "Ça va bien, merci."
+        ],
+        "difficulty": 1,
+        "cefr": "Pre-A1",
+        "topic": "introductions",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت، ریتم و شکل دقیق عبارت فرانسوی دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: Au revoir, à bientôt. — خداحافظ، به‌زودی می‌بینمت.",
+          "model_answer": "Au revoir, à bientôt.",
+          "transcript_fr": "Au revoir, à bientôt."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_first_conversation_02_speak",
+      "data": {
+        "lesson_key": "prea1-fr-first-conversation-02",
+        "exercise_type": "speaking",
+        "prompt": {
+          "instruction_fa": "عبارت را با صدای بلند و با ریتم طبیعی فرانسوی تکرار کن.",
+          "value": "Ça va bien, merci."
+        },
+        "answer": {
+          "expected_text": "Ça va bien, merci."
+        },
+        "difficulty": 1,
+        "cefr": "Pre-A1",
+        "topic": "introductions",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت، ریتم و شکل دقیق عبارت فرانسوی دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: Ça va bien, merci. — خوبم، ممنون.",
+          "model_answer": "Ça va bien, merci."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_first_conversation_02_build",
+      "data": {
+        "lesson_key": "prea1-fr-first-conversation-02",
+        "exercise_type": "sentence_building",
+        "prompt": {
+          "instruction_fa": "کلمه‌ها را لمس کن تا عبارت درست ساخته شود.",
+          "tokens": [
+            "revoir,",
+            "à",
+            "bientôt.",
+            "Au"
+          ]
+        },
+        "answer": {
+          "tokens": [
+            "Au",
+            "revoir,",
+            "à",
+            "bientôt."
+          ],
+          "value": "Au revoir, à bientôt."
+        },
+        "difficulty": 1,
+        "cefr": "Pre-A1",
+        "topic": "introductions",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت، ریتم و شکل دقیق عبارت فرانسوی دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: Au revoir, à bientôt. — خداحافظ، به‌زودی می‌بینمت.",
+          "model_answer": "Au revoir, à bientôt."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_first_conversation_02_dialogue",
+      "data": {
+        "lesson_key": "prea1-fr-first-conversation-02",
+        "exercise_type": "dialogue_comprehension",
+        "prompt": {
+          "instruction_fa": "با توجه به گفت‌وگو، پاسخ مناسب را انتخاب کن.",
+          "source_dialogue_ref": "d_first_conversation_02",
+          "question_fa": "کدام گزینه با معنی «خوبم، ممنون.» هماهنگ است؟"
+        },
+        "answer": {
+          "value": "Ça va bien, merci."
+        },
+        "options": [
+          "Ça va bien, merci.",
+          "Bonjour, je m'appelle Claire.",
+          "Ça va ?",
+          "Au revoir, à bientôt."
+        ],
+        "difficulty": 1,
+        "cefr": "Pre-A1",
+        "topic": "introductions",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت، ریتم و شکل دقیق عبارت فرانسوی دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: Ça va bien, merci. — خوبم، ممنون.",
+          "model_answer": "Ça va bien, merci."
+        },
+        "status": "validated"
+      }
+    }
+  ]
+}

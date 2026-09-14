@@ -1,0 +1,852 @@
+{
+  "batch_id": "fr-fr-prea1-how-are-you-v1",
+  "course": "fa-fr-fr",
+  "learner_language": "fa",
+  "learner_variant": "fa-IR",
+  "target_language": "fr",
+  "target_variant": "fr-FR",
+  "cefr": "Pre-A1",
+  "curriculum_unit": "prea1-fr-how-are-you",
+  "generator": "gpt-5.6-sol:french-prea1-batch-v1",
+  "items": [
+    {
+      "kind": "concept",
+      "external_id": "c_how_are_you_01",
+      "data": {
+        "slug": "fr_pre_a1_how_are_you_ca_va",
+        "lesson_key": "prea1-fr-how-are-you-01",
+        "concept_type": "lexical",
+        "part_of_speech": "expression",
+        "forms": {
+          "fr": "ça va"
+        },
+        "translations": {
+          "fa": "خوبی؟ / خوبم / اوضاع چطور است"
+        },
+        "cefr": "Pre-A1",
+        "topic": "greetings",
+        "tags": [
+          "core",
+          "beginner",
+          "high_frequency"
+        ],
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_how_are_you_01",
+      "data": {
+        "lesson_key": "prea1-fr-how-are-you-01",
+        "lemma": "ça va",
+        "display_lemma": "ça va",
+        "language": "fr",
+        "language_variant": "fr-FR",
+        "part_of_speech": "expression",
+        "concept_refs": [
+          "fr_pre_a1_how_are_you_ca_va"
+        ],
+        "cefr": "Pre-A1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_how_are_you_01",
+      "data": {
+        "lesson_key": "prea1-fr-how-are-you-01",
+        "lexeme_ref": "lx_how_are_you_01",
+        "surface_form": "ça va",
+        "display_form": "ça va",
+        "grammatical_features": {},
+        "is_lemma": true,
+        "is_preferred": true,
+        "cefr": "Pre-A1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_how_are_you_02",
+      "data": {
+        "slug": "fr_pre_a1_how_are_you_bien",
+        "lesson_key": "prea1-fr-how-are-you-01",
+        "concept_type": "lexical",
+        "part_of_speech": "adverb",
+        "forms": {
+          "fr": "bien"
+        },
+        "translations": {
+          "fa": "خوب"
+        },
+        "cefr": "Pre-A1",
+        "topic": "greetings",
+        "tags": [
+          "core",
+          "beginner",
+          "high_frequency"
+        ],
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_how_are_you_02",
+      "data": {
+        "lesson_key": "prea1-fr-how-are-you-01",
+        "lemma": "bien",
+        "display_lemma": "bien",
+        "language": "fr",
+        "language_variant": "fr-FR",
+        "part_of_speech": "adverb",
+        "concept_refs": [
+          "fr_pre_a1_how_are_you_bien"
+        ],
+        "cefr": "Pre-A1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_how_are_you_02",
+      "data": {
+        "lesson_key": "prea1-fr-how-are-you-01",
+        "lexeme_ref": "lx_how_are_you_02",
+        "surface_form": "bien",
+        "display_form": "bien",
+        "grammatical_features": {},
+        "is_lemma": true,
+        "is_preferred": true,
+        "cefr": "Pre-A1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_how_are_you_03",
+      "data": {
+        "slug": "fr_pre_a1_how_are_you_tres_bien",
+        "lesson_key": "prea1-fr-how-are-you-01",
+        "concept_type": "lexical",
+        "part_of_speech": "expression",
+        "forms": {
+          "fr": "très bien"
+        },
+        "translations": {
+          "fa": "خیلی خوب"
+        },
+        "cefr": "Pre-A1",
+        "topic": "greetings",
+        "tags": [
+          "core",
+          "beginner",
+          "high_frequency"
+        ],
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_how_are_you_03",
+      "data": {
+        "lesson_key": "prea1-fr-how-are-you-01",
+        "lemma": "très bien",
+        "display_lemma": "très bien",
+        "language": "fr",
+        "language_variant": "fr-FR",
+        "part_of_speech": "expression",
+        "concept_refs": [
+          "fr_pre_a1_how_are_you_tres_bien"
+        ],
+        "cefr": "Pre-A1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_how_are_you_03",
+      "data": {
+        "lesson_key": "prea1-fr-how-are-you-01",
+        "lexeme_ref": "lx_how_are_you_03",
+        "surface_form": "très bien",
+        "display_form": "très bien",
+        "grammatical_features": {},
+        "is_lemma": true,
+        "is_preferred": true,
+        "cefr": "Pre-A1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_how_are_you_04",
+      "data": {
+        "slug": "fr_pre_a1_how_are_you_mal",
+        "lesson_key": "prea1-fr-how-are-you-02",
+        "concept_type": "lexical",
+        "part_of_speech": "adverb",
+        "forms": {
+          "fr": "mal"
+        },
+        "translations": {
+          "fa": "بد"
+        },
+        "cefr": "Pre-A1",
+        "topic": "greetings",
+        "tags": [
+          "core",
+          "beginner",
+          "high_frequency"
+        ],
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_how_are_you_04",
+      "data": {
+        "lesson_key": "prea1-fr-how-are-you-02",
+        "lemma": "mal",
+        "display_lemma": "mal",
+        "language": "fr",
+        "language_variant": "fr-FR",
+        "part_of_speech": "adverb",
+        "concept_refs": [
+          "fr_pre_a1_how_are_you_mal"
+        ],
+        "cefr": "Pre-A1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_how_are_you_04",
+      "data": {
+        "lesson_key": "prea1-fr-how-are-you-02",
+        "lexeme_ref": "lx_how_are_you_04",
+        "surface_form": "mal",
+        "display_form": "mal",
+        "grammatical_features": {},
+        "is_lemma": true,
+        "is_preferred": true,
+        "cefr": "Pre-A1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_how_are_you_05",
+      "data": {
+        "slug": "fr_pre_a1_how_are_you_merci",
+        "lesson_key": "prea1-fr-how-are-you-02",
+        "concept_type": "lexical",
+        "part_of_speech": "expression",
+        "forms": {
+          "fr": "merci"
+        },
+        "translations": {
+          "fa": "ممنون"
+        },
+        "cefr": "Pre-A1",
+        "topic": "greetings",
+        "tags": [
+          "core",
+          "beginner",
+          "high_frequency"
+        ],
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_how_are_you_05",
+      "data": {
+        "lesson_key": "prea1-fr-how-are-you-02",
+        "lemma": "merci",
+        "display_lemma": "merci",
+        "language": "fr",
+        "language_variant": "fr-FR",
+        "part_of_speech": "expression",
+        "concept_refs": [
+          "fr_pre_a1_how_are_you_merci"
+        ],
+        "cefr": "Pre-A1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_how_are_you_05",
+      "data": {
+        "lesson_key": "prea1-fr-how-are-you-02",
+        "lexeme_ref": "lx_how_are_you_05",
+        "surface_form": "merci",
+        "display_form": "merci",
+        "grammatical_features": {},
+        "is_lemma": true,
+        "is_preferred": true,
+        "cefr": "Pre-A1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_how_are_you_06",
+      "data": {
+        "slug": "fr_pre_a1_how_are_you_et_toi",
+        "lesson_key": "prea1-fr-how-are-you-02",
+        "concept_type": "lexical",
+        "part_of_speech": "expression",
+        "forms": {
+          "fr": "et toi"
+        },
+        "translations": {
+          "fa": "و تو؟"
+        },
+        "cefr": "Pre-A1",
+        "topic": "greetings",
+        "tags": [
+          "core",
+          "beginner",
+          "high_frequency"
+        ],
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_how_are_you_06",
+      "data": {
+        "lesson_key": "prea1-fr-how-are-you-02",
+        "lemma": "et toi",
+        "display_lemma": "et toi",
+        "language": "fr",
+        "language_variant": "fr-FR",
+        "part_of_speech": "expression",
+        "concept_refs": [
+          "fr_pre_a1_how_are_you_et_toi"
+        ],
+        "cefr": "Pre-A1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_how_are_you_06",
+      "data": {
+        "lesson_key": "prea1-fr-how-are-you-02",
+        "lexeme_ref": "lx_how_are_you_06",
+        "surface_form": "et toi",
+        "display_form": "et toi",
+        "grammatical_features": {},
+        "is_lemma": true,
+        "is_preferred": true,
+        "cefr": "Pre-A1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_how_are_you_01",
+      "data": {
+        "lesson_key": "prea1-fr-how-are-you-01",
+        "text": {
+          "fr": "Ça va ?"
+        },
+        "translations": {
+          "fa": "خوبی؟"
+        },
+        "intent": "ask_wellbeing",
+        "concept_refs": [
+          "fr_pre_a1_how_are_you_ca_va"
+        ],
+        "cefr": "Pre-A1",
+        "topic": "greetings",
+        "register": "neutral",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_how_are_you_02",
+      "data": {
+        "lesson_key": "prea1-fr-how-are-you-01",
+        "text": {
+          "fr": "Ça va bien."
+        },
+        "translations": {
+          "fa": "خوبم."
+        },
+        "intent": "answer_wellbeing",
+        "concept_refs": [
+          "fr_pre_a1_how_are_you_ca_va",
+          "fr_pre_a1_how_are_you_bien"
+        ],
+        "cefr": "Pre-A1",
+        "topic": "greetings",
+        "register": "neutral",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_how_are_you_03",
+      "data": {
+        "lesson_key": "prea1-fr-how-are-you-02",
+        "text": {
+          "fr": "Très bien, merci."
+        },
+        "translations": {
+          "fa": "خیلی خوبم، ممنون."
+        },
+        "intent": "answer_positive",
+        "concept_refs": [
+          "fr_pre_a1_how_are_you_tres_bien",
+          "fr_pre_a1_how_are_you_merci"
+        ],
+        "cefr": "Pre-A1",
+        "topic": "greetings",
+        "register": "neutral",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_how_are_you_04",
+      "data": {
+        "lesson_key": "prea1-fr-how-are-you-02",
+        "text": {
+          "fr": "Et toi ?"
+        },
+        "translations": {
+          "fa": "و تو؟"
+        },
+        "intent": "return_question",
+        "concept_refs": [
+          "fr_pre_a1_how_are_you_et_toi"
+        ],
+        "cefr": "Pre-A1",
+        "topic": "greetings",
+        "register": "neutral",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "grammar_point",
+      "external_id": "g_how_are_you_core",
+      "data": {
+        "lesson_key": "prea1-fr-how-are-you-01",
+        "slug": "prea1-fr-how-are-you-grammar",
+        "title": "Ça va ?",
+        "rule_summary": "Ça va? is a high-frequency informal wellbeing formula. The same chunk can function as question and answer depending on intonation and context.",
+        "explanation": {
+          "fa": "«Ça va ?» یکی از پرکاربردترین الگوهای احوال‌پرسی است و بسته به آهنگ جمله می‌تواند سؤال یا بخشی از جواب باشد."
+        },
+        "examples": [
+          {
+            "fr": "Ça va ? — Ça va.",
+            "fa": "خوبی؟ — خوبم."
+          },
+          {
+            "fr": "Très bien, merci.",
+            "fa": "خیلی خوبم، ممنون."
+          }
+        ],
+        "cefr": "Pre-A1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "dialogue",
+      "external_id": "d_how_are_you_01",
+      "data": {
+        "lesson_key": "prea1-fr-how-are-you-01",
+        "title": "Ça va aujourd'hui ?",
+        "setting": "item",
+        "cefr": "Pre-A1",
+        "topic": "greetings",
+        "characters": [
+          "Inès",
+          "Thomas"
+        ],
+        "turns": [
+          {
+            "order": 1,
+            "speaker": "Inès",
+            "text": "Salut ! Ça va ?",
+            "translation_fa": "سلام! خوبی؟"
+          },
+          {
+            "order": 2,
+            "speaker": "Thomas",
+            "text": "Oui, ça va bien.",
+            "translation_fa": "بله، خوبم."
+          },
+          {
+            "order": 3,
+            "speaker": "Inès",
+            "text": "Super.",
+            "translation_fa": "عالیه."
+          },
+          {
+            "order": 4,
+            "speaker": "Thomas",
+            "text": "Et toi ?",
+            "translation_fa": "و تو؟"
+          }
+        ],
+        "qa": {
+          "character_pair_unique_within_unit": true,
+          "naturalness": "passed",
+          "single_situation": true
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "dialogue",
+      "external_id": "d_how_are_you_02",
+      "data": {
+        "lesson_key": "prea1-fr-how-are-you-02",
+        "title": "Très bien",
+        "setting": "item",
+        "cefr": "Pre-A1",
+        "topic": "greetings",
+        "characters": [
+          "Claire",
+          "Hugo"
+        ],
+        "turns": [
+          {
+            "order": 1,
+            "speaker": "Claire",
+            "text": "Bonjour ! Ça va ?",
+            "translation_fa": "سلام! خوبی؟"
+          },
+          {
+            "order": 2,
+            "speaker": "Hugo",
+            "text": "Très bien, merci.",
+            "translation_fa": "خیلی خوبم، ممنون."
+          },
+          {
+            "order": 3,
+            "speaker": "Claire",
+            "text": "Et toi ?",
+            "translation_fa": "و تو؟"
+          },
+          {
+            "order": 4,
+            "speaker": "Hugo",
+            "text": "Ça va.",
+            "translation_fa": "خوبم."
+          }
+        ],
+        "qa": {
+          "character_pair_unique_within_unit": true,
+          "naturalness": "passed",
+          "single_situation": true
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_how_are_you_01_meaning",
+      "data": {
+        "lesson_key": "prea1-fr-how-are-you-01",
+        "exercise_type": "multiple_choice",
+        "prompt": {
+          "instruction_fa": "معنی درست این عبارت فرانسوی را انتخاب کن.",
+          "value": "Ça va ?"
+        },
+        "answer": {
+          "value": "خوبی؟"
+        },
+        "options": [
+          "خوبی؟",
+          "خوبم.",
+          "خیلی خوبم، ممنون.",
+          "و تو؟"
+        ],
+        "difficulty": 1,
+        "cefr": "Pre-A1",
+        "topic": "greetings",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت، ریتم و شکل دقیق عبارت فرانسوی دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: Ça va ? — خوبی؟",
+          "model_answer": "Ça va ?"
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_how_are_you_01_listen",
+      "data": {
+        "lesson_key": "prea1-fr-how-are-you-01",
+        "exercise_type": "listening",
+        "prompt": {
+          "instruction_fa": "گوش کن و عبارتی را که شنیدی انتخاب کن.",
+          "audio_text": "Ça va bien."
+        },
+        "answer": {
+          "value": "Ça va bien."
+        },
+        "options": [
+          "Ça va bien.",
+          "Ça va ?",
+          "Très bien, merci.",
+          "Et toi ?"
+        ],
+        "difficulty": 1,
+        "cefr": "Pre-A1",
+        "topic": "greetings",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت، ریتم و شکل دقیق عبارت فرانسوی دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: Ça va bien. — خوبم.",
+          "model_answer": "Ça va bien.",
+          "transcript_fr": "Ça va bien."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_how_are_you_01_speak",
+      "data": {
+        "lesson_key": "prea1-fr-how-are-you-01",
+        "exercise_type": "speaking",
+        "prompt": {
+          "instruction_fa": "عبارت را با صدای بلند و با ریتم طبیعی فرانسوی تکرار کن.",
+          "value": "Ça va ?"
+        },
+        "answer": {
+          "expected_text": "Ça va ?"
+        },
+        "difficulty": 1,
+        "cefr": "Pre-A1",
+        "topic": "greetings",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت، ریتم و شکل دقیق عبارت فرانسوی دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: Ça va ? — خوبی؟",
+          "model_answer": "Ça va ?"
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_how_are_you_01_build",
+      "data": {
+        "lesson_key": "prea1-fr-how-are-you-01",
+        "exercise_type": "sentence_building",
+        "prompt": {
+          "instruction_fa": "کلمه‌ها را لمس کن تا عبارت درست ساخته شود.",
+          "tokens": [
+            "va",
+            "bien.",
+            "Ça"
+          ]
+        },
+        "answer": {
+          "tokens": [
+            "Ça",
+            "va",
+            "bien."
+          ],
+          "value": "Ça va bien."
+        },
+        "difficulty": 1,
+        "cefr": "Pre-A1",
+        "topic": "greetings",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت، ریتم و شکل دقیق عبارت فرانسوی دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: Ça va bien. — خوبم.",
+          "model_answer": "Ça va bien."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_how_are_you_01_dialogue",
+      "data": {
+        "lesson_key": "prea1-fr-how-are-you-01",
+        "exercise_type": "dialogue_comprehension",
+        "prompt": {
+          "instruction_fa": "با توجه به گفت‌وگو، پاسخ مناسب را انتخاب کن.",
+          "source_dialogue_ref": "d_how_are_you_01",
+          "question_fa": "کدام گزینه با معنی «خوبی؟» هماهنگ است؟"
+        },
+        "answer": {
+          "value": "Ça va ?"
+        },
+        "options": [
+          "Ça va ?",
+          "Ça va bien.",
+          "Très bien, merci.",
+          "Et toi ?"
+        ],
+        "difficulty": 1,
+        "cefr": "Pre-A1",
+        "topic": "greetings",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت، ریتم و شکل دقیق عبارت فرانسوی دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: Ça va ? — خوبی؟",
+          "model_answer": "Ça va ?"
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_how_are_you_02_meaning",
+      "data": {
+        "lesson_key": "prea1-fr-how-are-you-02",
+        "exercise_type": "multiple_choice",
+        "prompt": {
+          "instruction_fa": "معنی درست این عبارت فرانسوی را انتخاب کن.",
+          "value": "Très bien, merci."
+        },
+        "answer": {
+          "value": "خیلی خوبم، ممنون."
+        },
+        "options": [
+          "خیلی خوبم، ممنون.",
+          "خوبی؟",
+          "خوبم.",
+          "و تو؟"
+        ],
+        "difficulty": 1,
+        "cefr": "Pre-A1",
+        "topic": "greetings",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت، ریتم و شکل دقیق عبارت فرانسوی دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: Très bien, merci. — خیلی خوبم، ممنون.",
+          "model_answer": "Très bien, merci."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_how_are_you_02_listen",
+      "data": {
+        "lesson_key": "prea1-fr-how-are-you-02",
+        "exercise_type": "listening",
+        "prompt": {
+          "instruction_fa": "گوش کن و عبارتی را که شنیدی انتخاب کن.",
+          "audio_text": "Et toi ?"
+        },
+        "answer": {
+          "value": "Et toi ?"
+        },
+        "options": [
+          "Et toi ?",
+          "Ça va ?",
+          "Ça va bien.",
+          "Très bien, merci."
+        ],
+        "difficulty": 1,
+        "cefr": "Pre-A1",
+        "topic": "greetings",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت، ریتم و شکل دقیق عبارت فرانسوی دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: Et toi ? — و تو؟",
+          "model_answer": "Et toi ?",
+          "transcript_fr": "Et toi ?"
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_how_are_you_02_speak",
+      "data": {
+        "lesson_key": "prea1-fr-how-are-you-02",
+        "exercise_type": "speaking",
+        "prompt": {
+          "instruction_fa": "عبارت را با صدای بلند و با ریتم طبیعی فرانسوی تکرار کن.",
+          "value": "Très bien, merci."
+        },
+        "answer": {
+          "expected_text": "Très bien, merci."
+        },
+        "difficulty": 1,
+        "cefr": "Pre-A1",
+        "topic": "greetings",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت، ریتم و شکل دقیق عبارت فرانسوی دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: Très bien, merci. — خیلی خوبم، ممنون.",
+          "model_answer": "Très bien, merci."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_how_are_you_02_build",
+      "data": {
+        "lesson_key": "prea1-fr-how-are-you-02",
+        "exercise_type": "sentence_building",
+        "prompt": {
+          "instruction_fa": "کلمه‌ها را لمس کن تا عبارت درست ساخته شود.",
+          "tokens": [
+            "toi",
+            "?",
+            "Et"
+          ]
+        },
+        "answer": {
+          "tokens": [
+            "Et",
+            "toi",
+            "?"
+          ],
+          "value": "Et toi ?"
+        },
+        "difficulty": 1,
+        "cefr": "Pre-A1",
+        "topic": "greetings",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت، ریتم و شکل دقیق عبارت فرانسوی دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: Et toi ? — و تو؟",
+          "model_answer": "Et toi ?"
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_how_are_you_02_dialogue",
+      "data": {
+        "lesson_key": "prea1-fr-how-are-you-02",
+        "exercise_type": "dialogue_comprehension",
+        "prompt": {
+          "instruction_fa": "با توجه به گفت‌وگو، پاسخ مناسب را انتخاب کن.",
+          "source_dialogue_ref": "d_how_are_you_02",
+          "question_fa": "کدام گزینه با معنی «خیلی خوبم، ممنون.» هماهنگ است؟"
+        },
+        "answer": {
+          "value": "Très bien, merci."
+        },
+        "options": [
+          "Très bien, merci.",
+          "Ça va ?",
+          "Ça va bien.",
+          "Et toi ?"
+        ],
+        "difficulty": 1,
+        "cefr": "Pre-A1",
+        "topic": "greetings",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت، ریتم و شکل دقیق عبارت فرانسوی دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: Très bien, merci. — خیلی خوبم، ممنون.",
+          "model_answer": "Très bien, merci."
+        },
+        "status": "validated"
+      }
+    }
+  ]
+}

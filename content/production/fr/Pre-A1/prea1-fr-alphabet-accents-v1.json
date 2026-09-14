@@ -1,0 +1,854 @@
+{
+  "batch_id": "fr-fr-prea1-alphabet-accents-v1",
+  "course": "fa-fr-fr",
+  "learner_language": "fa",
+  "learner_variant": "fa-IR",
+  "target_language": "fr",
+  "target_variant": "fr-FR",
+  "cefr": "Pre-A1",
+  "curriculum_unit": "prea1-fr-alphabet-accents",
+  "generator": "gpt-5.6-sol:french-prea1-batch-v1",
+  "items": [
+    {
+      "kind": "concept",
+      "external_id": "c_alphabet_accents_01",
+      "data": {
+        "slug": "fr_pre_a1_alphabet_accents_a_letter",
+        "lesson_key": "prea1-fr-alphabet-accents-01",
+        "concept_type": "lexical",
+        "part_of_speech": "letter",
+        "forms": {
+          "fr": "A"
+        },
+        "translations": {
+          "fa": "حرف A"
+        },
+        "cefr": "Pre-A1",
+        "topic": "script-basics",
+        "tags": [
+          "core",
+          "beginner",
+          "high_frequency"
+        ],
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_alphabet_accents_01",
+      "data": {
+        "lesson_key": "prea1-fr-alphabet-accents-01",
+        "lemma": "A",
+        "display_lemma": "A",
+        "language": "fr",
+        "language_variant": "fr-FR",
+        "part_of_speech": "letter",
+        "concept_refs": [
+          "fr_pre_a1_alphabet_accents_a_letter"
+        ],
+        "cefr": "Pre-A1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_alphabet_accents_01",
+      "data": {
+        "lesson_key": "prea1-fr-alphabet-accents-01",
+        "lexeme_ref": "lx_alphabet_accents_01",
+        "surface_form": "A",
+        "display_form": "A",
+        "grammatical_features": {},
+        "is_lemma": true,
+        "is_preferred": true,
+        "cefr": "Pre-A1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_alphabet_accents_02",
+      "data": {
+        "slug": "fr_pre_a1_alphabet_accents_e_letter",
+        "lesson_key": "prea1-fr-alphabet-accents-01",
+        "concept_type": "lexical",
+        "part_of_speech": "letter",
+        "forms": {
+          "fr": "E"
+        },
+        "translations": {
+          "fa": "حرف E"
+        },
+        "cefr": "Pre-A1",
+        "topic": "script-basics",
+        "tags": [
+          "core",
+          "beginner",
+          "high_frequency"
+        ],
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_alphabet_accents_02",
+      "data": {
+        "lesson_key": "prea1-fr-alphabet-accents-01",
+        "lemma": "E",
+        "display_lemma": "E",
+        "language": "fr",
+        "language_variant": "fr-FR",
+        "part_of_speech": "letter",
+        "concept_refs": [
+          "fr_pre_a1_alphabet_accents_e_letter"
+        ],
+        "cefr": "Pre-A1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_alphabet_accents_02",
+      "data": {
+        "lesson_key": "prea1-fr-alphabet-accents-01",
+        "lexeme_ref": "lx_alphabet_accents_02",
+        "surface_form": "E",
+        "display_form": "E",
+        "grammatical_features": {},
+        "is_lemma": true,
+        "is_preferred": true,
+        "cefr": "Pre-A1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_alphabet_accents_03",
+      "data": {
+        "slug": "fr_pre_a1_alphabet_accents_e_accent",
+        "lesson_key": "prea1-fr-alphabet-accents-01",
+        "concept_type": "lexical",
+        "part_of_speech": "letter",
+        "forms": {
+          "fr": "é"
+        },
+        "translations": {
+          "fa": "حرف é با آکسان تِگو"
+        },
+        "cefr": "Pre-A1",
+        "topic": "script-basics",
+        "tags": [
+          "core",
+          "beginner",
+          "high_frequency"
+        ],
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_alphabet_accents_03",
+      "data": {
+        "lesson_key": "prea1-fr-alphabet-accents-01",
+        "lemma": "é",
+        "display_lemma": "é",
+        "language": "fr",
+        "language_variant": "fr-FR",
+        "part_of_speech": "letter",
+        "concept_refs": [
+          "fr_pre_a1_alphabet_accents_e_accent"
+        ],
+        "cefr": "Pre-A1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_alphabet_accents_03",
+      "data": {
+        "lesson_key": "prea1-fr-alphabet-accents-01",
+        "lexeme_ref": "lx_alphabet_accents_03",
+        "surface_form": "é",
+        "display_form": "é",
+        "grammatical_features": {},
+        "is_lemma": true,
+        "is_preferred": true,
+        "cefr": "Pre-A1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_alphabet_accents_04",
+      "data": {
+        "slug": "fr_pre_a1_alphabet_accents_c_cedille",
+        "lesson_key": "prea1-fr-alphabet-accents-02",
+        "concept_type": "lexical",
+        "part_of_speech": "letter",
+        "forms": {
+          "fr": "ç"
+        },
+        "translations": {
+          "fa": "حرف ç با سدی"
+        },
+        "cefr": "Pre-A1",
+        "topic": "script-basics",
+        "tags": [
+          "core",
+          "beginner",
+          "high_frequency"
+        ],
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_alphabet_accents_04",
+      "data": {
+        "lesson_key": "prea1-fr-alphabet-accents-02",
+        "lemma": "ç",
+        "display_lemma": "ç",
+        "language": "fr",
+        "language_variant": "fr-FR",
+        "part_of_speech": "letter",
+        "concept_refs": [
+          "fr_pre_a1_alphabet_accents_c_cedille"
+        ],
+        "cefr": "Pre-A1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_alphabet_accents_04",
+      "data": {
+        "lesson_key": "prea1-fr-alphabet-accents-02",
+        "lexeme_ref": "lx_alphabet_accents_04",
+        "surface_form": "ç",
+        "display_form": "ç",
+        "grammatical_features": {},
+        "is_lemma": true,
+        "is_preferred": true,
+        "cefr": "Pre-A1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_alphabet_accents_05",
+      "data": {
+        "slug": "fr_pre_a1_alphabet_accents_apostrophe",
+        "lesson_key": "prea1-fr-alphabet-accents-02",
+        "concept_type": "lexical",
+        "part_of_speech": "noun",
+        "forms": {
+          "fr": "l'apostrophe"
+        },
+        "translations": {
+          "fa": "آپاستروف"
+        },
+        "cefr": "Pre-A1",
+        "topic": "script-basics",
+        "tags": [
+          "core",
+          "beginner",
+          "high_frequency"
+        ],
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_alphabet_accents_05",
+      "data": {
+        "lesson_key": "prea1-fr-alphabet-accents-02",
+        "lemma": "l'apostrophe",
+        "display_lemma": "l'apostrophe",
+        "language": "fr",
+        "language_variant": "fr-FR",
+        "part_of_speech": "noun",
+        "concept_refs": [
+          "fr_pre_a1_alphabet_accents_apostrophe"
+        ],
+        "cefr": "Pre-A1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_alphabet_accents_05",
+      "data": {
+        "lesson_key": "prea1-fr-alphabet-accents-02",
+        "lexeme_ref": "lx_alphabet_accents_05",
+        "surface_form": "l'apostrophe",
+        "display_form": "l'apostrophe",
+        "grammatical_features": {},
+        "is_lemma": true,
+        "is_preferred": true,
+        "cefr": "Pre-A1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_alphabet_accents_06",
+      "data": {
+        "slug": "fr_pre_a1_alphabet_accents_alphabet",
+        "lesson_key": "prea1-fr-alphabet-accents-02",
+        "concept_type": "lexical",
+        "part_of_speech": "noun",
+        "forms": {
+          "fr": "alphabet"
+        },
+        "translations": {
+          "fa": "الفبا"
+        },
+        "cefr": "Pre-A1",
+        "topic": "script-basics",
+        "tags": [
+          "core",
+          "beginner",
+          "high_frequency"
+        ],
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_alphabet_accents_06",
+      "data": {
+        "lesson_key": "prea1-fr-alphabet-accents-02",
+        "lemma": "alphabet",
+        "display_lemma": "alphabet",
+        "language": "fr",
+        "language_variant": "fr-FR",
+        "part_of_speech": "noun",
+        "concept_refs": [
+          "fr_pre_a1_alphabet_accents_alphabet"
+        ],
+        "cefr": "Pre-A1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_alphabet_accents_06",
+      "data": {
+        "lesson_key": "prea1-fr-alphabet-accents-02",
+        "lexeme_ref": "lx_alphabet_accents_06",
+        "surface_form": "alphabet",
+        "display_form": "alphabet",
+        "grammatical_features": {},
+        "is_lemma": true,
+        "is_preferred": true,
+        "cefr": "Pre-A1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_alphabet_accents_01",
+      "data": {
+        "lesson_key": "prea1-fr-alphabet-accents-01",
+        "text": {
+          "fr": "C'est la lettre A."
+        },
+        "translations": {
+          "fa": "این حرف A است."
+        },
+        "intent": "identify_letter",
+        "concept_refs": [
+          "fr_pre_a1_alphabet_accents_a_letter"
+        ],
+        "cefr": "Pre-A1",
+        "topic": "script-basics",
+        "register": "neutral",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_alphabet_accents_02",
+      "data": {
+        "lesson_key": "prea1-fr-alphabet-accents-01",
+        "text": {
+          "fr": "É a un accent."
+        },
+        "translations": {
+          "fa": "É یک آکسان دارد."
+        },
+        "intent": "notice_accent",
+        "concept_refs": [
+          "fr_pre_a1_alphabet_accents_e_accent"
+        ],
+        "cefr": "Pre-A1",
+        "topic": "script-basics",
+        "register": "neutral",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_alphabet_accents_03",
+      "data": {
+        "lesson_key": "prea1-fr-alphabet-accents-02",
+        "text": {
+          "fr": "Garçon contient ç."
+        },
+        "translations": {
+          "fa": "کلمهٔ «garçon» حرف ç دارد."
+        },
+        "intent": "notice_cedilla",
+        "concept_refs": [
+          "fr_pre_a1_alphabet_accents_c_cedille"
+        ],
+        "cefr": "Pre-A1",
+        "topic": "script-basics",
+        "register": "neutral",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_alphabet_accents_04",
+      "data": {
+        "lesson_key": "prea1-fr-alphabet-accents-02",
+        "text": {
+          "fr": "Je vois une apostrophe."
+        },
+        "translations": {
+          "fa": "یک آپاستروف می‌بینم."
+        },
+        "intent": "notice_apostrophe",
+        "concept_refs": [
+          "fr_pre_a1_alphabet_accents_apostrophe"
+        ],
+        "cefr": "Pre-A1",
+        "topic": "script-basics",
+        "register": "neutral",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "grammar_point",
+      "external_id": "g_alphabet_accents_core",
+      "data": {
+        "lesson_key": "prea1-fr-alphabet-accents-01",
+        "slug": "prea1-fr-alphabet-accents-grammar",
+        "title": "Accents et apostrophe",
+        "rule_summary": "French spelling uses accents and apostrophes as meaningful written features. Preserve them rather than treating them as decoration.",
+        "explanation": {
+          "fa": "آکسان‌ها و آپاستروف در نوشتار فرانسوی تزئینی نیستند؛ شکل درست کلمه را از ابتدا با آن‌ها حفظ کن."
+        },
+        "examples": [
+          {
+            "fr": "café",
+            "fa": "کافه / قهوه"
+          },
+          {
+            "fr": "l'école",
+            "fa": "مدرسه"
+          }
+        ],
+        "cefr": "Pre-A1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "dialogue",
+      "external_id": "d_alphabet_accents_01",
+      "data": {
+        "lesson_key": "prea1-fr-alphabet-accents-01",
+        "title": "Une lettre",
+        "setting": "item",
+        "cefr": "Pre-A1",
+        "topic": "script-basics",
+        "characters": [
+          "Inès",
+          "Julien"
+        ],
+        "turns": [
+          {
+            "order": 1,
+            "speaker": "Inès",
+            "text": "C'est A ?",
+            "translation_fa": "این A است؟"
+          },
+          {
+            "order": 2,
+            "speaker": "Julien",
+            "text": "Oui, c'est A.",
+            "translation_fa": "بله، A است."
+          },
+          {
+            "order": 3,
+            "speaker": "Inès",
+            "text": "Et ça ?",
+            "translation_fa": "و این؟"
+          },
+          {
+            "order": 4,
+            "speaker": "Julien",
+            "text": "C'est É.",
+            "translation_fa": "É است."
+          }
+        ],
+        "qa": {
+          "character_pair_unique_within_unit": true,
+          "naturalness": "passed",
+          "single_situation": true
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "dialogue",
+      "external_id": "d_alphabet_accents_02",
+      "data": {
+        "lesson_key": "prea1-fr-alphabet-accents-02",
+        "title": "Un accent",
+        "setting": "item",
+        "cefr": "Pre-A1",
+        "topic": "script-basics",
+        "characters": [
+          "Claire",
+          "Thomas"
+        ],
+        "turns": [
+          {
+            "order": 1,
+            "speaker": "Claire",
+            "text": "Il y a un accent ?",
+            "translation_fa": "آکسان دارد؟"
+          },
+          {
+            "order": 2,
+            "speaker": "Thomas",
+            "text": "Oui, sur le é.",
+            "translation_fa": "بله، روی é."
+          },
+          {
+            "order": 3,
+            "speaker": "Claire",
+            "text": "Et l'apostrophe ?",
+            "translation_fa": "و آپاستروف؟"
+          },
+          {
+            "order": 4,
+            "speaker": "Thomas",
+            "text": "Elle est ici.",
+            "translation_fa": "اینجاست."
+          }
+        ],
+        "qa": {
+          "character_pair_unique_within_unit": true,
+          "naturalness": "passed",
+          "single_situation": true
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_alphabet_accents_01_meaning",
+      "data": {
+        "lesson_key": "prea1-fr-alphabet-accents-01",
+        "exercise_type": "multiple_choice",
+        "prompt": {
+          "instruction_fa": "معنی درست این عبارت فرانسوی را انتخاب کن.",
+          "value": "C'est la lettre A."
+        },
+        "answer": {
+          "value": "این حرف A است."
+        },
+        "options": [
+          "این حرف A است.",
+          "É یک آکسان دارد.",
+          "کلمهٔ «garçon» حرف ç دارد.",
+          "یک آپاستروف می‌بینم."
+        ],
+        "difficulty": 1,
+        "cefr": "Pre-A1",
+        "topic": "script-basics",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت، ریتم و شکل دقیق عبارت فرانسوی دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: C'est la lettre A. — این حرف A است.",
+          "model_answer": "C'est la lettre A."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_alphabet_accents_01_listen",
+      "data": {
+        "lesson_key": "prea1-fr-alphabet-accents-01",
+        "exercise_type": "listening",
+        "prompt": {
+          "instruction_fa": "گوش کن و عبارتی را که شنیدی انتخاب کن.",
+          "audio_text": "É a un accent."
+        },
+        "answer": {
+          "value": "É a un accent."
+        },
+        "options": [
+          "É a un accent.",
+          "C'est la lettre A.",
+          "Garçon contient ç.",
+          "Je vois une apostrophe."
+        ],
+        "difficulty": 1,
+        "cefr": "Pre-A1",
+        "topic": "script-basics",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت، ریتم و شکل دقیق عبارت فرانسوی دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: É a un accent. — É یک آکسان دارد.",
+          "model_answer": "É a un accent.",
+          "transcript_fr": "É a un accent."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_alphabet_accents_01_speak",
+      "data": {
+        "lesson_key": "prea1-fr-alphabet-accents-01",
+        "exercise_type": "speaking",
+        "prompt": {
+          "instruction_fa": "عبارت را با صدای بلند و با ریتم طبیعی فرانسوی تکرار کن.",
+          "value": "C'est la lettre A."
+        },
+        "answer": {
+          "expected_text": "C'est la lettre A."
+        },
+        "difficulty": 1,
+        "cefr": "Pre-A1",
+        "topic": "script-basics",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت، ریتم و شکل دقیق عبارت فرانسوی دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: C'est la lettre A. — این حرف A است.",
+          "model_answer": "C'est la lettre A."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_alphabet_accents_01_build",
+      "data": {
+        "lesson_key": "prea1-fr-alphabet-accents-01",
+        "exercise_type": "sentence_building",
+        "prompt": {
+          "instruction_fa": "کلمه‌ها را لمس کن تا عبارت درست ساخته شود.",
+          "tokens": [
+            "a",
+            "un",
+            "accent.",
+            "É"
+          ]
+        },
+        "answer": {
+          "tokens": [
+            "É",
+            "a",
+            "un",
+            "accent."
+          ],
+          "value": "É a un accent."
+        },
+        "difficulty": 1,
+        "cefr": "Pre-A1",
+        "topic": "script-basics",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت، ریتم و شکل دقیق عبارت فرانسوی دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: É a un accent. — É یک آکسان دارد.",
+          "model_answer": "É a un accent."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_alphabet_accents_01_dialogue",
+      "data": {
+        "lesson_key": "prea1-fr-alphabet-accents-01",
+        "exercise_type": "dialogue_comprehension",
+        "prompt": {
+          "instruction_fa": "با توجه به گفت‌وگو، پاسخ مناسب را انتخاب کن.",
+          "source_dialogue_ref": "d_alphabet_accents_01",
+          "question_fa": "کدام گزینه با معنی «این حرف A است.» هماهنگ است؟"
+        },
+        "answer": {
+          "value": "C'est la lettre A."
+        },
+        "options": [
+          "C'est la lettre A.",
+          "É a un accent.",
+          "Garçon contient ç.",
+          "Je vois une apostrophe."
+        ],
+        "difficulty": 1,
+        "cefr": "Pre-A1",
+        "topic": "script-basics",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت، ریتم و شکل دقیق عبارت فرانسوی دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: C'est la lettre A. — این حرف A است.",
+          "model_answer": "C'est la lettre A."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_alphabet_accents_02_meaning",
+      "data": {
+        "lesson_key": "prea1-fr-alphabet-accents-02",
+        "exercise_type": "multiple_choice",
+        "prompt": {
+          "instruction_fa": "معنی درست این عبارت فرانسوی را انتخاب کن.",
+          "value": "Garçon contient ç."
+        },
+        "answer": {
+          "value": "کلمهٔ «garçon» حرف ç دارد."
+        },
+        "options": [
+          "کلمهٔ «garçon» حرف ç دارد.",
+          "این حرف A است.",
+          "É یک آکسان دارد.",
+          "یک آپاستروف می‌بینم."
+        ],
+        "difficulty": 1,
+        "cefr": "Pre-A1",
+        "topic": "script-basics",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت، ریتم و شکل دقیق عبارت فرانسوی دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: Garçon contient ç. — کلمهٔ «garçon» حرف ç دارد.",
+          "model_answer": "Garçon contient ç."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_alphabet_accents_02_listen",
+      "data": {
+        "lesson_key": "prea1-fr-alphabet-accents-02",
+        "exercise_type": "listening",
+        "prompt": {
+          "instruction_fa": "گوش کن و عبارتی را که شنیدی انتخاب کن.",
+          "audio_text": "Je vois une apostrophe."
+        },
+        "answer": {
+          "value": "Je vois une apostrophe."
+        },
+        "options": [
+          "Je vois une apostrophe.",
+          "C'est la lettre A.",
+          "É a un accent.",
+          "Garçon contient ç."
+        ],
+        "difficulty": 1,
+        "cefr": "Pre-A1",
+        "topic": "script-basics",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت، ریتم و شکل دقیق عبارت فرانسوی دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: Je vois une apostrophe. — یک آپاستروف می‌بینم.",
+          "model_answer": "Je vois une apostrophe.",
+          "transcript_fr": "Je vois une apostrophe."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_alphabet_accents_02_speak",
+      "data": {
+        "lesson_key": "prea1-fr-alphabet-accents-02",
+        "exercise_type": "speaking",
+        "prompt": {
+          "instruction_fa": "عبارت را با صدای بلند و با ریتم طبیعی فرانسوی تکرار کن.",
+          "value": "Garçon contient ç."
+        },
+        "answer": {
+          "expected_text": "Garçon contient ç."
+        },
+        "difficulty": 1,
+        "cefr": "Pre-A1",
+        "topic": "script-basics",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت، ریتم و شکل دقیق عبارت فرانسوی دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: Garçon contient ç. — کلمهٔ «garçon» حرف ç دارد.",
+          "model_answer": "Garçon contient ç."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_alphabet_accents_02_build",
+      "data": {
+        "lesson_key": "prea1-fr-alphabet-accents-02",
+        "exercise_type": "sentence_building",
+        "prompt": {
+          "instruction_fa": "کلمه‌ها را لمس کن تا عبارت درست ساخته شود.",
+          "tokens": [
+            "vois",
+            "une",
+            "apostrophe.",
+            "Je"
+          ]
+        },
+        "answer": {
+          "tokens": [
+            "Je",
+            "vois",
+            "une",
+            "apostrophe."
+          ],
+          "value": "Je vois une apostrophe."
+        },
+        "difficulty": 1,
+        "cefr": "Pre-A1",
+        "topic": "script-basics",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت، ریتم و شکل دقیق عبارت فرانسوی دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: Je vois une apostrophe. — یک آپاستروف می‌بینم.",
+          "model_answer": "Je vois une apostrophe."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_alphabet_accents_02_dialogue",
+      "data": {
+        "lesson_key": "prea1-fr-alphabet-accents-02",
+        "exercise_type": "dialogue_comprehension",
+        "prompt": {
+          "instruction_fa": "با توجه به گفت‌وگو، پاسخ مناسب را انتخاب کن.",
+          "source_dialogue_ref": "d_alphabet_accents_02",
+          "question_fa": "کدام گزینه با معنی «کلمهٔ «garçon» حرف ç دارد.» هماهنگ است؟"
+        },
+        "answer": {
+          "value": "Garçon contient ç."
+        },
+        "options": [
+          "Garçon contient ç.",
+          "C'est la lettre A.",
+          "É a un accent.",
+          "Je vois une apostrophe."
+        ],
+        "difficulty": 1,
+        "cefr": "Pre-A1",
+        "topic": "script-basics",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت، ریتم و شکل دقیق عبارت فرانسوی دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: Garçon contient ç. — کلمهٔ «garçon» حرف ç دارد.",
+          "model_answer": "Garçon contient ç."
+        },
+        "status": "validated"
+      }
+    }
+  ]
+}
