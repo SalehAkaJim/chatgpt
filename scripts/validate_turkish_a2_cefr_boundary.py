@@ -4,6 +4,7 @@ from __future__ import annotations
 
 import json
 import re
+import unicodedata
 from pathlib import Path
 from typing import Any, Iterable
 
@@ -12,7 +13,15 @@ A2_SPEC_DIR = ROOT / "content/specs/tr/A2"
 A2_PROD_DIR = ROOT / "content/production/tr/A2"
 B1_SPEC_DIR = ROOT / "content/specs/tr/B1"
 
-SAFE_CONDITIONAL_CHUNKS = {"mümkünse", "istersen", "isterseniz", "yoksa"}
+
+def norm_token(value: str) -> str:
+    """Casefold Turkish text and remove combining marks (notably dotted İ -> i)."""
+    folded = unicodedata.normalize("NFKD", value.casefold())
+    return "".join(ch for ch in folded if not unicodedata.combining(ch))
+
+
+SAFE_CONDITIONAL_CHUNKS = {norm_token(x) for x in ("mümkünse", "istersen", "isterseniz", "yoksa")}
+SAFE_CONDITIONAL_LOOKALIKES = {norm_token(x) for x in ("kısa",)}
 ENGLISH_FALSE_POSITIVES = {
     "course", "discourse", "exercise", "purpose", "tense", "cause", "concise",
     "increase", "propose", "response", "use", "case", "phrase", "else",
@@ -92,7 +101,7 @@ def verify_b1_boundary_source() -> None:
 
 
 def morphology_candidate(token: str) -> bool:
-    low = token.lower()
+    low = norm_token(token)
     return "_" not in low and low not in ENGLISH_FALSE_POSITIVES
 
 
@@ -109,12 +118,12 @@ def inspect_text(path: Path, text: str, errors: list[str], warnings: list[str]) 
 
     for match in KEN_FORM.finditer(text):
         token = match.group(0)
-        if morphology_candidate(token) and token.lower() != "erken":
+        if morphology_candidate(token) and norm_token(token) != "erken":
             errors.append(f"{path}: productive -ken form {token!r} crosses into authored B1 scope")
 
     for match in CONDITIONAL_FORM.finditer(text):
         token = match.group(0)
-        low = token.lower()
+        low = norm_token(token)
         if low in SAFE_CONDITIONAL_CHUNKS or not morphology_candidate(token):
             continue
         errors.append(f"{path}: productive -sa/-se conditional candidate {token!r} crosses into authored B1 scope")
@@ -124,12 +133,17 @@ def inspect_text(path: Path, text: str, errors: list[str], warnings: list[str]) 
             errors.append(f"{path}: A2 task/grammar demand mirrors B1 marker {marker!r}: {text!r}")
 
     # Only flag ambiguous conditional-looking tokens when Turkish orthography makes the
-    # candidate meaningful; do not spam on English metadata such as exercise/purpose.
+    # candidate meaningful; curated lexical lookalikes stay out of the review queue.
     for token in re.findall(r"\b[\wçğıöşüÇĞİÖŞÜ]+(?:sa|se)(?:m|n|k|nız|niz|nuz|nüz|lar|ler)?\b", text, re.IGNORECASE):
-        low = token.lower()
-        if low in SAFE_CONDITIONAL_CHUNKS or CONDITIONAL_FORM.fullmatch(token) or not morphology_candidate(token):
+        low = norm_token(token)
+        if (
+            low in SAFE_CONDITIONAL_CHUNKS
+            or low in SAFE_CONDITIONAL_LOOKALIKES
+            or CONDITIONAL_FORM.fullmatch(token)
+            or not morphology_candidate(token)
+        ):
             continue
-        if any(ch in low for ch in "çğıöşü"):
+        if any(ch in low for ch in "çgıöşü"):
             warnings.append(f"{path}: review conditional-looking token {token!r}")
 
 
@@ -168,6 +182,7 @@ def main() -> None:
         "errors": errors,
         "warnings": warnings,
         "safe_fixed_chunks": sorted(SAFE_CONDITIONAL_CHUNKS),
+        "safe_lexical_lookalikes": sorted(SAFE_CONDITIONAL_LOOKALIKES),
     }, ensure_ascii=False, indent=2))
     if errors:
         raise SystemExit(f"Turkish A2 CEFR boundary validation failed with {len(errors)} high-confidence issue(s)")
