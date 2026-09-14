@@ -28,8 +28,8 @@ jobs:
       - name: Install dependencies
         run: pip install -r requirements.txt
 
-      - name: Generate all authored Turkish A2 batches
-        run: python scripts/generate_turkish_a2_curriculum.py
+      - name: Generate all authored Turkish A2 batches with legacy retrofits
+        run: python scripts/generate_turkish_a2_with_retrofits.py
 
       - name: Validate cumulative Turkish A2 content
         run: |
@@ -65,45 +65,53 @@ jobs:
           if len(batch_ids) != len(set(batch_ids)):
               raise SystemExit('duplicate Turkish A2 batch_id')
 
-          by_unit={b['curriculum_unit']:b for b in batches}
           report={}
-          for batch_no,spec in specs:
-              unit=f"a2-tr-{spec['slug']}"
-              b=by_unit[unit]
+          for b in batches:
+              unit=b['curriculum_unit']
               lesson_counts={}
+              dialogue_pairs={}
               for item in b.get('items',[]):
                   d=item.get('data',{})
                   lk=d.get('lesson_key')
-                  if not lk: continue
+                  if not lk:
+                      continue
                   c=lesson_counts.setdefault(lk,collections.Counter())
                   c[item.get('kind')]+=1
                   if item.get('kind')=='exercise':
                       c['exercise:'+str(d.get('exercise_type'))]+=1
-              if not lesson_counts:
-                  raise SystemExit(f'{unit}: no lessons')
-              for lk,c in lesson_counts.items():
+                      if d.get('answer',{}).get('evaluation_mode')=='rubric':
+                          c['rubric_output']+=1
+                      if d.get('exercise_type')=='writing' and d.get('answer',{}).get('evaluation_mode')=='rubric':
+                          c['open_writing']+=1
+                      if d.get('exercise_type')=='speaking' and d.get('prompt',{}).get('personalized') is True and d.get('answer',{}).get('evaluation_mode')=='rubric':
+                          c['personalized_speaking']+=1
+                  if item.get('kind')=='dialogue':
+                      speakers=[]
+                      for turn in d.get('turns',[]):
+                          s=turn.get('speaker')
+                          if s and s not in speakers:
+                              speakers.append(s)
+                      dialogue_pairs[lk]=tuple(sorted(speakers))
+
+              ordered=sorted(lesson_counts)
+              if len(ordered) != 3:
+                  raise SystemExit(f'{unit}: A2 requires three substantive lessons; got {len(ordered)}')
+              for lk in ordered:
+                  c=lesson_counts[lk]
                   for required in ('dialogue','exercise:listening','exercise:speaking','exercise:multiple_choice'):
                       if c[required] < 1:
                           raise SystemExit(f'{unit}:{lk}: missing {required}')
-              if spec.get('production'):
-                  open_write=sum(
-                      1 for i in b['items'] if i.get('kind')=='exercise'
-                      and i.get('data',{}).get('exercise_type')=='writing'
-                      and i.get('data',{}).get('answer',{}).get('evaluation_mode')=='rubric'
-                  )
-                  personal_speak=sum(
-                      1 for i in b['items'] if i.get('kind')=='exercise'
-                      and i.get('data',{}).get('exercise_type')=='speaking'
-                      and i.get('data',{}).get('prompt',{}).get('personalized') is True
-                      and i.get('data',{}).get('answer',{}).get('evaluation_mode')=='rubric'
-                  )
-                  if open_write < 1 or personal_speak < 1:
-                      raise SystemExit(f'{unit}: authored production gate not materialized')
+              third=lesson_counts[ordered[-1]]
+              if third['open_writing'] < 1 or third['personalized_speaking'] < 1 or third['rubric_output'] < 2:
+                  raise SystemExit(f'{unit}:{ordered[-1]}: third lesson lacks genuine rubric-based independent production')
+              for prev,cur in zip(ordered,ordered[1:]):
+                  if dialogue_pairs.get(prev) and dialogue_pairs.get(prev)==dialogue_pairs.get(cur):
+                      raise SystemExit(f'{unit}: repeated normalized dialogue pair in consecutive lessons {prev} and {cur}')
               report[unit]={
-                  'batch':batch_no,
-                  'lessons':len(lesson_counts),
+                  'lessons':len(ordered),
                   'items':len(b.get('items',[])),
-                  'has_open_production':bool(spec.get('production')),
+                  'third_lesson_open_writing':third['open_writing'],
+                  'third_lesson_personalized_speaking':third['personalized_speaking'],
               }
           print(json.dumps({'units':len(report),'details':report},ensure_ascii=False,indent=2))
           PY
