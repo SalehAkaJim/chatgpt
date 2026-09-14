@@ -59,7 +59,10 @@ def build_unit(spec: dict, batch_number: int) -> dict:
           {"kind":"exercise","external_id":base+"_build","data":validated({"lesson_key":lk,"exercise_type":"sentence_building","prompt":{"instruction_fa":"کلمه‌ها را لمس کن تا عبارت درست ساخته شود.","tokens":b["tr"].split()[1:]+b["tr"].split()[:1]},"answer":{"tokens":b["tr"].split(),"value":b["tr"]},"difficulty":1,"cefr":LEVEL,"topic":topic,"feedback":fb(b["fa"],b["tr"])})},
           {"kind":"exercise","external_id":base+"_dialogue","data":validated({"lesson_key":lk,"exercise_type":"dialogue_comprehension","prompt":{"instruction_fa":"با توجه به گفت‌وگو، پاسخ مناسب را انتخاب کن.","source_dialogue_ref":dialogue_ids[lesson],"question_fa":f"کدام گزینه با معنی «{a['fa']}» هماهنگ است؟"},"answer":{"value":a["tr"]},"options":tr_opts,"difficulty":1,"cefr":LEVEL,"topic":topic,"feedback":fb(a["fa"],a["tr"])})}
         ]
-    return {"batch_id":f"tr-tr-a1-b{batch_number:02d}-{slug}-v1","course":COURSE,"learner_language":"fa","learner_variant":"fa-IR","target_language":"tr","target_variant":VARIANT,"cefr":LEVEL,"curriculum_unit":unit,"generator":f"gpt-5.6-sol:turkish-a1-batch-{batch_number:02d}-v1","items":items}
+    legacy_batch_id=f"tr-tr-a1-{slug}-v1"
+    batch_id=legacy_batch_id if batch_number==1 else f"tr-tr-a1-b{batch_number:02d}-{slug}-v1"
+    generator="gpt-5.6-sol:turkish-a1-batch-v1" if batch_number==1 else f"gpt-5.6-sol:turkish-a1-batch-{batch_number:02d}-v1"
+    return {"batch_id":batch_id,"course":COURSE,"learner_language":"fa","learner_variant":"fa-IR","target_language":"tr","target_variant":VARIANT,"cefr":LEVEL,"curriculum_unit":unit,"generator":generator,"items":items}
 
 
 def main():
