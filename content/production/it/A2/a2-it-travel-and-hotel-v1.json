@@ -1,0 +1,861 @@
+{
+  "batch_id": "it-it-a2-travel-and-hotel-v1",
+  "course": "fa-it-it",
+  "learner_language": "fa",
+  "learner_variant": "fa-IR",
+  "target_language": "it",
+  "target_variant": "it-IT",
+  "cefr": "A2",
+  "curriculum_unit": "a2-it-travel-and-hotel",
+  "generator": "gpt-5.6-sol:italian-a2-batch-v1",
+  "items": [
+    {
+      "kind": "concept",
+      "external_id": "c_travel_and_hotel_01",
+      "data": {
+        "slug": "it_a2_travel_and_hotel_prenotazione",
+        "lesson_key": "a2-it-travel-and-hotel-01",
+        "concept_type": "lexical",
+        "part_of_speech": "noun",
+        "forms": {
+          "it": "prenotazione"
+        },
+        "translations": {
+          "fa": "رزرو"
+        },
+        "cefr": "A2",
+        "topic": "transport",
+        "tags": [
+          "core",
+          "a2",
+          "high_frequency"
+        ],
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_travel_and_hotel_01",
+      "data": {
+        "lesson_key": "a2-it-travel-and-hotel-01",
+        "lemma": "prenotazione",
+        "display_lemma": "prenotazione",
+        "language": "it",
+        "language_variant": "it-IT",
+        "part_of_speech": "noun",
+        "concept_refs": [
+          "it_a2_travel_and_hotel_prenotazione"
+        ],
+        "cefr": "A2",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_travel_and_hotel_01",
+      "data": {
+        "lesson_key": "a2-it-travel-and-hotel-01",
+        "lexeme_ref": "lx_travel_and_hotel_01",
+        "surface_form": "prenotazione",
+        "display_form": "prenotazione",
+        "grammatical_features": {},
+        "is_lemma": true,
+        "is_preferred": true,
+        "cefr": "A2",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_travel_and_hotel_02",
+      "data": {
+        "slug": "it_a2_travel_and_hotel_camera",
+        "lesson_key": "a2-it-travel-and-hotel-01",
+        "concept_type": "lexical",
+        "part_of_speech": "noun",
+        "forms": {
+          "it": "camera"
+        },
+        "translations": {
+          "fa": "اتاق"
+        },
+        "cefr": "A2",
+        "topic": "transport",
+        "tags": [
+          "core",
+          "a2",
+          "high_frequency"
+        ],
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_travel_and_hotel_02",
+      "data": {
+        "lesson_key": "a2-it-travel-and-hotel-01",
+        "lemma": "camera",
+        "display_lemma": "camera",
+        "language": "it",
+        "language_variant": "it-IT",
+        "part_of_speech": "noun",
+        "concept_refs": [
+          "it_a2_travel_and_hotel_camera"
+        ],
+        "cefr": "A2",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_travel_and_hotel_02",
+      "data": {
+        "lesson_key": "a2-it-travel-and-hotel-01",
+        "lexeme_ref": "lx_travel_and_hotel_02",
+        "surface_form": "camera",
+        "display_form": "camera",
+        "grammatical_features": {},
+        "is_lemma": true,
+        "is_preferred": true,
+        "cefr": "A2",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_travel_and_hotel_03",
+      "data": {
+        "slug": "it_a2_travel_and_hotel_passaporto",
+        "lesson_key": "a2-it-travel-and-hotel-01",
+        "concept_type": "lexical",
+        "part_of_speech": "noun",
+        "forms": {
+          "it": "passaporto"
+        },
+        "translations": {
+          "fa": "گذرنامه"
+        },
+        "cefr": "A2",
+        "topic": "transport",
+        "tags": [
+          "core",
+          "a2",
+          "high_frequency"
+        ],
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_travel_and_hotel_03",
+      "data": {
+        "lesson_key": "a2-it-travel-and-hotel-01",
+        "lemma": "passaporto",
+        "display_lemma": "passaporto",
+        "language": "it",
+        "language_variant": "it-IT",
+        "part_of_speech": "noun",
+        "concept_refs": [
+          "it_a2_travel_and_hotel_passaporto"
+        ],
+        "cefr": "A2",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_travel_and_hotel_03",
+      "data": {
+        "lesson_key": "a2-it-travel-and-hotel-01",
+        "lexeme_ref": "lx_travel_and_hotel_03",
+        "surface_form": "passaporto",
+        "display_form": "passaporto",
+        "grammatical_features": {},
+        "is_lemma": true,
+        "is_preferred": true,
+        "cefr": "A2",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_travel_and_hotel_04",
+      "data": {
+        "slug": "it_a2_travel_and_hotel_binario",
+        "lesson_key": "a2-it-travel-and-hotel-02",
+        "concept_type": "lexical",
+        "part_of_speech": "noun",
+        "forms": {
+          "it": "binario"
+        },
+        "translations": {
+          "fa": "سکوی قطار / خط"
+        },
+        "cefr": "A2",
+        "topic": "transport",
+        "tags": [
+          "core",
+          "a2",
+          "high_frequency"
+        ],
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_travel_and_hotel_04",
+      "data": {
+        "lesson_key": "a2-it-travel-and-hotel-02",
+        "lemma": "binario",
+        "display_lemma": "binario",
+        "language": "it",
+        "language_variant": "it-IT",
+        "part_of_speech": "noun",
+        "concept_refs": [
+          "it_a2_travel_and_hotel_binario"
+        ],
+        "cefr": "A2",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_travel_and_hotel_04",
+      "data": {
+        "lesson_key": "a2-it-travel-and-hotel-02",
+        "lexeme_ref": "lx_travel_and_hotel_04",
+        "surface_form": "binario",
+        "display_form": "binario",
+        "grammatical_features": {},
+        "is_lemma": true,
+        "is_preferred": true,
+        "cefr": "A2",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_travel_and_hotel_05",
+      "data": {
+        "slug": "it_a2_travel_and_hotel_ritardo",
+        "lesson_key": "a2-it-travel-and-hotel-02",
+        "concept_type": "lexical",
+        "part_of_speech": "noun",
+        "forms": {
+          "it": "ritardo"
+        },
+        "translations": {
+          "fa": "تأخیر"
+        },
+        "cefr": "A2",
+        "topic": "transport",
+        "tags": [
+          "core",
+          "a2",
+          "high_frequency"
+        ],
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_travel_and_hotel_05",
+      "data": {
+        "lesson_key": "a2-it-travel-and-hotel-02",
+        "lemma": "ritardo",
+        "display_lemma": "ritardo",
+        "language": "it",
+        "language_variant": "it-IT",
+        "part_of_speech": "noun",
+        "concept_refs": [
+          "it_a2_travel_and_hotel_ritardo"
+        ],
+        "cefr": "A2",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_travel_and_hotel_05",
+      "data": {
+        "lesson_key": "a2-it-travel-and-hotel-02",
+        "lexeme_ref": "lx_travel_and_hotel_05",
+        "surface_form": "ritardo",
+        "display_form": "ritardo",
+        "grammatical_features": {},
+        "is_lemma": true,
+        "is_preferred": true,
+        "cefr": "A2",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_travel_and_hotel_06",
+      "data": {
+        "slug": "it_a2_travel_and_hotel_bagaglio",
+        "lesson_key": "a2-it-travel-and-hotel-02",
+        "concept_type": "lexical",
+        "part_of_speech": "noun",
+        "forms": {
+          "it": "bagaglio"
+        },
+        "translations": {
+          "fa": "چمدان / بار"
+        },
+        "cefr": "A2",
+        "topic": "transport",
+        "tags": [
+          "core",
+          "a2",
+          "high_frequency"
+        ],
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_travel_and_hotel_06",
+      "data": {
+        "lesson_key": "a2-it-travel-and-hotel-02",
+        "lemma": "bagaglio",
+        "display_lemma": "bagaglio",
+        "language": "it",
+        "language_variant": "it-IT",
+        "part_of_speech": "noun",
+        "concept_refs": [
+          "it_a2_travel_and_hotel_bagaglio"
+        ],
+        "cefr": "A2",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_travel_and_hotel_06",
+      "data": {
+        "lesson_key": "a2-it-travel-and-hotel-02",
+        "lexeme_ref": "lx_travel_and_hotel_06",
+        "surface_form": "bagaglio",
+        "display_form": "bagaglio",
+        "grammatical_features": {},
+        "is_lemma": true,
+        "is_preferred": true,
+        "cefr": "A2",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_travel_and_hotel_01",
+      "data": {
+        "lesson_key": "a2-it-travel-and-hotel-01",
+        "text": {
+          "it": "Abbiamo una prenotazione per due notti."
+        },
+        "translations": {
+          "fa": "برای دو شب رزرو داریم."
+        },
+        "intent": "check_in",
+        "concept_refs": [
+          "it_a2_travel_and_hotel_prenotazione",
+          "it_a2_travel_and_hotel_camera"
+        ],
+        "cefr": "A2",
+        "topic": "transport",
+        "register": "neutral",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_travel_and_hotel_02",
+      "data": {
+        "lesson_key": "a2-it-travel-and-hotel-01",
+        "text": {
+          "it": "Ecco il mio passaporto."
+        },
+        "translations": {
+          "fa": "این هم گذرنامه من."
+        },
+        "intent": "provide_document",
+        "concept_refs": [
+          "it_a2_travel_and_hotel_passaporto"
+        ],
+        "cefr": "A2",
+        "topic": "transport",
+        "register": "neutral",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_travel_and_hotel_03",
+      "data": {
+        "lesson_key": "a2-it-travel-and-hotel-02",
+        "text": {
+          "it": "Da quale binario parte il treno?"
+        },
+        "translations": {
+          "fa": "قطار از کدام سکو حرکت می‌کند؟"
+        },
+        "intent": "ask_platform",
+        "concept_refs": [
+          "it_a2_travel_and_hotel_binario"
+        ],
+        "cefr": "A2",
+        "topic": "transport",
+        "register": "neutral",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_travel_and_hotel_04",
+      "data": {
+        "lesson_key": "a2-it-travel-and-hotel-02",
+        "text": {
+          "it": "Il treno ha venti minuti di ritardo."
+        },
+        "translations": {
+          "fa": "قطار بیست دقیقه تأخیر دارد."
+        },
+        "intent": "report_delay",
+        "concept_refs": [
+          "it_a2_travel_and_hotel_ritardo"
+        ],
+        "cefr": "A2",
+        "topic": "transport",
+        "register": "neutral",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "grammar_point",
+      "external_id": "g_travel_and_hotel_core",
+      "data": {
+        "lesson_key": "a2-it-travel-and-hotel-01",
+        "slug": "a2-it-travel-and-hotel-grammar",
+        "title": "Da quale...? / per + durata",
+        "rule_summary": "Use da quale to ask the departure point and per + duration to state how long a stay lasts.",
+        "explanation": {
+          "fa": "برای پرسیدن مبدأ حرکت می‌توان گفت da quale...? و برای مدت اقامت از per + مدت استفاده می‌شود: per due notti."
+        },
+        "examples": [
+          {
+            "it": "Da quale binario parte?",
+            "fa": "از کدام سکو حرکت می‌کند؟"
+          },
+          {
+            "it": "Per due notti.",
+            "fa": "برای دو شب."
+          }
+        ],
+        "cefr": "A2",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "dialogue",
+      "external_id": "d_travel_and_hotel_01",
+      "data": {
+        "lesson_key": "a2-it-travel-and-hotel-01",
+        "title": "Check-in",
+        "setting": "item",
+        "cefr": "A2",
+        "topic": "transport",
+        "characters": [
+          "giulia",
+          "davide"
+        ],
+        "turns": [
+          {
+            "order": 1,
+            "speaker": "giulia",
+            "text": "Buonasera, abbiamo una prenotazione per due notti.",
+            "translation_fa": "عصر بخیر، برای دو شب رزرو داریم."
+          },
+          {
+            "order": 2,
+            "speaker": "davide",
+            "text": "A che nome?",
+            "translation_fa": "به چه نامی؟"
+          },
+          {
+            "order": 3,
+            "speaker": "giulia",
+            "text": "Giulia Rossi. Ecco il mio passaporto.",
+            "translation_fa": "جولیا روسی. این هم گذرنامه‌ام."
+          },
+          {
+            "order": 4,
+            "speaker": "davide",
+            "text": "Perfetto, la camera è pronta.",
+            "translation_fa": "عالی، اتاق آماده است."
+          }
+        ],
+        "qa": {
+          "character_pair_unique_within_unit": true,
+          "naturalness": "passed",
+          "single_situation": true
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "dialogue",
+      "external_id": "d_travel_and_hotel_02",
+      "data": {
+        "lesson_key": "a2-it-travel-and-hotel-02",
+        "title": "In stazione",
+        "setting": "item",
+        "cefr": "A2",
+        "topic": "transport",
+        "characters": [
+          "sofia",
+          "matteo"
+        ],
+        "turns": [
+          {
+            "order": 1,
+            "speaker": "sofia",
+            "text": "Scusi, da quale binario parte il treno per Bologna?",
+            "translation_fa": "ببخشید، قطار بولونیا از کدام سکو حرکت می‌کند؟"
+          },
+          {
+            "order": 2,
+            "speaker": "matteo",
+            "text": "Dal binario cinque, ma ha venti minuti di ritardo.",
+            "translation_fa": "از سکوی پنج، ولی بیست دقیقه تأخیر دارد."
+          },
+          {
+            "order": 3,
+            "speaker": "sofia",
+            "text": "Grazie. Posso lasciare qui il bagaglio?",
+            "translation_fa": "ممنون. می‌توانم چمدان را اینجا بگذارم؟"
+          },
+          {
+            "order": 4,
+            "speaker": "matteo",
+            "text": "Sì, certo.",
+            "translation_fa": "بله، حتماً."
+          }
+        ],
+        "qa": {
+          "character_pair_unique_within_unit": true,
+          "naturalness": "passed",
+          "single_situation": true
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_travel_and_hotel_01_meaning",
+      "data": {
+        "lesson_key": "a2-it-travel-and-hotel-01",
+        "exercise_type": "multiple_choice",
+        "prompt": {
+          "instruction_fa": "معنی درست این عبارت ایتالیایی را انتخاب کن.",
+          "value": "Abbiamo una prenotazione per due notti."
+        },
+        "answer": {
+          "value": "برای دو شب رزرو داریم."
+        },
+        "options": [
+          "برای دو شب رزرو داریم.",
+          "این هم گذرنامه من.",
+          "قطار از کدام سکو حرکت می‌کند؟",
+          "قطار بیست دقیقه تأخیر دارد."
+        ],
+        "difficulty": 2,
+        "cefr": "A2",
+        "topic": "transport",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت و شکل دقیق عبارت ایتالیایی دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: Abbiamo una prenotazione per due notti. — برای دو شب رزرو داریم.",
+          "model_answer": "Abbiamo una prenotazione per due notti."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_travel_and_hotel_01_listen",
+      "data": {
+        "lesson_key": "a2-it-travel-and-hotel-01",
+        "exercise_type": "listening",
+        "prompt": {
+          "instruction_fa": "گوش کن و عبارتی را که شنیدی انتخاب کن.",
+          "audio_text": "Ecco il mio passaporto."
+        },
+        "answer": {
+          "value": "Ecco il mio passaporto."
+        },
+        "options": [
+          "Ecco il mio passaporto.",
+          "Abbiamo una prenotazione per due notti.",
+          "Da quale binario parte il treno?",
+          "Il treno ha venti minuti di ritardo."
+        ],
+        "difficulty": 2,
+        "cefr": "A2",
+        "topic": "transport",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت و شکل دقیق عبارت ایتالیایی دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: Ecco il mio passaporto. — این هم گذرنامه من.",
+          "model_answer": "Ecco il mio passaporto.",
+          "transcript_it": "Ecco il mio passaporto."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_travel_and_hotel_01_speak",
+      "data": {
+        "lesson_key": "a2-it-travel-and-hotel-01",
+        "exercise_type": "speaking",
+        "prompt": {
+          "instruction_fa": "عبارت را با صدای بلند و با ریتم طبیعی تکرار کن.",
+          "value": "Abbiamo una prenotazione per due notti."
+        },
+        "answer": {
+          "expected_text": "Abbiamo una prenotazione per due notti."
+        },
+        "difficulty": 2,
+        "cefr": "A2",
+        "topic": "transport",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت و شکل دقیق عبارت ایتالیایی دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: Abbiamo una prenotazione per due notti. — برای دو شب رزرو داریم.",
+          "model_answer": "Abbiamo una prenotazione per due notti."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_travel_and_hotel_01_build",
+      "data": {
+        "lesson_key": "a2-it-travel-and-hotel-01",
+        "exercise_type": "sentence_building",
+        "prompt": {
+          "instruction_fa": "کلمه‌ها را لمس کن تا عبارت درست ساخته شود.",
+          "tokens": [
+            "il",
+            "mio",
+            "passaporto.",
+            "Ecco"
+          ]
+        },
+        "answer": {
+          "tokens": [
+            "Ecco",
+            "il",
+            "mio",
+            "passaporto."
+          ],
+          "value": "Ecco il mio passaporto."
+        },
+        "difficulty": 2,
+        "cefr": "A2",
+        "topic": "transport",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت و شکل دقیق عبارت ایتالیایی دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: Ecco il mio passaporto. — این هم گذرنامه من.",
+          "model_answer": "Ecco il mio passaporto."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_travel_and_hotel_01_dialogue",
+      "data": {
+        "lesson_key": "a2-it-travel-and-hotel-01",
+        "exercise_type": "dialogue_comprehension",
+        "prompt": {
+          "instruction_fa": "با توجه به گفت‌وگو، پاسخ مناسب را انتخاب کن.",
+          "source_dialogue_ref": "d_travel_and_hotel_01",
+          "question_fa": "کدام گزینه با معنی «برای دو شب رزرو داریم.» هماهنگ است؟"
+        },
+        "answer": {
+          "value": "Abbiamo una prenotazione per due notti."
+        },
+        "options": [
+          "Abbiamo una prenotazione per due notti.",
+          "Ecco il mio passaporto.",
+          "Da quale binario parte il treno?",
+          "Il treno ha venti minuti di ritardo."
+        ],
+        "difficulty": 2,
+        "cefr": "A2",
+        "topic": "transport",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت و شکل دقیق عبارت ایتالیایی دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: Abbiamo una prenotazione per due notti. — برای دو شب رزرو داریم.",
+          "model_answer": "Abbiamo una prenotazione per due notti."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_travel_and_hotel_02_meaning",
+      "data": {
+        "lesson_key": "a2-it-travel-and-hotel-02",
+        "exercise_type": "multiple_choice",
+        "prompt": {
+          "instruction_fa": "معنی درست این عبارت ایتالیایی را انتخاب کن.",
+          "value": "Da quale binario parte il treno?"
+        },
+        "answer": {
+          "value": "قطار از کدام سکو حرکت می‌کند؟"
+        },
+        "options": [
+          "قطار از کدام سکو حرکت می‌کند؟",
+          "برای دو شب رزرو داریم.",
+          "این هم گذرنامه من.",
+          "قطار بیست دقیقه تأخیر دارد."
+        ],
+        "difficulty": 2,
+        "cefr": "A2",
+        "topic": "transport",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت و شکل دقیق عبارت ایتالیایی دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: Da quale binario parte il treno? — قطار از کدام سکو حرکت می‌کند؟",
+          "model_answer": "Da quale binario parte il treno?"
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_travel_and_hotel_02_listen",
+      "data": {
+        "lesson_key": "a2-it-travel-and-hotel-02",
+        "exercise_type": "listening",
+        "prompt": {
+          "instruction_fa": "گوش کن و عبارتی را که شنیدی انتخاب کن.",
+          "audio_text": "Il treno ha venti minuti di ritardo."
+        },
+        "answer": {
+          "value": "Il treno ha venti minuti di ritardo."
+        },
+        "options": [
+          "Il treno ha venti minuti di ritardo.",
+          "Da quale binario parte il treno?",
+          "Abbiamo una prenotazione per due notti.",
+          "Ecco il mio passaporto."
+        ],
+        "difficulty": 2,
+        "cefr": "A2",
+        "topic": "transport",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت و شکل دقیق عبارت ایتالیایی دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: Il treno ha venti minuti di ritardo. — قطار بیست دقیقه تأخیر دارد.",
+          "model_answer": "Il treno ha venti minuti di ritardo.",
+          "transcript_it": "Il treno ha venti minuti di ritardo."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_travel_and_hotel_02_speak",
+      "data": {
+        "lesson_key": "a2-it-travel-and-hotel-02",
+        "exercise_type": "speaking",
+        "prompt": {
+          "instruction_fa": "عبارت را با صدای بلند و با ریتم طبیعی تکرار کن.",
+          "value": "Da quale binario parte il treno?"
+        },
+        "answer": {
+          "expected_text": "Da quale binario parte il treno?"
+        },
+        "difficulty": 2,
+        "cefr": "A2",
+        "topic": "transport",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت و شکل دقیق عبارت ایتالیایی دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: Da quale binario parte il treno? — قطار از کدام سکو حرکت می‌کند؟",
+          "model_answer": "Da quale binario parte il treno?"
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_travel_and_hotel_02_build",
+      "data": {
+        "lesson_key": "a2-it-travel-and-hotel-02",
+        "exercise_type": "sentence_building",
+        "prompt": {
+          "instruction_fa": "کلمه‌ها را لمس کن تا عبارت درست ساخته شود.",
+          "tokens": [
+            "treno",
+            "ha",
+            "venti",
+            "minuti",
+            "di",
+            "ritardo.",
+            "Il"
+          ]
+        },
+        "answer": {
+          "tokens": [
+            "Il",
+            "treno",
+            "ha",
+            "venti",
+            "minuti",
+            "di",
+            "ritardo."
+          ],
+          "value": "Il treno ha venti minuti di ritardo."
+        },
+        "difficulty": 2,
+        "cefr": "A2",
+        "topic": "transport",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت و شکل دقیق عبارت ایتالیایی دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: Il treno ha venti minuti di ritardo. — قطار بیست دقیقه تأخیر دارد.",
+          "model_answer": "Il treno ha venti minuti di ritardo."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_travel_and_hotel_02_dialogue",
+      "data": {
+        "lesson_key": "a2-it-travel-and-hotel-02",
+        "exercise_type": "dialogue_comprehension",
+        "prompt": {
+          "instruction_fa": "با توجه به گفت‌وگو، پاسخ مناسب را انتخاب کن.",
+          "source_dialogue_ref": "d_travel_and_hotel_02",
+          "question_fa": "کدام گزینه با معنی «قطار از کدام سکو حرکت می‌کند؟» هماهنگ است؟"
+        },
+        "answer": {
+          "value": "Da quale binario parte il treno?"
+        },
+        "options": [
+          "Da quale binario parte il treno?",
+          "Abbiamo una prenotazione per due notti.",
+          "Ecco il mio passaporto.",
+          "Il treno ha venti minuti di ritardo."
+        ],
+        "difficulty": 2,
+        "cefr": "A2",
+        "topic": "transport",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت و شکل دقیق عبارت ایتالیایی دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: Da quale binario parte il treno? — قطار از کدام سکو حرکت می‌کند؟",
+          "model_answer": "Da quale binario parte il treno?"
+        },
+        "status": "validated"
+      }
+    }
+  ]
+}
