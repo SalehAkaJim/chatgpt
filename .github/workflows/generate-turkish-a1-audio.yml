@@ -10,7 +10,7 @@ permissions:
   contents: write
 
 concurrency:
-  group: turkish-a1-audio-generation-v2
+  group: turkish-a1-audio-generation-v3
   cancel-in-progress: false
 
 jobs:
@@ -37,7 +37,7 @@ jobs:
       - name: Final cumulative Turkish A1 content validation before paid generation
         run: |
           set -euo pipefail
-          test "$(find content/production/tr/A1 -maxdepth 1 -name '*.json' | wc -l)" -eq 20
+          test "$(find content/production/tr/A1 -maxdepth 1 -name '*.json' | wc -l)" -eq 30
           for f in content/production/tr/A1/*.json; do python scripts/validate_content.py "$f"; done
           python scripts/validate_character_cast.py --cast audio/cast/tr-TR.json
           python database/import/tr/a1.py --dry-run
@@ -71,29 +71,34 @@ jobs:
           missing={'lexical','utterances','dialogues'}-set(counts)
           if missing:
               raise SystemExit('Missing audio categories: '+','.join(sorted(missing)))
-          if counts.get('dialogues') != 160:
-              raise SystemExit(f"Expected 160 dialogue-turn audio items, got {counts.get('dialogues')}")
-          if counts.get('utterances') != 80:
-              raise SystemExit(f"Expected 80 utterance audio items, got {counts.get('utterances')}")
-          if not 100 <= counts.get('lexical',0) <= 120:
+          if counts.get('dialogues') != 240:
+              raise SystemExit(f"Expected 240 dialogue-turn audio items, got {counts.get('dialogues')}")
+          if counts.get('utterances') != 120:
+              raise SystemExit(f"Expected 120 utterance audio items, got {counts.get('utterances')}")
+          if not 145 <= counts.get('lexical',0) <= 180:
               raise SystemExit(f"Unexpected cumulative lexical audio count: {counts.get('lexical')}")
-          expected=sum(counts.values())
-          if len(d['items']) != expected:
-              raise SystemExit(f"Manifest category total mismatch: {len(d['items'])} != {expected}")
+          if len(d['items']) != sum(counts.values()):
+              raise SystemExit('Manifest category total mismatch')
+          if d.get('locale')!='tr-TR' or d.get('missing_character_profiles'):
+              raise SystemExit('Turkish locale or character profile gate failed')
           generated=Path('audio/generated/tr-TR')
           if not generated.exists():
               raise SystemExit('Turkish generated-audio directory is missing')
           print(json.dumps({'items':len(d['items']),'categories':counts},ensure_ascii=False,indent=2))
           PY
-      - name: Commit Turkish A1 batch 2 cumulative audio and DB link files
+      - name: Commit Turkish A1 batch 3 cumulative audio and DB link files
         run: |
           set -euo pipefail
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
           git add audio/generated/tr-TR audio/manifests/tr/A1.json audio/voices/tr-TR.lock.json database/import/tr/a1_audio.sql
           if git diff --cached --quiet; then echo 'No audio changes to commit.'; else
-            git commit -m 'Generate Turkish A1 batch 2 cumulative production audio [skip ci]'
-            git fetch origin main
-            git rebase origin/main
-            git push origin HEAD:main
+            git commit -m 'Generate Turkish A1 batch 3 cumulative production audio [skip ci]'
+            for attempt in 1 2 3 4 5; do
+              git fetch origin main
+              git rebase origin/main
+              if git push origin HEAD:main; then exit 0; fi
+              sleep $((attempt * 2))
+            done
+            exit 1
           fi
