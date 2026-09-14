@@ -18,6 +18,7 @@ on:
       - 'scripts/validate_content.py'
       - 'scripts/content_quality.py'
       - 'scripts/audit_german_beginner_content.py'
+      - 'scripts/audit_prea1_cefr_readiness.py'
       - '.github/workflows/mysql-german-a1-integration.yml'
       - 'requirements.txt'
   pull_request:
@@ -30,6 +31,7 @@ on:
       - 'audio/cast/de-DE.json'
       - 'audio/voices/de-DE.json'
       - 'scripts/audit_german_beginner_content.py'
+      - 'scripts/audit_prea1_cefr_readiness.py'
       - '.github/workflows/mysql-german-a1-integration.yml'
 
 jobs:
@@ -85,12 +87,13 @@ jobs:
           prea1=$($DB -Nse "SELECT COUNT(*) FROM curriculum_units cu JOIN courses c ON c.id=cu.course_id JOIN cefr_levels l ON l.id=cu.cefr_level_id WHERE c.slug='fa-de-de' AND l.code='Pre-A1'")
           a1=$($DB -Nse "SELECT COUNT(*) FROM curriculum_units cu JOIN courses c ON c.id=cu.course_id JOIN cefr_levels l ON l.id=cu.cefr_level_id WHERE c.slug='fa-de-de' AND l.code='A1'")
           echo "German Pre-A1 units: $prea1; A1 units: $a1"
-          test "$prea1" = 13
+          test "$prea1" = 17
           test "$a1" = 30
       - name: Validate all German beginner production batches
         run: |
           set -euo pipefail
           python scripts/audit_german_beginner_content.py
+          python scripts/audit_prea1_cefr_readiness.py
           for f in content/production/de/Pre-A1/*.json content/production/de/A1/*.json; do
             echo "===== $f ====="
             python scripts/validate_content.py "$f"
