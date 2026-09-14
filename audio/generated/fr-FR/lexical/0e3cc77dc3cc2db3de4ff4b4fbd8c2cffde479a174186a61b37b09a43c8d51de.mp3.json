@@ -1,0 +1,41 @@
+{
+  "source_text_hash": "45fb665df5ac810ee3c017c61ce50ad5227a2d675309d7683c6ba71b519f6b5b",
+  "voice_id": "6FXyooAOTqUK8m2HWm32",
+  "model": "eleven_multilingual_v2",
+  "settings": {
+    "stability": 0.72,
+    "similarity_boost": 0.88,
+    "style": 0.0,
+    "use_speaker_boost": true,
+    "speed": 0.92
+  },
+  "provider": "elevenlabs",
+  "audio_key": "0e3cc77dc3cc2db3de4ff4b4fbd8c2cffde479a174186a61b37b09a43c8d51de",
+  "voice_key": "fr-fr.lexical.native-clear",
+  "voice_name": "Marine - Premium Conversational AI",
+  "voice_labels": {
+    "gender": "female",
+    "accent": "parisian",
+    "age": "young",
+    "category": "professional",
+    "language": "fr",
+    "use_case": "conversational",
+    "descriptive": "casual"
+  },
+  "output_format": "mp3_44100_192",
+  "file_sha256": "11b9de2836037461e039bf062dd6fe3f8c6594270ce586fbd5424642ed1b89a2",
+  "duration_ms": 862,
+  "generated_at": "2026-09-14T09:41:53.909225+00:00",
+  "entity_refs": [
+    {
+      "entity_type": "lexeme",
+      "entity_uuid": "d50cfef0-ddff-5d8a-bdbc-d0ec5cbdce45",
+      "entity_key": "lx_shopping_and_prices_02"
+    },
+    {
+      "entity_type": "word_form",
+      "entity_uuid": "5b1c99d3-a50c-5689-98c9-dcda4fc6a290",
+      "entity_key": "wf_shopping_and_prices_02"
+    }
+  ]
+}

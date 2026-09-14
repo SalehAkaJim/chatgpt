@@ -1,0 +1,36 @@
+{
+  "source_text_hash": "b60f6f2b725a97d56fcccb40f8f0536d713ef59726ad631a1e5a194356713b29",
+  "voice_id": "1WQXvbtj0rUYuB5yhY3N",
+  "model": "eleven_multilingual_v2",
+  "settings": {
+    "stability": 0.58,
+    "similarity_boost": 0.87,
+    "style": 0.14,
+    "use_speaker_boost": true,
+    "speed": 0.97
+  },
+  "provider": "elevenlabs",
+  "audio_key": "77b70aa55236577f0e311b8481bfb30e37785c42a8901ac2ae2cd7330493c031",
+  "voice_key": "character:thomas:male_warm",
+  "voice_name": "Skel - Calm and Professional",
+  "voice_labels": {
+    "gender": "male",
+    "accent": "standard",
+    "age": "middle_aged",
+    "category": "professional",
+    "language": "fr",
+    "use_case": "conversational",
+    "descriptive": "calm"
+  },
+  "output_format": "mp3_44100_192",
+  "file_sha256": "ebad96b705b8be66f5277d9eef9d02ee42a46299cdb5131c58b93bc13b5151c2",
+  "duration_ms": 1149,
+  "generated_at": "2026-09-14T09:41:27.894804+00:00",
+  "entity_refs": [
+    {
+      "entity_type": "dialogue_turn",
+      "entity_uuid": "7ab3967e-c109-56f3-ab5b-38012cd84e37",
+      "entity_key": "d_cafe_basics_01:3"
+    }
+  ]
+}

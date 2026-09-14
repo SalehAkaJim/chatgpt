@@ -1,0 +1,36 @@
+{
+  "source_text_hash": "90833ef7c6eb84d45d4647b19160aa4b8a6d5f0052f94e4d3e6f4cabb9c6c31d",
+  "voice_id": "xO2Q4ARMEd4BI2sGDH9c",
+  "model": "eleven_multilingual_v2",
+  "settings": {
+    "stability": 0.71,
+    "similarity_boost": 0.9,
+    "style": 0.05,
+    "use_speaker_boost": true,
+    "speed": 0.96
+  },
+  "provider": "elevenlabs",
+  "audio_key": "f8f8dedac25a9056d4ed1565d3b3a9a2110f43120cdf922b30ea977df647a5f2",
+  "voice_key": "character:julien:male_professional",
+  "voice_name": "Edouard - Confident and Polished",
+  "voice_labels": {
+    "gender": "male",
+    "accent": "standard",
+    "age": "young",
+    "category": "professional",
+    "language": "fr",
+    "use_case": "conversational",
+    "descriptive": "confident"
+  },
+  "output_format": "mp3_44100_192",
+  "file_sha256": "534514bf1d0a55894d9a22a9879f8ca05362129173b57391b71d1944dfcfbfea",
+  "duration_ms": 1332,
+  "generated_at": "2026-09-14T09:41:49.069962+00:00",
+  "entity_refs": [
+    {
+      "entity_type": "dialogue_turn",
+      "entity_uuid": "e62e75ca-b8cd-5bb8-a71b-ca84eb44718d",
+      "entity_key": "d_shopping_and_prices_02:2"
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "source_text_hash": "866ba5b0d9c5475789cb8255f476c94f1c2fc77f9158c1bb6f6858892e09a142",
+  "voice_id": "lvQdCgwZfBuOzxyV5pxu",
+  "model": "eleven_multilingual_v2",
+  "settings": {
+    "stability": 0.58,
+    "similarity_boost": 0.87,
+    "style": 0.14,
+    "use_speaker_boost": true,
+    "speed": 0.97
+  },
+  "provider": "elevenlabs",
+  "audio_key": "c0aeacccccc161f8b3323edf513a5afa2426d5bce9b2286e61726c09cd3ac0cb",
+  "voice_key": "character:camille:female_warm",
+  "voice_name": "Audia - Customer Support",
+  "voice_labels": {
+    "gender": "female",
+    "accent": "parisian",
+    "age": "young",
+    "category": "professional",
+    "language": "fr",
+    "use_case": "conversational",
+    "descriptive": "casual"
+  },
+  "output_format": "mp3_44100_192",
+  "file_sha256": "1ff00578f67e58042faa16e03943a2a07d0d933e02f851987525e235d01ee3af",
+  "duration_ms": 1567,
+  "generated_at": "2026-09-14T09:41:36.861418+00:00",
+  "entity_refs": [
+    {
+      "entity_type": "dialogue_turn",
+      "entity_uuid": "732af10e-1ce2-5434-8162-3f1849d978e7",
+      "entity_key": "d_cafe_basics_01:2"
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "source_text_hash": "6f086018d42b99736382818c9a8ca09769274f680c1d7e646d89d65a0b4a8bd1",
+  "voice_id": "mNu8EQcIlFZdOJs7yfhe",
+  "model": "eleven_multilingual_v2",
+  "settings": {
+    "stability": 0.68,
+    "similarity_boost": 0.89,
+    "style": 0.06,
+    "use_speaker_boost": true,
+    "speed": 0.95
+  },
+  "provider": "elevenlabs",
+  "audio_key": "a05f3023cf145859a555b9235749159db390b0522fc3f7ab3e1a1c0f87a72e15",
+  "voice_key": "character:inès:female_calm",
+  "voice_name": "Julia - Warm French Narrator",
+  "voice_labels": {
+    "gender": "female",
+    "accent": "parisian",
+    "age": "young",
+    "category": "professional",
+    "language": "fr",
+    "use_case": "narrative_story",
+    "descriptive": "calm"
+  },
+  "output_format": "mp3_44100_192",
+  "file_sha256": "690d8a89ada8412c6b71c4faa522cae09f0af59a8c161a71aaebc149f99368e7",
+  "duration_ms": 1097,
+  "generated_at": "2026-09-14T09:41:31.154014+00:00",
+  "entity_refs": [
+    {
+      "entity_type": "dialogue_turn",
+      "entity_uuid": "b059a2f0-593a-5679-a325-e8f530d7aebb",
+      "entity_key": "d_shopping_and_prices_01:2"
+    }
+  ]
+}

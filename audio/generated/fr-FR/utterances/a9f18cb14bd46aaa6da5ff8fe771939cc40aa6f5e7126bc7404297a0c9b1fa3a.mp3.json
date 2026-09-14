@@ -1,0 +1,41 @@
+{
+  "source_text_hash": "b428d80d84cd9641e99159d652319a1cc4dce592559b1a2f5ecac0840b95b43f",
+  "voice_id": "6FXyooAOTqUK8m2HWm32",
+  "model": "eleven_multilingual_v2",
+  "settings": {
+    "stability": 0.68,
+    "similarity_boost": 0.88,
+    "style": 0.0,
+    "use_speaker_boost": true,
+    "speed": 0.95
+  },
+  "provider": "elevenlabs",
+  "audio_key": "a9f18cb14bd46aaa6da5ff8fe771939cc40aa6f5e7126bc7404297a0c9b1fa3a",
+  "voice_key": "fr-fr.sentence.native-clear",
+  "voice_name": "Marine - Premium Conversational AI",
+  "voice_labels": {
+    "gender": "female",
+    "accent": "parisian",
+    "age": "young",
+    "category": "professional",
+    "language": "fr",
+    "use_case": "conversational",
+    "descriptive": "casual"
+  },
+  "output_format": "mp3_44100_192",
+  "file_sha256": "a7095c787b614bb6d714faea147db82c64d529b0d3e672ea4d99cf7fe6ca0ff2",
+  "duration_ms": 1436,
+  "generated_at": "2026-09-14T09:42:35.012180+00:00",
+  "entity_refs": [
+    {
+      "entity_type": "utterance",
+      "entity_uuid": "bcd7c1cb-3c63-565a-8926-4f0074fa57a4",
+      "entity_key": "u_family_and_people_04"
+    },
+    {
+      "entity_type": "exercise",
+      "entity_uuid": "3a5ee2df-15c7-5307-8d75-f6cf3779225a",
+      "entity_key": "e_family_and_people_02_listen"
+    }
+  ]
+}
