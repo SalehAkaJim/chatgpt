@@ -1,0 +1,36 @@
+{
+  "source_text_hash": "004afb49ca4ab0db917d254a4ad828a0bdf0841f8260a1eb5f2963b42e386828",
+  "voice_id": "4XsbOSxQHw4NUVaEeo2o",
+  "model": "eleven_multilingual_v2",
+  "settings": {
+    "stability": 0.71,
+    "similarity_boost": 0.9,
+    "style": 0.05,
+    "use_speaker_boost": true,
+    "speed": 0.96
+  },
+  "provider": "elevenlabs",
+  "audio_key": "00bf3e6dac414d97ea8b6b366bf219d8ab789742224c800475af7d1c6c25be7b",
+  "voice_key": "character:zeynep:female_professional",
+  "voice_name": "Elif - Calm & Natural",
+  "voice_labels": {
+    "gender": "female",
+    "accent": "istanbul",
+    "age": "young",
+    "category": "professional",
+    "language": "tr",
+    "use_case": "conversational",
+    "descriptive": "calm"
+  },
+  "output_format": "mp3_44100_192",
+  "file_sha256": "aefb3277d538707a0bd9b6ea1bc4e1170c970c3e41f511f06ae4b9bcda65bf36",
+  "duration_ms": 1018,
+  "generated_at": "2026-09-14T12:09:02.189693+00:00",
+  "entity_refs": [
+    {
+      "entity_type": "dialogue_turn",
+      "entity_uuid": "f0830d04-5bea-5cad-8e4d-9dc69a721343",
+      "entity_key": "d_tr_ready_repair:3"
+    }
+  ]
+}
