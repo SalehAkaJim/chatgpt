@@ -106,6 +106,98 @@
       "relative_path": "audio/generated/en-US/dialogues/07e390e289f5bac66987cf5526f32e98ad12ddce1ed30a5b07aee6dc0632a0f7.mp3"
     },
     {
+      "audio_key": "0ef3968f236349ff195ac14d2f3134931dc58f54fb114f9c83f90cc07dffed54",
+      "category": "dialogues",
+      "locale": "en-US",
+      "text": "My name is Sara.",
+      "source_text_hash": "662d09b13a6716665a000bd5656714f552776d7bd5ccdc533e14c4798fb2c5cd",
+      "voice_key": "character:chris:male_bright",
+      "voice_spec": {
+        "voice_name": null,
+        "description": "Bright, lively male young-adult American English voice; friendly and energetic without sounding theatrical.",
+        "required_language": "en",
+        "preferred_accent": "american",
+        "prefer_high_quality": true,
+        "required_labels": {
+          "gender": "male"
+        },
+        "distinct_character": true,
+        "settings": {
+          "stability": 0.52,
+          "similarity_boost": 0.86,
+          "style": 0.2,
+          "use_speaker_boost": true,
+          "speed": 1.01
+        },
+        "profile_key": "male_bright"
+      },
+      "entity_refs": [
+        {
+          "entity_type": "dialogue_turn",
+          "entity_uuid": "9b09ebe2-7158-5718-899d-bdc3f37afd07",
+          "entity_key": "d_en_en-real-world-gate_meet:2"
+        }
+      ],
+      "metadata": {
+        "character": "chris",
+        "dialogue": "d_en_en-real-world-gate_meet",
+        "turn": 2,
+        "persona": {
+          "voice_presentation": "male",
+          "style": "bright_social",
+          "target_accent": "general_american"
+        },
+        "voice_profile": "male_bright"
+      },
+      "relative_path": "audio/generated/en-US/dialogues/0ef3968f236349ff195ac14d2f3134931dc58f54fb114f9c83f90cc07dffed54.mp3"
+    },
+    {
+      "audio_key": "11eab21ff51c8db9dd98960a1dc664f9d160a3f698ee13f6b8e67eb3a3cde606",
+      "category": "dialogues",
+      "locale": "en-US",
+      "text": "How old are you?",
+      "source_text_hash": "9b181de483e0da61391cd385f16383f953401fdfee8ca2c46297bd812f3e0b5d",
+      "voice_key": "character:maya:female_warm",
+      "voice_spec": {
+        "voice_name": null,
+        "description": "Warm, natural, friendly female adult American English voice with crisp articulation for beginner dialogue.",
+        "required_language": "en",
+        "preferred_accent": "american",
+        "prefer_high_quality": true,
+        "required_labels": {
+          "gender": "female"
+        },
+        "distinct_character": true,
+        "settings": {
+          "stability": 0.58,
+          "similarity_boost": 0.87,
+          "style": 0.14,
+          "use_speaker_boost": true,
+          "speed": 0.99
+        },
+        "profile_key": "female_warm"
+      },
+      "entity_refs": [
+        {
+          "entity_type": "dialogue_turn",
+          "entity_uuid": "7ecf5aad-bced-5f03-aa30-1a5e658831fa",
+          "entity_key": "d_en_en-about-me_origin_age:5"
+        }
+      ],
+      "metadata": {
+        "character": "maya",
+        "dialogue": "d_en_en-about-me_origin_age",
+        "turn": 5,
+        "persona": {
+          "voice_presentation": "female",
+          "style": "warm_conversational",
+          "target_accent": "general_american"
+        },
+        "voice_profile": "female_warm"
+      },
+      "relative_path": "audio/generated/en-US/dialogues/11eab21ff51c8db9dd98960a1dc664f9d160a3f698ee13f6b8e67eb3a3cde606.mp3"
+    },
+    {
       "audio_key": "1857c381270f958ecf0fc78280249c3bd51dce65ed0d1a50fda29ceecd70fcfc",
       "category": "dialogues",
       "locale": "en-US",
@@ -198,6 +290,52 @@
       "relative_path": "audio/generated/en-US/dialogues/19093c38c113d3c880c9038aa71b0e3f619d1e22e9704debf4f65400be46939b.mp3"
     },
     {
+      "audio_key": "196154eaa301587307d5a0af6bb3f92b0a9093701fb1e4dc27a48505ae656345",
+      "category": "dialogues",
+      "locale": "en-US",
+      "text": "Where is the exit?",
+      "source_text_hash": "b602b92d39a89095dd69a6984525a5011ffb934d22586a4630988b9675b197ee",
+      "voice_key": "character:ella:female_warm",
+      "voice_spec": {
+        "voice_name": null,
+        "description": "Warm, natural, friendly female adult American English voice with crisp articulation for beginner dialogue.",
+        "required_language": "en",
+        "preferred_accent": "american",
+        "prefer_high_quality": true,
+        "required_labels": {
+          "gender": "female"
+        },
+        "distinct_character": true,
+        "settings": {
+          "stability": 0.58,
+          "similarity_boost": 0.87,
+          "style": 0.14,
+          "use_speaker_boost": true,
+          "speed": 0.99
+        },
+        "profile_key": "female_warm"
+      },
+      "entity_refs": [
+        {
+          "entity_type": "dialogue_turn",
+          "entity_uuid": "8cba5481-5a98-50e6-a459-379d1a6b6a68",
+          "entity_key": "d_en_en-forms-signs_sign:1"
+        }
+      ],
+      "metadata": {
+        "character": "ella",
+        "dialogue": "d_en_en-forms-signs_sign",
+        "turn": 1,
+        "persona": {
+          "voice_presentation": "female",
+          "style": "warm_conversational",
+          "target_accent": "general_american"
+        },
+        "voice_profile": "female_warm"
+      },
+      "relative_path": "audio/generated/en-US/dialogues/196154eaa301587307d5a0af6bb3f92b0a9093701fb1e4dc27a48505ae656345.mp3"
+    },
+    {
       "audio_key": "1ac7491bf4a40d66d12579c3d0d5a356b3aa4fcdcf9d02ac31f6eb652dec3fea",
       "category": "dialogues",
       "locale": "en-US",
@@ -242,6 +380,190 @@
         "voice_profile": "male_warm"
       },
       "relative_path": "audio/generated/en-US/dialogues/1ac7491bf4a40d66d12579c3d0d5a356b3aa4fcdcf9d02ac31f6eb652dec3fea.mp3"
+    },
+    {
+      "audio_key": "1b0677275249dd423fd16d8c251d44aca491fc9da0404a36194804ac504e59cb",
+      "category": "dialogues",
+      "locale": "en-US",
+      "text": "Hello!",
+      "source_text_hash": "334d016f755cd6dc58c53a86e183882f8ec14f52fb05345887c8a5edd42c87b7",
+      "voice_key": "character:arman:male_warm",
+      "voice_spec": {
+        "voice_name": null,
+        "description": "Warm, natural, friendly male adult American English voice with crisp articulation for beginner dialogue.",
+        "required_language": "en",
+        "preferred_accent": "american",
+        "prefer_high_quality": true,
+        "required_labels": {
+          "gender": "male"
+        },
+        "distinct_character": true,
+        "settings": {
+          "stability": 0.58,
+          "similarity_boost": 0.87,
+          "style": 0.14,
+          "use_speaker_boost": true,
+          "speed": 0.99
+        },
+        "profile_key": "male_warm"
+      },
+      "entity_refs": [
+        {
+          "entity_type": "dialogue_turn",
+          "entity_uuid": "fc97e633-80a7-5042-ab8e-2a83640fd38d",
+          "entity_key": "d_en_en-about-me_origin_age:2"
+        }
+      ],
+      "metadata": {
+        "character": "arman",
+        "dialogue": "d_en_en-about-me_origin_age",
+        "turn": 2,
+        "persona": {
+          "voice_presentation": "male",
+          "style": "warm_conversational",
+          "target_accent": "general_american"
+        },
+        "voice_profile": "male_warm"
+      },
+      "relative_path": "audio/generated/en-US/dialogues/1b0677275249dd423fd16d8c251d44aca491fc9da0404a36194804ac504e59cb.mp3"
+    },
+    {
+      "audio_key": "1e037ee99d378c7251216c021487086cb8cd5b3bccc477c7060ec6dc62739d90",
+      "category": "dialogues",
+      "locale": "en-US",
+      "text": "My name is Sara.",
+      "source_text_hash": "662d09b13a6716665a000bd5656714f552776d7bd5ccdc533e14c4798fb2c5cd",
+      "voice_key": "character:alex:male_warm",
+      "voice_spec": {
+        "voice_name": null,
+        "description": "Warm, natural, friendly male adult American English voice with crisp articulation for beginner dialogue.",
+        "required_language": "en",
+        "preferred_accent": "american",
+        "prefer_high_quality": true,
+        "required_labels": {
+          "gender": "male"
+        },
+        "distinct_character": true,
+        "settings": {
+          "stability": 0.58,
+          "similarity_boost": 0.87,
+          "style": 0.14,
+          "use_speaker_boost": true,
+          "speed": 0.99
+        },
+        "profile_key": "male_warm"
+      },
+      "entity_refs": [
+        {
+          "entity_type": "dialogue_turn",
+          "entity_uuid": "b5110e3c-b3fe-5113-b120-1af022672c27",
+          "entity_key": "d_en_en-forms-signs_form:2"
+        }
+      ],
+      "metadata": {
+        "character": "alex",
+        "dialogue": "d_en_en-forms-signs_form",
+        "turn": 2,
+        "persona": {
+          "voice_presentation": "male",
+          "style": "warm_conversational",
+          "target_accent": "general_american"
+        },
+        "voice_profile": "male_warm"
+      },
+      "relative_path": "audio/generated/en-US/dialogues/1e037ee99d378c7251216c021487086cb8cd5b3bccc477c7060ec6dc62739d90.mp3"
+    },
+    {
+      "audio_key": "1f4d6832428a185a6caab54d66702d709ae5f40dce1f928ff614b7f9738cebb0",
+      "category": "dialogues",
+      "locale": "en-US",
+      "text": "What's your name?",
+      "source_text_hash": "56e8908ad76682304d68ca9cd055ca9d6b96ff2f8077d1041567dde66aed9724",
+      "voice_key": "character:ava:female_warm",
+      "voice_spec": {
+        "voice_name": null,
+        "description": "Warm, natural, friendly female adult American English voice with crisp articulation for beginner dialogue.",
+        "required_language": "en",
+        "preferred_accent": "american",
+        "prefer_high_quality": true,
+        "required_labels": {
+          "gender": "female"
+        },
+        "distinct_character": true,
+        "settings": {
+          "stability": 0.58,
+          "similarity_boost": 0.87,
+          "style": 0.14,
+          "use_speaker_boost": true,
+          "speed": 0.99
+        },
+        "profile_key": "female_warm"
+      },
+      "entity_refs": [
+        {
+          "entity_type": "dialogue_turn",
+          "entity_uuid": "78253102-c727-5c40-a5f7-e0df617b87fd",
+          "entity_key": "d_en_en-real-world-gate_meet:1"
+        }
+      ],
+      "metadata": {
+        "character": "ava",
+        "dialogue": "d_en_en-real-world-gate_meet",
+        "turn": 1,
+        "persona": {
+          "voice_presentation": "female",
+          "style": "warm_conversational",
+          "target_accent": "general_american"
+        },
+        "voice_profile": "female_warm"
+      },
+      "relative_path": "audio/generated/en-US/dialogues/1f4d6832428a185a6caab54d66702d709ae5f40dce1f928ff614b7f9738cebb0.mp3"
+    },
+    {
+      "audio_key": "1f5bfab013ae47ea289b6e15c9306eb46f8bbbbdb42f28bcc40f5edec5ed93b0",
+      "category": "dialogues",
+      "locale": "en-US",
+      "text": "I'm twenty.",
+      "source_text_hash": "0225ee7dc6c8daf134912bba13bf8ea9cda4c389b3ec3f642af0b1851752b1f2",
+      "voice_key": "character:arman:male_warm",
+      "voice_spec": {
+        "voice_name": null,
+        "description": "Warm, natural, friendly male adult American English voice with crisp articulation for beginner dialogue.",
+        "required_language": "en",
+        "preferred_accent": "american",
+        "prefer_high_quality": true,
+        "required_labels": {
+          "gender": "male"
+        },
+        "distinct_character": true,
+        "settings": {
+          "stability": 0.58,
+          "similarity_boost": 0.87,
+          "style": 0.14,
+          "use_speaker_boost": true,
+          "speed": 0.99
+        },
+        "profile_key": "male_warm"
+      },
+      "entity_refs": [
+        {
+          "entity_type": "dialogue_turn",
+          "entity_uuid": "93f1da11-1d19-5d64-ac1d-d0843fff6b6a",
+          "entity_key": "d_en_en-about-me_origin_age:6"
+        }
+      ],
+      "metadata": {
+        "character": "arman",
+        "dialogue": "d_en_en-about-me_origin_age",
+        "turn": 6,
+        "persona": {
+          "voice_presentation": "male",
+          "style": "warm_conversational",
+          "target_accent": "general_american"
+        },
+        "voice_profile": "male_warm"
+      },
+      "relative_path": "audio/generated/en-US/dialogues/1f5bfab013ae47ea289b6e15c9306eb46f8bbbbdb42f28bcc40f5edec5ed93b0.mp3"
     },
     {
       "audio_key": "211f171d8e753799fb1d9d51f19a901a8bbdd2445731e51c8c0d2f81b7b56419",
@@ -290,6 +612,52 @@
       "relative_path": "audio/generated/en-US/dialogues/211f171d8e753799fb1d9d51f19a901a8bbdd2445731e51c8c0d2f81b7b56419.mp3"
     },
     {
+      "audio_key": "2193519fcb3e6791f1d57b4bd2c8e0a316c40368fea5282178ab223458284ecd",
+      "category": "dialogues",
+      "locale": "en-US",
+      "text": "How are you?",
+      "source_text_hash": "df287dfc1406ed2b692e1c2c783bb5cec97eac53151ee1d9810397aa0afa0d89",
+      "voice_key": "character:ava:female_warm",
+      "voice_spec": {
+        "voice_name": null,
+        "description": "Warm, natural, friendly female adult American English voice with crisp articulation for beginner dialogue.",
+        "required_language": "en",
+        "preferred_accent": "american",
+        "prefer_high_quality": true,
+        "required_labels": {
+          "gender": "female"
+        },
+        "distinct_character": true,
+        "settings": {
+          "stability": 0.58,
+          "similarity_boost": 0.87,
+          "style": 0.14,
+          "use_speaker_boost": true,
+          "speed": 0.99
+        },
+        "profile_key": "female_warm"
+      },
+      "entity_refs": [
+        {
+          "entity_type": "dialogue_turn",
+          "entity_uuid": "f7c5acad-def4-5989-a133-8d2e7c8ba068",
+          "entity_key": "d_en_en-real-world-gate_meet:5"
+        }
+      ],
+      "metadata": {
+        "character": "ava",
+        "dialogue": "d_en_en-real-world-gate_meet",
+        "turn": 5,
+        "persona": {
+          "voice_presentation": "female",
+          "style": "warm_conversational",
+          "target_accent": "general_american"
+        },
+        "voice_profile": "female_warm"
+      },
+      "relative_path": "audio/generated/en-US/dialogues/2193519fcb3e6791f1d57b4bd2c8e0a316c40368fea5282178ab223458284ecd.mp3"
+    },
+    {
       "audio_key": "25bca8fcbc7b14df3f5e01cb377154b11e10c020ef4c788c77c5112cc2165349",
       "category": "dialogues",
       "locale": "en-US",
@@ -334,6 +702,149 @@
         "voice_profile": "female_warm"
       },
       "relative_path": "audio/generated/en-US/dialogues/25bca8fcbc7b14df3f5e01cb377154b11e10c020ef4c788c77c5112cc2165349.mp3"
+    },
+    {
+      "audio_key": "260f714e014d95621ff828345fdddec53fd4a2b54a1b8a6f3c0d6582383e5d29",
+      "category": "dialogues",
+      "locale": "en-US",
+      "text": "Monday",
+      "source_text_hash": "6a00dfc1dc867e8454c2c8856e1512d9bf02a76710e3411c0972aec886c76c61",
+      "voice_key": "character:aisha:female_bright",
+      "voice_spec": {
+        "voice_name": null,
+        "description": "Bright, lively female young-adult American English voice; friendly and energetic without sounding theatrical.",
+        "required_language": "en",
+        "preferred_accent": "american",
+        "prefer_high_quality": true,
+        "required_labels": {
+          "gender": "female"
+        },
+        "distinct_character": true,
+        "settings": {
+          "stability": 0.52,
+          "similarity_boost": 0.86,
+          "style": 0.2,
+          "use_speaker_boost": true,
+          "speed": 1.01
+        },
+        "profile_key": "female_bright"
+      },
+      "entity_refs": [
+        {
+          "entity_type": "dialogue_turn",
+          "entity_uuid": "e6a9ef87-b20e-5e19-abc7-67e4d89aaddc",
+          "entity_key": "d_en_en-real-life-numbers_price_day:3"
+        }
+      ],
+      "metadata": {
+        "character": "aisha",
+        "dialogue": "d_en_en-real-life-numbers_price_day",
+        "turn": 3,
+        "persona": {
+          "voice_presentation": "female",
+          "style": "bright_social",
+          "target_accent": "general_american"
+        },
+        "voice_profile": "female_bright"
+      },
+      "relative_path": "audio/generated/en-US/dialogues/260f714e014d95621ff828345fdddec53fd4a2b54a1b8a6f3c0d6582383e5d29.mp3"
+    },
+    {
+      "audio_key": "2cecf3b61c986d7ebe8c4903d835adf7e49166b99fd367d32b44a2c2d4442bc8",
+      "category": "dialogues",
+      "locale": "en-US",
+      "text": "Zero nine one two, three four five, six seven eight nine.",
+      "source_text_hash": "43e161a2195125f2e3e30f0669f6b1b8f3c5b0a6ce681eec77d686bc9f811fb5",
+      "voice_key": "character:kai:male_professional",
+      "voice_spec": {
+        "voice_name": null,
+        "description": "Neutral professional male adult American English voice; confident, clean and highly intelligible.",
+        "required_language": "en",
+        "preferred_accent": "american",
+        "prefer_high_quality": true,
+        "required_labels": {
+          "gender": "male"
+        },
+        "distinct_character": true,
+        "settings": {
+          "stability": 0.71,
+          "similarity_boost": 0.9,
+          "style": 0.05,
+          "use_speaker_boost": true,
+          "speed": 0.98
+        },
+        "profile_key": "male_professional"
+      },
+      "entity_refs": [
+        {
+          "entity_type": "dialogue_turn",
+          "entity_uuid": "9ddaab67-5c7a-5ced-9b37-3dc2e266dab8",
+          "entity_key": "d_en_en-real-life-numbers_phone:2"
+        },
+        {
+          "entity_type": "dialogue_turn",
+          "entity_uuid": "0b4488d1-b9f0-5499-8ebf-abf9ddfb7c64",
+          "entity_key": "d_en_en-real-life-numbers_phone:4"
+        }
+      ],
+      "metadata": {
+        "character": "kai",
+        "dialogue": "d_en_en-real-life-numbers_phone",
+        "turn": 2,
+        "persona": {
+          "voice_presentation": "male",
+          "style": "professional_neutral",
+          "target_accent": "general_american"
+        },
+        "voice_profile": "male_professional"
+      },
+      "relative_path": "audio/generated/en-US/dialogues/2cecf3b61c986d7ebe8c4903d835adf7e49166b99fd367d32b44a2c2d4442bc8.mp3"
+    },
+    {
+      "audio_key": "2d6d3d98a0b016c2505ffd6ca4a81ae54b66df321cfe04b53fd8a9231d601dd9",
+      "category": "dialogues",
+      "locale": "en-US",
+      "text": "It's five dollars.",
+      "source_text_hash": "f322c03bd85e8fa1611af28d52e968ffe8c9ec6a473548e8502f65d0a62bdec7",
+      "voice_key": "character:adam:male_professional",
+      "voice_spec": {
+        "voice_name": null,
+        "description": "Neutral professional male adult American English voice; confident, clean and highly intelligible.",
+        "required_language": "en",
+        "preferred_accent": "american",
+        "prefer_high_quality": true,
+        "required_labels": {
+          "gender": "male"
+        },
+        "distinct_character": true,
+        "settings": {
+          "stability": 0.71,
+          "similarity_boost": 0.9,
+          "style": 0.05,
+          "use_speaker_boost": true,
+          "speed": 0.98
+        },
+        "profile_key": "male_professional"
+      },
+      "entity_refs": [
+        {
+          "entity_type": "dialogue_turn",
+          "entity_uuid": "17707e22-4ba3-515b-a977-d8a2a5989dee",
+          "entity_key": "d_en_en-real-life-numbers_price_day:2"
+        }
+      ],
+      "metadata": {
+        "character": "adam",
+        "dialogue": "d_en_en-real-life-numbers_price_day",
+        "turn": 2,
+        "persona": {
+          "voice_presentation": "male",
+          "style": "professional_neutral",
+          "target_accent": "general_american"
+        },
+        "voice_profile": "male_professional"
+      },
+      "relative_path": "audio/generated/en-US/dialogues/2d6d3d98a0b016c2505ffd6ca4a81ae54b66df321cfe04b53fd8a9231d601dd9.mp3"
     },
     {
       "audio_key": "2d8a5dddc14102aaa4d33ee3d24c614be851e80d860550b74771e93d78a51910",
@@ -428,6 +939,52 @@
       "relative_path": "audio/generated/en-US/dialogues/2fc04fd78f108ae74416f50d7a340f3a1ac8ec728bc7ef7564a22e0600b974c9.mp3"
     },
     {
+      "audio_key": "314ec797cd060d056682956b3d6e75273965544be36851a05851971656369f0c",
+      "category": "dialogues",
+      "locale": "en-US",
+      "text": "What's your phone number?",
+      "source_text_hash": "b696981a1f4f5ad2c8d5e782488344b7a063f167438a92260716008444f8139e",
+      "voice_key": "character:dina:female_calm",
+      "voice_spec": {
+        "voice_name": null,
+        "description": "Calm, precise female adult American English voice; gentle, highly intelligible and natural.",
+        "required_language": "en",
+        "preferred_accent": "american",
+        "prefer_high_quality": true,
+        "required_labels": {
+          "gender": "female"
+        },
+        "distinct_character": true,
+        "settings": {
+          "stability": 0.68,
+          "similarity_boost": 0.89,
+          "style": 0.06,
+          "use_speaker_boost": true,
+          "speed": 0.97
+        },
+        "profile_key": "female_calm"
+      },
+      "entity_refs": [
+        {
+          "entity_type": "dialogue_turn",
+          "entity_uuid": "42f33dfe-362c-5f92-8915-6f4e44df51e9",
+          "entity_key": "d_en_en-real-world-gate_public_task:1"
+        }
+      ],
+      "metadata": {
+        "character": "dina",
+        "dialogue": "d_en_en-real-world-gate_public_task",
+        "turn": 1,
+        "persona": {
+          "voice_presentation": "female",
+          "style": "calm_clear",
+          "target_accent": "general_american"
+        },
+        "voice_profile": "female_calm"
+      },
+      "relative_path": "audio/generated/en-US/dialogues/314ec797cd060d056682956b3d6e75273965544be36851a05851971656369f0c.mp3"
+    },
+    {
       "audio_key": "3181d38bffa5a9d501d07798acb29f0cb1a6f7e56a9ff8cb6f3ca79e3633c4fc",
       "category": "dialogues",
       "locale": "en-US",
@@ -518,6 +1075,52 @@
         "voice_profile": "female_warm"
       },
       "relative_path": "audio/generated/en-US/dialogues/31f10120c479a4672978010531fe0428b429b0c477164967721fd83ddaeee035.mp3"
+    },
+    {
+      "audio_key": "324d63c5a9b830c67550287c13dfe43980613f3eced320b84df4dd22fda1cdb7",
+      "category": "dialogues",
+      "locale": "en-US",
+      "text": "Again, please.",
+      "source_text_hash": "308c8f3227d091b723f87fd5f5b463f4dd329fbe57b9d7384ab2559c8df2bf0f",
+      "voice_key": "character:lina:female_warm",
+      "voice_spec": {
+        "voice_name": null,
+        "description": "Warm, natural, friendly female adult American English voice with crisp articulation for beginner dialogue.",
+        "required_language": "en",
+        "preferred_accent": "american",
+        "prefer_high_quality": true,
+        "required_labels": {
+          "gender": "female"
+        },
+        "distinct_character": true,
+        "settings": {
+          "stability": 0.58,
+          "similarity_boost": 0.87,
+          "style": 0.14,
+          "use_speaker_boost": true,
+          "speed": 0.99
+        },
+        "profile_key": "female_warm"
+      },
+      "entity_refs": [
+        {
+          "entity_type": "dialogue_turn",
+          "entity_uuid": "d9e34ccb-b3fb-5760-b463-0cf7d33035f5",
+          "entity_key": "d_en_en-real-life-numbers_phone:3"
+        }
+      ],
+      "metadata": {
+        "character": "lina",
+        "dialogue": "d_en_en-real-life-numbers_phone",
+        "turn": 3,
+        "persona": {
+          "voice_presentation": "female",
+          "style": "warm_conversational",
+          "target_accent": "general_american"
+        },
+        "voice_profile": "female_warm"
+      },
+      "relative_path": "audio/generated/en-US/dialogues/324d63c5a9b830c67550287c13dfe43980613f3eced320b84df4dd22fda1cdb7.mp3"
     },
     {
       "audio_key": "32882d1aeee5748f477f5894f9d4e4072ba3f693299deeca340c7cbaaeb465d5",
@@ -658,6 +1261,98 @@
       "relative_path": "audio/generated/en-US/dialogues/335182099e3584e8b3f723c1a57c1052b86d82b58f45fd10f7c8a61c49339e2d.mp3"
     },
     {
+      "audio_key": "35c0bdebae9ef770a720819f371e58acbf104150e51d82e96feebcf315abf45c",
+      "category": "dialogues",
+      "locale": "en-US",
+      "text": "I'm from Iran.",
+      "source_text_hash": "5dfce23c275fa6fab08233cefbad28edad8515795b3e7d9e445c869c89469fe1",
+      "voice_key": "character:arman:male_warm",
+      "voice_spec": {
+        "voice_name": null,
+        "description": "Warm, natural, friendly male adult American English voice with crisp articulation for beginner dialogue.",
+        "required_language": "en",
+        "preferred_accent": "american",
+        "prefer_high_quality": true,
+        "required_labels": {
+          "gender": "male"
+        },
+        "distinct_character": true,
+        "settings": {
+          "stability": 0.58,
+          "similarity_boost": 0.87,
+          "style": 0.14,
+          "use_speaker_boost": true,
+          "speed": 0.99
+        },
+        "profile_key": "male_warm"
+      },
+      "entity_refs": [
+        {
+          "entity_type": "dialogue_turn",
+          "entity_uuid": "f608f8a0-f201-5379-b014-503c984f2ae3",
+          "entity_key": "d_en_en-about-me_origin_age:4"
+        }
+      ],
+      "metadata": {
+        "character": "arman",
+        "dialogue": "d_en_en-about-me_origin_age",
+        "turn": 4,
+        "persona": {
+          "voice_presentation": "male",
+          "style": "warm_conversational",
+          "target_accent": "general_american"
+        },
+        "voice_profile": "male_warm"
+      },
+      "relative_path": "audio/generated/en-US/dialogues/35c0bdebae9ef770a720819f371e58acbf104150e51d82e96feebcf315abf45c.mp3"
+    },
+    {
+      "audio_key": "3822e8828f8a20a37d0dc294550e7c78e95a90d4ac8c59a5c1346c8dbe2cd344",
+      "category": "dialogues",
+      "locale": "en-US",
+      "text": "Where are you from?",
+      "source_text_hash": "63265a79774350462d4ce11d5a90687ff8e6f2511bb512e0409be568b6be7046",
+      "voice_key": "character:maya:female_warm",
+      "voice_spec": {
+        "voice_name": null,
+        "description": "Warm, natural, friendly female adult American English voice with crisp articulation for beginner dialogue.",
+        "required_language": "en",
+        "preferred_accent": "american",
+        "prefer_high_quality": true,
+        "required_labels": {
+          "gender": "female"
+        },
+        "distinct_character": true,
+        "settings": {
+          "stability": 0.58,
+          "similarity_boost": 0.87,
+          "style": 0.14,
+          "use_speaker_boost": true,
+          "speed": 0.99
+        },
+        "profile_key": "female_warm"
+      },
+      "entity_refs": [
+        {
+          "entity_type": "dialogue_turn",
+          "entity_uuid": "a3c988f1-7a6d-5a60-917d-1f25755c6842",
+          "entity_key": "d_en_en-about-me_origin_age:3"
+        }
+      ],
+      "metadata": {
+        "character": "maya",
+        "dialogue": "d_en_en-about-me_origin_age",
+        "turn": 3,
+        "persona": {
+          "voice_presentation": "female",
+          "style": "warm_conversational",
+          "target_accent": "general_american"
+        },
+        "voice_profile": "female_warm"
+      },
+      "relative_path": "audio/generated/en-US/dialogues/3822e8828f8a20a37d0dc294550e7c78e95a90d4ac8c59a5c1346c8dbe2cd344.mp3"
+    },
+    {
       "audio_key": "419c89d906e81b47835bfc8cdc2e80fc7c83eb1a87c07805a96702e1cfc28d17",
       "category": "dialogues",
       "locale": "en-US",
@@ -755,6 +1450,149 @@
       "relative_path": "audio/generated/en-US/dialogues/42a23de2a56ccd0a101f08f9055d905a8e8b145f667d25a6dbe7b430d93d33e1.mp3"
     },
     {
+      "audio_key": "458f32fa9da32dee17ef1967502f299a1d37e298dd6359e76224f23714ce2439",
+      "category": "dialogues",
+      "locale": "en-US",
+      "text": "I'm from Iran.",
+      "source_text_hash": "5dfce23c275fa6fab08233cefbad28edad8515795b3e7d9e445c869c89469fe1",
+      "voice_key": "character:alex:male_warm",
+      "voice_spec": {
+        "voice_name": null,
+        "description": "Warm, natural, friendly male adult American English voice with crisp articulation for beginner dialogue.",
+        "required_language": "en",
+        "preferred_accent": "american",
+        "prefer_high_quality": true,
+        "required_labels": {
+          "gender": "male"
+        },
+        "distinct_character": true,
+        "settings": {
+          "stability": 0.58,
+          "similarity_boost": 0.87,
+          "style": 0.14,
+          "use_speaker_boost": true,
+          "speed": 0.99
+        },
+        "profile_key": "male_warm"
+      },
+      "entity_refs": [
+        {
+          "entity_type": "dialogue_turn",
+          "entity_uuid": "edae9170-48e9-50f3-a534-c18e5c46e40a",
+          "entity_key": "d_en_en-forms-signs_form:4"
+        }
+      ],
+      "metadata": {
+        "character": "alex",
+        "dialogue": "d_en_en-forms-signs_form",
+        "turn": 4,
+        "persona": {
+          "voice_presentation": "male",
+          "style": "warm_conversational",
+          "target_accent": "general_american"
+        },
+        "voice_profile": "male_warm"
+      },
+      "relative_path": "audio/generated/en-US/dialogues/458f32fa9da32dee17ef1967502f299a1d37e298dd6359e76224f23714ce2439.mp3"
+    },
+    {
+      "audio_key": "45d1cefec5f90b6c71136f3adb4b322e99d7fd7cba28a19eec77066eec608a61",
+      "category": "dialogues",
+      "locale": "en-US",
+      "text": "The exit is there.",
+      "source_text_hash": "abb7d9a3328215471331dc69b689b5a47762fc21868e733e43199648057af95a",
+      "voice_key": "character:daniel:male_professional",
+      "voice_spec": {
+        "voice_name": null,
+        "description": "Neutral professional male adult American English voice; confident, clean and highly intelligible.",
+        "required_language": "en",
+        "preferred_accent": "american",
+        "prefer_high_quality": true,
+        "required_labels": {
+          "gender": "male"
+        },
+        "distinct_character": true,
+        "settings": {
+          "stability": 0.71,
+          "similarity_boost": 0.9,
+          "style": 0.05,
+          "use_speaker_boost": true,
+          "speed": 0.98
+        },
+        "profile_key": "male_professional"
+      },
+      "entity_refs": [
+        {
+          "entity_type": "dialogue_turn",
+          "entity_uuid": "84e89d0e-aa7d-5a5c-b509-2febbfd3a0e7",
+          "entity_key": "d_en_en-forms-signs_sign:2"
+        },
+        {
+          "entity_type": "dialogue_turn",
+          "entity_uuid": "4a9cb346-6af2-55cc-a426-10cd9cf58b2f",
+          "entity_key": "d_en_en-forms-signs_sign:4"
+        }
+      ],
+      "metadata": {
+        "character": "daniel",
+        "dialogue": "d_en_en-forms-signs_sign",
+        "turn": 2,
+        "persona": {
+          "voice_presentation": "male",
+          "style": "professional_neutral",
+          "target_accent": "general_american"
+        },
+        "voice_profile": "male_professional"
+      },
+      "relative_path": "audio/generated/en-US/dialogues/45d1cefec5f90b6c71136f3adb4b322e99d7fd7cba28a19eec77066eec608a61.mp3"
+    },
+    {
+      "audio_key": "4a371d3ab4973d314e72c0e49f3b67cb92293338d4bb14e0c9168f0d743172de",
+      "category": "dialogues",
+      "locale": "en-US",
+      "text": "How much is it?",
+      "source_text_hash": "abdfbb3951b780a174166d38d10acc3920b5e8f4712cc6014104161424c3b2f8",
+      "voice_key": "character:dina:female_calm",
+      "voice_spec": {
+        "voice_name": null,
+        "description": "Calm, precise female adult American English voice; gentle, highly intelligible and natural.",
+        "required_language": "en",
+        "preferred_accent": "american",
+        "prefer_high_quality": true,
+        "required_labels": {
+          "gender": "female"
+        },
+        "distinct_character": true,
+        "settings": {
+          "stability": 0.68,
+          "similarity_boost": 0.89,
+          "style": 0.06,
+          "use_speaker_boost": true,
+          "speed": 0.97
+        },
+        "profile_key": "female_calm"
+      },
+      "entity_refs": [
+        {
+          "entity_type": "dialogue_turn",
+          "entity_uuid": "85ba17a8-53fb-53f7-81df-4bd6012bff10",
+          "entity_key": "d_en_en-real-world-gate_public_task:3"
+        }
+      ],
+      "metadata": {
+        "character": "dina",
+        "dialogue": "d_en_en-real-world-gate_public_task",
+        "turn": 3,
+        "persona": {
+          "voice_presentation": "female",
+          "style": "calm_clear",
+          "target_accent": "general_american"
+        },
+        "voice_profile": "female_calm"
+      },
+      "relative_path": "audio/generated/en-US/dialogues/4a371d3ab4973d314e72c0e49f3b67cb92293338d4bb14e0c9168f0d743172de.mp3"
+    },
+    {
       "audio_key": "4c82405ff36182af7bf345dbdc0edfefa5076ce64c5c08cab7269d780f8921ad",
       "category": "dialogues",
       "locale": "en-US",
@@ -850,6 +1688,98 @@
         "voice_profile": "male_warm"
       },
       "relative_path": "audio/generated/en-US/dialogues/4f1b57a4d3d2044ef0311abe146a571573126068111a691c353da81bb91abeb6.mp3"
+    },
+    {
+      "audio_key": "56987261b342f73078ee8b36f54ea95ed0c3011794c1189eee471e62f90b840a",
+      "category": "dialogues",
+      "locale": "en-US",
+      "text": "The exit is there.",
+      "source_text_hash": "abb7d9a3328215471331dc69b689b5a47762fc21868e733e43199648057af95a",
+      "voice_key": "character:dina:female_calm",
+      "voice_spec": {
+        "voice_name": null,
+        "description": "Calm, precise female adult American English voice; gentle, highly intelligible and natural.",
+        "required_language": "en",
+        "preferred_accent": "american",
+        "prefer_high_quality": true,
+        "required_labels": {
+          "gender": "female"
+        },
+        "distinct_character": true,
+        "settings": {
+          "stability": 0.68,
+          "similarity_boost": 0.89,
+          "style": 0.06,
+          "use_speaker_boost": true,
+          "speed": 0.97
+        },
+        "profile_key": "female_calm"
+      },
+      "entity_refs": [
+        {
+          "entity_type": "dialogue_turn",
+          "entity_uuid": "c94d8566-7466-5c2b-9dd0-b1653717c82a",
+          "entity_key": "d_en_en-real-world-gate_public_task:6"
+        }
+      ],
+      "metadata": {
+        "character": "dina",
+        "dialogue": "d_en_en-real-world-gate_public_task",
+        "turn": 6,
+        "persona": {
+          "voice_presentation": "female",
+          "style": "calm_clear",
+          "target_accent": "general_american"
+        },
+        "voice_profile": "female_calm"
+      },
+      "relative_path": "audio/generated/en-US/dialogues/56987261b342f73078ee8b36f54ea95ed0c3011794c1189eee471e62f90b840a.mp3"
+    },
+    {
+      "audio_key": "59b99d176de9853de64a2b267adeb04954569345584498624bcbd36ca66bbfd5",
+      "category": "dialogues",
+      "locale": "en-US",
+      "text": "Hello!",
+      "source_text_hash": "334d016f755cd6dc58c53a86e183882f8ec14f52fb05345887c8a5edd42c87b7",
+      "voice_key": "character:maya:female_warm",
+      "voice_spec": {
+        "voice_name": null,
+        "description": "Warm, natural, friendly female adult American English voice with crisp articulation for beginner dialogue.",
+        "required_language": "en",
+        "preferred_accent": "american",
+        "prefer_high_quality": true,
+        "required_labels": {
+          "gender": "female"
+        },
+        "distinct_character": true,
+        "settings": {
+          "stability": 0.58,
+          "similarity_boost": 0.87,
+          "style": 0.14,
+          "use_speaker_boost": true,
+          "speed": 0.99
+        },
+        "profile_key": "female_warm"
+      },
+      "entity_refs": [
+        {
+          "entity_type": "dialogue_turn",
+          "entity_uuid": "26e6eb77-cd48-599b-a1ec-5682d12d0aa2",
+          "entity_key": "d_en_en-about-me_origin_age:1"
+        }
+      ],
+      "metadata": {
+        "character": "maya",
+        "dialogue": "d_en_en-about-me_origin_age",
+        "turn": 1,
+        "persona": {
+          "voice_presentation": "female",
+          "style": "warm_conversational",
+          "target_accent": "general_american"
+        },
+        "voice_profile": "female_warm"
+      },
+      "relative_path": "audio/generated/en-US/dialogues/59b99d176de9853de64a2b267adeb04954569345584498624bcbd36ca66bbfd5.mp3"
     },
     {
       "audio_key": "5f148afab2203bc028d95163045bda8f4837382f2427bba2fddb5198eec8324f",
@@ -1271,6 +2201,144 @@
       "relative_path": "audio/generated/en-US/dialogues/8c9841e746e8dd94889a3619df9ae3ea620270f4b51fde622a2ca34fa1564e05.mp3"
     },
     {
+      "audio_key": "92641d87d24476c42c32f58df6e06a2175e247dae2373d58a63bcde827b3c5eb",
+      "category": "dialogues",
+      "locale": "en-US",
+      "text": "How much is it?",
+      "source_text_hash": "abdfbb3951b780a174166d38d10acc3920b5e8f4712cc6014104161424c3b2f8",
+      "voice_key": "character:aisha:female_bright",
+      "voice_spec": {
+        "voice_name": null,
+        "description": "Bright, lively female young-adult American English voice; friendly and energetic without sounding theatrical.",
+        "required_language": "en",
+        "preferred_accent": "american",
+        "prefer_high_quality": true,
+        "required_labels": {
+          "gender": "female"
+        },
+        "distinct_character": true,
+        "settings": {
+          "stability": 0.52,
+          "similarity_boost": 0.86,
+          "style": 0.2,
+          "use_speaker_boost": true,
+          "speed": 1.01
+        },
+        "profile_key": "female_bright"
+      },
+      "entity_refs": [
+        {
+          "entity_type": "dialogue_turn",
+          "entity_uuid": "05cc2571-5c59-58a0-84ba-b294914687be",
+          "entity_key": "d_en_en-real-life-numbers_price_day:1"
+        }
+      ],
+      "metadata": {
+        "character": "aisha",
+        "dialogue": "d_en_en-real-life-numbers_price_day",
+        "turn": 1,
+        "persona": {
+          "voice_presentation": "female",
+          "style": "bright_social",
+          "target_accent": "general_american"
+        },
+        "voice_profile": "female_bright"
+      },
+      "relative_path": "audio/generated/en-US/dialogues/92641d87d24476c42c32f58df6e06a2175e247dae2373d58a63bcde827b3c5eb.mp3"
+    },
+    {
+      "audio_key": "92e0a6668f468ee36e0a4deed7e1d66cb6709edf4e26728d71f5f0abad76bba5",
+      "category": "dialogues",
+      "locale": "en-US",
+      "text": "I'm from Iran.",
+      "source_text_hash": "5dfce23c275fa6fab08233cefbad28edad8515795b3e7d9e445c869c89469fe1",
+      "voice_key": "character:chris:male_bright",
+      "voice_spec": {
+        "voice_name": null,
+        "description": "Bright, lively male young-adult American English voice; friendly and energetic without sounding theatrical.",
+        "required_language": "en",
+        "preferred_accent": "american",
+        "prefer_high_quality": true,
+        "required_labels": {
+          "gender": "male"
+        },
+        "distinct_character": true,
+        "settings": {
+          "stability": 0.52,
+          "similarity_boost": 0.86,
+          "style": 0.2,
+          "use_speaker_boost": true,
+          "speed": 1.01
+        },
+        "profile_key": "male_bright"
+      },
+      "entity_refs": [
+        {
+          "entity_type": "dialogue_turn",
+          "entity_uuid": "c3e45c20-390e-5ee3-91d4-4a0f1bee24cf",
+          "entity_key": "d_en_en-real-world-gate_meet:4"
+        }
+      ],
+      "metadata": {
+        "character": "chris",
+        "dialogue": "d_en_en-real-world-gate_meet",
+        "turn": 4,
+        "persona": {
+          "voice_presentation": "male",
+          "style": "bright_social",
+          "target_accent": "general_american"
+        },
+        "voice_profile": "male_bright"
+      },
+      "relative_path": "audio/generated/en-US/dialogues/92e0a6668f468ee36e0a4deed7e1d66cb6709edf4e26728d71f5f0abad76bba5.mp3"
+    },
+    {
+      "audio_key": "96911c4df3300043c29c9b3a0a01faad60e9d11ae96a50f1b5b8460dc35cb0c9",
+      "category": "dialogues",
+      "locale": "en-US",
+      "text": "Country?",
+      "source_text_hash": "3bce799dae6eab8bec384521c42582f43a54fb9360ca31f2a65b09443e27dd67",
+      "voice_key": "character:nina:female_warm",
+      "voice_spec": {
+        "voice_name": null,
+        "description": "Warm, natural, friendly female adult American English voice with crisp articulation for beginner dialogue.",
+        "required_language": "en",
+        "preferred_accent": "american",
+        "prefer_high_quality": true,
+        "required_labels": {
+          "gender": "female"
+        },
+        "distinct_character": true,
+        "settings": {
+          "stability": 0.58,
+          "similarity_boost": 0.87,
+          "style": 0.14,
+          "use_speaker_boost": true,
+          "speed": 0.99
+        },
+        "profile_key": "female_warm"
+      },
+      "entity_refs": [
+        {
+          "entity_type": "dialogue_turn",
+          "entity_uuid": "eaefe6f5-d36d-5b36-b2dd-dd452a5908b7",
+          "entity_key": "d_en_en-forms-signs_form:3"
+        }
+      ],
+      "metadata": {
+        "character": "nina",
+        "dialogue": "d_en_en-forms-signs_form",
+        "turn": 3,
+        "persona": {
+          "voice_presentation": "female",
+          "style": "warm_conversational",
+          "target_accent": "general_american"
+        },
+        "voice_profile": "female_warm"
+      },
+      "relative_path": "audio/generated/en-US/dialogues/96911c4df3300043c29c9b3a0a01faad60e9d11ae96a50f1b5b8460dc35cb0c9.mp3"
+    },
+    {
       "audio_key": "96fac0a616e37a9feb77075548dccb31afa9bcab219117a97c9b04dfd12b94ac",
       "category": "dialogues",
       "locale": "en-US",
@@ -1317,6 +2385,52 @@
       "relative_path": "audio/generated/en-US/dialogues/96fac0a616e37a9feb77075548dccb31afa9bcab219117a97c9b04dfd12b94ac.mp3"
     },
     {
+      "audio_key": "9957d3d894fb23520ad14c8a9ef64f8b461fd4a21b4ab0443471d2fe66dc07dc",
+      "category": "dialogues",
+      "locale": "en-US",
+      "text": "This is my sister.",
+      "source_text_hash": "cac74dd36ef41a909971a47efb23215bc52a2e911708ee47167620d42cbda532",
+      "voice_key": "character:ben:male_bright",
+      "voice_spec": {
+        "voice_name": null,
+        "description": "Bright, lively male young-adult American English voice; friendly and energetic without sounding theatrical.",
+        "required_language": "en",
+        "preferred_accent": "american",
+        "prefer_high_quality": true,
+        "required_labels": {
+          "gender": "male"
+        },
+        "distinct_character": true,
+        "settings": {
+          "stability": 0.52,
+          "similarity_boost": 0.86,
+          "style": 0.2,
+          "use_speaker_boost": true,
+          "speed": 1.01
+        },
+        "profile_key": "male_bright"
+      },
+      "entity_refs": [
+        {
+          "entity_type": "dialogue_turn",
+          "entity_uuid": "2c5c25b2-78b7-515f-86e9-546d28422376",
+          "entity_key": "d_en_en-about-me_feeling_family:3"
+        }
+      ],
+      "metadata": {
+        "character": "ben",
+        "dialogue": "d_en_en-about-me_feeling_family",
+        "turn": 3,
+        "persona": {
+          "voice_presentation": "male",
+          "style": "bright_social",
+          "target_accent": "general_american"
+        },
+        "voice_profile": "male_bright"
+      },
+      "relative_path": "audio/generated/en-US/dialogues/9957d3d894fb23520ad14c8a9ef64f8b461fd4a21b4ab0443471d2fe66dc07dc.mp3"
+    },
+    {
       "audio_key": "9ba98a14ac408d48f8cffbfa104a0fa5ebf4ffc8790044c61230ffc4132dff7c",
       "category": "dialogues",
       "locale": "en-US",
@@ -1361,6 +2475,144 @@
         "voice_profile": "female_warm"
       },
       "relative_path": "audio/generated/en-US/dialogues/9ba98a14ac408d48f8cffbfa104a0fa5ebf4ffc8790044c61230ffc4132dff7c.mp3"
+    },
+    {
+      "audio_key": "9f1f7b8d1bbcbaad97e74e6ec0ad5cdc333a16c16f719ec061d052fbe03cbe46",
+      "category": "dialogues",
+      "locale": "en-US",
+      "text": "Name?",
+      "source_text_hash": "d32f7ea4b09f568fe7e60ecad909742368619e55701d7cb9fd7a3bcbbfd5a5e5",
+      "voice_key": "character:nina:female_warm",
+      "voice_spec": {
+        "voice_name": null,
+        "description": "Warm, natural, friendly female adult American English voice with crisp articulation for beginner dialogue.",
+        "required_language": "en",
+        "preferred_accent": "american",
+        "prefer_high_quality": true,
+        "required_labels": {
+          "gender": "female"
+        },
+        "distinct_character": true,
+        "settings": {
+          "stability": 0.58,
+          "similarity_boost": 0.87,
+          "style": 0.14,
+          "use_speaker_boost": true,
+          "speed": 0.99
+        },
+        "profile_key": "female_warm"
+      },
+      "entity_refs": [
+        {
+          "entity_type": "dialogue_turn",
+          "entity_uuid": "2ad08d18-75fc-549a-bd44-57c429b0a208",
+          "entity_key": "d_en_en-forms-signs_form:1"
+        }
+      ],
+      "metadata": {
+        "character": "nina",
+        "dialogue": "d_en_en-forms-signs_form",
+        "turn": 1,
+        "persona": {
+          "voice_presentation": "female",
+          "style": "warm_conversational",
+          "target_accent": "general_american"
+        },
+        "voice_profile": "female_warm"
+      },
+      "relative_path": "audio/generated/en-US/dialogues/9f1f7b8d1bbcbaad97e74e6ec0ad5cdc333a16c16f719ec061d052fbe03cbe46.mp3"
+    },
+    {
+      "audio_key": "a5bd6b4ebda14c95452625778efe0af6bed7b265496e3c7d4d0fa9d363ff27d7",
+      "category": "dialogues",
+      "locale": "en-US",
+      "text": "Zero nine one two, three four five, six seven eight nine.",
+      "source_text_hash": "43e161a2195125f2e3e30f0669f6b1b8f3c5b0a6ce681eec77d686bc9f811fb5",
+      "voice_key": "character:jack:male_warm",
+      "voice_spec": {
+        "voice_name": null,
+        "description": "Warm, natural, friendly male adult American English voice with crisp articulation for beginner dialogue.",
+        "required_language": "en",
+        "preferred_accent": "american",
+        "prefer_high_quality": true,
+        "required_labels": {
+          "gender": "male"
+        },
+        "distinct_character": true,
+        "settings": {
+          "stability": 0.58,
+          "similarity_boost": 0.87,
+          "style": 0.14,
+          "use_speaker_boost": true,
+          "speed": 0.99
+        },
+        "profile_key": "male_warm"
+      },
+      "entity_refs": [
+        {
+          "entity_type": "dialogue_turn",
+          "entity_uuid": "67fa4fcd-20cd-5f01-90a8-75e336ee62ed",
+          "entity_key": "d_en_en-real-world-gate_public_task:2"
+        }
+      ],
+      "metadata": {
+        "character": "jack",
+        "dialogue": "d_en_en-real-world-gate_public_task",
+        "turn": 2,
+        "persona": {
+          "voice_presentation": "male",
+          "style": "warm_conversational",
+          "target_accent": "general_american"
+        },
+        "voice_profile": "male_warm"
+      },
+      "relative_path": "audio/generated/en-US/dialogues/a5bd6b4ebda14c95452625778efe0af6bed7b265496e3c7d4d0fa9d363ff27d7.mp3"
+    },
+    {
+      "audio_key": "a7ef46f5ec36d513e9f2796598353d935771970bfa1f65945aa634dd5a8d2d18",
+      "category": "dialogues",
+      "locale": "en-US",
+      "text": "I'm good, thanks.",
+      "source_text_hash": "3e67e2821cdebe3708f9a5388ba59dbed8dd82e3f8befa978078a3f5730a563f",
+      "voice_key": "character:ben:male_bright",
+      "voice_spec": {
+        "voice_name": null,
+        "description": "Bright, lively male young-adult American English voice; friendly and energetic without sounding theatrical.",
+        "required_language": "en",
+        "preferred_accent": "american",
+        "prefer_high_quality": true,
+        "required_labels": {
+          "gender": "male"
+        },
+        "distinct_character": true,
+        "settings": {
+          "stability": 0.52,
+          "similarity_boost": 0.86,
+          "style": 0.2,
+          "use_speaker_boost": true,
+          "speed": 1.01
+        },
+        "profile_key": "male_bright"
+      },
+      "entity_refs": [
+        {
+          "entity_type": "dialogue_turn",
+          "entity_uuid": "63d54538-b0ce-5915-947a-f3b6a5fdb967",
+          "entity_key": "d_en_en-about-me_feeling_family:2"
+        }
+      ],
+      "metadata": {
+        "character": "ben",
+        "dialogue": "d_en_en-about-me_feeling_family",
+        "turn": 2,
+        "persona": {
+          "voice_presentation": "male",
+          "style": "bright_social",
+          "target_accent": "general_american"
+        },
+        "voice_profile": "male_bright"
+      },
+      "relative_path": "audio/generated/en-US/dialogues/a7ef46f5ec36d513e9f2796598353d935771970bfa1f65945aa634dd5a8d2d18.mp3"
     },
     {
       "audio_key": "b6351953acd93cdd1dd1ca083172e17a586129b2b9b54a81c1af651d77d66809",
@@ -1501,6 +2753,98 @@
       "relative_path": "audio/generated/en-US/dialogues/bab9c06f61baa7aa06cd96fe4d403671a60fa43d09bef85ea4aed303c4590868.mp3"
     },
     {
+      "audio_key": "bafc25d7c3b55398a0fde4cdd68f0b5f2a382a0c7bfe3563d31aa84197418668",
+      "category": "dialogues",
+      "locale": "en-US",
+      "text": "Where are you from?",
+      "source_text_hash": "63265a79774350462d4ce11d5a90687ff8e6f2511bb512e0409be568b6be7046",
+      "voice_key": "character:ava:female_warm",
+      "voice_spec": {
+        "voice_name": null,
+        "description": "Warm, natural, friendly female adult American English voice with crisp articulation for beginner dialogue.",
+        "required_language": "en",
+        "preferred_accent": "american",
+        "prefer_high_quality": true,
+        "required_labels": {
+          "gender": "female"
+        },
+        "distinct_character": true,
+        "settings": {
+          "stability": 0.58,
+          "similarity_boost": 0.87,
+          "style": 0.14,
+          "use_speaker_boost": true,
+          "speed": 0.99
+        },
+        "profile_key": "female_warm"
+      },
+      "entity_refs": [
+        {
+          "entity_type": "dialogue_turn",
+          "entity_uuid": "9d0aa4a6-23d3-565b-aed3-2b6b00e5f5f5",
+          "entity_key": "d_en_en-real-world-gate_meet:3"
+        }
+      ],
+      "metadata": {
+        "character": "ava",
+        "dialogue": "d_en_en-real-world-gate_meet",
+        "turn": 3,
+        "persona": {
+          "voice_presentation": "female",
+          "style": "warm_conversational",
+          "target_accent": "general_american"
+        },
+        "voice_profile": "female_warm"
+      },
+      "relative_path": "audio/generated/en-US/dialogues/bafc25d7c3b55398a0fde4cdd68f0b5f2a382a0c7bfe3563d31aa84197418668.mp3"
+    },
+    {
+      "audio_key": "bc119ea9fab46c29347ec4270abcaf940906a8830effeb618e50ab638259fce2",
+      "category": "dialogues",
+      "locale": "en-US",
+      "text": "I'm good, thanks.",
+      "source_text_hash": "3e67e2821cdebe3708f9a5388ba59dbed8dd82e3f8befa978078a3f5730a563f",
+      "voice_key": "character:chris:male_bright",
+      "voice_spec": {
+        "voice_name": null,
+        "description": "Bright, lively male young-adult American English voice; friendly and energetic without sounding theatrical.",
+        "required_language": "en",
+        "preferred_accent": "american",
+        "prefer_high_quality": true,
+        "required_labels": {
+          "gender": "male"
+        },
+        "distinct_character": true,
+        "settings": {
+          "stability": 0.52,
+          "similarity_boost": 0.86,
+          "style": 0.2,
+          "use_speaker_boost": true,
+          "speed": 1.01
+        },
+        "profile_key": "male_bright"
+      },
+      "entity_refs": [
+        {
+          "entity_type": "dialogue_turn",
+          "entity_uuid": "cf4c4b6a-4c3f-543a-9c50-803538c13548",
+          "entity_key": "d_en_en-real-world-gate_meet:6"
+        }
+      ],
+      "metadata": {
+        "character": "chris",
+        "dialogue": "d_en_en-real-world-gate_meet",
+        "turn": 6,
+        "persona": {
+          "voice_presentation": "male",
+          "style": "bright_social",
+          "target_accent": "general_american"
+        },
+        "voice_profile": "male_bright"
+      },
+      "relative_path": "audio/generated/en-US/dialogues/bc119ea9fab46c29347ec4270abcaf940906a8830effeb618e50ab638259fce2.mp3"
+    },
+    {
       "audio_key": "bf3c10e247d8b0e89095ae775b56212f1d9008d0c1fca9482b6e3e347e56cf71",
       "category": "dialogues",
       "locale": "en-US",
@@ -1547,6 +2891,236 @@
       "relative_path": "audio/generated/en-US/dialogues/bf3c10e247d8b0e89095ae775b56212f1d9008d0c1fca9482b6e3e347e56cf71.mp3"
     },
     {
+      "audio_key": "ccacc6301e29017fb1db48a063e9092d1cbe8d371813f36999be719975a35979",
+      "category": "dialogues",
+      "locale": "en-US",
+      "text": "How are you?",
+      "source_text_hash": "df287dfc1406ed2b692e1c2c783bb5cec97eac53151ee1d9810397aa0afa0d89",
+      "voice_key": "character:nora:female_warm",
+      "voice_spec": {
+        "voice_name": null,
+        "description": "Warm, natural, friendly female adult American English voice with crisp articulation for beginner dialogue.",
+        "required_language": "en",
+        "preferred_accent": "american",
+        "prefer_high_quality": true,
+        "required_labels": {
+          "gender": "female"
+        },
+        "distinct_character": true,
+        "settings": {
+          "stability": 0.58,
+          "similarity_boost": 0.87,
+          "style": 0.14,
+          "use_speaker_boost": true,
+          "speed": 0.99
+        },
+        "profile_key": "female_warm"
+      },
+      "entity_refs": [
+        {
+          "entity_type": "dialogue_turn",
+          "entity_uuid": "f40edcfa-848d-5e82-89db-cb9f9f6aa4b6",
+          "entity_key": "d_en_en-about-me_feeling_family:1"
+        }
+      ],
+      "metadata": {
+        "character": "nora",
+        "dialogue": "d_en_en-about-me_feeling_family",
+        "turn": 1,
+        "persona": {
+          "voice_presentation": "female",
+          "style": "warm_conversational",
+          "target_accent": "general_american"
+        },
+        "voice_profile": "female_warm"
+      },
+      "relative_path": "audio/generated/en-US/dialogues/ccacc6301e29017fb1db48a063e9092d1cbe8d371813f36999be719975a35979.mp3"
+    },
+    {
+      "audio_key": "d524cb6e406dcd64a4bbc3ce64c3619e2188364f1397edd01a82a7d10654eb5c",
+      "category": "dialogues",
+      "locale": "en-US",
+      "text": "I'm good, thanks.",
+      "source_text_hash": "3e67e2821cdebe3708f9a5388ba59dbed8dd82e3f8befa978078a3f5730a563f",
+      "voice_key": "character:nora:female_warm",
+      "voice_spec": {
+        "voice_name": null,
+        "description": "Warm, natural, friendly female adult American English voice with crisp articulation for beginner dialogue.",
+        "required_language": "en",
+        "preferred_accent": "american",
+        "prefer_high_quality": true,
+        "required_labels": {
+          "gender": "female"
+        },
+        "distinct_character": true,
+        "settings": {
+          "stability": 0.58,
+          "similarity_boost": 0.87,
+          "style": 0.14,
+          "use_speaker_boost": true,
+          "speed": 0.99
+        },
+        "profile_key": "female_warm"
+      },
+      "entity_refs": [
+        {
+          "entity_type": "dialogue_turn",
+          "entity_uuid": "5ab54a7b-26d2-5663-bb7b-149dd2c8c760",
+          "entity_key": "d_en_en-about-me_feeling_family:4"
+        }
+      ],
+      "metadata": {
+        "character": "nora",
+        "dialogue": "d_en_en-about-me_feeling_family",
+        "turn": 4,
+        "persona": {
+          "voice_presentation": "female",
+          "style": "warm_conversational",
+          "target_accent": "general_american"
+        },
+        "voice_profile": "female_warm"
+      },
+      "relative_path": "audio/generated/en-US/dialogues/d524cb6e406dcd64a4bbc3ce64c3619e2188364f1397edd01a82a7d10654eb5c.mp3"
+    },
+    {
+      "audio_key": "d5e386e5f7faebb5d15a13ea6d845e649c0f59a332f9e494ecb77b0f7966b5f6",
+      "category": "dialogues",
+      "locale": "en-US",
+      "text": "It's five dollars.",
+      "source_text_hash": "f322c03bd85e8fa1611af28d52e968ffe8c9ec6a473548e8502f65d0a62bdec7",
+      "voice_key": "character:jack:male_warm",
+      "voice_spec": {
+        "voice_name": null,
+        "description": "Warm, natural, friendly male adult American English voice with crisp articulation for beginner dialogue.",
+        "required_language": "en",
+        "preferred_accent": "american",
+        "prefer_high_quality": true,
+        "required_labels": {
+          "gender": "male"
+        },
+        "distinct_character": true,
+        "settings": {
+          "stability": 0.58,
+          "similarity_boost": 0.87,
+          "style": 0.14,
+          "use_speaker_boost": true,
+          "speed": 0.99
+        },
+        "profile_key": "male_warm"
+      },
+      "entity_refs": [
+        {
+          "entity_type": "dialogue_turn",
+          "entity_uuid": "e1816a4f-411c-5ab2-84aa-e61a71e36dae",
+          "entity_key": "d_en_en-real-world-gate_public_task:4"
+        }
+      ],
+      "metadata": {
+        "character": "jack",
+        "dialogue": "d_en_en-real-world-gate_public_task",
+        "turn": 4,
+        "persona": {
+          "voice_presentation": "male",
+          "style": "warm_conversational",
+          "target_accent": "general_american"
+        },
+        "voice_profile": "male_warm"
+      },
+      "relative_path": "audio/generated/en-US/dialogues/d5e386e5f7faebb5d15a13ea6d845e649c0f59a332f9e494ecb77b0f7966b5f6.mp3"
+    },
+    {
+      "audio_key": "e4280b674d59f16d8299715917fde7c3866616c424637dc13fd7007ab5cacb12",
+      "category": "dialogues",
+      "locale": "en-US",
+      "text": "Again, please.",
+      "source_text_hash": "308c8f3227d091b723f87fd5f5b463f4dd329fbe57b9d7384ab2559c8df2bf0f",
+      "voice_key": "character:ella:female_warm",
+      "voice_spec": {
+        "voice_name": null,
+        "description": "Warm, natural, friendly female adult American English voice with crisp articulation for beginner dialogue.",
+        "required_language": "en",
+        "preferred_accent": "american",
+        "prefer_high_quality": true,
+        "required_labels": {
+          "gender": "female"
+        },
+        "distinct_character": true,
+        "settings": {
+          "stability": 0.58,
+          "similarity_boost": 0.87,
+          "style": 0.14,
+          "use_speaker_boost": true,
+          "speed": 0.99
+        },
+        "profile_key": "female_warm"
+      },
+      "entity_refs": [
+        {
+          "entity_type": "dialogue_turn",
+          "entity_uuid": "9435fcb4-7005-502a-87ab-076b61e021d4",
+          "entity_key": "d_en_en-forms-signs_sign:3"
+        }
+      ],
+      "metadata": {
+        "character": "ella",
+        "dialogue": "d_en_en-forms-signs_sign",
+        "turn": 3,
+        "persona": {
+          "voice_presentation": "female",
+          "style": "warm_conversational",
+          "target_accent": "general_american"
+        },
+        "voice_profile": "female_warm"
+      },
+      "relative_path": "audio/generated/en-US/dialogues/e4280b674d59f16d8299715917fde7c3866616c424637dc13fd7007ab5cacb12.mp3"
+    },
+    {
+      "audio_key": "e5c13c9a102671accaaffbd62e78e14bbffa43a6b5e3a388efd409e040de6a42",
+      "category": "dialogues",
+      "locale": "en-US",
+      "text": "Where is the exit?",
+      "source_text_hash": "b602b92d39a89095dd69a6984525a5011ffb934d22586a4630988b9675b197ee",
+      "voice_key": "character:jack:male_warm",
+      "voice_spec": {
+        "voice_name": null,
+        "description": "Warm, natural, friendly male adult American English voice with crisp articulation for beginner dialogue.",
+        "required_language": "en",
+        "preferred_accent": "american",
+        "prefer_high_quality": true,
+        "required_labels": {
+          "gender": "male"
+        },
+        "distinct_character": true,
+        "settings": {
+          "stability": 0.58,
+          "similarity_boost": 0.87,
+          "style": 0.14,
+          "use_speaker_boost": true,
+          "speed": 0.99
+        },
+        "profile_key": "male_warm"
+      },
+      "entity_refs": [
+        {
+          "entity_type": "dialogue_turn",
+          "entity_uuid": "0398f9db-6158-59e8-ad44-0e7622333e60",
+          "entity_key": "d_en_en-real-world-gate_public_task:5"
+        }
+      ],
+      "metadata": {
+        "character": "jack",
+        "dialogue": "d_en_en-real-world-gate_public_task",
+        "turn": 5,
+        "persona": {
+          "voice_presentation": "male",
+          "style": "warm_conversational",
+          "target_accent": "general_american"
+        },
+        "voice_profile": "male_warm"
+      },
+      "relative_path": "audio/generated/en-US/dialogues/e5c13c9a102671accaaffbd62e78e14bbffa43a6b5e3a388efd409e040de6a42.mp3"
+    },
+    {
       "audio_key": "e7a5718cf6fec02f10ff7de0b3c6c3adfa3efe7e5bf59443ed45844e2c7a2f49",
       "category": "dialogues",
       "locale": "en-US",
@@ -1591,6 +3165,52 @@
         "voice_profile": "female_warm"
       },
       "relative_path": "audio/generated/en-US/dialogues/e7a5718cf6fec02f10ff7de0b3c6c3adfa3efe7e5bf59443ed45844e2c7a2f49.mp3"
+    },
+    {
+      "audio_key": "e873a39cb35a18bc06f47c70fcfe61c886d498feadd5f88a09c056ecdd54f57d",
+      "category": "dialogues",
+      "locale": "en-US",
+      "text": "What's your phone number?",
+      "source_text_hash": "b696981a1f4f5ad2c8d5e782488344b7a063f167438a92260716008444f8139e",
+      "voice_key": "character:lina:female_warm",
+      "voice_spec": {
+        "voice_name": null,
+        "description": "Warm, natural, friendly female adult American English voice with crisp articulation for beginner dialogue.",
+        "required_language": "en",
+        "preferred_accent": "american",
+        "prefer_high_quality": true,
+        "required_labels": {
+          "gender": "female"
+        },
+        "distinct_character": true,
+        "settings": {
+          "stability": 0.58,
+          "similarity_boost": 0.87,
+          "style": 0.14,
+          "use_speaker_boost": true,
+          "speed": 0.99
+        },
+        "profile_key": "female_warm"
+      },
+      "entity_refs": [
+        {
+          "entity_type": "dialogue_turn",
+          "entity_uuid": "8f661530-5430-5fb0-8546-5e1658e469ce",
+          "entity_key": "d_en_en-real-life-numbers_phone:1"
+        }
+      ],
+      "metadata": {
+        "character": "lina",
+        "dialogue": "d_en_en-real-life-numbers_phone",
+        "turn": 1,
+        "persona": {
+          "voice_presentation": "female",
+          "style": "warm_conversational",
+          "target_accent": "general_american"
+        },
+        "voice_profile": "female_warm"
+      },
+      "relative_path": "audio/generated/en-US/dialogues/e873a39cb35a18bc06f47c70fcfe61c886d498feadd5f88a09c056ecdd54f57d.mp3"
     },
     {
       "audio_key": "e8d9beb0073c98e0a14df4fc5b6c8e47809ceab67730a68c4942720fe1cc5eca",
@@ -1729,6 +3349,52 @@
         "voice_profile": "male_warm"
       },
       "relative_path": "audio/generated/en-US/dialogues/eb6c18160a10677e2a10449e24a2d9302300beda606fd2354ac4c64e79c67d8c.mp3"
+    },
+    {
+      "audio_key": "ef4153e4b3cfe482abdd581ec61efc40bad7fe5114de80305d74e8ac8f38f09a",
+      "category": "dialogues",
+      "locale": "en-US",
+      "text": "May fifth",
+      "source_text_hash": "aa9ed96c8c4fe21722702cf0edfdc8a3502053670f7fbcc9226263e1063f2dc8",
+      "voice_key": "character:adam:male_professional",
+      "voice_spec": {
+        "voice_name": null,
+        "description": "Neutral professional male adult American English voice; confident, clean and highly intelligible.",
+        "required_language": "en",
+        "preferred_accent": "american",
+        "prefer_high_quality": true,
+        "required_labels": {
+          "gender": "male"
+        },
+        "distinct_character": true,
+        "settings": {
+          "stability": 0.71,
+          "similarity_boost": 0.9,
+          "style": 0.05,
+          "use_speaker_boost": true,
+          "speed": 0.98
+        },
+        "profile_key": "male_professional"
+      },
+      "entity_refs": [
+        {
+          "entity_type": "dialogue_turn",
+          "entity_uuid": "3e241efc-1554-56e2-be7b-6388333a9342",
+          "entity_key": "d_en_en-real-life-numbers_price_day:4"
+        }
+      ],
+      "metadata": {
+        "character": "adam",
+        "dialogue": "d_en_en-real-life-numbers_price_day",
+        "turn": 4,
+        "persona": {
+          "voice_presentation": "male",
+          "style": "professional_neutral",
+          "target_accent": "general_american"
+        },
+        "voice_profile": "male_professional"
+      },
+      "relative_path": "audio/generated/en-US/dialogues/ef4153e4b3cfe482abdd581ec61efc40bad7fe5114de80305d74e8ac8f38f09a.mp3"
     },
     {
       "audio_key": "fb800cfeeb8f672d6807669900d9872c629172021198d477745d5f8b6e8bedd0",
@@ -2910,6 +4576,11 @@
           "entity_type": "grammar_point",
           "entity_uuid": "4cfd196e-8a3f-5819-b950-8c08829a3eb4",
           "entity_key": "g_pre_ready_gate:example:1"
+        },
+        {
+          "entity_type": "grammar_point",
+          "entity_uuid": "bd71cc8d-f811-53ba-b805-cc0387cf2113",
+          "entity_key": "g_en_en-real-world-gate:example:2"
         }
       ],
       "metadata": {},
@@ -3834,6 +5505,43 @@
       "relative_path": "audio/generated/en-US/utterances/3707a0f1b7171dfa9ce05640826cf76f1f815c0511c9eed54cd3e4732d19ad4d.mp3"
     },
     {
+      "audio_key": "3741a1ed2c5edda7cdd1950ae5e829e42fad218125725b92b1a6fed198d3ef42",
+      "category": "utterances",
+      "locale": "en-US",
+      "text": "eleven",
+      "source_text_hash": "e979074ebd5633a7263aa48c4b7dea055a769115fbc0a7de459f8a74cd2efd2b",
+      "voice_key": "en-us.sentence.lori",
+      "voice_spec": {
+        "voice_key": "en-us.sentence.lori",
+        "voice_name": "Lori",
+        "require_exact_name": true,
+        "allow_named_fallback": true,
+        "fallback_required_labels": {
+          "gender": "female"
+        },
+        "description": "Cheerful, very clear female adult American English narrator for learning sentences, natural but neutral, with excellent articulation.",
+        "prefer_high_quality": true,
+        "required_language": "en",
+        "preferred_accent": "american",
+        "settings": {
+          "stability": 0.68,
+          "similarity_boost": 0.88,
+          "style": 0.0,
+          "use_speaker_boost": true,
+          "speed": 0.97
+        }
+      },
+      "entity_refs": [
+        {
+          "entity_type": "utterance",
+          "entity_uuid": "f4109d19-678f-5a29-9679-53c04a6d28cc",
+          "entity_key": "u_en_en-real-life-numbers_n11"
+        }
+      ],
+      "metadata": {},
+      "relative_path": "audio/generated/en-US/utterances/3741a1ed2c5edda7cdd1950ae5e829e42fad218125725b92b1a6fed198d3ef42.mp3"
+    },
+    {
       "audio_key": "3ddd84dbef2459c7b6ccfc6f59b72107d92134952515bae6bcf565b9d6cc21ad",
       "category": "utterances",
       "locale": "en-US",
@@ -4113,6 +5821,48 @@
       "relative_path": "audio/generated/en-US/utterances/4c322b95359c7e27a2984ea93a1ff4985cf1fc7bb5d3b1da144be58b8a493156.mp3"
     },
     {
+      "audio_key": "4e8f909820e6b8c563012ac9ad831b767ebddc0bd4e7a40e7122c53b199de8fc",
+      "category": "utterances",
+      "locale": "en-US",
+      "text": "fifteen",
+      "source_text_hash": "c463967e5708cab7f980855e14042ddbcfd1c3556d520ad4dacdfb4a115c67a5",
+      "voice_key": "en-us.sentence.lori",
+      "voice_spec": {
+        "voice_key": "en-us.sentence.lori",
+        "voice_name": "Lori",
+        "require_exact_name": true,
+        "allow_named_fallback": true,
+        "fallback_required_labels": {
+          "gender": "female"
+        },
+        "description": "Cheerful, very clear female adult American English narrator for learning sentences, natural but neutral, with excellent articulation.",
+        "prefer_high_quality": true,
+        "required_language": "en",
+        "preferred_accent": "american",
+        "settings": {
+          "stability": 0.68,
+          "similarity_boost": 0.88,
+          "style": 0.0,
+          "use_speaker_boost": true,
+          "speed": 0.97
+        }
+      },
+      "entity_refs": [
+        {
+          "entity_type": "utterance",
+          "entity_uuid": "fcce8b40-6cab-5d55-9a6d-e92ec45f54e2",
+          "entity_key": "u_en_en-real-life-numbers_n15"
+        },
+        {
+          "entity_type": "exercise",
+          "entity_uuid": "afb0504a-ba93-5139-be2c-394162e11e25",
+          "entity_key": "ex_en_en-real-life-numbers_number_listen"
+        }
+      ],
+      "metadata": {},
+      "relative_path": "audio/generated/en-US/utterances/4e8f909820e6b8c563012ac9ad831b767ebddc0bd4e7a40e7122c53b199de8fc.mp3"
+    },
+    {
       "audio_key": "4f4e7949dc35cbece83f280dfec0990ee8c7f0972919be852ee65386bad24d41",
       "category": "utterances",
       "locale": "en-US",
@@ -4148,6 +5898,55 @@
       ],
       "metadata": {},
       "relative_path": "audio/generated/en-US/utterances/4f4e7949dc35cbece83f280dfec0990ee8c7f0972919be852ee65386bad24d41.mp3"
+    },
+    {
+      "audio_key": "525bdd3e93ef139ec1d6bee9e68c960b78931f71adeb823c8e016a2abad53581",
+      "category": "utterances",
+      "locale": "en-US",
+      "text": "My name is Sara. I'm from Iran. I'm good.",
+      "source_text_hash": "1168e6e448004a5a20c13619fbcdcb4643c6d6ba96a5999c4efc486646dc425f",
+      "voice_key": "en-us.sentence.lori",
+      "voice_spec": {
+        "voice_key": "en-us.sentence.lori",
+        "voice_name": "Lori",
+        "require_exact_name": true,
+        "allow_named_fallback": true,
+        "fallback_required_labels": {
+          "gender": "female"
+        },
+        "description": "Cheerful, very clear female adult American English narrator for learning sentences, natural but neutral, with excellent articulation.",
+        "prefer_high_quality": true,
+        "required_language": "en",
+        "preferred_accent": "american",
+        "settings": {
+          "stability": 0.68,
+          "similarity_boost": 0.88,
+          "style": 0.0,
+          "use_speaker_boost": true,
+          "speed": 0.97
+        }
+      },
+      "entity_refs": [
+        {
+          "entity_type": "exercise",
+          "entity_uuid": "5f19cc57-f448-599a-a8fb-4fc572d327de",
+          "entity_key": "ex_en_en-about-me_about_write:model"
+        },
+        {
+          "entity_type": "exercise",
+          "entity_uuid": "4a5d41cd-c031-5dfb-bb79-1eb559450e0a",
+          "entity_key": "ex_en_en-real-world-gate_personal_speaking:model"
+        },
+        {
+          "entity_type": "grammar_point",
+          "entity_uuid": "bd71cc8d-f811-53ba-b805-cc0387cf2113",
+          "entity_key": "g_en_en-real-world-gate:example:1"
+        }
+      ],
+      "metadata": {
+        "usage": "model_after_response"
+      },
+      "relative_path": "audio/generated/en-US/utterances/525bdd3e93ef139ec1d6bee9e68c960b78931f71adeb823c8e016a2abad53581.mp3"
     },
     {
       "audio_key": "535f91449325f24a4011d49f1ad002179968fdf2518339da427941535f6448f9",
@@ -4298,6 +6097,43 @@
       "relative_path": "audio/generated/en-US/utterances/5e8da2335a8eab42bfe5f57447d5ab21f61a30961ede45cefbb2f4a67286f94e.mp3"
     },
     {
+      "audio_key": "61327cfe226cdc9b5ce30f1b46aa94ac483a0d11b99dddf5e0b3705c6b829b70",
+      "category": "utterances",
+      "locale": "en-US",
+      "text": "The exit is there.",
+      "source_text_hash": "abb7d9a3328215471331dc69b689b5a47762fc21868e733e43199648057af95a",
+      "voice_key": "en-us.sentence.lori",
+      "voice_spec": {
+        "voice_key": "en-us.sentence.lori",
+        "voice_name": "Lori",
+        "require_exact_name": true,
+        "allow_named_fallback": true,
+        "fallback_required_labels": {
+          "gender": "female"
+        },
+        "description": "Cheerful, very clear female adult American English narrator for learning sentences, natural but neutral, with excellent articulation.",
+        "prefer_high_quality": true,
+        "required_language": "en",
+        "preferred_accent": "american",
+        "settings": {
+          "stability": 0.68,
+          "similarity_boost": 0.88,
+          "style": 0.0,
+          "use_speaker_boost": true,
+          "speed": 0.97
+        }
+      },
+      "entity_refs": [
+        {
+          "entity_type": "utterance",
+          "entity_uuid": "dd5c68fd-133e-5ae6-84d2-a386d4c8d312",
+          "entity_key": "u_en_en-forms-signs_exit_a"
+        }
+      ],
+      "metadata": {},
+      "relative_path": "audio/generated/en-US/utterances/61327cfe226cdc9b5ce30f1b46aa94ac483a0d11b99dddf5e0b3705c6b829b70.mp3"
+    },
+    {
       "audio_key": "61dd822b43f50b74d2d9d3447ca6b13a0612b5487efaafebafac50896467a2f9",
       "category": "utterances",
       "locale": "en-US",
@@ -4380,6 +6216,50 @@
       ],
       "metadata": {},
       "relative_path": "audio/generated/en-US/utterances/68cbee1f0c6960d4c8adc826ff4f9cb9e5274bd3b58d61c09c353c51eb754527.mp3"
+    },
+    {
+      "audio_key": "6a55bf88dffaa4445be4e86c2a837a08cdc40419f7074292dd1cc1a4f2d64907",
+      "category": "utterances",
+      "locale": "en-US",
+      "text": "Name: Sara Country: Iran Phone: 0912 345 6789",
+      "source_text_hash": "a60cea99d55251d9442dcae9006db58353559e7c1beaaf6d045781d4aeef5557",
+      "voice_key": "en-us.sentence.lori",
+      "voice_spec": {
+        "voice_key": "en-us.sentence.lori",
+        "voice_name": "Lori",
+        "require_exact_name": true,
+        "allow_named_fallback": true,
+        "fallback_required_labels": {
+          "gender": "female"
+        },
+        "description": "Cheerful, very clear female adult American English narrator for learning sentences, natural but neutral, with excellent articulation.",
+        "prefer_high_quality": true,
+        "required_language": "en",
+        "preferred_accent": "american",
+        "settings": {
+          "stability": 0.68,
+          "similarity_boost": 0.88,
+          "style": 0.0,
+          "use_speaker_boost": true,
+          "speed": 0.97
+        }
+      },
+      "entity_refs": [
+        {
+          "entity_type": "exercise",
+          "entity_uuid": "be5805ce-c3ea-5a10-9f81-1b76f9ddd568",
+          "entity_key": "ex_en_en-forms-signs_form_write:model"
+        },
+        {
+          "entity_type": "exercise",
+          "entity_uuid": "0fdd52dd-eb00-562e-a4c1-c7eb1cad6503",
+          "entity_key": "ex_en_en-real-world-gate_personal_form:model"
+        }
+      ],
+      "metadata": {
+        "usage": "model_after_response"
+      },
+      "relative_path": "audio/generated/en-US/utterances/6a55bf88dffaa4445be4e86c2a837a08cdc40419f7074292dd1cc1a4f2d64907.mp3"
     },
     {
       "audio_key": "6bb0992298394e6c75cd1871f687d69323cb2d7067551ac415168352c261f59c",
@@ -4496,6 +6376,80 @@
       ],
       "metadata": {},
       "relative_path": "audio/generated/en-US/utterances/769a20cba32fffdbc3a36ced07377761814f03ed4bc18e3ef2aabe81673443bb.mp3"
+    },
+    {
+      "audio_key": "7763678512ba48d00b6dbd19b56e677a5f2f4a36179ac16451aecaa1d29ea115",
+      "category": "utterances",
+      "locale": "en-US",
+      "text": "Monday",
+      "source_text_hash": "6a00dfc1dc867e8454c2c8856e1512d9bf02a76710e3411c0972aec886c76c61",
+      "voice_key": "en-us.sentence.lori",
+      "voice_spec": {
+        "voice_key": "en-us.sentence.lori",
+        "voice_name": "Lori",
+        "require_exact_name": true,
+        "allow_named_fallback": true,
+        "fallback_required_labels": {
+          "gender": "female"
+        },
+        "description": "Cheerful, very clear female adult American English narrator for learning sentences, natural but neutral, with excellent articulation.",
+        "prefer_high_quality": true,
+        "required_language": "en",
+        "preferred_accent": "american",
+        "settings": {
+          "stability": 0.68,
+          "similarity_boost": 0.88,
+          "style": 0.0,
+          "use_speaker_boost": true,
+          "speed": 0.97
+        }
+      },
+      "entity_refs": [
+        {
+          "entity_type": "utterance",
+          "entity_uuid": "538cb3fb-006f-593c-b5a3-4279ba53988d",
+          "entity_key": "u_en_en-real-life-numbers_day"
+        }
+      ],
+      "metadata": {},
+      "relative_path": "audio/generated/en-US/utterances/7763678512ba48d00b6dbd19b56e677a5f2f4a36179ac16451aecaa1d29ea115.mp3"
+    },
+    {
+      "audio_key": "7b7044ee2c66b10ebba50fa6ba808a5dcaf683ff4db70480cd94c37ac89b3c5e",
+      "category": "utterances",
+      "locale": "en-US",
+      "text": "EXIT",
+      "source_text_hash": "3a0931580d18a6e0308c1135ee9c807f0aaa83cad286d951d3a8dfa6017aecf1",
+      "voice_key": "en-us.sentence.lori",
+      "voice_spec": {
+        "voice_key": "en-us.sentence.lori",
+        "voice_name": "Lori",
+        "require_exact_name": true,
+        "allow_named_fallback": true,
+        "fallback_required_labels": {
+          "gender": "female"
+        },
+        "description": "Cheerful, very clear female adult American English narrator for learning sentences, natural but neutral, with excellent articulation.",
+        "prefer_high_quality": true,
+        "required_language": "en",
+        "preferred_accent": "american",
+        "settings": {
+          "stability": 0.68,
+          "similarity_boost": 0.88,
+          "style": 0.0,
+          "use_speaker_boost": true,
+          "speed": 0.97
+        }
+      },
+      "entity_refs": [
+        {
+          "entity_type": "grammar_point",
+          "entity_uuid": "93981658-82af-511c-91e9-284171c2f9e4",
+          "entity_key": "g_en_en-forms-signs:example:1"
+        }
+      ],
+      "metadata": {},
+      "relative_path": "audio/generated/en-US/utterances/7b7044ee2c66b10ebba50fa6ba808a5dcaf683ff4db70480cd94c37ac89b3c5e.mp3"
     },
     {
       "audio_key": "8914de65fb38f64f5d7f7da0e7d32814023ff597b856b81f3d3352cc6fb0ebe9",
@@ -4622,6 +6576,43 @@
       ],
       "metadata": {},
       "relative_path": "audio/generated/en-US/utterances/918020a9134aa60c5cad2fdf2ceb165c8e70d3eb3c5ccbc47f4cf133b4da954b.mp3"
+    },
+    {
+      "audio_key": "935a75e76ecbab2bd3ed842a8946b8db229a5b558c822c46a54ae701c28349b6",
+      "category": "utterances",
+      "locale": "en-US",
+      "text": "This is my sister.",
+      "source_text_hash": "cac74dd36ef41a909971a47efb23215bc52a2e911708ee47167620d42cbda532",
+      "voice_key": "en-us.sentence.lori",
+      "voice_spec": {
+        "voice_key": "en-us.sentence.lori",
+        "voice_name": "Lori",
+        "require_exact_name": true,
+        "allow_named_fallback": true,
+        "fallback_required_labels": {
+          "gender": "female"
+        },
+        "description": "Cheerful, very clear female adult American English narrator for learning sentences, natural but neutral, with excellent articulation.",
+        "prefer_high_quality": true,
+        "required_language": "en",
+        "preferred_accent": "american",
+        "settings": {
+          "stability": 0.68,
+          "similarity_boost": 0.88,
+          "style": 0.0,
+          "use_speaker_boost": true,
+          "speed": 0.97
+        }
+      },
+      "entity_refs": [
+        {
+          "entity_type": "utterance",
+          "entity_uuid": "d73e40d6-43a3-5d0a-958d-1a7a144d48d6",
+          "entity_key": "u_en_en-about-me_family"
+        }
+      ],
+      "metadata": {},
+      "relative_path": "audio/generated/en-US/utterances/935a75e76ecbab2bd3ed842a8946b8db229a5b558c822c46a54ae701c28349b6.mp3"
     },
     {
       "audio_key": "942f8fd73f4a48fd516c6fa50d27252be806c44c3ad23f2e27395e03601bc9e2",
@@ -5140,6 +7131,95 @@
       "relative_path": "audio/generated/en-US/utterances/ae5294ac3af0e6c699e8bb2f76948dd85103f1d21b1ee50d66e76a3dc2be3032.mp3"
     },
     {
+      "audio_key": "b5d2f1bf3744d06bcabb1d48b88c45b96351bdf621fefafffbca1250cf804deb",
+      "category": "utterances",
+      "locale": "en-US",
+      "text": "Name",
+      "source_text_hash": "dcd1d5223f73b3a965c07e3ff5dbee3eedcfedb806686a05b9b3868a2c3d6d50",
+      "voice_key": "en-us.sentence.lori",
+      "voice_spec": {
+        "voice_key": "en-us.sentence.lori",
+        "voice_name": "Lori",
+        "require_exact_name": true,
+        "allow_named_fallback": true,
+        "fallback_required_labels": {
+          "gender": "female"
+        },
+        "description": "Cheerful, very clear female adult American English narrator for learning sentences, natural but neutral, with excellent articulation.",
+        "prefer_high_quality": true,
+        "required_language": "en",
+        "preferred_accent": "american",
+        "settings": {
+          "stability": 0.68,
+          "similarity_boost": 0.88,
+          "style": 0.0,
+          "use_speaker_boost": true,
+          "speed": 0.97
+        }
+      },
+      "entity_refs": [
+        {
+          "entity_type": "utterance",
+          "entity_uuid": "2a8ada51-bfcf-539c-9456-2c580b360a60",
+          "entity_key": "u_en_en-forms-signs_name_field"
+        },
+        {
+          "entity_type": "grammar_point",
+          "entity_uuid": "93981658-82af-511c-91e9-284171c2f9e4",
+          "entity_key": "g_en_en-forms-signs:example:2"
+        }
+      ],
+      "metadata": {},
+      "relative_path": "audio/generated/en-US/utterances/b5d2f1bf3744d06bcabb1d48b88c45b96351bdf621fefafffbca1250cf804deb.mp3"
+    },
+    {
+      "audio_key": "b9d60e323822bd8789bd66559dc90bafc4eb0aec6112b0cb092ece232f9e54c4",
+      "category": "utterances",
+      "locale": "en-US",
+      "text": "I'm from Iran.",
+      "source_text_hash": "5dfce23c275fa6fab08233cefbad28edad8515795b3e7d9e445c869c89469fe1",
+      "voice_key": "en-us.sentence.lori",
+      "voice_spec": {
+        "voice_key": "en-us.sentence.lori",
+        "voice_name": "Lori",
+        "require_exact_name": true,
+        "allow_named_fallback": true,
+        "fallback_required_labels": {
+          "gender": "female"
+        },
+        "description": "Cheerful, very clear female adult American English narrator for learning sentences, natural but neutral, with excellent articulation.",
+        "prefer_high_quality": true,
+        "required_language": "en",
+        "preferred_accent": "american",
+        "settings": {
+          "stability": 0.68,
+          "similarity_boost": 0.88,
+          "style": 0.0,
+          "use_speaker_boost": true,
+          "speed": 0.97
+        }
+      },
+      "entity_refs": [
+        {
+          "entity_type": "utterance",
+          "entity_uuid": "6c574fbe-3593-5534-a1d0-e51defd25e87",
+          "entity_key": "u_en_en-about-me_origin"
+        },
+        {
+          "entity_type": "exercise",
+          "entity_uuid": "55829618-d0f9-5ad0-aff8-cf6f1a3fd251",
+          "entity_key": "ex_en_en-about-me_origin_listen"
+        },
+        {
+          "entity_type": "grammar_point",
+          "entity_uuid": "d33ffcc4-acb6-5521-abf4-3dcf04dd26fc",
+          "entity_key": "g_en_en-about-me:example:1"
+        }
+      ],
+      "metadata": {},
+      "relative_path": "audio/generated/en-US/utterances/b9d60e323822bd8789bd66559dc90bafc4eb0aec6112b0cb092ece232f9e54c4.mp3"
+    },
+    {
       "audio_key": "bcc3258fc894f1a2696cc90a8649eed920332b89eb5476ed2822f7e575baaede",
       "category": "utterances",
       "locale": "en-US",
@@ -5175,6 +7255,85 @@
       ],
       "metadata": {},
       "relative_path": "audio/generated/en-US/utterances/bcc3258fc894f1a2696cc90a8649eed920332b89eb5476ed2822f7e575baaede.mp3"
+    },
+    {
+      "audio_key": "bf50ece05a28ee696d9df559013a7bb5c17bc8afbb1691a859d24842eec08683",
+      "category": "utterances",
+      "locale": "en-US",
+      "text": "I'm twenty.",
+      "source_text_hash": "0225ee7dc6c8daf134912bba13bf8ea9cda4c389b3ec3f642af0b1851752b1f2",
+      "voice_key": "en-us.sentence.lori",
+      "voice_spec": {
+        "voice_key": "en-us.sentence.lori",
+        "voice_name": "Lori",
+        "require_exact_name": true,
+        "allow_named_fallback": true,
+        "fallback_required_labels": {
+          "gender": "female"
+        },
+        "description": "Cheerful, very clear female adult American English narrator for learning sentences, natural but neutral, with excellent articulation.",
+        "prefer_high_quality": true,
+        "required_language": "en",
+        "preferred_accent": "american",
+        "settings": {
+          "stability": 0.68,
+          "similarity_boost": 0.88,
+          "style": 0.0,
+          "use_speaker_boost": true,
+          "speed": 0.97
+        }
+      },
+      "entity_refs": [
+        {
+          "entity_type": "utterance",
+          "entity_uuid": "6f5abb6d-206b-573c-8e90-a1c9909e62a2",
+          "entity_key": "u_en_en-about-me_age"
+        },
+        {
+          "entity_type": "grammar_point",
+          "entity_uuid": "d33ffcc4-acb6-5521-abf4-3dcf04dd26fc",
+          "entity_key": "g_en_en-about-me:example:2"
+        }
+      ],
+      "metadata": {},
+      "relative_path": "audio/generated/en-US/utterances/bf50ece05a28ee696d9df559013a7bb5c17bc8afbb1691a859d24842eec08683.mp3"
+    },
+    {
+      "audio_key": "bfb299903fc4871b91004b42bcb8b2d89483702c9d072bcea4401d23b93e5a96",
+      "category": "utterances",
+      "locale": "en-US",
+      "text": "Where is the exit?",
+      "source_text_hash": "b602b92d39a89095dd69a6984525a5011ffb934d22586a4630988b9675b197ee",
+      "voice_key": "en-us.sentence.lori",
+      "voice_spec": {
+        "voice_key": "en-us.sentence.lori",
+        "voice_name": "Lori",
+        "require_exact_name": true,
+        "allow_named_fallback": true,
+        "fallback_required_labels": {
+          "gender": "female"
+        },
+        "description": "Cheerful, very clear female adult American English narrator for learning sentences, natural but neutral, with excellent articulation.",
+        "prefer_high_quality": true,
+        "required_language": "en",
+        "preferred_accent": "american",
+        "settings": {
+          "stability": 0.68,
+          "similarity_boost": 0.88,
+          "style": 0.0,
+          "use_speaker_boost": true,
+          "speed": 0.97
+        }
+      },
+      "entity_refs": [
+        {
+          "entity_type": "utterance",
+          "entity_uuid": "84aca8c4-64b3-54be-a8dc-c755f5c23dea",
+          "entity_key": "u_en_en-forms-signs_exit_q"
+        }
+      ],
+      "metadata": {},
+      "relative_path": "audio/generated/en-US/utterances/bfb299903fc4871b91004b42bcb8b2d89483702c9d072bcea4401d23b93e5a96.mp3"
     },
     {
       "audio_key": "c04ab1ab636a9c5d1110adeb985d370bb8f1cadaa51144f180202a8332da9047",
@@ -5286,6 +7445,53 @@
       ],
       "metadata": {},
       "relative_path": "audio/generated/en-US/utterances/c593419ab58c297a298faa74165f6c4615e14209ca229730c9f46c54e23d6877.mp3"
+    },
+    {
+      "audio_key": "c69ddab211da43d538eeb30c51bc7bba2a187fc35c3d35a4f90654a8304aee16",
+      "category": "utterances",
+      "locale": "en-US",
+      "text": "Zero nine one two, three four five, six seven eight nine.",
+      "source_text_hash": "43e161a2195125f2e3e30f0669f6b1b8f3c5b0a6ce681eec77d686bc9f811fb5",
+      "voice_key": "en-us.sentence.lori",
+      "voice_spec": {
+        "voice_key": "en-us.sentence.lori",
+        "voice_name": "Lori",
+        "require_exact_name": true,
+        "allow_named_fallback": true,
+        "fallback_required_labels": {
+          "gender": "female"
+        },
+        "description": "Cheerful, very clear female adult American English narrator for learning sentences, natural but neutral, with excellent articulation.",
+        "prefer_high_quality": true,
+        "required_language": "en",
+        "preferred_accent": "american",
+        "settings": {
+          "stability": 0.68,
+          "similarity_boost": 0.88,
+          "style": 0.0,
+          "use_speaker_boost": true,
+          "speed": 0.97
+        }
+      },
+      "entity_refs": [
+        {
+          "entity_type": "utterance",
+          "entity_uuid": "5b74f116-3416-5416-9e8d-1c1c134c55d5",
+          "entity_key": "u_en_en-real-life-numbers_phone"
+        },
+        {
+          "entity_type": "grammar_point",
+          "entity_uuid": "0f1afc9d-00e9-5749-ba2e-b3f8c2234bdd",
+          "entity_key": "g_en_en-real-life-numbers:example:1"
+        },
+        {
+          "entity_type": "exercise",
+          "entity_uuid": "4b52c3e4-5a5e-5b11-8387-5de87b21522f",
+          "entity_key": "ex_en_en-real-world-gate_phone_listen"
+        }
+      ],
+      "metadata": {},
+      "relative_path": "audio/generated/en-US/utterances/c69ddab211da43d538eeb30c51bc7bba2a187fc35c3d35a4f90654a8304aee16.mp3"
     },
     {
       "audio_key": "c793d06ec61013c8073eb22d1f669ff77aef3f4a67b7296f464a58a21f054075",
@@ -5434,6 +7640,85 @@
       ],
       "metadata": {},
       "relative_path": "audio/generated/en-US/utterances/cd39b10dea4b28997348ce99c6e23fa7da72f8143a2324946278856ec988ce55.mp3"
+    },
+    {
+      "audio_key": "d0018c0f699c8a9cf3211c67930200c557458a12bdb2403b869965ce4172d445",
+      "category": "utterances",
+      "locale": "en-US",
+      "text": "It's five dollars.",
+      "source_text_hash": "f322c03bd85e8fa1611af28d52e968ffe8c9ec6a473548e8502f65d0a62bdec7",
+      "voice_key": "en-us.sentence.lori",
+      "voice_spec": {
+        "voice_key": "en-us.sentence.lori",
+        "voice_name": "Lori",
+        "require_exact_name": true,
+        "allow_named_fallback": true,
+        "fallback_required_labels": {
+          "gender": "female"
+        },
+        "description": "Cheerful, very clear female adult American English narrator for learning sentences, natural but neutral, with excellent articulation.",
+        "prefer_high_quality": true,
+        "required_language": "en",
+        "preferred_accent": "american",
+        "settings": {
+          "stability": 0.68,
+          "similarity_boost": 0.88,
+          "style": 0.0,
+          "use_speaker_boost": true,
+          "speed": 0.97
+        }
+      },
+      "entity_refs": [
+        {
+          "entity_type": "utterance",
+          "entity_uuid": "81bff4d6-e8ae-51d8-9fd6-5c93c2c66b80",
+          "entity_key": "u_en_en-real-life-numbers_price"
+        },
+        {
+          "entity_type": "grammar_point",
+          "entity_uuid": "0f1afc9d-00e9-5749-ba2e-b3f8c2234bdd",
+          "entity_key": "g_en_en-real-life-numbers:example:2"
+        }
+      ],
+      "metadata": {},
+      "relative_path": "audio/generated/en-US/utterances/d0018c0f699c8a9cf3211c67930200c557458a12bdb2403b869965ce4172d445.mp3"
+    },
+    {
+      "audio_key": "d4eff901dc74a53bbac34e34af4e06981973fca1b50d06e580d6b6827d4b9612",
+      "category": "utterances",
+      "locale": "en-US",
+      "text": "Phone",
+      "source_text_hash": "63dceb8800b2dd4af9567a1f54f03b7c3dbdc27fac4799091ebfcc4928899ee5",
+      "voice_key": "en-us.sentence.lori",
+      "voice_spec": {
+        "voice_key": "en-us.sentence.lori",
+        "voice_name": "Lori",
+        "require_exact_name": true,
+        "allow_named_fallback": true,
+        "fallback_required_labels": {
+          "gender": "female"
+        },
+        "description": "Cheerful, very clear female adult American English narrator for learning sentences, natural but neutral, with excellent articulation.",
+        "prefer_high_quality": true,
+        "required_language": "en",
+        "preferred_accent": "american",
+        "settings": {
+          "stability": 0.68,
+          "similarity_boost": 0.88,
+          "style": 0.0,
+          "use_speaker_boost": true,
+          "speed": 0.97
+        }
+      },
+      "entity_refs": [
+        {
+          "entity_type": "exercise",
+          "entity_uuid": "fc091044-6924-57d2-8424-03bf4138a626",
+          "entity_key": "ex_en_en-forms-signs_field_listen"
+        }
+      ],
+      "metadata": {},
+      "relative_path": "audio/generated/en-US/utterances/d4eff901dc74a53bbac34e34af4e06981973fca1b50d06e580d6b6827d4b9612.mp3"
     },
     {
       "audio_key": "d5e00cfc6a26152729e25540b01b56489575f600a0895b9e1c81a4cc93d0da98",
@@ -5821,6 +8106,48 @@
       "relative_path": "audio/generated/en-US/utterances/e634c8af94071187e3152877a89def90f863d719ce7c9187d87b42b25932ef7d.mp3"
     },
     {
+      "audio_key": "e72b8fa7c0c7aebd016fa3e117b5e532d5dc3d2b842a973f13c010e1da929452",
+      "category": "utterances",
+      "locale": "en-US",
+      "text": "May fifth",
+      "source_text_hash": "aa9ed96c8c4fe21722702cf0edfdc8a3502053670f7fbcc9226263e1063f2dc8",
+      "voice_key": "en-us.sentence.lori",
+      "voice_spec": {
+        "voice_key": "en-us.sentence.lori",
+        "voice_name": "Lori",
+        "require_exact_name": true,
+        "allow_named_fallback": true,
+        "fallback_required_labels": {
+          "gender": "female"
+        },
+        "description": "Cheerful, very clear female adult American English narrator for learning sentences, natural but neutral, with excellent articulation.",
+        "prefer_high_quality": true,
+        "required_language": "en",
+        "preferred_accent": "american",
+        "settings": {
+          "stability": 0.68,
+          "similarity_boost": 0.88,
+          "style": 0.0,
+          "use_speaker_boost": true,
+          "speed": 0.97
+        }
+      },
+      "entity_refs": [
+        {
+          "entity_type": "utterance",
+          "entity_uuid": "33302a9a-7d2d-53a5-8733-22a670ac3edb",
+          "entity_key": "u_en_en-real-life-numbers_date"
+        },
+        {
+          "entity_type": "grammar_point",
+          "entity_uuid": "0f1afc9d-00e9-5749-ba2e-b3f8c2234bdd",
+          "entity_key": "g_en_en-real-life-numbers:example:3"
+        }
+      ],
+      "metadata": {},
+      "relative_path": "audio/generated/en-US/utterances/e72b8fa7c0c7aebd016fa3e117b5e532d5dc3d2b842a973f13c010e1da929452.mp3"
+    },
+    {
       "audio_key": "e79c6abfeddf863f4f76bf5258cb44ad732affe2505549f9401470c5cda78bf8",
       "category": "utterances",
       "locale": "en-US",
@@ -6189,6 +8516,48 @@
       "relative_path": "audio/generated/en-US/utterances/f0eaa5ca90b01a75d76b88474c5df7c22de66a1f20a04426e328b222efd84c43.mp3"
     },
     {
+      "audio_key": "f3c58b4e897d612575b044566801ffa2e09404e1461c17e21d863cc72ef19d0e",
+      "category": "utterances",
+      "locale": "en-US",
+      "text": "I'm good, thanks.",
+      "source_text_hash": "3e67e2821cdebe3708f9a5388ba59dbed8dd82e3f8befa978078a3f5730a563f",
+      "voice_key": "en-us.sentence.lori",
+      "voice_spec": {
+        "voice_key": "en-us.sentence.lori",
+        "voice_name": "Lori",
+        "require_exact_name": true,
+        "allow_named_fallback": true,
+        "fallback_required_labels": {
+          "gender": "female"
+        },
+        "description": "Cheerful, very clear female adult American English narrator for learning sentences, natural but neutral, with excellent articulation.",
+        "prefer_high_quality": true,
+        "required_language": "en",
+        "preferred_accent": "american",
+        "settings": {
+          "stability": 0.68,
+          "similarity_boost": 0.88,
+          "style": 0.0,
+          "use_speaker_boost": true,
+          "speed": 0.97
+        }
+      },
+      "entity_refs": [
+        {
+          "entity_type": "utterance",
+          "entity_uuid": "4b4b0611-de1c-584a-bce4-cf39d087b9b4",
+          "entity_key": "u_en_en-about-me_feeling"
+        },
+        {
+          "entity_type": "grammar_point",
+          "entity_uuid": "d33ffcc4-acb6-5521-abf4-3dcf04dd26fc",
+          "entity_key": "g_en_en-about-me:example:3"
+        }
+      ],
+      "metadata": {},
+      "relative_path": "audio/generated/en-US/utterances/f3c58b4e897d612575b044566801ffa2e09404e1461c17e21d863cc72ef19d0e.mp3"
+    },
+    {
       "audio_key": "f7860ce375dc8686878515ac64303d959466f40a73fb29d33fc7d7c2376a8dc7",
       "category": "utterances",
       "locale": "en-US",
@@ -6224,6 +8593,43 @@
       ],
       "metadata": {},
       "relative_path": "audio/generated/en-US/utterances/f7860ce375dc8686878515ac64303d959466f40a73fb29d33fc7d7c2376a8dc7.mp3"
+    },
+    {
+      "audio_key": "f7a0e7e8d4718befbe23a1fc5c4da9fbe0caad3ef28b7f36f3905fc73ae55c36",
+      "category": "utterances",
+      "locale": "en-US",
+      "text": "twenty",
+      "source_text_hash": "7c2c4df740f720b0c861920dc27692c4d4b5daa65d6330a593c931d35f8ac737",
+      "voice_key": "en-us.sentence.lori",
+      "voice_spec": {
+        "voice_key": "en-us.sentence.lori",
+        "voice_name": "Lori",
+        "require_exact_name": true,
+        "allow_named_fallback": true,
+        "fallback_required_labels": {
+          "gender": "female"
+        },
+        "description": "Cheerful, very clear female adult American English narrator for learning sentences, natural but neutral, with excellent articulation.",
+        "prefer_high_quality": true,
+        "required_language": "en",
+        "preferred_accent": "american",
+        "settings": {
+          "stability": 0.68,
+          "similarity_boost": 0.88,
+          "style": 0.0,
+          "use_speaker_boost": true,
+          "speed": 0.97
+        }
+      },
+      "entity_refs": [
+        {
+          "entity_type": "utterance",
+          "entity_uuid": "ba9a75a5-3c3d-5e59-beb3-2f81136478a6",
+          "entity_key": "u_en_en-real-life-numbers_n20"
+        }
+      ],
+      "metadata": {},
+      "relative_path": "audio/generated/en-US/utterances/f7a0e7e8d4718befbe23a1fc5c4da9fbe0caad3ef28b7f36f3905fc73ae55c36.mp3"
     },
     {
       "audio_key": "fb7516483e53ef58d5b327774444695e3ad91e1e168774845f2ec1e98580a77a",
