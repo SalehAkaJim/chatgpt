@@ -1,0 +1,857 @@
+{
+  "batch_id": "tr-tr-a1-b02-basic-health-v1",
+  "course": "fa-tr-tr",
+  "learner_language": "fa",
+  "learner_variant": "fa-IR",
+  "target_language": "tr",
+  "target_variant": "tr-TR",
+  "cefr": "A1",
+  "curriculum_unit": "a1-tr-basic-health",
+  "generator": "gpt-5.6-sol:turkish-a1-batch-02-v1",
+  "items": [
+    {
+      "kind": "concept",
+      "external_id": "c_basic_health_01",
+      "data": {
+        "slug": "tr_a1_basic_health_bas",
+        "lesson_key": "a1-tr-basic-health-01",
+        "concept_type": "lexical",
+        "part_of_speech": "noun",
+        "forms": {
+          "tr": "baş"
+        },
+        "translations": {
+          "fa": "سر"
+        },
+        "cefr": "A1",
+        "topic": "basic-health",
+        "tags": [
+          "core",
+          "a1",
+          "high_frequency"
+        ],
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_basic_health_01",
+      "data": {
+        "lesson_key": "a1-tr-basic-health-01",
+        "lemma": "baş",
+        "display_lemma": "baş",
+        "language": "tr",
+        "language_variant": "tr-TR",
+        "part_of_speech": "noun",
+        "concept_refs": [
+          "tr_a1_basic_health_bas"
+        ],
+        "cefr": "A1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_basic_health_01",
+      "data": {
+        "lesson_key": "a1-tr-basic-health-01",
+        "lexeme_ref": "lx_basic_health_01",
+        "surface_form": "baş",
+        "display_form": "baş",
+        "grammatical_features": {},
+        "is_lemma": true,
+        "is_preferred": true,
+        "cefr": "A1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_basic_health_02",
+      "data": {
+        "slug": "tr_a1_basic_health_bogaz",
+        "lesson_key": "a1-tr-basic-health-01",
+        "concept_type": "lexical",
+        "part_of_speech": "noun",
+        "forms": {
+          "tr": "boğaz"
+        },
+        "translations": {
+          "fa": "گلو"
+        },
+        "cefr": "A1",
+        "topic": "basic-health",
+        "tags": [
+          "core",
+          "a1",
+          "high_frequency"
+        ],
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_basic_health_02",
+      "data": {
+        "lesson_key": "a1-tr-basic-health-01",
+        "lemma": "boğaz",
+        "display_lemma": "boğaz",
+        "language": "tr",
+        "language_variant": "tr-TR",
+        "part_of_speech": "noun",
+        "concept_refs": [
+          "tr_a1_basic_health_bogaz"
+        ],
+        "cefr": "A1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_basic_health_02",
+      "data": {
+        "lesson_key": "a1-tr-basic-health-01",
+        "lexeme_ref": "lx_basic_health_02",
+        "surface_form": "boğaz",
+        "display_form": "boğaz",
+        "grammatical_features": {},
+        "is_lemma": true,
+        "is_preferred": true,
+        "cefr": "A1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_basic_health_03",
+      "data": {
+        "slug": "tr_a1_basic_health_agrimak",
+        "lesson_key": "a1-tr-basic-health-01",
+        "concept_type": "lexical",
+        "part_of_speech": "verb",
+        "forms": {
+          "tr": "ağrımak"
+        },
+        "translations": {
+          "fa": "درد کردن"
+        },
+        "cefr": "A1",
+        "topic": "basic-health",
+        "tags": [
+          "core",
+          "a1",
+          "high_frequency"
+        ],
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_basic_health_03",
+      "data": {
+        "lesson_key": "a1-tr-basic-health-01",
+        "lemma": "ağrımak",
+        "display_lemma": "ağrımak",
+        "language": "tr",
+        "language_variant": "tr-TR",
+        "part_of_speech": "verb",
+        "concept_refs": [
+          "tr_a1_basic_health_agrimak"
+        ],
+        "cefr": "A1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_basic_health_03",
+      "data": {
+        "lesson_key": "a1-tr-basic-health-01",
+        "lexeme_ref": "lx_basic_health_03",
+        "surface_form": "ağrımak",
+        "display_form": "ağrımak",
+        "grammatical_features": {},
+        "is_lemma": true,
+        "is_preferred": true,
+        "cefr": "A1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_basic_health_04",
+      "data": {
+        "slug": "tr_a1_basic_health_dinlenmek",
+        "lesson_key": "a1-tr-basic-health-02",
+        "concept_type": "lexical",
+        "part_of_speech": "verb",
+        "forms": {
+          "tr": "dinlenmek"
+        },
+        "translations": {
+          "fa": "استراحت کردن"
+        },
+        "cefr": "A1",
+        "topic": "basic-health",
+        "tags": [
+          "core",
+          "a1",
+          "high_frequency"
+        ],
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_basic_health_04",
+      "data": {
+        "lesson_key": "a1-tr-basic-health-02",
+        "lemma": "dinlenmek",
+        "display_lemma": "dinlenmek",
+        "language": "tr",
+        "language_variant": "tr-TR",
+        "part_of_speech": "verb",
+        "concept_refs": [
+          "tr_a1_basic_health_dinlenmek"
+        ],
+        "cefr": "A1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_basic_health_04",
+      "data": {
+        "lesson_key": "a1-tr-basic-health-02",
+        "lexeme_ref": "lx_basic_health_04",
+        "surface_form": "dinlenmek",
+        "display_form": "dinlenmek",
+        "grammatical_features": {},
+        "is_lemma": true,
+        "is_preferred": true,
+        "cefr": "A1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_basic_health_05",
+      "data": {
+        "slug": "tr_a1_basic_health_ilac",
+        "lesson_key": "a1-tr-basic-health-02",
+        "concept_type": "lexical",
+        "part_of_speech": "noun",
+        "forms": {
+          "tr": "ilaç"
+        },
+        "translations": {
+          "fa": "دارو"
+        },
+        "cefr": "A1",
+        "topic": "basic-health",
+        "tags": [
+          "core",
+          "a1",
+          "high_frequency"
+        ],
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_basic_health_05",
+      "data": {
+        "lesson_key": "a1-tr-basic-health-02",
+        "lemma": "ilaç",
+        "display_lemma": "ilaç",
+        "language": "tr",
+        "language_variant": "tr-TR",
+        "part_of_speech": "noun",
+        "concept_refs": [
+          "tr_a1_basic_health_ilac"
+        ],
+        "cefr": "A1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_basic_health_05",
+      "data": {
+        "lesson_key": "a1-tr-basic-health-02",
+        "lexeme_ref": "lx_basic_health_05",
+        "surface_form": "ilaç",
+        "display_form": "ilaç",
+        "grammatical_features": {},
+        "is_lemma": true,
+        "is_preferred": true,
+        "cefr": "A1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_basic_health_06",
+      "data": {
+        "slug": "tr_a1_basic_health_ates",
+        "lesson_key": "a1-tr-basic-health-02",
+        "concept_type": "lexical",
+        "part_of_speech": "noun",
+        "forms": {
+          "tr": "ateş"
+        },
+        "translations": {
+          "fa": "تب"
+        },
+        "cefr": "A1",
+        "topic": "basic-health",
+        "tags": [
+          "core",
+          "a1",
+          "high_frequency"
+        ],
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_basic_health_06",
+      "data": {
+        "lesson_key": "a1-tr-basic-health-02",
+        "lemma": "ateş",
+        "display_lemma": "ateş",
+        "language": "tr",
+        "language_variant": "tr-TR",
+        "part_of_speech": "noun",
+        "concept_refs": [
+          "tr_a1_basic_health_ates"
+        ],
+        "cefr": "A1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_basic_health_06",
+      "data": {
+        "lesson_key": "a1-tr-basic-health-02",
+        "lexeme_ref": "lx_basic_health_06",
+        "surface_form": "ateş",
+        "display_form": "ateş",
+        "grammatical_features": {},
+        "is_lemma": true,
+        "is_preferred": true,
+        "cefr": "A1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_basic_health_01",
+      "data": {
+        "lesson_key": "a1-tr-basic-health-01",
+        "text": {
+          "tr": "Başım ağrıyor."
+        },
+        "translations": {
+          "fa": "سرم درد می‌کند."
+        },
+        "intent": "state_symptom",
+        "concept_refs": [
+          "tr_a1_basic_health_bas",
+          "tr_a1_basic_health_agrimak"
+        ],
+        "cefr": "A1",
+        "topic": "basic-health",
+        "register": "neutral",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_basic_health_02",
+      "data": {
+        "lesson_key": "a1-tr-basic-health-01",
+        "text": {
+          "tr": "Boğazım da ağrıyor."
+        },
+        "translations": {
+          "fa": "گلویم هم درد می‌کند."
+        },
+        "intent": "state_symptom",
+        "concept_refs": [
+          "tr_a1_basic_health_bogaz",
+          "tr_a1_basic_health_agrimak"
+        ],
+        "cefr": "A1",
+        "topic": "basic-health",
+        "register": "neutral",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_basic_health_03",
+      "data": {
+        "lesson_key": "a1-tr-basic-health-02",
+        "text": {
+          "tr": "Biraz dinlen."
+        },
+        "translations": {
+          "fa": "کمی استراحت کن."
+        },
+        "intent": "give_advice",
+        "concept_refs": [
+          "tr_a1_basic_health_dinlenmek"
+        ],
+        "cefr": "A1",
+        "topic": "basic-health",
+        "register": "neutral",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_basic_health_04",
+      "data": {
+        "lesson_key": "a1-tr-basic-health-02",
+        "text": {
+          "tr": "Ateşim var, ilaç almam lazım."
+        },
+        "translations": {
+          "fa": "تب دارم، باید دارو بگیرم."
+        },
+        "intent": "state_need",
+        "concept_refs": [
+          "tr_a1_basic_health_ates",
+          "tr_a1_basic_health_ilac"
+        ],
+        "cefr": "A1",
+        "topic": "basic-health",
+        "register": "neutral",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "grammar_point",
+      "external_id": "g_basic_health_core",
+      "data": {
+        "lesson_key": "a1-tr-basic-health-01",
+        "slug": "a1-tr-basic-health-grammar",
+        "title": "Emir: temel biçim",
+        "rule_summary": "For familiar singular commands, the bare verb stem is used: Dinlen! Bekle!",
+        "explanation": {
+          "fa": "برای دستور یا توصیهٔ مستقیم به یک نفر آشنا، بن فعل می‌تواند به‌تنهایی بیاید: Dinlen! یعنی «استراحت کن!». در موقعیت رسمی باید شکل مؤدبانه‌تر به کار برد."
+        },
+        "examples": [
+          {
+            "tr": "Biraz dinlen.",
+            "fa": "کمی استراحت کن."
+          },
+          {
+            "tr": "Burada bekle.",
+            "fa": "اینجا صبر کن."
+          }
+        ],
+        "cefr": "A1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "dialogue",
+      "external_id": "d_basic_health_01",
+      "data": {
+        "lesson_key": "a1-tr-basic-health-01",
+        "title": "Neyin var?",
+        "setting": "",
+        "cefr": "A1",
+        "topic": "basic-health",
+        "characters": [
+          "Kaan",
+          "Zeynep"
+        ],
+        "turns": [
+          {
+            "order": 1,
+            "speaker": "Kaan",
+            "text": "Neyin var?",
+            "translation_fa": "چی شده؟"
+          },
+          {
+            "order": 2,
+            "speaker": "Zeynep",
+            "text": "Başım ağrıyor.",
+            "translation_fa": "سرم درد می‌کند."
+          },
+          {
+            "order": 3,
+            "speaker": "Kaan",
+            "text": "Biraz dinlen.",
+            "translation_fa": "کمی استراحت کن."
+          },
+          {
+            "order": 4,
+            "speaker": "Zeynep",
+            "text": "İyi fikir.",
+            "translation_fa": "فکر خوبیه."
+          }
+        ],
+        "qa": {
+          "character_pair_unique_within_unit": true,
+          "naturalness": "passed",
+          "single_situation": true
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "dialogue",
+      "external_id": "d_basic_health_02",
+      "data": {
+        "lesson_key": "a1-tr-basic-health-02",
+        "title": "Eczanede",
+        "setting": "",
+        "cefr": "A1",
+        "topic": "basic-health",
+        "characters": [
+          "Emre",
+          "Elif"
+        ],
+        "turns": [
+          {
+            "order": 1,
+            "speaker": "Emre",
+            "text": "Ateşim var ve boğazım ağrıyor.",
+            "translation_fa": "تب دارم و گلویم درد می‌کند."
+          },
+          {
+            "order": 2,
+            "speaker": "Elif",
+            "text": "Doktora gittiniz mi?",
+            "translation_fa": "پیش دکتر رفته‌اید؟"
+          },
+          {
+            "order": 3,
+            "speaker": "Emre",
+            "text": "Henüz gitmedim.",
+            "translation_fa": "هنوز نرفته‌ام."
+          },
+          {
+            "order": 4,
+            "speaker": "Elif",
+            "text": "Önce doktora danışın.",
+            "translation_fa": "اول با پزشک مشورت کنید."
+          }
+        ],
+        "qa": {
+          "character_pair_unique_within_unit": true,
+          "naturalness": "passed",
+          "single_situation": true
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_basic_health_01_meaning",
+      "data": {
+        "lesson_key": "a1-tr-basic-health-01",
+        "exercise_type": "multiple_choice",
+        "prompt": {
+          "instruction_fa": "معنی درست این عبارت ترکی را انتخاب کن.",
+          "value": "Başım ağrıyor."
+        },
+        "answer": {
+          "value": "سرم درد می‌کند."
+        },
+        "options": [
+          "سرم درد می‌کند.",
+          "گلویم هم درد می‌کند.",
+          "کمی استراحت کن.",
+          "تب دارم، باید دارو بگیرم."
+        ],
+        "difficulty": 1,
+        "cefr": "A1",
+        "topic": "basic-health",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت و پسوندهای عبارت ترکی دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: Başım ağrıyor. — سرم درد می‌کند.",
+          "model_answer": "Başım ağrıyor."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_basic_health_01_listen",
+      "data": {
+        "lesson_key": "a1-tr-basic-health-01",
+        "exercise_type": "listening",
+        "prompt": {
+          "instruction_fa": "گوش کن و عبارتی را که شنیدی انتخاب کن.",
+          "audio_text": "Boğazım da ağrıyor."
+        },
+        "answer": {
+          "value": "Boğazım da ağrıyor."
+        },
+        "options": [
+          "Boğazım da ağrıyor.",
+          "Başım ağrıyor.",
+          "Biraz dinlen.",
+          "Ateşim var, ilaç almam lazım."
+        ],
+        "difficulty": 1,
+        "cefr": "A1",
+        "topic": "basic-health",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت و پسوندهای عبارت ترکی دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: Boğazım da ağrıyor. — گلویم هم درد می‌کند.",
+          "model_answer": "Boğazım da ağrıyor.",
+          "transcript_tr": "Boğazım da ağrıyor."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_basic_health_01_speak",
+      "data": {
+        "lesson_key": "a1-tr-basic-health-01",
+        "exercise_type": "speaking",
+        "prompt": {
+          "instruction_fa": "عبارت را با صدای بلند و با ریتم طبیعی تکرار کن.",
+          "value": "Başım ağrıyor."
+        },
+        "answer": {
+          "expected_text": "Başım ağrıyor."
+        },
+        "difficulty": 1,
+        "cefr": "A1",
+        "topic": "basic-health",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت و پسوندهای عبارت ترکی دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: Başım ağrıyor. — سرم درد می‌کند.",
+          "model_answer": "Başım ağrıyor."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_basic_health_01_build",
+      "data": {
+        "lesson_key": "a1-tr-basic-health-01",
+        "exercise_type": "sentence_building",
+        "prompt": {
+          "instruction_fa": "کلمه‌ها را لمس کن تا عبارت درست ساخته شود.",
+          "tokens": [
+            "da",
+            "ağrıyor.",
+            "Boğazım"
+          ]
+        },
+        "answer": {
+          "tokens": [
+            "Boğazım",
+            "da",
+            "ağrıyor."
+          ],
+          "value": "Boğazım da ağrıyor."
+        },
+        "difficulty": 1,
+        "cefr": "A1",
+        "topic": "basic-health",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت و پسوندهای عبارت ترکی دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: Boğazım da ağrıyor. — گلویم هم درد می‌کند.",
+          "model_answer": "Boğazım da ağrıyor."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_basic_health_01_dialogue",
+      "data": {
+        "lesson_key": "a1-tr-basic-health-01",
+        "exercise_type": "dialogue_comprehension",
+        "prompt": {
+          "instruction_fa": "با توجه به گفت‌وگو، پاسخ مناسب را انتخاب کن.",
+          "source_dialogue_ref": "d_basic_health_01",
+          "question_fa": "کدام گزینه با معنی «سرم درد می‌کند.» هماهنگ است؟"
+        },
+        "answer": {
+          "value": "Başım ağrıyor."
+        },
+        "options": [
+          "Başım ağrıyor.",
+          "Boğazım da ağrıyor.",
+          "Biraz dinlen.",
+          "Ateşim var, ilaç almam lazım."
+        ],
+        "difficulty": 1,
+        "cefr": "A1",
+        "topic": "basic-health",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت و پسوندهای عبارت ترکی دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: Başım ağrıyor. — سرم درد می‌کند.",
+          "model_answer": "Başım ağrıyor."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_basic_health_02_meaning",
+      "data": {
+        "lesson_key": "a1-tr-basic-health-02",
+        "exercise_type": "multiple_choice",
+        "prompt": {
+          "instruction_fa": "معنی درست این عبارت ترکی را انتخاب کن.",
+          "value": "Biraz dinlen."
+        },
+        "answer": {
+          "value": "کمی استراحت کن."
+        },
+        "options": [
+          "کمی استراحت کن.",
+          "سرم درد می‌کند.",
+          "گلویم هم درد می‌کند.",
+          "تب دارم، باید دارو بگیرم."
+        ],
+        "difficulty": 1,
+        "cefr": "A1",
+        "topic": "basic-health",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت و پسوندهای عبارت ترکی دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: Biraz dinlen. — کمی استراحت کن.",
+          "model_answer": "Biraz dinlen."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_basic_health_02_listen",
+      "data": {
+        "lesson_key": "a1-tr-basic-health-02",
+        "exercise_type": "listening",
+        "prompt": {
+          "instruction_fa": "گوش کن و عبارتی را که شنیدی انتخاب کن.",
+          "audio_text": "Ateşim var, ilaç almam lazım."
+        },
+        "answer": {
+          "value": "Ateşim var, ilaç almam lazım."
+        },
+        "options": [
+          "Ateşim var, ilaç almam lazım.",
+          "Biraz dinlen.",
+          "Başım ağrıyor.",
+          "Boğazım da ağrıyor."
+        ],
+        "difficulty": 1,
+        "cefr": "A1",
+        "topic": "basic-health",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت و پسوندهای عبارت ترکی دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: Ateşim var, ilaç almam lazım. — تب دارم، باید دارو بگیرم.",
+          "model_answer": "Ateşim var, ilaç almam lazım.",
+          "transcript_tr": "Ateşim var, ilaç almam lazım."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_basic_health_02_speak",
+      "data": {
+        "lesson_key": "a1-tr-basic-health-02",
+        "exercise_type": "speaking",
+        "prompt": {
+          "instruction_fa": "عبارت را با صدای بلند و با ریتم طبیعی تکرار کن.",
+          "value": "Biraz dinlen."
+        },
+        "answer": {
+          "expected_text": "Biraz dinlen."
+        },
+        "difficulty": 1,
+        "cefr": "A1",
+        "topic": "basic-health",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت و پسوندهای عبارت ترکی دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: Biraz dinlen. — کمی استراحت کن.",
+          "model_answer": "Biraz dinlen."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_basic_health_02_build",
+      "data": {
+        "lesson_key": "a1-tr-basic-health-02",
+        "exercise_type": "sentence_building",
+        "prompt": {
+          "instruction_fa": "کلمه‌ها را لمس کن تا عبارت درست ساخته شود.",
+          "tokens": [
+            "var,",
+            "ilaç",
+            "almam",
+            "lazım.",
+            "Ateşim"
+          ]
+        },
+        "answer": {
+          "tokens": [
+            "Ateşim",
+            "var,",
+            "ilaç",
+            "almam",
+            "lazım."
+          ],
+          "value": "Ateşim var, ilaç almam lazım."
+        },
+        "difficulty": 1,
+        "cefr": "A1",
+        "topic": "basic-health",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت و پسوندهای عبارت ترکی دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: Ateşim var, ilaç almam lazım. — تب دارم، باید دارو بگیرم.",
+          "model_answer": "Ateşim var, ilaç almam lazım."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_basic_health_02_dialogue",
+      "data": {
+        "lesson_key": "a1-tr-basic-health-02",
+        "exercise_type": "dialogue_comprehension",
+        "prompt": {
+          "instruction_fa": "با توجه به گفت‌وگو، پاسخ مناسب را انتخاب کن.",
+          "source_dialogue_ref": "d_basic_health_02",
+          "question_fa": "کدام گزینه با معنی «کمی استراحت کن.» هماهنگ است؟"
+        },
+        "answer": {
+          "value": "Biraz dinlen."
+        },
+        "options": [
+          "Biraz dinlen.",
+          "Başım ağrıyor.",
+          "Boğazım da ağrıyor.",
+          "Ateşim var, ilaç almam lazım."
+        ],
+        "difficulty": 1,
+        "cefr": "A1",
+        "topic": "basic-health",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت و پسوندهای عبارت ترکی دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: Biraz dinlen. — کمی استراحت کن.",
+          "model_answer": "Biraz dinlen."
+        },
+        "status": "validated"
+      }
+    }
+  ]
+}

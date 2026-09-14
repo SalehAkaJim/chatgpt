@@ -1,0 +1,854 @@
+{
+  "batch_id": "tr-tr-a1-b02-from-here-to-there-v1",
+  "course": "fa-tr-tr",
+  "learner_language": "fa",
+  "learner_variant": "fa-IR",
+  "target_language": "tr",
+  "target_variant": "tr-TR",
+  "cefr": "A1",
+  "curriculum_unit": "a1-tr-from-here-to-there",
+  "generator": "gpt-5.6-sol:turkish-a1-batch-02-v1",
+  "items": [
+    {
+      "kind": "concept",
+      "external_id": "c_from_here_to_there_01",
+      "data": {
+        "slug": "tr_a1_from_here_to_there_istasyon",
+        "lesson_key": "a1-tr-from-here-to-there-01",
+        "concept_type": "lexical",
+        "part_of_speech": "noun",
+        "forms": {
+          "tr": "istasyon"
+        },
+        "translations": {
+          "fa": "ایستگاه"
+        },
+        "cefr": "A1",
+        "topic": "places-town",
+        "tags": [
+          "core",
+          "a1",
+          "high_frequency"
+        ],
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_from_here_to_there_01",
+      "data": {
+        "lesson_key": "a1-tr-from-here-to-there-01",
+        "lemma": "istasyon",
+        "display_lemma": "istasyon",
+        "language": "tr",
+        "language_variant": "tr-TR",
+        "part_of_speech": "noun",
+        "concept_refs": [
+          "tr_a1_from_here_to_there_istasyon"
+        ],
+        "cefr": "A1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_from_here_to_there_01",
+      "data": {
+        "lesson_key": "a1-tr-from-here-to-there-01",
+        "lexeme_ref": "lx_from_here_to_there_01",
+        "surface_form": "istasyon",
+        "display_form": "istasyon",
+        "grammatical_features": {},
+        "is_lemma": true,
+        "is_preferred": true,
+        "cefr": "A1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_from_here_to_there_02",
+      "data": {
+        "slug": "tr_a1_from_here_to_there_ofis",
+        "lesson_key": "a1-tr-from-here-to-there-01",
+        "concept_type": "lexical",
+        "part_of_speech": "noun",
+        "forms": {
+          "tr": "ofis"
+        },
+        "translations": {
+          "fa": "دفتر کار"
+        },
+        "cefr": "A1",
+        "topic": "places-town",
+        "tags": [
+          "core",
+          "a1",
+          "high_frequency"
+        ],
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_from_here_to_there_02",
+      "data": {
+        "lesson_key": "a1-tr-from-here-to-there-01",
+        "lemma": "ofis",
+        "display_lemma": "ofis",
+        "language": "tr",
+        "language_variant": "tr-TR",
+        "part_of_speech": "noun",
+        "concept_refs": [
+          "tr_a1_from_here_to_there_ofis"
+        ],
+        "cefr": "A1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_from_here_to_there_02",
+      "data": {
+        "lesson_key": "a1-tr-from-here-to-there-01",
+        "lexeme_ref": "lx_from_here_to_there_02",
+        "surface_form": "ofis",
+        "display_form": "ofis",
+        "grammatical_features": {},
+        "is_lemma": true,
+        "is_preferred": true,
+        "cefr": "A1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_from_here_to_there_03",
+      "data": {
+        "slug": "tr_a1_from_here_to_there_durak",
+        "lesson_key": "a1-tr-from-here-to-there-01",
+        "concept_type": "lexical",
+        "part_of_speech": "noun",
+        "forms": {
+          "tr": "durak"
+        },
+        "translations": {
+          "fa": "ایستگاه اتوبوس"
+        },
+        "cefr": "A1",
+        "topic": "places-town",
+        "tags": [
+          "core",
+          "a1",
+          "high_frequency"
+        ],
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_from_here_to_there_03",
+      "data": {
+        "lesson_key": "a1-tr-from-here-to-there-01",
+        "lemma": "durak",
+        "display_lemma": "durak",
+        "language": "tr",
+        "language_variant": "tr-TR",
+        "part_of_speech": "noun",
+        "concept_refs": [
+          "tr_a1_from_here_to_there_durak"
+        ],
+        "cefr": "A1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_from_here_to_there_03",
+      "data": {
+        "lesson_key": "a1-tr-from-here-to-there-01",
+        "lexeme_ref": "lx_from_here_to_there_03",
+        "surface_form": "durak",
+        "display_form": "durak",
+        "grammatical_features": {},
+        "is_lemma": true,
+        "is_preferred": true,
+        "cefr": "A1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_from_here_to_there_04",
+      "data": {
+        "slug": "tr_a1_from_here_to_there_cikmak",
+        "lesson_key": "a1-tr-from-here-to-there-02",
+        "concept_type": "lexical",
+        "part_of_speech": "verb",
+        "forms": {
+          "tr": "çıkmak"
+        },
+        "translations": {
+          "fa": "بیرون آمدن / خارج شدن"
+        },
+        "cefr": "A1",
+        "topic": "places-town",
+        "tags": [
+          "core",
+          "a1",
+          "high_frequency"
+        ],
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_from_here_to_there_04",
+      "data": {
+        "lesson_key": "a1-tr-from-here-to-there-02",
+        "lemma": "çıkmak",
+        "display_lemma": "çıkmak",
+        "language": "tr",
+        "language_variant": "tr-TR",
+        "part_of_speech": "verb",
+        "concept_refs": [
+          "tr_a1_from_here_to_there_cikmak"
+        ],
+        "cefr": "A1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_from_here_to_there_04",
+      "data": {
+        "lesson_key": "a1-tr-from-here-to-there-02",
+        "lexeme_ref": "lx_from_here_to_there_04",
+        "surface_form": "çıkmak",
+        "display_form": "çıkmak",
+        "grammatical_features": {},
+        "is_lemma": true,
+        "is_preferred": true,
+        "cefr": "A1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_from_here_to_there_05",
+      "data": {
+        "slug": "tr_a1_from_here_to_there_donmek",
+        "lesson_key": "a1-tr-from-here-to-there-02",
+        "concept_type": "lexical",
+        "part_of_speech": "verb",
+        "forms": {
+          "tr": "dönmek"
+        },
+        "translations": {
+          "fa": "برگشتن"
+        },
+        "cefr": "A1",
+        "topic": "places-town",
+        "tags": [
+          "core",
+          "a1",
+          "high_frequency"
+        ],
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_from_here_to_there_05",
+      "data": {
+        "lesson_key": "a1-tr-from-here-to-there-02",
+        "lemma": "dönmek",
+        "display_lemma": "dönmek",
+        "language": "tr",
+        "language_variant": "tr-TR",
+        "part_of_speech": "verb",
+        "concept_refs": [
+          "tr_a1_from_here_to_there_donmek"
+        ],
+        "cefr": "A1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_from_here_to_there_05",
+      "data": {
+        "lesson_key": "a1-tr-from-here-to-there-02",
+        "lexeme_ref": "lx_from_here_to_there_05",
+        "surface_form": "dönmek",
+        "display_form": "dönmek",
+        "grammatical_features": {},
+        "is_lemma": true,
+        "is_preferred": true,
+        "cefr": "A1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_from_here_to_there_06",
+      "data": {
+        "slug": "tr_a1_from_here_to_there_uzak",
+        "lesson_key": "a1-tr-from-here-to-there-02",
+        "concept_type": "lexical",
+        "part_of_speech": "adjective",
+        "forms": {
+          "tr": "uzak"
+        },
+        "translations": {
+          "fa": "دور"
+        },
+        "cefr": "A1",
+        "topic": "places-town",
+        "tags": [
+          "core",
+          "a1",
+          "high_frequency"
+        ],
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_from_here_to_there_06",
+      "data": {
+        "lesson_key": "a1-tr-from-here-to-there-02",
+        "lemma": "uzak",
+        "display_lemma": "uzak",
+        "language": "tr",
+        "language_variant": "tr-TR",
+        "part_of_speech": "adjective",
+        "concept_refs": [
+          "tr_a1_from_here_to_there_uzak"
+        ],
+        "cefr": "A1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_from_here_to_there_06",
+      "data": {
+        "lesson_key": "a1-tr-from-here-to-there-02",
+        "lexeme_ref": "lx_from_here_to_there_06",
+        "surface_form": "uzak",
+        "display_form": "uzak",
+        "grammatical_features": {},
+        "is_lemma": true,
+        "is_preferred": true,
+        "cefr": "A1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_from_here_to_there_01",
+      "data": {
+        "lesson_key": "a1-tr-from-here-to-there-01",
+        "text": {
+          "tr": "Ofisten çıkıyorum."
+        },
+        "translations": {
+          "fa": "دارم از دفتر بیرون می‌آیم."
+        },
+        "intent": "state_origin",
+        "concept_refs": [
+          "tr_a1_from_here_to_there_ofis",
+          "tr_a1_from_here_to_there_cikmak"
+        ],
+        "cefr": "A1",
+        "topic": "places-town",
+        "register": "neutral",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_from_here_to_there_02",
+      "data": {
+        "lesson_key": "a1-tr-from-here-to-there-01",
+        "text": {
+          "tr": "İstasyondan eve gidiyorum."
+        },
+        "translations": {
+          "fa": "از ایستگاه به خانه می‌روم."
+        },
+        "intent": "describe_route",
+        "concept_refs": [
+          "tr_a1_from_here_to_there_istasyon"
+        ],
+        "cefr": "A1",
+        "topic": "places-town",
+        "register": "neutral",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_from_here_to_there_03",
+      "data": {
+        "lesson_key": "a1-tr-from-here-to-there-02",
+        "text": {
+          "tr": "Akşam işten dönüyorum."
+        },
+        "translations": {
+          "fa": "عصر از سر کار برمی‌گردم."
+        },
+        "intent": "describe_return",
+        "concept_refs": [
+          "tr_a1_from_here_to_there_donmek"
+        ],
+        "cefr": "A1",
+        "topic": "places-town",
+        "register": "neutral",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_from_here_to_there_04",
+      "data": {
+        "lesson_key": "a1-tr-from-here-to-there-02",
+        "text": {
+          "tr": "Duraktan ev uzak değil."
+        },
+        "translations": {
+          "fa": "خانه از ایستگاه دور نیست."
+        },
+        "intent": "describe_distance",
+        "concept_refs": [
+          "tr_a1_from_here_to_there_durak",
+          "tr_a1_from_here_to_there_uzak"
+        ],
+        "cefr": "A1",
+        "topic": "places-town",
+        "register": "neutral",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "grammar_point",
+      "external_id": "g_from_here_to_there_core",
+      "data": {
+        "lesson_key": "a1-tr-from-here-to-there-01",
+        "slug": "a1-tr-from-here-to-there-grammar",
+        "title": "Ayrılma hâli: -dan / -den",
+        "rule_summary": "The ablative ending marks movement or origin 'from' a place.",
+        "explanation": {
+          "fa": "برای گفتن «از یک جا»، از -dan/-den و شکل‌های هم‌آوای آن استفاده می‌شود: ofisten «از دفتر»، duraktan «از ایستگاه»."
+        },
+        "examples": [
+          {
+            "tr": "Ofisten çıkıyorum.",
+            "fa": "از دفتر بیرون می‌آیم."
+          },
+          {
+            "tr": "İstasyondan eve gidiyorum.",
+            "fa": "از ایستگاه به خانه می‌روم."
+          }
+        ],
+        "cefr": "A1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "dialogue",
+      "external_id": "d_from_here_to_there_01",
+      "data": {
+        "lesson_key": "a1-tr-from-here-to-there-01",
+        "title": "Nereden geliyorsun?",
+        "setting": "",
+        "cefr": "A1",
+        "topic": "places-town",
+        "characters": [
+          "Zeynep",
+          "Deniz"
+        ],
+        "turns": [
+          {
+            "order": 1,
+            "speaker": "Zeynep",
+            "text": "Nereden geliyorsun?",
+            "translation_fa": "از کجا می‌آیی؟"
+          },
+          {
+            "order": 2,
+            "speaker": "Deniz",
+            "text": "Ofisten geliyorum.",
+            "translation_fa": "از دفتر می‌آیم."
+          },
+          {
+            "order": 3,
+            "speaker": "Zeynep",
+            "text": "Şimdi eve mi gidiyorsun?",
+            "translation_fa": "الان به خانه می‌روی؟"
+          },
+          {
+            "order": 4,
+            "speaker": "Deniz",
+            "text": "Evet, istasyondan eve gideceğim.",
+            "translation_fa": "بله، از ایستگاه به خانه می‌روم."
+          }
+        ],
+        "qa": {
+          "character_pair_unique_within_unit": true,
+          "naturalness": "passed",
+          "single_situation": true
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "dialogue",
+      "external_id": "d_from_here_to_there_02",
+      "data": {
+        "lesson_key": "a1-tr-from-here-to-there-02",
+        "title": "Durağa yakın mı?",
+        "setting": "",
+        "cefr": "A1",
+        "topic": "places-town",
+        "characters": [
+          "Kaan",
+          "Elif"
+        ],
+        "turns": [
+          {
+            "order": 1,
+            "speaker": "Kaan",
+            "text": "Ev duraktan uzak mı?",
+            "translation_fa": "خانه از ایستگاه دور است؟"
+          },
+          {
+            "order": 2,
+            "speaker": "Elif",
+            "text": "Hayır, uzak değil.",
+            "translation_fa": "نه، دور نیست."
+          },
+          {
+            "order": 3,
+            "speaker": "Kaan",
+            "text": "İşten nasıl dönüyorsun?",
+            "translation_fa": "از سر کار چطور برمی‌گردی؟"
+          },
+          {
+            "order": 4,
+            "speaker": "Elif",
+            "text": "Genellikle otobüsle dönüyorum.",
+            "translation_fa": "معمولاً با اتوبوس برمی‌گردم."
+          }
+        ],
+        "qa": {
+          "character_pair_unique_within_unit": true,
+          "naturalness": "passed",
+          "single_situation": true
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_from_here_to_there_01_meaning",
+      "data": {
+        "lesson_key": "a1-tr-from-here-to-there-01",
+        "exercise_type": "multiple_choice",
+        "prompt": {
+          "instruction_fa": "معنی درست این عبارت ترکی را انتخاب کن.",
+          "value": "Ofisten çıkıyorum."
+        },
+        "answer": {
+          "value": "دارم از دفتر بیرون می‌آیم."
+        },
+        "options": [
+          "دارم از دفتر بیرون می‌آیم.",
+          "از ایستگاه به خانه می‌روم.",
+          "عصر از سر کار برمی‌گردم.",
+          "خانه از ایستگاه دور نیست."
+        ],
+        "difficulty": 1,
+        "cefr": "A1",
+        "topic": "places-town",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت و پسوندهای عبارت ترکی دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: Ofisten çıkıyorum. — دارم از دفتر بیرون می‌آیم.",
+          "model_answer": "Ofisten çıkıyorum."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_from_here_to_there_01_listen",
+      "data": {
+        "lesson_key": "a1-tr-from-here-to-there-01",
+        "exercise_type": "listening",
+        "prompt": {
+          "instruction_fa": "گوش کن و عبارتی را که شنیدی انتخاب کن.",
+          "audio_text": "İstasyondan eve gidiyorum."
+        },
+        "answer": {
+          "value": "İstasyondan eve gidiyorum."
+        },
+        "options": [
+          "İstasyondan eve gidiyorum.",
+          "Ofisten çıkıyorum.",
+          "Akşam işten dönüyorum.",
+          "Duraktan ev uzak değil."
+        ],
+        "difficulty": 1,
+        "cefr": "A1",
+        "topic": "places-town",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت و پسوندهای عبارت ترکی دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: İstasyondan eve gidiyorum. — از ایستگاه به خانه می‌روم.",
+          "model_answer": "İstasyondan eve gidiyorum.",
+          "transcript_tr": "İstasyondan eve gidiyorum."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_from_here_to_there_01_speak",
+      "data": {
+        "lesson_key": "a1-tr-from-here-to-there-01",
+        "exercise_type": "speaking",
+        "prompt": {
+          "instruction_fa": "عبارت را با صدای بلند و با ریتم طبیعی تکرار کن.",
+          "value": "Ofisten çıkıyorum."
+        },
+        "answer": {
+          "expected_text": "Ofisten çıkıyorum."
+        },
+        "difficulty": 1,
+        "cefr": "A1",
+        "topic": "places-town",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت و پسوندهای عبارت ترکی دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: Ofisten çıkıyorum. — دارم از دفتر بیرون می‌آیم.",
+          "model_answer": "Ofisten çıkıyorum."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_from_here_to_there_01_build",
+      "data": {
+        "lesson_key": "a1-tr-from-here-to-there-01",
+        "exercise_type": "sentence_building",
+        "prompt": {
+          "instruction_fa": "کلمه‌ها را لمس کن تا عبارت درست ساخته شود.",
+          "tokens": [
+            "eve",
+            "gidiyorum.",
+            "İstasyondan"
+          ]
+        },
+        "answer": {
+          "tokens": [
+            "İstasyondan",
+            "eve",
+            "gidiyorum."
+          ],
+          "value": "İstasyondan eve gidiyorum."
+        },
+        "difficulty": 1,
+        "cefr": "A1",
+        "topic": "places-town",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت و پسوندهای عبارت ترکی دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: İstasyondan eve gidiyorum. — از ایستگاه به خانه می‌روم.",
+          "model_answer": "İstasyondan eve gidiyorum."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_from_here_to_there_01_dialogue",
+      "data": {
+        "lesson_key": "a1-tr-from-here-to-there-01",
+        "exercise_type": "dialogue_comprehension",
+        "prompt": {
+          "instruction_fa": "با توجه به گفت‌وگو، پاسخ مناسب را انتخاب کن.",
+          "source_dialogue_ref": "d_from_here_to_there_01",
+          "question_fa": "کدام گزینه با معنی «دارم از دفتر بیرون می‌آیم.» هماهنگ است؟"
+        },
+        "answer": {
+          "value": "Ofisten çıkıyorum."
+        },
+        "options": [
+          "Ofisten çıkıyorum.",
+          "İstasyondan eve gidiyorum.",
+          "Akşam işten dönüyorum.",
+          "Duraktan ev uzak değil."
+        ],
+        "difficulty": 1,
+        "cefr": "A1",
+        "topic": "places-town",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت و پسوندهای عبارت ترکی دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: Ofisten çıkıyorum. — دارم از دفتر بیرون می‌آیم.",
+          "model_answer": "Ofisten çıkıyorum."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_from_here_to_there_02_meaning",
+      "data": {
+        "lesson_key": "a1-tr-from-here-to-there-02",
+        "exercise_type": "multiple_choice",
+        "prompt": {
+          "instruction_fa": "معنی درست این عبارت ترکی را انتخاب کن.",
+          "value": "Akşam işten dönüyorum."
+        },
+        "answer": {
+          "value": "عصر از سر کار برمی‌گردم."
+        },
+        "options": [
+          "عصر از سر کار برمی‌گردم.",
+          "دارم از دفتر بیرون می‌آیم.",
+          "از ایستگاه به خانه می‌روم.",
+          "خانه از ایستگاه دور نیست."
+        ],
+        "difficulty": 1,
+        "cefr": "A1",
+        "topic": "places-town",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت و پسوندهای عبارت ترکی دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: Akşam işten dönüyorum. — عصر از سر کار برمی‌گردم.",
+          "model_answer": "Akşam işten dönüyorum."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_from_here_to_there_02_listen",
+      "data": {
+        "lesson_key": "a1-tr-from-here-to-there-02",
+        "exercise_type": "listening",
+        "prompt": {
+          "instruction_fa": "گوش کن و عبارتی را که شنیدی انتخاب کن.",
+          "audio_text": "Duraktan ev uzak değil."
+        },
+        "answer": {
+          "value": "Duraktan ev uzak değil."
+        },
+        "options": [
+          "Duraktan ev uzak değil.",
+          "Akşam işten dönüyorum.",
+          "Ofisten çıkıyorum.",
+          "İstasyondan eve gidiyorum."
+        ],
+        "difficulty": 1,
+        "cefr": "A1",
+        "topic": "places-town",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت و پسوندهای عبارت ترکی دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: Duraktan ev uzak değil. — خانه از ایستگاه دور نیست.",
+          "model_answer": "Duraktan ev uzak değil.",
+          "transcript_tr": "Duraktan ev uzak değil."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_from_here_to_there_02_speak",
+      "data": {
+        "lesson_key": "a1-tr-from-here-to-there-02",
+        "exercise_type": "speaking",
+        "prompt": {
+          "instruction_fa": "عبارت را با صدای بلند و با ریتم طبیعی تکرار کن.",
+          "value": "Akşam işten dönüyorum."
+        },
+        "answer": {
+          "expected_text": "Akşam işten dönüyorum."
+        },
+        "difficulty": 1,
+        "cefr": "A1",
+        "topic": "places-town",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت و پسوندهای عبارت ترکی دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: Akşam işten dönüyorum. — عصر از سر کار برمی‌گردم.",
+          "model_answer": "Akşam işten dönüyorum."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_from_here_to_there_02_build",
+      "data": {
+        "lesson_key": "a1-tr-from-here-to-there-02",
+        "exercise_type": "sentence_building",
+        "prompt": {
+          "instruction_fa": "کلمه‌ها را لمس کن تا عبارت درست ساخته شود.",
+          "tokens": [
+            "ev",
+            "uzak",
+            "değil.",
+            "Duraktan"
+          ]
+        },
+        "answer": {
+          "tokens": [
+            "Duraktan",
+            "ev",
+            "uzak",
+            "değil."
+          ],
+          "value": "Duraktan ev uzak değil."
+        },
+        "difficulty": 1,
+        "cefr": "A1",
+        "topic": "places-town",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت و پسوندهای عبارت ترکی دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: Duraktan ev uzak değil. — خانه از ایستگاه دور نیست.",
+          "model_answer": "Duraktan ev uzak değil."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_from_here_to_there_02_dialogue",
+      "data": {
+        "lesson_key": "a1-tr-from-here-to-there-02",
+        "exercise_type": "dialogue_comprehension",
+        "prompt": {
+          "instruction_fa": "با توجه به گفت‌وگو، پاسخ مناسب را انتخاب کن.",
+          "source_dialogue_ref": "d_from_here_to_there_02",
+          "question_fa": "کدام گزینه با معنی «عصر از سر کار برمی‌گردم.» هماهنگ است؟"
+        },
+        "answer": {
+          "value": "Akşam işten dönüyorum."
+        },
+        "options": [
+          "Akşam işten dönüyorum.",
+          "Ofisten çıkıyorum.",
+          "İstasyondan eve gidiyorum.",
+          "Duraktan ev uzak değil."
+        ],
+        "difficulty": 1,
+        "cefr": "A1",
+        "topic": "places-town",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت و پسوندهای عبارت ترکی دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: Akşam işten dönüyorum. — عصر از سر کار برمی‌گردم.",
+          "model_answer": "Akşam işten dönüyorum."
+        },
+        "status": "validated"
+      }
+    }
+  ]
+}

@@ -1,0 +1,854 @@
+{
+  "batch_id": "tr-tr-a1-b02-weather-and-clothes-v1",
+  "course": "fa-tr-tr",
+  "learner_language": "fa",
+  "learner_variant": "fa-IR",
+  "target_language": "tr",
+  "target_variant": "tr-TR",
+  "cefr": "A1",
+  "curriculum_unit": "a1-tr-weather-and-clothes",
+  "generator": "gpt-5.6-sol:turkish-a1-batch-02-v1",
+  "items": [
+    {
+      "kind": "concept",
+      "external_id": "c_weather_and_clothes_01",
+      "data": {
+        "slug": "tr_a1_weather_and_clothes_gunesli",
+        "lesson_key": "a1-tr-weather-and-clothes-01",
+        "concept_type": "lexical",
+        "part_of_speech": "adjective",
+        "forms": {
+          "tr": "güneşli"
+        },
+        "translations": {
+          "fa": "آفتابی"
+        },
+        "cefr": "A1",
+        "topic": "weather",
+        "tags": [
+          "core",
+          "a1",
+          "high_frequency"
+        ],
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_weather_and_clothes_01",
+      "data": {
+        "lesson_key": "a1-tr-weather-and-clothes-01",
+        "lemma": "güneşli",
+        "display_lemma": "güneşli",
+        "language": "tr",
+        "language_variant": "tr-TR",
+        "part_of_speech": "adjective",
+        "concept_refs": [
+          "tr_a1_weather_and_clothes_gunesli"
+        ],
+        "cefr": "A1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_weather_and_clothes_01",
+      "data": {
+        "lesson_key": "a1-tr-weather-and-clothes-01",
+        "lexeme_ref": "lx_weather_and_clothes_01",
+        "surface_form": "güneşli",
+        "display_form": "güneşli",
+        "grammatical_features": {},
+        "is_lemma": true,
+        "is_preferred": true,
+        "cefr": "A1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_weather_and_clothes_02",
+      "data": {
+        "slug": "tr_a1_weather_and_clothes_yagmurlu",
+        "lesson_key": "a1-tr-weather-and-clothes-01",
+        "concept_type": "lexical",
+        "part_of_speech": "adjective",
+        "forms": {
+          "tr": "yağmurlu"
+        },
+        "translations": {
+          "fa": "بارانی"
+        },
+        "cefr": "A1",
+        "topic": "weather",
+        "tags": [
+          "core",
+          "a1",
+          "high_frequency"
+        ],
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_weather_and_clothes_02",
+      "data": {
+        "lesson_key": "a1-tr-weather-and-clothes-01",
+        "lemma": "yağmurlu",
+        "display_lemma": "yağmurlu",
+        "language": "tr",
+        "language_variant": "tr-TR",
+        "part_of_speech": "adjective",
+        "concept_refs": [
+          "tr_a1_weather_and_clothes_yagmurlu"
+        ],
+        "cefr": "A1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_weather_and_clothes_02",
+      "data": {
+        "lesson_key": "a1-tr-weather-and-clothes-01",
+        "lexeme_ref": "lx_weather_and_clothes_02",
+        "surface_form": "yağmurlu",
+        "display_form": "yağmurlu",
+        "grammatical_features": {},
+        "is_lemma": true,
+        "is_preferred": true,
+        "cefr": "A1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_weather_and_clothes_03",
+      "data": {
+        "slug": "tr_a1_weather_and_clothes_soguk",
+        "lesson_key": "a1-tr-weather-and-clothes-01",
+        "concept_type": "lexical",
+        "part_of_speech": "adjective",
+        "forms": {
+          "tr": "soğuk"
+        },
+        "translations": {
+          "fa": "سرد"
+        },
+        "cefr": "A1",
+        "topic": "weather",
+        "tags": [
+          "core",
+          "a1",
+          "high_frequency"
+        ],
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_weather_and_clothes_03",
+      "data": {
+        "lesson_key": "a1-tr-weather-and-clothes-01",
+        "lemma": "soğuk",
+        "display_lemma": "soğuk",
+        "language": "tr",
+        "language_variant": "tr-TR",
+        "part_of_speech": "adjective",
+        "concept_refs": [
+          "tr_a1_weather_and_clothes_soguk"
+        ],
+        "cefr": "A1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_weather_and_clothes_03",
+      "data": {
+        "lesson_key": "a1-tr-weather-and-clothes-01",
+        "lexeme_ref": "lx_weather_and_clothes_03",
+        "surface_form": "soğuk",
+        "display_form": "soğuk",
+        "grammatical_features": {},
+        "is_lemma": true,
+        "is_preferred": true,
+        "cefr": "A1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_weather_and_clothes_04",
+      "data": {
+        "slug": "tr_a1_weather_and_clothes_mont",
+        "lesson_key": "a1-tr-weather-and-clothes-02",
+        "concept_type": "lexical",
+        "part_of_speech": "noun",
+        "forms": {
+          "tr": "mont"
+        },
+        "translations": {
+          "fa": "کاپشن"
+        },
+        "cefr": "A1",
+        "topic": "weather",
+        "tags": [
+          "core",
+          "a1",
+          "high_frequency"
+        ],
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_weather_and_clothes_04",
+      "data": {
+        "lesson_key": "a1-tr-weather-and-clothes-02",
+        "lemma": "mont",
+        "display_lemma": "mont",
+        "language": "tr",
+        "language_variant": "tr-TR",
+        "part_of_speech": "noun",
+        "concept_refs": [
+          "tr_a1_weather_and_clothes_mont"
+        ],
+        "cefr": "A1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_weather_and_clothes_04",
+      "data": {
+        "lesson_key": "a1-tr-weather-and-clothes-02",
+        "lexeme_ref": "lx_weather_and_clothes_04",
+        "surface_form": "mont",
+        "display_form": "mont",
+        "grammatical_features": {},
+        "is_lemma": true,
+        "is_preferred": true,
+        "cefr": "A1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_weather_and_clothes_05",
+      "data": {
+        "slug": "tr_a1_weather_and_clothes_semsiye",
+        "lesson_key": "a1-tr-weather-and-clothes-02",
+        "concept_type": "lexical",
+        "part_of_speech": "noun",
+        "forms": {
+          "tr": "şemsiye"
+        },
+        "translations": {
+          "fa": "چتر"
+        },
+        "cefr": "A1",
+        "topic": "weather",
+        "tags": [
+          "core",
+          "a1",
+          "high_frequency"
+        ],
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_weather_and_clothes_05",
+      "data": {
+        "lesson_key": "a1-tr-weather-and-clothes-02",
+        "lemma": "şemsiye",
+        "display_lemma": "şemsiye",
+        "language": "tr",
+        "language_variant": "tr-TR",
+        "part_of_speech": "noun",
+        "concept_refs": [
+          "tr_a1_weather_and_clothes_semsiye"
+        ],
+        "cefr": "A1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_weather_and_clothes_05",
+      "data": {
+        "lesson_key": "a1-tr-weather-and-clothes-02",
+        "lexeme_ref": "lx_weather_and_clothes_05",
+        "surface_form": "şemsiye",
+        "display_form": "şemsiye",
+        "grammatical_features": {},
+        "is_lemma": true,
+        "is_preferred": true,
+        "cefr": "A1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_weather_and_clothes_06",
+      "data": {
+        "slug": "tr_a1_weather_and_clothes_giymek",
+        "lesson_key": "a1-tr-weather-and-clothes-02",
+        "concept_type": "lexical",
+        "part_of_speech": "verb",
+        "forms": {
+          "tr": "giymek"
+        },
+        "translations": {
+          "fa": "پوشیدن"
+        },
+        "cefr": "A1",
+        "topic": "weather",
+        "tags": [
+          "core",
+          "a1",
+          "high_frequency"
+        ],
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_weather_and_clothes_06",
+      "data": {
+        "lesson_key": "a1-tr-weather-and-clothes-02",
+        "lemma": "giymek",
+        "display_lemma": "giymek",
+        "language": "tr",
+        "language_variant": "tr-TR",
+        "part_of_speech": "verb",
+        "concept_refs": [
+          "tr_a1_weather_and_clothes_giymek"
+        ],
+        "cefr": "A1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_weather_and_clothes_06",
+      "data": {
+        "lesson_key": "a1-tr-weather-and-clothes-02",
+        "lexeme_ref": "lx_weather_and_clothes_06",
+        "surface_form": "giymek",
+        "display_form": "giymek",
+        "grammatical_features": {},
+        "is_lemma": true,
+        "is_preferred": true,
+        "cefr": "A1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_weather_and_clothes_01",
+      "data": {
+        "lesson_key": "a1-tr-weather-and-clothes-01",
+        "text": {
+          "tr": "Bugün hava güneşli."
+        },
+        "translations": {
+          "fa": "امروز هوا آفتابی است."
+        },
+        "intent": "describe_weather",
+        "concept_refs": [
+          "tr_a1_weather_and_clothes_gunesli"
+        ],
+        "cefr": "A1",
+        "topic": "weather",
+        "register": "neutral",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_weather_and_clothes_02",
+      "data": {
+        "lesson_key": "a1-tr-weather-and-clothes-01",
+        "text": {
+          "tr": "Yarın hava yağmurlu."
+        },
+        "translations": {
+          "fa": "فردا هوا بارانی است."
+        },
+        "intent": "describe_weather",
+        "concept_refs": [
+          "tr_a1_weather_and_clothes_yagmurlu"
+        ],
+        "cefr": "A1",
+        "topic": "weather",
+        "register": "neutral",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_weather_and_clothes_03",
+      "data": {
+        "lesson_key": "a1-tr-weather-and-clothes-02",
+        "text": {
+          "tr": "Hava soğuk, mont giyiyorum."
+        },
+        "translations": {
+          "fa": "هوا سرد است، کاپشن می‌پوشم."
+        },
+        "intent": "respond_weather",
+        "concept_refs": [
+          "tr_a1_weather_and_clothes_soguk",
+          "tr_a1_weather_and_clothes_mont",
+          "tr_a1_weather_and_clothes_giymek"
+        ],
+        "cefr": "A1",
+        "topic": "weather",
+        "register": "neutral",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_weather_and_clothes_04",
+      "data": {
+        "lesson_key": "a1-tr-weather-and-clothes-02",
+        "text": {
+          "tr": "Şemsiyeni al, yağmur var."
+        },
+        "translations": {
+          "fa": "چترت را بردار، باران می‌آید."
+        },
+        "intent": "give_simple_advice",
+        "concept_refs": [
+          "tr_a1_weather_and_clothes_semsiye"
+        ],
+        "cefr": "A1",
+        "topic": "weather",
+        "register": "neutral",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "grammar_point",
+      "external_id": "g_weather_and_clothes_core",
+      "data": {
+        "lesson_key": "a1-tr-weather-and-clothes-01",
+        "slug": "a1-tr-weather-and-clothes-grammar",
+        "title": "İsim ve sıfat cümleleri",
+        "rule_summary": "In simple present descriptions Turkish usually needs no separate word for 'is': Hava soğuk.",
+        "explanation": {
+          "fa": "در توصیف‌های سادهٔ زمان حال، ترکی معمولاً واژهٔ جداگانه‌ای برای «است» نمی‌آورد: Hava soğuk یعنی «هوا سرد است»."
+        },
+        "examples": [
+          {
+            "tr": "Hava güneşli.",
+            "fa": "هوا آفتابی است."
+          },
+          {
+            "tr": "Mont yeni.",
+            "fa": "کاپشن نو است."
+          }
+        ],
+        "cefr": "A1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "dialogue",
+      "external_id": "d_weather_and_clothes_01",
+      "data": {
+        "lesson_key": "a1-tr-weather-and-clothes-01",
+        "title": "Bugünün havası",
+        "setting": "",
+        "cefr": "A1",
+        "topic": "weather",
+        "characters": [
+          "Deniz",
+          "Mert"
+        ],
+        "turns": [
+          {
+            "order": 1,
+            "speaker": "Deniz",
+            "text": "Hava nasıl?",
+            "translation_fa": "هوا چطور است؟"
+          },
+          {
+            "order": 2,
+            "speaker": "Mert",
+            "text": "Güneşli ama biraz soğuk.",
+            "translation_fa": "آفتابی است ولی کمی سرد است."
+          },
+          {
+            "order": 3,
+            "speaker": "Deniz",
+            "text": "Mont giyeyim mi?",
+            "translation_fa": "کاپشن بپوشم؟"
+          },
+          {
+            "order": 4,
+            "speaker": "Mert",
+            "text": "Evet, iyi olur.",
+            "translation_fa": "بله، خوب است."
+          }
+        ],
+        "qa": {
+          "character_pair_unique_within_unit": true,
+          "naturalness": "passed",
+          "single_situation": true
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "dialogue",
+      "external_id": "d_weather_and_clothes_02",
+      "data": {
+        "lesson_key": "a1-tr-weather-and-clothes-02",
+        "title": "Şemsiye lazım",
+        "setting": "",
+        "cefr": "A1",
+        "topic": "weather",
+        "characters": [
+          "Selin",
+          "Burak"
+        ],
+        "turns": [
+          {
+            "order": 1,
+            "speaker": "Selin",
+            "text": "Yarın hava yağmurlu.",
+            "translation_fa": "فردا هوا بارانی است."
+          },
+          {
+            "order": 2,
+            "speaker": "Burak",
+            "text": "Şemsiye alayım.",
+            "translation_fa": "پس چتر بردارم."
+          },
+          {
+            "order": 3,
+            "speaker": "Selin",
+            "text": "Evet, şemsiyeni unutma.",
+            "translation_fa": "بله، چترت را فراموش نکن."
+          },
+          {
+            "order": 4,
+            "speaker": "Burak",
+            "text": "Tamam, teşekkürler.",
+            "translation_fa": "باشه، ممنون."
+          }
+        ],
+        "qa": {
+          "character_pair_unique_within_unit": true,
+          "naturalness": "passed",
+          "single_situation": true
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_weather_and_clothes_01_meaning",
+      "data": {
+        "lesson_key": "a1-tr-weather-and-clothes-01",
+        "exercise_type": "multiple_choice",
+        "prompt": {
+          "instruction_fa": "معنی درست این عبارت ترکی را انتخاب کن.",
+          "value": "Bugün hava güneşli."
+        },
+        "answer": {
+          "value": "امروز هوا آفتابی است."
+        },
+        "options": [
+          "امروز هوا آفتابی است.",
+          "فردا هوا بارانی است.",
+          "هوا سرد است، کاپشن می‌پوشم.",
+          "چترت را بردار، باران می‌آید."
+        ],
+        "difficulty": 1,
+        "cefr": "A1",
+        "topic": "weather",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت و پسوندهای عبارت ترکی دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: Bugün hava güneşli. — امروز هوا آفتابی است.",
+          "model_answer": "Bugün hava güneşli."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_weather_and_clothes_01_listen",
+      "data": {
+        "lesson_key": "a1-tr-weather-and-clothes-01",
+        "exercise_type": "listening",
+        "prompt": {
+          "instruction_fa": "گوش کن و عبارتی را که شنیدی انتخاب کن.",
+          "audio_text": "Yarın hava yağmurlu."
+        },
+        "answer": {
+          "value": "Yarın hava yağmurlu."
+        },
+        "options": [
+          "Yarın hava yağmurlu.",
+          "Bugün hava güneşli.",
+          "Hava soğuk, mont giyiyorum.",
+          "Şemsiyeni al, yağmur var."
+        ],
+        "difficulty": 1,
+        "cefr": "A1",
+        "topic": "weather",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت و پسوندهای عبارت ترکی دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: Yarın hava yağmurlu. — فردا هوا بارانی است.",
+          "model_answer": "Yarın hava yağmurlu.",
+          "transcript_tr": "Yarın hava yağmurlu."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_weather_and_clothes_01_speak",
+      "data": {
+        "lesson_key": "a1-tr-weather-and-clothes-01",
+        "exercise_type": "speaking",
+        "prompt": {
+          "instruction_fa": "عبارت را با صدای بلند و با ریتم طبیعی تکرار کن.",
+          "value": "Bugün hava güneşli."
+        },
+        "answer": {
+          "expected_text": "Bugün hava güneşli."
+        },
+        "difficulty": 1,
+        "cefr": "A1",
+        "topic": "weather",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت و پسوندهای عبارت ترکی دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: Bugün hava güneşli. — امروز هوا آفتابی است.",
+          "model_answer": "Bugün hava güneşli."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_weather_and_clothes_01_build",
+      "data": {
+        "lesson_key": "a1-tr-weather-and-clothes-01",
+        "exercise_type": "sentence_building",
+        "prompt": {
+          "instruction_fa": "کلمه‌ها را لمس کن تا عبارت درست ساخته شود.",
+          "tokens": [
+            "hava",
+            "yağmurlu.",
+            "Yarın"
+          ]
+        },
+        "answer": {
+          "tokens": [
+            "Yarın",
+            "hava",
+            "yağmurlu."
+          ],
+          "value": "Yarın hava yağmurlu."
+        },
+        "difficulty": 1,
+        "cefr": "A1",
+        "topic": "weather",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت و پسوندهای عبارت ترکی دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: Yarın hava yağmurlu. — فردا هوا بارانی است.",
+          "model_answer": "Yarın hava yağmurlu."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_weather_and_clothes_01_dialogue",
+      "data": {
+        "lesson_key": "a1-tr-weather-and-clothes-01",
+        "exercise_type": "dialogue_comprehension",
+        "prompt": {
+          "instruction_fa": "با توجه به گفت‌وگو، پاسخ مناسب را انتخاب کن.",
+          "source_dialogue_ref": "d_weather_and_clothes_01",
+          "question_fa": "کدام گزینه با معنی «امروز هوا آفتابی است.» هماهنگ است؟"
+        },
+        "answer": {
+          "value": "Bugün hava güneşli."
+        },
+        "options": [
+          "Bugün hava güneşli.",
+          "Yarın hava yağmurlu.",
+          "Hava soğuk, mont giyiyorum.",
+          "Şemsiyeni al, yağmur var."
+        ],
+        "difficulty": 1,
+        "cefr": "A1",
+        "topic": "weather",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت و پسوندهای عبارت ترکی دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: Bugün hava güneşli. — امروز هوا آفتابی است.",
+          "model_answer": "Bugün hava güneşli."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_weather_and_clothes_02_meaning",
+      "data": {
+        "lesson_key": "a1-tr-weather-and-clothes-02",
+        "exercise_type": "multiple_choice",
+        "prompt": {
+          "instruction_fa": "معنی درست این عبارت ترکی را انتخاب کن.",
+          "value": "Hava soğuk, mont giyiyorum."
+        },
+        "answer": {
+          "value": "هوا سرد است، کاپشن می‌پوشم."
+        },
+        "options": [
+          "هوا سرد است، کاپشن می‌پوشم.",
+          "امروز هوا آفتابی است.",
+          "فردا هوا بارانی است.",
+          "چترت را بردار، باران می‌آید."
+        ],
+        "difficulty": 1,
+        "cefr": "A1",
+        "topic": "weather",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت و پسوندهای عبارت ترکی دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: Hava soğuk, mont giyiyorum. — هوا سرد است، کاپشن می‌پوشم.",
+          "model_answer": "Hava soğuk, mont giyiyorum."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_weather_and_clothes_02_listen",
+      "data": {
+        "lesson_key": "a1-tr-weather-and-clothes-02",
+        "exercise_type": "listening",
+        "prompt": {
+          "instruction_fa": "گوش کن و عبارتی را که شنیدی انتخاب کن.",
+          "audio_text": "Şemsiyeni al, yağmur var."
+        },
+        "answer": {
+          "value": "Şemsiyeni al, yağmur var."
+        },
+        "options": [
+          "Şemsiyeni al, yağmur var.",
+          "Hava soğuk, mont giyiyorum.",
+          "Bugün hava güneşli.",
+          "Yarın hava yağmurlu."
+        ],
+        "difficulty": 1,
+        "cefr": "A1",
+        "topic": "weather",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت و پسوندهای عبارت ترکی دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: Şemsiyeni al, yağmur var. — چترت را بردار، باران می‌آید.",
+          "model_answer": "Şemsiyeni al, yağmur var.",
+          "transcript_tr": "Şemsiyeni al, yağmur var."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_weather_and_clothes_02_speak",
+      "data": {
+        "lesson_key": "a1-tr-weather-and-clothes-02",
+        "exercise_type": "speaking",
+        "prompt": {
+          "instruction_fa": "عبارت را با صدای بلند و با ریتم طبیعی تکرار کن.",
+          "value": "Hava soğuk, mont giyiyorum."
+        },
+        "answer": {
+          "expected_text": "Hava soğuk, mont giyiyorum."
+        },
+        "difficulty": 1,
+        "cefr": "A1",
+        "topic": "weather",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت و پسوندهای عبارت ترکی دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: Hava soğuk, mont giyiyorum. — هوا سرد است، کاپشن می‌پوشم.",
+          "model_answer": "Hava soğuk, mont giyiyorum."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_weather_and_clothes_02_build",
+      "data": {
+        "lesson_key": "a1-tr-weather-and-clothes-02",
+        "exercise_type": "sentence_building",
+        "prompt": {
+          "instruction_fa": "کلمه‌ها را لمس کن تا عبارت درست ساخته شود.",
+          "tokens": [
+            "al,",
+            "yağmur",
+            "var.",
+            "Şemsiyeni"
+          ]
+        },
+        "answer": {
+          "tokens": [
+            "Şemsiyeni",
+            "al,",
+            "yağmur",
+            "var."
+          ],
+          "value": "Şemsiyeni al, yağmur var."
+        },
+        "difficulty": 1,
+        "cefr": "A1",
+        "topic": "weather",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت و پسوندهای عبارت ترکی دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: Şemsiyeni al, yağmur var. — چترت را بردار، باران می‌آید.",
+          "model_answer": "Şemsiyeni al, yağmur var."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_weather_and_clothes_02_dialogue",
+      "data": {
+        "lesson_key": "a1-tr-weather-and-clothes-02",
+        "exercise_type": "dialogue_comprehension",
+        "prompt": {
+          "instruction_fa": "با توجه به گفت‌وگو، پاسخ مناسب را انتخاب کن.",
+          "source_dialogue_ref": "d_weather_and_clothes_02",
+          "question_fa": "کدام گزینه با معنی «هوا سرد است، کاپشن می‌پوشم.» هماهنگ است؟"
+        },
+        "answer": {
+          "value": "Hava soğuk, mont giyiyorum."
+        },
+        "options": [
+          "Hava soğuk, mont giyiyorum.",
+          "Bugün hava güneşli.",
+          "Yarın hava yağmurlu.",
+          "Şemsiyeni al, yağmur var."
+        ],
+        "difficulty": 1,
+        "cefr": "A1",
+        "topic": "weather",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت و پسوندهای عبارت ترکی دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: Hava soğuk, mont giyiyorum. — هوا سرد است، کاپشن می‌پوشم.",
+          "model_answer": "Hava soğuk, mont giyiyorum."
+        },
+        "status": "validated"
+      }
+    }
+  ]
+}

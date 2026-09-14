@@ -1,0 +1,858 @@
+{
+  "batch_id": "tr-tr-a1-b02-a1-everyday-capstone-v1",
+  "course": "fa-tr-tr",
+  "learner_language": "fa",
+  "learner_variant": "fa-IR",
+  "target_language": "tr",
+  "target_variant": "tr-TR",
+  "cefr": "A1",
+  "curriculum_unit": "a1-tr-a1-everyday-capstone",
+  "generator": "gpt-5.6-sol:turkish-a1-batch-02-v1",
+  "items": [
+    {
+      "kind": "concept",
+      "external_id": "c_a1_everyday_capstone_01",
+      "data": {
+        "slug": "tr_a1_a1_everyday_capstone_mesaj",
+        "lesson_key": "a1-tr-a1-everyday-capstone-01",
+        "concept_type": "lexical",
+        "part_of_speech": "noun",
+        "forms": {
+          "tr": "mesaj"
+        },
+        "translations": {
+          "fa": "پیام"
+        },
+        "cefr": "A1",
+        "topic": "simple-messages",
+        "tags": [
+          "core",
+          "a1",
+          "high_frequency"
+        ],
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_a1_everyday_capstone_01",
+      "data": {
+        "lesson_key": "a1-tr-a1-everyday-capstone-01",
+        "lemma": "mesaj",
+        "display_lemma": "mesaj",
+        "language": "tr",
+        "language_variant": "tr-TR",
+        "part_of_speech": "noun",
+        "concept_refs": [
+          "tr_a1_a1_everyday_capstone_mesaj"
+        ],
+        "cefr": "A1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_a1_everyday_capstone_01",
+      "data": {
+        "lesson_key": "a1-tr-a1-everyday-capstone-01",
+        "lexeme_ref": "lx_a1_everyday_capstone_01",
+        "surface_form": "mesaj",
+        "display_form": "mesaj",
+        "grammatical_features": {},
+        "is_lemma": true,
+        "is_preferred": true,
+        "cefr": "A1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_a1_everyday_capstone_02",
+      "data": {
+        "slug": "tr_a1_a1_everyday_capstone_randevu",
+        "lesson_key": "a1-tr-a1-everyday-capstone-01",
+        "concept_type": "lexical",
+        "part_of_speech": "noun",
+        "forms": {
+          "tr": "randevu"
+        },
+        "translations": {
+          "fa": "قرار / وقت ملاقات"
+        },
+        "cefr": "A1",
+        "topic": "simple-messages",
+        "tags": [
+          "core",
+          "a1",
+          "high_frequency"
+        ],
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_a1_everyday_capstone_02",
+      "data": {
+        "lesson_key": "a1-tr-a1-everyday-capstone-01",
+        "lemma": "randevu",
+        "display_lemma": "randevu",
+        "language": "tr",
+        "language_variant": "tr-TR",
+        "part_of_speech": "noun",
+        "concept_refs": [
+          "tr_a1_a1_everyday_capstone_randevu"
+        ],
+        "cefr": "A1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_a1_everyday_capstone_02",
+      "data": {
+        "lesson_key": "a1-tr-a1-everyday-capstone-01",
+        "lexeme_ref": "lx_a1_everyday_capstone_02",
+        "surface_form": "randevu",
+        "display_form": "randevu",
+        "grammatical_features": {},
+        "is_lemma": true,
+        "is_preferred": true,
+        "cefr": "A1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_a1_everyday_capstone_03",
+      "data": {
+        "slug": "tr_a1_a1_everyday_capstone_unutmak",
+        "lesson_key": "a1-tr-a1-everyday-capstone-01",
+        "concept_type": "lexical",
+        "part_of_speech": "verb",
+        "forms": {
+          "tr": "unutmak"
+        },
+        "translations": {
+          "fa": "فراموش کردن"
+        },
+        "cefr": "A1",
+        "topic": "simple-messages",
+        "tags": [
+          "core",
+          "a1",
+          "high_frequency"
+        ],
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_a1_everyday_capstone_03",
+      "data": {
+        "lesson_key": "a1-tr-a1-everyday-capstone-01",
+        "lemma": "unutmak",
+        "display_lemma": "unutmak",
+        "language": "tr",
+        "language_variant": "tr-TR",
+        "part_of_speech": "verb",
+        "concept_refs": [
+          "tr_a1_a1_everyday_capstone_unutmak"
+        ],
+        "cefr": "A1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_a1_everyday_capstone_03",
+      "data": {
+        "lesson_key": "a1-tr-a1-everyday-capstone-01",
+        "lexeme_ref": "lx_a1_everyday_capstone_03",
+        "surface_form": "unutmak",
+        "display_form": "unutmak",
+        "grammatical_features": {},
+        "is_lemma": true,
+        "is_preferred": true,
+        "cefr": "A1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_a1_everyday_capstone_04",
+      "data": {
+        "slug": "tr_a1_a1_everyday_capstone_anlamak",
+        "lesson_key": "a1-tr-a1-everyday-capstone-02",
+        "concept_type": "lexical",
+        "part_of_speech": "verb",
+        "forms": {
+          "tr": "anlamak"
+        },
+        "translations": {
+          "fa": "فهمیدن"
+        },
+        "cefr": "A1",
+        "topic": "simple-messages",
+        "tags": [
+          "core",
+          "a1",
+          "high_frequency"
+        ],
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_a1_everyday_capstone_04",
+      "data": {
+        "lesson_key": "a1-tr-a1-everyday-capstone-02",
+        "lemma": "anlamak",
+        "display_lemma": "anlamak",
+        "language": "tr",
+        "language_variant": "tr-TR",
+        "part_of_speech": "verb",
+        "concept_refs": [
+          "tr_a1_a1_everyday_capstone_anlamak"
+        ],
+        "cefr": "A1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_a1_everyday_capstone_04",
+      "data": {
+        "lesson_key": "a1-tr-a1-everyday-capstone-02",
+        "lexeme_ref": "lx_a1_everyday_capstone_04",
+        "surface_form": "anlamak",
+        "display_form": "anlamak",
+        "grammatical_features": {},
+        "is_lemma": true,
+        "is_preferred": true,
+        "cefr": "A1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_a1_everyday_capstone_05",
+      "data": {
+        "slug": "tr_a1_a1_everyday_capstone_tekrar",
+        "lesson_key": "a1-tr-a1-everyday-capstone-02",
+        "concept_type": "lexical",
+        "part_of_speech": "adverb",
+        "forms": {
+          "tr": "tekrar"
+        },
+        "translations": {
+          "fa": "دوباره"
+        },
+        "cefr": "A1",
+        "topic": "simple-messages",
+        "tags": [
+          "core",
+          "a1",
+          "high_frequency"
+        ],
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_a1_everyday_capstone_05",
+      "data": {
+        "lesson_key": "a1-tr-a1-everyday-capstone-02",
+        "lemma": "tekrar",
+        "display_lemma": "tekrar",
+        "language": "tr",
+        "language_variant": "tr-TR",
+        "part_of_speech": "adverb",
+        "concept_refs": [
+          "tr_a1_a1_everyday_capstone_tekrar"
+        ],
+        "cefr": "A1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_a1_everyday_capstone_05",
+      "data": {
+        "lesson_key": "a1-tr-a1-everyday-capstone-02",
+        "lexeme_ref": "lx_a1_everyday_capstone_05",
+        "surface_form": "tekrar",
+        "display_form": "tekrar",
+        "grammatical_features": {},
+        "is_lemma": true,
+        "is_preferred": true,
+        "cefr": "A1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_a1_everyday_capstone_06",
+      "data": {
+        "slug": "tr_a1_a1_everyday_capstone_yavas",
+        "lesson_key": "a1-tr-a1-everyday-capstone-02",
+        "concept_type": "lexical",
+        "part_of_speech": "adjective",
+        "forms": {
+          "tr": "yavaş"
+        },
+        "translations": {
+          "fa": "آهسته"
+        },
+        "cefr": "A1",
+        "topic": "simple-messages",
+        "tags": [
+          "core",
+          "a1",
+          "high_frequency"
+        ],
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_a1_everyday_capstone_06",
+      "data": {
+        "lesson_key": "a1-tr-a1-everyday-capstone-02",
+        "lemma": "yavaş",
+        "display_lemma": "yavaş",
+        "language": "tr",
+        "language_variant": "tr-TR",
+        "part_of_speech": "adjective",
+        "concept_refs": [
+          "tr_a1_a1_everyday_capstone_yavas"
+        ],
+        "cefr": "A1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_a1_everyday_capstone_06",
+      "data": {
+        "lesson_key": "a1-tr-a1-everyday-capstone-02",
+        "lexeme_ref": "lx_a1_everyday_capstone_06",
+        "surface_form": "yavaş",
+        "display_form": "yavaş",
+        "grammatical_features": {},
+        "is_lemma": true,
+        "is_preferred": true,
+        "cefr": "A1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_a1_everyday_capstone_01",
+      "data": {
+        "lesson_key": "a1-tr-a1-everyday-capstone-01",
+        "text": {
+          "tr": "Randevuyu unutmadım."
+        },
+        "translations": {
+          "fa": "قرار را فراموش نکردم."
+        },
+        "intent": "confirm_plan",
+        "concept_refs": [
+          "tr_a1_a1_everyday_capstone_randevu",
+          "tr_a1_a1_everyday_capstone_unutmak"
+        ],
+        "cefr": "A1",
+        "topic": "simple-messages",
+        "register": "neutral",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_a1_everyday_capstone_02",
+      "data": {
+        "lesson_key": "a1-tr-a1-everyday-capstone-01",
+        "text": {
+          "tr": "Sana bir mesaj göndereceğim."
+        },
+        "translations": {
+          "fa": "برای تو یک پیام می‌فرستم."
+        },
+        "intent": "coordinate_plan",
+        "concept_refs": [
+          "tr_a1_a1_everyday_capstone_mesaj"
+        ],
+        "cefr": "A1",
+        "topic": "simple-messages",
+        "register": "neutral",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_a1_everyday_capstone_03",
+      "data": {
+        "lesson_key": "a1-tr-a1-everyday-capstone-02",
+        "text": {
+          "tr": "Anlamadım, tekrar söyler misiniz?"
+        },
+        "translations": {
+          "fa": "نفهمیدم، می‌شود دوباره بگویید؟"
+        },
+        "intent": "repair_communication",
+        "concept_refs": [
+          "tr_a1_a1_everyday_capstone_anlamak",
+          "tr_a1_a1_everyday_capstone_tekrar"
+        ],
+        "cefr": "A1",
+        "topic": "simple-messages",
+        "register": "neutral",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_a1_everyday_capstone_04",
+      "data": {
+        "lesson_key": "a1-tr-a1-everyday-capstone-02",
+        "text": {
+          "tr": "Lütfen biraz daha yavaş konuşun."
+        },
+        "translations": {
+          "fa": "لطفاً کمی آهسته‌تر صحبت کنید."
+        },
+        "intent": "repair_communication",
+        "concept_refs": [
+          "tr_a1_a1_everyday_capstone_yavas"
+        ],
+        "cefr": "A1",
+        "topic": "simple-messages",
+        "register": "neutral",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "grammar_point",
+      "external_id": "g_a1_everyday_capstone_core",
+      "data": {
+        "lesson_key": "a1-tr-a1-everyday-capstone-01",
+        "slug": "a1-tr-a1-everyday-capstone-grammar",
+        "title": "İletişimi onarma ve A1 bütünleştirme",
+        "rule_summary": "A1 learners need short repair strategies alongside familiar past, present and future forms.",
+        "explanation": {
+          "fa": "در پایان A1 فقط ساختن جمله کافی نیست؛ باید بتوانی وقتی چیزی را نفهمیدی درخواست تکرار یا آهسته‌تر صحبت‌کردن کنی و در همان گفت‌وگو زمان، مسیر و برنامه را مدیریت کنی."
+        },
+        "examples": [
+          {
+            "tr": "Anlamadım, tekrar söyler misiniz?",
+            "fa": "نفهمیدم، می‌شود دوباره بگویید؟"
+          },
+          {
+            "tr": "Lütfen biraz daha yavaş konuşun.",
+            "fa": "لطفاً کمی آهسته‌تر صحبت کنید."
+          }
+        ],
+        "cefr": "A1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "dialogue",
+      "external_id": "d_a1_everyday_capstone_01",
+      "data": {
+        "lesson_key": "a1-tr-a1-everyday-capstone-01",
+        "title": "Randevuya yetişmek",
+        "setting": "",
+        "cefr": "A1",
+        "topic": "simple-messages",
+        "characters": [
+          "Deniz",
+          "Kaan"
+        ],
+        "turns": [
+          {
+            "order": 1,
+            "speaker": "Deniz",
+            "text": "Randevuyu unutmadın, değil mi?",
+            "translation_fa": "قرار را فراموش نکردی، نه؟"
+          },
+          {
+            "order": 2,
+            "speaker": "Kaan",
+            "text": "Hayır. Şimdi istasyondan çıkıyorum.",
+            "translation_fa": "نه. الان از ایستگاه بیرون می‌آیم."
+          },
+          {
+            "order": 3,
+            "speaker": "Deniz",
+            "text": "Tamam, sana adresi mesajla göndereceğim.",
+            "translation_fa": "باشه، آدرس را با پیام می‌فرستم."
+          },
+          {
+            "order": 4,
+            "speaker": "Kaan",
+            "text": "Teşekkürler. On dakikaya oradayım.",
+            "translation_fa": "ممنون. ده دقیقه دیگر آنجا هستم."
+          }
+        ],
+        "qa": {
+          "character_pair_unique_within_unit": true,
+          "naturalness": "passed",
+          "single_situation": true
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "dialogue",
+      "external_id": "d_a1_everyday_capstone_02",
+      "data": {
+        "lesson_key": "a1-tr-a1-everyday-capstone-02",
+        "title": "Anlamayınca",
+        "setting": "",
+        "cefr": "A1",
+        "topic": "simple-messages",
+        "characters": [
+          "Selin",
+          "Mert"
+        ],
+        "turns": [
+          {
+            "order": 1,
+            "speaker": "Selin",
+            "text": "Randevunuz saat üçte.",
+            "translation_fa": "وقت شما ساعت سه است."
+          },
+          {
+            "order": 2,
+            "speaker": "Mert",
+            "text": "Pardon, anlamadım. Tekrar söyler misiniz?",
+            "translation_fa": "ببخشید، نفهمیدم. می‌شود دوباره بگویید؟"
+          },
+          {
+            "order": 3,
+            "speaker": "Selin",
+            "text": "Tabii. Saat üçte.",
+            "translation_fa": "حتماً. ساعت سه."
+          },
+          {
+            "order": 4,
+            "speaker": "Mert",
+            "text": "Teşekkür ederim. Biraz burada bekleyeceğim.",
+            "translation_fa": "متشکرم. کمی اینجا منتظر می‌مانم."
+          }
+        ],
+        "qa": {
+          "character_pair_unique_within_unit": true,
+          "naturalness": "passed",
+          "single_situation": true
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_a1_everyday_capstone_01_meaning",
+      "data": {
+        "lesson_key": "a1-tr-a1-everyday-capstone-01",
+        "exercise_type": "multiple_choice",
+        "prompt": {
+          "instruction_fa": "معنی درست این عبارت ترکی را انتخاب کن.",
+          "value": "Randevuyu unutmadım."
+        },
+        "answer": {
+          "value": "قرار را فراموش نکردم."
+        },
+        "options": [
+          "قرار را فراموش نکردم.",
+          "برای تو یک پیام می‌فرستم.",
+          "نفهمیدم، می‌شود دوباره بگویید؟",
+          "لطفاً کمی آهسته‌تر صحبت کنید."
+        ],
+        "difficulty": 1,
+        "cefr": "A1",
+        "topic": "simple-messages",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت و پسوندهای عبارت ترکی دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: Randevuyu unutmadım. — قرار را فراموش نکردم.",
+          "model_answer": "Randevuyu unutmadım."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_a1_everyday_capstone_01_listen",
+      "data": {
+        "lesson_key": "a1-tr-a1-everyday-capstone-01",
+        "exercise_type": "listening",
+        "prompt": {
+          "instruction_fa": "گوش کن و عبارتی را که شنیدی انتخاب کن.",
+          "audio_text": "Sana bir mesaj göndereceğim."
+        },
+        "answer": {
+          "value": "Sana bir mesaj göndereceğim."
+        },
+        "options": [
+          "Sana bir mesaj göndereceğim.",
+          "Randevuyu unutmadım.",
+          "Anlamadım, tekrar söyler misiniz?",
+          "Lütfen biraz daha yavaş konuşun."
+        ],
+        "difficulty": 1,
+        "cefr": "A1",
+        "topic": "simple-messages",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت و پسوندهای عبارت ترکی دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: Sana bir mesaj göndereceğim. — برای تو یک پیام می‌فرستم.",
+          "model_answer": "Sana bir mesaj göndereceğim.",
+          "transcript_tr": "Sana bir mesaj göndereceğim."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_a1_everyday_capstone_01_speak",
+      "data": {
+        "lesson_key": "a1-tr-a1-everyday-capstone-01",
+        "exercise_type": "speaking",
+        "prompt": {
+          "instruction_fa": "عبارت را با صدای بلند و با ریتم طبیعی تکرار کن.",
+          "value": "Randevuyu unutmadım."
+        },
+        "answer": {
+          "expected_text": "Randevuyu unutmadım."
+        },
+        "difficulty": 1,
+        "cefr": "A1",
+        "topic": "simple-messages",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت و پسوندهای عبارت ترکی دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: Randevuyu unutmadım. — قرار را فراموش نکردم.",
+          "model_answer": "Randevuyu unutmadım."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_a1_everyday_capstone_01_build",
+      "data": {
+        "lesson_key": "a1-tr-a1-everyday-capstone-01",
+        "exercise_type": "sentence_building",
+        "prompt": {
+          "instruction_fa": "کلمه‌ها را لمس کن تا عبارت درست ساخته شود.",
+          "tokens": [
+            "bir",
+            "mesaj",
+            "göndereceğim.",
+            "Sana"
+          ]
+        },
+        "answer": {
+          "tokens": [
+            "Sana",
+            "bir",
+            "mesaj",
+            "göndereceğim."
+          ],
+          "value": "Sana bir mesaj göndereceğim."
+        },
+        "difficulty": 1,
+        "cefr": "A1",
+        "topic": "simple-messages",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت و پسوندهای عبارت ترکی دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: Sana bir mesaj göndereceğim. — برای تو یک پیام می‌فرستم.",
+          "model_answer": "Sana bir mesaj göndereceğim."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_a1_everyday_capstone_01_dialogue",
+      "data": {
+        "lesson_key": "a1-tr-a1-everyday-capstone-01",
+        "exercise_type": "dialogue_comprehension",
+        "prompt": {
+          "instruction_fa": "با توجه به گفت‌وگو، پاسخ مناسب را انتخاب کن.",
+          "source_dialogue_ref": "d_a1_everyday_capstone_01",
+          "question_fa": "کدام گزینه با معنی «قرار را فراموش نکردم.» هماهنگ است؟"
+        },
+        "answer": {
+          "value": "Randevuyu unutmadım."
+        },
+        "options": [
+          "Randevuyu unutmadım.",
+          "Sana bir mesaj göndereceğim.",
+          "Anlamadım, tekrar söyler misiniz?",
+          "Lütfen biraz daha yavaş konuşun."
+        ],
+        "difficulty": 1,
+        "cefr": "A1",
+        "topic": "simple-messages",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت و پسوندهای عبارت ترکی دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: Randevuyu unutmadım. — قرار را فراموش نکردم.",
+          "model_answer": "Randevuyu unutmadım."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_a1_everyday_capstone_02_meaning",
+      "data": {
+        "lesson_key": "a1-tr-a1-everyday-capstone-02",
+        "exercise_type": "multiple_choice",
+        "prompt": {
+          "instruction_fa": "معنی درست این عبارت ترکی را انتخاب کن.",
+          "value": "Anlamadım, tekrar söyler misiniz?"
+        },
+        "answer": {
+          "value": "نفهمیدم، می‌شود دوباره بگویید؟"
+        },
+        "options": [
+          "نفهمیدم، می‌شود دوباره بگویید؟",
+          "قرار را فراموش نکردم.",
+          "برای تو یک پیام می‌فرستم.",
+          "لطفاً کمی آهسته‌تر صحبت کنید."
+        ],
+        "difficulty": 1,
+        "cefr": "A1",
+        "topic": "simple-messages",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت و پسوندهای عبارت ترکی دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: Anlamadım, tekrar söyler misiniz? — نفهمیدم، می‌شود دوباره بگویید؟",
+          "model_answer": "Anlamadım, tekrar söyler misiniz?"
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_a1_everyday_capstone_02_listen",
+      "data": {
+        "lesson_key": "a1-tr-a1-everyday-capstone-02",
+        "exercise_type": "listening",
+        "prompt": {
+          "instruction_fa": "گوش کن و عبارتی را که شنیدی انتخاب کن.",
+          "audio_text": "Lütfen biraz daha yavaş konuşun."
+        },
+        "answer": {
+          "value": "Lütfen biraz daha yavaş konuşun."
+        },
+        "options": [
+          "Lütfen biraz daha yavaş konuşun.",
+          "Anlamadım, tekrar söyler misiniz?",
+          "Randevuyu unutmadım.",
+          "Sana bir mesaj göndereceğim."
+        ],
+        "difficulty": 1,
+        "cefr": "A1",
+        "topic": "simple-messages",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت و پسوندهای عبارت ترکی دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: Lütfen biraz daha yavaş konuşun. — لطفاً کمی آهسته‌تر صحبت کنید.",
+          "model_answer": "Lütfen biraz daha yavaş konuşun.",
+          "transcript_tr": "Lütfen biraz daha yavaş konuşun."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_a1_everyday_capstone_02_speak",
+      "data": {
+        "lesson_key": "a1-tr-a1-everyday-capstone-02",
+        "exercise_type": "speaking",
+        "prompt": {
+          "instruction_fa": "عبارت را با صدای بلند و با ریتم طبیعی تکرار کن.",
+          "value": "Anlamadım, tekrar söyler misiniz?"
+        },
+        "answer": {
+          "expected_text": "Anlamadım, tekrar söyler misiniz?"
+        },
+        "difficulty": 1,
+        "cefr": "A1",
+        "topic": "simple-messages",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت و پسوندهای عبارت ترکی دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: Anlamadım, tekrar söyler misiniz? — نفهمیدم، می‌شود دوباره بگویید؟",
+          "model_answer": "Anlamadım, tekrar söyler misiniz?"
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_a1_everyday_capstone_02_build",
+      "data": {
+        "lesson_key": "a1-tr-a1-everyday-capstone-02",
+        "exercise_type": "sentence_building",
+        "prompt": {
+          "instruction_fa": "کلمه‌ها را لمس کن تا عبارت درست ساخته شود.",
+          "tokens": [
+            "biraz",
+            "daha",
+            "yavaş",
+            "konuşun.",
+            "Lütfen"
+          ]
+        },
+        "answer": {
+          "tokens": [
+            "Lütfen",
+            "biraz",
+            "daha",
+            "yavaş",
+            "konuşun."
+          ],
+          "value": "Lütfen biraz daha yavaş konuşun."
+        },
+        "difficulty": 1,
+        "cefr": "A1",
+        "topic": "simple-messages",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت و پسوندهای عبارت ترکی دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: Lütfen biraz daha yavaş konuşun. — لطفاً کمی آهسته‌تر صحبت کنید.",
+          "model_answer": "Lütfen biraz daha yavaş konuşun."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_a1_everyday_capstone_02_dialogue",
+      "data": {
+        "lesson_key": "a1-tr-a1-everyday-capstone-02",
+        "exercise_type": "dialogue_comprehension",
+        "prompt": {
+          "instruction_fa": "با توجه به گفت‌وگو، پاسخ مناسب را انتخاب کن.",
+          "source_dialogue_ref": "d_a1_everyday_capstone_02",
+          "question_fa": "کدام گزینه با معنی «نفهمیدم، می‌شود دوباره بگویید؟» هماهنگ است؟"
+        },
+        "answer": {
+          "value": "Anlamadım, tekrar söyler misiniz?"
+        },
+        "options": [
+          "Anlamadım, tekrar söyler misiniz?",
+          "Randevuyu unutmadım.",
+          "Sana bir mesaj göndereceğim.",
+          "Lütfen biraz daha yavaş konuşun."
+        ],
+        "difficulty": 1,
+        "cefr": "A1",
+        "topic": "simple-messages",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت و پسوندهای عبارت ترکی دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: Anlamadım, tekrar söyler misiniz? — نفهمیدم، می‌شود دوباره بگویید؟",
+          "model_answer": "Anlamadım, tekrar söyler misiniz?"
+        },
+        "status": "validated"
+      }
+    }
+  ]
+}
