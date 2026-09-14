@@ -1,6 +1,6 @@
 -- Generated audio link import for ko-KR Pre-A1
 -- Source manifest: audio/manifests/ko/Pre-A1.json
--- Generated rows: 260
+-- Generated rows: 306
 -- Storage mode: relative_path
 -- storage_url is intentionally portable; prepend your server/CDN base URL at runtime.
 -- Run AFTER the matching level content import.
@@ -114,6 +114,32 @@ INSERT INTO audio_assets (
   status = VALUES(status),
   metadata = VALUES(metadata);
 
+-- d_ko_meaning_help:2 -> audio/generated/ko-KR/dialogues/2a84a20c6d6c1b4c3838e2cce39cda7c2c19ad18dd398a55e47ceffb60ea269b.mp3
+UPDATE audio_assets
+SET status = 'archived'
+WHERE entity_type = 'dialogue_turn'
+  AND entity_id = UUID_TO_BIN('9fec1cd1-6cbb-533a-abbb-96af5fa3d4de', 1)
+  AND voice_key = 'character:민수:male_warm'
+  AND (entity_type NOT IN ('grammar_point','exercise') OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'd_ko_meaning_help:2')
+  AND source_text_hash IS NOT NULL
+  AND source_text_hash <> 'ae713b65439d2c5c68601f886c885c9bf9839769e45c6de8c42f382e8c4a0f2f'
+  AND status <> 'archived';
+INSERT INTO audio_assets (
+  id, language_id, language_variant_id, entity_type, entity_id, source_text_hash,
+  voice_key, provider, provider_model, storage_url, duration_ms, generated_at, checksum, status, metadata
+) VALUES (
+  UUID_TO_BIN('2a112418-3c8a-5ab3-aade-be0022106494', 1), @audio_language_id, @audio_variant_id, 'dialogue_turn', UUID_TO_BIN('9fec1cd1-6cbb-533a-abbb-96af5fa3d4de', 1), 'ae713b65439d2c5c68601f886c885c9bf9839769e45c6de8c42f382e8c4a0f2f',
+  'character:민수:male_warm', 'elevenlabs', 'eleven_multilingual_v2', 'audio/generated/ko-KR/dialogues/2a84a20c6d6c1b4c3838e2cce39cda7c2c19ad18dd398a55e47ceffb60ea269b.mp3', 1280, '2026-09-14 12:20:02.887794', 'f94f41fe2481aacf7433630be13ac506931e8d042744d206726824711468f8a1', 'validated', '{"audio_key":"2a84a20c6d6c1b4c3838e2cce39cda7c2c19ad18dd398a55e47ceffb60ea269b","entity_key":"d_ko_meaning_help:2","voice_id":"70DeQK5Ztp7WmEGGysLT","voice_name":"Hyun - Friendly and Natural","voice_labels":{"gender":"male","accent":"seoul","age":"young","category":"high_quality","language":"ko","use_case":"conversational","descriptive":"casual"},"output_format":"mp3_44100_192","file_sha256":"f94f41fe2481aacf7433630be13ac506931e8d042744d206726824711468f8a1","settings":{"stability":0.58,"similarity_boost":0.87,"style":0.14,"use_speaker_boost":true,"speed":0.97},"relative_path":"audio/generated/ko-KR/dialogues/2a84a20c6d6c1b4c3838e2cce39cda7c2c19ad18dd398a55e47ceffb60ea269b.mp3"}'
+) ON DUPLICATE KEY UPDATE
+  provider = VALUES(provider),
+  provider_model = VALUES(provider_model),
+  storage_url = VALUES(storage_url),
+  duration_ms = VALUES(duration_ms),
+  generated_at = VALUES(generated_at),
+  checksum = VALUES(checksum),
+  status = VALUES(status),
+  metadata = VALUES(metadata);
+
 -- d_numbers_0_10_01:3 -> audio/generated/ko-KR/dialogues/2b4cdad36afb0e7d9a76e33b3931ac907c42870a673301323d4504a1a80c3064.mp3
 UPDATE audio_assets
 SET status = 'archived'
@@ -182,6 +208,32 @@ INSERT INTO audio_assets (
 ) VALUES (
   UUID_TO_BIN('de2a06ef-cdbc-5afc-91bf-c29aba75a04f', 1), @audio_language_id, @audio_variant_id, 'dialogue_turn', UUID_TO_BIN('be6e8bea-3316-53b5-8917-abbc5cb77254', 1), '45391eed28a0780f4e92292ed79385cc0b5c47a8442a720b4fc6895266d1c7b7',
   'character:민수:male_warm', 'elevenlabs', 'eleven_multilingual_v2', 'audio/generated/ko-KR/dialogues/31dd4a224cc7228b4331c9f806be54a75f651143f278e0c2f5882eb8143693a7.mp3', 1018, '2026-09-13 21:10:14.769720', '4f88ae390bc1ddafe07f4e1fb71d9d78b472c3e6339fd019fc8cfa09c13cacdc', 'validated', '{"audio_key":"31dd4a224cc7228b4331c9f806be54a75f651143f278e0c2f5882eb8143693a7","entity_key":"d_numbers_0_10_02:3","voice_id":"70DeQK5Ztp7WmEGGysLT","voice_name":"Hyun - Friendly and Natural","voice_labels":{"gender":"male","accent":"seoul","age":"young","category":"high_quality","language":"ko","use_case":"conversational","descriptive":"casual"},"output_format":"mp3_44100_192","file_sha256":"4f88ae390bc1ddafe07f4e1fb71d9d78b472c3e6339fd019fc8cfa09c13cacdc","settings":{"stability":0.58,"similarity_boost":0.87,"style":0.14,"use_speaker_boost":true,"speed":0.97},"relative_path":"audio/generated/ko-KR/dialogues/31dd4a224cc7228b4331c9f806be54a75f651143f278e0c2f5882eb8143693a7.mp3"}'
+) ON DUPLICATE KEY UPDATE
+  provider = VALUES(provider),
+  provider_model = VALUES(provider_model),
+  storage_url = VALUES(storage_url),
+  duration_ms = VALUES(duration_ms),
+  generated_at = VALUES(generated_at),
+  checksum = VALUES(checksum),
+  status = VALUES(status),
+  metadata = VALUES(metadata);
+
+-- d_ko_meaning_help:1 -> audio/generated/ko-KR/dialogues/3221863d1851e5b112feac1671e45271412027509c393a3c6f4aa6ce7ec347cc.mp3
+UPDATE audio_assets
+SET status = 'archived'
+WHERE entity_type = 'dialogue_turn'
+  AND entity_id = UUID_TO_BIN('4267cda1-569d-5cb7-9105-f9da2b19d55f', 1)
+  AND voice_key = 'character:지민:female_warm'
+  AND (entity_type NOT IN ('grammar_point','exercise') OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'd_ko_meaning_help:1')
+  AND source_text_hash IS NOT NULL
+  AND source_text_hash <> 'ca6a9a5e3e9c117a35042dd3e2f15e11370e5ff643d20f5b47c96bcb20b23871'
+  AND status <> 'archived';
+INSERT INTO audio_assets (
+  id, language_id, language_variant_id, entity_type, entity_id, source_text_hash,
+  voice_key, provider, provider_model, storage_url, duration_ms, generated_at, checksum, status, metadata
+) VALUES (
+  UUID_TO_BIN('47125fdd-df8b-59d1-b65d-3ebb70635668', 1), @audio_language_id, @audio_variant_id, 'dialogue_turn', UUID_TO_BIN('4267cda1-569d-5cb7-9105-f9da2b19d55f', 1), 'ca6a9a5e3e9c117a35042dd3e2f15e11370e5ff643d20f5b47c96bcb20b23871',
+  'character:지민:female_warm', 'elevenlabs', 'eleven_multilingual_v2', 'audio/generated/ko-KR/dialogues/3221863d1851e5b112feac1671e45271412027509c393a3c6f4aa6ce7ec347cc.mp3', 1488, '2026-09-14 12:20:02.766854', '964f1470c2b35c7d639f98804891955c8a24323564e1a813ad4918bf9d50cefc', 'validated', '{"audio_key":"3221863d1851e5b112feac1671e45271412027509c393a3c6f4aa6ce7ec347cc","entity_key":"d_ko_meaning_help:1","voice_id":"ZubHeGTOAkECknc02Zmo","voice_name":"Eunhye - Composed and Reassuring","voice_labels":{"gender":"female","accent":"standard","age":"middle_aged","category":"high_quality","language":"ko","use_case":"conversational","descriptive":"pleasant"},"output_format":"mp3_44100_192","file_sha256":"964f1470c2b35c7d639f98804891955c8a24323564e1a813ad4918bf9d50cefc","settings":{"stability":0.58,"similarity_boost":0.87,"style":0.14,"use_speaker_boost":true,"speed":0.97},"relative_path":"audio/generated/ko-KR/dialogues/3221863d1851e5b112feac1671e45271412027509c393a3c6f4aa6ce7ec347cc.mp3"}'
 ) ON DUPLICATE KEY UPDATE
   provider = VALUES(provider),
   provider_model = VALUES(provider_model),
@@ -348,6 +400,32 @@ INSERT INTO audio_assets (
   status = VALUES(status),
   metadata = VALUES(metadata);
 
+-- d_ko_ready_repair:4 -> audio/generated/ko-KR/dialogues/4a50a4f354e073875062bba0d1919cc0f8c38633781bb6c8d3d9ae43ae3dee7f.mp3
+UPDATE audio_assets
+SET status = 'archived'
+WHERE entity_type = 'dialogue_turn'
+  AND entity_id = UUID_TO_BIN('0ba91941-89a2-5c9b-b1e0-290f1f344c02', 1)
+  AND voice_key = 'character:태호:male_calm'
+  AND (entity_type NOT IN ('grammar_point','exercise') OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'd_ko_ready_repair:4')
+  AND source_text_hash IS NOT NULL
+  AND source_text_hash <> 'e9dcd36d05bf1fcaa245ef4fe546d7b17d15b8345a20bf497e0b1b9e4b1ef85c'
+  AND status <> 'archived';
+INSERT INTO audio_assets (
+  id, language_id, language_variant_id, entity_type, entity_id, source_text_hash,
+  voice_key, provider, provider_model, storage_url, duration_ms, generated_at, checksum, status, metadata
+) VALUES (
+  UUID_TO_BIN('a155afa9-b1cc-515e-a42a-3d9494b88751', 1), @audio_language_id, @audio_variant_id, 'dialogue_turn', UUID_TO_BIN('0ba91941-89a2-5c9b-b1e0-290f1f344c02', 1), 'e9dcd36d05bf1fcaa245ef4fe546d7b17d15b8345a20bf497e0b1b9e4b1ef85c',
+  'character:태호:male_calm', 'elevenlabs', 'eleven_multilingual_v2', 'audio/generated/ko-KR/dialogues/4a50a4f354e073875062bba0d1919cc0f8c38633781bb6c8d3d9ae43ae3dee7f.mp3', 2403, '2026-09-14 12:20:04.280059', '8ed0bbfc3a41421c930c45beb33328517441f84965197ebd81a4c4911d5db743', 'validated', '{"audio_key":"4a50a4f354e073875062bba0d1919cc0f8c38633781bb6c8d3d9ae43ae3dee7f","entity_key":"d_ko_ready_repair:4","voice_id":"QAuCXfOpYxbxOasYze98","voice_name":"Sein - Sweet & Gentle Korean\t","voice_labels":{"gender":"male","accent":"seoul","age":"young","category":"professional","language":"ko","use_case":"narrative_story","descriptive":"calm"},"output_format":"mp3_44100_192","file_sha256":"8ed0bbfc3a41421c930c45beb33328517441f84965197ebd81a4c4911d5db743","settings":{"stability":0.68,"similarity_boost":0.89,"style":0.06,"use_speaker_boost":true,"speed":0.95},"relative_path":"audio/generated/ko-KR/dialogues/4a50a4f354e073875062bba0d1919cc0f8c38633781bb6c8d3d9ae43ae3dee7f.mp3"}'
+) ON DUPLICATE KEY UPDATE
+  provider = VALUES(provider),
+  provider_model = VALUES(provider_model),
+  storage_url = VALUES(storage_url),
+  duration_ms = VALUES(duration_ms),
+  generated_at = VALUES(generated_at),
+  checksum = VALUES(checksum),
+  status = VALUES(status),
+  metadata = VALUES(metadata);
+
 -- d_how_are_you_01:4 -> audio/generated/ko-KR/dialogues/4ec58ad10e215740ec9f916e0ab402b7ab8a1b75c6836be59e69486b2041bc51.mp3
 UPDATE audio_assets
 SET status = 'archived'
@@ -504,6 +582,32 @@ INSERT INTO audio_assets (
   status = VALUES(status),
   metadata = VALUES(metadata);
 
+-- d_ko_ready_intro:3 -> audio/generated/ko-KR/dialogues/593b478f1d998767dbca6c9773f3a90ad0c4a83790ed999778d746e9b27953c1.mp3
+UPDATE audio_assets
+SET status = 'archived'
+WHERE entity_type = 'dialogue_turn'
+  AND entity_id = UUID_TO_BIN('3db39dc2-bc96-5da9-a528-fc79f5271b8a', 1)
+  AND voice_key = 'character:서연:female_bright'
+  AND (entity_type NOT IN ('grammar_point','exercise') OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'd_ko_ready_intro:3')
+  AND source_text_hash IS NOT NULL
+  AND source_text_hash <> '588d25be7d113ed1f1cfa0573ce4193253f6f8a3bc12426758159d2fbfc3ec4e'
+  AND status <> 'archived';
+INSERT INTO audio_assets (
+  id, language_id, language_variant_id, entity_type, entity_id, source_text_hash,
+  voice_key, provider, provider_model, storage_url, duration_ms, generated_at, checksum, status, metadata
+) VALUES (
+  UUID_TO_BIN('6a86bc02-0009-53a7-b616-bd8be2a155a4', 1), @audio_language_id, @audio_variant_id, 'dialogue_turn', UUID_TO_BIN('3db39dc2-bc96-5da9-a528-fc79f5271b8a', 1), '588d25be7d113ed1f1cfa0573ce4193253f6f8a3bc12426758159d2fbfc3ec4e',
+  'character:서연:female_bright', 'elevenlabs', 'eleven_multilingual_v2', 'audio/generated/ko-KR/dialogues/593b478f1d998767dbca6c9773f3a90ad0c4a83790ed999778d746e9b27953c1.mp3', 1332, '2026-09-14 12:20:04.066863', '7c353d551848ee2715a7a79ab0bf433e11c079df6201320e5ea0f9f85399b6bb', 'validated', '{"audio_key":"593b478f1d998767dbca6c9773f3a90ad0c4a83790ed999778d746e9b27953c1","entity_key":"d_ko_ready_intro:3","voice_id":"5DWGv3VDkihNUcbvaonB","voice_name":"Kelee K - Seoul Narrator","voice_labels":{"gender":"female","accent":"seoul","age":"young","category":"professional","language":"ko","use_case":"conversational","descriptive":"casual"},"output_format":"mp3_44100_192","file_sha256":"7c353d551848ee2715a7a79ab0bf433e11c079df6201320e5ea0f9f85399b6bb","settings":{"stability":0.52,"similarity_boost":0.86,"style":0.2,"use_speaker_boost":true,"speed":0.99},"relative_path":"audio/generated/ko-KR/dialogues/593b478f1d998767dbca6c9773f3a90ad0c4a83790ed999778d746e9b27953c1.mp3"}'
+) ON DUPLICATE KEY UPDATE
+  provider = VALUES(provider),
+  provider_model = VALUES(provider_model),
+  storage_url = VALUES(storage_url),
+  duration_ms = VALUES(duration_ms),
+  generated_at = VALUES(generated_at),
+  checksum = VALUES(checksum),
+  status = VALUES(status),
+  metadata = VALUES(metadata);
+
 -- d_numbers_0_10_02:4 -> audio/generated/ko-KR/dialogues/5a18fb890865993eb068aef327ddfe90afb3c63517f2bd6ae4e35f0c2d7f808b.mp3
 UPDATE audio_assets
 SET status = 'archived'
@@ -572,6 +676,110 @@ INSERT INTO audio_assets (
 ) VALUES (
   UUID_TO_BIN('8f211b74-be31-5b46-858a-f9e68f4ae177', 1), @audio_language_id, @audio_variant_id, 'dialogue_turn', UUID_TO_BIN('6717bf9f-8ebb-5992-b25f-2aed0af64aec', 1), '99f1275a28300f013f6fe2ba8b5535f1fecf5668edcfc9b733b5c8539fa511c0',
   'character:도윤:male_professional', 'elevenlabs', 'eleven_multilingual_v2', 'audio/generated/ko-KR/dialogues/5ba15d023292a422a91d8f3d9972d3d26f22a0c946912f5ede9fe4af0071f4a9.mp3', 1071, '2026-09-13 21:04:46.912002', 'e4aca8d1148300954bb8ec8bf2e7c5fadad26361dd3abcd484906a2d97aa5ff8', 'validated', '{"audio_key":"5ba15d023292a422a91d8f3d9972d3d26f22a0c946912f5ede9fe4af0071f4a9","entity_key":"d_polite_words_02:2","voice_id":"MkyWvsz7jzJkip0vi9E6","voice_name":"Sung - Tender, Calm & Clear","voice_labels":{"gender":"male","accent":"standard","age":"young","category":"professional","language":"ko","use_case":"conversational","descriptive":"calm"},"output_format":"mp3_44100_192","file_sha256":"e4aca8d1148300954bb8ec8bf2e7c5fadad26361dd3abcd484906a2d97aa5ff8","settings":{"stability":0.71,"similarity_boost":0.9,"style":0.05,"use_speaker_boost":true,"speed":0.96},"relative_path":"audio/generated/ko-KR/dialogues/5ba15d023292a422a91d8f3d9972d3d26f22a0c946912f5ede9fe4af0071f4a9.mp3"}'
+) ON DUPLICATE KEY UPDATE
+  provider = VALUES(provider),
+  provider_model = VALUES(provider_model),
+  storage_url = VALUES(storage_url),
+  duration_ms = VALUES(duration_ms),
+  generated_at = VALUES(generated_at),
+  checksum = VALUES(checksum),
+  status = VALUES(status),
+  metadata = VALUES(metadata);
+
+-- d_ko_ready_intro:1 -> audio/generated/ko-KR/dialogues/5bdd7600db730941cf2edf520657ba0674d4816224fff012ba4fdc488efd8f53.mp3
+UPDATE audio_assets
+SET status = 'archived'
+WHERE entity_type = 'dialogue_turn'
+  AND entity_id = UUID_TO_BIN('20216e02-7c66-557d-b8f5-676773db970d', 1)
+  AND voice_key = 'character:서연:female_bright'
+  AND (entity_type NOT IN ('grammar_point','exercise') OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'd_ko_ready_intro:1')
+  AND source_text_hash IS NOT NULL
+  AND source_text_hash <> '24b08d2622aff67c7c2ddcf0572e4101023c6603967f3d595b5c49c60a054b58'
+  AND status <> 'archived';
+INSERT INTO audio_assets (
+  id, language_id, language_variant_id, entity_type, entity_id, source_text_hash,
+  voice_key, provider, provider_model, storage_url, duration_ms, generated_at, checksum, status, metadata
+) VALUES (
+  UUID_TO_BIN('af61a8ec-eef2-59df-bc7c-c808c223f8b2', 1), @audio_language_id, @audio_variant_id, 'dialogue_turn', UUID_TO_BIN('20216e02-7c66-557d-b8f5-676773db970d', 1), '24b08d2622aff67c7c2ddcf0572e4101023c6603967f3d595b5c49c60a054b58',
+  'character:서연:female_bright', 'elevenlabs', 'eleven_multilingual_v2', 'audio/generated/ko-KR/dialogues/5bdd7600db730941cf2edf520657ba0674d4816224fff012ba4fdc488efd8f53.mp3', 2037, '2026-09-14 12:20:05.348012', '9bb2d31ea3b5606bc8b4b5fa22f3e527bf7b47c953166c2cf355fdcee8a32941', 'validated', '{"audio_key":"5bdd7600db730941cf2edf520657ba0674d4816224fff012ba4fdc488efd8f53","entity_key":"d_ko_ready_intro:1","voice_id":"5DWGv3VDkihNUcbvaonB","voice_name":"Kelee K - Seoul Narrator","voice_labels":{"gender":"female","accent":"seoul","age":"young","category":"professional","language":"ko","use_case":"conversational","descriptive":"casual"},"output_format":"mp3_44100_192","file_sha256":"9bb2d31ea3b5606bc8b4b5fa22f3e527bf7b47c953166c2cf355fdcee8a32941","settings":{"stability":0.52,"similarity_boost":0.86,"style":0.2,"use_speaker_boost":true,"speed":0.99},"relative_path":"audio/generated/ko-KR/dialogues/5bdd7600db730941cf2edf520657ba0674d4816224fff012ba4fdc488efd8f53.mp3"}'
+) ON DUPLICATE KEY UPDATE
+  provider = VALUES(provider),
+  provider_model = VALUES(provider_model),
+  storage_url = VALUES(storage_url),
+  duration_ms = VALUES(duration_ms),
+  generated_at = VALUES(generated_at),
+  checksum = VALUES(checksum),
+  status = VALUES(status),
+  metadata = VALUES(metadata);
+
+-- d_ko_meaning_help:3 -> audio/generated/ko-KR/dialogues/60461d02b5f16f516b38419d2f87acda8df4265a0be55977939c4e385b4b1008.mp3
+UPDATE audio_assets
+SET status = 'archived'
+WHERE entity_type = 'dialogue_turn'
+  AND entity_id = UUID_TO_BIN('bd2730c8-de9a-5fbc-bf08-1c4ea8aae9ba', 1)
+  AND voice_key = 'character:지민:female_warm'
+  AND (entity_type NOT IN ('grammar_point','exercise') OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'd_ko_meaning_help:3')
+  AND source_text_hash IS NOT NULL
+  AND source_text_hash <> '489aaaf15fc926bc29ae79834b347e774cebc583244255d6877cdc96d18657be'
+  AND status <> 'archived';
+INSERT INTO audio_assets (
+  id, language_id, language_variant_id, entity_type, entity_id, source_text_hash,
+  voice_key, provider, provider_model, storage_url, duration_ms, generated_at, checksum, status, metadata
+) VALUES (
+  UUID_TO_BIN('b570be2e-9d10-52d8-8e0f-b8df7be219e1', 1), @audio_language_id, @audio_variant_id, 'dialogue_turn', UUID_TO_BIN('bd2730c8-de9a-5fbc-bf08-1c4ea8aae9ba', 1), '489aaaf15fc926bc29ae79834b347e774cebc583244255d6877cdc96d18657be',
+  'character:지민:female_warm', 'elevenlabs', 'eleven_multilingual_v2', 'audio/generated/ko-KR/dialogues/60461d02b5f16f516b38419d2f87acda8df4265a0be55977939c4e385b4b1008.mp3', 1201, '2026-09-14 12:20:05.274629', '1dd1a530550a98b1d0ca94f9498cfdef1a0548ed9fccb66a93966cf8c29dac96', 'validated', '{"audio_key":"60461d02b5f16f516b38419d2f87acda8df4265a0be55977939c4e385b4b1008","entity_key":"d_ko_meaning_help:3","voice_id":"ZubHeGTOAkECknc02Zmo","voice_name":"Eunhye - Composed and Reassuring","voice_labels":{"gender":"female","accent":"standard","age":"middle_aged","category":"high_quality","language":"ko","use_case":"conversational","descriptive":"pleasant"},"output_format":"mp3_44100_192","file_sha256":"1dd1a530550a98b1d0ca94f9498cfdef1a0548ed9fccb66a93966cf8c29dac96","settings":{"stability":0.58,"similarity_boost":0.87,"style":0.14,"use_speaker_boost":true,"speed":0.97},"relative_path":"audio/generated/ko-KR/dialogues/60461d02b5f16f516b38419d2f87acda8df4265a0be55977939c4e385b4b1008.mp3"}'
+) ON DUPLICATE KEY UPDATE
+  provider = VALUES(provider),
+  provider_model = VALUES(provider_model),
+  storage_url = VALUES(storage_url),
+  duration_ms = VALUES(duration_ms),
+  generated_at = VALUES(generated_at),
+  checksum = VALUES(checksum),
+  status = VALUES(status),
+  metadata = VALUES(metadata);
+
+-- d_ko_meaning_help:5 -> audio/generated/ko-KR/dialogues/60461d02b5f16f516b38419d2f87acda8df4265a0be55977939c4e385b4b1008.mp3
+UPDATE audio_assets
+SET status = 'archived'
+WHERE entity_type = 'dialogue_turn'
+  AND entity_id = UUID_TO_BIN('0f155101-8ace-5233-9f58-bdd9c9ca1d22', 1)
+  AND voice_key = 'character:지민:female_warm'
+  AND (entity_type NOT IN ('grammar_point','exercise') OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'd_ko_meaning_help:5')
+  AND source_text_hash IS NOT NULL
+  AND source_text_hash <> '489aaaf15fc926bc29ae79834b347e774cebc583244255d6877cdc96d18657be'
+  AND status <> 'archived';
+INSERT INTO audio_assets (
+  id, language_id, language_variant_id, entity_type, entity_id, source_text_hash,
+  voice_key, provider, provider_model, storage_url, duration_ms, generated_at, checksum, status, metadata
+) VALUES (
+  UUID_TO_BIN('61547184-6b26-58fe-82ba-b902e6dbf0d7', 1), @audio_language_id, @audio_variant_id, 'dialogue_turn', UUID_TO_BIN('0f155101-8ace-5233-9f58-bdd9c9ca1d22', 1), '489aaaf15fc926bc29ae79834b347e774cebc583244255d6877cdc96d18657be',
+  'character:지민:female_warm', 'elevenlabs', 'eleven_multilingual_v2', 'audio/generated/ko-KR/dialogues/60461d02b5f16f516b38419d2f87acda8df4265a0be55977939c4e385b4b1008.mp3', 1201, '2026-09-14 12:20:05.274629', '1dd1a530550a98b1d0ca94f9498cfdef1a0548ed9fccb66a93966cf8c29dac96', 'validated', '{"audio_key":"60461d02b5f16f516b38419d2f87acda8df4265a0be55977939c4e385b4b1008","entity_key":"d_ko_meaning_help:5","voice_id":"ZubHeGTOAkECknc02Zmo","voice_name":"Eunhye - Composed and Reassuring","voice_labels":{"gender":"female","accent":"standard","age":"middle_aged","category":"high_quality","language":"ko","use_case":"conversational","descriptive":"pleasant"},"output_format":"mp3_44100_192","file_sha256":"1dd1a530550a98b1d0ca94f9498cfdef1a0548ed9fccb66a93966cf8c29dac96","settings":{"stability":0.58,"similarity_boost":0.87,"style":0.14,"use_speaker_boost":true,"speed":0.97},"relative_path":"audio/generated/ko-KR/dialogues/60461d02b5f16f516b38419d2f87acda8df4265a0be55977939c4e385b4b1008.mp3"}'
+) ON DUPLICATE KEY UPDATE
+  provider = VALUES(provider),
+  provider_model = VALUES(provider_model),
+  storage_url = VALUES(storage_url),
+  duration_ms = VALUES(duration_ms),
+  generated_at = VALUES(generated_at),
+  checksum = VALUES(checksum),
+  status = VALUES(status),
+  metadata = VALUES(metadata);
+
+-- d_ko_ready_repair:1 -> audio/generated/ko-KR/dialogues/6441d86efc6b6f58c19c4cc390272b87f6ee5d979a037c1c03b23c7e4edb7d48.mp3
+UPDATE audio_assets
+SET status = 'archived'
+WHERE entity_type = 'dialogue_turn'
+  AND entity_id = UUID_TO_BIN('0db17785-6c19-5011-a762-8f16267d372c', 1)
+  AND voice_key = 'character:하나:female_calm'
+  AND (entity_type NOT IN ('grammar_point','exercise') OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'd_ko_ready_repair:1')
+  AND source_text_hash IS NOT NULL
+  AND source_text_hash <> '33f092e22d804ba2f76bd3f1b8b69a35821701b34bcc36916242d5f47f75ab8a'
+  AND status <> 'archived';
+INSERT INTO audio_assets (
+  id, language_id, language_variant_id, entity_type, entity_id, source_text_hash,
+  voice_key, provider, provider_model, storage_url, duration_ms, generated_at, checksum, status, metadata
+) VALUES (
+  UUID_TO_BIN('5dd188d9-402f-5d6f-af7e-6b90754831eb', 1), @audio_language_id, @audio_variant_id, 'dialogue_turn', UUID_TO_BIN('0db17785-6c19-5011-a762-8f16267d372c', 1), '33f092e22d804ba2f76bd3f1b8b69a35821701b34bcc36916242d5f47f75ab8a',
+  'character:하나:female_calm', 'elevenlabs', 'eleven_multilingual_v2', 'audio/generated/ko-KR/dialogues/6441d86efc6b6f58c19c4cc390272b87f6ee5d979a037c1c03b23c7e4edb7d48.mp3', 1436, '2026-09-14 12:20:06.366123', 'cc89c9b9fb71ad4634f819fcac89bf0012bd74f2780f650981dffe180ece17f1', 'validated', '{"audio_key":"6441d86efc6b6f58c19c4cc390272b87f6ee5d979a037c1c03b23c7e4edb7d48","entity_key":"d_ko_ready_repair:1","voice_id":"7oLyBHyhxAjrctX6ZQlw","voice_name":"Bomisori - Warm and Clear","voice_labels":{"gender":"female","accent":"seoul","age":"middle_aged","category":"professional","language":"ko","use_case":"narrative_story","descriptive":"calm"},"output_format":"mp3_44100_192","file_sha256":"cc89c9b9fb71ad4634f819fcac89bf0012bd74f2780f650981dffe180ece17f1","settings":{"stability":0.68,"similarity_boost":0.89,"style":0.06,"use_speaker_boost":true,"speed":0.95},"relative_path":"audio/generated/ko-KR/dialogues/6441d86efc6b6f58c19c4cc390272b87f6ee5d979a037c1c03b23c7e4edb7d48.mp3"}'
 ) ON DUPLICATE KEY UPDATE
   provider = VALUES(provider),
   provider_model = VALUES(provider_model),
@@ -1232,6 +1440,32 @@ INSERT INTO audio_assets (
   status = VALUES(status),
   metadata = VALUES(metadata);
 
+-- d_ko_ready_intro:4 -> audio/generated/ko-KR/dialogues/a5d7fbdc8098ede8790c879fa5ad5b39e4663e4013938f3d8463587d2ca53970.mp3
+UPDATE audio_assets
+SET status = 'archived'
+WHERE entity_type = 'dialogue_turn'
+  AND entity_id = UUID_TO_BIN('803d0744-5e45-52cc-8a90-0b1e8e48f598', 1)
+  AND voice_key = 'character:준호:male_bright'
+  AND (entity_type NOT IN ('grammar_point','exercise') OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'd_ko_ready_intro:4')
+  AND source_text_hash IS NOT NULL
+  AND source_text_hash <> 'ab89176dc9d0a2459af6b344c559219a3a2a1d1e5d906a257ffb06571ae86cdb'
+  AND status <> 'archived';
+INSERT INTO audio_assets (
+  id, language_id, language_variant_id, entity_type, entity_id, source_text_hash,
+  voice_key, provider, provider_model, storage_url, duration_ms, generated_at, checksum, status, metadata
+) VALUES (
+  UUID_TO_BIN('75b0fc36-dd78-55d2-8a29-0f026a0ea39c', 1), @audio_language_id, @audio_variant_id, 'dialogue_turn', UUID_TO_BIN('803d0744-5e45-52cc-8a90-0b1e8e48f598', 1), 'ab89176dc9d0a2459af6b344c559219a3a2a1d1e5d906a257ffb06571ae86cdb',
+  'character:준호:male_bright', 'elevenlabs', 'eleven_multilingual_v2', 'audio/generated/ko-KR/dialogues/a5d7fbdc8098ede8790c879fa5ad5b39e4663e4013938f3d8463587d2ca53970.mp3', 1332, '2026-09-14 12:20:06.663049', '35a7d2f0683efc4fc81f30e8110e5e03fff8743cb93f52940104e42a5514f8be', 'validated', '{"audio_key":"a5d7fbdc8098ede8790c879fa5ad5b39e4663e4013938f3d8463587d2ca53970","entity_key":"d_ko_ready_intro:4","voice_id":"L4az9Gb378GIycFl2nAB","voice_name":"KO - Calm, Friendly, Warm","voice_labels":{"gender":"male","accent":"standard","age":"young","category":"professional","language":"ko","use_case":"conversational","descriptive":"calm"},"output_format":"mp3_44100_192","file_sha256":"35a7d2f0683efc4fc81f30e8110e5e03fff8743cb93f52940104e42a5514f8be","settings":{"stability":0.52,"similarity_boost":0.86,"style":0.2,"use_speaker_boost":true,"speed":0.99},"relative_path":"audio/generated/ko-KR/dialogues/a5d7fbdc8098ede8790c879fa5ad5b39e4663e4013938f3d8463587d2ca53970.mp3"}'
+) ON DUPLICATE KEY UPDATE
+  provider = VALUES(provider),
+  provider_model = VALUES(provider_model),
+  storage_url = VALUES(storage_url),
+  duration_ms = VALUES(duration_ms),
+  generated_at = VALUES(generated_at),
+  checksum = VALUES(checksum),
+  status = VALUES(status),
+  metadata = VALUES(metadata);
+
 -- d_numbers_0_10_01:1 -> audio/generated/ko-KR/dialogues/a5edbce2d34677f76ee5c7ddab54962705f7e122ed8bbae7a977f04d0e9a2b8d.mp3
 UPDATE audio_assets
 SET status = 'archived'
@@ -1570,6 +1804,32 @@ INSERT INTO audio_assets (
   status = VALUES(status),
   metadata = VALUES(metadata);
 
+-- d_ko_ready_repair:3 -> audio/generated/ko-KR/dialogues/c470f666f529f478ea4257fbdea7383c86eef4bd4e1b12da8886c935ab3cfdac.mp3
+UPDATE audio_assets
+SET status = 'archived'
+WHERE entity_type = 'dialogue_turn'
+  AND entity_id = UUID_TO_BIN('9c39d986-9b24-5b53-8a35-246263e052ea', 1)
+  AND voice_key = 'character:하나:female_calm'
+  AND (entity_type NOT IN ('grammar_point','exercise') OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'd_ko_ready_repair:3')
+  AND source_text_hash IS NOT NULL
+  AND source_text_hash <> 'c7de3a1f4a971138cab06f613910f99794b3fe8ed0187e69fc1cbc1a87a503a4'
+  AND status <> 'archived';
+INSERT INTO audio_assets (
+  id, language_id, language_variant_id, entity_type, entity_id, source_text_hash,
+  voice_key, provider, provider_model, storage_url, duration_ms, generated_at, checksum, status, metadata
+) VALUES (
+  UUID_TO_BIN('89e5dc13-5e95-55ba-b9e5-f009ba0ca7c2', 1), @audio_language_id, @audio_variant_id, 'dialogue_turn', UUID_TO_BIN('9c39d986-9b24-5b53-8a35-246263e052ea', 1), 'c7de3a1f4a971138cab06f613910f99794b3fe8ed0187e69fc1cbc1a87a503a4',
+  'character:하나:female_calm', 'elevenlabs', 'eleven_multilingual_v2', 'audio/generated/ko-KR/dialogues/c470f666f529f478ea4257fbdea7383c86eef4bd4e1b12da8886c935ab3cfdac.mp3', 1071, '2026-09-14 12:20:07.414021', '1ebc6f94ffe0b0e6a64ebc59fba4a3859adc456d2f2db39e0fa16c8e1792f81f', 'validated', '{"audio_key":"c470f666f529f478ea4257fbdea7383c86eef4bd4e1b12da8886c935ab3cfdac","entity_key":"d_ko_ready_repair:3","voice_id":"7oLyBHyhxAjrctX6ZQlw","voice_name":"Bomisori - Warm and Clear","voice_labels":{"gender":"female","accent":"seoul","age":"middle_aged","category":"professional","language":"ko","use_case":"narrative_story","descriptive":"calm"},"output_format":"mp3_44100_192","file_sha256":"1ebc6f94ffe0b0e6a64ebc59fba4a3859adc456d2f2db39e0fa16c8e1792f81f","settings":{"stability":0.68,"similarity_boost":0.89,"style":0.06,"use_speaker_boost":true,"speed":0.95},"relative_path":"audio/generated/ko-KR/dialogues/c470f666f529f478ea4257fbdea7383c86eef4bd4e1b12da8886c935ab3cfdac.mp3"}'
+) ON DUPLICATE KEY UPDATE
+  provider = VALUES(provider),
+  provider_model = VALUES(provider_model),
+  storage_url = VALUES(storage_url),
+  duration_ms = VALUES(duration_ms),
+  generated_at = VALUES(generated_at),
+  checksum = VALUES(checksum),
+  status = VALUES(status),
+  metadata = VALUES(metadata);
+
 -- d_first_conversation_01:4 -> audio/generated/ko-KR/dialogues/c4978b23128c9ea58bb66829af29413dc07319ae965f9389f5d20e4ab7cbd874.mp3
 UPDATE audio_assets
 SET status = 'archived'
@@ -1612,6 +1872,32 @@ INSERT INTO audio_assets (
 ) VALUES (
   UUID_TO_BIN('1596c9e5-8d1b-53ce-ad37-860967791f73', 1), @audio_language_id, @audio_variant_id, 'dialogue_turn', UUID_TO_BIN('2de7849f-5585-5114-8839-40f644b305a5', 1), '30ded4b31df5e0f786f28bfb7e3aa09df72411f450fa7909a369f91af3d77404',
   'character:태호:male_calm', 'elevenlabs', 'eleven_multilingual_v2', 'audio/generated/ko-KR/dialogues/c4f67b1367015376ac096e8df12c6f7825ac3f884a92df3d2080abc09259e8ce.mp3', 1201, '2026-09-13 21:05:06.664194', 'f0f3be501891be364cec746a0bfcf276c6447808977c7c0199bc65b89f23ce73', 'validated', '{"audio_key":"c4f67b1367015376ac096e8df12c6f7825ac3f884a92df3d2080abc09259e8ce","entity_key":"d_how_are_you_02:4","voice_id":"QAuCXfOpYxbxOasYze98","voice_name":"Sein - Sweet & Gentle Korean\t","voice_labels":{"gender":"male","accent":"seoul","age":"young","category":"professional","language":"ko","use_case":"narrative_story","descriptive":"calm"},"output_format":"mp3_44100_192","file_sha256":"f0f3be501891be364cec746a0bfcf276c6447808977c7c0199bc65b89f23ce73","settings":{"stability":0.68,"similarity_boost":0.89,"style":0.06,"use_speaker_boost":true,"speed":0.95},"relative_path":"audio/generated/ko-KR/dialogues/c4f67b1367015376ac096e8df12c6f7825ac3f884a92df3d2080abc09259e8ce.mp3"}'
+) ON DUPLICATE KEY UPDATE
+  provider = VALUES(provider),
+  provider_model = VALUES(provider_model),
+  storage_url = VALUES(storage_url),
+  duration_ms = VALUES(duration_ms),
+  generated_at = VALUES(generated_at),
+  checksum = VALUES(checksum),
+  status = VALUES(status),
+  metadata = VALUES(metadata);
+
+-- d_ko_meaning_help:4 -> audio/generated/ko-KR/dialogues/c51de7df16020fb91b45a24a685311b5c16dac7c941d78d30237f49a844fc38c.mp3
+UPDATE audio_assets
+SET status = 'archived'
+WHERE entity_type = 'dialogue_turn'
+  AND entity_id = UUID_TO_BIN('3b5050cf-a16e-58f3-90ec-0bee0ec5a28b', 1)
+  AND voice_key = 'character:민수:male_warm'
+  AND (entity_type NOT IN ('grammar_point','exercise') OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'd_ko_meaning_help:4')
+  AND source_text_hash IS NOT NULL
+  AND source_text_hash <> '67c64c9cae445f707ce250b88595fa992fa4c6e2e5e05b1f2032c73d70151dd1'
+  AND status <> 'archived';
+INSERT INTO audio_assets (
+  id, language_id, language_variant_id, entity_type, entity_id, source_text_hash,
+  voice_key, provider, provider_model, storage_url, duration_ms, generated_at, checksum, status, metadata
+) VALUES (
+  UUID_TO_BIN('37745dc3-d77a-52b8-a981-c47140c32957', 1), @audio_language_id, @audio_variant_id, 'dialogue_turn', UUID_TO_BIN('3b5050cf-a16e-58f3-90ec-0bee0ec5a28b', 1), '67c64c9cae445f707ce250b88595fa992fa4c6e2e5e05b1f2032c73d70151dd1',
+  'character:민수:male_warm', 'elevenlabs', 'eleven_multilingual_v2', 'audio/generated/ko-KR/dialogues/c51de7df16020fb91b45a24a685311b5c16dac7c941d78d30237f49a844fc38c.mp3', 1436, '2026-09-14 12:20:07.878200', '7aa7bb7db54a36f5331eab39c5955136562c7b999f3470a10c123b46bc3829c1', 'validated', '{"audio_key":"c51de7df16020fb91b45a24a685311b5c16dac7c941d78d30237f49a844fc38c","entity_key":"d_ko_meaning_help:4","voice_id":"70DeQK5Ztp7WmEGGysLT","voice_name":"Hyun - Friendly and Natural","voice_labels":{"gender":"male","accent":"seoul","age":"young","category":"high_quality","language":"ko","use_case":"conversational","descriptive":"casual"},"output_format":"mp3_44100_192","file_sha256":"7aa7bb7db54a36f5331eab39c5955136562c7b999f3470a10c123b46bc3829c1","settings":{"stability":0.58,"similarity_boost":0.87,"style":0.14,"use_speaker_boost":true,"speed":0.97},"relative_path":"audio/generated/ko-KR/dialogues/c51de7df16020fb91b45a24a685311b5c16dac7c941d78d30237f49a844fc38c.mp3"}'
 ) ON DUPLICATE KEY UPDATE
   provider = VALUES(provider),
   provider_model = VALUES(provider_model),
@@ -1768,6 +2054,32 @@ INSERT INTO audio_assets (
 ) VALUES (
   UUID_TO_BIN('98c86834-f3d8-5aeb-824b-498d60c74afb', 1), @audio_language_id, @audio_variant_id, 'dialogue_turn', UUID_TO_BIN('4d3e38bf-d872-5e2a-bb5a-316eacb7c760', 1), '3ba1d18fcd6f6dc95ce9b88ac38d701b1903db772715cd737334a9aa45a7bfc2',
   'character:도윤:male_professional', 'elevenlabs', 'eleven_multilingual_v2', 'audio/generated/ko-KR/dialogues/d976907029734fb9a62ee9480a510d4e74e75b378b879eede58e1207a715bc13.mp3', 1280, '2026-09-13 21:05:09.872734', 'c8df548b29bf44ba0d2ab33842d2a4918b7a4c3e5f610889edc036d942693676', 'validated', '{"audio_key":"d976907029734fb9a62ee9480a510d4e74e75b378b879eede58e1207a715bc13","entity_key":"d_polite_words_02:4","voice_id":"MkyWvsz7jzJkip0vi9E6","voice_name":"Sung - Tender, Calm & Clear","voice_labels":{"gender":"male","accent":"standard","age":"young","category":"professional","language":"ko","use_case":"conversational","descriptive":"calm"},"output_format":"mp3_44100_192","file_sha256":"c8df548b29bf44ba0d2ab33842d2a4918b7a4c3e5f610889edc036d942693676","settings":{"stability":0.71,"similarity_boost":0.9,"style":0.05,"use_speaker_boost":true,"speed":0.96},"relative_path":"audio/generated/ko-KR/dialogues/d976907029734fb9a62ee9480a510d4e74e75b378b879eede58e1207a715bc13.mp3"}'
+) ON DUPLICATE KEY UPDATE
+  provider = VALUES(provider),
+  provider_model = VALUES(provider_model),
+  storage_url = VALUES(storage_url),
+  duration_ms = VALUES(duration_ms),
+  generated_at = VALUES(generated_at),
+  checksum = VALUES(checksum),
+  status = VALUES(status),
+  metadata = VALUES(metadata);
+
+-- d_ko_ready_repair:2 -> audio/generated/ko-KR/dialogues/da192994ce710d5d86c46abdccebf61ad1cb89b9e2237de666f097823b5b7df9.mp3
+UPDATE audio_assets
+SET status = 'archived'
+WHERE entity_type = 'dialogue_turn'
+  AND entity_id = UUID_TO_BIN('319618fb-6f40-5f40-8793-9ff506cfedbd', 1)
+  AND voice_key = 'character:태호:male_calm'
+  AND (entity_type NOT IN ('grammar_point','exercise') OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'd_ko_ready_repair:2')
+  AND source_text_hash IS NOT NULL
+  AND source_text_hash <> 'ae713b65439d2c5c68601f886c885c9bf9839769e45c6de8c42f382e8c4a0f2f'
+  AND status <> 'archived';
+INSERT INTO audio_assets (
+  id, language_id, language_variant_id, entity_type, entity_id, source_text_hash,
+  voice_key, provider, provider_model, storage_url, duration_ms, generated_at, checksum, status, metadata
+) VALUES (
+  UUID_TO_BIN('5b4473c1-5bfe-55b0-abe0-d09f4d46dc38', 1), @audio_language_id, @audio_variant_id, 'dialogue_turn', UUID_TO_BIN('319618fb-6f40-5f40-8793-9ff506cfedbd', 1), 'ae713b65439d2c5c68601f886c885c9bf9839769e45c6de8c42f382e8c4a0f2f',
+  'character:태호:male_calm', 'elevenlabs', 'eleven_multilingual_v2', 'audio/generated/ko-KR/dialogues/da192994ce710d5d86c46abdccebf61ad1cb89b9e2237de666f097823b5b7df9.mp3', 1280, '2026-09-14 12:20:08.400834', '9375bd094f03c003f7f68cf86360ed970f8e76c914b5a9f44869e8d05be07f36', 'validated', '{"audio_key":"da192994ce710d5d86c46abdccebf61ad1cb89b9e2237de666f097823b5b7df9","entity_key":"d_ko_ready_repair:2","voice_id":"QAuCXfOpYxbxOasYze98","voice_name":"Sein - Sweet & Gentle Korean\t","voice_labels":{"gender":"male","accent":"seoul","age":"young","category":"professional","language":"ko","use_case":"narrative_story","descriptive":"calm"},"output_format":"mp3_44100_192","file_sha256":"9375bd094f03c003f7f68cf86360ed970f8e76c914b5a9f44869e8d05be07f36","settings":{"stability":0.68,"similarity_boost":0.89,"style":0.06,"use_speaker_boost":true,"speed":0.95},"relative_path":"audio/generated/ko-KR/dialogues/da192994ce710d5d86c46abdccebf61ad1cb89b9e2237de666f097823b5b7df9.mp3"}'
 ) ON DUPLICATE KEY UPDATE
   provider = VALUES(provider),
   provider_model = VALUES(provider_model),
@@ -2054,6 +2366,32 @@ INSERT INTO audio_assets (
 ) VALUES (
   UUID_TO_BIN('4c6c4ef9-c3b0-58b0-bd0a-21028d0a3bd8', 1), @audio_language_id, @audio_variant_id, 'dialogue_turn', UUID_TO_BIN('df27320c-2cdf-5741-9288-447753fc07d3', 1), 'ac9c9213237bcb2a20d2322acdea16ba4197cb993bd7f0d9d8d56b932e26fa69',
   'character:태호:male_calm', 'elevenlabs', 'eleven_multilingual_v2', 'audio/generated/ko-KR/dialogues/f67d14be4d993e8639dfed6a9e7d06da0827e4b82c4a7ee0708169f86dc0a1b8.mp3', 1280, '2026-09-13 21:05:14.920169', '4ebc630a4db336c7d06c01879987ed4a63d24d7af7f80988a356cee1e3c4dfc1', 'validated', '{"audio_key":"f67d14be4d993e8639dfed6a9e7d06da0827e4b82c4a7ee0708169f86dc0a1b8","entity_key":"d_my_name_01:4","voice_id":"QAuCXfOpYxbxOasYze98","voice_name":"Sein - Sweet & Gentle Korean\t","voice_labels":{"gender":"male","accent":"seoul","age":"young","category":"professional","language":"ko","use_case":"narrative_story","descriptive":"calm"},"output_format":"mp3_44100_192","file_sha256":"4ebc630a4db336c7d06c01879987ed4a63d24d7af7f80988a356cee1e3c4dfc1","settings":{"stability":0.68,"similarity_boost":0.89,"style":0.06,"use_speaker_boost":true,"speed":0.95},"relative_path":"audio/generated/ko-KR/dialogues/f67d14be4d993e8639dfed6a9e7d06da0827e4b82c4a7ee0708169f86dc0a1b8.mp3"}'
+) ON DUPLICATE KEY UPDATE
+  provider = VALUES(provider),
+  provider_model = VALUES(provider_model),
+  storage_url = VALUES(storage_url),
+  duration_ms = VALUES(duration_ms),
+  generated_at = VALUES(generated_at),
+  checksum = VALUES(checksum),
+  status = VALUES(status),
+  metadata = VALUES(metadata);
+
+-- d_ko_ready_intro:2 -> audio/generated/ko-KR/dialogues/f74b6d9383dd8e097b68d809cc2756caecec2831672bcf92377bec9ebcca24f5.mp3
+UPDATE audio_assets
+SET status = 'archived'
+WHERE entity_type = 'dialogue_turn'
+  AND entity_id = UUID_TO_BIN('8e75fdd5-1295-54b3-8d8c-f387788e76d6', 1)
+  AND voice_key = 'character:준호:male_bright'
+  AND (entity_type NOT IN ('grammar_point','exercise') OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'd_ko_ready_intro:2')
+  AND source_text_hash IS NOT NULL
+  AND source_text_hash <> '67c64c9cae445f707ce250b88595fa992fa4c6e2e5e05b1f2032c73d70151dd1'
+  AND status <> 'archived';
+INSERT INTO audio_assets (
+  id, language_id, language_variant_id, entity_type, entity_id, source_text_hash,
+  voice_key, provider, provider_model, storage_url, duration_ms, generated_at, checksum, status, metadata
+) VALUES (
+  UUID_TO_BIN('9fe55fb7-9ccc-548f-86ee-ee7277376801', 1), @audio_language_id, @audio_variant_id, 'dialogue_turn', UUID_TO_BIN('8e75fdd5-1295-54b3-8d8c-f387788e76d6', 1), '67c64c9cae445f707ce250b88595fa992fa4c6e2e5e05b1f2032c73d70151dd1',
+  'character:준호:male_bright', 'elevenlabs', 'eleven_multilingual_v2', 'audio/generated/ko-KR/dialogues/f74b6d9383dd8e097b68d809cc2756caecec2831672bcf92377bec9ebcca24f5.mp3', 1280, '2026-09-14 12:20:08.894123', '9511f6a8db833fe8de49783a3b3131d814245c0a4f92ffa74e0ed5eb65078b28', 'validated', '{"audio_key":"f74b6d9383dd8e097b68d809cc2756caecec2831672bcf92377bec9ebcca24f5","entity_key":"d_ko_ready_intro:2","voice_id":"L4az9Gb378GIycFl2nAB","voice_name":"KO - Calm, Friendly, Warm","voice_labels":{"gender":"male","accent":"standard","age":"young","category":"professional","language":"ko","use_case":"conversational","descriptive":"calm"},"output_format":"mp3_44100_192","file_sha256":"9511f6a8db833fe8de49783a3b3131d814245c0a4f92ffa74e0ed5eb65078b28","settings":{"stability":0.52,"similarity_boost":0.86,"style":0.2,"use_speaker_boost":true,"speed":0.99},"relative_path":"audio/generated/ko-KR/dialogues/f74b6d9383dd8e097b68d809cc2756caecec2831672bcf92377bec9ebcca24f5.mp3"}'
 ) ON DUPLICATE KEY UPDATE
   provider = VALUES(provider),
   provider_model = VALUES(provider_model),
@@ -5288,6 +5626,32 @@ INSERT INTO audio_assets (
   status = VALUES(status),
   metadata = VALUES(metadata);
 
+-- g_ko_jamo_vowels:example:1 -> audio/generated/ko-KR/utterances/06a1f4a7553934df1ba82a0b09996347de4199410209e11d63521cfe6454b784.mp3
+UPDATE audio_assets
+SET status = 'archived'
+WHERE entity_type = 'grammar_point'
+  AND entity_id = UUID_TO_BIN('534ecb75-6efd-542d-8cf6-a6480f06a370', 1)
+  AND voice_key = 'ko-kr.sentence.native-clear'
+  AND (entity_type NOT IN ('grammar_point','exercise') OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'g_ko_jamo_vowels:example:1')
+  AND source_text_hash IS NOT NULL
+  AND source_text_hash <> '8bafb6b7d17ead4985bfd429412da3a6276b40529b508f7f57f9b3a25bd5c727'
+  AND status <> 'archived';
+INSERT INTO audio_assets (
+  id, language_id, language_variant_id, entity_type, entity_id, source_text_hash,
+  voice_key, provider, provider_model, storage_url, duration_ms, generated_at, checksum, status, metadata
+) VALUES (
+  UUID_TO_BIN('c41e0135-adbe-510e-84d0-be3af8aad18d', 1), @audio_language_id, @audio_variant_id, 'grammar_point', UUID_TO_BIN('534ecb75-6efd-542d-8cf6-a6480f06a370', 1), '8bafb6b7d17ead4985bfd429412da3a6276b40529b508f7f57f9b3a25bd5c727',
+  'ko-kr.sentence.native-clear', 'elevenlabs', 'eleven_multilingual_v2', 'audio/generated/ko-KR/utterances/06a1f4a7553934df1ba82a0b09996347de4199410209e11d63521cfe6454b784.mp3', 835, '2026-09-14 12:20:09.459205', 'c0789ab05fd6f453ae9af7490b6a33de1de56687f5d2986667db70fcd8e611cc', 'validated', '{"audio_key":"06a1f4a7553934df1ba82a0b09996347de4199410209e11d63521cfe6454b784","entity_key":"g_ko_jamo_vowels:example:1","voice_id":"5DWGv3VDkihNUcbvaonB","voice_name":"Kelee K - Seoul Narrator","voice_labels":{"gender":"female","accent":"seoul","age":"young","category":"professional","language":"ko","use_case":"conversational","descriptive":"casual"},"output_format":"mp3_44100_192","file_sha256":"c0789ab05fd6f453ae9af7490b6a33de1de56687f5d2986667db70fcd8e611cc","settings":{"stability":0.68,"similarity_boost":0.88,"style":0.0,"use_speaker_boost":true,"speed":0.95},"relative_path":"audio/generated/ko-KR/utterances/06a1f4a7553934df1ba82a0b09996347de4199410209e11d63521cfe6454b784.mp3"}'
+) ON DUPLICATE KEY UPDATE
+  provider = VALUES(provider),
+  provider_model = VALUES(provider_model),
+  storage_url = VALUES(storage_url),
+  duration_ms = VALUES(duration_ms),
+  generated_at = VALUES(generated_at),
+  checksum = VALUES(checksum),
+  status = VALUES(status),
+  metadata = VALUES(metadata);
+
 -- u_numbers_0_10_04 -> audio/generated/ko-KR/utterances/09269131bff9797b87762c29edde784311a2287b4d64f35e37dd7e07582234aa.mp3
 UPDATE audio_assets
 SET status = 'archived'
@@ -5392,6 +5756,32 @@ INSERT INTO audio_assets (
   status = VALUES(status),
   metadata = VALUES(metadata);
 
+-- u_ko_block_vertical -> audio/generated/ko-KR/utterances/10a44c4a22e10723e5624cb90cf5f3991b8dd2744830364a874f9ff74622a348.mp3
+UPDATE audio_assets
+SET status = 'archived'
+WHERE entity_type = 'utterance'
+  AND entity_id = UUID_TO_BIN('26ebcd68-bb95-5cbd-a7df-04653f34a932', 1)
+  AND voice_key = 'ko-kr.sentence.native-clear'
+  AND (entity_type NOT IN ('grammar_point','exercise') OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'u_ko_block_vertical')
+  AND source_text_hash IS NOT NULL
+  AND source_text_hash <> 'a6c8f7a82e40af47c33f7cb9a099e5a9fabfe158416972573a7376f549268bbe'
+  AND status <> 'archived';
+INSERT INTO audio_assets (
+  id, language_id, language_variant_id, entity_type, entity_id, source_text_hash,
+  voice_key, provider, provider_model, storage_url, duration_ms, generated_at, checksum, status, metadata
+) VALUES (
+  UUID_TO_BIN('46aa076b-10e6-5c88-b107-aab26a294fd4', 1), @audio_language_id, @audio_variant_id, 'utterance', UUID_TO_BIN('26ebcd68-bb95-5cbd-a7df-04653f34a932', 1), 'a6c8f7a82e40af47c33f7cb9a099e5a9fabfe158416972573a7376f549268bbe',
+  'ko-kr.sentence.native-clear', 'elevenlabs', 'eleven_multilingual_v2', 'audio/generated/ko-KR/utterances/10a44c4a22e10723e5624cb90cf5f3991b8dd2744830364a874f9ff74622a348.mp3', 1097, '2026-09-14 12:20:09.922462', '4cd40db5587f11896be467d217cb3dae342b7b5eb2e7f4e90c31c33698794edf', 'validated', '{"audio_key":"10a44c4a22e10723e5624cb90cf5f3991b8dd2744830364a874f9ff74622a348","entity_key":"u_ko_block_vertical","voice_id":"5DWGv3VDkihNUcbvaonB","voice_name":"Kelee K - Seoul Narrator","voice_labels":{"gender":"female","accent":"seoul","age":"young","category":"professional","language":"ko","use_case":"conversational","descriptive":"casual"},"output_format":"mp3_44100_192","file_sha256":"4cd40db5587f11896be467d217cb3dae342b7b5eb2e7f4e90c31c33698794edf","settings":{"stability":0.68,"similarity_boost":0.88,"style":0.0,"use_speaker_boost":true,"speed":0.95},"relative_path":"audio/generated/ko-KR/utterances/10a44c4a22e10723e5624cb90cf5f3991b8dd2744830364a874f9ff74622a348.mp3"}'
+) ON DUPLICATE KEY UPDATE
+  provider = VALUES(provider),
+  provider_model = VALUES(provider_model),
+  storage_url = VALUES(storage_url),
+  duration_ms = VALUES(duration_ms),
+  generated_at = VALUES(generated_at),
+  checksum = VALUES(checksum),
+  status = VALUES(status),
+  metadata = VALUES(metadata);
+
 -- u_my_name_02 -> audio/generated/ko-KR/utterances/121e2aed76fde8f6b290a3b1e57e6266dcdaabfa2136b2a1ce908e922cf44089.mp3
 UPDATE audio_assets
 SET status = 'archived'
@@ -5434,6 +5824,32 @@ INSERT INTO audio_assets (
 ) VALUES (
   UUID_TO_BIN('15205e4c-04bf-5e6b-ae3c-75e32b9beff3', 1), @audio_language_id, @audio_variant_id, 'exercise', UUID_TO_BIN('a7337e0b-d654-5ee7-a344-a56a8e2f79ab', 1), '588d25be7d113ed1f1cfa0573ce4193253f6f8a3bc12426758159d2fbfc3ec4e',
   'ko-kr.sentence.native-clear', 'elevenlabs', 'eleven_multilingual_v2', 'audio/generated/ko-KR/utterances/121e2aed76fde8f6b290a3b1e57e6266dcdaabfa2136b2a1ce908e922cf44089.mp3', 1384, '2026-09-13 21:05:50.698216', 'b971b5835174285a267a15f03d1e4fcef6f8c7b30ea5d37b88cef87f35dbf096', 'validated', '{"audio_key":"121e2aed76fde8f6b290a3b1e57e6266dcdaabfa2136b2a1ce908e922cf44089","entity_key":"e_my_name_01_listen","voice_id":"5DWGv3VDkihNUcbvaonB","voice_name":"Kelee K - Seoul Narrator","voice_labels":{"gender":"female","accent":"seoul","age":"young","category":"professional","language":"ko","use_case":"conversational","descriptive":"casual"},"output_format":"mp3_44100_192","file_sha256":"b971b5835174285a267a15f03d1e4fcef6f8c7b30ea5d37b88cef87f35dbf096","settings":{"stability":0.68,"similarity_boost":0.88,"style":0.0,"use_speaker_boost":true,"speed":0.95},"relative_path":"audio/generated/ko-KR/utterances/121e2aed76fde8f6b290a3b1e57e6266dcdaabfa2136b2a1ce908e922cf44089.mp3"}'
+) ON DUPLICATE KEY UPDATE
+  provider = VALUES(provider),
+  provider_model = VALUES(provider_model),
+  storage_url = VALUES(storage_url),
+  duration_ms = VALUES(duration_ms),
+  generated_at = VALUES(generated_at),
+  checksum = VALUES(checksum),
+  status = VALUES(status),
+  metadata = VALUES(metadata);
+
+-- u_ko_jamo_vowel_examples -> audio/generated/ko-KR/utterances/14caac180b504646e7c9d3ff0a0832a297f1e60c73475d798e90855bdf23a4b0.mp3
+UPDATE audio_assets
+SET status = 'archived'
+WHERE entity_type = 'utterance'
+  AND entity_id = UUID_TO_BIN('9dacc31b-f19c-5d01-83e2-47372c23d4b5', 1)
+  AND voice_key = 'ko-kr.sentence.native-clear'
+  AND (entity_type NOT IN ('grammar_point','exercise') OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'u_ko_jamo_vowel_examples')
+  AND source_text_hash IS NOT NULL
+  AND source_text_hash <> '913d50c22cdc5ea22fc18a0adf56aaddabe471303fa9552cdd3b3dec939b8693'
+  AND status <> 'archived';
+INSERT INTO audio_assets (
+  id, language_id, language_variant_id, entity_type, entity_id, source_text_hash,
+  voice_key, provider, provider_model, storage_url, duration_ms, generated_at, checksum, status, metadata
+) VALUES (
+  UUID_TO_BIN('6cce7457-17f8-5dc8-9b7a-983ab48f8050', 1), @audio_language_id, @audio_variant_id, 'utterance', UUID_TO_BIN('9dacc31b-f19c-5d01-83e2-47372c23d4b5', 1), '913d50c22cdc5ea22fc18a0adf56aaddabe471303fa9552cdd3b3dec939b8693',
+  'ko-kr.sentence.native-clear', 'elevenlabs', 'eleven_multilingual_v2', 'audio/generated/ko-KR/utterances/14caac180b504646e7c9d3ff0a0832a297f1e60c73475d798e90855bdf23a4b0.mp3', 1488, '2026-09-14 12:20:10.651343', '21097c1e03ff8a86791c446575da2fc543b16149407f37463316e160ff8a99a0', 'validated', '{"audio_key":"14caac180b504646e7c9d3ff0a0832a297f1e60c73475d798e90855bdf23a4b0","entity_key":"u_ko_jamo_vowel_examples","voice_id":"5DWGv3VDkihNUcbvaonB","voice_name":"Kelee K - Seoul Narrator","voice_labels":{"gender":"female","accent":"seoul","age":"young","category":"professional","language":"ko","use_case":"conversational","descriptive":"casual"},"output_format":"mp3_44100_192","file_sha256":"21097c1e03ff8a86791c446575da2fc543b16149407f37463316e160ff8a99a0","settings":{"stability":0.68,"similarity_boost":0.88,"style":0.0,"use_speaker_boost":true,"speed":0.95},"relative_path":"audio/generated/ko-KR/utterances/14caac180b504646e7c9d3ff0a0832a297f1e60c73475d798e90855bdf23a4b0.mp3"}'
 ) ON DUPLICATE KEY UPDATE
   provider = VALUES(provider),
   provider_model = VALUES(provider_model),
@@ -5512,6 +5928,58 @@ INSERT INTO audio_assets (
 ) VALUES (
   UUID_TO_BIN('1021808a-6e9f-579c-98b3-c8e84769bb9f', 1), @audio_language_id, @audio_variant_id, 'utterance', UUID_TO_BIN('c706382c-6563-5702-a33e-d404f86055b3', 1), '0cdb6b1b37190b85ae104b878ecd2c35b535f7154cf8ea27ee6e5b70789e39b1',
   'ko-kr.sentence.native-clear', 'elevenlabs', 'eleven_multilingual_v2', 'audio/generated/ko-KR/utterances/18f99c3e7677a9dc0567d4755399fe5b40fc4e405a5f5b0218d82673505f0566.mp3', 1253, '2026-09-13 21:05:51.829308', '65800e13b5cbcd2ff342c47ddb87c4398fc016316e1f8abe65447daf43bfc9e5', 'validated', '{"audio_key":"18f99c3e7677a9dc0567d4755399fe5b40fc4e405a5f5b0218d82673505f0566","entity_key":"u_polite_words_03","voice_id":"5DWGv3VDkihNUcbvaonB","voice_name":"Kelee K - Seoul Narrator","voice_labels":{"gender":"female","accent":"seoul","age":"young","category":"professional","language":"ko","use_case":"conversational","descriptive":"casual"},"output_format":"mp3_44100_192","file_sha256":"65800e13b5cbcd2ff342c47ddb87c4398fc016316e1f8abe65447daf43bfc9e5","settings":{"stability":0.68,"similarity_boost":0.88,"style":0.0,"use_speaker_boost":true,"speed":0.95},"relative_path":"audio/generated/ko-KR/utterances/18f99c3e7677a9dc0567d4755399fe5b40fc4e405a5f5b0218d82673505f0566.mp3"}'
+) ON DUPLICATE KEY UPDATE
+  provider = VALUES(provider),
+  provider_model = VALUES(provider_model),
+  storage_url = VALUES(storage_url),
+  duration_ms = VALUES(duration_ms),
+  generated_at = VALUES(generated_at),
+  checksum = VALUES(checksum),
+  status = VALUES(status),
+  metadata = VALUES(metadata);
+
+-- u_ko_meaning_slow -> audio/generated/ko-KR/utterances/1e409d4c8ff1f3c86ead4dd40e3ab66ea231982f935572cd7f3e242bcefb52c4.mp3
+UPDATE audio_assets
+SET status = 'archived'
+WHERE entity_type = 'utterance'
+  AND entity_id = UUID_TO_BIN('04ec92a3-ad3c-5744-ba89-c242b64c01c0', 1)
+  AND voice_key = 'ko-kr.sentence.native-clear'
+  AND (entity_type NOT IN ('grammar_point','exercise') OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'u_ko_meaning_slow')
+  AND source_text_hash IS NOT NULL
+  AND source_text_hash <> 'b92077eb29673b239bf1a7dc2e4d05b54b2f5b05335a99786207c7b4bed4948d'
+  AND status <> 'archived';
+INSERT INTO audio_assets (
+  id, language_id, language_variant_id, entity_type, entity_id, source_text_hash,
+  voice_key, provider, provider_model, storage_url, duration_ms, generated_at, checksum, status, metadata
+) VALUES (
+  UUID_TO_BIN('ea329f9e-d715-57ce-9bda-93194bf9e101', 1), @audio_language_id, @audio_variant_id, 'utterance', UUID_TO_BIN('04ec92a3-ad3c-5744-ba89-c242b64c01c0', 1), 'b92077eb29673b239bf1a7dc2e4d05b54b2f5b05335a99786207c7b4bed4948d',
+  'ko-kr.sentence.native-clear', 'elevenlabs', 'eleven_multilingual_v2', 'audio/generated/ko-KR/utterances/1e409d4c8ff1f3c86ead4dd40e3ab66ea231982f935572cd7f3e242bcefb52c4.mp3', 1619, '2026-09-13 21:05:51.765569', '300d56b09b94993aefca5e4b873bb5bb5c156a9bcb5661a1a5684ca759a44652', 'validated', '{"audio_key":"1e409d4c8ff1f3c86ead4dd40e3ab66ea231982f935572cd7f3e242bcefb52c4","entity_key":"u_ko_meaning_slow","voice_id":"5DWGv3VDkihNUcbvaonB","voice_name":"Kelee K - Seoul Narrator","voice_labels":{"gender":"female","accent":"seoul","age":"young","category":"professional","language":"ko","use_case":"conversational","descriptive":"casual"},"output_format":"mp3_44100_192","file_sha256":"300d56b09b94993aefca5e4b873bb5bb5c156a9bcb5661a1a5684ca759a44652","settings":{"stability":0.68,"similarity_boost":0.88,"style":0.0,"use_speaker_boost":true,"speed":0.95},"relative_path":"audio/generated/ko-KR/utterances/1e409d4c8ff1f3c86ead4dd40e3ab66ea231982f935572cd7f3e242bcefb52c4.mp3"}'
+) ON DUPLICATE KEY UPDATE
+  provider = VALUES(provider),
+  provider_model = VALUES(provider_model),
+  storage_url = VALUES(storage_url),
+  duration_ms = VALUES(duration_ms),
+  generated_at = VALUES(generated_at),
+  checksum = VALUES(checksum),
+  status = VALUES(status),
+  metadata = VALUES(metadata);
+
+-- g_ko_meaning_chunks:example:3 -> audio/generated/ko-KR/utterances/1e409d4c8ff1f3c86ead4dd40e3ab66ea231982f935572cd7f3e242bcefb52c4.mp3
+UPDATE audio_assets
+SET status = 'archived'
+WHERE entity_type = 'grammar_point'
+  AND entity_id = UUID_TO_BIN('5e5b068b-752b-503c-92c8-54f52742ac0e', 1)
+  AND voice_key = 'ko-kr.sentence.native-clear'
+  AND (entity_type NOT IN ('grammar_point','exercise') OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'g_ko_meaning_chunks:example:3')
+  AND source_text_hash IS NOT NULL
+  AND source_text_hash <> 'b92077eb29673b239bf1a7dc2e4d05b54b2f5b05335a99786207c7b4bed4948d'
+  AND status <> 'archived';
+INSERT INTO audio_assets (
+  id, language_id, language_variant_id, entity_type, entity_id, source_text_hash,
+  voice_key, provider, provider_model, storage_url, duration_ms, generated_at, checksum, status, metadata
+) VALUES (
+  UUID_TO_BIN('0849894e-bbdc-5c63-a019-a4654f6620af', 1), @audio_language_id, @audio_variant_id, 'grammar_point', UUID_TO_BIN('5e5b068b-752b-503c-92c8-54f52742ac0e', 1), 'b92077eb29673b239bf1a7dc2e4d05b54b2f5b05335a99786207c7b4bed4948d',
+  'ko-kr.sentence.native-clear', 'elevenlabs', 'eleven_multilingual_v2', 'audio/generated/ko-KR/utterances/1e409d4c8ff1f3c86ead4dd40e3ab66ea231982f935572cd7f3e242bcefb52c4.mp3', 1619, '2026-09-13 21:05:51.765569', '300d56b09b94993aefca5e4b873bb5bb5c156a9bcb5661a1a5684ca759a44652', 'validated', '{"audio_key":"1e409d4c8ff1f3c86ead4dd40e3ab66ea231982f935572cd7f3e242bcefb52c4","entity_key":"g_ko_meaning_chunks:example:3","voice_id":"5DWGv3VDkihNUcbvaonB","voice_name":"Kelee K - Seoul Narrator","voice_labels":{"gender":"female","accent":"seoul","age":"young","category":"professional","language":"ko","use_case":"conversational","descriptive":"casual"},"output_format":"mp3_44100_192","file_sha256":"300d56b09b94993aefca5e4b873bb5bb5c156a9bcb5661a1a5684ca759a44652","settings":{"stability":0.68,"similarity_boost":0.88,"style":0.0,"use_speaker_boost":true,"speed":0.95},"relative_path":"audio/generated/ko-KR/utterances/1e409d4c8ff1f3c86ead4dd40e3ab66ea231982f935572cd7f3e242bcefb52c4.mp3"}'
 ) ON DUPLICATE KEY UPDATE
   provider = VALUES(provider),
   provider_model = VALUES(provider_model),
@@ -5616,6 +6084,84 @@ INSERT INTO audio_assets (
 ) VALUES (
   UUID_TO_BIN('11c71901-c707-57a4-9e34-b9166fc94002', 1), @audio_language_id, @audio_variant_id, 'utterance', UUID_TO_BIN('e31c21ea-dd2d-5bb8-a369-40f6f088043e', 1), '3c3b8a05f04c0d19676e1202181758660d0b5b4221ef85ca5f0112799d0a4073',
   'ko-kr.sentence.native-clear', 'elevenlabs', 'eleven_multilingual_v2', 'audio/generated/ko-KR/utterances/2e4e1fc54780163bd68d726fd281843c494da486cc20e46df9366ef09238134a.mp3', 1802, '2026-09-13 21:05:52.938701', '968b00d9319647fdcca2798aac945e11af643687df1165d7251d2c87947fa9a1', 'validated', '{"audio_key":"2e4e1fc54780163bd68d726fd281843c494da486cc20e46df9366ef09238134a","entity_key":"u_first_sounds_03","voice_id":"5DWGv3VDkihNUcbvaonB","voice_name":"Kelee K - Seoul Narrator","voice_labels":{"gender":"female","accent":"seoul","age":"young","category":"professional","language":"ko","use_case":"conversational","descriptive":"casual"},"output_format":"mp3_44100_192","file_sha256":"968b00d9319647fdcca2798aac945e11af643687df1165d7251d2c87947fa9a1","settings":{"stability":0.68,"similarity_boost":0.88,"style":0.0,"use_speaker_boost":true,"speed":0.95},"relative_path":"audio/generated/ko-KR/utterances/2e4e1fc54780163bd68d726fd281843c494da486cc20e46df9366ef09238134a.mp3"}'
+) ON DUPLICATE KEY UPDATE
+  provider = VALUES(provider),
+  provider_model = VALUES(provider_model),
+  storage_url = VALUES(storage_url),
+  duration_ms = VALUES(duration_ms),
+  generated_at = VALUES(generated_at),
+  checksum = VALUES(checksum),
+  status = VALUES(status),
+  metadata = VALUES(metadata);
+
+-- g_ko_jamo_consonants:example:3 -> audio/generated/ko-KR/utterances/30bffcdd7de7e8f283bcf7c5f0b88b4833006e09b3331305bec46bdb9f6137a2.mp3
+UPDATE audio_assets
+SET status = 'archived'
+WHERE entity_type = 'grammar_point'
+  AND entity_id = UUID_TO_BIN('4ecc43a0-0623-5bc1-acbc-bdbaabcaef18', 1)
+  AND voice_key = 'ko-kr.sentence.native-clear'
+  AND (entity_type NOT IN ('grammar_point','exercise') OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'g_ko_jamo_consonants:example:3')
+  AND source_text_hash IS NOT NULL
+  AND source_text_hash <> '3c12bb52442aa6e6aaffa023347cf60cb02da6f5a72936aeaafcb162878786d8'
+  AND status <> 'archived';
+INSERT INTO audio_assets (
+  id, language_id, language_variant_id, entity_type, entity_id, source_text_hash,
+  voice_key, provider, provider_model, storage_url, duration_ms, generated_at, checksum, status, metadata
+) VALUES (
+  UUID_TO_BIN('402d8944-334a-53a3-814c-c96586cc29aa', 1), @audio_language_id, @audio_variant_id, 'grammar_point', UUID_TO_BIN('4ecc43a0-0623-5bc1-acbc-bdbaabcaef18', 1), '3c12bb52442aa6e6aaffa023347cf60cb02da6f5a72936aeaafcb162878786d8',
+  'ko-kr.sentence.native-clear', 'elevenlabs', 'eleven_multilingual_v2', 'audio/generated/ko-KR/utterances/30bffcdd7de7e8f283bcf7c5f0b88b4833006e09b3331305bec46bdb9f6137a2.mp3', 835, '2026-09-14 12:20:10.949471', '7a4060ed2f3f2bc4faaf1ca8188db16534e8f14f2f598012e484c9e19fd69d06', 'validated', '{"audio_key":"30bffcdd7de7e8f283bcf7c5f0b88b4833006e09b3331305bec46bdb9f6137a2","entity_key":"g_ko_jamo_consonants:example:3","voice_id":"5DWGv3VDkihNUcbvaonB","voice_name":"Kelee K - Seoul Narrator","voice_labels":{"gender":"female","accent":"seoul","age":"young","category":"professional","language":"ko","use_case":"conversational","descriptive":"casual"},"output_format":"mp3_44100_192","file_sha256":"7a4060ed2f3f2bc4faaf1ca8188db16534e8f14f2f598012e484c9e19fd69d06","settings":{"stability":0.68,"similarity_boost":0.88,"style":0.0,"use_speaker_boost":true,"speed":0.95},"relative_path":"audio/generated/ko-KR/utterances/30bffcdd7de7e8f283bcf7c5f0b88b4833006e09b3331305bec46bdb9f6137a2.mp3"}'
+) ON DUPLICATE KEY UPDATE
+  provider = VALUES(provider),
+  provider_model = VALUES(provider_model),
+  storage_url = VALUES(storage_url),
+  duration_ms = VALUES(duration_ms),
+  generated_at = VALUES(generated_at),
+  checksum = VALUES(checksum),
+  status = VALUES(status),
+  metadata = VALUES(metadata);
+
+-- ex_ko_jamo_hear_eu -> audio/generated/ko-KR/utterances/337accc6564fdb5db0c38f95add076b3c6ebb1d27cf1ba61147cec9446e15fa1.mp3
+UPDATE audio_assets
+SET status = 'archived'
+WHERE entity_type = 'exercise'
+  AND entity_id = UUID_TO_BIN('993d4319-1ea3-5b38-b94d-27615f5813d3', 1)
+  AND voice_key = 'ko-kr.sentence.native-clear'
+  AND (entity_type NOT IN ('grammar_point','exercise') OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'ex_ko_jamo_hear_eu')
+  AND source_text_hash IS NOT NULL
+  AND source_text_hash <> '963c2374ff4c553e8117542530ec80373f9624b973ba97d394e5500117a6fbef'
+  AND status <> 'archived';
+INSERT INTO audio_assets (
+  id, language_id, language_variant_id, entity_type, entity_id, source_text_hash,
+  voice_key, provider, provider_model, storage_url, duration_ms, generated_at, checksum, status, metadata
+) VALUES (
+  UUID_TO_BIN('10e0437a-4a15-5847-8840-dce749fffb3b', 1), @audio_language_id, @audio_variant_id, 'exercise', UUID_TO_BIN('993d4319-1ea3-5b38-b94d-27615f5813d3', 1), '963c2374ff4c553e8117542530ec80373f9624b973ba97d394e5500117a6fbef',
+  'ko-kr.sentence.native-clear', 'elevenlabs', 'eleven_multilingual_v2', 'audio/generated/ko-KR/utterances/337accc6564fdb5db0c38f95add076b3c6ebb1d27cf1ba61147cec9446e15fa1.mp3', 835, '2026-09-14 12:20:11.614310', 'cc1aa8f943993cd877dbeacad098dfd9a3273ff67b1bd6ffdc07bf0e726f7bd8', 'validated', '{"audio_key":"337accc6564fdb5db0c38f95add076b3c6ebb1d27cf1ba61147cec9446e15fa1","entity_key":"ex_ko_jamo_hear_eu","voice_id":"5DWGv3VDkihNUcbvaonB","voice_name":"Kelee K - Seoul Narrator","voice_labels":{"gender":"female","accent":"seoul","age":"young","category":"professional","language":"ko","use_case":"conversational","descriptive":"casual"},"output_format":"mp3_44100_192","file_sha256":"cc1aa8f943993cd877dbeacad098dfd9a3273ff67b1bd6ffdc07bf0e726f7bd8","settings":{"stability":0.68,"similarity_boost":0.88,"style":0.0,"use_speaker_boost":true,"speed":0.95},"relative_path":"audio/generated/ko-KR/utterances/337accc6564fdb5db0c38f95add076b3c6ebb1d27cf1ba61147cec9446e15fa1.mp3"}'
+) ON DUPLICATE KEY UPDATE
+  provider = VALUES(provider),
+  provider_model = VALUES(provider_model),
+  storage_url = VALUES(storage_url),
+  duration_ms = VALUES(duration_ms),
+  generated_at = VALUES(generated_at),
+  checksum = VALUES(checksum),
+  status = VALUES(status),
+  metadata = VALUES(metadata);
+
+-- g_ko_jamo_vowels:example:3 -> audio/generated/ko-KR/utterances/337accc6564fdb5db0c38f95add076b3c6ebb1d27cf1ba61147cec9446e15fa1.mp3
+UPDATE audio_assets
+SET status = 'archived'
+WHERE entity_type = 'grammar_point'
+  AND entity_id = UUID_TO_BIN('534ecb75-6efd-542d-8cf6-a6480f06a370', 1)
+  AND voice_key = 'ko-kr.sentence.native-clear'
+  AND (entity_type NOT IN ('grammar_point','exercise') OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'g_ko_jamo_vowels:example:3')
+  AND source_text_hash IS NOT NULL
+  AND source_text_hash <> '963c2374ff4c553e8117542530ec80373f9624b973ba97d394e5500117a6fbef'
+  AND status <> 'archived';
+INSERT INTO audio_assets (
+  id, language_id, language_variant_id, entity_type, entity_id, source_text_hash,
+  voice_key, provider, provider_model, storage_url, duration_ms, generated_at, checksum, status, metadata
+) VALUES (
+  UUID_TO_BIN('f121de1f-2590-562f-ae77-eb9cd227aca9', 1), @audio_language_id, @audio_variant_id, 'grammar_point', UUID_TO_BIN('534ecb75-6efd-542d-8cf6-a6480f06a370', 1), '963c2374ff4c553e8117542530ec80373f9624b973ba97d394e5500117a6fbef',
+  'ko-kr.sentence.native-clear', 'elevenlabs', 'eleven_multilingual_v2', 'audio/generated/ko-KR/utterances/337accc6564fdb5db0c38f95add076b3c6ebb1d27cf1ba61147cec9446e15fa1.mp3', 835, '2026-09-14 12:20:11.614310', 'cc1aa8f943993cd877dbeacad098dfd9a3273ff67b1bd6ffdc07bf0e726f7bd8', 'validated', '{"audio_key":"337accc6564fdb5db0c38f95add076b3c6ebb1d27cf1ba61147cec9446e15fa1","entity_key":"g_ko_jamo_vowels:example:3","voice_id":"5DWGv3VDkihNUcbvaonB","voice_name":"Kelee K - Seoul Narrator","voice_labels":{"gender":"female","accent":"seoul","age":"young","category":"professional","language":"ko","use_case":"conversational","descriptive":"casual"},"output_format":"mp3_44100_192","file_sha256":"cc1aa8f943993cd877dbeacad098dfd9a3273ff67b1bd6ffdc07bf0e726f7bd8","settings":{"stability":0.68,"similarity_boost":0.88,"style":0.0,"use_speaker_boost":true,"speed":0.95},"relative_path":"audio/generated/ko-KR/utterances/337accc6564fdb5db0c38f95add076b3c6ebb1d27cf1ba61147cec9446e15fa1.mp3"}'
 ) ON DUPLICATE KEY UPDATE
   provider = VALUES(provider),
   provider_model = VALUES(provider_model),
@@ -5782,6 +6328,32 @@ INSERT INTO audio_assets (
   status = VALUES(status),
   metadata = VALUES(metadata);
 
+-- u_ko_block_horizontal -> audio/generated/ko-KR/utterances/4317303cec67bd1b91ee16d8a77d77c922ff74ab995debdb91973628cf470c8d.mp3
+UPDATE audio_assets
+SET status = 'archived'
+WHERE entity_type = 'utterance'
+  AND entity_id = UUID_TO_BIN('49270024-231a-5745-8319-84fc95b7c416', 1)
+  AND voice_key = 'ko-kr.sentence.native-clear'
+  AND (entity_type NOT IN ('grammar_point','exercise') OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'u_ko_block_horizontal')
+  AND source_text_hash IS NOT NULL
+  AND source_text_hash <> '4bf16f3076487508babb007c9d2e14f0a21f6f35bebd2def84221a3310758019'
+  AND status <> 'archived';
+INSERT INTO audio_assets (
+  id, language_id, language_variant_id, entity_type, entity_id, source_text_hash,
+  voice_key, provider, provider_model, storage_url, duration_ms, generated_at, checksum, status, metadata
+) VALUES (
+  UUID_TO_BIN('826450f6-7ae4-5169-b79f-ddbfd6250ea2', 1), @audio_language_id, @audio_variant_id, 'utterance', UUID_TO_BIN('49270024-231a-5745-8319-84fc95b7c416', 1), '4bf16f3076487508babb007c9d2e14f0a21f6f35bebd2def84221a3310758019',
+  'ko-kr.sentence.native-clear', 'elevenlabs', 'eleven_multilingual_v2', 'audio/generated/ko-KR/utterances/4317303cec67bd1b91ee16d8a77d77c922ff74ab995debdb91973628cf470c8d.mp3', 1097, '2026-09-14 12:20:12.303037', '9a20f076967a1e0bd5ccd05623fcd581067cad032a618f485e4597fa1eaf3ffb', 'validated', '{"audio_key":"4317303cec67bd1b91ee16d8a77d77c922ff74ab995debdb91973628cf470c8d","entity_key":"u_ko_block_horizontal","voice_id":"5DWGv3VDkihNUcbvaonB","voice_name":"Kelee K - Seoul Narrator","voice_labels":{"gender":"female","accent":"seoul","age":"young","category":"professional","language":"ko","use_case":"conversational","descriptive":"casual"},"output_format":"mp3_44100_192","file_sha256":"9a20f076967a1e0bd5ccd05623fcd581067cad032a618f485e4597fa1eaf3ffb","settings":{"stability":0.68,"similarity_boost":0.88,"style":0.0,"use_speaker_boost":true,"speed":0.95},"relative_path":"audio/generated/ko-KR/utterances/4317303cec67bd1b91ee16d8a77d77c922ff74ab995debdb91973628cf470c8d.mp3"}'
+) ON DUPLICATE KEY UPDATE
+  provider = VALUES(provider),
+  provider_model = VALUES(provider_model),
+  storage_url = VALUES(storage_url),
+  duration_ms = VALUES(duration_ms),
+  generated_at = VALUES(generated_at),
+  checksum = VALUES(checksum),
+  status = VALUES(status),
+  metadata = VALUES(metadata);
+
 -- u_first_sounds_02 -> audio/generated/ko-KR/utterances/4342a8b1417bc73e5e0c4becc0279bf4d8d500c8f90687f9532a149e8fbc0093.mp3
 UPDATE audio_assets
 SET status = 'archived'
@@ -5834,6 +6406,32 @@ INSERT INTO audio_assets (
   status = VALUES(status),
   metadata = VALUES(metadata);
 
+-- g_ko_block_layout:example:1 -> audio/generated/ko-KR/utterances/463f29a874e29bd86f886699d44ea68a46855f7e8c0a04357f71512198c06d04.mp3
+UPDATE audio_assets
+SET status = 'archived'
+WHERE entity_type = 'grammar_point'
+  AND entity_id = UUID_TO_BIN('5141a135-23e9-5a17-abd3-e0ae05326840', 1)
+  AND voice_key = 'ko-kr.sentence.native-clear'
+  AND (entity_type NOT IN ('grammar_point','exercise') OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'g_ko_block_layout:example:1')
+  AND source_text_hash IS NOT NULL
+  AND source_text_hash <> 'ea4cc04b3b9067eb40d4257c21f1302a06dc30b5df17d6a31f070468c82b745e'
+  AND status <> 'archived';
+INSERT INTO audio_assets (
+  id, language_id, language_variant_id, entity_type, entity_id, source_text_hash,
+  voice_key, provider, provider_model, storage_url, duration_ms, generated_at, checksum, status, metadata
+) VALUES (
+  UUID_TO_BIN('8b0f637c-d0e5-5fd0-885b-34df6d6973a2', 1), @audio_language_id, @audio_variant_id, 'grammar_point', UUID_TO_BIN('5141a135-23e9-5a17-abd3-e0ae05326840', 1), 'ea4cc04b3b9067eb40d4257c21f1302a06dc30b5df17d6a31f070468c82b745e',
+  'ko-kr.sentence.native-clear', 'elevenlabs', 'eleven_multilingual_v2', 'audio/generated/ko-KR/utterances/463f29a874e29bd86f886699d44ea68a46855f7e8c0a04357f71512198c06d04.mp3', 1697, '2026-09-14 12:20:12.669278', 'bc7221eed0a9bd156229a61b8fff30d102aad535c47f092810826a27bac26424', 'validated', '{"audio_key":"463f29a874e29bd86f886699d44ea68a46855f7e8c0a04357f71512198c06d04","entity_key":"g_ko_block_layout:example:1","voice_id":"5DWGv3VDkihNUcbvaonB","voice_name":"Kelee K - Seoul Narrator","voice_labels":{"gender":"female","accent":"seoul","age":"young","category":"professional","language":"ko","use_case":"conversational","descriptive":"casual"},"output_format":"mp3_44100_192","file_sha256":"bc7221eed0a9bd156229a61b8fff30d102aad535c47f092810826a27bac26424","settings":{"stability":0.68,"similarity_boost":0.88,"style":0.0,"use_speaker_boost":true,"speed":0.95},"relative_path":"audio/generated/ko-KR/utterances/463f29a874e29bd86f886699d44ea68a46855f7e8c0a04357f71512198c06d04.mp3"}'
+) ON DUPLICATE KEY UPDATE
+  provider = VALUES(provider),
+  provider_model = VALUES(provider_model),
+  storage_url = VALUES(storage_url),
+  duration_ms = VALUES(duration_ms),
+  generated_at = VALUES(generated_at),
+  checksum = VALUES(checksum),
+  status = VALUES(status),
+  metadata = VALUES(metadata);
+
 -- u_first_objects_01 -> audio/generated/ko-KR/utterances/492e9436de2676f7a8998e24c53d20d8696e70e36d3d056e88911a07e5f5dd4d.mp3
 UPDATE audio_assets
 SET status = 'archived'
@@ -5876,6 +6474,32 @@ INSERT INTO audio_assets (
 ) VALUES (
   UUID_TO_BIN('98687f9a-38d2-506b-a031-e7f524d746ed', 1), @audio_language_id, @audio_variant_id, 'utterance', UUID_TO_BIN('8fa036ac-fad6-52a8-ad17-595d55939be2', 1), 'e8b2fb66d645be03080b2c99a1c0c25b5ff288e8874aaeeac5a8a2d58a42fa4c',
   'ko-kr.sentence.native-clear', 'elevenlabs', 'eleven_multilingual_v2', 'audio/generated/ko-KR/utterances/4a2fdef62d853b44f3f14945a2db2796c43b00d9ac24684e4e19119605516ffe.mp3', 1515, '2026-09-13 21:05:56.131135', 'f99a3fd72bb6cc3029c6bc5ea2090b22260691d311be0d940f5ea1efd99f3ab0', 'validated', '{"audio_key":"4a2fdef62d853b44f3f14945a2db2796c43b00d9ac24684e4e19119605516ffe","entity_key":"u_first_greetings_03","voice_id":"5DWGv3VDkihNUcbvaonB","voice_name":"Kelee K - Seoul Narrator","voice_labels":{"gender":"female","accent":"seoul","age":"young","category":"professional","language":"ko","use_case":"conversational","descriptive":"casual"},"output_format":"mp3_44100_192","file_sha256":"f99a3fd72bb6cc3029c6bc5ea2090b22260691d311be0d940f5ea1efd99f3ab0","settings":{"stability":0.68,"similarity_boost":0.88,"style":0.0,"use_speaker_boost":true,"speed":0.95},"relative_path":"audio/generated/ko-KR/utterances/4a2fdef62d853b44f3f14945a2db2796c43b00d9ac24684e4e19119605516ffe.mp3"}'
+) ON DUPLICATE KEY UPDATE
+  provider = VALUES(provider),
+  provider_model = VALUES(provider_model),
+  storage_url = VALUES(storage_url),
+  duration_ms = VALUES(duration_ms),
+  generated_at = VALUES(generated_at),
+  checksum = VALUES(checksum),
+  status = VALUES(status),
+  metadata = VALUES(metadata);
+
+-- g_ko_block_ieung:example:2 -> audio/generated/ko-KR/utterances/4bd1534e7464e719abaa91c22f1e60356cc95f48e3b2ffe58a304f2f4f34ad65.mp3
+UPDATE audio_assets
+SET status = 'archived'
+WHERE entity_type = 'grammar_point'
+  AND entity_id = UUID_TO_BIN('b439c62c-d7ba-5f52-8f7b-e2289fd01a6d', 1)
+  AND voice_key = 'ko-kr.sentence.native-clear'
+  AND (entity_type NOT IN ('grammar_point','exercise') OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'g_ko_block_ieung:example:2')
+  AND source_text_hash IS NOT NULL
+  AND source_text_hash <> 'd90ed2084b71f17cebe5968955ff7cad50ca383f188f1237fabcb93d4b51548c'
+  AND status <> 'archived';
+INSERT INTO audio_assets (
+  id, language_id, language_variant_id, entity_type, entity_id, source_text_hash,
+  voice_key, provider, provider_model, storage_url, duration_ms, generated_at, checksum, status, metadata
+) VALUES (
+  UUID_TO_BIN('2851b23f-978b-5727-9b2f-cfb0e647b8cf', 1), @audio_language_id, @audio_variant_id, 'grammar_point', UUID_TO_BIN('b439c62c-d7ba-5f52-8f7b-e2289fd01a6d', 1), 'd90ed2084b71f17cebe5968955ff7cad50ca383f188f1237fabcb93d4b51548c',
+  'ko-kr.sentence.native-clear', 'elevenlabs', 'eleven_multilingual_v2', 'audio/generated/ko-KR/utterances/4bd1534e7464e719abaa91c22f1e60356cc95f48e3b2ffe58a304f2f4f34ad65.mp3', 966, '2026-09-14 12:20:13.277250', '4a750a2631211af5ac5000b70935699f99c45eed07a4dbe674cf59ebe383282e', 'validated', '{"audio_key":"4bd1534e7464e719abaa91c22f1e60356cc95f48e3b2ffe58a304f2f4f34ad65","entity_key":"g_ko_block_ieung:example:2","voice_id":"5DWGv3VDkihNUcbvaonB","voice_name":"Kelee K - Seoul Narrator","voice_labels":{"gender":"female","accent":"seoul","age":"young","category":"professional","language":"ko","use_case":"conversational","descriptive":"casual"},"output_format":"mp3_44100_192","file_sha256":"4a750a2631211af5ac5000b70935699f99c45eed07a4dbe674cf59ebe383282e","settings":{"stability":0.68,"similarity_boost":0.88,"style":0.0,"use_speaker_boost":true,"speed":0.95},"relative_path":"audio/generated/ko-KR/utterances/4bd1534e7464e719abaa91c22f1e60356cc95f48e3b2ffe58a304f2f4f34ad65.mp3"}'
 ) ON DUPLICATE KEY UPDATE
   provider = VALUES(provider),
   provider_model = VALUES(provider_model),
@@ -6120,6 +6744,58 @@ INSERT INTO audio_assets (
   status = VALUES(status),
   metadata = VALUES(metadata);
 
+-- ex_ko_block_hear_gong -> audio/generated/ko-KR/utterances/5cb96f7028043676ed0784a5758bcce80e490dfed5d3f213758cd7623380aee7.mp3
+UPDATE audio_assets
+SET status = 'archived'
+WHERE entity_type = 'exercise'
+  AND entity_id = UUID_TO_BIN('b930bb41-a1bf-5dd5-a971-80874a59fdd1', 1)
+  AND voice_key = 'ko-kr.sentence.native-clear'
+  AND (entity_type NOT IN ('grammar_point','exercise') OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'ex_ko_block_hear_gong')
+  AND source_text_hash IS NOT NULL
+  AND source_text_hash <> '396159745e203d0de79fc70ad06731e7c3d747858c5618b1497bff4f8a6bf4b1'
+  AND status <> 'archived';
+INSERT INTO audio_assets (
+  id, language_id, language_variant_id, entity_type, entity_id, source_text_hash,
+  voice_key, provider, provider_model, storage_url, duration_ms, generated_at, checksum, status, metadata
+) VALUES (
+  UUID_TO_BIN('25484b6a-7447-54ff-bec2-c590e1df4a3b', 1), @audio_language_id, @audio_variant_id, 'exercise', UUID_TO_BIN('b930bb41-a1bf-5dd5-a971-80874a59fdd1', 1), '396159745e203d0de79fc70ad06731e7c3d747858c5618b1497bff4f8a6bf4b1',
+  'ko-kr.sentence.native-clear', 'elevenlabs', 'eleven_multilingual_v2', 'audio/generated/ko-KR/utterances/5cb96f7028043676ed0784a5758bcce80e490dfed5d3f213758cd7623380aee7.mp3', 914, '2026-09-14 12:20:13.693148', '02a3704b192b2e5bfb9fd3fd9fa2314959b3ceca4652166b4c91abcf70e5b47f', 'validated', '{"audio_key":"5cb96f7028043676ed0784a5758bcce80e490dfed5d3f213758cd7623380aee7","entity_key":"ex_ko_block_hear_gong","voice_id":"5DWGv3VDkihNUcbvaonB","voice_name":"Kelee K - Seoul Narrator","voice_labels":{"gender":"female","accent":"seoul","age":"young","category":"professional","language":"ko","use_case":"conversational","descriptive":"casual"},"output_format":"mp3_44100_192","file_sha256":"02a3704b192b2e5bfb9fd3fd9fa2314959b3ceca4652166b4c91abcf70e5b47f","settings":{"stability":0.68,"similarity_boost":0.88,"style":0.0,"use_speaker_boost":true,"speed":0.95},"relative_path":"audio/generated/ko-KR/utterances/5cb96f7028043676ed0784a5758bcce80e490dfed5d3f213758cd7623380aee7.mp3"}'
+) ON DUPLICATE KEY UPDATE
+  provider = VALUES(provider),
+  provider_model = VALUES(provider_model),
+  storage_url = VALUES(storage_url),
+  duration_ms = VALUES(duration_ms),
+  generated_at = VALUES(generated_at),
+  checksum = VALUES(checksum),
+  status = VALUES(status),
+  metadata = VALUES(metadata);
+
+-- ex_ko_ready_listen -> audio/generated/ko-KR/utterances/5cb96f7028043676ed0784a5758bcce80e490dfed5d3f213758cd7623380aee7.mp3
+UPDATE audio_assets
+SET status = 'archived'
+WHERE entity_type = 'exercise'
+  AND entity_id = UUID_TO_BIN('2d80e28b-eec2-537f-b812-f7b7a76c58a3', 1)
+  AND voice_key = 'ko-kr.sentence.native-clear'
+  AND (entity_type NOT IN ('grammar_point','exercise') OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'ex_ko_ready_listen')
+  AND source_text_hash IS NOT NULL
+  AND source_text_hash <> '396159745e203d0de79fc70ad06731e7c3d747858c5618b1497bff4f8a6bf4b1'
+  AND status <> 'archived';
+INSERT INTO audio_assets (
+  id, language_id, language_variant_id, entity_type, entity_id, source_text_hash,
+  voice_key, provider, provider_model, storage_url, duration_ms, generated_at, checksum, status, metadata
+) VALUES (
+  UUID_TO_BIN('89748dc6-2815-54d6-b4a4-460fc6abad21', 1), @audio_language_id, @audio_variant_id, 'exercise', UUID_TO_BIN('2d80e28b-eec2-537f-b812-f7b7a76c58a3', 1), '396159745e203d0de79fc70ad06731e7c3d747858c5618b1497bff4f8a6bf4b1',
+  'ko-kr.sentence.native-clear', 'elevenlabs', 'eleven_multilingual_v2', 'audio/generated/ko-KR/utterances/5cb96f7028043676ed0784a5758bcce80e490dfed5d3f213758cd7623380aee7.mp3', 914, '2026-09-14 12:20:13.693148', '02a3704b192b2e5bfb9fd3fd9fa2314959b3ceca4652166b4c91abcf70e5b47f', 'validated', '{"audio_key":"5cb96f7028043676ed0784a5758bcce80e490dfed5d3f213758cd7623380aee7","entity_key":"ex_ko_ready_listen","voice_id":"5DWGv3VDkihNUcbvaonB","voice_name":"Kelee K - Seoul Narrator","voice_labels":{"gender":"female","accent":"seoul","age":"young","category":"professional","language":"ko","use_case":"conversational","descriptive":"casual"},"output_format":"mp3_44100_192","file_sha256":"02a3704b192b2e5bfb9fd3fd9fa2314959b3ceca4652166b4c91abcf70e5b47f","settings":{"stability":0.68,"similarity_boost":0.88,"style":0.0,"use_speaker_boost":true,"speed":0.95},"relative_path":"audio/generated/ko-KR/utterances/5cb96f7028043676ed0784a5758bcce80e490dfed5d3f213758cd7623380aee7.mp3"}'
+) ON DUPLICATE KEY UPDATE
+  provider = VALUES(provider),
+  provider_model = VALUES(provider_model),
+  storage_url = VALUES(storage_url),
+  duration_ms = VALUES(duration_ms),
+  generated_at = VALUES(generated_at),
+  checksum = VALUES(checksum),
+  status = VALUES(status),
+  metadata = VALUES(metadata);
+
 -- u_first_conversation_02 -> audio/generated/ko-KR/utterances/5e5a397b31bdc18b9426c7088674bd05208a2625efbcc6b1655e1b3a7773be40.mp3
 UPDATE audio_assets
 SET status = 'archived'
@@ -6172,6 +6848,84 @@ INSERT INTO audio_assets (
   status = VALUES(status),
   metadata = VALUES(metadata);
 
+-- g_ko_jamo_consonants:example:1 -> audio/generated/ko-KR/utterances/60c65a89a5199fae773bd5dd763d819810fb68eb992c93f4cdd4ab638d24f159.mp3
+UPDATE audio_assets
+SET status = 'archived'
+WHERE entity_type = 'grammar_point'
+  AND entity_id = UUID_TO_BIN('4ecc43a0-0623-5bc1-acbc-bdbaabcaef18', 1)
+  AND voice_key = 'ko-kr.sentence.native-clear'
+  AND (entity_type NOT IN ('grammar_point','exercise') OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'g_ko_jamo_consonants:example:1')
+  AND source_text_hash IS NOT NULL
+  AND source_text_hash <> 'f6a780a386d59bfa68ead455e5414ee6738b34dfbba3ef077c602d1d1a261b41'
+  AND status <> 'archived';
+INSERT INTO audio_assets (
+  id, language_id, language_variant_id, entity_type, entity_id, source_text_hash,
+  voice_key, provider, provider_model, storage_url, duration_ms, generated_at, checksum, status, metadata
+) VALUES (
+  UUID_TO_BIN('1b87215c-6380-5f58-b132-9603e79e274f', 1), @audio_language_id, @audio_variant_id, 'grammar_point', UUID_TO_BIN('4ecc43a0-0623-5bc1-acbc-bdbaabcaef18', 1), 'f6a780a386d59bfa68ead455e5414ee6738b34dfbba3ef077c602d1d1a261b41',
+  'ko-kr.sentence.native-clear', 'elevenlabs', 'eleven_multilingual_v2', 'audio/generated/ko-KR/utterances/60c65a89a5199fae773bd5dd763d819810fb68eb992c93f4cdd4ab638d24f159.mp3', 783, '2026-09-14 12:20:14.240634', '6bf8f251219a8fb716039184db0237724a44eba4ac401bbcabfa8f91f3898d3a', 'validated', '{"audio_key":"60c65a89a5199fae773bd5dd763d819810fb68eb992c93f4cdd4ab638d24f159","entity_key":"g_ko_jamo_consonants:example:1","voice_id":"5DWGv3VDkihNUcbvaonB","voice_name":"Kelee K - Seoul Narrator","voice_labels":{"gender":"female","accent":"seoul","age":"young","category":"professional","language":"ko","use_case":"conversational","descriptive":"casual"},"output_format":"mp3_44100_192","file_sha256":"6bf8f251219a8fb716039184db0237724a44eba4ac401bbcabfa8f91f3898d3a","settings":{"stability":0.68,"similarity_boost":0.88,"style":0.0,"use_speaker_boost":true,"speed":0.95},"relative_path":"audio/generated/ko-KR/utterances/60c65a89a5199fae773bd5dd763d819810fb68eb992c93f4cdd4ab638d24f159.mp3"}'
+) ON DUPLICATE KEY UPDATE
+  provider = VALUES(provider),
+  provider_model = VALUES(provider_model),
+  storage_url = VALUES(storage_url),
+  duration_ms = VALUES(duration_ms),
+  generated_at = VALUES(generated_at),
+  checksum = VALUES(checksum),
+  status = VALUES(status),
+  metadata = VALUES(metadata);
+
+-- u_ko_block_initial_ieung -> audio/generated/ko-KR/utterances/638845835b88399d4b28ef12567ac0b204f4d844cd377d810c14d1802c6c3720.mp3
+UPDATE audio_assets
+SET status = 'archived'
+WHERE entity_type = 'utterance'
+  AND entity_id = UUID_TO_BIN('7c9a3564-d124-558f-bb40-43e6faa700b8', 1)
+  AND voice_key = 'ko-kr.sentence.native-clear'
+  AND (entity_type NOT IN ('grammar_point','exercise') OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'u_ko_block_initial_ieung')
+  AND source_text_hash IS NOT NULL
+  AND source_text_hash <> 'eb6d831a0b18625875dc8d5a3a100350be5dd6a05af572be1ac92dfa339ef15f'
+  AND status <> 'archived';
+INSERT INTO audio_assets (
+  id, language_id, language_variant_id, entity_type, entity_id, source_text_hash,
+  voice_key, provider, provider_model, storage_url, duration_ms, generated_at, checksum, status, metadata
+) VALUES (
+  UUID_TO_BIN('5c4381a4-e2f5-534d-aeac-5dd8f60e34f6', 1), @audio_language_id, @audio_variant_id, 'utterance', UUID_TO_BIN('7c9a3564-d124-558f-bb40-43e6faa700b8', 1), 'eb6d831a0b18625875dc8d5a3a100350be5dd6a05af572be1ac92dfa339ef15f',
+  'ko-kr.sentence.native-clear', 'elevenlabs', 'eleven_multilingual_v2', 'audio/generated/ko-KR/utterances/638845835b88399d4b28ef12567ac0b204f4d844cd377d810c14d1802c6c3720.mp3', 1071, '2026-09-14 12:20:14.688564', 'bf8c98736742d606e07ecf8cc8432e7b1a0f50bf92ed87874d1eaa0078a144a0', 'validated', '{"audio_key":"638845835b88399d4b28ef12567ac0b204f4d844cd377d810c14d1802c6c3720","entity_key":"u_ko_block_initial_ieung","voice_id":"5DWGv3VDkihNUcbvaonB","voice_name":"Kelee K - Seoul Narrator","voice_labels":{"gender":"female","accent":"seoul","age":"young","category":"professional","language":"ko","use_case":"conversational","descriptive":"casual"},"output_format":"mp3_44100_192","file_sha256":"bf8c98736742d606e07ecf8cc8432e7b1a0f50bf92ed87874d1eaa0078a144a0","settings":{"stability":0.68,"similarity_boost":0.88,"style":0.0,"use_speaker_boost":true,"speed":0.95},"relative_path":"audio/generated/ko-KR/utterances/638845835b88399d4b28ef12567ac0b204f4d844cd377d810c14d1802c6c3720.mp3"}'
+) ON DUPLICATE KEY UPDATE
+  provider = VALUES(provider),
+  provider_model = VALUES(provider_model),
+  storage_url = VALUES(storage_url),
+  duration_ms = VALUES(duration_ms),
+  generated_at = VALUES(generated_at),
+  checksum = VALUES(checksum),
+  status = VALUES(status),
+  metadata = VALUES(metadata);
+
+-- g_ko_jamo_vowels:example:2 -> audio/generated/ko-KR/utterances/66dade657c80144ee1967c4280bf343846ad7d90c8c221c5b97b6d1e986de64e.mp3
+UPDATE audio_assets
+SET status = 'archived'
+WHERE entity_type = 'grammar_point'
+  AND entity_id = UUID_TO_BIN('534ecb75-6efd-542d-8cf6-a6480f06a370', 1)
+  AND voice_key = 'ko-kr.sentence.native-clear'
+  AND (entity_type NOT IN ('grammar_point','exercise') OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'g_ko_jamo_vowels:example:2')
+  AND source_text_hash IS NOT NULL
+  AND source_text_hash <> '637bfe7928f524a3c40dcc17fe91d1fb4e9b80a2a95f9ed848c4ddc0d62f9fd1'
+  AND status <> 'archived';
+INSERT INTO audio_assets (
+  id, language_id, language_variant_id, entity_type, entity_id, source_text_hash,
+  voice_key, provider, provider_model, storage_url, duration_ms, generated_at, checksum, status, metadata
+) VALUES (
+  UUID_TO_BIN('87d98e43-3e5b-5320-b6a6-82501a1a0051', 1), @audio_language_id, @audio_variant_id, 'grammar_point', UUID_TO_BIN('534ecb75-6efd-542d-8cf6-a6480f06a370', 1), '637bfe7928f524a3c40dcc17fe91d1fb4e9b80a2a95f9ed848c4ddc0d62f9fd1',
+  'ko-kr.sentence.native-clear', 'elevenlabs', 'eleven_multilingual_v2', 'audio/generated/ko-KR/utterances/66dade657c80144ee1967c4280bf343846ad7d90c8c221c5b97b6d1e986de64e.mp3', 835, '2026-09-14 12:20:15.206863', '0d14bce7e0076d2ec1a413415a87b1c387b8c46300b22ce2addab3dd9da80492', 'validated', '{"audio_key":"66dade657c80144ee1967c4280bf343846ad7d90c8c221c5b97b6d1e986de64e","entity_key":"g_ko_jamo_vowels:example:2","voice_id":"5DWGv3VDkihNUcbvaonB","voice_name":"Kelee K - Seoul Narrator","voice_labels":{"gender":"female","accent":"seoul","age":"young","category":"professional","language":"ko","use_case":"conversational","descriptive":"casual"},"output_format":"mp3_44100_192","file_sha256":"0d14bce7e0076d2ec1a413415a87b1c387b8c46300b22ce2addab3dd9da80492","settings":{"stability":0.68,"similarity_boost":0.88,"style":0.0,"use_speaker_boost":true,"speed":0.95},"relative_path":"audio/generated/ko-KR/utterances/66dade657c80144ee1967c4280bf343846ad7d90c8c221c5b97b6d1e986de64e.mp3"}'
+) ON DUPLICATE KEY UPDATE
+  provider = VALUES(provider),
+  provider_model = VALUES(provider_model),
+  storage_url = VALUES(storage_url),
+  duration_ms = VALUES(duration_ms),
+  generated_at = VALUES(generated_at),
+  checksum = VALUES(checksum),
+  status = VALUES(status),
+  metadata = VALUES(metadata);
+
 -- u_survival_words_01 -> audio/generated/ko-KR/utterances/6fa86e68ce3c3d7c44074abb5623260aa0dab5d9073837a05155ecbf7110e784.mp3
 UPDATE audio_assets
 SET status = 'archived'
@@ -6188,6 +6942,32 @@ INSERT INTO audio_assets (
 ) VALUES (
   UUID_TO_BIN('8935caf7-14e0-592c-9816-1b71c8efd235', 1), @audio_language_id, @audio_variant_id, 'utterance', UUID_TO_BIN('f25ebf36-4885-5549-b0d8-d1e01edc2197', 1), '1f2ad793952adf27356a2c4be0c2612d6b04e0ed79b80c1fcee48166787f1f5b',
   'ko-kr.sentence.native-clear', 'elevenlabs', 'eleven_multilingual_v2', 'audio/generated/ko-KR/utterances/6fa86e68ce3c3d7c44074abb5623260aa0dab5d9073837a05155ecbf7110e784.mp3', 1488, '2026-09-13 21:06:00.326070', 'c153da56962b23954ba82acd33ade564464f33e27e57819afef9eb36edacda9e', 'validated', '{"audio_key":"6fa86e68ce3c3d7c44074abb5623260aa0dab5d9073837a05155ecbf7110e784","entity_key":"u_survival_words_01","voice_id":"5DWGv3VDkihNUcbvaonB","voice_name":"Kelee K - Seoul Narrator","voice_labels":{"gender":"female","accent":"seoul","age":"young","category":"professional","language":"ko","use_case":"conversational","descriptive":"casual"},"output_format":"mp3_44100_192","file_sha256":"c153da56962b23954ba82acd33ade564464f33e27e57819afef9eb36edacda9e","settings":{"stability":0.68,"similarity_boost":0.88,"style":0.0,"use_speaker_boost":true,"speed":0.95},"relative_path":"audio/generated/ko-KR/utterances/6fa86e68ce3c3d7c44074abb5623260aa0dab5d9073837a05155ecbf7110e784.mp3"}'
+) ON DUPLICATE KEY UPDATE
+  provider = VALUES(provider),
+  provider_model = VALUES(provider_model),
+  storage_url = VALUES(storage_url),
+  duration_ms = VALUES(duration_ms),
+  generated_at = VALUES(generated_at),
+  checksum = VALUES(checksum),
+  status = VALUES(status),
+  metadata = VALUES(metadata);
+
+-- ex_ko_block_hear_mi -> audio/generated/ko-KR/utterances/71479725a34bd707536b959ed9b2f85086e2cf338646270055acadd6bcb7c7eb.mp3
+UPDATE audio_assets
+SET status = 'archived'
+WHERE entity_type = 'exercise'
+  AND entity_id = UUID_TO_BIN('b0faa0ab-b2ee-5bb4-9739-5c99a43577d9', 1)
+  AND voice_key = 'ko-kr.sentence.native-clear'
+  AND (entity_type NOT IN ('grammar_point','exercise') OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'ex_ko_block_hear_mi')
+  AND source_text_hash IS NOT NULL
+  AND source_text_hash <> '9e83af8fc06c76dbbc509e279c485cdbb11b9b78ae67cd595a0621ca0aefa027'
+  AND status <> 'archived';
+INSERT INTO audio_assets (
+  id, language_id, language_variant_id, entity_type, entity_id, source_text_hash,
+  voice_key, provider, provider_model, storage_url, duration_ms, generated_at, checksum, status, metadata
+) VALUES (
+  UUID_TO_BIN('023b8393-36f2-53a7-967b-fe2d55788b87', 1), @audio_language_id, @audio_variant_id, 'exercise', UUID_TO_BIN('b0faa0ab-b2ee-5bb4-9739-5c99a43577d9', 1), '9e83af8fc06c76dbbc509e279c485cdbb11b9b78ae67cd595a0621ca0aefa027',
+  'ko-kr.sentence.native-clear', 'elevenlabs', 'eleven_multilingual_v2', 'audio/generated/ko-KR/utterances/71479725a34bd707536b959ed9b2f85086e2cf338646270055acadd6bcb7c7eb.mp3', 731, '2026-09-14 12:20:15.624471', 'cc71871f0ee0a9e4f3de19eab9e7f61ee02e96ae748c60aa2c582c00954a014e', 'validated', '{"audio_key":"71479725a34bd707536b959ed9b2f85086e2cf338646270055acadd6bcb7c7eb","entity_key":"ex_ko_block_hear_mi","voice_id":"5DWGv3VDkihNUcbvaonB","voice_name":"Kelee K - Seoul Narrator","voice_labels":{"gender":"female","accent":"seoul","age":"young","category":"professional","language":"ko","use_case":"conversational","descriptive":"casual"},"output_format":"mp3_44100_192","file_sha256":"cc71871f0ee0a9e4f3de19eab9e7f61ee02e96ae748c60aa2c582c00954a014e","settings":{"stability":0.68,"similarity_boost":0.88,"style":0.0,"use_speaker_boost":true,"speed":0.95},"relative_path":"audio/generated/ko-KR/utterances/71479725a34bd707536b959ed9b2f85086e2cf338646270055acadd6bcb7c7eb.mp3"}'
 ) ON DUPLICATE KEY UPDATE
   provider = VALUES(provider),
   provider_model = VALUES(provider_model),
@@ -6240,6 +7020,188 @@ INSERT INTO audio_assets (
 ) VALUES (
   UUID_TO_BIN('309a53c5-7bfd-5fe2-b42d-145f5f677bbe', 1), @audio_language_id, @audio_variant_id, 'exercise', UUID_TO_BIN('92b40329-78b3-5c03-9c97-fbd6e43bdeb8', 1), '77f42f3ec34e8bb9f14dc8ed8a0aa4c74b642fb547f180b830c430c8ece82b88',
   'ko-kr.sentence.native-clear', 'elevenlabs', 'eleven_multilingual_v2', 'audio/generated/ko-KR/utterances/7705b567b283892ef1e3299ba474cb2bdd7c0017d9171ae5fcc78603c9245401.mp3', 1097, '2026-09-13 21:06:01.337349', 'd61f8cca4c7d3325b7e0aff08b4d5527abe509702a85c739f12dcdc683b7869c', 'validated', '{"audio_key":"7705b567b283892ef1e3299ba474cb2bdd7c0017d9171ae5fcc78603c9245401","entity_key":"e_first_objects_01_listen","voice_id":"5DWGv3VDkihNUcbvaonB","voice_name":"Kelee K - Seoul Narrator","voice_labels":{"gender":"female","accent":"seoul","age":"young","category":"professional","language":"ko","use_case":"conversational","descriptive":"casual"},"output_format":"mp3_44100_192","file_sha256":"d61f8cca4c7d3325b7e0aff08b4d5527abe509702a85c739f12dcdc683b7869c","settings":{"stability":0.68,"similarity_boost":0.88,"style":0.0,"use_speaker_boost":true,"speed":0.95},"relative_path":"audio/generated/ko-KR/utterances/7705b567b283892ef1e3299ba474cb2bdd7c0017d9171ae5fcc78603c9245401.mp3"}'
+) ON DUPLICATE KEY UPDATE
+  provider = VALUES(provider),
+  provider_model = VALUES(provider_model),
+  storage_url = VALUES(storage_url),
+  duration_ms = VALUES(duration_ms),
+  generated_at = VALUES(generated_at),
+  checksum = VALUES(checksum),
+  status = VALUES(status),
+  metadata = VALUES(metadata);
+
+-- g_ko_block_layout:example:2 -> audio/generated/ko-KR/utterances/7a26a760ce92dcde9e381fc211f6bf2ed2f7f6927d102368e6d55a15866762b8.mp3
+UPDATE audio_assets
+SET status = 'archived'
+WHERE entity_type = 'grammar_point'
+  AND entity_id = UUID_TO_BIN('5141a135-23e9-5a17-abd3-e0ae05326840', 1)
+  AND voice_key = 'ko-kr.sentence.native-clear'
+  AND (entity_type NOT IN ('grammar_point','exercise') OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'g_ko_block_layout:example:2')
+  AND source_text_hash IS NOT NULL
+  AND source_text_hash <> 'a5847a4f054a0b2990d8782cbb74c166ca5365188f3ec17a98c691e6ff910d6c'
+  AND status <> 'archived';
+INSERT INTO audio_assets (
+  id, language_id, language_variant_id, entity_type, entity_id, source_text_hash,
+  voice_key, provider, provider_model, storage_url, duration_ms, generated_at, checksum, status, metadata
+) VALUES (
+  UUID_TO_BIN('a594388d-7184-575d-ac2d-308d93ca1156', 1), @audio_language_id, @audio_variant_id, 'grammar_point', UUID_TO_BIN('5141a135-23e9-5a17-abd3-e0ae05326840', 1), 'a5847a4f054a0b2990d8782cbb74c166ca5365188f3ec17a98c691e6ff910d6c',
+  'ko-kr.sentence.native-clear', 'elevenlabs', 'eleven_multilingual_v2', 'audio/generated/ko-KR/utterances/7a26a760ce92dcde9e381fc211f6bf2ed2f7f6927d102368e6d55a15866762b8.mp3', 1280, '2026-09-14 12:20:16.219646', '367628a6c30fbd619e2883f64fd20d4cfc7e22bbaa2530378267871128817e07', 'validated', '{"audio_key":"7a26a760ce92dcde9e381fc211f6bf2ed2f7f6927d102368e6d55a15866762b8","entity_key":"g_ko_block_layout:example:2","voice_id":"5DWGv3VDkihNUcbvaonB","voice_name":"Kelee K - Seoul Narrator","voice_labels":{"gender":"female","accent":"seoul","age":"young","category":"professional","language":"ko","use_case":"conversational","descriptive":"casual"},"output_format":"mp3_44100_192","file_sha256":"367628a6c30fbd619e2883f64fd20d4cfc7e22bbaa2530378267871128817e07","settings":{"stability":0.68,"similarity_boost":0.88,"style":0.0,"use_speaker_boost":true,"speed":0.95},"relative_path":"audio/generated/ko-KR/utterances/7a26a760ce92dcde9e381fc211f6bf2ed2f7f6927d102368e6d55a15866762b8.mp3"}'
+) ON DUPLICATE KEY UPDATE
+  provider = VALUES(provider),
+  provider_model = VALUES(provider_model),
+  storage_url = VALUES(storage_url),
+  duration_ms = VALUES(duration_ms),
+  generated_at = VALUES(generated_at),
+  checksum = VALUES(checksum),
+  status = VALUES(status),
+  metadata = VALUES(metadata);
+
+-- u_ko_meaning_tteut -> audio/generated/ko-KR/utterances/7a4575234eb44287d67ad3ec3bdf1bf28e5b94a37f36fedf435082669c3ea713.mp3
+UPDATE audio_assets
+SET status = 'archived'
+WHERE entity_type = 'utterance'
+  AND entity_id = UUID_TO_BIN('88a7fa82-079d-5bc5-aba8-653691e7c159', 1)
+  AND voice_key = 'ko-kr.sentence.native-clear'
+  AND (entity_type NOT IN ('grammar_point','exercise') OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'u_ko_meaning_tteut')
+  AND source_text_hash IS NOT NULL
+  AND source_text_hash <> 'ae713b65439d2c5c68601f886c885c9bf9839769e45c6de8c42f382e8c4a0f2f'
+  AND status <> 'archived';
+INSERT INTO audio_assets (
+  id, language_id, language_variant_id, entity_type, entity_id, source_text_hash,
+  voice_key, provider, provider_model, storage_url, duration_ms, generated_at, checksum, status, metadata
+) VALUES (
+  UUID_TO_BIN('395d6e56-cd8c-56c9-b007-3a783b140459', 1), @audio_language_id, @audio_variant_id, 'utterance', UUID_TO_BIN('88a7fa82-079d-5bc5-aba8-653691e7c159', 1), 'ae713b65439d2c5c68601f886c885c9bf9839769e45c6de8c42f382e8c4a0f2f',
+  'ko-kr.sentence.native-clear', 'elevenlabs', 'eleven_multilingual_v2', 'audio/generated/ko-KR/utterances/7a4575234eb44287d67ad3ec3bdf1bf28e5b94a37f36fedf435082669c3ea713.mp3', 1384, '2026-09-14 12:20:16.616397', '29b10499a92a14b9af088b62eeb2735ff93c6321430ca5f5866ec20f0963f2f3', 'validated', '{"audio_key":"7a4575234eb44287d67ad3ec3bdf1bf28e5b94a37f36fedf435082669c3ea713","entity_key":"u_ko_meaning_tteut","voice_id":"5DWGv3VDkihNUcbvaonB","voice_name":"Kelee K - Seoul Narrator","voice_labels":{"gender":"female","accent":"seoul","age":"young","category":"professional","language":"ko","use_case":"conversational","descriptive":"casual"},"output_format":"mp3_44100_192","file_sha256":"29b10499a92a14b9af088b62eeb2735ff93c6321430ca5f5866ec20f0963f2f3","settings":{"stability":0.68,"similarity_boost":0.88,"style":0.0,"use_speaker_boost":true,"speed":0.95},"relative_path":"audio/generated/ko-KR/utterances/7a4575234eb44287d67ad3ec3bdf1bf28e5b94a37f36fedf435082669c3ea713.mp3"}'
+) ON DUPLICATE KEY UPDATE
+  provider = VALUES(provider),
+  provider_model = VALUES(provider_model),
+  storage_url = VALUES(storage_url),
+  duration_ms = VALUES(duration_ms),
+  generated_at = VALUES(generated_at),
+  checksum = VALUES(checksum),
+  status = VALUES(status),
+  metadata = VALUES(metadata);
+
+-- g_ko_meaning_chunks:example:1 -> audio/generated/ko-KR/utterances/7a4575234eb44287d67ad3ec3bdf1bf28e5b94a37f36fedf435082669c3ea713.mp3
+UPDATE audio_assets
+SET status = 'archived'
+WHERE entity_type = 'grammar_point'
+  AND entity_id = UUID_TO_BIN('5e5b068b-752b-503c-92c8-54f52742ac0e', 1)
+  AND voice_key = 'ko-kr.sentence.native-clear'
+  AND (entity_type NOT IN ('grammar_point','exercise') OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'g_ko_meaning_chunks:example:1')
+  AND source_text_hash IS NOT NULL
+  AND source_text_hash <> 'ae713b65439d2c5c68601f886c885c9bf9839769e45c6de8c42f382e8c4a0f2f'
+  AND status <> 'archived';
+INSERT INTO audio_assets (
+  id, language_id, language_variant_id, entity_type, entity_id, source_text_hash,
+  voice_key, provider, provider_model, storage_url, duration_ms, generated_at, checksum, status, metadata
+) VALUES (
+  UUID_TO_BIN('f4f91665-20c3-596d-ab64-8fc8fd20b67d', 1), @audio_language_id, @audio_variant_id, 'grammar_point', UUID_TO_BIN('5e5b068b-752b-503c-92c8-54f52742ac0e', 1), 'ae713b65439d2c5c68601f886c885c9bf9839769e45c6de8c42f382e8c4a0f2f',
+  'ko-kr.sentence.native-clear', 'elevenlabs', 'eleven_multilingual_v2', 'audio/generated/ko-KR/utterances/7a4575234eb44287d67ad3ec3bdf1bf28e5b94a37f36fedf435082669c3ea713.mp3', 1384, '2026-09-14 12:20:16.616397', '29b10499a92a14b9af088b62eeb2735ff93c6321430ca5f5866ec20f0963f2f3', 'validated', '{"audio_key":"7a4575234eb44287d67ad3ec3bdf1bf28e5b94a37f36fedf435082669c3ea713","entity_key":"g_ko_meaning_chunks:example:1","voice_id":"5DWGv3VDkihNUcbvaonB","voice_name":"Kelee K - Seoul Narrator","voice_labels":{"gender":"female","accent":"seoul","age":"young","category":"professional","language":"ko","use_case":"conversational","descriptive":"casual"},"output_format":"mp3_44100_192","file_sha256":"29b10499a92a14b9af088b62eeb2735ff93c6321430ca5f5866ec20f0963f2f3","settings":{"stability":0.68,"similarity_boost":0.88,"style":0.0,"use_speaker_boost":true,"speed":0.95},"relative_path":"audio/generated/ko-KR/utterances/7a4575234eb44287d67ad3ec3bdf1bf28e5b94a37f36fedf435082669c3ea713.mp3"}'
+) ON DUPLICATE KEY UPDATE
+  provider = VALUES(provider),
+  provider_model = VALUES(provider_model),
+  storage_url = VALUES(storage_url),
+  duration_ms = VALUES(duration_ms),
+  generated_at = VALUES(generated_at),
+  checksum = VALUES(checksum),
+  status = VALUES(status),
+  metadata = VALUES(metadata);
+
+-- g_ko_ready_gate:example:3 -> audio/generated/ko-KR/utterances/7a4575234eb44287d67ad3ec3bdf1bf28e5b94a37f36fedf435082669c3ea713.mp3
+UPDATE audio_assets
+SET status = 'archived'
+WHERE entity_type = 'grammar_point'
+  AND entity_id = UUID_TO_BIN('0621062c-9141-5b25-98f3-c2f793da23a2', 1)
+  AND voice_key = 'ko-kr.sentence.native-clear'
+  AND (entity_type NOT IN ('grammar_point','exercise') OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'g_ko_ready_gate:example:3')
+  AND source_text_hash IS NOT NULL
+  AND source_text_hash <> 'ae713b65439d2c5c68601f886c885c9bf9839769e45c6de8c42f382e8c4a0f2f'
+  AND status <> 'archived';
+INSERT INTO audio_assets (
+  id, language_id, language_variant_id, entity_type, entity_id, source_text_hash,
+  voice_key, provider, provider_model, storage_url, duration_ms, generated_at, checksum, status, metadata
+) VALUES (
+  UUID_TO_BIN('5ed2b7dc-845e-5732-a926-2e84efa7dc00', 1), @audio_language_id, @audio_variant_id, 'grammar_point', UUID_TO_BIN('0621062c-9141-5b25-98f3-c2f793da23a2', 1), 'ae713b65439d2c5c68601f886c885c9bf9839769e45c6de8c42f382e8c4a0f2f',
+  'ko-kr.sentence.native-clear', 'elevenlabs', 'eleven_multilingual_v2', 'audio/generated/ko-KR/utterances/7a4575234eb44287d67ad3ec3bdf1bf28e5b94a37f36fedf435082669c3ea713.mp3', 1384, '2026-09-14 12:20:16.616397', '29b10499a92a14b9af088b62eeb2735ff93c6321430ca5f5866ec20f0963f2f3', 'validated', '{"audio_key":"7a4575234eb44287d67ad3ec3bdf1bf28e5b94a37f36fedf435082669c3ea713","entity_key":"g_ko_ready_gate:example:3","voice_id":"5DWGv3VDkihNUcbvaonB","voice_name":"Kelee K - Seoul Narrator","voice_labels":{"gender":"female","accent":"seoul","age":"young","category":"professional","language":"ko","use_case":"conversational","descriptive":"casual"},"output_format":"mp3_44100_192","file_sha256":"29b10499a92a14b9af088b62eeb2735ff93c6321430ca5f5866ec20f0963f2f3","settings":{"stability":0.68,"similarity_boost":0.88,"style":0.0,"use_speaker_boost":true,"speed":0.95},"relative_path":"audio/generated/ko-KR/utterances/7a4575234eb44287d67ad3ec3bdf1bf28e5b94a37f36fedf435082669c3ea713.mp3"}'
+) ON DUPLICATE KEY UPDATE
+  provider = VALUES(provider),
+  provider_model = VALUES(provider_model),
+  storage_url = VALUES(storage_url),
+  duration_ms = VALUES(duration_ms),
+  generated_at = VALUES(generated_at),
+  checksum = VALUES(checksum),
+  status = VALUES(status),
+  metadata = VALUES(metadata);
+
+-- u_ko_jamo_consonants -> audio/generated/ko-KR/utterances/8d1fa7170b6457b11e7e86c02b20f8ac7691fdadab46a45003da4f055f29ba2b.mp3
+UPDATE audio_assets
+SET status = 'archived'
+WHERE entity_type = 'utterance'
+  AND entity_id = UUID_TO_BIN('67f0abf1-46e1-5d6b-a9c7-1136bed0f3ce', 1)
+  AND voice_key = 'ko-kr.sentence.native-clear'
+  AND (entity_type NOT IN ('grammar_point','exercise') OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'u_ko_jamo_consonants')
+  AND source_text_hash IS NOT NULL
+  AND source_text_hash <> 'c81cf21c047dfc704cb05bced48b1b2e96214752080bcb2ae1e781e8b02df701'
+  AND status <> 'archived';
+INSERT INTO audio_assets (
+  id, language_id, language_variant_id, entity_type, entity_id, source_text_hash,
+  voice_key, provider, provider_model, storage_url, duration_ms, generated_at, checksum, status, metadata
+) VALUES (
+  UUID_TO_BIN('337e4273-4f5b-5b84-aec4-e231b0a21c33', 1), @audio_language_id, @audio_variant_id, 'utterance', UUID_TO_BIN('67f0abf1-46e1-5d6b-a9c7-1136bed0f3ce', 1), 'c81cf21c047dfc704cb05bced48b1b2e96214752080bcb2ae1e781e8b02df701',
+  'ko-kr.sentence.native-clear', 'elevenlabs', 'eleven_multilingual_v2', 'audio/generated/ko-KR/utterances/8d1fa7170b6457b11e7e86c02b20f8ac7691fdadab46a45003da4f055f29ba2b.mp3', 1750, '2026-09-14 12:20:17.259152', '37251ee04b18ecca89deacd097d6edbc72f495a1861c1a4637bec6d93cffb771', 'validated', '{"audio_key":"8d1fa7170b6457b11e7e86c02b20f8ac7691fdadab46a45003da4f055f29ba2b","entity_key":"u_ko_jamo_consonants","voice_id":"5DWGv3VDkihNUcbvaonB","voice_name":"Kelee K - Seoul Narrator","voice_labels":{"gender":"female","accent":"seoul","age":"young","category":"professional","language":"ko","use_case":"conversational","descriptive":"casual"},"output_format":"mp3_44100_192","file_sha256":"37251ee04b18ecca89deacd097d6edbc72f495a1861c1a4637bec6d93cffb771","settings":{"stability":0.68,"similarity_boost":0.88,"style":0.0,"use_speaker_boost":true,"speed":0.95},"relative_path":"audio/generated/ko-KR/utterances/8d1fa7170b6457b11e7e86c02b20f8ac7691fdadab46a45003da4f055f29ba2b.mp3"}'
+) ON DUPLICATE KEY UPDATE
+  provider = VALUES(provider),
+  provider_model = VALUES(provider_model),
+  storage_url = VALUES(storage_url),
+  duration_ms = VALUES(duration_ms),
+  generated_at = VALUES(generated_at),
+  checksum = VALUES(checksum),
+  status = VALUES(status),
+  metadata = VALUES(metadata);
+
+-- u_ko_block_final_ieung -> audio/generated/ko-KR/utterances/8e268e5818d06c3117d0c6b567b61533d03c6dd513313b76729843aa284c9805.mp3
+UPDATE audio_assets
+SET status = 'archived'
+WHERE entity_type = 'utterance'
+  AND entity_id = UUID_TO_BIN('aa766cc6-3c74-54b2-a21c-3abc1a251def', 1)
+  AND voice_key = 'ko-kr.sentence.native-clear'
+  AND (entity_type NOT IN ('grammar_point','exercise') OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'u_ko_block_final_ieung')
+  AND source_text_hash IS NOT NULL
+  AND source_text_hash <> '34d82d465fabd79e01d54d3bbf8b7e3c4b5f290bcb85e51c58ca531437c639ff'
+  AND status <> 'archived';
+INSERT INTO audio_assets (
+  id, language_id, language_variant_id, entity_type, entity_id, source_text_hash,
+  voice_key, provider, provider_model, storage_url, duration_ms, generated_at, checksum, status, metadata
+) VALUES (
+  UUID_TO_BIN('573ec55b-6e57-54e4-a270-320b79a94001', 1), @audio_language_id, @audio_variant_id, 'utterance', UUID_TO_BIN('aa766cc6-3c74-54b2-a21c-3abc1a251def', 1), '34d82d465fabd79e01d54d3bbf8b7e3c4b5f290bcb85e51c58ca531437c639ff',
+  'ko-kr.sentence.native-clear', 'elevenlabs', 'eleven_multilingual_v2', 'audio/generated/ko-KR/utterances/8e268e5818d06c3117d0c6b567b61533d03c6dd513313b76729843aa284c9805.mp3', 1071, '2026-09-14 12:20:17.598075', '04399b121b85e01945a46073591176fe8ff43864eeeb48908bb357d3b9fd8ae3', 'validated', '{"audio_key":"8e268e5818d06c3117d0c6b567b61533d03c6dd513313b76729843aa284c9805","entity_key":"u_ko_block_final_ieung","voice_id":"5DWGv3VDkihNUcbvaonB","voice_name":"Kelee K - Seoul Narrator","voice_labels":{"gender":"female","accent":"seoul","age":"young","category":"professional","language":"ko","use_case":"conversational","descriptive":"casual"},"output_format":"mp3_44100_192","file_sha256":"04399b121b85e01945a46073591176fe8ff43864eeeb48908bb357d3b9fd8ae3","settings":{"stability":0.68,"similarity_boost":0.88,"style":0.0,"use_speaker_boost":true,"speed":0.95},"relative_path":"audio/generated/ko-KR/utterances/8e268e5818d06c3117d0c6b567b61533d03c6dd513313b76729843aa284c9805.mp3"}'
+) ON DUPLICATE KEY UPDATE
+  provider = VALUES(provider),
+  provider_model = VALUES(provider_model),
+  storage_url = VALUES(storage_url),
+  duration_ms = VALUES(duration_ms),
+  generated_at = VALUES(generated_at),
+  checksum = VALUES(checksum),
+  status = VALUES(status),
+  metadata = VALUES(metadata);
+
+-- g_ko_jamo_consonants:example:2 -> audio/generated/ko-KR/utterances/9b39ba9e4576a7706e7460de404f547cf2f368fc61e4de908169b1b16895077f.mp3
+UPDATE audio_assets
+SET status = 'archived'
+WHERE entity_type = 'grammar_point'
+  AND entity_id = UUID_TO_BIN('4ecc43a0-0623-5bc1-acbc-bdbaabcaef18', 1)
+  AND voice_key = 'ko-kr.sentence.native-clear'
+  AND (entity_type NOT IN ('grammar_point','exercise') OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'g_ko_jamo_consonants:example:2')
+  AND source_text_hash IS NOT NULL
+  AND source_text_hash <> '34f404d9d0a79aa558baab1bc8c72555b392dc1bd242f069dd81c2e6817c8f70'
+  AND status <> 'archived';
+INSERT INTO audio_assets (
+  id, language_id, language_variant_id, entity_type, entity_id, source_text_hash,
+  voice_key, provider, provider_model, storage_url, duration_ms, generated_at, checksum, status, metadata
+) VALUES (
+  UUID_TO_BIN('01455f51-a091-515e-baf6-cef24601aa0c', 1), @audio_language_id, @audio_variant_id, 'grammar_point', UUID_TO_BIN('4ecc43a0-0623-5bc1-acbc-bdbaabcaef18', 1), '34f404d9d0a79aa558baab1bc8c72555b392dc1bd242f069dd81c2e6817c8f70',
+  'ko-kr.sentence.native-clear', 'elevenlabs', 'eleven_multilingual_v2', 'audio/generated/ko-KR/utterances/9b39ba9e4576a7706e7460de404f547cf2f368fc61e4de908169b1b16895077f.mp3', 862, '2026-09-14 12:20:18.283167', '06e4114194e58c4ba1d795b6a56269daccef13d9649f33fa61407ed11ecf99f5', 'validated', '{"audio_key":"9b39ba9e4576a7706e7460de404f547cf2f368fc61e4de908169b1b16895077f","entity_key":"g_ko_jamo_consonants:example:2","voice_id":"5DWGv3VDkihNUcbvaonB","voice_name":"Kelee K - Seoul Narrator","voice_labels":{"gender":"female","accent":"seoul","age":"young","category":"professional","language":"ko","use_case":"conversational","descriptive":"casual"},"output_format":"mp3_44100_192","file_sha256":"06e4114194e58c4ba1d795b6a56269daccef13d9649f33fa61407ed11ecf99f5","settings":{"stability":0.68,"similarity_boost":0.88,"style":0.0,"use_speaker_boost":true,"speed":0.95},"relative_path":"audio/generated/ko-KR/utterances/9b39ba9e4576a7706e7460de404f547cf2f368fc61e4de908169b1b16895077f.mp3"}'
 ) ON DUPLICATE KEY UPDATE
   provider = VALUES(provider),
   provider_model = VALUES(provider_model),
@@ -6354,6 +7316,32 @@ INSERT INTO audio_assets (
   status = VALUES(status),
   metadata = VALUES(metadata);
 
+-- g_ko_ready_gate:example:1 -> audio/generated/ko-KR/utterances/b977ade52323ee722837fb15d7b60061f616d47dbb142d473a130339d2a0e948.mp3
+UPDATE audio_assets
+SET status = 'archived'
+WHERE entity_type = 'grammar_point'
+  AND entity_id = UUID_TO_BIN('0621062c-9141-5b25-98f3-c2f793da23a2', 1)
+  AND voice_key = 'ko-kr.sentence.native-clear'
+  AND (entity_type NOT IN ('grammar_point','exercise') OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'g_ko_ready_gate:example:1')
+  AND source_text_hash IS NOT NULL
+  AND source_text_hash <> 'd12e07e2abf5a6fb0fb8f99f649a2cb3ba596c9007ccbf233fddf1804615e132'
+  AND status <> 'archived';
+INSERT INTO audio_assets (
+  id, language_id, language_variant_id, entity_type, entity_id, source_text_hash,
+  voice_key, provider, provider_model, storage_url, duration_ms, generated_at, checksum, status, metadata
+) VALUES (
+  UUID_TO_BIN('69ebd22b-549f-50e1-b17a-fd1160c04ce6', 1), @audio_language_id, @audio_variant_id, 'grammar_point', UUID_TO_BIN('0621062c-9141-5b25-98f3-c2f793da23a2', 1), 'd12e07e2abf5a6fb0fb8f99f649a2cb3ba596c9007ccbf233fddf1804615e132',
+  'ko-kr.sentence.native-clear', 'elevenlabs', 'eleven_multilingual_v2', 'audio/generated/ko-KR/utterances/b977ade52323ee722837fb15d7b60061f616d47dbb142d473a130339d2a0e948.mp3', 1436, '2026-09-14 12:20:18.626838', '515f339b8aa448a8606ebd85a38c376efd88af42eacc8aa6296a5e0fccad4b2e', 'validated', '{"audio_key":"b977ade52323ee722837fb15d7b60061f616d47dbb142d473a130339d2a0e948","entity_key":"g_ko_ready_gate:example:1","voice_id":"5DWGv3VDkihNUcbvaonB","voice_name":"Kelee K - Seoul Narrator","voice_labels":{"gender":"female","accent":"seoul","age":"young","category":"professional","language":"ko","use_case":"conversational","descriptive":"casual"},"output_format":"mp3_44100_192","file_sha256":"515f339b8aa448a8606ebd85a38c376efd88af42eacc8aa6296a5e0fccad4b2e","settings":{"stability":0.68,"similarity_boost":0.88,"style":0.0,"use_speaker_boost":true,"speed":0.95},"relative_path":"audio/generated/ko-KR/utterances/b977ade52323ee722837fb15d7b60061f616d47dbb142d473a130339d2a0e948.mp3"}'
+) ON DUPLICATE KEY UPDATE
+  provider = VALUES(provider),
+  provider_model = VALUES(provider_model),
+  storage_url = VALUES(storage_url),
+  duration_ms = VALUES(duration_ms),
+  generated_at = VALUES(generated_at),
+  checksum = VALUES(checksum),
+  status = VALUES(status),
+  metadata = VALUES(metadata);
+
 -- u_hangul_basics_03 -> audio/generated/ko-KR/utterances/bd3575f411de6b32607eaaa86129cdcd19a97b0893d4581b7af2218587c41c49.mp3
 UPDATE audio_assets
 SET status = 'archived'
@@ -6370,6 +7358,32 @@ INSERT INTO audio_assets (
 ) VALUES (
   UUID_TO_BIN('841545aa-1086-5643-a3b8-09a740c5fc53', 1), @audio_language_id, @audio_variant_id, 'utterance', UUID_TO_BIN('91203686-fc16-50bc-bc63-8c44587e5dbc', 1), 'e53b6dbf0e9a345d4105a87a626524596b8aa64db8ec55720bc531c8f7eb5aa2',
   'ko-kr.sentence.native-clear', 'elevenlabs', 'eleven_multilingual_v2', 'audio/generated/ko-KR/utterances/bd3575f411de6b32607eaaa86129cdcd19a97b0893d4581b7af2218587c41c49.mp3', 1436, '2026-09-13 21:06:03.428360', '988ca895aea1a3cdc277ee9547e72e8a8c9dd153ef513d31935be944be935748', 'validated', '{"audio_key":"bd3575f411de6b32607eaaa86129cdcd19a97b0893d4581b7af2218587c41c49","entity_key":"u_hangul_basics_03","voice_id":"5DWGv3VDkihNUcbvaonB","voice_name":"Kelee K - Seoul Narrator","voice_labels":{"gender":"female","accent":"seoul","age":"young","category":"professional","language":"ko","use_case":"conversational","descriptive":"casual"},"output_format":"mp3_44100_192","file_sha256":"988ca895aea1a3cdc277ee9547e72e8a8c9dd153ef513d31935be944be935748","settings":{"stability":0.68,"similarity_boost":0.88,"style":0.0,"use_speaker_boost":true,"speed":0.95},"relative_path":"audio/generated/ko-KR/utterances/bd3575f411de6b32607eaaa86129cdcd19a97b0893d4581b7af2218587c41c49.mp3"}'
+) ON DUPLICATE KEY UPDATE
+  provider = VALUES(provider),
+  provider_model = VALUES(provider_model),
+  storage_url = VALUES(storage_url),
+  duration_ms = VALUES(duration_ms),
+  generated_at = VALUES(generated_at),
+  checksum = VALUES(checksum),
+  status = VALUES(status),
+  metadata = VALUES(metadata);
+
+-- g_ko_jamo_vowels:example:4 -> audio/generated/ko-KR/utterances/bfd38316831019818d36ee882f32394981bbd8eabb3ddaf3ccfc48e12fda8f4b.mp3
+UPDATE audio_assets
+SET status = 'archived'
+WHERE entity_type = 'grammar_point'
+  AND entity_id = UUID_TO_BIN('534ecb75-6efd-542d-8cf6-a6480f06a370', 1)
+  AND voice_key = 'ko-kr.sentence.native-clear'
+  AND (entity_type NOT IN ('grammar_point','exercise') OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'g_ko_jamo_vowels:example:4')
+  AND source_text_hash IS NOT NULL
+  AND source_text_hash <> 'dd7f4bf020e9b76751e7f9a32562a11aa47b297dabbfc2e51262f1ec81e716ad'
+  AND status <> 'archived';
+INSERT INTO audio_assets (
+  id, language_id, language_variant_id, entity_type, entity_id, source_text_hash,
+  voice_key, provider, provider_model, storage_url, duration_ms, generated_at, checksum, status, metadata
+) VALUES (
+  UUID_TO_BIN('2c4f473a-46d4-5c1e-b361-517db94c64b2', 1), @audio_language_id, @audio_variant_id, 'grammar_point', UUID_TO_BIN('534ecb75-6efd-542d-8cf6-a6480f06a370', 1), 'dd7f4bf020e9b76751e7f9a32562a11aa47b297dabbfc2e51262f1ec81e716ad',
+  'ko-kr.sentence.native-clear', 'elevenlabs', 'eleven_multilingual_v2', 'audio/generated/ko-KR/utterances/bfd38316831019818d36ee882f32394981bbd8eabb3ddaf3ccfc48e12fda8f4b.mp3', 600, '2026-09-14 12:20:19.230867', 'd55fb1968ba593a103486d5dae6d68b7b12d4c19bc9388981a53b7334dfb16d3', 'validated', '{"audio_key":"bfd38316831019818d36ee882f32394981bbd8eabb3ddaf3ccfc48e12fda8f4b","entity_key":"g_ko_jamo_vowels:example:4","voice_id":"5DWGv3VDkihNUcbvaonB","voice_name":"Kelee K - Seoul Narrator","voice_labels":{"gender":"female","accent":"seoul","age":"young","category":"professional","language":"ko","use_case":"conversational","descriptive":"casual"},"output_format":"mp3_44100_192","file_sha256":"d55fb1968ba593a103486d5dae6d68b7b12d4c19bc9388981a53b7334dfb16d3","settings":{"stability":0.68,"similarity_boost":0.88,"style":0.0,"use_speaker_boost":true,"speed":0.95},"relative_path":"audio/generated/ko-KR/utterances/bfd38316831019818d36ee882f32394981bbd8eabb3ddaf3ccfc48e12fda8f4b.mp3"}'
 ) ON DUPLICATE KEY UPDATE
   provider = VALUES(provider),
   provider_model = VALUES(provider_model),
@@ -6406,6 +7420,32 @@ INSERT INTO audio_assets (
   status = VALUES(status),
   metadata = VALUES(metadata);
 
+-- g_ko_block_ieung:example:1 -> audio/generated/ko-KR/utterances/c504bdfbd3039d67f0a525ffec052a40f0619ee36979e1d352a9094e9ad1d22e.mp3
+UPDATE audio_assets
+SET status = 'archived'
+WHERE entity_type = 'grammar_point'
+  AND entity_id = UUID_TO_BIN('b439c62c-d7ba-5f52-8f7b-e2289fd01a6d', 1)
+  AND voice_key = 'ko-kr.sentence.native-clear'
+  AND (entity_type NOT IN ('grammar_point','exercise') OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'g_ko_block_ieung:example:1')
+  AND source_text_hash IS NOT NULL
+  AND source_text_hash <> 'd6ce479be9ddc9b7de97f62dc4c7c9c1319300d5635e0de0f35d474f380b2ea5'
+  AND status <> 'archived';
+INSERT INTO audio_assets (
+  id, language_id, language_variant_id, entity_type, entity_id, source_text_hash,
+  voice_key, provider, provider_model, storage_url, duration_ms, generated_at, checksum, status, metadata
+) VALUES (
+  UUID_TO_BIN('2669935b-8638-524a-a53b-6b904286d707', 1), @audio_language_id, @audio_variant_id, 'grammar_point', UUID_TO_BIN('b439c62c-d7ba-5f52-8f7b-e2289fd01a6d', 1), 'd6ce479be9ddc9b7de97f62dc4c7c9c1319300d5635e0de0f35d474f380b2ea5',
+  'ko-kr.sentence.native-clear', 'elevenlabs', 'eleven_multilingual_v2', 'audio/generated/ko-KR/utterances/c504bdfbd3039d67f0a525ffec052a40f0619ee36979e1d352a9094e9ad1d22e.mp3', 835, '2026-09-14 12:20:19.580902', 'a3af2a1ab04904283e7f1754a41b611cadd786c509e194b5e749a7f0ee9a0b19', 'validated', '{"audio_key":"c504bdfbd3039d67f0a525ffec052a40f0619ee36979e1d352a9094e9ad1d22e","entity_key":"g_ko_block_ieung:example:1","voice_id":"5DWGv3VDkihNUcbvaonB","voice_name":"Kelee K - Seoul Narrator","voice_labels":{"gender":"female","accent":"seoul","age":"young","category":"professional","language":"ko","use_case":"conversational","descriptive":"casual"},"output_format":"mp3_44100_192","file_sha256":"a3af2a1ab04904283e7f1754a41b611cadd786c509e194b5e749a7f0ee9a0b19","settings":{"stability":0.68,"similarity_boost":0.88,"style":0.0,"use_speaker_boost":true,"speed":0.95},"relative_path":"audio/generated/ko-KR/utterances/c504bdfbd3039d67f0a525ffec052a40f0619ee36979e1d352a9094e9ad1d22e.mp3"}'
+) ON DUPLICATE KEY UPDATE
+  provider = VALUES(provider),
+  provider_model = VALUES(provider_model),
+  storage_url = VALUES(storage_url),
+  duration_ms = VALUES(duration_ms),
+  generated_at = VALUES(generated_at),
+  checksum = VALUES(checksum),
+  status = VALUES(status),
+  metadata = VALUES(metadata);
+
 -- u_how_are_you_01 -> audio/generated/ko-KR/utterances/c574b280f5ef37ffcbe0f8f914a0d8844dca4856b4bd1deeecc16a444cf45bc0.mp3
 UPDATE audio_assets
 SET status = 'archived'
@@ -6422,6 +7462,32 @@ INSERT INTO audio_assets (
 ) VALUES (
   UUID_TO_BIN('78baa411-5b72-5dd2-9bd1-f839ed399396', 1), @audio_language_id, @audio_variant_id, 'utterance', UUID_TO_BIN('c03aa965-a97f-53c6-8ce7-95ee753b3795', 1), '478c962d7db98238a9254aae79d1cf571f955f4bf6b28c17386f1c51fd1f3f66',
   'ko-kr.sentence.native-clear', 'elevenlabs', 'eleven_multilingual_v2', 'audio/generated/ko-KR/utterances/c574b280f5ef37ffcbe0f8f914a0d8844dca4856b4bd1deeecc16a444cf45bc0.mp3', 1149, '2026-09-13 21:06:04.399181', 'c228382152b653bbb310f65596c8e0ede5ecbd05b5d56c30c1b8e94876b7ec90', 'validated', '{"audio_key":"c574b280f5ef37ffcbe0f8f914a0d8844dca4856b4bd1deeecc16a444cf45bc0","entity_key":"u_how_are_you_01","voice_id":"5DWGv3VDkihNUcbvaonB","voice_name":"Kelee K - Seoul Narrator","voice_labels":{"gender":"female","accent":"seoul","age":"young","category":"professional","language":"ko","use_case":"conversational","descriptive":"casual"},"output_format":"mp3_44100_192","file_sha256":"c228382152b653bbb310f65596c8e0ede5ecbd05b5d56c30c1b8e94876b7ec90","settings":{"stability":0.68,"similarity_boost":0.88,"style":0.0,"use_speaker_boost":true,"speed":0.95},"relative_path":"audio/generated/ko-KR/utterances/c574b280f5ef37ffcbe0f8f914a0d8844dca4856b4bd1deeecc16a444cf45bc0.mp3"}'
+) ON DUPLICATE KEY UPDATE
+  provider = VALUES(provider),
+  provider_model = VALUES(provider_model),
+  storage_url = VALUES(storage_url),
+  duration_ms = VALUES(duration_ms),
+  generated_at = VALUES(generated_at),
+  checksum = VALUES(checksum),
+  status = VALUES(status),
+  metadata = VALUES(metadata);
+
+-- u_ko_jamo_vowels -> audio/generated/ko-KR/utterances/cc7ce3bc5ee70b125e3cff45d05deb72aa75940b239ec8f20f7fa0b7937e7316.mp3
+UPDATE audio_assets
+SET status = 'archived'
+WHERE entity_type = 'utterance'
+  AND entity_id = UUID_TO_BIN('0723b88a-8616-532f-b482-34e34616ed03', 1)
+  AND voice_key = 'ko-kr.sentence.native-clear'
+  AND (entity_type NOT IN ('grammar_point','exercise') OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'u_ko_jamo_vowels')
+  AND source_text_hash IS NOT NULL
+  AND source_text_hash <> '28b94ecc84a94cdcf535fd5d01ed91c33fc875f96c5ca84d776cc0345635bbd5'
+  AND status <> 'archived';
+INSERT INTO audio_assets (
+  id, language_id, language_variant_id, entity_type, entity_id, source_text_hash,
+  voice_key, provider, provider_model, storage_url, duration_ms, generated_at, checksum, status, metadata
+) VALUES (
+  UUID_TO_BIN('9d46fd87-4ce2-5717-8f6e-bffe93779b6e', 1), @audio_language_id, @audio_variant_id, 'utterance', UUID_TO_BIN('0723b88a-8616-532f-b482-34e34616ed03', 1), '28b94ecc84a94cdcf535fd5d01ed91c33fc875f96c5ca84d776cc0345635bbd5',
+  'ko-kr.sentence.native-clear', 'elevenlabs', 'eleven_multilingual_v2', 'audio/generated/ko-KR/utterances/cc7ce3bc5ee70b125e3cff45d05deb72aa75940b239ec8f20f7fa0b7937e7316.mp3', 1697, '2026-09-14 12:20:20.251063', '0dcba6f55ac3b845ce56b99f50f5201e78dfa95883a1272dd609b0f58d20976d', 'validated', '{"audio_key":"cc7ce3bc5ee70b125e3cff45d05deb72aa75940b239ec8f20f7fa0b7937e7316","entity_key":"u_ko_jamo_vowels","voice_id":"5DWGv3VDkihNUcbvaonB","voice_name":"Kelee K - Seoul Narrator","voice_labels":{"gender":"female","accent":"seoul","age":"young","category":"professional","language":"ko","use_case":"conversational","descriptive":"casual"},"output_format":"mp3_44100_192","file_sha256":"0dcba6f55ac3b845ce56b99f50f5201e78dfa95883a1272dd609b0f58d20976d","settings":{"stability":0.68,"similarity_boost":0.88,"style":0.0,"use_speaker_boost":true,"speed":0.95},"relative_path":"audio/generated/ko-KR/utterances/cc7ce3bc5ee70b125e3cff45d05deb72aa75940b239ec8f20f7fa0b7937e7316.mp3"}'
 ) ON DUPLICATE KEY UPDATE
   provider = VALUES(provider),
   provider_model = VALUES(provider_model),
@@ -6500,6 +7566,32 @@ INSERT INTO audio_assets (
 ) VALUES (
   UUID_TO_BIN('5d19d277-37dc-52e8-84a3-9e86fc5ca020', 1), @audio_language_id, @audio_variant_id, 'utterance', UUID_TO_BIN('d4a92dc9-3c66-5c1f-a726-2f737fb53cc4', 1), '73048d52a534805b4cb97b94046fd9373c3b9aae48650cc7eb93af0485a881bd',
   'ko-kr.sentence.native-clear', 'elevenlabs', 'eleven_multilingual_v2', 'audio/generated/ko-KR/utterances/d57524319d62aaeedb98665fd84711cd629a5c83774d789047b6b8f24bcb350d.mp3', 1253, '2026-09-13 21:06:05.391789', 'e3e646a03817b04faa4c695e111a94f4be8a63db66a2d8d3cb18602e48501535', 'validated', '{"audio_key":"d57524319d62aaeedb98665fd84711cd629a5c83774d789047b6b8f24bcb350d","entity_key":"u_first_objects_03","voice_id":"5DWGv3VDkihNUcbvaonB","voice_name":"Kelee K - Seoul Narrator","voice_labels":{"gender":"female","accent":"seoul","age":"young","category":"professional","language":"ko","use_case":"conversational","descriptive":"casual"},"output_format":"mp3_44100_192","file_sha256":"e3e646a03817b04faa4c695e111a94f4be8a63db66a2d8d3cb18602e48501535","settings":{"stability":0.68,"similarity_boost":0.88,"style":0.0,"use_speaker_boost":true,"speed":0.95},"relative_path":"audio/generated/ko-KR/utterances/d57524319d62aaeedb98665fd84711cd629a5c83774d789047b6b8f24bcb350d.mp3"}'
+) ON DUPLICATE KEY UPDATE
+  provider = VALUES(provider),
+  provider_model = VALUES(provider_model),
+  storage_url = VALUES(storage_url),
+  duration_ms = VALUES(duration_ms),
+  generated_at = VALUES(generated_at),
+  checksum = VALUES(checksum),
+  status = VALUES(status),
+  metadata = VALUES(metadata);
+
+-- ex_ko_jamo_hear_h -> audio/generated/ko-KR/utterances/d60d909be5398a3b1510c4129d1134a90a64a0859e0f51b728738ce3821d6b91.mp3
+UPDATE audio_assets
+SET status = 'archived'
+WHERE entity_type = 'exercise'
+  AND entity_id = UUID_TO_BIN('a05a08d0-d4de-5324-b734-ca71c26c2a8e', 1)
+  AND voice_key = 'ko-kr.sentence.native-clear'
+  AND (entity_type NOT IN ('grammar_point','exercise') OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'ex_ko_jamo_hear_h')
+  AND source_text_hash IS NOT NULL
+  AND source_text_hash <> 'ec2c0a001ac1822d70cc621fcc6292e1129dc5210eebdc8487449ce2e3fc9dd5'
+  AND status <> 'archived';
+INSERT INTO audio_assets (
+  id, language_id, language_variant_id, entity_type, entity_id, source_text_hash,
+  voice_key, provider, provider_model, storage_url, duration_ms, generated_at, checksum, status, metadata
+) VALUES (
+  UUID_TO_BIN('599e6e95-bdf3-55d5-8154-d15d927d5613', 1), @audio_language_id, @audio_variant_id, 'exercise', UUID_TO_BIN('a05a08d0-d4de-5324-b734-ca71c26c2a8e', 1), 'ec2c0a001ac1822d70cc621fcc6292e1129dc5210eebdc8487449ce2e3fc9dd5',
+  'ko-kr.sentence.native-clear', 'elevenlabs', 'eleven_multilingual_v2', 'audio/generated/ko-KR/utterances/d60d909be5398a3b1510c4129d1134a90a64a0859e0f51b728738ce3821d6b91.mp3', 862, '2026-09-14 12:20:20.880401', 'c003b75cb0bc2cbdbcfc7aec809d5c1860859dd9ac42507812258f77ba38695b', 'validated', '{"audio_key":"d60d909be5398a3b1510c4129d1134a90a64a0859e0f51b728738ce3821d6b91","entity_key":"ex_ko_jamo_hear_h","voice_id":"5DWGv3VDkihNUcbvaonB","voice_name":"Kelee K - Seoul Narrator","voice_labels":{"gender":"female","accent":"seoul","age":"young","category":"professional","language":"ko","use_case":"conversational","descriptive":"casual"},"output_format":"mp3_44100_192","file_sha256":"c003b75cb0bc2cbdbcfc7aec809d5c1860859dd9ac42507812258f77ba38695b","settings":{"stability":0.68,"similarity_boost":0.88,"style":0.0,"use_speaker_boost":true,"speed":0.95},"relative_path":"audio/generated/ko-KR/utterances/d60d909be5398a3b1510c4129d1134a90a64a0859e0f51b728738ce3821d6b91.mp3"}'
 ) ON DUPLICATE KEY UPDATE
   provider = VALUES(provider),
   provider_model = VALUES(provider_model),
@@ -6682,6 +7774,110 @@ INSERT INTO audio_assets (
 ) VALUES (
   UUID_TO_BIN('ab39a4ad-5cf2-529a-9563-f7d159d1d84d', 1), @audio_language_id, @audio_variant_id, 'exercise', UUID_TO_BIN('151212d8-3f2a-55cb-9d3e-93ab3f092e23', 1), 'a4c8e544dfe301d06503ad76d69efb80826f504b87b0a2cdbf3c0fea4bee456c',
   'ko-kr.sentence.native-clear', 'elevenlabs', 'eleven_multilingual_v2', 'audio/generated/ko-KR/utterances/eef47246d6ce27a6830f4d01b4a65c93b66bd37d07778adb8d5593f49789ebef.mp3', 1619, '2026-09-13 21:06:07.532630', 'fe458c7abe75d18d0c5b8ccacecd79ce45f07ce16533925d52245f69a2d7640d', 'validated', '{"audio_key":"eef47246d6ce27a6830f4d01b4a65c93b66bd37d07778adb8d5593f49789ebef","entity_key":"e_my_name_02_listen","voice_id":"5DWGv3VDkihNUcbvaonB","voice_name":"Kelee K - Seoul Narrator","voice_labels":{"gender":"female","accent":"seoul","age":"young","category":"professional","language":"ko","use_case":"conversational","descriptive":"casual"},"output_format":"mp3_44100_192","file_sha256":"fe458c7abe75d18d0c5b8ccacecd79ce45f07ce16533925d52245f69a2d7640d","settings":{"stability":0.68,"similarity_boost":0.88,"style":0.0,"use_speaker_boost":true,"speed":0.95},"relative_path":"audio/generated/ko-KR/utterances/eef47246d6ce27a6830f4d01b4a65c93b66bd37d07778adb8d5593f49789ebef.mp3"}'
+) ON DUPLICATE KEY UPDATE
+  provider = VALUES(provider),
+  provider_model = VALUES(provider_model),
+  storage_url = VALUES(storage_url),
+  duration_ms = VALUES(duration_ms),
+  generated_at = VALUES(generated_at),
+  checksum = VALUES(checksum),
+  status = VALUES(status),
+  metadata = VALUES(metadata);
+
+-- u_ko_meaning_repeat -> audio/generated/ko-KR/utterances/f87f38427c2ff76f382559ee37dd2e502b62b0d47acfd8544969b81e7dd4c86d.mp3
+UPDATE audio_assets
+SET status = 'archived'
+WHERE entity_type = 'utterance'
+  AND entity_id = UUID_TO_BIN('7cd9cd71-a34f-554f-a7fc-bd45ac0a7c81', 1)
+  AND voice_key = 'ko-kr.sentence.native-clear'
+  AND (entity_type NOT IN ('grammar_point','exercise') OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'u_ko_meaning_repeat')
+  AND source_text_hash IS NOT NULL
+  AND source_text_hash <> '67c64c9cae445f707ce250b88595fa992fa4c6e2e5e05b1f2032c73d70151dd1'
+  AND status <> 'archived';
+INSERT INTO audio_assets (
+  id, language_id, language_variant_id, entity_type, entity_id, source_text_hash,
+  voice_key, provider, provider_model, storage_url, duration_ms, generated_at, checksum, status, metadata
+) VALUES (
+  UUID_TO_BIN('974f3a9f-7756-5f2c-8504-15f1846125ec', 1), @audio_language_id, @audio_variant_id, 'utterance', UUID_TO_BIN('7cd9cd71-a34f-554f-a7fc-bd45ac0a7c81', 1), '67c64c9cae445f707ce250b88595fa992fa4c6e2e5e05b1f2032c73d70151dd1',
+  'ko-kr.sentence.native-clear', 'elevenlabs', 'eleven_multilingual_v2', 'audio/generated/ko-KR/utterances/f87f38427c2ff76f382559ee37dd2e502b62b0d47acfd8544969b81e7dd4c86d.mp3', 1488, '2026-09-13 21:06:08.509651', 'b03d17339acba3b6c04ee9abc83259e046d0eb1ee34ce7c68ba55d96a7866e58', 'validated', '{"audio_key":"f87f38427c2ff76f382559ee37dd2e502b62b0d47acfd8544969b81e7dd4c86d","entity_key":"u_ko_meaning_repeat","voice_id":"5DWGv3VDkihNUcbvaonB","voice_name":"Kelee K - Seoul Narrator","voice_labels":{"gender":"female","accent":"seoul","age":"young","category":"professional","language":"ko","use_case":"conversational","descriptive":"casual"},"output_format":"mp3_44100_192","file_sha256":"b03d17339acba3b6c04ee9abc83259e046d0eb1ee34ce7c68ba55d96a7866e58","settings":{"stability":0.68,"similarity_boost":0.88,"style":0.0,"use_speaker_boost":true,"speed":0.95},"relative_path":"audio/generated/ko-KR/utterances/f87f38427c2ff76f382559ee37dd2e502b62b0d47acfd8544969b81e7dd4c86d.mp3"}'
+) ON DUPLICATE KEY UPDATE
+  provider = VALUES(provider),
+  provider_model = VALUES(provider_model),
+  storage_url = VALUES(storage_url),
+  duration_ms = VALUES(duration_ms),
+  generated_at = VALUES(generated_at),
+  checksum = VALUES(checksum),
+  status = VALUES(status),
+  metadata = VALUES(metadata);
+
+-- ex_ko_meaning_listen_repeat -> audio/generated/ko-KR/utterances/f87f38427c2ff76f382559ee37dd2e502b62b0d47acfd8544969b81e7dd4c86d.mp3
+UPDATE audio_assets
+SET status = 'archived'
+WHERE entity_type = 'exercise'
+  AND entity_id = UUID_TO_BIN('e2831cce-73ff-5eca-a77b-d8988354e75c', 1)
+  AND voice_key = 'ko-kr.sentence.native-clear'
+  AND (entity_type NOT IN ('grammar_point','exercise') OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'ex_ko_meaning_listen_repeat')
+  AND source_text_hash IS NOT NULL
+  AND source_text_hash <> '67c64c9cae445f707ce250b88595fa992fa4c6e2e5e05b1f2032c73d70151dd1'
+  AND status <> 'archived';
+INSERT INTO audio_assets (
+  id, language_id, language_variant_id, entity_type, entity_id, source_text_hash,
+  voice_key, provider, provider_model, storage_url, duration_ms, generated_at, checksum, status, metadata
+) VALUES (
+  UUID_TO_BIN('c1a64163-5339-5219-b372-fe323bd46bfb', 1), @audio_language_id, @audio_variant_id, 'exercise', UUID_TO_BIN('e2831cce-73ff-5eca-a77b-d8988354e75c', 1), '67c64c9cae445f707ce250b88595fa992fa4c6e2e5e05b1f2032c73d70151dd1',
+  'ko-kr.sentence.native-clear', 'elevenlabs', 'eleven_multilingual_v2', 'audio/generated/ko-KR/utterances/f87f38427c2ff76f382559ee37dd2e502b62b0d47acfd8544969b81e7dd4c86d.mp3', 1488, '2026-09-13 21:06:08.509651', 'b03d17339acba3b6c04ee9abc83259e046d0eb1ee34ce7c68ba55d96a7866e58', 'validated', '{"audio_key":"f87f38427c2ff76f382559ee37dd2e502b62b0d47acfd8544969b81e7dd4c86d","entity_key":"ex_ko_meaning_listen_repeat","voice_id":"5DWGv3VDkihNUcbvaonB","voice_name":"Kelee K - Seoul Narrator","voice_labels":{"gender":"female","accent":"seoul","age":"young","category":"professional","language":"ko","use_case":"conversational","descriptive":"casual"},"output_format":"mp3_44100_192","file_sha256":"b03d17339acba3b6c04ee9abc83259e046d0eb1ee34ce7c68ba55d96a7866e58","settings":{"stability":0.68,"similarity_boost":0.88,"style":0.0,"use_speaker_boost":true,"speed":0.95},"relative_path":"audio/generated/ko-KR/utterances/f87f38427c2ff76f382559ee37dd2e502b62b0d47acfd8544969b81e7dd4c86d.mp3"}'
+) ON DUPLICATE KEY UPDATE
+  provider = VALUES(provider),
+  provider_model = VALUES(provider_model),
+  storage_url = VALUES(storage_url),
+  duration_ms = VALUES(duration_ms),
+  generated_at = VALUES(generated_at),
+  checksum = VALUES(checksum),
+  status = VALUES(status),
+  metadata = VALUES(metadata);
+
+-- g_ko_meaning_chunks:example:2 -> audio/generated/ko-KR/utterances/f87f38427c2ff76f382559ee37dd2e502b62b0d47acfd8544969b81e7dd4c86d.mp3
+UPDATE audio_assets
+SET status = 'archived'
+WHERE entity_type = 'grammar_point'
+  AND entity_id = UUID_TO_BIN('5e5b068b-752b-503c-92c8-54f52742ac0e', 1)
+  AND voice_key = 'ko-kr.sentence.native-clear'
+  AND (entity_type NOT IN ('grammar_point','exercise') OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'g_ko_meaning_chunks:example:2')
+  AND source_text_hash IS NOT NULL
+  AND source_text_hash <> '67c64c9cae445f707ce250b88595fa992fa4c6e2e5e05b1f2032c73d70151dd1'
+  AND status <> 'archived';
+INSERT INTO audio_assets (
+  id, language_id, language_variant_id, entity_type, entity_id, source_text_hash,
+  voice_key, provider, provider_model, storage_url, duration_ms, generated_at, checksum, status, metadata
+) VALUES (
+  UUID_TO_BIN('96b2862f-bc68-559c-a036-67a9b5ea4438', 1), @audio_language_id, @audio_variant_id, 'grammar_point', UUID_TO_BIN('5e5b068b-752b-503c-92c8-54f52742ac0e', 1), '67c64c9cae445f707ce250b88595fa992fa4c6e2e5e05b1f2032c73d70151dd1',
+  'ko-kr.sentence.native-clear', 'elevenlabs', 'eleven_multilingual_v2', 'audio/generated/ko-KR/utterances/f87f38427c2ff76f382559ee37dd2e502b62b0d47acfd8544969b81e7dd4c86d.mp3', 1488, '2026-09-13 21:06:08.509651', 'b03d17339acba3b6c04ee9abc83259e046d0eb1ee34ce7c68ba55d96a7866e58', 'validated', '{"audio_key":"f87f38427c2ff76f382559ee37dd2e502b62b0d47acfd8544969b81e7dd4c86d","entity_key":"g_ko_meaning_chunks:example:2","voice_id":"5DWGv3VDkihNUcbvaonB","voice_name":"Kelee K - Seoul Narrator","voice_labels":{"gender":"female","accent":"seoul","age":"young","category":"professional","language":"ko","use_case":"conversational","descriptive":"casual"},"output_format":"mp3_44100_192","file_sha256":"b03d17339acba3b6c04ee9abc83259e046d0eb1ee34ce7c68ba55d96a7866e58","settings":{"stability":0.68,"similarity_boost":0.88,"style":0.0,"use_speaker_boost":true,"speed":0.95},"relative_path":"audio/generated/ko-KR/utterances/f87f38427c2ff76f382559ee37dd2e502b62b0d47acfd8544969b81e7dd4c86d.mp3"}'
+) ON DUPLICATE KEY UPDATE
+  provider = VALUES(provider),
+  provider_model = VALUES(provider_model),
+  storage_url = VALUES(storage_url),
+  duration_ms = VALUES(duration_ms),
+  generated_at = VALUES(generated_at),
+  checksum = VALUES(checksum),
+  status = VALUES(status),
+  metadata = VALUES(metadata);
+
+-- g_ko_ready_gate:example:2 -> audio/generated/ko-KR/utterances/f87f38427c2ff76f382559ee37dd2e502b62b0d47acfd8544969b81e7dd4c86d.mp3
+UPDATE audio_assets
+SET status = 'archived'
+WHERE entity_type = 'grammar_point'
+  AND entity_id = UUID_TO_BIN('0621062c-9141-5b25-98f3-c2f793da23a2', 1)
+  AND voice_key = 'ko-kr.sentence.native-clear'
+  AND (entity_type NOT IN ('grammar_point','exercise') OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'g_ko_ready_gate:example:2')
+  AND source_text_hash IS NOT NULL
+  AND source_text_hash <> '67c64c9cae445f707ce250b88595fa992fa4c6e2e5e05b1f2032c73d70151dd1'
+  AND status <> 'archived';
+INSERT INTO audio_assets (
+  id, language_id, language_variant_id, entity_type, entity_id, source_text_hash,
+  voice_key, provider, provider_model, storage_url, duration_ms, generated_at, checksum, status, metadata
+) VALUES (
+  UUID_TO_BIN('db98f19b-c930-5a76-aa14-744f93cce1a3', 1), @audio_language_id, @audio_variant_id, 'grammar_point', UUID_TO_BIN('0621062c-9141-5b25-98f3-c2f793da23a2', 1), '67c64c9cae445f707ce250b88595fa992fa4c6e2e5e05b1f2032c73d70151dd1',
+  'ko-kr.sentence.native-clear', 'elevenlabs', 'eleven_multilingual_v2', 'audio/generated/ko-KR/utterances/f87f38427c2ff76f382559ee37dd2e502b62b0d47acfd8544969b81e7dd4c86d.mp3', 1488, '2026-09-13 21:06:08.509651', 'b03d17339acba3b6c04ee9abc83259e046d0eb1ee34ce7c68ba55d96a7866e58', 'validated', '{"audio_key":"f87f38427c2ff76f382559ee37dd2e502b62b0d47acfd8544969b81e7dd4c86d","entity_key":"g_ko_ready_gate:example:2","voice_id":"5DWGv3VDkihNUcbvaonB","voice_name":"Kelee K - Seoul Narrator","voice_labels":{"gender":"female","accent":"seoul","age":"young","category":"professional","language":"ko","use_case":"conversational","descriptive":"casual"},"output_format":"mp3_44100_192","file_sha256":"b03d17339acba3b6c04ee9abc83259e046d0eb1ee34ce7c68ba55d96a7866e58","settings":{"stability":0.68,"similarity_boost":0.88,"style":0.0,"use_speaker_boost":true,"speed":0.95},"relative_path":"audio/generated/ko-KR/utterances/f87f38427c2ff76f382559ee37dd2e502b62b0d47acfd8544969b81e7dd4c86d.mp3"}'
 ) ON DUPLICATE KEY UPDATE
   provider = VALUES(provider),
   provider_model = VALUES(provider_model),
