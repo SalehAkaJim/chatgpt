@@ -27,7 +27,7 @@ jobs:
         run: |
           set -euo pipefail; DB="mysql -h127.0.0.1 -P3306 -uroot language_learning"
           $DB < database/schema.sql; $DB < database/migrations/001_curriculum.sql; $DB < database/migrations/002_multilingual_core.sql; $DB < database/migrations/003_lesson_item_lexemes.sql; $DB < database/migrations/004_level_import_audio.sql; $DB < database/migrations/005_writing_exercises.sql
-          $DB < database/seed/cefr.sql; $DB < database/seed/languages.sql; $DB < database/seed/skills-topics.sql; $DB < database/seed/english-a1-curriculum.sql; $DB < database/seed/language-variants-courses.sql; $DB < database/seed/french-prea1-curriculum.sql; $DB < database/seed/french-a1-curriculum.sql
+          $DB < database/seed/cefr.sql; $DB < database/seed/languages.sql; $DB < database/seed/skills-topics.sql; $DB < database/seed/english-a1-curriculum.sql; $DB < database/seed/language-variants-courses.sql; $DB < database/seed/french-course.sql; $DB < database/seed/french-prea1-curriculum.sql; $DB < database/seed/french-a1-curriculum.sql
       - name: Validate and dry-run French A1
         run: |
           set -euo pipefail
