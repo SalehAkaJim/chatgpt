@@ -17,7 +17,7 @@
       "female_professional":{"voice_name":null,"description":"Neutral professional female adult standard French voice, confident, clean and highly intelligible.","required_language":"fr","preferred_accent":"french","prefer_high_quality":true,"required_labels":{"gender":"female"},"distinct_character":true,"settings":{"stability":0.71,"similarity_boost":0.90,"style":0.05,"use_speaker_boost":true,"speed":0.96}},
       "male_professional":{"voice_name":null,"description":"Neutral professional male adult standard French voice, confident, clean and highly intelligible.","required_language":"fr","preferred_accent":"french","prefer_high_quality":true,"required_labels":{"gender":"male"},"distinct_character":true,"settings":{"stability":0.71,"similarity_boost":0.90,"style":0.05,"use_speaker_boost":true,"speed":0.96}}
     },
-    "character_assignments":{"camille":"female_warm","thomas":"male_warm","lea":"female_bright","hugo":"male_bright","ines":"female_calm","nicolas":"male_calm","claire":"female_professional","julien":"male_professional"}
+    "character_assignments":{"camille":"female_warm","thomas":"male_warm","léa":"female_bright","hugo":"male_bright","inès":"female_calm","nicolas":"male_calm","claire":"female_professional","julien":"male_professional"}
   },
   "generation":{"model_id":"eleven_multilingual_v2","preferred_output_format":"mp3_44100_192","fallback_output_format":"mp3_44100_128","concurrency":2}
 }
