@@ -1,0 +1,182 @@
+{
+  "batch": 3,
+  "level": "B1",
+  "variant": "tr-TR",
+  "pedagogy": {
+    "learner_language": "fa-IR",
+    "standard": "contemporary Istanbul Turkish",
+    "principles": [
+      "use three substantive lessons per unit with lesson-3 independent production or mediation",
+      "recycle B1 narration, realistic conditions, reported information, reasons and practical negotiation across new everyday domains",
+      "require short coherent output rather than isolated sentence recognition",
+      "avoid B2 counterfactuals, dense concession, inferential evidential calibration, multi-source synthesis and sustained abstract argumentation",
+      "keep Persian support concise, natural and task-oriented"
+    ]
+  },
+  "units": [
+    {
+      "slug": "health-followup-and-advice",
+      "topic": "health",
+      "title": "Değişikliği anlatıp tavsiyeyi aktarmak",
+      "objective": "Describe how a common health problem has changed, relay simple professional advice and explain a realistic follow-up plan.",
+      "grammar_focus": "change over time, reported advice and realistic conditions",
+      "vocab": [
+        ["belirti","belirti","علامت بیماری","noun",1],
+        ["azalmak","azalmak","کم شدن","verb",1],
+        ["tavsiye","tavsiye","توصیه","noun",2],
+        ["dinlenmek","dinlenmek","استراحت کردن","verb",2],
+        ["kontrol_randevusu","kontrol randevusu","نوبت پیگیری","noun",3],
+        ["devam_etmek","devam etmek","ادامه پیدا کردن / ادامه دادن","verb",3]
+      ],
+      "utterances": [
+        ["u1","Baş ağrım azaldı ama halsizliğim devam ediyor.","سردردم کمتر شده ولی بی‌حالی‌ام ادامه دارد.","describe_change",["azalmak","devam_etmek"],1],
+        ["u2","Bu belirti üç gün önce başladı.","این علامت سه روز پیش شروع شد.","state_timeline",["belirti"],1],
+        ["u3","Doktor birkaç gün dinlenmemi tavsiye etti.","پزشک توصیه کرد چند روز استراحت کنم.","report_advice",["dinlenmek","tavsiye"],2],
+        ["u4","Ayrıca daha fazla su içmem gerektiğini söyledi.","همچنین گفت باید آب بیشتری بنوشم.","relay_instruction",[],2],
+        ["u5","Belirtiler devam ederse kontrol randevusu alacağım.","اگر علائم ادامه پیدا کند نوبت پیگیری می‌گیرم.","real_condition",["kontrol_randevusu"],3],
+        ["u6","Şimdilik kendimi daha iyi hissediyorum, bu yüzden bugün evde dinleneceğim.","فعلاً حالم بهتر است، برای همین امروز خانه استراحت می‌کنم.","state_followup_plan",[],3]
+      ],
+      "grammar": [
+        "Değişimi ve tavsiyeyi aktarmak",
+        "Use simple past/present to show change, -memi/-mamı tavsiye etti or -mem gerektiğini söyledi to relay advice, and -sa/-se only for realistic follow-up conditions.",
+        "برای پیگیری سلامت، تغییر را با گذشته و حال کوتاه توضیح می‌دهیم، توصیهٔ پزشک را منتقل می‌کنیم و اگر لازم بود یک شرط واقعی برای قدم بعدی می‌گوییم.",
+        [["Doktor iki gün dinlenmemi tavsiye etti.","پزشک توصیه کرد دو روز استراحت کنم."],["Ağrı devam ederse tekrar arayacağım.","اگر درد ادامه پیدا کند دوباره تماس می‌گیرم."]]
+      ],
+      "dialogues": [
+        ["Bugün nasıl?","خانه",[["Zeynep","Bugün kendini nasıl hissediyorsun?","امروز چه حسی داری؟"],["Emre","Baş ağrım azaldı ama hâlâ biraz yorgunum.","سردردم کمتر شده ولی هنوز کمی خسته‌ام."],["Zeynep","Ne zamandır böyle?","چند وقت است این‌طوری هستی؟"],["Emre","Üç gün önce başladı.","سه روز پیش شروع شد."]],1],
+        ["Doktorun tavsiyesi","تلفن",[["Kaan","Doktor ne tavsiye etti?","پزشک چه توصیه‌ای کرد؟"],["Elif","Birkaç gün dinlenmemi söyledi.","گفت چند روز استراحت کنم."],["Kaan","Başka bir şey söyledi mi?","چیز دیگری هم گفت؟"],["Elif","Evet, daha fazla su içmem gerektiğini söyledi.","بله، گفت باید آب بیشتری بنوشم."]],2],
+        ["Kontrol planı","کلینیک",[["Burak","Şimdi daha iyi misiniz?","الان بهتر هستید؟"],["Selin","Evet, ama halsizlik devam ediyor.","بله، ولی بی‌حالی ادامه دارد."],["Burak","Devam ederse tekrar kontrol edelim.","اگر ادامه پیدا کرد دوباره بررسی کنیم."],["Selin","Tamam, gerekirse yeni randevu alırım.","باشه، اگر لازم شد نوبت جدید می‌گیرم."]],3]
+      ],
+      "production": {
+        "lesson": 3,
+        "writing_prompt_fa": "در ۴ تا ۵ جمله وضعیت یک مشکل معمول سلامت را توضیح بده: چه زمانی شروع شد، چه تغییری کرده، چه توصیه‌ای گرفتی و اگر ادامه پیدا کند چه می‌کنی.",
+        "speaking_prompt_fa": "در نقش بیمار، در یک تماس پیگیری کوتاه تغییر علائم، توصیهٔ پزشک و برنامهٔ بعدی را منسجم توضیح بده.",
+        "model_text": "Baş ağrım üç gün önce başladı. Bugün biraz azaldı ama halsizliğim devam ediyor. Doktor dinlenmemi ve daha fazla su içmemi tavsiye etti. Belirtiler devam ederse kontrol randevusu alacağım.",
+        "required_points_fa": ["زمان شروع و تغییر","انتقال یک توصیه","یک برنامهٔ پیگیری واقعی"]
+      }
+    },
+    {
+      "slug": "study-group-mediation",
+      "topic": "study",
+      "title": "Dersi kaçıran arkadaşına bilgiyi aktarmak",
+      "objective": "Mediate class instructions for an absent classmate, explain task order and coordinate a small study-group plan.",
+      "grammar_focus": "reported instructions, sequencing and purpose",
+      "vocab": [
+        ["konu","konu","موضوع","noun",1],
+        ["aciklama","açıklama","توضیح","noun",1],
+        ["kaynak","kaynak","منبع","noun",2],
+        ["hazirlamak","hazırlamak","آماده کردن","verb",2],
+        ["paylasmak","paylaşmak","به اشتراک گذاشتن","verb",3],
+        ["bolum","bölüm","بخش","noun",3]
+      ],
+      "utterances": [
+        ["u1","Bugün derste yeni konunun ilk bölümünü işledik.","امروز در کلاس بخش اول موضوع جدید را کار کردیم.","summarize_class",["konu","bolum"],1],
+        ["u2","Öğretmen önemli noktaları kısa bir açıklamayla anlattı.","معلم نکات مهم را با یک توضیح کوتاه بیان کرد.","describe_instruction",["aciklama"],1],
+        ["u3","Öğretmen iki kaynağı okuyup kısa bir özet hazırlamamızı istedi.","معلم خواست دو منبع را بخوانیم و یک خلاصهٔ کوتاه آماده کنیم.","report_assignment",["kaynak","hazirlamak"],2],
+        ["u4","Önce ilk metni okuyacağız, sonra notlarımızı karşılaştıracağız.","اول متن اول را می‌خوانیم، بعد یادداشت‌هایمان را مقایسه می‌کنیم.","sequence_tasks",[],2],
+        ["u5","Ben notlarımı grupta paylaşacağım, sen de ikinci bölümü kontrol edebilirsin.","من یادداشت‌هایم را در گروه به اشتراک می‌گذارم، تو هم می‌توانی بخش دوم را بررسی کنی.","coordinate_roles",["paylasmak","bolum"],3],
+        ["u6","Sunuma hazırlanmak için cuma günü birlikte çalışalım.","برای آماده شدن برای ارائه، جمعه با هم درس بخوانیم.","state_purpose",[],3]
+      ],
+      "grammar": [
+        "Ders bilgisini başkasına aktarmak",
+        "Use -mamızı istedi / -acağımızı söyledi for reported class instructions, then organize the plan with önce, sonra and -mek için.",
+        "برای دوستی که کلاس نبوده، اطلاعات لازم را انتخاب می‌کنیم، دستور معلم را منتقل می‌کنیم و کارها را با önce و sonra مرتب می‌کنیم.",
+        [["Öğretmen metni okumamızı istedi.","معلم خواست متن را بخوانیم."],["Sınava hazırlanmak için notları paylaşacağız.","برای آماده شدن برای امتحان یادداشت‌ها را به اشتراک می‌گذاریم."]]
+      ],
+      "dialogues": [
+        ["Dersi kaçırdım","دانشگاه",[["Mert","Bugünkü dersi kaçırdım. Ne yaptınız?","کلاس امروز را از دست دادم. چه کار کردید؟"],["Deniz","Yeni konunun ilk bölümünü işledik.","بخش اول موضوع جدید را کار کردیم."],["Mert","Çok zor muydu?","خیلی سخت بود؟"],["Deniz","Hayır, öğretmen önce kısa bir açıklama yaptı.","نه، معلم اول یک توضیح کوتاه داد."]],1],
+        ["Ödev bilgisi","کتابخانه",[["Selin","Ödev olarak ne yapacağız?","برای تکلیف چه کار می‌کنیم؟"],["Emre","Öğretmen iki kaynağı okumamızı istedi.","معلم خواست دو منبع را بخوانیم."],["Selin","Sonra ne hazırlayacağız?","بعد چه چیزی آماده می‌کنیم؟"],["Emre","Kısa bir özet hazırlayacağız.","یک خلاصهٔ کوتاه آماده می‌کنیم."]],2],
+        ["Görev paylaşımı","چت گروهی",[["Elif","Notları nasıl paylaşalım?","یادداشت‌ها را چطور تقسیم کنیم؟"],["Kaan","Ben ilk bölümü gruba gönderebilirim.","من می‌توانم بخش اول را در گروه بفرستم."],["Elif","Ben de ikinci bölümü kontrol ederim.","من هم بخش دوم را بررسی می‌کنم."],["Kaan","Harika, cuma günü de birlikte çalışalım.","عالیه، جمعه هم با هم درس بخوانیم."]],3]
+      ],
+      "production": {
+        "lesson": 3,
+        "writing_prompt_fa": "برای دوستی که کلاس را از دست داده ۴ تا ۵ جمله بنویس: موضوع کلاس، دستور معلم، ترتیب دو کار و سهم خودت در برنامهٔ گروه را منتقل کن.",
+        "speaking_prompt_fa": "اطلاعات یک کلاس را با کلمات خودت برای همکلاسی غایب خلاصه کن و یک برنامهٔ مطالعهٔ مشترک پیشنهاد بده.",
+        "model_text": "Bugün yeni konunun ilk bölümünü işledik. Öğretmen iki kaynağı okumamızı ve kısa bir özet hazırlamamızı istedi. Önce metinleri okuyacağız, sonra notlarımızı karşılaştıracağız. Ben notlarımı grupta paylaşacağım. Cuma günü birlikte çalışabiliriz.",
+        "required_points_fa": ["خلاصهٔ کلاس","انتقال دستور یا تکلیف","تقسیم کار یا برنامهٔ مشترک"]
+      }
+    },
+    {
+      "slug": "purchase-complaint-resolution",
+      "topic": "shopping",
+      "title": "Sorunu anlatıp uygun çözümü istemek",
+      "objective": "Give a coherent account of a product problem, provide relevant purchase details and negotiate a practical solution politely.",
+      "grammar_focus": "short problem narrative, polite requests and realistic solution conditions",
+      "vocab": [
+        ["urun","ürün","کالا / محصول","noun",1],
+        ["bozuk","bozuk","خراب","adjective",1],
+        ["fis","fiş","رسید خرید","noun",2],
+        ["degisim","değişim","تعویض کالا","noun",2],
+        ["iade","iade","مرجوعی / پس دادن","noun",3],
+        ["cozmek","çözmek","حل کردن","verb",3]
+      ],
+      "utterances": [
+        ["u1","Bu ürünü üç gün önce aldım ama ilk kullanımdan sonra bozuldu.","این کالا را سه روز پیش خریدم ولی بعد از اولین استفاده خراب شد.","narrate_problem",["urun","bozuk"],1],
+        ["u2","Cihaz açılıyor fakat birkaç dakika sonra kapanıyor.","دستگاه روشن می‌شود ولی چند دقیقه بعد خاموش می‌شود.","describe_fault",[],1],
+        ["u3","Fişim yanımda, satın alma tarihini de gösterebilirim.","رسید همراهم است و می‌توانم تاریخ خرید را هم نشان بدهم.","provide_evidence",["fis"],2],
+        ["u4","Mümkünse önce değişim seçeneğini öğrenmek istiyorum.","اگر ممکن است اول می‌خواهم دربارهٔ گزینهٔ تعویض بدانم.","polite_request",["degisim"],2],
+        ["u5","Aynı ürün yoksa iade yapmak istiyorum.","اگر همان کالا موجود نیست می‌خواهم مرجوع کنم.","real_condition",["iade"],3],
+        ["u6","Bu sorunu bugün çözebilirsek çok iyi olur.","اگر بتوانیم امروز این مشکل را حل کنیم خیلی خوب می‌شود.","negotiate_resolution",["cozmek"],3]
+      ],
+      "grammar": [
+        "Şikâyeti sırayla anlatmak",
+        "State when you bought the item, describe what happened, provide relevant details, and use polite requests plus realistic -sa/-se conditions for the solution.",
+        "برای شکایت روشن، اول زمان خرید و مشکل را می‌گوییم، بعد اطلاعات لازم را می‌دهیم و در پایان راه‌حل را مودبانه درخواست می‌کنیم.",
+        [["Ürünü geçen hafta aldım ama bugün çalışmadı.","کالا را هفتهٔ پیش خریدم ولی امروز کار نکرد."],["Aynı model yoksa iade etmek istiyorum.","اگر همان مدل نیست می‌خواهم مرجوع کنم."]]
+      ],
+      "dialogues": [
+        ["Ürün bozuldu","فروشگاه",[["Burak","Size nasıl yardımcı olabilirim?","چطور می‌توانم کمکتان کنم؟"],["Zeynep","Bu ürünü üç gün önce aldım ama bozuldu.","این کالا را سه روز پیش خریدم ولی خراب شد."],["Burak","Sorun tam olarak nedir?","مشکل دقیقاً چیست؟"],["Zeynep","Birkaç dakika çalışıyor, sonra kapanıyor.","چند دقیقه کار می‌کند، بعد خاموش می‌شود."]],1],
+        ["Fiş ve değişim","خدمات مشتری",[["Kaan","Fişiniz yanınızda mı?","رسیدتان همراهتان است؟"],["Selin","Evet, burada.","بله، اینجاست."],["Kaan","Değişim isteyebilirsiniz.","می‌توانید درخواست تعویض بدهید."],["Selin","Mümkünse önce aynı modelle değiştirmek istiyorum.","اگر ممکن است اول می‌خواهم با همان مدل تعویض کنم."]],2],
+        ["Çözüm seçmek","فروشگاه",[["Emre","Aynı model şu anda kalmamış.","همان مدل الان موجود نیست."],["Elif","O zaman iade yapabilir miyim?","پس می‌توانم مرجوع کنم؟"],["Emre","Evet, fişiniz olduğu için mümkün.","بله، چون رسید دارید ممکن است."],["Elif","Tamam, iade yapmak istiyorum.","باشه، می‌خواهم مرجوع کنم."]],3]
+      ],
+      "production": {
+        "lesson": 3,
+        "writing_prompt_fa": "در ۴ تا ۵ جمله یک پیام شکایت بنویس: زمان خرید، مشکل، یک اطلاعات کمکی مثل رسید و راه‌حل موردنظرت را بگو؛ یک شرط واقعی هم برای گزینهٔ دوم اضافه کن.",
+        "speaking_prompt_fa": "در نقش مشتری، مشکل یک کالا را به ترتیب توضیح بده و با لحن مودبانه برای تعویض یا مرجوعی به توافق برس.",
+        "model_text": "Bu ürünü üç gün önce aldım ama ilk kullanımdan sonra bozuldu. Fişim yanımda. Önce aynı modelle değişim yapmak istiyorum. Aynı model yoksa iade yapabilir miyim? Sorunu bugün çözebilirsek çok iyi olur.",
+        "required_points_fa": ["زمان خرید و مشکل","اطلاعات مرتبط","راه‌حل اصلی و گزینهٔ دوم"]
+      }
+    },
+    {
+      "slug": "neighborhood-change-discussion",
+      "topic": "community",
+      "title": "Mahalledeki değişimi anlatıp öneri sunmak",
+      "objective": "Describe a visible neighborhood change, explain a personal view with reasons and propose one realistic community action.",
+      "grammar_focus": "past-versus-present contrast, supported opinion and practical proposal",
+      "vocab": [
+        ["mahalle","mahalle","محله","noun",1],
+        ["degisim","değişim","تغییر","noun",1],
+        ["yogunluk","yoğunluk","شلوغی / تراکم","noun",2],
+        ["alan","alan","فضا / محدوده","noun",2],
+        ["oneri","öneri","پیشنهاد","noun",3],
+        ["duzenlemek","düzenlemek","سامان دادن / برگزار کردن","verb",3]
+      ],
+      "utterances": [
+        ["u1","Eskiden bu mahalle daha sakindi, son yıllarda çok değişti.","قبلاً این محله آرام‌تر بود، در سال‌های اخیر خیلی تغییر کرده.","describe_change",["mahalle","degisim"],1],
+        ["u2","Yeni dükkânlar açıldı ve sokaklar daha hareketli oldu.","فروشگاه‌های جدید باز شدند و خیابان‌ها پرجنب‌وجوش‌تر شدند.","give_examples",[],1],
+        ["u3","Bence en büyük sorun akşam saatlerindeki trafik yoğunluğu.","به نظر من بزرگ‌ترین مشکل شلوغی ترافیک در ساعت‌های عصر است.","state_opinion",["yogunluk"],2],
+        ["u4","Ama yeni yeşil alanın mahalle için yararlı olduğunu düşünüyorum.","ولی فکر می‌کنم فضای سبز جدید برای محله مفید است.","balanced_view",["alan"],2],
+        ["u5","Benim önerim hafta sonu araç trafiğini biraz azaltmak.","پیشنهاد من این است که آخر هفته ترافیک خودرو کمی کمتر شود.","make_proposal",["oneri"],3],
+        ["u6","Komşularla kısa bir toplantı düzenleyip fikirleri konuşabiliriz.","می‌توانیم با همسایه‌ها یک جلسهٔ کوتاه برگزار کنیم و دربارهٔ نظرها صحبت کنیم.","community_action",["duzenlemek"],3]
+      ],
+      "grammar": [
+        "Değişim, görüş ve kısa öneri",
+        "Contrast past and present with eskiden/artık or past/present forms, support a personal view with çünkü or a concrete example, and finish with one practical proposal.",
+        "در B1 می‌توانیم یک تغییر ملموس را توصیف کنیم، نظر شخصی را با یک دلیل یا مثال کوتاه پشتیبانی کنیم و یک پیشنهاد عملی بدهیم؛ هدف بحث انتزاعی طولانی نیست.",
+        [["Eskiden sokak daha sakindi, şimdi daha hareketli.","قبلاً خیابان آرام‌تر بود، حالا پرجنب‌وجوش‌تر است."],["Bence park yararlı çünkü çocuklar için güvenli bir alan var.","به نظر من پارک مفید است چون برای بچه‌ها فضای امنی وجود دارد."]]
+      ],
+      "dialogues": [
+        ["Mahalle değişti","پارک",[["Deniz","Bu mahallede uzun zamandır mı yaşıyorsun?","مدت زیادی است در این محله زندگی می‌کنی؟"],["Mert","Evet. Eskiden daha sakindi.","بله. قبلاً آرام‌تر بود."],["Deniz","En çok ne değişti?","بیشتر از همه چه چیزی تغییر کرده؟"],["Mert","Yeni dükkânlar açıldı ve sokaklar daha hareketli oldu.","فروشگاه‌های جدید باز شده و خیابان‌ها شلوغ‌تر شده‌اند."]],1],
+        ["İyi ve zor taraflar","کافه",[["Zeynep","Yeni parkı beğendin mi?","پارک جدید را پسندیدی؟"],["Kaan","Evet, yeşil alan çok iyi oldu.","بله، فضای سبز خیلی خوب شده."],["Zeynep","Peki seni rahatsız eden bir şey var mı?","چیزی هست که اذیتت کند؟"],["Kaan","Akşam trafiği çok yoğun. Bence asıl sorun bu.","ترافیک عصر خیلی شلوغ است. به نظر من مشکل اصلی همین است."]],2],
+        ["Bir öneri","جلسهٔ محله",[["Selin","Trafik için ne yapabiliriz?","برای ترافیک چه کار می‌توانیم بکنیم؟"],["Burak","Hafta sonu bazı sokaklarda araçları azaltabiliriz.","می‌توانیم آخر هفته در بعضی خیابان‌ها خودروها را کمتر کنیم."],["Selin","Komşular ne düşünüyor?","همسایه‌ها چه فکر می‌کنند؟"],["Burak","Kısa bir toplantı düzenleyip fikirlerini soralım.","یک جلسهٔ کوتاه برگزار کنیم و نظرشان را بپرسیم."]],3]
+      ],
+      "production": {
+        "lesson": 3,
+        "writing_prompt_fa": "در ۴ تا ۵ جمله یک تغییر واقعی در محله یا شهر را توصیف کن، یک نکتهٔ مثبت یا منفی را با دلیل بگو و یک پیشنهاد عملی ارائه بده.",
+        "speaking_prompt_fa": "تغییر یک محل آشنا را قبل و حال مقایسه کن، نظرت را با یک مثال کوتاه توضیح بده و یک اقدام واقع‌بینانه پیشنهاد کن.",
+        "model_text": "Eskiden mahallem daha sakindi. Son yıllarda yeni dükkânlar açıldı ve trafik arttı. Yeni parkı seviyorum çünkü çocuklar için güzel bir alan oldu. Bence akşam trafiği hâlâ sorun. Komşularla kısa bir toplantı düzenleyip bir öneri hazırlayabiliriz.",
+        "required_points_fa": ["مقایسهٔ گذشته و حال","نظر با دلیل یا مثال","یک پیشنهاد عملی"]
+      }
+    }
+  ]
+}
