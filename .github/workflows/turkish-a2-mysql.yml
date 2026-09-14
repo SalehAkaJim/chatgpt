@@ -49,6 +49,7 @@ jobs:
           $DB < database/seed/turkish-prea1-curriculum.sql
           $DB < database/seed/turkish-a1-curriculum.sql
           $DB < database/seed/turkish-a2-curriculum.sql
+          $DB < database/seed/turkish-a2-expansion-batch-06.sql
       - name: Derive cumulative Turkish A2 expectations
         id: expected
         run: |
