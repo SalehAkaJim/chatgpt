@@ -7,7 +7,7 @@ on:
 permissions:
   contents: write
 concurrency:
-  group: turkish-b1-content-generation-v1
+  group: turkish-b1-content-generation-v2
   cancel-in-progress: false
 jobs:
   generate-batch:
@@ -18,43 +18,55 @@ jobs:
       - uses: actions/setup-python@v5
         with: {python-version: '3.12'}
       - run: pip install -r requirements.txt
-      - name: Generate Turkish B1 batch 1
+      - name: Generate cumulative Turkish B1 content
         run: python scripts/generate_turkish_b1_batch.py
-      - name: Validate complete Turkish B1 batch
+      - name: Validate Turkish B1 production and CEFR boundary
         run: |
           set -euo pipefail
-          test "$(find content/production/tr/B1 -maxdepth 1 -name '*.json' | wc -l)" -eq 10
           for f in content/production/tr/B1/*.json; do python scripts/validate_content.py "$f"; done
           python scripts/validate_character_cast.py --cast audio/cast/tr-TR.json
+          python scripts/validate_turkish_b1_cefr_boundary.py
           python database/import/tr/b1.py --dry-run
-      - name: Educational batch summary
+      - name: Cumulative educational QA
         run: |
           python - <<'PY'
           import collections,json
           from pathlib import Path
-          counts=collections.Counter(); lessons=set(); ordered=[]; pairs=[]
-          units=[]
-          for f in ['content/specs/tr/B1/batch-01a.json','content/specs/tr/B1/batch-01b.json']:
-              units += json.loads(Path(f).read_text())['units']
-          for unit in units:
-              b=json.loads((Path('content/production/tr/B1')/f"b1-tr-{unit['slug']}-v1.json").read_text()); dialogues=[]
+          files=sorted(Path('content/production/tr/B1').glob('*.json'))
+          assert files, 'no Turkish B1 production files'
+          counts=collections.Counter(); lessons=set(); ordered=[]
+          production_units=0
+          for f in files:
+              b=json.loads(f.read_text(encoding='utf-8'))
+              assert b.get('cefr')=='B1', f
+              unit_lessons=set(); dialogues=[]; open_write=[]; personalized=[]
               for item in b['items']:
-                  counts[item['kind']]+=1; lk=item.get('data',{}).get('lesson_key')
-                  if lk: lessons.add(lk)
+                  counts[item['kind']]+=1
+                  data=item.get('data',{}); lk=data.get('lesson_key')
+                  if lk:
+                      lessons.add(lk); unit_lessons.add(lk)
                   if item['kind']=='dialogue': dialogues.append(item)
+                  if item['kind']=='exercise' and data.get('exercise_type')=='writing' and data.get('prompt',{}).get('personalized'): open_write.append(item)
+                  if item['kind']=='exercise' and data.get('exercise_type')=='speaking' and data.get('prompt',{}).get('personalized'): personalized.append(item)
+              assert len(unit_lessons)>=3, f'{f.name}: needs at least 3 substantive lessons, got {sorted(unit_lessons)}'
+              last=sorted(unit_lessons)[-1]
+              assert any(x['data']['lesson_key']==last for x in open_write), f'{f.name}: final lesson missing open writing'
+              assert any(x['data']['lesson_key']==last for x in personalized), f'{f.name}: final lesson missing personalized speaking'
+              production_units += 1
               for item in sorted(dialogues,key=lambda x:x['data']['lesson_key']):
-                  lk=item['data']['lesson_key']; chars=tuple(item['data'].get('characters',[])[:2]); pairs.append((lk,chars)); ordered.append(chars)
-          assert len(lessons)==20, len(lessons)
-          assert len(set(pairs))==len(pairs)
-          for previous,current in zip(ordered,ordered[1:]): assert set(previous)!=set(current), f'consecutive dialogue pair repeated: {previous}'
-          assert counts['concept']==60 and counts['utterance']==40 and counts['dialogue']==20 and counts['exercise']==100, counts
-          print({'units':10,'lessons':len(lessons),'counts':dict(counts)})
+                  chars=tuple(sorted(item['data'].get('characters',[])[:2])); ordered.append((item['data']['lesson_key'],chars))
+          for (lk1,p1),(lk2,p2) in zip(ordered,ordered[1:]):
+              assert p1!=p2, f'consecutive dialogue pair repeated: {lk1}/{lk2}: {p1}'
+          assert counts['dialogue'] >= production_units*3
+          assert counts['utterance'] >= production_units*6
+          assert counts['exercise'] >= production_units*17
+          print({'units':len(files),'lessons':len(lessons),'production_units':production_units,'counts':dict(counts)})
           PY
       - name: Commit Turkish B1 production content
         run: |
           git config user.name 'github-actions[bot]'; git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
           git add content/production/tr/B1
           if git diff --cached --quiet; then echo 'No generated content changes.'; else
-            git commit -m 'Generate Turkish B1 batch 1 production content [skip ci]'
+            git commit -m 'Retrofit Turkish B1 third production lessons [skip ci]'
             git fetch origin main; git rebase origin/main; git push origin HEAD:main
           fi
