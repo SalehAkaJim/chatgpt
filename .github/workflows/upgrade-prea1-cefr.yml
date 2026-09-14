@@ -34,7 +34,15 @@ jobs:
         run: pip install -r requirements.txt
 
       - name: Generate CEFR real-world Pre-A1 upgrade
-        run: python scripts/upgrade_prea1_cefr.py
+        run: |
+          python scripts/upgrade_prea1_cefr.py
+          # Normalize generated SQL formatting so the deterministic generator also
+          # satisfies repository whitespace policy.
+          sed -i 's/[[:space:]]\+$//' \
+            database/seed/english-prea1-curriculum.sql \
+            database/seed/german-prea1-curriculum.sql \
+            database/seed/turkish-prea1-curriculum.sql \
+            database/seed/korean-prea1-curriculum.sql
 
       - name: Validate every completed Pre-A1 batch
         run: |
@@ -44,6 +52,7 @@ jobs:
               python scripts/validate_content.py "$f"
             done
           done
+          python scripts/audit_prea1_cefr_readiness.py
           git diff --check
 
       - name: Verify new unit files exist
