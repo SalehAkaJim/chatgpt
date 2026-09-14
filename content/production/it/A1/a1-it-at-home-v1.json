@@ -1,0 +1,856 @@
+{
+  "batch_id": "it-it-a1-at-home-v1",
+  "course": "fa-it-it",
+  "learner_language": "fa",
+  "learner_variant": "fa-IR",
+  "target_language": "it",
+  "target_variant": "it-IT",
+  "cefr": "A1",
+  "curriculum_unit": "a1-it-at-home",
+  "generator": "gpt-5.6-sol:italian-a1-batch-v1",
+  "items": [
+    {
+      "kind": "concept",
+      "external_id": "c_at_home_01",
+      "data": {
+        "slug": "it_a1_at_home_casa",
+        "lesson_key": "a1-it-at-home-01",
+        "concept_type": "lexical",
+        "part_of_speech": "noun",
+        "forms": {
+          "it": "casa"
+        },
+        "translations": {
+          "fa": "خانه"
+        },
+        "cefr": "A1",
+        "topic": "home",
+        "tags": [
+          "core",
+          "a1",
+          "high_frequency"
+        ],
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_at_home_01",
+      "data": {
+        "lesson_key": "a1-it-at-home-01",
+        "lemma": "casa",
+        "display_lemma": "casa",
+        "language": "it",
+        "language_variant": "it-IT",
+        "part_of_speech": "noun",
+        "concept_refs": [
+          "it_a1_at_home_casa"
+        ],
+        "cefr": "A1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_at_home_01",
+      "data": {
+        "lesson_key": "a1-it-at-home-01",
+        "lexeme_ref": "lx_at_home_01",
+        "surface_form": "casa",
+        "display_form": "casa",
+        "grammatical_features": {},
+        "is_lemma": true,
+        "is_preferred": true,
+        "cefr": "A1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_at_home_02",
+      "data": {
+        "slug": "it_a1_at_home_camera",
+        "lesson_key": "a1-it-at-home-01",
+        "concept_type": "lexical",
+        "part_of_speech": "noun",
+        "forms": {
+          "it": "camera"
+        },
+        "translations": {
+          "fa": "اتاق خواب"
+        },
+        "cefr": "A1",
+        "topic": "home",
+        "tags": [
+          "core",
+          "a1",
+          "high_frequency"
+        ],
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_at_home_02",
+      "data": {
+        "lesson_key": "a1-it-at-home-01",
+        "lemma": "camera",
+        "display_lemma": "camera",
+        "language": "it",
+        "language_variant": "it-IT",
+        "part_of_speech": "noun",
+        "concept_refs": [
+          "it_a1_at_home_camera"
+        ],
+        "cefr": "A1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_at_home_02",
+      "data": {
+        "lesson_key": "a1-it-at-home-01",
+        "lexeme_ref": "lx_at_home_02",
+        "surface_form": "camera",
+        "display_form": "camera",
+        "grammatical_features": {},
+        "is_lemma": true,
+        "is_preferred": true,
+        "cefr": "A1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_at_home_03",
+      "data": {
+        "slug": "it_a1_at_home_cucina",
+        "lesson_key": "a1-it-at-home-01",
+        "concept_type": "lexical",
+        "part_of_speech": "noun",
+        "forms": {
+          "it": "cucina"
+        },
+        "translations": {
+          "fa": "آشپزخانه"
+        },
+        "cefr": "A1",
+        "topic": "home",
+        "tags": [
+          "core",
+          "a1",
+          "high_frequency"
+        ],
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_at_home_03",
+      "data": {
+        "lesson_key": "a1-it-at-home-01",
+        "lemma": "cucina",
+        "display_lemma": "cucina",
+        "language": "it",
+        "language_variant": "it-IT",
+        "part_of_speech": "noun",
+        "concept_refs": [
+          "it_a1_at_home_cucina"
+        ],
+        "cefr": "A1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_at_home_03",
+      "data": {
+        "lesson_key": "a1-it-at-home-01",
+        "lexeme_ref": "lx_at_home_03",
+        "surface_form": "cucina",
+        "display_form": "cucina",
+        "grammatical_features": {},
+        "is_lemma": true,
+        "is_preferred": true,
+        "cefr": "A1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_at_home_04",
+      "data": {
+        "slug": "it_a1_at_home_bagno",
+        "lesson_key": "a1-it-at-home-02",
+        "concept_type": "lexical",
+        "part_of_speech": "noun",
+        "forms": {
+          "it": "bagno"
+        },
+        "translations": {
+          "fa": "حمام / سرویس"
+        },
+        "cefr": "A1",
+        "topic": "home",
+        "tags": [
+          "core",
+          "a1",
+          "high_frequency"
+        ],
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_at_home_04",
+      "data": {
+        "lesson_key": "a1-it-at-home-02",
+        "lemma": "bagno",
+        "display_lemma": "bagno",
+        "language": "it",
+        "language_variant": "it-IT",
+        "part_of_speech": "noun",
+        "concept_refs": [
+          "it_a1_at_home_bagno"
+        ],
+        "cefr": "A1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_at_home_04",
+      "data": {
+        "lesson_key": "a1-it-at-home-02",
+        "lexeme_ref": "lx_at_home_04",
+        "surface_form": "bagno",
+        "display_form": "bagno",
+        "grammatical_features": {},
+        "is_lemma": true,
+        "is_preferred": true,
+        "cefr": "A1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_at_home_05",
+      "data": {
+        "slug": "it_a1_at_home_dove",
+        "lesson_key": "a1-it-at-home-02",
+        "concept_type": "lexical",
+        "part_of_speech": "question_word",
+        "forms": {
+          "it": "dove"
+        },
+        "translations": {
+          "fa": "کجا"
+        },
+        "cefr": "A1",
+        "topic": "home",
+        "tags": [
+          "core",
+          "a1",
+          "high_frequency"
+        ],
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_at_home_05",
+      "data": {
+        "lesson_key": "a1-it-at-home-02",
+        "lemma": "dove",
+        "display_lemma": "dove",
+        "language": "it",
+        "language_variant": "it-IT",
+        "part_of_speech": "question_word",
+        "concept_refs": [
+          "it_a1_at_home_dove"
+        ],
+        "cefr": "A1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_at_home_05",
+      "data": {
+        "lesson_key": "a1-it-at-home-02",
+        "lexeme_ref": "lx_at_home_05",
+        "surface_form": "dove",
+        "display_form": "dove",
+        "grammatical_features": {},
+        "is_lemma": true,
+        "is_preferred": true,
+        "cefr": "A1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_at_home_06",
+      "data": {
+        "slug": "it_a1_at_home_qui",
+        "lesson_key": "a1-it-at-home-02",
+        "concept_type": "lexical",
+        "part_of_speech": "adverb",
+        "forms": {
+          "it": "qui"
+        },
+        "translations": {
+          "fa": "اینجا"
+        },
+        "cefr": "A1",
+        "topic": "home",
+        "tags": [
+          "core",
+          "a1",
+          "high_frequency"
+        ],
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_at_home_06",
+      "data": {
+        "lesson_key": "a1-it-at-home-02",
+        "lemma": "qui",
+        "display_lemma": "qui",
+        "language": "it",
+        "language_variant": "it-IT",
+        "part_of_speech": "adverb",
+        "concept_refs": [
+          "it_a1_at_home_qui"
+        ],
+        "cefr": "A1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_at_home_06",
+      "data": {
+        "lesson_key": "a1-it-at-home-02",
+        "lexeme_ref": "lx_at_home_06",
+        "surface_form": "qui",
+        "display_form": "qui",
+        "grammatical_features": {},
+        "is_lemma": true,
+        "is_preferred": true,
+        "cefr": "A1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_at_home_01",
+      "data": {
+        "lesson_key": "a1-it-at-home-01",
+        "text": {
+          "it": "C'è una cucina."
+        },
+        "translations": {
+          "fa": "یک آشپزخانه هست."
+        },
+        "intent": "state_presence",
+        "concept_refs": [
+          "it_a1_at_home_cucina"
+        ],
+        "cefr": "A1",
+        "topic": "home",
+        "register": "neutral",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_at_home_02",
+      "data": {
+        "lesson_key": "a1-it-at-home-01",
+        "text": {
+          "it": "Ci sono due camere."
+        },
+        "translations": {
+          "fa": "دو اتاق خواب هست."
+        },
+        "intent": "state_plural_presence",
+        "concept_refs": [
+          "it_a1_at_home_camera"
+        ],
+        "cefr": "A1",
+        "topic": "home",
+        "register": "neutral",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_at_home_03",
+      "data": {
+        "lesson_key": "a1-it-at-home-02",
+        "text": {
+          "it": "Dov'è il bagno?"
+        },
+        "translations": {
+          "fa": "حمام کجاست؟"
+        },
+        "intent": "ask_location",
+        "concept_refs": [
+          "it_a1_at_home_dove",
+          "it_a1_at_home_bagno"
+        ],
+        "cefr": "A1",
+        "topic": "home",
+        "register": "neutral",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_at_home_04",
+      "data": {
+        "lesson_key": "a1-it-at-home-02",
+        "text": {
+          "it": "Il bagno è qui."
+        },
+        "translations": {
+          "fa": "حمام اینجاست."
+        },
+        "intent": "state_location",
+        "concept_refs": [
+          "it_a1_at_home_bagno",
+          "it_a1_at_home_qui"
+        ],
+        "cefr": "A1",
+        "topic": "home",
+        "register": "neutral",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "grammar_point",
+      "external_id": "g_at_home_core",
+      "data": {
+        "lesson_key": "a1-it-at-home-01",
+        "slug": "a1-it-at-home-grammar",
+        "title": "C'è / ci sono",
+        "rule_summary": "Use c'è for one thing and ci sono for more than one.",
+        "explanation": {
+          "fa": "برای گفتن «هست» با یک چیز از c'è و برای چند چیز از ci sono استفاده می‌شود: c'è una cucina، ci sono due camere."
+        },
+        "examples": [
+          {
+            "it": "C'è una cucina.",
+            "fa": "یک آشپزخانه هست."
+          },
+          {
+            "it": "Ci sono due camere.",
+            "fa": "دو اتاق خواب هست."
+          }
+        ],
+        "cefr": "A1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "dialogue",
+      "external_id": "d_at_home_01",
+      "data": {
+        "lesson_key": "a1-it-at-home-01",
+        "title": "La nuova casa",
+        "setting": "item",
+        "cefr": "A1",
+        "topic": "home",
+        "characters": [
+          "elena",
+          "marco"
+        ],
+        "turns": [
+          {
+            "order": 1,
+            "speaker": "elena",
+            "text": "Quante camere ci sono?",
+            "translation_fa": "چند اتاق خواب هست؟"
+          },
+          {
+            "order": 2,
+            "speaker": "marco",
+            "text": "Ci sono due camere.",
+            "translation_fa": "دو اتاق خواب هست."
+          },
+          {
+            "order": 3,
+            "speaker": "elena",
+            "text": "C'è anche una cucina grande?",
+            "translation_fa": "آشپزخانه بزرگ هم هست؟"
+          },
+          {
+            "order": 4,
+            "speaker": "marco",
+            "text": "Sì, è qui.",
+            "translation_fa": "بله، اینجاست."
+          }
+        ],
+        "qa": {
+          "character_pair_unique_within_unit": true,
+          "naturalness": "passed",
+          "single_situation": true
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "dialogue",
+      "external_id": "d_at_home_02",
+      "data": {
+        "lesson_key": "a1-it-at-home-02",
+        "title": "Cerco il bagno",
+        "setting": "item",
+        "cefr": "A1",
+        "topic": "home",
+        "characters": [
+          "chiara",
+          "davide"
+        ],
+        "turns": [
+          {
+            "order": 1,
+            "speaker": "chiara",
+            "text": "Scusa, dov'è il bagno?",
+            "translation_fa": "ببخشید، سرویس کجاست؟"
+          },
+          {
+            "order": 2,
+            "speaker": "davide",
+            "text": "È lì, a destra.",
+            "translation_fa": "آنجاست، سمت راست."
+          },
+          {
+            "order": 3,
+            "speaker": "chiara",
+            "text": "Grazie mille.",
+            "translation_fa": "خیلی ممنون."
+          },
+          {
+            "order": 4,
+            "speaker": "davide",
+            "text": "Prego.",
+            "translation_fa": "خواهش می‌کنم."
+          }
+        ],
+        "qa": {
+          "character_pair_unique_within_unit": true,
+          "naturalness": "passed",
+          "single_situation": true
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_at_home_01_meaning",
+      "data": {
+        "lesson_key": "a1-it-at-home-01",
+        "exercise_type": "multiple_choice",
+        "prompt": {
+          "instruction_fa": "معنی درست این عبارت ایتالیایی را انتخاب کن.",
+          "value": "C'è una cucina."
+        },
+        "answer": {
+          "value": "یک آشپزخانه هست."
+        },
+        "options": [
+          "یک آشپزخانه هست.",
+          "دو اتاق خواب هست.",
+          "حمام کجاست؟",
+          "حمام اینجاست."
+        ],
+        "difficulty": 1,
+        "cefr": "A1",
+        "topic": "home",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت و شکل دقیق عبارت ایتالیایی دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: C'è una cucina. — یک آشپزخانه هست.",
+          "model_answer": "C'è una cucina."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_at_home_01_listen",
+      "data": {
+        "lesson_key": "a1-it-at-home-01",
+        "exercise_type": "listening",
+        "prompt": {
+          "instruction_fa": "گوش کن و عبارتی را که شنیدی انتخاب کن.",
+          "audio_text": "Ci sono due camere."
+        },
+        "answer": {
+          "value": "Ci sono due camere."
+        },
+        "options": [
+          "Ci sono due camere.",
+          "C'è una cucina.",
+          "Dov'è il bagno?",
+          "Il bagno è qui."
+        ],
+        "difficulty": 1,
+        "cefr": "A1",
+        "topic": "home",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت و شکل دقیق عبارت ایتالیایی دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: Ci sono due camere. — دو اتاق خواب هست.",
+          "model_answer": "Ci sono due camere.",
+          "transcript_it": "Ci sono due camere."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_at_home_01_speak",
+      "data": {
+        "lesson_key": "a1-it-at-home-01",
+        "exercise_type": "speaking",
+        "prompt": {
+          "instruction_fa": "عبارت را با صدای بلند و با ریتم طبیعی تکرار کن.",
+          "value": "C'è una cucina."
+        },
+        "answer": {
+          "expected_text": "C'è una cucina."
+        },
+        "difficulty": 1,
+        "cefr": "A1",
+        "topic": "home",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت و شکل دقیق عبارت ایتالیایی دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: C'è una cucina. — یک آشپزخانه هست.",
+          "model_answer": "C'è una cucina."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_at_home_01_build",
+      "data": {
+        "lesson_key": "a1-it-at-home-01",
+        "exercise_type": "sentence_building",
+        "prompt": {
+          "instruction_fa": "کلمه‌ها را لمس کن تا عبارت درست ساخته شود.",
+          "tokens": [
+            "sono",
+            "due",
+            "camere.",
+            "Ci"
+          ]
+        },
+        "answer": {
+          "tokens": [
+            "Ci",
+            "sono",
+            "due",
+            "camere."
+          ],
+          "value": "Ci sono due camere."
+        },
+        "difficulty": 1,
+        "cefr": "A1",
+        "topic": "home",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت و شکل دقیق عبارت ایتالیایی دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: Ci sono due camere. — دو اتاق خواب هست.",
+          "model_answer": "Ci sono due camere."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_at_home_01_dialogue",
+      "data": {
+        "lesson_key": "a1-it-at-home-01",
+        "exercise_type": "dialogue_comprehension",
+        "prompt": {
+          "instruction_fa": "با توجه به گفت‌وگو، پاسخ مناسب را انتخاب کن.",
+          "source_dialogue_ref": "d_at_home_01",
+          "question_fa": "کدام گزینه با معنی «یک آشپزخانه هست.» هماهنگ است؟"
+        },
+        "answer": {
+          "value": "C'è una cucina."
+        },
+        "options": [
+          "C'è una cucina.",
+          "Ci sono due camere.",
+          "Dov'è il bagno?",
+          "Il bagno è qui."
+        ],
+        "difficulty": 1,
+        "cefr": "A1",
+        "topic": "home",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت و شکل دقیق عبارت ایتالیایی دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: C'è una cucina. — یک آشپزخانه هست.",
+          "model_answer": "C'è una cucina."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_at_home_02_meaning",
+      "data": {
+        "lesson_key": "a1-it-at-home-02",
+        "exercise_type": "multiple_choice",
+        "prompt": {
+          "instruction_fa": "معنی درست این عبارت ایتالیایی را انتخاب کن.",
+          "value": "Dov'è il bagno?"
+        },
+        "answer": {
+          "value": "حمام کجاست؟"
+        },
+        "options": [
+          "حمام کجاست؟",
+          "یک آشپزخانه هست.",
+          "دو اتاق خواب هست.",
+          "حمام اینجاست."
+        ],
+        "difficulty": 1,
+        "cefr": "A1",
+        "topic": "home",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت و شکل دقیق عبارت ایتالیایی دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: Dov'è il bagno? — حمام کجاست؟",
+          "model_answer": "Dov'è il bagno?"
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_at_home_02_listen",
+      "data": {
+        "lesson_key": "a1-it-at-home-02",
+        "exercise_type": "listening",
+        "prompt": {
+          "instruction_fa": "گوش کن و عبارتی را که شنیدی انتخاب کن.",
+          "audio_text": "Il bagno è qui."
+        },
+        "answer": {
+          "value": "Il bagno è qui."
+        },
+        "options": [
+          "Il bagno è qui.",
+          "Dov'è il bagno?",
+          "C'è una cucina.",
+          "Ci sono due camere."
+        ],
+        "difficulty": 1,
+        "cefr": "A1",
+        "topic": "home",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت و شکل دقیق عبارت ایتالیایی دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: Il bagno è qui. — حمام اینجاست.",
+          "model_answer": "Il bagno è qui.",
+          "transcript_it": "Il bagno è qui."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_at_home_02_speak",
+      "data": {
+        "lesson_key": "a1-it-at-home-02",
+        "exercise_type": "speaking",
+        "prompt": {
+          "instruction_fa": "عبارت را با صدای بلند و با ریتم طبیعی تکرار کن.",
+          "value": "Dov'è il bagno?"
+        },
+        "answer": {
+          "expected_text": "Dov'è il bagno?"
+        },
+        "difficulty": 1,
+        "cefr": "A1",
+        "topic": "home",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت و شکل دقیق عبارت ایتالیایی دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: Dov'è il bagno? — حمام کجاست؟",
+          "model_answer": "Dov'è il bagno?"
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_at_home_02_build",
+      "data": {
+        "lesson_key": "a1-it-at-home-02",
+        "exercise_type": "sentence_building",
+        "prompt": {
+          "instruction_fa": "کلمه‌ها را لمس کن تا عبارت درست ساخته شود.",
+          "tokens": [
+            "bagno",
+            "è",
+            "qui.",
+            "Il"
+          ]
+        },
+        "answer": {
+          "tokens": [
+            "Il",
+            "bagno",
+            "è",
+            "qui."
+          ],
+          "value": "Il bagno è qui."
+        },
+        "difficulty": 1,
+        "cefr": "A1",
+        "topic": "home",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت و شکل دقیق عبارت ایتالیایی دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: Il bagno è qui. — حمام اینجاست.",
+          "model_answer": "Il bagno è qui."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_at_home_02_dialogue",
+      "data": {
+        "lesson_key": "a1-it-at-home-02",
+        "exercise_type": "dialogue_comprehension",
+        "prompt": {
+          "instruction_fa": "با توجه به گفت‌وگو، پاسخ مناسب را انتخاب کن.",
+          "source_dialogue_ref": "d_at_home_02",
+          "question_fa": "کدام گزینه با معنی «حمام کجاست؟» هماهنگ است؟"
+        },
+        "answer": {
+          "value": "Dov'è il bagno?"
+        },
+        "options": [
+          "Dov'è il bagno?",
+          "C'è una cucina.",
+          "Ci sono due camere.",
+          "Il bagno è qui."
+        ],
+        "difficulty": 1,
+        "cefr": "A1",
+        "topic": "home",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت و شکل دقیق عبارت ایتالیایی دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: Dov'è il bagno? — حمام کجاست؟",
+          "model_answer": "Dov'è il bagno?"
+        },
+        "status": "validated"
+      }
+    }
+  ]
+}

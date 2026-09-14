@@ -1,0 +1,851 @@
+{
+  "batch_id": "it-it-a1-who-i-am-v1",
+  "course": "fa-it-it",
+  "learner_language": "fa",
+  "learner_variant": "fa-IR",
+  "target_language": "it",
+  "target_variant": "it-IT",
+  "cefr": "A1",
+  "curriculum_unit": "a1-it-who-i-am",
+  "generator": "gpt-5.6-sol:italian-a1-batch-v1",
+  "items": [
+    {
+      "kind": "concept",
+      "external_id": "c_who_i_am_01",
+      "data": {
+        "slug": "it_a1_who_i_am_studente",
+        "lesson_key": "a1-it-who-i-am-01",
+        "concept_type": "lexical",
+        "part_of_speech": "noun",
+        "forms": {
+          "it": "studente"
+        },
+        "translations": {
+          "fa": "دانشجو (مذکر)"
+        },
+        "cefr": "A1",
+        "topic": "personal-information",
+        "tags": [
+          "core",
+          "a1",
+          "high_frequency"
+        ],
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_who_i_am_01",
+      "data": {
+        "lesson_key": "a1-it-who-i-am-01",
+        "lemma": "studente",
+        "display_lemma": "studente",
+        "language": "it",
+        "language_variant": "it-IT",
+        "part_of_speech": "noun",
+        "concept_refs": [
+          "it_a1_who_i_am_studente"
+        ],
+        "cefr": "A1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_who_i_am_01",
+      "data": {
+        "lesson_key": "a1-it-who-i-am-01",
+        "lexeme_ref": "lx_who_i_am_01",
+        "surface_form": "studente",
+        "display_form": "studente",
+        "grammatical_features": {},
+        "is_lemma": true,
+        "is_preferred": true,
+        "cefr": "A1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_who_i_am_02",
+      "data": {
+        "slug": "it_a1_who_i_am_studentessa",
+        "lesson_key": "a1-it-who-i-am-01",
+        "concept_type": "lexical",
+        "part_of_speech": "noun",
+        "forms": {
+          "it": "studentessa"
+        },
+        "translations": {
+          "fa": "دانشجو (مونث)"
+        },
+        "cefr": "A1",
+        "topic": "personal-information",
+        "tags": [
+          "core",
+          "a1",
+          "high_frequency"
+        ],
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_who_i_am_02",
+      "data": {
+        "lesson_key": "a1-it-who-i-am-01",
+        "lemma": "studentessa",
+        "display_lemma": "studentessa",
+        "language": "it",
+        "language_variant": "it-IT",
+        "part_of_speech": "noun",
+        "concept_refs": [
+          "it_a1_who_i_am_studentessa"
+        ],
+        "cefr": "A1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_who_i_am_02",
+      "data": {
+        "lesson_key": "a1-it-who-i-am-01",
+        "lexeme_ref": "lx_who_i_am_02",
+        "surface_form": "studentessa",
+        "display_form": "studentessa",
+        "grammatical_features": {},
+        "is_lemma": true,
+        "is_preferred": true,
+        "cefr": "A1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_who_i_am_03",
+      "data": {
+        "slug": "it_a1_who_i_am_insegnante",
+        "lesson_key": "a1-it-who-i-am-01",
+        "concept_type": "lexical",
+        "part_of_speech": "noun",
+        "forms": {
+          "it": "insegnante"
+        },
+        "translations": {
+          "fa": "معلم"
+        },
+        "cefr": "A1",
+        "topic": "personal-information",
+        "tags": [
+          "core",
+          "a1",
+          "high_frequency"
+        ],
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_who_i_am_03",
+      "data": {
+        "lesson_key": "a1-it-who-i-am-01",
+        "lemma": "insegnante",
+        "display_lemma": "insegnante",
+        "language": "it",
+        "language_variant": "it-IT",
+        "part_of_speech": "noun",
+        "concept_refs": [
+          "it_a1_who_i_am_insegnante"
+        ],
+        "cefr": "A1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_who_i_am_03",
+      "data": {
+        "lesson_key": "a1-it-who-i-am-01",
+        "lexeme_ref": "lx_who_i_am_03",
+        "surface_form": "insegnante",
+        "display_form": "insegnante",
+        "grammatical_features": {},
+        "is_lemma": true,
+        "is_preferred": true,
+        "cefr": "A1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_who_i_am_04",
+      "data": {
+        "slug": "it_a1_who_i_am_italiano",
+        "lesson_key": "a1-it-who-i-am-02",
+        "concept_type": "lexical",
+        "part_of_speech": "adjective",
+        "forms": {
+          "it": "italiano"
+        },
+        "translations": {
+          "fa": "ایتالیایی (مذکر)"
+        },
+        "cefr": "A1",
+        "topic": "personal-information",
+        "tags": [
+          "core",
+          "a1",
+          "high_frequency"
+        ],
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_who_i_am_04",
+      "data": {
+        "lesson_key": "a1-it-who-i-am-02",
+        "lemma": "italiano",
+        "display_lemma": "italiano",
+        "language": "it",
+        "language_variant": "it-IT",
+        "part_of_speech": "adjective",
+        "concept_refs": [
+          "it_a1_who_i_am_italiano"
+        ],
+        "cefr": "A1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_who_i_am_04",
+      "data": {
+        "lesson_key": "a1-it-who-i-am-02",
+        "lexeme_ref": "lx_who_i_am_04",
+        "surface_form": "italiano",
+        "display_form": "italiano",
+        "grammatical_features": {},
+        "is_lemma": true,
+        "is_preferred": true,
+        "cefr": "A1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_who_i_am_05",
+      "data": {
+        "slug": "it_a1_who_i_am_iraniana",
+        "lesson_key": "a1-it-who-i-am-02",
+        "concept_type": "lexical",
+        "part_of_speech": "adjective",
+        "forms": {
+          "it": "iraniana"
+        },
+        "translations": {
+          "fa": "ایرانی (مونث)"
+        },
+        "cefr": "A1",
+        "topic": "personal-information",
+        "tags": [
+          "core",
+          "a1",
+          "high_frequency"
+        ],
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_who_i_am_05",
+      "data": {
+        "lesson_key": "a1-it-who-i-am-02",
+        "lemma": "iraniana",
+        "display_lemma": "iraniana",
+        "language": "it",
+        "language_variant": "it-IT",
+        "part_of_speech": "adjective",
+        "concept_refs": [
+          "it_a1_who_i_am_iraniana"
+        ],
+        "cefr": "A1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_who_i_am_05",
+      "data": {
+        "lesson_key": "a1-it-who-i-am-02",
+        "lexeme_ref": "lx_who_i_am_05",
+        "surface_form": "iraniana",
+        "display_form": "iraniana",
+        "grammatical_features": {},
+        "is_lemma": true,
+        "is_preferred": true,
+        "cefr": "A1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_who_i_am_06",
+      "data": {
+        "slug": "it_a1_who_i_am_non",
+        "lesson_key": "a1-it-who-i-am-02",
+        "concept_type": "lexical",
+        "part_of_speech": "adverb",
+        "forms": {
+          "it": "non"
+        },
+        "translations": {
+          "fa": "نه / برای منفی کردن فعل"
+        },
+        "cefr": "A1",
+        "topic": "personal-information",
+        "tags": [
+          "core",
+          "a1",
+          "high_frequency"
+        ],
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_who_i_am_06",
+      "data": {
+        "lesson_key": "a1-it-who-i-am-02",
+        "lemma": "non",
+        "display_lemma": "non",
+        "language": "it",
+        "language_variant": "it-IT",
+        "part_of_speech": "adverb",
+        "concept_refs": [
+          "it_a1_who_i_am_non"
+        ],
+        "cefr": "A1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_who_i_am_06",
+      "data": {
+        "lesson_key": "a1-it-who-i-am-02",
+        "lexeme_ref": "lx_who_i_am_06",
+        "surface_form": "non",
+        "display_form": "non",
+        "grammatical_features": {},
+        "is_lemma": true,
+        "is_preferred": true,
+        "cefr": "A1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_who_i_am_01",
+      "data": {
+        "lesson_key": "a1-it-who-i-am-01",
+        "text": {
+          "it": "Sono studente."
+        },
+        "translations": {
+          "fa": "من دانشجو هستم."
+        },
+        "intent": "state_identity",
+        "concept_refs": [
+          "it_a1_who_i_am_studente"
+        ],
+        "cefr": "A1",
+        "topic": "personal-information",
+        "register": "neutral",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_who_i_am_02",
+      "data": {
+        "lesson_key": "a1-it-who-i-am-01",
+        "text": {
+          "it": "Lei è insegnante."
+        },
+        "translations": {
+          "fa": "او معلم است."
+        },
+        "intent": "state_identity_other",
+        "concept_refs": [
+          "it_a1_who_i_am_insegnante"
+        ],
+        "cefr": "A1",
+        "topic": "personal-information",
+        "register": "neutral",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_who_i_am_03",
+      "data": {
+        "lesson_key": "a1-it-who-i-am-02",
+        "text": {
+          "it": "Sono iraniana."
+        },
+        "translations": {
+          "fa": "من ایرانی هستم."
+        },
+        "intent": "state_origin",
+        "concept_refs": [
+          "it_a1_who_i_am_iraniana"
+        ],
+        "cefr": "A1",
+        "topic": "personal-information",
+        "register": "neutral",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_who_i_am_04",
+      "data": {
+        "lesson_key": "a1-it-who-i-am-02",
+        "text": {
+          "it": "Non sono italiano."
+        },
+        "translations": {
+          "fa": "من ایتالیایی نیستم."
+        },
+        "intent": "negate_identity",
+        "concept_refs": [
+          "it_a1_who_i_am_italiano",
+          "it_a1_who_i_am_non"
+        ],
+        "cefr": "A1",
+        "topic": "personal-information",
+        "register": "neutral",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "grammar_point",
+      "external_id": "g_who_i_am_core",
+      "data": {
+        "lesson_key": "a1-it-who-i-am-01",
+        "slug": "a1-it-who-i-am-grammar",
+        "title": "Essere: sono, sei, è",
+        "rule_summary": "Italian uses forms of essere to say who someone is or describe identity.",
+        "explanation": {
+          "fa": "برای گفتن «هستم/هستی/است» از شکل‌های فعل essere استفاده می‌شود: sono، sei، è. برخلاف فارسی، فعل معمولاً حذف نمی‌شود."
+        },
+        "examples": [
+          {
+            "it": "Sono studente.",
+            "fa": "من دانشجو هستم."
+          },
+          {
+            "it": "Lei è insegnante.",
+            "fa": "او معلم است."
+          }
+        ],
+        "cefr": "A1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "dialogue",
+      "external_id": "d_who_i_am_01",
+      "data": {
+        "lesson_key": "a1-it-who-i-am-01",
+        "title": "Nuovi compagni",
+        "setting": "item",
+        "cefr": "A1",
+        "topic": "personal-information",
+        "characters": [
+          "giulia",
+          "marco"
+        ],
+        "turns": [
+          {
+            "order": 1,
+            "speaker": "giulia",
+            "text": "Sei studente?",
+            "translation_fa": "دانشجویی؟"
+          },
+          {
+            "order": 2,
+            "speaker": "marco",
+            "text": "Sì, sono studente. E tu?",
+            "translation_fa": "بله، دانشجو هستم. تو چطور؟"
+          },
+          {
+            "order": 3,
+            "speaker": "giulia",
+            "text": "Io sono insegnante.",
+            "translation_fa": "من معلم هستم."
+          },
+          {
+            "order": 4,
+            "speaker": "marco",
+            "text": "Piacere!",
+            "translation_fa": "خوشوقتم!"
+          }
+        ],
+        "qa": {
+          "character_pair_unique_within_unit": true,
+          "naturalness": "passed",
+          "single_situation": true
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "dialogue",
+      "external_id": "d_who_i_am_02",
+      "data": {
+        "lesson_key": "a1-it-who-i-am-02",
+        "title": "Di dove sei?",
+        "setting": "item",
+        "cefr": "A1",
+        "topic": "personal-information",
+        "characters": [
+          "sofia",
+          "luca"
+        ],
+        "turns": [
+          {
+            "order": 1,
+            "speaker": "sofia",
+            "text": "Sei italiano?",
+            "translation_fa": "ایتالیایی هستی؟"
+          },
+          {
+            "order": 2,
+            "speaker": "luca",
+            "text": "Sì, sono italiano. E tu?",
+            "translation_fa": "بله، ایتالیایی هستم. تو؟"
+          },
+          {
+            "order": 3,
+            "speaker": "sofia",
+            "text": "Sono iraniana.",
+            "translation_fa": "من ایرانی هستم."
+          },
+          {
+            "order": 4,
+            "speaker": "luca",
+            "text": "Ah, capisco.",
+            "translation_fa": "آهان، فهمیدم."
+          }
+        ],
+        "qa": {
+          "character_pair_unique_within_unit": true,
+          "naturalness": "passed",
+          "single_situation": true
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_who_i_am_01_meaning",
+      "data": {
+        "lesson_key": "a1-it-who-i-am-01",
+        "exercise_type": "multiple_choice",
+        "prompt": {
+          "instruction_fa": "معنی درست این عبارت ایتالیایی را انتخاب کن.",
+          "value": "Sono studente."
+        },
+        "answer": {
+          "value": "من دانشجو هستم."
+        },
+        "options": [
+          "من دانشجو هستم.",
+          "او معلم است.",
+          "من ایرانی هستم.",
+          "من ایتالیایی نیستم."
+        ],
+        "difficulty": 1,
+        "cefr": "A1",
+        "topic": "personal-information",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت و شکل دقیق عبارت ایتالیایی دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: Sono studente. — من دانشجو هستم.",
+          "model_answer": "Sono studente."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_who_i_am_01_listen",
+      "data": {
+        "lesson_key": "a1-it-who-i-am-01",
+        "exercise_type": "listening",
+        "prompt": {
+          "instruction_fa": "گوش کن و عبارتی را که شنیدی انتخاب کن.",
+          "audio_text": "Lei è insegnante."
+        },
+        "answer": {
+          "value": "Lei è insegnante."
+        },
+        "options": [
+          "Lei è insegnante.",
+          "Sono studente.",
+          "Sono iraniana.",
+          "Non sono italiano."
+        ],
+        "difficulty": 1,
+        "cefr": "A1",
+        "topic": "personal-information",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت و شکل دقیق عبارت ایتالیایی دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: Lei è insegnante. — او معلم است.",
+          "model_answer": "Lei è insegnante.",
+          "transcript_it": "Lei è insegnante."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_who_i_am_01_speak",
+      "data": {
+        "lesson_key": "a1-it-who-i-am-01",
+        "exercise_type": "speaking",
+        "prompt": {
+          "instruction_fa": "عبارت را با صدای بلند و با ریتم طبیعی تکرار کن.",
+          "value": "Sono studente."
+        },
+        "answer": {
+          "expected_text": "Sono studente."
+        },
+        "difficulty": 1,
+        "cefr": "A1",
+        "topic": "personal-information",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت و شکل دقیق عبارت ایتالیایی دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: Sono studente. — من دانشجو هستم.",
+          "model_answer": "Sono studente."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_who_i_am_01_build",
+      "data": {
+        "lesson_key": "a1-it-who-i-am-01",
+        "exercise_type": "sentence_building",
+        "prompt": {
+          "instruction_fa": "کلمه‌ها را لمس کن تا عبارت درست ساخته شود.",
+          "tokens": [
+            "è",
+            "insegnante.",
+            "Lei"
+          ]
+        },
+        "answer": {
+          "tokens": [
+            "Lei",
+            "è",
+            "insegnante."
+          ],
+          "value": "Lei è insegnante."
+        },
+        "difficulty": 1,
+        "cefr": "A1",
+        "topic": "personal-information",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت و شکل دقیق عبارت ایتالیایی دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: Lei è insegnante. — او معلم است.",
+          "model_answer": "Lei è insegnante."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_who_i_am_01_dialogue",
+      "data": {
+        "lesson_key": "a1-it-who-i-am-01",
+        "exercise_type": "dialogue_comprehension",
+        "prompt": {
+          "instruction_fa": "با توجه به گفت‌وگو، پاسخ مناسب را انتخاب کن.",
+          "source_dialogue_ref": "d_who_i_am_01",
+          "question_fa": "کدام گزینه با معنی «من دانشجو هستم.» هماهنگ است؟"
+        },
+        "answer": {
+          "value": "Sono studente."
+        },
+        "options": [
+          "Sono studente.",
+          "Lei è insegnante.",
+          "Sono iraniana.",
+          "Non sono italiano."
+        ],
+        "difficulty": 1,
+        "cefr": "A1",
+        "topic": "personal-information",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت و شکل دقیق عبارت ایتالیایی دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: Sono studente. — من دانشجو هستم.",
+          "model_answer": "Sono studente."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_who_i_am_02_meaning",
+      "data": {
+        "lesson_key": "a1-it-who-i-am-02",
+        "exercise_type": "multiple_choice",
+        "prompt": {
+          "instruction_fa": "معنی درست این عبارت ایتالیایی را انتخاب کن.",
+          "value": "Sono iraniana."
+        },
+        "answer": {
+          "value": "من ایرانی هستم."
+        },
+        "options": [
+          "من ایرانی هستم.",
+          "من دانشجو هستم.",
+          "او معلم است.",
+          "من ایتالیایی نیستم."
+        ],
+        "difficulty": 1,
+        "cefr": "A1",
+        "topic": "personal-information",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت و شکل دقیق عبارت ایتالیایی دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: Sono iraniana. — من ایرانی هستم.",
+          "model_answer": "Sono iraniana."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_who_i_am_02_listen",
+      "data": {
+        "lesson_key": "a1-it-who-i-am-02",
+        "exercise_type": "listening",
+        "prompt": {
+          "instruction_fa": "گوش کن و عبارتی را که شنیدی انتخاب کن.",
+          "audio_text": "Non sono italiano."
+        },
+        "answer": {
+          "value": "Non sono italiano."
+        },
+        "options": [
+          "Non sono italiano.",
+          "Sono iraniana.",
+          "Sono studente.",
+          "Lei è insegnante."
+        ],
+        "difficulty": 1,
+        "cefr": "A1",
+        "topic": "personal-information",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت و شکل دقیق عبارت ایتالیایی دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: Non sono italiano. — من ایتالیایی نیستم.",
+          "model_answer": "Non sono italiano.",
+          "transcript_it": "Non sono italiano."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_who_i_am_02_speak",
+      "data": {
+        "lesson_key": "a1-it-who-i-am-02",
+        "exercise_type": "speaking",
+        "prompt": {
+          "instruction_fa": "عبارت را با صدای بلند و با ریتم طبیعی تکرار کن.",
+          "value": "Sono iraniana."
+        },
+        "answer": {
+          "expected_text": "Sono iraniana."
+        },
+        "difficulty": 1,
+        "cefr": "A1",
+        "topic": "personal-information",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت و شکل دقیق عبارت ایتالیایی دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: Sono iraniana. — من ایرانی هستم.",
+          "model_answer": "Sono iraniana."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_who_i_am_02_build",
+      "data": {
+        "lesson_key": "a1-it-who-i-am-02",
+        "exercise_type": "sentence_building",
+        "prompt": {
+          "instruction_fa": "کلمه‌ها را لمس کن تا عبارت درست ساخته شود.",
+          "tokens": [
+            "sono",
+            "italiano.",
+            "Non"
+          ]
+        },
+        "answer": {
+          "tokens": [
+            "Non",
+            "sono",
+            "italiano."
+          ],
+          "value": "Non sono italiano."
+        },
+        "difficulty": 1,
+        "cefr": "A1",
+        "topic": "personal-information",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت و شکل دقیق عبارت ایتالیایی دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: Non sono italiano. — من ایتالیایی نیستم.",
+          "model_answer": "Non sono italiano."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_who_i_am_02_dialogue",
+      "data": {
+        "lesson_key": "a1-it-who-i-am-02",
+        "exercise_type": "dialogue_comprehension",
+        "prompt": {
+          "instruction_fa": "با توجه به گفت‌وگو، پاسخ مناسب را انتخاب کن.",
+          "source_dialogue_ref": "d_who_i_am_02",
+          "question_fa": "کدام گزینه با معنی «من ایرانی هستم.» هماهنگ است؟"
+        },
+        "answer": {
+          "value": "Sono iraniana."
+        },
+        "options": [
+          "Sono iraniana.",
+          "Sono studente.",
+          "Lei è insegnante.",
+          "Non sono italiano."
+        ],
+        "difficulty": 1,
+        "cefr": "A1",
+        "topic": "personal-information",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت و شکل دقیق عبارت ایتالیایی دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: Sono iraniana. — من ایرانی هستم.",
+          "model_answer": "Sono iraniana."
+        },
+        "status": "validated"
+      }
+    }
+  ]
+}
