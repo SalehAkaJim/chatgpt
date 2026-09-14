@@ -60,6 +60,7 @@ FROM (
   UNION ALL SELECT 'fa-de-de','fa','fa-IR','de','de-DE','German for Persian speakers','Standard German course localized for Persian-speaking learners.',JSON_OBJECT('curriculum_family','german','default_variant','de-DE')
   UNION ALL SELECT 'fa-tr-tr','fa','fa-IR','tr','tr-TR','Turkish for Persian speakers','Istanbul Turkish course localized for Persian-speaking learners.',JSON_OBJECT('curriculum_family','turkish','default_variant','tr-TR','standard','istanbul')
   UNION ALL SELECT 'fa-ko-kr','fa','fa-IR','ko','ko-KR','Korean for Persian speakers','Standard Seoul Korean course localized for Persian-speaking learners.',JSON_OBJECT('curriculum_family','korean','default_variant','ko-KR','standard','seoul')
+  UNION ALL SELECT 'fa-it-it','fa','fa-IR','it','it-IT','Italian for Persian speakers','Standard Italian course localized for Persian-speaking learners.',JSON_OBJECT('curriculum_family','italian','default_variant','it-IT','standard','standard_italian')
   UNION ALL SELECT 'fa-ar-msa','fa','fa-IR','ar','ar-MSA','Modern Standard Arabic for Persian speakers','MSA course localized for Persian-speaking learners. Dialect courses remain separate.',JSON_OBJECT('curriculum_family','arabic-msa','register','modern_standard')
 ) AS c
 JOIN languages learner ON learner.code = c.learner_code
