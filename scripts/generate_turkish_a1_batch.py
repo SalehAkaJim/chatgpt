@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Generate Istanbul Turkish A1 batch 1 from the authored Turkish-specific spec."""
+"""Generate one Istanbul Turkish A1 production batch from an authored Turkish-specific spec."""
 from __future__ import annotations
 import argparse, json, re
 from pathlib import Path
@@ -25,7 +25,7 @@ def fb(fa: str, tr: str) -> dict:
     return {"retry_tip_fa":"به معنی، موقعیت و پسوندهای عبارت ترکی دقت کن و دوباره امتحان کن.","explanation_fa":f"مدل طبیعی این درس: {tr} — {fa}","model_answer":tr}
 
 
-def build_unit(spec: dict) -> dict:
+def build_unit(spec: dict, batch_number: int) -> dict:
     slug=spec["slug"]; prefix=safe(slug); unit=f"a1-tr-{slug}"; topic=spec["topic"]
     items=[]; refs={}; utter=[]
     for i,row in enumerate(spec["vocab"],1):
@@ -59,19 +59,28 @@ def build_unit(spec: dict) -> dict:
           {"kind":"exercise","external_id":base+"_build","data":validated({"lesson_key":lk,"exercise_type":"sentence_building","prompt":{"instruction_fa":"کلمه‌ها را لمس کن تا عبارت درست ساخته شود.","tokens":b["tr"].split()[1:]+b["tr"].split()[:1]},"answer":{"tokens":b["tr"].split(),"value":b["tr"]},"difficulty":1,"cefr":LEVEL,"topic":topic,"feedback":fb(b["fa"],b["tr"])})},
           {"kind":"exercise","external_id":base+"_dialogue","data":validated({"lesson_key":lk,"exercise_type":"dialogue_comprehension","prompt":{"instruction_fa":"با توجه به گفت‌وگو، پاسخ مناسب را انتخاب کن.","source_dialogue_ref":dialogue_ids[lesson],"question_fa":f"کدام گزینه با معنی «{a['fa']}» هماهنگ است؟"},"answer":{"value":a["tr"]},"options":tr_opts,"difficulty":1,"cefr":LEVEL,"topic":topic,"feedback":fb(a["fa"],a["tr"])})}
         ]
-    return {"batch_id":f"tr-tr-a1-{slug}-v1","course":COURSE,"learner_language":"fa","learner_variant":"fa-IR","target_language":"tr","target_variant":VARIANT,"cefr":LEVEL,"curriculum_unit":unit,"generator":"gpt-5.6-sol:turkish-a1-batch-v1","items":items}
+    return {"batch_id":f"tr-tr-a1-b{batch_number:02d}-{slug}-v1","course":COURSE,"learner_language":"fa","learner_variant":"fa-IR","target_language":"tr","target_variant":VARIANT,"cefr":LEVEL,"curriculum_unit":unit,"generator":f"gpt-5.6-sol:turkish-a1-batch-{batch_number:02d}-v1","items":items}
 
 
 def main():
     ap=argparse.ArgumentParser(); ap.add_argument("--spec",type=Path,default=ROOT/"content/specs/tr/A1/batch-01.json"); args=ap.parse_args()
-    payload=json.loads(args.spec.read_text(encoding="utf-8")); units=payload.get("units",[])
-    expected=["who-i-am","this-and-these","my-family","at-home","what-im-doing","time-and-plans","at-the-cafe","shopping-basics","getting-around","a1-first-day-capstone"]
+    payload=json.loads(args.spec.read_text(encoding="utf-8")); units=payload.get("units",[]); batch_number=int(payload.get("batch",0))
+    if batch_number < 1: raise SystemExit("Turkish A1 spec needs a positive batch number")
     actual=[u.get("slug") for u in units]
-    if len(units)!=10 or actual!=expected: raise SystemExit(f"Unexpected Turkish A1 batch 1 sequence: {actual}")
+    if len(units)!=10: raise SystemExit(f"A production batch must contain 10 units, got {len(units)}")
+    if len(set(actual))!=len(actual) or any(not x for x in actual): raise SystemExit(f"Unit slugs must be unique and non-empty: {actual}")
+    for u in units:
+        if len(u.get("vocab",[]))!=6 or len(u.get("utterances",[]))!=4 or len(u.get("dialogues",[]))!=2:
+            raise SystemExit(f"{u.get('slug')}: expected 6 vocab, 4 utterances and 2 dialogues")
     out=ROOT/"content/production/tr/A1"; out.mkdir(parents=True,exist_ok=True)
+    existing={p.name for p in out.glob("*.json")}
+    planned={f"a1-tr-{u['slug']}-v1.json" for u in units}
+    collision=existing & planned
+    if collision and batch_number != 1:
+        raise SystemExit(f"Batch would overwrite existing production files: {sorted(collision)}")
     written=[]
     for spec in units:
-        batch=build_unit(spec); p=out/f"a1-tr-{spec['slug']}-v1.json"; p.write_text(json.dumps(batch,ensure_ascii=False,indent=2)+"\n",encoding="utf-8"); written.append(p.name)
-    print(json.dumps({"level":LEVEL,"units":len(written),"files":written},ensure_ascii=False,indent=2))
+        batch=build_unit(spec,batch_number); p=out/f"a1-tr-{spec['slug']}-v1.json"; p.write_text(json.dumps(batch,ensure_ascii=False,indent=2)+"\n",encoding="utf-8"); written.append(p.name)
+    print(json.dumps({"level":LEVEL,"batch":batch_number,"units":len(written),"files":written},ensure_ascii=False,indent=2))
 
 if __name__=="__main__": main()
