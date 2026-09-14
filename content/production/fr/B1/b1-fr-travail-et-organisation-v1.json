@@ -1,0 +1,881 @@
+{
+  "batch_id": "fr-fr-b1-travail-et-organisation-v1",
+  "course": "fa-fr-fr",
+  "learner_language": "fa",
+  "learner_variant": "fa-IR",
+  "target_language": "fr",
+  "target_variant": "fr-FR",
+  "cefr": "B1",
+  "curriculum_unit": "b1-fr-travail-et-organisation",
+  "generator": "gpt-5.6-sol:french-b1-batch-v1",
+  "items": [
+    {
+      "kind": "concept",
+      "external_id": "c_travail_et_organisation_01",
+      "data": {
+        "slug": "fr_b1_travail_et_organisation_dossier",
+        "lesson_key": "b1-fr-travail-et-organisation-01",
+        "concept_type": "lexical",
+        "part_of_speech": "noun",
+        "forms": {
+          "fr": "dossier"
+        },
+        "translations": {
+          "fa": "پرونده"
+        },
+        "cefr": "B1",
+        "topic": "common-actions",
+        "tags": [
+          "core",
+          "b1",
+          "high_frequency"
+        ],
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_travail_et_organisation_01",
+      "data": {
+        "lesson_key": "b1-fr-travail-et-organisation-01",
+        "lemma": "dossier",
+        "display_lemma": "dossier",
+        "language": "fr",
+        "language_variant": "fr-FR",
+        "part_of_speech": "noun",
+        "concept_refs": [
+          "fr_b1_travail_et_organisation_dossier"
+        ],
+        "cefr": "B1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_travail_et_organisation_01",
+      "data": {
+        "lesson_key": "b1-fr-travail-et-organisation-01",
+        "lexeme_ref": "lx_travail_et_organisation_01",
+        "surface_form": "dossier",
+        "display_form": "dossier",
+        "grammatical_features": {},
+        "is_lemma": true,
+        "is_preferred": true,
+        "cefr": "B1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_travail_et_organisation_02",
+      "data": {
+        "slug": "fr_b1_travail_et_organisation_equipe",
+        "lesson_key": "b1-fr-travail-et-organisation-01",
+        "concept_type": "lexical",
+        "part_of_speech": "noun",
+        "forms": {
+          "fr": "équipe"
+        },
+        "translations": {
+          "fa": "تیم"
+        },
+        "cefr": "B1",
+        "topic": "common-actions",
+        "tags": [
+          "core",
+          "b1",
+          "high_frequency"
+        ],
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_travail_et_organisation_02",
+      "data": {
+        "lesson_key": "b1-fr-travail-et-organisation-01",
+        "lemma": "équipe",
+        "display_lemma": "équipe",
+        "language": "fr",
+        "language_variant": "fr-FR",
+        "part_of_speech": "noun",
+        "concept_refs": [
+          "fr_b1_travail_et_organisation_equipe"
+        ],
+        "cefr": "B1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_travail_et_organisation_02",
+      "data": {
+        "lesson_key": "b1-fr-travail-et-organisation-01",
+        "lexeme_ref": "lx_travail_et_organisation_02",
+        "surface_form": "équipe",
+        "display_form": "équipe",
+        "grammatical_features": {},
+        "is_lemma": true,
+        "is_preferred": true,
+        "cefr": "B1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_travail_et_organisation_03",
+      "data": {
+        "slug": "fr_b1_travail_et_organisation_delai",
+        "lesson_key": "b1-fr-travail-et-organisation-01",
+        "concept_type": "lexical",
+        "part_of_speech": "noun",
+        "forms": {
+          "fr": "délai"
+        },
+        "translations": {
+          "fa": "مهلت"
+        },
+        "cefr": "B1",
+        "topic": "common-actions",
+        "tags": [
+          "core",
+          "b1",
+          "high_frequency"
+        ],
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_travail_et_organisation_03",
+      "data": {
+        "lesson_key": "b1-fr-travail-et-organisation-01",
+        "lemma": "délai",
+        "display_lemma": "délai",
+        "language": "fr",
+        "language_variant": "fr-FR",
+        "part_of_speech": "noun",
+        "concept_refs": [
+          "fr_b1_travail_et_organisation_delai"
+        ],
+        "cefr": "B1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_travail_et_organisation_03",
+      "data": {
+        "lesson_key": "b1-fr-travail-et-organisation-01",
+        "lexeme_ref": "lx_travail_et_organisation_03",
+        "surface_form": "délai",
+        "display_form": "délai",
+        "grammatical_features": {},
+        "is_lemma": true,
+        "is_preferred": true,
+        "cefr": "B1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_travail_et_organisation_04",
+      "data": {
+        "slug": "fr_b1_travail_et_organisation_priorite",
+        "lesson_key": "b1-fr-travail-et-organisation-02",
+        "concept_type": "lexical",
+        "part_of_speech": "noun",
+        "forms": {
+          "fr": "priorité"
+        },
+        "translations": {
+          "fa": "اولویت"
+        },
+        "cefr": "B1",
+        "topic": "common-actions",
+        "tags": [
+          "core",
+          "b1",
+          "high_frequency"
+        ],
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_travail_et_organisation_04",
+      "data": {
+        "lesson_key": "b1-fr-travail-et-organisation-02",
+        "lemma": "priorité",
+        "display_lemma": "priorité",
+        "language": "fr",
+        "language_variant": "fr-FR",
+        "part_of_speech": "noun",
+        "concept_refs": [
+          "fr_b1_travail_et_organisation_priorite"
+        ],
+        "cefr": "B1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_travail_et_organisation_04",
+      "data": {
+        "lesson_key": "b1-fr-travail-et-organisation-02",
+        "lexeme_ref": "lx_travail_et_organisation_04",
+        "surface_form": "priorité",
+        "display_form": "priorité",
+        "grammatical_features": {},
+        "is_lemma": true,
+        "is_preferred": true,
+        "cefr": "B1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_travail_et_organisation_05",
+      "data": {
+        "slug": "fr_b1_travail_et_organisation_repartir",
+        "lesson_key": "b1-fr-travail-et-organisation-02",
+        "concept_type": "lexical",
+        "part_of_speech": "verb",
+        "forms": {
+          "fr": "répartir"
+        },
+        "translations": {
+          "fa": "تقسیم کردن"
+        },
+        "cefr": "B1",
+        "topic": "common-actions",
+        "tags": [
+          "core",
+          "b1",
+          "high_frequency"
+        ],
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_travail_et_organisation_05",
+      "data": {
+        "lesson_key": "b1-fr-travail-et-organisation-02",
+        "lemma": "répartir",
+        "display_lemma": "répartir",
+        "language": "fr",
+        "language_variant": "fr-FR",
+        "part_of_speech": "verb",
+        "concept_refs": [
+          "fr_b1_travail_et_organisation_repartir"
+        ],
+        "cefr": "B1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_travail_et_organisation_05",
+      "data": {
+        "lesson_key": "b1-fr-travail-et-organisation-02",
+        "lexeme_ref": "lx_travail_et_organisation_05",
+        "surface_form": "répartir",
+        "display_form": "répartir",
+        "grammatical_features": {},
+        "is_lemma": true,
+        "is_preferred": true,
+        "cefr": "B1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_travail_et_organisation_06",
+      "data": {
+        "slug": "fr_b1_travail_et_organisation_efficace",
+        "lesson_key": "b1-fr-travail-et-organisation-02",
+        "concept_type": "lexical",
+        "part_of_speech": "adjective",
+        "forms": {
+          "fr": "efficace"
+        },
+        "translations": {
+          "fa": "کارآمد"
+        },
+        "cefr": "B1",
+        "topic": "common-actions",
+        "tags": [
+          "core",
+          "b1",
+          "high_frequency"
+        ],
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_travail_et_organisation_06",
+      "data": {
+        "lesson_key": "b1-fr-travail-et-organisation-02",
+        "lemma": "efficace",
+        "display_lemma": "efficace",
+        "language": "fr",
+        "language_variant": "fr-FR",
+        "part_of_speech": "adjective",
+        "concept_refs": [
+          "fr_b1_travail_et_organisation_efficace"
+        ],
+        "cefr": "B1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_travail_et_organisation_06",
+      "data": {
+        "lesson_key": "b1-fr-travail-et-organisation-02",
+        "lexeme_ref": "lx_travail_et_organisation_06",
+        "surface_form": "efficace",
+        "display_form": "efficace",
+        "grammatical_features": {},
+        "is_lemma": true,
+        "is_preferred": true,
+        "cefr": "B1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_travail_et_organisation_01",
+      "data": {
+        "lesson_key": "b1-fr-travail-et-organisation-01",
+        "text": {
+          "fr": "C'est le dossier qui doit partir aujourd'hui."
+        },
+        "translations": {
+          "fa": "این همان پرونده‌ای است که باید امروز ارسال شود."
+        },
+        "intent": "identify_subject_relative",
+        "concept_refs": [
+          "fr_b1_travail_et_organisation_dossier",
+          "fr_b1_travail_et_organisation_delai"
+        ],
+        "cefr": "B1",
+        "topic": "common-actions",
+        "register": "neutral",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_travail_et_organisation_02",
+      "data": {
+        "lesson_key": "b1-fr-travail-et-organisation-01",
+        "text": {
+          "fr": "La collègue que tu as appelée travaille dans mon équipe."
+        },
+        "translations": {
+          "fa": "همکاری که به او زنگ زدی در تیم من کار می‌کند."
+        },
+        "intent": "identify_object_relative",
+        "concept_refs": [
+          "fr_b1_travail_et_organisation_equipe"
+        ],
+        "cefr": "B1",
+        "topic": "common-actions",
+        "register": "neutral",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_travail_et_organisation_03",
+      "data": {
+        "lesson_key": "b1-fr-travail-et-organisation-02",
+        "text": {
+          "fr": "On devrait mieux répartir les tâches selon les priorités."
+        },
+        "translations": {
+          "fa": "بهتر است کارها را بر اساس اولویت‌ها بهتر تقسیم کنیم."
+        },
+        "intent": "suggest_organization",
+        "concept_refs": [
+          "fr_b1_travail_et_organisation_repartir",
+          "fr_b1_travail_et_organisation_priorite"
+        ],
+        "cefr": "B1",
+        "topic": "common-actions",
+        "register": "neutral",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_travail_et_organisation_04",
+      "data": {
+        "lesson_key": "b1-fr-travail-et-organisation-02",
+        "text": {
+          "fr": "Cette méthode est plus efficace quand le délai est court."
+        },
+        "translations": {
+          "fa": "وقتی مهلت کوتاه است این روش کارآمدتر است."
+        },
+        "intent": "evaluate_method",
+        "concept_refs": [
+          "fr_b1_travail_et_organisation_efficace",
+          "fr_b1_travail_et_organisation_delai"
+        ],
+        "cefr": "B1",
+        "topic": "common-actions",
+        "register": "neutral",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "grammar_point",
+      "external_id": "g_travail_et_organisation_core",
+      "data": {
+        "lesson_key": "b1-fr-travail-et-organisation-01",
+        "slug": "b1-fr-travail-et-organisation-grammar",
+        "title": "Les pronoms relatifs qui et que",
+        "rule_summary": "Use qui when the relative pronoun is the subject of the following verb, and que when it is the direct object.",
+        "explanation": {
+          "fa": "در جمله موصولی، qui فاعل فعل بعدی است و que مفعول مستقیم."
+        },
+        "examples": [
+          {
+            "fr": "La personne qui appelle est ma responsable.",
+            "fa": "کسی که تماس می‌گیرد مدیر من است."
+          },
+          {
+            "fr": "Le rapport que j'ai envoyé est prêt.",
+            "fa": "گزارشی که فرستادم آماده است."
+          }
+        ],
+        "cefr": "B1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "dialogue",
+      "external_id": "d_travail_et_organisation_01",
+      "data": {
+        "lesson_key": "b1-fr-travail-et-organisation-01",
+        "title": "Une priorité urgente",
+        "setting": "item",
+        "cefr": "B1",
+        "topic": "common-actions",
+        "characters": [
+          "camille",
+          "hugo"
+        ],
+        "turns": [
+          {
+            "order": 1,
+            "speaker": "camille",
+            "text": "Quel dossier doit passer en premier ?",
+            "translation_fa": "کدام پرونده باید اول انجام شود؟"
+          },
+          {
+            "order": 2,
+            "speaker": "hugo",
+            "text": "Celui que le client attend depuis lundi.",
+            "translation_fa": "همانی که مشتری از دوشنبه منتظرش است."
+          },
+          {
+            "order": 3,
+            "speaker": "camille",
+            "text": "D'accord, je m'en occupe avant midi.",
+            "translation_fa": "باشه، قبل از ظهر انجامش می‌دهم."
+          },
+          {
+            "order": 4,
+            "speaker": "hugo",
+            "text": "Parfait, ça nous fera gagner du temps.",
+            "translation_fa": "عالیه، این‌طوری وقت ذخیره می‌کنیم."
+          }
+        ],
+        "qa": {
+          "character_pair_unique_within_unit": true,
+          "naturalness": "passed",
+          "single_situation": true
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "dialogue",
+      "external_id": "d_travail_et_organisation_02",
+      "data": {
+        "lesson_key": "b1-fr-travail-et-organisation-02",
+        "title": "Répartir le travail",
+        "setting": "item",
+        "cefr": "B1",
+        "topic": "common-actions",
+        "characters": [
+          "léa",
+          "nicolas"
+        ],
+        "turns": [
+          {
+            "order": 1,
+            "speaker": "léa",
+            "text": "L'équipe qui travaille sur ce projet est débordée.",
+            "translation_fa": "تیمی که روی این پروژه کار می‌کند خیلی سرش شلوغ است."
+          },
+          {
+            "order": 2,
+            "speaker": "nicolas",
+            "text": "On peut répartir une partie des tâches.",
+            "translation_fa": "می‌توانیم بخشی از کارها را تقسیم کنیم."
+          },
+          {
+            "order": 3,
+            "speaker": "léa",
+            "text": "Tu penses que ce sera plus efficace ?",
+            "translation_fa": "فکر می‌کنی کارآمدتر می‌شود؟"
+          },
+          {
+            "order": 4,
+            "speaker": "nicolas",
+            "text": "Oui, surtout avec ce délai.",
+            "translation_fa": "بله، مخصوصاً با این مهلت."
+          }
+        ],
+        "qa": {
+          "character_pair_unique_within_unit": true,
+          "naturalness": "passed",
+          "single_situation": true
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_travail_et_organisation_01_meaning",
+      "data": {
+        "lesson_key": "b1-fr-travail-et-organisation-01",
+        "exercise_type": "multiple_choice",
+        "prompt": {
+          "instruction_fa": "معنی درست این عبارت فرانسوی را انتخاب کن.",
+          "value": "C'est le dossier qui doit partir aujourd'hui."
+        },
+        "answer": {
+          "value": "این همان پرونده‌ای است که باید امروز ارسال شود."
+        },
+        "options": [
+          "این همان پرونده‌ای است که باید امروز ارسال شود.",
+          "همکاری که به او زنگ زدی در تیم من کار می‌کند.",
+          "بهتر است کارها را بر اساس اولویت‌ها بهتر تقسیم کنیم.",
+          "وقتی مهلت کوتاه است این روش کارآمدتر است."
+        ],
+        "difficulty": 3,
+        "cefr": "B1",
+        "topic": "common-actions",
+        "feedback": {
+          "retry_tip_fa": "به معنی، بافت، پیوند جمله‌ها و ساختار طبیعی فرانسوی دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: C'est le dossier qui doit partir aujourd'hui. — این همان پرونده‌ای است که باید امروز ارسال شود.",
+          "model_answer": "C'est le dossier qui doit partir aujourd'hui."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_travail_et_organisation_01_listen",
+      "data": {
+        "lesson_key": "b1-fr-travail-et-organisation-01",
+        "exercise_type": "listening",
+        "prompt": {
+          "instruction_fa": "گوش کن و عبارتی را که شنیدی انتخاب کن.",
+          "audio_text": "La collègue que tu as appelée travaille dans mon équipe."
+        },
+        "answer": {
+          "value": "La collègue que tu as appelée travaille dans mon équipe."
+        },
+        "options": [
+          "La collègue que tu as appelée travaille dans mon équipe.",
+          "C'est le dossier qui doit partir aujourd'hui.",
+          "On devrait mieux répartir les tâches selon les priorités.",
+          "Cette méthode est plus efficace quand le délai est court."
+        ],
+        "difficulty": 3,
+        "cefr": "B1",
+        "topic": "common-actions",
+        "feedback": {
+          "retry_tip_fa": "به معنی، بافت، پیوند جمله‌ها و ساختار طبیعی فرانسوی دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: La collègue que tu as appelée travaille dans mon équipe. — همکاری که به او زنگ زدی در تیم من کار می‌کند.",
+          "model_answer": "La collègue que tu as appelée travaille dans mon équipe.",
+          "transcript_fr": "La collègue que tu as appelée travaille dans mon équipe."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_travail_et_organisation_01_speak",
+      "data": {
+        "lesson_key": "b1-fr-travail-et-organisation-01",
+        "exercise_type": "speaking",
+        "prompt": {
+          "instruction_fa": "عبارت را با صدای بلند و با ریتم طبیعی فرانسوی تکرار کن.",
+          "value": "C'est le dossier qui doit partir aujourd'hui."
+        },
+        "answer": {
+          "expected_text": "C'est le dossier qui doit partir aujourd'hui."
+        },
+        "difficulty": 3,
+        "cefr": "B1",
+        "topic": "common-actions",
+        "feedback": {
+          "retry_tip_fa": "به معنی، بافت، پیوند جمله‌ها و ساختار طبیعی فرانسوی دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: C'est le dossier qui doit partir aujourd'hui. — این همان پرونده‌ای است که باید امروز ارسال شود.",
+          "model_answer": "C'est le dossier qui doit partir aujourd'hui."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_travail_et_organisation_01_build",
+      "data": {
+        "lesson_key": "b1-fr-travail-et-organisation-01",
+        "exercise_type": "sentence_building",
+        "prompt": {
+          "instruction_fa": "کلمه‌ها را لمس کن تا عبارت درست ساخته شود.",
+          "tokens": [
+            "collègue",
+            "que",
+            "tu",
+            "as",
+            "appelée",
+            "travaille",
+            "dans",
+            "mon",
+            "équipe.",
+            "La"
+          ]
+        },
+        "answer": {
+          "tokens": [
+            "La",
+            "collègue",
+            "que",
+            "tu",
+            "as",
+            "appelée",
+            "travaille",
+            "dans",
+            "mon",
+            "équipe."
+          ],
+          "value": "La collègue que tu as appelée travaille dans mon équipe."
+        },
+        "difficulty": 3,
+        "cefr": "B1",
+        "topic": "common-actions",
+        "feedback": {
+          "retry_tip_fa": "به معنی، بافت، پیوند جمله‌ها و ساختار طبیعی فرانسوی دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: La collègue que tu as appelée travaille dans mon équipe. — همکاری که به او زنگ زدی در تیم من کار می‌کند.",
+          "model_answer": "La collègue que tu as appelée travaille dans mon équipe."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_travail_et_organisation_01_dialogue",
+      "data": {
+        "lesson_key": "b1-fr-travail-et-organisation-01",
+        "exercise_type": "dialogue_comprehension",
+        "prompt": {
+          "instruction_fa": "با توجه به گفت‌وگو، پاسخ مناسب را انتخاب کن.",
+          "source_dialogue_ref": "d_travail_et_organisation_01",
+          "question_fa": "کدام گزینه با معنی «این همان پرونده‌ای است که باید امروز ارسال شود.» هماهنگ است؟"
+        },
+        "answer": {
+          "value": "C'est le dossier qui doit partir aujourd'hui."
+        },
+        "options": [
+          "C'est le dossier qui doit partir aujourd'hui.",
+          "La collègue que tu as appelée travaille dans mon équipe.",
+          "On devrait mieux répartir les tâches selon les priorités.",
+          "Cette méthode est plus efficace quand le délai est court."
+        ],
+        "difficulty": 3,
+        "cefr": "B1",
+        "topic": "common-actions",
+        "feedback": {
+          "retry_tip_fa": "به معنی، بافت، پیوند جمله‌ها و ساختار طبیعی فرانسوی دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: C'est le dossier qui doit partir aujourd'hui. — این همان پرونده‌ای است که باید امروز ارسال شود.",
+          "model_answer": "C'est le dossier qui doit partir aujourd'hui."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_travail_et_organisation_02_meaning",
+      "data": {
+        "lesson_key": "b1-fr-travail-et-organisation-02",
+        "exercise_type": "multiple_choice",
+        "prompt": {
+          "instruction_fa": "معنی درست این عبارت فرانسوی را انتخاب کن.",
+          "value": "On devrait mieux répartir les tâches selon les priorités."
+        },
+        "answer": {
+          "value": "بهتر است کارها را بر اساس اولویت‌ها بهتر تقسیم کنیم."
+        },
+        "options": [
+          "بهتر است کارها را بر اساس اولویت‌ها بهتر تقسیم کنیم.",
+          "این همان پرونده‌ای است که باید امروز ارسال شود.",
+          "همکاری که به او زنگ زدی در تیم من کار می‌کند.",
+          "وقتی مهلت کوتاه است این روش کارآمدتر است."
+        ],
+        "difficulty": 3,
+        "cefr": "B1",
+        "topic": "common-actions",
+        "feedback": {
+          "retry_tip_fa": "به معنی، بافت، پیوند جمله‌ها و ساختار طبیعی فرانسوی دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: On devrait mieux répartir les tâches selon les priorités. — بهتر است کارها را بر اساس اولویت‌ها بهتر تقسیم کنیم.",
+          "model_answer": "On devrait mieux répartir les tâches selon les priorités."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_travail_et_organisation_02_listen",
+      "data": {
+        "lesson_key": "b1-fr-travail-et-organisation-02",
+        "exercise_type": "listening",
+        "prompt": {
+          "instruction_fa": "گوش کن و عبارتی را که شنیدی انتخاب کن.",
+          "audio_text": "Cette méthode est plus efficace quand le délai est court."
+        },
+        "answer": {
+          "value": "Cette méthode est plus efficace quand le délai est court."
+        },
+        "options": [
+          "Cette méthode est plus efficace quand le délai est court.",
+          "On devrait mieux répartir les tâches selon les priorités.",
+          "C'est le dossier qui doit partir aujourd'hui.",
+          "La collègue que tu as appelée travaille dans mon équipe."
+        ],
+        "difficulty": 3,
+        "cefr": "B1",
+        "topic": "common-actions",
+        "feedback": {
+          "retry_tip_fa": "به معنی، بافت، پیوند جمله‌ها و ساختار طبیعی فرانسوی دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: Cette méthode est plus efficace quand le délai est court. — وقتی مهلت کوتاه است این روش کارآمدتر است.",
+          "model_answer": "Cette méthode est plus efficace quand le délai est court.",
+          "transcript_fr": "Cette méthode est plus efficace quand le délai est court."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_travail_et_organisation_02_speak",
+      "data": {
+        "lesson_key": "b1-fr-travail-et-organisation-02",
+        "exercise_type": "speaking",
+        "prompt": {
+          "instruction_fa": "عبارت را با صدای بلند و با ریتم طبیعی فرانسوی تکرار کن.",
+          "value": "On devrait mieux répartir les tâches selon les priorités."
+        },
+        "answer": {
+          "expected_text": "On devrait mieux répartir les tâches selon les priorités."
+        },
+        "difficulty": 3,
+        "cefr": "B1",
+        "topic": "common-actions",
+        "feedback": {
+          "retry_tip_fa": "به معنی، بافت، پیوند جمله‌ها و ساختار طبیعی فرانسوی دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: On devrait mieux répartir les tâches selon les priorités. — بهتر است کارها را بر اساس اولویت‌ها بهتر تقسیم کنیم.",
+          "model_answer": "On devrait mieux répartir les tâches selon les priorités."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_travail_et_organisation_02_build",
+      "data": {
+        "lesson_key": "b1-fr-travail-et-organisation-02",
+        "exercise_type": "sentence_building",
+        "prompt": {
+          "instruction_fa": "کلمه‌ها را لمس کن تا عبارت درست ساخته شود.",
+          "tokens": [
+            "méthode",
+            "est",
+            "plus",
+            "efficace",
+            "quand",
+            "le",
+            "délai",
+            "est",
+            "court.",
+            "Cette"
+          ]
+        },
+        "answer": {
+          "tokens": [
+            "Cette",
+            "méthode",
+            "est",
+            "plus",
+            "efficace",
+            "quand",
+            "le",
+            "délai",
+            "est",
+            "court."
+          ],
+          "value": "Cette méthode est plus efficace quand le délai est court."
+        },
+        "difficulty": 3,
+        "cefr": "B1",
+        "topic": "common-actions",
+        "feedback": {
+          "retry_tip_fa": "به معنی، بافت، پیوند جمله‌ها و ساختار طبیعی فرانسوی دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: Cette méthode est plus efficace quand le délai est court. — وقتی مهلت کوتاه است این روش کارآمدتر است.",
+          "model_answer": "Cette méthode est plus efficace quand le délai est court."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_travail_et_organisation_02_dialogue",
+      "data": {
+        "lesson_key": "b1-fr-travail-et-organisation-02",
+        "exercise_type": "dialogue_comprehension",
+        "prompt": {
+          "instruction_fa": "با توجه به گفت‌وگو، پاسخ مناسب را انتخاب کن.",
+          "source_dialogue_ref": "d_travail_et_organisation_02",
+          "question_fa": "کدام گزینه با معنی «بهتر است کارها را بر اساس اولویت‌ها بهتر تقسیم کنیم.» هماهنگ است؟"
+        },
+        "answer": {
+          "value": "On devrait mieux répartir les tâches selon les priorités."
+        },
+        "options": [
+          "On devrait mieux répartir les tâches selon les priorités.",
+          "C'est le dossier qui doit partir aujourd'hui.",
+          "La collègue que tu as appelée travaille dans mon équipe.",
+          "Cette méthode est plus efficace quand le délai est court."
+        ],
+        "difficulty": 3,
+        "cefr": "B1",
+        "topic": "common-actions",
+        "feedback": {
+          "retry_tip_fa": "به معنی، بافت، پیوند جمله‌ها و ساختار طبیعی فرانسوی دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: On devrait mieux répartir les tâches selon les priorités. — بهتر است کارها را بر اساس اولویت‌ها بهتر تقسیم کنیم.",
+          "model_answer": "On devrait mieux répartir les tâches selon les priorités."
+        },
+        "status": "validated"
+      }
+    }
+  ]
+}

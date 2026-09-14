@@ -1,0 +1,879 @@
+{
+  "batch_id": "fr-fr-b1-souvenirs-et-recits-v1",
+  "course": "fa-fr-fr",
+  "learner_language": "fa",
+  "learner_variant": "fa-IR",
+  "target_language": "fr",
+  "target_variant": "fr-FR",
+  "cefr": "B1",
+  "curriculum_unit": "b1-fr-souvenirs-et-recits",
+  "generator": "gpt-5.6-sol:french-b1-batch-v1",
+  "items": [
+    {
+      "kind": "concept",
+      "external_id": "c_souvenirs_et_recits_01",
+      "data": {
+        "slug": "fr_b1_souvenirs_et_recits_souvenir",
+        "lesson_key": "b1-fr-souvenirs-et-recits-01",
+        "concept_type": "lexical",
+        "part_of_speech": "noun",
+        "forms": {
+          "fr": "souvenir"
+        },
+        "translations": {
+          "fa": "خاطره"
+        },
+        "cefr": "B1",
+        "topic": "daily-routine",
+        "tags": [
+          "core",
+          "b1",
+          "high_frequency"
+        ],
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_souvenirs_et_recits_01",
+      "data": {
+        "lesson_key": "b1-fr-souvenirs-et-recits-01",
+        "lemma": "souvenir",
+        "display_lemma": "souvenir",
+        "language": "fr",
+        "language_variant": "fr-FR",
+        "part_of_speech": "noun",
+        "concept_refs": [
+          "fr_b1_souvenirs_et_recits_souvenir"
+        ],
+        "cefr": "B1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_souvenirs_et_recits_01",
+      "data": {
+        "lesson_key": "b1-fr-souvenirs-et-recits-01",
+        "lexeme_ref": "lx_souvenirs_et_recits_01",
+        "surface_form": "souvenir",
+        "display_form": "souvenir",
+        "grammatical_features": {},
+        "is_lemma": true,
+        "is_preferred": true,
+        "cefr": "B1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_souvenirs_et_recits_02",
+      "data": {
+        "slug": "fr_b1_souvenirs_et_recits_enfance",
+        "lesson_key": "b1-fr-souvenirs-et-recits-01",
+        "concept_type": "lexical",
+        "part_of_speech": "noun",
+        "forms": {
+          "fr": "enfance"
+        },
+        "translations": {
+          "fa": "کودکی"
+        },
+        "cefr": "B1",
+        "topic": "daily-routine",
+        "tags": [
+          "core",
+          "b1",
+          "high_frequency"
+        ],
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_souvenirs_et_recits_02",
+      "data": {
+        "lesson_key": "b1-fr-souvenirs-et-recits-01",
+        "lemma": "enfance",
+        "display_lemma": "enfance",
+        "language": "fr",
+        "language_variant": "fr-FR",
+        "part_of_speech": "noun",
+        "concept_refs": [
+          "fr_b1_souvenirs_et_recits_enfance"
+        ],
+        "cefr": "B1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_souvenirs_et_recits_02",
+      "data": {
+        "lesson_key": "b1-fr-souvenirs-et-recits-01",
+        "lexeme_ref": "lx_souvenirs_et_recits_02",
+        "surface_form": "enfance",
+        "display_form": "enfance",
+        "grammatical_features": {},
+        "is_lemma": true,
+        "is_preferred": true,
+        "cefr": "B1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_souvenirs_et_recits_03",
+      "data": {
+        "slug": "fr_b1_souvenirs_et_recits_habitude",
+        "lesson_key": "b1-fr-souvenirs-et-recits-01",
+        "concept_type": "lexical",
+        "part_of_speech": "noun",
+        "forms": {
+          "fr": "habitude"
+        },
+        "translations": {
+          "fa": "عادت"
+        },
+        "cefr": "B1",
+        "topic": "daily-routine",
+        "tags": [
+          "core",
+          "b1",
+          "high_frequency"
+        ],
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_souvenirs_et_recits_03",
+      "data": {
+        "lesson_key": "b1-fr-souvenirs-et-recits-01",
+        "lemma": "habitude",
+        "display_lemma": "habitude",
+        "language": "fr",
+        "language_variant": "fr-FR",
+        "part_of_speech": "noun",
+        "concept_refs": [
+          "fr_b1_souvenirs_et_recits_habitude"
+        ],
+        "cefr": "B1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_souvenirs_et_recits_03",
+      "data": {
+        "lesson_key": "b1-fr-souvenirs-et-recits-01",
+        "lexeme_ref": "lx_souvenirs_et_recits_03",
+        "surface_form": "habitude",
+        "display_form": "habitude",
+        "grammatical_features": {},
+        "is_lemma": true,
+        "is_preferred": true,
+        "cefr": "B1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_souvenirs_et_recits_04",
+      "data": {
+        "slug": "fr_b1_souvenirs_et_recits_soudain",
+        "lesson_key": "b1-fr-souvenirs-et-recits-02",
+        "concept_type": "lexical",
+        "part_of_speech": "adverb",
+        "forms": {
+          "fr": "soudain"
+        },
+        "translations": {
+          "fa": "ناگهان"
+        },
+        "cefr": "B1",
+        "topic": "daily-routine",
+        "tags": [
+          "core",
+          "b1",
+          "high_frequency"
+        ],
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_souvenirs_et_recits_04",
+      "data": {
+        "lesson_key": "b1-fr-souvenirs-et-recits-02",
+        "lemma": "soudain",
+        "display_lemma": "soudain",
+        "language": "fr",
+        "language_variant": "fr-FR",
+        "part_of_speech": "adverb",
+        "concept_refs": [
+          "fr_b1_souvenirs_et_recits_soudain"
+        ],
+        "cefr": "B1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_souvenirs_et_recits_04",
+      "data": {
+        "lesson_key": "b1-fr-souvenirs-et-recits-02",
+        "lexeme_ref": "lx_souvenirs_et_recits_04",
+        "surface_form": "soudain",
+        "display_form": "soudain",
+        "grammatical_features": {},
+        "is_lemma": true,
+        "is_preferred": true,
+        "cefr": "B1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_souvenirs_et_recits_05",
+      "data": {
+        "slug": "fr_b1_souvenirs_et_recits_remarquer",
+        "lesson_key": "b1-fr-souvenirs-et-recits-02",
+        "concept_type": "lexical",
+        "part_of_speech": "verb",
+        "forms": {
+          "fr": "remarquer"
+        },
+        "translations": {
+          "fa": "متوجه شدن"
+        },
+        "cefr": "B1",
+        "topic": "daily-routine",
+        "tags": [
+          "core",
+          "b1",
+          "high_frequency"
+        ],
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_souvenirs_et_recits_05",
+      "data": {
+        "lesson_key": "b1-fr-souvenirs-et-recits-02",
+        "lemma": "remarquer",
+        "display_lemma": "remarquer",
+        "language": "fr",
+        "language_variant": "fr-FR",
+        "part_of_speech": "verb",
+        "concept_refs": [
+          "fr_b1_souvenirs_et_recits_remarquer"
+        ],
+        "cefr": "B1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_souvenirs_et_recits_05",
+      "data": {
+        "lesson_key": "b1-fr-souvenirs-et-recits-02",
+        "lexeme_ref": "lx_souvenirs_et_recits_05",
+        "surface_form": "remarquer",
+        "display_form": "remarquer",
+        "grammatical_features": {},
+        "is_lemma": true,
+        "is_preferred": true,
+        "cefr": "B1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_souvenirs_et_recits_06",
+      "data": {
+        "slug": "fr_b1_souvenirs_et_recits_se_produire",
+        "lesson_key": "b1-fr-souvenirs-et-recits-02",
+        "concept_type": "lexical",
+        "part_of_speech": "verb",
+        "forms": {
+          "fr": "se produire"
+        },
+        "translations": {
+          "fa": "رخ دادن"
+        },
+        "cefr": "B1",
+        "topic": "daily-routine",
+        "tags": [
+          "core",
+          "b1",
+          "high_frequency"
+        ],
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_souvenirs_et_recits_06",
+      "data": {
+        "lesson_key": "b1-fr-souvenirs-et-recits-02",
+        "lemma": "se produire",
+        "display_lemma": "se produire",
+        "language": "fr",
+        "language_variant": "fr-FR",
+        "part_of_speech": "verb",
+        "concept_refs": [
+          "fr_b1_souvenirs_et_recits_se_produire"
+        ],
+        "cefr": "B1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_souvenirs_et_recits_06",
+      "data": {
+        "lesson_key": "b1-fr-souvenirs-et-recits-02",
+        "lexeme_ref": "lx_souvenirs_et_recits_06",
+        "surface_form": "se produire",
+        "display_form": "se produire",
+        "grammatical_features": {},
+        "is_lemma": true,
+        "is_preferred": true,
+        "cefr": "B1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_souvenirs_et_recits_01",
+      "data": {
+        "lesson_key": "b1-fr-souvenirs-et-recits-01",
+        "text": {
+          "fr": "Quand j'étais enfant, je passais mes étés ici."
+        },
+        "translations": {
+          "fa": "وقتی بچه بودم، تابستان‌هایم را اینجا می‌گذراندم."
+        },
+        "intent": "describe_past_background",
+        "concept_refs": [
+          "fr_b1_souvenirs_et_recits_enfance",
+          "fr_b1_souvenirs_et_recits_habitude"
+        ],
+        "cefr": "B1",
+        "topic": "daily-routine",
+        "register": "neutral",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_souvenirs_et_recits_02",
+      "data": {
+        "lesson_key": "b1-fr-souvenirs-et-recits-01",
+        "text": {
+          "fr": "On venait souvent chez mes grands-parents le dimanche."
+        },
+        "translations": {
+          "fa": "یکشنبه‌ها اغلب خانه پدربزرگ و مادربزرگم می‌آمدیم."
+        },
+        "intent": "recount_past_habit",
+        "concept_refs": [
+          "fr_b1_souvenirs_et_recits_habitude"
+        ],
+        "cefr": "B1",
+        "topic": "daily-routine",
+        "register": "neutral",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_souvenirs_et_recits_03",
+      "data": {
+        "lesson_key": "b1-fr-souvenirs-et-recits-02",
+        "text": {
+          "fr": "Soudain, j'ai remarqué que la porte était ouverte."
+        },
+        "translations": {
+          "fa": "ناگهان متوجه شدم در باز بود."
+        },
+        "intent": "interrupt_background",
+        "concept_refs": [
+          "fr_b1_souvenirs_et_recits_soudain",
+          "fr_b1_souvenirs_et_recits_remarquer"
+        ],
+        "cefr": "B1",
+        "topic": "daily-routine",
+        "register": "neutral",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_souvenirs_et_recits_04",
+      "data": {
+        "lesson_key": "b1-fr-souvenirs-et-recits-02",
+        "text": {
+          "fr": "Je me souviens très bien de ce qui s'est produit ensuite."
+        },
+        "translations": {
+          "fa": "خیلی خوب یادم هست بعدش چه اتفاقی افتاد."
+        },
+        "intent": "sequence_memory",
+        "concept_refs": [
+          "fr_b1_souvenirs_et_recits_souvenir",
+          "fr_b1_souvenirs_et_recits_se_produire"
+        ],
+        "cefr": "B1",
+        "topic": "daily-routine",
+        "register": "neutral",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "grammar_point",
+      "external_id": "g_souvenirs_et_recits_core",
+      "data": {
+        "lesson_key": "b1-fr-souvenirs-et-recits-01",
+        "slug": "b1-fr-souvenirs-et-recits-grammar",
+        "title": "Imparfait et passé composé",
+        "rule_summary": "Use the imparfait for background, states and repeated past habits; use the passé composé for bounded events that advance the story.",
+        "explanation": {
+          "fa": "imparfait برای پس‌زمینه و عادت گذشته است؛ passé composé رویداد مشخصی را می‌گوید که داستان را جلو می‌برد."
+        },
+        "examples": [
+          {
+            "fr": "Il pleuvait quand je suis sorti.",
+            "fa": "وقتی بیرون رفتم باران می‌بارید."
+          },
+          {
+            "fr": "Tous les étés, on allait à la mer.",
+            "fa": "هر تابستان به دریا می‌رفتیم."
+          }
+        ],
+        "cefr": "B1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "dialogue",
+      "external_id": "d_souvenirs_et_recits_01",
+      "data": {
+        "lesson_key": "b1-fr-souvenirs-et-recits-01",
+        "title": "Un souvenir d'école",
+        "setting": "item",
+        "cefr": "B1",
+        "topic": "daily-routine",
+        "characters": [
+          "camille",
+          "thomas"
+        ],
+        "turns": [
+          {
+            "order": 1,
+            "speaker": "camille",
+            "text": "Tu te souviens de notre première sortie scolaire ?",
+            "translation_fa": "اولین اردوی مدرسه‌مان یادت هست؟"
+          },
+          {
+            "order": 2,
+            "speaker": "thomas",
+            "text": "Oui, il pleuvait toute la matinée.",
+            "translation_fa": "بله، تمام صبح باران می‌بارید."
+          },
+          {
+            "order": 3,
+            "speaker": "camille",
+            "text": "Et puis le soleil est sorti d'un coup.",
+            "translation_fa": "بعد یکدفعه آفتاب درآمد."
+          },
+          {
+            "order": 4,
+            "speaker": "thomas",
+            "text": "C'est vrai, tout le monde a couru dehors.",
+            "translation_fa": "درسته، همه دویدند بیرون."
+          }
+        ],
+        "qa": {
+          "character_pair_unique_within_unit": true,
+          "naturalness": "passed",
+          "single_situation": true
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "dialogue",
+      "external_id": "d_souvenirs_et_recits_02",
+      "data": {
+        "lesson_key": "b1-fr-souvenirs-et-recits-02",
+        "title": "Une soirée étrange",
+        "setting": "item",
+        "cefr": "B1",
+        "topic": "daily-routine",
+        "characters": [
+          "léa",
+          "hugo"
+        ],
+        "turns": [
+          {
+            "order": 1,
+            "speaker": "léa",
+            "text": "Qu'est-ce qui s'est passé hier soir ?",
+            "translation_fa": "دیشب چه اتفاقی افتاد؟"
+          },
+          {
+            "order": 2,
+            "speaker": "hugo",
+            "text": "Je lisais quand j'ai entendu un bruit.",
+            "translation_fa": "داشتم می‌خواندم که صدایی شنیدم."
+          },
+          {
+            "order": 3,
+            "speaker": "léa",
+            "text": "Tu as regardé dehors ?",
+            "translation_fa": "بیرون را نگاه کردی؟"
+          },
+          {
+            "order": 4,
+            "speaker": "hugo",
+            "text": "Oui, mais il n'y avait personne.",
+            "translation_fa": "بله، ولی کسی آنجا نبود."
+          }
+        ],
+        "qa": {
+          "character_pair_unique_within_unit": true,
+          "naturalness": "passed",
+          "single_situation": true
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_souvenirs_et_recits_01_meaning",
+      "data": {
+        "lesson_key": "b1-fr-souvenirs-et-recits-01",
+        "exercise_type": "multiple_choice",
+        "prompt": {
+          "instruction_fa": "معنی درست این عبارت فرانسوی را انتخاب کن.",
+          "value": "Quand j'étais enfant, je passais mes étés ici."
+        },
+        "answer": {
+          "value": "وقتی بچه بودم، تابستان‌هایم را اینجا می‌گذراندم."
+        },
+        "options": [
+          "وقتی بچه بودم، تابستان‌هایم را اینجا می‌گذراندم.",
+          "یکشنبه‌ها اغلب خانه پدربزرگ و مادربزرگم می‌آمدیم.",
+          "ناگهان متوجه شدم در باز بود.",
+          "خیلی خوب یادم هست بعدش چه اتفاقی افتاد."
+        ],
+        "difficulty": 3,
+        "cefr": "B1",
+        "topic": "daily-routine",
+        "feedback": {
+          "retry_tip_fa": "به معنی، بافت، پیوند جمله‌ها و ساختار طبیعی فرانسوی دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: Quand j'étais enfant, je passais mes étés ici. — وقتی بچه بودم، تابستان‌هایم را اینجا می‌گذراندم.",
+          "model_answer": "Quand j'étais enfant, je passais mes étés ici."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_souvenirs_et_recits_01_listen",
+      "data": {
+        "lesson_key": "b1-fr-souvenirs-et-recits-01",
+        "exercise_type": "listening",
+        "prompt": {
+          "instruction_fa": "گوش کن و عبارتی را که شنیدی انتخاب کن.",
+          "audio_text": "On venait souvent chez mes grands-parents le dimanche."
+        },
+        "answer": {
+          "value": "On venait souvent chez mes grands-parents le dimanche."
+        },
+        "options": [
+          "On venait souvent chez mes grands-parents le dimanche.",
+          "Quand j'étais enfant, je passais mes étés ici.",
+          "Soudain, j'ai remarqué que la porte était ouverte.",
+          "Je me souviens très bien de ce qui s'est produit ensuite."
+        ],
+        "difficulty": 3,
+        "cefr": "B1",
+        "topic": "daily-routine",
+        "feedback": {
+          "retry_tip_fa": "به معنی، بافت، پیوند جمله‌ها و ساختار طبیعی فرانسوی دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: On venait souvent chez mes grands-parents le dimanche. — یکشنبه‌ها اغلب خانه پدربزرگ و مادربزرگم می‌آمدیم.",
+          "model_answer": "On venait souvent chez mes grands-parents le dimanche.",
+          "transcript_fr": "On venait souvent chez mes grands-parents le dimanche."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_souvenirs_et_recits_01_speak",
+      "data": {
+        "lesson_key": "b1-fr-souvenirs-et-recits-01",
+        "exercise_type": "speaking",
+        "prompt": {
+          "instruction_fa": "عبارت را با صدای بلند و با ریتم طبیعی فرانسوی تکرار کن.",
+          "value": "Quand j'étais enfant, je passais mes étés ici."
+        },
+        "answer": {
+          "expected_text": "Quand j'étais enfant, je passais mes étés ici."
+        },
+        "difficulty": 3,
+        "cefr": "B1",
+        "topic": "daily-routine",
+        "feedback": {
+          "retry_tip_fa": "به معنی، بافت، پیوند جمله‌ها و ساختار طبیعی فرانسوی دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: Quand j'étais enfant, je passais mes étés ici. — وقتی بچه بودم، تابستان‌هایم را اینجا می‌گذراندم.",
+          "model_answer": "Quand j'étais enfant, je passais mes étés ici."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_souvenirs_et_recits_01_build",
+      "data": {
+        "lesson_key": "b1-fr-souvenirs-et-recits-01",
+        "exercise_type": "sentence_building",
+        "prompt": {
+          "instruction_fa": "کلمه‌ها را لمس کن تا عبارت درست ساخته شود.",
+          "tokens": [
+            "venait",
+            "souvent",
+            "chez",
+            "mes",
+            "grands-parents",
+            "le",
+            "dimanche.",
+            "On"
+          ]
+        },
+        "answer": {
+          "tokens": [
+            "On",
+            "venait",
+            "souvent",
+            "chez",
+            "mes",
+            "grands-parents",
+            "le",
+            "dimanche."
+          ],
+          "value": "On venait souvent chez mes grands-parents le dimanche."
+        },
+        "difficulty": 3,
+        "cefr": "B1",
+        "topic": "daily-routine",
+        "feedback": {
+          "retry_tip_fa": "به معنی، بافت، پیوند جمله‌ها و ساختار طبیعی فرانسوی دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: On venait souvent chez mes grands-parents le dimanche. — یکشنبه‌ها اغلب خانه پدربزرگ و مادربزرگم می‌آمدیم.",
+          "model_answer": "On venait souvent chez mes grands-parents le dimanche."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_souvenirs_et_recits_01_dialogue",
+      "data": {
+        "lesson_key": "b1-fr-souvenirs-et-recits-01",
+        "exercise_type": "dialogue_comprehension",
+        "prompt": {
+          "instruction_fa": "با توجه به گفت‌وگو، پاسخ مناسب را انتخاب کن.",
+          "source_dialogue_ref": "d_souvenirs_et_recits_01",
+          "question_fa": "کدام گزینه با معنی «وقتی بچه بودم، تابستان‌هایم را اینجا می‌گذراندم.» هماهنگ است؟"
+        },
+        "answer": {
+          "value": "Quand j'étais enfant, je passais mes étés ici."
+        },
+        "options": [
+          "Quand j'étais enfant, je passais mes étés ici.",
+          "On venait souvent chez mes grands-parents le dimanche.",
+          "Soudain, j'ai remarqué que la porte était ouverte.",
+          "Je me souviens très bien de ce qui s'est produit ensuite."
+        ],
+        "difficulty": 3,
+        "cefr": "B1",
+        "topic": "daily-routine",
+        "feedback": {
+          "retry_tip_fa": "به معنی، بافت، پیوند جمله‌ها و ساختار طبیعی فرانسوی دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: Quand j'étais enfant, je passais mes étés ici. — وقتی بچه بودم، تابستان‌هایم را اینجا می‌گذراندم.",
+          "model_answer": "Quand j'étais enfant, je passais mes étés ici."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_souvenirs_et_recits_02_meaning",
+      "data": {
+        "lesson_key": "b1-fr-souvenirs-et-recits-02",
+        "exercise_type": "multiple_choice",
+        "prompt": {
+          "instruction_fa": "معنی درست این عبارت فرانسوی را انتخاب کن.",
+          "value": "Soudain, j'ai remarqué que la porte était ouverte."
+        },
+        "answer": {
+          "value": "ناگهان متوجه شدم در باز بود."
+        },
+        "options": [
+          "ناگهان متوجه شدم در باز بود.",
+          "وقتی بچه بودم، تابستان‌هایم را اینجا می‌گذراندم.",
+          "یکشنبه‌ها اغلب خانه پدربزرگ و مادربزرگم می‌آمدیم.",
+          "خیلی خوب یادم هست بعدش چه اتفاقی افتاد."
+        ],
+        "difficulty": 3,
+        "cefr": "B1",
+        "topic": "daily-routine",
+        "feedback": {
+          "retry_tip_fa": "به معنی، بافت، پیوند جمله‌ها و ساختار طبیعی فرانسوی دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: Soudain, j'ai remarqué que la porte était ouverte. — ناگهان متوجه شدم در باز بود.",
+          "model_answer": "Soudain, j'ai remarqué que la porte était ouverte."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_souvenirs_et_recits_02_listen",
+      "data": {
+        "lesson_key": "b1-fr-souvenirs-et-recits-02",
+        "exercise_type": "listening",
+        "prompt": {
+          "instruction_fa": "گوش کن و عبارتی را که شنیدی انتخاب کن.",
+          "audio_text": "Je me souviens très bien de ce qui s'est produit ensuite."
+        },
+        "answer": {
+          "value": "Je me souviens très bien de ce qui s'est produit ensuite."
+        },
+        "options": [
+          "Je me souviens très bien de ce qui s'est produit ensuite.",
+          "Soudain, j'ai remarqué que la porte était ouverte.",
+          "Quand j'étais enfant, je passais mes étés ici.",
+          "On venait souvent chez mes grands-parents le dimanche."
+        ],
+        "difficulty": 3,
+        "cefr": "B1",
+        "topic": "daily-routine",
+        "feedback": {
+          "retry_tip_fa": "به معنی، بافت، پیوند جمله‌ها و ساختار طبیعی فرانسوی دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: Je me souviens très bien de ce qui s'est produit ensuite. — خیلی خوب یادم هست بعدش چه اتفاقی افتاد.",
+          "model_answer": "Je me souviens très bien de ce qui s'est produit ensuite.",
+          "transcript_fr": "Je me souviens très bien de ce qui s'est produit ensuite."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_souvenirs_et_recits_02_speak",
+      "data": {
+        "lesson_key": "b1-fr-souvenirs-et-recits-02",
+        "exercise_type": "speaking",
+        "prompt": {
+          "instruction_fa": "عبارت را با صدای بلند و با ریتم طبیعی فرانسوی تکرار کن.",
+          "value": "Soudain, j'ai remarqué que la porte était ouverte."
+        },
+        "answer": {
+          "expected_text": "Soudain, j'ai remarqué que la porte était ouverte."
+        },
+        "difficulty": 3,
+        "cefr": "B1",
+        "topic": "daily-routine",
+        "feedback": {
+          "retry_tip_fa": "به معنی، بافت، پیوند جمله‌ها و ساختار طبیعی فرانسوی دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: Soudain, j'ai remarqué que la porte était ouverte. — ناگهان متوجه شدم در باز بود.",
+          "model_answer": "Soudain, j'ai remarqué que la porte était ouverte."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_souvenirs_et_recits_02_build",
+      "data": {
+        "lesson_key": "b1-fr-souvenirs-et-recits-02",
+        "exercise_type": "sentence_building",
+        "prompt": {
+          "instruction_fa": "کلمه‌ها را لمس کن تا عبارت درست ساخته شود.",
+          "tokens": [
+            "me",
+            "souviens",
+            "très",
+            "bien",
+            "de",
+            "ce",
+            "qui",
+            "s'est",
+            "produit",
+            "ensuite.",
+            "Je"
+          ]
+        },
+        "answer": {
+          "tokens": [
+            "Je",
+            "me",
+            "souviens",
+            "très",
+            "bien",
+            "de",
+            "ce",
+            "qui",
+            "s'est",
+            "produit",
+            "ensuite."
+          ],
+          "value": "Je me souviens très bien de ce qui s'est produit ensuite."
+        },
+        "difficulty": 3,
+        "cefr": "B1",
+        "topic": "daily-routine",
+        "feedback": {
+          "retry_tip_fa": "به معنی، بافت، پیوند جمله‌ها و ساختار طبیعی فرانسوی دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: Je me souviens très bien de ce qui s'est produit ensuite. — خیلی خوب یادم هست بعدش چه اتفاقی افتاد.",
+          "model_answer": "Je me souviens très bien de ce qui s'est produit ensuite."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_souvenirs_et_recits_02_dialogue",
+      "data": {
+        "lesson_key": "b1-fr-souvenirs-et-recits-02",
+        "exercise_type": "dialogue_comprehension",
+        "prompt": {
+          "instruction_fa": "با توجه به گفت‌وگو، پاسخ مناسب را انتخاب کن.",
+          "source_dialogue_ref": "d_souvenirs_et_recits_02",
+          "question_fa": "کدام گزینه با معنی «ناگهان متوجه شدم در باز بود.» هماهنگ است؟"
+        },
+        "answer": {
+          "value": "Soudain, j'ai remarqué que la porte était ouverte."
+        },
+        "options": [
+          "Soudain, j'ai remarqué que la porte était ouverte.",
+          "Quand j'étais enfant, je passais mes étés ici.",
+          "On venait souvent chez mes grands-parents le dimanche.",
+          "Je me souviens très bien de ce qui s'est produit ensuite."
+        ],
+        "difficulty": 3,
+        "cefr": "B1",
+        "topic": "daily-routine",
+        "feedback": {
+          "retry_tip_fa": "به معنی، بافت، پیوند جمله‌ها و ساختار طبیعی فرانسوی دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: Soudain, j'ai remarqué que la porte était ouverte. — ناگهان متوجه شدم در باز بود.",
+          "model_answer": "Soudain, j'ai remarqué que la porte était ouverte."
+        },
+        "status": "validated"
+      }
+    }
+  ]
+}
