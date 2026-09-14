@@ -1,0 +1,515 @@
+{
+  "batch_id": "it-it-prea1-it-real-life-numbers-v1",
+  "course": "fa-it-it",
+  "learner_language": "fa",
+  "learner_variant": "fa-IR",
+  "target_language": "it",
+  "target_variant": "it-IT",
+  "cefr": "Pre-A1",
+  "curriculum_unit": "prea1-it-real-life-numbers",
+  "generator": "gpt-5.6-sol:cefr-prea1-real-world-upgrade-v1",
+  "items": [
+    {
+      "kind": "concept",
+      "external_id": "c_it_it-real-life-numbers_n11",
+      "data": {
+        "slug": "prea1_it_it-real-life-numbers_n11",
+        "lesson_key": "prea1-it-it-real-life-numbers-01",
+        "concept_type": "functional",
+        "forms": {
+          "it": "undici"
+        },
+        "translations": {
+          "fa": "یازده"
+        },
+        "cefr": "Pre-A1",
+        "topic": "numbers",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_it_it-real-life-numbers_n15",
+      "data": {
+        "slug": "prea1_it_it-real-life-numbers_n15",
+        "lesson_key": "prea1-it-it-real-life-numbers-01",
+        "concept_type": "functional",
+        "forms": {
+          "it": "quindici"
+        },
+        "translations": {
+          "fa": "پانزده"
+        },
+        "cefr": "Pre-A1",
+        "topic": "numbers",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_it_it-real-life-numbers_n20",
+      "data": {
+        "slug": "prea1_it_it-real-life-numbers_n20",
+        "lesson_key": "prea1-it-it-real-life-numbers-01",
+        "concept_type": "functional",
+        "forms": {
+          "it": "venti"
+        },
+        "translations": {
+          "fa": "بیست"
+        },
+        "cefr": "Pre-A1",
+        "topic": "numbers",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_it_it-real-life-numbers_phone_q",
+      "data": {
+        "slug": "prea1_it_it-real-life-numbers_phone_q",
+        "lesson_key": "prea1-it-it-real-life-numbers-01",
+        "concept_type": "functional",
+        "forms": {
+          "it": "Qual è il suo numero di telefono?"
+        },
+        "translations": {
+          "fa": "شماره تلفنتان چیست؟"
+        },
+        "cefr": "Pre-A1",
+        "topic": "numbers",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_it_it-real-life-numbers_price_q",
+      "data": {
+        "slug": "prea1_it_it-real-life-numbers_price_q",
+        "lesson_key": "prea1-it-it-real-life-numbers-02",
+        "concept_type": "functional",
+        "forms": {
+          "it": "Quanto costa?"
+        },
+        "translations": {
+          "fa": "قیمتش چنده؟"
+        },
+        "cefr": "Pre-A1",
+        "topic": "numbers",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_it_it-real-life-numbers_day",
+      "data": {
+        "slug": "prea1_it_it-real-life-numbers_day",
+        "lesson_key": "prea1-it-it-real-life-numbers-02",
+        "concept_type": "functional",
+        "forms": {
+          "it": "lunedì"
+        },
+        "translations": {
+          "fa": "دوشنبه"
+        },
+        "cefr": "Pre-A1",
+        "topic": "numbers",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_it_it-real-life-numbers_date",
+      "data": {
+        "slug": "prea1_it_it-real-life-numbers_date",
+        "lesson_key": "prea1-it-it-real-life-numbers-02",
+        "concept_type": "functional",
+        "forms": {
+          "it": "cinque maggio"
+        },
+        "translations": {
+          "fa": "پنجم مه"
+        },
+        "cefr": "Pre-A1",
+        "topic": "numbers",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_it_it-real-life-numbers_n11",
+      "data": {
+        "lesson_key": "prea1-it-it-real-life-numbers-01",
+        "text": {
+          "it": "undici"
+        },
+        "translations": {
+          "fa": "یازده"
+        },
+        "intent": "say_number",
+        "cefr": "Pre-A1",
+        "topic": "numbers",
+        "register": "neutral",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_it_it-real-life-numbers_n15",
+      "data": {
+        "lesson_key": "prea1-it-it-real-life-numbers-01",
+        "text": {
+          "it": "quindici"
+        },
+        "translations": {
+          "fa": "پانزده"
+        },
+        "intent": "say_number",
+        "cefr": "Pre-A1",
+        "topic": "numbers",
+        "register": "neutral",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_it_it-real-life-numbers_n20",
+      "data": {
+        "lesson_key": "prea1-it-it-real-life-numbers-01",
+        "text": {
+          "it": "venti"
+        },
+        "translations": {
+          "fa": "بیست"
+        },
+        "intent": "say_number",
+        "cefr": "Pre-A1",
+        "topic": "numbers",
+        "register": "neutral",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_it_it-real-life-numbers_phone",
+      "data": {
+        "lesson_key": "prea1-it-it-real-life-numbers-01",
+        "text": {
+          "it": "Tre tre tre, uno due tre, quattro cinque sei sette."
+        },
+        "translations": {
+          "fa": "۳۳۳ ۱۲۳ ۴۵۶۷."
+        },
+        "intent": "give_phone_number",
+        "cefr": "Pre-A1",
+        "topic": "numbers",
+        "register": "neutral",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_it_it-real-life-numbers_price",
+      "data": {
+        "lesson_key": "prea1-it-it-real-life-numbers-02",
+        "text": {
+          "it": "Cinque euro."
+        },
+        "translations": {
+          "fa": "پنج یورو."
+        },
+        "intent": "state_price",
+        "cefr": "Pre-A1",
+        "topic": "numbers",
+        "register": "neutral",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_it_it-real-life-numbers_day",
+      "data": {
+        "lesson_key": "prea1-it-it-real-life-numbers-02",
+        "text": {
+          "it": "lunedì"
+        },
+        "translations": {
+          "fa": "دوشنبه"
+        },
+        "intent": "state_day",
+        "cefr": "Pre-A1",
+        "topic": "numbers",
+        "register": "neutral",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_it_it-real-life-numbers_date",
+      "data": {
+        "lesson_key": "prea1-it-it-real-life-numbers-02",
+        "text": {
+          "it": "cinque maggio"
+        },
+        "translations": {
+          "fa": "پنجم مه"
+        },
+        "intent": "state_date",
+        "cefr": "Pre-A1",
+        "topic": "numbers",
+        "register": "neutral",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "dialogue",
+      "external_id": "d_it_it-real-life-numbers_phone",
+      "data": {
+        "lesson_key": "prea1-it-it-real-life-numbers-01",
+        "title": "A phone number",
+        "setting": "registration_desk",
+        "cefr": "Pre-A1",
+        "topic": "simple-messages",
+        "characters": [
+          "Chiara",
+          "Matteo"
+        ],
+        "turns": [
+          {
+            "order": 1,
+            "speaker": "Chiara",
+            "text": "Qual è il suo numero di telefono?",
+            "translation_fa": "شماره تلفنتان چیست؟"
+          },
+          {
+            "order": 2,
+            "speaker": "Matteo",
+            "text": "Tre tre tre, uno due tre, quattro cinque sei sette.",
+            "translation_fa": "۳۳۳ ۱۲۳ ۴۵۶۷."
+          },
+          {
+            "order": 3,
+            "speaker": "Chiara",
+            "text": "Può ripetere, per favore?",
+            "translation_fa": "می‌شود دوباره بگویید، لطفاً؟"
+          },
+          {
+            "order": 4,
+            "speaker": "Matteo",
+            "text": "Tre tre tre, uno due tre, quattro cinque sei sette.",
+            "translation_fa": "۳۳۳ ۱۲۳ ۴۵۶۷."
+          }
+        ],
+        "communication_outcome": "information_exchanged",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "dialogue",
+      "external_id": "d_it_it-real-life-numbers_price_day",
+      "data": {
+        "lesson_key": "prea1-it-it-real-life-numbers-02",
+        "title": "Price and day",
+        "setting": "shop",
+        "cefr": "Pre-A1",
+        "topic": "simple-messages",
+        "characters": [
+          "Elena",
+          "Davide"
+        ],
+        "turns": [
+          {
+            "order": 1,
+            "speaker": "Elena",
+            "text": "Quanto costa?",
+            "translation_fa": "قیمتش چنده؟"
+          },
+          {
+            "order": 2,
+            "speaker": "Davide",
+            "text": "Cinque euro.",
+            "translation_fa": "پنج یورو."
+          },
+          {
+            "order": 3,
+            "speaker": "Elena",
+            "text": "lunedì",
+            "translation_fa": "دوشنبه"
+          },
+          {
+            "order": 4,
+            "speaker": "Davide",
+            "text": "cinque maggio",
+            "translation_fa": "پنجم مه"
+          }
+        ],
+        "communication_outcome": "information_exchanged",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_it_it-real-life-numbers_number_listen",
+      "data": {
+        "lesson_key": "prea1-it-it-real-life-numbers-01",
+        "exercise_type": "listening",
+        "prompt": {
+          "instruction_fa": "کدام عدد را شنیدی؟",
+          "audio_text": "quindici"
+        },
+        "options": [
+          "undici",
+          "quindici",
+          "venti",
+          "lunedì"
+        ],
+        "answer": {
+          "value": "quindici"
+        },
+        "difficulty": 1,
+        "cefr": "Pre-A1",
+        "status": "validated",
+        "feedback": {
+          "explanation_fa": "این شکل گفتاری عدد پانزده است.",
+          "model_answer": "quindici",
+          "retry_tip_fa": "دوباره گوش کن و فقط اطلاعات هدف را پیدا کن.",
+          "transcript_en": "quindici"
+        }
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_it_it-real-life-numbers_phone_speak",
+      "data": {
+        "lesson_key": "prea1-it-it-real-life-numbers-01",
+        "exercise_type": "speaking",
+        "prompt": {
+          "instruction_fa": "شمارهٔ نمونه را شمرده و واضح بگو.",
+          "value": "Tre tre tre, uno due tre, quattro cinque sei sette."
+        },
+        "answer": {
+          "expected_text": "Tre tre tre, uno due tre, quattro cinque sei sette."
+        },
+        "difficulty": 1,
+        "cefr": "Pre-A1",
+        "status": "validated",
+        "feedback": {
+          "explanation_fa": "شماره تلفن در مکالمه واقعی معمولاً رقم‌به‌رقم یا در گروه‌های کوتاه گفته می‌شود.",
+          "model_answer": "Tre tre tre, uno due tre, quattro cinque sei sette.",
+          "retry_tip_fa": "عبارت را یک‌تکه و طبیعی بگو؛ هدف قابل‌فهم بودن است."
+        }
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_it_it-real-life-numbers_price_choice",
+      "data": {
+        "lesson_key": "prea1-it-it-real-life-numbers-02",
+        "exercise_type": "multiple_choice",
+        "prompt": {
+          "instruction_fa": "کدام پاسخ یک قیمت است؟",
+          "value": "Cinque euro."
+        },
+        "options": [
+          "Cinque euro.",
+          "lunedì",
+          "cinque maggio",
+          "Vengo dall'Iran."
+        ],
+        "answer": {
+          "value": "Cinque euro."
+        },
+        "difficulty": 1,
+        "cefr": "Pre-A1",
+        "status": "validated",
+        "feedback": {
+          "explanation_fa": "این عبارت قیمت را بیان می‌کند.",
+          "model_answer": "Cinque euro.",
+          "retry_tip_fa": "به موقعیت و نشانهٔ اصلی دوباره توجه کن."
+        }
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_it_it-real-life-numbers_day_choice",
+      "data": {
+        "lesson_key": "prea1-it-it-real-life-numbers-02",
+        "exercise_type": "multiple_choice",
+        "prompt": {
+          "instruction_fa": "کدام گزینه نام یک روز است؟",
+          "value": "lunedì"
+        },
+        "options": [
+          "lunedì",
+          "quindici",
+          "Cinque euro.",
+          "USCITA"
+        ],
+        "answer": {
+          "value": "lunedì"
+        },
+        "difficulty": 1,
+        "cefr": "Pre-A1",
+        "status": "validated",
+        "feedback": {
+          "explanation_fa": "این واژه نام روز هفته است.",
+          "model_answer": "lunedì",
+          "retry_tip_fa": "به موقعیت و نشانهٔ اصلی دوباره توجه کن."
+        }
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_it_it-real-life-numbers_price_speak",
+      "data": {
+        "lesson_key": "prea1-it-it-real-life-numbers-02",
+        "exercise_type": "speaking",
+        "prompt": {
+          "instruction_fa": "قیمت نمونه را با صدای بلند بگو.",
+          "value": "Cinque euro."
+        },
+        "answer": {
+          "expected_text": "Cinque euro."
+        },
+        "difficulty": 1,
+        "cefr": "Pre-A1",
+        "status": "validated",
+        "feedback": {
+          "explanation_fa": "هدف، گرفتن و گفتن یک قیمت خیلی ساده است.",
+          "model_answer": "Cinque euro.",
+          "retry_tip_fa": "عبارت را یک‌تکه و طبیعی بگو؛ هدف قابل‌فهم بودن است."
+        }
+      }
+    },
+    {
+      "kind": "grammar_point",
+      "external_id": "g_it_it-real-life-numbers",
+      "data": {
+        "lesson_key": "prea1-it-it-real-life-numbers-02",
+        "slug": "g-it-prea1-it-real-life-numbers",
+        "title": "Numbers as information",
+        "rule_summary": "At Pre-A1, numbers are practiced inside useful information such as phone numbers, prices and dates.",
+        "explanation": {
+          "fa": "عددها را فقط فهرست حفظ نکن؛ آن‌ها را داخل شماره تلفن، قیمت، روز و تاریخ تشخیص بده و استفاده کن."
+        },
+        "examples": [
+          {
+            "it": "Tre tre tre, uno due tre, quattro cinque sei sette.",
+            "fa": "۳۳۳ ۱۲۳ ۴۵۶۷."
+          },
+          {
+            "it": "Cinque euro.",
+            "fa": "پنج یورو."
+          },
+          {
+            "it": "cinque maggio",
+            "fa": "پنجم مه"
+          }
+        ],
+        "cefr": "Pre-A1",
+        "status": "validated",
+        "audio_examples": true
+      }
+    }
+  ]
+}

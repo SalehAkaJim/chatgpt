@@ -1,0 +1,459 @@
+{
+  "batch_id": "it-it-prea1-it-about-me-v1",
+  "course": "fa-it-it",
+  "learner_language": "fa",
+  "learner_variant": "fa-IR",
+  "target_language": "it",
+  "target_variant": "it-IT",
+  "cefr": "Pre-A1",
+  "curriculum_unit": "prea1-it-about-me",
+  "generator": "gpt-5.6-sol:cefr-prea1-real-world-upgrade-v1",
+  "items": [
+    {
+      "kind": "concept",
+      "external_id": "c_it_it-about-me_origin_q",
+      "data": {
+        "slug": "prea1_it_it-about-me_origin_q",
+        "lesson_key": "prea1-it-it-about-me-01",
+        "concept_type": "functional",
+        "forms": {
+          "it": "Di dove sei?"
+        },
+        "translations": {
+          "fa": "اهل کجایی؟"
+        },
+        "cefr": "Pre-A1",
+        "topic": "introductions",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_it_it-about-me_origin_a",
+      "data": {
+        "slug": "prea1_it_it-about-me_origin_a",
+        "lesson_key": "prea1-it-it-about-me-01",
+        "concept_type": "functional",
+        "forms": {
+          "it": "Vengo dall'Iran."
+        },
+        "translations": {
+          "fa": "من از ایران می‌آیم."
+        },
+        "cefr": "Pre-A1",
+        "topic": "introductions",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_it_it-about-me_age_q",
+      "data": {
+        "slug": "prea1_it_it-about-me_age_q",
+        "lesson_key": "prea1-it-it-about-me-01",
+        "concept_type": "functional",
+        "forms": {
+          "it": "Quanti anni hai?"
+        },
+        "translations": {
+          "fa": "چند سالته؟"
+        },
+        "cefr": "Pre-A1",
+        "topic": "introductions",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_it_it-about-me_age_a",
+      "data": {
+        "slug": "prea1_it_it-about-me_age_a",
+        "lesson_key": "prea1-it-it-about-me-01",
+        "concept_type": "functional",
+        "forms": {
+          "it": "Ho vent'anni."
+        },
+        "translations": {
+          "fa": "بیست سالمه."
+        },
+        "cefr": "Pre-A1",
+        "topic": "introductions",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_it_it-about-me_feeling",
+      "data": {
+        "slug": "prea1_it_it-about-me_feeling",
+        "lesson_key": "prea1-it-it-about-me-02",
+        "concept_type": "functional",
+        "forms": {
+          "it": "Bene, grazie."
+        },
+        "translations": {
+          "fa": "خوبم، ممنون."
+        },
+        "cefr": "Pre-A1",
+        "topic": "introductions",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_it_it-about-me_family",
+      "data": {
+        "slug": "prea1_it_it-about-me_family",
+        "lesson_key": "prea1-it-it-about-me-02",
+        "concept_type": "functional",
+        "forms": {
+          "it": "Questa è mia sorella."
+        },
+        "translations": {
+          "fa": "این خواهر من است."
+        },
+        "cefr": "Pre-A1",
+        "topic": "introductions",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_it_it-about-me_origin",
+      "data": {
+        "lesson_key": "prea1-it-it-about-me-01",
+        "text": {
+          "it": "Vengo dall'Iran."
+        },
+        "translations": {
+          "fa": "من از ایران می‌آیم."
+        },
+        "intent": "state_origin",
+        "cefr": "Pre-A1",
+        "topic": "introductions",
+        "register": "neutral",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_it_it-about-me_age",
+      "data": {
+        "lesson_key": "prea1-it-it-about-me-01",
+        "text": {
+          "it": "Ho vent'anni."
+        },
+        "translations": {
+          "fa": "بیست سالمه."
+        },
+        "intent": "state_age",
+        "cefr": "Pre-A1",
+        "topic": "introductions",
+        "register": "neutral",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_it_it-about-me_feeling",
+      "data": {
+        "lesson_key": "prea1-it-it-about-me-02",
+        "text": {
+          "it": "Bene, grazie."
+        },
+        "translations": {
+          "fa": "خوبم، ممنون."
+        },
+        "intent": "state_feeling",
+        "cefr": "Pre-A1",
+        "topic": "introductions",
+        "register": "neutral",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_it_it-about-me_family",
+      "data": {
+        "lesson_key": "prea1-it-it-about-me-02",
+        "text": {
+          "it": "Questa è mia sorella."
+        },
+        "translations": {
+          "fa": "این خواهر من است."
+        },
+        "intent": "identify_family",
+        "cefr": "Pre-A1",
+        "topic": "introductions",
+        "register": "neutral",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "dialogue",
+      "external_id": "d_it_it-about-me_origin_age",
+      "data": {
+        "lesson_key": "prea1-it-it-about-me-01",
+        "title": "About me",
+        "setting": "community",
+        "cefr": "Pre-A1",
+        "topic": "simple-messages",
+        "characters": [
+          "Giulia",
+          "Marco"
+        ],
+        "turns": [
+          {
+            "order": 1,
+            "speaker": "Giulia",
+            "text": "Ciao!",
+            "translation_fa": "سلام!"
+          },
+          {
+            "order": 2,
+            "speaker": "Marco",
+            "text": "Ciao!",
+            "translation_fa": "سلام!"
+          },
+          {
+            "order": 3,
+            "speaker": "Giulia",
+            "text": "Di dove sei?",
+            "translation_fa": "اهل کجایی؟"
+          },
+          {
+            "order": 4,
+            "speaker": "Marco",
+            "text": "Vengo dall'Iran.",
+            "translation_fa": "من از ایران می‌آیم."
+          },
+          {
+            "order": 5,
+            "speaker": "Giulia",
+            "text": "Quanti anni hai?",
+            "translation_fa": "چند سالته؟"
+          },
+          {
+            "order": 6,
+            "speaker": "Marco",
+            "text": "Ho vent'anni.",
+            "translation_fa": "بیست سالمه."
+          }
+        ],
+        "communication_outcome": "completed",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "dialogue",
+      "external_id": "d_it_it-about-me_feeling_family",
+      "data": {
+        "lesson_key": "prea1-it-it-about-me-02",
+        "title": "Feeling and family",
+        "setting": "community",
+        "cefr": "Pre-A1",
+        "topic": "simple-messages",
+        "characters": [
+          "Sofia",
+          "Luca"
+        ],
+        "turns": [
+          {
+            "order": 1,
+            "speaker": "Sofia",
+            "text": "Come stai?",
+            "translation_fa": "حالت چطوره؟"
+          },
+          {
+            "order": 2,
+            "speaker": "Luca",
+            "text": "Bene, grazie.",
+            "translation_fa": "خوبم، ممنون."
+          },
+          {
+            "order": 3,
+            "speaker": "Luca",
+            "text": "Questa è mia sorella.",
+            "translation_fa": "این خواهر من است."
+          },
+          {
+            "order": 4,
+            "speaker": "Sofia",
+            "text": "Bene, grazie.",
+            "translation_fa": "خوبم، ممنون."
+          }
+        ],
+        "communication_outcome": "completed",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_it_it-about-me_origin_listen",
+      "data": {
+        "lesson_key": "prea1-it-it-about-me-01",
+        "exercise_type": "listening",
+        "prompt": {
+          "instruction_fa": "اهل کجاست؟",
+          "audio_text": "Vengo dall'Iran."
+        },
+        "options": [
+          "Vengo dall'Iran.",
+          "Ho vent'anni.",
+          "Bene, grazie.",
+          "Questa è mia sorella."
+        ],
+        "answer": {
+          "value": "Vengo dall'Iran."
+        },
+        "difficulty": 1,
+        "cefr": "Pre-A1",
+        "status": "validated",
+        "feedback": {
+          "explanation_fa": "پاسخ، مبدأ/کشور را بیان می‌کند.",
+          "model_answer": "Vengo dall'Iran.",
+          "retry_tip_fa": "دوباره گوش کن و فقط اطلاعات هدف را پیدا کن.",
+          "transcript_en": "Vengo dall'Iran."
+        }
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_it_it-about-me_age_speak",
+      "data": {
+        "lesson_key": "prea1-it-it-about-me-01",
+        "exercise_type": "speaking",
+        "prompt": {
+          "instruction_fa": "با الگوی نمونه سن را بگو.",
+          "value": "Ho vent'anni."
+        },
+        "answer": {
+          "expected_text": "Ho vent'anni."
+        },
+        "difficulty": 1,
+        "cefr": "Pre-A1",
+        "status": "validated",
+        "feedback": {
+          "explanation_fa": "این یک الگوی بسیار کوتاه برای گفتن سن است.",
+          "model_answer": "Ho vent'anni.",
+          "retry_tip_fa": "عبارت را یک‌تکه و طبیعی بگو؛ هدف قابل‌فهم بودن است."
+        }
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_it_it-about-me_feeling_choice",
+      "data": {
+        "lesson_key": "prea1-it-it-about-me-02",
+        "exercise_type": "multiple_choice",
+        "prompt": {
+          "instruction_fa": "کدام پاسخ دربارهٔ حال فرد است؟",
+          "value": "Bene, grazie."
+        },
+        "options": [
+          "Bene, grazie.",
+          "Vengo dall'Iran.",
+          "Ho vent'anni.",
+          "Questa è mia sorella."
+        ],
+        "answer": {
+          "value": "Bene, grazie."
+        },
+        "difficulty": 1,
+        "cefr": "Pre-A1",
+        "status": "validated",
+        "feedback": {
+          "explanation_fa": "این عبارت حال سادهٔ فرد را بیان می‌کند.",
+          "model_answer": "Bene, grazie.",
+          "retry_tip_fa": "به موقعیت و نشانهٔ اصلی دوباره توجه کن."
+        }
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "ex_it_it-about-me_about_write",
+      "data": {
+        "lesson_key": "prea1-it-it-about-me-02",
+        "exercise_type": "writing",
+        "prompt": {
+          "instruction_fa": "سه خط خیلی کوتاه دربارهٔ خودت بنویس: نام، کشور/مبدأ، و سن یا حالت. اطلاعات خودت را بنویس؛ لازم نیست عین نمونه باشد.",
+          "personalized": true
+        },
+        "answer": {
+          "evaluation_mode": "rubric",
+          "model_text": "Mi chiamo Sara. Vengo dall'Iran. Sto bene.",
+          "required_points_fa": [
+            "نام واقعی یا نام انتخابی خودت",
+            "کشور یا مبدأ",
+            "سن یا یک حالت ساده"
+          ]
+        },
+        "assessment": {
+          "exact_match_allowed": false,
+          "criteria": [
+            {
+              "id": "task",
+              "label_fa": "انجام کار",
+              "weight": 60,
+              "descriptors_fa": {
+                "0": "اطلاعات خواسته‌شده را منتقل نمی‌کند.",
+                "1": "فقط یک بخش را منتقل می‌کند.",
+                "2": "بیشتر بخش‌ها را به‌صورت قابل‌فهم منتقل می‌کند.",
+                "3": "همهٔ بخش‌های اصلی را کوتاه و قابل‌فهم منتقل می‌کند."
+              }
+            },
+            {
+              "id": "clarity",
+              "label_fa": "قابل‌فهم بودن",
+              "weight": 40,
+              "descriptors_fa": {
+                "0": "پاسخ قابل‌فهم نیست.",
+                "1": "فقط بخش کوچکی قابل‌فهم است.",
+                "2": "با چند خطای ساده همچنان قابل‌فهم است.",
+                "3": "برای سطح Pre-A1 روشن و قابل‌فهم است."
+              }
+            }
+          ]
+        },
+        "difficulty": 2,
+        "cefr": "Pre-A1",
+        "status": "validated",
+        "feedback": {
+          "explanation_fa": "پاسخ شخصی تو لازم نیست عین نمونه باشد؛ مهم انتقال اطلاعات خواسته‌شده و قابل‌فهم بودن است.",
+          "model_answer": "Mi chiamo Sara. Vengo dall'Iran. Sto bene.",
+          "retry_tip_fa": "از الگو کمک بگیر اما اطلاعات واقعی خودت را جایگزین کن."
+        }
+      }
+    },
+    {
+      "kind": "grammar_point",
+      "external_id": "g_it_it-about-me",
+      "data": {
+        "lesson_key": "prea1-it-it-about-me-02",
+        "slug": "g-it-prea1-it-about-me",
+        "title": "About-me chunks",
+        "rule_summary": "At Pre-A1, personal information can be learned as short whole chunks before grammar analysis.",
+        "explanation": {
+          "fa": "هدف این بخش دادن اطلاعات واقعی و خیلی کوتاه دربارهٔ خودت است، نه تحلیل دستور زبان."
+        },
+        "examples": [
+          {
+            "it": "Vengo dall'Iran.",
+            "fa": "من از ایران می‌آیم."
+          },
+          {
+            "it": "Ho vent'anni.",
+            "fa": "بیست سالمه."
+          },
+          {
+            "it": "Bene, grazie.",
+            "fa": "خوبم، ممنون."
+          }
+        ],
+        "cefr": "Pre-A1",
+        "status": "validated",
+        "audio_examples": true
+      }
+    }
+  ]
+}
