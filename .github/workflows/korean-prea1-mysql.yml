@@ -13,6 +13,7 @@ on:
       - 'audio/cast/ko-KR.json'
       - 'audio/voices/ko-KR.json'
       - 'scripts/audit_korean_prea1_content.py'
+      - 'scripts/audit_prea1_cefr_readiness.py'
       - 'scripts/materialize_level.py'
       - 'scripts/sync_character_cast.py'
       - 'scripts/validate_content.py'
@@ -74,8 +75,9 @@ jobs:
       - name: Validate Korean content and dry-run import
         run: |
           set -euo pipefail
-          test "$(find content/production/ko/Pre-A1 -maxdepth 1 -name '*.json' | wc -l)" -eq 14
+          test "$(find content/production/ko/Pre-A1 -maxdepth 1 -name '*.json' | wc -l)" -eq 18
           python scripts/audit_korean_prea1_content.py
+          python scripts/audit_prea1_cefr_readiness.py
           for f in content/production/ko/Pre-A1/*.json; do python scripts/validate_content.py "$f"; done
           python scripts/validate_character_cast.py --cast audio/cast/ko-KR.json
           python database/import/ko/pre_a1.py --dry-run
@@ -100,13 +102,13 @@ jobs:
           dialogues=$(mysql -N -s -h127.0.0.1 -P3306 -uroot language_learning -e "SELECT COUNT(DISTINCT li.dialogue_id) FROM lesson_items li JOIN lessons le ON le.id=li.lesson_id JOIN courses c ON c.id=le.course_id WHERE c.slug='fa-ko-kr' AND li.dialogue_id IS NOT NULL;")
           exercises=$(mysql -N -s -h127.0.0.1 -P3306 -uroot language_learning -e "SELECT COUNT(*) FROM exercises e JOIN lessons le ON le.id=e.lesson_id JOIN courses c ON c.id=le.course_id WHERE c.slug='fa-ko-kr';")
           echo "units=$units lessons=$lessons concepts=$concepts lexemes=$lexemes utterances=$utterances dialogues=$dialogues exercises=$exercises"
-          test "$units" = "14"
-          test "$lessons" = "27"
-          test "$concepts" = "75"
+          test "$units" = "18"
+          test "$lessons" = "35"
+          test "$concepts" = "93"
           test "$lexemes" = "58"
-          test "$utterances" = "50"
-          test "$dialogues" = "23"
-          test "$exercises" = "121"
+          test "$utterances" = "64"
+          test "$dialogues" = "31"
+          test "$exercises" = "141"
       - name: Verify Korean Pre-A1 idempotency
         run: |
           set -euo pipefail
