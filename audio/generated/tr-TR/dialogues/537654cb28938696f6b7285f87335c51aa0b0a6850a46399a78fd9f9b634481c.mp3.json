@@ -1,0 +1,36 @@
+{
+  "source_text_hash": "bd4795c45cd5597c0e1e6f669194f2e8e2694881d23927265942a74e4251943f",
+  "voice_id": "4XsbOSxQHw4NUVaEeo2o",
+  "model": "eleven_multilingual_v2",
+  "settings": {
+    "stability": 0.71,
+    "similarity_boost": 0.9,
+    "style": 0.05,
+    "use_speaker_boost": true,
+    "speed": 0.96
+  },
+  "provider": "elevenlabs",
+  "audio_key": "537654cb28938696f6b7285f87335c51aa0b0a6850a46399a78fd9f9b634481c",
+  "voice_key": "character:zeynep:female_professional",
+  "voice_name": "Elif - Calm & Natural",
+  "voice_labels": {
+    "gender": "female",
+    "accent": "istanbul",
+    "age": "young",
+    "category": "professional",
+    "language": "tr",
+    "use_case": "conversational",
+    "descriptive": "calm"
+  },
+  "output_format": "mp3_44100_192",
+  "file_sha256": "b7e681eca2ed68f7a7d0278af4f612b4fe0a5f2f602811878d6beae4e75e90b7",
+  "duration_ms": 1253,
+  "generated_at": "2026-09-14T19:15:17.778520+00:00",
+  "entity_refs": [
+    {
+      "entity_type": "dialogue_turn",
+      "entity_uuid": "85f1b0db-f4c9-521c-a55a-3152dbdf98d3",
+      "entity_key": "d_food_quantities_cooking_01:3"
+    }
+  ]
+}

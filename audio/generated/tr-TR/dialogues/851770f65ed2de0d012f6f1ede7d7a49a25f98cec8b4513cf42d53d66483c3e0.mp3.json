@@ -1,0 +1,36 @@
+{
+  "source_text_hash": "ab67bdbff4265bbcdc88cfedecf0bbe8a57ac6b612917bde08999440454ef502",
+  "voice_id": "D6QpOJ61ltQ3whot6iJZ",
+  "model": "eleven_multilingual_v2",
+  "settings": {
+    "stability": 0.52,
+    "similarity_boost": 0.86,
+    "style": 0.2,
+    "use_speaker_boost": true,
+    "speed": 0.99
+  },
+  "provider": "elevenlabs",
+  "audio_key": "851770f65ed2de0d012f6f1ede7d7a49a25f98cec8b4513cf42d53d66483c3e0",
+  "voice_key": "character:selin:female_bright",
+  "voice_name": "Tugba",
+  "voice_labels": {
+    "gender": "female",
+    "accent": "istanbul",
+    "age": "young",
+    "category": "professional",
+    "language": "tr",
+    "use_case": "conversational",
+    "descriptive": "calm"
+  },
+  "output_format": "mp3_44100_192",
+  "file_sha256": "34448f6de422e2c38959914864a48c4c2fe5eb494407cbb806f11278068f073b",
+  "duration_ms": 862,
+  "generated_at": "2026-09-14T19:16:33.797371+00:00",
+  "entity_refs": [
+    {
+      "entity_type": "dialogue_turn",
+      "entity_uuid": "52ba2898-3c29-5e0e-acaf-5fcb0cfb20ec",
+      "entity_key": "d_food_quantities_cooking_02:3"
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "source_text_hash": "8efc0bb3e096fd8d84a58c2c2b86458546ca935e44a1a9c43ce389cc7a22f716",
+  "voice_id": "4XsbOSxQHw4NUVaEeo2o",
+  "model": "eleven_multilingual_v2",
+  "settings": {
+    "stability": 0.71,
+    "similarity_boost": 0.9,
+    "style": 0.05,
+    "use_speaker_boost": true,
+    "speed": 0.96
+  },
+  "provider": "elevenlabs",
+  "audio_key": "02ea62d68e861b03756be1f4eb422e48e83b8bc7a970ee0b77a2f6c46192cdfb",
+  "voice_key": "character:zeynep:female_professional",
+  "voice_name": "Elif - Calm & Natural",
+  "voice_labels": {
+    "gender": "female",
+    "accent": "istanbul",
+    "age": "young",
+    "category": "professional",
+    "language": "tr",
+    "use_case": "conversational",
+    "descriptive": "calm"
+  },
+  "output_format": "mp3_44100_192",
+  "file_sha256": "dcbb087fe45bc91e1feee74fc7cacb73ff822d67de4c1464bab7b942affe7b33",
+  "duration_ms": 1488,
+  "generated_at": "2026-09-14T19:13:21.418515+00:00",
+  "entity_refs": [
+    {
+      "entity_type": "dialogue_turn",
+      "entity_uuid": "f7822498-0c51-5d6b-bbf1-65ea9478377d",
+      "entity_key": "d_pharmacy_basics_02:2"
+    }
+  ]
+}

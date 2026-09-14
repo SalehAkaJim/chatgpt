@@ -1,0 +1,36 @@
+{
+  "source_text_hash": "080d9208ecb10baf329c952632e711f6fa0443c3428f6985e7cdcf5ab8ab038c",
+  "voice_id": "D6QpOJ61ltQ3whot6iJZ",
+  "model": "eleven_multilingual_v2",
+  "settings": {
+    "stability": 0.52,
+    "similarity_boost": 0.86,
+    "style": 0.2,
+    "use_speaker_boost": true,
+    "speed": 0.99
+  },
+  "provider": "elevenlabs",
+  "audio_key": "a33ae0beb7bdf7e84cdd8dcd2828598ad1c9912a466e8578587557375b2b15d6",
+  "voice_key": "character:selin:female_bright",
+  "voice_name": "Tugba",
+  "voice_labels": {
+    "gender": "female",
+    "accent": "istanbul",
+    "age": "young",
+    "category": "professional",
+    "language": "tr",
+    "use_case": "conversational",
+    "descriptive": "calm"
+  },
+  "output_format": "mp3_44100_192",
+  "file_sha256": "da3ef3eba5e8dbee256fe335a044a1f8ab2d1b909677281ded312e3b4a522045",
+  "duration_ms": 1488,
+  "generated_at": "2026-09-14T19:17:28.291330+00:00",
+  "entity_refs": [
+    {
+      "entity_type": "dialogue_turn",
+      "entity_uuid": "3dcc2518-cbad-524a-bbd3-ab751e2688b9",
+      "entity_key": "d_pharmacy_basics_03:4"
+    }
+  ]
+}

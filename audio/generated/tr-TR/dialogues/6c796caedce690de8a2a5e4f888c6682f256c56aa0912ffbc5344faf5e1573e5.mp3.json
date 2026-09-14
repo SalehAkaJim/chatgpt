@@ -1,0 +1,36 @@
+{
+  "source_text_hash": "e38bd1c9a63540d703675a6a06fad265d963ce95d811df604aeef4af67ec8b67",
+  "voice_id": "D6QpOJ61ltQ3whot6iJZ",
+  "model": "eleven_multilingual_v2",
+  "settings": {
+    "stability": 0.52,
+    "similarity_boost": 0.86,
+    "style": 0.2,
+    "use_speaker_boost": true,
+    "speed": 0.99
+  },
+  "provider": "elevenlabs",
+  "audio_key": "6c796caedce690de8a2a5e4f888c6682f256c56aa0912ffbc5344faf5e1573e5",
+  "voice_key": "character:selin:female_bright",
+  "voice_name": "Tugba",
+  "voice_labels": {
+    "gender": "female",
+    "accent": "istanbul",
+    "age": "young",
+    "category": "professional",
+    "language": "tr",
+    "use_case": "conversational",
+    "descriptive": "calm"
+  },
+  "output_format": "mp3_44100_192",
+  "file_sha256": "8e459e888d37f986299ae70cd7d332f6346ff74d78bb7ab21b9b2d7b81434123",
+  "duration_ms": 1854,
+  "generated_at": "2026-09-14T19:15:56.242354+00:00",
+  "entity_refs": [
+    {
+      "entity_type": "dialogue_turn",
+      "entity_uuid": "475a547b-f550-55d9-9d2d-934f7aad2bad",
+      "entity_key": "d_fitness_routines_01:1"
+    }
+  ]
+}

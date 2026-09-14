@@ -1,0 +1,36 @@
+{
+  "source_text_hash": "eb708f96efb508b531841e2ec150543e0f4fa75c92f90d741f7fc41a0cd36910",
+  "voice_id": "jGqlr3dGaFN0IfJZa3zS",
+  "model": "eleven_multilingual_v2",
+  "settings": {
+    "stability": 0.58,
+    "similarity_boost": 0.87,
+    "style": 0.14,
+    "use_speaker_boost": true,
+    "speed": 0.97
+  },
+  "provider": "elevenlabs",
+  "audio_key": "56294b071e3dc9951e1eadf0f21d66e74854bd7280b82d2bfca5af3582559e04",
+  "voice_key": "character:mert:male_warm",
+  "voice_name": "Talha - Friendly, Energetic and Neutral",
+  "voice_labels": {
+    "gender": "male",
+    "accent": "central",
+    "age": "young",
+    "category": "professional",
+    "language": "tr",
+    "use_case": "conversational",
+    "descriptive": "casual"
+  },
+  "output_format": "mp3_44100_192",
+  "file_sha256": "e90da4795891d629be2731dff44b4961bc0f22130e6f97067cbf12a6940f53f3",
+  "duration_ms": 1436,
+  "generated_at": "2026-09-14T19:15:22.209009+00:00",
+  "entity_refs": [
+    {
+      "entity_type": "dialogue_turn",
+      "entity_uuid": "53c917a1-73e5-517c-a7d4-ee2cc8454c21",
+      "entity_key": "d_food_quantities_cooking_03:2"
+    }
+  ]
+}

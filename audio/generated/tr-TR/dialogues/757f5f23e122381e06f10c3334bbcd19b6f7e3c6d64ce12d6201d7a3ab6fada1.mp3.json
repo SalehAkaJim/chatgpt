@@ -1,0 +1,36 @@
+{
+  "source_text_hash": "70b82b574fe47152831267a58636f028936c8578e28d2642d6bb462d9f601706",
+  "voice_id": "aEJD8mYP0nuof1XHShVY",
+  "model": "eleven_multilingual_v2",
+  "settings": {
+    "stability": 0.58,
+    "similarity_boost": 0.87,
+    "style": 0.14,
+    "use_speaker_boost": true,
+    "speed": 0.97
+  },
+  "provider": "elevenlabs",
+  "audio_key": "757f5f23e122381e06f10c3334bbcd19b6f7e3c6d64ce12d6201d7a3ab6fada1",
+  "voice_key": "character:elif:female_warm",
+  "voice_name": "Gozde Arikan - Soft, Warm and Clear",
+  "voice_labels": {
+    "gender": "female",
+    "accent": "standard",
+    "age": "young",
+    "category": "professional",
+    "language": "tr",
+    "use_case": "conversational",
+    "descriptive": "casual"
+  },
+  "output_format": "mp3_44100_192",
+  "file_sha256": "9a0ab2822988451edd7ca300c030d3a5800382fca58a914ab02741a9e98afe9e",
+  "duration_ms": 1619,
+  "generated_at": "2026-09-14T19:16:09.271539+00:00",
+  "entity_refs": [
+    {
+      "entity_type": "dialogue_turn",
+      "entity_uuid": "4947fbe0-928c-5fdc-a7c0-eecfdb382325",
+      "entity_key": "d_weather_plans_02:1"
+    }
+  ]
+}

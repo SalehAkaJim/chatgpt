@@ -1,0 +1,36 @@
+{
+  "source_text_hash": "1a3e29e12f9b232995a8c4e281dc354c5333402724487fdb86f9e27dc4180340",
+  "voice_id": "D6QpOJ61ltQ3whot6iJZ",
+  "model": "eleven_multilingual_v2",
+  "settings": {
+    "stability": 0.52,
+    "similarity_boost": 0.86,
+    "style": 0.2,
+    "use_speaker_boost": true,
+    "speed": 0.99
+  },
+  "provider": "elevenlabs",
+  "audio_key": "a827287dbb58cc4f23c127fc1c6bb1253841bc232e3fc2e7247deb019f988d81",
+  "voice_key": "character:selin:female_bright",
+  "voice_name": "Tugba",
+  "voice_labels": {
+    "gender": "female",
+    "accent": "istanbul",
+    "age": "young",
+    "category": "professional",
+    "language": "tr",
+    "use_case": "conversational",
+    "descriptive": "calm"
+  },
+  "output_format": "mp3_44100_192",
+  "file_sha256": "525eec2d270d4319ed40698fabae01faa9a712850779f2544b13cdc28869349c",
+  "duration_ms": 1488,
+  "generated_at": "2026-09-14T19:17:37.110858+00:00",
+  "entity_refs": [
+    {
+      "entity_type": "dialogue_turn",
+      "entity_uuid": "bc21808e-22f5-508d-a1bf-567d5a4e2aeb",
+      "entity_key": "d_restaurant_service_problems_03:1"
+    }
+  ]
+}

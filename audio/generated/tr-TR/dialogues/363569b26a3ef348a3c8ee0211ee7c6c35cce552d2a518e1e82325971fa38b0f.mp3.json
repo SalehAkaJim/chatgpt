@@ -1,0 +1,36 @@
+{
+  "source_text_hash": "d0b1e0eb8bb6ce13dc5345c6d874df63293e65627b07a2e6f919d4358cb3222c",
+  "voice_id": "Md4RAnfKt9kVIbvqUxly",
+  "model": "eleven_multilingual_v2",
+  "settings": {
+    "stability": 0.68,
+    "similarity_boost": 0.89,
+    "style": 0.06,
+    "use_speaker_boost": true,
+    "speed": 0.95
+  },
+  "provider": "elevenlabs",
+  "audio_key": "363569b26a3ef348a3c8ee0211ee7c6c35cce552d2a518e1e82325971fa38b0f",
+  "voice_key": "character:emre:male_calm",
+  "voice_name": "Cihan - Warm, Natural and Friendly",
+  "voice_labels": {
+    "gender": "male",
+    "accent": "istanbul",
+    "age": "middle_aged",
+    "category": "high_quality",
+    "language": "tr",
+    "use_case": "conversational",
+    "descriptive": "calm"
+  },
+  "output_format": "mp3_44100_192",
+  "file_sha256": "a0a7dbe859abea050258bba7b162497a0064a63b77fe49ae27a2987f1b3bf6df",
+  "duration_ms": 1488,
+  "generated_at": "2026-09-14T19:14:33.414141+00:00",
+  "entity_refs": [
+    {
+      "entity_type": "dialogue_turn",
+      "entity_uuid": "23b04d06-240c-55d0-9763-e7a41679cef1",
+      "entity_key": "d_simple_event_messages_01:3"
+    }
+  ]
+}

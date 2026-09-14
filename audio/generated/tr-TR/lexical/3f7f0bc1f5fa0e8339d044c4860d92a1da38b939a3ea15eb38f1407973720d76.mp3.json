@@ -1,0 +1,41 @@
+{
+  "source_text_hash": "4bd6c10d86946b61bdebba39f3de31cb8e2d7b701b912978bb49625fa05f0d8e",
+  "voice_id": "FDs1ZX5J4e4f2c2erxtW",
+  "model": "eleven_multilingual_v2",
+  "settings": {
+    "stability": 0.72,
+    "similarity_boost": 0.88,
+    "style": 0.0,
+    "use_speaker_boost": true,
+    "speed": 0.92
+  },
+  "provider": "elevenlabs",
+  "audio_key": "3f7f0bc1f5fa0e8339d044c4860d92a1da38b939a3ea15eb38f1407973720d76",
+  "voice_key": "tr-tr.lexical.native-clear",
+  "voice_name": "Fili - Warm Turkish Female ",
+  "voice_labels": {
+    "gender": "female",
+    "accent": "istanbul",
+    "age": "young",
+    "category": "professional",
+    "language": "tr",
+    "use_case": "conversational",
+    "descriptive": "calm"
+  },
+  "output_format": "mp3_44100_192",
+  "file_sha256": "67ad3dcd05f2b8c67781b9e3eb6edba5b451db5d667f9f389e174c7d82a74bff",
+  "duration_ms": 1149,
+  "generated_at": "2026-09-14T19:20:00.592363+00:00",
+  "entity_refs": [
+    {
+      "entity_type": "lexeme",
+      "entity_uuid": "149afebc-8795-5514-a952-153c1ebbabf6",
+      "entity_key": "lx_restaurant_service_problems_01"
+    },
+    {
+      "entity_type": "word_form",
+      "entity_uuid": "1c03dae6-9ad5-5f30-abe2-d6de16590074",
+      "entity_key": "wf_restaurant_service_problems_01"
+    }
+  ]
+}

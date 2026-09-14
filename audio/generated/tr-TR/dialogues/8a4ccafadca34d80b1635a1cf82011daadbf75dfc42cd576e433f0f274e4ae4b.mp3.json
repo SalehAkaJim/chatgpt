@@ -1,0 +1,36 @@
+{
+  "source_text_hash": "3c318d6005e5a8e223884e6d3a0b700e9daea4eed0b1e2979c4c31984c5a104a",
+  "voice_id": "jGqlr3dGaFN0IfJZa3zS",
+  "model": "eleven_multilingual_v2",
+  "settings": {
+    "stability": 0.58,
+    "similarity_boost": 0.87,
+    "style": 0.14,
+    "use_speaker_boost": true,
+    "speed": 0.97
+  },
+  "provider": "elevenlabs",
+  "audio_key": "8a4ccafadca34d80b1635a1cf82011daadbf75dfc42cd576e433f0f274e4ae4b",
+  "voice_key": "character:mert:male_warm",
+  "voice_name": "Talha - Friendly, Energetic and Neutral",
+  "voice_labels": {
+    "gender": "male",
+    "accent": "central",
+    "age": "young",
+    "category": "professional",
+    "language": "tr",
+    "use_case": "conversational",
+    "descriptive": "casual"
+  },
+  "output_format": "mp3_44100_192",
+  "file_sha256": "97af93d509fead5e357764920f09779905dd9289d82856048c26210f6878a327",
+  "duration_ms": 914,
+  "generated_at": "2026-09-14T19:16:43.265115+00:00",
+  "entity_refs": [
+    {
+      "entity_type": "dialogue_turn",
+      "entity_uuid": "63007ab0-8011-545a-afd0-dac653b687d0",
+      "entity_key": "d_invitations_arrangements_02:4"
+    }
+  ]
+}

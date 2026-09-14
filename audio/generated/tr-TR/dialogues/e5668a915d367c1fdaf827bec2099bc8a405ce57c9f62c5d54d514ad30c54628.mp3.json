@@ -1,0 +1,36 @@
+{
+  "source_text_hash": "e0fadc3fc7fc54931a02e08513f90a6484eccae2c99aa2f6a55d58589b28a87f",
+  "voice_id": "7mBFv1btncDZu2Bfgv0r",
+  "model": "eleven_multilingual_v2",
+  "settings": {
+    "stability": 0.52,
+    "similarity_boost": 0.86,
+    "style": 0.2,
+    "use_speaker_boost": true,
+    "speed": 0.99
+  },
+  "provider": "elevenlabs",
+  "audio_key": "e5668a915d367c1fdaf827bec2099bc8a405ce57c9f62c5d54d514ad30c54628",
+  "voice_key": "character:kaan:male_bright",
+  "voice_name": "Tuna - Young and Soft",
+  "voice_labels": {
+    "gender": "male",
+    "accent": "istanbul",
+    "age": "young",
+    "category": "professional",
+    "language": "tr",
+    "use_case": "social_media",
+    "descriptive": "casual"
+  },
+  "output_format": "mp3_44100_192",
+  "file_sha256": "5d3098eecde6e3cea102031cd088cb219dce757bef234358da474cb63f79f9d3",
+  "duration_ms": 1280,
+  "generated_at": "2026-09-14T19:19:10.274239+00:00",
+  "entity_refs": [
+    {
+      "entity_type": "dialogue_turn",
+      "entity_uuid": "8a1915a7-51fc-596c-989c-f1078eac902b",
+      "entity_key": "d_pharmacy_basics_01:2"
+    }
+  ]
+}

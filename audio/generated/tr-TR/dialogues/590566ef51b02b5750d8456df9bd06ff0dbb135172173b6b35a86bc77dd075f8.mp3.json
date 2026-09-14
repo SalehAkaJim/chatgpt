@@ -1,0 +1,36 @@
+{
+  "source_text_hash": "834d686d22117fa3040a7c52734e6f6b00e306a58ff8e86c598d7772355a3b6a",
+  "voice_id": "7mBFv1btncDZu2Bfgv0r",
+  "model": "eleven_multilingual_v2",
+  "settings": {
+    "stability": 0.52,
+    "similarity_boost": 0.86,
+    "style": 0.2,
+    "use_speaker_boost": true,
+    "speed": 0.99
+  },
+  "provider": "elevenlabs",
+  "audio_key": "590566ef51b02b5750d8456df9bd06ff0dbb135172173b6b35a86bc77dd075f8",
+  "voice_key": "character:kaan:male_bright",
+  "voice_name": "Tuna - Young and Soft",
+  "voice_labels": {
+    "gender": "male",
+    "accent": "istanbul",
+    "age": "young",
+    "category": "professional",
+    "language": "tr",
+    "use_case": "social_media",
+    "descriptive": "casual"
+  },
+  "output_format": "mp3_44100_192",
+  "file_sha256": "3cb95ba21596b2debda278581a0467dc89c392d69b613f4d7c2c47e38ab61393",
+  "duration_ms": 1436,
+  "generated_at": "2026-09-14T19:15:29.725939+00:00",
+  "entity_refs": [
+    {
+      "entity_type": "dialogue_turn",
+      "entity_uuid": "90a0b867-9091-50a8-94bc-fd95d00636af",
+      "entity_key": "d_restaurant_service_problems_03:4"
+    }
+  ]
+}
