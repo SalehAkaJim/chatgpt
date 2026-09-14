@@ -1,0 +1,41 @@
+{
+  "source_text_hash": "ffbce4bac48143ea0624db6bb8d5470f25365bcdb7b7fa365dc9dedcd2c19956",
+  "voice_id": "5DWGv3VDkihNUcbvaonB",
+  "model": "eleven_multilingual_v2",
+  "settings": {
+    "stability": 0.68,
+    "similarity_boost": 0.88,
+    "style": 0.0,
+    "use_speaker_boost": true,
+    "speed": 0.95
+  },
+  "provider": "elevenlabs",
+  "audio_key": "7b2d344efb484e0d62de8a684c79eebf18f57cd55c294bedf65c82507539b5f2",
+  "voice_key": "ko-kr.sentence.native-clear",
+  "voice_name": "Kelee K - Seoul Narrator",
+  "voice_labels": {
+    "gender": "female",
+    "accent": "seoul",
+    "age": "young",
+    "category": "professional",
+    "language": "ko",
+    "use_case": "conversational",
+    "descriptive": "casual"
+  },
+  "output_format": "mp3_44100_192",
+  "file_sha256": "42192340abf886e01fa9455b1decdf64717ad3d284c97473add82a3e40b543c9",
+  "duration_ms": 4858,
+  "generated_at": "2026-09-14T01:31:55.606091+00:00",
+  "entity_refs": [
+    {
+      "entity_type": "utterance",
+      "entity_uuid": "0b473315-7260-5370-a082-f02ad9008e70",
+      "entity_key": "u_high_stakes_negotiation_02"
+    },
+    {
+      "entity_type": "exercise",
+      "entity_uuid": "cc10fca4-8b0e-5dfe-8d36-76fceb0714d0",
+      "entity_key": "e_high_stakes_negotiation_01_listen"
+    }
+  ]
+}
