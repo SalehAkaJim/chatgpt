@@ -54,8 +54,8 @@ jobs:
           from pathlib import Path
           d=json.loads(Path('audio/manifests/fr/Pre-A1.json').read_text()); counts={}
           for x in d['items']: counts[x['category']]=counts.get(x['category'],0)+1
-          if counts.get('lexical') != 53 or counts.get('utterances') != 40: raise SystemExit(f'Unexpected narrator category counts: {counts}')
-          if not 70 <= counts.get('dialogues',0) <= 80: raise SystemExit(f'Unexpected dialogue audio count: {counts}')
+          if counts.get('lexical') != 53 or counts.get('utterances') != 37: raise SystemExit(f'Unexpected narrator category counts: {counts}')
+          if counts.get('dialogues') != 79: raise SystemExit(f'Unexpected dialogue audio count: {counts}')
           roots=[Path(x['relative_path']) for x in d['items']]
           missing=[str(p) for p in roots if not p.exists()]
           if missing: raise SystemExit(f'Missing generated files: {len(missing)}')
