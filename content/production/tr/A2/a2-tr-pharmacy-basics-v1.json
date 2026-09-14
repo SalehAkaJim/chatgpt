@@ -1,0 +1,1202 @@
+{
+  "batch_id": "tr-tr-a2-b06-pharmacy-basics-v1",
+  "course": "fa-tr-tr",
+  "learner_language": "fa",
+  "learner_variant": "fa-IR",
+  "target_language": "tr",
+  "target_variant": "tr-TR",
+  "cefr": "A2",
+  "curriculum_unit": "a2-tr-pharmacy-basics",
+  "generator": "gpt-5.6-sol:turkish-a2-batch-06-v2",
+  "items": [
+    {
+      "kind": "concept",
+      "external_id": "c_pharmacy_basics_01",
+      "data": {
+        "slug": "tr_a2_pharmacy_basics_bogaz",
+        "lesson_key": "a2-tr-pharmacy-basics-01",
+        "concept_type": "lexical",
+        "part_of_speech": "noun",
+        "forms": {
+          "tr": "boğaz"
+        },
+        "translations": {
+          "fa": "گلو"
+        },
+        "cefr": "A2",
+        "topic": "basic-health",
+        "tags": [
+          "core",
+          "a2",
+          "high_frequency"
+        ],
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_pharmacy_basics_01",
+      "data": {
+        "lesson_key": "a2-tr-pharmacy-basics-01",
+        "lemma": "boğaz",
+        "display_lemma": "boğaz",
+        "language": "tr",
+        "language_variant": "tr-TR",
+        "part_of_speech": "noun",
+        "concept_refs": [
+          "tr_a2_pharmacy_basics_bogaz"
+        ],
+        "cefr": "A2",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_pharmacy_basics_01",
+      "data": {
+        "lesson_key": "a2-tr-pharmacy-basics-01",
+        "lexeme_ref": "lx_pharmacy_basics_01",
+        "surface_form": "boğaz",
+        "display_form": "boğaz",
+        "grammatical_features": {},
+        "is_lemma": true,
+        "is_preferred": true,
+        "cefr": "A2",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_pharmacy_basics_02",
+      "data": {
+        "slug": "tr_a2_pharmacy_basics_agrimak",
+        "lesson_key": "a2-tr-pharmacy-basics-01",
+        "concept_type": "lexical",
+        "part_of_speech": "verb",
+        "forms": {
+          "tr": "ağrımak"
+        },
+        "translations": {
+          "fa": "درد کردن"
+        },
+        "cefr": "A2",
+        "topic": "basic-health",
+        "tags": [
+          "core",
+          "a2",
+          "high_frequency"
+        ],
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_pharmacy_basics_02",
+      "data": {
+        "lesson_key": "a2-tr-pharmacy-basics-01",
+        "lemma": "ağrımak",
+        "display_lemma": "ağrımak",
+        "language": "tr",
+        "language_variant": "tr-TR",
+        "part_of_speech": "verb",
+        "concept_refs": [
+          "tr_a2_pharmacy_basics_agrimak"
+        ],
+        "cefr": "A2",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_pharmacy_basics_02",
+      "data": {
+        "lesson_key": "a2-tr-pharmacy-basics-01",
+        "lexeme_ref": "lx_pharmacy_basics_02",
+        "surface_form": "ağrımak",
+        "display_form": "ağrımak",
+        "grammatical_features": {},
+        "is_lemma": true,
+        "is_preferred": true,
+        "cefr": "A2",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_pharmacy_basics_03",
+      "data": {
+        "slug": "tr_a2_pharmacy_basics_surup",
+        "lesson_key": "a2-tr-pharmacy-basics-02",
+        "concept_type": "lexical",
+        "part_of_speech": "noun",
+        "forms": {
+          "tr": "şurup"
+        },
+        "translations": {
+          "fa": "شربت"
+        },
+        "cefr": "A2",
+        "topic": "basic-health",
+        "tags": [
+          "core",
+          "a2",
+          "high_frequency"
+        ],
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_pharmacy_basics_03",
+      "data": {
+        "lesson_key": "a2-tr-pharmacy-basics-02",
+        "lemma": "şurup",
+        "display_lemma": "şurup",
+        "language": "tr",
+        "language_variant": "tr-TR",
+        "part_of_speech": "noun",
+        "concept_refs": [
+          "tr_a2_pharmacy_basics_surup"
+        ],
+        "cefr": "A2",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_pharmacy_basics_03",
+      "data": {
+        "lesson_key": "a2-tr-pharmacy-basics-02",
+        "lexeme_ref": "lx_pharmacy_basics_03",
+        "surface_form": "şurup",
+        "display_form": "şurup",
+        "grammatical_features": {},
+        "is_lemma": true,
+        "is_preferred": true,
+        "cefr": "A2",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_pharmacy_basics_04",
+      "data": {
+        "slug": "tr_a2_pharmacy_basics_tablet",
+        "lesson_key": "a2-tr-pharmacy-basics-02",
+        "concept_type": "lexical",
+        "part_of_speech": "noun",
+        "forms": {
+          "tr": "tablet"
+        },
+        "translations": {
+          "fa": "قرص"
+        },
+        "cefr": "A2",
+        "topic": "basic-health",
+        "tags": [
+          "core",
+          "a2",
+          "high_frequency"
+        ],
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_pharmacy_basics_04",
+      "data": {
+        "lesson_key": "a2-tr-pharmacy-basics-02",
+        "lemma": "tablet",
+        "display_lemma": "tablet",
+        "language": "tr",
+        "language_variant": "tr-TR",
+        "part_of_speech": "noun",
+        "concept_refs": [
+          "tr_a2_pharmacy_basics_tablet"
+        ],
+        "cefr": "A2",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_pharmacy_basics_04",
+      "data": {
+        "lesson_key": "a2-tr-pharmacy-basics-02",
+        "lexeme_ref": "lx_pharmacy_basics_04",
+        "surface_form": "tablet",
+        "display_form": "tablet",
+        "grammatical_features": {},
+        "is_lemma": true,
+        "is_preferred": true,
+        "cefr": "A2",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_pharmacy_basics_05",
+      "data": {
+        "slug": "tr_a2_pharmacy_basics_gunde",
+        "lesson_key": "a2-tr-pharmacy-basics-03",
+        "concept_type": "lexical",
+        "part_of_speech": "adverb",
+        "forms": {
+          "tr": "günde"
+        },
+        "translations": {
+          "fa": "در روز"
+        },
+        "cefr": "A2",
+        "topic": "basic-health",
+        "tags": [
+          "core",
+          "a2",
+          "high_frequency"
+        ],
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_pharmacy_basics_05",
+      "data": {
+        "lesson_key": "a2-tr-pharmacy-basics-03",
+        "lemma": "günde",
+        "display_lemma": "günde",
+        "language": "tr",
+        "language_variant": "tr-TR",
+        "part_of_speech": "adverb",
+        "concept_refs": [
+          "tr_a2_pharmacy_basics_gunde"
+        ],
+        "cefr": "A2",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_pharmacy_basics_05",
+      "data": {
+        "lesson_key": "a2-tr-pharmacy-basics-03",
+        "lexeme_ref": "lx_pharmacy_basics_05",
+        "surface_form": "günde",
+        "display_form": "günde",
+        "grammatical_features": {},
+        "is_lemma": true,
+        "is_preferred": true,
+        "cefr": "A2",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_pharmacy_basics_06",
+      "data": {
+        "slug": "tr_a2_pharmacy_basics_kullanmak",
+        "lesson_key": "a2-tr-pharmacy-basics-03",
+        "concept_type": "lexical",
+        "part_of_speech": "verb",
+        "forms": {
+          "tr": "kullanmak"
+        },
+        "translations": {
+          "fa": "استفاده کردن"
+        },
+        "cefr": "A2",
+        "topic": "basic-health",
+        "tags": [
+          "core",
+          "a2",
+          "high_frequency"
+        ],
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_pharmacy_basics_06",
+      "data": {
+        "lesson_key": "a2-tr-pharmacy-basics-03",
+        "lemma": "kullanmak",
+        "display_lemma": "kullanmak",
+        "language": "tr",
+        "language_variant": "tr-TR",
+        "part_of_speech": "verb",
+        "concept_refs": [
+          "tr_a2_pharmacy_basics_kullanmak"
+        ],
+        "cefr": "A2",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_pharmacy_basics_06",
+      "data": {
+        "lesson_key": "a2-tr-pharmacy-basics-03",
+        "lexeme_ref": "lx_pharmacy_basics_06",
+        "surface_form": "kullanmak",
+        "display_form": "kullanmak",
+        "grammatical_features": {},
+        "is_lemma": true,
+        "is_preferred": true,
+        "cefr": "A2",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_pharmacy_basics_01",
+      "data": {
+        "lesson_key": "a2-tr-pharmacy-basics-01",
+        "text": {
+          "tr": "Boğazım ağrıyor."
+        },
+        "translations": {
+          "fa": "گلویم درد می‌کند."
+        },
+        "intent": "state_symptom",
+        "concept_refs": [
+          "tr_a2_pharmacy_basics_bogaz",
+          "tr_a2_pharmacy_basics_agrimak"
+        ],
+        "cefr": "A2",
+        "topic": "basic-health",
+        "register": "neutral",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_pharmacy_basics_02",
+      "data": {
+        "lesson_key": "a2-tr-pharmacy-basics-01",
+        "text": {
+          "tr": "Biraz da öksürüyorum."
+        },
+        "translations": {
+          "fa": "کمی هم سرفه می‌کنم."
+        },
+        "intent": "add_symptom",
+        "concept_refs": [
+          "tr_a2_pharmacy_basics_agrimak"
+        ],
+        "cefr": "A2",
+        "topic": "basic-health",
+        "register": "neutral",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_pharmacy_basics_03",
+      "data": {
+        "lesson_key": "a2-tr-pharmacy-basics-02",
+        "text": {
+          "tr": "Bir şurup alabilir miyim?"
+        },
+        "translations": {
+          "fa": "می‌توانم یک شربت بگیرم؟"
+        },
+        "intent": "request_medicine",
+        "concept_refs": [
+          "tr_a2_pharmacy_basics_surup"
+        ],
+        "cefr": "A2",
+        "topic": "basic-health",
+        "register": "neutral",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_pharmacy_basics_04",
+      "data": {
+        "lesson_key": "a2-tr-pharmacy-basics-02",
+        "text": {
+          "tr": "Tablet istemiyorum."
+        },
+        "translations": {
+          "fa": "قرص نمی‌خواهم."
+        },
+        "intent": "state_preference",
+        "concept_refs": [
+          "tr_a2_pharmacy_basics_tablet"
+        ],
+        "cefr": "A2",
+        "topic": "basic-health",
+        "register": "neutral",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_pharmacy_basics_05",
+      "data": {
+        "lesson_key": "a2-tr-pharmacy-basics-03",
+        "text": {
+          "tr": "Bunu günde iki kez kullanın."
+        },
+        "translations": {
+          "fa": "این را روزی دو بار استفاده کنید."
+        },
+        "intent": "understand_frequency",
+        "concept_refs": [
+          "tr_a2_pharmacy_basics_gunde",
+          "tr_a2_pharmacy_basics_kullanmak"
+        ],
+        "cefr": "A2",
+        "topic": "basic-health",
+        "register": "neutral",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_pharmacy_basics_06",
+      "data": {
+        "lesson_key": "a2-tr-pharmacy-basics-03",
+        "text": {
+          "tr": "Yemekten sonra kullanabilirsiniz."
+        },
+        "translations": {
+          "fa": "می‌توانید بعد از غذا استفاده کنید."
+        },
+        "intent": "understand_use",
+        "concept_refs": [
+          "tr_a2_pharmacy_basics_kullanmak"
+        ],
+        "cefr": "A2",
+        "topic": "basic-health",
+        "register": "neutral",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "grammar_point",
+      "external_id": "g_pharmacy_basics_core",
+      "data": {
+        "lesson_key": "a2-tr-pharmacy-basics-01",
+        "slug": "a2-tr-pharmacy-basics-grammar",
+        "title": "Eczanede basit sağlık ihtiyacı",
+        "rule_summary": "State one or two familiar symptoms, make a polite request and understand a simple use frequency.",
+        "explanation": {
+          "fa": "در داروخانه نشانهٔ ساده را کوتاه می‌گوییم، یک درخواست روشن می‌کنیم و دستور مصرف ساده را می‌فهمیم."
+        },
+        "examples": [
+          {
+            "tr": "Boğazım ağrıyor. Bir şurup alabilir miyim?",
+            "fa": "گلویم درد می‌کند. می‌توانم یک شربت بگیرم؟"
+          },
+          {
+            "tr": "Bunu günde iki kez kullanın.",
+            "fa": "این را روزی دو بار استفاده کنید."
+          }
+        ],
+        "cefr": "A2",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "dialogue",
+      "external_id": "d_pharmacy_basics_01",
+      "data": {
+        "lesson_key": "a2-tr-pharmacy-basics-01",
+        "title": "Belirti",
+        "setting": "item",
+        "cefr": "A2",
+        "topic": "basic-health",
+        "characters": [
+          "Elif",
+          "Kaan"
+        ],
+        "turns": [
+          {
+            "order": 1,
+            "speaker": "Elif",
+            "text": "Neyiniz var?",
+            "translation_fa": "چه مشکلی دارید؟"
+          },
+          {
+            "order": 2,
+            "speaker": "Kaan",
+            "text": "Boğazım ağrıyor.",
+            "translation_fa": "گلویم درد می‌کند."
+          },
+          {
+            "order": 3,
+            "speaker": "Elif",
+            "text": "Öksürük var mı?",
+            "translation_fa": "سرفه دارید؟"
+          },
+          {
+            "order": 4,
+            "speaker": "Kaan",
+            "text": "Evet, biraz.",
+            "translation_fa": "بله، کمی."
+          }
+        ],
+        "qa": {
+          "character_pair_unique_within_unit": true,
+          "naturalness": "passed",
+          "single_situation": true
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "dialogue",
+      "external_id": "d_pharmacy_basics_02",
+      "data": {
+        "lesson_key": "a2-tr-pharmacy-basics-02",
+        "title": "Şurup isteği",
+        "setting": "item",
+        "cefr": "A2",
+        "topic": "basic-health",
+        "characters": [
+          "Mert",
+          "Zeynep"
+        ],
+        "turns": [
+          {
+            "order": 1,
+            "speaker": "Mert",
+            "text": "Size nasıl yardımcı olayım?",
+            "translation_fa": "چطور کمکتان کنم؟"
+          },
+          {
+            "order": 2,
+            "speaker": "Zeynep",
+            "text": "Bir şurup alabilir miyim?",
+            "translation_fa": "می‌توانم یک شربت بگیرم؟"
+          },
+          {
+            "order": 3,
+            "speaker": "Mert",
+            "text": "Tabii.",
+            "translation_fa": "حتماً."
+          },
+          {
+            "order": 4,
+            "speaker": "Zeynep",
+            "text": "Tablet istemiyorum.",
+            "translation_fa": "قرص نمی‌خواهم."
+          }
+        ],
+        "qa": {
+          "character_pair_unique_within_unit": true,
+          "naturalness": "passed",
+          "single_situation": true
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "dialogue",
+      "external_id": "d_pharmacy_basics_03",
+      "data": {
+        "lesson_key": "a2-tr-pharmacy-basics-03",
+        "title": "Kullanım",
+        "setting": "item",
+        "cefr": "A2",
+        "topic": "basic-health",
+        "characters": [
+          "Burak",
+          "Selin"
+        ],
+        "turns": [
+          {
+            "order": 1,
+            "speaker": "Burak",
+            "text": "Bunu nasıl kullanacağım?",
+            "translation_fa": "این را چطور استفاده کنم؟"
+          },
+          {
+            "order": 2,
+            "speaker": "Selin",
+            "text": "Günde iki kez kullanın.",
+            "translation_fa": "روزی دو بار استفاده کنید."
+          },
+          {
+            "order": 3,
+            "speaker": "Burak",
+            "text": "Yemekten sonra mı?",
+            "translation_fa": "بعد از غذا؟"
+          },
+          {
+            "order": 4,
+            "speaker": "Selin",
+            "text": "Evet, yemekten sonra.",
+            "translation_fa": "بله، بعد از غذا."
+          }
+        ],
+        "qa": {
+          "character_pair_unique_within_unit": true,
+          "naturalness": "passed",
+          "single_situation": true
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_pharmacy_basics_01_meaning",
+      "data": {
+        "lesson_key": "a2-tr-pharmacy-basics-01",
+        "exercise_type": "multiple_choice",
+        "prompt": {
+          "instruction_fa": "معنی درست این عبارت ترکی را انتخاب کن.",
+          "value": "Boğazım ağrıyor."
+        },
+        "answer": {
+          "value": "گلویم درد می‌کند."
+        },
+        "options": [
+          "گلویم درد می‌کند.",
+          "کمی هم سرفه می‌کنم.",
+          "می‌توانم یک شربت بگیرم؟",
+          "قرص نمی‌خواهم."
+        ],
+        "difficulty": 2,
+        "cefr": "A2",
+        "topic": "basic-health",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت و پسوندهای عبارت ترکی دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: Boğazım ağrıyor. — گلویم درد می‌کند.",
+          "model_answer": "Boğazım ağrıyor."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_pharmacy_basics_01_listen",
+      "data": {
+        "lesson_key": "a2-tr-pharmacy-basics-01",
+        "exercise_type": "listening",
+        "prompt": {
+          "instruction_fa": "گوش کن و عبارتی را که شنیدی انتخاب کن.",
+          "audio_text": "Biraz da öksürüyorum."
+        },
+        "answer": {
+          "value": "Biraz da öksürüyorum."
+        },
+        "options": [
+          "Biraz da öksürüyorum.",
+          "Boğazım ağrıyor.",
+          "Bir şurup alabilir miyim?",
+          "Tablet istemiyorum."
+        ],
+        "difficulty": 2,
+        "cefr": "A2",
+        "topic": "basic-health",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت و پسوندهای عبارت ترکی دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: Biraz da öksürüyorum. — کمی هم سرفه می‌کنم.",
+          "model_answer": "Biraz da öksürüyorum.",
+          "transcript_tr": "Biraz da öksürüyorum."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_pharmacy_basics_01_speak",
+      "data": {
+        "lesson_key": "a2-tr-pharmacy-basics-01",
+        "exercise_type": "speaking",
+        "prompt": {
+          "instruction_fa": "عبارت را با صدای بلند و با ریتم طبیعی بگو.",
+          "value": "Boğazım ağrıyor."
+        },
+        "answer": {
+          "expected_text": "Boğazım ağrıyor."
+        },
+        "difficulty": 2,
+        "cefr": "A2",
+        "topic": "basic-health",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت و پسوندهای عبارت ترکی دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: Boğazım ağrıyor. — گلویم درد می‌کند.",
+          "model_answer": "Boğazım ağrıyor."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_pharmacy_basics_01_build",
+      "data": {
+        "lesson_key": "a2-tr-pharmacy-basics-01",
+        "exercise_type": "sentence_building",
+        "prompt": {
+          "instruction_fa": "بخش‌ها را مرتب کن تا عبارت درست ساخته شود.",
+          "tokens": [
+            "da",
+            "öksürüyorum.",
+            "Biraz"
+          ]
+        },
+        "answer": {
+          "tokens": [
+            "Biraz",
+            "da",
+            "öksürüyorum."
+          ],
+          "value": "Biraz da öksürüyorum."
+        },
+        "difficulty": 2,
+        "cefr": "A2",
+        "topic": "basic-health",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت و پسوندهای عبارت ترکی دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: Biraz da öksürüyorum. — کمی هم سرفه می‌کنم.",
+          "model_answer": "Biraz da öksürüyorum."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_pharmacy_basics_01_dialogue",
+      "data": {
+        "lesson_key": "a2-tr-pharmacy-basics-01",
+        "exercise_type": "dialogue_comprehension",
+        "prompt": {
+          "instruction_fa": "با توجه به گفت‌وگو، پاسخ مناسب را انتخاب کن.",
+          "source_dialogue_ref": "d_pharmacy_basics_01",
+          "question_fa": "کدام گزینه با معنی «گلویم درد می‌کند.» هماهنگ است؟"
+        },
+        "answer": {
+          "value": "Boğazım ağrıyor."
+        },
+        "options": [
+          "Boğazım ağrıyor.",
+          "Biraz da öksürüyorum.",
+          "Bir şurup alabilir miyim?",
+          "Tablet istemiyorum."
+        ],
+        "difficulty": 2,
+        "cefr": "A2",
+        "topic": "basic-health",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت و پسوندهای عبارت ترکی دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: Boğazım ağrıyor. — گلویم درد می‌کند.",
+          "model_answer": "Boğazım ağrıyor."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_pharmacy_basics_02_meaning",
+      "data": {
+        "lesson_key": "a2-tr-pharmacy-basics-02",
+        "exercise_type": "multiple_choice",
+        "prompt": {
+          "instruction_fa": "معنی درست این عبارت ترکی را انتخاب کن.",
+          "value": "Bir şurup alabilir miyim?"
+        },
+        "answer": {
+          "value": "می‌توانم یک شربت بگیرم؟"
+        },
+        "options": [
+          "می‌توانم یک شربت بگیرم؟",
+          "گلویم درد می‌کند.",
+          "کمی هم سرفه می‌کنم.",
+          "قرص نمی‌خواهم."
+        ],
+        "difficulty": 2,
+        "cefr": "A2",
+        "topic": "basic-health",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت و پسوندهای عبارت ترکی دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: Bir şurup alabilir miyim? — می‌توانم یک شربت بگیرم؟",
+          "model_answer": "Bir şurup alabilir miyim?"
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_pharmacy_basics_02_listen",
+      "data": {
+        "lesson_key": "a2-tr-pharmacy-basics-02",
+        "exercise_type": "listening",
+        "prompt": {
+          "instruction_fa": "گوش کن و عبارتی را که شنیدی انتخاب کن.",
+          "audio_text": "Tablet istemiyorum."
+        },
+        "answer": {
+          "value": "Tablet istemiyorum."
+        },
+        "options": [
+          "Tablet istemiyorum.",
+          "Bir şurup alabilir miyim?",
+          "Boğazım ağrıyor.",
+          "Biraz da öksürüyorum."
+        ],
+        "difficulty": 2,
+        "cefr": "A2",
+        "topic": "basic-health",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت و پسوندهای عبارت ترکی دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: Tablet istemiyorum. — قرص نمی‌خواهم.",
+          "model_answer": "Tablet istemiyorum.",
+          "transcript_tr": "Tablet istemiyorum."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_pharmacy_basics_02_speak",
+      "data": {
+        "lesson_key": "a2-tr-pharmacy-basics-02",
+        "exercise_type": "speaking",
+        "prompt": {
+          "instruction_fa": "عبارت را با صدای بلند و با ریتم طبیعی بگو.",
+          "value": "Bir şurup alabilir miyim?"
+        },
+        "answer": {
+          "expected_text": "Bir şurup alabilir miyim?"
+        },
+        "difficulty": 2,
+        "cefr": "A2",
+        "topic": "basic-health",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت و پسوندهای عبارت ترکی دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: Bir şurup alabilir miyim? — می‌توانم یک شربت بگیرم؟",
+          "model_answer": "Bir şurup alabilir miyim?"
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_pharmacy_basics_02_build",
+      "data": {
+        "lesson_key": "a2-tr-pharmacy-basics-02",
+        "exercise_type": "sentence_building",
+        "prompt": {
+          "instruction_fa": "بخش‌ها را مرتب کن تا عبارت درست ساخته شود.",
+          "tokens": [
+            "istemiyorum.",
+            "Tablet"
+          ]
+        },
+        "answer": {
+          "tokens": [
+            "Tablet",
+            "istemiyorum."
+          ],
+          "value": "Tablet istemiyorum."
+        },
+        "difficulty": 2,
+        "cefr": "A2",
+        "topic": "basic-health",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت و پسوندهای عبارت ترکی دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: Tablet istemiyorum. — قرص نمی‌خواهم.",
+          "model_answer": "Tablet istemiyorum."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_pharmacy_basics_02_dialogue",
+      "data": {
+        "lesson_key": "a2-tr-pharmacy-basics-02",
+        "exercise_type": "dialogue_comprehension",
+        "prompt": {
+          "instruction_fa": "با توجه به گفت‌وگو، پاسخ مناسب را انتخاب کن.",
+          "source_dialogue_ref": "d_pharmacy_basics_02",
+          "question_fa": "کدام گزینه با معنی «می‌توانم یک شربت بگیرم؟» هماهنگ است؟"
+        },
+        "answer": {
+          "value": "Bir şurup alabilir miyim?"
+        },
+        "options": [
+          "Bir şurup alabilir miyim?",
+          "Boğazım ağrıyor.",
+          "Biraz da öksürüyorum.",
+          "Tablet istemiyorum."
+        ],
+        "difficulty": 2,
+        "cefr": "A2",
+        "topic": "basic-health",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت و پسوندهای عبارت ترکی دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: Bir şurup alabilir miyim? — می‌توانم یک شربت بگیرم؟",
+          "model_answer": "Bir şurup alabilir miyim?"
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_pharmacy_basics_03_meaning",
+      "data": {
+        "lesson_key": "a2-tr-pharmacy-basics-03",
+        "exercise_type": "multiple_choice",
+        "prompt": {
+          "instruction_fa": "معنی درست این عبارت ترکی را انتخاب کن.",
+          "value": "Bunu günde iki kez kullanın."
+        },
+        "answer": {
+          "value": "این را روزی دو بار استفاده کنید."
+        },
+        "options": [
+          "این را روزی دو بار استفاده کنید.",
+          "گلویم درد می‌کند.",
+          "کمی هم سرفه می‌کنم.",
+          "می‌توانم یک شربت بگیرم؟"
+        ],
+        "difficulty": 2,
+        "cefr": "A2",
+        "topic": "basic-health",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت و پسوندهای عبارت ترکی دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: Bunu günde iki kez kullanın. — این را روزی دو بار استفاده کنید.",
+          "model_answer": "Bunu günde iki kez kullanın."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_pharmacy_basics_03_listen",
+      "data": {
+        "lesson_key": "a2-tr-pharmacy-basics-03",
+        "exercise_type": "listening",
+        "prompt": {
+          "instruction_fa": "گوش کن و عبارتی را که شنیدی انتخاب کن.",
+          "audio_text": "Yemekten sonra kullanabilirsiniz."
+        },
+        "answer": {
+          "value": "Yemekten sonra kullanabilirsiniz."
+        },
+        "options": [
+          "Yemekten sonra kullanabilirsiniz.",
+          "Bunu günde iki kez kullanın.",
+          "Boğazım ağrıyor.",
+          "Biraz da öksürüyorum."
+        ],
+        "difficulty": 2,
+        "cefr": "A2",
+        "topic": "basic-health",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت و پسوندهای عبارت ترکی دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: Yemekten sonra kullanabilirsiniz. — می‌توانید بعد از غذا استفاده کنید.",
+          "model_answer": "Yemekten sonra kullanabilirsiniz.",
+          "transcript_tr": "Yemekten sonra kullanabilirsiniz."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_pharmacy_basics_03_speak",
+      "data": {
+        "lesson_key": "a2-tr-pharmacy-basics-03",
+        "exercise_type": "speaking",
+        "prompt": {
+          "instruction_fa": "عبارت را با صدای بلند و با ریتم طبیعی بگو.",
+          "value": "Bunu günde iki kez kullanın."
+        },
+        "answer": {
+          "expected_text": "Bunu günde iki kez kullanın."
+        },
+        "difficulty": 2,
+        "cefr": "A2",
+        "topic": "basic-health",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت و پسوندهای عبارت ترکی دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: Bunu günde iki kez kullanın. — این را روزی دو بار استفاده کنید.",
+          "model_answer": "Bunu günde iki kez kullanın."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_pharmacy_basics_03_build",
+      "data": {
+        "lesson_key": "a2-tr-pharmacy-basics-03",
+        "exercise_type": "sentence_building",
+        "prompt": {
+          "instruction_fa": "بخش‌ها را مرتب کن تا عبارت درست ساخته شود.",
+          "tokens": [
+            "sonra",
+            "kullanabilirsiniz.",
+            "Yemekten"
+          ]
+        },
+        "answer": {
+          "tokens": [
+            "Yemekten",
+            "sonra",
+            "kullanabilirsiniz."
+          ],
+          "value": "Yemekten sonra kullanabilirsiniz."
+        },
+        "difficulty": 2,
+        "cefr": "A2",
+        "topic": "basic-health",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت و پسوندهای عبارت ترکی دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: Yemekten sonra kullanabilirsiniz. — می‌توانید بعد از غذا استفاده کنید.",
+          "model_answer": "Yemekten sonra kullanabilirsiniz."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_pharmacy_basics_03_dialogue",
+      "data": {
+        "lesson_key": "a2-tr-pharmacy-basics-03",
+        "exercise_type": "dialogue_comprehension",
+        "prompt": {
+          "instruction_fa": "با توجه به گفت‌وگو، پاسخ مناسب را انتخاب کن.",
+          "source_dialogue_ref": "d_pharmacy_basics_03",
+          "question_fa": "کدام گزینه با معنی «این را روزی دو بار استفاده کنید.» هماهنگ است؟"
+        },
+        "answer": {
+          "value": "Bunu günde iki kez kullanın."
+        },
+        "options": [
+          "Bunu günde iki kez kullanın.",
+          "Boğazım ağrıyor.",
+          "Biraz da öksürüyorum.",
+          "Bir şurup alabilir miyim?"
+        ],
+        "difficulty": 2,
+        "cefr": "A2",
+        "topic": "basic-health",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت و پسوندهای عبارت ترکی دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: Bunu günde iki kez kullanın. — این را روزی دو بار استفاده کنید.",
+          "model_answer": "Bunu günde iki kez kullanın."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_pharmacy_basics_03_open_write",
+      "data": {
+        "lesson_key": "a2-tr-pharmacy-basics-03",
+        "exercise_type": "writing",
+        "prompt": {
+          "instruction_fa": "در ۳ تا ۴ جملهٔ کوتاه یک مشکل سادهٔ جسمی را بگو، چیزی از داروخانه بخواه و یک دستور مصرف ساده را تکرار کن.",
+          "personalized": true
+        },
+        "answer": {
+          "evaluation_mode": "rubric",
+          "model_text": "Boğazım ağrıyor. Bir şurup alabilir miyim? Tablet istemiyorum. Bunu günde iki kez kullanacağım.",
+          "required_points_fa": [
+            "یک نشانهٔ ساده",
+            "یک درخواست",
+            "یک دستور مصرف"
+          ]
+        },
+        "assessment": {
+          "exact_match_allowed": false,
+          "criteria": [
+            {
+              "id": "task",
+              "label_fa": "انجام کار",
+              "weight": 55,
+              "descriptors_fa": {
+                "0": "کار خواسته‌شده انجام نشده است.",
+                "1": "فقط بخشی از اطلاعات اصلی منتقل شده است.",
+                "2": "بیشتر اطلاعات لازم با چند نقص منتقل شده است.",
+                "3": "کار کامل و برای سطح A2 روشن انجام شده است."
+              }
+            },
+            {
+              "id": "language",
+              "label_fa": "زبان قابل‌فهم",
+              "weight": 45,
+              "descriptors_fa": {
+                "0": "پاسخ قابل‌فهم نیست.",
+                "1": "پیام با دشواری زیاد قابل‌فهم است.",
+                "2": "با چند خطا، پیام همچنان روشن است.",
+                "3": "عبارت‌های ساده و پیوسته متناسب با A2 به‌خوبی قابل‌فهم‌اند."
+              }
+            }
+          ]
+        },
+        "difficulty": 2,
+        "cefr": "A2",
+        "topic": "basic-health",
+        "feedback": {
+          "explanation_fa": "پاسخ آزاد است؛ مهم انجام کامل کار و قابل‌فهم بودن پیام است.",
+          "model_answer": "Boğazım ağrıyor. Bir şurup alabilir miyim? Tablet istemiyorum. Bunu günde iki kez kullanacağım.",
+          "retry_tip_fa": "از مدل کمک بگیر، اما اطلاعات و انتخاب‌های خودت را بنویس."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_pharmacy_basics_03_personal_speak",
+      "data": {
+        "lesson_key": "a2-tr-pharmacy-basics-03",
+        "exercise_type": "speaking",
+        "prompt": {
+          "instruction_fa": "یک گفت‌وگوی کوتاه داروخانه اجرا کن: نشانه، درخواست و دستور مصرف.",
+          "personalized": true
+        },
+        "answer": {
+          "evaluation_mode": "rubric",
+          "model_text": "Boğazım ağrıyor. Bir şurup alabilir miyim? Tablet istemiyorum. Bunu günde iki kez kullanacağım.",
+          "required_points_fa": [
+            "یک نشانهٔ ساده",
+            "یک درخواست",
+            "یک دستور مصرف"
+          ]
+        },
+        "assessment": {
+          "exact_match_allowed": false,
+          "criteria": [
+            {
+              "id": "task",
+              "label_fa": "انجام کار",
+              "weight": 55,
+              "descriptors_fa": {
+                "0": "کار خواسته‌شده انجام نشده است.",
+                "1": "فقط بخشی از اطلاعات اصلی منتقل شده است.",
+                "2": "بیشتر اطلاعات لازم با چند نقص منتقل شده است.",
+                "3": "کار کامل و برای سطح A2 روشن انجام شده است."
+              }
+            },
+            {
+              "id": "language",
+              "label_fa": "زبان قابل‌فهم",
+              "weight": 45,
+              "descriptors_fa": {
+                "0": "پاسخ قابل‌فهم نیست.",
+                "1": "پیام با دشواری زیاد قابل‌فهم است.",
+                "2": "با چند خطا، پیام همچنان روشن است.",
+                "3": "عبارت‌های ساده و پیوسته متناسب با A2 به‌خوبی قابل‌فهم‌اند."
+              }
+            }
+          ]
+        },
+        "difficulty": 2,
+        "cefr": "A2",
+        "topic": "basic-health",
+        "feedback": {
+          "explanation_fa": "لازم نیست عین مدل صحبت کنی؛ پیام باید کوتاه، پیوسته و روشن باشد.",
+          "model_answer": "Boğazım ağrıyor. Bir şurup alabilir miyim? Tablet istemiyorum. Bunu günde iki kez kullanacağım.",
+          "retry_tip_fa": "دو یا سه جملهٔ مرتبط بساز و دلیل یا جزئیات کوتاه اضافه کن."
+        },
+        "status": "validated"
+      }
+    }
+  ]
+}
