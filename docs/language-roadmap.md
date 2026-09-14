@@ -1,96 +1,100 @@
 # Nova Language Roadmap
 
-Updated: 2026-09-13
+Updated: 2026-09-14
 
-## Core curriculum policy
+## Purpose
 
-A curriculum level ends when its educational coverage is complete, not when its unit count reaches a multiple of ten.
+This file defines execution policy and language priority only. It must not become a source of hard-coded curriculum sizes, batch counts, deadlines, or completion assumptions.
 
-- Work batches may contain **1 to 10 units**.
-- Ten units is a maximum batch size for manageable authoring, QA, database validation and audio generation.
-- The final batch of a level may contain any number from 1 to 10.
-- Before closing every CEFR level, run a **coverage/gap audit**.
-- Add only the units needed to close real communicative or language-specific gaps.
-- Finish each level with an integrated capstone when appropriate.
-- Never add filler units only to reach 10, 20, 30, 40, 50, etc.
+## Scheduling policy
+
+- Timed/scheduled execution is disabled. Work starts only from an explicit product-owner request.
+- No CEFR level has a fixed unit count, lesson count, batch count, or target multiple.
+- No batch has a fixed size. Batch size is chosen from educational scope, dependency boundaries, QA risk, and practical execution limits.
+- A level ends when its language-specific coverage is educationally complete and its required validation gates are green.
+- Existing folder/file presence never proves completion.
+- Historical unit counts belong in dated audit reports, not in this roadmap.
+- Never copy another language's unit structure or final size just to preserve symmetry.
+- Never add filler content to reach a round number.
+
+## Source of truth for completion
+
+Resolve current status from repository artifacts and validation results at the start of each work session. Do not rely on manually maintained numeric status in this file.
+
+A level may be treated as complete only when the checks required for that language/level are satisfied, including as applicable:
+
+- language-specific educational/coverage audit,
+- structural content validation,
+- canonical level import / dry-run validation,
+- database integration and idempotency checks,
+- cast and voice-lock validation,
+- generated-audio manifest validation,
+- audio voice-consistency validation,
+- audio SQL export / database-link validation,
+- final gap audit and capstone/readiness check when appropriate.
+
+If a validation path does not yet exist for a new language, create the smallest language-appropriate validation path before declaring that level complete.
+
+## Execution rule
+
+For each active language:
+
+1. Inspect the existing repository state before authoring or overwriting anything.
+2. Build a language-specific coverage map for the level being worked on.
+3. Reuse existing content only after it passes current quality requirements.
+4. Add, revise, split, merge, or remove units based on educational need; do not preserve a historical count for its own sake.
+5. Run cumulative QA after each meaningful batch.
+6. Near the end of a level, run a gap audit instead of assuming a planned number of units is sufficient.
+7. Close the level only after all required validation gates are green.
+8. Move to the next level/language only after the current scope is genuinely complete, unless the product owner explicitly reprioritizes.
 
 ## Language priority
 
-### 1. English (fa -> en-US)
+English is the baseline/reference course and remains maintenance-only unless QA or the product owner requires changes.
 
-Status: curriculum/production exists through C2.
+For expansion work, use this priority order unless explicitly overridden:
 
-Priority: **maintenance only** unless QA finds a concrete issue or content is intentionally revised.
+1. German (`fa -> de-DE`)
+2. Turkish (`fa -> tr-TR`)
+3. Korean (`fa -> ko-KR`)
+4. Italian (`fa -> it-IT`)
+5. French (`fa -> fr-FR`)
+6. Spanish (`fa -> es-ES`)
+7. Japanese (`fa -> ja-JP`)
+8. Arabic (`fa -> ar-MSA` unless another variant is explicitly selected)
+9. Mandarin (`fa -> zh-CN` unless another variant is explicitly selected)
+10. Russian (`fa -> ru-RU`)
 
-### 2. German (fa -> de-DE)
+The active language is the first language in this priority sequence whose requested scope has not yet passed its required completion gates. This pointer must be resolved from repository state, not from a hard-coded "current language" field.
 
-Status:
+## Language-specific design rule
 
-- Pre-A1: complete
-- A1: complete
-- A2: complete
-- B1: complete at **45 units**, including MySQL/audio validation
-- B2: **in progress**; dedicated coverage map exists in `docs/german-b2-coverage-map.md`; Batch 1 = 10 units
-- C1: after B2
-- C2: after C1
+Each language must be designed for Persian-speaking learners rather than translated mechanically from English, German, or another completed course.
 
-Execution rule for every remaining German level:
+At minimum, each language should make explicit decisions for:
 
-1. Design a language-specific coverage map before production.
-2. Do not copy the English unit count.
-3. Author in batches of at most 10 units.
-4. For each batch: content -> QA -> cumulative audit -> MySQL 9 -> paid audio -> audio SQL -> validation/commit.
-5. Near the end of the level, run a gap audit.
-6. Use a smaller final batch if that is all the level needs.
-7. Close the level with a capstone only after the coverage audit is green.
+- script/orthography onboarding,
+- pronunciation and Persian-speaker sound difficulties,
+- formality/register,
+- morphology and grammar sequencing,
+- high-frequency real-world communication,
+- listening/speaking progression,
+- reading/writing progression,
+- communication repair,
+- culturally natural examples,
+- language-appropriate assessment and exit performance.
 
-### 3. Arabic (fa -> ar-MSA)
+## Existing-content safety rule
 
-Status: existing Pre-A1 content remains in the repository.
+Some future-priority languages may already contain production folders, older generated content, workflows, seeds, audio, or experiments. Treat those artifacts as candidates for audit, not as proof that the language or level is finished.
 
-Priority: **frozen / no further development**.
+Before continuing such a language:
 
-Do not create new Arabic levels, units, audio or curriculum expansion unless the product owner explicitly reactivates Arabic later. Existing Arabic data should be preserved, not deleted.
+- inventory what already exists,
+- identify which artifacts are current versus legacy,
+- validate quality against the present standards,
+- preserve good work,
+- replace only what fails current requirements,
+- regenerate dependent audio/database artifacts when source content changes.
 
-### 4. Turkish (fa -> tr-TR)
-
-Priority: **next new language immediately after German is complete through C2**.
-
-Do not start French, Spanish, Italian, Portuguese or additional Arabic work before Turkish unless the product owner changes the priority.
-
-Turkish must be designed as a language-specific Persian-speaker course, not as a translation of English or German.
-
-Initial Turkish design requirements:
-
-- Target language: `tr`
-- Target variant: `tr-TR`
-- Learner language: `fa`
-- Learner variant: `fa-IR`
-- Planned course slug: `fa-tr-tr`
-- Start with a dedicated foundation/Pre-A1 decision based on actual learner needs rather than forcing the German/English shape.
-- Explicitly cover Turkish orthography and sound mappings important for Persian speakers: `ı/i`, `o/ö`, `u/ü`, `ç`, `ş`, `ğ`, `c/j`.
-- Build grammar progression around Turkish structure: agglutination, vowel harmony, personal endings, case suffixes, possession, negation/questions, tense/aspect/evidential forms, participles and clause linking.
-- Teach suffix chains incrementally rather than presenting long forms as unanalyzed vocabulary.
-- Keep conversational usefulness primary; grammar exists to support real interactions.
-- Character rotation and audio voice-lock rules remain the same product-wide.
-- Determine each Turkish CEFR level length through coverage, not copied unit totals.
-
-## German B1 closure decision
-
-The first 40 German B1 units already covered the major everyday domains: narrative, opinions, disagreement, work/study, practical problem solving, health, travel, media/technology, community, housing, applications, workplace communication, learning, environment, complaints, money, relationships, culture, public services, transport disruption, news, volunteering, nutrition, family responsibility, projects, unexpected situations, future change, moving, repairs, contracts, privacy, feedback/teamwork, exam stress, hosting, city services, doctor follow-up and goals/priorities.
-
-The gap audit identified five remaining coverage needs:
-
-41. `Erklären & Präsentieren` — structured explanations and short presentations
-42. `Zusammenfassen & Weitergeben` — summarizing and relaying practical information
-43. `Nachrichten & E-Mails` — practical connected writing with appropriate tone
-44. `Hinweise & Anleitungen` — understanding and explaining notices/instructions
-45. `B1 Alltag: Alles zusammen` — integrated multi-step B1 capstone
-
-Therefore German B1 closed at **45 units**. No units 46-50 should be created unless a later QA audit finds a concrete missing B1 capability.
-
-## German B2 start decision
-
-B2 starts from a fresh language-specific coverage map rather than extending the B1 topic list mechanically. Batch 1 establishes the B2 discourse layer with argument/evidence, nuanced agreement and disagreement, presentations and analytical follow-up questions, negotiation, meetings and decisions, formal escalation, source comparison, media uncertainty, data/trend interpretation and social-issue discussion.
-
-The final B2 unit count remains intentionally **undecided** until later coverage audits.
+This rule is especially important when beginning the next language: audit first, then build from the validated state rather than blindly starting from zero or blindly trusting old output.
