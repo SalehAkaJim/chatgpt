@@ -29,6 +29,11 @@ REPAIRS = {
         ('Müze kapalı olursa sahile gidebiliriz.', 'Müze bugün kapalı. Bu yüzden sahile gidebiliriz.'),
         ('Başka bir oda varsa değiştirebilir miyiz?', 'Başka bir oda rica ediyorum. Odayı değiştirebilir miyiz?'),
     ],
+    ROOT / "content/specs/tr/A2/batch-06.json": [
+        ('Şeker istemezsen şekersiz çay da var.', 'Şekersiz çay da var.'),
+        ('Biraz geç kalacağım diye kısa bir mesaj yazdım.', 'Biraz geç kalacağım. Kısa bir mesaj yazdım.'),
+        ('"send_simple_message",["mesaj"],3', '"state_delay_and_message",["mesaj"],3'),
+    ],
 }
 
 
