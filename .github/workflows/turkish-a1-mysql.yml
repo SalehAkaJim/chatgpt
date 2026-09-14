@@ -51,7 +51,7 @@ jobs:
       - name: Validate and dry-run cumulative Turkish A1
         run: |
           set -euo pipefail
-          test "$(find content/production/tr/A1 -maxdepth 1 -name '*.json' | wc -l)" -eq 20
+          test "$(find content/production/tr/A1 -maxdepth 1 -name '*.json' | wc -l)" -eq 30
           for f in content/production/tr/A1/*.json; do python scripts/validate_content.py "$f"; done
           python database/import/tr/a1.py --dry-run
       - name: Import Turkish Pre-A1 and cumulative A1
@@ -70,14 +70,14 @@ jobs:
           dialogues=$(q "SELECT COUNT(DISTINCT li.dialogue_id) FROM lesson_items li JOIN lessons le ON le.id=li.lesson_id JOIN courses c ON c.id=le.course_id JOIN cefr_levels lvl ON lvl.id=le.cefr_level_id WHERE c.slug='fa-tr-tr' AND lvl.code='A1' AND li.dialogue_id IS NOT NULL;")
           exercises=$(q "SELECT COUNT(*) FROM exercises e JOIN lessons le ON le.id=e.lesson_id JOIN courses c ON c.id=le.course_id JOIN cefr_levels lvl ON lvl.id=le.cefr_level_id WHERE c.slug='fa-tr-tr' AND lvl.code='A1';")
           echo "units=$units lessons=$lessons concepts=$concepts lexemes=$lexemes utterances=$utterances dialogues=$dialogues exercises=$exercises"
-          test "$units" = 20
-          test "$lessons" = 40
-          test "$concepts" = 120
-          test "$utterances" = 80
-          test "$dialogues" = 40
-          test "$exercises" = 200
-          test "$lexemes" -ge 100
-          test "$lexemes" -le 120
+          test "$units" = 30
+          test "$lessons" = 60
+          test "$concepts" = 180
+          test "$utterances" = 120
+          test "$dialogues" = 60
+          test "$exercises" = 300
+          test "$lexemes" -ge 145
+          test "$lexemes" -le 180
       - name: Verify A1 cumulative idempotency
         run: |
           set -euo pipefail
