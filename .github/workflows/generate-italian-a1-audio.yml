@@ -47,19 +47,22 @@ jobs:
           python scripts/audit_audio_voice_consistency.py audio/manifests/it/A1.json --lock-file audio/voices/it-IT.lock.json
       - name: Export database relative-path SQL
         run: python scripts/export_audio_sql.py audio/manifests/it/A1.json --status validated --output database/import/it/a1_audio.sql
-      - name: Verify expected audio categories
+      - name: Verify expected audio categories and files
         run: |
           python - <<'PY'
           import json
           from pathlib import Path
           d=json.loads(Path('audio/manifests/it/A1.json').read_text()); counts={}
           for x in d['items']: counts[x['category']]=counts.get(x['category'],0)+1
-          expected={'dialogues':80,'lexical':60,'utterances':40}
+          # 80 authored dialogue turns collapse to 79 audio assets because Luca says
+          # the identical "Perfetto." twice with the same locked character voice.
+          expected={'dialogues':79,'lexical':60,'utterances':40}
           if counts!=expected: raise SystemExit(f'Unexpected category counts: expected={expected}, actual={counts}')
-          if len(d['items'])!=180: raise SystemExit(f'Expected 180 manifest items, found {len(d["items"])}')
-          roots=[Path(x['output_path']) for x in d['items']]
+          if len(d['items'])!=179: raise SystemExit(f'Expected 179 deduplicated manifest items, found {len(d["items"])}')
+          roots=[Path(x['relative_path']) for x in d['items']]
           missing=[str(p) for p in roots if not p.exists()]
           if missing: raise SystemExit(f'Missing generated files: {len(missing)}')
+          if len(set(map(str,roots))) != 179: raise SystemExit('Manifest relative paths are not unique')
           print(json.dumps({'items':len(d['items']),'categories':counts,'files':len(roots)},ensure_ascii=False))
           PY
       - name: Commit generated Italian A1 audio and DB link files
