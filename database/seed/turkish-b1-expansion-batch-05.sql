@@ -1,0 +1,10 @@
+-- Istanbul Turkish B1 expansion batch 5: course enrollment, payment resolution, social pragmatics, local-trip recommendation.
+INSERT IGNORE INTO curriculum_units (course_id,target_language_id,cefr_level_id,skill_id,topic_id,slug,title,learning_objective,sort_order,expected_lessons,status,metadata)
+SELECT c.id,c.target_language_id,lvl.id,s.id,t.id,u.slug,u.title,u.objective,u.sort_order,3,'approved',JSON_OBJECT('language_specific',TRUE,'target_variant','tr-TR','batch',5,'grammar_focus',u.grammar_focus,'third_lesson','independent-production-mediation')
+FROM (
+ SELECT 530 sort_order,'work-study' skill_slug,'school-study' topic_slug,'b1-tr-course-enrollment-change' slug,'Kurs kaydındaki değişikliği çözmek' title,'Explain a course-enrollment problem, relay staff instructions and negotiate a realistic schedule change.' objective,'reported instructions, reasons, polite requests and realistic conditions' grammar_focus
+ UNION ALL SELECT 540,'shopping-money','shopping','b1-tr-payment-problem-resolution','Ödeme sorununu açıklayıp takip etmek','Give a clear account of a routine payment problem, relay support information and agree on a practical follow-up.','short problem narrative, reported information, sequencing and realistic follow-up'
+ UNION ALL SELECT 550,'communication','simple-messages','b1-tr-invitation-and-polite-alternative','Davete uygun şekilde cevap verip alternatif önermek','Respond to an invitation politely, explain a concrete reason, manage social tone and suggest a realistic alternative.','polite refusal, reasons, softening, alternative plans and realistic conditions'
+ UNION ALL SELECT 560,'travel-transport','places-town','b1-tr-local-trip-recommendation','Kısa bir geziyi anlatıp öneri vermek','Give a short connected account of a local trip, explain a supported preference and make practical recommendations.','connected past narration, reasons, comparison and practical recommendation'
+) u
+JOIN courses c ON c.slug='fa-tr-tr' JOIN cefr_levels lvl ON lvl.code='B1' JOIN skills s ON s.slug=u.skill_slug JOIN topics t ON t.slug=u.topic_slug AND t.skill_id=s.id;
