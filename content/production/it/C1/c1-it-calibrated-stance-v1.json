@@ -1,0 +1,880 @@
+{
+  "batch_id": "it-it-c1-calibrated-stance-v1",
+  "course": "fa-it-it",
+  "learner_language": "fa",
+  "learner_variant": "fa-IR",
+  "target_language": "it",
+  "target_variant": "it-IT",
+  "cefr": "C1",
+  "curriculum_unit": "c1-it-calibrated-stance",
+  "generator": "gpt-5.6-sol:italian-c1-batch-v1",
+  "items": [
+    {
+      "kind": "concept",
+      "external_id": "c_calibrated_stance_01",
+      "data": {
+        "slug": "it_c1_calibrated_stance_sfumatura",
+        "lesson_key": "c1-it-calibrated-stance-01",
+        "concept_type": "lexical",
+        "part_of_speech": "noun",
+        "forms": {
+          "it": "sfumatura"
+        },
+        "translations": {
+          "fa": "ظرافت معنایی"
+        },
+        "cefr": "C1",
+        "topic": "likes-dislikes",
+        "tags": [
+          "core",
+          "c1",
+          "high_frequency"
+        ],
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_calibrated_stance_01",
+      "data": {
+        "lesson_key": "c1-it-calibrated-stance-01",
+        "lemma": "sfumatura",
+        "display_lemma": "sfumatura",
+        "language": "it",
+        "language_variant": "it-IT",
+        "part_of_speech": "noun",
+        "concept_refs": [
+          "it_c1_calibrated_stance_sfumatura"
+        ],
+        "cefr": "C1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_calibrated_stance_01",
+      "data": {
+        "lesson_key": "c1-it-calibrated-stance-01",
+        "lexeme_ref": "lx_calibrated_stance_01",
+        "surface_form": "sfumatura",
+        "display_form": "sfumatura",
+        "grammatical_features": {},
+        "is_lemma": true,
+        "is_preferred": true,
+        "cefr": "C1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_calibrated_stance_02",
+      "data": {
+        "slug": "it_c1_calibrated_stance_cauto",
+        "lesson_key": "c1-it-calibrated-stance-01",
+        "concept_type": "lexical",
+        "part_of_speech": "adjective",
+        "forms": {
+          "it": "cauto"
+        },
+        "translations": {
+          "fa": "محتاط"
+        },
+        "cefr": "C1",
+        "topic": "likes-dislikes",
+        "tags": [
+          "core",
+          "c1",
+          "high_frequency"
+        ],
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_calibrated_stance_02",
+      "data": {
+        "lesson_key": "c1-it-calibrated-stance-01",
+        "lemma": "cauto",
+        "display_lemma": "cauto",
+        "language": "it",
+        "language_variant": "it-IT",
+        "part_of_speech": "adjective",
+        "concept_refs": [
+          "it_c1_calibrated_stance_cauto"
+        ],
+        "cefr": "C1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_calibrated_stance_02",
+      "data": {
+        "lesson_key": "c1-it-calibrated-stance-01",
+        "lexeme_ref": "lx_calibrated_stance_02",
+        "surface_form": "cauto",
+        "display_form": "cauto",
+        "grammatical_features": {},
+        "is_lemma": true,
+        "is_preferred": true,
+        "cefr": "C1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_calibrated_stance_03",
+      "data": {
+        "slug": "it_c1_calibrated_stance_asserire",
+        "lesson_key": "c1-it-calibrated-stance-01",
+        "concept_type": "lexical",
+        "part_of_speech": "verb",
+        "forms": {
+          "it": "asserire"
+        },
+        "translations": {
+          "fa": "با قطعیت بیان کردن"
+        },
+        "cefr": "C1",
+        "topic": "likes-dislikes",
+        "tags": [
+          "core",
+          "c1",
+          "high_frequency"
+        ],
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_calibrated_stance_03",
+      "data": {
+        "lesson_key": "c1-it-calibrated-stance-01",
+        "lemma": "asserire",
+        "display_lemma": "asserire",
+        "language": "it",
+        "language_variant": "it-IT",
+        "part_of_speech": "verb",
+        "concept_refs": [
+          "it_c1_calibrated_stance_asserire"
+        ],
+        "cefr": "C1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_calibrated_stance_03",
+      "data": {
+        "lesson_key": "c1-it-calibrated-stance-01",
+        "lexeme_ref": "lx_calibrated_stance_03",
+        "surface_form": "asserire",
+        "display_form": "asserire",
+        "grammatical_features": {},
+        "is_lemma": true,
+        "is_preferred": true,
+        "cefr": "C1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_calibrated_stance_04",
+      "data": {
+        "slug": "it_c1_calibrated_stance_ridimensionare",
+        "lesson_key": "c1-it-calibrated-stance-02",
+        "concept_type": "lexical",
+        "part_of_speech": "verb",
+        "forms": {
+          "it": "ridimensionare"
+        },
+        "translations": {
+          "fa": "تعدیل کردن / کوچک‌تر جلوه دادن"
+        },
+        "cefr": "C1",
+        "topic": "likes-dislikes",
+        "tags": [
+          "core",
+          "c1",
+          "high_frequency"
+        ],
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_calibrated_stance_04",
+      "data": {
+        "lesson_key": "c1-it-calibrated-stance-02",
+        "lemma": "ridimensionare",
+        "display_lemma": "ridimensionare",
+        "language": "it",
+        "language_variant": "it-IT",
+        "part_of_speech": "verb",
+        "concept_refs": [
+          "it_c1_calibrated_stance_ridimensionare"
+        ],
+        "cefr": "C1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_calibrated_stance_04",
+      "data": {
+        "lesson_key": "c1-it-calibrated-stance-02",
+        "lexeme_ref": "lx_calibrated_stance_04",
+        "surface_form": "ridimensionare",
+        "display_form": "ridimensionare",
+        "grammatical_features": {},
+        "is_lemma": true,
+        "is_preferred": true,
+        "cefr": "C1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_calibrated_stance_05",
+      "data": {
+        "slug": "it_c1_calibrated_stance_plausibile",
+        "lesson_key": "c1-it-calibrated-stance-02",
+        "concept_type": "lexical",
+        "part_of_speech": "adjective",
+        "forms": {
+          "it": "plausibile"
+        },
+        "translations": {
+          "fa": "قابل قبول / محتمل"
+        },
+        "cefr": "C1",
+        "topic": "likes-dislikes",
+        "tags": [
+          "core",
+          "c1",
+          "high_frequency"
+        ],
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_calibrated_stance_05",
+      "data": {
+        "lesson_key": "c1-it-calibrated-stance-02",
+        "lemma": "plausibile",
+        "display_lemma": "plausibile",
+        "language": "it",
+        "language_variant": "it-IT",
+        "part_of_speech": "adjective",
+        "concept_refs": [
+          "it_c1_calibrated_stance_plausibile"
+        ],
+        "cefr": "C1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_calibrated_stance_05",
+      "data": {
+        "lesson_key": "c1-it-calibrated-stance-02",
+        "lexeme_ref": "lx_calibrated_stance_05",
+        "surface_form": "plausibile",
+        "display_form": "plausibile",
+        "grammatical_features": {},
+        "is_lemma": true,
+        "is_preferred": true,
+        "cefr": "C1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_calibrated_stance_06",
+      "data": {
+        "slug": "it_c1_calibrated_stance_riserva",
+        "lesson_key": "c1-it-calibrated-stance-02",
+        "concept_type": "lexical",
+        "part_of_speech": "noun",
+        "forms": {
+          "it": "riserva"
+        },
+        "translations": {
+          "fa": "ملاحظه / تردید"
+        },
+        "cefr": "C1",
+        "topic": "likes-dislikes",
+        "tags": [
+          "core",
+          "c1",
+          "high_frequency"
+        ],
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_calibrated_stance_06",
+      "data": {
+        "lesson_key": "c1-it-calibrated-stance-02",
+        "lemma": "riserva",
+        "display_lemma": "riserva",
+        "language": "it",
+        "language_variant": "it-IT",
+        "part_of_speech": "noun",
+        "concept_refs": [
+          "it_c1_calibrated_stance_riserva"
+        ],
+        "cefr": "C1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_calibrated_stance_06",
+      "data": {
+        "lesson_key": "c1-it-calibrated-stance-02",
+        "lexeme_ref": "lx_calibrated_stance_06",
+        "surface_form": "riserva",
+        "display_form": "riserva",
+        "grammatical_features": {},
+        "is_lemma": true,
+        "is_preferred": true,
+        "cefr": "C1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_calibrated_stance_01",
+      "data": {
+        "lesson_key": "c1-it-calibrated-stance-01",
+        "text": {
+          "it": "Per quanto ne so, l'ipotesi è plausibile, ma va formulata con cautela."
+        },
+        "translations": {
+          "fa": "تا جایی که می‌دانم، این فرض قابل قبول است، اما باید با احتیاط بیان شود."
+        },
+        "intent": "calibrate_stance",
+        "concept_refs": [
+          "it_c1_calibrated_stance_plausibile",
+          "it_c1_calibrated_stance_cauto"
+        ],
+        "cefr": "C1",
+        "topic": "likes-dislikes",
+        "register": "neutral",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_calibrated_stance_02",
+      "data": {
+        "lesson_key": "c1-it-calibrated-stance-01",
+        "text": {
+          "it": "Non asserirei che il problema sia risolto: restano diverse riserve."
+        },
+        "translations": {
+          "fa": "نمی‌گویم مشکل حل شده؛ هنوز چند ملاحظه جدی باقی مانده است."
+        },
+        "intent": "limit_assertion",
+        "concept_refs": [
+          "it_c1_calibrated_stance_asserire",
+          "it_c1_calibrated_stance_riserva"
+        ],
+        "cefr": "C1",
+        "topic": "likes-dislikes",
+        "register": "neutral",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_calibrated_stance_03",
+      "data": {
+        "lesson_key": "c1-it-calibrated-stance-02",
+        "text": {
+          "it": "Questa precisazione ridimensiona la conclusione senza smentirla."
+        },
+        "translations": {
+          "fa": "این توضیح نتیجه را تعدیل می‌کند بدون اینکه آن را رد کند."
+        },
+        "intent": "qualify_claim",
+        "concept_refs": [
+          "it_c1_calibrated_stance_ridimensionare"
+        ],
+        "cefr": "C1",
+        "topic": "likes-dislikes",
+        "register": "neutral",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_calibrated_stance_04",
+      "data": {
+        "lesson_key": "c1-it-calibrated-stance-02",
+        "text": {
+          "it": "La sfumatura è importante perché cambia il grado di certezza."
+        },
+        "translations": {
+          "fa": "این ظرافت مهم است چون درجه قطعیت را تغییر می‌دهد."
+        },
+        "intent": "explain_nuance",
+        "concept_refs": [
+          "it_c1_calibrated_stance_sfumatura"
+        ],
+        "cefr": "C1",
+        "topic": "likes-dislikes",
+        "register": "neutral",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "grammar_point",
+      "external_id": "g_calibrated_stance_core",
+      "data": {
+        "lesson_key": "c1-it-calibrated-stance-01",
+        "slug": "c1-it-calibrated-stance-grammar",
+        "title": "Modulazione epistemica e congiuntivo nelle prese di posizione complesse",
+        "rule_summary": "At C1, combine lexical hedging, discourse framing and mood choice to calibrate commitment precisely.",
+        "explanation": {
+          "fa": "در C1 فقط درست بودن جمله کافی نیست؛ باید میزان تعهد به ادعا را دقیق تنظیم کنیم. ساخت‌هایی مثل per quanto ne so، non direi che و è plausibile che با انتخاب واژگان و congiuntivo درجه قطعیت را مشخص می‌کنند."
+        },
+        "examples": [
+          {
+            "it": "Non direi che sia impossibile.",
+            "fa": "نمی‌گویم ناممکن باشد."
+          },
+          {
+            "it": "È plausibile che i dati siano incompleti.",
+            "fa": "محتمل است داده‌ها ناقص باشند."
+          }
+        ],
+        "cefr": "C1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "dialogue",
+      "external_id": "d_calibrated_stance_01",
+      "data": {
+        "lesson_key": "c1-it-calibrated-stance-01",
+        "title": "Una conclusione troppo netta",
+        "setting": "item",
+        "cefr": "C1",
+        "topic": "likes-dislikes",
+        "characters": [
+          "giulia",
+          "marco"
+        ],
+        "turns": [
+          {
+            "order": 1,
+            "speaker": "giulia",
+            "text": "Possiamo dire che la riforma abbia già funzionato?",
+            "translation_fa": "می‌توانیم بگوییم اصلاحات همین حالا موفق شده؟"
+          },
+          {
+            "order": 2,
+            "speaker": "marco",
+            "text": "Lo formulerei con più cautela: alcuni indicatori sono positivi, ma il quadro resta incompleto.",
+            "translation_fa": "با احتیاط بیشتری بیانش می‌کردم؛ بعضی شاخص‌ها مثبت‌اند، اما تصویر هنوز کامل نیست."
+          },
+          {
+            "order": 3,
+            "speaker": "giulia",
+            "text": "Quindi non contesti i dati, ma la conclusione.",
+            "translation_fa": "پس داده‌ها را رد نمی‌کنی، بلکه نتیجه‌گیری را زیر سؤال می‌بری."
+          },
+          {
+            "order": 4,
+            "speaker": "marco",
+            "text": "Esatto: la ridimensionerei, non la smentirei.",
+            "translation_fa": "دقیقاً؛ آن را تعدیل می‌کردم، نه رد."
+          }
+        ],
+        "qa": {
+          "character_pair_unique_within_unit": true,
+          "naturalness": "passed",
+          "single_situation": true
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "dialogue",
+      "external_id": "d_calibrated_stance_02",
+      "data": {
+        "lesson_key": "c1-it-calibrated-stance-02",
+        "title": "Con una riserva",
+        "setting": "item",
+        "cefr": "C1",
+        "topic": "likes-dislikes",
+        "characters": [
+          "sofia",
+          "luca"
+        ],
+        "turns": [
+          {
+            "order": 1,
+            "speaker": "sofia",
+            "text": "Nel complesso la proposta ti convince?",
+            "translation_fa": "در مجموع پیشنهاد قانعت می‌کند؟"
+          },
+          {
+            "order": 2,
+            "speaker": "luca",
+            "text": "Sì, con una riserva: non è chiaro chi sosterrà i costi nel lungo periodo.",
+            "translation_fa": "بله، با یک ملاحظه؛ روشن نیست در بلندمدت چه کسی هزینه‌ها را می‌دهد."
+          },
+          {
+            "order": 3,
+            "speaker": "sofia",
+            "text": "È una sfumatura importante.",
+            "translation_fa": "این نکته ظریفی و مهمی است."
+          },
+          {
+            "order": 4,
+            "speaker": "luca",
+            "text": "Soprattutto perché cambia la valutazione finale.",
+            "translation_fa": "به‌خصوص چون ارزیابی نهایی را عوض می‌کند."
+          }
+        ],
+        "qa": {
+          "character_pair_unique_within_unit": true,
+          "naturalness": "passed",
+          "single_situation": true
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_calibrated_stance_01_meaning",
+      "data": {
+        "lesson_key": "c1-it-calibrated-stance-01",
+        "exercise_type": "multiple_choice",
+        "prompt": {
+          "instruction_fa": "معنی درست این عبارت ایتالیایی را انتخاب کن.",
+          "value": "Per quanto ne so, l'ipotesi è plausibile, ma va formulata con cautela."
+        },
+        "answer": {
+          "value": "تا جایی که می‌دانم، این فرض قابل قبول است، اما باید با احتیاط بیان شود."
+        },
+        "options": [
+          "تا جایی که می‌دانم، این فرض قابل قبول است، اما باید با احتیاط بیان شود.",
+          "نمی‌گویم مشکل حل شده؛ هنوز چند ملاحظه جدی باقی مانده است.",
+          "این توضیح نتیجه را تعدیل می‌کند بدون اینکه آن را رد کند.",
+          "این ظرافت مهم است چون درجه قطعیت را تغییر می‌دهد."
+        ],
+        "difficulty": 5,
+        "cefr": "C1",
+        "topic": "likes-dislikes",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت و شکل دقیق عبارت ایتالیایی دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: Per quanto ne so, l'ipotesi è plausibile, ma va formulata con cautela. — تا جایی که می‌دانم، این فرض قابل قبول است، اما باید با احتیاط بیان شود.",
+          "model_answer": "Per quanto ne so, l'ipotesi è plausibile, ma va formulata con cautela."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_calibrated_stance_01_listen",
+      "data": {
+        "lesson_key": "c1-it-calibrated-stance-01",
+        "exercise_type": "listening",
+        "prompt": {
+          "instruction_fa": "گوش کن و عبارتی را که شنیدی انتخاب کن.",
+          "audio_text": "Non asserirei che il problema sia risolto: restano diverse riserve."
+        },
+        "answer": {
+          "value": "Non asserirei che il problema sia risolto: restano diverse riserve."
+        },
+        "options": [
+          "Non asserirei che il problema sia risolto: restano diverse riserve.",
+          "Per quanto ne so, l'ipotesi è plausibile, ma va formulata con cautela.",
+          "Questa precisazione ridimensiona la conclusione senza smentirla.",
+          "La sfumatura è importante perché cambia il grado di certezza."
+        ],
+        "difficulty": 5,
+        "cefr": "C1",
+        "topic": "likes-dislikes",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت و شکل دقیق عبارت ایتالیایی دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: Non asserirei che il problema sia risolto: restano diverse riserve. — نمی‌گویم مشکل حل شده؛ هنوز چند ملاحظه جدی باقی مانده است.",
+          "model_answer": "Non asserirei che il problema sia risolto: restano diverse riserve.",
+          "transcript_it": "Non asserirei che il problema sia risolto: restano diverse riserve."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_calibrated_stance_01_speak",
+      "data": {
+        "lesson_key": "c1-it-calibrated-stance-01",
+        "exercise_type": "speaking",
+        "prompt": {
+          "instruction_fa": "عبارت را با صدای بلند و با ریتم طبیعی تکرار کن.",
+          "value": "Per quanto ne so, l'ipotesi è plausibile, ma va formulata con cautela."
+        },
+        "answer": {
+          "expected_text": "Per quanto ne so, l'ipotesi è plausibile, ma va formulata con cautela."
+        },
+        "difficulty": 5,
+        "cefr": "C1",
+        "topic": "likes-dislikes",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت و شکل دقیق عبارت ایتالیایی دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: Per quanto ne so, l'ipotesi è plausibile, ma va formulata con cautela. — تا جایی که می‌دانم، این فرض قابل قبول است، اما باید با احتیاط بیان شود.",
+          "model_answer": "Per quanto ne so, l'ipotesi è plausibile, ma va formulata con cautela."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_calibrated_stance_01_build",
+      "data": {
+        "lesson_key": "c1-it-calibrated-stance-01",
+        "exercise_type": "sentence_building",
+        "prompt": {
+          "instruction_fa": "کلمه‌ها را لمس کن تا عبارت درست ساخته شود.",
+          "tokens": [
+            "asserirei",
+            "che",
+            "il",
+            "problema",
+            "sia",
+            "risolto:",
+            "restano",
+            "diverse",
+            "riserve.",
+            "Non"
+          ]
+        },
+        "answer": {
+          "tokens": [
+            "Non",
+            "asserirei",
+            "che",
+            "il",
+            "problema",
+            "sia",
+            "risolto:",
+            "restano",
+            "diverse",
+            "riserve."
+          ],
+          "value": "Non asserirei che il problema sia risolto: restano diverse riserve."
+        },
+        "difficulty": 5,
+        "cefr": "C1",
+        "topic": "likes-dislikes",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت و شکل دقیق عبارت ایتالیایی دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: Non asserirei che il problema sia risolto: restano diverse riserve. — نمی‌گویم مشکل حل شده؛ هنوز چند ملاحظه جدی باقی مانده است.",
+          "model_answer": "Non asserirei che il problema sia risolto: restano diverse riserve."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_calibrated_stance_01_dialogue",
+      "data": {
+        "lesson_key": "c1-it-calibrated-stance-01",
+        "exercise_type": "dialogue_comprehension",
+        "prompt": {
+          "instruction_fa": "با توجه به گفت‌وگو، پاسخ مناسب را انتخاب کن.",
+          "source_dialogue_ref": "d_calibrated_stance_01",
+          "question_fa": "کدام گزینه با معنی «تا جایی که می‌دانم، این فرض قابل قبول است، اما باید با احتیاط بیان شود.» هماهنگ است؟"
+        },
+        "answer": {
+          "value": "Per quanto ne so, l'ipotesi è plausibile, ma va formulata con cautela."
+        },
+        "options": [
+          "Per quanto ne so, l'ipotesi è plausibile, ma va formulata con cautela.",
+          "Non asserirei che il problema sia risolto: restano diverse riserve.",
+          "Questa precisazione ridimensiona la conclusione senza smentirla.",
+          "La sfumatura è importante perché cambia il grado di certezza."
+        ],
+        "difficulty": 5,
+        "cefr": "C1",
+        "topic": "likes-dislikes",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت و شکل دقیق عبارت ایتالیایی دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: Per quanto ne so, l'ipotesi è plausibile, ma va formulata con cautela. — تا جایی که می‌دانم، این فرض قابل قبول است، اما باید با احتیاط بیان شود.",
+          "model_answer": "Per quanto ne so, l'ipotesi è plausibile, ma va formulata con cautela."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_calibrated_stance_02_meaning",
+      "data": {
+        "lesson_key": "c1-it-calibrated-stance-02",
+        "exercise_type": "multiple_choice",
+        "prompt": {
+          "instruction_fa": "معنی درست این عبارت ایتالیایی را انتخاب کن.",
+          "value": "Questa precisazione ridimensiona la conclusione senza smentirla."
+        },
+        "answer": {
+          "value": "این توضیح نتیجه را تعدیل می‌کند بدون اینکه آن را رد کند."
+        },
+        "options": [
+          "این توضیح نتیجه را تعدیل می‌کند بدون اینکه آن را رد کند.",
+          "تا جایی که می‌دانم، این فرض قابل قبول است، اما باید با احتیاط بیان شود.",
+          "نمی‌گویم مشکل حل شده؛ هنوز چند ملاحظه جدی باقی مانده است.",
+          "این ظرافت مهم است چون درجه قطعیت را تغییر می‌دهد."
+        ],
+        "difficulty": 5,
+        "cefr": "C1",
+        "topic": "likes-dislikes",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت و شکل دقیق عبارت ایتالیایی دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: Questa precisazione ridimensiona la conclusione senza smentirla. — این توضیح نتیجه را تعدیل می‌کند بدون اینکه آن را رد کند.",
+          "model_answer": "Questa precisazione ridimensiona la conclusione senza smentirla."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_calibrated_stance_02_listen",
+      "data": {
+        "lesson_key": "c1-it-calibrated-stance-02",
+        "exercise_type": "listening",
+        "prompt": {
+          "instruction_fa": "گوش کن و عبارتی را که شنیدی انتخاب کن.",
+          "audio_text": "La sfumatura è importante perché cambia il grado di certezza."
+        },
+        "answer": {
+          "value": "La sfumatura è importante perché cambia il grado di certezza."
+        },
+        "options": [
+          "La sfumatura è importante perché cambia il grado di certezza.",
+          "Questa precisazione ridimensiona la conclusione senza smentirla.",
+          "Per quanto ne so, l'ipotesi è plausibile, ma va formulata con cautela.",
+          "Non asserirei che il problema sia risolto: restano diverse riserve."
+        ],
+        "difficulty": 5,
+        "cefr": "C1",
+        "topic": "likes-dislikes",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت و شکل دقیق عبارت ایتالیایی دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: La sfumatura è importante perché cambia il grado di certezza. — این ظرافت مهم است چون درجه قطعیت را تغییر می‌دهد.",
+          "model_answer": "La sfumatura è importante perché cambia il grado di certezza.",
+          "transcript_it": "La sfumatura è importante perché cambia il grado di certezza."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_calibrated_stance_02_speak",
+      "data": {
+        "lesson_key": "c1-it-calibrated-stance-02",
+        "exercise_type": "speaking",
+        "prompt": {
+          "instruction_fa": "عبارت را با صدای بلند و با ریتم طبیعی تکرار کن.",
+          "value": "Questa precisazione ridimensiona la conclusione senza smentirla."
+        },
+        "answer": {
+          "expected_text": "Questa precisazione ridimensiona la conclusione senza smentirla."
+        },
+        "difficulty": 5,
+        "cefr": "C1",
+        "topic": "likes-dislikes",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت و شکل دقیق عبارت ایتالیایی دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: Questa precisazione ridimensiona la conclusione senza smentirla. — این توضیح نتیجه را تعدیل می‌کند بدون اینکه آن را رد کند.",
+          "model_answer": "Questa precisazione ridimensiona la conclusione senza smentirla."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_calibrated_stance_02_build",
+      "data": {
+        "lesson_key": "c1-it-calibrated-stance-02",
+        "exercise_type": "sentence_building",
+        "prompt": {
+          "instruction_fa": "کلمه‌ها را لمس کن تا عبارت درست ساخته شود.",
+          "tokens": [
+            "sfumatura",
+            "è",
+            "importante",
+            "perché",
+            "cambia",
+            "il",
+            "grado",
+            "di",
+            "certezza.",
+            "La"
+          ]
+        },
+        "answer": {
+          "tokens": [
+            "La",
+            "sfumatura",
+            "è",
+            "importante",
+            "perché",
+            "cambia",
+            "il",
+            "grado",
+            "di",
+            "certezza."
+          ],
+          "value": "La sfumatura è importante perché cambia il grado di certezza."
+        },
+        "difficulty": 5,
+        "cefr": "C1",
+        "topic": "likes-dislikes",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت و شکل دقیق عبارت ایتالیایی دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: La sfumatura è importante perché cambia il grado di certezza. — این ظرافت مهم است چون درجه قطعیت را تغییر می‌دهد.",
+          "model_answer": "La sfumatura è importante perché cambia il grado di certezza."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_calibrated_stance_02_dialogue",
+      "data": {
+        "lesson_key": "c1-it-calibrated-stance-02",
+        "exercise_type": "dialogue_comprehension",
+        "prompt": {
+          "instruction_fa": "با توجه به گفت‌وگو، پاسخ مناسب را انتخاب کن.",
+          "source_dialogue_ref": "d_calibrated_stance_02",
+          "question_fa": "کدام گزینه با معنی «این توضیح نتیجه را تعدیل می‌کند بدون اینکه آن را رد کند.» هماهنگ است؟"
+        },
+        "answer": {
+          "value": "Questa precisazione ridimensiona la conclusione senza smentirla."
+        },
+        "options": [
+          "Questa precisazione ridimensiona la conclusione senza smentirla.",
+          "Per quanto ne so, l'ipotesi è plausibile, ma va formulata con cautela.",
+          "Non asserirei che il problema sia risolto: restano diverse riserve.",
+          "La sfumatura è importante perché cambia il grado di certezza."
+        ],
+        "difficulty": 5,
+        "cefr": "C1",
+        "topic": "likes-dislikes",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت و شکل دقیق عبارت ایتالیایی دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: Questa precisazione ridimensiona la conclusione senza smentirla. — این توضیح نتیجه را تعدیل می‌کند بدون اینکه آن را رد کند.",
+          "model_answer": "Questa precisazione ridimensiona la conclusione senza smentirla."
+        },
+        "status": "validated"
+      }
+    }
+  ]
+}
