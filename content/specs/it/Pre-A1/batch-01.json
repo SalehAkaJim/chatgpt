@@ -19,23 +19,162 @@
       "topic": "greetings",
       "title": "Ciao!",
       "vocab": [
-        ["ciao","ciao","سلام / خداحافظِ خودمانی","expression",1],
-        ["buongiorno","buongiorno","صبح بخیر / روز بخیر","expression",1],
-        ["buonasera","buonasera","عصر بخیر / شب بخیر هنگام سلام","expression",1],
-        ["arrivederci","arrivederci","خداحافظ","expression",2],
-        ["a_presto","a presto","به‌زودی می‌بینمت","expression",2],
-        ["piacere","piacere","خوشوقتم","expression",2]
+        [
+          "ciao",
+          "ciao",
+          "سلام / خداحافظِ خودمانی",
+          "expression",
+          1
+        ],
+        [
+          "buongiorno",
+          "buongiorno",
+          "صبح بخیر / روز بخیر",
+          "expression",
+          1
+        ],
+        [
+          "buonasera",
+          "buonasera",
+          "عصر بخیر / شب بخیر هنگام سلام",
+          "expression",
+          1
+        ],
+        [
+          "arrivederci",
+          "arrivederci",
+          "خداحافظ",
+          "expression",
+          2
+        ],
+        [
+          "a_presto",
+          "a presto",
+          "به‌زودی می‌بینمت",
+          "expression",
+          2
+        ],
+        [
+          "piacere",
+          "piacere",
+          "خوشوقتم",
+          "expression",
+          2
+        ]
       ],
       "utterances": [
-        ["u1","Ciao!","سلام!","greet_informal",["ciao"],1],
-        ["u2","Buongiorno!","روز بخیر!","greet_daytime",["buongiorno"],1],
-        ["u3","Piacere!","خوشوقتم!","pleased_to_meet",["piacere"],2],
-        ["u4","Arrivederci, a presto.","خداحافظ، به‌زودی می‌بینمتان.","farewell",["arrivederci","a_presto"],2]
+        [
+          "u1",
+          "Ciao!",
+          "سلام!",
+          "greet_informal",
+          [
+            "ciao"
+          ],
+          1
+        ],
+        [
+          "u2",
+          "Buongiorno!",
+          "روز بخیر!",
+          "greet_daytime",
+          [
+            "buongiorno"
+          ],
+          1
+        ],
+        [
+          "u3",
+          "Piacere!",
+          "خوشوقتم!",
+          "pleased_to_meet",
+          [
+            "piacere"
+          ],
+          2
+        ],
+        [
+          "u4",
+          "Arrivederci, a presto.",
+          "خداحافظ، به‌زودی می‌بینمتان.",
+          "farewell",
+          [
+            "arrivederci",
+            "a_presto"
+          ],
+          2
+        ]
       ],
-      "grammar": ["Ciao / buongiorno","Italian greetings depend on familiarity and time of day. Ciao is informal; buongiorno is a safe neutral greeting during the day.","«Ciao» برای موقعیت خودمانی است. برای شروعِ امن‌تر با فرد ناآشنا در روز، «Buongiorno» طبیعی‌تر است.",[["Ciao, Marco!","سلام مارکو!"],["Buongiorno, signora.","روز بخیر خانم."]]],
+      "grammar": [
+        "Ciao / buongiorno",
+        "Italian greetings depend on familiarity and time of day. Ciao is informal; buongiorno is a safe neutral greeting during the day.",
+        "«Ciao» برای موقعیت خودمانی است. برای شروعِ امن‌تر با فرد ناآشنا در روز، «Buongiorno» طبیعی‌تر است.",
+        [
+          [
+            "Ciao, Marco!",
+            "سلام مارکو!"
+          ],
+          [
+            "Buongiorno, signora.",
+            "روز بخیر خانم."
+          ]
+        ]
+      ],
       "dialogues": [
-        ["Un primo saluto","اولین سلام",[["Giulia","Buongiorno!","روز بخیر!"],["Marco","Buongiorno!","روز بخیر!"],["Giulia","Piacere.","خوشوقتم."],["Marco","Piacere mio.","من هم خوشوقتم."]],1],
-        ["Ci vediamo","خداحافظی",[["Sofia","Ciao, Luca.","خداحافظ لوکا."],["Luca","Ciao, Sofia.","خداحافظ سوفیا."],["Sofia","A presto!","به‌زودی می‌بینمت!"],["Luca","Sì, a presto.","بله، به‌زودی می‌بینمت."]],2]
+        [
+          "Un primo saluto",
+          "اولین سلام",
+          [
+            [
+              "Giulia",
+              "Buongiorno!",
+              "روز بخیر!"
+            ],
+            [
+              "Marco",
+              "Buongiorno!",
+              "روز بخیر!"
+            ],
+            [
+              "Giulia",
+              "Piacere.",
+              "خوشوقتم."
+            ],
+            [
+              "Marco",
+              "Piacere mio.",
+              "من هم خوشوقتم."
+            ]
+          ],
+          1
+        ],
+        [
+          "Ci vediamo",
+          "خداحافظی",
+          [
+            [
+              "Sofia",
+              "Ciao, Luca.",
+              "خداحافظ لوکا."
+            ],
+            [
+              "Luca",
+              "Ciao, Sofia.",
+              "خداحافظ سوفیا."
+            ],
+            [
+              "Sofia",
+              "A presto!",
+              "به‌زودی می‌بینمت!"
+            ],
+            [
+              "Luca",
+              "Sì, a presto.",
+              "بله، به‌زودی می‌بینمت."
+            ]
+          ],
+          2
+        ]
       ]
     },
     {
@@ -43,23 +182,162 @@
       "topic": "introductions",
       "title": "Mi chiamo…",
       "vocab": [
-        ["mi_chiamo","mi chiamo","اسمم ... است","expression",1],
-        ["come","come","چطور / چگونه","adverb",1],
-        ["ti_chiami","ti chiami","اسمت ... است / نامت ...","expression",1],
-        ["sono","sono","هستم","verb",2],
-        ["nome","nome","اسم","noun",2],
-        ["io","io","من","pronoun",2]
+        [
+          "mi_chiamo",
+          "mi chiamo",
+          "اسمم ... است",
+          "expression",
+          1
+        ],
+        [
+          "come",
+          "come",
+          "چطور / چگونه",
+          "adverb",
+          1
+        ],
+        [
+          "ti_chiami",
+          "ti chiami",
+          "اسمت ... است / نامت ...",
+          "expression",
+          1
+        ],
+        [
+          "sono",
+          "sono",
+          "هستم",
+          "verb",
+          2
+        ],
+        [
+          "nome",
+          "nome",
+          "اسم",
+          "noun",
+          2
+        ],
+        [
+          "io",
+          "io",
+          "من",
+          "pronoun",
+          2
+        ]
       ],
       "utterances": [
-        ["u1","Mi chiamo Giulia.","اسمم جولیاست.","introduce_name",["mi_chiamo"],1],
-        ["u2","Come ti chiami?","اسمت چیه؟","ask_name",["come","ti_chiami"],1],
-        ["u3","Sono Marco.","من مارکو هستم.","introduce_self",["sono"],2],
-        ["u4","Il mio nome è Luca.","اسم من لوکاست.","state_name",["nome"],2]
+        [
+          "u1",
+          "Mi chiamo Giulia.",
+          "اسمم جولیاست.",
+          "introduce_name",
+          [
+            "mi_chiamo"
+          ],
+          1
+        ],
+        [
+          "u2",
+          "Come ti chiami?",
+          "اسمت چیه؟",
+          "ask_name",
+          [
+            "come",
+            "ti_chiami"
+          ],
+          1
+        ],
+        [
+          "u3",
+          "Sono Marco.",
+          "من مارکو هستم.",
+          "introduce_self",
+          [
+            "sono"
+          ],
+          2
+        ],
+        [
+          "u4",
+          "Il mio nome è Luca.",
+          "اسم من لوکاست.",
+          "state_name",
+          [
+            "nome"
+          ],
+          2
+        ]
       ],
-      "grammar": ["Mi chiamo… / Sono…","Italian commonly uses Mi chiamo… or Sono… for a simple introduction; the subject pronoun io is normally unnecessary.","در ایتالیایی معمولاً لازم نیست «io» را بگویی؛ خود شکل فعل شخص را نشان می‌دهد. برای شروع «Mi chiamo…» و «Sono…» را الگوهای آماده یاد بگیر.",[["Mi chiamo Sofia.","اسمم سوفیاست."],["Sono Matteo.","من ماتئو هستم."]]],
+      "grammar": [
+        "Mi chiamo… / Sono…",
+        "Italian commonly uses Mi chiamo… or Sono… for a simple introduction; the subject pronoun io is normally unnecessary.",
+        "در ایتالیایی معمولاً لازم نیست «io» را بگویی؛ خود شکل فعل شخص را نشان می‌دهد. برای شروع «Mi chiamo…» و «Sono…» را الگوهای آماده یاد بگیر.",
+        [
+          [
+            "Mi chiamo Sofia.",
+            "اسمم سوفیاست."
+          ],
+          [
+            "Sono Matteo.",
+            "من ماتئو هستم."
+          ]
+        ]
+      ],
       "dialogues": [
-        ["Come ti chiami?","پرسیدن اسم",[["Chiara","Ciao! Mi chiamo Chiara.","سلام! اسمم کیاراست."],["Matteo","Ciao! Sono Matteo.","سلام! من ماتئو هستم."],["Chiara","Come ti chiami?","اسمت چیه؟"],["Matteo","Matteo.","ماتئو."]],1],
-        ["Presentarsi","معرفی کوتاه",[["Elena","Buongiorno, sono Elena.","روز بخیر، من النا هستم."],["Davide","Buongiorno, mi chiamo Davide.","روز بخیر، اسمم داویده است."],["Elena","Piacere.","خوشوقتم."],["Davide","Piacere mio.","من هم خوشوقتم."]],2]
+        [
+          "Come ti chiami?",
+          "پرسیدن اسم",
+          [
+            [
+              "Chiara",
+              "Ciao! Mi chiamo Chiara.",
+              "سلام! اسمم کیاراست."
+            ],
+            [
+              "Matteo",
+              "Ciao! Sono Matteo.",
+              "سلام! من ماتئو هستم."
+            ],
+            [
+              "Chiara",
+              "Come ti chiami?",
+              "اسمت چیه؟"
+            ],
+            [
+              "Matteo",
+              "Matteo.",
+              "ماتئو."
+            ]
+          ],
+          1
+        ],
+        [
+          "Presentarsi",
+          "معرفی کوتاه",
+          [
+            [
+              "Elena",
+              "Buongiorno, sono Elena.",
+              "روز بخیر، من النا هستم."
+            ],
+            [
+              "Davide",
+              "Buongiorno, mi chiamo Davide.",
+              "روز بخیر، اسمم داویده است."
+            ],
+            [
+              "Elena",
+              "Piacere.",
+              "خوشوقتم."
+            ],
+            [
+              "Davide",
+              "Piacere mio.",
+              "من هم خوشوقتم."
+            ]
+          ],
+          2
+        ]
       ]
     },
     {
@@ -67,23 +345,163 @@
       "topic": "numbers",
       "title": "Da zero a dieci",
       "vocab": [
-        ["zero","zero","صفر","number",1],
-        ["uno","uno","یک","number",1],
-        ["due","due","دو","number",1],
-        ["tre","tre","سه","number",2],
-        ["cinque","cinque","پنج","number",2],
-        ["dieci","dieci","ده","number",2]
+        [
+          "zero",
+          "zero",
+          "صفر",
+          "number",
+          1
+        ],
+        [
+          "uno",
+          "uno",
+          "یک",
+          "number",
+          1
+        ],
+        [
+          "due",
+          "due",
+          "دو",
+          "number",
+          1
+        ],
+        [
+          "tre",
+          "tre",
+          "سه",
+          "number",
+          2
+        ],
+        [
+          "cinque",
+          "cinque",
+          "پنج",
+          "number",
+          2
+        ],
+        [
+          "dieci",
+          "dieci",
+          "ده",
+          "number",
+          2
+        ]
       ],
       "utterances": [
-        ["u1","Zero, uno, due.","صفر، یک، دو.","count",["zero","uno","due"],1],
-        ["u2","Il numero è due.","شماره دو است.","identify_number",["due"],1],
-        ["u3","Cinque minuti.","پنج دقیقه.","say_duration",["cinque"],2],
-        ["u4","Sono le dieci.","ساعت ده است.","say_time",["dieci"],2]
+        [
+          "u1",
+          "Zero, uno, due.",
+          "صفر، یک، دو.",
+          "count",
+          [
+            "zero",
+            "uno",
+            "due"
+          ],
+          1
+        ],
+        [
+          "u2",
+          "Il numero è due.",
+          "شماره دو است.",
+          "identify_number",
+          [
+            "due"
+          ],
+          1
+        ],
+        [
+          "u3",
+          "Cinque minuti.",
+          "پنج دقیقه.",
+          "say_duration",
+          [
+            "cinque"
+          ],
+          2
+        ],
+        [
+          "u4",
+          "Sono le dieci.",
+          "ساعت ده است.",
+          "say_time",
+          [
+            "dieci"
+          ],
+          2
+        ]
       ],
-      "grammar": ["Numeri 0–10","Italian numbers are stable beginner forms. Uno can change before some nouns later, but at this stage learn the basic counting forms.","فعلاً شکل پایهٔ عددهای صفر تا ده را یاد بگیر. تغییرهای «uno» کنار بعضی اسم‌ها را بعداً مرحله‌به‌مرحله یاد می‌گیری.",[["due caffè","دو قهوه"],["cinque minuti","پنج دقیقه"]]],
+      "grammar": [
+        "Numeri 0–10",
+        "Italian numbers are stable beginner forms. Uno can change before some nouns later, but at this stage learn the basic counting forms.",
+        "فعلاً شکل پایهٔ عددهای صفر تا ده را یاد بگیر. تغییرهای «uno» کنار بعضی اسم‌ها را بعداً مرحله‌به‌مرحله یاد می‌گیری.",
+        [
+          [
+            "due caffè",
+            "دو قهوه"
+          ],
+          [
+            "cinque minuti",
+            "پنج دقیقه"
+          ]
+        ]
+      ],
       "dialogues": [
-        ["Un numero","یک شماره",[["Giulia","È il numero due?","شماره دو است؟"],["Luca","Sì, è il numero due.","بله، شماره دو است."],["Giulia","E il tre?","و شماره سه؟"],["Luca","È qui.","اینجاست."]],1],
-        ["Dieci minuti","ده دقیقه",[["Marco","Cinque minuti?","پنج دقیقه؟"],["Sofia","No, dieci minuti.","نه، ده دقیقه."],["Marco","Dieci?","ده؟"],["Sofia","Sì, dieci.","بله، ده."]],2]
+        [
+          "Un numero",
+          "یک شماره",
+          [
+            [
+              "Giulia",
+              "È il numero due?",
+              "شماره دو است؟"
+            ],
+            [
+              "Luca",
+              "Sì, è il numero due.",
+              "بله، شماره دو است."
+            ],
+            [
+              "Giulia",
+              "E il tre?",
+              "و شماره سه؟"
+            ],
+            [
+              "Luca",
+              "È qui.",
+              "اینجاست."
+            ]
+          ],
+          1
+        ],
+        [
+          "Dieci minuti",
+          "ده دقیقه",
+          [
+            [
+              "Marco",
+              "Cinque minuti?",
+              "پنج دقیقه؟"
+            ],
+            [
+              "Sofia",
+              "No, dieci minuti.",
+              "نه، ده دقیقه."
+            ],
+            [
+              "Marco",
+              "Dieci?",
+              "ده؟"
+            ],
+            [
+              "Sofia",
+              "Sì, dieci.",
+              "بله، ده."
+            ]
+          ],
+          2
+        ]
       ]
     },
     {
@@ -91,23 +509,162 @@
       "topic": "script-basics",
       "title": "L'alfabeto italiano",
       "vocab": [
-        ["a_letter","a","حرف a","letter",1],
-        ["e_letter","e","حرف e","letter",1],
-        ["i_letter","i","حرف i","letter",1],
-        ["c_letter","c","حرف c","letter",2],
-        ["g_letter","g","حرف g","letter",2],
-        ["h_letter","h","حرف h","letter",2]
+        [
+          "a_letter",
+          "a",
+          "حرف a",
+          "letter",
+          1
+        ],
+        [
+          "e_letter",
+          "e",
+          "حرف e",
+          "letter",
+          1
+        ],
+        [
+          "i_letter",
+          "i",
+          "حرف i",
+          "letter",
+          1
+        ],
+        [
+          "c_letter",
+          "c",
+          "حرف c",
+          "letter",
+          2
+        ],
+        [
+          "g_letter",
+          "g",
+          "حرف g",
+          "letter",
+          2
+        ],
+        [
+          "h_letter",
+          "h",
+          "حرف h",
+          "letter",
+          2
+        ]
       ],
       "utterances": [
-        ["u1","Questa lettera è A.","این حرف A است.","identify_letter",["a_letter"],1],
-        ["u2","E e I sono vocali.","E و I واکه‌اند.","identify_vowels",["e_letter","i_letter"],1],
-        ["u3","C cambia suono.","صدای C تغییر می‌کند.","sound_awareness",["c_letter"],2],
-        ["u4","H non ha un suono proprio.","H صدای مستقل خودش را ندارد.","silent_h",["h_letter"],2]
+        [
+          "u1",
+          "Questa lettera è A.",
+          "این حرف A است.",
+          "identify_letter",
+          [
+            "a_letter"
+          ],
+          1
+        ],
+        [
+          "u2",
+          "E e I sono vocali.",
+          "E و I واکه‌اند.",
+          "identify_vowels",
+          [
+            "e_letter",
+            "i_letter"
+          ],
+          1
+        ],
+        [
+          "u3",
+          "C cambia suono.",
+          "صدای C تغییر می‌کند.",
+          "sound_awareness",
+          [
+            "c_letter"
+          ],
+          2
+        ],
+        [
+          "u4",
+          "H non ha un suono proprio.",
+          "H صدای مستقل خودش را ندارد.",
+          "silent_h",
+          [
+            "h_letter"
+          ],
+          2
+        ]
       ],
-      "grammar": ["Lettere e suoni","Italian spelling is relatively regular. The letters c and g change before e/i, while h is often used to keep a hard sound in combinations such as che and ghi.","املای ایتالیایی نسبتاً منظم است. مهم‌ترین نکتهٔ اولیه این است که c و g قبل از e و i عوض می‌شوند و h می‌تواند صدای سخت را حفظ کند.",[["casa","خانه"],["cinema","سینما"]]],
+      "grammar": [
+        "Lettere e suoni",
+        "Italian spelling is relatively regular. The letters c and g change before e/i, while h is often used to keep a hard sound in combinations such as che and ghi.",
+        "املای ایتالیایی نسبتاً منظم است. مهم‌ترین نکتهٔ اولیه این است که c و g قبل از e و i عوض می‌شوند و h می‌تواند صدای سخت را حفظ کند.",
+        [
+          [
+            "casa",
+            "خانه"
+          ],
+          [
+            "cinema",
+            "سینما"
+          ]
+        ]
+      ],
       "dialogues": [
-        ["Una lettera","یک حرف",[["Chiara","Questa è la C?","این C است؟"],["Davide","Sì, è la C.","بله، C است."],["Chiara","E questa?","و این یکی؟"],["Davide","È la G.","G است."]],1],
-        ["Leggere piano","آهسته خواندن",[["Elena","Come si legge?","چطور خوانده می‌شود؟"],["Matteo","Piano: che.","آهسته: کِه."],["Elena","Con la H?","با H؟"],["Matteo","Sì, con la H.","بله، با H."]],2]
+        [
+          "Una lettera",
+          "یک حرف",
+          [
+            [
+              "Chiara",
+              "Questa è la C?",
+              "این C است؟"
+            ],
+            [
+              "Davide",
+              "Sì, è la C.",
+              "بله، C است."
+            ],
+            [
+              "Chiara",
+              "E questa?",
+              "و این یکی؟"
+            ],
+            [
+              "Davide",
+              "È la G.",
+              "G است."
+            ]
+          ],
+          1
+        ],
+        [
+          "Leggere piano",
+          "آهسته خواندن",
+          [
+            [
+              "Elena",
+              "Come si legge?",
+              "چطور خوانده می‌شود؟"
+            ],
+            [
+              "Matteo",
+              "Piano: che.",
+              "آهسته: کِه."
+            ],
+            [
+              "Elena",
+              "Con la H?",
+              "با H؟"
+            ],
+            [
+              "Matteo",
+              "Sì, con la H.",
+              "بله، با H."
+            ]
+          ],
+          2
+        ]
       ]
     },
     {
@@ -115,23 +672,161 @@
       "topic": "sound-letter-mapping",
       "title": "I primi suoni",
       "vocab": [
-        ["casa","casa","خانه","noun",1],
-        ["ciao_word","ciao","سلام / خداحافظ","expression",1],
-        ["che","che","چه / که؛ اینجا برای صدای ch","word",1],
-        ["gelato","gelato","بستنی","noun",2],
-        ["gatto","gatto","گربه","noun",2],
-        ["spaghetti","spaghetti","اسپاگتی","noun",2]
+        [
+          "casa",
+          "casa",
+          "خانه",
+          "noun",
+          1
+        ],
+        [
+          "ciao_word",
+          "ciao",
+          "سلام / خداحافظ",
+          "expression",
+          1
+        ],
+        [
+          "che",
+          "che",
+          "چه / که؛ اینجا برای صدای ch",
+          "word",
+          1
+        ],
+        [
+          "gelato",
+          "gelato",
+          "بستنی",
+          "noun",
+          2
+        ],
+        [
+          "gatto",
+          "gatto",
+          "گربه",
+          "noun",
+          2
+        ],
+        [
+          "spaghetti",
+          "spaghetti",
+          "اسپاگتی",
+          "noun",
+          2
+        ]
       ],
       "utterances": [
-        ["u1","Casa inizia con C.","Casa با C شروع می‌شود.","sound_letter",["casa"],1],
-        ["u2","Ciao ha il suono dolce di C.","در Ciao، حرف C صدای نرم دارد.","soft_c",["ciao_word"],1],
-        ["u3","Gatto ha una G dura.","در Gatto، G صدای سخت دارد.","hard_g",["gatto"],2],
-        ["u4","Gelato ha una G dolce.","در Gelato، G صدای نرم دارد.","soft_g",["gelato"],2]
+        [
+          "u1",
+          "Casa inizia con C.",
+          "Casa با C شروع می‌شود.",
+          "sound_letter",
+          [
+            "casa"
+          ],
+          1
+        ],
+        [
+          "u2",
+          "Ciao ha il suono dolce di C.",
+          "در Ciao، حرف C صدای نرم دارد.",
+          "soft_c",
+          [
+            "ciao_word"
+          ],
+          1
+        ],
+        [
+          "u3",
+          "Gatto ha una G dura.",
+          "در Gatto، G صدای سخت دارد.",
+          "hard_g",
+          [
+            "gatto"
+          ],
+          2
+        ],
+        [
+          "u4",
+          "Gelato ha una G dolce.",
+          "در Gelato، G صدای نرم دارد.",
+          "soft_g",
+          [
+            "gelato"
+          ],
+          2
+        ]
       ],
-      "grammar": ["C, G e H","Before a, o, u, c/g are usually hard; before e, i they are usually soft. Adding h in che/chi and ghe/ghi keeps the hard sound.","برای شروع: c و g قبل از a/o/u معمولاً سخت‌اند و قبل از e/i نرم می‌شوند. در che/chi و ghe/ghi حرف h کمک می‌کند صدای سخت بماند.",[["casa / ciao","کازا / چائو"],["gatto / gelato","گاتّو / جلاتو"]]],
+      "grammar": [
+        "C, G e H",
+        "Before a, o, u, c/g are usually hard; before e, i they are usually soft. Adding h in che/chi and ghe/ghi keeps the hard sound.",
+        "برای شروع: c و g قبل از a/o/u معمولاً سخت‌اند و قبل از e/i نرم می‌شوند. در che/chi و ghe/ghi حرف h کمک می‌کند صدای سخت بماند.",
+        [
+          [
+            "casa / ciao",
+            "کازا / چائو"
+          ],
+          [
+            "gatto / gelato",
+            "گاتّو / جلاتو"
+          ]
+        ]
+      ],
       "dialogues": [
-        ["Due parole","دو واژه",[["Sofia","Casa o ciao?","Casa یا ciao؟"],["Marco","Casa.","Casa."],["Sofia","La C è dura.","C سخت است."],["Marco","Sì.","بله."]],1],
-        ["Gatto e gelato","گربه و بستنی",[["Luca","Gatto.","Gatto."],["Giulia","G dura.","G سخت."],["Luca","Gelato.","Gelato."],["Giulia","G dolce.","G نرم."]],2]
+        [
+          "Due parole",
+          "دو واژه",
+          [
+            [
+              "Sofia",
+              "Casa o ciao?",
+              "Casa یا ciao؟"
+            ],
+            [
+              "Marco",
+              "Casa.",
+              "Casa."
+            ],
+            [
+              "Sofia",
+              "La C è dura.",
+              "C سخت است."
+            ],
+            [
+              "Marco",
+              "Sì.",
+              "بله."
+            ]
+          ],
+          1
+        ],
+        [
+          "Gatto e gelato",
+          "گربه و بستنی",
+          [
+            [
+              "Luca",
+              "Gatto.",
+              "Gatto."
+            ],
+            [
+              "Giulia",
+              "G dura.",
+              "G سخت."
+            ],
+            [
+              "Luca",
+              "Gelato.",
+              "Gelato."
+            ],
+            [
+              "Giulia",
+              "G dolce.",
+              "G نرم."
+            ]
+          ],
+          2
+        ]
       ]
     },
     {
@@ -139,23 +834,163 @@
       "topic": "introductions",
       "title": "Come stai?",
       "vocab": [
-        ["come_stai","come stai?","حالت چطوره؟","expression",1],
-        ["bene","bene","خوب","adverb",1],
-        ["molto_bene","molto bene","خیلی خوب","expression",1],
-        ["cosi_cosi","così così","بد نیست / معمولی","expression",2],
-        ["grazie","grazie","ممنون","expression",2],
-        ["e_tu","e tu?","تو چطور؟","expression",2]
+        [
+          "come_stai",
+          "come stai?",
+          "حالت چطوره؟",
+          "expression",
+          1
+        ],
+        [
+          "bene",
+          "bene",
+          "خوب",
+          "adverb",
+          1
+        ],
+        [
+          "molto_bene",
+          "molto bene",
+          "خیلی خوب",
+          "expression",
+          1
+        ],
+        [
+          "cosi_cosi",
+          "così così",
+          "بد نیست / معمولی",
+          "expression",
+          2
+        ],
+        [
+          "grazie",
+          "grazie",
+          "ممنون",
+          "expression",
+          2
+        ],
+        [
+          "e_tu",
+          "e tu?",
+          "تو چطور؟",
+          "expression",
+          2
+        ]
       ],
       "utterances": [
-        ["u1","Come stai?","حالت چطوره؟","ask_wellbeing",["come_stai"],1],
-        ["u2","Sto bene, grazie.","خوبم، ممنون.","answer_wellbeing",["bene","grazie"],1],
-        ["u3","Molto bene!","خیلی خوب!","positive_answer",["molto_bene"],2],
-        ["u4","Bene, e tu?","خوبم، تو چطور؟","return_question",["bene","e_tu"],2]
+        [
+          "u1",
+          "Come stai?",
+          "حالت چطوره؟",
+          "ask_wellbeing",
+          [
+            "come_stai"
+          ],
+          1
+        ],
+        [
+          "u2",
+          "Sto bene, grazie.",
+          "خوبم، ممنون.",
+          "answer_wellbeing",
+          [
+            "bene",
+            "grazie"
+          ],
+          1
+        ],
+        [
+          "u3",
+          "Molto bene!",
+          "خیلی خوب!",
+          "positive_answer",
+          [
+            "molto_bene"
+          ],
+          2
+        ],
+        [
+          "u4",
+          "Bene, e tu?",
+          "خوبم، تو چطور؟",
+          "return_question",
+          [
+            "bene",
+            "e_tu"
+          ],
+          2
+        ]
       ],
-      "grammar": ["Come stai? / Sto bene","Stare is commonly used for temporary wellbeing. Come stai? is informal singular; more formal forms come later.","برای گفتن حال عمومی در شروع از «stare» استفاده می‌کنیم: «Come stai?» یعنی «حالت چطوره؟» و پاسخ طبیعی «Sto bene» است.",[["Come stai?","حالت چطوره؟"],["Sto bene, grazie.","خوبم، ممنون."]]],
+      "grammar": [
+        "Come stai? / Sto bene",
+        "Stare is commonly used for temporary wellbeing. Come stai? is informal singular; more formal forms come later.",
+        "برای گفتن حال عمومی در شروع از «stare» استفاده می‌کنیم: «Come stai?» یعنی «حالت چطوره؟» و پاسخ طبیعی «Sto bene» است.",
+        [
+          [
+            "Come stai?",
+            "حالت چطوره؟"
+          ],
+          [
+            "Sto bene, grazie.",
+            "خوبم، ممنون."
+          ]
+        ]
+      ],
       "dialogues": [
-        ["Come stai?","احوال‌پرسی",[["Matteo","Ciao, Elena. Come stai?","سلام النا. حالت چطوره؟"],["Elena","Bene, grazie. E tu?","خوبم، ممنون. تو چطور؟"],["Matteo","Molto bene.","خیلی خوبم."],["Elena","Ottimo.","عالیه."]],1],
-        ["Così così","بد نیست",[["Davide","Come stai, Chiara?","کیارا، حالت چطوره؟"],["Chiara","Così così.","بد نیست."],["Davide","Capisco.","می‌فهمم."],["Chiara","Grazie.","ممنون."]],2]
+        [
+          "Come stai?",
+          "احوال‌پرسی",
+          [
+            [
+              "Matteo",
+              "Ciao, Elena. Come stai?",
+              "سلام النا. حالت چطوره؟"
+            ],
+            [
+              "Elena",
+              "Bene, grazie. E tu?",
+              "خوبم، ممنون. تو چطور؟"
+            ],
+            [
+              "Matteo",
+              "Molto bene.",
+              "خیلی خوبم."
+            ],
+            [
+              "Elena",
+              "Ottimo.",
+              "عالیه."
+            ]
+          ],
+          1
+        ],
+        [
+          "Così così",
+          "بد نیست",
+          [
+            [
+              "Davide",
+              "Come stai, Chiara?",
+              "کیارا، حالت چطوره؟"
+            ],
+            [
+              "Chiara",
+              "Così così.",
+              "بد نیست."
+            ],
+            [
+              "Davide",
+              "Capisco.",
+              "می‌فهمم."
+            ],
+            [
+              "Chiara",
+              "Grazie.",
+              "ممنون."
+            ]
+          ],
+          2
+        ]
       ]
     },
     {
@@ -163,23 +998,163 @@
       "topic": "objects",
       "title": "Cos'è?",
       "vocab": [
-        ["libro","libro","کتاب","noun",1],
-        ["penna","penna","خودکار","noun",1],
-        ["telefono","telefono","تلفن","noun",1],
-        ["chiave","chiave","کلید","noun",2],
-        ["questo","questo","این؛ مذکر","demonstrative",2],
-        ["questa","questa","این؛ مؤنث","demonstrative",2]
+        [
+          "libro",
+          "libro",
+          "کتاب",
+          "noun",
+          1
+        ],
+        [
+          "penna",
+          "penna",
+          "خودکار",
+          "noun",
+          1
+        ],
+        [
+          "telefono",
+          "telefono",
+          "تلفن",
+          "noun",
+          1
+        ],
+        [
+          "chiave",
+          "chiave",
+          "کلید",
+          "noun",
+          2
+        ],
+        [
+          "questo",
+          "questo",
+          "این؛ مذکر",
+          "demonstrative",
+          2
+        ],
+        [
+          "questa",
+          "questa",
+          "این؛ مؤنث",
+          "demonstrative",
+          2
+        ]
       ],
       "utterances": [
-        ["u1","Questo è un libro.","این یک کتاب است.","identify_object",["libro","questo"],1],
-        ["u2","Questa è una penna.","این یک خودکار است.","identify_object",["penna","questa"],1],
-        ["u3","Cos'è questo?","این چیه؟","ask_object",["questo"],2],
-        ["u4","È una chiave.","یک کلید است.","answer_object",["chiave"],2]
+        [
+          "u1",
+          "Questo è un libro.",
+          "این یک کتاب است.",
+          "identify_object",
+          [
+            "libro",
+            "questo"
+          ],
+          1
+        ],
+        [
+          "u2",
+          "Questa è una penna.",
+          "این یک خودکار است.",
+          "identify_object",
+          [
+            "penna",
+            "questa"
+          ],
+          1
+        ],
+        [
+          "u3",
+          "Cos'è questo?",
+          "این چیه؟",
+          "ask_object",
+          [
+            "questo"
+          ],
+          2
+        ],
+        [
+          "u4",
+          "È una chiave.",
+          "یک کلید است.",
+          "answer_object",
+          [
+            "chiave"
+          ],
+          2
+        ]
       ],
-      "grammar": ["Un / una; questo / questa","Italian nouns have grammatical gender. Beginner nouns often pair with un for masculine and una for feminine; questo/questa agrees with the noun.","اسم‌های ایتالیایی جنس دستوری دارند. فعلاً با جفت‌های شفاف یاد بگیر: «un libro / questo libro» و «una penna / questa penna».",[["un libro","یک کتاب"],["una penna","یک خودکار"]]],
+      "grammar": [
+        "Un / una; questo / questa",
+        "Italian nouns have grammatical gender. Beginner nouns often pair with un for masculine and una for feminine; questo/questa agrees with the noun.",
+        "اسم‌های ایتالیایی جنس دستوری دارند. فعلاً با جفت‌های شفاف یاد بگیر: «un libro / questo libro» و «una penna / questa penna».",
+        [
+          [
+            "un libro",
+            "یک کتاب"
+          ],
+          [
+            "una penna",
+            "یک خودکار"
+          ]
+        ]
+      ],
       "dialogues": [
-        ["Sul tavolo","روی میز",[["Giulia","Cos'è questo?","این چیه؟"],["Davide","È un telefono.","یک تلفن است."],["Giulia","E questa?","و این یکی؟"],["Davide","È una penna.","یک خودکار است."]],1],
-        ["Una chiave","یک کلید",[["Marco","Questa è una chiave?","این یک کلید است؟"],["Sofia","Sì, è una chiave.","بله، یک کلید است."],["Marco","Grazie.","ممنون."],["Sofia","Prego.","خواهش می‌کنم."]],2]
+        [
+          "Sul tavolo",
+          "روی میز",
+          [
+            [
+              "Giulia",
+              "Cos'è questo?",
+              "این چیه؟"
+            ],
+            [
+              "Davide",
+              "È un telefono.",
+              "یک تلفن است."
+            ],
+            [
+              "Giulia",
+              "E questa?",
+              "و این یکی؟"
+            ],
+            [
+              "Davide",
+              "È una penna.",
+              "یک خودکار است."
+            ]
+          ],
+          1
+        ],
+        [
+          "Una chiave",
+          "یک کلید",
+          [
+            [
+              "Marco",
+              "Questa è una chiave?",
+              "این یک کلید است؟"
+            ],
+            [
+              "Sofia",
+              "Sì, è una chiave.",
+              "بله، یک کلید است."
+            ],
+            [
+              "Marco",
+              "Grazie.",
+              "ممنون."
+            ],
+            [
+              "Sofia",
+              "Prego.",
+              "خواهش می‌کنم."
+            ]
+          ],
+          2
+        ]
       ]
     },
     {
@@ -187,23 +1162,161 @@
       "topic": "polite-language",
       "title": "Per favore",
       "vocab": [
-        ["per_favore","per favore","لطفاً","expression",1],
-        ["grazie_word","grazie","ممنون","expression",1],
-        ["prego","prego","خواهش می‌کنم / بفرمایید","expression",1],
-        ["scusa","scusa","ببخشید؛ خودمانی","expression",2],
-        ["mi_scusi","mi scusi","ببخشید؛ محترمانه","expression",2],
-        ["permesso","permesso?","اجازه هست؟","expression",2]
+        [
+          "per_favore",
+          "per favore",
+          "لطفاً",
+          "expression",
+          1
+        ],
+        [
+          "grazie_word",
+          "grazie",
+          "ممنون",
+          "expression",
+          1
+        ],
+        [
+          "prego",
+          "prego",
+          "خواهش می‌کنم / بفرمایید",
+          "expression",
+          1
+        ],
+        [
+          "scusa",
+          "scusa",
+          "ببخشید؛ خودمانی",
+          "expression",
+          2
+        ],
+        [
+          "mi_scusi",
+          "mi scusi",
+          "ببخشید؛ محترمانه",
+          "expression",
+          2
+        ],
+        [
+          "permesso",
+          "permesso?",
+          "اجازه هست؟",
+          "expression",
+          2
+        ]
       ],
       "utterances": [
-        ["u1","Un caffè, per favore.","یک قهوه، لطفاً.","polite_request",["per_favore"],1],
-        ["u2","Grazie mille.","خیلی ممنون.","thank",["grazie_word"],1],
-        ["u3","Prego.","خواهش می‌کنم.","respond_thanks",["prego"],2],
-        ["u4","Mi scusi.","ببخشید.","get_attention_formal",["mi_scusi"],2]
+        [
+          "u1",
+          "Un caffè, per favore.",
+          "یک قهوه، لطفاً.",
+          "polite_request",
+          [
+            "per_favore"
+          ],
+          1
+        ],
+        [
+          "u2",
+          "Grazie mille.",
+          "خیلی ممنون.",
+          "thank",
+          [
+            "grazie_word"
+          ],
+          1
+        ],
+        [
+          "u3",
+          "Prego.",
+          "خواهش می‌کنم.",
+          "respond_thanks",
+          [
+            "prego"
+          ],
+          2
+        ],
+        [
+          "u4",
+          "Mi scusi.",
+          "ببخشید.",
+          "get_attention_formal",
+          [
+            "mi_scusi"
+          ],
+          2
+        ]
       ],
-      "grammar": ["Per favore / prego / scusa","Italian politeness relies heavily on fixed expressions. Scusa is informal singular; mi scusi is a polite form for a stranger or formal interaction.","این عبارت‌ها را کاربردی یاد بگیر: «per favore» برای درخواست، «prego» برای پاسخ به تشکر یا «بفرمایید»، «scusa» خودمانی و «mi scusi» محترمانه‌تر است.",[["Acqua, per favore.","آب، لطفاً."],["Grazie. — Prego.","ممنون. — خواهش می‌کنم."]]],
+      "grammar": [
+        "Per favore / prego / scusa",
+        "Italian politeness relies heavily on fixed expressions. Scusa is informal singular; mi scusi is a polite form for a stranger or formal interaction.",
+        "این عبارت‌ها را کاربردی یاد بگیر: «per favore» برای درخواست، «prego» برای پاسخ به تشکر یا «بفرمایید»، «scusa» خودمانی و «mi scusi» محترمانه‌تر است.",
+        [
+          [
+            "Acqua, per favore.",
+            "آب، لطفاً."
+          ],
+          [
+            "Grazie. — Prego.",
+            "ممنون. — خواهش می‌کنم."
+          ]
+        ]
+      ],
       "dialogues": [
-        ["Al bar","در کافه",[["Chiara","Un caffè, per favore.","یک قهوه، لطفاً."],["Luca","Certo.","حتماً."],["Chiara","Grazie.","ممنون."],["Luca","Prego.","خواهش می‌کنم."]],1],
-        ["Chiedere scusa","عذرخواهی",[["Elena","Mi scusi.","ببخشید."],["Matteo","Sì?","بله؟"],["Elena","Permesso?","اجازه هست؟"],["Matteo","Certo.","حتماً."]],2]
+        [
+          "Al bar",
+          "در کافه",
+          [
+            [
+              "Chiara",
+              "Un caffè, per favore.",
+              "یک قهوه، لطفاً."
+            ],
+            [
+              "Luca",
+              "Certo.",
+              "حتماً."
+            ],
+            [
+              "Chiara",
+              "Grazie.",
+              "ممنون."
+            ],
+            [
+              "Luca",
+              "Prego.",
+              "خواهش می‌کنم."
+            ]
+          ],
+          1
+        ],
+        [
+          "Chiedere scusa",
+          "عذرخواهی",
+          [
+            [
+              "Elena",
+              "Mi scusi.",
+              "ببخشید."
+            ],
+            [
+              "Matteo",
+              "Sì?",
+              "بله؟"
+            ],
+            [
+              "Elena",
+              "Permesso?",
+              "اجازه هست؟"
+            ],
+            [
+              "Matteo",
+              "Certo.",
+              "حتماً."
+            ]
+          ],
+          2
+        ]
       ]
     },
     {
@@ -211,23 +1324,162 @@
       "topic": "polite-language",
       "title": "Parole utili",
       "vocab": [
-        ["si","sì","بله","interjection",1],
-        ["no","no","نه","interjection",1],
-        ["va_bene","va bene","باشه / خوبه","expression",1],
-        ["aiuto","aiuto","کمک","noun",2],
-        ["non_capisco","non capisco","نمی‌فهمم","expression",2],
-        ["ripeta","ripeta, per favore","لطفاً تکرار کنید","expression",2]
+        [
+          "si",
+          "sì",
+          "بله",
+          "interjection",
+          1
+        ],
+        [
+          "no",
+          "no",
+          "نه",
+          "interjection",
+          1
+        ],
+        [
+          "va_bene",
+          "va bene",
+          "باشه / خوبه",
+          "expression",
+          1
+        ],
+        [
+          "aiuto",
+          "aiuto",
+          "کمک",
+          "noun",
+          2
+        ],
+        [
+          "non_capisco",
+          "non capisco",
+          "نمی‌فهمم",
+          "expression",
+          2
+        ],
+        [
+          "ripeta",
+          "ripeta, per favore",
+          "لطفاً تکرار کنید",
+          "expression",
+          2
+        ]
       ],
       "utterances": [
-        ["u1","Sì, va bene.","بله، باشه.","agree",["si","va_bene"],1],
-        ["u2","No, grazie.","نه، ممنون.","decline",["no"],1],
-        ["u3","Non capisco.","نمی‌فهمم.","repair",["non_capisco"],2],
-        ["u4","Ripeta, per favore.","لطفاً تکرار کنید.","request_repeat",["ripeta"],2]
+        [
+          "u1",
+          "Sì, va bene.",
+          "بله، باشه.",
+          "agree",
+          [
+            "si",
+            "va_bene"
+          ],
+          1
+        ],
+        [
+          "u2",
+          "No, grazie.",
+          "نه، ممنون.",
+          "decline",
+          [
+            "no"
+          ],
+          1
+        ],
+        [
+          "u3",
+          "Non capisco.",
+          "نمی‌فهمم.",
+          "repair",
+          [
+            "non_capisco"
+          ],
+          2
+        ],
+        [
+          "u4",
+          "Ripeta, per favore.",
+          "لطفاً تکرار کنید.",
+          "request_repeat",
+          [
+            "ripeta"
+          ],
+          2
+        ]
       ],
-      "grammar": ["Non + verbo","Italian negation normally places non directly before the verb: capisco → non capisco.","منفی‌کردن در ایتالیایی در این مرحله ساده است: «non» را قبل از فعل بگذار؛ «capisco» می‌شود «non capisco».",[["Capisco.","می‌فهمم."],["Non capisco.","نمی‌فهمم."]]],
+      "grammar": [
+        "Non + verbo",
+        "Italian negation normally places non directly before the verb: capisco → non capisco.",
+        "منفی‌کردن در ایتالیایی در این مرحله ساده است: «non» را قبل از فعل بگذار؛ «capisco» می‌شود «non capisco».",
+        [
+          [
+            "Capisco.",
+            "می‌فهمم."
+          ],
+          [
+            "Non capisco.",
+            "نمی‌فهمم."
+          ]
+        ]
+      ],
       "dialogues": [
-        ["Capisci?","می‌فهمی؟",[["Sofia","Capisci?","می‌فهمی؟"],["Davide","No, non capisco.","نه، نمی‌فهمم."],["Sofia","Ripeto.","تکرار می‌کنم."],["Davide","Grazie.","ممنون."]],1],
-        ["Per favore","لطفاً",[["Marco","Non capisco.","نمی‌فهمم."],["Giulia","Va bene.","باشه."],["Marco","Ripeta, per favore.","لطفاً تکرار کنید."],["Giulia","Certo.","حتماً."]],2]
+        [
+          "Capisci?",
+          "می‌فهمی؟",
+          [
+            [
+              "Sofia",
+              "Capisci?",
+              "می‌فهمی؟"
+            ],
+            [
+              "Davide",
+              "No, non capisco.",
+              "نه، نمی‌فهمم."
+            ],
+            [
+              "Sofia",
+              "Ripeto.",
+              "تکرار می‌کنم."
+            ],
+            [
+              "Davide",
+              "Grazie.",
+              "ممنون."
+            ]
+          ],
+          1
+        ],
+        [
+          "Per favore",
+          "لطفاً",
+          [
+            [
+              "Marco",
+              "Non capisco.",
+              "نمی‌فهمم."
+            ],
+            [
+              "Giulia",
+              "Va bene.",
+              "باشه."
+            ],
+            [
+              "Marco",
+              "Ripeta, per favore.",
+              "لطفاً تکرار کنید."
+            ],
+            [
+              "Giulia",
+              "Certo.",
+              "حتماً."
+            ]
+          ],
+          2
+        ]
       ]
     },
     {
@@ -235,23 +1487,162 @@
       "topic": "introductions",
       "title": "La mia prima conversazione",
       "vocab": [
-        ["oggi","oggi","امروز","adverb",1],
-        ["qui","qui","اینجا","adverb",1],
-        ["italiano","italiano","ایتالیایی","adjective",1],
-        ["parlo","parlo","صحبت می‌کنم","verb",2],
-        ["poco","poco","کمی","adverb",2],
-        ["insieme","insieme","با هم","adverb",2]
+        [
+          "oggi",
+          "oggi",
+          "امروز",
+          "adverb",
+          1
+        ],
+        [
+          "qui",
+          "qui",
+          "اینجا",
+          "adverb",
+          1
+        ],
+        [
+          "italiano",
+          "italiano",
+          "ایتالیایی",
+          "adjective",
+          1
+        ],
+        [
+          "parlo",
+          "parlo",
+          "صحبت می‌کنم",
+          "verb",
+          2
+        ],
+        [
+          "poco",
+          "poco",
+          "کمی",
+          "adverb",
+          2
+        ],
+        [
+          "insieme",
+          "insieme",
+          "با هم",
+          "adverb",
+          2
+        ]
       ],
       "utterances": [
-        ["u1","Sono qui oggi.","امروز اینجا هستم.","state_presence",["qui","oggi"],1],
-        ["u2","Parlo poco italiano.","کمی ایتالیایی صحبت می‌کنم.","state_language_level",["parlo","poco","italiano"],1],
-        ["u3","Parliamo insieme.","با هم صحبت کنیم.","invite_practice",["insieme"],2],
-        ["u4","A presto, grazie!","به‌زودی می‌بینمت، ممنون!","farewell",["grazie_word"],2]
+        [
+          "u1",
+          "Sono qui oggi.",
+          "امروز اینجا هستم.",
+          "state_presence",
+          [
+            "qui",
+            "oggi"
+          ],
+          1
+        ],
+        [
+          "u2",
+          "Parlo poco italiano.",
+          "کمی ایتالیایی صحبت می‌کنم.",
+          "state_language_level",
+          [
+            "parlo",
+            "poco",
+            "italiano"
+          ],
+          1
+        ],
+        [
+          "u3",
+          "Parliamo insieme.",
+          "با هم صحبت کنیم.",
+          "invite_practice",
+          [
+            "insieme"
+          ],
+          2
+        ],
+        [
+          "u4",
+          "A presto, grazie!",
+          "به‌زودی می‌بینمت، ممنون!",
+          "farewell",
+          [],
+          2
+        ]
       ],
-      "grammar": ["Una mini conversazione","At Pre-A1, the goal is to combine memorized chunks naturally: greet, introduce yourself, say how you are, ask for help if needed, and close the exchange.","هدف این واحد تجزیهٔ کامل دستور نیست؛ چند تکهٔ پرکاربرد را کنار هم می‌گذاری تا یک گفت‌وگوی کوتاه واقعی بسازی.",[["Ciao, mi chiamo Giulia.","سلام، اسمم جولیاست."],["Sto bene, grazie.","خوبم، ممنون."]]],
+      "grammar": [
+        "Una mini conversazione",
+        "At Pre-A1, the goal is to combine memorized chunks naturally: greet, introduce yourself, say how you are, ask for help if needed, and close the exchange.",
+        "هدف این واحد تجزیهٔ کامل دستور نیست؛ چند تکهٔ پرکاربرد را کنار هم می‌گذاری تا یک گفت‌وگوی کوتاه واقعی بسازی.",
+        [
+          [
+            "Ciao, mi chiamo Giulia.",
+            "سلام، اسمم جولیاست."
+          ],
+          [
+            "Sto bene, grazie.",
+            "خوبم، ممنون."
+          ]
+        ]
+      ],
       "dialogues": [
-        ["Prima conversazione","گفت‌وگوی اول",[["Elena","Buongiorno, mi chiamo Elena.","روز بخیر، اسمم الناست."],["Marco","Buongiorno, sono Marco.","روز بخیر، من مارکو هستم."],["Elena","Come stai?","حالت چطوره؟"],["Marco","Bene, grazie.","خوبم، ممنون."]],1],
-        ["Parlo poco italiano","کمی ایتالیایی بلدم",[["Luca","Parli italiano?","ایتالیایی صحبت می‌کنی؟"],["Chiara","Sì, poco.","بله، کمی."],["Luca","Va bene. Parliamo insieme.","خوبه. با هم صحبت کنیم."],["Chiara","Grazie!","ممنون!"]],2]
+        [
+          "Prima conversazione",
+          "گفت‌وگوی اول",
+          [
+            [
+              "Elena",
+              "Buongiorno, mi chiamo Elena.",
+              "روز بخیر، اسمم الناست."
+            ],
+            [
+              "Marco",
+              "Buongiorno, sono Marco.",
+              "روز بخیر، من مارکو هستم."
+            ],
+            [
+              "Elena",
+              "Come stai?",
+              "حالت چطوره؟"
+            ],
+            [
+              "Marco",
+              "Bene, grazie.",
+              "خوبم، ممنون."
+            ]
+          ],
+          1
+        ],
+        [
+          "Parlo poco italiano",
+          "کمی ایتالیایی بلدم",
+          [
+            [
+              "Luca",
+              "Parli italiano?",
+              "ایتالیایی صحبت می‌کنی؟"
+            ],
+            [
+              "Chiara",
+              "Sì, poco.",
+              "بله، کمی."
+            ],
+            [
+              "Luca",
+              "Va bene. Parliamo insieme.",
+              "خوبه. با هم صحبت کنیم."
+            ],
+            [
+              "Chiara",
+              "Grazie!",
+              "ممنون!"
+            ]
+          ],
+          2
+        ]
       ]
     }
   ]
