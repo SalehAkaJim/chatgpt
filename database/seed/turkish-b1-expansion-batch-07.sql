@@ -1,0 +1,10 @@
+-- Istanbul Turkish B1 expansion batch 7: workplace handover, lost-luggage follow-up, card-payment resolution, group-project coordination.
+INSERT IGNORE INTO curriculum_units (course_id,target_language_id,cefr_level_id,skill_id,topic_id,slug,title,learning_objective,sort_order,expected_lessons,status,metadata)
+SELECT c.id,c.target_language_id,lvl.id,s.id,t.id,u.slug,u.title,u.objective,u.sort_order,3,'approved',JSON_OBJECT('language_specific',TRUE,'target_variant','tr-TR','batch',7,'grammar_focus',u.grammar_focus,'third_lesson','independent-production-mediation')
+FROM (
+ SELECT 610 sort_order,'communication' skill_slug,'simple-messages' topic_slug,'b1-tr-work-shift-handover' slug,'Vardiya değişikliğini anlatıp işi devretmek' title,'Explain a work-schedule change, relay practical instructions and hand over unfinished tasks clearly.' objective,'reported instructions, sequencing, reason clauses and realistic conditions' grammar_focus
+ UNION ALL SELECT 620,'travel-transport','places-town','b1-tr-lost-luggage-followup','Kayıp bagajı takip edip bilgi aktarmak','Report a lost-luggage problem, understand airline updates, relay key information and agree on a practical follow-up.','past-event account, reported information, sequencing and polite follow-up'
+ UNION ALL SELECT 630,'shopping-money','shopping','b1-tr-bank-card-payment-dispute','Kart ödemesindeki sorunu açıklayıp çözüm istemek','Explain an unfamiliar card payment, report bank instructions and negotiate a concrete next step without abstract argumentation.','problem description, reported instructions, reasons, polite requests and realistic conditions'
+ UNION ALL SELECT 640,'work-study','school-study','b1-tr-course-project-coordination','Grup projesini planlayıp değişikliği aktarmak','Coordinate a familiar group project, relay a teacher''s instructions, explain a schedule change and agree on responsibilities.','reported instructions, purpose, sequencing, reasons and realistic conditions'
+) u
+JOIN courses c ON c.slug='fa-tr-tr' JOIN cefr_levels lvl ON lvl.code='B1' JOIN skills s ON s.slug=u.skill_slug JOIN topics t ON t.slug=u.topic_slug AND t.skill_id=s.id;
