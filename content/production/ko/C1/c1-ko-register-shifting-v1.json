@@ -1,0 +1,876 @@
+{
+  "batch_id": "ko-kr-c1-register-shifting-v1",
+  "course": "fa-ko-kr",
+  "learner_language": "fa",
+  "learner_variant": "fa-IR",
+  "target_language": "ko",
+  "target_variant": "ko-KR",
+  "cefr": "C1",
+  "curriculum_unit": "c1-ko-register-shifting",
+  "generator": "gpt-5.6-sol:korean-c1-batch-v1",
+  "items": [
+    {
+      "kind": "concept",
+      "external_id": "c_register_shifting_01",
+      "data": {
+        "slug": "ko_c1_register_shifting_gyokshik",
+        "lesson_key": "c1-ko-register-shifting-01",
+        "concept_type": "lexical",
+        "part_of_speech": "noun",
+        "forms": {
+          "ko": "격식"
+        },
+        "translations": {
+          "fa": "رسمیت"
+        },
+        "cefr": "C1",
+        "topic": "requests",
+        "tags": [
+          "core",
+          "beginner",
+          "high_frequency"
+        ],
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_register_shifting_01",
+      "data": {
+        "lesson_key": "c1-ko-register-shifting-01",
+        "lemma": "격식",
+        "display_lemma": "격식",
+        "language": "ko",
+        "language_variant": "ko-KR",
+        "part_of_speech": "noun",
+        "concept_refs": [
+          "ko_c1_register_shifting_gyokshik"
+        ],
+        "cefr": "C1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_register_shifting_01",
+      "data": {
+        "lesson_key": "c1-ko-register-shifting-01",
+        "lexeme_ref": "lx_register_shifting_01",
+        "surface_form": "격식",
+        "display_form": "격식",
+        "grammatical_features": {},
+        "is_lemma": true,
+        "is_preferred": true,
+        "cefr": "C1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_register_shifting_02",
+      "data": {
+        "slug": "ko_c1_register_shifting_hoching",
+        "lesson_key": "c1-ko-register-shifting-01",
+        "concept_type": "lexical",
+        "part_of_speech": "noun",
+        "forms": {
+          "ko": "호칭"
+        },
+        "translations": {
+          "fa": "عنوان خطاب"
+        },
+        "cefr": "C1",
+        "topic": "requests",
+        "tags": [
+          "core",
+          "beginner",
+          "high_frequency"
+        ],
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_register_shifting_02",
+      "data": {
+        "lesson_key": "c1-ko-register-shifting-01",
+        "lemma": "호칭",
+        "display_lemma": "호칭",
+        "language": "ko",
+        "language_variant": "ko-KR",
+        "part_of_speech": "noun",
+        "concept_refs": [
+          "ko_c1_register_shifting_hoching"
+        ],
+        "cefr": "C1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_register_shifting_02",
+      "data": {
+        "lesson_key": "c1-ko-register-shifting-01",
+        "lexeme_ref": "lx_register_shifting_02",
+        "surface_form": "호칭",
+        "display_form": "호칭",
+        "grammatical_features": {},
+        "is_lemma": true,
+        "is_preferred": true,
+        "cefr": "C1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_register_shifting_03",
+      "data": {
+        "slug": "ko_c1_register_shifting_nophim",
+        "lesson_key": "c1-ko-register-shifting-01",
+        "concept_type": "lexical",
+        "part_of_speech": "noun",
+        "forms": {
+          "ko": "높임"
+        },
+        "translations": {
+          "fa": "احترام زبانی"
+        },
+        "cefr": "C1",
+        "topic": "requests",
+        "tags": [
+          "core",
+          "beginner",
+          "high_frequency"
+        ],
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_register_shifting_03",
+      "data": {
+        "lesson_key": "c1-ko-register-shifting-01",
+        "lemma": "높임",
+        "display_lemma": "높임",
+        "language": "ko",
+        "language_variant": "ko-KR",
+        "part_of_speech": "noun",
+        "concept_refs": [
+          "ko_c1_register_shifting_nophim"
+        ],
+        "cefr": "C1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_register_shifting_03",
+      "data": {
+        "lesson_key": "c1-ko-register-shifting-01",
+        "lexeme_ref": "lx_register_shifting_03",
+        "surface_form": "높임",
+        "display_form": "높임",
+        "grammatical_features": {},
+        "is_lemma": true,
+        "is_preferred": true,
+        "cefr": "C1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_register_shifting_04",
+      "data": {
+        "slug": "ko_c1_register_shifting_jeonhwan",
+        "lesson_key": "c1-ko-register-shifting-02",
+        "concept_type": "lexical",
+        "part_of_speech": "verb",
+        "forms": {
+          "ko": "전환하다"
+        },
+        "translations": {
+          "fa": "تغییر دادن / جابه‌جا کردن"
+        },
+        "cefr": "C1",
+        "topic": "requests",
+        "tags": [
+          "core",
+          "beginner",
+          "high_frequency"
+        ],
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_register_shifting_04",
+      "data": {
+        "lesson_key": "c1-ko-register-shifting-02",
+        "lemma": "전환하다",
+        "display_lemma": "전환하다",
+        "language": "ko",
+        "language_variant": "ko-KR",
+        "part_of_speech": "verb",
+        "concept_refs": [
+          "ko_c1_register_shifting_jeonhwan"
+        ],
+        "cefr": "C1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_register_shifting_04",
+      "data": {
+        "lesson_key": "c1-ko-register-shifting-02",
+        "lexeme_ref": "lx_register_shifting_04",
+        "surface_form": "전환하다",
+        "display_form": "전환하다",
+        "grammatical_features": {},
+        "is_lemma": true,
+        "is_preferred": true,
+        "cefr": "C1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_register_shifting_05",
+      "data": {
+        "slug": "ko_c1_register_shifting_eogam",
+        "lesson_key": "c1-ko-register-shifting-02",
+        "concept_type": "lexical",
+        "part_of_speech": "noun",
+        "forms": {
+          "ko": "어감"
+        },
+        "translations": {
+          "fa": "حس و بار واژه"
+        },
+        "cefr": "C1",
+        "topic": "requests",
+        "tags": [
+          "core",
+          "beginner",
+          "high_frequency"
+        ],
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_register_shifting_05",
+      "data": {
+        "lesson_key": "c1-ko-register-shifting-02",
+        "lemma": "어감",
+        "display_lemma": "어감",
+        "language": "ko",
+        "language_variant": "ko-KR",
+        "part_of_speech": "noun",
+        "concept_refs": [
+          "ko_c1_register_shifting_eogam"
+        ],
+        "cefr": "C1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_register_shifting_05",
+      "data": {
+        "lesson_key": "c1-ko-register-shifting-02",
+        "lexeme_ref": "lx_register_shifting_05",
+        "surface_form": "어감",
+        "display_form": "어감",
+        "grammatical_features": {},
+        "is_lemma": true,
+        "is_preferred": true,
+        "cefr": "C1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_register_shifting_06",
+      "data": {
+        "slug": "ko_c1_register_shifting_jeokjeol",
+        "lesson_key": "c1-ko-register-shifting-02",
+        "concept_type": "lexical",
+        "part_of_speech": "adjective",
+        "forms": {
+          "ko": "적절하다"
+        },
+        "translations": {
+          "fa": "مناسب بودن"
+        },
+        "cefr": "C1",
+        "topic": "requests",
+        "tags": [
+          "core",
+          "beginner",
+          "high_frequency"
+        ],
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_register_shifting_06",
+      "data": {
+        "lesson_key": "c1-ko-register-shifting-02",
+        "lemma": "적절하다",
+        "display_lemma": "적절하다",
+        "language": "ko",
+        "language_variant": "ko-KR",
+        "part_of_speech": "adjective",
+        "concept_refs": [
+          "ko_c1_register_shifting_jeokjeol"
+        ],
+        "cefr": "C1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_register_shifting_06",
+      "data": {
+        "lesson_key": "c1-ko-register-shifting-02",
+        "lexeme_ref": "lx_register_shifting_06",
+        "surface_form": "적절하다",
+        "display_form": "적절하다",
+        "grammatical_features": {},
+        "is_lemma": true,
+        "is_preferred": true,
+        "cefr": "C1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_register_shifting_01",
+      "data": {
+        "lesson_key": "c1-ko-register-shifting-01",
+        "text": {
+          "ko": "공식 발표에서는 같은 내용을 말하더라도 근거와 책임 주체를 더 명시해야 합니다."
+        },
+        "translations": {
+          "fa": "در اعلام رسمی حتی همان محتوا باید با شواهد و مسئولیت روشن‌تر بیان شود."
+        },
+        "intent": "formal_register",
+        "concept_refs": [],
+        "cefr": "C1",
+        "topic": "requests",
+        "register": "polite",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_register_shifting_02",
+      "data": {
+        "lesson_key": "c1-ko-register-shifting-01",
+        "text": {
+          "ko": "친한 사이의 해요체를 보고서 문장에 그대로 옮기면 어감이 지나치게 가벼워질 수 있어요."
+        },
+        "translations": {
+          "fa": "اگر لحن دوستانه 해요체 را عیناً وارد گزارش کنیم، حس متن بیش از حد سبک می‌شود."
+        },
+        "intent": "register_mismatch",
+        "concept_refs": [
+          "ko_c1_register_shifting_eogam"
+        ],
+        "cefr": "C1",
+        "topic": "requests",
+        "register": "polite",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_register_shifting_03",
+      "data": {
+        "lesson_key": "c1-ko-register-shifting-02",
+        "text": {
+          "ko": "상대의 지위뿐 아니라 장면과 목적에 따라 높임 수준을 전환해야 합니다."
+        },
+        "translations": {
+          "fa": "سطح احترام را نه فقط بر اساس جایگاه طرف، بلکه متناسب با موقعیت و هدف باید تغییر داد."
+        },
+        "intent": "style_shift",
+        "concept_refs": [
+          "ko_c1_register_shifting_nophim",
+          "ko_c1_register_shifting_jeonhwan"
+        ],
+        "cefr": "C1",
+        "topic": "requests",
+        "register": "polite",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_register_shifting_04",
+      "data": {
+        "lesson_key": "c1-ko-register-shifting-02",
+        "text": {
+          "ko": "격식이 높다고 항상 더 적절한 것은 아닙니다."
+        },
+        "translations": {
+          "fa": "رسمی‌تر بودن همیشه به معنی مناسب‌تر بودن نیست."
+        },
+        "intent": "appropriacy",
+        "concept_refs": [
+          "ko_c1_register_shifting_gyokshik",
+          "ko_c1_register_shifting_jeokjeol"
+        ],
+        "cefr": "C1",
+        "topic": "requests",
+        "register": "polite",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "grammar_point",
+      "external_id": "g_register_shifting_core",
+      "data": {
+        "lesson_key": "c1-ko-register-shifting-01",
+        "slug": "c1-ko-register-shifting-grammar",
+        "title": "장면별 말투 전환",
+        "rule_summary": "Advanced proficiency includes choosing the right speech level, address terms and degree of explicitness for the relationship and communicative goal.",
+        "explanation": {
+          "fa": "مهارت پیشرفته فقط دانستن پسوند احترام نیست؛ باید سطح گفتار، عنوان خطاب و میزان صراحت را با رابطه و هدف ارتباطی هماهنگ کرد."
+        },
+        "examples": [
+          {
+            "ko": "검토해 주시면 감사하겠습니다.",
+            "fa": "ممنون می‌شوم اگر بررسی بفرمایید."
+          },
+          {
+            "ko": "이거 한번 봐 줄래?",
+            "fa": "می‌شه یه نگاه به این بندازی؟"
+          }
+        ],
+        "cefr": "C1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "dialogue",
+      "external_id": "d_register_shifting_01",
+      "data": {
+        "lesson_key": "c1-ko-register-shifting-01",
+        "title": "한 내용을 두 방식으로",
+        "setting": "item",
+        "cefr": "C1",
+        "topic": "requests",
+        "characters": [
+          "서연",
+          "준호"
+        ],
+        "turns": [
+          {
+            "order": 1,
+            "speaker": "서연",
+            "text": "팀 메신저에 쓴 문장을 그대로 발표 자료에 넣어도 될까요?",
+            "translation_fa": "جمله‌ای که در پیام تیم نوشته‌ام را همان‌طور در ارائه بگذارم؟"
+          },
+          {
+            "order": 2,
+            "speaker": "준호",
+            "text": "내용은 같아도 공식 자료에서는 주어와 근거를 더 분명히 하는 게 좋아요.",
+            "translation_fa": "حتی اگر محتوا یکی باشد، در سند رسمی بهتر است فاعل و شواهد روشن‌تر باشد."
+          },
+          {
+            "order": 3,
+            "speaker": "서연",
+            "text": "말투만 높이면 되는 게 아니군요.",
+            "translation_fa": "پس فقط رسمی‌کردن پایان جمله کافی نیست."
+          },
+          {
+            "order": 4,
+            "speaker": "준호",
+            "text": "네, 정보 배치와 책임 표현도 같이 바뀌어요.",
+            "translation_fa": "بله، چیدمان اطلاعات و بیان مسئولیت هم تغییر می‌کند."
+          }
+        ],
+        "qa": {
+          "character_pair_unique_within_unit": true,
+          "naturalness": "passed",
+          "single_situation": true
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "dialogue",
+      "external_id": "d_register_shifting_02",
+      "data": {
+        "lesson_key": "c1-ko-register-shifting-02",
+        "title": "호칭 선택",
+        "setting": "item",
+        "cefr": "C1",
+        "topic": "requests",
+        "characters": [
+          "지민",
+          "민수"
+        ],
+        "turns": [
+          {
+            "order": 1,
+            "speaker": "지민",
+            "text": "처음 만나는 전문가를 이름으로 불러도 괜찮을까요?",
+            "translation_fa": "می‌شود کارشناس را که اولین‌بار می‌بینیم با اسم صدا کنیم؟"
+          },
+          {
+            "order": 2,
+            "speaker": "민수",
+            "text": "공식 자리라면 직함이나 선생님 같은 호칭이 더 안전해요.",
+            "translation_fa": "در موقعیت رسمی، عنوان شغلی یا «선생님» امن‌تر است."
+          },
+          {
+            "order": 3,
+            "speaker": "지민",
+            "text": "친해지면 바꿀 수 있겠죠?",
+            "translation_fa": "اگر صمیمی شدیم می‌توانیم عوضش کنیم؟"
+          },
+          {
+            "order": 4,
+            "speaker": "민수",
+            "text": "네, 상대가 어떻게 불리길 원하는지도 확인하면 좋아요.",
+            "translation_fa": "بله، خوب است ترجیح خود طرف را هم بپرسیم."
+          }
+        ],
+        "qa": {
+          "character_pair_unique_within_unit": true,
+          "naturalness": "passed",
+          "single_situation": true
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_register_shifting_01_meaning",
+      "data": {
+        "lesson_key": "c1-ko-register-shifting-01",
+        "exercise_type": "multiple_choice",
+        "prompt": {
+          "instruction_fa": "معنی درست این عبارت کره‌ای را انتخاب کن.",
+          "value": "공식 발표에서는 같은 내용을 말하더라도 근거와 책임 주체를 더 명시해야 합니다."
+        },
+        "answer": {
+          "value": "در اعلام رسمی حتی همان محتوا باید با شواهد و مسئولیت روشن‌تر بیان شود."
+        },
+        "options": [
+          "در اعلام رسمی حتی همان محتوا باید با شواهد و مسئولیت روشن‌تر بیان شود.",
+          "اگر لحن دوستانه 해요체 را عیناً وارد گزارش کنیم، حس متن بیش از حد سبک می‌شود.",
+          "سطح احترام را نه فقط بر اساس جایگاه طرف، بلکه متناسب با موقعیت و هدف باید تغییر داد.",
+          "رسمی‌تر بودن همیشه به معنی مناسب‌تر بودن نیست."
+        ],
+        "difficulty": 5,
+        "cefr": "C1",
+        "topic": "requests",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت و شکل دقیق عبارت کره‌ای دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: 공식 발표에서는 같은 내용을 말하더라도 근거와 책임 주체를 더 명시해야 합니다. — در اعلام رسمی حتی همان محتوا باید با شواهد و مسئولیت روشن‌تر بیان شود.",
+          "model_answer": "공식 발표에서는 같은 내용을 말하더라도 근거와 책임 주체를 더 명시해야 합니다."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_register_shifting_01_listen",
+      "data": {
+        "lesson_key": "c1-ko-register-shifting-01",
+        "exercise_type": "listening",
+        "prompt": {
+          "instruction_fa": "گوش کن و عبارتی را که شنیدی انتخاب کن.",
+          "audio_text": "친한 사이의 해요체를 보고서 문장에 그대로 옮기면 어감이 지나치게 가벼워질 수 있어요."
+        },
+        "answer": {
+          "value": "친한 사이의 해요체를 보고서 문장에 그대로 옮기면 어감이 지나치게 가벼워질 수 있어요."
+        },
+        "options": [
+          "친한 사이의 해요체를 보고서 문장에 그대로 옮기면 어감이 지나치게 가벼워질 수 있어요.",
+          "공식 발표에서는 같은 내용을 말하더라도 근거와 책임 주체를 더 명시해야 합니다.",
+          "상대의 지위뿐 아니라 장면과 목적에 따라 높임 수준을 전환해야 합니다.",
+          "격식이 높다고 항상 더 적절한 것은 아닙니다."
+        ],
+        "difficulty": 5,
+        "cefr": "C1",
+        "topic": "requests",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت و شکل دقیق عبارت کره‌ای دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: 친한 사이의 해요체를 보고서 문장에 그대로 옮기면 어감이 지나치게 가벼워질 수 있어요. — اگر لحن دوستانه 해요체 را عیناً وارد گزارش کنیم، حس متن بیش از حد سبک می‌شود.",
+          "model_answer": "친한 사이의 해요체를 보고서 문장에 그대로 옮기면 어감이 지나치게 가벼워질 수 있어요.",
+          "transcript_ko": "친한 사이의 해요체를 보고서 문장에 그대로 옮기면 어감이 지나치게 가벼워질 수 있어요."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_register_shifting_01_speak",
+      "data": {
+        "lesson_key": "c1-ko-register-shifting-01",
+        "exercise_type": "speaking",
+        "prompt": {
+          "instruction_fa": "عبارت را با صدای بلند و با ریتم طبیعی تکرار کن.",
+          "value": "공식 발표에서는 같은 내용을 말하더라도 근거와 책임 주체를 더 명시해야 합니다."
+        },
+        "answer": {
+          "expected_text": "공식 발표에서는 같은 내용을 말하더라도 근거와 책임 주체를 더 명시해야 합니다."
+        },
+        "difficulty": 5,
+        "cefr": "C1",
+        "topic": "requests",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت و شکل دقیق عبارت کره‌ای دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: 공식 발표에서는 같은 내용을 말하더라도 근거와 책임 주체를 더 명시해야 합니다. — در اعلام رسمی حتی همان محتوا باید با شواهد و مسئولیت روشن‌تر بیان شود.",
+          "model_answer": "공식 발표에서는 같은 내용을 말하더라도 근거와 책임 주체를 더 명시해야 합니다."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_register_shifting_01_build",
+      "data": {
+        "lesson_key": "c1-ko-register-shifting-01",
+        "exercise_type": "sentence_building",
+        "prompt": {
+          "instruction_fa": "بخش‌ها را لمس کن تا عبارت درست ساخته شود.",
+          "tokens": [
+            "사이의",
+            "해요체를",
+            "보고서",
+            "문장에",
+            "그대로",
+            "옮기면",
+            "어감이",
+            "지나치게",
+            "가벼워질",
+            "수",
+            "있어요.",
+            "친한"
+          ]
+        },
+        "answer": {
+          "tokens": [
+            "친한",
+            "사이의",
+            "해요체를",
+            "보고서",
+            "문장에",
+            "그대로",
+            "옮기면",
+            "어감이",
+            "지나치게",
+            "가벼워질",
+            "수",
+            "있어요."
+          ],
+          "value": "친한 사이의 해요체를 보고서 문장에 그대로 옮기면 어감이 지나치게 가벼워질 수 있어요."
+        },
+        "difficulty": 5,
+        "cefr": "C1",
+        "topic": "requests",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت و شکل دقیق عبارت کره‌ای دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: 친한 사이의 해요체를 보고서 문장에 그대로 옮기면 어감이 지나치게 가벼워질 수 있어요. — اگر لحن دوستانه 해요체 را عیناً وارد گزارش کنیم، حس متن بیش از حد سبک می‌شود.",
+          "model_answer": "친한 사이의 해요체를 보고서 문장에 그대로 옮기면 어감이 지나치게 가벼워질 수 있어요."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_register_shifting_01_dialogue",
+      "data": {
+        "lesson_key": "c1-ko-register-shifting-01",
+        "exercise_type": "dialogue_comprehension",
+        "prompt": {
+          "instruction_fa": "با توجه به گفت‌وگو، پاسخ مناسب را انتخاب کن.",
+          "source_dialogue_ref": "d_register_shifting_01",
+          "question_fa": "کدام گزینه با معنی «در اعلام رسمی حتی همان محتوا باید با شواهد و مسئولیت روشن‌تر بیان شود.» هماهنگ است؟"
+        },
+        "answer": {
+          "value": "공식 발표에서는 같은 내용을 말하더라도 근거와 책임 주체를 더 명시해야 합니다."
+        },
+        "options": [
+          "공식 발표에서는 같은 내용을 말하더라도 근거와 책임 주체를 더 명시해야 합니다.",
+          "친한 사이의 해요체를 보고서 문장에 그대로 옮기면 어감이 지나치게 가벼워질 수 있어요.",
+          "상대의 지위뿐 아니라 장면과 목적에 따라 높임 수준을 전환해야 합니다.",
+          "격식이 높다고 항상 더 적절한 것은 아닙니다."
+        ],
+        "difficulty": 5,
+        "cefr": "C1",
+        "topic": "requests",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت و شکل دقیق عبارت کره‌ای دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: 공식 발표에서는 같은 내용을 말하더라도 근거와 책임 주체를 더 명시해야 합니다. — در اعلام رسمی حتی همان محتوا باید با شواهد و مسئولیت روشن‌تر بیان شود.",
+          "model_answer": "공식 발표에서는 같은 내용을 말하더라도 근거와 책임 주체를 더 명시해야 합니다."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_register_shifting_02_meaning",
+      "data": {
+        "lesson_key": "c1-ko-register-shifting-02",
+        "exercise_type": "multiple_choice",
+        "prompt": {
+          "instruction_fa": "معنی درست این عبارت کره‌ای را انتخاب کن.",
+          "value": "상대의 지위뿐 아니라 장면과 목적에 따라 높임 수준을 전환해야 합니다."
+        },
+        "answer": {
+          "value": "سطح احترام را نه فقط بر اساس جایگاه طرف، بلکه متناسب با موقعیت و هدف باید تغییر داد."
+        },
+        "options": [
+          "سطح احترام را نه فقط بر اساس جایگاه طرف، بلکه متناسب با موقعیت و هدف باید تغییر داد.",
+          "در اعلام رسمی حتی همان محتوا باید با شواهد و مسئولیت روشن‌تر بیان شود.",
+          "اگر لحن دوستانه 해요체 را عیناً وارد گزارش کنیم، حس متن بیش از حد سبک می‌شود.",
+          "رسمی‌تر بودن همیشه به معنی مناسب‌تر بودن نیست."
+        ],
+        "difficulty": 5,
+        "cefr": "C1",
+        "topic": "requests",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت و شکل دقیق عبارت کره‌ای دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: 상대의 지위뿐 아니라 장면과 목적에 따라 높임 수준을 전환해야 합니다. — سطح احترام را نه فقط بر اساس جایگاه طرف، بلکه متناسب با موقعیت و هدف باید تغییر داد.",
+          "model_answer": "상대의 지위뿐 아니라 장면과 목적에 따라 높임 수준을 전환해야 합니다."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_register_shifting_02_listen",
+      "data": {
+        "lesson_key": "c1-ko-register-shifting-02",
+        "exercise_type": "listening",
+        "prompt": {
+          "instruction_fa": "گوش کن و عبارتی را که شنیدی انتخاب کن.",
+          "audio_text": "격식이 높다고 항상 더 적절한 것은 아닙니다."
+        },
+        "answer": {
+          "value": "격식이 높다고 항상 더 적절한 것은 아닙니다."
+        },
+        "options": [
+          "격식이 높다고 항상 더 적절한 것은 아닙니다.",
+          "상대의 지위뿐 아니라 장면과 목적에 따라 높임 수준을 전환해야 합니다.",
+          "공식 발표에서는 같은 내용을 말하더라도 근거와 책임 주체를 더 명시해야 합니다.",
+          "친한 사이의 해요체를 보고서 문장에 그대로 옮기면 어감이 지나치게 가벼워질 수 있어요."
+        ],
+        "difficulty": 5,
+        "cefr": "C1",
+        "topic": "requests",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت و شکل دقیق عبارت کره‌ای دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: 격식이 높다고 항상 더 적절한 것은 아닙니다. — رسمی‌تر بودن همیشه به معنی مناسب‌تر بودن نیست.",
+          "model_answer": "격식이 높다고 항상 더 적절한 것은 아닙니다.",
+          "transcript_ko": "격식이 높다고 항상 더 적절한 것은 아닙니다."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_register_shifting_02_speak",
+      "data": {
+        "lesson_key": "c1-ko-register-shifting-02",
+        "exercise_type": "speaking",
+        "prompt": {
+          "instruction_fa": "عبارت را با صدای بلند و با ریتم طبیعی تکرار کن.",
+          "value": "상대의 지위뿐 아니라 장면과 목적에 따라 높임 수준을 전환해야 합니다."
+        },
+        "answer": {
+          "expected_text": "상대의 지위뿐 아니라 장면과 목적에 따라 높임 수준을 전환해야 합니다."
+        },
+        "difficulty": 5,
+        "cefr": "C1",
+        "topic": "requests",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت و شکل دقیق عبارت کره‌ای دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: 상대의 지위뿐 아니라 장면과 목적에 따라 높임 수준을 전환해야 합니다. — سطح احترام را نه فقط بر اساس جایگاه طرف، بلکه متناسب با موقعیت و هدف باید تغییر داد.",
+          "model_answer": "상대의 지위뿐 아니라 장면과 목적에 따라 높임 수준을 전환해야 합니다."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_register_shifting_02_build",
+      "data": {
+        "lesson_key": "c1-ko-register-shifting-02",
+        "exercise_type": "sentence_building",
+        "prompt": {
+          "instruction_fa": "بخش‌ها را لمس کن تا عبارت درست ساخته شود.",
+          "tokens": [
+            "높다고",
+            "항상",
+            "더",
+            "적절한",
+            "것은",
+            "아닙니다.",
+            "격식이"
+          ]
+        },
+        "answer": {
+          "tokens": [
+            "격식이",
+            "높다고",
+            "항상",
+            "더",
+            "적절한",
+            "것은",
+            "아닙니다."
+          ],
+          "value": "격식이 높다고 항상 더 적절한 것은 아닙니다."
+        },
+        "difficulty": 5,
+        "cefr": "C1",
+        "topic": "requests",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت و شکل دقیق عبارت کره‌ای دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: 격식이 높다고 항상 더 적절한 것은 아닙니다. — رسمی‌تر بودن همیشه به معنی مناسب‌تر بودن نیست.",
+          "model_answer": "격식이 높다고 항상 더 적절한 것은 아닙니다."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_register_shifting_02_dialogue",
+      "data": {
+        "lesson_key": "c1-ko-register-shifting-02",
+        "exercise_type": "dialogue_comprehension",
+        "prompt": {
+          "instruction_fa": "با توجه به گفت‌وگو، پاسخ مناسب را انتخاب کن.",
+          "source_dialogue_ref": "d_register_shifting_02",
+          "question_fa": "کدام گزینه با معنی «سطح احترام را نه فقط بر اساس جایگاه طرف، بلکه متناسب با موقعیت و هدف باید تغییر داد.» هماهنگ است؟"
+        },
+        "answer": {
+          "value": "상대의 지위뿐 아니라 장면과 목적에 따라 높임 수준을 전환해야 합니다."
+        },
+        "options": [
+          "상대의 지위뿐 아니라 장면과 목적에 따라 높임 수준을 전환해야 합니다.",
+          "공식 발표에서는 같은 내용을 말하더라도 근거와 책임 주체를 더 명시해야 합니다.",
+          "친한 사이의 해요체를 보고서 문장에 그대로 옮기면 어감이 지나치게 가벼워질 수 있어요.",
+          "격식이 높다고 항상 더 적절한 것은 아닙니다."
+        ],
+        "difficulty": 5,
+        "cefr": "C1",
+        "topic": "requests",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت و شکل دقیق عبارت کره‌ای دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: 상대의 지위뿐 아니라 장면과 목적에 따라 높임 수준을 전환해야 합니다. — سطح احترام را نه فقط بر اساس جایگاه طرف، بلکه متناسب با موقعیت و هدف باید تغییر داد.",
+          "model_answer": "상대의 지위뿐 아니라 장면과 목적에 따라 높임 수준을 전환해야 합니다."
+        },
+        "status": "validated"
+      }
+    }
+  ]
+}

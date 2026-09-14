@@ -1,0 +1,872 @@
+{
+  "batch_id": "ko-kr-c1-precision-reformulation-v1",
+  "course": "fa-ko-kr",
+  "learner_language": "fa",
+  "learner_variant": "fa-IR",
+  "target_language": "ko",
+  "target_variant": "ko-KR",
+  "cefr": "C1",
+  "curriculum_unit": "c1-ko-precision-reformulation",
+  "generator": "gpt-5.6-sol:korean-c1-batch-v1",
+  "items": [
+    {
+      "kind": "concept",
+      "external_id": "c_precision_reformulation_01",
+      "data": {
+        "slug": "ko_c1_precision_reformulation_jeongmil",
+        "lesson_key": "c1-ko-precision-reformulation-01",
+        "concept_type": "lexical",
+        "part_of_speech": "adjective",
+        "forms": {
+          "ko": "정밀하다"
+        },
+        "translations": {
+          "fa": "دقیق و ظریف بودن"
+        },
+        "cefr": "C1",
+        "topic": "questions",
+        "tags": [
+          "core",
+          "beginner",
+          "high_frequency"
+        ],
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_precision_reformulation_01",
+      "data": {
+        "lesson_key": "c1-ko-precision-reformulation-01",
+        "lemma": "정밀하다",
+        "display_lemma": "정밀하다",
+        "language": "ko",
+        "language_variant": "ko-KR",
+        "part_of_speech": "adjective",
+        "concept_refs": [
+          "ko_c1_precision_reformulation_jeongmil"
+        ],
+        "cefr": "C1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_precision_reformulation_01",
+      "data": {
+        "lesson_key": "c1-ko-precision-reformulation-01",
+        "lexeme_ref": "lx_precision_reformulation_01",
+        "surface_form": "정밀하다",
+        "display_form": "정밀하다",
+        "grammatical_features": {},
+        "is_lemma": true,
+        "is_preferred": true,
+        "cefr": "C1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_precision_reformulation_02",
+      "data": {
+        "slug": "ko_c1_precision_reformulation_beomwi",
+        "lesson_key": "c1-ko-precision-reformulation-01",
+        "concept_type": "lexical",
+        "part_of_speech": "noun",
+        "forms": {
+          "ko": "범위"
+        },
+        "translations": {
+          "fa": "دامنه"
+        },
+        "cefr": "C1",
+        "topic": "questions",
+        "tags": [
+          "core",
+          "beginner",
+          "high_frequency"
+        ],
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_precision_reformulation_02",
+      "data": {
+        "lesson_key": "c1-ko-precision-reformulation-01",
+        "lemma": "범위",
+        "display_lemma": "범위",
+        "language": "ko",
+        "language_variant": "ko-KR",
+        "part_of_speech": "noun",
+        "concept_refs": [
+          "ko_c1_precision_reformulation_beomwi"
+        ],
+        "cefr": "C1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_precision_reformulation_02",
+      "data": {
+        "lesson_key": "c1-ko-precision-reformulation-01",
+        "lexeme_ref": "lx_precision_reformulation_02",
+        "surface_form": "범위",
+        "display_form": "범위",
+        "grammatical_features": {},
+        "is_lemma": true,
+        "is_preferred": true,
+        "cefr": "C1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_precision_reformulation_03",
+      "data": {
+        "slug": "ko_c1_precision_reformulation_gaenyeom",
+        "lesson_key": "c1-ko-precision-reformulation-01",
+        "concept_type": "lexical",
+        "part_of_speech": "noun",
+        "forms": {
+          "ko": "개념"
+        },
+        "translations": {
+          "fa": "مفهوم"
+        },
+        "cefr": "C1",
+        "topic": "questions",
+        "tags": [
+          "core",
+          "beginner",
+          "high_frequency"
+        ],
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_precision_reformulation_03",
+      "data": {
+        "lesson_key": "c1-ko-precision-reformulation-01",
+        "lemma": "개념",
+        "display_lemma": "개념",
+        "language": "ko",
+        "language_variant": "ko-KR",
+        "part_of_speech": "noun",
+        "concept_refs": [
+          "ko_c1_precision_reformulation_gaenyeom"
+        ],
+        "cefr": "C1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_precision_reformulation_03",
+      "data": {
+        "lesson_key": "c1-ko-precision-reformulation-01",
+        "lexeme_ref": "lx_precision_reformulation_03",
+        "surface_form": "개념",
+        "display_form": "개념",
+        "grammatical_features": {},
+        "is_lemma": true,
+        "is_preferred": true,
+        "cefr": "C1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_precision_reformulation_04",
+      "data": {
+        "slug": "ko_c1_precision_reformulation_jaejeongui",
+        "lesson_key": "c1-ko-precision-reformulation-02",
+        "concept_type": "lexical",
+        "part_of_speech": "verb",
+        "forms": {
+          "ko": "재정의하다"
+        },
+        "translations": {
+          "fa": "بازتعریف کردن"
+        },
+        "cefr": "C1",
+        "topic": "questions",
+        "tags": [
+          "core",
+          "beginner",
+          "high_frequency"
+        ],
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_precision_reformulation_04",
+      "data": {
+        "lesson_key": "c1-ko-precision-reformulation-02",
+        "lemma": "재정의하다",
+        "display_lemma": "재정의하다",
+        "language": "ko",
+        "language_variant": "ko-KR",
+        "part_of_speech": "verb",
+        "concept_refs": [
+          "ko_c1_precision_reformulation_jaejeongui"
+        ],
+        "cefr": "C1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_precision_reformulation_04",
+      "data": {
+        "lesson_key": "c1-ko-precision-reformulation-02",
+        "lexeme_ref": "lx_precision_reformulation_04",
+        "surface_form": "재정의하다",
+        "display_form": "재정의하다",
+        "grammatical_features": {},
+        "is_lemma": true,
+        "is_preferred": true,
+        "cefr": "C1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_precision_reformulation_05",
+      "data": {
+        "slug": "ko_c1_precision_reformulation_gubun",
+        "lesson_key": "c1-ko-precision-reformulation-02",
+        "concept_type": "lexical",
+        "part_of_speech": "verb",
+        "forms": {
+          "ko": "구분하다"
+        },
+        "translations": {
+          "fa": "تفکیک کردن"
+        },
+        "cefr": "C1",
+        "topic": "questions",
+        "tags": [
+          "core",
+          "beginner",
+          "high_frequency"
+        ],
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_precision_reformulation_05",
+      "data": {
+        "lesson_key": "c1-ko-precision-reformulation-02",
+        "lemma": "구분하다",
+        "display_lemma": "구분하다",
+        "language": "ko",
+        "language_variant": "ko-KR",
+        "part_of_speech": "verb",
+        "concept_refs": [
+          "ko_c1_precision_reformulation_gubun"
+        ],
+        "cefr": "C1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_precision_reformulation_05",
+      "data": {
+        "lesson_key": "c1-ko-precision-reformulation-02",
+        "lexeme_ref": "lx_precision_reformulation_05",
+        "surface_form": "구분하다",
+        "display_form": "구분하다",
+        "grammatical_features": {},
+        "is_lemma": true,
+        "is_preferred": true,
+        "cefr": "C1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_precision_reformulation_06",
+      "data": {
+        "slug": "ko_c1_precision_reformulation_ohae",
+        "lesson_key": "c1-ko-precision-reformulation-02",
+        "concept_type": "lexical",
+        "part_of_speech": "noun",
+        "forms": {
+          "ko": "오해"
+        },
+        "translations": {
+          "fa": "سوءبرداشت"
+        },
+        "cefr": "C1",
+        "topic": "questions",
+        "tags": [
+          "core",
+          "beginner",
+          "high_frequency"
+        ],
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_precision_reformulation_06",
+      "data": {
+        "lesson_key": "c1-ko-precision-reformulation-02",
+        "lemma": "오해",
+        "display_lemma": "오해",
+        "language": "ko",
+        "language_variant": "ko-KR",
+        "part_of_speech": "noun",
+        "concept_refs": [
+          "ko_c1_precision_reformulation_ohae"
+        ],
+        "cefr": "C1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_precision_reformulation_06",
+      "data": {
+        "lesson_key": "c1-ko-precision-reformulation-02",
+        "lexeme_ref": "lx_precision_reformulation_06",
+        "surface_form": "오해",
+        "display_form": "오해",
+        "grammatical_features": {},
+        "is_lemma": true,
+        "is_preferred": true,
+        "cefr": "C1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_precision_reformulation_01",
+      "data": {
+        "lesson_key": "c1-ko-precision-reformulation-01",
+        "text": {
+          "ko": "정확히 말하면 실패라기보다 목표를 일부 수정한 결과예요."
+        },
+        "translations": {
+          "fa": "دقیق‌تر بگوییم، این بیشتر نتیجه تعدیل بخشی از هدف است تا شکست."
+        },
+        "intent": "reformulation",
+        "concept_refs": [],
+        "cefr": "C1",
+        "topic": "questions",
+        "register": "polite",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_precision_reformulation_02",
+      "data": {
+        "lesson_key": "c1-ko-precision-reformulation-01",
+        "text": {
+          "ko": "논의 범위를 국내 사례로 한정하면 결론이 달라질 수 있습니다."
+        },
+        "translations": {
+          "fa": "اگر دامنه بحث را به نمونه‌های داخلی محدود کنیم، نتیجه ممکن است متفاوت شود."
+        },
+        "intent": "scope",
+        "concept_refs": [
+          "ko_c1_precision_reformulation_beomwi"
+        ],
+        "cefr": "C1",
+        "topic": "questions",
+        "register": "polite",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_precision_reformulation_03",
+      "data": {
+        "lesson_key": "c1-ko-precision-reformulation-02",
+        "text": {
+          "ko": "그 개념은 일상적 의미와 전문적 의미를 구분해서 써야 해요."
+        },
+        "translations": {
+          "fa": "این مفهوم را باید با تفکیک معنای روزمره و تخصصی به کار برد."
+        },
+        "intent": "definition",
+        "concept_refs": [
+          "ko_c1_precision_reformulation_gaenyeom",
+          "ko_c1_precision_reformulation_gubun"
+        ],
+        "cefr": "C1",
+        "topic": "questions",
+        "register": "polite",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_precision_reformulation_04",
+      "data": {
+        "lesson_key": "c1-ko-precision-reformulation-02",
+        "text": {
+          "ko": "오해를 피하려면 핵심 용어를 먼저 재정의하는 편이 낫습니다."
+        },
+        "translations": {
+          "fa": "برای جلوگیری از سوءبرداشت، بهتر است اول اصطلاح کلیدی را بازتعریف کنیم."
+        },
+        "intent": "clarification",
+        "concept_refs": [
+          "ko_c1_precision_reformulation_ohae",
+          "ko_c1_precision_reformulation_jaejeongui"
+        ],
+        "cefr": "C1",
+        "topic": "questions",
+        "register": "polite",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "grammar_point",
+      "external_id": "g_precision_reformulation_core",
+      "data": {
+        "lesson_key": "c1-ko-precision-reformulation-01",
+        "slug": "c1-ko-precision-reformulation-grammar",
+        "title": "정밀한 재진술",
+        "rule_summary": "At C1, reformulation is not repetition: narrow scope, replace an imprecise label and preserve the original speaker's intended force.",
+        "explanation": {
+          "fa": "در C1 بازگویی فقط تکرار نیست؛ باید دامنه ادعا، شدت و تعریف واژه را دقیق نگه داشت. -라기보다 برای جایگزین‌کردن یک برچسب نادقیق بسیار طبیعی است."
+        },
+        "examples": [
+          {
+            "ko": "비판이라기보다 보완 요청에 가깝습니다.",
+            "fa": "بیشتر درخواست تکمیل است تا انتقاد."
+          },
+          {
+            "ko": "다시 표현하자면 속도가 아니라 방향이 문제라는 뜻입니다.",
+            "fa": "یعنی اگر دوباره بیان کنیم، مشکل سرعت نیست بلکه جهت است."
+          }
+        ],
+        "cefr": "C1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "dialogue",
+      "external_id": "d_precision_reformulation_01",
+      "data": {
+        "lesson_key": "c1-ko-precision-reformulation-01",
+        "title": "용어를 바로잡기",
+        "setting": "item",
+        "cefr": "C1",
+        "topic": "questions",
+        "characters": [
+          "하나",
+          "태호"
+        ],
+        "turns": [
+          {
+            "order": 1,
+            "speaker": "하나",
+            "text": "이 결과를 '효과 없음'으로 정리해도 될까요?",
+            "translation_fa": "می‌توانیم نتیجه را «بدون اثر» جمع‌بندی کنیم؟"
+          },
+          {
+            "order": 2,
+            "speaker": "태호",
+            "text": "정확히는 효과가 없다는 게 아니라 통계적으로 확정하기 어렵다는 뜻이에요.",
+            "translation_fa": "دقیق‌تر این است که اثر صفر نیست؛ بلکه تأیید آماری دشوار است."
+          },
+          {
+            "order": 3,
+            "speaker": "하나",
+            "text": "표현 하나가 결론의 강도를 바꾸네요.",
+            "translation_fa": "یک عبارت شدت نتیجه را عوض می‌کند."
+          },
+          {
+            "order": 4,
+            "speaker": "태호",
+            "text": "그래서 범위와 확실성을 함께 적어야 합니다.",
+            "translation_fa": "برای همین باید دامنه و میزان قطعیت را با هم بنویسیم."
+          }
+        ],
+        "qa": {
+          "character_pair_unique_within_unit": true,
+          "naturalness": "passed",
+          "single_situation": true
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "dialogue",
+      "external_id": "d_precision_reformulation_02",
+      "data": {
+        "lesson_key": "c1-ko-precision-reformulation-02",
+        "title": "오해 줄이기",
+        "setting": "item",
+        "cefr": "C1",
+        "topic": "questions",
+        "characters": [
+          "유나",
+          "도윤"
+        ],
+        "turns": [
+          {
+            "order": 1,
+            "speaker": "유나",
+            "text": "독자들이 '자율'을 제각각 이해할 것 같아요.",
+            "translation_fa": "فکر می‌کنم خواننده‌ها «خودمختاری» را متفاوت می‌فهمند."
+          },
+          {
+            "order": 2,
+            "speaker": "도윤",
+            "text": "첫 문단에서 우리가 쓰는 의미를 재정의하죠.",
+            "translation_fa": "بیایید در پاراگراف اول معنایی را که مدنظر داریم بازتعریف کنیم."
+          },
+          {
+            "order": 3,
+            "speaker": "유나",
+            "text": "일상적 의미와도 구분하고요?",
+            "translation_fa": "و از معنای روزمره هم جدا کنیم؟"
+          },
+          {
+            "order": 4,
+            "speaker": "도윤",
+            "text": "네, 그래야 뒤의 논증이 흔들리지 않아요.",
+            "translation_fa": "بله، وگرنه استدلال بعدی مبهم می‌شود."
+          }
+        ],
+        "qa": {
+          "character_pair_unique_within_unit": true,
+          "naturalness": "passed",
+          "single_situation": true
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_precision_reformulation_01_meaning",
+      "data": {
+        "lesson_key": "c1-ko-precision-reformulation-01",
+        "exercise_type": "multiple_choice",
+        "prompt": {
+          "instruction_fa": "معنی درست این عبارت کره‌ای را انتخاب کن.",
+          "value": "정확히 말하면 실패라기보다 목표를 일부 수정한 결과예요."
+        },
+        "answer": {
+          "value": "دقیق‌تر بگوییم، این بیشتر نتیجه تعدیل بخشی از هدف است تا شکست."
+        },
+        "options": [
+          "دقیق‌تر بگوییم، این بیشتر نتیجه تعدیل بخشی از هدف است تا شکست.",
+          "اگر دامنه بحث را به نمونه‌های داخلی محدود کنیم، نتیجه ممکن است متفاوت شود.",
+          "این مفهوم را باید با تفکیک معنای روزمره و تخصصی به کار برد.",
+          "برای جلوگیری از سوءبرداشت، بهتر است اول اصطلاح کلیدی را بازتعریف کنیم."
+        ],
+        "difficulty": 5,
+        "cefr": "C1",
+        "topic": "questions",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت و شکل دقیق عبارت کره‌ای دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: 정확히 말하면 실패라기보다 목표를 일부 수정한 결과예요. — دقیق‌تر بگوییم، این بیشتر نتیجه تعدیل بخشی از هدف است تا شکست.",
+          "model_answer": "정확히 말하면 실패라기보다 목표를 일부 수정한 결과예요."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_precision_reformulation_01_listen",
+      "data": {
+        "lesson_key": "c1-ko-precision-reformulation-01",
+        "exercise_type": "listening",
+        "prompt": {
+          "instruction_fa": "گوش کن و عبارتی را که شنیدی انتخاب کن.",
+          "audio_text": "논의 범위를 국내 사례로 한정하면 결론이 달라질 수 있습니다."
+        },
+        "answer": {
+          "value": "논의 범위를 국내 사례로 한정하면 결론이 달라질 수 있습니다."
+        },
+        "options": [
+          "논의 범위를 국내 사례로 한정하면 결론이 달라질 수 있습니다.",
+          "정확히 말하면 실패라기보다 목표를 일부 수정한 결과예요.",
+          "그 개념은 일상적 의미와 전문적 의미를 구분해서 써야 해요.",
+          "오해를 피하려면 핵심 용어를 먼저 재정의하는 편이 낫습니다."
+        ],
+        "difficulty": 5,
+        "cefr": "C1",
+        "topic": "questions",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت و شکل دقیق عبارت کره‌ای دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: 논의 범위를 국내 사례로 한정하면 결론이 달라질 수 있습니다. — اگر دامنه بحث را به نمونه‌های داخلی محدود کنیم، نتیجه ممکن است متفاوت شود.",
+          "model_answer": "논의 범위를 국내 사례로 한정하면 결론이 달라질 수 있습니다.",
+          "transcript_ko": "논의 범위를 국내 사례로 한정하면 결론이 달라질 수 있습니다."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_precision_reformulation_01_speak",
+      "data": {
+        "lesson_key": "c1-ko-precision-reformulation-01",
+        "exercise_type": "speaking",
+        "prompt": {
+          "instruction_fa": "عبارت را با صدای بلند و با ریتم طبیعی تکرار کن.",
+          "value": "정확히 말하면 실패라기보다 목표를 일부 수정한 결과예요."
+        },
+        "answer": {
+          "expected_text": "정확히 말하면 실패라기보다 목표를 일부 수정한 결과예요."
+        },
+        "difficulty": 5,
+        "cefr": "C1",
+        "topic": "questions",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت و شکل دقیق عبارت کره‌ای دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: 정확히 말하면 실패라기보다 목표를 일부 수정한 결과예요. — دقیق‌تر بگوییم، این بیشتر نتیجه تعدیل بخشی از هدف است تا شکست.",
+          "model_answer": "정확히 말하면 실패라기보다 목표를 일부 수정한 결과예요."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_precision_reformulation_01_build",
+      "data": {
+        "lesson_key": "c1-ko-precision-reformulation-01",
+        "exercise_type": "sentence_building",
+        "prompt": {
+          "instruction_fa": "بخش‌ها را لمس کن تا عبارت درست ساخته شود.",
+          "tokens": [
+            "범위를",
+            "국내",
+            "사례로",
+            "한정하면",
+            "결론이",
+            "달라질",
+            "수",
+            "있습니다.",
+            "논의"
+          ]
+        },
+        "answer": {
+          "tokens": [
+            "논의",
+            "범위를",
+            "국내",
+            "사례로",
+            "한정하면",
+            "결론이",
+            "달라질",
+            "수",
+            "있습니다."
+          ],
+          "value": "논의 범위를 국내 사례로 한정하면 결론이 달라질 수 있습니다."
+        },
+        "difficulty": 5,
+        "cefr": "C1",
+        "topic": "questions",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت و شکل دقیق عبارت کره‌ای دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: 논의 범위를 국내 사례로 한정하면 결론이 달라질 수 있습니다. — اگر دامنه بحث را به نمونه‌های داخلی محدود کنیم، نتیجه ممکن است متفاوت شود.",
+          "model_answer": "논의 범위를 국내 사례로 한정하면 결론이 달라질 수 있습니다."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_precision_reformulation_01_dialogue",
+      "data": {
+        "lesson_key": "c1-ko-precision-reformulation-01",
+        "exercise_type": "dialogue_comprehension",
+        "prompt": {
+          "instruction_fa": "با توجه به گفت‌وگو، پاسخ مناسب را انتخاب کن.",
+          "source_dialogue_ref": "d_precision_reformulation_01",
+          "question_fa": "کدام گزینه با معنی «دقیق‌تر بگوییم، این بیشتر نتیجه تعدیل بخشی از هدف است تا شکست.» هماهنگ است؟"
+        },
+        "answer": {
+          "value": "정확히 말하면 실패라기보다 목표를 일부 수정한 결과예요."
+        },
+        "options": [
+          "정확히 말하면 실패라기보다 목표를 일부 수정한 결과예요.",
+          "논의 범위를 국내 사례로 한정하면 결론이 달라질 수 있습니다.",
+          "그 개념은 일상적 의미와 전문적 의미를 구분해서 써야 해요.",
+          "오해를 피하려면 핵심 용어를 먼저 재정의하는 편이 낫습니다."
+        ],
+        "difficulty": 5,
+        "cefr": "C1",
+        "topic": "questions",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت و شکل دقیق عبارت کره‌ای دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: 정확히 말하면 실패라기보다 목표를 일부 수정한 결과예요. — دقیق‌تر بگوییم، این بیشتر نتیجه تعدیل بخشی از هدف است تا شکست.",
+          "model_answer": "정확히 말하면 실패라기보다 목표를 일부 수정한 결과예요."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_precision_reformulation_02_meaning",
+      "data": {
+        "lesson_key": "c1-ko-precision-reformulation-02",
+        "exercise_type": "multiple_choice",
+        "prompt": {
+          "instruction_fa": "معنی درست این عبارت کره‌ای را انتخاب کن.",
+          "value": "그 개념은 일상적 의미와 전문적 의미를 구분해서 써야 해요."
+        },
+        "answer": {
+          "value": "این مفهوم را باید با تفکیک معنای روزمره و تخصصی به کار برد."
+        },
+        "options": [
+          "این مفهوم را باید با تفکیک معنای روزمره و تخصصی به کار برد.",
+          "دقیق‌تر بگوییم، این بیشتر نتیجه تعدیل بخشی از هدف است تا شکست.",
+          "اگر دامنه بحث را به نمونه‌های داخلی محدود کنیم، نتیجه ممکن است متفاوت شود.",
+          "برای جلوگیری از سوءبرداشت، بهتر است اول اصطلاح کلیدی را بازتعریف کنیم."
+        ],
+        "difficulty": 5,
+        "cefr": "C1",
+        "topic": "questions",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت و شکل دقیق عبارت کره‌ای دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: 그 개념은 일상적 의미와 전문적 의미를 구분해서 써야 해요. — این مفهوم را باید با تفکیک معنای روزمره و تخصصی به کار برد.",
+          "model_answer": "그 개념은 일상적 의미와 전문적 의미를 구분해서 써야 해요."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_precision_reformulation_02_listen",
+      "data": {
+        "lesson_key": "c1-ko-precision-reformulation-02",
+        "exercise_type": "listening",
+        "prompt": {
+          "instruction_fa": "گوش کن و عبارتی را که شنیدی انتخاب کن.",
+          "audio_text": "오해를 피하려면 핵심 용어를 먼저 재정의하는 편이 낫습니다."
+        },
+        "answer": {
+          "value": "오해를 피하려면 핵심 용어를 먼저 재정의하는 편이 낫습니다."
+        },
+        "options": [
+          "오해를 피하려면 핵심 용어를 먼저 재정의하는 편이 낫습니다.",
+          "그 개념은 일상적 의미와 전문적 의미를 구분해서 써야 해요.",
+          "정확히 말하면 실패라기보다 목표를 일부 수정한 결과예요.",
+          "논의 범위를 국내 사례로 한정하면 결론이 달라질 수 있습니다."
+        ],
+        "difficulty": 5,
+        "cefr": "C1",
+        "topic": "questions",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت و شکل دقیق عبارت کره‌ای دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: 오해를 피하려면 핵심 용어를 먼저 재정의하는 편이 낫습니다. — برای جلوگیری از سوءبرداشت، بهتر است اول اصطلاح کلیدی را بازتعریف کنیم.",
+          "model_answer": "오해를 피하려면 핵심 용어를 먼저 재정의하는 편이 낫습니다.",
+          "transcript_ko": "오해를 피하려면 핵심 용어를 먼저 재정의하는 편이 낫습니다."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_precision_reformulation_02_speak",
+      "data": {
+        "lesson_key": "c1-ko-precision-reformulation-02",
+        "exercise_type": "speaking",
+        "prompt": {
+          "instruction_fa": "عبارت را با صدای بلند و با ریتم طبیعی تکرار کن.",
+          "value": "그 개념은 일상적 의미와 전문적 의미를 구분해서 써야 해요."
+        },
+        "answer": {
+          "expected_text": "그 개념은 일상적 의미와 전문적 의미를 구분해서 써야 해요."
+        },
+        "difficulty": 5,
+        "cefr": "C1",
+        "topic": "questions",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت و شکل دقیق عبارت کره‌ای دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: 그 개념은 일상적 의미와 전문적 의미를 구분해서 써야 해요. — این مفهوم را باید با تفکیک معنای روزمره و تخصصی به کار برد.",
+          "model_answer": "그 개념은 일상적 의미와 전문적 의미를 구분해서 써야 해요."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_precision_reformulation_02_build",
+      "data": {
+        "lesson_key": "c1-ko-precision-reformulation-02",
+        "exercise_type": "sentence_building",
+        "prompt": {
+          "instruction_fa": "بخش‌ها را لمس کن تا عبارت درست ساخته شود.",
+          "tokens": [
+            "피하려면",
+            "핵심",
+            "용어를",
+            "먼저",
+            "재정의하는",
+            "편이",
+            "낫습니다.",
+            "오해를"
+          ]
+        },
+        "answer": {
+          "tokens": [
+            "오해를",
+            "피하려면",
+            "핵심",
+            "용어를",
+            "먼저",
+            "재정의하는",
+            "편이",
+            "낫습니다."
+          ],
+          "value": "오해를 피하려면 핵심 용어를 먼저 재정의하는 편이 낫습니다."
+        },
+        "difficulty": 5,
+        "cefr": "C1",
+        "topic": "questions",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت و شکل دقیق عبارت کره‌ای دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: 오해를 피하려면 핵심 용어를 먼저 재정의하는 편이 낫습니다. — برای جلوگیری از سوءبرداشت، بهتر است اول اصطلاح کلیدی را بازتعریف کنیم.",
+          "model_answer": "오해를 피하려면 핵심 용어를 먼저 재정의하는 편이 낫습니다."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_precision_reformulation_02_dialogue",
+      "data": {
+        "lesson_key": "c1-ko-precision-reformulation-02",
+        "exercise_type": "dialogue_comprehension",
+        "prompt": {
+          "instruction_fa": "با توجه به گفت‌وگو، پاسخ مناسب را انتخاب کن.",
+          "source_dialogue_ref": "d_precision_reformulation_02",
+          "question_fa": "کدام گزینه با معنی «این مفهوم را باید با تفکیک معنای روزمره و تخصصی به کار برد.» هماهنگ است؟"
+        },
+        "answer": {
+          "value": "그 개념은 일상적 의미와 전문적 의미를 구분해서 써야 해요."
+        },
+        "options": [
+          "그 개념은 일상적 의미와 전문적 의미를 구분해서 써야 해요.",
+          "정확히 말하면 실패라기보다 목표를 일부 수정한 결과예요.",
+          "논의 범위를 국내 사례로 한정하면 결론이 달라질 수 있습니다.",
+          "오해를 피하려면 핵심 용어를 먼저 재정의하는 편이 낫습니다."
+        ],
+        "difficulty": 5,
+        "cefr": "C1",
+        "topic": "questions",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت و شکل دقیق عبارت کره‌ای دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: 그 개념은 일상적 의미와 전문적 의미를 구분해서 써야 해요. — این مفهوم را باید با تفکیک معنای روزمره و تخصصی به کار برد.",
+          "model_answer": "그 개념은 일상적 의미와 전문적 의미를 구분해서 써야 해요."
+        },
+        "status": "validated"
+      }
+    }
+  ]
+}
