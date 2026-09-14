@@ -12,7 +12,7 @@ permissions:
   contents: write
 
 concurrency:
-  group: turkish-prea1-a1-audio-generation-v1
+  group: turkish-prea1-audio-generation-v2
   cancel-in-progress: false
 
 jobs:
@@ -38,64 +38,57 @@ jobs:
         run: pip install -r requirements.txt
       - name: Require ElevenLabs connection
         run: |
-          if [ -z "${ELEVENLABS_API_KEY:-}" ]; then
-            echo 'ELEVENLABS_API_KEY GitHub secret is missing.' >&2
-            exit 2
-          fi
+          if [ -z "${ELEVENLABS_API_KEY:-}" ]; then echo 'ELEVENLABS_API_KEY GitHub secret is missing.' >&2; exit 2; fi
       - name: Final Turkish content validation before paid generation
         run: |
           set -euo pipefail
-          test "$(find content/production/tr/Pre-A1 -maxdepth 1 -name '*.json' | wc -l)" -eq 14
+          test "$(find content/production/tr/Pre-A1 -maxdepth 1 -name '*.json' | wc -l)" -eq 18
           python scripts/audit_turkish_prea1_content.py
+          python scripts/audit_prea1_cefr_readiness.py
           for f in content/production/tr/Pre-A1/*.json; do python scripts/validate_content.py "$f"; done
           python scripts/validate_character_cast.py --cast audio/cast/tr-TR.json
           python database/import/tr/pre_a1.py --dry-run
       - name: Build strict Turkish Pre-A1 manifest
         run: |
           mkdir -p audio/manifests/tr
-          python scripts/build_audio_manifest.py content/production/tr/Pre-A1 \
-            --level Pre-A1 --locale tr-TR --strict-characters \
-            --output audio/manifests/tr/Pre-A1.json
+          python scripts/build_audio_manifest.py content/production/tr/Pre-A1 --level Pre-A1 --locale tr-TR --strict-characters --output audio/manifests/tr/Pre-A1.json
       - name: Resolve and lock every required Turkish voice without TTS
         run: python scripts/resolve_audio_voices.py audio/manifests/tr/Pre-A1.json --write-lock
       - name: Validate manifest and voice lock before paid generation
         run: |
           python scripts/validate_audio_manifest.py audio/manifests/tr/Pre-A1.json
-          python scripts/audit_voice_lock.py \
-            --lock audio/voices/tr-TR.lock.json \
-            --registry audio/voices/tr-TR.json \
-            --strict
-      - name: Generate all Turkish Pre-A1 production audio
+          python scripts/audit_voice_lock.py --lock audio/voices/tr-TR.lock.json --registry audio/voices/tr-TR.json --strict
+      - name: Remove every existing Turkish Pre-A1 audio asset to force a fresh render
         run: |
-          python scripts/generate_audio.py audio/manifests/tr/Pre-A1.json \
-            --confirm-paid-generation --concurrency 2
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          d=json.loads(Path('audio/manifests/tr/Pre-A1.json').read_text()); removed=0
+          for x in d['items']:
+              audio=Path(x['relative_path']); meta=Path(str(audio)+'.json')
+              if audio.exists(): audio.unlink(); removed+=1
+              if meta.exists(): meta.unlink()
+          print({'prea1_items':len(d['items']),'removed_existing_mp3':removed})
+          PY
+      - name: Generate all Turkish Pre-A1 production audio fresh
+        run: python scripts/generate_audio.py audio/manifests/tr/Pre-A1.json --confirm-paid-generation --concurrency 2
       - name: Validate generated Turkish audio and voice consistency
         run: |
           python scripts/validate_audio_manifest.py audio/manifests/tr/Pre-A1.json --require-generated
-          python scripts/audit_audio_voice_consistency.py \
-            audio/manifests/tr/Pre-A1.json \
-            --lock-file audio/voices/tr-TR.lock.json
+          python scripts/audit_audio_voice_consistency.py audio/manifests/tr/Pre-A1.json --lock-file audio/voices/tr-TR.lock.json
       - name: Export database relative-path SQL
-        run: |
-          python scripts/export_audio_sql.py audio/manifests/tr/Pre-A1.json \
-            --status validated --output database/import/tr/pre_a1_audio.sql
+        run: python scripts/export_audio_sql.py audio/manifests/tr/Pre-A1.json --status validated --output database/import/tr/pre_a1_audio.sql
       - name: Verify expected audio categories
         run: |
           python - <<'PY'
           import json
           from pathlib import Path
-          p=Path('audio/manifests/tr/Pre-A1.json')
-          d=json.loads(p.read_text())
-          counts={}
-          for x in d['items']:
-              counts[x['category']]=counts.get(x['category'],0)+1
-          required={'lexical','utterances','dialogues'}
-          missing=required-set(counts)
-          if missing:
-              raise SystemExit('Missing audio categories: '+','.join(sorted(missing)))
+          d=json.loads(Path('audio/manifests/tr/Pre-A1.json').read_text()); counts={}
+          for x in d['items']: counts[x['category']]=counts.get(x['category'],0)+1
+          missing={'lexical','utterances','dialogues'}-set(counts)
+          if missing: raise SystemExit('Missing audio categories: '+','.join(sorted(missing)))
           generated=sum(Path(x['relative_path']).is_file() for x in d['items'])
-          if generated != len(d['items']):
-              raise SystemExit(f'Expected {len(d["items"])} manifest MP3 files, found {generated}')
+          if generated != len(d['items']): raise SystemExit(f'Expected {len(d["items"])} manifest MP3 files, found {generated}')
           print(json.dumps({'items':len(d['items']),'categories':counts,'manifest_mp3_files':generated},ensure_ascii=False,indent=2))
           PY
       - name: Commit generated Turkish audio and DB link files
@@ -103,24 +96,12 @@ jobs:
           set -euo pipefail
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git add \
-            audio/generated/tr-TR \
-            audio/manifests/tr/Pre-A1.json \
-            audio/voices/tr-TR.lock.json \
-            database/import/tr/pre_a1_audio.sql
-          if git diff --cached --quiet; then
-            echo 'No audio changes to commit.'
-            exit 0
-          fi
-          git commit -m 'Generate Turkish Pre-A1 production audio [skip ci]'
+          git add audio/generated/tr-TR audio/manifests/tr/Pre-A1.json audio/voices/tr-TR.lock.json database/import/tr/pre_a1_audio.sql
+          if git diff --cached --quiet; then echo 'No audio changes to commit.'; exit 0; fi
+          git commit -m 'Regenerate Turkish Pre-A1 production audio fresh [skip ci]'
           for attempt in 1 2 3 4 5; do
-            echo "Push attempt ${attempt}/5"
-            git fetch origin main
-            git rebase origin/main
-            if git push origin HEAD:main; then
-              exit 0
-            fi
+            echo "Push attempt ${attempt}/5"; git fetch origin main; git rebase origin/main
+            if git push origin HEAD:main; then exit 0; fi
             sleep $((attempt * 2))
           done
-          echo 'Unable to push generated Turkish audio after 5 attempts.' >&2
-          exit 1
+          echo 'Unable to push generated Turkish audio after 5 attempts.' >&2; exit 1
