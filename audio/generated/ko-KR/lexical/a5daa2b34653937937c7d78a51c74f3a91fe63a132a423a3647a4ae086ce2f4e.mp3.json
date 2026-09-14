@@ -1,0 +1,41 @@
+{
+  "source_text_hash": "f362be5fbaa0877b74e7a6fa6b9a2cfb7bd0797b796aece93c05bed4a38466c9",
+  "voice_id": "5DWGv3VDkihNUcbvaonB",
+  "model": "eleven_multilingual_v2",
+  "settings": {
+    "stability": 0.72,
+    "similarity_boost": 0.88,
+    "style": 0.0,
+    "use_speaker_boost": true,
+    "speed": 0.92
+  },
+  "provider": "elevenlabs",
+  "audio_key": "a5daa2b34653937937c7d78a51c74f3a91fe63a132a423a3647a4ae086ce2f4e",
+  "voice_key": "ko-kr.lexical.native-clear",
+  "voice_name": "Kelee K - Seoul Narrator",
+  "voice_labels": {
+    "gender": "female",
+    "accent": "seoul",
+    "age": "young",
+    "category": "professional",
+    "language": "ko",
+    "use_case": "conversational",
+    "descriptive": "casual"
+  },
+  "output_format": "mp3_44100_192",
+  "file_sha256": "a6a6441438e74244be4f907fde22abf13d019b2b01ed8d3ec885c2f6a0ead0c5",
+  "duration_ms": 1018,
+  "generated_at": "2026-09-14T01:09:10.417027+00:00",
+  "entity_refs": [
+    {
+      "entity_type": "lexeme",
+      "entity_uuid": "74152311-325b-5003-a358-1ed40cc64a23",
+      "entity_key": "lx_humor_irony_and_cultural_nuance_03"
+    },
+    {
+      "entity_type": "word_form",
+      "entity_uuid": "299e750c-885c-5473-bbf7-cfa5cf12b5d9",
+      "entity_key": "wf_humor_irony_and_cultural_nuance_03"
+    }
+  ]
+}

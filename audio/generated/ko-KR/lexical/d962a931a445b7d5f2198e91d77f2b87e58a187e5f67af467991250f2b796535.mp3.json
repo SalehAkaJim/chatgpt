@@ -1,0 +1,41 @@
+{
+  "source_text_hash": "3848048fa5b98c9ec62c2bdc5d647ff916725a73c122afadcf20425c7e779b0b",
+  "voice_id": "5DWGv3VDkihNUcbvaonB",
+  "model": "eleven_multilingual_v2",
+  "settings": {
+    "stability": 0.72,
+    "similarity_boost": 0.88,
+    "style": 0.0,
+    "use_speaker_boost": true,
+    "speed": 0.92
+  },
+  "provider": "elevenlabs",
+  "audio_key": "d962a931a445b7d5f2198e91d77f2b87e58a187e5f67af467991250f2b796535",
+  "voice_key": "ko-kr.lexical.native-clear",
+  "voice_name": "Kelee K - Seoul Narrator",
+  "voice_labels": {
+    "gender": "female",
+    "accent": "seoul",
+    "age": "young",
+    "category": "professional",
+    "language": "ko",
+    "use_case": "conversational",
+    "descriptive": "casual"
+  },
+  "output_format": "mp3_44100_192",
+  "file_sha256": "e3a45cd830832e5817375061f22f72dda9bf1ed5ba2e5764cf677397ae80f7ad",
+  "duration_ms": 1253,
+  "generated_at": "2026-09-14T01:09:15.850327+00:00",
+  "entity_refs": [
+    {
+      "entity_type": "lexeme",
+      "entity_uuid": "119efad5-7bef-5aac-a253-5603588448b9",
+      "entity_key": "lx_institutional_and_bureaucratic_korean_05"
+    },
+    {
+      "entity_type": "word_form",
+      "entity_uuid": "a7693f65-cd5d-556a-9c65-29621f24d67b",
+      "entity_key": "wf_institutional_and_bureaucratic_korean_05"
+    }
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "source_text_hash": "a82ed0161be0ebec6fbe6c938c6b6fd4e08d56472e797d287d0c293a1b875ac2",
+  "voice_id": "5DWGv3VDkihNUcbvaonB",
+  "model": "eleven_multilingual_v2",
+  "settings": {
+    "stability": 0.72,
+    "similarity_boost": 0.88,
+    "style": 0.0,
+    "use_speaker_boost": true,
+    "speed": 0.92
+  },
+  "provider": "elevenlabs",
+  "audio_key": "859f7f68fe05937f107e2351a09952be29086990eabdec7d6acbe76248144860",
+  "voice_key": "ko-kr.lexical.native-clear",
+  "voice_name": "Kelee K - Seoul Narrator",
+  "voice_labels": {
+    "gender": "female",
+    "accent": "seoul",
+    "age": "young",
+    "category": "professional",
+    "language": "ko",
+    "use_case": "conversational",
+    "descriptive": "casual"
+  },
+  "output_format": "mp3_44100_192",
+  "file_sha256": "be26abec4f7081947a8a8e56a6db1cac7213d77b6cf2d5067bb40fa874dfb31a",
+  "duration_ms": 1097,
+  "generated_at": "2026-09-14T01:09:08.389531+00:00",
+  "entity_refs": [
+    {
+      "entity_type": "lexeme",
+      "entity_uuid": "fdeb68e9-47eb-530f-91a0-783a12612936",
+      "entity_key": "lx_c1_seoul_policy_forum_capstone_04"
+    },
+    {
+      "entity_type": "word_form",
+      "entity_uuid": "01a4b016-194f-563b-a07a-68e1ef7cb921",
+      "entity_key": "wf_c1_seoul_policy_forum_capstone_04"
+    }
+  ]
+}
