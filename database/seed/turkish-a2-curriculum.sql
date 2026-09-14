@@ -111,3 +111,31 @@ JOIN courses c ON c.slug='fa-tr-tr'
 JOIN cefr_levels lvl ON lvl.code='A2'
 JOIN skills s ON s.slug=u.skill_slug
 JOIN topics t ON t.slug=u.topic_slug AND t.skill_id=s.id;
+
+-- Coverage-driven expansion batch 5: home problems, directions, everyday budgeting and leisure planning.
+INSERT IGNORE INTO curriculum_units (
+  course_id,target_language_id,cefr_level_id,skill_id,topic_id,slug,title,
+  learning_objective,sort_order,expected_lessons,status,metadata
+)
+SELECT c.id,c.target_language_id,lvl.id,s.id,t.id,u.slug,u.title,u.objective,
+       u.sort_order,u.expected_lessons,'approved',
+       JSON_OBJECT('language_specific',TRUE,'target_variant','tr-TR','batch',5,'grammar_focus',u.grammar_focus)
+FROM (
+ SELECT 450 sort_order,3 expected_lessons,'family-home' skill_slug,'home' topic_slug,
+        'a2-tr-home-problems' slug,'Mutfakta su akıyor' title,
+        'Describe a simple home problem, contact the responsible person and ask for a practical repair time.' objective,
+        'present-state descriptions, polite requests and simple scheduling' grammar_focus
+ UNION ALL SELECT 460,3,'travel-transport','directions','a2-tr-directions-routes','İkinci sokaktan sağa dönün',
+        'Ask for and give short practical directions and confirm a simple route to a familiar place.',
+        'location/case review, simple imperatives and route sequencing'
+ UNION ALL SELECT 470,3,'shopping-money','prices','a2-tr-simple-budget','Bu ay biraz daha az harcayacağım',
+        'Talk about a simple monthly budget, compare everyday costs and make a concrete spending choice.',
+        'prices, daha comparisons, quantities and simple future intention'
+ UNION ALL SELECT 480,3,'social','hobbies','a2-tr-leisure-plans','Cumartesi konsere gidelim',
+        'Discuss simple leisure interests, invite someone to an activity and agree on a practical plan.',
+        'hobby frequency, -elim suggestions, preferences and simple arrangements'
+) u
+JOIN courses c ON c.slug='fa-tr-tr'
+JOIN cefr_levels lvl ON lvl.code='A2'
+JOIN skills s ON s.slug=u.skill_slug
+JOIN topics t ON t.slug=u.topic_slug AND t.skill_id=s.id;
