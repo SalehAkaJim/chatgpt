@@ -7,6 +7,17 @@ on:
       - main
     paths:
       - '.github/korean-prea1-mysql-trigger'
+      - 'database/seed/korean-prea1-curriculum.sql'
+      - 'database/import/ko/**'
+      - 'content/production/ko/Pre-A1/**'
+      - 'audio/cast/ko-KR.json'
+      - 'audio/voices/ko-KR.json'
+      - 'scripts/audit_korean_prea1_content.py'
+      - 'scripts/materialize_level.py'
+      - 'scripts/sync_character_cast.py'
+      - 'scripts/validate_content.py'
+      - '.github/workflows/korean-prea1-mysql.yml'
+      - 'requirements.txt'
 
 jobs:
   mysql-9-import:
@@ -23,7 +34,7 @@ jobs:
           --health-cmd="mysqladmin ping -h 127.0.0.1 -prootpass"
           --health-interval=10s
           --health-timeout=5s
-          --health-retries=10
+          --health-retries=15
     env:
       DATABASE_URL: mysql://root:rootpass@127.0.0.1:3306/language_learning
       MYSQL_PWD: rootpass
@@ -39,6 +50,11 @@ jobs:
           pip install -r requirements.txt
           sudo apt-get update -qq
           sudo apt-get install -y default-mysql-client
+      - name: Verify MySQL 9.0.1
+        run: |
+          v=$(mysql -h127.0.0.1 -P3306 -uroot -Nse 'SELECT VERSION();')
+          echo "Server version: $v"
+          [[ "$v" == 9.0.1* ]]
       - name: Bootstrap multilingual schema and Korean Pre-A1 curriculum
         run: |
           set -euo pipefail
@@ -58,10 +74,20 @@ jobs:
       - name: Validate Korean content and dry-run import
         run: |
           set -euo pipefail
-          test "$(find content/production/ko/Pre-A1 -maxdepth 1 -name '*.json' | wc -l)" -eq 10
+          test "$(find content/production/ko/Pre-A1 -maxdepth 1 -name '*.json' | wc -l)" -eq 14
+          python scripts/audit_korean_prea1_content.py
           for f in content/production/ko/Pre-A1/*.json; do python scripts/validate_content.py "$f"; done
+          python scripts/validate_character_cast.py --cast audio/cast/ko-KR.json
           python database/import/ko/pre_a1.py --dry-run
-      - name: Import Korean Pre-A1
+      - name: Confirm educational release gate remains active
+        run: |
+          set -euo pipefail
+          set +e
+          python database/import/ko/pre_a1.py --dry-run --require-approved
+          rc=$?
+          set -e
+          test "$rc" -ne 0
+      - name: Import Korean Pre-A1 review build
         run: python database/import/ko/pre_a1.py --allow-unreviewed
       - name: Verify canonical counts and course isolation
         run: |
@@ -74,13 +100,13 @@ jobs:
           dialogues=$(mysql -N -s -h127.0.0.1 -P3306 -uroot language_learning -e "SELECT COUNT(DISTINCT li.dialogue_id) FROM lesson_items li JOIN lessons le ON le.id=li.lesson_id JOIN courses c ON c.id=le.course_id WHERE c.slug='fa-ko-kr' AND li.dialogue_id IS NOT NULL;")
           exercises=$(mysql -N -s -h127.0.0.1 -P3306 -uroot language_learning -e "SELECT COUNT(*) FROM exercises e JOIN lessons le ON le.id=e.lesson_id JOIN courses c ON c.id=le.course_id WHERE c.slug='fa-ko-kr';")
           echo "units=$units lessons=$lessons concepts=$concepts lexemes=$lexemes utterances=$utterances dialogues=$dialogues exercises=$exercises"
-          test "$units" = "10"
-          test "$lessons" = "20"
-          test "$concepts" = "60"
+          test "$units" = "14"
+          test "$lessons" = "27"
+          test "$concepts" = "75"
           test "$lexemes" = "58"
-          test "$utterances" = "40"
-          test "$dialogues" = "20"
-          test "$exercises" = "100"
+          test "$utterances" = "50"
+          test "$dialogues" = "23"
+          test "$exercises" = "120"
       - name: Verify Korean Pre-A1 idempotency
         run: |
           set -euo pipefail
