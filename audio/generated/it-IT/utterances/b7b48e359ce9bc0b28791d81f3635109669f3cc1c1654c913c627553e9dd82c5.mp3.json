@@ -1,0 +1,41 @@
+{
+  "source_text_hash": "5321340a8f9a838d6f39bed4ca21871bd76fa6d59df195d5623ed60e43c92b0e",
+  "voice_id": "litDcG1avVppv4R90BLu",
+  "model": "eleven_multilingual_v2",
+  "settings": {
+    "stability": 0.68,
+    "similarity_boost": 0.88,
+    "style": 0.0,
+    "use_speaker_boost": true,
+    "speed": 0.95
+  },
+  "provider": "elevenlabs",
+  "audio_key": "b7b48e359ce9bc0b28791d81f3635109669f3cc1c1654c913c627553e9dd82c5",
+  "voice_key": "it-it.sentence.native-clear",
+  "voice_name": "Carla - Natural, Reflective & Narrative",
+  "voice_labels": {
+    "gender": "female",
+    "accent": "standard",
+    "age": "middle_aged",
+    "category": "professional",
+    "language": "it",
+    "use_case": "conversational",
+    "descriptive": "crisp"
+  },
+  "output_format": "mp3_44100_192",
+  "file_sha256": "05e6583a410858b236230886cb65596a515e1ea41a8fc815f121b8303f6ac989",
+  "duration_ms": 1253,
+  "generated_at": "2026-09-14T03:10:30.045304+00:00",
+  "entity_refs": [
+    {
+      "entity_type": "utterance",
+      "entity_uuid": "a183d53a-b067-54be-93b5-5e33b1b65245",
+      "entity_key": "u_daily_routine_04"
+    },
+    {
+      "entity_type": "exercise",
+      "entity_uuid": "e11a32cf-a572-59af-afaf-c4c030da191d",
+      "entity_key": "e_daily_routine_02_listen"
+    }
+  ]
+}

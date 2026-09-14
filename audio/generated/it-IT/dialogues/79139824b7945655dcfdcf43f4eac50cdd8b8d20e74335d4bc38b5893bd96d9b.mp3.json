@@ -1,0 +1,36 @@
+{
+  "source_text_hash": "a22b4ee2c69e60ab31c6bcf81845cc4a20e5fdf4068ed0fb4739d00dc3fb6b8b",
+  "voice_id": "TnICJ0opDnjladqWtQ6k",
+  "model": "eleven_multilingual_v2",
+  "settings": {
+    "stability": 0.68,
+    "similarity_boost": 0.89,
+    "style": 0.06,
+    "use_speaker_boost": true,
+    "speed": 0.95
+  },
+  "provider": "elevenlabs",
+  "audio_key": "79139824b7945655dcfdcf43f4eac50cdd8b8d20e74335d4bc38b5893bd96d9b",
+  "voice_key": "character:matteo:male_calm",
+  "voice_name": "Livio - Calm, Meditative and Balanced",
+  "voice_labels": {
+    "gender": "male",
+    "accent": "standard",
+    "age": "middle_aged",
+    "category": "high_quality",
+    "language": "it",
+    "use_case": "narrative_story",
+    "descriptive": "calm"
+  },
+  "output_format": "mp3_44100_192",
+  "file_sha256": "8fce76da6aec77e55560032d2b451d85c19db4caaa50dfcda592ad0739e9d8cb",
+  "duration_ms": 1906,
+  "generated_at": "2026-09-14T03:09:22.332755+00:00",
+  "entity_refs": [
+    {
+      "entity_type": "dialogue_turn",
+      "entity_uuid": "d409815b-83c3-5dfc-911f-900843c77d1f",
+      "entity_key": "d_daily_routine_02:2"
+    }
+  ]
+}

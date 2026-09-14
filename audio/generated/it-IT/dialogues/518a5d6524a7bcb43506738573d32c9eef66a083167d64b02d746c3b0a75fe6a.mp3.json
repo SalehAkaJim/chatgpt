@@ -1,0 +1,41 @@
+{
+  "source_text_hash": "de53f7a1b5aab1fe336acc8b22fa938501cbec035a21938d51f32562d3654384",
+  "voice_id": "DTGwzA4YLrWB1FAT6Uas",
+  "model": "eleven_multilingual_v2",
+  "settings": {
+    "stability": 0.52,
+    "similarity_boost": 0.86,
+    "style": 0.2,
+    "use_speaker_boost": true,
+    "speed": 0.99
+  },
+  "provider": "elevenlabs",
+  "audio_key": "518a5d6524a7bcb43506738573d32c9eef66a083167d64b02d746c3b0a75fe6a",
+  "voice_key": "character:luca:male_bright",
+  "voice_name": "Lorenzo - Youthful, Expressive & Inspiring",
+  "voice_labels": {
+    "gender": "male",
+    "accent": "standard",
+    "age": "young",
+    "category": "high_quality",
+    "language": "it",
+    "use_case": "conversational",
+    "descriptive": "confident"
+  },
+  "output_format": "mp3_44100_192",
+  "file_sha256": "ed5782cead7ea20e296419f126bacc1d8eb4ac6be5ec186c66bced19c42f12a1",
+  "duration_ms": 1018,
+  "generated_at": "2026-09-14T03:09:18.129711+00:00",
+  "entity_refs": [
+    {
+      "entity_type": "dialogue_turn",
+      "entity_uuid": "c84d64b0-8303-5930-a92d-cfb3fa2c75ac",
+      "entity_key": "d_shopping_basics_02:4"
+    },
+    {
+      "entity_type": "dialogue_turn",
+      "entity_uuid": "15785806-325b-5082-9930-ba881bd40f14",
+      "entity_key": "d_time_and_plans_02:4"
+    }
+  ]
+}
