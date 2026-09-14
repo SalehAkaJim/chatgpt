@@ -431,6 +431,44 @@
       }
     },
     {
+      "kind": "utterance",
+      "external_id": "u_a2_city_day_capstone_05",
+      "data": {
+        "lesson_key": "a2-tr-a2-city-day-capstone-03",
+        "text": {
+          "tr": "Sabah müzeye gittik, sonra arkadaşımızla buluşmak için merkeze döndük."
+        },
+        "translations": {
+          "fa": "صبح به موزه رفتیم، بعد برای دیدن دوستمان به مرکز برگشتیم."
+        },
+        "intent": "integrate_city_day_sequence",
+        "concept_refs": [],
+        "cefr": "A2",
+        "topic": "travel",
+        "register": "neutral",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_a2_city_day_capstone_06",
+      "data": {
+        "lesson_key": "a2-tr-a2-city-day-capstone-03",
+        "text": {
+          "tr": "Planımız değiştiği için akşam daha yakın bir restorana gittik."
+        },
+        "translations": {
+          "fa": "چون برنامه‌مان عوض شد، شب به یک رستوران نزدیک‌تر رفتیم."
+        },
+        "intent": "adapt_plan_with_reason",
+        "concept_refs": [],
+        "cefr": "A2",
+        "topic": "travel",
+        "register": "neutral",
+        "status": "validated"
+      }
+    },
+    {
       "kind": "grammar_point",
       "external_id": "g_a2_city_day_capstone_core",
       "data": {
@@ -539,6 +577,53 @@
             "speaker": "Kaan",
             "text": "Tabii, benim için uygun.",
             "translation_fa": "حتماً، برای من مناسب است."
+          }
+        ],
+        "qa": {
+          "character_pair_unique_within_unit": true,
+          "naturalness": "passed",
+          "single_situation": true
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "dialogue",
+      "external_id": "d_a2_city_day_capstone_03",
+      "data": {
+        "lesson_key": "a2-tr-a2-city-day-capstone-03",
+        "title": "Şehir gününü yeniden planla",
+        "setting": "item",
+        "cefr": "A2",
+        "topic": "travel",
+        "characters": [
+          "Mert",
+          "Selin"
+        ],
+        "turns": [
+          {
+            "order": 1,
+            "speaker": "Mert",
+            "text": "Müze bugün kapalıymış. Ne yapalım?",
+            "translation_fa": "انگار موزه امروز بسته است. چه کار کنیم؟"
+          },
+          {
+            "order": 2,
+            "speaker": "Selin",
+            "text": "Önce sahile gidelim, sonra merkezde yemek yiyebiliriz.",
+            "translation_fa": "اول به ساحل برویم، بعد می‌توانیم در مرکز غذا بخوریم."
+          },
+          {
+            "order": 3,
+            "speaker": "Mert",
+            "text": "Saat altıda arkadaşımızla buluşmamız gerekiyor.",
+            "translation_fa": "ساعت شش باید دوستمان را ببینیم."
+          },
+          {
+            "order": 4,
+            "speaker": "Selin",
+            "text": "O zaman yakın bir restoran seçelim; daha kolay olur.",
+            "translation_fa": "پس یک رستوران نزدیک انتخاب کنیم؛ راحت‌تر می‌شود."
           }
         ],
         "qa": {
@@ -849,6 +934,283 @@
           "retry_tip_fa": "به معنی، موقعیت و پسوندهای عبارت ترکی دقت کن و دوباره امتحان کن.",
           "explanation_fa": "مدل طبیعی این درس: Daha hızlı bir seçenek bulabilir miyiz? — می‌توانیم یک گزینه سریع‌تر پیدا کنیم؟",
           "model_answer": "Daha hızlı bir seçenek bulabilir miyiz?"
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_a2_city_day_capstone_03_meaning",
+      "data": {
+        "lesson_key": "a2-tr-a2-city-day-capstone-03",
+        "exercise_type": "multiple_choice",
+        "prompt": {
+          "instruction_fa": "معنی درست این عبارت ترکی را انتخاب کن.",
+          "value": "Sabah müzeye gittik, sonra arkadaşımızla buluşmak için merkeze döndük."
+        },
+        "answer": {
+          "value": "صبح به موزه رفتیم، بعد برای دیدن دوستمان به مرکز برگشتیم."
+        },
+        "options": [
+          "صبح به موزه رفتیم، بعد برای دیدن دوستمان به مرکز برگشتیم.",
+          "باید برنامه‌مان را تغییر دهیم.",
+          "چون ترافیک است دیر خواهیم رسید.",
+          "می‌توانیم یک گزینه سریع‌تر پیدا کنیم؟"
+        ],
+        "difficulty": 2,
+        "cefr": "A2",
+        "topic": "travel",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت و پسوندهای عبارت ترکی دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: Sabah müzeye gittik, sonra arkadaşımızla buluşmak için merkeze döndük. — صبح به موزه رفتیم، بعد برای دیدن دوستمان به مرکز برگشتیم.",
+          "model_answer": "Sabah müzeye gittik, sonra arkadaşımızla buluşmak için merkeze döndük."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_a2_city_day_capstone_03_listen",
+      "data": {
+        "lesson_key": "a2-tr-a2-city-day-capstone-03",
+        "exercise_type": "listening",
+        "prompt": {
+          "instruction_fa": "گوش کن و عبارتی را که شنیدی انتخاب کن.",
+          "audio_text": "Planımız değiştiği için akşam daha yakın bir restorana gittik."
+        },
+        "answer": {
+          "value": "Planımız değiştiği için akşam daha yakın bir restorana gittik."
+        },
+        "options": [
+          "Planımız değiştiği için akşam daha yakın bir restorana gittik.",
+          "Sabah müzeye gittik, sonra arkadaşımızla buluşmak için merkeze döndük.",
+          "Planımızı değiştirmeliyiz.",
+          "Trafik olduğu için geç kalacağız."
+        ],
+        "difficulty": 2,
+        "cefr": "A2",
+        "topic": "travel",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت و پسوندهای عبارت ترکی دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: Planımız değiştiği için akşam daha yakın bir restorana gittik. — چون برنامه‌مان عوض شد، شب به یک رستوران نزدیک‌تر رفتیم.",
+          "model_answer": "Planımız değiştiği için akşam daha yakın bir restorana gittik.",
+          "transcript_tr": "Planımız değiştiği için akşam daha yakın bir restorana gittik."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_a2_city_day_capstone_03_speak",
+      "data": {
+        "lesson_key": "a2-tr-a2-city-day-capstone-03",
+        "exercise_type": "speaking",
+        "prompt": {
+          "instruction_fa": "عبارت را با صدای بلند و با ریتم طبیعی بگو.",
+          "value": "Sabah müzeye gittik, sonra arkadaşımızla buluşmak için merkeze döndük."
+        },
+        "answer": {
+          "expected_text": "Sabah müzeye gittik, sonra arkadaşımızla buluşmak için merkeze döndük."
+        },
+        "difficulty": 2,
+        "cefr": "A2",
+        "topic": "travel",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت و پسوندهای عبارت ترکی دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: Sabah müzeye gittik, sonra arkadaşımızla buluşmak için merkeze döndük. — صبح به موزه رفتیم، بعد برای دیدن دوستمان به مرکز برگشتیم.",
+          "model_answer": "Sabah müzeye gittik, sonra arkadaşımızla buluşmak için merkeze döndük."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_a2_city_day_capstone_03_build",
+      "data": {
+        "lesson_key": "a2-tr-a2-city-day-capstone-03",
+        "exercise_type": "sentence_building",
+        "prompt": {
+          "instruction_fa": "بخش‌ها را مرتب کن تا عبارت درست ساخته شود.",
+          "tokens": [
+            "değiştiği",
+            "için",
+            "akşam",
+            "daha",
+            "yakın",
+            "bir",
+            "restorana",
+            "gittik.",
+            "Planımız"
+          ]
+        },
+        "answer": {
+          "tokens": [
+            "Planımız",
+            "değiştiği",
+            "için",
+            "akşam",
+            "daha",
+            "yakın",
+            "bir",
+            "restorana",
+            "gittik."
+          ],
+          "value": "Planımız değiştiği için akşam daha yakın bir restorana gittik."
+        },
+        "difficulty": 2,
+        "cefr": "A2",
+        "topic": "travel",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت و پسوندهای عبارت ترکی دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: Planımız değiştiği için akşam daha yakın bir restorana gittik. — چون برنامه‌مان عوض شد، شب به یک رستوران نزدیک‌تر رفتیم.",
+          "model_answer": "Planımız değiştiği için akşam daha yakın bir restorana gittik."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_a2_city_day_capstone_03_dialogue",
+      "data": {
+        "lesson_key": "a2-tr-a2-city-day-capstone-03",
+        "exercise_type": "dialogue_comprehension",
+        "prompt": {
+          "instruction_fa": "با توجه به گفت‌وگو، پاسخ مناسب را انتخاب کن.",
+          "source_dialogue_ref": "d_a2_city_day_capstone_03",
+          "question_fa": "کدام گزینه با معنی «صبح به موزه رفتیم، بعد برای دیدن دوستمان به مرکز برگشتیم.» هماهنگ است؟"
+        },
+        "answer": {
+          "value": "Sabah müzeye gittik, sonra arkadaşımızla buluşmak için merkeze döndük."
+        },
+        "options": [
+          "Sabah müzeye gittik, sonra arkadaşımızla buluşmak için merkeze döndük.",
+          "Planımızı değiştirmeliyiz.",
+          "Trafik olduğu için geç kalacağız.",
+          "Daha hızlı bir seçenek bulabilir miyiz?"
+        ],
+        "difficulty": 2,
+        "cefr": "A2",
+        "topic": "travel",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت و پسوندهای عبارت ترکی دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: Sabah müzeye gittik, sonra arkadaşımızla buluşmak için merkeze döndük. — صبح به موزه رفتیم، بعد برای دیدن دوستمان به مرکز برگشتیم.",
+          "model_answer": "Sabah müzeye gittik, sonra arkadaşımızla buluşmak için merkeze döndük."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_a2_city_day_capstone_03_open_write",
+      "data": {
+        "lesson_key": "a2-tr-a2-city-day-capstone-03",
+        "exercise_type": "writing",
+        "prompt": {
+          "instruction_fa": "برای یک روز در شهر یک برنامهٔ کوتاه ۴ تا ۵ جمله‌ای بنویس. دو فعالیت را ترتیب بده، یک تغییر یا مشکل را توضیح بده و برنامه را با یک انتخاب یا درخواست عملی اصلاح کن.",
+          "personalized": true
+        },
+        "answer": {
+          "evaluation_mode": "rubric",
+          "model_text": "Sabah müzeye gideceğiz. Sonra merkezde arkadaşımızla buluşacağız. Müze kapalı olursa sahile gidebiliriz. Akşam daha yakın bir restoranı tercih ederim çünkü çok yürümek istemiyorum.",
+          "required_points_fa": [
+            "ترتیب حداقل دو فعالیت",
+            "یک دلیل یا علت",
+            "یک تغییر/مشکل و راه‌حل",
+            "یک انتخاب یا ترجیح"
+          ]
+        },
+        "assessment": {
+          "exact_match_allowed": false,
+          "criteria": [
+            {
+              "id": "task",
+              "label_fa": "انجام کار",
+              "weight": 55,
+              "descriptors_fa": {
+                "0": "کار خواسته‌شده انجام نشده است.",
+                "1": "فقط بخشی از اطلاعات اصلی منتقل شده است.",
+                "2": "بیشتر اطلاعات لازم با چند نقص منتقل شده است.",
+                "3": "کار کامل و برای سطح A2 روشن انجام شده است."
+              }
+            },
+            {
+              "id": "language",
+              "label_fa": "زبان قابل‌فهم",
+              "weight": 45,
+              "descriptors_fa": {
+                "0": "پاسخ قابل‌فهم نیست.",
+                "1": "پیام با دشواری زیاد قابل‌فهم است.",
+                "2": "با چند خطا، پیام همچنان روشن است.",
+                "3": "عبارت‌های ساده و پیوسته متناسب با A2 به‌خوبی قابل‌فهم‌اند."
+              }
+            }
+          ]
+        },
+        "difficulty": 2,
+        "cefr": "A2",
+        "topic": "travel",
+        "feedback": {
+          "explanation_fa": "پاسخ آزاد است؛ مهم انجام کامل کار و قابل‌فهم بودن پیام است.",
+          "model_answer": "Sabah müzeye gideceğiz. Sonra merkezde arkadaşımızla buluşacağız. Müze kapalı olursa sahile gidebiliriz. Akşam daha yakın bir restoranı tercih ederim çünkü çok yürümek istemiyorum.",
+          "retry_tip_fa": "از مدل کمک بگیر، اما اطلاعات و انتخاب‌های خودت را بنویس."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_a2_city_day_capstone_03_personal_speak",
+      "data": {
+        "lesson_key": "a2-tr-a2-city-day-capstone-03",
+        "exercise_type": "speaking",
+        "prompt": {
+          "instruction_fa": "یک روز شهری را در حدود ۴۵ ثانیه برنامه‌ریزی و توضیح بده. ترتیب کارها، یک دلیل، یک ترجیح و واکنش به یک تغییر برنامه را در صحبتت بیاور.",
+          "personalized": true
+        },
+        "answer": {
+          "evaluation_mode": "rubric",
+          "model_text": "Sabah müzeye gideceğiz. Sonra merkezde arkadaşımızla buluşacağız. Müze kapalı olursa sahile gidebiliriz. Akşam daha yakın bir restoranı tercih ederim çünkü çok yürümek istemiyorum.",
+          "required_points_fa": [
+            "ترتیب حداقل دو فعالیت",
+            "یک دلیل یا علت",
+            "یک تغییر/مشکل و راه‌حل",
+            "یک انتخاب یا ترجیح"
+          ]
+        },
+        "assessment": {
+          "exact_match_allowed": false,
+          "criteria": [
+            {
+              "id": "task",
+              "label_fa": "انجام کار",
+              "weight": 55,
+              "descriptors_fa": {
+                "0": "کار خواسته‌شده انجام نشده است.",
+                "1": "فقط بخشی از اطلاعات اصلی منتقل شده است.",
+                "2": "بیشتر اطلاعات لازم با چند نقص منتقل شده است.",
+                "3": "کار کامل و برای سطح A2 روشن انجام شده است."
+              }
+            },
+            {
+              "id": "language",
+              "label_fa": "زبان قابل‌فهم",
+              "weight": 45,
+              "descriptors_fa": {
+                "0": "پاسخ قابل‌فهم نیست.",
+                "1": "پیام با دشواری زیاد قابل‌فهم است.",
+                "2": "با چند خطا، پیام همچنان روشن است.",
+                "3": "عبارت‌های ساده و پیوسته متناسب با A2 به‌خوبی قابل‌فهم‌اند."
+              }
+            }
+          ]
+        },
+        "difficulty": 2,
+        "cefr": "A2",
+        "topic": "travel",
+        "feedback": {
+          "explanation_fa": "لازم نیست عین مدل صحبت کنی؛ پیام باید کوتاه، پیوسته و روشن باشد.",
+          "model_answer": "Sabah müzeye gideceğiz. Sonra merkezde arkadaşımızla buluşacağız. Müze kapalı olursa sahile gidebiliriz. Akşam daha yakın bir restoranı tercih ederim çünkü çok yürümek istemiyorum.",
+          "retry_tip_fa": "دو یا سه جملهٔ مرتبط بساز و دلیل یا جزئیات کوتاه اضافه کن."
         },
         "status": "validated"
       }

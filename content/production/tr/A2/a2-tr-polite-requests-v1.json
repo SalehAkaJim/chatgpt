@@ -431,6 +431,44 @@
       }
     },
     {
+      "kind": "utterance",
+      "external_id": "u_polite_requests_05",
+      "data": {
+        "lesson_key": "a2-tr-polite-requests-03",
+        "text": {
+          "tr": "Mümkünse pencereyi biraz açabilir misiniz?"
+        },
+        "translations": {
+          "fa": "اگر ممکن است می‌توانید پنجره را کمی باز کنید؟"
+        },
+        "intent": "soften_polite_request",
+        "concept_refs": [],
+        "cefr": "A2",
+        "topic": "restaurants",
+        "register": "neutral",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_polite_requests_06",
+      "data": {
+        "lesson_key": "a2-tr-polite-requests-03",
+        "text": {
+          "tr": "Üzgünüm, şu anda olmaz; beş dakika bekleyebilir misiniz?"
+        },
+        "translations": {
+          "fa": "متأسفم، الان نمی‌شود؛ می‌توانید پنج دقیقه صبر کنید؟"
+        },
+        "intent": "decline_and_offer_alternative",
+        "concept_refs": [],
+        "cefr": "A2",
+        "topic": "restaurants",
+        "register": "neutral",
+        "status": "validated"
+      }
+    },
+    {
       "kind": "grammar_point",
       "external_id": "g_polite_requests_core",
       "data": {
@@ -539,6 +577,53 @@
             "speaker": "Burak",
             "text": "Tabii ki.",
             "translation_fa": "البته."
+          }
+        ],
+        "qa": {
+          "character_pair_unique_within_unit": true,
+          "naturalness": "passed",
+          "single_situation": true
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "dialogue",
+      "external_id": "d_polite_requests_03",
+      "data": {
+        "lesson_key": "a2-tr-polite-requests-03",
+        "title": "Nazikçe çözüm bul",
+        "setting": "item",
+        "cefr": "A2",
+        "topic": "restaurants",
+        "characters": [
+          "Kaan",
+          "Zeynep"
+        ],
+        "turns": [
+          {
+            "order": 1,
+            "speaker": "Kaan",
+            "text": "Affedersiniz, burada oturabilir miyim?",
+            "translation_fa": "ببخشید، می‌توانم اینجا بنشینم؟"
+          },
+          {
+            "order": 2,
+            "speaker": "Zeynep",
+            "text": "Üzgünüm, bu masa rezerve.",
+            "translation_fa": "متأسفم، این میز رزرو شده است."
+          },
+          {
+            "order": 3,
+            "speaker": "Kaan",
+            "text": "Başka bir masa gösterebilir misiniz?",
+            "translation_fa": "می‌توانید میز دیگری نشانم بدهید؟"
+          },
+          {
+            "order": 4,
+            "speaker": "Zeynep",
+            "text": "Tabii, şu tarafta boş bir masa var.",
+            "translation_fa": "حتماً، آن طرف یک میز خالی هست."
           }
         ],
         "qa": {
@@ -847,6 +932,279 @@
           "retry_tip_fa": "به معنی، موقعیت و پسوندهای عبارت ترکی دقت کن و دوباره امتحان کن.",
           "explanation_fa": "مدل طبیعی این درس: Bir dakika bekleyebilir misiniz? — می‌توانید یک دقیقه صبر کنید؟",
           "model_answer": "Bir dakika bekleyebilir misiniz?"
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_polite_requests_03_meaning",
+      "data": {
+        "lesson_key": "a2-tr-polite-requests-03",
+        "exercise_type": "multiple_choice",
+        "prompt": {
+          "instruction_fa": "معنی درست این عبارت ترکی را انتخاب کن.",
+          "value": "Mümkünse pencereyi biraz açabilir misiniz?"
+        },
+        "answer": {
+          "value": "اگر ممکن است می‌توانید پنجره را کمی باز کنید؟"
+        },
+        "options": [
+          "اگر ممکن است می‌توانید پنجره را کمی باز کنید؟",
+          "می‌توانید کمک کنید؟",
+          "می‌توانید منو را بیاورید؟",
+          "می‌توانید یک دقیقه صبر کنید؟"
+        ],
+        "difficulty": 2,
+        "cefr": "A2",
+        "topic": "restaurants",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت و پسوندهای عبارت ترکی دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: Mümkünse pencereyi biraz açabilir misiniz? — اگر ممکن است می‌توانید پنجره را کمی باز کنید؟",
+          "model_answer": "Mümkünse pencereyi biraz açabilir misiniz?"
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_polite_requests_03_listen",
+      "data": {
+        "lesson_key": "a2-tr-polite-requests-03",
+        "exercise_type": "listening",
+        "prompt": {
+          "instruction_fa": "گوش کن و عبارتی را که شنیدی انتخاب کن.",
+          "audio_text": "Üzgünüm, şu anda olmaz; beş dakika bekleyebilir misiniz?"
+        },
+        "answer": {
+          "value": "Üzgünüm, şu anda olmaz; beş dakika bekleyebilir misiniz?"
+        },
+        "options": [
+          "Üzgünüm, şu anda olmaz; beş dakika bekleyebilir misiniz?",
+          "Mümkünse pencereyi biraz açabilir misiniz?",
+          "Yardım edebilir misiniz?",
+          "Menüyü getirebilir misiniz?"
+        ],
+        "difficulty": 2,
+        "cefr": "A2",
+        "topic": "restaurants",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت و پسوندهای عبارت ترکی دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: Üzgünüm, şu anda olmaz; beş dakika bekleyebilir misiniz? — متأسفم، الان نمی‌شود؛ می‌توانید پنج دقیقه صبر کنید؟",
+          "model_answer": "Üzgünüm, şu anda olmaz; beş dakika bekleyebilir misiniz?",
+          "transcript_tr": "Üzgünüm, şu anda olmaz; beş dakika bekleyebilir misiniz?"
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_polite_requests_03_speak",
+      "data": {
+        "lesson_key": "a2-tr-polite-requests-03",
+        "exercise_type": "speaking",
+        "prompt": {
+          "instruction_fa": "عبارت را با صدای بلند و با ریتم طبیعی بگو.",
+          "value": "Mümkünse pencereyi biraz açabilir misiniz?"
+        },
+        "answer": {
+          "expected_text": "Mümkünse pencereyi biraz açabilir misiniz?"
+        },
+        "difficulty": 2,
+        "cefr": "A2",
+        "topic": "restaurants",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت و پسوندهای عبارت ترکی دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: Mümkünse pencereyi biraz açabilir misiniz? — اگر ممکن است می‌توانید پنجره را کمی باز کنید؟",
+          "model_answer": "Mümkünse pencereyi biraz açabilir misiniz?"
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_polite_requests_03_build",
+      "data": {
+        "lesson_key": "a2-tr-polite-requests-03",
+        "exercise_type": "sentence_building",
+        "prompt": {
+          "instruction_fa": "بخش‌ها را مرتب کن تا عبارت درست ساخته شود.",
+          "tokens": [
+            "şu",
+            "anda",
+            "olmaz;",
+            "beş",
+            "dakika",
+            "bekleyebilir",
+            "misiniz?",
+            "Üzgünüm,"
+          ]
+        },
+        "answer": {
+          "tokens": [
+            "Üzgünüm,",
+            "şu",
+            "anda",
+            "olmaz;",
+            "beş",
+            "dakika",
+            "bekleyebilir",
+            "misiniz?"
+          ],
+          "value": "Üzgünüm, şu anda olmaz; beş dakika bekleyebilir misiniz?"
+        },
+        "difficulty": 2,
+        "cefr": "A2",
+        "topic": "restaurants",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت و پسوندهای عبارت ترکی دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: Üzgünüm, şu anda olmaz; beş dakika bekleyebilir misiniz? — متأسفم، الان نمی‌شود؛ می‌توانید پنج دقیقه صبر کنید؟",
+          "model_answer": "Üzgünüm, şu anda olmaz; beş dakika bekleyebilir misiniz?"
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_polite_requests_03_dialogue",
+      "data": {
+        "lesson_key": "a2-tr-polite-requests-03",
+        "exercise_type": "dialogue_comprehension",
+        "prompt": {
+          "instruction_fa": "با توجه به گفت‌وگو، پاسخ مناسب را انتخاب کن.",
+          "source_dialogue_ref": "d_polite_requests_03",
+          "question_fa": "کدام گزینه با معنی «اگر ممکن است می‌توانید پنجره را کمی باز کنید؟» هماهنگ است؟"
+        },
+        "answer": {
+          "value": "Mümkünse pencereyi biraz açabilir misiniz?"
+        },
+        "options": [
+          "Mümkünse pencereyi biraz açabilir misiniz?",
+          "Yardım edebilir misiniz?",
+          "Menüyü getirebilir misiniz?",
+          "Bir dakika bekleyebilir misiniz?"
+        ],
+        "difficulty": 2,
+        "cefr": "A2",
+        "topic": "restaurants",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت و پسوندهای عبارت ترکی دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: Mümkünse pencereyi biraz açabilir misiniz? — اگر ممکن است می‌توانید پنجره را کمی باز کنید؟",
+          "model_answer": "Mümkünse pencereyi biraz açabilir misiniz?"
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_polite_requests_03_open_write",
+      "data": {
+        "lesson_key": "a2-tr-polite-requests-03",
+        "exercise_type": "writing",
+        "prompt": {
+          "instruction_fa": "یک پیام کوتاه مؤدبانه بنویس که در آن از کسی یک درخواست عملی می‌کنی و در صورت نیاز یک زمان یا گزینهٔ جایگزین پیشنهاد می‌دهی.",
+          "personalized": true
+        },
+        "answer": {
+          "evaluation_mode": "rubric",
+          "model_text": "Affedersiniz, randevuyu yarına değiştirebilir miyiz? Bugün benim için zor. Mümkünse yarın saat üç uygun olur.",
+          "required_points_fa": [
+            "درخواست مؤدبانه",
+            "یک توضیح یا محدودیت کوتاه",
+            "یک گزینهٔ جایگزین"
+          ]
+        },
+        "assessment": {
+          "exact_match_allowed": false,
+          "criteria": [
+            {
+              "id": "task",
+              "label_fa": "انجام کار",
+              "weight": 55,
+              "descriptors_fa": {
+                "0": "کار خواسته‌شده انجام نشده است.",
+                "1": "فقط بخشی از اطلاعات اصلی منتقل شده است.",
+                "2": "بیشتر اطلاعات لازم با چند نقص منتقل شده است.",
+                "3": "کار کامل و برای سطح A2 روشن انجام شده است."
+              }
+            },
+            {
+              "id": "language",
+              "label_fa": "زبان قابل‌فهم",
+              "weight": 45,
+              "descriptors_fa": {
+                "0": "پاسخ قابل‌فهم نیست.",
+                "1": "پیام با دشواری زیاد قابل‌فهم است.",
+                "2": "با چند خطا، پیام همچنان روشن است.",
+                "3": "عبارت‌های ساده و پیوسته متناسب با A2 به‌خوبی قابل‌فهم‌اند."
+              }
+            }
+          ]
+        },
+        "difficulty": 2,
+        "cefr": "A2",
+        "topic": "restaurants",
+        "feedback": {
+          "explanation_fa": "پاسخ آزاد است؛ مهم انجام کامل کار و قابل‌فهم بودن پیام است.",
+          "model_answer": "Affedersiniz, randevuyu yarına değiştirebilir miyiz? Bugün benim için zor. Mümkünse yarın saat üç uygun olur.",
+          "retry_tip_fa": "از مدل کمک بگیر، اما اطلاعات و انتخاب‌های خودت را بنویس."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_polite_requests_03_personal_speak",
+      "data": {
+        "lesson_key": "a2-tr-polite-requests-03",
+        "exercise_type": "speaking",
+        "prompt": {
+          "instruction_fa": "یک موقعیت خدماتی را نقش‌آفرینی کن: مؤدبانه چیزی بخواه، اگر ممکن نبود یک گزینهٔ دیگر بخواه یا پیشنهاد بده.",
+          "personalized": true
+        },
+        "answer": {
+          "evaluation_mode": "rubric",
+          "model_text": "Affedersiniz, randevuyu yarına değiştirebilir miyiz? Bugün benim için zor. Mümkünse yarın saat üç uygun olur.",
+          "required_points_fa": [
+            "درخواست مؤدبانه",
+            "یک توضیح یا محدودیت کوتاه",
+            "یک گزینهٔ جایگزین"
+          ]
+        },
+        "assessment": {
+          "exact_match_allowed": false,
+          "criteria": [
+            {
+              "id": "task",
+              "label_fa": "انجام کار",
+              "weight": 55,
+              "descriptors_fa": {
+                "0": "کار خواسته‌شده انجام نشده است.",
+                "1": "فقط بخشی از اطلاعات اصلی منتقل شده است.",
+                "2": "بیشتر اطلاعات لازم با چند نقص منتقل شده است.",
+                "3": "کار کامل و برای سطح A2 روشن انجام شده است."
+              }
+            },
+            {
+              "id": "language",
+              "label_fa": "زبان قابل‌فهم",
+              "weight": 45,
+              "descriptors_fa": {
+                "0": "پاسخ قابل‌فهم نیست.",
+                "1": "پیام با دشواری زیاد قابل‌فهم است.",
+                "2": "با چند خطا، پیام همچنان روشن است.",
+                "3": "عبارت‌های ساده و پیوسته متناسب با A2 به‌خوبی قابل‌فهم‌اند."
+              }
+            }
+          ]
+        },
+        "difficulty": 2,
+        "cefr": "A2",
+        "topic": "restaurants",
+        "feedback": {
+          "explanation_fa": "لازم نیست عین مدل صحبت کنی؛ پیام باید کوتاه، پیوسته و روشن باشد.",
+          "model_answer": "Affedersiniz, randevuyu yarına değiştirebilir miyiz? Bugün benim için zor. Mümkünse yarın saat üç uygun olur.",
+          "retry_tip_fa": "دو یا سه جملهٔ مرتبط بساز و دلیل یا جزئیات کوتاه اضافه کن."
         },
         "status": "validated"
       }

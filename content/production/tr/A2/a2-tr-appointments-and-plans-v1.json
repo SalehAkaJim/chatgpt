@@ -432,6 +432,44 @@
       }
     },
     {
+      "kind": "utterance",
+      "external_id": "u_appointments_and_plans_05",
+      "data": {
+        "lesson_key": "a2-tr-appointments-and-plans-03",
+        "text": {
+          "tr": "Saat üç bana uymuyor; beşte buluşabilir miyiz?"
+        },
+        "translations": {
+          "fa": "ساعت سه برایم مناسب نیست؛ می‌توانیم ساعت پنج همدیگر را ببینیم؟"
+        },
+        "intent": "renegotiate_time",
+        "concept_refs": [],
+        "cefr": "A2",
+        "topic": "time",
+        "register": "neutral",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_appointments_and_plans_06",
+      "data": {
+        "lesson_key": "a2-tr-appointments-and-plans-03",
+        "text": {
+          "tr": "Tamam, o zaman cuma günü saat beşte görüşelim."
+        },
+        "translations": {
+          "fa": "باشه، پس جمعه ساعت پنج همدیگر را ببینیم."
+        },
+        "intent": "confirm_revised_plan",
+        "concept_refs": [],
+        "cefr": "A2",
+        "topic": "time",
+        "register": "neutral",
+        "status": "validated"
+      }
+    },
+    {
       "kind": "grammar_point",
       "external_id": "g_appointments_and_plans_core",
       "data": {
@@ -540,6 +578,53 @@
             "speaker": "Mert",
             "text": "Tamam, değiştirdim.",
             "translation_fa": "باشه، تغییرش دادم."
+          }
+        ],
+        "qa": {
+          "character_pair_unique_within_unit": true,
+          "naturalness": "passed",
+          "single_situation": true
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "dialogue",
+      "external_id": "d_appointments_and_plans_03",
+      "data": {
+        "lesson_key": "a2-tr-appointments-and-plans-03",
+        "title": "Planı yeniden ayarla",
+        "setting": "item",
+        "cefr": "A2",
+        "topic": "time",
+        "characters": [
+          "Mert",
+          "Zeynep"
+        ],
+        "turns": [
+          {
+            "order": 1,
+            "speaker": "Mert",
+            "text": "Yarın saat üçte müsait misin?",
+            "translation_fa": "فردا ساعت سه وقت داری؟"
+          },
+          {
+            "order": 2,
+            "speaker": "Zeynep",
+            "text": "Maalesef değilim. Saat beş olur mu?",
+            "translation_fa": "متأسفانه نه. ساعت پنج می‌شود؟"
+          },
+          {
+            "order": 3,
+            "speaker": "Mert",
+            "text": "Evet, beş benim için uygun.",
+            "translation_fa": "بله، پنج برای من مناسب است."
+          },
+          {
+            "order": 4,
+            "speaker": "Zeynep",
+            "text": "Harika, o zaman saat beşte buluşalım.",
+            "translation_fa": "عالی، پس ساعت پنج قرار بگذاریم."
           }
         ],
         "qa": {
@@ -850,6 +935,279 @@
           "retry_tip_fa": "به معنی، موقعیت و پسوندهای عبارت ترکی دقت کن و دوباره امتحان کن.",
           "explanation_fa": "مدل طبیعی این درس: Randevuyu değiştirebilir miyiz? — می‌توانیم قرار را تغییر دهیم؟",
           "model_answer": "Randevuyu değiştirebilir miyiz?"
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_appointments_and_plans_03_meaning",
+      "data": {
+        "lesson_key": "a2-tr-appointments-and-plans-03",
+        "exercise_type": "multiple_choice",
+        "prompt": {
+          "instruction_fa": "معنی درست این عبارت ترکی را انتخاب کن.",
+          "value": "Saat üç bana uymuyor; beşte buluşabilir miyiz?"
+        },
+        "answer": {
+          "value": "ساعت سه برایم مناسب نیست؛ می‌توانیم ساعت پنج همدیگر را ببینیم؟"
+        },
+        "options": [
+          "ساعت سه برایم مناسب نیست؛ می‌توانیم ساعت پنج همدیگر را ببینیم؟",
+          "فردا می‌توانیم همدیگر را ببینیم.",
+          "بعدازظهر وقت داری؟",
+          "می‌توانیم قرار را تغییر دهیم؟"
+        ],
+        "difficulty": 2,
+        "cefr": "A2",
+        "topic": "time",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت و پسوندهای عبارت ترکی دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: Saat üç bana uymuyor; beşte buluşabilir miyiz? — ساعت سه برایم مناسب نیست؛ می‌توانیم ساعت پنج همدیگر را ببینیم؟",
+          "model_answer": "Saat üç bana uymuyor; beşte buluşabilir miyiz?"
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_appointments_and_plans_03_listen",
+      "data": {
+        "lesson_key": "a2-tr-appointments-and-plans-03",
+        "exercise_type": "listening",
+        "prompt": {
+          "instruction_fa": "گوش کن و عبارتی را که شنیدی انتخاب کن.",
+          "audio_text": "Tamam, o zaman cuma günü saat beşte görüşelim."
+        },
+        "answer": {
+          "value": "Tamam, o zaman cuma günü saat beşte görüşelim."
+        },
+        "options": [
+          "Tamam, o zaman cuma günü saat beşte görüşelim.",
+          "Saat üç bana uymuyor; beşte buluşabilir miyiz?",
+          "Yarın buluşabiliriz.",
+          "Öğleden sonra müsait misin?"
+        ],
+        "difficulty": 2,
+        "cefr": "A2",
+        "topic": "time",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت و پسوندهای عبارت ترکی دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: Tamam, o zaman cuma günü saat beşte görüşelim. — باشه، پس جمعه ساعت پنج همدیگر را ببینیم.",
+          "model_answer": "Tamam, o zaman cuma günü saat beşte görüşelim.",
+          "transcript_tr": "Tamam, o zaman cuma günü saat beşte görüşelim."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_appointments_and_plans_03_speak",
+      "data": {
+        "lesson_key": "a2-tr-appointments-and-plans-03",
+        "exercise_type": "speaking",
+        "prompt": {
+          "instruction_fa": "عبارت را با صدای بلند و با ریتم طبیعی بگو.",
+          "value": "Saat üç bana uymuyor; beşte buluşabilir miyiz?"
+        },
+        "answer": {
+          "expected_text": "Saat üç bana uymuyor; beşte buluşabilir miyiz?"
+        },
+        "difficulty": 2,
+        "cefr": "A2",
+        "topic": "time",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت و پسوندهای عبارت ترکی دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: Saat üç bana uymuyor; beşte buluşabilir miyiz? — ساعت سه برایم مناسب نیست؛ می‌توانیم ساعت پنج همدیگر را ببینیم؟",
+          "model_answer": "Saat üç bana uymuyor; beşte buluşabilir miyiz?"
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_appointments_and_plans_03_build",
+      "data": {
+        "lesson_key": "a2-tr-appointments-and-plans-03",
+        "exercise_type": "sentence_building",
+        "prompt": {
+          "instruction_fa": "بخش‌ها را مرتب کن تا عبارت درست ساخته شود.",
+          "tokens": [
+            "o",
+            "zaman",
+            "cuma",
+            "günü",
+            "saat",
+            "beşte",
+            "görüşelim.",
+            "Tamam,"
+          ]
+        },
+        "answer": {
+          "tokens": [
+            "Tamam,",
+            "o",
+            "zaman",
+            "cuma",
+            "günü",
+            "saat",
+            "beşte",
+            "görüşelim."
+          ],
+          "value": "Tamam, o zaman cuma günü saat beşte görüşelim."
+        },
+        "difficulty": 2,
+        "cefr": "A2",
+        "topic": "time",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت و پسوندهای عبارت ترکی دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: Tamam, o zaman cuma günü saat beşte görüşelim. — باشه، پس جمعه ساعت پنج همدیگر را ببینیم.",
+          "model_answer": "Tamam, o zaman cuma günü saat beşte görüşelim."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_appointments_and_plans_03_dialogue",
+      "data": {
+        "lesson_key": "a2-tr-appointments-and-plans-03",
+        "exercise_type": "dialogue_comprehension",
+        "prompt": {
+          "instruction_fa": "با توجه به گفت‌وگو، پاسخ مناسب را انتخاب کن.",
+          "source_dialogue_ref": "d_appointments_and_plans_03",
+          "question_fa": "کدام گزینه با معنی «ساعت سه برایم مناسب نیست؛ می‌توانیم ساعت پنج همدیگر را ببینیم؟» هماهنگ است؟"
+        },
+        "answer": {
+          "value": "Saat üç bana uymuyor; beşte buluşabilir miyiz?"
+        },
+        "options": [
+          "Saat üç bana uymuyor; beşte buluşabilir miyiz?",
+          "Yarın buluşabiliriz.",
+          "Öğleden sonra müsait misin?",
+          "Randevuyu değiştirebilir miyiz?"
+        ],
+        "difficulty": 2,
+        "cefr": "A2",
+        "topic": "time",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت و پسوندهای عبارت ترکی دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: Saat üç bana uymuyor; beşte buluşabilir miyiz? — ساعت سه برایم مناسب نیست؛ می‌توانیم ساعت پنج همدیگر را ببینیم؟",
+          "model_answer": "Saat üç bana uymuyor; beşte buluşabilir miyiz?"
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_appointments_and_plans_03_open_write",
+      "data": {
+        "lesson_key": "a2-tr-appointments-and-plans-03",
+        "exercise_type": "writing",
+        "prompt": {
+          "instruction_fa": "یک گفت‌وگوی کوتاه متنی برای هماهنگ کردن قرار بنویس: یک زمان پیشنهاد بده، یک زمان نامناسب را رد کن و در پایان روی زمان جدید توافق کن.",
+          "personalized": true
+        },
+        "answer": {
+          "evaluation_mode": "rubric",
+          "model_text": "Yarın öğleden sonra buluşabiliriz. Saat üç bana uymuyor. Beşte müsaitim. O zaman beşte görüşelim.",
+          "required_points_fa": [
+            "پیشنهاد زمان",
+            "رد یا محدودیت مؤدبانه",
+            "پیشنهاد جایگزین و تأیید نهایی"
+          ]
+        },
+        "assessment": {
+          "exact_match_allowed": false,
+          "criteria": [
+            {
+              "id": "task",
+              "label_fa": "انجام کار",
+              "weight": 55,
+              "descriptors_fa": {
+                "0": "کار خواسته‌شده انجام نشده است.",
+                "1": "فقط بخشی از اطلاعات اصلی منتقل شده است.",
+                "2": "بیشتر اطلاعات لازم با چند نقص منتقل شده است.",
+                "3": "کار کامل و برای سطح A2 روشن انجام شده است."
+              }
+            },
+            {
+              "id": "language",
+              "label_fa": "زبان قابل‌فهم",
+              "weight": 45,
+              "descriptors_fa": {
+                "0": "پاسخ قابل‌فهم نیست.",
+                "1": "پیام با دشواری زیاد قابل‌فهم است.",
+                "2": "با چند خطا، پیام همچنان روشن است.",
+                "3": "عبارت‌های ساده و پیوسته متناسب با A2 به‌خوبی قابل‌فهم‌اند."
+              }
+            }
+          ]
+        },
+        "difficulty": 2,
+        "cefr": "A2",
+        "topic": "time",
+        "feedback": {
+          "explanation_fa": "پاسخ آزاد است؛ مهم انجام کامل کار و قابل‌فهم بودن پیام است.",
+          "model_answer": "Yarın öğleden sonra buluşabiliriz. Saat üç bana uymuyor. Beşte müsaitim. O zaman beşte görüşelim.",
+          "retry_tip_fa": "از مدل کمک بگیر، اما اطلاعات و انتخاب‌های خودت را بنویس."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_appointments_and_plans_03_personal_speak",
+      "data": {
+        "lesson_key": "a2-tr-appointments-and-plans-03",
+        "exercise_type": "speaking",
+        "prompt": {
+          "instruction_fa": "فرض کن با دوستت برای دیدار برنامه می‌ریزی. یک زمان پیشنهاد کن، محدودیتت را بگو، زمان دیگری پیشنهاد بده و برنامه را نهایی کن.",
+          "personalized": true
+        },
+        "answer": {
+          "evaluation_mode": "rubric",
+          "model_text": "Yarın öğleden sonra buluşabiliriz. Saat üç bana uymuyor. Beşte müsaitim. O zaman beşte görüşelim.",
+          "required_points_fa": [
+            "پیشنهاد زمان",
+            "رد یا محدودیت مؤدبانه",
+            "پیشنهاد جایگزین و تأیید نهایی"
+          ]
+        },
+        "assessment": {
+          "exact_match_allowed": false,
+          "criteria": [
+            {
+              "id": "task",
+              "label_fa": "انجام کار",
+              "weight": 55,
+              "descriptors_fa": {
+                "0": "کار خواسته‌شده انجام نشده است.",
+                "1": "فقط بخشی از اطلاعات اصلی منتقل شده است.",
+                "2": "بیشتر اطلاعات لازم با چند نقص منتقل شده است.",
+                "3": "کار کامل و برای سطح A2 روشن انجام شده است."
+              }
+            },
+            {
+              "id": "language",
+              "label_fa": "زبان قابل‌فهم",
+              "weight": 45,
+              "descriptors_fa": {
+                "0": "پاسخ قابل‌فهم نیست.",
+                "1": "پیام با دشواری زیاد قابل‌فهم است.",
+                "2": "با چند خطا، پیام همچنان روشن است.",
+                "3": "عبارت‌های ساده و پیوسته متناسب با A2 به‌خوبی قابل‌فهم‌اند."
+              }
+            }
+          ]
+        },
+        "difficulty": 2,
+        "cefr": "A2",
+        "topic": "time",
+        "feedback": {
+          "explanation_fa": "لازم نیست عین مدل صحبت کنی؛ پیام باید کوتاه، پیوسته و روشن باشد.",
+          "model_answer": "Yarın öğleden sonra buluşabiliriz. Saat üç bana uymuyor. Beşte müsaitim. O zaman beşte görüşelim.",
+          "retry_tip_fa": "دو یا سه جملهٔ مرتبط بساز و دلیل یا جزئیات کوتاه اضافه کن."
         },
         "status": "validated"
       }

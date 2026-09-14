@@ -432,6 +432,44 @@
       }
     },
     {
+      "kind": "utterance",
+      "external_id": "u_travel_and_hotel_05",
+      "data": {
+        "lesson_key": "a2-tr-travel-and-hotel-03",
+        "text": {
+          "tr": "Odam çok gürültülü; mümkünse daha sessiz bir oda istiyorum."
+        },
+        "translations": {
+          "fa": "اتاقم خیلی پرسر و صداست؛ اگر ممکن است یک اتاق ساکت‌تر می‌خواهم."
+        },
+        "intent": "report_hotel_problem",
+        "concept_refs": [],
+        "cefr": "A2",
+        "topic": "travel",
+        "register": "neutral",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_travel_and_hotel_06",
+      "data": {
+        "lesson_key": "a2-tr-travel-and-hotel-03",
+        "text": {
+          "tr": "Size başka bir oda gösterebiliriz, ancak biraz beklemeniz gerekiyor."
+        },
+        "translations": {
+          "fa": "می‌توانیم اتاق دیگری به شما نشان دهیم، اما لازم است کمی صبر کنید."
+        },
+        "intent": "offer_hotel_solution",
+        "concept_refs": [],
+        "cefr": "A2",
+        "topic": "travel",
+        "register": "neutral",
+        "status": "validated"
+      }
+    },
+    {
       "kind": "grammar_point",
       "external_id": "g_travel_and_hotel_core",
       "data": {
@@ -540,6 +578,53 @@
             "speaker": "Emre",
             "text": "Yeni anahtarınız burada.",
             "translation_fa": "کلید جدیدتان اینجاست."
+          }
+        ],
+        "qa": {
+          "character_pair_unique_within_unit": true,
+          "naturalness": "passed",
+          "single_situation": true
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "dialogue",
+      "external_id": "d_travel_and_hotel_03",
+      "data": {
+        "lesson_key": "a2-tr-travel-and-hotel-03",
+        "title": "Otelde sorun çöz",
+        "setting": "item",
+        "cefr": "A2",
+        "topic": "travel",
+        "characters": [
+          "Selin",
+          "Emre"
+        ],
+        "turns": [
+          {
+            "order": 1,
+            "speaker": "Selin",
+            "text": "Affedersiniz, odam çok gürültülü.",
+            "translation_fa": "ببخشید، اتاقم خیلی پر سر و صداست."
+          },
+          {
+            "order": 2,
+            "speaker": "Emre",
+            "text": "Üzgünüm. Başka bir oda ister misiniz?",
+            "translation_fa": "متأسفم. اتاق دیگری می‌خواهید؟"
+          },
+          {
+            "order": 3,
+            "speaker": "Selin",
+            "text": "Evet, mümkünse daha sessiz bir oda istiyorum.",
+            "translation_fa": "بله، اگر ممکن است اتاق ساکت‌تری می‌خواهم."
+          },
+          {
+            "order": 4,
+            "speaker": "Emre",
+            "text": "Tabii, on dakika içinde hazırlayabiliriz.",
+            "translation_fa": "حتماً، می‌توانیم تا ده دقیقه دیگر آماده‌اش کنیم."
           }
         ],
         "qa": {
@@ -844,6 +929,281 @@
           "retry_tip_fa": "به معنی، موقعیت و پسوندهای عبارت ترکی دقت کن و دوباره امتحان کن.",
           "explanation_fa": "مدل طبیعی این درس: Kimliğinizi görebilir miyim? — می‌توانم مدرک شناسایی‌تان را ببینم؟",
           "model_answer": "Kimliğinizi görebilir miyim?"
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_travel_and_hotel_03_meaning",
+      "data": {
+        "lesson_key": "a2-tr-travel-and-hotel-03",
+        "exercise_type": "multiple_choice",
+        "prompt": {
+          "instruction_fa": "معنی درست این عبارت ترکی را انتخاب کن.",
+          "value": "Odam çok gürültülü; mümkünse daha sessiz bir oda istiyorum."
+        },
+        "answer": {
+          "value": "اتاقم خیلی پرسر و صداست؛ اگر ممکن است یک اتاق ساکت‌تر می‌خواهم."
+        },
+        "options": [
+          "اتاقم خیلی پرسر و صداست؛ اگر ممکن است یک اتاق ساکت‌تر می‌خواهم.",
+          "رزرو دارم.",
+          "دو شب می‌مانم.",
+          "می‌توانم مدرک شناسایی‌تان را ببینم؟"
+        ],
+        "difficulty": 2,
+        "cefr": "A2",
+        "topic": "travel",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت و پسوندهای عبارت ترکی دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: Odam çok gürültülü; mümkünse daha sessiz bir oda istiyorum. — اتاقم خیلی پرسر و صداست؛ اگر ممکن است یک اتاق ساکت‌تر می‌خواهم.",
+          "model_answer": "Odam çok gürültülü; mümkünse daha sessiz bir oda istiyorum."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_travel_and_hotel_03_listen",
+      "data": {
+        "lesson_key": "a2-tr-travel-and-hotel-03",
+        "exercise_type": "listening",
+        "prompt": {
+          "instruction_fa": "گوش کن و عبارتی را که شنیدی انتخاب کن.",
+          "audio_text": "Size başka bir oda gösterebiliriz, ancak biraz beklemeniz gerekiyor."
+        },
+        "answer": {
+          "value": "Size başka bir oda gösterebiliriz, ancak biraz beklemeniz gerekiyor."
+        },
+        "options": [
+          "Size başka bir oda gösterebiliriz, ancak biraz beklemeniz gerekiyor.",
+          "Odam çok gürültülü; mümkünse daha sessiz bir oda istiyorum.",
+          "Rezervasyonum var.",
+          "İki gece kalacağım."
+        ],
+        "difficulty": 2,
+        "cefr": "A2",
+        "topic": "travel",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت و پسوندهای عبارت ترکی دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: Size başka bir oda gösterebiliriz, ancak biraz beklemeniz gerekiyor. — می‌توانیم اتاق دیگری به شما نشان دهیم، اما لازم است کمی صبر کنید.",
+          "model_answer": "Size başka bir oda gösterebiliriz, ancak biraz beklemeniz gerekiyor.",
+          "transcript_tr": "Size başka bir oda gösterebiliriz, ancak biraz beklemeniz gerekiyor."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_travel_and_hotel_03_speak",
+      "data": {
+        "lesson_key": "a2-tr-travel-and-hotel-03",
+        "exercise_type": "speaking",
+        "prompt": {
+          "instruction_fa": "عبارت را با صدای بلند و با ریتم طبیعی بگو.",
+          "value": "Odam çok gürültülü; mümkünse daha sessiz bir oda istiyorum."
+        },
+        "answer": {
+          "expected_text": "Odam çok gürültülü; mümkünse daha sessiz bir oda istiyorum."
+        },
+        "difficulty": 2,
+        "cefr": "A2",
+        "topic": "travel",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت و پسوندهای عبارت ترکی دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: Odam çok gürültülü; mümkünse daha sessiz bir oda istiyorum. — اتاقم خیلی پرسر و صداست؛ اگر ممکن است یک اتاق ساکت‌تر می‌خواهم.",
+          "model_answer": "Odam çok gürültülü; mümkünse daha sessiz bir oda istiyorum."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_travel_and_hotel_03_build",
+      "data": {
+        "lesson_key": "a2-tr-travel-and-hotel-03",
+        "exercise_type": "sentence_building",
+        "prompt": {
+          "instruction_fa": "بخش‌ها را مرتب کن تا عبارت درست ساخته شود.",
+          "tokens": [
+            "başka",
+            "bir",
+            "oda",
+            "gösterebiliriz,",
+            "ancak",
+            "biraz",
+            "beklemeniz",
+            "gerekiyor.",
+            "Size"
+          ]
+        },
+        "answer": {
+          "tokens": [
+            "Size",
+            "başka",
+            "bir",
+            "oda",
+            "gösterebiliriz,",
+            "ancak",
+            "biraz",
+            "beklemeniz",
+            "gerekiyor."
+          ],
+          "value": "Size başka bir oda gösterebiliriz, ancak biraz beklemeniz gerekiyor."
+        },
+        "difficulty": 2,
+        "cefr": "A2",
+        "topic": "travel",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت و پسوندهای عبارت ترکی دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: Size başka bir oda gösterebiliriz, ancak biraz beklemeniz gerekiyor. — می‌توانیم اتاق دیگری به شما نشان دهیم، اما لازم است کمی صبر کنید.",
+          "model_answer": "Size başka bir oda gösterebiliriz, ancak biraz beklemeniz gerekiyor."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_travel_and_hotel_03_dialogue",
+      "data": {
+        "lesson_key": "a2-tr-travel-and-hotel-03",
+        "exercise_type": "dialogue_comprehension",
+        "prompt": {
+          "instruction_fa": "با توجه به گفت‌وگو، پاسخ مناسب را انتخاب کن.",
+          "source_dialogue_ref": "d_travel_and_hotel_03",
+          "question_fa": "کدام گزینه با معنی «اتاقم خیلی پرسر و صداست؛ اگر ممکن است یک اتاق ساکت‌تر می‌خواهم.» هماهنگ است؟"
+        },
+        "answer": {
+          "value": "Odam çok gürültülü; mümkünse daha sessiz bir oda istiyorum."
+        },
+        "options": [
+          "Odam çok gürültülü; mümkünse daha sessiz bir oda istiyorum.",
+          "Rezervasyonum var.",
+          "İki gece kalacağım.",
+          "Kimliğinizi görebilir miyim?"
+        ],
+        "difficulty": 2,
+        "cefr": "A2",
+        "topic": "travel",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت و پسوندهای عبارت ترکی دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: Odam çok gürültülü; mümkünse daha sessiz bir oda istiyorum. — اتاقم خیلی پرسر و صداست؛ اگر ممکن است یک اتاق ساکت‌تر می‌خواهم.",
+          "model_answer": "Odam çok gürültülü; mümkünse daha sessiz bir oda istiyorum."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_travel_and_hotel_03_open_write",
+      "data": {
+        "lesson_key": "a2-tr-travel-and-hotel-03",
+        "exercise_type": "writing",
+        "prompt": {
+          "instruction_fa": "یک پیام کوتاه به هتل بنویس: مشکل اتاق یا رزرو را روشن توضیح بده و یک راه‌حل مشخص و مؤدبانه درخواست کن.",
+          "personalized": true
+        },
+        "answer": {
+          "evaluation_mode": "rubric",
+          "model_text": "Merhaba, odam çok gürültülü. Mümkünse daha sessiz bir oda istiyorum. Başka bir oda varsa değiştirebilir miyiz?",
+          "required_points_fa": [
+            "شرح روشن مشکل",
+            "درخواست مؤدبانه",
+            "راه‌حل مشخص"
+          ]
+        },
+        "assessment": {
+          "exact_match_allowed": false,
+          "criteria": [
+            {
+              "id": "task",
+              "label_fa": "انجام کار",
+              "weight": 55,
+              "descriptors_fa": {
+                "0": "کار خواسته‌شده انجام نشده است.",
+                "1": "فقط بخشی از اطلاعات اصلی منتقل شده است.",
+                "2": "بیشتر اطلاعات لازم با چند نقص منتقل شده است.",
+                "3": "کار کامل و برای سطح A2 روشن انجام شده است."
+              }
+            },
+            {
+              "id": "language",
+              "label_fa": "زبان قابل‌فهم",
+              "weight": 45,
+              "descriptors_fa": {
+                "0": "پاسخ قابل‌فهم نیست.",
+                "1": "پیام با دشواری زیاد قابل‌فهم است.",
+                "2": "با چند خطا، پیام همچنان روشن است.",
+                "3": "عبارت‌های ساده و پیوسته متناسب با A2 به‌خوبی قابل‌فهم‌اند."
+              }
+            }
+          ]
+        },
+        "difficulty": 2,
+        "cefr": "A2",
+        "topic": "travel",
+        "feedback": {
+          "explanation_fa": "پاسخ آزاد است؛ مهم انجام کامل کار و قابل‌فهم بودن پیام است.",
+          "model_answer": "Merhaba, odam çok gürültülü. Mümkünse daha sessiz bir oda istiyorum. Başka bir oda varsa değiştirebilir miyiz?",
+          "retry_tip_fa": "از مدل کمک بگیر، اما اطلاعات و انتخاب‌های خودت را بنویس."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_travel_and_hotel_03_personal_speak",
+      "data": {
+        "lesson_key": "a2-tr-travel-and-hotel-03",
+        "exercise_type": "speaking",
+        "prompt": {
+          "instruction_fa": "یک گفت‌وگوی پذیرش هتل را نقش‌آفرینی کن: مشکل را بگو، راه‌حل بخواه و دربارهٔ گزینهٔ پیشنهادی به توافق برس.",
+          "personalized": true
+        },
+        "answer": {
+          "evaluation_mode": "rubric",
+          "model_text": "Merhaba, odam çok gürültülü. Mümkünse daha sessiz bir oda istiyorum. Başka bir oda varsa değiştirebilir miyiz?",
+          "required_points_fa": [
+            "شرح روشن مشکل",
+            "درخواست مؤدبانه",
+            "راه‌حل مشخص"
+          ]
+        },
+        "assessment": {
+          "exact_match_allowed": false,
+          "criteria": [
+            {
+              "id": "task",
+              "label_fa": "انجام کار",
+              "weight": 55,
+              "descriptors_fa": {
+                "0": "کار خواسته‌شده انجام نشده است.",
+                "1": "فقط بخشی از اطلاعات اصلی منتقل شده است.",
+                "2": "بیشتر اطلاعات لازم با چند نقص منتقل شده است.",
+                "3": "کار کامل و برای سطح A2 روشن انجام شده است."
+              }
+            },
+            {
+              "id": "language",
+              "label_fa": "زبان قابل‌فهم",
+              "weight": 45,
+              "descriptors_fa": {
+                "0": "پاسخ قابل‌فهم نیست.",
+                "1": "پیام با دشواری زیاد قابل‌فهم است.",
+                "2": "با چند خطا، پیام همچنان روشن است.",
+                "3": "عبارت‌های ساده و پیوسته متناسب با A2 به‌خوبی قابل‌فهم‌اند."
+              }
+            }
+          ]
+        },
+        "difficulty": 2,
+        "cefr": "A2",
+        "topic": "travel",
+        "feedback": {
+          "explanation_fa": "لازم نیست عین مدل صحبت کنی؛ پیام باید کوتاه، پیوسته و روشن باشد.",
+          "model_answer": "Merhaba, odam çok gürültülü. Mümkünse daha sessiz bir oda istiyorum. Başka bir oda varsa değiştirebilir miyiz?",
+          "retry_tip_fa": "دو یا سه جملهٔ مرتبط بساز و دلیل یا جزئیات کوتاه اضافه کن."
         },
         "status": "validated"
       }

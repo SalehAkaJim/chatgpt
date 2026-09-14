@@ -433,6 +433,44 @@
       }
     },
     {
+      "kind": "utterance",
+      "external_id": "u_comparisons_05",
+      "data": {
+        "lesson_key": "a2-tr-comparisons-03",
+        "text": {
+          "tr": "Bu model daha ucuz ama diğeri daha dayanıklı görünüyor."
+        },
+        "translations": {
+          "fa": "این مدل ارزان‌تر است اما آن یکی بادوام‌تر به نظر می‌رسد."
+        },
+        "intent": "compare_tradeoffs",
+        "concept_refs": [],
+        "cefr": "A2",
+        "topic": "shopping",
+        "register": "neutral",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_comparisons_06",
+      "data": {
+        "lesson_key": "a2-tr-comparisons-03",
+        "text": {
+          "tr": "Ben biraz daha pahalı olanı seçerim çünkü daha kullanışlı."
+        },
+        "translations": {
+          "fa": "من گزینهٔ کمی گران‌تر را انتخاب می‌کنم چون کاربردی‌تر است."
+        },
+        "intent": "justify_comparative_choice",
+        "concept_refs": [],
+        "cefr": "A2",
+        "topic": "shopping",
+        "register": "neutral",
+        "status": "validated"
+      }
+    },
+    {
       "kind": "grammar_point",
       "external_id": "g_comparisons_core",
       "data": {
@@ -541,6 +579,53 @@
             "speaker": "Elif",
             "text": "Fiyatlara tekrar bakalım.",
             "translation_fa": "دوباره قیمت‌ها را ببینیم."
+          }
+        ],
+        "qa": {
+          "character_pair_unique_within_unit": true,
+          "naturalness": "passed",
+          "single_situation": true
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "dialogue",
+      "external_id": "d_comparisons_03",
+      "data": {
+        "lesson_key": "a2-tr-comparisons-03",
+        "title": "İki seçeneği değerlendir",
+        "setting": "item",
+        "cefr": "A2",
+        "topic": "shopping",
+        "characters": [
+          "Deniz",
+          "Burak"
+        ],
+        "turns": [
+          {
+            "order": 1,
+            "speaker": "Deniz",
+            "text": "Sence hangisini alalım?",
+            "translation_fa": "به نظرت کدام را بخریم؟"
+          },
+          {
+            "order": 2,
+            "speaker": "Burak",
+            "text": "Bu daha ucuz ama küçük.",
+            "translation_fa": "این ارزان‌تر است اما کوچک است."
+          },
+          {
+            "order": 3,
+            "speaker": "Deniz",
+            "text": "Diğeri pahalı ama daha kullanışlı.",
+            "translation_fa": "آن یکی گران است اما کاربردی‌تر است."
+          },
+          {
+            "order": 4,
+            "speaker": "Burak",
+            "text": "O zaman diğeri daha iyi bir seçim.",
+            "translation_fa": "پس آن یکی انتخاب بهتری است."
           }
         ],
         "qa": {
@@ -849,6 +934,281 @@
           "retry_tip_fa": "به معنی، موقعیت و پسوندهای عبارت ترکی دقت کن و دوباره امتحان کن.",
           "explanation_fa": "مدل طبیعی این درس: Mavi olan daha büyük. — آن آبی بزرگ‌تر است.",
           "model_answer": "Mavi olan daha büyük."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_comparisons_03_meaning",
+      "data": {
+        "lesson_key": "a2-tr-comparisons-03",
+        "exercise_type": "multiple_choice",
+        "prompt": {
+          "instruction_fa": "معنی درست این عبارت ترکی را انتخاب کن.",
+          "value": "Bu model daha ucuz ama diğeri daha dayanıklı görünüyor."
+        },
+        "answer": {
+          "value": "این مدل ارزان‌تر است اما آن یکی بادوام‌تر به نظر می‌رسد."
+        },
+        "options": [
+          "این مدل ارزان‌تر است اما آن یکی بادوام‌تر به نظر می‌رسد.",
+          "این کیف ارزان‌تر است.",
+          "کدام‌یک مناسب‌تر است؟",
+          "آن آبی بزرگ‌تر است."
+        ],
+        "difficulty": 2,
+        "cefr": "A2",
+        "topic": "shopping",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت و پسوندهای عبارت ترکی دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: Bu model daha ucuz ama diğeri daha dayanıklı görünüyor. — این مدل ارزان‌تر است اما آن یکی بادوام‌تر به نظر می‌رسد.",
+          "model_answer": "Bu model daha ucuz ama diğeri daha dayanıklı görünüyor."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_comparisons_03_listen",
+      "data": {
+        "lesson_key": "a2-tr-comparisons-03",
+        "exercise_type": "listening",
+        "prompt": {
+          "instruction_fa": "گوش کن و عبارتی را که شنیدی انتخاب کن.",
+          "audio_text": "Ben biraz daha pahalı olanı seçerim çünkü daha kullanışlı."
+        },
+        "answer": {
+          "value": "Ben biraz daha pahalı olanı seçerim çünkü daha kullanışlı."
+        },
+        "options": [
+          "Ben biraz daha pahalı olanı seçerim çünkü daha kullanışlı.",
+          "Bu model daha ucuz ama diğeri daha dayanıklı görünüyor.",
+          "Bu çanta daha ucuz.",
+          "Hangisi daha uygun?"
+        ],
+        "difficulty": 2,
+        "cefr": "A2",
+        "topic": "shopping",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت و پسوندهای عبارت ترکی دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: Ben biraz daha pahalı olanı seçerim çünkü daha kullanışlı. — من گزینهٔ کمی گران‌تر را انتخاب می‌کنم چون کاربردی‌تر است.",
+          "model_answer": "Ben biraz daha pahalı olanı seçerim çünkü daha kullanışlı.",
+          "transcript_tr": "Ben biraz daha pahalı olanı seçerim çünkü daha kullanışlı."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_comparisons_03_speak",
+      "data": {
+        "lesson_key": "a2-tr-comparisons-03",
+        "exercise_type": "speaking",
+        "prompt": {
+          "instruction_fa": "عبارت را با صدای بلند و با ریتم طبیعی بگو.",
+          "value": "Bu model daha ucuz ama diğeri daha dayanıklı görünüyor."
+        },
+        "answer": {
+          "expected_text": "Bu model daha ucuz ama diğeri daha dayanıklı görünüyor."
+        },
+        "difficulty": 2,
+        "cefr": "A2",
+        "topic": "shopping",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت و پسوندهای عبارت ترکی دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: Bu model daha ucuz ama diğeri daha dayanıklı görünüyor. — این مدل ارزان‌تر است اما آن یکی بادوام‌تر به نظر می‌رسد.",
+          "model_answer": "Bu model daha ucuz ama diğeri daha dayanıklı görünüyor."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_comparisons_03_build",
+      "data": {
+        "lesson_key": "a2-tr-comparisons-03",
+        "exercise_type": "sentence_building",
+        "prompt": {
+          "instruction_fa": "بخش‌ها را مرتب کن تا عبارت درست ساخته شود.",
+          "tokens": [
+            "biraz",
+            "daha",
+            "pahalı",
+            "olanı",
+            "seçerim",
+            "çünkü",
+            "daha",
+            "kullanışlı.",
+            "Ben"
+          ]
+        },
+        "answer": {
+          "tokens": [
+            "Ben",
+            "biraz",
+            "daha",
+            "pahalı",
+            "olanı",
+            "seçerim",
+            "çünkü",
+            "daha",
+            "kullanışlı."
+          ],
+          "value": "Ben biraz daha pahalı olanı seçerim çünkü daha kullanışlı."
+        },
+        "difficulty": 2,
+        "cefr": "A2",
+        "topic": "shopping",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت و پسوندهای عبارت ترکی دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: Ben biraz daha pahalı olanı seçerim çünkü daha kullanışlı. — من گزینهٔ کمی گران‌تر را انتخاب می‌کنم چون کاربردی‌تر است.",
+          "model_answer": "Ben biraz daha pahalı olanı seçerim çünkü daha kullanışlı."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_comparisons_03_dialogue",
+      "data": {
+        "lesson_key": "a2-tr-comparisons-03",
+        "exercise_type": "dialogue_comprehension",
+        "prompt": {
+          "instruction_fa": "با توجه به گفت‌وگو، پاسخ مناسب را انتخاب کن.",
+          "source_dialogue_ref": "d_comparisons_03",
+          "question_fa": "کدام گزینه با معنی «این مدل ارزان‌تر است اما آن یکی بادوام‌تر به نظر می‌رسد.» هماهنگ است؟"
+        },
+        "answer": {
+          "value": "Bu model daha ucuz ama diğeri daha dayanıklı görünüyor."
+        },
+        "options": [
+          "Bu model daha ucuz ama diğeri daha dayanıklı görünüyor.",
+          "Bu çanta daha ucuz.",
+          "Hangisi daha uygun?",
+          "Mavi olan daha büyük."
+        ],
+        "difficulty": 2,
+        "cefr": "A2",
+        "topic": "shopping",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت و پسوندهای عبارت ترکی دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: Bu model daha ucuz ama diğeri daha dayanıklı görünüyor. — این مدل ارزان‌تر است اما آن یکی بادوام‌تر به نظر می‌رسد.",
+          "model_answer": "Bu model daha ucuz ama diğeri daha dayanıklı görünüyor."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_comparisons_03_open_write",
+      "data": {
+        "lesson_key": "a2-tr-comparisons-03",
+        "exercise_type": "writing",
+        "prompt": {
+          "instruction_fa": "دو گزینهٔ واقعی یا فرضی مثل دو گوشی، دو هتل یا دو وسیله را در ۳ تا ۴ جمله مقایسه کن و در پایان انتخاب خودت را با یک دلیل بگو.",
+          "personalized": true
+        },
+        "answer": {
+          "evaluation_mode": "rubric",
+          "model_text": "Birinci otel daha ucuz, ama merkeze uzak. İkinci otel biraz daha pahalı ama daha uygun bir yerde. Ben ikinci oteli seçerim.",
+          "required_points_fa": [
+            "حداقل دو مقایسه",
+            "یک نکتهٔ مثبت یا منفی برای هر گزینه",
+            "انتخاب نهایی با دلیل"
+          ]
+        },
+        "assessment": {
+          "exact_match_allowed": false,
+          "criteria": [
+            {
+              "id": "task",
+              "label_fa": "انجام کار",
+              "weight": 55,
+              "descriptors_fa": {
+                "0": "کار خواسته‌شده انجام نشده است.",
+                "1": "فقط بخشی از اطلاعات اصلی منتقل شده است.",
+                "2": "بیشتر اطلاعات لازم با چند نقص منتقل شده است.",
+                "3": "کار کامل و برای سطح A2 روشن انجام شده است."
+              }
+            },
+            {
+              "id": "language",
+              "label_fa": "زبان قابل‌فهم",
+              "weight": 45,
+              "descriptors_fa": {
+                "0": "پاسخ قابل‌فهم نیست.",
+                "1": "پیام با دشواری زیاد قابل‌فهم است.",
+                "2": "با چند خطا، پیام همچنان روشن است.",
+                "3": "عبارت‌های ساده و پیوسته متناسب با A2 به‌خوبی قابل‌فهم‌اند."
+              }
+            }
+          ]
+        },
+        "difficulty": 2,
+        "cefr": "A2",
+        "topic": "shopping",
+        "feedback": {
+          "explanation_fa": "پاسخ آزاد است؛ مهم انجام کامل کار و قابل‌فهم بودن پیام است.",
+          "model_answer": "Birinci otel daha ucuz, ama merkeze uzak. İkinci otel biraz daha pahalı ama daha uygun bir yerde. Ben ikinci oteli seçerim.",
+          "retry_tip_fa": "از مدل کمک بگیر، اما اطلاعات و انتخاب‌های خودت را بنویس."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_comparisons_03_personal_speak",
+      "data": {
+        "lesson_key": "a2-tr-comparisons-03",
+        "exercise_type": "speaking",
+        "prompt": {
+          "instruction_fa": "دو گزینه را از نظر دست‌کم دو ویژگی مقایسه کن و بگو کدام را ترجیح می‌دهی و چرا.",
+          "personalized": true
+        },
+        "answer": {
+          "evaluation_mode": "rubric",
+          "model_text": "Birinci otel daha ucuz, ama merkeze uzak. İkinci otel biraz daha pahalı ama daha uygun bir yerde. Ben ikinci oteli seçerim.",
+          "required_points_fa": [
+            "حداقل دو مقایسه",
+            "یک نکتهٔ مثبت یا منفی برای هر گزینه",
+            "انتخاب نهایی با دلیل"
+          ]
+        },
+        "assessment": {
+          "exact_match_allowed": false,
+          "criteria": [
+            {
+              "id": "task",
+              "label_fa": "انجام کار",
+              "weight": 55,
+              "descriptors_fa": {
+                "0": "کار خواسته‌شده انجام نشده است.",
+                "1": "فقط بخشی از اطلاعات اصلی منتقل شده است.",
+                "2": "بیشتر اطلاعات لازم با چند نقص منتقل شده است.",
+                "3": "کار کامل و برای سطح A2 روشن انجام شده است."
+              }
+            },
+            {
+              "id": "language",
+              "label_fa": "زبان قابل‌فهم",
+              "weight": 45,
+              "descriptors_fa": {
+                "0": "پاسخ قابل‌فهم نیست.",
+                "1": "پیام با دشواری زیاد قابل‌فهم است.",
+                "2": "با چند خطا، پیام همچنان روشن است.",
+                "3": "عبارت‌های ساده و پیوسته متناسب با A2 به‌خوبی قابل‌فهم‌اند."
+              }
+            }
+          ]
+        },
+        "difficulty": 2,
+        "cefr": "A2",
+        "topic": "shopping",
+        "feedback": {
+          "explanation_fa": "لازم نیست عین مدل صحبت کنی؛ پیام باید کوتاه، پیوسته و روشن باشد.",
+          "model_answer": "Birinci otel daha ucuz, ama merkeze uzak. İkinci otel biraz daha pahalı ama daha uygun bir yerde. Ben ikinci oteli seçerim.",
+          "retry_tip_fa": "دو یا سه جملهٔ مرتبط بساز و دلیل یا جزئیات کوتاه اضافه کن."
         },
         "status": "validated"
       }

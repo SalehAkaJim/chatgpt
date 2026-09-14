@@ -431,6 +431,44 @@
       }
     },
     {
+      "kind": "utterance",
+      "external_id": "u_habits_and_frequency_05",
+      "data": {
+        "lesson_key": "a2-tr-habits-and-frequency-03",
+        "text": {
+          "tr": "Hafta içi genelde erken kalkarım ama hafta sonu biraz geç kalkarım."
+        },
+        "translations": {
+          "fa": "روزهای کاری معمولاً زود بیدار می‌شوم اما آخر هفته کمی دیرتر بیدار می‌شوم."
+        },
+        "intent": "contrast_routines",
+        "concept_refs": [],
+        "cefr": "A2",
+        "topic": "daily-routine",
+        "register": "neutral",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_habits_and_frequency_06",
+      "data": {
+        "lesson_key": "a2-tr-habits-and-frequency-03",
+        "text": {
+          "tr": "Akşamları çoğu zaman yürürüm, bazen de evde kalırım."
+        },
+        "translations": {
+          "fa": "عصرها بیشتر وقت‌ها پیاده‌روی می‌کنم و گاهی هم خانه می‌مانم."
+        },
+        "intent": "describe_frequency_pattern",
+        "concept_refs": [],
+        "cefr": "A2",
+        "topic": "daily-routine",
+        "register": "neutral",
+        "status": "validated"
+      }
+    },
+    {
       "kind": "grammar_point",
       "external_id": "g_habits_and_frequency_core",
       "data": {
@@ -539,6 +577,53 @@
             "speaker": "Burak",
             "text": "Bu hafta birlikte çıkalım.",
             "translation_fa": "این هفته با هم بیرون برویم."
+          }
+        ],
+        "qa": {
+          "character_pair_unique_within_unit": true,
+          "naturalness": "passed",
+          "single_situation": true
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "dialogue",
+      "external_id": "d_habits_and_frequency_03",
+      "data": {
+        "lesson_key": "a2-tr-habits-and-frequency-03",
+        "title": "Rutinleri karşılaştır",
+        "setting": "item",
+        "cefr": "A2",
+        "topic": "daily-routine",
+        "characters": [
+          "Elif",
+          "Zeynep"
+        ],
+        "turns": [
+          {
+            "order": 1,
+            "speaker": "Elif",
+            "text": "Hafta içi sabahları ne yaparsın?",
+            "translation_fa": "صبح‌های روزهای کاری چه کار می‌کنی؟"
+          },
+          {
+            "order": 2,
+            "speaker": "Zeynep",
+            "text": "Genelde erken kalkarım ve kısa bir kahvaltı yaparım.",
+            "translation_fa": "معمولاً زود بیدار می‌شوم و یک صبحانهٔ کوتاه می‌خورم."
+          },
+          {
+            "order": 3,
+            "speaker": "Elif",
+            "text": "Hafta sonu da erken kalkar mısın?",
+            "translation_fa": "آخر هفته هم زود بیدار می‌شوی؟"
+          },
+          {
+            "order": 4,
+            "speaker": "Zeynep",
+            "text": "Hayır, hafta sonu biraz daha geç kalkarım.",
+            "translation_fa": "نه، آخر هفته کمی دیرتر بیدار می‌شوم."
           }
         ],
         "qa": {
@@ -851,6 +936,279 @@
           "retry_tip_fa": "به معنی، موقعیت و پسوندهای عبارت ترکی دقت کن و دوباره امتحان کن.",
           "explanation_fa": "مدل طبیعی این درس: Bazen geç yatarım. — گاهی دیر می‌خوابم.",
           "model_answer": "Bazen geç yatarım."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_habits_and_frequency_03_meaning",
+      "data": {
+        "lesson_key": "a2-tr-habits-and-frequency-03",
+        "exercise_type": "multiple_choice",
+        "prompt": {
+          "instruction_fa": "معنی درست این عبارت ترکی را انتخاب کن.",
+          "value": "Hafta içi genelde erken kalkarım ama hafta sonu biraz geç kalkarım."
+        },
+        "answer": {
+          "value": "روزهای کاری معمولاً زود بیدار می‌شوم اما آخر هفته کمی دیرتر بیدار می‌شوم."
+        },
+        "options": [
+          "روزهای کاری معمولاً زود بیدار می‌شوم اما آخر هفته کمی دیرتر بیدار می‌شوم.",
+          "معمولاً زود بیدار می‌شوم.",
+          "هر روز قهوه می‌نوشی؟",
+          "گاهی دیر می‌خوابم."
+        ],
+        "difficulty": 2,
+        "cefr": "A2",
+        "topic": "daily-routine",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت و پسوندهای عبارت ترکی دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: Hafta içi genelde erken kalkarım ama hafta sonu biraz geç kalkarım. — روزهای کاری معمولاً زود بیدار می‌شوم اما آخر هفته کمی دیرتر بیدار می‌شوم.",
+          "model_answer": "Hafta içi genelde erken kalkarım ama hafta sonu biraz geç kalkarım."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_habits_and_frequency_03_listen",
+      "data": {
+        "lesson_key": "a2-tr-habits-and-frequency-03",
+        "exercise_type": "listening",
+        "prompt": {
+          "instruction_fa": "گوش کن و عبارتی را که شنیدی انتخاب کن.",
+          "audio_text": "Akşamları çoğu zaman yürürüm, bazen de evde kalırım."
+        },
+        "answer": {
+          "value": "Akşamları çoğu zaman yürürüm, bazen de evde kalırım."
+        },
+        "options": [
+          "Akşamları çoğu zaman yürürüm, bazen de evde kalırım.",
+          "Hafta içi genelde erken kalkarım ama hafta sonu biraz geç kalkarım.",
+          "Genelde erken kalkarım.",
+          "Her gün kahve içer misin?"
+        ],
+        "difficulty": 2,
+        "cefr": "A2",
+        "topic": "daily-routine",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت و پسوندهای عبارت ترکی دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: Akşamları çoğu zaman yürürüm, bazen de evde kalırım. — عصرها بیشتر وقت‌ها پیاده‌روی می‌کنم و گاهی هم خانه می‌مانم.",
+          "model_answer": "Akşamları çoğu zaman yürürüm, bazen de evde kalırım.",
+          "transcript_tr": "Akşamları çoğu zaman yürürüm, bazen de evde kalırım."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_habits_and_frequency_03_speak",
+      "data": {
+        "lesson_key": "a2-tr-habits-and-frequency-03",
+        "exercise_type": "speaking",
+        "prompt": {
+          "instruction_fa": "عبارت را با صدای بلند و با ریتم طبیعی بگو.",
+          "value": "Hafta içi genelde erken kalkarım ama hafta sonu biraz geç kalkarım."
+        },
+        "answer": {
+          "expected_text": "Hafta içi genelde erken kalkarım ama hafta sonu biraz geç kalkarım."
+        },
+        "difficulty": 2,
+        "cefr": "A2",
+        "topic": "daily-routine",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت و پسوندهای عبارت ترکی دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: Hafta içi genelde erken kalkarım ama hafta sonu biraz geç kalkarım. — روزهای کاری معمولاً زود بیدار می‌شوم اما آخر هفته کمی دیرتر بیدار می‌شوم.",
+          "model_answer": "Hafta içi genelde erken kalkarım ama hafta sonu biraz geç kalkarım."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_habits_and_frequency_03_build",
+      "data": {
+        "lesson_key": "a2-tr-habits-and-frequency-03",
+        "exercise_type": "sentence_building",
+        "prompt": {
+          "instruction_fa": "بخش‌ها را مرتب کن تا عبارت درست ساخته شود.",
+          "tokens": [
+            "çoğu",
+            "zaman",
+            "yürürüm,",
+            "bazen",
+            "de",
+            "evde",
+            "kalırım.",
+            "Akşamları"
+          ]
+        },
+        "answer": {
+          "tokens": [
+            "Akşamları",
+            "çoğu",
+            "zaman",
+            "yürürüm,",
+            "bazen",
+            "de",
+            "evde",
+            "kalırım."
+          ],
+          "value": "Akşamları çoğu zaman yürürüm, bazen de evde kalırım."
+        },
+        "difficulty": 2,
+        "cefr": "A2",
+        "topic": "daily-routine",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت و پسوندهای عبارت ترکی دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: Akşamları çoğu zaman yürürüm, bazen de evde kalırım. — عصرها بیشتر وقت‌ها پیاده‌روی می‌کنم و گاهی هم خانه می‌مانم.",
+          "model_answer": "Akşamları çoğu zaman yürürüm, bazen de evde kalırım."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_habits_and_frequency_03_dialogue",
+      "data": {
+        "lesson_key": "a2-tr-habits-and-frequency-03",
+        "exercise_type": "dialogue_comprehension",
+        "prompt": {
+          "instruction_fa": "با توجه به گفت‌وگو، پاسخ مناسب را انتخاب کن.",
+          "source_dialogue_ref": "d_habits_and_frequency_03",
+          "question_fa": "کدام گزینه با معنی «روزهای کاری معمولاً زود بیدار می‌شوم اما آخر هفته کمی دیرتر بیدار می‌شوم.» هماهنگ است؟"
+        },
+        "answer": {
+          "value": "Hafta içi genelde erken kalkarım ama hafta sonu biraz geç kalkarım."
+        },
+        "options": [
+          "Hafta içi genelde erken kalkarım ama hafta sonu biraz geç kalkarım.",
+          "Genelde erken kalkarım.",
+          "Her gün kahve içer misin?",
+          "Bazen geç yatarım."
+        ],
+        "difficulty": 2,
+        "cefr": "A2",
+        "topic": "daily-routine",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت و پسوندهای عبارت ترکی دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: Hafta içi genelde erken kalkarım ama hafta sonu biraz geç kalkarım. — روزهای کاری معمولاً زود بیدار می‌شوم اما آخر هفته کمی دیرتر بیدار می‌شوم.",
+          "model_answer": "Hafta içi genelde erken kalkarım ama hafta sonu biraz geç kalkarım."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_habits_and_frequency_03_open_write",
+      "data": {
+        "lesson_key": "a2-tr-habits-and-frequency-03",
+        "exercise_type": "writing",
+        "prompt": {
+          "instruction_fa": "یک پاراگراف کوتاه دربارهٔ روتین خودت بنویس. یک عادت روزانه، یک کار گاه‌به‌گاه و یک تفاوت بین روز کاری و آخر هفته را بگو.",
+          "personalized": true
+        },
+        "answer": {
+          "evaluation_mode": "rubric",
+          "model_text": "Hafta içi genelde yedide kalkarım. Her gün kahvaltı yaparım. Akşamları çoğu zaman yürürüm ama bazen evde kalırım.",
+          "required_points_fa": [
+            "یک عادت منظم",
+            "یک عبارت بسامد",
+            "یک تفاوت یا استثنا"
+          ]
+        },
+        "assessment": {
+          "exact_match_allowed": false,
+          "criteria": [
+            {
+              "id": "task",
+              "label_fa": "انجام کار",
+              "weight": 55,
+              "descriptors_fa": {
+                "0": "کار خواسته‌شده انجام نشده است.",
+                "1": "فقط بخشی از اطلاعات اصلی منتقل شده است.",
+                "2": "بیشتر اطلاعات لازم با چند نقص منتقل شده است.",
+                "3": "کار کامل و برای سطح A2 روشن انجام شده است."
+              }
+            },
+            {
+              "id": "language",
+              "label_fa": "زبان قابل‌فهم",
+              "weight": 45,
+              "descriptors_fa": {
+                "0": "پاسخ قابل‌فهم نیست.",
+                "1": "پیام با دشواری زیاد قابل‌فهم است.",
+                "2": "با چند خطا، پیام همچنان روشن است.",
+                "3": "عبارت‌های ساده و پیوسته متناسب با A2 به‌خوبی قابل‌فهم‌اند."
+              }
+            }
+          ]
+        },
+        "difficulty": 2,
+        "cefr": "A2",
+        "topic": "daily-routine",
+        "feedback": {
+          "explanation_fa": "پاسخ آزاد است؛ مهم انجام کامل کار و قابل‌فهم بودن پیام است.",
+          "model_answer": "Hafta içi genelde yedide kalkarım. Her gün kahvaltı yaparım. Akşamları çoğu zaman yürürüm ama bazen evde kalırım.",
+          "retry_tip_fa": "از مدل کمک بگیر، اما اطلاعات و انتخاب‌های خودت را بنویس."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_habits_and_frequency_03_personal_speak",
+      "data": {
+        "lesson_key": "a2-tr-habits-and-frequency-03",
+        "exercise_type": "speaking",
+        "prompt": {
+          "instruction_fa": "روتین معمول یک روزت را توضیح بده و بگو چه کاری را همیشه/معمولاً انجام می‌دهی و چه کاری را فقط گاهی انجام می‌دهی.",
+          "personalized": true
+        },
+        "answer": {
+          "evaluation_mode": "rubric",
+          "model_text": "Hafta içi genelde yedide kalkarım. Her gün kahvaltı yaparım. Akşamları çoğu zaman yürürüm ama bazen evde kalırım.",
+          "required_points_fa": [
+            "یک عادت منظم",
+            "یک عبارت بسامد",
+            "یک تفاوت یا استثنا"
+          ]
+        },
+        "assessment": {
+          "exact_match_allowed": false,
+          "criteria": [
+            {
+              "id": "task",
+              "label_fa": "انجام کار",
+              "weight": 55,
+              "descriptors_fa": {
+                "0": "کار خواسته‌شده انجام نشده است.",
+                "1": "فقط بخشی از اطلاعات اصلی منتقل شده است.",
+                "2": "بیشتر اطلاعات لازم با چند نقص منتقل شده است.",
+                "3": "کار کامل و برای سطح A2 روشن انجام شده است."
+              }
+            },
+            {
+              "id": "language",
+              "label_fa": "زبان قابل‌فهم",
+              "weight": 45,
+              "descriptors_fa": {
+                "0": "پاسخ قابل‌فهم نیست.",
+                "1": "پیام با دشواری زیاد قابل‌فهم است.",
+                "2": "با چند خطا، پیام همچنان روشن است.",
+                "3": "عبارت‌های ساده و پیوسته متناسب با A2 به‌خوبی قابل‌فهم‌اند."
+              }
+            }
+          ]
+        },
+        "difficulty": 2,
+        "cefr": "A2",
+        "topic": "daily-routine",
+        "feedback": {
+          "explanation_fa": "لازم نیست عین مدل صحبت کنی؛ پیام باید کوتاه، پیوسته و روشن باشد.",
+          "model_answer": "Hafta içi genelde yedide kalkarım. Her gün kahvaltı yaparım. Akşamları çoğu zaman yürürüm ama bazen evde kalırım.",
+          "retry_tip_fa": "دو یا سه جملهٔ مرتبط بساز و دلیل یا جزئیات کوتاه اضافه کن."
         },
         "status": "validated"
       }

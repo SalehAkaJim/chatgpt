@@ -432,6 +432,44 @@
       }
     },
     {
+      "kind": "utterance",
+      "external_id": "u_past_weekend_05",
+      "data": {
+        "lesson_key": "a2-tr-past-weekend-03",
+        "text": {
+          "tr": "Önce arkadaşlarımla kahve içtim, sonra sahilde yürüdüm."
+        },
+        "translations": {
+          "fa": "اول با دوستانم قهوه خوردم، بعد کنار ساحل قدم زدم."
+        },
+        "intent": "sequence_personal_past",
+        "concept_refs": [],
+        "cefr": "A2",
+        "topic": "daily-routine",
+        "register": "neutral",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_past_weekend_06",
+      "data": {
+        "lesson_key": "a2-tr-past-weekend-03",
+        "text": {
+          "tr": "Pazar günü evde kaldım çünkü çok yorgundum."
+        },
+        "translations": {
+          "fa": "یکشنبه خانه ماندم چون خیلی خسته بودم."
+        },
+        "intent": "give_reason_for_past_choice",
+        "concept_refs": [],
+        "cefr": "A2",
+        "topic": "daily-routine",
+        "register": "neutral",
+        "status": "validated"
+      }
+    },
+    {
       "kind": "grammar_point",
       "external_id": "g_past_weekend_core",
       "data": {
@@ -540,6 +578,53 @@
             "speaker": "Selin",
             "text": "Güzeldi.",
             "translation_fa": "خوب بود."
+          }
+        ],
+        "qa": {
+          "character_pair_unique_within_unit": true,
+          "naturalness": "passed",
+          "single_situation": true
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "dialogue",
+      "external_id": "d_past_weekend_03",
+      "data": {
+        "lesson_key": "a2-tr-past-weekend-03",
+        "title": "Hafta sonunu anlat",
+        "setting": "item",
+        "cefr": "A2",
+        "topic": "daily-routine",
+        "characters": [
+          "Deniz",
+          "Emre"
+        ],
+        "turns": [
+          {
+            "order": 1,
+            "speaker": "Deniz",
+            "text": "Hafta sonun nasıldı?",
+            "translation_fa": "آخر هفته‌ات چطور بود؟"
+          },
+          {
+            "order": 2,
+            "speaker": "Emre",
+            "text": "Cumartesi arkadaşlarımla buluştum, sonra sahilde yürüdüm.",
+            "translation_fa": "شنبه با دوستانم قرار گذاشتم و بعد کنار ساحل قدم زدم."
+          },
+          {
+            "order": 3,
+            "speaker": "Deniz",
+            "text": "Pazar günü ne yaptın?",
+            "translation_fa": "یکشنبه چه کار کردی؟"
+          },
+          {
+            "order": 4,
+            "speaker": "Emre",
+            "text": "Yorgundum, bu yüzden evde dinlendim.",
+            "translation_fa": "خسته بودم، برای همین خانه استراحت کردم."
           }
         ],
         "qa": {
@@ -846,6 +931,277 @@
           "retry_tip_fa": "به معنی، موقعیت و پسوندهای عبارت ترکی دقت کن و دوباره امتحان کن.",
           "explanation_fa": "مدل طبیعی این درس: Bir film gördüm. — یک فیلم دیدم.",
           "model_answer": "Bir film gördüm."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_past_weekend_03_meaning",
+      "data": {
+        "lesson_key": "a2-tr-past-weekend-03",
+        "exercise_type": "multiple_choice",
+        "prompt": {
+          "instruction_fa": "معنی درست این عبارت ترکی را انتخاب کن.",
+          "value": "Önce arkadaşlarımla kahve içtim, sonra sahilde yürüdüm."
+        },
+        "answer": {
+          "value": "اول با دوستانم قهوه خوردم، بعد کنار ساحل قدم زدم."
+        },
+        "options": [
+          "اول با دوستانم قهوه خوردم، بعد کنار ساحل قدم زدم.",
+          "دیروز با دوستانم گردش کردم.",
+          "آخر هفته چه کار کردی؟",
+          "یک فیلم دیدم."
+        ],
+        "difficulty": 2,
+        "cefr": "A2",
+        "topic": "daily-routine",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت و پسوندهای عبارت ترکی دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: Önce arkadaşlarımla kahve içtim, sonra sahilde yürüdüm. — اول با دوستانم قهوه خوردم، بعد کنار ساحل قدم زدم.",
+          "model_answer": "Önce arkadaşlarımla kahve içtim, sonra sahilde yürüdüm."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_past_weekend_03_listen",
+      "data": {
+        "lesson_key": "a2-tr-past-weekend-03",
+        "exercise_type": "listening",
+        "prompt": {
+          "instruction_fa": "گوش کن و عبارتی را که شنیدی انتخاب کن.",
+          "audio_text": "Pazar günü evde kaldım çünkü çok yorgundum."
+        },
+        "answer": {
+          "value": "Pazar günü evde kaldım çünkü çok yorgundum."
+        },
+        "options": [
+          "Pazar günü evde kaldım çünkü çok yorgundum.",
+          "Önce arkadaşlarımla kahve içtim, sonra sahilde yürüdüm.",
+          "Dün arkadaşlarımla gezdim.",
+          "Hafta sonu ne yaptın?"
+        ],
+        "difficulty": 2,
+        "cefr": "A2",
+        "topic": "daily-routine",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت و پسوندهای عبارت ترکی دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: Pazar günü evde kaldım çünkü çok yorgundum. — یکشنبه خانه ماندم چون خیلی خسته بودم.",
+          "model_answer": "Pazar günü evde kaldım çünkü çok yorgundum.",
+          "transcript_tr": "Pazar günü evde kaldım çünkü çok yorgundum."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_past_weekend_03_speak",
+      "data": {
+        "lesson_key": "a2-tr-past-weekend-03",
+        "exercise_type": "speaking",
+        "prompt": {
+          "instruction_fa": "عبارت را با صدای بلند و با ریتم طبیعی بگو.",
+          "value": "Önce arkadaşlarımla kahve içtim, sonra sahilde yürüdüm."
+        },
+        "answer": {
+          "expected_text": "Önce arkadaşlarımla kahve içtim, sonra sahilde yürüdüm."
+        },
+        "difficulty": 2,
+        "cefr": "A2",
+        "topic": "daily-routine",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت و پسوندهای عبارت ترکی دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: Önce arkadaşlarımla kahve içtim, sonra sahilde yürüdüm. — اول با دوستانم قهوه خوردم، بعد کنار ساحل قدم زدم.",
+          "model_answer": "Önce arkadaşlarımla kahve içtim, sonra sahilde yürüdüm."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_past_weekend_03_build",
+      "data": {
+        "lesson_key": "a2-tr-past-weekend-03",
+        "exercise_type": "sentence_building",
+        "prompt": {
+          "instruction_fa": "بخش‌ها را مرتب کن تا عبارت درست ساخته شود.",
+          "tokens": [
+            "günü",
+            "evde",
+            "kaldım",
+            "çünkü",
+            "çok",
+            "yorgundum.",
+            "Pazar"
+          ]
+        },
+        "answer": {
+          "tokens": [
+            "Pazar",
+            "günü",
+            "evde",
+            "kaldım",
+            "çünkü",
+            "çok",
+            "yorgundum."
+          ],
+          "value": "Pazar günü evde kaldım çünkü çok yorgundum."
+        },
+        "difficulty": 2,
+        "cefr": "A2",
+        "topic": "daily-routine",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت و پسوندهای عبارت ترکی دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: Pazar günü evde kaldım çünkü çok yorgundum. — یکشنبه خانه ماندم چون خیلی خسته بودم.",
+          "model_answer": "Pazar günü evde kaldım çünkü çok yorgundum."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_past_weekend_03_dialogue",
+      "data": {
+        "lesson_key": "a2-tr-past-weekend-03",
+        "exercise_type": "dialogue_comprehension",
+        "prompt": {
+          "instruction_fa": "با توجه به گفت‌وگو، پاسخ مناسب را انتخاب کن.",
+          "source_dialogue_ref": "d_past_weekend_03",
+          "question_fa": "کدام گزینه با معنی «اول با دوستانم قهوه خوردم، بعد کنار ساحل قدم زدم.» هماهنگ است؟"
+        },
+        "answer": {
+          "value": "Önce arkadaşlarımla kahve içtim, sonra sahilde yürüdüm."
+        },
+        "options": [
+          "Önce arkadaşlarımla kahve içtim, sonra sahilde yürüdüm.",
+          "Dün arkadaşlarımla gezdim.",
+          "Hafta sonu ne yaptın?",
+          "Bir film gördüm."
+        ],
+        "difficulty": 2,
+        "cefr": "A2",
+        "topic": "daily-routine",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت و پسوندهای عبارت ترکی دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: Önce arkadaşlarımla kahve içtim, sonra sahilde yürüdüm. — اول با دوستانم قهوه خوردم، بعد کنار ساحل قدم زدم.",
+          "model_answer": "Önce arkadaşlarımla kahve içtim, sonra sahilde yürüdüm."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_past_weekend_03_open_write",
+      "data": {
+        "lesson_key": "a2-tr-past-weekend-03",
+        "exercise_type": "writing",
+        "prompt": {
+          "instruction_fa": "در ۳ تا ۴ جمله آخر هفتهٔ واقعی یا فرضی خودت را تعریف کن. حداقل دو اتفاق را به ترتیب بگو و برای یکی از انتخاب‌ها یک دلیل کوتاه اضافه کن.",
+          "personalized": true
+        },
+        "answer": {
+          "evaluation_mode": "rubric",
+          "model_text": "Cumartesi arkadaşlarımla kahve içtim. Sonra sahilde yürüdük. Pazar günü evde kaldım çünkü biraz yorgundum.",
+          "required_points_fa": [
+            "حداقل دو اتفاق گذشته",
+            "یک نشانهٔ ترتیب مثل önce/sonra",
+            "یک دلیل کوتاه"
+          ]
+        },
+        "assessment": {
+          "exact_match_allowed": false,
+          "criteria": [
+            {
+              "id": "task",
+              "label_fa": "انجام کار",
+              "weight": 55,
+              "descriptors_fa": {
+                "0": "کار خواسته‌شده انجام نشده است.",
+                "1": "فقط بخشی از اطلاعات اصلی منتقل شده است.",
+                "2": "بیشتر اطلاعات لازم با چند نقص منتقل شده است.",
+                "3": "کار کامل و برای سطح A2 روشن انجام شده است."
+              }
+            },
+            {
+              "id": "language",
+              "label_fa": "زبان قابل‌فهم",
+              "weight": 45,
+              "descriptors_fa": {
+                "0": "پاسخ قابل‌فهم نیست.",
+                "1": "پیام با دشواری زیاد قابل‌فهم است.",
+                "2": "با چند خطا، پیام همچنان روشن است.",
+                "3": "عبارت‌های ساده و پیوسته متناسب با A2 به‌خوبی قابل‌فهم‌اند."
+              }
+            }
+          ]
+        },
+        "difficulty": 2,
+        "cefr": "A2",
+        "topic": "daily-routine",
+        "feedback": {
+          "explanation_fa": "پاسخ آزاد است؛ مهم انجام کامل کار و قابل‌فهم بودن پیام است.",
+          "model_answer": "Cumartesi arkadaşlarımla kahve içtim. Sonra sahilde yürüdük. Pazar günü evde kaldım çünkü biraz yorgundum.",
+          "retry_tip_fa": "از مدل کمک بگیر، اما اطلاعات و انتخاب‌های خودت را بنویس."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_past_weekend_03_personal_speak",
+      "data": {
+        "lesson_key": "a2-tr-past-weekend-03",
+        "exercise_type": "speaking",
+        "prompt": {
+          "instruction_fa": "حدود ۳۰ تا ۴۵ ثانیه دربارهٔ آخر هفته‌ات صحبت کن: چه کردی، بعد چه شد و چرا یکی از کارها را انجام دادی یا ندادی؟",
+          "personalized": true
+        },
+        "answer": {
+          "evaluation_mode": "rubric",
+          "model_text": "Cumartesi arkadaşlarımla kahve içtim. Sonra sahilde yürüdük. Pazar günü evde kaldım çünkü biraz yorgundum.",
+          "required_points_fa": [
+            "حداقل دو اتفاق گذشته",
+            "یک نشانهٔ ترتیب مثل önce/sonra",
+            "یک دلیل کوتاه"
+          ]
+        },
+        "assessment": {
+          "exact_match_allowed": false,
+          "criteria": [
+            {
+              "id": "task",
+              "label_fa": "انجام کار",
+              "weight": 55,
+              "descriptors_fa": {
+                "0": "کار خواسته‌شده انجام نشده است.",
+                "1": "فقط بخشی از اطلاعات اصلی منتقل شده است.",
+                "2": "بیشتر اطلاعات لازم با چند نقص منتقل شده است.",
+                "3": "کار کامل و برای سطح A2 روشن انجام شده است."
+              }
+            },
+            {
+              "id": "language",
+              "label_fa": "زبان قابل‌فهم",
+              "weight": 45,
+              "descriptors_fa": {
+                "0": "پاسخ قابل‌فهم نیست.",
+                "1": "پیام با دشواری زیاد قابل‌فهم است.",
+                "2": "با چند خطا، پیام همچنان روشن است.",
+                "3": "عبارت‌های ساده و پیوسته متناسب با A2 به‌خوبی قابل‌فهم‌اند."
+              }
+            }
+          ]
+        },
+        "difficulty": 2,
+        "cefr": "A2",
+        "topic": "daily-routine",
+        "feedback": {
+          "explanation_fa": "لازم نیست عین مدل صحبت کنی؛ پیام باید کوتاه، پیوسته و روشن باشد.",
+          "model_answer": "Cumartesi arkadaşlarımla kahve içtim. Sonra sahilde yürüdük. Pazar günü evde kaldım çünkü biraz yorgundum.",
+          "retry_tip_fa": "دو یا سه جملهٔ مرتبط بساز و دلیل یا جزئیات کوتاه اضافه کن."
         },
         "status": "validated"
       }

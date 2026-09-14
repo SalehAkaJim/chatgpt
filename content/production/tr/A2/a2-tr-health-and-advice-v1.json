@@ -431,6 +431,44 @@
       }
     },
     {
+      "kind": "utterance",
+      "external_id": "u_health_and_advice_05",
+      "data": {
+        "lesson_key": "a2-tr-health-and-advice-03",
+        "text": {
+          "tr": "İki gündür boğazım ağrıyor ve kendimi yorgun hissediyorum."
+        },
+        "translations": {
+          "fa": "دو روز است گلویم درد می‌کند و احساس خستگی دارم."
+        },
+        "intent": "describe_symptoms_with_duration",
+        "concept_refs": [],
+        "cefr": "A2",
+        "topic": "health",
+        "register": "neutral",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_health_and_advice_06",
+      "data": {
+        "lesson_key": "a2-tr-health-and-advice-03",
+        "text": {
+          "tr": "Bence bugün dinlenmelisin; düzelmezse doktora gidebilirsin."
+        },
+        "translations": {
+          "fa": "به نظرم امروز باید استراحت کنی؛ اگر بهتر نشد می‌توانی پیش پزشک بروی."
+        },
+        "intent": "give_conditional_health_advice",
+        "concept_refs": [],
+        "cefr": "A2",
+        "topic": "health",
+        "register": "neutral",
+        "status": "validated"
+      }
+    },
+    {
       "kind": "grammar_point",
       "external_id": "g_health_and_advice_core",
       "data": {
@@ -539,6 +577,53 @@
             "speaker": "Kaan",
             "text": "İki kez.",
             "translation_fa": "دو بار."
+          }
+        ],
+        "qa": {
+          "character_pair_unique_within_unit": true,
+          "naturalness": "passed",
+          "single_situation": true
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "dialogue",
+      "external_id": "d_health_and_advice_03",
+      "data": {
+        "lesson_key": "a2-tr-health-and-advice-03",
+        "title": "Belirtiyi anlat, öneri al",
+        "setting": "item",
+        "cefr": "A2",
+        "topic": "health",
+        "characters": [
+          "Elif",
+          "Kaan"
+        ],
+        "turns": [
+          {
+            "order": 1,
+            "speaker": "Elif",
+            "text": "İyi görünmüyorsun, ne oldu?",
+            "translation_fa": "خوب به نظر نمی‌رسی، چه شده؟"
+          },
+          {
+            "order": 2,
+            "speaker": "Kaan",
+            "text": "İki gündür boğazım ağrıyor.",
+            "translation_fa": "دو روز است گلویم درد می‌کند."
+          },
+          {
+            "order": 3,
+            "speaker": "Elif",
+            "text": "Bugün dinlenmelisin ve bol su içmelisin.",
+            "translation_fa": "امروز باید استراحت کنی و آب زیاد بنوشی."
+          },
+          {
+            "order": 4,
+            "speaker": "Kaan",
+            "text": "Haklısın, düzelmezse doktora giderim.",
+            "translation_fa": "درست می‌گویی، اگر بهتر نشد پیش پزشک می‌روم."
           }
         ],
         "qa": {
@@ -843,6 +928,275 @@
           "retry_tip_fa": "به معنی، موقعیت و پسوندهای عبارت ترکی دقت کن و دوباره امتحان کن.",
           "explanation_fa": "مدل طبیعی این درس: Doktora gitmelisin. — باید پیش پزشک بروی.",
           "model_answer": "Doktora gitmelisin."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_health_and_advice_03_meaning",
+      "data": {
+        "lesson_key": "a2-tr-health-and-advice-03",
+        "exercise_type": "multiple_choice",
+        "prompt": {
+          "instruction_fa": "معنی درست این عبارت ترکی را انتخاب کن.",
+          "value": "İki gündür boğazım ağrıyor ve kendimi yorgun hissediyorum."
+        },
+        "answer": {
+          "value": "دو روز است گلویم درد می‌کند و احساس خستگی دارم."
+        },
+        "options": [
+          "دو روز است گلویم درد می‌کند و احساس خستگی دارم.",
+          "سرم درد می‌کند.",
+          "باید کمی استراحت کنی.",
+          "باید پیش پزشک بروی."
+        ],
+        "difficulty": 2,
+        "cefr": "A2",
+        "topic": "health",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت و پسوندهای عبارت ترکی دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: İki gündür boğazım ağrıyor ve kendimi yorgun hissediyorum. — دو روز است گلویم درد می‌کند و احساس خستگی دارم.",
+          "model_answer": "İki gündür boğazım ağrıyor ve kendimi yorgun hissediyorum."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_health_and_advice_03_listen",
+      "data": {
+        "lesson_key": "a2-tr-health-and-advice-03",
+        "exercise_type": "listening",
+        "prompt": {
+          "instruction_fa": "گوش کن و عبارتی را که شنیدی انتخاب کن.",
+          "audio_text": "Bence bugün dinlenmelisin; düzelmezse doktora gidebilirsin."
+        },
+        "answer": {
+          "value": "Bence bugün dinlenmelisin; düzelmezse doktora gidebilirsin."
+        },
+        "options": [
+          "Bence bugün dinlenmelisin; düzelmezse doktora gidebilirsin.",
+          "İki gündür boğazım ağrıyor ve kendimi yorgun hissediyorum.",
+          "Başım ağrıyor.",
+          "Biraz dinlenmelisin."
+        ],
+        "difficulty": 2,
+        "cefr": "A2",
+        "topic": "health",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت و پسوندهای عبارت ترکی دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: Bence bugün dinlenmelisin; düzelmezse doktora gidebilirsin. — به نظرم امروز باید استراحت کنی؛ اگر بهتر نشد می‌توانی پیش پزشک بروی.",
+          "model_answer": "Bence bugün dinlenmelisin; düzelmezse doktora gidebilirsin.",
+          "transcript_tr": "Bence bugün dinlenmelisin; düzelmezse doktora gidebilirsin."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_health_and_advice_03_speak",
+      "data": {
+        "lesson_key": "a2-tr-health-and-advice-03",
+        "exercise_type": "speaking",
+        "prompt": {
+          "instruction_fa": "عبارت را با صدای بلند و با ریتم طبیعی بگو.",
+          "value": "İki gündür boğazım ağrıyor ve kendimi yorgun hissediyorum."
+        },
+        "answer": {
+          "expected_text": "İki gündür boğazım ağrıyor ve kendimi yorgun hissediyorum."
+        },
+        "difficulty": 2,
+        "cefr": "A2",
+        "topic": "health",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت و پسوندهای عبارت ترکی دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: İki gündür boğazım ağrıyor ve kendimi yorgun hissediyorum. — دو روز است گلویم درد می‌کند و احساس خستگی دارم.",
+          "model_answer": "İki gündür boğazım ağrıyor ve kendimi yorgun hissediyorum."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_health_and_advice_03_build",
+      "data": {
+        "lesson_key": "a2-tr-health-and-advice-03",
+        "exercise_type": "sentence_building",
+        "prompt": {
+          "instruction_fa": "بخش‌ها را مرتب کن تا عبارت درست ساخته شود.",
+          "tokens": [
+            "bugün",
+            "dinlenmelisin;",
+            "düzelmezse",
+            "doktora",
+            "gidebilirsin.",
+            "Bence"
+          ]
+        },
+        "answer": {
+          "tokens": [
+            "Bence",
+            "bugün",
+            "dinlenmelisin;",
+            "düzelmezse",
+            "doktora",
+            "gidebilirsin."
+          ],
+          "value": "Bence bugün dinlenmelisin; düzelmezse doktora gidebilirsin."
+        },
+        "difficulty": 2,
+        "cefr": "A2",
+        "topic": "health",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت و پسوندهای عبارت ترکی دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: Bence bugün dinlenmelisin; düzelmezse doktora gidebilirsin. — به نظرم امروز باید استراحت کنی؛ اگر بهتر نشد می‌توانی پیش پزشک بروی.",
+          "model_answer": "Bence bugün dinlenmelisin; düzelmezse doktora gidebilirsin."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_health_and_advice_03_dialogue",
+      "data": {
+        "lesson_key": "a2-tr-health-and-advice-03",
+        "exercise_type": "dialogue_comprehension",
+        "prompt": {
+          "instruction_fa": "با توجه به گفت‌وگو، پاسخ مناسب را انتخاب کن.",
+          "source_dialogue_ref": "d_health_and_advice_03",
+          "question_fa": "کدام گزینه با معنی «دو روز است گلویم درد می‌کند و احساس خستگی دارم.» هماهنگ است؟"
+        },
+        "answer": {
+          "value": "İki gündür boğazım ağrıyor ve kendimi yorgun hissediyorum."
+        },
+        "options": [
+          "İki gündür boğazım ağrıyor ve kendimi yorgun hissediyorum.",
+          "Başım ağrıyor.",
+          "Biraz dinlenmelisin.",
+          "Doktora gitmelisin."
+        ],
+        "difficulty": 2,
+        "cefr": "A2",
+        "topic": "health",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت و پسوندهای عبارت ترکی دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: İki gündür boğazım ağrıyor ve kendimi yorgun hissediyorum. — دو روز است گلویم درد می‌کند و احساس خستگی دارم.",
+          "model_answer": "İki gündür boğazım ağrıyor ve kendimi yorgun hissediyorum."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_health_and_advice_03_open_write",
+      "data": {
+        "lesson_key": "a2-tr-health-and-advice-03",
+        "exercise_type": "writing",
+        "prompt": {
+          "instruction_fa": "یک پیام ۳ تا ۴ جمله‌ای بنویس: یک مشکل سادهٔ سلامتی و مدت آن را توضیح بده، سپس یک توصیهٔ مناسب بنویس.",
+          "personalized": true
+        },
+        "answer": {
+          "evaluation_mode": "rubric",
+          "model_text": "İki gündür başım ağrıyor ve biraz yorgunum. Bugün dinlenmeliyim. Çok su içmeliyim. Düzelmezsem doktora gidebilirim.",
+          "required_points_fa": [
+            "حداقل یک علامت",
+            "مدت یا زمان",
+            "حداقل یک توصیهٔ عملی"
+          ]
+        },
+        "assessment": {
+          "exact_match_allowed": false,
+          "criteria": [
+            {
+              "id": "task",
+              "label_fa": "انجام کار",
+              "weight": 55,
+              "descriptors_fa": {
+                "0": "کار خواسته‌شده انجام نشده است.",
+                "1": "فقط بخشی از اطلاعات اصلی منتقل شده است.",
+                "2": "بیشتر اطلاعات لازم با چند نقص منتقل شده است.",
+                "3": "کار کامل و برای سطح A2 روشن انجام شده است."
+              }
+            },
+            {
+              "id": "language",
+              "label_fa": "زبان قابل‌فهم",
+              "weight": 45,
+              "descriptors_fa": {
+                "0": "پاسخ قابل‌فهم نیست.",
+                "1": "پیام با دشواری زیاد قابل‌فهم است.",
+                "2": "با چند خطا، پیام همچنان روشن است.",
+                "3": "عبارت‌های ساده و پیوسته متناسب با A2 به‌خوبی قابل‌فهم‌اند."
+              }
+            }
+          ]
+        },
+        "difficulty": 2,
+        "cefr": "A2",
+        "topic": "health",
+        "feedback": {
+          "explanation_fa": "پاسخ آزاد است؛ مهم انجام کامل کار و قابل‌فهم بودن پیام است.",
+          "model_answer": "İki gündür başım ağrıyor ve biraz yorgunum. Bugün dinlenmeliyim. Çok su içmeliyim. Düzelmezsem doktora gidebilirim.",
+          "retry_tip_fa": "از مدل کمک بگیر، اما اطلاعات و انتخاب‌های خودت را بنویس."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_health_and_advice_03_personal_speak",
+      "data": {
+        "lesson_key": "a2-tr-health-and-advice-03",
+        "exercise_type": "speaking",
+        "prompt": {
+          "instruction_fa": "نقش بیمار یا دوست را بگیر: علائم ساده را توضیح بده و دو توصیهٔ عملی و سطح A2 ارائه کن.",
+          "personalized": true
+        },
+        "answer": {
+          "evaluation_mode": "rubric",
+          "model_text": "İki gündür başım ağrıyor ve biraz yorgunum. Bugün dinlenmeliyim. Çok su içmeliyim. Düzelmezsem doktora gidebilirim.",
+          "required_points_fa": [
+            "حداقل یک علامت",
+            "مدت یا زمان",
+            "حداقل یک توصیهٔ عملی"
+          ]
+        },
+        "assessment": {
+          "exact_match_allowed": false,
+          "criteria": [
+            {
+              "id": "task",
+              "label_fa": "انجام کار",
+              "weight": 55,
+              "descriptors_fa": {
+                "0": "کار خواسته‌شده انجام نشده است.",
+                "1": "فقط بخشی از اطلاعات اصلی منتقل شده است.",
+                "2": "بیشتر اطلاعات لازم با چند نقص منتقل شده است.",
+                "3": "کار کامل و برای سطح A2 روشن انجام شده است."
+              }
+            },
+            {
+              "id": "language",
+              "label_fa": "زبان قابل‌فهم",
+              "weight": 45,
+              "descriptors_fa": {
+                "0": "پاسخ قابل‌فهم نیست.",
+                "1": "پیام با دشواری زیاد قابل‌فهم است.",
+                "2": "با چند خطا، پیام همچنان روشن است.",
+                "3": "عبارت‌های ساده و پیوسته متناسب با A2 به‌خوبی قابل‌فهم‌اند."
+              }
+            }
+          ]
+        },
+        "difficulty": 2,
+        "cefr": "A2",
+        "topic": "health",
+        "feedback": {
+          "explanation_fa": "لازم نیست عین مدل صحبت کنی؛ پیام باید کوتاه، پیوسته و روشن باشد.",
+          "model_answer": "İki gündür başım ağrıyor ve biraz yorgunum. Bugün dinlenmeliyim. Çok su içmeliyim. Düzelmezsem doktora gidebilirim.",
+          "retry_tip_fa": "دو یا سه جملهٔ مرتبط بساز و دلیل یا جزئیات کوتاه اضافه کن."
         },
         "status": "validated"
       }

@@ -432,6 +432,44 @@
       }
     },
     {
+      "kind": "utterance",
+      "external_id": "u_choices_and_preferences_05",
+      "data": {
+        "lesson_key": "a2-tr-choices-and-preferences-03",
+        "text": {
+          "tr": "Ben küçük bir oteli tercih ederim çünkü daha sakin oluyor."
+        },
+        "translations": {
+          "fa": "من هتل کوچک را ترجیح می‌دهم چون معمولاً آرام‌تر است."
+        },
+        "intent": "state_preference_with_reason",
+        "concept_refs": [],
+        "cefr": "A2",
+        "topic": "shopping",
+        "register": "neutral",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_choices_and_preferences_06",
+      "data": {
+        "lesson_key": "a2-tr-choices-and-preferences-03",
+        "text": {
+          "tr": "Arkadaşım merkezde kalmak istiyor, ama ben denize yakın olmak istiyorum."
+        },
+        "translations": {
+          "fa": "دوستم می‌خواهد در مرکز بماند، اما من می‌خواهم نزدیک دریا باشم."
+        },
+        "intent": "contrast_preferences",
+        "concept_refs": [],
+        "cefr": "A2",
+        "topic": "shopping",
+        "register": "neutral",
+        "status": "validated"
+      }
+    },
+    {
       "kind": "grammar_point",
       "external_id": "g_choices_and_preferences_core",
       "data": {
@@ -540,6 +578,53 @@
             "speaker": "Burak",
             "text": "Daha hafif olduğu için.",
             "translation_fa": "چون سبک‌تر است."
+          }
+        ],
+        "qa": {
+          "character_pair_unique_within_unit": true,
+          "naturalness": "passed",
+          "single_situation": true
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "dialogue",
+      "external_id": "d_choices_and_preferences_03",
+      "data": {
+        "lesson_key": "a2-tr-choices-and-preferences-03",
+        "title": "Ortak seçim yap",
+        "setting": "item",
+        "cefr": "A2",
+        "topic": "shopping",
+        "characters": [
+          "Zeynep",
+          "Deniz"
+        ],
+        "turns": [
+          {
+            "order": 1,
+            "speaker": "Zeynep",
+            "text": "Ben merkezde kalmak istiyorum.",
+            "translation_fa": "من می‌خواهم در مرکز بمانم."
+          },
+          {
+            "order": 2,
+            "speaker": "Deniz",
+            "text": "Ben daha sakin bir yer tercih ederim.",
+            "translation_fa": "من جای آرام‌تری را ترجیح می‌دهم."
+          },
+          {
+            "order": 3,
+            "speaker": "Zeynep",
+            "text": "Merkeze yakın ama sessiz bir otel bulalım mı?",
+            "translation_fa": "یک هتل نزدیک مرکز اما ساکت پیدا کنیم؟"
+          },
+          {
+            "order": 4,
+            "speaker": "Deniz",
+            "text": "Evet, bu ikimiz için de uygun.",
+            "translation_fa": "بله، این برای هر دوی ما مناسب است."
           }
         ],
         "qa": {
@@ -846,6 +931,283 @@
           "retry_tip_fa": "به معنی، موقعیت و پسوندهای عبارت ترکی دقت کن و دوباره امتحان کن.",
           "explanation_fa": "مدل طبیعی این درس: Bence bu daha rahat. — به نظر من این راحت‌تر است.",
           "model_answer": "Bence bu daha rahat."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_choices_and_preferences_03_meaning",
+      "data": {
+        "lesson_key": "a2-tr-choices-and-preferences-03",
+        "exercise_type": "multiple_choice",
+        "prompt": {
+          "instruction_fa": "معنی درست این عبارت ترکی را انتخاب کن.",
+          "value": "Ben küçük bir oteli tercih ederim çünkü daha sakin oluyor."
+        },
+        "answer": {
+          "value": "من هتل کوچک را ترجیح می‌دهم چون معمولاً آرام‌تر است."
+        },
+        "options": [
+          "من هتل کوچک را ترجیح می‌دهم چون معمولاً آرام‌تر است.",
+          "من این را ترجیح می‌دهم.",
+          "کدام گزینه را می‌خواهی؟",
+          "به نظر من این راحت‌تر است."
+        ],
+        "difficulty": 2,
+        "cefr": "A2",
+        "topic": "shopping",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت و پسوندهای عبارت ترکی دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: Ben küçük bir oteli tercih ederim çünkü daha sakin oluyor. — من هتل کوچک را ترجیح می‌دهم چون معمولاً آرام‌تر است.",
+          "model_answer": "Ben küçük bir oteli tercih ederim çünkü daha sakin oluyor."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_choices_and_preferences_03_listen",
+      "data": {
+        "lesson_key": "a2-tr-choices-and-preferences-03",
+        "exercise_type": "listening",
+        "prompt": {
+          "instruction_fa": "گوش کن و عبارتی را که شنیدی انتخاب کن.",
+          "audio_text": "Arkadaşım merkezde kalmak istiyor, ama ben denize yakın olmak istiyorum."
+        },
+        "answer": {
+          "value": "Arkadaşım merkezde kalmak istiyor, ama ben denize yakın olmak istiyorum."
+        },
+        "options": [
+          "Arkadaşım merkezde kalmak istiyor, ama ben denize yakın olmak istiyorum.",
+          "Ben küçük bir oteli tercih ederim çünkü daha sakin oluyor.",
+          "Ben bunu tercih ederim.",
+          "Hangi seçeneği istersin?"
+        ],
+        "difficulty": 2,
+        "cefr": "A2",
+        "topic": "shopping",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت و پسوندهای عبارت ترکی دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: Arkadaşım merkezde kalmak istiyor, ama ben denize yakın olmak istiyorum. — دوستم می‌خواهد در مرکز بماند، اما من می‌خواهم نزدیک دریا باشم.",
+          "model_answer": "Arkadaşım merkezde kalmak istiyor, ama ben denize yakın olmak istiyorum.",
+          "transcript_tr": "Arkadaşım merkezde kalmak istiyor, ama ben denize yakın olmak istiyorum."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_choices_and_preferences_03_speak",
+      "data": {
+        "lesson_key": "a2-tr-choices-and-preferences-03",
+        "exercise_type": "speaking",
+        "prompt": {
+          "instruction_fa": "عبارت را با صدای بلند و با ریتم طبیعی بگو.",
+          "value": "Ben küçük bir oteli tercih ederim çünkü daha sakin oluyor."
+        },
+        "answer": {
+          "expected_text": "Ben küçük bir oteli tercih ederim çünkü daha sakin oluyor."
+        },
+        "difficulty": 2,
+        "cefr": "A2",
+        "topic": "shopping",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت و پسوندهای عبارت ترکی دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: Ben küçük bir oteli tercih ederim çünkü daha sakin oluyor. — من هتل کوچک را ترجیح می‌دهم چون معمولاً آرام‌تر است.",
+          "model_answer": "Ben küçük bir oteli tercih ederim çünkü daha sakin oluyor."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_choices_and_preferences_03_build",
+      "data": {
+        "lesson_key": "a2-tr-choices-and-preferences-03",
+        "exercise_type": "sentence_building",
+        "prompt": {
+          "instruction_fa": "بخش‌ها را مرتب کن تا عبارت درست ساخته شود.",
+          "tokens": [
+            "merkezde",
+            "kalmak",
+            "istiyor,",
+            "ama",
+            "ben",
+            "denize",
+            "yakın",
+            "olmak",
+            "istiyorum.",
+            "Arkadaşım"
+          ]
+        },
+        "answer": {
+          "tokens": [
+            "Arkadaşım",
+            "merkezde",
+            "kalmak",
+            "istiyor,",
+            "ama",
+            "ben",
+            "denize",
+            "yakın",
+            "olmak",
+            "istiyorum."
+          ],
+          "value": "Arkadaşım merkezde kalmak istiyor, ama ben denize yakın olmak istiyorum."
+        },
+        "difficulty": 2,
+        "cefr": "A2",
+        "topic": "shopping",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت و پسوندهای عبارت ترکی دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: Arkadaşım merkezde kalmak istiyor, ama ben denize yakın olmak istiyorum. — دوستم می‌خواهد در مرکز بماند، اما من می‌خواهم نزدیک دریا باشم.",
+          "model_answer": "Arkadaşım merkezde kalmak istiyor, ama ben denize yakın olmak istiyorum."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_choices_and_preferences_03_dialogue",
+      "data": {
+        "lesson_key": "a2-tr-choices-and-preferences-03",
+        "exercise_type": "dialogue_comprehension",
+        "prompt": {
+          "instruction_fa": "با توجه به گفت‌وگو، پاسخ مناسب را انتخاب کن.",
+          "source_dialogue_ref": "d_choices_and_preferences_03",
+          "question_fa": "کدام گزینه با معنی «من هتل کوچک را ترجیح می‌دهم چون معمولاً آرام‌تر است.» هماهنگ است؟"
+        },
+        "answer": {
+          "value": "Ben küçük bir oteli tercih ederim çünkü daha sakin oluyor."
+        },
+        "options": [
+          "Ben küçük bir oteli tercih ederim çünkü daha sakin oluyor.",
+          "Ben bunu tercih ederim.",
+          "Hangi seçeneği istersin?",
+          "Bence bu daha rahat."
+        ],
+        "difficulty": 2,
+        "cefr": "A2",
+        "topic": "shopping",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت و پسوندهای عبارت ترکی دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: Ben küçük bir oteli tercih ederim çünkü daha sakin oluyor. — من هتل کوچک را ترجیح می‌دهم چون معمولاً آرام‌تر است.",
+          "model_answer": "Ben küçük bir oteli tercih ederim çünkü daha sakin oluyor."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_choices_and_preferences_03_open_write",
+      "data": {
+        "lesson_key": "a2-tr-choices-and-preferences-03",
+        "exercise_type": "writing",
+        "prompt": {
+          "instruction_fa": "بین دو گزینه یکی را انتخاب کن. ترجیح خودت را بگو، یک دلیل بده و نشان بده چرا گزینهٔ دیگر برایت کمتر مناسب است.",
+          "personalized": true
+        },
+        "answer": {
+          "evaluation_mode": "rubric",
+          "model_text": "Ben trenle gitmeyi tercih ederim çünkü daha rahat. Otobüs daha ucuz ama yol daha uzun. Bu yüzden treni seçerim.",
+          "required_points_fa": [
+            "ترجیح روشن",
+            "حداقل یک دلیل",
+            "اشاره به گزینهٔ دیگر"
+          ]
+        },
+        "assessment": {
+          "exact_match_allowed": false,
+          "criteria": [
+            {
+              "id": "task",
+              "label_fa": "انجام کار",
+              "weight": 55,
+              "descriptors_fa": {
+                "0": "کار خواسته‌شده انجام نشده است.",
+                "1": "فقط بخشی از اطلاعات اصلی منتقل شده است.",
+                "2": "بیشتر اطلاعات لازم با چند نقص منتقل شده است.",
+                "3": "کار کامل و برای سطح A2 روشن انجام شده است."
+              }
+            },
+            {
+              "id": "language",
+              "label_fa": "زبان قابل‌فهم",
+              "weight": 45,
+              "descriptors_fa": {
+                "0": "پاسخ قابل‌فهم نیست.",
+                "1": "پیام با دشواری زیاد قابل‌فهم است.",
+                "2": "با چند خطا، پیام همچنان روشن است.",
+                "3": "عبارت‌های ساده و پیوسته متناسب با A2 به‌خوبی قابل‌فهم‌اند."
+              }
+            }
+          ]
+        },
+        "difficulty": 2,
+        "cefr": "A2",
+        "topic": "shopping",
+        "feedback": {
+          "explanation_fa": "پاسخ آزاد است؛ مهم انجام کامل کار و قابل‌فهم بودن پیام است.",
+          "model_answer": "Ben trenle gitmeyi tercih ederim çünkü daha rahat. Otobüs daha ucuz ama yol daha uzun. Bu yüzden treni seçerim.",
+          "retry_tip_fa": "از مدل کمک بگیر، اما اطلاعات و انتخاب‌های خودت را بنویس."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_choices_and_preferences_03_personal_speak",
+      "data": {
+        "lesson_key": "a2-tr-choices-and-preferences-03",
+        "exercise_type": "speaking",
+        "prompt": {
+          "instruction_fa": "دو انتخاب مثل نوع سفر، محل اقامت یا برنامهٔ آخر هفته را مقایسه کن و ترجیح شخصی‌ات را با دلیل توضیح بده.",
+          "personalized": true
+        },
+        "answer": {
+          "evaluation_mode": "rubric",
+          "model_text": "Ben trenle gitmeyi tercih ederim çünkü daha rahat. Otobüs daha ucuz ama yol daha uzun. Bu yüzden treni seçerim.",
+          "required_points_fa": [
+            "ترجیح روشن",
+            "حداقل یک دلیل",
+            "اشاره به گزینهٔ دیگر"
+          ]
+        },
+        "assessment": {
+          "exact_match_allowed": false,
+          "criteria": [
+            {
+              "id": "task",
+              "label_fa": "انجام کار",
+              "weight": 55,
+              "descriptors_fa": {
+                "0": "کار خواسته‌شده انجام نشده است.",
+                "1": "فقط بخشی از اطلاعات اصلی منتقل شده است.",
+                "2": "بیشتر اطلاعات لازم با چند نقص منتقل شده است.",
+                "3": "کار کامل و برای سطح A2 روشن انجام شده است."
+              }
+            },
+            {
+              "id": "language",
+              "label_fa": "زبان قابل‌فهم",
+              "weight": 45,
+              "descriptors_fa": {
+                "0": "پاسخ قابل‌فهم نیست.",
+                "1": "پیام با دشواری زیاد قابل‌فهم است.",
+                "2": "با چند خطا، پیام همچنان روشن است.",
+                "3": "عبارت‌های ساده و پیوسته متناسب با A2 به‌خوبی قابل‌فهم‌اند."
+              }
+            }
+          ]
+        },
+        "difficulty": 2,
+        "cefr": "A2",
+        "topic": "shopping",
+        "feedback": {
+          "explanation_fa": "لازم نیست عین مدل صحبت کنی؛ پیام باید کوتاه، پیوسته و روشن باشد.",
+          "model_answer": "Ben trenle gitmeyi tercih ederim çünkü daha rahat. Otobüs daha ucuz ama yol daha uzun. Bu yüzden treni seçerim.",
+          "retry_tip_fa": "دو یا سه جملهٔ مرتبط بساز و دلیل یا جزئیات کوتاه اضافه کن."
         },
         "status": "validated"
       }
