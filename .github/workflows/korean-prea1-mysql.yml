@@ -115,7 +115,7 @@ jobs:
           lexeme_sql="SELECT COUNT(DISTINCT li.lexeme_id) FROM lesson_items li JOIN lessons le ON le.id=li.lesson_id JOIN courses c ON c.id=le.course_id WHERE c.slug='fa-ko-kr' AND li.lexeme_id IS NOT NULL;"
           utterance_sql="SELECT COUNT(DISTINCT li.utterance_id) FROM lesson_items li JOIN lessons le ON le.id=li.lesson_id JOIN courses c ON c.id=le.course_id WHERE c.slug='fa-ko-kr' AND li.utterance_id IS NOT NULL;"
           dialogue_sql="SELECT COUNT(DISTINCT li.dialogue_id) FROM lesson_items li JOIN lessons le ON le.id=li.lesson_id JOIN courses c ON c.id=le.course_id WHERE c.slug='fa-ko-kr' AND li.dialogue_id IS NOT NULL;"
-          exercise_sql="SELECT COUNT(*) FROM exercises e JOIN lessons le ON le.id=li.lesson_id JOIN courses c ON c.id=le.course_id WHERE c.slug='fa-ko-kr';"
+          exercise_sql="SELECT COUNT(*) FROM exercises e JOIN lessons le ON le.id=e.lesson_id JOIN courses c ON c.id=le.course_id WHERE c.slug='fa-ko-kr';"
           q() { mysql -N -s -h127.0.0.1 -P3306 -uroot language_learning -e "$1"; }
           before="$(q "$lesson_sql")|$(q "$concept_sql")|$(q "$lexeme_sql")|$(q "$utterance_sql")|$(q "$dialogue_sql")|$(q "$exercise_sql")"
           python database/import/ko/pre_a1.py --allow-unreviewed
