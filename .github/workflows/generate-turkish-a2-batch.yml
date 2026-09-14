@@ -44,6 +44,7 @@ jobs:
           python database/import/tr/a2.py --dry-run
           python scripts/validate_turkish_a2_cefr_boundary.py
           python scripts/validate_turkish_a2_dialogue_rotation.py
+          python scripts/validate_turkish_a2_coverage.py
 
       - name: Coverage-driven educational checks
         run: |
