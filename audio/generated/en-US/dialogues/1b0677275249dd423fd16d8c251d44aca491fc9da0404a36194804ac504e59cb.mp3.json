@@ -1,0 +1,36 @@
+{
+  "source_text_hash": "334d016f755cd6dc58c53a86e183882f8ec14f52fb05345887c8a5edd42c87b7",
+  "voice_id": "f5HLTX707KIM4SzJYzSz",
+  "model": "eleven_multilingual_v2",
+  "settings": {
+    "stability": 0.58,
+    "similarity_boost": 0.87,
+    "style": 0.14,
+    "use_speaker_boost": true,
+    "speed": 0.99
+  },
+  "provider": "elevenlabs",
+  "audio_key": "1b0677275249dd423fd16d8c251d44aca491fc9da0404a36194804ac504e59cb",
+  "voice_key": "character:arman:male_warm",
+  "voice_name": "Brad - Welcoming & Casual",
+  "voice_labels": {
+    "gender": "male",
+    "accent": "american",
+    "age": "young",
+    "category": "high_quality",
+    "language": "en",
+    "use_case": "conversational",
+    "descriptive": "casual"
+  },
+  "output_format": "mp3_44100_192",
+  "file_sha256": "70249545f75eb8a156a6c1787d5620b6b9f29c8ec17d55097d633f324d2491ac",
+  "duration_ms": 835,
+  "generated_at": "2026-09-14T13:10:24.624087+00:00",
+  "entity_refs": [
+    {
+      "entity_type": "dialogue_turn",
+      "entity_uuid": "fc97e633-80a7-5042-ab8e-2a83640fd38d",
+      "entity_key": "d_en_en-about-me_origin_age:2"
+    }
+  ]
+}

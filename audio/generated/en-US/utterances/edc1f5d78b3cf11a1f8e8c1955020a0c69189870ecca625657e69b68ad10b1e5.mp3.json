@@ -21,14 +21,34 @@
     "language": "en"
   },
   "output_format": "mp3_44100_192",
-  "file_sha256": "4162a643a15816c8ba5bf8fed2075326daab67e4a9472cb26f45576081fa4898",
-  "duration_ms": 914,
-  "generated_at": "2026-09-12T08:20:47.565080+00:00",
+  "file_sha256": "45c477680d1bb23ab78df1a2145793bdbee2ebfd2eb35b737b6d440e6ed29d1d",
+  "duration_ms": 966,
+  "generated_at": "2026-09-14T13:13:32.493422+00:00",
   "entity_refs": [
     {
       "entity_type": "utterance",
       "entity_uuid": "54a30c06-e4bf-5607-a642-8cff05160cef",
       "entity_key": "u_pre_ship"
+    },
+    {
+      "entity_type": "exercise",
+      "entity_uuid": "fd491526-4f73-5c04-a956-5553058e076d",
+      "entity_key": "ex_pre_sound_sh"
+    },
+    {
+      "entity_type": "grammar_point",
+      "entity_uuid": "09f532bf-aeaa-50d5-af52-b4695bbf60a5",
+      "entity_key": "g_fix_sh_ch:example:1"
+    },
+    {
+      "entity_type": "grammar_point",
+      "entity_uuid": "bec5b297-1ac5-537f-b686-6ca7140b089e",
+      "entity_key": "g_fix_short_long_i:example:1"
+    },
+    {
+      "entity_type": "exercise",
+      "entity_uuid": "8e565bbb-6b64-5d9f-970b-6cc0fc6807ee",
+      "entity_key": "ex_fix_sound_listen_5"
     }
   ]
 }

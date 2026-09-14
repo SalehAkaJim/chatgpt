@@ -1,0 +1,36 @@
+{
+  "source_text_hash": "cac74dd36ef41a909971a47efb23215bc52a2e911708ee47167620d42cbda532",
+  "voice_id": "h2I5OFX58E5TL5AitYwR",
+  "model": "eleven_multilingual_v2",
+  "settings": {
+    "stability": 0.52,
+    "similarity_boost": 0.86,
+    "style": 0.2,
+    "use_speaker_boost": true,
+    "speed": 1.01
+  },
+  "provider": "elevenlabs",
+  "audio_key": "9957d3d894fb23520ad14c8a9ef64f8b461fd4a21b4ab0443471d2fe66dc07dc",
+  "voice_key": "character:ben:male_bright",
+  "voice_name": "Joey Patel - Friendly Customer Support",
+  "voice_labels": {
+    "gender": "male",
+    "accent": "american",
+    "age": "young",
+    "category": "professional",
+    "language": "en",
+    "use_case": "conversational",
+    "descriptive": "pleasant"
+  },
+  "output_format": "mp3_44100_192",
+  "file_sha256": "5fd82284fcbb2d450501dc846f851063fc05a83c873c431b3cc1ee49bf4267fb",
+  "duration_ms": 1280,
+  "generated_at": "2026-09-14T13:11:07.065461+00:00",
+  "entity_refs": [
+    {
+      "entity_type": "dialogue_turn",
+      "entity_uuid": "2c5c25b2-78b7-515f-86e9-546d28422376",
+      "entity_key": "d_en_en-about-me_feeling_family:3"
+    }
+  ]
+}

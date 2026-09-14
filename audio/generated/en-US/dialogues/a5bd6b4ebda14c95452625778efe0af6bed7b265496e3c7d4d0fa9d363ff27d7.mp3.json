@@ -1,0 +1,35 @@
+{
+  "source_text_hash": "43e161a2195125f2e3e30f0669f6b1b8f3c5b0a6ce681eec77d686bc9f811fb5",
+  "voice_id": "1SM7GgM6IMuvQlz2BwM3",
+  "model": "eleven_multilingual_v2",
+  "settings": {
+    "stability": 0.58,
+    "similarity_boost": 0.87,
+    "style": 0.14,
+    "use_speaker_boost": true,
+    "speed": 0.99
+  },
+  "provider": "elevenlabs",
+  "audio_key": "a5bd6b4ebda14c95452625778efe0af6bed7b265496e3c7d4d0fa9d363ff27d7",
+  "voice_key": "character:jack:male_warm",
+  "voice_name": "Mark - ConvoAI",
+  "voice_labels": {
+    "language": "en",
+    "descriptive": "casual",
+    "age": "middle_aged",
+    "use_case": "conversational",
+    "accent": "american",
+    "gender": "male"
+  },
+  "output_format": "mp3_44100_192",
+  "file_sha256": "4e255c864d0176e331a6fb315a0dee271defc0087f602bf777a61dcaef3bc509",
+  "duration_ms": 2873,
+  "generated_at": "2026-09-14T13:11:10.237474+00:00",
+  "entity_refs": [
+    {
+      "entity_type": "dialogue_turn",
+      "entity_uuid": "67fa4fcd-20cd-5f01-90a8-75e336ee62ed",
+      "entity_key": "d_en_en-real-world-gate_public_task:2"
+    }
+  ]
+}
