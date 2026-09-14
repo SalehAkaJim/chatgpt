@@ -1,0 +1,864 @@
+{
+  "batch_id": "it-it-b1-polite-nuance-v1",
+  "course": "fa-it-it",
+  "learner_language": "fa",
+  "learner_variant": "fa-IR",
+  "target_language": "it",
+  "target_variant": "it-IT",
+  "cefr": "B1",
+  "curriculum_unit": "b1-it-polite-nuance",
+  "generator": "gpt-5.6-sol:italian-b1-batch-v1",
+  "items": [
+    {
+      "kind": "concept",
+      "external_id": "c_polite_nuance_01",
+      "data": {
+        "slug": "it_b1_polite_nuance_potresti",
+        "lesson_key": "b1-it-polite-nuance-01",
+        "concept_type": "lexical",
+        "part_of_speech": "verb",
+        "forms": {
+          "it": "potresti"
+        },
+        "translations": {
+          "fa": "می‌توانی؟ / ممکن است؟"
+        },
+        "cefr": "B1",
+        "topic": "requests",
+        "tags": [
+          "core",
+          "b1",
+          "high_frequency"
+        ],
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_polite_nuance_01",
+      "data": {
+        "lesson_key": "b1-it-polite-nuance-01",
+        "lemma": "potresti",
+        "display_lemma": "potresti",
+        "language": "it",
+        "language_variant": "it-IT",
+        "part_of_speech": "verb",
+        "concept_refs": [
+          "it_b1_polite_nuance_potresti"
+        ],
+        "cefr": "B1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_polite_nuance_01",
+      "data": {
+        "lesson_key": "b1-it-polite-nuance-01",
+        "lexeme_ref": "lx_polite_nuance_01",
+        "surface_form": "potresti",
+        "display_form": "potresti",
+        "grammatical_features": {},
+        "is_lemma": true,
+        "is_preferred": true,
+        "cefr": "B1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_polite_nuance_02",
+      "data": {
+        "slug": "it_b1_polite_nuance_sarebbe",
+        "lesson_key": "b1-it-polite-nuance-01",
+        "concept_type": "lexical",
+        "part_of_speech": "verb",
+        "forms": {
+          "it": "sarebbe"
+        },
+        "translations": {
+          "fa": "می‌بود / خواهد بود (شرطی)"
+        },
+        "cefr": "B1",
+        "topic": "requests",
+        "tags": [
+          "core",
+          "b1",
+          "high_frequency"
+        ],
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_polite_nuance_02",
+      "data": {
+        "lesson_key": "b1-it-polite-nuance-01",
+        "lemma": "sarebbe",
+        "display_lemma": "sarebbe",
+        "language": "it",
+        "language_variant": "it-IT",
+        "part_of_speech": "verb",
+        "concept_refs": [
+          "it_b1_polite_nuance_sarebbe"
+        ],
+        "cefr": "B1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_polite_nuance_02",
+      "data": {
+        "lesson_key": "b1-it-polite-nuance-01",
+        "lexeme_ref": "lx_polite_nuance_02",
+        "surface_form": "sarebbe",
+        "display_form": "sarebbe",
+        "grammatical_features": {},
+        "is_lemma": true,
+        "is_preferred": true,
+        "cefr": "B1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_polite_nuance_03",
+      "data": {
+        "slug": "it_b1_polite_nuance_gentile",
+        "lesson_key": "b1-it-polite-nuance-01",
+        "concept_type": "lexical",
+        "part_of_speech": "adjective",
+        "forms": {
+          "it": "gentile"
+        },
+        "translations": {
+          "fa": "لطف‌آمیز / مهربان"
+        },
+        "cefr": "B1",
+        "topic": "requests",
+        "tags": [
+          "core",
+          "b1",
+          "high_frequency"
+        ],
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_polite_nuance_03",
+      "data": {
+        "lesson_key": "b1-it-polite-nuance-01",
+        "lemma": "gentile",
+        "display_lemma": "gentile",
+        "language": "it",
+        "language_variant": "it-IT",
+        "part_of_speech": "adjective",
+        "concept_refs": [
+          "it_b1_polite_nuance_gentile"
+        ],
+        "cefr": "B1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_polite_nuance_03",
+      "data": {
+        "lesson_key": "b1-it-polite-nuance-01",
+        "lexeme_ref": "lx_polite_nuance_03",
+        "surface_form": "gentile",
+        "display_form": "gentile",
+        "grammatical_features": {},
+        "is_lemma": true,
+        "is_preferred": true,
+        "cefr": "B1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_polite_nuance_04",
+      "data": {
+        "slug": "it_b1_polite_nuance_preferirei",
+        "lesson_key": "b1-it-polite-nuance-02",
+        "concept_type": "lexical",
+        "part_of_speech": "verb",
+        "forms": {
+          "it": "preferirei"
+        },
+        "translations": {
+          "fa": "ترجیح می‌دهم (مودبانه)"
+        },
+        "cefr": "B1",
+        "topic": "requests",
+        "tags": [
+          "core",
+          "b1",
+          "high_frequency"
+        ],
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_polite_nuance_04",
+      "data": {
+        "lesson_key": "b1-it-polite-nuance-02",
+        "lemma": "preferirei",
+        "display_lemma": "preferirei",
+        "language": "it",
+        "language_variant": "it-IT",
+        "part_of_speech": "verb",
+        "concept_refs": [
+          "it_b1_polite_nuance_preferirei"
+        ],
+        "cefr": "B1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_polite_nuance_04",
+      "data": {
+        "lesson_key": "b1-it-polite-nuance-02",
+        "lexeme_ref": "lx_polite_nuance_04",
+        "surface_form": "preferirei",
+        "display_form": "preferirei",
+        "grammatical_features": {},
+        "is_lemma": true,
+        "is_preferred": true,
+        "cefr": "B1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_polite_nuance_05",
+      "data": {
+        "slug": "it_b1_polite_nuance_dispiacere",
+        "lesson_key": "b1-it-polite-nuance-02",
+        "concept_type": "lexical",
+        "part_of_speech": "verb",
+        "forms": {
+          "it": "dispiacere"
+        },
+        "translations": {
+          "fa": "متأسف بودن / ناراحت کردن"
+        },
+        "cefr": "B1",
+        "topic": "requests",
+        "tags": [
+          "core",
+          "b1",
+          "high_frequency"
+        ],
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_polite_nuance_05",
+      "data": {
+        "lesson_key": "b1-it-polite-nuance-02",
+        "lemma": "dispiacere",
+        "display_lemma": "dispiacere",
+        "language": "it",
+        "language_variant": "it-IT",
+        "part_of_speech": "verb",
+        "concept_refs": [
+          "it_b1_polite_nuance_dispiacere"
+        ],
+        "cefr": "B1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_polite_nuance_05",
+      "data": {
+        "lesson_key": "b1-it-polite-nuance-02",
+        "lexeme_ref": "lx_polite_nuance_05",
+        "surface_form": "dispiacere",
+        "display_form": "dispiacere",
+        "grammatical_features": {},
+        "is_lemma": true,
+        "is_preferred": true,
+        "cefr": "B1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_polite_nuance_06",
+      "data": {
+        "slug": "it_b1_polite_nuance_disturbare",
+        "lesson_key": "b1-it-polite-nuance-02",
+        "concept_type": "lexical",
+        "part_of_speech": "verb",
+        "forms": {
+          "it": "disturbare"
+        },
+        "translations": {
+          "fa": "مزاحم شدن"
+        },
+        "cefr": "B1",
+        "topic": "requests",
+        "tags": [
+          "core",
+          "b1",
+          "high_frequency"
+        ],
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_polite_nuance_06",
+      "data": {
+        "lesson_key": "b1-it-polite-nuance-02",
+        "lemma": "disturbare",
+        "display_lemma": "disturbare",
+        "language": "it",
+        "language_variant": "it-IT",
+        "part_of_speech": "verb",
+        "concept_refs": [
+          "it_b1_polite_nuance_disturbare"
+        ],
+        "cefr": "B1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_polite_nuance_06",
+      "data": {
+        "lesson_key": "b1-it-polite-nuance-02",
+        "lexeme_ref": "lx_polite_nuance_06",
+        "surface_form": "disturbare",
+        "display_form": "disturbare",
+        "grammatical_features": {},
+        "is_lemma": true,
+        "is_preferred": true,
+        "cefr": "B1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_polite_nuance_01",
+      "data": {
+        "lesson_key": "b1-it-polite-nuance-01",
+        "text": {
+          "it": "Potresti darmi una mano per un momento?"
+        },
+        "translations": {
+          "fa": "ممکن است یک لحظه کمکم کنی؟"
+        },
+        "intent": "polite_request",
+        "concept_refs": [
+          "it_b1_polite_nuance_potresti"
+        ],
+        "cefr": "B1",
+        "topic": "requests",
+        "register": "neutral",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_polite_nuance_02",
+      "data": {
+        "lesson_key": "b1-it-polite-nuance-01",
+        "text": {
+          "it": "Sarebbe gentile da parte tua."
+        },
+        "translations": {
+          "fa": "از طرف تو لطف بزرگی می‌شود."
+        },
+        "intent": "soften_request",
+        "concept_refs": [
+          "it_b1_polite_nuance_sarebbe",
+          "it_b1_polite_nuance_gentile"
+        ],
+        "cefr": "B1",
+        "topic": "requests",
+        "register": "neutral",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_polite_nuance_03",
+      "data": {
+        "lesson_key": "b1-it-polite-nuance-02",
+        "text": {
+          "it": "Preferirei parlarne domani con più calma."
+        },
+        "translations": {
+          "fa": "ترجیح می‌دهم فردا با آرامش بیشتری درباره‌اش حرف بزنیم."
+        },
+        "intent": "soften_preference",
+        "concept_refs": [
+          "it_b1_polite_nuance_preferirei"
+        ],
+        "cefr": "B1",
+        "topic": "requests",
+        "register": "neutral",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_polite_nuance_04",
+      "data": {
+        "lesson_key": "b1-it-polite-nuance-02",
+        "text": {
+          "it": "Mi dispiace disturbarti, ma avrei una domanda."
+        },
+        "translations": {
+          "fa": "ببخشید مزاحمت می‌شوم، ولی یک سؤال داشتم."
+        },
+        "intent": "polite_interruption",
+        "concept_refs": [
+          "it_b1_polite_nuance_dispiacere",
+          "it_b1_polite_nuance_disturbare"
+        ],
+        "cefr": "B1",
+        "topic": "requests",
+        "register": "neutral",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "grammar_point",
+      "external_id": "g_polite_nuance_core",
+      "data": {
+        "lesson_key": "b1-it-polite-nuance-01",
+        "slug": "b1-it-polite-nuance-grammar",
+        "title": "Condizionale presente per richieste e preferenze cortesi",
+        "rule_summary": "Use the present conditional to make requests, preferences and suggestions less direct: potresti, vorrei, preferirei, sarebbe meglio.",
+        "explanation": {
+          "fa": "شرطیِ حال در ایتالیایی یکی از ابزارهای اصلیِ مؤدبانه‌تر کردن درخواست و ترجیح است: potresti، vorrei، preferirei، sarebbe meglio. معنی اصلی حفظ می‌شود اما لحن نرم‌تر می‌شود."
+        },
+        "examples": [
+          {
+            "it": "Potresti aspettare un attimo?",
+            "fa": "ممکن است یک لحظه صبر کنی؟"
+          },
+          {
+            "it": "Preferirei venire domani.",
+            "fa": "ترجیح می‌دهم فردا بیایم."
+          }
+        ],
+        "cefr": "B1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "dialogue",
+      "external_id": "d_polite_nuance_01",
+      "data": {
+        "lesson_key": "b1-it-polite-nuance-01",
+        "title": "Un favore al collega",
+        "setting": "item",
+        "cefr": "B1",
+        "topic": "requests",
+        "characters": [
+          "giulia",
+          "davide"
+        ],
+        "turns": [
+          {
+            "order": 1,
+            "speaker": "giulia",
+            "text": "Scusa, potresti controllare questo documento?",
+            "translation_fa": "ببخشید، ممکن است این سند را بررسی کنی؟"
+          },
+          {
+            "order": 2,
+            "speaker": "davide",
+            "text": "Certo. Ti serve subito?",
+            "translation_fa": "حتماً. همین الان لازم داری؟"
+          },
+          {
+            "order": 3,
+            "speaker": "giulia",
+            "text": "Se possibile, entro oggi sarebbe perfetto.",
+            "translation_fa": "اگر ممکن است، تا امروز عالی می‌شود."
+          },
+          {
+            "order": 4,
+            "speaker": "davide",
+            "text": "Va bene, lo guardo dopo pranzo.",
+            "translation_fa": "باشه، بعد از ناهار نگاهش می‌کنم."
+          }
+        ],
+        "qa": {
+          "character_pair_unique_within_unit": true,
+          "naturalness": "passed",
+          "single_situation": true
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "dialogue",
+      "external_id": "d_polite_nuance_02",
+      "data": {
+        "lesson_key": "b1-it-polite-nuance-02",
+        "title": "Parlarne con calma",
+        "setting": "item",
+        "cefr": "B1",
+        "topic": "requests",
+        "characters": [
+          "sofia",
+          "matteo"
+        ],
+        "turns": [
+          {
+            "order": 1,
+            "speaker": "sofia",
+            "text": "Ne parliamo adesso?",
+            "translation_fa": "الان درباره‌اش حرف بزنیم؟"
+          },
+          {
+            "order": 2,
+            "speaker": "matteo",
+            "text": "Preferirei domani, se per te va bene.",
+            "translation_fa": "اگر برایت خوب است، ترجیح می‌دهم فردا."
+          },
+          {
+            "order": 3,
+            "speaker": "sofia",
+            "text": "Certo. Non volevo disturbarti.",
+            "translation_fa": "حتماً. نمی‌خواستم مزاحمت شوم."
+          },
+          {
+            "order": 4,
+            "speaker": "matteo",
+            "text": "Nessun problema, grazie per aver chiesto.",
+            "translation_fa": "اشکالی ندارد، ممنون که پرسیدی."
+          }
+        ],
+        "qa": {
+          "character_pair_unique_within_unit": true,
+          "naturalness": "passed",
+          "single_situation": true
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_polite_nuance_01_meaning",
+      "data": {
+        "lesson_key": "b1-it-polite-nuance-01",
+        "exercise_type": "multiple_choice",
+        "prompt": {
+          "instruction_fa": "معنی درست این عبارت ایتالیایی را انتخاب کن.",
+          "value": "Potresti darmi una mano per un momento?"
+        },
+        "answer": {
+          "value": "ممکن است یک لحظه کمکم کنی؟"
+        },
+        "options": [
+          "ممکن است یک لحظه کمکم کنی؟",
+          "از طرف تو لطف بزرگی می‌شود.",
+          "ترجیح می‌دهم فردا با آرامش بیشتری درباره‌اش حرف بزنیم.",
+          "ببخشید مزاحمت می‌شوم، ولی یک سؤال داشتم."
+        ],
+        "difficulty": 3,
+        "cefr": "B1",
+        "topic": "requests",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت و شکل دقیق عبارت ایتالیایی دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: Potresti darmi una mano per un momento? — ممکن است یک لحظه کمکم کنی؟",
+          "model_answer": "Potresti darmi una mano per un momento?"
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_polite_nuance_01_listen",
+      "data": {
+        "lesson_key": "b1-it-polite-nuance-01",
+        "exercise_type": "listening",
+        "prompt": {
+          "instruction_fa": "گوش کن و عبارتی را که شنیدی انتخاب کن.",
+          "audio_text": "Sarebbe gentile da parte tua."
+        },
+        "answer": {
+          "value": "Sarebbe gentile da parte tua."
+        },
+        "options": [
+          "Sarebbe gentile da parte tua.",
+          "Potresti darmi una mano per un momento?",
+          "Preferirei parlarne domani con più calma.",
+          "Mi dispiace disturbarti, ma avrei una domanda."
+        ],
+        "difficulty": 3,
+        "cefr": "B1",
+        "topic": "requests",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت و شکل دقیق عبارت ایتالیایی دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: Sarebbe gentile da parte tua. — از طرف تو لطف بزرگی می‌شود.",
+          "model_answer": "Sarebbe gentile da parte tua.",
+          "transcript_it": "Sarebbe gentile da parte tua."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_polite_nuance_01_speak",
+      "data": {
+        "lesson_key": "b1-it-polite-nuance-01",
+        "exercise_type": "speaking",
+        "prompt": {
+          "instruction_fa": "عبارت را با صدای بلند و با ریتم طبیعی تکرار کن.",
+          "value": "Potresti darmi una mano per un momento?"
+        },
+        "answer": {
+          "expected_text": "Potresti darmi una mano per un momento?"
+        },
+        "difficulty": 3,
+        "cefr": "B1",
+        "topic": "requests",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت و شکل دقیق عبارت ایتالیایی دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: Potresti darmi una mano per un momento? — ممکن است یک لحظه کمکم کنی؟",
+          "model_answer": "Potresti darmi una mano per un momento?"
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_polite_nuance_01_build",
+      "data": {
+        "lesson_key": "b1-it-polite-nuance-01",
+        "exercise_type": "sentence_building",
+        "prompt": {
+          "instruction_fa": "کلمه‌ها را لمس کن تا عبارت درست ساخته شود.",
+          "tokens": [
+            "gentile",
+            "da",
+            "parte",
+            "tua.",
+            "Sarebbe"
+          ]
+        },
+        "answer": {
+          "tokens": [
+            "Sarebbe",
+            "gentile",
+            "da",
+            "parte",
+            "tua."
+          ],
+          "value": "Sarebbe gentile da parte tua."
+        },
+        "difficulty": 3,
+        "cefr": "B1",
+        "topic": "requests",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت و شکل دقیق عبارت ایتالیایی دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: Sarebbe gentile da parte tua. — از طرف تو لطف بزرگی می‌شود.",
+          "model_answer": "Sarebbe gentile da parte tua."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_polite_nuance_01_dialogue",
+      "data": {
+        "lesson_key": "b1-it-polite-nuance-01",
+        "exercise_type": "dialogue_comprehension",
+        "prompt": {
+          "instruction_fa": "با توجه به گفت‌وگو، پاسخ مناسب را انتخاب کن.",
+          "source_dialogue_ref": "d_polite_nuance_01",
+          "question_fa": "کدام گزینه با معنی «ممکن است یک لحظه کمکم کنی؟» هماهنگ است؟"
+        },
+        "answer": {
+          "value": "Potresti darmi una mano per un momento?"
+        },
+        "options": [
+          "Potresti darmi una mano per un momento?",
+          "Sarebbe gentile da parte tua.",
+          "Preferirei parlarne domani con più calma.",
+          "Mi dispiace disturbarti, ma avrei una domanda."
+        ],
+        "difficulty": 3,
+        "cefr": "B1",
+        "topic": "requests",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت و شکل دقیق عبارت ایتالیایی دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: Potresti darmi una mano per un momento? — ممکن است یک لحظه کمکم کنی؟",
+          "model_answer": "Potresti darmi una mano per un momento?"
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_polite_nuance_02_meaning",
+      "data": {
+        "lesson_key": "b1-it-polite-nuance-02",
+        "exercise_type": "multiple_choice",
+        "prompt": {
+          "instruction_fa": "معنی درست این عبارت ایتالیایی را انتخاب کن.",
+          "value": "Preferirei parlarne domani con più calma."
+        },
+        "answer": {
+          "value": "ترجیح می‌دهم فردا با آرامش بیشتری درباره‌اش حرف بزنیم."
+        },
+        "options": [
+          "ترجیح می‌دهم فردا با آرامش بیشتری درباره‌اش حرف بزنیم.",
+          "ممکن است یک لحظه کمکم کنی؟",
+          "از طرف تو لطف بزرگی می‌شود.",
+          "ببخشید مزاحمت می‌شوم، ولی یک سؤال داشتم."
+        ],
+        "difficulty": 3,
+        "cefr": "B1",
+        "topic": "requests",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت و شکل دقیق عبارت ایتالیایی دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: Preferirei parlarne domani con più calma. — ترجیح می‌دهم فردا با آرامش بیشتری درباره‌اش حرف بزنیم.",
+          "model_answer": "Preferirei parlarne domani con più calma."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_polite_nuance_02_listen",
+      "data": {
+        "lesson_key": "b1-it-polite-nuance-02",
+        "exercise_type": "listening",
+        "prompt": {
+          "instruction_fa": "گوش کن و عبارتی را که شنیدی انتخاب کن.",
+          "audio_text": "Mi dispiace disturbarti, ma avrei una domanda."
+        },
+        "answer": {
+          "value": "Mi dispiace disturbarti, ma avrei una domanda."
+        },
+        "options": [
+          "Mi dispiace disturbarti, ma avrei una domanda.",
+          "Preferirei parlarne domani con più calma.",
+          "Potresti darmi una mano per un momento?",
+          "Sarebbe gentile da parte tua."
+        ],
+        "difficulty": 3,
+        "cefr": "B1",
+        "topic": "requests",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت و شکل دقیق عبارت ایتالیایی دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: Mi dispiace disturbarti, ma avrei una domanda. — ببخشید مزاحمت می‌شوم، ولی یک سؤال داشتم.",
+          "model_answer": "Mi dispiace disturbarti, ma avrei una domanda.",
+          "transcript_it": "Mi dispiace disturbarti, ma avrei una domanda."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_polite_nuance_02_speak",
+      "data": {
+        "lesson_key": "b1-it-polite-nuance-02",
+        "exercise_type": "speaking",
+        "prompt": {
+          "instruction_fa": "عبارت را با صدای بلند و با ریتم طبیعی تکرار کن.",
+          "value": "Preferirei parlarne domani con più calma."
+        },
+        "answer": {
+          "expected_text": "Preferirei parlarne domani con più calma."
+        },
+        "difficulty": 3,
+        "cefr": "B1",
+        "topic": "requests",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت و شکل دقیق عبارت ایتالیایی دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: Preferirei parlarne domani con più calma. — ترجیح می‌دهم فردا با آرامش بیشتری درباره‌اش حرف بزنیم.",
+          "model_answer": "Preferirei parlarne domani con più calma."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_polite_nuance_02_build",
+      "data": {
+        "lesson_key": "b1-it-polite-nuance-02",
+        "exercise_type": "sentence_building",
+        "prompt": {
+          "instruction_fa": "کلمه‌ها را لمس کن تا عبارت درست ساخته شود.",
+          "tokens": [
+            "dispiace",
+            "disturbarti,",
+            "ma",
+            "avrei",
+            "una",
+            "domanda.",
+            "Mi"
+          ]
+        },
+        "answer": {
+          "tokens": [
+            "Mi",
+            "dispiace",
+            "disturbarti,",
+            "ma",
+            "avrei",
+            "una",
+            "domanda."
+          ],
+          "value": "Mi dispiace disturbarti, ma avrei una domanda."
+        },
+        "difficulty": 3,
+        "cefr": "B1",
+        "topic": "requests",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت و شکل دقیق عبارت ایتالیایی دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: Mi dispiace disturbarti, ma avrei una domanda. — ببخشید مزاحمت می‌شوم، ولی یک سؤال داشتم.",
+          "model_answer": "Mi dispiace disturbarti, ma avrei una domanda."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_polite_nuance_02_dialogue",
+      "data": {
+        "lesson_key": "b1-it-polite-nuance-02",
+        "exercise_type": "dialogue_comprehension",
+        "prompt": {
+          "instruction_fa": "با توجه به گفت‌وگو، پاسخ مناسب را انتخاب کن.",
+          "source_dialogue_ref": "d_polite_nuance_02",
+          "question_fa": "کدام گزینه با معنی «ترجیح می‌دهم فردا با آرامش بیشتری درباره‌اش حرف بزنیم.» هماهنگ است؟"
+        },
+        "answer": {
+          "value": "Preferirei parlarne domani con più calma."
+        },
+        "options": [
+          "Preferirei parlarne domani con più calma.",
+          "Potresti darmi una mano per un momento?",
+          "Sarebbe gentile da parte tua.",
+          "Mi dispiace disturbarti, ma avrei una domanda."
+        ],
+        "difficulty": 3,
+        "cefr": "B1",
+        "topic": "requests",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت و شکل دقیق عبارت ایتالیایی دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: Preferirei parlarne domani con più calma. — ترجیح می‌دهم فردا با آرامش بیشتری درباره‌اش حرف بزنیم.",
+          "model_answer": "Preferirei parlarne domani con più calma."
+        },
+        "status": "validated"
+      }
+    }
+  ]
+}
