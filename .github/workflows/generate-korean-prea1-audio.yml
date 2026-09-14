@@ -45,7 +45,8 @@ jobs:
       - name: Final Korean content validation before paid generation
         run: |
           set -euo pipefail
-          test "$(find content/production/ko/Pre-A1 -maxdepth 1 -name '*.json' | wc -l)" -eq 10
+          test "$(find content/production/ko/Pre-A1 -maxdepth 1 -name '*.json' | wc -l)" -eq 14
+          python scripts/audit_korean_prea1_content.py
           for f in content/production/ko/Pre-A1/*.json; do python scripts/validate_content.py "$f"; done
           python scripts/validate_character_cast.py --cast audio/cast/ko-KR.json
           python database/import/ko/pre_a1.py --dry-run
@@ -90,11 +91,12 @@ jobs:
               counts[x['category']]=counts.get(x['category'],0)+1
           required={'lexical','utterances','dialogues'}
           missing=required-set(counts)
-          if missing: raise SystemExit('Missing audio categories: '+','.join(sorted(missing)))
-          generated=len(list(Path('audio/generated/ko-KR').rglob('*.mp3')))
+          if missing:
+              raise SystemExit('Missing audio categories: '+','.join(sorted(missing)))
+          generated=sum(Path(x['relative_path']).is_file() for x in d['items'])
           if generated != len(d['items']):
-              raise SystemExit(f'Expected {len(d["items"])} MP3 files, found {generated}')
-          print(json.dumps({'items':len(d['items']),'categories':counts,'mp3_files':generated},ensure_ascii=False,indent=2))
+              raise SystemExit(f'Expected {len(d["items"])} manifest MP3 files, found {generated}')
+          print(json.dumps({'items':len(d['items']),'categories':counts,'manifest_mp3_files':generated},ensure_ascii=False,indent=2))
           PY
       - name: Commit generated Korean audio and DB link files
         run: |
@@ -111,6 +113,14 @@ jobs:
             exit 0
           fi
           git commit -m 'Generate Korean Pre-A1 production audio [skip ci]'
-          git fetch origin main
-          git rebase origin/main
-          git push origin HEAD:main
+          for attempt in 1 2 3 4 5; do
+            echo "Push attempt ${attempt}/5"
+            git fetch origin main
+            git rebase origin/main
+            if git push origin HEAD:main; then
+              exit 0
+            fi
+            sleep $((attempt * 2))
+          done
+          echo 'Unable to push generated Korean audio after 5 attempts.' >&2
+          exit 1
