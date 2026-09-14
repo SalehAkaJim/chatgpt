@@ -1,0 +1,36 @@
+{
+  "source_text_hash": "331ac4c8458a108af73b8b2adfc74659b148fb91231eac1b410dfb79d2699dcc",
+  "voice_id": "2OoHspMHbpIu5oiMaqDy",
+  "model": "eleven_multilingual_v2",
+  "settings": {
+    "stability": 0.71,
+    "similarity_boost": 0.9,
+    "style": 0.05,
+    "use_speaker_boost": true,
+    "speed": 0.96
+  },
+  "provider": "elevenlabs",
+  "audio_key": "4906107ca654f70f8f53944ecff4fd4f9ad3384dd70bab4eed59532c1b75ac04",
+  "voice_key": "character:davide:male_professional",
+  "voice_name": "Marco - Natural, Engaging and Warm",
+  "voice_labels": {
+    "gender": "male",
+    "accent": "standard",
+    "age": "middle_aged",
+    "category": "professional",
+    "language": "it",
+    "use_case": "conversational",
+    "descriptive": "calm"
+  },
+  "output_format": "mp3_44100_192",
+  "file_sha256": "e39106f4119c8331364af0a855bcb4c9771fb25e16da09bcacafcba16c284a84",
+  "duration_ms": 3787,
+  "generated_at": "2026-09-14T04:59:15.133489+00:00",
+  "entity_refs": [
+    {
+      "entity_type": "dialogue_turn",
+      "entity_uuid": "16c508cf-7493-5206-a7fb-29601bb111fb",
+      "entity_key": "d_counterfactual_choices_02:2"
+    }
+  ]
+}
