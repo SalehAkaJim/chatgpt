@@ -63,13 +63,13 @@ jobs:
           d=json.loads(Path('audio/manifests/it/Pre-A1.json').read_text())
           counts={}
           for x in d['items']: counts[x['category']]=counts.get(x['category'],0)+1
-          required={'lexical','utterances','dialogues'}
-          missing=required-set(counts)
-          if missing: raise SystemExit('Missing audio categories: '+','.join(sorted(missing)))
+          expected={'dialogues':79,'lexical':58,'utterances':40}
+          if counts != expected:
+              raise SystemExit(f'Unexpected category counts: expected={expected}, actual={counts}')
+          if len(d['items']) != 177:
+              raise SystemExit(f'Expected 177 manifest items after deterministic deduplication, found {len(d["items"])}')
           generated=len(list(Path('audio/generated/it-IT').rglob('*.mp3')))
           if generated != len(d['items']): raise SystemExit(f'Expected {len(d["items"])} MP3 files, found {generated}')
-          if counts['dialogues'] != 80 or counts['utterances'] != 40 or counts['lexical'] < 55:
-              raise SystemExit(f'Unexpected category counts: {counts}')
           print(json.dumps({'items':len(d['items']),'categories':counts,'mp3_files':generated},ensure_ascii=False,indent=2))
           PY
       - name: Commit generated Italian audio and DB link files
