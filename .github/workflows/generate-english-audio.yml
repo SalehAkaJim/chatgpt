@@ -115,6 +115,14 @@ jobs:
             exit 0
           fi
           git commit -m 'Generate English Pre-A1 and A1 production audio [skip ci]'
-          git fetch origin main
-          git rebase origin/main
-          git push origin HEAD:main
+          for attempt in 1 2 3 4 5; do
+            echo "Push attempt ${attempt}/5"
+            git fetch origin main
+            git rebase origin/main
+            if git push origin HEAD:main; then
+              exit 0
+            fi
+            sleep $((attempt * 2))
+          done
+          echo 'Unable to push generated English audio after 5 attempts.' >&2
+          exit 1
