@@ -4,7 +4,7 @@ INSERT IGNORE INTO curriculum_units (
   learning_objective,sort_order,expected_lessons,status,metadata
 )
 SELECT c.id,c.target_language_id,lvl.id,s.id,t.id,u.slug,u.title,u.objective,
-       u.sort_order,2,'approved',JSON_OBJECT('language_specific',TRUE,'target_variant','tr-TR','batch',1,'grammar_focus',u.grammar_focus)
+       u.sort_order,3,'approved',JSON_OBJECT('language_specific',TRUE,'target_variant','tr-TR','batch',1,'grammar_focus',u.grammar_focus)
 FROM (
  SELECT 210 sort_order,'daily-life' skill_slug,'daily-routine' topic_slug,'a2-tr-past-weekend' slug,'Hafta sonu ne yaptın?' title,'Talk about completed past events and sequence a short weekend story.' objective,'definite past -di and personal endings' grammar_focus
  UNION ALL SELECT 220,'daily-life','daily-routine','a2-tr-habits-and-frequency','Genelde erken kalkarım','Describe routines, habits and frequency in ordinary life.','aorist/geniş zaman for habitual actions'
