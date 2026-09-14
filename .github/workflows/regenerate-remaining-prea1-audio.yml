@@ -1,0 +1,207 @@
+name: Regenerate Remaining Pre-A1 Audio
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: remaining-prea1-paid-audio-generation-v1
+  cancel-in-progress: false
+
+jobs:
+  regenerate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 360
+    env:
+      ELEVENLABS_API_KEY: ${{ secrets.ELEVENLABS_API_KEY }}
+      CONTENT_TTS_CONCURRENCY: '1'
+      ELEVENLABS_MODEL_ID: eleven_multilingual_v2
+      ELEVENLABS_DIALOGUE_MODEL_ID: eleven_multilingual_v2
+
+    steps:
+      - name: Checkout main
+        uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Require ElevenLabs connection
+        run: |
+          if [ -z "${ELEVENLABS_API_KEY:-}" ]; then
+            echo 'ELEVENLABS_API_KEY GitHub secret is missing.' >&2
+            exit 2
+          fi
+
+      - name: Final educational validation before paid generation
+        run: |
+          set -euo pipefail
+          test "$(find content/production/de/Pre-A1 -maxdepth 1 -name '*.json' | wc -l)" -eq 17
+          test "$(find content/production/tr/Pre-A1 -maxdepth 1 -name '*.json' | wc -l)" -eq 18
+          test "$(find content/production/ko/Pre-A1 -maxdepth 1 -name '*.json' | wc -l)" -eq 18
+          python scripts/audit_prea1_cefr_readiness.py
+          python scripts/audit_german_beginner_content.py
+          python scripts/audit_turkish_prea1_content.py
+          python scripts/audit_korean_prea1_content.py
+          for f in content/production/de/Pre-A1/*.json content/production/tr/Pre-A1/*.json content/production/ko/Pre-A1/*.json; do
+            python scripts/validate_content.py "$f"
+          done
+          python scripts/validate_character_cast.py --cast audio/cast/de-DE.json
+          python scripts/validate_character_cast.py --cast audio/cast/tr-TR.json
+          python scripts/validate_character_cast.py --cast audio/cast/ko-KR.json
+          python database/import/de/pre_a1.py --dry-run
+          python database/import/tr/pre_a1.py --dry-run
+          python database/import/ko/pre_a1.py --dry-run
+
+      - name: Build strict manifests
+        run: |
+          set -euo pipefail
+          mkdir -p audio/manifests/de audio/manifests/tr audio/manifests/ko
+          python scripts/build_audio_manifest.py content/production/de/Pre-A1 --level Pre-A1 --locale de-DE --strict-characters --output audio/manifests/de/Pre-A1.json
+          python scripts/build_audio_manifest.py content/production/de/A1 --level A1 --locale de-DE --strict-characters --output audio/manifests/de/A1.json
+          python scripts/build_audio_manifest.py content/production/tr/Pre-A1 --level Pre-A1 --locale tr-TR --strict-characters --output audio/manifests/tr/Pre-A1.json
+          python scripts/build_audio_manifest.py content/production/ko/Pre-A1 --level Pre-A1 --locale ko-KR --strict-characters --output audio/manifests/ko/Pre-A1.json
+
+      - name: Resolve and lock required voices without TTS
+        run: |
+          set -euo pipefail
+          python scripts/resolve_audio_voices.py audio/manifests/de/Pre-A1.json --write-lock
+          python scripts/resolve_audio_voices.py audio/manifests/de/A1.json --write-lock
+          python scripts/resolve_audio_voices.py audio/manifests/tr/Pre-A1.json --write-lock
+          python scripts/resolve_audio_voices.py audio/manifests/ko/Pre-A1.json --write-lock
+
+      - name: Validate manifests and voice locks before paid generation
+        run: |
+          set -euo pipefail
+          python scripts/validate_audio_manifest.py audio/manifests/de/Pre-A1.json
+          python scripts/validate_audio_manifest.py audio/manifests/tr/Pre-A1.json
+          python scripts/validate_audio_manifest.py audio/manifests/ko/Pre-A1.json
+          python scripts/audit_voice_lock.py --lock audio/voices/de-DE.lock.json --registry audio/voices/de-DE.json --strict
+          python scripts/audit_voice_lock.py --lock audio/voices/tr-TR.lock.json --registry audio/voices/tr-TR.json --strict
+          python scripts/audit_voice_lock.py --lock audio/voices/ko-KR.lock.json --registry audio/voices/ko-KR.json --strict
+
+      - name: Remove existing remaining Pre-A1 audio assets
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+
+          manifests = [
+              Path('audio/manifests/de/Pre-A1.json'),
+              Path('audio/manifests/tr/Pre-A1.json'),
+              Path('audio/manifests/ko/Pre-A1.json'),
+          ]
+          summary = {}
+          for manifest_path in manifests:
+              data = json.loads(manifest_path.read_text())
+              removed = 0
+              for item in data['items']:
+                  audio = Path(item['relative_path'])
+                  meta = Path(str(audio) + '.json')
+                  if audio.exists():
+                      audio.unlink()
+                      removed += 1
+                  if meta.exists():
+                      meta.unlink()
+              summary[str(manifest_path)] = {
+                  'items': len(data['items']),
+                  'removed_existing_mp3': removed,
+              }
+          print(json.dumps(summary, ensure_ascii=False, indent=2))
+          PY
+
+      - name: Generate German Pre-A1 audio fresh
+        run: python scripts/generate_audio.py audio/manifests/de/Pre-A1.json --confirm-paid-generation --concurrency 1
+
+      - name: Validate German fresh audio
+        run: |
+          python scripts/validate_audio_manifest.py audio/manifests/de/Pre-A1.json --require-generated
+          python scripts/audit_audio_voice_consistency.py audio/manifests/de/Pre-A1.json --lock-file audio/voices/de-DE.lock.json
+
+      - name: Generate Turkish Pre-A1 audio fresh
+        run: python scripts/generate_audio.py audio/manifests/tr/Pre-A1.json --confirm-paid-generation --concurrency 1
+
+      - name: Validate Turkish fresh audio
+        run: |
+          python scripts/validate_audio_manifest.py audio/manifests/tr/Pre-A1.json --require-generated
+          python scripts/audit_audio_voice_consistency.py audio/manifests/tr/Pre-A1.json --lock-file audio/voices/tr-TR.lock.json
+
+      - name: Generate Korean Pre-A1 audio fresh
+        run: python scripts/generate_audio.py audio/manifests/ko/Pre-A1.json --confirm-paid-generation --concurrency 1
+
+      - name: Validate Korean fresh audio
+        run: |
+          python scripts/validate_audio_manifest.py audio/manifests/ko/Pre-A1.json --require-generated
+          python scripts/audit_audio_voice_consistency.py audio/manifests/ko/Pre-A1.json --lock-file audio/voices/ko-KR.lock.json
+
+      - name: Export database relative-path SQL
+        run: |
+          set -euo pipefail
+          python scripts/export_audio_sql.py audio/manifests/de/Pre-A1.json --status validated --output database/import/de/pre_a1_audio.sql
+          python scripts/export_audio_sql.py audio/manifests/tr/Pre-A1.json --status validated --output database/import/tr/pre_a1_audio.sql
+          python scripts/export_audio_sql.py audio/manifests/ko/Pre-A1.json --status validated --output database/import/ko/pre_a1_audio.sql
+
+      - name: Verify every manifest asset and audio category
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+
+          manifests = [
+              Path('audio/manifests/de/Pre-A1.json'),
+              Path('audio/manifests/tr/Pre-A1.json'),
+              Path('audio/manifests/ko/Pre-A1.json'),
+          ]
+          result = {}
+          for manifest_path in manifests:
+              data = json.loads(manifest_path.read_text())
+              counts = {}
+              for item in data['items']:
+                  counts[item['category']] = counts.get(item['category'], 0) + 1
+              missing = {'lexical', 'utterances', 'dialogues'} - set(counts)
+              if missing:
+                  raise SystemExit(f'{manifest_path}: missing audio categories: {sorted(missing)}')
+              generated = sum(Path(item['relative_path']).is_file() for item in data['items'])
+              if generated != len(data['items']):
+                  raise SystemExit(f'{manifest_path}: expected {len(data["items"])} MP3 files, found {generated}')
+              result[str(manifest_path)] = {
+                  'items': len(data['items']),
+                  'categories': counts,
+                  'manifest_mp3_files': generated,
+              }
+          print(json.dumps(result, ensure_ascii=False, indent=2))
+          PY
+
+      - name: Commit regenerated audio and DB links
+        run: |
+          set -euo pipefail
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add \
+            audio/generated/de-DE audio/generated/tr-TR audio/generated/ko-KR \
+            audio/manifests/de/Pre-A1.json audio/manifests/tr/Pre-A1.json audio/manifests/ko/Pre-A1.json \
+            audio/voices/de-DE.lock.json audio/voices/tr-TR.lock.json audio/voices/ko-KR.lock.json \
+            database/import/de/pre_a1_audio.sql database/import/tr/pre_a1_audio.sql database/import/ko/pre_a1_audio.sql
+          if git diff --cached --quiet; then
+            echo 'No remaining Pre-A1 audio changes to commit.'
+            exit 0
+          fi
+          git commit -m 'Regenerate German Turkish Korean Pre-A1 audio fresh [skip ci]'
+          for attempt in 1 2 3 4 5; do
+            echo "Push attempt ${attempt}/5"
+            git fetch origin main
+            git rebase origin/main
+            if git push origin HEAD:main; then exit 0; fi
+            sleep $((attempt * 2))
+          done
+          echo 'Unable to push regenerated remaining Pre-A1 audio after 5 attempts.' >&2
+          exit 1
