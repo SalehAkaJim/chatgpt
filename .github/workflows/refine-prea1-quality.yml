@@ -1,0 +1,54 @@
+name: Refine Completed Pre-A1 Quality
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - '.github/prea1-quality-refinement-trigger'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  refine:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install -r requirements.txt
+      - name: Apply linguistic refinements and regenerate deterministic content
+        run: |
+          python scripts/refine_prea1_quality.py
+          sed -i 's/[[:space:]]\+$//' database/seed/english-prea1-curriculum.sql database/seed/german-prea1-curriculum.sql database/seed/turkish-prea1-curriculum.sql database/seed/korean-prea1-curriculum.sql
+      - name: Validate refined content
+        run: |
+          set -euo pipefail
+          for lang in en de tr ko; do
+            for f in content/production/${lang}/Pre-A1/*.json; do python scripts/validate_content.py "$f"; done
+          done
+          python scripts/audit_prea1_cefr_readiness.py
+          python scripts/audit_german_beginner_content.py
+          python scripts/audit_turkish_prea1_content.py
+          python scripts/audit_korean_prea1_content.py
+          git diff --check
+      - name: Commit refinements
+        run: |
+          set -euo pipefail
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add scripts/upgrade_prea1_cefr.py content/production/en/Pre-A1 content/production/de/Pre-A1 content/production/tr/Pre-A1 content/production/ko/Pre-A1 database/seed/english-prea1-curriculum.sql database/seed/german-prea1-curriculum.sql database/seed/turkish-prea1-curriculum.sql database/seed/korean-prea1-curriculum.sql
+          if git diff --cached --quiet; then echo 'No refinements to commit.'; exit 0; fi
+          git commit -m 'Refine completed Pre-A1 real-world language quality'
+          for attempt in 1 2 3 4 5; do
+            git fetch origin main
+            git rebase origin/main
+            if git push origin HEAD:main; then exit 0; fi
+            sleep $((attempt * 2))
+          done
+          exit 1
