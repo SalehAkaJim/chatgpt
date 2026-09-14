@@ -19,7 +19,7 @@ jobs:
         with: {python-version: '3.12'}
       - run: pip install -r requirements.txt
       - name: Generate Italian A1 batch 1
-        run: python scripts/generate_italian_a1_batch.py
+        run: python scripts/generate_italian_a1_batch_repaired.py
       - name: Validate complete Italian A1 batch
         run: |
           set -euo pipefail
