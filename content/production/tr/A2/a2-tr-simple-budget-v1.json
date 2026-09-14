@@ -1,0 +1,1212 @@
+{
+  "batch_id": "tr-tr-a2-b05-simple-budget-v1",
+  "course": "fa-tr-tr",
+  "learner_language": "fa",
+  "learner_variant": "fa-IR",
+  "target_language": "tr",
+  "target_variant": "tr-TR",
+  "cefr": "A2",
+  "curriculum_unit": "a2-tr-simple-budget",
+  "generator": "gpt-5.6-sol:turkish-a2-batch-05-v2",
+  "items": [
+    {
+      "kind": "concept",
+      "external_id": "c_simple_budget_01",
+      "data": {
+        "slug": "tr_a2_simple_budget_butce",
+        "lesson_key": "a2-tr-simple-budget-01",
+        "concept_type": "lexical",
+        "part_of_speech": "noun",
+        "forms": {
+          "tr": "bütçe"
+        },
+        "translations": {
+          "fa": "بودجه"
+        },
+        "cefr": "A2",
+        "topic": "money",
+        "tags": [
+          "core",
+          "a2",
+          "high_frequency"
+        ],
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_simple_budget_01",
+      "data": {
+        "lesson_key": "a2-tr-simple-budget-01",
+        "lemma": "bütçe",
+        "display_lemma": "bütçe",
+        "language": "tr",
+        "language_variant": "tr-TR",
+        "part_of_speech": "noun",
+        "concept_refs": [
+          "tr_a2_simple_budget_butce"
+        ],
+        "cefr": "A2",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_simple_budget_01",
+      "data": {
+        "lesson_key": "a2-tr-simple-budget-01",
+        "lexeme_ref": "lx_simple_budget_01",
+        "surface_form": "bütçe",
+        "display_form": "bütçe",
+        "grammatical_features": {},
+        "is_lemma": true,
+        "is_preferred": true,
+        "cefr": "A2",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_simple_budget_02",
+      "data": {
+        "slug": "tr_a2_simple_budget_harcamak",
+        "lesson_key": "a2-tr-simple-budget-01",
+        "concept_type": "lexical",
+        "part_of_speech": "verb",
+        "forms": {
+          "tr": "harcamak"
+        },
+        "translations": {
+          "fa": "خرج کردن"
+        },
+        "cefr": "A2",
+        "topic": "money",
+        "tags": [
+          "core",
+          "a2",
+          "high_frequency"
+        ],
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_simple_budget_02",
+      "data": {
+        "lesson_key": "a2-tr-simple-budget-01",
+        "lemma": "harcamak",
+        "display_lemma": "harcamak",
+        "language": "tr",
+        "language_variant": "tr-TR",
+        "part_of_speech": "verb",
+        "concept_refs": [
+          "tr_a2_simple_budget_harcamak"
+        ],
+        "cefr": "A2",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_simple_budget_02",
+      "data": {
+        "lesson_key": "a2-tr-simple-budget-01",
+        "lexeme_ref": "lx_simple_budget_02",
+        "surface_form": "harcamak",
+        "display_form": "harcamak",
+        "grammatical_features": {},
+        "is_lemma": true,
+        "is_preferred": true,
+        "cefr": "A2",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_simple_budget_03",
+      "data": {
+        "slug": "tr_a2_simple_budget_fatura",
+        "lesson_key": "a2-tr-simple-budget-02",
+        "concept_type": "lexical",
+        "part_of_speech": "noun",
+        "forms": {
+          "tr": "fatura"
+        },
+        "translations": {
+          "fa": "قبض"
+        },
+        "cefr": "A2",
+        "topic": "money",
+        "tags": [
+          "core",
+          "a2",
+          "high_frequency"
+        ],
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_simple_budget_03",
+      "data": {
+        "lesson_key": "a2-tr-simple-budget-02",
+        "lemma": "fatura",
+        "display_lemma": "fatura",
+        "language": "tr",
+        "language_variant": "tr-TR",
+        "part_of_speech": "noun",
+        "concept_refs": [
+          "tr_a2_simple_budget_fatura"
+        ],
+        "cefr": "A2",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_simple_budget_03",
+      "data": {
+        "lesson_key": "a2-tr-simple-budget-02",
+        "lexeme_ref": "lx_simple_budget_03",
+        "surface_form": "fatura",
+        "display_form": "fatura",
+        "grammatical_features": {},
+        "is_lemma": true,
+        "is_preferred": true,
+        "cefr": "A2",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_simple_budget_04",
+      "data": {
+        "slug": "tr_a2_simple_budget_ucuz",
+        "lesson_key": "a2-tr-simple-budget-02",
+        "concept_type": "lexical",
+        "part_of_speech": "adjective",
+        "forms": {
+          "tr": "ucuz"
+        },
+        "translations": {
+          "fa": "ارزان"
+        },
+        "cefr": "A2",
+        "topic": "money",
+        "tags": [
+          "core",
+          "a2",
+          "high_frequency"
+        ],
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_simple_budget_04",
+      "data": {
+        "lesson_key": "a2-tr-simple-budget-02",
+        "lemma": "ucuz",
+        "display_lemma": "ucuz",
+        "language": "tr",
+        "language_variant": "tr-TR",
+        "part_of_speech": "adjective",
+        "concept_refs": [
+          "tr_a2_simple_budget_ucuz"
+        ],
+        "cefr": "A2",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_simple_budget_04",
+      "data": {
+        "lesson_key": "a2-tr-simple-budget-02",
+        "lexeme_ref": "lx_simple_budget_04",
+        "surface_form": "ucuz",
+        "display_form": "ucuz",
+        "grammatical_features": {},
+        "is_lemma": true,
+        "is_preferred": true,
+        "cefr": "A2",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_simple_budget_05",
+      "data": {
+        "slug": "tr_a2_simple_budget_pahali",
+        "lesson_key": "a2-tr-simple-budget-03",
+        "concept_type": "lexical",
+        "part_of_speech": "adjective",
+        "forms": {
+          "tr": "pahalı"
+        },
+        "translations": {
+          "fa": "گران"
+        },
+        "cefr": "A2",
+        "topic": "money",
+        "tags": [
+          "core",
+          "a2",
+          "high_frequency"
+        ],
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_simple_budget_05",
+      "data": {
+        "lesson_key": "a2-tr-simple-budget-03",
+        "lemma": "pahalı",
+        "display_lemma": "pahalı",
+        "language": "tr",
+        "language_variant": "tr-TR",
+        "part_of_speech": "adjective",
+        "concept_refs": [
+          "tr_a2_simple_budget_pahali"
+        ],
+        "cefr": "A2",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_simple_budget_05",
+      "data": {
+        "lesson_key": "a2-tr-simple-budget-03",
+        "lexeme_ref": "lx_simple_budget_05",
+        "surface_form": "pahalı",
+        "display_form": "pahalı",
+        "grammatical_features": {},
+        "is_lemma": true,
+        "is_preferred": true,
+        "cefr": "A2",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_simple_budget_06",
+      "data": {
+        "slug": "tr_a2_simple_budget_biriktirmek",
+        "lesson_key": "a2-tr-simple-budget-03",
+        "concept_type": "lexical",
+        "part_of_speech": "verb",
+        "forms": {
+          "tr": "biriktirmek"
+        },
+        "translations": {
+          "fa": "پس‌انداز کردن"
+        },
+        "cefr": "A2",
+        "topic": "money",
+        "tags": [
+          "core",
+          "a2",
+          "high_frequency"
+        ],
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_simple_budget_06",
+      "data": {
+        "lesson_key": "a2-tr-simple-budget-03",
+        "lemma": "biriktirmek",
+        "display_lemma": "biriktirmek",
+        "language": "tr",
+        "language_variant": "tr-TR",
+        "part_of_speech": "verb",
+        "concept_refs": [
+          "tr_a2_simple_budget_biriktirmek"
+        ],
+        "cefr": "A2",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_simple_budget_06",
+      "data": {
+        "lesson_key": "a2-tr-simple-budget-03",
+        "lexeme_ref": "lx_simple_budget_06",
+        "surface_form": "biriktirmek",
+        "display_form": "biriktirmek",
+        "grammatical_features": {},
+        "is_lemma": true,
+        "is_preferred": true,
+        "cefr": "A2",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_simple_budget_01",
+      "data": {
+        "lesson_key": "a2-tr-simple-budget-01",
+        "text": {
+          "tr": "Bu ay bütçem biraz küçük."
+        },
+        "translations": {
+          "fa": "این ماه بودجه‌ام کمی کم است."
+        },
+        "intent": "state_budget",
+        "concept_refs": [
+          "tr_a2_simple_budget_butce"
+        ],
+        "cefr": "A2",
+        "topic": "money",
+        "register": "neutral",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_simple_budget_02",
+      "data": {
+        "lesson_key": "a2-tr-simple-budget-01",
+        "text": {
+          "tr": "Yemek için çok para harcamıyorum."
+        },
+        "translations": {
+          "fa": "برای غذا پول زیادی خرج نمی‌کنم."
+        },
+        "intent": "state_spending",
+        "concept_refs": [
+          "tr_a2_simple_budget_harcamak"
+        ],
+        "cefr": "A2",
+        "topic": "money",
+        "register": "neutral",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_simple_budget_03",
+      "data": {
+        "lesson_key": "a2-tr-simple-budget-02",
+        "text": {
+          "tr": "Elektrik faturası bu ay daha yüksek."
+        },
+        "translations": {
+          "fa": "قبض برق این ماه بیشتر است."
+        },
+        "intent": "compare_bill",
+        "concept_refs": [
+          "tr_a2_simple_budget_fatura"
+        ],
+        "cefr": "A2",
+        "topic": "money",
+        "register": "neutral",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_simple_budget_04",
+      "data": {
+        "lesson_key": "a2-tr-simple-budget-02",
+        "text": {
+          "tr": "Bu market daha ucuz."
+        },
+        "translations": {
+          "fa": "این فروشگاه ارزان‌تر است."
+        },
+        "intent": "compare_price",
+        "concept_refs": [
+          "tr_a2_simple_budget_ucuz"
+        ],
+        "cefr": "A2",
+        "topic": "money",
+        "register": "neutral",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_simple_budget_05",
+      "data": {
+        "lesson_key": "a2-tr-simple-budget-03",
+        "text": {
+          "tr": "Bu kafe benim için pahalı."
+        },
+        "translations": {
+          "fa": "این کافه برای من گران است."
+        },
+        "intent": "state_price_judgment",
+        "concept_refs": [
+          "tr_a2_simple_budget_pahali"
+        ],
+        "cefr": "A2",
+        "topic": "money",
+        "register": "neutral",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_simple_budget_06",
+      "data": {
+        "lesson_key": "a2-tr-simple-budget-03",
+        "text": {
+          "tr": "Bu ay biraz para biriktireceğim."
+        },
+        "translations": {
+          "fa": "این ماه کمی پول پس‌انداز می‌کنم."
+        },
+        "intent": "state_saving_plan",
+        "concept_refs": [
+          "tr_a2_simple_budget_biriktirmek"
+        ],
+        "cefr": "A2",
+        "topic": "money",
+        "register": "neutral",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "grammar_point",
+      "external_id": "g_simple_budget_core",
+      "data": {
+        "lesson_key": "a2-tr-simple-budget-01",
+        "slug": "a2-tr-simple-budget-grammar",
+        "title": "Basit bütçe ve fiyat karşılaştırması",
+        "rule_summary": "Use familiar price language, quantities and daha to compare everyday costs and state one simple spending plan.",
+        "explanation": {
+          "fa": "در A2 دربارهٔ پول، هزینه‌های روزمره را با عدد یا مقایسهٔ ساده بیان می‌کنیم و یک انتخاب عملی می‌گوییم؛ وارد تحلیل مالی پیچیده نمی‌شویم."
+        },
+        "examples": [
+          {
+            "tr": "Bu market daha ucuz. Buradan alışveriş yapacağım.",
+            "fa": "این فروشگاه ارزان‌تر است. از اینجا خرید می‌کنم."
+          },
+          {
+            "tr": "Bu ay faturam yüksek. Biraz daha az harcayacağım.",
+            "fa": "این ماه قبض من زیاد است. کمی کمتر خرج می‌کنم."
+          }
+        ],
+        "cefr": "A2",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "dialogue",
+      "external_id": "d_simple_budget_01",
+      "data": {
+        "lesson_key": "a2-tr-simple-budget-01",
+        "title": "Aylık bütçe",
+        "setting": "item",
+        "cefr": "A2",
+        "topic": "money",
+        "characters": [
+          "Selin",
+          "Burak"
+        ],
+        "turns": [
+          {
+            "order": 1,
+            "speaker": "Selin",
+            "text": "Bu ay bütçen nasıl?",
+            "translation_fa": "این ماه بودجه‌ات چطور است؟"
+          },
+          {
+            "order": 2,
+            "speaker": "Burak",
+            "text": "Biraz küçük.",
+            "translation_fa": "کمی کم است."
+          },
+          {
+            "order": 3,
+            "speaker": "Selin",
+            "text": "En çok neye para harcıyorsun?",
+            "translation_fa": "بیشتر برای چه چیزی پول خرج می‌کنی؟"
+          },
+          {
+            "order": 4,
+            "speaker": "Burak",
+            "text": "Genelde yemeğe.",
+            "translation_fa": "معمولاً برای غذا."
+          }
+        ],
+        "qa": {
+          "character_pair_unique_within_unit": true,
+          "naturalness": "passed",
+          "single_situation": true
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "dialogue",
+      "external_id": "d_simple_budget_02",
+      "data": {
+        "lesson_key": "a2-tr-simple-budget-02",
+        "title": "Daha ucuz market",
+        "setting": "item",
+        "cefr": "A2",
+        "topic": "money",
+        "characters": [
+          "Deniz",
+          "Emre"
+        ],
+        "turns": [
+          {
+            "order": 1,
+            "speaker": "Deniz",
+            "text": "Bu market pahalı mı?",
+            "translation_fa": "این فروشگاه گران است؟"
+          },
+          {
+            "order": 2,
+            "speaker": "Emre",
+            "text": "Biraz. Diğer market daha ucuz.",
+            "translation_fa": "کمی. فروشگاه دیگر ارزان‌تر است."
+          },
+          {
+            "order": 3,
+            "speaker": "Deniz",
+            "text": "Oraya gidelim.",
+            "translation_fa": "برویم آنجا."
+          },
+          {
+            "order": 4,
+            "speaker": "Emre",
+            "text": "Tamam.",
+            "translation_fa": "باشه."
+          }
+        ],
+        "qa": {
+          "character_pair_unique_within_unit": true,
+          "naturalness": "passed",
+          "single_situation": true
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "dialogue",
+      "external_id": "d_simple_budget_03",
+      "data": {
+        "lesson_key": "a2-tr-simple-budget-03",
+        "title": "Biraz biriktireceğim",
+        "setting": "item",
+        "cefr": "A2",
+        "topic": "money",
+        "characters": [
+          "Elif",
+          "Zeynep"
+        ],
+        "turns": [
+          {
+            "order": 1,
+            "speaker": "Elif",
+            "text": "Bu ay ne yapacaksın?",
+            "translation_fa": "این ماه چه کار می‌کنی؟"
+          },
+          {
+            "order": 2,
+            "speaker": "Zeynep",
+            "text": "Biraz daha az harcayacağım.",
+            "translation_fa": "کمی کمتر خرج می‌کنم."
+          },
+          {
+            "order": 3,
+            "speaker": "Elif",
+            "text": "Neden?",
+            "translation_fa": "چرا؟"
+          },
+          {
+            "order": 4,
+            "speaker": "Zeynep",
+            "text": "Biraz para biriktirmek istiyorum.",
+            "translation_fa": "می‌خواهم کمی پول پس‌انداز کنم."
+          }
+        ],
+        "qa": {
+          "character_pair_unique_within_unit": true,
+          "naturalness": "passed",
+          "single_situation": true
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_simple_budget_01_meaning",
+      "data": {
+        "lesson_key": "a2-tr-simple-budget-01",
+        "exercise_type": "multiple_choice",
+        "prompt": {
+          "instruction_fa": "معنی درست این عبارت ترکی را انتخاب کن.",
+          "value": "Bu ay bütçem biraz küçük."
+        },
+        "answer": {
+          "value": "این ماه بودجه‌ام کمی کم است."
+        },
+        "options": [
+          "این ماه بودجه‌ام کمی کم است.",
+          "برای غذا پول زیادی خرج نمی‌کنم.",
+          "قبض برق این ماه بیشتر است.",
+          "این فروشگاه ارزان‌تر است."
+        ],
+        "difficulty": 2,
+        "cefr": "A2",
+        "topic": "money",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت و پسوندهای عبارت ترکی دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: Bu ay bütçem biraz küçük. — این ماه بودجه‌ام کمی کم است.",
+          "model_answer": "Bu ay bütçem biraz küçük."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_simple_budget_01_listen",
+      "data": {
+        "lesson_key": "a2-tr-simple-budget-01",
+        "exercise_type": "listening",
+        "prompt": {
+          "instruction_fa": "گوش کن و عبارتی را که شنیدی انتخاب کن.",
+          "audio_text": "Yemek için çok para harcamıyorum."
+        },
+        "answer": {
+          "value": "Yemek için çok para harcamıyorum."
+        },
+        "options": [
+          "Yemek için çok para harcamıyorum.",
+          "Bu ay bütçem biraz küçük.",
+          "Elektrik faturası bu ay daha yüksek.",
+          "Bu market daha ucuz."
+        ],
+        "difficulty": 2,
+        "cefr": "A2",
+        "topic": "money",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت و پسوندهای عبارت ترکی دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: Yemek için çok para harcamıyorum. — برای غذا پول زیادی خرج نمی‌کنم.",
+          "model_answer": "Yemek için çok para harcamıyorum.",
+          "transcript_tr": "Yemek için çok para harcamıyorum."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_simple_budget_01_speak",
+      "data": {
+        "lesson_key": "a2-tr-simple-budget-01",
+        "exercise_type": "speaking",
+        "prompt": {
+          "instruction_fa": "عبارت را با صدای بلند و با ریتم طبیعی بگو.",
+          "value": "Bu ay bütçem biraz küçük."
+        },
+        "answer": {
+          "expected_text": "Bu ay bütçem biraz küçük."
+        },
+        "difficulty": 2,
+        "cefr": "A2",
+        "topic": "money",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت و پسوندهای عبارت ترکی دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: Bu ay bütçem biraz küçük. — این ماه بودجه‌ام کمی کم است.",
+          "model_answer": "Bu ay bütçem biraz küçük."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_simple_budget_01_build",
+      "data": {
+        "lesson_key": "a2-tr-simple-budget-01",
+        "exercise_type": "sentence_building",
+        "prompt": {
+          "instruction_fa": "بخش‌ها را مرتب کن تا عبارت درست ساخته شود.",
+          "tokens": [
+            "için",
+            "çok",
+            "para",
+            "harcamıyorum.",
+            "Yemek"
+          ]
+        },
+        "answer": {
+          "tokens": [
+            "Yemek",
+            "için",
+            "çok",
+            "para",
+            "harcamıyorum."
+          ],
+          "value": "Yemek için çok para harcamıyorum."
+        },
+        "difficulty": 2,
+        "cefr": "A2",
+        "topic": "money",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت و پسوندهای عبارت ترکی دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: Yemek için çok para harcamıyorum. — برای غذا پول زیادی خرج نمی‌کنم.",
+          "model_answer": "Yemek için çok para harcamıyorum."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_simple_budget_01_dialogue",
+      "data": {
+        "lesson_key": "a2-tr-simple-budget-01",
+        "exercise_type": "dialogue_comprehension",
+        "prompt": {
+          "instruction_fa": "با توجه به گفت‌وگو، پاسخ مناسب را انتخاب کن.",
+          "source_dialogue_ref": "d_simple_budget_01",
+          "question_fa": "کدام گزینه با معنی «این ماه بودجه‌ام کمی کم است.» هماهنگ است؟"
+        },
+        "answer": {
+          "value": "Bu ay bütçem biraz küçük."
+        },
+        "options": [
+          "Bu ay bütçem biraz küçük.",
+          "Yemek için çok para harcamıyorum.",
+          "Elektrik faturası bu ay daha yüksek.",
+          "Bu market daha ucuz."
+        ],
+        "difficulty": 2,
+        "cefr": "A2",
+        "topic": "money",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت و پسوندهای عبارت ترکی دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: Bu ay bütçem biraz küçük. — این ماه بودجه‌ام کمی کم است.",
+          "model_answer": "Bu ay bütçem biraz küçük."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_simple_budget_02_meaning",
+      "data": {
+        "lesson_key": "a2-tr-simple-budget-02",
+        "exercise_type": "multiple_choice",
+        "prompt": {
+          "instruction_fa": "معنی درست این عبارت ترکی را انتخاب کن.",
+          "value": "Elektrik faturası bu ay daha yüksek."
+        },
+        "answer": {
+          "value": "قبض برق این ماه بیشتر است."
+        },
+        "options": [
+          "قبض برق این ماه بیشتر است.",
+          "این ماه بودجه‌ام کمی کم است.",
+          "برای غذا پول زیادی خرج نمی‌کنم.",
+          "این فروشگاه ارزان‌تر است."
+        ],
+        "difficulty": 2,
+        "cefr": "A2",
+        "topic": "money",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت و پسوندهای عبارت ترکی دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: Elektrik faturası bu ay daha yüksek. — قبض برق این ماه بیشتر است.",
+          "model_answer": "Elektrik faturası bu ay daha yüksek."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_simple_budget_02_listen",
+      "data": {
+        "lesson_key": "a2-tr-simple-budget-02",
+        "exercise_type": "listening",
+        "prompt": {
+          "instruction_fa": "گوش کن و عبارتی را که شنیدی انتخاب کن.",
+          "audio_text": "Bu market daha ucuz."
+        },
+        "answer": {
+          "value": "Bu market daha ucuz."
+        },
+        "options": [
+          "Bu market daha ucuz.",
+          "Elektrik faturası bu ay daha yüksek.",
+          "Bu ay bütçem biraz küçük.",
+          "Yemek için çok para harcamıyorum."
+        ],
+        "difficulty": 2,
+        "cefr": "A2",
+        "topic": "money",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت و پسوندهای عبارت ترکی دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: Bu market daha ucuz. — این فروشگاه ارزان‌تر است.",
+          "model_answer": "Bu market daha ucuz.",
+          "transcript_tr": "Bu market daha ucuz."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_simple_budget_02_speak",
+      "data": {
+        "lesson_key": "a2-tr-simple-budget-02",
+        "exercise_type": "speaking",
+        "prompt": {
+          "instruction_fa": "عبارت را با صدای بلند و با ریتم طبیعی بگو.",
+          "value": "Elektrik faturası bu ay daha yüksek."
+        },
+        "answer": {
+          "expected_text": "Elektrik faturası bu ay daha yüksek."
+        },
+        "difficulty": 2,
+        "cefr": "A2",
+        "topic": "money",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت و پسوندهای عبارت ترکی دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: Elektrik faturası bu ay daha yüksek. — قبض برق این ماه بیشتر است.",
+          "model_answer": "Elektrik faturası bu ay daha yüksek."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_simple_budget_02_build",
+      "data": {
+        "lesson_key": "a2-tr-simple-budget-02",
+        "exercise_type": "sentence_building",
+        "prompt": {
+          "instruction_fa": "بخش‌ها را مرتب کن تا عبارت درست ساخته شود.",
+          "tokens": [
+            "market",
+            "daha",
+            "ucuz.",
+            "Bu"
+          ]
+        },
+        "answer": {
+          "tokens": [
+            "Bu",
+            "market",
+            "daha",
+            "ucuz."
+          ],
+          "value": "Bu market daha ucuz."
+        },
+        "difficulty": 2,
+        "cefr": "A2",
+        "topic": "money",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت و پسوندهای عبارت ترکی دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: Bu market daha ucuz. — این فروشگاه ارزان‌تر است.",
+          "model_answer": "Bu market daha ucuz."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_simple_budget_02_dialogue",
+      "data": {
+        "lesson_key": "a2-tr-simple-budget-02",
+        "exercise_type": "dialogue_comprehension",
+        "prompt": {
+          "instruction_fa": "با توجه به گفت‌وگو، پاسخ مناسب را انتخاب کن.",
+          "source_dialogue_ref": "d_simple_budget_02",
+          "question_fa": "کدام گزینه با معنی «قبض برق این ماه بیشتر است.» هماهنگ است؟"
+        },
+        "answer": {
+          "value": "Elektrik faturası bu ay daha yüksek."
+        },
+        "options": [
+          "Elektrik faturası bu ay daha yüksek.",
+          "Bu ay bütçem biraz küçük.",
+          "Yemek için çok para harcamıyorum.",
+          "Bu market daha ucuz."
+        ],
+        "difficulty": 2,
+        "cefr": "A2",
+        "topic": "money",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت و پسوندهای عبارت ترکی دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: Elektrik faturası bu ay daha yüksek. — قبض برق این ماه بیشتر است.",
+          "model_answer": "Elektrik faturası bu ay daha yüksek."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_simple_budget_03_meaning",
+      "data": {
+        "lesson_key": "a2-tr-simple-budget-03",
+        "exercise_type": "multiple_choice",
+        "prompt": {
+          "instruction_fa": "معنی درست این عبارت ترکی را انتخاب کن.",
+          "value": "Bu kafe benim için pahalı."
+        },
+        "answer": {
+          "value": "این کافه برای من گران است."
+        },
+        "options": [
+          "این کافه برای من گران است.",
+          "این ماه بودجه‌ام کمی کم است.",
+          "برای غذا پول زیادی خرج نمی‌کنم.",
+          "قبض برق این ماه بیشتر است."
+        ],
+        "difficulty": 2,
+        "cefr": "A2",
+        "topic": "money",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت و پسوندهای عبارت ترکی دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: Bu kafe benim için pahalı. — این کافه برای من گران است.",
+          "model_answer": "Bu kafe benim için pahalı."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_simple_budget_03_listen",
+      "data": {
+        "lesson_key": "a2-tr-simple-budget-03",
+        "exercise_type": "listening",
+        "prompt": {
+          "instruction_fa": "گوش کن و عبارتی را که شنیدی انتخاب کن.",
+          "audio_text": "Bu ay biraz para biriktireceğim."
+        },
+        "answer": {
+          "value": "Bu ay biraz para biriktireceğim."
+        },
+        "options": [
+          "Bu ay biraz para biriktireceğim.",
+          "Bu kafe benim için pahalı.",
+          "Bu ay bütçem biraz küçük.",
+          "Yemek için çok para harcamıyorum."
+        ],
+        "difficulty": 2,
+        "cefr": "A2",
+        "topic": "money",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت و پسوندهای عبارت ترکی دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: Bu ay biraz para biriktireceğim. — این ماه کمی پول پس‌انداز می‌کنم.",
+          "model_answer": "Bu ay biraz para biriktireceğim.",
+          "transcript_tr": "Bu ay biraz para biriktireceğim."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_simple_budget_03_speak",
+      "data": {
+        "lesson_key": "a2-tr-simple-budget-03",
+        "exercise_type": "speaking",
+        "prompt": {
+          "instruction_fa": "عبارت را با صدای بلند و با ریتم طبیعی بگو.",
+          "value": "Bu kafe benim için pahalı."
+        },
+        "answer": {
+          "expected_text": "Bu kafe benim için pahalı."
+        },
+        "difficulty": 2,
+        "cefr": "A2",
+        "topic": "money",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت و پسوندهای عبارت ترکی دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: Bu kafe benim için pahalı. — این کافه برای من گران است.",
+          "model_answer": "Bu kafe benim için pahalı."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_simple_budget_03_build",
+      "data": {
+        "lesson_key": "a2-tr-simple-budget-03",
+        "exercise_type": "sentence_building",
+        "prompt": {
+          "instruction_fa": "بخش‌ها را مرتب کن تا عبارت درست ساخته شود.",
+          "tokens": [
+            "ay",
+            "biraz",
+            "para",
+            "biriktireceğim.",
+            "Bu"
+          ]
+        },
+        "answer": {
+          "tokens": [
+            "Bu",
+            "ay",
+            "biraz",
+            "para",
+            "biriktireceğim."
+          ],
+          "value": "Bu ay biraz para biriktireceğim."
+        },
+        "difficulty": 2,
+        "cefr": "A2",
+        "topic": "money",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت و پسوندهای عبارت ترکی دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: Bu ay biraz para biriktireceğim. — این ماه کمی پول پس‌انداز می‌کنم.",
+          "model_answer": "Bu ay biraz para biriktireceğim."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_simple_budget_03_dialogue",
+      "data": {
+        "lesson_key": "a2-tr-simple-budget-03",
+        "exercise_type": "dialogue_comprehension",
+        "prompt": {
+          "instruction_fa": "با توجه به گفت‌وگو، پاسخ مناسب را انتخاب کن.",
+          "source_dialogue_ref": "d_simple_budget_03",
+          "question_fa": "کدام گزینه با معنی «این کافه برای من گران است.» هماهنگ است؟"
+        },
+        "answer": {
+          "value": "Bu kafe benim için pahalı."
+        },
+        "options": [
+          "Bu kafe benim için pahalı.",
+          "Bu ay bütçem biraz küçük.",
+          "Yemek için çok para harcamıyorum.",
+          "Elektrik faturası bu ay daha yüksek."
+        ],
+        "difficulty": 2,
+        "cefr": "A2",
+        "topic": "money",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت و پسوندهای عبارت ترکی دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: Bu kafe benim için pahalı. — این کافه برای من گران است.",
+          "model_answer": "Bu kafe benim için pahalı."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_simple_budget_03_open_write",
+      "data": {
+        "lesson_key": "a2-tr-simple-budget-03",
+        "exercise_type": "writing",
+        "prompt": {
+          "instruction_fa": "در ۳ تا ۵ جملهٔ ساده دربارهٔ هزینه‌های معمول یک ماه بنویس، دو قیمت یا هزینه را مقایسه کن و یک تصمیم کوچک برای خرج یا پس‌انداز بگو.",
+          "personalized": true
+        },
+        "answer": {
+          "evaluation_mode": "rubric",
+          "model_text": "Bu ay elektrik faturam yüksek. Diğer market daha ucuz. Oradan alışveriş yapacağım. Biraz para biriktireceğim.",
+          "required_points_fa": [
+            "یک هزینه",
+            "یک مقایسه ساده",
+            "یک تصمیم عملی"
+          ]
+        },
+        "assessment": {
+          "exact_match_allowed": false,
+          "criteria": [
+            {
+              "id": "task",
+              "label_fa": "انجام کار",
+              "weight": 55,
+              "descriptors_fa": {
+                "0": "کار خواسته‌شده انجام نشده است.",
+                "1": "فقط بخشی از اطلاعات اصلی منتقل شده است.",
+                "2": "بیشتر اطلاعات لازم با چند نقص منتقل شده است.",
+                "3": "کار کامل و برای سطح A2 روشن انجام شده است."
+              }
+            },
+            {
+              "id": "language",
+              "label_fa": "زبان قابل‌فهم",
+              "weight": 45,
+              "descriptors_fa": {
+                "0": "پاسخ قابل‌فهم نیست.",
+                "1": "پیام با دشواری زیاد قابل‌فهم است.",
+                "2": "با چند خطا، پیام همچنان روشن است.",
+                "3": "عبارت‌های ساده و پیوسته متناسب با A2 به‌خوبی قابل‌فهم‌اند."
+              }
+            }
+          ]
+        },
+        "difficulty": 2,
+        "cefr": "A2",
+        "topic": "money",
+        "feedback": {
+          "explanation_fa": "پاسخ آزاد است؛ مهم انجام کامل کار و قابل‌فهم بودن پیام است.",
+          "model_answer": "Bu ay elektrik faturam yüksek. Diğer market daha ucuz. Oradan alışveriş yapacağım. Biraz para biriktireceğim.",
+          "retry_tip_fa": "از مدل کمک بگیر، اما اطلاعات و انتخاب‌های خودت را بنویس."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_simple_budget_03_personal_speak",
+      "data": {
+        "lesson_key": "a2-tr-simple-budget-03",
+        "exercise_type": "speaking",
+        "prompt": {
+          "instruction_fa": "یک بودجهٔ خیلی ساده را توضیح بده: یک هزینهٔ مهم، یک مقایسه و یک تصمیم برای این ماه.",
+          "personalized": true
+        },
+        "answer": {
+          "evaluation_mode": "rubric",
+          "model_text": "Bu ay elektrik faturam yüksek. Diğer market daha ucuz. Oradan alışveriş yapacağım. Biraz para biriktireceğim.",
+          "required_points_fa": [
+            "یک هزینه",
+            "یک مقایسه ساده",
+            "یک تصمیم عملی"
+          ]
+        },
+        "assessment": {
+          "exact_match_allowed": false,
+          "criteria": [
+            {
+              "id": "task",
+              "label_fa": "انجام کار",
+              "weight": 55,
+              "descriptors_fa": {
+                "0": "کار خواسته‌شده انجام نشده است.",
+                "1": "فقط بخشی از اطلاعات اصلی منتقل شده است.",
+                "2": "بیشتر اطلاعات لازم با چند نقص منتقل شده است.",
+                "3": "کار کامل و برای سطح A2 روشن انجام شده است."
+              }
+            },
+            {
+              "id": "language",
+              "label_fa": "زبان قابل‌فهم",
+              "weight": 45,
+              "descriptors_fa": {
+                "0": "پاسخ قابل‌فهم نیست.",
+                "1": "پیام با دشواری زیاد قابل‌فهم است.",
+                "2": "با چند خطا، پیام همچنان روشن است.",
+                "3": "عبارت‌های ساده و پیوسته متناسب با A2 به‌خوبی قابل‌فهم‌اند."
+              }
+            }
+          ]
+        },
+        "difficulty": 2,
+        "cefr": "A2",
+        "topic": "money",
+        "feedback": {
+          "explanation_fa": "لازم نیست عین مدل صحبت کنی؛ پیام باید کوتاه، پیوسته و روشن باشد.",
+          "model_answer": "Bu ay elektrik faturam yüksek. Diğer market daha ucuz. Oradan alışveriş yapacağım. Biraz para biriktireceğim.",
+          "retry_tip_fa": "دو یا سه جملهٔ مرتبط بساز و دلیل یا جزئیات کوتاه اضافه کن."
+        },
+        "status": "validated"
+      }
+    }
+  ]
+}
