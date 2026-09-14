@@ -1,0 +1,182 @@
+{
+  "batch": 2,
+  "level": "B1",
+  "variant": "tr-TR",
+  "pedagogy": {
+    "learner_language": "fa-IR",
+    "standard": "contemporary Istanbul Turkish",
+    "principles": [
+      "use three substantive lessons per unit with independent production in lesson 3",
+      "keep B1 tasks concrete enough for everyday life while requiring connected explanation, repair, mediation and short narration",
+      "permit realistic -sa/-se conditions, reported information, sequencing, reasons and short coherent accounts already established at B1",
+      "avoid B2 counterfactual -saydı/-seydi, dense concession, multi-source synthesis and sustained abstract argumentation",
+      "keep Persian support concise, accurate and contrastive"
+    ]
+  },
+  "units": [
+    {
+      "slug": "housing-repair-coordination",
+      "topic": "housing",
+      "title": "Sorunu açıklayıp çözüm planlayalım",
+      "objective": "Describe a household problem clearly, report what another person said, and coordinate a practical repair plan.",
+      "grammar_focus": "reported information with -diğini söylemek and reason/result links",
+      "vocab": [
+        ["ariza","arıza","خرابی","noun",1],
+        ["sızıntı","sızıntı","نشتی","noun",1],
+        ["tamirci","tamirci","تعمیرکار","noun",2],
+        ["kontrol","kontrol etmek","بررسی کردن","verb",2],
+        ["bildirmek","bildirmek","اطلاع دادن","verb",3],
+        ["uygun","uygun","مناسب","adjective",3]
+      ],
+      "utterances": [
+        ["u1","Mutfakta küçük bir su sızıntısı var.","در آشپزخانه یک نشتی کوچک آب هست.","describe_problem",["sızıntı"],1],
+        ["u2","Arıza dün akşam başladı ve bugün biraz arttı.","خرابی دیشب شروع شد و امروز کمی بیشتر شد.","sequence_problem",["ariza"],1],
+        ["u3","Tamirci öğleden sonra gelebileceğini söyledi.","تعمیرکار گفت می‌تواند بعدازظهر بیاید.","report_information",["tamirci"],2],
+        ["u4","Önce boruları kontrol edecek.","اول لوله‌ها را بررسی می‌کند.","state_plan",["kontrol"],2],
+        ["u5","Durumu ev sahibine de bildirdim.","وضعیت را به صاحبخانه هم اطلاع دادم.","report_action",["bildirmek"],3],
+        ["u6","Saat dört benim için uygun, o zaman evde olacağım.","ساعت چهار برای من مناسب است، آن موقع خانه هستم.","coordinate_time",["uygun"],3]
+      ],
+      "grammar": [
+        "Başkasının bilgisini aktarmak",
+        "Use -diğini söyledi / -ebileceğini söyledi to report practical information, then connect actions with önce, sonra, çünkü and bu yüzden.",
+        "برای انتقال گفتهٔ یک نفر می‌توانیم از ساخت‌هایی مثل gelebileceğini söyledi استفاده کنیم و بعد برنامه را با önce و sonra مرتب کنیم.",
+        [["Tamirci saat üçte geleceğini söyledi.","تعمیرکار گفت ساعت سه می‌آید."],["Önce mutfağı kontrol edecek, sonra bizi arayacak.","اول آشپزخانه را بررسی می‌کند، بعد با ما تماس می‌گیرد."]]
+      ],
+      "dialogues": [
+        ["Evdeki sorun","خانه",[["Elif","Mutfakta ne oldu?","در آشپزخانه چه شد؟"],["Burak","Dün akşam küçük bir sızıntı başladı.","دیشب یک نشتی کوچک شروع شد."],["Elif","Şimdi nasıl?","الان چطور است؟"],["Burak","Biraz arttı, bu yüzden tamirciyi aradım.","کمی بیشتر شده، برای همین با تعمیرکار تماس گرفتم."]],1],
+        ["Tamirciden haber","تلفن",[["Deniz","Tamirci ne dedi?","تعمیرکار چه گفت؟"],["Zeynep","Öğleden sonra gelebileceğini söyledi.","گفت می‌تواند بعدازظهر بیاید."],["Deniz","Önce neye bakacak?","اول چه چیزی را بررسی می‌کند؟"],["Zeynep","Önce boruları kontrol edecek.","اول لوله‌ها را بررسی می‌کند."]],2],
+        ["Saat belirlemek","پیام",[["Mert","Tamirci saat dörtte gelebilir. Uygun mu?","تعمیرکار می‌تواند ساعت چهار بیاید. مناسبه؟"],["Selin","Evet, o saatte evde olacağım.","بله، آن ساعت خانه هستم."],["Mert","Ev sahibine de haber verdin mi?","به صاحبخانه هم خبر دادی؟"],["Selin","Evet, durumu sabah bildirdim.","بله، صبح وضعیت را اطلاع دادم."]],3]
+      ],
+      "production": {
+        "lesson": 3,
+        "writing_prompt_fa": "در ۴ تا ۵ جمله یک مشکل ساده در خانه را توضیح بده: چه اتفاقی افتاد، چه کسی چه گفت و برنامهٔ حل مشکل چیست.",
+        "speaking_prompt_fa": "فرض کن باید مشکل خانه را به صاحبخانه توضیح بدهی. مشکل، اطلاعات تعمیرکار و زمان مناسب را منسجم بگو.",
+        "model_text": "Dün akşam mutfakta küçük bir sızıntı başladı. Bugün biraz arttı, bu yüzden tamirciyi aradım. Tamirci saat dörtte gelebileceğini söyledi. Önce boruları kontrol edecek. O saat benim için uygun.",
+        "required_points_fa": ["شرح کوتاه مشکل و زمان آن","گزارش گفتهٔ یک نفر","برنامه یا زمان حل مشکل"]
+      }
+    },
+    {
+      "slug": "travel-disruption-replanning",
+      "topic": "travel",
+      "title": "Plan değişti, yeni bir yol bulduk",
+      "objective": "Explain a travel disruption, compare realistic alternatives and agree on a revised plan.",
+      "grammar_focus": "realistic -sa/-se conditions, sequencing and practical comparison",
+      "vocab": [
+        ["iptal","iptal olmak","لغو شدن","verb",1],
+        ["gecikme","gecikme","تأخیر","noun",1],
+        ["aktarma","aktarma","تعویض وسیله / ترانزیت","noun",2],
+        ["alternatif","alternatif","گزینهٔ جایگزین","noun",2],
+        ["yetismek","yetişmek","به‌موقع رسیدن","verb",3],
+        ["degistirmek","değiştirmek","تغییر دادن","verb",3]
+      ],
+      "utterances": [
+        ["u1","Sabahki tren iptal oldu, bu yüzden planımız değişti.","قطار صبح لغو شد، برای همین برنامه‌مان عوض شد.","explain_disruption",["iptal"],1],
+        ["u2","Otobüste yaklaşık kırk dakikalık bir gecikme var.","اتوبوس حدود چهل دقیقه تأخیر دارد.","state_delay",["gecikme"],1],
+        ["u3","Ankara'da aktarma yaparsak akşam varabiliriz.","اگر در آنکارا وسیله عوض کنیم می‌توانیم عصر برسیم.","real_condition",["aktarma"],2],
+        ["u4","Bu alternatif biraz uzun ama daha güvenli görünüyor.","این گزینه کمی طولانی است ولی مطمئن‌تر به نظر می‌رسد.","compare_option",["alternatif"],2],
+        ["u5","Saat altı otobüsüne yetişebilirsek bileti değiştireceğiz.","اگر بتوانیم به اتوبوس ساعت شش برسیم بلیت را عوض می‌کنیم.","coordinate_plan",["yetismek","degistirmek"],3],
+        ["u6","Önce gişeye soralım, sonra kesin karar verelim.","اول از باجه بپرسیم، بعد تصمیم قطعی بگیریم.","sequence_decision",[],3]
+      ],
+      "grammar": [
+        "Gerçek ve olası koşullar",
+        "Use present/future -sa/-se for realistic conditions and connect the revised plan with önce, sonra, ama and bu yüzden.",
+        "در B1 برای شرط واقعی و ممکن از -sa/-se استفاده می‌کنیم؛ اینجا دربارهٔ گزینه‌های واقعی سفر حرف می‌زنیم، نه موقعیت فرضیِ غیرواقعی.",
+        [["Erken çıkarsak otobüse yetişiriz.","اگر زود راه بیفتیم به اتوبوس می‌رسیم."],["Tren gecikirse istasyonda bekleyeceğiz.","اگر قطار تأخیر کند در ایستگاه منتظر می‌مانیم."]]
+      ],
+      "dialogues": [
+        ["Tren iptal","ایستگاه",[["Kaan","Sabahki tren neden görünmüyor?","چرا قطار صبح در تابلو نیست؟"],["Selin","İptal olmuş. Yeni bir plan yapmamız gerekiyor.","لغو شده. باید یک برنامهٔ جدید بچینیم."],["Kaan","Otobüs var mı?","اتوبوس هست؟"],["Selin","Var ama biraz gecikiyor.","هست ولی کمی تأخیر دارد."]],1],
+        ["Alternatif rota","ایستگاه",[["Emre","Ankara'da aktarma yaparsak kaçta varırız?","اگر در آنکارا وسیله عوض کنیم کی می‌رسیم؟"],["Elif","Akşam sekiz gibi.","حدود ساعت هشت شب."],["Emre","Direkt otobüs daha hızlı mı?","اتوبوس مستقیم سریع‌تر است؟"],["Elif","Biraz hızlı ama şu anda dolu.","کمی سریع‌تر است ولی الان پر است."]],2],
+        ["Yeni plan","باجه",[["Burak","Saat altı otobüsüne yetişebilir miyiz?","می‌توانیم به اتوبوس ساعت شش برسیم؟"],["Zeynep","Evet, şimdi çıkarsak yetişebiliriz.","بله، اگر الان راه بیفتیم می‌رسیم."],["Burak","O zaman bileti değiştirelim.","پس بلیت را عوض کنیم."],["Zeynep","Tamam, önce gişeye soralım.","باشه، اول از باجه بپرسیم."]],3]
+      ],
+      "production": {
+        "lesson": 3,
+        "writing_prompt_fa": "در ۴ تا ۵ جمله بنویس یک برنامهٔ سفر چرا عوض شد، دو گزینه چه بودند و در چه شرط واقعی کدام گزینه را انتخاب می‌کنی.",
+        "speaking_prompt_fa": "یک اختلال واقعی سفر را توضیح بده و با مقایسهٔ کوتاه دو گزینه، برنامهٔ جدید را پیشنهاد کن.",
+        "model_text": "Sabahki tren iptal oldu. Otobüs var ama kırk dakika gecikiyor. Ankara'da aktarma yaparsak akşam varabiliriz. Bu seçenek daha uzun ama daha güvenli. Saat altı otobüsüne yetişebilirsek bileti değiştireceğiz.",
+        "required_points_fa": ["علت تغییر برنامه","مقایسهٔ دو گزینه","یک شرط واقعی و تصمیم"]
+      }
+    },
+    {
+      "slug": "work-deadline-update",
+      "topic": "work",
+      "title": "Durumu açıklayıp yeni süre istiyorum",
+      "objective": "Give a concise work progress update, relay a colleague's information and negotiate a realistic deadline.",
+      "grammar_focus": "reported propositions, reasons, progress language and polite negotiation",
+      "vocab": [
+        ["teslim_tarihi","teslim tarihi","مهلت تحویل","noun",1],
+        ["ilerleme","ilerleme","پیشرفت","noun",1],
+        ["dosya","dosya","فایل / پرونده","noun",2],
+        ["tamamlamak","tamamlamak","کامل کردن","verb",2],
+        ["sure","süre","مهلت / زمان","noun",3],
+        ["uzatmak","uzatmak","تمدید کردن","verb",3]
+      ],
+      "utterances": [
+        ["u1","Projenin büyük kısmı hazır ama son bölüm henüz bitmedi.","بخش بزرگی از پروژه آماده است ولی بخش آخر هنوز تمام نشده.","progress_update",["ilerleme"],1],
+        ["u2","Teslim tarihi cuma günü, bu yüzden bugün planı netleştirmeliyiz.","مهلت تحویل جمعه است، برای همین امروز باید برنامه را مشخص کنیم.","state_deadline",["teslim_tarihi"],1],
+        ["u3","Emre dosyayı öğleden sonra tamamlayacağını söyledi.","امره گفت فایل را بعدازظهر کامل می‌کند.","report_colleague",["dosya","tamamlamak"],2],
+        ["u4","Ben de son kontrolü akşam yapacağım.","من هم بررسی نهایی را عصر انجام می‌دهم.","state_next_step",[],2],
+        ["u5","Bir gün daha süre istememiz gerekebilir.","ممکن است لازم باشد یک روز مهلت بیشتر بخواهیم.","negotiate_time",["sure"],3],
+        ["u6","Gerekirse teslim tarihini pazartesiye uzatmayı rica edeceğim.","اگر لازم باشد درخواست می‌کنم مهلت تحویل تا دوشنبه تمدید شود.","polite_request",["uzatmak"],3]
+      ],
+      "grammar": [
+        "İlerleme ve aktarılan bilgi",
+        "Combine a factual progress update with -diğini/-acağını söyledi for reported information and use gerekirse or polite request forms to negotiate next steps.",
+        "در گزارش کوتاه کاری، اول وضعیت واقعی را می‌گوییم، بعد اطلاعات همکار را با söyledi منتقل می‌کنیم و در پایان درخواست یا قدم بعدی را روشن مطرح می‌کنیم.",
+        [["Ayşe raporu yarın göndereceğini söyledi.","عایشه گفت گزارش را فردا می‌فرستد."],["Bir gün daha süre rica edebilir miyiz?","می‌توانیم یک روز مهلت بیشتر درخواست کنیم؟"]]
+      ],
+      "dialogues": [
+        ["İlerleme toplantısı","دفتر",[["Deniz","Proje ne durumda?","پروژه در چه وضعی است؟"],["Mert","Büyük kısmı hazır ama son bölüm bitmedi.","بخش بزرگی آماده است ولی بخش آخر تمام نشده."],["Deniz","Cuma gününe yetişir mi?","تا جمعه آماده می‌شود؟"],["Mert","Planı bugün netleştirirsek büyük ihtimalle yetişir.","اگر امروز برنامه را مشخص کنیم به احتمال زیاد می‌رسد."]],1],
+        ["Dosya haberi","چت کاری",[["Selin","Emre dosya hakkında ne dedi?","امره دربارهٔ فایل چه گفت؟"],["Burak","Öğleden sonra tamamlayacağını söyledi.","گفت بعدازظهر کاملش می‌کند."],["Selin","Son kontrolü kim yapacak?","بررسی نهایی را چه کسی انجام می‌دهد؟"],["Burak","Ben akşam yapacağım.","من عصر انجام می‌دهم."]],2],
+        ["Yeni süre istemek","جلسه",[["Zeynep","Cuma tarihi çok sıkışık görünüyor.","مهلت جمعه خیلی فشرده به نظر می‌رسد."],["Kaan","Evet, bir gün daha süre istememiz gerekebilir.","بله، ممکن است لازم باشد یک روز مهلت بیشتر بخواهیم."],["Zeynep","Nasıl söyleyelim?","چطور بگوییم؟"],["Kaan","Durumu açıklayıp pazartesiyi rica edelim.","وضعیت را توضیح بدهیم و دوشنبه را درخواست کنیم."]],3]
+      ],
+      "production": {
+        "lesson": 3,
+        "writing_prompt_fa": "در ۴ تا ۵ جمله یک گزارش کوتاه کاری بنویس: چه چیزی آماده است، چه چیزی باقی مانده، یک همکار چه گفته و چه درخواست یا قدم بعدی داری.",
+        "speaking_prompt_fa": "در نقش عضو تیم، وضعیت یک کار را منسجم توضیح بده و در پایان یک مهلت یا قدم بعدی واقع‌بینانه پیشنهاد کن.",
+        "model_text": "Projenin büyük kısmı hazır ama son bölüm bitmedi. Emre dosyayı öğleden sonra tamamlayacağını söyledi. Ben son kontrolü akşam yapacağım. Gerekirse bir gün daha süre isteyeceğiz. Durumu açıkça anlatıp yeni tarihi rica edeceğiz.",
+        "required_points_fa": ["وضعیت پیشرفت","گزارش گفتهٔ همکار","درخواست یا قدم بعدی"]
+      }
+    },
+    {
+      "slug": "community-event-coordination",
+      "topic": "community",
+      "title": "Bilgiyi toparlayıp gruba aktaralım",
+      "objective": "Understand practical event information, mediate it for others and coordinate responsibilities in a small community activity.",
+      "grammar_focus": "short mediation, sequencing, reported information and realistic conditions",
+      "vocab": [
+        ["etkinlik","etkinlik","رویداد / برنامه","noun",1],
+        ["katilimci","katılımcı","شرکت‌کننده","noun",1],
+        ["gorev","görev","مسئولیت / وظیفه","noun",2],
+        ["duyuru","duyuru","اطلاعیه","noun",2],
+        ["iletmek","iletmek","منتقل کردن / رساندن","verb",3],
+        ["hazirlik","hazırlık","آماده‌سازی","noun",3]
+      ],
+      "utterances": [
+        ["u1","Mahalle etkinliği cumartesi saat on birde başlayacak.","برنامهٔ محله شنبه ساعت یازده شروع می‌شود.","state_event_info",["etkinlik"],1],
+        ["u2","Şimdilik yaklaşık otuz katılımcı var.","فعلاً حدود سی شرکت‌کننده هست.","state_participants",["katilimci"],1],
+        ["u3","Duyuruda herkesin kendi bardağını getirmesi istendi.","در اطلاعیه خواسته شده همه لیوان خودشان را بیاورند.","mediate_notice",["duyuru"],2],
+        ["u4","Ben masa düzeni görevini aldım.","من مسئولیت چیدمان میزها را گرفتم.","state_role",["gorev"],2],
+        ["u5","Bu bilgiyi akşam gruba ileteceğim.","این اطلاعات را عصر به گروه منتقل می‌کنم.","mediate_information",["iletmek"],3],
+        ["u6","Hazırlık erken biterse girişte de yardımcı olabilirim.","اگر آماده‌سازی زود تمام شود می‌توانم در ورودی هم کمک کنم.","real_condition",["hazirlik"],3]
+      ],
+      "grammar": [
+        "Kısa arabuluculuk ve görev paylaşımı",
+        "Select the practical details another person needs, relay them in your own words, and use simple sequencing or realistic -sa/-se conditions for coordination.",
+        "در میانجی‌گری کوتاه لازم نیست متن اطلاعیه را کلمه‌به‌کلمه تکرار کنیم؛ اطلاعات لازم را انتخاب می‌کنیم و روشن به فرد دیگر منتقل می‌کنیم.",
+        [["Duyuruda etkinliğin saat on birde başlayacağı yazıyor.","در اطلاعیه نوشته برنامه ساعت یازده شروع می‌شود."],["Hazırlık erken biterse girişte yardım ederim.","اگر آماده‌سازی زود تمام شود در ورودی کمک می‌کنم."]]
+      ],
+      "dialogues": [
+        ["Etkinlik bilgisi","محله",[["Emre","Etkinlik ne zaman başlıyor?","برنامه کی شروع می‌شود؟"],["Elif","Cumartesi saat on birde.","شنبه ساعت یازده."],["Emre","Kaç kişi gelecek?","چند نفر می‌آیند؟"],["Elif","Şimdilik yaklaşık otuz kişi var.","فعلاً حدود سی نفر هستند."]],1],
+        ["Duyuruyu aktarmak","تلفن",[["Mert","Duyuruda önemli bir şey var mı?","چیز مهمی در اطلاعیه هست؟"],["Zeynep","Evet, herkesin kendi bardağını getirmesi isteniyor.","بله، خواسته شده هرکس لیوان خودش را بیاورد."],["Mert","Görevler belli mi?","مسئولیت‌ها مشخص شده؟"],["Zeynep","Evet, ben kayıt masasındayım.","بله، من مسئول میز ثبت‌نام هستم."]],2],
+        ["Görev paylaşımı","چت گروهی",[["Kaan","Akşam gruba ne yazacaksın?","عصر در گروه چه می‌نویسی؟"],["Selin","Saat, buluşma yeri ve görevleri kısaca ileteceğim.","زمان، محل قرار و مسئولیت‌ها را کوتاه منتقل می‌کنم."],["Kaan","Hazırlık erken biterse başka ne yapabiliriz?","اگر آماده‌سازی زود تمام شود چه کار دیگری می‌توانیم بکنیم؟"],["Selin","Girişte katılımcılara yardımcı olabiliriz.","می‌توانیم در ورودی به شرکت‌کننده‌ها کمک کنیم."]],3]
+      ],
+      "production": {
+        "lesson": 3,
+        "writing_prompt_fa": "یک پیام ۴ تا ۵ جمله‌ای برای گروه بنویس و اطلاعات یک رویداد را با کلمات خودت منتقل کن: زمان/مکان، یک نکتهٔ اطلاعیه، مسئولیت خودت و یک شرط واقعی برای کمک بیشتر.",
+        "speaking_prompt_fa": "اطلاعات یک رویداد کوچک را برای دوستی که اطلاعیه را ندیده خلاصه کن و مسئولیت خودت را توضیح بده.",
+        "model_text": "Etkinlik cumartesi saat on birde başlayacak. Duyuruda herkesin kendi bardağını getirmesi istendi. Ben masa düzeni görevini aldım. Bu bilgileri akşam gruba ileteceğim. Hazırlık erken biterse girişte de yardımcı olabilirim.",
+        "required_points_fa": ["زمان یا مکان رویداد","انتقال یک نکته از اطلاعیه","مسئولیت شخصی و یک شرط واقعی"]
+      }
+    }
+  ]
+}
