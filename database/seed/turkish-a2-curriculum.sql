@@ -89,3 +89,25 @@ JOIN courses c ON c.slug='fa-tr-tr'
 JOIN cefr_levels lvl ON lvl.code='A2'
 JOIN skills s ON s.slug=u.skill_slug
 JOIN topics t ON t.slug=u.topic_slug AND t.skill_id=s.id;
+
+-- Coverage-driven expansion batch 4: routine work and study tasks with short independent production.
+INSERT IGNORE INTO curriculum_units (
+  course_id,target_language_id,cefr_level_id,skill_id,topic_id,slug,title,
+  learning_objective,sort_order,expected_lessons,status,metadata
+)
+SELECT c.id,c.target_language_id,lvl.id,s.id,t.id,u.slug,u.title,u.objective,
+       u.sort_order,u.expected_lessons,'approved',
+       JSON_OBJECT('language_specific',TRUE,'target_variant','tr-TR','batch',4,'grammar_focus',u.grammar_focus)
+FROM (
+ SELECT 430 sort_order,3 expected_lessons,'work-study' skill_slug,'jobs' topic_slug,
+        'a2-tr-work-schedules' slug,'Bugün vardiyam değişti' title,
+        'Understand and discuss a simple work schedule, a routine change and a short absence or delay message.' objective,
+        'clock/calendar recycling, simple present/future and short reasons' grammar_focus
+ UNION ALL SELECT 440,3,'work-study','school-study','a2-tr-study-tasks','Ödevi cuma günü vereceğiz',
+        'Understand a simple class task, ask about a deadline and describe a short study plan.',
+        'dates, time phrases, simple sequencing and future plans'
+) u
+JOIN courses c ON c.slug='fa-tr-tr'
+JOIN cefr_levels lvl ON lvl.code='A2'
+JOIN skills s ON s.slug=u.skill_slug
+JOIN topics t ON t.slug=u.topic_slug AND t.skill_id=s.id;
