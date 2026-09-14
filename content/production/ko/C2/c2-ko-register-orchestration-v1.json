@@ -1,0 +1,870 @@
+{
+  "batch_id": "ko-kr-c2-register-orchestration-v1",
+  "course": "fa-ko-kr",
+  "learner_language": "fa",
+  "learner_variant": "fa-IR",
+  "target_language": "ko",
+  "target_variant": "ko-KR",
+  "cefr": "C2",
+  "curriculum_unit": "c2-ko-register-orchestration",
+  "generator": "gpt-5.6-sol:korean-c2-batch-v1",
+  "items": [
+    {
+      "kind": "concept",
+      "external_id": "c_register_orchestration_01",
+      "data": {
+        "slug": "ko_c2_register_orchestration_geori",
+        "lesson_key": "c2-ko-register-orchestration-01",
+        "concept_type": "lexical",
+        "part_of_speech": "noun",
+        "forms": {
+          "ko": "거리감"
+        },
+        "translations": {
+          "fa": "فاصله اجتماعی / عاطفی"
+        },
+        "cefr": "C2",
+        "topic": "requests",
+        "tags": [
+          "core",
+          "beginner",
+          "high_frequency"
+        ],
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_register_orchestration_01",
+      "data": {
+        "lesson_key": "c2-ko-register-orchestration-01",
+        "lemma": "거리감",
+        "display_lemma": "거리감",
+        "language": "ko",
+        "language_variant": "ko-KR",
+        "part_of_speech": "noun",
+        "concept_refs": [
+          "ko_c2_register_orchestration_geori"
+        ],
+        "cefr": "C2",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_register_orchestration_01",
+      "data": {
+        "lesson_key": "c2-ko-register-orchestration-01",
+        "lexeme_ref": "lx_register_orchestration_01",
+        "surface_form": "거리감",
+        "display_form": "거리감",
+        "grammatical_features": {},
+        "is_lemma": true,
+        "is_preferred": true,
+        "cefr": "C2",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_register_orchestration_02",
+      "data": {
+        "slug": "ko_c2_register_orchestration_taedo",
+        "lesson_key": "c2-ko-register-orchestration-01",
+        "concept_type": "lexical",
+        "part_of_speech": "noun",
+        "forms": {
+          "ko": "태도"
+        },
+        "translations": {
+          "fa": "موضع / طرز برخورد"
+        },
+        "cefr": "C2",
+        "topic": "requests",
+        "tags": [
+          "core",
+          "beginner",
+          "high_frequency"
+        ],
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_register_orchestration_02",
+      "data": {
+        "lesson_key": "c2-ko-register-orchestration-01",
+        "lemma": "태도",
+        "display_lemma": "태도",
+        "language": "ko",
+        "language_variant": "ko-KR",
+        "part_of_speech": "noun",
+        "concept_refs": [
+          "ko_c2_register_orchestration_taedo"
+        ],
+        "cefr": "C2",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_register_orchestration_02",
+      "data": {
+        "lesson_key": "c2-ko-register-orchestration-01",
+        "lexeme_ref": "lx_register_orchestration_02",
+        "surface_form": "태도",
+        "display_form": "태도",
+        "grammatical_features": {},
+        "is_lemma": true,
+        "is_preferred": true,
+        "cefr": "C2",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_register_orchestration_03",
+      "data": {
+        "slug": "ko_c2_register_orchestration_hwagyong",
+        "lesson_key": "c2-ko-register-orchestration-01",
+        "concept_type": "lexical",
+        "part_of_speech": "noun",
+        "forms": {
+          "ko": "화용"
+        },
+        "translations": {
+          "fa": "کاربردشناسی زبان"
+        },
+        "cefr": "C2",
+        "topic": "requests",
+        "tags": [
+          "core",
+          "beginner",
+          "high_frequency"
+        ],
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_register_orchestration_03",
+      "data": {
+        "lesson_key": "c2-ko-register-orchestration-01",
+        "lemma": "화용",
+        "display_lemma": "화용",
+        "language": "ko",
+        "language_variant": "ko-KR",
+        "part_of_speech": "noun",
+        "concept_refs": [
+          "ko_c2_register_orchestration_hwagyong"
+        ],
+        "cefr": "C2",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_register_orchestration_03",
+      "data": {
+        "lesson_key": "c2-ko-register-orchestration-01",
+        "lexeme_ref": "lx_register_orchestration_03",
+        "surface_form": "화용",
+        "display_form": "화용",
+        "grammatical_features": {},
+        "is_lemma": true,
+        "is_preferred": true,
+        "cefr": "C2",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_register_orchestration_04",
+      "data": {
+        "slug": "ko_c2_register_orchestration_joryul",
+        "lesson_key": "c2-ko-register-orchestration-02",
+        "concept_type": "lexical",
+        "part_of_speech": "verb",
+        "forms": {
+          "ko": "조율하다"
+        },
+        "translations": {
+          "fa": "تنظیم و هماهنگ کردن"
+        },
+        "cefr": "C2",
+        "topic": "requests",
+        "tags": [
+          "core",
+          "beginner",
+          "high_frequency"
+        ],
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_register_orchestration_04",
+      "data": {
+        "lesson_key": "c2-ko-register-orchestration-02",
+        "lemma": "조율하다",
+        "display_lemma": "조율하다",
+        "language": "ko",
+        "language_variant": "ko-KR",
+        "part_of_speech": "verb",
+        "concept_refs": [
+          "ko_c2_register_orchestration_joryul"
+        ],
+        "cefr": "C2",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_register_orchestration_04",
+      "data": {
+        "lesson_key": "c2-ko-register-orchestration-02",
+        "lexeme_ref": "lx_register_orchestration_04",
+        "surface_form": "조율하다",
+        "display_form": "조율하다",
+        "grammatical_features": {},
+        "is_lemma": true,
+        "is_preferred": true,
+        "cefr": "C2",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_register_orchestration_05",
+      "data": {
+        "slug": "ko_c2_register_orchestration_jeolje",
+        "lesson_key": "c2-ko-register-orchestration-02",
+        "concept_type": "lexical",
+        "part_of_speech": "verb",
+        "forms": {
+          "ko": "절제하다"
+        },
+        "translations": {
+          "fa": "مهار و کنترل کردن"
+        },
+        "cefr": "C2",
+        "topic": "requests",
+        "tags": [
+          "core",
+          "beginner",
+          "high_frequency"
+        ],
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_register_orchestration_05",
+      "data": {
+        "lesson_key": "c2-ko-register-orchestration-02",
+        "lemma": "절제하다",
+        "display_lemma": "절제하다",
+        "language": "ko",
+        "language_variant": "ko-KR",
+        "part_of_speech": "verb",
+        "concept_refs": [
+          "ko_c2_register_orchestration_jeolje"
+        ],
+        "cefr": "C2",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_register_orchestration_05",
+      "data": {
+        "lesson_key": "c2-ko-register-orchestration-02",
+        "lexeme_ref": "lx_register_orchestration_05",
+        "surface_form": "절제하다",
+        "display_form": "절제하다",
+        "grammatical_features": {},
+        "is_lemma": true,
+        "is_preferred": true,
+        "cefr": "C2",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_register_orchestration_06",
+      "data": {
+        "slug": "ko_c2_register_orchestration_seon",
+        "lesson_key": "c2-ko-register-orchestration-02",
+        "concept_type": "lexical",
+        "part_of_speech": "verb",
+        "forms": {
+          "ko": "선을 긋다"
+        },
+        "translations": {
+          "fa": "مرزبندی کردن"
+        },
+        "cefr": "C2",
+        "topic": "requests",
+        "tags": [
+          "core",
+          "beginner",
+          "high_frequency"
+        ],
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_register_orchestration_06",
+      "data": {
+        "lesson_key": "c2-ko-register-orchestration-02",
+        "lemma": "선을 긋다",
+        "display_lemma": "선을 긋다",
+        "language": "ko",
+        "language_variant": "ko-KR",
+        "part_of_speech": "verb",
+        "concept_refs": [
+          "ko_c2_register_orchestration_seon"
+        ],
+        "cefr": "C2",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_register_orchestration_06",
+      "data": {
+        "lesson_key": "c2-ko-register-orchestration-02",
+        "lexeme_ref": "lx_register_orchestration_06",
+        "surface_form": "선을 긋다",
+        "display_form": "선을 긋다",
+        "grammatical_features": {},
+        "is_lemma": true,
+        "is_preferred": true,
+        "cefr": "C2",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_register_orchestration_01",
+      "data": {
+        "lesson_key": "c2-ko-register-orchestration-01",
+        "text": {
+          "ko": "격식을 높이는 것만으로는 관계의 미묘한 거리감을 제대로 표현하기 어렵습니다."
+        },
+        "translations": {
+          "fa": "صرفاً رسمی‌تر حرف زدن برای نشان دادن فاصله ظریف رابطه کافی نیست."
+        },
+        "intent": "register_control",
+        "concept_refs": [
+          "ko_c2_register_orchestration_geori"
+        ],
+        "cefr": "C2",
+        "topic": "requests",
+        "register": "polite",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_register_orchestration_02",
+      "data": {
+        "lesson_key": "c2-ko-register-orchestration-01",
+        "text": {
+          "ko": "굳이 표현하자면 동의라기보다 상대의 입장을 존중한다는 신호에 가까워요."
+        },
+        "translations": {
+          "fa": "اگر بخواهیم دقیق بگوییم، بیشتر از موافقت، نشانه احترام به موضع طرف مقابل است."
+        },
+        "intent": "metapragmatics",
+        "concept_refs": [
+          "ko_c2_register_orchestration_taedo"
+        ],
+        "cefr": "C2",
+        "topic": "requests",
+        "register": "polite",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_register_orchestration_03",
+      "data": {
+        "lesson_key": "c2-ko-register-orchestration-02",
+        "text": {
+          "ko": "한 대화 안에서도 책임을 분명히 할 때와 관계를 보존할 때의 말투를 다르게 조율할 수 있어요."
+        },
+        "translations": {
+          "fa": "حتی در یک گفت‌وگو می‌توان لحن را برای روشن‌کردن مسئولیت و حفظ رابطه متفاوت تنظیم کرد."
+        },
+        "intent": "style_shift",
+        "concept_refs": [
+          "ko_c2_register_orchestration_joryul"
+        ],
+        "cefr": "C2",
+        "topic": "requests",
+        "register": "polite",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_register_orchestration_04",
+      "data": {
+        "lesson_key": "c2-ko-register-orchestration-02",
+        "text": {
+          "ko": "직설을 피하더라도 핵심 쟁점에서 선을 흐리면 안 됩니다."
+        },
+        "translations": {
+          "fa": "حتی اگر از صراحت تند پرهیز کنیم، نباید مرز مسئله اصلی را محو کنیم."
+        },
+        "intent": "boundary",
+        "concept_refs": [
+          "ko_c2_register_orchestration_seon"
+        ],
+        "cefr": "C2",
+        "topic": "requests",
+        "register": "polite",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "grammar_point",
+      "external_id": "g_register_orchestration_core",
+      "data": {
+        "lesson_key": "c2-ko-register-orchestration-01",
+        "slug": "c2-ko-register-orchestration-grammar",
+        "title": "담화 수준의 말투 조율",
+        "rule_summary": "At C2, register choice is dynamic: speakers may shift speech level, explicitness and stance within one interaction while preserving social meaning.",
+        "explanation": {
+          "fa": "در C2 انتخاب لحن ثابت نیست؛ گوینده می‌تواند در یک تعامل سطح احترام، صراحت و موضع را تغییر دهد، بدون اینکه معنای اجتماعی رابطه از بین برود."
+        },
+        "examples": [
+          {
+            "ko": "조심스럽게 말씀드리자면 이 부분은 책임 범위를 다시 정해야 할 것 같습니다.",
+            "fa": "اگر با احتیاط عرض کنم، به نظر می‌رسد باید دامنه مسئولیت این بخش دوباره تعیین شود."
+          },
+          {
+            "ko": "그 점은 인정하겠습니다. 다만 여기서부터는 제 판단의 영역입니다.",
+            "fa": "آن نکته را می‌پذیرم؛ اما از اینجا به بعد در حوزه قضاوت من است."
+          }
+        ],
+        "cefr": "C2",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "dialogue",
+      "external_id": "d_register_orchestration_01",
+      "data": {
+        "lesson_key": "c2-ko-register-orchestration-01",
+        "title": "격식과 거리 조절",
+        "setting": "item",
+        "cefr": "C2",
+        "topic": "requests",
+        "characters": [
+          "지민",
+          "민수"
+        ],
+        "turns": [
+          {
+            "order": 1,
+            "speaker": "지민",
+            "text": "이견을 바로 지적하면 상대가 방어적으로 나오지 않을까요?",
+            "translation_fa": "اگر اختلاف‌نظر را مستقیم مطرح کنیم، طرف مقابل حالت دفاعی نمی‌گیرد؟"
+          },
+          {
+            "order": 2,
+            "speaker": "민수",
+            "text": "처음에는 공통점을 인정하고, 책임이 걸린 부분에서만 표현을 단단하게 하는 게 좋겠습니다.",
+            "translation_fa": "بهتر است اول نقاط مشترک را بپذیریم و فقط جایی که مسئولیت مطرح است بیان را محکم‌تر کنیم."
+          },
+          {
+            "order": 3,
+            "speaker": "지민",
+            "text": "말투를 바꾸되 입장 자체를 약하게 만들지는 말자는 거군요.",
+            "translation_fa": "یعنی لحن را تغییر دهیم ولی خود موضع را ضعیف نکنیم."
+          },
+          {
+            "order": 4,
+            "speaker": "민수",
+            "text": "맞습니다. 관계와 쟁점을 따로 조율해야 합니다.",
+            "translation_fa": "دقیقاً؛ باید رابطه و مسئله را جداگانه تنظیم کنیم."
+          }
+        ],
+        "qa": {
+          "character_pair_unique_within_unit": true,
+          "naturalness": "passed",
+          "single_situation": true
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "dialogue",
+      "external_id": "d_register_orchestration_02",
+      "data": {
+        "lesson_key": "c2-ko-register-orchestration-02",
+        "title": "친밀함 속의 경계",
+        "setting": "item",
+        "cefr": "C2",
+        "topic": "requests",
+        "characters": [
+          "서연",
+          "준호"
+        ],
+        "turns": [
+          {
+            "order": 1,
+            "speaker": "서연",
+            "text": "우리가 친하니까 이 정도 부탁은 당연하다고 생각했어요.",
+            "translation_fa": "فکر می‌کردم چون صمیمی هستیم چنین درخواستی طبیعی است."
+          },
+          {
+            "order": 2,
+            "speaker": "준호",
+            "text": "친한 건 맞지만 업무 책임까지 자동으로 공유되는 건 아니잖아요.",
+            "translation_fa": "صمیمی هستیم، اما مسئولیت کاری خودبه‌خود مشترک نمی‌شود."
+          },
+          {
+            "order": 3,
+            "speaker": "서연",
+            "text": "그럼 관계를 상하게 하지 않으면서 선을 분명히 해야겠네요.",
+            "translation_fa": "پس باید بدون آسیب‌زدن به رابطه مرز را روشن کنم."
+          },
+          {
+            "order": 4,
+            "speaker": "준호",
+            "text": "네, 그게 오히려 오래 가는 관계에 도움이 됩니다.",
+            "translation_fa": "بله، همین برای دوام رابطه بهتر است."
+          }
+        ],
+        "qa": {
+          "character_pair_unique_within_unit": true,
+          "naturalness": "passed",
+          "single_situation": true
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_register_orchestration_01_meaning",
+      "data": {
+        "lesson_key": "c2-ko-register-orchestration-01",
+        "exercise_type": "multiple_choice",
+        "prompt": {
+          "instruction_fa": "معنی درست این عبارت کره‌ای را انتخاب کن.",
+          "value": "격식을 높이는 것만으로는 관계의 미묘한 거리감을 제대로 표현하기 어렵습니다."
+        },
+        "answer": {
+          "value": "صرفاً رسمی‌تر حرف زدن برای نشان دادن فاصله ظریف رابطه کافی نیست."
+        },
+        "options": [
+          "صرفاً رسمی‌تر حرف زدن برای نشان دادن فاصله ظریف رابطه کافی نیست.",
+          "اگر بخواهیم دقیق بگوییم، بیشتر از موافقت، نشانه احترام به موضع طرف مقابل است.",
+          "حتی در یک گفت‌وگو می‌توان لحن را برای روشن‌کردن مسئولیت و حفظ رابطه متفاوت تنظیم کرد.",
+          "حتی اگر از صراحت تند پرهیز کنیم، نباید مرز مسئله اصلی را محو کنیم."
+        ],
+        "difficulty": 5,
+        "cefr": "C2",
+        "topic": "requests",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت و شکل دقیق عبارت کره‌ای دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: 격식을 높이는 것만으로는 관계의 미묘한 거리감을 제대로 표현하기 어렵습니다. — صرفاً رسمی‌تر حرف زدن برای نشان دادن فاصله ظریف رابطه کافی نیست.",
+          "model_answer": "격식을 높이는 것만으로는 관계의 미묘한 거리감을 제대로 표현하기 어렵습니다."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_register_orchestration_01_listen",
+      "data": {
+        "lesson_key": "c2-ko-register-orchestration-01",
+        "exercise_type": "listening",
+        "prompt": {
+          "instruction_fa": "گوش کن و عبارتی را که شنیدی انتخاب کن.",
+          "audio_text": "굳이 표현하자면 동의라기보다 상대의 입장을 존중한다는 신호에 가까워요."
+        },
+        "answer": {
+          "value": "굳이 표현하자면 동의라기보다 상대의 입장을 존중한다는 신호에 가까워요."
+        },
+        "options": [
+          "굳이 표현하자면 동의라기보다 상대의 입장을 존중한다는 신호에 가까워요.",
+          "격식을 높이는 것만으로는 관계의 미묘한 거리감을 제대로 표현하기 어렵습니다.",
+          "한 대화 안에서도 책임을 분명히 할 때와 관계를 보존할 때의 말투를 다르게 조율할 수 있어요.",
+          "직설을 피하더라도 핵심 쟁점에서 선을 흐리면 안 됩니다."
+        ],
+        "difficulty": 5,
+        "cefr": "C2",
+        "topic": "requests",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت و شکل دقیق عبارت کره‌ای دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: 굳이 표현하자면 동의라기보다 상대의 입장을 존중한다는 신호에 가까워요. — اگر بخواهیم دقیق بگوییم، بیشتر از موافقت، نشانه احترام به موضع طرف مقابل است.",
+          "model_answer": "굳이 표현하자면 동의라기보다 상대의 입장을 존중한다는 신호에 가까워요.",
+          "transcript_ko": "굳이 표현하자면 동의라기보다 상대의 입장을 존중한다는 신호에 가까워요."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_register_orchestration_01_speak",
+      "data": {
+        "lesson_key": "c2-ko-register-orchestration-01",
+        "exercise_type": "speaking",
+        "prompt": {
+          "instruction_fa": "عبارت را با صدای بلند و با ریتم طبیعی تکرار کن.",
+          "value": "격식을 높이는 것만으로는 관계의 미묘한 거리감을 제대로 표현하기 어렵습니다."
+        },
+        "answer": {
+          "expected_text": "격식을 높이는 것만으로는 관계의 미묘한 거리감을 제대로 표현하기 어렵습니다."
+        },
+        "difficulty": 5,
+        "cefr": "C2",
+        "topic": "requests",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت و شکل دقیق عبارت کره‌ای دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: 격식을 높이는 것만으로는 관계의 미묘한 거리감을 제대로 표현하기 어렵습니다. — صرفاً رسمی‌تر حرف زدن برای نشان دادن فاصله ظریف رابطه کافی نیست.",
+          "model_answer": "격식을 높이는 것만으로는 관계의 미묘한 거리감을 제대로 표현하기 어렵습니다."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_register_orchestration_01_build",
+      "data": {
+        "lesson_key": "c2-ko-register-orchestration-01",
+        "exercise_type": "sentence_building",
+        "prompt": {
+          "instruction_fa": "بخش‌ها را لمس کن تا عبارت درست ساخته شود.",
+          "tokens": [
+            "표현하자면",
+            "동의라기보다",
+            "상대의",
+            "입장을",
+            "존중한다는",
+            "신호에",
+            "가까워요.",
+            "굳이"
+          ]
+        },
+        "answer": {
+          "tokens": [
+            "굳이",
+            "표현하자면",
+            "동의라기보다",
+            "상대의",
+            "입장을",
+            "존중한다는",
+            "신호에",
+            "가까워요."
+          ],
+          "value": "굳이 표현하자면 동의라기보다 상대의 입장을 존중한다는 신호에 가까워요."
+        },
+        "difficulty": 5,
+        "cefr": "C2",
+        "topic": "requests",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت و شکل دقیق عبارت کره‌ای دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: 굳이 표현하자면 동의라기보다 상대의 입장을 존중한다는 신호에 가까워요. — اگر بخواهیم دقیق بگوییم، بیشتر از موافقت، نشانه احترام به موضع طرف مقابل است.",
+          "model_answer": "굳이 표현하자면 동의라기보다 상대의 입장을 존중한다는 신호에 가까워요."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_register_orchestration_01_dialogue",
+      "data": {
+        "lesson_key": "c2-ko-register-orchestration-01",
+        "exercise_type": "dialogue_comprehension",
+        "prompt": {
+          "instruction_fa": "با توجه به گفت‌وگو، پاسخ مناسب را انتخاب کن.",
+          "source_dialogue_ref": "d_register_orchestration_01",
+          "question_fa": "کدام گزینه با معنی «صرفاً رسمی‌تر حرف زدن برای نشان دادن فاصله ظریف رابطه کافی نیست.» هماهنگ است؟"
+        },
+        "answer": {
+          "value": "격식을 높이는 것만으로는 관계의 미묘한 거리감을 제대로 표현하기 어렵습니다."
+        },
+        "options": [
+          "격식을 높이는 것만으로는 관계의 미묘한 거리감을 제대로 표현하기 어렵습니다.",
+          "굳이 표현하자면 동의라기보다 상대의 입장을 존중한다는 신호에 가까워요.",
+          "한 대화 안에서도 책임을 분명히 할 때와 관계를 보존할 때의 말투를 다르게 조율할 수 있어요.",
+          "직설을 피하더라도 핵심 쟁점에서 선을 흐리면 안 됩니다."
+        ],
+        "difficulty": 5,
+        "cefr": "C2",
+        "topic": "requests",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت و شکل دقیق عبارت کره‌ای دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: 격식을 높이는 것만으로는 관계의 미묘한 거리감을 제대로 표현하기 어렵습니다. — صرفاً رسمی‌تر حرف زدن برای نشان دادن فاصله ظریف رابطه کافی نیست.",
+          "model_answer": "격식을 높이는 것만으로는 관계의 미묘한 거리감을 제대로 표현하기 어렵습니다."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_register_orchestration_02_meaning",
+      "data": {
+        "lesson_key": "c2-ko-register-orchestration-02",
+        "exercise_type": "multiple_choice",
+        "prompt": {
+          "instruction_fa": "معنی درست این عبارت کره‌ای را انتخاب کن.",
+          "value": "한 대화 안에서도 책임을 분명히 할 때와 관계를 보존할 때의 말투를 다르게 조율할 수 있어요."
+        },
+        "answer": {
+          "value": "حتی در یک گفت‌وگو می‌توان لحن را برای روشن‌کردن مسئولیت و حفظ رابطه متفاوت تنظیم کرد."
+        },
+        "options": [
+          "حتی در یک گفت‌وگو می‌توان لحن را برای روشن‌کردن مسئولیت و حفظ رابطه متفاوت تنظیم کرد.",
+          "صرفاً رسمی‌تر حرف زدن برای نشان دادن فاصله ظریف رابطه کافی نیست.",
+          "اگر بخواهیم دقیق بگوییم، بیشتر از موافقت، نشانه احترام به موضع طرف مقابل است.",
+          "حتی اگر از صراحت تند پرهیز کنیم، نباید مرز مسئله اصلی را محو کنیم."
+        ],
+        "difficulty": 5,
+        "cefr": "C2",
+        "topic": "requests",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت و شکل دقیق عبارت کره‌ای دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: 한 대화 안에서도 책임을 분명히 할 때와 관계를 보존할 때의 말투를 다르게 조율할 수 있어요. — حتی در یک گفت‌وگو می‌توان لحن را برای روشن‌کردن مسئولیت و حفظ رابطه متفاوت تنظیم کرد.",
+          "model_answer": "한 대화 안에서도 책임을 분명히 할 때와 관계를 보존할 때의 말투를 다르게 조율할 수 있어요."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_register_orchestration_02_listen",
+      "data": {
+        "lesson_key": "c2-ko-register-orchestration-02",
+        "exercise_type": "listening",
+        "prompt": {
+          "instruction_fa": "گوش کن و عبارتی را که شنیدی انتخاب کن.",
+          "audio_text": "직설을 피하더라도 핵심 쟁점에서 선을 흐리면 안 됩니다."
+        },
+        "answer": {
+          "value": "직설을 피하더라도 핵심 쟁점에서 선을 흐리면 안 됩니다."
+        },
+        "options": [
+          "직설을 피하더라도 핵심 쟁점에서 선을 흐리면 안 됩니다.",
+          "한 대화 안에서도 책임을 분명히 할 때와 관계를 보존할 때의 말투를 다르게 조율할 수 있어요.",
+          "격식을 높이는 것만으로는 관계의 미묘한 거리감을 제대로 표현하기 어렵습니다.",
+          "굳이 표현하자면 동의라기보다 상대의 입장을 존중한다는 신호에 가까워요."
+        ],
+        "difficulty": 5,
+        "cefr": "C2",
+        "topic": "requests",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت و شکل دقیق عبارت کره‌ای دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: 직설을 피하더라도 핵심 쟁점에서 선을 흐리면 안 됩니다. — حتی اگر از صراحت تند پرهیز کنیم، نباید مرز مسئله اصلی را محو کنیم.",
+          "model_answer": "직설을 피하더라도 핵심 쟁점에서 선을 흐리면 안 됩니다.",
+          "transcript_ko": "직설을 피하더라도 핵심 쟁점에서 선을 흐리면 안 됩니다."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_register_orchestration_02_speak",
+      "data": {
+        "lesson_key": "c2-ko-register-orchestration-02",
+        "exercise_type": "speaking",
+        "prompt": {
+          "instruction_fa": "عبارت را با صدای بلند و با ریتم طبیعی تکرار کن.",
+          "value": "한 대화 안에서도 책임을 분명히 할 때와 관계를 보존할 때의 말투를 다르게 조율할 수 있어요."
+        },
+        "answer": {
+          "expected_text": "한 대화 안에서도 책임을 분명히 할 때와 관계를 보존할 때의 말투를 다르게 조율할 수 있어요."
+        },
+        "difficulty": 5,
+        "cefr": "C2",
+        "topic": "requests",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت و شکل دقیق عبارت کره‌ای دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: 한 대화 안에서도 책임을 분명히 할 때와 관계를 보존할 때의 말투를 다르게 조율할 수 있어요. — حتی در یک گفت‌وگو می‌توان لحن را برای روشن‌کردن مسئولیت و حفظ رابطه متفاوت تنظیم کرد.",
+          "model_answer": "한 대화 안에서도 책임을 분명히 할 때와 관계를 보존할 때의 말투를 다르게 조율할 수 있어요."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_register_orchestration_02_build",
+      "data": {
+        "lesson_key": "c2-ko-register-orchestration-02",
+        "exercise_type": "sentence_building",
+        "prompt": {
+          "instruction_fa": "بخش‌ها را لمس کن تا عبارت درست ساخته شود.",
+          "tokens": [
+            "피하더라도",
+            "핵심",
+            "쟁점에서",
+            "선을",
+            "흐리면",
+            "안",
+            "됩니다.",
+            "직설을"
+          ]
+        },
+        "answer": {
+          "tokens": [
+            "직설을",
+            "피하더라도",
+            "핵심",
+            "쟁점에서",
+            "선을",
+            "흐리면",
+            "안",
+            "됩니다."
+          ],
+          "value": "직설을 피하더라도 핵심 쟁점에서 선을 흐리면 안 됩니다."
+        },
+        "difficulty": 5,
+        "cefr": "C2",
+        "topic": "requests",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت و شکل دقیق عبارت کره‌ای دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: 직설을 피하더라도 핵심 쟁점에서 선을 흐리면 안 됩니다. — حتی اگر از صراحت تند پرهیز کنیم، نباید مرز مسئله اصلی را محو کنیم.",
+          "model_answer": "직설을 피하더라도 핵심 쟁점에서 선을 흐리면 안 됩니다."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_register_orchestration_02_dialogue",
+      "data": {
+        "lesson_key": "c2-ko-register-orchestration-02",
+        "exercise_type": "dialogue_comprehension",
+        "prompt": {
+          "instruction_fa": "با توجه به گفت‌وگو، پاسخ مناسب را انتخاب کن.",
+          "source_dialogue_ref": "d_register_orchestration_02",
+          "question_fa": "کدام گزینه با معنی «حتی در یک گفت‌وگو می‌توان لحن را برای روشن‌کردن مسئولیت و حفظ رابطه متفاوت تنظیم کرد.» هماهنگ است؟"
+        },
+        "answer": {
+          "value": "한 대화 안에서도 책임을 분명히 할 때와 관계를 보존할 때의 말투를 다르게 조율할 수 있어요."
+        },
+        "options": [
+          "한 대화 안에서도 책임을 분명히 할 때와 관계를 보존할 때의 말투를 다르게 조율할 수 있어요.",
+          "격식을 높이는 것만으로는 관계의 미묘한 거리감을 제대로 표현하기 어렵습니다.",
+          "굳이 표현하자면 동의라기보다 상대의 입장을 존중한다는 신호에 가까워요.",
+          "직설을 피하더라도 핵심 쟁점에서 선을 흐리면 안 됩니다."
+        ],
+        "difficulty": 5,
+        "cefr": "C2",
+        "topic": "requests",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت و شکل دقیق عبارت کره‌ای دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: 한 대화 안에서도 책임을 분명히 할 때와 관계를 보존할 때의 말투를 다르게 조율할 수 있어요. — حتی در یک گفت‌وگو می‌توان لحن را برای روشن‌کردن مسئولیت و حفظ رابطه متفاوت تنظیم کرد.",
+          "model_answer": "한 대화 안에서도 책임을 분명히 할 때와 관계를 보존할 때의 말투를 다르게 조율할 수 있어요."
+        },
+        "status": "validated"
+      }
+    }
+  ]
+}
