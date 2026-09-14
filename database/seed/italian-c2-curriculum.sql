@@ -1,0 +1,16 @@
+-- Standard Italian C2 curriculum, batch 1, for Persian-speaking learners.
+INSERT IGNORE INTO curriculum_units (course_id,target_language_id,cefr_level_id,skill_id,topic_id,slug,title,learning_objective,sort_order,expected_lessons,status,metadata)
+SELECT c.id,c.target_language_id,lvl.id,s.id,t.id,u.slug,u.title,u.objective,u.sort_order,2,'approved',JSON_OBJECT('language_specific',TRUE,'target_variant','it-IT','batch',1,'grammar_focus',u.grammar_focus)
+FROM (
+ SELECT 610 sort_order,'communication' skill_slug,'simple-messages' topic_slug,'c2-it-inferential-precision' slug,'Da ciò non consegue necessariamente che...' title,'Distinguish warranted inference from suggestion with C2 epistemic precision.' objective,'inference, implication and epistemic restriction' grammar_focus
+ UNION ALL SELECT 620,'social','likes-dislikes','c2-it-irony-and-understatement','Dire meno per far capire di più','Interpret and mediate irony, litotes and understatement across contexts.','irony, litotes and pragmatic meaning'
+ UNION ALL SELECT 630,'time-plans','future-plans','c2-it-counterfactual-reasoning','Se fosse andata diversamente, oggi parleremmo d’altro','Construct and evaluate mixed counterfactual reasoning without hindsight bias.','mixed conditionals and counterfactual reasoning'
+ UNION ALL SELECT 640,'communication','requests','c2-it-institutional-register','Si ritiene opportuno procedere con ulteriore istruttoria','Interpret institutional obligations, permissions and procedural stance precisely.','institutional register and deontic modality'
+ UNION ALL SELECT 650,'communication','simple-messages','c2-it-academic-critique','Una sintesi fedele può essere anche critica','Synthesize arguments faithfully before evaluating evidence, scope and limits.','critical synthesis and evidence hierarchy'
+ UNION ALL SELECT 660,'communication','requests','c2-it-strategic-ambiguity','Lasciare margine senza promettere troppo','Manage possibility, intention and commitment in advanced negotiation.','negotiation modality and controlled ambiguity'
+ UNION ALL SELECT 670,'daily-life','common-actions','c2-it-cultural-intertextuality','Capire ciò che il testo dà per condiviso','Recognize cultural intertextuality and mediate implicit references for new audiences.','intertextuality and cultural mediation'
+ UNION ALL SELECT 680,'communication','simple-messages','c2-it-stylistic-editing','Scrivere meno, far funzionare meglio il testo','Edit advanced prose for cohesion, rhythm and information flow beyond grammar.','C2 editing, cohesion and rhythm'
+ UNION ALL SELECT 690,'social','likes-dislikes','c2-it-high-stakes-debate','Intervenire con precisione sotto pressione','Correct, reframe and counterargue precisely in rapid high-stakes discussion.','advanced turn-taking and live correction'
+ UNION ALL SELECT 700,'time-plans','future-plans','c2-it-c2-public-panel-capstone','Una posizione complessa, sostenuta e riformulata in tempo reale','Integrate C2 inference, mediation, debate management and stylistic control.','C2 integrated discourse capstone'
+) u
+JOIN courses c ON c.slug='fa-it-it' JOIN cefr_levels lvl ON lvl.code='C2' JOIN skills s ON s.slug=u.skill_slug JOIN topics t ON t.slug=u.topic_slug AND t.skill_id=s.id;
