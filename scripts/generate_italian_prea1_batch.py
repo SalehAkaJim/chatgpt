@@ -27,12 +27,7 @@ def feedback(fa: str, it: str) -> dict:
 
 
 def repair_spec(payload: dict, spec_path: Path) -> bool:
-    """Apply only known deterministic authoring corrections before generation.
-
-    The final conversation originally pointed at a concept key from another unit.
-    Cross-unit concept linkage is not part of the compact Pre-A1 generator contract,
-    so that optional pedagogical ref is removed while keeping the utterance intact.
-    """
+    """Apply only known deterministic authoring corrections before generation."""
     changed = False
     for unit in payload.get('units', []):
         if unit.get('slug') != 'first-conversation':
@@ -62,7 +57,8 @@ def build_unit(spec: dict) -> dict:
         utterances.append({'key':key,'it':it,'fa':fa,'lesson':lesson})
         items.append({'kind':'utterance','external_id':f'u_{prefix}_{idx:02d}','data':status({'lesson_key':f'{unit_slug}-{lesson:02d}','text':{'it':it},'translations':{'fa':fa},'intent':intent,'concept_refs':[concept_slugs[r] for r in refs],'cefr':'Pre-A1','topic':topic,'register':'neutral'})})
     g=spec['grammar']
-    items.append({'kind':'grammar_point','external_id':f'g_{prefix}_core','data':status({'lesson_key':f'{unit_slug}-01','slug':f'{unit_slug}-grammar','title':g[0],'rule_summary':g[1],'explanation':{'fa':g[2]},'examples':[{'it':it,'fa':fa} for it,fa in g[3]],'cefr':'Pre-A1'})})
+    grammar_lesson=min((u['lesson'] for u in utterances), default=1)
+    items.append({'kind':'grammar_point','external_id':f'g_{prefix}_core','data':status({'lesson_key':f'{unit_slug}-{grammar_lesson:02d}','slug':f'{unit_slug}-grammar','title':g[0],'rule_summary':g[1],'explanation':{'fa':g[2]},'examples':[{'it':it,'fa':fa} for it,fa in g[3]],'cefr':'Pre-A1'})})
     dialogue_ids={}
     for idx,row in enumerate(spec['dialogues'],1):
         title,setting,turns,lesson=row; chars=[]; trs=[]
@@ -71,9 +67,13 @@ def build_unit(spec: dict) -> dict:
             trs.append({'order':order,'speaker':speaker,'text':it,'translation_fa':fa})
         did=f'd_{prefix}_{idx:02d}'; dialogue_ids[lesson]=did
         items.append({'kind':'dialogue','external_id':did,'data':status({'lesson_key':f'{unit_slug}-{lesson:02d}','title':title,'setting':safe(setting),'cefr':'Pre-A1','topic':topic,'characters':chars,'turns':trs,'qa':{'character_pair_unique_within_unit':True,'naturalness':'passed','single_situation':True}})})
-    for lesson in (1,2):
+    lesson_ids=sorted({u['lesson'] for u in utterances})
+    if not lesson_ids:
+        raise ValueError(f'{slug}: at least one lesson with utterances is required')
+    for lesson in lesson_ids:
         lu=[u for u in utterances if u['lesson']==lesson]
         if len(lu)<2: raise ValueError(f'{slug}: lesson {lesson} needs at least two utterances')
+        if lesson not in dialogue_ids: raise ValueError(f'{slug}: lesson {lesson} needs a dialogue for comprehension practice')
         a,b=lu[:2]; other_it=[u['it'] for u in utterances if u['it']!=a['it']]; other_fa=[u['fa'] for u in utterances if u['fa']!=a['fa']]
         it_opts=[a['it']]+other_it[:3]; fa_opts=[a['fa']]+other_fa[:3]; lk=f'{unit_slug}-{lesson:02d}'; base=f'e_{prefix}_{lesson:02d}'
         items.append({'kind':'exercise','external_id':base+'_meaning','data':status({'lesson_key':lk,'exercise_type':'multiple_choice','prompt':{'instruction_fa':'معنی درست این عبارت ایتالیایی را انتخاب کن.','value':a['it']},'answer':{'value':a['fa']},'options':fa_opts,'difficulty':1,'cefr':'Pre-A1','topic':topic,'feedback':feedback(a['fa'],a['it'])})})
@@ -82,18 +82,22 @@ def build_unit(spec: dict) -> dict:
         tokens=b['it'].split(); shuffled=tokens[1:]+tokens[:1] if len(tokens)>1 else tokens
         items.append({'kind':'exercise','external_id':base+'_build','data':status({'lesson_key':lk,'exercise_type':'sentence_building','prompt':{'instruction_fa':'کلمه‌ها را لمس کن تا عبارت درست ساخته شود.','tokens':shuffled},'answer':{'tokens':tokens,'value':b['it']},'difficulty':1,'cefr':'Pre-A1','topic':topic,'feedback':feedback(b['fa'],b['it'])})})
         items.append({'kind':'exercise','external_id':base+'_dialogue','data':status({'lesson_key':lk,'exercise_type':'dialogue_comprehension','prompt':{'instruction_fa':'با توجه به گفت‌وگو، پاسخ مناسب را انتخاب کن.','source_dialogue_ref':dialogue_ids[lesson],'question_fa':f'کدام گزینه با معنی «{a["fa"]}» هماهنگ است؟'},'answer':{'value':a['it']},'options':it_opts,'difficulty':1,'cefr':'Pre-A1','topic':topic,'feedback':feedback(a['fa'],a['it'])})})
-    return {'batch_id':f'it-it-prea1-{slug}-v1','course':'fa-it-it','learner_language':'fa','learner_variant':'fa-IR','target_language':'it','target_variant':'it-IT','cefr':'Pre-A1','curriculum_unit':unit_slug,'generator':'gpt-5.6-sol:italian-prea1-batch-v1','items':items}
+    return {'batch_id':f'it-it-prea1-{slug}-v1','course':'fa-it-it','learner_language':'fa','learner_variant':'fa-IR','target_language':'it','target_variant':'it-IT','cefr':'Pre-A1','curriculum_unit':unit_slug,'generator':'gpt-5.6-sol:italian-prea1-batch-v2','items':items}
 
 
 def main():
     ap=argparse.ArgumentParser(); ap.add_argument('--spec',type=Path,default=ROOT/'content/specs/it/Pre-A1/batch-01.json'); args=ap.parse_args()
     payload=json.loads(args.spec.read_text(encoding='utf-8')); repaired=repair_spec(payload,args.spec); units=payload.get('units',[])
-    expected=['first-greetings','my-name','numbers-0-10','alphabet','first-sounds','how-are-you','first-objects','polite-words','survival-words','first-conversation']
-    actual=[u.get('slug') for u in units]
-    if len(units)!=10 or actual!=expected: raise SystemExit(f'Unexpected Italian Pre-A1 unit sequence: {actual}')
+    if not units:
+        raise SystemExit('Italian Pre-A1 spec contains no units')
+    slugs=[u.get('slug') for u in units]
+    if any(not slug for slug in slugs):
+        raise SystemExit(f'Italian Pre-A1 contains a unit without a slug: {slugs}')
+    if len(set(slugs)) != len(slugs):
+        raise SystemExit(f'Italian Pre-A1 contains duplicate unit slugs: {slugs}')
     outdir=ROOT/'content/production/it/Pre-A1'; outdir.mkdir(parents=True,exist_ok=True); written=[]
     for spec in units:
         batch=build_unit(spec); out=outdir/f'prea1-it-{spec["slug"]}-v1.json'; out.write_text(json.dumps(batch,ensure_ascii=False,indent=2)+'\n',encoding='utf-8'); written.append({'file':out.name,'items':len(batch['items'])})
-    print(json.dumps({'level':'Pre-A1','spec_repaired':repaired,'units':len(written),'written':written},ensure_ascii=False,indent=2))
+    print(json.dumps({'level':'Pre-A1','spec_repaired':repaired,'units_generated_from_spec':len(written),'written':written},ensure_ascii=False,indent=2))
 
 if __name__=='__main__': main()

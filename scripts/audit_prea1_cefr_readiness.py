@@ -1,10 +1,10 @@
 #!/usr/bin/env python3
-"""Cross-language educational QA for completed Persian->target Pre-A1 courses.
+"""Cross-language educational QA for Persian->target Pre-A1 courses.
 
-This complements structural validators with can-do coverage checks. It intentionally
-checks for the domains that were missing in the first zero-learner build: personal
-information, real-life numbers, functional visual reading, open writing, personalized
-speaking and communication repair.
+The audit is capability-driven rather than curriculum-size-driven. It intentionally
+does not encode expected unit counts, lesson counts, batch sizes, or round-number
+targets. A course passes by demonstrating the real-world Pre-A1 capabilities that
+matter for an absolute beginner.
 """
 from __future__ import annotations
 
@@ -15,39 +15,55 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 
 COURSES = {
-    "en": {"variant": "en-US", "course": "fa-en-us", "units": 17, "lessons": 32},
-    "de": {"variant": "de-DE", "course": "fa-de-de", "units": 17, "lessons": 33},
-    "tr": {"variant": "tr-TR", "course": "fa-tr-tr", "units": 18, "lessons": 35},
-    "ko": {"variant": "ko-KR", "course": "fa-ko-kr", "units": 18, "lessons": 35},
+    "en": {"variant": "en-US", "course": "fa-en-us"},
+    "de": {"variant": "de-DE", "course": "fa-de-de"},
+    "tr": {"variant": "tr-TR", "course": "fa-tr-tr"},
+    "ko": {"variant": "ko-KR", "course": "fa-ko-kr"},
+    "it": {"variant": "it-IT", "course": "fa-it-it"},
 }
 
-NEW_SUFFIXES = ("about-me", "real-life-numbers", "forms-signs", "real-world-gate")
+REQUIRED_INTENTS = {
+    "state_origin",
+    "state_age",
+    "give_phone_number",
+    "state_price",
+    "state_date",
+    "read_form_field",
+    "ask_exit",
+}
+
 errors: list[str] = []
 report: dict[str, dict] = {}
 
 for lang, spec in COURSES.items():
     directory = ROOT / "content" / "production" / lang / "Pre-A1"
     paths = sorted(directory.glob("*.json"))
+    if not paths:
+        errors.append(f"{lang}: no Pre-A1 production files found")
+        report[lang] = {"files": 0}
+        continue
+
     batches = [json.loads(p.read_text(encoding="utf-8")) for p in paths]
-    by_unit = {b.get("curriculum_unit"): b for b in batches}
-
-    if len(paths) != spec["units"]:
-        errors.append(f"{lang}: expected {spec['units']} Pre-A1 files, found {len(paths)}")
-
-    required_units = {f"prea1-{lang}-{suffix}" for suffix in NEW_SUFFIXES}
-    missing = sorted(required_units - set(by_unit))
-    if missing:
-        errors.append(f"{lang}: missing CEFR bridge units {missing}")
-
     lesson_keys: set[str] = set()
+    curriculum_units: set[str] = set()
     exercise_types = Counter()
     writing_rubrics = 0
     personalized_speaking_rubrics = 0
     visual_tasks = 0
+    repair_tasks = 0
     resolved_repair = 0
     outcomes = Counter()
+    intents: set[str] = set()
 
     for p, batch in zip(paths, batches):
+        unit = batch.get("curriculum_unit")
+        if not unit:
+            errors.append(f"{p}: missing curriculum_unit")
+        elif unit in curriculum_units:
+            errors.append(f"{lang}: duplicate curriculum_unit {unit}")
+        else:
+            curriculum_units.add(unit)
+
         if batch.get("course") != spec["course"]:
             errors.append(f"{p}: wrong course {batch.get('course')}")
         if batch.get("target_language") != lang or batch.get("target_variant") != spec["variant"]:
@@ -59,57 +75,83 @@ for lang, spec in COURSES.items():
 
         for obj in batch.get("items", []):
             data = obj.get("data", {})
-            if data.get("lesson_key"):
-                lesson_keys.add(data["lesson_key"])
+            lesson_key = data.get("lesson_key")
+            if lesson_key:
+                lesson_keys.add(lesson_key)
+
+            if obj.get("kind") == "utterance":
+                intent = data.get("intent")
+                if intent:
+                    intents.add(intent)
+
             if obj.get("kind") == "dialogue":
                 outcome = data.get("communication_outcome")
                 if outcome:
                     outcomes[outcome] += 1
                 if outcome == "meaning_resolved":
                     resolved_repair += 1
+                    repair_tasks += 1
+
             if obj.get("kind") != "exercise":
                 continue
+
             typ = data.get("exercise_type")
             exercise_types[typ] += 1
             prompt = data.get("prompt", {})
             answer = data.get("answer", {})
+            external_id = str(obj.get("external_id", "")).lower()
+
             if prompt.get("requires_visual_support") or prompt.get("visual_asset"):
                 visual_tasks += 1
             if typ == "writing" and answer.get("evaluation_mode") == "rubric":
                 writing_rubrics += 1
             if typ == "speaking" and prompt.get("personalized") is True and answer.get("evaluation_mode") == "rubric":
                 personalized_speaking_rubrics += 1
+            if "repair" in external_id:
+                repair_tasks += 1
 
-    if len(lesson_keys) != spec["lessons"]:
-        errors.append(f"{lang}: expected {spec['lessons']} unique lesson keys, found {len(lesson_keys)}")
-    if exercise_types["listening"] < spec["units"] - 2:
-        errors.append(f"{lang}: listening coverage is too sparse: {exercise_types['listening']}")
-    if exercise_types["speaking"] < spec["units"] - 2:
-        errors.append(f"{lang}: speaking coverage is too sparse: {exercise_types['speaking']}")
+    # Density scales with the curriculum that actually exists; there is no target size.
+    if exercise_types["listening"] < len(paths):
+        errors.append(f"{lang}: listening coverage is too sparse for {len(paths)} current units: {exercise_types['listening']}")
+    if exercise_types["speaking"] < len(paths):
+        errors.append(f"{lang}: speaking coverage is too sparse for {len(paths)} current units: {exercise_types['speaking']}")
+
+    missing_intents = sorted(REQUIRED_INTENTS - intents)
+    if missing_intents:
+        errors.append(f"{lang}: missing real-world Pre-A1 intents {missing_intents}")
+
     if writing_rubrics < 3:
-        errors.append(f"{lang}: expected at least 3 open writing tasks, found {writing_rubrics}")
+        errors.append(f"{lang}: open writing is too weak: {writing_rubrics} rubric tasks")
     if personalized_speaking_rubrics < 1:
-        errors.append(f"{lang}: final gate lacks personalized rubric-based speaking")
+        errors.append(f"{lang}: final readiness lacks personalized rubric-based speaking")
     if visual_tasks < 3:
-        errors.append(f"{lang}: expected at least 3 visual/sign tasks, found {visual_tasks}")
-    if outcomes["personal_information_exchanged"] < 1 or outcomes["service_task_completed"] < 1:
-        errors.append(f"{lang}: final action-oriented outcomes are missing")
-    if lang in {"de", "tr", "ko"} and resolved_repair < 2:
-        errors.append(f"{lang}: meaning-repair scenarios are not demonstrably resolved")
+        errors.append(f"{lang}: functional visual/sign reading is too weak: {visual_tasks} tasks")
+    if repair_tasks < 1:
+        errors.append(f"{lang}: no demonstrable communication-repair task")
 
-    gate = by_unit.get(f"prea1-{lang}-real-world-gate", {})
-    gate_lessons = {x.get("data", {}).get("lesson_key") for x in gate.get("items", []) if x.get("data", {}).get("lesson_key")}
-    if len(gate_lessons) != 2:
-        errors.append(f"{lang}: real-world gate must span exactly 2 lessons")
+    for required_outcome in (
+        "personal_information_exchanged",
+        "form_information_supplied",
+        "service_task_completed",
+    ):
+        if outcomes[required_outcome] < 1:
+            errors.append(f"{lang}: missing action-oriented outcome {required_outcome}")
+
+    # German/Turkish/Korean had known historical repair loops; retain the stronger
+    # regression check without making it a universal structural requirement.
+    if lang in {"de", "tr", "ko"} and resolved_repair < 2:
+        errors.append(f"{lang}: known meaning-repair scenarios are not demonstrably resolved")
 
     report[lang] = {
         "files": len(paths),
-        "lessons": len(lesson_keys),
+        "lessons_discovered": len(lesson_keys),
         "exercise_types": dict(exercise_types),
         "open_writing": writing_rubrics,
         "personalized_speaking": personalized_speaking_rubrics,
         "visual_tasks": visual_tasks,
+        "repair_tasks": repair_tasks,
         "resolved_repair_dialogues": resolved_repair,
+        "real_world_intents": sorted(intents & REQUIRED_INTENTS),
         "action_outcomes": dict(outcomes),
     }
 

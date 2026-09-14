@@ -1,4 +1,6 @@
--- Complete standard Italian Pre-A1 curriculum for Persian-speaking absolute beginners.
+-- Standard Italian Pre-A1 curriculum for Persian-speaking absolute beginners.
+-- Curriculum size is intentionally coverage-driven: sort_order is sequencing metadata,
+-- not a target count or schedule.
 INSERT IGNORE INTO curriculum_units (
   course_id,target_language_id,cefr_level_id,skill_id,topic_id,slug,title,
   learning_objective,sort_order,expected_lessons,status,metadata
@@ -19,10 +21,18 @@ FROM (
          'Say your name and ask another person’s name in a short natural exchange.',2,
          'Use Mi chiamo… and Sono… as high-frequency introduction chunks; subject pronouns are often omitted.',
          'در ایتالیایی ضمیر فاعلی اغلب حذف می‌شود؛ «Mi chiamo…» و «Sono…» را فعلاً الگوهای آماده یاد بگیر.'
+  UNION ALL SELECT 25,'foundations','introductions','prea1-it-about-me','Parlo di me',
+         'Give very basic personal information about origin, age, feelings and family with short Italian chunks.',2,
+         'Use high-frequency personal-information chunks before detailed verb or preposition analysis.',
+         'نام، مبدأ، سن و حال ساده را اول به شکل تکه‌های طبیعی و قابل‌استفاده یاد بگیر.'
   UNION ALL SELECT 30,'foundations','numbers','prea1-it-numbers-0-10','Da zero a dieci',
          'Recognize and say the Italian numbers from zero to ten.',2,
          'Learn stable counting forms 0–10 before later noun-dependent uses of uno.',
          'فعلاً شکل پایهٔ عددها را مستقل یاد بگیر؛ تغییرهای uno کنار بعضی اسم‌ها بعداً می‌آید.'
+  UNION ALL SELECT 35,'foundations','numbers','prea1-it-real-life-numbers','Numeri nella vita reale',
+         'Recognize and use numbers in a phone number, a price, a weekday and a simple date.',2,
+         'Move from counting to useful chunks such as Ho vent''anni, Cinque euro and a spoken phone number.',
+         'عددها را فقط فهرست حفظ نکن؛ آن‌ها را در سن، شماره تلفن، قیمت و تاریخ استفاده کن.'
   UNION ALL SELECT 40,'literacy','script-basics','prea1-it-alphabet','L''alfabeto italiano',
          'Recognize core Italian letters and notice the special sound behavior of c, g and h.',2,
          'Italian spelling is relatively regular; c/g vary before e/i and h can preserve a hard sound.',
@@ -47,10 +57,18 @@ FROM (
          'Use essential yes/no, comprehension-repair and repetition expressions.',2,
          'Use non before a verb for simple negation and memorize Non capisco / Ripeta, per favore.',
          '«Non capisco» و «Ripeta, per favore» از همان ابتدا ابزارهای مهم مدیریت مکالمه‌اند.'
+  UNION ALL SELECT 95,'communication','simple-messages','prea1-it-forms-signs','Moduli e cartelli',
+         'Read a few familiar form labels and public signs and fill a very short personal-information form.',2,
+         'Connect transparent Italian labels such as Nome, Paese, Telefono and USCITA to real tasks.',
+         'خواندن را به کار واقعی وصل کن: عنوان فرم را پیدا کن، اطلاعات ساده بنویس و تابلو خروج را بشناس.'
   UNION ALL SELECT 100,'foundations','introductions','prea1-it-first-conversation','La mia prima conversazione',
          'Combine greetings, introductions, wellbeing, repair and a farewell in one tiny conversation.',2,
          'Combine previously learned chunks without requiring full grammatical analysis.',
          'هدف این واحد ترکیب تکه‌های آشنا در یک گفت‌وگوی واقعی کوتاه است، نه تجزیهٔ کامل دستور.'
+  UNION ALL SELECT 120,'communication','simple-messages','prea1-it-real-world-gate','Italiano nella vita reale',
+         'Complete tiny real-world tasks with personal speaking, form writing, listening, visual reading and communication repair.',2,
+         'The readiness gate checks successful task completion rather than exact imitation or a fixed curriculum size.',
+         'در خروجی Pre-A1 باید با اطلاعات خودت صحبت و نوشتن خیلی ساده انجام بدهی، اطلاعات کوتاه را بشنوی، نشانه را بخوانی و اگر لازم شد درخواست تکرار کنی.'
 ) AS u
 JOIN courses c ON c.slug='fa-it-it'
 JOIN cefr_levels lvl ON lvl.code='Pre-A1'
