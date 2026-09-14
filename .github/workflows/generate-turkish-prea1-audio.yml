@@ -12,7 +12,7 @@ permissions:
   contents: write
 
 concurrency:
-  group: turkish-prea1-audio-generation-v1
+  group: turkish-prea1-a1-audio-generation-v1
   cancel-in-progress: false
 
 jobs:
@@ -91,11 +91,12 @@ jobs:
               counts[x['category']]=counts.get(x['category'],0)+1
           required={'lexical','utterances','dialogues'}
           missing=required-set(counts)
-          if missing: raise SystemExit('Missing audio categories: '+','.join(sorted(missing)))
-          generated=len(list(Path('audio/generated/tr-TR').rglob('*.mp3')))
+          if missing:
+              raise SystemExit('Missing audio categories: '+','.join(sorted(missing)))
+          generated=sum(Path(x['relative_path']).is_file() for x in d['items'])
           if generated != len(d['items']):
-              raise SystemExit(f'Expected {len(d["items"])} MP3 files, found {generated}')
-          print(json.dumps({'items':len(d['items']),'categories':counts,'mp3_files':generated},ensure_ascii=False,indent=2))
+              raise SystemExit(f'Expected {len(d["items"])} manifest MP3 files, found {generated}')
+          print(json.dumps({'items':len(d['items']),'categories':counts,'manifest_mp3_files':generated},ensure_ascii=False,indent=2))
           PY
       - name: Commit generated Turkish audio and DB link files
         run: |
