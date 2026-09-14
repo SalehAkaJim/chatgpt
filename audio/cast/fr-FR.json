@@ -1,0 +1,19 @@
+{
+  "locale": "fr-FR",
+  "policy": {
+    "target_accent": "standard_french",
+    "require_native_quality": true,
+    "require_distinct_character_voices": true,
+    "notes": "Use contemporary standard French with neutral metropolitan/broadcast-quality pronunciation, natural liaison and rhythm, and no exaggerated classroom diction. Character traits are explicit design decisions; do not infer voice presentation from names."
+  },
+  "characters": {
+    "camille": {"display_name": "Camille", "persona": {"voice_presentation": "female", "style": "warm_conversational", "target_accent": "standard_french"}, "voice_profile": "female_warm"},
+    "thomas": {"display_name": "Thomas", "persona": {"voice_presentation": "male", "style": "warm_conversational", "target_accent": "standard_french"}, "voice_profile": "male_warm"},
+    "lea": {"display_name": "Léa", "persona": {"voice_presentation": "female", "style": "bright_social", "target_accent": "standard_french"}, "voice_profile": "female_bright"},
+    "hugo": {"display_name": "Hugo", "persona": {"voice_presentation": "male", "style": "bright_social", "target_accent": "standard_french"}, "voice_profile": "male_bright"},
+    "ines": {"display_name": "Inès", "persona": {"voice_presentation": "female", "style": "calm_clear", "target_accent": "standard_french"}, "voice_profile": "female_calm"},
+    "nicolas": {"display_name": "Nicolas", "persona": {"voice_presentation": "male", "style": "calm_clear", "target_accent": "standard_french"}, "voice_profile": "male_calm"},
+    "claire": {"display_name": "Claire", "persona": {"voice_presentation": "female", "style": "professional_neutral", "target_accent": "standard_french"}, "voice_profile": "female_professional"},
+    "julien": {"display_name": "Julien", "persona": {"voice_presentation": "male", "style": "professional_neutral", "target_accent": "standard_french"}, "voice_profile": "male_professional"}
+  }
+}
