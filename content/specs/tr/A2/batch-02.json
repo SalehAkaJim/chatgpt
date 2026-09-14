@@ -1,0 +1,239 @@
+{
+  "batch": 2,
+  "level": "A2",
+  "variant": "tr-TR",
+  "pedagogy": {
+    "learner_language": "fa-IR",
+    "standard": "contemporary Istanbul Turkish",
+    "principles": [
+      "expand real-world A2 breadth instead of repeating batch 1 topics",
+      "use three-stage units ending in independent production",
+      "keep Persian support contrastive and concise",
+      "prioritize connected, personally meaningful communication"
+    ]
+  },
+  "units": [
+    {
+      "slug": "personal-background",
+      "topic": "introductions",
+      "title": "Nerede büyüdün?",
+      "objective": "Describe personal background, places lived and a simple life change.",
+      "grammar_focus": "-den beri and past-time sequencing",
+      "curriculum": {"skill_slug": "foundations", "topic_slug": "introductions", "sort_order": 310},
+      "vocab": [
+        ["dogmak","doğmak","به دنیا آمدن","verb",1],
+        ["buyumek","büyümek","بزرگ شدن","verb",1],
+        ["tasinmak","taşınmak","اسباب‌کشی کردن","verb",2],
+        ["beri","beri","از ... تا حالا","postposition",2],
+        ["cocukken","çocukken","وقتی بچه بودم","expression",3],
+        ["simdi","şimdi","حالا","adverb",3]
+      ],
+      "utterances": [
+        ["u1","Ankara'da doğdum.","در آنکارا به دنیا آمدم.","state_birthplace",["dogmak"],1],
+        ["u2","İzmir'de büyüdüm.","در ازمیر بزرگ شدم.","state_background",["buyumek"],1],
+        ["u3","Üç yıl önce İstanbul'a taşındım.","سه سال پیش به استانبول نقل مکان کردم.","state_life_change",["tasinmak"],2],
+        ["u4","O zamandan beri burada yaşıyorum.","از آن زمان تا حالا اینجا زندگی می‌کنم.","state_duration",["beri"],2],
+        ["u5","Çocukken küçük bir şehirde yaşadım.","وقتی بچه بودم در یک شهر کوچک زندگی کردم.","describe_childhood",["cocukken"],3],
+        ["u6","Şimdi iş için İstanbul'dayım.","حالا برای کار در استانبول هستم.","describe_present",["simdi"],3]
+      ],
+      "grammar": ["-den beri","Use -den beri to connect a starting point in the past to the present.","برای گفتن «از یک زمان تا حالا» از -den beri استفاده می‌کنیم: O zamandan beri burada yaşıyorum.",[["2024'ten beri burada çalışıyorum.","از ۲۰۲۴ تا حالا اینجا کار می‌کنم."],["O zamandan beri görüşmedik.","از آن زمان تا حالا همدیگر را ندیده‌ایم."]]],
+      "dialogues": [
+        ["Tanışırken","یک دورهمی",[["Elif","Nerede doğdun?","کجا به دنیا آمدی؟"],["Mert","Ankara'da doğdum.","در آنکارا به دنیا آمدم."],["Elif","Orada mı büyüdün?","همان‌جا بزرگ شدی؟"],["Mert","Hayır, İzmir'de büyüdüm.","نه، در ازمیر بزرگ شدم."]],1],
+        ["Yeni şehir","محل کار",[["Selin","İstanbul'a ne zaman taşındın?","کی به استانبول نقل مکان کردی؟"],["Kaan","Üç yıl önce.","سه سال پیش."],["Selin","O zamandan beri burada mı yaşıyorsun?","از آن زمان اینجا زندگی می‌کنی؟"],["Kaan","Evet, burada yaşıyorum.","بله، اینجا زندگی می‌کنم."]],2],
+        ["Kısa hikâye","کافه",[["Deniz","Çocukken nerede yaşadın?","وقتی بچه بودی کجا زندگی کردی؟"],["Zeynep","Küçük bir şehirde yaşadım.","در یک شهر کوچک زندگی کردم."],["Deniz","Şimdi neden İstanbul'dasın?","حالا چرا در استانبولی؟"],["Zeynep","İş için buradayım.","برای کار اینجا هستم."]],3]
+      ],
+      "production": {
+        "lesson": 3,
+        "writing_prompt_fa": "در ۳ تا ۴ جمله کوتاه دربارهٔ خودت بنویس: کجا بزرگ شدی، چه تغییری در زندگی‌ات رخ داده و الان کجا/چرا زندگی می‌کنی.",
+        "speaking_prompt_fa": "در چند جمله کوتاه دربارهٔ گذشته و وضعیت فعلی خودت صحبت کن. اطلاعات واقعی خودت را بگو.",
+        "model_text": "İzmir'de büyüdüm. İki yıl önce İstanbul'a taşındım. O zamandan beri burada yaşıyorum. Şimdi burada çalışıyorum.",
+        "required_points_fa": ["یک اطلاعات از گذشته", "یک تغییر یا زمان شروع", "وضعیت فعلی"]
+      }
+    },
+    {
+      "slug": "family-relationships",
+      "topic": "family",
+      "title": "Ailemle sık görüşürüm",
+      "objective": "Talk about family relationships, contact and simple shared routines.",
+      "grammar_focus": "reciprocal/shared actions and frequency expressions",
+      "curriculum": {"skill_slug": "family-home", "topic_slug": "family", "sort_order": 320},
+      "vocab": [
+        ["akraba","akraba","فامیل / خویشاوند","noun",1],
+        ["kardes","kardeş","خواهر/برادر","noun",1],
+        ["gorusmek","görüşmek","همدیگر را دیدن / در تماس بودن","verb",2],
+        ["ziyaret","ziyaret etmek","دیدن / سر زدن","verb",2],
+        ["birlikte","birlikte","با هم","adverb",3],
+        ["yakın","yakın","صمیمی / نزدیک","adjective",3]
+      ],
+      "utterances": [
+        ["u1","İki kardeşim var.","دو خواهر/برادر دارم.","describe_family",["kardes"],1],
+        ["u2","Akrabalarımın çoğu başka şehirde yaşıyor.","بیشتر فامیل‌هایم در شهر دیگری زندگی می‌کنند.","describe_relatives",["akraba"],1],
+        ["u3","Ailemle haftada birkaç kez görüşürüm.","هفته‌ای چند بار با خانواده‌ام در تماس هستم.","state_contact_frequency",["gorusmek"],2],
+        ["u4","Dedemi her ay ziyaret ederim.","هر ماه به پدربزرگم سر می‌زنم.","state_family_routine",["ziyaret"],2],
+        ["u5","Hafta sonları birlikte yemek yeriz.","آخر هفته‌ها با هم غذا می‌خوریم.","describe_shared_activity",["birlikte"],3],
+        ["u6","Kız kardeşimle çok yakınız.","با خواهرم خیلی صمیمی هستیم.","describe_relationship",["yakın","kardes"],3]
+      ],
+      "grammar": ["Sıklık ve birlikte yapılan işler","Combine frequency expressions with habitual forms to describe recurring family contact.","برای توضیح ارتباط‌های تکرارشونده می‌توانیم زمان و عادت را کنار هم بیاوریم: Her ay ziyaret ederim، haftada iki kez görüşürüz.",[["Haftada iki kez konuşuruz.","هفته‌ای دو بار صحبت می‌کنیم."],["Pazarları birlikte kahvaltı yaparız.","یکشنبه‌ها با هم صبحانه می‌خوریم."]]],
+      "dialogues": [
+        ["Aile hakkında","کلاس",[["Zeynep","Kardeşin var mı?","خواهر یا برادر داری؟"],["Burak","Evet, iki kardeşim var.","بله، دو خواهر/برادر دارم."],["Zeynep","Aynı şehirde mi yaşıyorsunuz?","در یک شهر زندگی می‌کنید؟"],["Burak","Hayır, biri başka şehirde.","نه، یکی‌شان در شهر دیگری است."]],1],
+        ["Ne kadar sık?","تماس تلفنی",[["Emre","Ailenle sık görüşüyor musun?","زیاد با خانواده‌ات در تماس هستی؟"],["Deniz","Evet, haftada birkaç kez.","بله، هفته‌ای چند بار."],["Emre","Onları ziyaret ediyor musun?","به دیدنشان می‌روی؟"],["Deniz","Ayda bir gidiyorum.","ماهی یک بار می‌روم."]],2],
+        ["Hafta sonu","خانه",[["Selin","Hafta sonları ailenle ne yaparsın?","آخر هفته‌ها با خانواده چه کار می‌کنی؟"],["Kaan","Genelde birlikte yemek yeriz.","معمولاً با هم غذا می‌خوریم."],["Selin","Kardeşinle yakın mısın?","با خواهر/برادرت صمیمی هستی؟"],["Kaan","Evet, çok yakınız.","بله، خیلی صمیمی هستیم."]],3]
+      ],
+      "production": {
+        "lesson": 3,
+        "writing_prompt_fa": "۳ جمله دربارهٔ یک یا دو نفر از خانواده یا آدم‌های نزدیکت بنویس و بگو چند وقت یک‌بار با آن‌ها در تماس هستی یا چه کاری با هم انجام می‌دهید.",
+        "speaking_prompt_fa": "دربارهٔ یک رابطهٔ خانوادگی یا نزدیک در زندگی خودت کوتاه صحبت کن و یک عادت مشترک را توضیح بده.",
+        "model_text": "Bir kız kardeşim var. Onunla sık görüşürüz. Hafta sonları birlikte kahve içeriz.",
+        "required_points_fa": ["معرفی یک فرد", "میزان/دفعات ارتباط", "یک فعالیت مشترک"]
+      }
+    },
+    {
+      "slug": "home-neighborhood",
+      "topic": "home",
+      "title": "Mahallem sessiz ama merkezi",
+      "objective": "Describe a home and neighborhood, nearby services and simple advantages or drawbacks.",
+      "grammar_focus": "-e yakın / -den uzak and contrast with ama",
+      "curriculum": {"skill_slug": "family-home", "topic_slug": "home", "sort_order": 330},
+      "vocab": [
+        ["mahalle","mahalle","محله","noun",1],
+        ["sessiz","sessiz","آرام / ساکت","adjective",1],
+        ["yakin","yakın","نزدیک","adjective",2],
+        ["uzak","uzak","دور","adjective",2],
+        ["komsu","komşu","همسایه","noun",3],
+        ["merkezi","merkezi","مرکزی","adjective",3]
+      ],
+      "utterances": [
+        ["u1","Mahallem oldukça sessiz.","محله‌ام نسبتاً آرام است.","describe_neighborhood",["mahalle","sessiz"],1],
+        ["u2","Evimiz küçük ama rahat.","خانه‌مان کوچک ولی راحت است.","contrast_home_features",[],1],
+        ["u3","Metro eve çok yakın.","مترو خیلی به خانه نزدیک است.","state_distance",["yakin"],2],
+        ["u4","Büyük market biraz uzak.","فروشگاه بزرگ کمی دور است.","state_distance",["uzak"],2],
+        ["u5","Komşularımız genelde yardımsever.","همسایه‌هایمان معمولاً کمک‌کننده‌اند.","describe_neighbors",["komsu"],3],
+        ["u6","Burası merkezi olduğu için arabaya ihtiyacım yok.","چون اینجا مرکزی است به ماشین نیاز ندارم.","explain_advantage",["merkezi"],3]
+      ],
+      "grammar": ["Yakınlık ve uzaklık","Use -e yakın for proximity and -den uzak for distance; connect contrasting features with ama.","برای «نزدیک به» از -e yakın و برای «دور از» از -den uzak استفاده می‌کنیم. برای دو ویژگی متضاد ama طبیعی است.",[["İşe yakın oturuyorum.","نزدیک محل کار زندگی می‌کنم."],["Ev merkezden uzak ama sessiz.","خانه از مرکز دور است ولی آرام است."]]],
+      "dialogues": [
+        ["Yeni ev","خانه جدید",[["Mert","Yeni mahallen nasıl?","محله جدیدت چطوره؟"],["Elif","Sessiz ve oldukça güzel.","آرام و نسبتاً زیباست."],["Mert","Evin büyük mü?","خانه‌ات بزرگ است؟"],["Elif","Hayır, küçük ama rahat.","نه، کوچک ولی راحت است."]],1],
+        ["Yakında ne var?","پیاده‌روی",[["Kaan","Metro yakın mı?","مترو نزدیک است؟"],["Selin","Evet, beş dakika.","بله، پنج دقیقه."],["Kaan","Market de yakın mı?","فروشگاه هم نزدیک است؟"],["Selin","Küçük market yakın, büyük olan uzak.","فروشگاه کوچک نزدیک است، بزرگه دور است."]],2],
+        ["Mahalle seçimi","گفت‌وگوی دوستانه",[["Burak","Burada yaşamayı seviyor musun?","دوست داری اینجا زندگی کنی؟"],["Zeynep","Evet, çünkü merkezi.","بله، چون مرکزی است."],["Burak","Komşular nasıl?","همسایه‌ها چطورند؟"],["Zeynep","Genelde çok yardımseverler.","معمولاً خیلی کمک‌کننده‌اند."]],3]
+      ],
+      "production": {
+        "lesson": 3,
+        "writing_prompt_fa": "محله یا محل زندگی واقعی خودت را در ۳ تا ۴ جمله توصیف کن: یک ویژگی، یک چیز نزدیک/دور و یک مزیت یا ایراد.",
+        "speaking_prompt_fa": "فرض کن دوستی می‌خواهد نزدیک تو زندگی کند. در چند جمله محله‌ات را معرفی کن و بگو چه چیزی خوب یا بد است.",
+        "model_text": "Mahallem sessiz ve merkezi. Metro eve yakın ama büyük market biraz uzak. Burada yaşamayı seviyorum.",
+        "required_points_fa": ["توصیف محله", "یک فاصله یا مکان", "یک مزیت یا ایراد"]
+      }
+    },
+    {
+      "slug": "invitations-arrangements",
+      "topic": "future-plans",
+      "title": "Cumartesi bize gelsene",
+      "objective": "Invite someone, accept or decline politely and propose an alternative arrangement.",
+      "grammar_focus": "suggestions with -elim/-alım and polite alternatives",
+      "curriculum": {"skill_slug": "time-plans", "topic_slug": "future-plans", "sort_order": 340},
+      "vocab": [
+        ["davet","davet etmek","دعوت کردن","verb",1],
+        ["katilmak","katılmak","شرکت کردن","verb",1],
+        ["musait","müsait","وقت داشتن / آزاد بودن","adjective",2],
+        ["baska","başka","دیگر / یک وقت دیگر","adjective",2],
+        ["buluşmak","buluşmak","قرار گذاشتن / همدیگر را دیدن","verb",3],
+        ["uygun","uygun","مناسب","adjective",3]
+      ],
+      "utterances": [
+        ["u1","Cumartesi seni yemeğe davet etmek istiyorum.","می‌خواهم شنبه تو را برای غذا دعوت کنم.","invite",["davet"],1],
+        ["u2","Memnuniyetle katılırım.","با خوشحالی شرکت می‌کنم.","accept_invitation",["katilmak"],1],
+        ["u3","Cumartesi müsait değilim.","شنبه وقت ندارم.","decline_invitation",["musait"],2],
+        ["u4","Başka bir gün buluşabilir miyiz?","می‌توانیم یک روز دیگر همدیگر را ببینیم؟","offer_alternative",["baska","buluşmak"],2],
+        ["u5","Pazar öğleden sonra buluşalım.","یکشنبه بعدازظهر همدیگر را ببینیم.","suggest_arrangement",["buluşmak"],3],
+        ["u6","Saat üç benim için uygun.","ساعت سه برای من مناسب است.","confirm_arrangement",["uygun"],3]
+      ],
+      "grammar": ["Öneri: -elim / -alım","Use the first-person plural suggestion form to propose a shared plan, and combine it with a time expression.","برای پیشنهاد یک کار مشترک از -elim/-alım استفاده می‌کنیم: buluşalım «بیایید همدیگر را ببینیم». اگر نمی‌توانیم، بهتر است یک زمان جایگزین پیشنهاد کنیم.",[["Akşam konuşalım.","عصر صحبت کنیم."],["Başka bir gün görüşelim.","یک روز دیگر همدیگر را ببینیم."]]],
+      "dialogues": [
+        ["Akşam yemeği","پیام دوستانه",[["Deniz","Cumartesi seni yemeğe davet etmek istiyorum.","می‌خواهم شنبه تو را برای غذا دعوت کنم."],["Emre","Çok güzel, memnuniyetle gelirim.","خیلی خوبه، با خوشحالی می‌آیم."],["Deniz","Saat yedi uygun mu?","ساعت هفت مناسبه؟"],["Emre","Evet, uygun.","بله، مناسبه."]],1],
+        ["Plan değişikliği","تلفن",[["Elif","Cumartesi buluşuyor muyuz?","شنبه همدیگر را می‌بینیم؟"],["Mert","Üzgünüm, cumartesi müsait değilim.","متأسفم، شنبه وقت ندارم."],["Elif","Pazar nasıl?","یکشنبه چطور؟"],["Mert","Pazar olur.","یکشنبه خوبه."]],2],
+        ["Saati netleştirmek","چت",[["Kaan","Pazar öğleden sonra buluşalım.","یکشنبه بعدازظهر همدیگر را ببینیم."],["Selin","Olur. Kaçta?","باشه. ساعت چند؟"],["Kaan","Saat üç uygun mu?","ساعت سه مناسبه؟"],["Selin","Evet, görüşürüz.","بله، می‌بینمت."]],3]
+      ],
+      "production": {
+        "lesson": 3,
+        "writing_prompt_fa": "یک پیام کوتاه ترکی بنویس: کسی را دعوت کن یا به یک دعوت پاسخ بده؛ اگر نمی‌توانی، یک زمان جایگزین پیشنهاد کن.",
+        "speaking_prompt_fa": "با صدای بلند یک قرار واقعی برای این هفته پیشنهاد بده و زمان مناسب خودت را مشخص کن.",
+        "model_text": "Cumartesi müsait değilim. Pazar öğleden sonra buluşalım. Saat üç benim için uygun.",
+        "required_points_fa": ["پاسخ روشن", "پیشنهاد زمان/برنامه", "تأیید یا جایگزین"]
+      }
+    },
+    {
+      "slug": "food-quantities-cooking",
+      "topic": "food-basics",
+      "title": "İki kaşık yağ ekle",
+      "objective": "Understand and give a short recipe using quantities and ordered steps.",
+      "grammar_focus": "quantity phrases and imperative sequencing",
+      "curriculum": {"skill_slug": "food-drink", "topic_slug": "food-basics", "sort_order": 350},
+      "vocab": [
+        ["gram","gram","گرم","noun",1],
+        ["kasik","kaşık","قاشق","noun",1],
+        ["eklemek","eklemek","اضافه کردن","verb",2],
+        ["karistirmak","karıştırmak","هم زدن / مخلوط کردن","verb",2],
+        ["once","önce","اول / قبل","adverb",3],
+        ["sonra","sonra","بعد","adverb",3]
+      ],
+      "utterances": [
+        ["u1","İki yüz gram un lazım.","دویست گرم آرد لازم است.","state_quantity",["gram"],1],
+        ["u2","İki kaşık yağ kullanıyorum.","دو قاشق روغن استفاده می‌کنم.","state_quantity",["kasik"],1],
+        ["u3","Suyu yavaşça ekle.","آب را آرام اضافه کن.","give_recipe_step",["eklemek"],2],
+        ["u4","Sonra iyice karıştır.","بعد خوب هم بزن.","give_recipe_step",["karistirmak","sonra"],2],
+        ["u5","Önce sebzeleri kesiyorum.","اول سبزیجات را خرد می‌کنم.","sequence_recipe",["once"],3],
+        ["u6","Sonra hepsini tavaya koyuyorum.","بعد همه را داخل ماهیتابه می‌گذارم.","sequence_recipe",["sonra"],3]
+      ],
+      "grammar": ["Miktar + isim ve sıralama","Put the quantity before the noun and use önce/sonra to make the order of steps clear.","مقدار قبل از اسم می‌آید: iki kaşık yağ. برای مرتب کردن مراحل از önce «اول» و sonra «بعد» استفاده می‌کنیم.",[["Bir kilo domates al.","یک کیلو گوجه بخر."],["Önce kes, sonra karıştır.","اول خرد کن، بعد مخلوط کن."]]],
+      "dialogues": [
+        ["Malzemeler","آشپزخانه",[["Zeynep","Ne kadar un lazım?","چقدر آرد لازم است؟"],["Burak","İki yüz gram yeter.","دویست گرم کافی است."],["Zeynep","Yağ ne kadar?","روغن چقدر؟"],["Burak","İki kaşık.","دو قاشق."]],1],
+        ["Tarifi anlatmak","آشپزخانه",[["Selin","Şimdi ne yapıyorum?","حالا چه کار کنم؟"],["Kaan","Suyu yavaşça ekle.","آب را آرام اضافه کن."],["Selin","Sonra?","بعد؟"],["Kaan","İyice karıştır.","خوب هم بزن."]],2],
+        ["Kendi tarifim","دورهمی",[["Elif","Bu yemeği nasıl yapıyorsun?","این غذا را چطور درست می‌کنی؟"],["Mert","Önce sebzeleri kesiyorum.","اول سبزیجات را خرد می‌کنم."],["Elif","Sonra ne yapıyorsun?","بعد چه کار می‌کنی؟"],["Mert","Hepsini tavaya koyuyorum.","همه را داخل ماهیتابه می‌گذارم."]],3]
+      ],
+      "production": {
+        "lesson": 3,
+        "writing_prompt_fa": "یک دستور غذای خیلی کوتاه در ۳ تا ۴ مرحله بنویس. حداقل یک مقدار و واژه‌های önce/sonra را استفاده کن.",
+        "speaking_prompt_fa": "طرز تهیهٔ یک غذای ساده که بلدی را در چند مرحله توضیح بده.",
+        "model_text": "Önce iki domates kesiyorum. Sonra bir kaşık yağ ekliyorum. Biraz tuz koyuyorum ve hepsini karıştırıyorum.",
+        "required_points_fa": ["حداقل یک مقدار", "ترتیب مراحل", "دو یا چند عمل آشپزی"]
+      }
+    },
+    {
+      "slug": "restaurant-service-problems",
+      "topic": "restaurants",
+      "title": "Siparişim henüz gelmedi",
+      "objective": "Handle a simple restaurant service problem politely and reach a practical solution.",
+      "grammar_focus": "polite problem statements and solution requests",
+      "curriculum": {"skill_slug": "food-drink", "topic_slug": "restaurants", "sort_order": 360},
+      "vocab": [
+        ["siparis","sipariş","سفارش","noun",1],
+        ["hesap","hesap","صورتحساب","noun",1],
+        ["yanlis","yanlış","اشتباه","adjective",2],
+        ["eksik","eksik","ناقص / کم","adjective",2],
+        ["degistirmek","değiştirmek","عوض کردن","verb",3],
+        ["getirmek","getirmek","آوردن","verb",3]
+      ],
+      "utterances": [
+        ["u1","Siparişim henüz gelmedi.","سفارشم هنوز نرسیده.","report_service_problem",["siparis"],1],
+        ["u2","Hesabı alabilir miyiz?","می‌توانیم صورتحساب را بگیریم؟","ask_for_bill",["hesap"],1],
+        ["u3","Bu sipariş yanlış geldi.","این سفارش اشتباه آمده.","report_wrong_order",["yanlis","siparis"],2],
+        ["u4","Bir içecek eksik.","یک نوشیدنی کم است.","report_missing_item",["eksik"],2],
+        ["u5","Bunu değiştirebilir misiniz?","می‌توانید این را عوض کنید؟","request_solution",["degistirmek"],3],
+        ["u6","Doğru siparişi getirebilir misiniz?","می‌توانید سفارش درست را بیاورید؟","request_solution",["getirmek","siparis"],3]
+      ],
+      "grammar": ["Sorun + kibar çözüm isteği","State the problem briefly, then use -ebilir misiniz? to request a practical solution.","اول مشکل را کوتاه و روشن بگو، بعد با -ebilir misiniz? راه‌حل بخواه: Bu yanlış geldi. Değiştirebilir misiniz?",[["Çorba soğuk geldi. Değiştirebilir misiniz?","سوپ سرد آمده. می‌توانید عوضش کنید؟"],["Bir su eksik. Getirebilir misiniz?","یک آب کم است. می‌توانید بیاورید؟"]]],
+      "dialogues": [
+        ["Geciken sipariş","رستوران",[["Deniz","Affedersiniz, siparişim henüz gelmedi.","ببخشید، سفارشم هنوز نرسیده."],["Emre","Hemen kontrol edeyim.","الان بررسی می‌کنم."],["Deniz","Teşekkür ederim.","ممنونم."],["Emre","Birkaç dakika içinde gelecek.","تا چند دقیقه دیگر می‌آید."]],1],
+        ["Yanlış sipariş","رستوران",[["Elif","Affedersiniz, bu sipariş yanlış geldi.","ببخشید، این سفارش اشتباه آمده."],["Mert","Ne sipariş etmiştiniz?","چه سفارش داده بودید؟"],["Elif","Tavuk istemiştim, bu balık.","مرغ خواسته بودم، این ماهی است."],["Mert","Haklısınız, hemen düzeltiyorum.","حق با شماست، الان اصلاح می‌کنم."]],2],
+        ["Çözüm istemek","کافه",[["Selin","Bir içecek eksik.","یک نوشیدنی کم است."],["Kaan","Özür dilerim.","عذر می‌خواهم."],["Selin","Getirebilir misiniz?","می‌توانید بیاورید؟"],["Kaan","Tabii, hemen getiriyorum.","حتماً، الان می‌آورم."]],3]
+      ],
+      "production": {
+        "lesson": 3,
+        "writing_prompt_fa": "یک پیام کوتاه یا دیالوگ ۳ تا ۴ جمله‌ای بنویس که در آن یک مشکل سادهٔ رستوران را توضیح بدهی و مؤدبانه راه‌حل بخواهی.",
+        "speaking_prompt_fa": "فرض کن سفارش تو اشتباه یا ناقص آمده. مشکل را روشن بگو و یک درخواست مؤدبانه برای حلش مطرح کن.",
+        "model_text": "Affedersiniz, bu sipariş yanlış geldi. Ben tavuk istemiştim. Bunu değiştirebilir misiniz?",
+        "required_points_fa": ["بیان مشکل", "جزئیات کافی", "درخواست مؤدبانهٔ راه‌حل"]
+      }
+    }
+  ]
+}
