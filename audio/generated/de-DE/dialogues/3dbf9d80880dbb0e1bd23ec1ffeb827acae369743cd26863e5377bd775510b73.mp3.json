@@ -1,0 +1,36 @@
+{
+  "source_text_hash": "4000ddf9f15272ec95c7de7400f566e3e8457a174571f491a1c2ee3bfb501fb6",
+  "voice_id": "ssAtxnrElSw3BUSLNszL",
+  "model": "eleven_multilingual_v2",
+  "settings": {
+    "stability": 0.58,
+    "similarity_boost": 0.87,
+    "style": 0.14,
+    "use_speaker_boost": true,
+    "speed": 0.97
+  },
+  "provider": "elevenlabs",
+  "audio_key": "3dbf9d80880dbb0e1bd23ec1ffeb827acae369743cd26863e5377bd775510b73",
+  "voice_key": "character:anna:female_warm",
+  "voice_name": "Nellie - Expressive, Kind, Engaging",
+  "voice_labels": {
+    "gender": "female",
+    "accent": "standard",
+    "age": "middle_aged",
+    "category": "high_quality",
+    "language": "de",
+    "use_case": "conversational",
+    "descriptive": "pleasant"
+  },
+  "output_format": "mp3_44100_192",
+  "file_sha256": "7db209143fc179fb3e0b8bd611b9f3e67b06edd574c6db649c95e311f3d09dba",
+  "duration_ms": 1201,
+  "generated_at": "2026-09-14T13:30:59.923907+00:00",
+  "entity_refs": [
+    {
+      "entity_type": "dialogue_turn",
+      "entity_uuid": "7b603e45-8c58-58a9-b7f8-a10491f637f2",
+      "entity_key": "d_de_de-about-me_origin_age:5"
+    }
+  ]
+}

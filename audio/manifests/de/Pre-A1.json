@@ -152,6 +152,52 @@
       "relative_path": "audio/generated/de-DE/dialogues/008deb7f6d5e37c38f0d7d48dbe030c532ab379b9d647db19f3a908526796ffd.mp3"
     },
     {
+      "audio_key": "03739090f0e7aa229b058982c9220938a27d79bd015d10e79ae1657c7ec4e8b4",
+      "category": "dialogues",
+      "locale": "de-DE",
+      "text": "Ich bin zwanzig Jahre alt.",
+      "source_text_hash": "887872e399c0b1cf633d00a13c0ce08466a4ec666d2c3ace581500de6e4c1f8e",
+      "voice_key": "character:lukas:male_warm",
+      "voice_spec": {
+        "voice_name": null,
+        "description": "Warm natural male adult Standard German voice, friendly and conversational with clear beginner-level articulation.",
+        "required_language": "de",
+        "preferred_accent": "german",
+        "prefer_high_quality": true,
+        "required_labels": {
+          "gender": "male"
+        },
+        "distinct_character": true,
+        "settings": {
+          "stability": 0.58,
+          "similarity_boost": 0.87,
+          "style": 0.14,
+          "use_speaker_boost": true,
+          "speed": 0.97
+        },
+        "profile_key": "male_warm"
+      },
+      "entity_refs": [
+        {
+          "entity_type": "dialogue_turn",
+          "entity_uuid": "92a475c2-7702-5e7d-af75-7aa847374b78",
+          "entity_key": "d_de_de-about-me_origin_age:6"
+        }
+      ],
+      "metadata": {
+        "character": "lukas",
+        "dialogue": "d_de_de-about-me_origin_age",
+        "turn": 6,
+        "persona": {
+          "voice_presentation": "male",
+          "style": "warm_conversational",
+          "target_accent": "standard_german"
+        },
+        "voice_profile": "male_warm"
+      },
+      "relative_path": "audio/generated/de-DE/dialogues/03739090f0e7aa229b058982c9220938a27d79bd015d10e79ae1657c7ec4e8b4.mp3"
+    },
+    {
       "audio_key": "07c21bffdabe8b0cced9b76eb6e57b97d5e00bfcd36eca2c93cc0e8947a2a859",
       "category": "dialogues",
       "locale": "de-DE",
@@ -474,6 +520,98 @@
       "relative_path": "audio/generated/de-DE/dialogues/146787423fe2b5478458d827b9be01cd37630ee180ad8d3a4323e7d8945c38ba.mp3"
     },
     {
+      "audio_key": "15790ff5e468c45d1dad79408e309ece17e3da8d4f1509ce8c9e842f64733bb8",
+      "category": "dialogues",
+      "locale": "de-DE",
+      "text": "Wie geht's?",
+      "source_text_hash": "bd23ea6cdb98e4bb5d64da2cc90102ddc6acacb0806ae97aa3f5e03e817f6057",
+      "voice_key": "character:mara:female_calm",
+      "voice_spec": {
+        "voice_name": null,
+        "description": "Calm precise female adult Standard German voice, gentle, natural and highly intelligible.",
+        "required_language": "de",
+        "preferred_accent": "german",
+        "prefer_high_quality": true,
+        "required_labels": {
+          "gender": "female"
+        },
+        "distinct_character": true,
+        "settings": {
+          "stability": 0.68,
+          "similarity_boost": 0.89,
+          "style": 0.06,
+          "use_speaker_boost": true,
+          "speed": 0.95
+        },
+        "profile_key": "female_calm"
+      },
+      "entity_refs": [
+        {
+          "entity_type": "dialogue_turn",
+          "entity_uuid": "2bd21b34-aa0c-5c53-8b17-55119be7d85f",
+          "entity_key": "d_de_de-real-world-gate_meet:5"
+        }
+      ],
+      "metadata": {
+        "character": "mara",
+        "dialogue": "d_de_de-real-world-gate_meet",
+        "turn": 5,
+        "persona": {
+          "voice_presentation": "female",
+          "style": "calm_clear",
+          "target_accent": "standard_german"
+        },
+        "voice_profile": "female_calm"
+      },
+      "relative_path": "audio/generated/de-DE/dialogues/15790ff5e468c45d1dad79408e309ece17e3da8d4f1509ce8c9e842f64733bb8.mp3"
+    },
+    {
+      "audio_key": "18a2d32cc164aa0b8d940c7b13c0b73a39a7e734048415b1c8e517712eafa8f2",
+      "category": "dialogues",
+      "locale": "de-DE",
+      "text": "Ah, danke.",
+      "source_text_hash": "c49a17706c9fbd9a0b43648eae8d282a02ff4dd696402f75420f40105e34d9f4",
+      "voice_key": "character:emil:male_calm",
+      "voice_spec": {
+        "voice_name": null,
+        "description": "Calm precise male adult Standard German voice, grounded, natural and highly intelligible.",
+        "required_language": "de",
+        "preferred_accent": "german",
+        "prefer_high_quality": true,
+        "required_labels": {
+          "gender": "male"
+        },
+        "distinct_character": true,
+        "settings": {
+          "stability": 0.68,
+          "similarity_boost": 0.89,
+          "style": 0.06,
+          "use_speaker_boost": true,
+          "speed": 0.95
+        },
+        "profile_key": "male_calm"
+      },
+      "entity_refs": [
+        {
+          "entity_type": "dialogue_turn",
+          "entity_uuid": "4cef33b0-2ee6-51d2-a1a8-57eba56198bd",
+          "entity_key": "d_de_ready_repair:6"
+        }
+      ],
+      "metadata": {
+        "character": "emil",
+        "dialogue": "d_de_ready_repair",
+        "turn": 6,
+        "persona": {
+          "voice_presentation": "male",
+          "style": "calm_clear",
+          "target_accent": "standard_german"
+        },
+        "voice_profile": "male_calm"
+      },
+      "relative_path": "audio/generated/de-DE/dialogues/18a2d32cc164aa0b8d940c7b13c0b73a39a7e734048415b1c8e517712eafa8f2.mp3"
+    },
+    {
       "audio_key": "1a804c7c421bf600bdeb378a797d0adc82c8f6de77578e2a3d77a7125e40a1d3",
       "category": "dialogues",
       "locale": "de-DE",
@@ -702,6 +840,52 @@
         "voice_profile": "female_professional"
       },
       "relative_path": "audio/generated/de-DE/dialogues/221dae1150f83589d21ca5cfbf15a9cb83ef4857bee81bf2377ac10ce46efa3a.mp3"
+    },
+    {
+      "audio_key": "224a8d468798f8074782a0fc69bab5679c111552d10f6a0328e8c9c6c53d9a49",
+      "category": "dialogues",
+      "locale": "de-DE",
+      "text": "Ich komme aus dem Iran.",
+      "source_text_hash": "d825d28755a179c37da77042a57ea58c8c0cc103bc255581e68083d2758e2801",
+      "voice_key": "character:emil:male_calm",
+      "voice_spec": {
+        "voice_name": null,
+        "description": "Calm precise male adult Standard German voice, grounded, natural and highly intelligible.",
+        "required_language": "de",
+        "preferred_accent": "german",
+        "prefer_high_quality": true,
+        "required_labels": {
+          "gender": "male"
+        },
+        "distinct_character": true,
+        "settings": {
+          "stability": 0.68,
+          "similarity_boost": 0.89,
+          "style": 0.06,
+          "use_speaker_boost": true,
+          "speed": 0.95
+        },
+        "profile_key": "male_calm"
+      },
+      "entity_refs": [
+        {
+          "entity_type": "dialogue_turn",
+          "entity_uuid": "d3a65bca-1d9a-506c-a7c5-f1db19c87e94",
+          "entity_key": "d_de_de-real-world-gate_meet:4"
+        }
+      ],
+      "metadata": {
+        "character": "emil",
+        "dialogue": "d_de_de-real-world-gate_meet",
+        "turn": 4,
+        "persona": {
+          "voice_presentation": "male",
+          "style": "calm_clear",
+          "target_accent": "standard_german"
+        },
+        "voice_profile": "male_calm"
+      },
+      "relative_path": "audio/generated/de-DE/dialogues/224a8d468798f8074782a0fc69bab5679c111552d10f6a0328e8c9c6c53d9a49.mp3"
     },
     {
       "audio_key": "224f63a293b402adbf260bafc8d00b0171b708c493cd1109c6a79d1c08a3fade",
@@ -980,6 +1164,52 @@
       "relative_path": "audio/generated/de-DE/dialogues/2b695dbfc3ba1ad1a228185993418e0b8e7f3397724af9b9d44a1d57282f2a12.mp3"
     },
     {
+      "audio_key": "36da675e8f30999c486a2f2f53ec6d0e226f5f016bd33a60d65f6775edf7db6d",
+      "category": "dialogues",
+      "locale": "de-DE",
+      "text": "Wie viel kostet das?",
+      "source_text_hash": "2381e95cb700622bc0fcb6df1955fd8164ff241e843a42e5d151e96aeffe37fb",
+      "voice_key": "character:sofia:female_professional",
+      "voice_spec": {
+        "voice_name": null,
+        "description": "Neutral professional female adult Standard German voice, confident, clean and highly intelligible.",
+        "required_language": "de",
+        "preferred_accent": "german",
+        "prefer_high_quality": true,
+        "required_labels": {
+          "gender": "female"
+        },
+        "distinct_character": true,
+        "settings": {
+          "stability": 0.71,
+          "similarity_boost": 0.9,
+          "style": 0.05,
+          "use_speaker_boost": true,
+          "speed": 0.96
+        },
+        "profile_key": "female_professional"
+      },
+      "entity_refs": [
+        {
+          "entity_type": "dialogue_turn",
+          "entity_uuid": "7778d599-cbbd-5cee-9e7e-3fe4869a1a43",
+          "entity_key": "d_de_de-real-life-numbers_price_day:1"
+        }
+      ],
+      "metadata": {
+        "character": "sofia",
+        "dialogue": "d_de_de-real-life-numbers_price_day",
+        "turn": 1,
+        "persona": {
+          "voice_presentation": "female",
+          "style": "professional_neutral",
+          "target_accent": "standard_german"
+        },
+        "voice_profile": "female_professional"
+      },
+      "relative_path": "audio/generated/de-DE/dialogues/36da675e8f30999c486a2f2f53ec6d0e226f5f016bd33a60d65f6775edf7db6d.mp3"
+    },
+    {
       "audio_key": "36f33f095222b2e8f537a80c697402d76a80a8a6c940f1d905df5988e275aab4",
       "category": "dialogues",
       "locale": "de-DE",
@@ -1116,6 +1346,52 @@
         "voice_profile": "male_bright"
       },
       "relative_path": "audio/generated/de-DE/dialogues/3d238a6e99ddfb8fa840d7c3301d480654eacfaa60a3780bc31e149187338dce.mp3"
+    },
+    {
+      "audio_key": "3dbf9d80880dbb0e1bd23ec1ffeb827acae369743cd26863e5377bd775510b73",
+      "category": "dialogues",
+      "locale": "de-DE",
+      "text": "Wie alt bist du?",
+      "source_text_hash": "4000ddf9f15272ec95c7de7400f566e3e8457a174571f491a1c2ee3bfb501fb6",
+      "voice_key": "character:anna:female_warm",
+      "voice_spec": {
+        "voice_name": null,
+        "description": "Warm natural female adult Standard German voice, friendly and conversational with clear beginner-level articulation.",
+        "required_language": "de",
+        "preferred_accent": "german",
+        "prefer_high_quality": true,
+        "required_labels": {
+          "gender": "female"
+        },
+        "distinct_character": true,
+        "settings": {
+          "stability": 0.58,
+          "similarity_boost": 0.87,
+          "style": 0.14,
+          "use_speaker_boost": true,
+          "speed": 0.97
+        },
+        "profile_key": "female_warm"
+      },
+      "entity_refs": [
+        {
+          "entity_type": "dialogue_turn",
+          "entity_uuid": "7b603e45-8c58-58a9-b7f8-a10491f637f2",
+          "entity_key": "d_de_de-about-me_origin_age:5"
+        }
+      ],
+      "metadata": {
+        "character": "anna",
+        "dialogue": "d_de_de-about-me_origin_age",
+        "turn": 5,
+        "persona": {
+          "voice_presentation": "female",
+          "style": "warm_conversational",
+          "target_accent": "standard_german"
+        },
+        "voice_profile": "female_warm"
+      },
+      "relative_path": "audio/generated/de-DE/dialogues/3dbf9d80880dbb0e1bd23ec1ffeb827acae369743cd26863e5377bd775510b73.mp3"
     },
     {
       "audio_key": "3df9259a65ab7712932f0e50608da17a6090dd5ecb1944f45c5cf5800e6313c8",
@@ -1348,6 +1624,52 @@
       "relative_path": "audio/generated/de-DE/dialogues/3f79114be617bda33402af714f44094d79f6d851789b24ec8e28f28406e4375b.mp3"
     },
     {
+      "audio_key": "4101cd64ce491118e4e53a6bfd04fcec00eaf648c0c80e71a117be2da15efbe6",
+      "category": "dialogues",
+      "locale": "de-DE",
+      "text": "Noch einmal, bitte.",
+      "source_text_hash": "00ce4057749e17d331310c133d47ace93b17e7e8d529d65bda60d44d1617ede0",
+      "voice_key": "character:lea:female_calm",
+      "voice_spec": {
+        "voice_name": null,
+        "description": "Calm precise female adult Standard German voice, gentle, natural and highly intelligible.",
+        "required_language": "de",
+        "preferred_accent": "german",
+        "prefer_high_quality": true,
+        "required_labels": {
+          "gender": "female"
+        },
+        "distinct_character": true,
+        "settings": {
+          "stability": 0.68,
+          "similarity_boost": 0.89,
+          "style": 0.06,
+          "use_speaker_boost": true,
+          "speed": 0.95
+        },
+        "profile_key": "female_calm"
+      },
+      "entity_refs": [
+        {
+          "entity_type": "dialogue_turn",
+          "entity_uuid": "d60a96a9-28b1-5410-870e-1bd6a16d357e",
+          "entity_key": "d_de_de-real-life-numbers_phone:3"
+        }
+      ],
+      "metadata": {
+        "character": "lea",
+        "dialogue": "d_de_de-real-life-numbers_phone",
+        "turn": 3,
+        "persona": {
+          "voice_presentation": "female",
+          "style": "calm_clear",
+          "target_accent": "standard_german"
+        },
+        "voice_profile": "female_calm"
+      },
+      "relative_path": "audio/generated/de-DE/dialogues/4101cd64ce491118e4e53a6bfd04fcec00eaf648c0c80e71a117be2da15efbe6.mp3"
+    },
+    {
       "audio_key": "44b1f96deddd8c7452df19c7a20dcfe175cb346abad695db07d84fb0863f75e0",
       "category": "dialogues",
       "locale": "de-DE",
@@ -1578,6 +1900,52 @@
       "relative_path": "audio/generated/de-DE/dialogues/5259dd6b4894f4727d114b268c7f9684425ff6f438a848d7cb55da46f33603f3.mp3"
     },
     {
+      "audio_key": "5571e9d5829baf8a2abfa8eb1a2f40946ece67345afaeb9d835866cfa23484a2",
+      "category": "dialogues",
+      "locale": "de-DE",
+      "text": "Wie ist deine Telefonnummer?",
+      "source_text_hash": "98058d2c2947148adfbb22a3ab5e5d58a03ecb740b36c738afb23339fa2b3e8d",
+      "voice_key": "character:lea:female_calm",
+      "voice_spec": {
+        "voice_name": null,
+        "description": "Calm precise female adult Standard German voice, gentle, natural and highly intelligible.",
+        "required_language": "de",
+        "preferred_accent": "german",
+        "prefer_high_quality": true,
+        "required_labels": {
+          "gender": "female"
+        },
+        "distinct_character": true,
+        "settings": {
+          "stability": 0.68,
+          "similarity_boost": 0.89,
+          "style": 0.06,
+          "use_speaker_boost": true,
+          "speed": 0.95
+        },
+        "profile_key": "female_calm"
+      },
+      "entity_refs": [
+        {
+          "entity_type": "dialogue_turn",
+          "entity_uuid": "b02c4e48-0086-578f-ab11-447b7fa9071a",
+          "entity_key": "d_de_de-real-life-numbers_phone:1"
+        }
+      ],
+      "metadata": {
+        "character": "lea",
+        "dialogue": "d_de_de-real-life-numbers_phone",
+        "turn": 1,
+        "persona": {
+          "voice_presentation": "female",
+          "style": "calm_clear",
+          "target_accent": "standard_german"
+        },
+        "voice_profile": "female_calm"
+      },
+      "relative_path": "audio/generated/de-DE/dialogues/5571e9d5829baf8a2abfa8eb1a2f40946ece67345afaeb9d835866cfa23484a2.mp3"
+    },
+    {
       "audio_key": "560860d5dc255143a79ba98abe724a0fe66f96e79da6ed632aab3558373602f7",
       "category": "dialogues",
       "locale": "de-DE",
@@ -1714,6 +2082,98 @@
         "voice_profile": "male_warm"
       },
       "relative_path": "audio/generated/de-DE/dialogues/5dfe1cb6c111ed34c7161f919b44ac48e734abdd13c6c37cf6e3158c8579c857.mp3"
+    },
+    {
+      "audio_key": "5e08f0204a837b6b9ee8778bf0cab5d314a2b5fc1dd70ce08363a902372fb6d3",
+      "category": "dialogues",
+      "locale": "de-DE",
+      "text": "Woher kommst du?",
+      "source_text_hash": "3f22e95182a83d53e548ff495c5093369b0f69262a12e0f41469065b9a923e22",
+      "voice_key": "character:mara:female_calm",
+      "voice_spec": {
+        "voice_name": null,
+        "description": "Calm precise female adult Standard German voice, gentle, natural and highly intelligible.",
+        "required_language": "de",
+        "preferred_accent": "german",
+        "prefer_high_quality": true,
+        "required_labels": {
+          "gender": "female"
+        },
+        "distinct_character": true,
+        "settings": {
+          "stability": 0.68,
+          "similarity_boost": 0.89,
+          "style": 0.06,
+          "use_speaker_boost": true,
+          "speed": 0.95
+        },
+        "profile_key": "female_calm"
+      },
+      "entity_refs": [
+        {
+          "entity_type": "dialogue_turn",
+          "entity_uuid": "be694292-d2f5-5702-80b0-9601ca850e1d",
+          "entity_key": "d_de_de-real-world-gate_meet:3"
+        }
+      ],
+      "metadata": {
+        "character": "mara",
+        "dialogue": "d_de_de-real-world-gate_meet",
+        "turn": 3,
+        "persona": {
+          "voice_presentation": "female",
+          "style": "calm_clear",
+          "target_accent": "standard_german"
+        },
+        "voice_profile": "female_calm"
+      },
+      "relative_path": "audio/generated/de-DE/dialogues/5e08f0204a837b6b9ee8778bf0cab5d314a2b5fc1dd70ce08363a902372fb6d3.mp3"
+    },
+    {
+      "audio_key": "605cec5e5eb0e4d03c81031099a8ec9752624c75a482b3b22d40578947ba55c4",
+      "category": "dialogues",
+      "locale": "de-DE",
+      "text": "Wie ist deine Telefonnummer?",
+      "source_text_hash": "98058d2c2947148adfbb22a3ab5e5d58a03ecb740b36c738afb23339fa2b3e8d",
+      "voice_key": "character:anna:female_warm",
+      "voice_spec": {
+        "voice_name": null,
+        "description": "Warm natural female adult Standard German voice, friendly and conversational with clear beginner-level articulation.",
+        "required_language": "de",
+        "preferred_accent": "german",
+        "prefer_high_quality": true,
+        "required_labels": {
+          "gender": "female"
+        },
+        "distinct_character": true,
+        "settings": {
+          "stability": 0.58,
+          "similarity_boost": 0.87,
+          "style": 0.14,
+          "use_speaker_boost": true,
+          "speed": 0.97
+        },
+        "profile_key": "female_warm"
+      },
+      "entity_refs": [
+        {
+          "entity_type": "dialogue_turn",
+          "entity_uuid": "b704aeb2-f450-5103-9d61-16db94ed0dc4",
+          "entity_key": "d_de_de-real-world-gate_public_task:1"
+        }
+      ],
+      "metadata": {
+        "character": "anna",
+        "dialogue": "d_de_de-real-world-gate_public_task",
+        "turn": 1,
+        "persona": {
+          "voice_presentation": "female",
+          "style": "warm_conversational",
+          "target_accent": "standard_german"
+        },
+        "voice_profile": "female_warm"
+      },
+      "relative_path": "audio/generated/de-DE/dialogues/605cec5e5eb0e4d03c81031099a8ec9752624c75a482b3b22d40578947ba55c4.mp3"
     },
     {
       "audio_key": "633d6afb3f22b11c9368f7f6419ce50ed585696e58e35c1ef5adca08a751fe86",
@@ -1900,6 +2360,57 @@
       "relative_path": "audio/generated/de-DE/dialogues/6515f5288cd73d6ec051081c65ef0063d40ea07b92dc82d1f9b9d435e20952bf.mp3"
     },
     {
+      "audio_key": "657b81099685ff46e4afb7f6409e09d6983821498a6f6d234c545b83748dedb1",
+      "category": "dialogues",
+      "locale": "de-DE",
+      "text": "Null neun eins zwei, drei vier fünf, sechs sieben acht neun.",
+      "source_text_hash": "7cac4cd8bec658ed59478ef6f5ea0ad7589c102dfc5806fe4fb600ec014a59c1",
+      "voice_key": "character:emil:male_calm",
+      "voice_spec": {
+        "voice_name": null,
+        "description": "Calm precise male adult Standard German voice, grounded, natural and highly intelligible.",
+        "required_language": "de",
+        "preferred_accent": "german",
+        "prefer_high_quality": true,
+        "required_labels": {
+          "gender": "male"
+        },
+        "distinct_character": true,
+        "settings": {
+          "stability": 0.68,
+          "similarity_boost": 0.89,
+          "style": 0.06,
+          "use_speaker_boost": true,
+          "speed": 0.95
+        },
+        "profile_key": "male_calm"
+      },
+      "entity_refs": [
+        {
+          "entity_type": "dialogue_turn",
+          "entity_uuid": "a3d89c50-df1b-5df6-85a4-94171f692ce8",
+          "entity_key": "d_de_de-real-life-numbers_phone:2"
+        },
+        {
+          "entity_type": "dialogue_turn",
+          "entity_uuid": "3b473ccb-afc3-5eb8-8830-e17115e2d182",
+          "entity_key": "d_de_de-real-life-numbers_phone:4"
+        }
+      ],
+      "metadata": {
+        "character": "emil",
+        "dialogue": "d_de_de-real-life-numbers_phone",
+        "turn": 2,
+        "persona": {
+          "voice_presentation": "male",
+          "style": "calm_clear",
+          "target_accent": "standard_german"
+        },
+        "voice_profile": "male_calm"
+      },
+      "relative_path": "audio/generated/de-DE/dialogues/657b81099685ff46e4afb7f6409e09d6983821498a6f6d234c545b83748dedb1.mp3"
+    },
+    {
       "audio_key": "6744fc1555eb2c2b52d62cb27d4576226a52d8249e6630dc3b6db8a837a8dba2",
       "category": "dialogues",
       "locale": "de-DE",
@@ -2038,6 +2549,52 @@
       "relative_path": "audio/generated/de-DE/dialogues/6f4a8fa561abaedec9b0e98e7e0cf8cb63c43c98c226521e34de81e10ccc2d2c.mp3"
     },
     {
+      "audio_key": "750ac30ddc3284196f26165ccd3978e41b7f751a9f2bb3ee37d52bac5fc31154",
+      "category": "dialogues",
+      "locale": "de-DE",
+      "text": "fünfter Mai",
+      "source_text_hash": "436a4f7e551efadd9dc21acdc2abacdd3a87f3dca38416c18c3ffb45b902751c",
+      "voice_key": "character:noah:male_professional",
+      "voice_spec": {
+        "voice_name": null,
+        "description": "Neutral professional male adult Standard German voice, confident, clean and highly intelligible.",
+        "required_language": "de",
+        "preferred_accent": "german",
+        "prefer_high_quality": true,
+        "required_labels": {
+          "gender": "male"
+        },
+        "distinct_character": true,
+        "settings": {
+          "stability": 0.71,
+          "similarity_boost": 0.9,
+          "style": 0.05,
+          "use_speaker_boost": true,
+          "speed": 0.96
+        },
+        "profile_key": "male_professional"
+      },
+      "entity_refs": [
+        {
+          "entity_type": "dialogue_turn",
+          "entity_uuid": "0d1c40fb-043a-5264-9674-046fa3a78b3c",
+          "entity_key": "d_de_de-real-life-numbers_price_day:4"
+        }
+      ],
+      "metadata": {
+        "character": "noah",
+        "dialogue": "d_de_de-real-life-numbers_price_day",
+        "turn": 4,
+        "persona": {
+          "voice_presentation": "male",
+          "style": "professional_neutral",
+          "target_accent": "standard_german"
+        },
+        "voice_profile": "male_professional"
+      },
+      "relative_path": "audio/generated/de-DE/dialogues/750ac30ddc3284196f26165ccd3978e41b7f751a9f2bb3ee37d52bac5fc31154.mp3"
+    },
+    {
       "audio_key": "7937a04e4f77085c2df48c24e3fbc4996e95fc2b78b6875038f51af530ce6342",
       "category": "dialogues",
       "locale": "de-DE",
@@ -2082,6 +2639,52 @@
         "voice_profile": "male_calm"
       },
       "relative_path": "audio/generated/de-DE/dialogues/7937a04e4f77085c2df48c24e3fbc4996e95fc2b78b6875038f51af530ce6342.mp3"
+    },
+    {
+      "audio_key": "79899f323c274e302395f1c270e24a07b06ab2285447ef7e4cfd2daa435c7d75",
+      "category": "dialogues",
+      "locale": "de-DE",
+      "text": "Gut, danke.",
+      "source_text_hash": "3a7e225e0e49a58a1562cc97e3de2c7118ff17386d99496a7f766b35a3433911",
+      "voice_key": "character:mia:female_bright",
+      "voice_spec": {
+        "voice_name": null,
+        "description": "Bright lively female young-adult Standard German voice, friendly and energetic without sounding theatrical.",
+        "required_language": "de",
+        "preferred_accent": "german",
+        "prefer_high_quality": true,
+        "required_labels": {
+          "gender": "female"
+        },
+        "distinct_character": true,
+        "settings": {
+          "stability": 0.52,
+          "similarity_boost": 0.86,
+          "style": 0.2,
+          "use_speaker_boost": true,
+          "speed": 0.99
+        },
+        "profile_key": "female_bright"
+      },
+      "entity_refs": [
+        {
+          "entity_type": "dialogue_turn",
+          "entity_uuid": "02ac238e-66a0-55d6-af1f-437fec885c04",
+          "entity_key": "d_de_de-about-me_feeling_family:4"
+        }
+      ],
+      "metadata": {
+        "character": "mia",
+        "dialogue": "d_de_de-about-me_feeling_family",
+        "turn": 4,
+        "persona": {
+          "voice_presentation": "female",
+          "style": "bright_social",
+          "target_accent": "standard_german"
+        },
+        "voice_profile": "female_bright"
+      },
+      "relative_path": "audio/generated/de-DE/dialogues/79899f323c274e302395f1c270e24a07b06ab2285447ef7e4cfd2daa435c7d75.mp3"
     },
     {
       "audio_key": "7d1ae135edb74784468e63e39f1a7df5b1c1835c39849d252a0136f6e5bd002d",
@@ -2204,13 +2807,18 @@
       "entity_refs": [
         {
           "entity_type": "dialogue_turn",
+          "entity_uuid": "7f910bf9-c306-51b9-99f0-94021e69e458",
+          "entity_key": "d_de_de-about-me_origin_age:2"
+        },
+        {
+          "entity_type": "dialogue_turn",
           "entity_uuid": "2db4f847-fd81-555a-bba4-a88f05265de6",
           "entity_key": "d_first_greetings_01:2"
         }
       ],
       "metadata": {
         "character": "lukas",
-        "dialogue": "d_first_greetings_01",
+        "dialogue": "d_de_de-about-me_origin_age",
         "turn": 2,
         "persona": {
           "voice_presentation": "male",
@@ -2220,6 +2828,52 @@
         "voice_profile": "male_warm"
       },
       "relative_path": "audio/generated/de-DE/dialogues/7f01136c37e910f9374a3c6f370e7ab6c8260790c07897cd2ab94c97140a1294.mp3"
+    },
+    {
+      "audio_key": "7fc308392c3682cf2e29a2c9432d80a9bbe5a9ed90967963457d6121ad3a356e",
+      "category": "dialogues",
+      "locale": "de-DE",
+      "text": "Land?",
+      "source_text_hash": "1597a7b67dd371ae51742304ca7adc5d71323e9e83ce057717e97ad0b18dc337",
+      "voice_key": "character:nina:female_warm",
+      "voice_spec": {
+        "voice_name": null,
+        "description": "Warm natural female adult Standard German voice, friendly and conversational with clear beginner-level articulation.",
+        "required_language": "de",
+        "preferred_accent": "german",
+        "prefer_high_quality": true,
+        "required_labels": {
+          "gender": "female"
+        },
+        "distinct_character": true,
+        "settings": {
+          "stability": 0.58,
+          "similarity_boost": 0.87,
+          "style": 0.14,
+          "use_speaker_boost": true,
+          "speed": 0.97
+        },
+        "profile_key": "female_warm"
+      },
+      "entity_refs": [
+        {
+          "entity_type": "dialogue_turn",
+          "entity_uuid": "5da19b36-c812-5729-9779-1ce66f47eb0a",
+          "entity_key": "d_de_de-forms-signs_form:3"
+        }
+      ],
+      "metadata": {
+        "character": "nina",
+        "dialogue": "d_de_de-forms-signs_form",
+        "turn": 3,
+        "persona": {
+          "voice_presentation": "female",
+          "style": "warm_conversational",
+          "target_accent": "standard_german"
+        },
+        "voice_profile": "female_warm"
+      },
+      "relative_path": "audio/generated/de-DE/dialogues/7fc308392c3682cf2e29a2c9432d80a9bbe5a9ed90967963457d6121ad3a356e.mp3"
     },
     {
       "audio_key": "80393272ce62dff7298df0e1c4bed2c995ec69ce8ae05326cb2b4cc5eee40ad2",
@@ -2266,6 +2920,52 @@
         "voice_profile": "male_professional"
       },
       "relative_path": "audio/generated/de-DE/dialogues/80393272ce62dff7298df0e1c4bed2c995ec69ce8ae05326cb2b4cc5eee40ad2.mp3"
+    },
+    {
+      "audio_key": "809e35ea394d5f004f8f0b5865babe0deaca576ba437607dab704bc55a5efd12",
+      "category": "dialogues",
+      "locale": "de-DE",
+      "text": "Ah, ein Buch. Danke.",
+      "source_text_hash": "56919c742a6c2087f5b8c6f9e604d6e65a7af013335d8252d8389b8cdffbe00c",
+      "voice_key": "character:noah:male_professional",
+      "voice_spec": {
+        "voice_name": null,
+        "description": "Neutral professional male adult Standard German voice, confident, clean and highly intelligible.",
+        "required_language": "de",
+        "preferred_accent": "german",
+        "prefer_high_quality": true,
+        "required_labels": {
+          "gender": "male"
+        },
+        "distinct_character": true,
+        "settings": {
+          "stability": 0.71,
+          "similarity_boost": 0.9,
+          "style": 0.05,
+          "use_speaker_boost": true,
+          "speed": 0.96
+        },
+        "profile_key": "male_professional"
+      },
+      "entity_refs": [
+        {
+          "entity_type": "dialogue_turn",
+          "entity_uuid": "06b5bd39-5632-5a01-89ea-821475b31f71",
+          "entity_key": "d_de_meaning_help:6"
+        }
+      ],
+      "metadata": {
+        "character": "noah",
+        "dialogue": "d_de_meaning_help",
+        "turn": 6,
+        "persona": {
+          "voice_presentation": "male",
+          "style": "professional_neutral",
+          "target_accent": "standard_german"
+        },
+        "voice_profile": "male_professional"
+      },
+      "relative_path": "audio/generated/de-DE/dialogues/809e35ea394d5f004f8f0b5865babe0deaca576ba437607dab704bc55a5efd12.mp3"
     },
     {
       "audio_key": "82eb08cebbe9567119860169feba207acb1821950a7aaa5fb2dc02d2c7742c4b",
@@ -2452,6 +3152,52 @@
       "relative_path": "audio/generated/de-DE/dialogues/875673a1dcb91075b243266a8d28fa2d91376ba1f36669032238d65554b21c95.mp3"
     },
     {
+      "audio_key": "8861c3407d721a192f7fce33170bb623f9e2dda90ae62cccbc90929a1da92f3e",
+      "category": "dialogues",
+      "locale": "de-DE",
+      "text": "Noch einmal, bitte.",
+      "source_text_hash": "00ce4057749e17d331310c133d47ace93b17e7e8d529d65bda60d44d1617ede0",
+      "voice_key": "character:clara:female_bright",
+      "voice_spec": {
+        "voice_name": null,
+        "description": "Bright lively female young-adult Standard German voice, friendly and energetic without sounding theatrical.",
+        "required_language": "de",
+        "preferred_accent": "german",
+        "prefer_high_quality": true,
+        "required_labels": {
+          "gender": "female"
+        },
+        "distinct_character": true,
+        "settings": {
+          "stability": 0.52,
+          "similarity_boost": 0.86,
+          "style": 0.2,
+          "use_speaker_boost": true,
+          "speed": 0.99
+        },
+        "profile_key": "female_bright"
+      },
+      "entity_refs": [
+        {
+          "entity_type": "dialogue_turn",
+          "entity_uuid": "8988ecae-597c-5898-a419-16985c91daeb",
+          "entity_key": "d_de_de-forms-signs_sign:3"
+        }
+      ],
+      "metadata": {
+        "character": "clara",
+        "dialogue": "d_de_de-forms-signs_sign",
+        "turn": 3,
+        "persona": {
+          "voice_presentation": "female",
+          "style": "bright_social",
+          "target_accent": "standard_german"
+        },
+        "voice_profile": "female_bright"
+      },
+      "relative_path": "audio/generated/de-DE/dialogues/8861c3407d721a192f7fce33170bb623f9e2dda90ae62cccbc90929a1da92f3e.mp3"
+    },
+    {
       "audio_key": "8907514115fc348f207cd6b28992ed9954846ba09701cce7e41dc75e68b74ce1",
       "category": "dialogues",
       "locale": "de-DE",
@@ -2496,6 +3242,52 @@
         "voice_profile": "male_bright"
       },
       "relative_path": "audio/generated/de-DE/dialogues/8907514115fc348f207cd6b28992ed9954846ba09701cce7e41dc75e68b74ce1.mp3"
+    },
+    {
+      "audio_key": "89d5054bb788471fbe9368af3bacf95c862d2197568adb3e9901719ececac1eb",
+      "category": "dialogues",
+      "locale": "de-DE",
+      "text": "Woher kommst du?",
+      "source_text_hash": "3f22e95182a83d53e548ff495c5093369b0f69262a12e0f41469065b9a923e22",
+      "voice_key": "character:anna:female_warm",
+      "voice_spec": {
+        "voice_name": null,
+        "description": "Warm natural female adult Standard German voice, friendly and conversational with clear beginner-level articulation.",
+        "required_language": "de",
+        "preferred_accent": "german",
+        "prefer_high_quality": true,
+        "required_labels": {
+          "gender": "female"
+        },
+        "distinct_character": true,
+        "settings": {
+          "stability": 0.58,
+          "similarity_boost": 0.87,
+          "style": 0.14,
+          "use_speaker_boost": true,
+          "speed": 0.97
+        },
+        "profile_key": "female_warm"
+      },
+      "entity_refs": [
+        {
+          "entity_type": "dialogue_turn",
+          "entity_uuid": "884c9b60-2c4d-558a-999d-602301d3520d",
+          "entity_key": "d_de_de-about-me_origin_age:3"
+        }
+      ],
+      "metadata": {
+        "character": "anna",
+        "dialogue": "d_de_de-about-me_origin_age",
+        "turn": 3,
+        "persona": {
+          "voice_presentation": "female",
+          "style": "warm_conversational",
+          "target_accent": "standard_german"
+        },
+        "voice_profile": "female_warm"
+      },
+      "relative_path": "audio/generated/de-DE/dialogues/89d5054bb788471fbe9368af3bacf95c862d2197568adb3e9901719ececac1eb.mp3"
     },
     {
       "audio_key": "8a2d41a3a30df592a6cfafbb36982d1558a6f14ec5fccb7b0eb91a88680a4744",
@@ -2544,6 +3336,98 @@
       "relative_path": "audio/generated/de-DE/dialogues/8a2d41a3a30df592a6cfafbb36982d1558a6f14ec5fccb7b0eb91a88680a4744.mp3"
     },
     {
+      "audio_key": "8a4bcef6a0e7d6cbfb2c972f3c57e17d04c19a637b72342eab384c43351494a9",
+      "category": "dialogues",
+      "locale": "de-DE",
+      "text": "Ich komme aus dem Iran.",
+      "source_text_hash": "d825d28755a179c37da77042a57ea58c8c0cc103bc255581e68083d2758e2801",
+      "voice_key": "character:max:male_warm",
+      "voice_spec": {
+        "voice_name": null,
+        "description": "Warm natural male adult Standard German voice, friendly and conversational with clear beginner-level articulation.",
+        "required_language": "de",
+        "preferred_accent": "german",
+        "prefer_high_quality": true,
+        "required_labels": {
+          "gender": "male"
+        },
+        "distinct_character": true,
+        "settings": {
+          "stability": 0.58,
+          "similarity_boost": 0.87,
+          "style": 0.14,
+          "use_speaker_boost": true,
+          "speed": 0.97
+        },
+        "profile_key": "male_warm"
+      },
+      "entity_refs": [
+        {
+          "entity_type": "dialogue_turn",
+          "entity_uuid": "d9a66190-1a60-5710-a1a0-7f9f6d1378e6",
+          "entity_key": "d_de_de-forms-signs_form:4"
+        }
+      ],
+      "metadata": {
+        "character": "max",
+        "dialogue": "d_de_de-forms-signs_form",
+        "turn": 4,
+        "persona": {
+          "voice_presentation": "male",
+          "style": "warm_conversational",
+          "target_accent": "standard_german"
+        },
+        "voice_profile": "male_warm"
+      },
+      "relative_path": "audio/generated/de-DE/dialogues/8a4bcef6a0e7d6cbfb2c972f3c57e17d04c19a637b72342eab384c43351494a9.mp3"
+    },
+    {
+      "audio_key": "8c3300cdb4d1b550f57467371d4aba47e9b5807f576356e102c13ecc8566cc59",
+      "category": "dialogues",
+      "locale": "de-DE",
+      "text": "Wie viel kostet das?",
+      "source_text_hash": "2381e95cb700622bc0fcb6df1955fd8164ff241e843a42e5d151e96aeffe37fb",
+      "voice_key": "character:anna:female_warm",
+      "voice_spec": {
+        "voice_name": null,
+        "description": "Warm natural female adult Standard German voice, friendly and conversational with clear beginner-level articulation.",
+        "required_language": "de",
+        "preferred_accent": "german",
+        "prefer_high_quality": true,
+        "required_labels": {
+          "gender": "female"
+        },
+        "distinct_character": true,
+        "settings": {
+          "stability": 0.58,
+          "similarity_boost": 0.87,
+          "style": 0.14,
+          "use_speaker_boost": true,
+          "speed": 0.97
+        },
+        "profile_key": "female_warm"
+      },
+      "entity_refs": [
+        {
+          "entity_type": "dialogue_turn",
+          "entity_uuid": "19ab6911-2476-538c-a052-bba248e212a0",
+          "entity_key": "d_de_de-real-world-gate_public_task:3"
+        }
+      ],
+      "metadata": {
+        "character": "anna",
+        "dialogue": "d_de_de-real-world-gate_public_task",
+        "turn": 3,
+        "persona": {
+          "voice_presentation": "female",
+          "style": "warm_conversational",
+          "target_accent": "standard_german"
+        },
+        "voice_profile": "female_warm"
+      },
+      "relative_path": "audio/generated/de-DE/dialogues/8c3300cdb4d1b550f57467371d4aba47e9b5807f576356e102c13ecc8566cc59.mp3"
+    },
+    {
       "audio_key": "8cfbdfcb142f461a602d71d2feff901777ffde07031e422d758fa730dfb5b0ce",
       "category": "dialogues",
       "locale": "de-DE",
@@ -2588,6 +3472,52 @@
         "voice_profile": "male_bright"
       },
       "relative_path": "audio/generated/de-DE/dialogues/8cfbdfcb142f461a602d71d2feff901777ffde07031e422d758fa730dfb5b0ce.mp3"
+    },
+    {
+      "audio_key": "8e0ed24b28a7cc07e6519a32295942fc3aa30064c34b00c36cafa9f432a73222",
+      "category": "dialogues",
+      "locale": "de-DE",
+      "text": "Montag",
+      "source_text_hash": "b703fc6aeb9cf65c556f61df949d8f3af54f81e29a866c67eed96db79d473416",
+      "voice_key": "character:sofia:female_professional",
+      "voice_spec": {
+        "voice_name": null,
+        "description": "Neutral professional female adult Standard German voice, confident, clean and highly intelligible.",
+        "required_language": "de",
+        "preferred_accent": "german",
+        "prefer_high_quality": true,
+        "required_labels": {
+          "gender": "female"
+        },
+        "distinct_character": true,
+        "settings": {
+          "stability": 0.71,
+          "similarity_boost": 0.9,
+          "style": 0.05,
+          "use_speaker_boost": true,
+          "speed": 0.96
+        },
+        "profile_key": "female_professional"
+      },
+      "entity_refs": [
+        {
+          "entity_type": "dialogue_turn",
+          "entity_uuid": "451f46e7-191d-59bf-9e53-08589bf00219",
+          "entity_key": "d_de_de-real-life-numbers_price_day:3"
+        }
+      ],
+      "metadata": {
+        "character": "sofia",
+        "dialogue": "d_de_de-real-life-numbers_price_day",
+        "turn": 3,
+        "persona": {
+          "voice_presentation": "female",
+          "style": "professional_neutral",
+          "target_accent": "standard_german"
+        },
+        "voice_profile": "female_professional"
+      },
+      "relative_path": "audio/generated/de-DE/dialogues/8e0ed24b28a7cc07e6519a32295942fc3aa30064c34b00c36cafa9f432a73222.mp3"
     },
     {
       "audio_key": "904a61a1111a4b479ddd50be8ae6fd817eef02b4004aabc86863bb79babbe9c7",
@@ -2728,6 +3658,98 @@
       "relative_path": "audio/generated/de-DE/dialogues/94cc2edb07f5aae43e4526e37e56c4a16ea17f64f32ac26f47c2c9608cb77c5b.mp3"
     },
     {
+      "audio_key": "952c10a4cbae31c890258588668e59c41db602498be50e06034e90cb0057c229",
+      "category": "dialogues",
+      "locale": "de-DE",
+      "text": "Dort.",
+      "source_text_hash": "20b6ade469ecc978e77c29807155b4c71d75ba56ac58ff2c4f8887517e65f37d",
+      "voice_key": "character:anna:female_warm",
+      "voice_spec": {
+        "voice_name": null,
+        "description": "Warm natural female adult Standard German voice, friendly and conversational with clear beginner-level articulation.",
+        "required_language": "de",
+        "preferred_accent": "german",
+        "prefer_high_quality": true,
+        "required_labels": {
+          "gender": "female"
+        },
+        "distinct_character": true,
+        "settings": {
+          "stability": 0.58,
+          "similarity_boost": 0.87,
+          "style": 0.14,
+          "use_speaker_boost": true,
+          "speed": 0.97
+        },
+        "profile_key": "female_warm"
+      },
+      "entity_refs": [
+        {
+          "entity_type": "dialogue_turn",
+          "entity_uuid": "0dbc5245-37c4-5d91-a932-38712fc04c74",
+          "entity_key": "d_de_de-real-world-gate_public_task:6"
+        }
+      ],
+      "metadata": {
+        "character": "anna",
+        "dialogue": "d_de_de-real-world-gate_public_task",
+        "turn": 6,
+        "persona": {
+          "voice_presentation": "female",
+          "style": "warm_conversational",
+          "target_accent": "standard_german"
+        },
+        "voice_profile": "female_warm"
+      },
+      "relative_path": "audio/generated/de-DE/dialogues/952c10a4cbae31c890258588668e59c41db602498be50e06034e90cb0057c229.mp3"
+    },
+    {
+      "audio_key": "99ae1ecc1a80f41a80d972ff2909970f107de9b9a007ce86380e41177117db33",
+      "category": "dialogues",
+      "locale": "de-DE",
+      "text": "Wie heißt du?",
+      "source_text_hash": "2753e4860651be83bea82179f42ddb29947635c5ea61b047a06924f8c758f042",
+      "voice_key": "character:mara:female_calm",
+      "voice_spec": {
+        "voice_name": null,
+        "description": "Calm precise female adult Standard German voice, gentle, natural and highly intelligible.",
+        "required_language": "de",
+        "preferred_accent": "german",
+        "prefer_high_quality": true,
+        "required_labels": {
+          "gender": "female"
+        },
+        "distinct_character": true,
+        "settings": {
+          "stability": 0.68,
+          "similarity_boost": 0.89,
+          "style": 0.06,
+          "use_speaker_boost": true,
+          "speed": 0.95
+        },
+        "profile_key": "female_calm"
+      },
+      "entity_refs": [
+        {
+          "entity_type": "dialogue_turn",
+          "entity_uuid": "1a2be808-d0e5-5206-8c47-fb482eff39ee",
+          "entity_key": "d_de_de-real-world-gate_meet:1"
+        }
+      ],
+      "metadata": {
+        "character": "mara",
+        "dialogue": "d_de_de-real-world-gate_meet",
+        "turn": 1,
+        "persona": {
+          "voice_presentation": "female",
+          "style": "calm_clear",
+          "target_accent": "standard_german"
+        },
+        "voice_profile": "female_calm"
+      },
+      "relative_path": "audio/generated/de-DE/dialogues/99ae1ecc1a80f41a80d972ff2909970f107de9b9a007ce86380e41177117db33.mp3"
+    },
+    {
       "audio_key": "9a2e1ff7b1a3310c6ecdb8469df42647b284bfc53c1376db958b89b93a4a2aec",
       "category": "dialogues",
       "locale": "de-DE",
@@ -2772,6 +3794,144 @@
         "voice_profile": "male_calm"
       },
       "relative_path": "audio/generated/de-DE/dialogues/9a2e1ff7b1a3310c6ecdb8469df42647b284bfc53c1376db958b89b93a4a2aec.mp3"
+    },
+    {
+      "audio_key": "9b0f373a95077c7ab43da38cd4d0a6aa253f29b4b2fda5505927232239f09409",
+      "category": "dialogues",
+      "locale": "de-DE",
+      "text": "Gut, danke.",
+      "source_text_hash": "3a7e225e0e49a58a1562cc97e3de2c7118ff17386d99496a7f766b35a3433911",
+      "voice_key": "character:emil:male_calm",
+      "voice_spec": {
+        "voice_name": null,
+        "description": "Calm precise male adult Standard German voice, grounded, natural and highly intelligible.",
+        "required_language": "de",
+        "preferred_accent": "german",
+        "prefer_high_quality": true,
+        "required_labels": {
+          "gender": "male"
+        },
+        "distinct_character": true,
+        "settings": {
+          "stability": 0.68,
+          "similarity_boost": 0.89,
+          "style": 0.06,
+          "use_speaker_boost": true,
+          "speed": 0.95
+        },
+        "profile_key": "male_calm"
+      },
+      "entity_refs": [
+        {
+          "entity_type": "dialogue_turn",
+          "entity_uuid": "b2de4bcd-72b2-522d-8905-2cd1c6ae9eda",
+          "entity_key": "d_de_de-real-world-gate_meet:6"
+        }
+      ],
+      "metadata": {
+        "character": "emil",
+        "dialogue": "d_de_de-real-world-gate_meet",
+        "turn": 6,
+        "persona": {
+          "voice_presentation": "male",
+          "style": "calm_clear",
+          "target_accent": "standard_german"
+        },
+        "voice_profile": "male_calm"
+      },
+      "relative_path": "audio/generated/de-DE/dialogues/9b0f373a95077c7ab43da38cd4d0a6aa253f29b4b2fda5505927232239f09409.mp3"
+    },
+    {
+      "audio_key": "9e8d3546ba8ae2fbf1c1b32c2be3e15880a2e68088dfef8e417a34e2b7f29b1f",
+      "category": "dialogues",
+      "locale": "de-DE",
+      "text": "Tasche. Das hier.",
+      "source_text_hash": "84505c98fcae80aecc20323fc9cf85763951bb0b00285c9b1021cd31b78ba905",
+      "voice_key": "character:lea:female_calm",
+      "voice_spec": {
+        "voice_name": null,
+        "description": "Calm precise female adult Standard German voice, gentle, natural and highly intelligible.",
+        "required_language": "de",
+        "preferred_accent": "german",
+        "prefer_high_quality": true,
+        "required_labels": {
+          "gender": "female"
+        },
+        "distinct_character": true,
+        "settings": {
+          "stability": 0.68,
+          "similarity_boost": 0.89,
+          "style": 0.06,
+          "use_speaker_boost": true,
+          "speed": 0.95
+        },
+        "profile_key": "female_calm"
+      },
+      "entity_refs": [
+        {
+          "entity_type": "dialogue_turn",
+          "entity_uuid": "d0a996ed-8d3c-5fb6-87e2-507fde97202a",
+          "entity_key": "d_de_ready_repair:5"
+        }
+      ],
+      "metadata": {
+        "character": "lea",
+        "dialogue": "d_de_ready_repair",
+        "turn": 5,
+        "persona": {
+          "voice_presentation": "female",
+          "style": "calm_clear",
+          "target_accent": "standard_german"
+        },
+        "voice_profile": "female_calm"
+      },
+      "relative_path": "audio/generated/de-DE/dialogues/9e8d3546ba8ae2fbf1c1b32c2be3e15880a2e68088dfef8e417a34e2b7f29b1f.mp3"
+    },
+    {
+      "audio_key": "9f07529751d32f6ea8fcfa410879e326dc56c03d5afd07310a5b96fce299609c",
+      "category": "dialogues",
+      "locale": "de-DE",
+      "text": "Null neun eins zwei, drei vier fünf, sechs sieben acht neun.",
+      "source_text_hash": "7cac4cd8bec658ed59478ef6f5ea0ad7589c102dfc5806fe4fb600ec014a59c1",
+      "voice_key": "character:noah:male_professional",
+      "voice_spec": {
+        "voice_name": null,
+        "description": "Neutral professional male adult Standard German voice, confident, clean and highly intelligible.",
+        "required_language": "de",
+        "preferred_accent": "german",
+        "prefer_high_quality": true,
+        "required_labels": {
+          "gender": "male"
+        },
+        "distinct_character": true,
+        "settings": {
+          "stability": 0.71,
+          "similarity_boost": 0.9,
+          "style": 0.05,
+          "use_speaker_boost": true,
+          "speed": 0.96
+        },
+        "profile_key": "male_professional"
+      },
+      "entity_refs": [
+        {
+          "entity_type": "dialogue_turn",
+          "entity_uuid": "d14e689b-9e86-5065-aedd-35ed26b46d86",
+          "entity_key": "d_de_de-real-world-gate_public_task:2"
+        }
+      ],
+      "metadata": {
+        "character": "noah",
+        "dialogue": "d_de_de-real-world-gate_public_task",
+        "turn": 2,
+        "persona": {
+          "voice_presentation": "male",
+          "style": "professional_neutral",
+          "target_accent": "standard_german"
+        },
+        "voice_profile": "male_professional"
+      },
+      "relative_path": "audio/generated/de-DE/dialogues/9f07529751d32f6ea8fcfa410879e326dc56c03d5afd07310a5b96fce299609c.mp3"
     },
     {
       "audio_key": "a0f860531ae11703657cf16149ac63bbcb2367a3e7ee22e952ed2b1bc69e96f8",
@@ -2864,6 +4024,149 @@
         "voice_profile": "female_bright"
       },
       "relative_path": "audio/generated/de-DE/dialogues/a21614af719a69f41d9fc3ebb47deafc82bd8134ae6486a11ae75afe9beb487f.mp3"
+    },
+    {
+      "audio_key": "a3672d0f4c3dc7f9216753995f2d1c32287dbc07743d6a18f40712e0a9d66779",
+      "category": "dialogues",
+      "locale": "de-DE",
+      "text": "Das ist meine Schwester.",
+      "source_text_hash": "65bc85219e012f1c54d16a6dbb8c747eda688ab0cf643bc693f10feb0d8a1fed",
+      "voice_key": "character:jonas:male_bright",
+      "voice_spec": {
+        "voice_name": null,
+        "description": "Bright lively male young-adult Standard German voice, friendly and energetic without sounding theatrical.",
+        "required_language": "de",
+        "preferred_accent": "german",
+        "prefer_high_quality": true,
+        "required_labels": {
+          "gender": "male"
+        },
+        "distinct_character": true,
+        "settings": {
+          "stability": 0.52,
+          "similarity_boost": 0.86,
+          "style": 0.2,
+          "use_speaker_boost": true,
+          "speed": 0.99
+        },
+        "profile_key": "male_bright"
+      },
+      "entity_refs": [
+        {
+          "entity_type": "dialogue_turn",
+          "entity_uuid": "8398acb2-910a-5bfb-b40e-72ba8cabaf4f",
+          "entity_key": "d_de_de-about-me_feeling_family:3"
+        }
+      ],
+      "metadata": {
+        "character": "jonas",
+        "dialogue": "d_de_de-about-me_feeling_family",
+        "turn": 3,
+        "persona": {
+          "voice_presentation": "male",
+          "style": "bright_social",
+          "target_accent": "standard_german"
+        },
+        "voice_profile": "male_bright"
+      },
+      "relative_path": "audio/generated/de-DE/dialogues/a3672d0f4c3dc7f9216753995f2d1c32287dbc07743d6a18f40712e0a9d66779.mp3"
+    },
+    {
+      "audio_key": "a6a00db8577211b343f86b8a5d7104d122e30b78876a3700851f35df2f990cf1",
+      "category": "dialogues",
+      "locale": "de-DE",
+      "text": "Ich heiße Sara.",
+      "source_text_hash": "9d3105310008bb10a0bd0f01adf3bef616fc078bd1e0da62dec93b746f011668",
+      "voice_key": "character:emil:male_calm",
+      "voice_spec": {
+        "voice_name": null,
+        "description": "Calm precise male adult Standard German voice, grounded, natural and highly intelligible.",
+        "required_language": "de",
+        "preferred_accent": "german",
+        "prefer_high_quality": true,
+        "required_labels": {
+          "gender": "male"
+        },
+        "distinct_character": true,
+        "settings": {
+          "stability": 0.68,
+          "similarity_boost": 0.89,
+          "style": 0.06,
+          "use_speaker_boost": true,
+          "speed": 0.95
+        },
+        "profile_key": "male_calm"
+      },
+      "entity_refs": [
+        {
+          "entity_type": "dialogue_turn",
+          "entity_uuid": "19391d1b-5b1e-5b6d-8699-ea9e673c5a30",
+          "entity_key": "d_de_de-real-world-gate_meet:2"
+        }
+      ],
+      "metadata": {
+        "character": "emil",
+        "dialogue": "d_de_de-real-world-gate_meet",
+        "turn": 2,
+        "persona": {
+          "voice_presentation": "male",
+          "style": "calm_clear",
+          "target_accent": "standard_german"
+        },
+        "voice_profile": "male_calm"
+      },
+      "relative_path": "audio/generated/de-DE/dialogues/a6a00db8577211b343f86b8a5d7104d122e30b78876a3700851f35df2f990cf1.mp3"
+    },
+    {
+      "audio_key": "a82862582616830996eb9e1d19c3198bcc8cb6c2fb2b6553320f20dd7c825749",
+      "category": "dialogues",
+      "locale": "de-DE",
+      "text": "Fünf Euro.",
+      "source_text_hash": "8dd866966c1dc138c7dbefc21831e148435a4fb22df59939ce657e1789739da2",
+      "voice_key": "character:noah:male_professional",
+      "voice_spec": {
+        "voice_name": null,
+        "description": "Neutral professional male adult Standard German voice, confident, clean and highly intelligible.",
+        "required_language": "de",
+        "preferred_accent": "german",
+        "prefer_high_quality": true,
+        "required_labels": {
+          "gender": "male"
+        },
+        "distinct_character": true,
+        "settings": {
+          "stability": 0.71,
+          "similarity_boost": 0.9,
+          "style": 0.05,
+          "use_speaker_boost": true,
+          "speed": 0.96
+        },
+        "profile_key": "male_professional"
+      },
+      "entity_refs": [
+        {
+          "entity_type": "dialogue_turn",
+          "entity_uuid": "cf12ace8-bd72-5a2e-b834-032512ab5a98",
+          "entity_key": "d_de_de-real-life-numbers_price_day:2"
+        },
+        {
+          "entity_type": "dialogue_turn",
+          "entity_uuid": "7a881b5c-df30-5f4d-8410-ff2aef7a06f9",
+          "entity_key": "d_de_de-real-world-gate_public_task:4"
+        }
+      ],
+      "metadata": {
+        "character": "noah",
+        "dialogue": "d_de_de-real-life-numbers_price_day",
+        "turn": 2,
+        "persona": {
+          "voice_presentation": "male",
+          "style": "professional_neutral",
+          "target_accent": "standard_german"
+        },
+        "voice_profile": "male_professional"
+      },
+      "relative_path": "audio/generated/de-DE/dialogues/a82862582616830996eb9e1d19c3198bcc8cb6c2fb2b6553320f20dd7c825749.mp3"
     },
     {
       "audio_key": "a8b976de0359d41fab92573afeb1b86b041e0de3ec0a94d6322c92e8e5589288",
@@ -2986,13 +4289,18 @@
       "entity_refs": [
         {
           "entity_type": "dialogue_turn",
+          "entity_uuid": "da9653b0-6586-5a23-a6db-b0d6f3b08946",
+          "entity_key": "d_de_de-about-me_origin_age:1"
+        },
+        {
+          "entity_type": "dialogue_turn",
           "entity_uuid": "0f719915-021b-53f6-a03e-5e7c16a47b54",
           "entity_key": "d_first_greetings_01:1"
         }
       ],
       "metadata": {
         "character": "anna",
-        "dialogue": "d_first_greetings_01",
+        "dialogue": "d_de_de-about-me_origin_age",
         "turn": 1,
         "persona": {
           "voice_presentation": "female",
@@ -3050,6 +4358,52 @@
       "relative_path": "audio/generated/de-DE/dialogues/b16c66a99b46fa16019e28c94cc3d245fcecb882c9156bf602b3c72aaa08b81f.mp3"
     },
     {
+      "audio_key": "b2c051cd38a69f66f99b0aba1806076fb2979a802a5443ddec84d1db80568eb0",
+      "category": "dialogues",
+      "locale": "de-DE",
+      "text": "Gut, danke.",
+      "source_text_hash": "3a7e225e0e49a58a1562cc97e3de2c7118ff17386d99496a7f766b35a3433911",
+      "voice_key": "character:jonas:male_bright",
+      "voice_spec": {
+        "voice_name": null,
+        "description": "Bright lively male young-adult Standard German voice, friendly and energetic without sounding theatrical.",
+        "required_language": "de",
+        "preferred_accent": "german",
+        "prefer_high_quality": true,
+        "required_labels": {
+          "gender": "male"
+        },
+        "distinct_character": true,
+        "settings": {
+          "stability": 0.52,
+          "similarity_boost": 0.86,
+          "style": 0.2,
+          "use_speaker_boost": true,
+          "speed": 0.99
+        },
+        "profile_key": "male_bright"
+      },
+      "entity_refs": [
+        {
+          "entity_type": "dialogue_turn",
+          "entity_uuid": "8cdf3f5c-968f-58e8-ac24-1419625fab0c",
+          "entity_key": "d_de_de-about-me_feeling_family:2"
+        }
+      ],
+      "metadata": {
+        "character": "jonas",
+        "dialogue": "d_de_de-about-me_feeling_family",
+        "turn": 2,
+        "persona": {
+          "voice_presentation": "male",
+          "style": "bright_social",
+          "target_accent": "standard_german"
+        },
+        "voice_profile": "male_bright"
+      },
+      "relative_path": "audio/generated/de-DE/dialogues/b2c051cd38a69f66f99b0aba1806076fb2979a802a5443ddec84d1db80568eb0.mp3"
+    },
+    {
       "audio_key": "b4c1095d21d44103449a4a187b67848ab6f502720446fb90e974f40c07f7551e",
       "category": "dialogues",
       "locale": "de-DE",
@@ -3094,6 +4448,52 @@
         "voice_profile": "female_bright"
       },
       "relative_path": "audio/generated/de-DE/dialogues/b4c1095d21d44103449a4a187b67848ab6f502720446fb90e974f40c07f7551e.mp3"
+    },
+    {
+      "audio_key": "b6538f40ea6ae51df9df0c0098346e6bd48568054c1033957d3e8e7e5be3dda0",
+      "category": "dialogues",
+      "locale": "de-DE",
+      "text": "Buch. Das hier.",
+      "source_text_hash": "2d508052e81b6167c885c351be2f8acab77f5661fd14c58775a55d63ebd34fb4",
+      "voice_key": "character:sofia:female_professional",
+      "voice_spec": {
+        "voice_name": null,
+        "description": "Neutral professional female adult Standard German voice, confident, clean and highly intelligible.",
+        "required_language": "de",
+        "preferred_accent": "german",
+        "prefer_high_quality": true,
+        "required_labels": {
+          "gender": "female"
+        },
+        "distinct_character": true,
+        "settings": {
+          "stability": 0.71,
+          "similarity_boost": 0.9,
+          "style": 0.05,
+          "use_speaker_boost": true,
+          "speed": 0.96
+        },
+        "profile_key": "female_professional"
+      },
+      "entity_refs": [
+        {
+          "entity_type": "dialogue_turn",
+          "entity_uuid": "2eb87810-0a16-5ef7-8428-3ca0b889ccdc",
+          "entity_key": "d_de_meaning_help:5"
+        }
+      ],
+      "metadata": {
+        "character": "sofia",
+        "dialogue": "d_de_meaning_help",
+        "turn": 5,
+        "persona": {
+          "voice_presentation": "female",
+          "style": "professional_neutral",
+          "target_accent": "standard_german"
+        },
+        "voice_profile": "female_professional"
+      },
+      "relative_path": "audio/generated/de-DE/dialogues/b6538f40ea6ae51df9df0c0098346e6bd48568054c1033957d3e8e7e5be3dda0.mp3"
     },
     {
       "audio_key": "b76eb23fbe6f422542756b6ec667fb8c0cc6b2f8f2c3ea0d0c2aeb4050f7b357",
@@ -3326,6 +4726,52 @@
       "relative_path": "audio/generated/de-DE/dialogues/bf98487a36aac01f0a74b17dfe4071fb925ac040db26101db09bb7fdfd25f39e.mp3"
     },
     {
+      "audio_key": "c1ef217f36ab6683f71c35ef8fb6cf1a40d48a4a6834063cc9523ed8a91ea5fb",
+      "category": "dialogues",
+      "locale": "de-DE",
+      "text": "Wo ist der Ausgang?",
+      "source_text_hash": "76da97bd643208feab9c49a86fc706f348d1706cb6318641b66c493a8065ecda",
+      "voice_key": "character:noah:male_professional",
+      "voice_spec": {
+        "voice_name": null,
+        "description": "Neutral professional male adult Standard German voice, confident, clean and highly intelligible.",
+        "required_language": "de",
+        "preferred_accent": "german",
+        "prefer_high_quality": true,
+        "required_labels": {
+          "gender": "male"
+        },
+        "distinct_character": true,
+        "settings": {
+          "stability": 0.71,
+          "similarity_boost": 0.9,
+          "style": 0.05,
+          "use_speaker_boost": true,
+          "speed": 0.96
+        },
+        "profile_key": "male_professional"
+      },
+      "entity_refs": [
+        {
+          "entity_type": "dialogue_turn",
+          "entity_uuid": "b07d734c-5945-5a60-af92-d9fe722ecbbf",
+          "entity_key": "d_de_de-real-world-gate_public_task:5"
+        }
+      ],
+      "metadata": {
+        "character": "noah",
+        "dialogue": "d_de_de-real-world-gate_public_task",
+        "turn": 5,
+        "persona": {
+          "voice_presentation": "male",
+          "style": "professional_neutral",
+          "target_accent": "standard_german"
+        },
+        "voice_profile": "male_professional"
+      },
+      "relative_path": "audio/generated/de-DE/dialogues/c1ef217f36ab6683f71c35ef8fb6cf1a40d48a4a6834063cc9523ed8a91ea5fb.mp3"
+    },
+    {
       "audio_key": "c4bb7f578e02b3e4ae113876079320b8dc2eb810b77b4cc045db4ccb8854db7b",
       "category": "dialogues",
       "locale": "de-DE",
@@ -3370,6 +4816,52 @@
         "voice_profile": "male_professional"
       },
       "relative_path": "audio/generated/de-DE/dialogues/c4bb7f578e02b3e4ae113876079320b8dc2eb810b77b4cc045db4ccb8854db7b.mp3"
+    },
+    {
+      "audio_key": "c69a60c5e13e37526d40bade1b1462e2f4d49a802d65325c23a8fc9bfb498117",
+      "category": "dialogues",
+      "locale": "de-DE",
+      "text": "Ich komme aus dem Iran.",
+      "source_text_hash": "d825d28755a179c37da77042a57ea58c8c0cc103bc255581e68083d2758e2801",
+      "voice_key": "character:lukas:male_warm",
+      "voice_spec": {
+        "voice_name": null,
+        "description": "Warm natural male adult Standard German voice, friendly and conversational with clear beginner-level articulation.",
+        "required_language": "de",
+        "preferred_accent": "german",
+        "prefer_high_quality": true,
+        "required_labels": {
+          "gender": "male"
+        },
+        "distinct_character": true,
+        "settings": {
+          "stability": 0.58,
+          "similarity_boost": 0.87,
+          "style": 0.14,
+          "use_speaker_boost": true,
+          "speed": 0.97
+        },
+        "profile_key": "male_warm"
+      },
+      "entity_refs": [
+        {
+          "entity_type": "dialogue_turn",
+          "entity_uuid": "23c0e7ee-cceb-5561-b7d3-152c563df153",
+          "entity_key": "d_de_de-about-me_origin_age:4"
+        }
+      ],
+      "metadata": {
+        "character": "lukas",
+        "dialogue": "d_de_de-about-me_origin_age",
+        "turn": 4,
+        "persona": {
+          "voice_presentation": "male",
+          "style": "warm_conversational",
+          "target_accent": "standard_german"
+        },
+        "voice_profile": "male_warm"
+      },
+      "relative_path": "audio/generated/de-DE/dialogues/c69a60c5e13e37526d40bade1b1462e2f4d49a802d65325c23a8fc9bfb498117.mp3"
     },
     {
       "audio_key": "d193c7aecc6ce18a4b93a2bfab8f9f67ded592e5ff425524ba27edb602ceef3b",
@@ -3462,6 +4954,57 @@
         "voice_profile": "male_warm"
       },
       "relative_path": "audio/generated/de-DE/dialogues/d2af368402cf9aad16761939e497dc558082ff817c05110a0d99f371a77d77b0.mp3"
+    },
+    {
+      "audio_key": "d72e815dc48aa3efe05af96f4f331d91a35037ad20db1000918c1277ce4c96dd",
+      "category": "dialogues",
+      "locale": "de-DE",
+      "text": "Dort.",
+      "source_text_hash": "20b6ade469ecc978e77c29807155b4c71d75ba56ac58ff2c4f8887517e65f37d",
+      "voice_key": "character:leon:male_bright",
+      "voice_spec": {
+        "voice_name": null,
+        "description": "Bright lively male young-adult Standard German voice, friendly and energetic without sounding theatrical.",
+        "required_language": "de",
+        "preferred_accent": "german",
+        "prefer_high_quality": true,
+        "required_labels": {
+          "gender": "male"
+        },
+        "distinct_character": true,
+        "settings": {
+          "stability": 0.52,
+          "similarity_boost": 0.86,
+          "style": 0.2,
+          "use_speaker_boost": true,
+          "speed": 0.99
+        },
+        "profile_key": "male_bright"
+      },
+      "entity_refs": [
+        {
+          "entity_type": "dialogue_turn",
+          "entity_uuid": "c60a6635-ecfe-5e4d-8240-7a96aaebb584",
+          "entity_key": "d_de_de-forms-signs_sign:2"
+        },
+        {
+          "entity_type": "dialogue_turn",
+          "entity_uuid": "63aed4d9-a62d-5383-a3c0-f33b432afb97",
+          "entity_key": "d_de_de-forms-signs_sign:4"
+        }
+      ],
+      "metadata": {
+        "character": "leon",
+        "dialogue": "d_de_de-forms-signs_sign",
+        "turn": 2,
+        "persona": {
+          "voice_presentation": "male",
+          "style": "bright_social",
+          "target_accent": "standard_german"
+        },
+        "voice_profile": "male_bright"
+      },
+      "relative_path": "audio/generated/de-DE/dialogues/d72e815dc48aa3efe05af96f4f331d91a35037ad20db1000918c1277ce4c96dd.mp3"
     },
     {
       "audio_key": "d76eba6bdb3e70522c9b8a71d17399f3722e8ad9afa87d3fc772e1b30768ab4e",
@@ -3646,6 +5189,52 @@
         "voice_profile": "male_bright"
       },
       "relative_path": "audio/generated/de-DE/dialogues/dcc784cc76abf9378fa2903c48982de359e1bd22f9f42a498b1187bebb62d4ba.mp3"
+    },
+    {
+      "audio_key": "e110e015af54153082e922b4e1e228d5fa0e23ec05e8cd93cd85c30f12193eef",
+      "category": "dialogues",
+      "locale": "de-DE",
+      "text": "Ich heiße Sara.",
+      "source_text_hash": "9d3105310008bb10a0bd0f01adf3bef616fc078bd1e0da62dec93b746f011668",
+      "voice_key": "character:max:male_warm",
+      "voice_spec": {
+        "voice_name": null,
+        "description": "Warm natural male adult Standard German voice, friendly and conversational with clear beginner-level articulation.",
+        "required_language": "de",
+        "preferred_accent": "german",
+        "prefer_high_quality": true,
+        "required_labels": {
+          "gender": "male"
+        },
+        "distinct_character": true,
+        "settings": {
+          "stability": 0.58,
+          "similarity_boost": 0.87,
+          "style": 0.14,
+          "use_speaker_boost": true,
+          "speed": 0.97
+        },
+        "profile_key": "male_warm"
+      },
+      "entity_refs": [
+        {
+          "entity_type": "dialogue_turn",
+          "entity_uuid": "484ec665-3940-5fa2-9303-e61af916c1c3",
+          "entity_key": "d_de_de-forms-signs_form:2"
+        }
+      ],
+      "metadata": {
+        "character": "max",
+        "dialogue": "d_de_de-forms-signs_form",
+        "turn": 2,
+        "persona": {
+          "voice_presentation": "male",
+          "style": "warm_conversational",
+          "target_accent": "standard_german"
+        },
+        "voice_profile": "male_warm"
+      },
+      "relative_path": "audio/generated/de-DE/dialogues/e110e015af54153082e922b4e1e228d5fa0e23ec05e8cd93cd85c30f12193eef.mp3"
     },
     {
       "audio_key": "e18dd9945e8040c21bc942f2b3543b4af66e75c313a0d62fc1bc071af9663089",
@@ -3970,6 +5559,52 @@
       "relative_path": "audio/generated/de-DE/dialogues/eceb2904c217a50b3488be4e0c707b4d63c8237f6bb7e9a4644feac87b7927dc.mp3"
     },
     {
+      "audio_key": "ed43e591e46cc8dc7b0061e6c79985dd697d1d8b3b82f010a5754417a28944af",
+      "category": "dialogues",
+      "locale": "de-DE",
+      "text": "Wie geht's?",
+      "source_text_hash": "bd23ea6cdb98e4bb5d64da2cc90102ddc6acacb0806ae97aa3f5e03e817f6057",
+      "voice_key": "character:mia:female_bright",
+      "voice_spec": {
+        "voice_name": null,
+        "description": "Bright lively female young-adult Standard German voice, friendly and energetic without sounding theatrical.",
+        "required_language": "de",
+        "preferred_accent": "german",
+        "prefer_high_quality": true,
+        "required_labels": {
+          "gender": "female"
+        },
+        "distinct_character": true,
+        "settings": {
+          "stability": 0.52,
+          "similarity_boost": 0.86,
+          "style": 0.2,
+          "use_speaker_boost": true,
+          "speed": 0.99
+        },
+        "profile_key": "female_bright"
+      },
+      "entity_refs": [
+        {
+          "entity_type": "dialogue_turn",
+          "entity_uuid": "df3b4987-d544-510a-b9b4-93a02a0bf5ba",
+          "entity_key": "d_de_de-about-me_feeling_family:1"
+        }
+      ],
+      "metadata": {
+        "character": "mia",
+        "dialogue": "d_de_de-about-me_feeling_family",
+        "turn": 1,
+        "persona": {
+          "voice_presentation": "female",
+          "style": "bright_social",
+          "target_accent": "standard_german"
+        },
+        "voice_profile": "female_bright"
+      },
+      "relative_path": "audio/generated/de-DE/dialogues/ed43e591e46cc8dc7b0061e6c79985dd697d1d8b3b82f010a5754417a28944af.mp3"
+    },
+    {
       "audio_key": "ef81f2b224a443f3dad9334d285302fe5ae2b289b582d47a9fd8f36df44e5493",
       "category": "dialogues",
       "locale": "de-DE",
@@ -4060,6 +5695,52 @@
         "voice_profile": "male_warm"
       },
       "relative_path": "audio/generated/de-DE/dialogues/f042a707abe99afd8c575309535e5a4097d52e6c452dd9d3b694e52f552b8969.mp3"
+    },
+    {
+      "audio_key": "f0aca4cc4a0141fb986c79f7c461eb832d2380be04d3246b0ad86e6d5ff5e13e",
+      "category": "dialogues",
+      "locale": "de-DE",
+      "text": "Name?",
+      "source_text_hash": "d32f7ea4b09f568fe7e60ecad909742368619e55701d7cb9fd7a3bcbbfd5a5e5",
+      "voice_key": "character:nina:female_warm",
+      "voice_spec": {
+        "voice_name": null,
+        "description": "Warm natural female adult Standard German voice, friendly and conversational with clear beginner-level articulation.",
+        "required_language": "de",
+        "preferred_accent": "german",
+        "prefer_high_quality": true,
+        "required_labels": {
+          "gender": "female"
+        },
+        "distinct_character": true,
+        "settings": {
+          "stability": 0.58,
+          "similarity_boost": 0.87,
+          "style": 0.14,
+          "use_speaker_boost": true,
+          "speed": 0.97
+        },
+        "profile_key": "female_warm"
+      },
+      "entity_refs": [
+        {
+          "entity_type": "dialogue_turn",
+          "entity_uuid": "d4bf1c06-9d0c-5c8c-957a-5c8c4e99f02f",
+          "entity_key": "d_de_de-forms-signs_form:1"
+        }
+      ],
+      "metadata": {
+        "character": "nina",
+        "dialogue": "d_de_de-forms-signs_form",
+        "turn": 1,
+        "persona": {
+          "voice_presentation": "female",
+          "style": "warm_conversational",
+          "target_accent": "standard_german"
+        },
+        "voice_profile": "female_warm"
+      },
+      "relative_path": "audio/generated/de-DE/dialogues/f0aca4cc4a0141fb986c79f7c461eb832d2380be04d3246b0ad86e6d5ff5e13e.mp3"
     },
     {
       "audio_key": "f4ce8e2a9ac1b8c6f03e20772a69c390a7ca88af6094ae7fb0da09f15b28a370",
@@ -4244,6 +5925,52 @@
         "voice_profile": "male_bright"
       },
       "relative_path": "audio/generated/de-DE/dialogues/fea03bdd89094950eeb01fdf05892964bc6a5c981b455f3e05c5622a28167e48.mp3"
+    },
+    {
+      "audio_key": "ffd09f2c6946421d2e9622084d05a661774c5da4c589d3912338c8b73032e6ab",
+      "category": "dialogues",
+      "locale": "de-DE",
+      "text": "Wo ist der Ausgang?",
+      "source_text_hash": "76da97bd643208feab9c49a86fc706f348d1706cb6318641b66c493a8065ecda",
+      "voice_key": "character:clara:female_bright",
+      "voice_spec": {
+        "voice_name": null,
+        "description": "Bright lively female young-adult Standard German voice, friendly and energetic without sounding theatrical.",
+        "required_language": "de",
+        "preferred_accent": "german",
+        "prefer_high_quality": true,
+        "required_labels": {
+          "gender": "female"
+        },
+        "distinct_character": true,
+        "settings": {
+          "stability": 0.52,
+          "similarity_boost": 0.86,
+          "style": 0.2,
+          "use_speaker_boost": true,
+          "speed": 0.99
+        },
+        "profile_key": "female_bright"
+      },
+      "entity_refs": [
+        {
+          "entity_type": "dialogue_turn",
+          "entity_uuid": "67a4823a-629e-5d4b-805a-08c5ea6788e2",
+          "entity_key": "d_de_de-forms-signs_sign:1"
+        }
+      ],
+      "metadata": {
+        "character": "clara",
+        "dialogue": "d_de_de-forms-signs_sign",
+        "turn": 1,
+        "persona": {
+          "voice_presentation": "female",
+          "style": "bright_social",
+          "target_accent": "standard_german"
+        },
+        "voice_profile": "female_bright"
+      },
+      "relative_path": "audio/generated/de-DE/dialogues/ffd09f2c6946421d2e9622084d05a661774c5da4c589d3912338c8b73032e6ab.mp3"
     },
     {
       "audio_key": "04232fd292e845c5b2ca0d978a6e1f4783f36d2b9b463be05a15214bd654b140",
@@ -6886,6 +8613,11 @@
           "entity_type": "grammar_point",
           "entity_uuid": "3120e331-9825-59b9-99a0-15bcff94668a",
           "entity_key": "g_de_ready_gate:example:1"
+        },
+        {
+          "entity_type": "grammar_point",
+          "entity_uuid": "afd310d4-433e-5925-ab27-c7747503b2f0",
+          "entity_key": "g_de_de-real-world-gate:example:2"
         }
       ],
       "metadata": {},
@@ -6932,6 +8664,43 @@
       ],
       "metadata": {},
       "relative_path": "audio/generated/de-DE/utterances/0eab6bfd4061dd350edd959613154ed7d6b64c0d4dc6ced83bb288139c3266bd.mp3"
+    },
+    {
+      "audio_key": "0f746d058c027e9bb7cb594edd9707f39e8fa2bc9bee4e3d7088b1c48f25624e",
+      "category": "utterances",
+      "locale": "de-DE",
+      "text": "Wo ist der Ausgang?",
+      "source_text_hash": "76da97bd643208feab9c49a86fc706f348d1706cb6318641b66c493a8065ecda",
+      "voice_key": "de-de.sentence.native-clear",
+      "voice_spec": {
+        "voice_key": "de-de.sentence.native-clear",
+        "voice_name": null,
+        "require_exact_name": false,
+        "allow_named_fallback": false,
+        "description": "Native-quality Standard German female adult narrator for learning sentences, natural and neutral with very clear articulation.",
+        "prefer_high_quality": true,
+        "required_language": "de",
+        "preferred_accent": "german",
+        "required_labels": {
+          "gender": "female"
+        },
+        "settings": {
+          "stability": 0.68,
+          "similarity_boost": 0.88,
+          "style": 0.0,
+          "use_speaker_boost": true,
+          "speed": 0.95
+        }
+      },
+      "entity_refs": [
+        {
+          "entity_type": "utterance",
+          "entity_uuid": "23f84f94-0d5f-5055-8f0f-305bcd4b36b6",
+          "entity_key": "u_de_de-forms-signs_exit_q"
+        }
+      ],
+      "metadata": {},
+      "relative_path": "audio/generated/de-DE/utterances/0f746d058c027e9bb7cb594edd9707f39e8fa2bc9bee4e3d7088b1c48f25624e.mp3"
     },
     {
       "audio_key": "14da75a4fb285eea879aa0c61db9be75eb4d488f5ad67d150de74c05c0771513",
@@ -7147,6 +8916,43 @@
       ],
       "metadata": {},
       "relative_path": "audio/generated/de-DE/utterances/1fe6ed2565425d4c729f10bc248530c306ff40598010cd7c82b1e7bd86cb004f.mp3"
+    },
+    {
+      "audio_key": "21e70d4028dc4d3cd1f07e8e9d340c86039ab7b9cc1f5195982965ad90a41d5f",
+      "category": "utterances",
+      "locale": "de-DE",
+      "text": "Montag",
+      "source_text_hash": "b703fc6aeb9cf65c556f61df949d8f3af54f81e29a866c67eed96db79d473416",
+      "voice_key": "de-de.sentence.native-clear",
+      "voice_spec": {
+        "voice_key": "de-de.sentence.native-clear",
+        "voice_name": null,
+        "require_exact_name": false,
+        "allow_named_fallback": false,
+        "description": "Native-quality Standard German female adult narrator for learning sentences, natural and neutral with very clear articulation.",
+        "prefer_high_quality": true,
+        "required_language": "de",
+        "preferred_accent": "german",
+        "required_labels": {
+          "gender": "female"
+        },
+        "settings": {
+          "stability": 0.68,
+          "similarity_boost": 0.88,
+          "style": 0.0,
+          "use_speaker_boost": true,
+          "speed": 0.95
+        }
+      },
+      "entity_refs": [
+        {
+          "entity_type": "utterance",
+          "entity_uuid": "53b566e1-2092-5390-87b9-020429a5a82c",
+          "entity_key": "u_de_de-real-life-numbers_day"
+        }
+      ],
+      "metadata": {},
+      "relative_path": "audio/generated/de-DE/utterances/21e70d4028dc4d3cd1f07e8e9d340c86039ab7b9cc1f5195982965ad90a41d5f.mp3"
     },
     {
       "audio_key": "231bc471c7ddcb7dc7a3dc05b3cfa4c9f42eba15ea9265a31660b18d55181266",
@@ -7399,6 +9205,48 @@
       ],
       "metadata": {},
       "relative_path": "audio/generated/de-DE/utterances/27fe874905d8b391ce399d9d7af9dc33ef854d264aeef1dbebd79731e4643299.mp3"
+    },
+    {
+      "audio_key": "2c8a449066313aa2be2e3fe3676588b1a6a6b0649bdbdba2b1a8935fc9b61b04",
+      "category": "utterances",
+      "locale": "de-DE",
+      "text": "fünfzehn",
+      "source_text_hash": "86d832a39638f3a823359ab1a125e102e4877d204c72ca089a65159c61d1be54",
+      "voice_key": "de-de.sentence.native-clear",
+      "voice_spec": {
+        "voice_key": "de-de.sentence.native-clear",
+        "voice_name": null,
+        "require_exact_name": false,
+        "allow_named_fallback": false,
+        "description": "Native-quality Standard German female adult narrator for learning sentences, natural and neutral with very clear articulation.",
+        "prefer_high_quality": true,
+        "required_language": "de",
+        "preferred_accent": "german",
+        "required_labels": {
+          "gender": "female"
+        },
+        "settings": {
+          "stability": 0.68,
+          "similarity_boost": 0.88,
+          "style": 0.0,
+          "use_speaker_boost": true,
+          "speed": 0.95
+        }
+      },
+      "entity_refs": [
+        {
+          "entity_type": "utterance",
+          "entity_uuid": "3f3ce76e-cf49-5734-9e6e-6090a210a9d5",
+          "entity_key": "u_de_de-real-life-numbers_n15"
+        },
+        {
+          "entity_type": "exercise",
+          "entity_uuid": "6ed494e5-0be8-515c-9260-8d905bb55d34",
+          "entity_key": "ex_de_de-real-life-numbers_number_listen"
+        }
+      ],
+      "metadata": {},
+      "relative_path": "audio/generated/de-DE/utterances/2c8a449066313aa2be2e3fe3676588b1a6a6b0649bdbdba2b1a8935fc9b61b04.mp3"
     },
     {
       "audio_key": "31966fbb6f56a100fe61712c72345e6f19309cd7323447ac7baf8b476ec183a2",
@@ -7678,6 +9526,48 @@
       ],
       "metadata": {},
       "relative_path": "audio/generated/de-DE/utterances/3e882d0a3f771cdff54d51736625c33622873077f5106f06cec73ea4d7c602a1.mp3"
+    },
+    {
+      "audio_key": "3f028a69b71f9df62fa3644e8f212af481357ac2ba58fab97296a966138d778f",
+      "category": "utterances",
+      "locale": "de-DE",
+      "text": "fünfter Mai",
+      "source_text_hash": "436a4f7e551efadd9dc21acdc2abacdd3a87f3dca38416c18c3ffb45b902751c",
+      "voice_key": "de-de.sentence.native-clear",
+      "voice_spec": {
+        "voice_key": "de-de.sentence.native-clear",
+        "voice_name": null,
+        "require_exact_name": false,
+        "allow_named_fallback": false,
+        "description": "Native-quality Standard German female adult narrator for learning sentences, natural and neutral with very clear articulation.",
+        "prefer_high_quality": true,
+        "required_language": "de",
+        "preferred_accent": "german",
+        "required_labels": {
+          "gender": "female"
+        },
+        "settings": {
+          "stability": 0.68,
+          "similarity_boost": 0.88,
+          "style": 0.0,
+          "use_speaker_boost": true,
+          "speed": 0.95
+        }
+      },
+      "entity_refs": [
+        {
+          "entity_type": "utterance",
+          "entity_uuid": "bacbd488-56d3-5560-b8c6-c38df57aa9c2",
+          "entity_key": "u_de_de-real-life-numbers_date"
+        },
+        {
+          "entity_type": "grammar_point",
+          "entity_uuid": "0285c191-f355-5b66-8348-3a980a7fcb7d",
+          "entity_key": "g_de_de-real-life-numbers:example:3"
+        }
+      ],
+      "metadata": {},
+      "relative_path": "audio/generated/de-DE/utterances/3f028a69b71f9df62fa3644e8f212af481357ac2ba58fab97296a966138d778f.mp3"
     },
     {
       "audio_key": "3fc88c82712ef95bc299f9e28572a249065a475803b0fd4f523ccf821528d86c",
@@ -8001,6 +9891,43 @@
       "relative_path": "audio/generated/de-DE/utterances/51f8f805eb28efc9434b10cbb771ff1425238ad1d7adb35e3a7e9cf909986d05.mp3"
     },
     {
+      "audio_key": "52c54da807d5da754ff1b129929d0cf42454e19ec214ec1a49dc891209c53bab",
+      "category": "utterances",
+      "locale": "de-DE",
+      "text": "Telefon",
+      "source_text_hash": "fa6906d76ee94d4e8d05a2424fb89005840522ab6dec0ee8055247424977169e",
+      "voice_key": "de-de.sentence.native-clear",
+      "voice_spec": {
+        "voice_key": "de-de.sentence.native-clear",
+        "voice_name": null,
+        "require_exact_name": false,
+        "allow_named_fallback": false,
+        "description": "Native-quality Standard German female adult narrator for learning sentences, natural and neutral with very clear articulation.",
+        "prefer_high_quality": true,
+        "required_language": "de",
+        "preferred_accent": "german",
+        "required_labels": {
+          "gender": "female"
+        },
+        "settings": {
+          "stability": 0.68,
+          "similarity_boost": 0.88,
+          "style": 0.0,
+          "use_speaker_boost": true,
+          "speed": 0.95
+        }
+      },
+      "entity_refs": [
+        {
+          "entity_type": "exercise",
+          "entity_uuid": "4b56e6b5-7c9b-5c13-bc39-ebfb8e4a5af7",
+          "entity_key": "ex_de_de-forms-signs_field_listen"
+        }
+      ],
+      "metadata": {},
+      "relative_path": "audio/generated/de-DE/utterances/52c54da807d5da754ff1b129929d0cf42454e19ec214ec1a49dc891209c53bab.mp3"
+    },
+    {
       "audio_key": "542584e81152af87478f59391776cc8722eebddeb574d6797e31f34e301e893d",
       "category": "utterances",
       "locale": "de-DE",
@@ -8038,6 +9965,80 @@
       "relative_path": "audio/generated/de-DE/utterances/542584e81152af87478f59391776cc8722eebddeb574d6797e31f34e301e893d.mp3"
     },
     {
+      "audio_key": "55988331846b3aea45a944fe4faaffcbe6837ce4c22a2a8cc1d2c39a182f7db1",
+      "category": "utterances",
+      "locale": "de-DE",
+      "text": "elf",
+      "source_text_hash": "780d84b20d7ae7e6292919399348bdbf96025270136198083fc8a4da398b5ca9",
+      "voice_key": "de-de.sentence.native-clear",
+      "voice_spec": {
+        "voice_key": "de-de.sentence.native-clear",
+        "voice_name": null,
+        "require_exact_name": false,
+        "allow_named_fallback": false,
+        "description": "Native-quality Standard German female adult narrator for learning sentences, natural and neutral with very clear articulation.",
+        "prefer_high_quality": true,
+        "required_language": "de",
+        "preferred_accent": "german",
+        "required_labels": {
+          "gender": "female"
+        },
+        "settings": {
+          "stability": 0.68,
+          "similarity_boost": 0.88,
+          "style": 0.0,
+          "use_speaker_boost": true,
+          "speed": 0.95
+        }
+      },
+      "entity_refs": [
+        {
+          "entity_type": "utterance",
+          "entity_uuid": "75d1a2a1-eb31-511e-9e6f-f4c11b47a94d",
+          "entity_key": "u_de_de-real-life-numbers_n11"
+        }
+      ],
+      "metadata": {},
+      "relative_path": "audio/generated/de-DE/utterances/55988331846b3aea45a944fe4faaffcbe6837ce4c22a2a8cc1d2c39a182f7db1.mp3"
+    },
+    {
+      "audio_key": "57d98613acfd7ee8eab363670c7837a6507f08a5508f850b89ab5a777a555a71",
+      "category": "utterances",
+      "locale": "de-DE",
+      "text": "Dort.",
+      "source_text_hash": "20b6ade469ecc978e77c29807155b4c71d75ba56ac58ff2c4f8887517e65f37d",
+      "voice_key": "de-de.sentence.native-clear",
+      "voice_spec": {
+        "voice_key": "de-de.sentence.native-clear",
+        "voice_name": null,
+        "require_exact_name": false,
+        "allow_named_fallback": false,
+        "description": "Native-quality Standard German female adult narrator for learning sentences, natural and neutral with very clear articulation.",
+        "prefer_high_quality": true,
+        "required_language": "de",
+        "preferred_accent": "german",
+        "required_labels": {
+          "gender": "female"
+        },
+        "settings": {
+          "stability": 0.68,
+          "similarity_boost": 0.88,
+          "style": 0.0,
+          "use_speaker_boost": true,
+          "speed": 0.95
+        }
+      },
+      "entity_refs": [
+        {
+          "entity_type": "utterance",
+          "entity_uuid": "3c7d6530-8df8-55e8-9da3-e1c75678171a",
+          "entity_key": "u_de_de-forms-signs_exit_a"
+        }
+      ],
+      "metadata": {},
+      "relative_path": "audio/generated/de-DE/utterances/57d98613acfd7ee8eab363670c7837a6507f08a5508f850b89ab5a777a555a71.mp3"
+    },
+    {
       "audio_key": "5d096a19ee81f1e41a582d79cf52761a39e66be277f328811e321ba3fe2c9d96",
       "category": "utterances",
       "locale": "de-DE",
@@ -8073,6 +10074,43 @@
       ],
       "metadata": {},
       "relative_path": "audio/generated/de-DE/utterances/5d096a19ee81f1e41a582d79cf52761a39e66be277f328811e321ba3fe2c9d96.mp3"
+    },
+    {
+      "audio_key": "5d8654347ce9968226aff0d646925c6a5f1f158340e0476f0d326c57a94935ab",
+      "category": "utterances",
+      "locale": "de-DE",
+      "text": "Das ist meine Schwester.",
+      "source_text_hash": "65bc85219e012f1c54d16a6dbb8c747eda688ab0cf643bc693f10feb0d8a1fed",
+      "voice_key": "de-de.sentence.native-clear",
+      "voice_spec": {
+        "voice_key": "de-de.sentence.native-clear",
+        "voice_name": null,
+        "require_exact_name": false,
+        "allow_named_fallback": false,
+        "description": "Native-quality Standard German female adult narrator for learning sentences, natural and neutral with very clear articulation.",
+        "prefer_high_quality": true,
+        "required_language": "de",
+        "preferred_accent": "german",
+        "required_labels": {
+          "gender": "female"
+        },
+        "settings": {
+          "stability": 0.68,
+          "similarity_boost": 0.88,
+          "style": 0.0,
+          "use_speaker_boost": true,
+          "speed": 0.95
+        }
+      },
+      "entity_refs": [
+        {
+          "entity_type": "utterance",
+          "entity_uuid": "81bb2454-48d4-58a4-a1a6-a34362e5fb39",
+          "entity_key": "u_de_de-about-me_family"
+        }
+      ],
+      "metadata": {},
+      "relative_path": "audio/generated/de-DE/utterances/5d8654347ce9968226aff0d646925c6a5f1f158340e0476f0d326c57a94935ab.mp3"
     },
     {
       "audio_key": "5e8ac62091be32a7b998bcc0ce53dc74dee0f98a8346fb6350d06c972cc86757",
@@ -8115,6 +10153,43 @@
       ],
       "metadata": {},
       "relative_path": "audio/generated/de-DE/utterances/5e8ac62091be32a7b998bcc0ce53dc74dee0f98a8346fb6350d06c972cc86757.mp3"
+    },
+    {
+      "audio_key": "61db8d2088715ccac191b69447b66a1fb6a3c896a74b5c21f8715fc70105aff2",
+      "category": "utterances",
+      "locale": "de-DE",
+      "text": "AUSGANG",
+      "source_text_hash": "e67bbe4bcf3918eeaec839fadd5f145c3ae0edd5796f329dc5d178d12d0abc53",
+      "voice_key": "de-de.sentence.native-clear",
+      "voice_spec": {
+        "voice_key": "de-de.sentence.native-clear",
+        "voice_name": null,
+        "require_exact_name": false,
+        "allow_named_fallback": false,
+        "description": "Native-quality Standard German female adult narrator for learning sentences, natural and neutral with very clear articulation.",
+        "prefer_high_quality": true,
+        "required_language": "de",
+        "preferred_accent": "german",
+        "required_labels": {
+          "gender": "female"
+        },
+        "settings": {
+          "stability": 0.68,
+          "similarity_boost": 0.88,
+          "style": 0.0,
+          "use_speaker_boost": true,
+          "speed": 0.95
+        }
+      },
+      "entity_refs": [
+        {
+          "entity_type": "grammar_point",
+          "entity_uuid": "dcf47311-3f49-547a-a134-ed3e31d4a0fc",
+          "entity_key": "g_de_de-forms-signs:example:1"
+        }
+      ],
+      "metadata": {},
+      "relative_path": "audio/generated/de-DE/utterances/61db8d2088715ccac191b69447b66a1fb6a3c896a74b5c21f8715fc70105aff2.mp3"
     },
     {
       "audio_key": "6fe162a844bc2011f8672ca26628760713b7e8b877698c5c4849b9b7d4dc4ba4",
@@ -8522,6 +10597,55 @@
       "relative_path": "audio/generated/de-DE/utterances/952c8a7e098f21cd22d7aa87f67f9d729b01d298f76104a2e917d42c5f03d90b.mp3"
     },
     {
+      "audio_key": "970670a51a543797b7a7e9dc9bd2cc332f7b396db3a89552660a31c263514816",
+      "category": "utterances",
+      "locale": "de-DE",
+      "text": "Ich heiße Sara. Ich komme aus dem Iran. Mir geht's gut.",
+      "source_text_hash": "728bcd78fab6800310b5c810cd0bc872fef60471a85283af594ff83cc4dbfba9",
+      "voice_key": "de-de.sentence.native-clear",
+      "voice_spec": {
+        "voice_key": "de-de.sentence.native-clear",
+        "voice_name": null,
+        "require_exact_name": false,
+        "allow_named_fallback": false,
+        "description": "Native-quality Standard German female adult narrator for learning sentences, natural and neutral with very clear articulation.",
+        "prefer_high_quality": true,
+        "required_language": "de",
+        "preferred_accent": "german",
+        "required_labels": {
+          "gender": "female"
+        },
+        "settings": {
+          "stability": 0.68,
+          "similarity_boost": 0.88,
+          "style": 0.0,
+          "use_speaker_boost": true,
+          "speed": 0.95
+        }
+      },
+      "entity_refs": [
+        {
+          "entity_type": "exercise",
+          "entity_uuid": "7b6dc56c-cc2f-58c8-8f5c-abb4bcd35b7a",
+          "entity_key": "ex_de_de-about-me_about_write:model"
+        },
+        {
+          "entity_type": "exercise",
+          "entity_uuid": "d4171a6a-a5b1-5abf-a29a-4a6efb09dc04",
+          "entity_key": "ex_de_de-real-world-gate_personal_speaking:model"
+        },
+        {
+          "entity_type": "grammar_point",
+          "entity_uuid": "afd310d4-433e-5925-ab27-c7747503b2f0",
+          "entity_key": "g_de_de-real-world-gate:example:1"
+        }
+      ],
+      "metadata": {
+        "usage": "model_after_response"
+      },
+      "relative_path": "audio/generated/de-DE/utterances/970670a51a543797b7a7e9dc9bd2cc332f7b396db3a89552660a31c263514816.mp3"
+    },
+    {
       "audio_key": "9e28a2b819e43c0b484f229dc0f3fc2ae84f4b8c96539a99646b10fce8897c37",
       "category": "utterances",
       "locale": "de-DE",
@@ -8633,6 +10757,132 @@
       "relative_path": "audio/generated/de-DE/utterances/af4a577ef2f09ff0cc8fc2b7b4cfdf67727337bb63afa1e3d462f81253cd061f.mp3"
     },
     {
+      "audio_key": "b78a08114ac510182f84d676fea278411e9bc5a2768a6d7156281d8c97d5b761",
+      "category": "utterances",
+      "locale": "de-DE",
+      "text": "Ich komme aus dem Iran.",
+      "source_text_hash": "d825d28755a179c37da77042a57ea58c8c0cc103bc255581e68083d2758e2801",
+      "voice_key": "de-de.sentence.native-clear",
+      "voice_spec": {
+        "voice_key": "de-de.sentence.native-clear",
+        "voice_name": null,
+        "require_exact_name": false,
+        "allow_named_fallback": false,
+        "description": "Native-quality Standard German female adult narrator for learning sentences, natural and neutral with very clear articulation.",
+        "prefer_high_quality": true,
+        "required_language": "de",
+        "preferred_accent": "german",
+        "required_labels": {
+          "gender": "female"
+        },
+        "settings": {
+          "stability": 0.68,
+          "similarity_boost": 0.88,
+          "style": 0.0,
+          "use_speaker_boost": true,
+          "speed": 0.95
+        }
+      },
+      "entity_refs": [
+        {
+          "entity_type": "utterance",
+          "entity_uuid": "21da6bb0-1841-5493-9d87-0c2247b90300",
+          "entity_key": "u_de_de-about-me_origin"
+        },
+        {
+          "entity_type": "exercise",
+          "entity_uuid": "4bbe0a24-5c34-506c-9c23-c00a9a2e081f",
+          "entity_key": "ex_de_de-about-me_origin_listen"
+        },
+        {
+          "entity_type": "grammar_point",
+          "entity_uuid": "248e8341-8998-5858-ba49-4a430a5224f3",
+          "entity_key": "g_de_de-about-me:example:1"
+        }
+      ],
+      "metadata": {},
+      "relative_path": "audio/generated/de-DE/utterances/b78a08114ac510182f84d676fea278411e9bc5a2768a6d7156281d8c97d5b761.mp3"
+    },
+    {
+      "audio_key": "b7c70bb5c762d353c44fd379baa34c3670ac2de5db9d1ccbdee53e044995a916",
+      "category": "utterances",
+      "locale": "de-DE",
+      "text": "Name",
+      "source_text_hash": "dcd1d5223f73b3a965c07e3ff5dbee3eedcfedb806686a05b9b3868a2c3d6d50",
+      "voice_key": "de-de.sentence.native-clear",
+      "voice_spec": {
+        "voice_key": "de-de.sentence.native-clear",
+        "voice_name": null,
+        "require_exact_name": false,
+        "allow_named_fallback": false,
+        "description": "Native-quality Standard German female adult narrator for learning sentences, natural and neutral with very clear articulation.",
+        "prefer_high_quality": true,
+        "required_language": "de",
+        "preferred_accent": "german",
+        "required_labels": {
+          "gender": "female"
+        },
+        "settings": {
+          "stability": 0.68,
+          "similarity_boost": 0.88,
+          "style": 0.0,
+          "use_speaker_boost": true,
+          "speed": 0.95
+        }
+      },
+      "entity_refs": [
+        {
+          "entity_type": "utterance",
+          "entity_uuid": "ab664504-ca58-52e6-96d0-0e0040bcf18b",
+          "entity_key": "u_de_de-forms-signs_name_field"
+        },
+        {
+          "entity_type": "grammar_point",
+          "entity_uuid": "dcf47311-3f49-547a-a134-ed3e31d4a0fc",
+          "entity_key": "g_de_de-forms-signs:example:2"
+        }
+      ],
+      "metadata": {},
+      "relative_path": "audio/generated/de-DE/utterances/b7c70bb5c762d353c44fd379baa34c3670ac2de5db9d1ccbdee53e044995a916.mp3"
+    },
+    {
+      "audio_key": "b921605589da98ed1951f153de34eeb0551120cab7dea756a5b3ec6ada266a5e",
+      "category": "utterances",
+      "locale": "de-DE",
+      "text": "zwanzig",
+      "source_text_hash": "cd2a56ee1cb695c0678ecbcc9dd040f507a6a5ac1e0f4bdcd45b470e6eb5642c",
+      "voice_key": "de-de.sentence.native-clear",
+      "voice_spec": {
+        "voice_key": "de-de.sentence.native-clear",
+        "voice_name": null,
+        "require_exact_name": false,
+        "allow_named_fallback": false,
+        "description": "Native-quality Standard German female adult narrator for learning sentences, natural and neutral with very clear articulation.",
+        "prefer_high_quality": true,
+        "required_language": "de",
+        "preferred_accent": "german",
+        "required_labels": {
+          "gender": "female"
+        },
+        "settings": {
+          "stability": 0.68,
+          "similarity_boost": 0.88,
+          "style": 0.0,
+          "use_speaker_boost": true,
+          "speed": 0.95
+        }
+      },
+      "entity_refs": [
+        {
+          "entity_type": "utterance",
+          "entity_uuid": "0b93fc0f-a037-5dc4-ad66-204372592659",
+          "entity_key": "u_de_de-real-life-numbers_n20"
+        }
+      ],
+      "metadata": {},
+      "relative_path": "audio/generated/de-DE/utterances/b921605589da98ed1951f153de34eeb0551120cab7dea756a5b3ec6ada266a5e.mp3"
+    },
+    {
       "audio_key": "baa84d94e755d230cbcf1a3cdeea2cc28c4a89cfe8d8a59668f3e8fb39e983df",
       "category": "utterances",
       "locale": "de-DE",
@@ -8668,6 +10918,97 @@
       ],
       "metadata": {},
       "relative_path": "audio/generated/de-DE/utterances/baa84d94e755d230cbcf1a3cdeea2cc28c4a89cfe8d8a59668f3e8fb39e983df.mp3"
+    },
+    {
+      "audio_key": "c03a4ed88350a7780d675cfa0b762d6620901438bd0f735f7a182d27b5b3c59d",
+      "category": "utterances",
+      "locale": "de-DE",
+      "text": "Null neun eins zwei, drei vier fünf, sechs sieben acht neun.",
+      "source_text_hash": "7cac4cd8bec658ed59478ef6f5ea0ad7589c102dfc5806fe4fb600ec014a59c1",
+      "voice_key": "de-de.sentence.native-clear",
+      "voice_spec": {
+        "voice_key": "de-de.sentence.native-clear",
+        "voice_name": null,
+        "require_exact_name": false,
+        "allow_named_fallback": false,
+        "description": "Native-quality Standard German female adult narrator for learning sentences, natural and neutral with very clear articulation.",
+        "prefer_high_quality": true,
+        "required_language": "de",
+        "preferred_accent": "german",
+        "required_labels": {
+          "gender": "female"
+        },
+        "settings": {
+          "stability": 0.68,
+          "similarity_boost": 0.88,
+          "style": 0.0,
+          "use_speaker_boost": true,
+          "speed": 0.95
+        }
+      },
+      "entity_refs": [
+        {
+          "entity_type": "utterance",
+          "entity_uuid": "0fc86e7f-94f7-5054-8db4-da1509643df0",
+          "entity_key": "u_de_de-real-life-numbers_phone"
+        },
+        {
+          "entity_type": "grammar_point",
+          "entity_uuid": "0285c191-f355-5b66-8348-3a980a7fcb7d",
+          "entity_key": "g_de_de-real-life-numbers:example:1"
+        },
+        {
+          "entity_type": "exercise",
+          "entity_uuid": "0ec23621-8290-5e0d-8331-3b22ce90e7f7",
+          "entity_key": "ex_de_de-real-world-gate_phone_listen"
+        }
+      ],
+      "metadata": {},
+      "relative_path": "audio/generated/de-DE/utterances/c03a4ed88350a7780d675cfa0b762d6620901438bd0f735f7a182d27b5b3c59d.mp3"
+    },
+    {
+      "audio_key": "c61d2c994a206ce0a744c5b3d58d8aae927f9ab573fb3fb923856e93ca24b345",
+      "category": "utterances",
+      "locale": "de-DE",
+      "text": "Name: Sara Land: Iran Telefon: 0912 345 6789",
+      "source_text_hash": "12f642df1d5809ca0ade99e672d596d0b5a30e12b9bcd10c5e03ae9d2ffb5f92",
+      "voice_key": "de-de.sentence.native-clear",
+      "voice_spec": {
+        "voice_key": "de-de.sentence.native-clear",
+        "voice_name": null,
+        "require_exact_name": false,
+        "allow_named_fallback": false,
+        "description": "Native-quality Standard German female adult narrator for learning sentences, natural and neutral with very clear articulation.",
+        "prefer_high_quality": true,
+        "required_language": "de",
+        "preferred_accent": "german",
+        "required_labels": {
+          "gender": "female"
+        },
+        "settings": {
+          "stability": 0.68,
+          "similarity_boost": 0.88,
+          "style": 0.0,
+          "use_speaker_boost": true,
+          "speed": 0.95
+        }
+      },
+      "entity_refs": [
+        {
+          "entity_type": "exercise",
+          "entity_uuid": "48db5a6b-b4ec-58a7-951a-95a4a5e6a1dd",
+          "entity_key": "ex_de_de-forms-signs_form_write:model"
+        },
+        {
+          "entity_type": "exercise",
+          "entity_uuid": "3b9b2395-0960-5cc2-a333-7eb7c72c63b7",
+          "entity_key": "ex_de_de-real-world-gate_personal_form:model"
+        }
+      ],
+      "metadata": {
+        "usage": "model_after_response"
+      },
+      "relative_path": "audio/generated/de-DE/utterances/c61d2c994a206ce0a744c5b3d58d8aae927f9ab573fb3fb923856e93ca24b345.mp3"
     },
     {
       "audio_key": "ca2dc9a230639222a8433a534e0c3c0129b8de5d5aa61b8418a556cce7523598",
@@ -8710,6 +11051,48 @@
       ],
       "metadata": {},
       "relative_path": "audio/generated/de-DE/utterances/ca2dc9a230639222a8433a534e0c3c0129b8de5d5aa61b8418a556cce7523598.mp3"
+    },
+    {
+      "audio_key": "cd5b1ffe10e0de2a414bc06c0c803307cb64a174a746c0786d07dc0533a335ad",
+      "category": "utterances",
+      "locale": "de-DE",
+      "text": "Ich bin zwanzig Jahre alt.",
+      "source_text_hash": "887872e399c0b1cf633d00a13c0ce08466a4ec666d2c3ace581500de6e4c1f8e",
+      "voice_key": "de-de.sentence.native-clear",
+      "voice_spec": {
+        "voice_key": "de-de.sentence.native-clear",
+        "voice_name": null,
+        "require_exact_name": false,
+        "allow_named_fallback": false,
+        "description": "Native-quality Standard German female adult narrator for learning sentences, natural and neutral with very clear articulation.",
+        "prefer_high_quality": true,
+        "required_language": "de",
+        "preferred_accent": "german",
+        "required_labels": {
+          "gender": "female"
+        },
+        "settings": {
+          "stability": 0.68,
+          "similarity_boost": 0.88,
+          "style": 0.0,
+          "use_speaker_boost": true,
+          "speed": 0.95
+        }
+      },
+      "entity_refs": [
+        {
+          "entity_type": "utterance",
+          "entity_uuid": "f221532b-2fad-5388-9b9a-b9c43f5a74fc",
+          "entity_key": "u_de_de-about-me_age"
+        },
+        {
+          "entity_type": "grammar_point",
+          "entity_uuid": "248e8341-8998-5858-ba49-4a430a5224f3",
+          "entity_key": "g_de_de-about-me:example:2"
+        }
+      ],
+      "metadata": {},
+      "relative_path": "audio/generated/de-DE/utterances/cd5b1ffe10e0de2a414bc06c0c803307cb64a174a746c0786d07dc0533a335ad.mp3"
     },
     {
       "audio_key": "d0197d4e2992192683c4953bc8c2f91807a654acaf058c47a312634507e04968",
@@ -8776,6 +11159,16 @@
         }
       },
       "entity_refs": [
+        {
+          "entity_type": "utterance",
+          "entity_uuid": "ac118dfa-ba6a-523d-9112-d915052d40fe",
+          "entity_key": "u_de_de-about-me_feeling"
+        },
+        {
+          "entity_type": "grammar_point",
+          "entity_uuid": "248e8341-8998-5858-ba49-4a430a5224f3",
+          "entity_key": "g_de_de-about-me:example:3"
+        },
         {
           "entity_type": "utterance",
           "entity_uuid": "da1c9f64-ed5c-568e-8249-338dbe8fc779",
@@ -9352,6 +11745,48 @@
       ],
       "metadata": {},
       "relative_path": "audio/generated/de-DE/utterances/f8453ea865c9c45b2c7b3b33d6d826f596ea54d02ddf4ffbe6c979799b650892.mp3"
+    },
+    {
+      "audio_key": "fce5b079863bb4aa4e83f01b5087677fcc65ec56bacdd00709f8c4e51da44ea2",
+      "category": "utterances",
+      "locale": "de-DE",
+      "text": "Fünf Euro.",
+      "source_text_hash": "8dd866966c1dc138c7dbefc21831e148435a4fb22df59939ce657e1789739da2",
+      "voice_key": "de-de.sentence.native-clear",
+      "voice_spec": {
+        "voice_key": "de-de.sentence.native-clear",
+        "voice_name": null,
+        "require_exact_name": false,
+        "allow_named_fallback": false,
+        "description": "Native-quality Standard German female adult narrator for learning sentences, natural and neutral with very clear articulation.",
+        "prefer_high_quality": true,
+        "required_language": "de",
+        "preferred_accent": "german",
+        "required_labels": {
+          "gender": "female"
+        },
+        "settings": {
+          "stability": 0.68,
+          "similarity_boost": 0.88,
+          "style": 0.0,
+          "use_speaker_boost": true,
+          "speed": 0.95
+        }
+      },
+      "entity_refs": [
+        {
+          "entity_type": "utterance",
+          "entity_uuid": "7d16ecd7-2333-5602-b33d-59acad6f7daf",
+          "entity_key": "u_de_de-real-life-numbers_price"
+        },
+        {
+          "entity_type": "grammar_point",
+          "entity_uuid": "0285c191-f355-5b66-8348-3a980a7fcb7d",
+          "entity_key": "g_de_de-real-life-numbers:example:2"
+        }
+      ],
+      "metadata": {},
+      "relative_path": "audio/generated/de-DE/utterances/fce5b079863bb4aa4e83f01b5087677fcc65ec56bacdd00709f8c4e51da44ea2.mp3"
     }
   ]
 }

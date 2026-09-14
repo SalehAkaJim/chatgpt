@@ -23,14 +23,24 @@
     "descriptive": "calm"
   },
   "output_format": "mp3_44100_192",
-  "file_sha256": "789f7200cc95689336110087d9d1e8adf0005f53d55fa8ad04d596ed2fb2191e",
-  "duration_ms": 1097,
-  "generated_at": "2026-09-13T15:18:01.814911+00:00",
+  "file_sha256": "2a253d17a99807a7331d45866ba3d999d974f570ccafb68ee731f299eeb8550c",
+  "duration_ms": 1149,
+  "generated_at": "2026-09-14T13:39:22.195305+00:00",
   "entity_refs": [
     {
       "entity_type": "utterance",
       "entity_uuid": "f0c3461d-1570-5412-88ed-4dfe90e97ada",
       "entity_key": "u_numbers_0_10_03"
+    },
+    {
+      "entity_type": "utterance",
+      "entity_uuid": "515569a1-c5d5-574f-9e5e-bcb5bc965758",
+      "entity_key": "u_tr_tr-real-life-numbers_price"
+    },
+    {
+      "entity_type": "grammar_point",
+      "entity_uuid": "05af3895-6be9-5ad2-91e7-2f0824907506",
+      "entity_key": "g_tr_tr-real-life-numbers:example:2"
     }
   ]
 }

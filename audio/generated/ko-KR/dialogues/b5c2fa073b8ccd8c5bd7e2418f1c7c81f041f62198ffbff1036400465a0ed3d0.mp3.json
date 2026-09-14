@@ -1,0 +1,36 @@
+{
+  "source_text_hash": "e0f639938481a5a0c0632b36b0fc7d363c18c8ee5b0a2484d168d5c99b55b9f3",
+  "voice_id": "ZubHeGTOAkECknc02Zmo",
+  "model": "eleven_multilingual_v2",
+  "settings": {
+    "stability": 0.58,
+    "similarity_boost": 0.87,
+    "style": 0.14,
+    "use_speaker_boost": true,
+    "speed": 0.97
+  },
+  "provider": "elevenlabs",
+  "audio_key": "b5c2fa073b8ccd8c5bd7e2418f1c7c81f041f62198ffbff1036400465a0ed3d0",
+  "voice_key": "character:지민:female_warm",
+  "voice_name": "Eunhye - Composed and Reassuring",
+  "voice_labels": {
+    "gender": "female",
+    "accent": "standard",
+    "age": "middle_aged",
+    "category": "high_quality",
+    "language": "ko",
+    "use_case": "conversational",
+    "descriptive": "pleasant"
+  },
+  "output_format": "mp3_44100_192",
+  "file_sha256": "663eaac7bc26d9a322622cbfed73a23792b40642114d0e61b0719e1e76181f96",
+  "duration_ms": 1253,
+  "generated_at": "2026-09-14T13:40:59.819972+00:00",
+  "entity_refs": [
+    {
+      "entity_type": "dialogue_turn",
+      "entity_uuid": "db523e60-ba55-584b-912e-856413e40bb8",
+      "entity_key": "d_ko_ko-about-me_origin_age:1"
+    }
+  ]
+}

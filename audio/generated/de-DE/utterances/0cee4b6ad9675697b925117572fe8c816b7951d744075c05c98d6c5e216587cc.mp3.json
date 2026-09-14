@@ -23,14 +23,24 @@
     "descriptive": "calm"
   },
   "output_format": "mp3_44100_192",
-  "file_sha256": "59cea304edce8aec86c7805d7ba56c793a88a4251d76d7ddcdadb8eeb7cbbf39",
-  "duration_ms": 1332,
-  "generated_at": "2026-09-13T04:05:29.541361+00:00",
+  "file_sha256": "8a59b75004d66dac34daa57b5a1467a0923c073989ea7276a8fc07941cd18655",
+  "duration_ms": 1488,
+  "generated_at": "2026-09-14T13:33:42.934795+00:00",
   "entity_refs": [
     {
       "entity_type": "utterance",
       "entity_uuid": "fdfec117-933b-5395-92f8-b148225c49e4",
       "entity_key": "u_classroom_03"
+    },
+    {
+      "entity_type": "grammar_point",
+      "entity_uuid": "3120e331-9825-59b9-99a0-15bcff94668a",
+      "entity_key": "g_de_ready_gate:example:1"
+    },
+    {
+      "entity_type": "grammar_point",
+      "entity_uuid": "afd310d4-433e-5925-ab27-c7747503b2f0",
+      "entity_key": "g_de_de-real-world-gate:example:2"
     }
   ]
 }

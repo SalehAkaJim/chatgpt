@@ -23,19 +23,24 @@
     "descriptive": "calm"
   },
   "output_format": "mp3_44100_192",
-  "file_sha256": "6f7358d8a87297698846d510436d1ab9bfed3669a1001465666fa934323f5002",
+  "file_sha256": "df4b5f5b09032631f6ae0e60cc738f07a52b309664dce083f25bb95923bda66f",
   "duration_ms": 1488,
-  "generated_at": "2026-09-13T04:10:50.552769+00:00",
+  "generated_at": "2026-09-14T13:34:36.530285+00:00",
   "entity_refs": [
     {
       "entity_type": "utterance",
-      "entity_uuid": "b6c5250f-5eac-5910-98d4-7ca7b9ee9548",
-      "entity_key": "u_countries_04"
+      "entity_uuid": "21da6bb0-1841-5493-9d87-0c2247b90300",
+      "entity_key": "u_de_de-about-me_origin"
     },
     {
-      "entity_type": "utterance",
-      "entity_uuid": "97cad5bd-1299-506a-9897-a4f3104a102c",
-      "entity_key": "u_de_aus_dem_iran"
+      "entity_type": "exercise",
+      "entity_uuid": "4bbe0a24-5c34-506c-9c23-c00a9a2e081f",
+      "entity_key": "ex_de_de-about-me_origin_listen"
+    },
+    {
+      "entity_type": "grammar_point",
+      "entity_uuid": "248e8341-8998-5858-ba49-4a430a5224f3",
+      "entity_key": "g_de_de-about-me:example:1"
     }
   ]
 }

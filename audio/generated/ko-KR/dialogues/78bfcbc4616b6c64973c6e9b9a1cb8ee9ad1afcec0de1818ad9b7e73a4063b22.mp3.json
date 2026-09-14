@@ -1,0 +1,36 @@
+{
+  "source_text_hash": "478c962d7db98238a9254aae79d1cf571f955f4bf6b28c17386f1c51fd1f3f66",
+  "voice_id": "5DWGv3VDkihNUcbvaonB",
+  "model": "eleven_multilingual_v2",
+  "settings": {
+    "stability": 0.52,
+    "similarity_boost": 0.86,
+    "style": 0.2,
+    "use_speaker_boost": true,
+    "speed": 0.99
+  },
+  "provider": "elevenlabs",
+  "audio_key": "78bfcbc4616b6c64973c6e9b9a1cb8ee9ad1afcec0de1818ad9b7e73a4063b22",
+  "voice_key": "character:서연:female_bright",
+  "voice_name": "Kelee K - Seoul Narrator",
+  "voice_labels": {
+    "gender": "female",
+    "accent": "seoul",
+    "age": "young",
+    "category": "professional",
+    "language": "ko",
+    "use_case": "conversational",
+    "descriptive": "casual"
+  },
+  "output_format": "mp3_44100_192",
+  "file_sha256": "29bf91945d1353670f7bf78fdf0d4afddd75b8c12ebf1ee881cb77ffd8d544ff",
+  "duration_ms": 1149,
+  "generated_at": "2026-09-14T13:40:22.970095+00:00",
+  "entity_refs": [
+    {
+      "entity_type": "dialogue_turn",
+      "entity_uuid": "661a0e42-7146-58ae-89c6-0b6450d12b54",
+      "entity_key": "d_ko_ko-about-me_feeling_family:1"
+    }
+  ]
+}

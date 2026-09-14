@@ -1,0 +1,36 @@
+{
+  "source_text_hash": "3a59410baf74d9d777a5292e9cb38a277e51d256a5ae9caec774b4684ebc289e",
+  "voice_id": "7mBFv1btncDZu2Bfgv0r",
+  "model": "eleven_multilingual_v2",
+  "settings": {
+    "stability": 0.52,
+    "similarity_boost": 0.86,
+    "style": 0.2,
+    "use_speaker_boost": true,
+    "speed": 0.99
+  },
+  "provider": "elevenlabs",
+  "audio_key": "6e380d66a65c247d473f573ac58369f601f35c7aea45f194572582b49b3fc809",
+  "voice_key": "character:kaan:male_bright",
+  "voice_name": "Tuna - Young and Soft",
+  "voice_labels": {
+    "gender": "male",
+    "accent": "istanbul",
+    "age": "young",
+    "category": "professional",
+    "language": "tr",
+    "use_case": "social_media",
+    "descriptive": "casual"
+  },
+  "output_format": "mp3_44100_192",
+  "file_sha256": "9e208aa48736f0c9ec8f6b2d38c19aadaa2c14650ea1458d1927145dec6e83cb",
+  "duration_ms": 1515,
+  "generated_at": "2026-09-14T13:35:57.981183+00:00",
+  "entity_refs": [
+    {
+      "entity_type": "dialogue_turn",
+      "entity_uuid": "ffd388b2-1c4f-5613-a554-9bd499f8bc9d",
+      "entity_key": "d_tr_tr-about-me_feeling_family:2"
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "source_text_hash": "980077856d3b41c2260e9598d3a2f2c62ad369e14908675a84224c27d0997d8a",
+  "voice_id": "70DeQK5Ztp7WmEGGysLT",
+  "model": "eleven_multilingual_v2",
+  "settings": {
+    "stability": 0.58,
+    "similarity_boost": 0.87,
+    "style": 0.14,
+    "use_speaker_boost": true,
+    "speed": 0.97
+  },
+  "provider": "elevenlabs",
+  "audio_key": "4bf9dbe8864363ed0f026a885c893d9e4147ad83bd4d737ca055c1a9477a7476",
+  "voice_key": "character:민수:male_warm",
+  "voice_name": "Hyun - Friendly and Natural",
+  "voice_labels": {
+    "gender": "male",
+    "accent": "seoul",
+    "age": "young",
+    "category": "high_quality",
+    "language": "ko",
+    "use_case": "conversational",
+    "descriptive": "casual"
+  },
+  "output_format": "mp3_44100_192",
+  "file_sha256": "487ff29a69e0e68b735a8409d9cd0956e0f2080cc5549773c414505d76403847",
+  "duration_ms": 1201,
+  "generated_at": "2026-09-14T13:39:53.513725+00:00",
+  "entity_refs": [
+    {
+      "entity_type": "dialogue_turn",
+      "entity_uuid": "491f6394-cc1b-553b-9c6f-30962132fa97",
+      "entity_key": "d_ko_ko-about-me_origin_age:6"
+    }
+  ]
+}

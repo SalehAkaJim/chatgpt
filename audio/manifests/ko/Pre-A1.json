@@ -14,6 +14,98 @@
   "missing_character_profiles": [],
   "items": [
     {
+      "audio_key": "0165b4e29f8b22cb65d7b10259447df2352b457ea4598950534f997a91e19f4c",
+      "category": "dialogues",
+      "locale": "ko-KR",
+      "text": "저는 사라예요.",
+      "source_text_hash": "86423ad4e65b327df933440f8591a5c11edd1ba7dd47cf4d56540ab033259c51",
+      "voice_key": "character:도윤:male_professional",
+      "voice_spec": {
+        "voice_name": null,
+        "description": "Neutral professional male adult Standard Seoul Korean voice, confident, clean and highly intelligible.",
+        "required_language": "ko",
+        "preferred_accent": "korean",
+        "prefer_high_quality": true,
+        "required_labels": {
+          "gender": "male"
+        },
+        "distinct_character": true,
+        "settings": {
+          "stability": 0.71,
+          "similarity_boost": 0.9,
+          "style": 0.05,
+          "use_speaker_boost": true,
+          "speed": 0.96
+        },
+        "profile_key": "male_professional"
+      },
+      "entity_refs": [
+        {
+          "entity_type": "dialogue_turn",
+          "entity_uuid": "6740601a-b310-5c41-92e8-a8d66a22ed3d",
+          "entity_key": "d_ko_ko-real-world-gate_meet:2"
+        }
+      ],
+      "metadata": {
+        "character": "도윤",
+        "dialogue": "d_ko_ko-real-world-gate_meet",
+        "turn": 2,
+        "persona": {
+          "voice_presentation": "male",
+          "style": "professional_neutral",
+          "target_accent": "standard_seoul_korean"
+        },
+        "voice_profile": "male_professional"
+      },
+      "relative_path": "audio/generated/ko-KR/dialogues/0165b4e29f8b22cb65d7b10259447df2352b457ea4598950534f997a91e19f4c.mp3"
+    },
+    {
+      "audio_key": "12384cc4ba978712079743d5c1026447814aa1122362071ed9dfb80c1c981d22",
+      "category": "dialogues",
+      "locale": "ko-KR",
+      "text": "몇 살이에요?",
+      "source_text_hash": "8218bb6c3e130fe67e221d37757e98687a790d7f8d988ce6e54cb7f362255c64",
+      "voice_key": "character:지민:female_warm",
+      "voice_spec": {
+        "voice_name": null,
+        "description": "Warm natural female adult Standard Seoul Korean voice, friendly and conversational with clear beginner-level articulation.",
+        "required_language": "ko",
+        "preferred_accent": "korean",
+        "prefer_high_quality": true,
+        "required_labels": {
+          "gender": "female"
+        },
+        "distinct_character": true,
+        "settings": {
+          "stability": 0.58,
+          "similarity_boost": 0.87,
+          "style": 0.14,
+          "use_speaker_boost": true,
+          "speed": 0.97
+        },
+        "profile_key": "female_warm"
+      },
+      "entity_refs": [
+        {
+          "entity_type": "dialogue_turn",
+          "entity_uuid": "bbcdd5d5-6a5c-5bee-bc2d-8551523ef687",
+          "entity_key": "d_ko_ko-about-me_origin_age:5"
+        }
+      ],
+      "metadata": {
+        "character": "지민",
+        "dialogue": "d_ko_ko-about-me_origin_age",
+        "turn": 5,
+        "persona": {
+          "voice_presentation": "female",
+          "style": "warm_conversational",
+          "target_accent": "standard_seoul_korean"
+        },
+        "voice_profile": "female_warm"
+      },
+      "relative_path": "audio/generated/ko-KR/dialogues/12384cc4ba978712079743d5c1026447814aa1122362071ed9dfb80c1c981d22.mp3"
+    },
+    {
       "audio_key": "13f6cc35f370b2302fa93fb0118dcc6795187172d254e251bf80929c94483a17",
       "category": "dialogues",
       "locale": "ko-KR",
@@ -104,6 +196,52 @@
         "voice_profile": "female_bright"
       },
       "relative_path": "audio/generated/ko-KR/dialogues/16f1a91c05ef90f3d34c6c188e5477eb9930315a5a100b62a8fb903db25f4013.mp3"
+    },
+    {
+      "audio_key": "1852328a5903fe99dfdefb053028e435d03eab192e084ffd178f4ebaa161f840",
+      "category": "dialogues",
+      "locale": "ko-KR",
+      "text": "출구가 어디예요?",
+      "source_text_hash": "eef29f00727e489aa72e3e23444865969bb47aa2dd4b6b25a3ea9dba0de67ec8",
+      "voice_key": "character:서연:female_bright",
+      "voice_spec": {
+        "voice_name": null,
+        "description": "Bright lively female young-adult Standard Seoul Korean voice, friendly and energetic without sounding theatrical.",
+        "required_language": "ko",
+        "preferred_accent": "korean",
+        "prefer_high_quality": true,
+        "required_labels": {
+          "gender": "female"
+        },
+        "distinct_character": true,
+        "settings": {
+          "stability": 0.52,
+          "similarity_boost": 0.86,
+          "style": 0.2,
+          "use_speaker_boost": true,
+          "speed": 0.99
+        },
+        "profile_key": "female_bright"
+      },
+      "entity_refs": [
+        {
+          "entity_type": "dialogue_turn",
+          "entity_uuid": "d22ce9f4-32cd-5baf-9d55-ccd46ed41b40",
+          "entity_key": "d_ko_ko-forms-signs_sign:1"
+        }
+      ],
+      "metadata": {
+        "character": "서연",
+        "dialogue": "d_ko_ko-forms-signs_sign",
+        "turn": 1,
+        "persona": {
+          "voice_presentation": "female",
+          "style": "bright_social",
+          "target_accent": "standard_seoul_korean"
+        },
+        "voice_profile": "female_bright"
+      },
+      "relative_path": "audio/generated/ko-KR/dialogues/1852328a5903fe99dfdefb053028e435d03eab192e084ffd178f4ebaa161f840.mp3"
     },
     {
       "audio_key": "20f62849946c80e82adad6abdbd41704e7cc4e6b27ab93363bdd5e46ae178b41",
@@ -336,6 +474,52 @@
       "relative_path": "audio/generated/ko-KR/dialogues/2f792b9b998446e10549e883a50449549b76a372862bb1c30e39698a76f7ee51.mp3"
     },
     {
+      "audio_key": "308f903d00caee3b2b837cfbf3ba343302a5887295883bda3d2ca23c8dc0e779",
+      "category": "dialogues",
+      "locale": "ko-KR",
+      "text": "안녕하세요!",
+      "source_text_hash": "e0f639938481a5a0c0632b36b0fc7d363c18c8ee5b0a2484d168d5c99b55b9f3",
+      "voice_key": "character:민수:male_warm",
+      "voice_spec": {
+        "voice_name": null,
+        "description": "Warm natural male adult Standard Seoul Korean voice, friendly and conversational with clear beginner-level articulation.",
+        "required_language": "ko",
+        "preferred_accent": "korean",
+        "prefer_high_quality": true,
+        "required_labels": {
+          "gender": "male"
+        },
+        "distinct_character": true,
+        "settings": {
+          "stability": 0.58,
+          "similarity_boost": 0.87,
+          "style": 0.14,
+          "use_speaker_boost": true,
+          "speed": 0.97
+        },
+        "profile_key": "male_warm"
+      },
+      "entity_refs": [
+        {
+          "entity_type": "dialogue_turn",
+          "entity_uuid": "9f5824c9-7319-5ccd-bf13-6ba202fe84ff",
+          "entity_key": "d_ko_ko-about-me_origin_age:2"
+        }
+      ],
+      "metadata": {
+        "character": "민수",
+        "dialogue": "d_ko_ko-about-me_origin_age",
+        "turn": 2,
+        "persona": {
+          "voice_presentation": "male",
+          "style": "warm_conversational",
+          "target_accent": "standard_seoul_korean"
+        },
+        "voice_profile": "male_warm"
+      },
+      "relative_path": "audio/generated/ko-KR/dialogues/308f903d00caee3b2b837cfbf3ba343302a5887295883bda3d2ca23c8dc0e779.mp3"
+    },
+    {
       "audio_key": "31dd4a224cc7228b4331c9f806be54a75f651143f278e0c2f5882eb8143693a7",
       "category": "dialogues",
       "locale": "ko-KR",
@@ -520,6 +704,52 @@
       "relative_path": "audio/generated/ko-KR/dialogues/38ad6b2274948b2eb82fd9cc8e472e3deb256e0b57e203115d2fb65ec7325c3b.mp3"
     },
     {
+      "audio_key": "3c5338df7838e6ff52e2d805680dc5b9f29a1a90ee9cf893142219c9f10907c4",
+      "category": "dialogues",
+      "locale": "ko-KR",
+      "text": "저는 이란에서 왔어요.",
+      "source_text_hash": "c64bb303cccd212cb6b8a0b3a36705cb05f9e07b9b3eba2226b628d7b7f42a8e",
+      "voice_key": "character:준호:male_bright",
+      "voice_spec": {
+        "voice_name": null,
+        "description": "Bright lively male young-adult Standard Seoul Korean voice, friendly and energetic without sounding theatrical.",
+        "required_language": "ko",
+        "preferred_accent": "korean",
+        "prefer_high_quality": true,
+        "required_labels": {
+          "gender": "male"
+        },
+        "distinct_character": true,
+        "settings": {
+          "stability": 0.52,
+          "similarity_boost": 0.86,
+          "style": 0.2,
+          "use_speaker_boost": true,
+          "speed": 0.99
+        },
+        "profile_key": "male_bright"
+      },
+      "entity_refs": [
+        {
+          "entity_type": "dialogue_turn",
+          "entity_uuid": "a39bab55-0105-5664-a7f8-2dc003095da4",
+          "entity_key": "d_ko_ko-forms-signs_form:4"
+        }
+      ],
+      "metadata": {
+        "character": "준호",
+        "dialogue": "d_ko_ko-forms-signs_form",
+        "turn": 4,
+        "persona": {
+          "voice_presentation": "male",
+          "style": "bright_social",
+          "target_accent": "standard_seoul_korean"
+        },
+        "voice_profile": "male_bright"
+      },
+      "relative_path": "audio/generated/ko-KR/dialogues/3c5338df7838e6ff52e2d805680dc5b9f29a1a90ee9cf893142219c9f10907c4.mp3"
+    },
+    {
       "audio_key": "3f18d3056bc5e8e0182c6c0155d1d58674fd761a3b55347e6d31cd0700e33895",
       "category": "dialogues",
       "locale": "ko-KR",
@@ -610,6 +840,52 @@
         "voice_profile": "female_calm"
       },
       "relative_path": "audio/generated/ko-KR/dialogues/3fb2c6e33aca0ee35629b35ed001cf65dfff107a52424899964bf93b23026d51.mp3"
+    },
+    {
+      "audio_key": "41c988675074318bf9e6a002353f7f8266a0b76d9e0cb6dca25ae9cc74c8f8a2",
+      "category": "dialogues",
+      "locale": "ko-KR",
+      "text": "아, 우산. 알겠어요. 감사합니다.",
+      "source_text_hash": "e063bcae02fff4d36082f8905dfa97f89a891c02297fa5531c91d65345f5e07b",
+      "voice_key": "character:태호:male_calm",
+      "voice_spec": {
+        "voice_name": null,
+        "description": "Calm precise male adult Standard Seoul Korean voice, grounded, natural and highly intelligible.",
+        "required_language": "ko",
+        "preferred_accent": "korean",
+        "prefer_high_quality": true,
+        "required_labels": {
+          "gender": "male"
+        },
+        "distinct_character": true,
+        "settings": {
+          "stability": 0.68,
+          "similarity_boost": 0.89,
+          "style": 0.06,
+          "use_speaker_boost": true,
+          "speed": 0.95
+        },
+        "profile_key": "male_calm"
+      },
+      "entity_refs": [
+        {
+          "entity_type": "dialogue_turn",
+          "entity_uuid": "0ba91941-89a2-5c9b-b1e0-290f1f344c02",
+          "entity_key": "d_ko_ready_repair:4"
+        }
+      ],
+      "metadata": {
+        "character": "태호",
+        "dialogue": "d_ko_ready_repair",
+        "turn": 4,
+        "persona": {
+          "voice_presentation": "male",
+          "style": "calm_clear",
+          "target_accent": "standard_seoul_korean"
+        },
+        "voice_profile": "male_calm"
+      },
+      "relative_path": "audio/generated/ko-KR/dialogues/41c988675074318bf9e6a002353f7f8266a0b76d9e0cb6dca25ae9cc74c8f8a2.mp3"
     },
     {
       "audio_key": "4294c6e2b4b9cd59d91c7f0d9b85b2de75180afe61fe768d6647ae87f3d305d7",
@@ -704,15 +980,15 @@
       "relative_path": "audio/generated/ko-KR/dialogues/42bafacdb5e9cf8ef845d153fe526836e55d8812e47932f04dc7e34e36f55f06.mp3"
     },
     {
-      "audio_key": "4a50a4f354e073875062bba0d1919cc0f8c38633781bb6c8d3d9ae43ae3dee7f",
+      "audio_key": "4bf9dbe8864363ed0f026a885c893d9e4147ad83bd4d737ca055c1a9477a7476",
       "category": "dialogues",
       "locale": "ko-KR",
-      "text": "아, 알겠어요. 감사합니다.",
-      "source_text_hash": "e9dcd36d05bf1fcaa245ef4fe546d7b17d15b8345a20bf497e0b1b9e4b1ef85c",
-      "voice_key": "character:태호:male_calm",
+      "text": "스무 살이에요.",
+      "source_text_hash": "980077856d3b41c2260e9598d3a2f2c62ad369e14908675a84224c27d0997d8a",
+      "voice_key": "character:민수:male_warm",
       "voice_spec": {
         "voice_name": null,
-        "description": "Calm precise male adult Standard Seoul Korean voice, grounded, natural and highly intelligible.",
+        "description": "Warm natural male adult Standard Seoul Korean voice, friendly and conversational with clear beginner-level articulation.",
         "required_language": "ko",
         "preferred_accent": "korean",
         "prefer_high_quality": true,
@@ -721,33 +997,33 @@
         },
         "distinct_character": true,
         "settings": {
-          "stability": 0.68,
-          "similarity_boost": 0.89,
-          "style": 0.06,
+          "stability": 0.58,
+          "similarity_boost": 0.87,
+          "style": 0.14,
           "use_speaker_boost": true,
-          "speed": 0.95
+          "speed": 0.97
         },
-        "profile_key": "male_calm"
+        "profile_key": "male_warm"
       },
       "entity_refs": [
         {
           "entity_type": "dialogue_turn",
-          "entity_uuid": "0ba91941-89a2-5c9b-b1e0-290f1f344c02",
-          "entity_key": "d_ko_ready_repair:4"
+          "entity_uuid": "491f6394-cc1b-553b-9c6f-30962132fa97",
+          "entity_key": "d_ko_ko-about-me_origin_age:6"
         }
       ],
       "metadata": {
-        "character": "태호",
-        "dialogue": "d_ko_ready_repair",
-        "turn": 4,
+        "character": "민수",
+        "dialogue": "d_ko_ko-about-me_origin_age",
+        "turn": 6,
         "persona": {
           "voice_presentation": "male",
-          "style": "calm_clear",
+          "style": "warm_conversational",
           "target_accent": "standard_seoul_korean"
         },
-        "voice_profile": "male_calm"
+        "voice_profile": "male_warm"
       },
-      "relative_path": "audio/generated/ko-KR/dialogues/4a50a4f354e073875062bba0d1919cc0f8c38633781bb6c8d3d9ae43ae3dee7f.mp3"
+      "relative_path": "audio/generated/ko-KR/dialogues/4bf9dbe8864363ed0f026a885c893d9e4147ad83bd4d737ca055c1a9477a7476.mp3"
     },
     {
       "audio_key": "4ec58ad10e215740ec9f916e0ab402b7ab8a1b75c6836be59e69486b2041bc51",
@@ -932,6 +1208,52 @@
         "voice_profile": "female_calm"
       },
       "relative_path": "audio/generated/ko-KR/dialogues/509ffccc5b28144ade730a31b71a3e01be5e7a0a8a86b1baa49b5ffb6236bac3.mp3"
+    },
+    {
+      "audio_key": "51deeebaede07edc9553fd11910ac983cf995bfdfdf2040cfb55d1db91659df2",
+      "category": "dialogues",
+      "locale": "ko-KR",
+      "text": "월요일",
+      "source_text_hash": "6c95540e90f1a66864be896a441a4a5d4cc012901b4f7494e1faceab210cdd98",
+      "voice_key": "character:유나:female_professional",
+      "voice_spec": {
+        "voice_name": null,
+        "description": "Neutral professional female adult Standard Seoul Korean voice, confident, clean and highly intelligible.",
+        "required_language": "ko",
+        "preferred_accent": "korean",
+        "prefer_high_quality": true,
+        "required_labels": {
+          "gender": "female"
+        },
+        "distinct_character": true,
+        "settings": {
+          "stability": 0.71,
+          "similarity_boost": 0.9,
+          "style": 0.05,
+          "use_speaker_boost": true,
+          "speed": 0.96
+        },
+        "profile_key": "female_professional"
+      },
+      "entity_refs": [
+        {
+          "entity_type": "dialogue_turn",
+          "entity_uuid": "9754296c-80e3-5121-9ecb-8ec63a337d37",
+          "entity_key": "d_ko_ko-real-life-numbers_price_day:3"
+        }
+      ],
+      "metadata": {
+        "character": "유나",
+        "dialogue": "d_ko_ko-real-life-numbers_price_day",
+        "turn": 3,
+        "persona": {
+          "voice_presentation": "female",
+          "style": "professional_neutral",
+          "target_accent": "standard_seoul_korean"
+        },
+        "voice_profile": "female_professional"
+      },
+      "relative_path": "audio/generated/ko-KR/dialogues/51deeebaede07edc9553fd11910ac983cf995bfdfdf2040cfb55d1db91659df2.mp3"
     },
     {
       "audio_key": "53705db6c6d88db475c175d83d1890ab44e47e2ade3d455118a025e8ee90ac19",
@@ -1256,6 +1578,154 @@
       "relative_path": "audio/generated/ko-KR/dialogues/5bdd7600db730941cf2edf520657ba0674d4816224fff012ba4fdc488efd8f53.mp3"
     },
     {
+      "audio_key": "5c82fe2b694462977c890dcdb882b568f6f6d055cc84e488aec5094e11c3bdf4",
+      "category": "dialogues",
+      "locale": "ko-KR",
+      "text": "네, 잘 지내요.",
+      "source_text_hash": "52803505ac46a28c9a27ea692b9239eb362dce3b91efbc700f3f52ae0692b157",
+      "voice_key": "character:준호:male_bright",
+      "voice_spec": {
+        "voice_name": null,
+        "description": "Bright lively male young-adult Standard Seoul Korean voice, friendly and energetic without sounding theatrical.",
+        "required_language": "ko",
+        "preferred_accent": "korean",
+        "prefer_high_quality": true,
+        "required_labels": {
+          "gender": "male"
+        },
+        "distinct_character": true,
+        "settings": {
+          "stability": 0.52,
+          "similarity_boost": 0.86,
+          "style": 0.2,
+          "use_speaker_boost": true,
+          "speed": 0.99
+        },
+        "profile_key": "male_bright"
+      },
+      "entity_refs": [
+        {
+          "entity_type": "dialogue_turn",
+          "entity_uuid": "0e4ee854-097d-51ad-8749-05ac562e30f9",
+          "entity_key": "d_ko_ko-about-me_feeling_family:2"
+        }
+      ],
+      "metadata": {
+        "character": "준호",
+        "dialogue": "d_ko_ko-about-me_feeling_family",
+        "turn": 2,
+        "persona": {
+          "voice_presentation": "male",
+          "style": "bright_social",
+          "target_accent": "standard_seoul_korean"
+        },
+        "voice_profile": "male_bright"
+      },
+      "relative_path": "audio/generated/ko-KR/dialogues/5c82fe2b694462977c890dcdb882b568f6f6d055cc84e488aec5094e11c3bdf4.mp3"
+    },
+    {
+      "audio_key": "5ed680c801e6cebf072db071df07842fbaf3eab9449f622a5603700b34ce4ca7",
+      "category": "dialogues",
+      "locale": "ko-KR",
+      "text": "공일공, 일이삼사, 오육칠팔이에요.",
+      "source_text_hash": "6787b9084d72d6255456ff518eddb41ac9d195c76e1bd473947602b782cade4c",
+      "voice_key": "character:태호:male_calm",
+      "voice_spec": {
+        "voice_name": null,
+        "description": "Calm precise male adult Standard Seoul Korean voice, grounded, natural and highly intelligible.",
+        "required_language": "ko",
+        "preferred_accent": "korean",
+        "prefer_high_quality": true,
+        "required_labels": {
+          "gender": "male"
+        },
+        "distinct_character": true,
+        "settings": {
+          "stability": 0.68,
+          "similarity_boost": 0.89,
+          "style": 0.06,
+          "use_speaker_boost": true,
+          "speed": 0.95
+        },
+        "profile_key": "male_calm"
+      },
+      "entity_refs": [
+        {
+          "entity_type": "dialogue_turn",
+          "entity_uuid": "176d50c0-5b56-544a-8a67-956abffd619d",
+          "entity_key": "d_ko_ko-real-life-numbers_phone:2"
+        },
+        {
+          "entity_type": "dialogue_turn",
+          "entity_uuid": "b7e1aa14-90bf-595b-b3d1-2439be6077ff",
+          "entity_key": "d_ko_ko-real-life-numbers_phone:4"
+        },
+        {
+          "entity_type": "dialogue_turn",
+          "entity_uuid": "36090570-7ec0-5345-99e9-18133d92df36",
+          "entity_key": "d_ko_ko-real-world-gate_public_task:2"
+        }
+      ],
+      "metadata": {
+        "character": "태호",
+        "dialogue": "d_ko_ko-real-life-numbers_phone",
+        "turn": 2,
+        "persona": {
+          "voice_presentation": "male",
+          "style": "calm_clear",
+          "target_accent": "standard_seoul_korean"
+        },
+        "voice_profile": "male_calm"
+      },
+      "relative_path": "audio/generated/ko-KR/dialogues/5ed680c801e6cebf072db071df07842fbaf3eab9449f622a5603700b34ce4ca7.mp3"
+    },
+    {
+      "audio_key": "5fbc94ba6cc364ba479eee0133791a020102e3d38c8c6c2c6dc1664a954cc80a",
+      "category": "dialogues",
+      "locale": "ko-KR",
+      "text": "네, 잘 지내요.",
+      "source_text_hash": "52803505ac46a28c9a27ea692b9239eb362dce3b91efbc700f3f52ae0692b157",
+      "voice_key": "character:도윤:male_professional",
+      "voice_spec": {
+        "voice_name": null,
+        "description": "Neutral professional male adult Standard Seoul Korean voice, confident, clean and highly intelligible.",
+        "required_language": "ko",
+        "preferred_accent": "korean",
+        "prefer_high_quality": true,
+        "required_labels": {
+          "gender": "male"
+        },
+        "distinct_character": true,
+        "settings": {
+          "stability": 0.71,
+          "similarity_boost": 0.9,
+          "style": 0.05,
+          "use_speaker_boost": true,
+          "speed": 0.96
+        },
+        "profile_key": "male_professional"
+      },
+      "entity_refs": [
+        {
+          "entity_type": "dialogue_turn",
+          "entity_uuid": "e1095639-9eac-5582-85c0-d25f962d25f8",
+          "entity_key": "d_ko_ko-real-world-gate_meet:6"
+        }
+      ],
+      "metadata": {
+        "character": "도윤",
+        "dialogue": "d_ko_ko-real-world-gate_meet",
+        "turn": 6,
+        "persona": {
+          "voice_presentation": "male",
+          "style": "professional_neutral",
+          "target_accent": "standard_seoul_korean"
+        },
+        "voice_profile": "male_professional"
+      },
+      "relative_path": "audio/generated/ko-KR/dialogues/5fbc94ba6cc364ba479eee0133791a020102e3d38c8c6c2c6dc1664a954cc80a.mp3"
+    },
+    {
       "audio_key": "60461d02b5f16f516b38419d2f87acda8df4265a0be55977939c4e385b4b1008",
       "category": "dialogues",
       "locale": "ko-KR",
@@ -1284,11 +1754,6 @@
       "entity_refs": [
         {
           "entity_type": "dialogue_turn",
-          "entity_uuid": "bd2730c8-de9a-5fbc-bf08-1c4ea8aae9ba",
-          "entity_key": "d_ko_meaning_help:3"
-        },
-        {
-          "entity_type": "dialogue_turn",
           "entity_uuid": "0f155101-8ace-5233-9f58-bdd9c9ca1d22",
           "entity_key": "d_ko_meaning_help:5"
         }
@@ -1296,7 +1761,7 @@
       "metadata": {
         "character": "지민",
         "dialogue": "d_ko_meaning_help",
-        "turn": 3,
+        "turn": 5,
         "persona": {
           "voice_presentation": "female",
           "style": "warm_conversational",
@@ -1305,6 +1770,52 @@
         "voice_profile": "female_warm"
       },
       "relative_path": "audio/generated/ko-KR/dialogues/60461d02b5f16f516b38419d2f87acda8df4265a0be55977939c4e385b4b1008.mp3"
+    },
+    {
+      "audio_key": "63bcbcdf467aae52c7e64579065a2e96c10c7222129abf4ec62379224f1f0eb5",
+      "category": "dialogues",
+      "locale": "ko-KR",
+      "text": "전화번호가 뭐예요?",
+      "source_text_hash": "3c7f5d6a421a59d9108f13bab419a72af62ed5784ce306d127ee7c617a8254d1",
+      "voice_key": "character:하나:female_calm",
+      "voice_spec": {
+        "voice_name": null,
+        "description": "Calm precise female adult Standard Seoul Korean voice, gentle, natural and highly intelligible.",
+        "required_language": "ko",
+        "preferred_accent": "korean",
+        "prefer_high_quality": true,
+        "required_labels": {
+          "gender": "female"
+        },
+        "distinct_character": true,
+        "settings": {
+          "stability": 0.68,
+          "similarity_boost": 0.89,
+          "style": 0.06,
+          "use_speaker_boost": true,
+          "speed": 0.95
+        },
+        "profile_key": "female_calm"
+      },
+      "entity_refs": [
+        {
+          "entity_type": "dialogue_turn",
+          "entity_uuid": "a51a2465-ec3e-571f-88c9-186885ecfd49",
+          "entity_key": "d_ko_ko-real-life-numbers_phone:1"
+        }
+      ],
+      "metadata": {
+        "character": "하나",
+        "dialogue": "d_ko_ko-real-life-numbers_phone",
+        "turn": 1,
+        "persona": {
+          "voice_presentation": "female",
+          "style": "calm_clear",
+          "target_accent": "standard_seoul_korean"
+        },
+        "voice_profile": "female_calm"
+      },
+      "relative_path": "audio/generated/ko-KR/dialogues/63bcbcdf467aae52c7e64579065a2e96c10c7222129abf4ec62379224f1f0eb5.mp3"
     },
     {
       "audio_key": "6441d86efc6b6f58c19c4cc390272b87f6ee5d979a037c1c03b23c7e4edb7d48",
@@ -1397,6 +1908,98 @@
         "voice_profile": "male_bright"
       },
       "relative_path": "audio/generated/ko-KR/dialogues/68fef7cafe3828fa282436d22d276550dfc8a509ef4f3ab2a2f39a66388e6972.mp3"
+    },
+    {
+      "audio_key": "6b8b9a831e7b36a526d0acf0231d62f0993298acfad1a5b5d703df23ee6135fc",
+      "category": "dialogues",
+      "locale": "ko-KR",
+      "text": "우산. 이거예요.",
+      "source_text_hash": "0da9755e151ad82b1604e0a8141403dc2f336eefa3436e51d6e871f836adae14",
+      "voice_key": "character:하나:female_calm",
+      "voice_spec": {
+        "voice_name": null,
+        "description": "Calm precise female adult Standard Seoul Korean voice, gentle, natural and highly intelligible.",
+        "required_language": "ko",
+        "preferred_accent": "korean",
+        "prefer_high_quality": true,
+        "required_labels": {
+          "gender": "female"
+        },
+        "distinct_character": true,
+        "settings": {
+          "stability": 0.68,
+          "similarity_boost": 0.89,
+          "style": 0.06,
+          "use_speaker_boost": true,
+          "speed": 0.95
+        },
+        "profile_key": "female_calm"
+      },
+      "entity_refs": [
+        {
+          "entity_type": "dialogue_turn",
+          "entity_uuid": "9c39d986-9b24-5b53-8a35-246263e052ea",
+          "entity_key": "d_ko_ready_repair:3"
+        }
+      ],
+      "metadata": {
+        "character": "하나",
+        "dialogue": "d_ko_ready_repair",
+        "turn": 3,
+        "persona": {
+          "voice_presentation": "female",
+          "style": "calm_clear",
+          "target_accent": "standard_seoul_korean"
+        },
+        "voice_profile": "female_calm"
+      },
+      "relative_path": "audio/generated/ko-KR/dialogues/6b8b9a831e7b36a526d0acf0231d62f0993298acfad1a5b5d703df23ee6135fc.mp3"
+    },
+    {
+      "audio_key": "6c444580e5fcdac527708d599a5bd1474a7e27e05fcdc307f2cf3f062b93abfb",
+      "category": "dialogues",
+      "locale": "ko-KR",
+      "text": "이름?",
+      "source_text_hash": "8e9c3e79e052cf769815e98416950d4a2c3fa4006da8e6d96efdc399a011c817",
+      "voice_key": "character:지민:female_warm",
+      "voice_spec": {
+        "voice_name": null,
+        "description": "Warm natural female adult Standard Seoul Korean voice, friendly and conversational with clear beginner-level articulation.",
+        "required_language": "ko",
+        "preferred_accent": "korean",
+        "prefer_high_quality": true,
+        "required_labels": {
+          "gender": "female"
+        },
+        "distinct_character": true,
+        "settings": {
+          "stability": 0.58,
+          "similarity_boost": 0.87,
+          "style": 0.14,
+          "use_speaker_boost": true,
+          "speed": 0.97
+        },
+        "profile_key": "female_warm"
+      },
+      "entity_refs": [
+        {
+          "entity_type": "dialogue_turn",
+          "entity_uuid": "eb3161d8-201d-557c-8bb9-18d289fbfc3e",
+          "entity_key": "d_ko_ko-forms-signs_form:1"
+        }
+      ],
+      "metadata": {
+        "character": "지민",
+        "dialogue": "d_ko_ko-forms-signs_form",
+        "turn": 1,
+        "persona": {
+          "voice_presentation": "female",
+          "style": "warm_conversational",
+          "target_accent": "standard_seoul_korean"
+        },
+        "voice_profile": "female_warm"
+      },
+      "relative_path": "audio/generated/ko-KR/dialogues/6c444580e5fcdac527708d599a5bd1474a7e27e05fcdc307f2cf3f062b93abfb.mp3"
     },
     {
       "audio_key": "6c691c95eff6e22a85fc3b807d72c3c6ce1d1a646735644531031d58a5b03051",
@@ -1675,6 +2278,144 @@
       "relative_path": "audio/generated/ko-KR/dialogues/75c0baf509d91054787835c49b9d34e2d7649e9ecf43ff8ab8b4a4b2fc032c18.mp3"
     },
     {
+      "audio_key": "75cbbe7c04e9fb2846826c3ef06f0b9a13ecd5d43b0cee3902a9293707b3303a",
+      "category": "dialogues",
+      "locale": "ko-KR",
+      "text": "전화번호가 뭐예요?",
+      "source_text_hash": "3c7f5d6a421a59d9108f13bab419a72af62ed5784ce306d127ee7c617a8254d1",
+      "voice_key": "character:유나:female_professional",
+      "voice_spec": {
+        "voice_name": null,
+        "description": "Neutral professional female adult Standard Seoul Korean voice, confident, clean and highly intelligible.",
+        "required_language": "ko",
+        "preferred_accent": "korean",
+        "prefer_high_quality": true,
+        "required_labels": {
+          "gender": "female"
+        },
+        "distinct_character": true,
+        "settings": {
+          "stability": 0.71,
+          "similarity_boost": 0.9,
+          "style": 0.05,
+          "use_speaker_boost": true,
+          "speed": 0.96
+        },
+        "profile_key": "female_professional"
+      },
+      "entity_refs": [
+        {
+          "entity_type": "dialogue_turn",
+          "entity_uuid": "79ab798f-27ef-5b1e-8e17-cd4115c32ad2",
+          "entity_key": "d_ko_ko-real-world-gate_public_task:1"
+        }
+      ],
+      "metadata": {
+        "character": "유나",
+        "dialogue": "d_ko_ko-real-world-gate_public_task",
+        "turn": 1,
+        "persona": {
+          "voice_presentation": "female",
+          "style": "professional_neutral",
+          "target_accent": "standard_seoul_korean"
+        },
+        "voice_profile": "female_professional"
+      },
+      "relative_path": "audio/generated/ko-KR/dialogues/75cbbe7c04e9fb2846826c3ef06f0b9a13ecd5d43b0cee3902a9293707b3303a.mp3"
+    },
+    {
+      "audio_key": "78bfcbc4616b6c64973c6e9b9a1cb8ee9ad1afcec0de1818ad9b7e73a4063b22",
+      "category": "dialogues",
+      "locale": "ko-KR",
+      "text": "잘 지내요?",
+      "source_text_hash": "478c962d7db98238a9254aae79d1cf571f955f4bf6b28c17386f1c51fd1f3f66",
+      "voice_key": "character:서연:female_bright",
+      "voice_spec": {
+        "voice_name": null,
+        "description": "Bright lively female young-adult Standard Seoul Korean voice, friendly and energetic without sounding theatrical.",
+        "required_language": "ko",
+        "preferred_accent": "korean",
+        "prefer_high_quality": true,
+        "required_labels": {
+          "gender": "female"
+        },
+        "distinct_character": true,
+        "settings": {
+          "stability": 0.52,
+          "similarity_boost": 0.86,
+          "style": 0.2,
+          "use_speaker_boost": true,
+          "speed": 0.99
+        },
+        "profile_key": "female_bright"
+      },
+      "entity_refs": [
+        {
+          "entity_type": "dialogue_turn",
+          "entity_uuid": "661a0e42-7146-58ae-89c6-0b6450d12b54",
+          "entity_key": "d_ko_ko-about-me_feeling_family:1"
+        }
+      ],
+      "metadata": {
+        "character": "서연",
+        "dialogue": "d_ko_ko-about-me_feeling_family",
+        "turn": 1,
+        "persona": {
+          "voice_presentation": "female",
+          "style": "bright_social",
+          "target_accent": "standard_seoul_korean"
+        },
+        "voice_profile": "female_bright"
+      },
+      "relative_path": "audio/generated/ko-KR/dialogues/78bfcbc4616b6c64973c6e9b9a1cb8ee9ad1afcec0de1818ad9b7e73a4063b22.mp3"
+    },
+    {
+      "audio_key": "7997c584ee7c8ce69c92d09be244a8f822f1a669ba470f7b569456cb0143a77f",
+      "category": "dialogues",
+      "locale": "ko-KR",
+      "text": "저기예요.",
+      "source_text_hash": "290b2cc57330166c23092f982e322e6fd078e861194d28a76d1ce87a1a5fa5b8",
+      "voice_key": "character:유나:female_professional",
+      "voice_spec": {
+        "voice_name": null,
+        "description": "Neutral professional female adult Standard Seoul Korean voice, confident, clean and highly intelligible.",
+        "required_language": "ko",
+        "preferred_accent": "korean",
+        "prefer_high_quality": true,
+        "required_labels": {
+          "gender": "female"
+        },
+        "distinct_character": true,
+        "settings": {
+          "stability": 0.71,
+          "similarity_boost": 0.9,
+          "style": 0.05,
+          "use_speaker_boost": true,
+          "speed": 0.96
+        },
+        "profile_key": "female_professional"
+      },
+      "entity_refs": [
+        {
+          "entity_type": "dialogue_turn",
+          "entity_uuid": "cb89b849-fb13-5472-bdc4-5314cf1ce9bb",
+          "entity_key": "d_ko_ko-real-world-gate_public_task:6"
+        }
+      ],
+      "metadata": {
+        "character": "유나",
+        "dialogue": "d_ko_ko-real-world-gate_public_task",
+        "turn": 6,
+        "persona": {
+          "voice_presentation": "female",
+          "style": "professional_neutral",
+          "target_accent": "standard_seoul_korean"
+        },
+        "voice_profile": "female_professional"
+      },
+      "relative_path": "audio/generated/ko-KR/dialogues/7997c584ee7c8ce69c92d09be244a8f822f1a669ba470f7b569456cb0143a77f.mp3"
+    },
+    {
       "audio_key": "7c2623eec6c19a7da85d3845664891ed883963934b8be824352cc4acaf692918",
       "category": "dialogues",
       "locale": "ko-KR",
@@ -1721,6 +2462,52 @@
       "relative_path": "audio/generated/ko-KR/dialogues/7c2623eec6c19a7da85d3845664891ed883963934b8be824352cc4acaf692918.mp3"
     },
     {
+      "audio_key": "7cfe7085f381aa1d6506e7f3859a5ca2dc4f8db9bff99fc62f1a9f3491a6c4bf",
+      "category": "dialogues",
+      "locale": "ko-KR",
+      "text": "저는 이란에서 왔어요.",
+      "source_text_hash": "c64bb303cccd212cb6b8a0b3a36705cb05f9e07b9b3eba2226b628d7b7f42a8e",
+      "voice_key": "character:민수:male_warm",
+      "voice_spec": {
+        "voice_name": null,
+        "description": "Warm natural male adult Standard Seoul Korean voice, friendly and conversational with clear beginner-level articulation.",
+        "required_language": "ko",
+        "preferred_accent": "korean",
+        "prefer_high_quality": true,
+        "required_labels": {
+          "gender": "male"
+        },
+        "distinct_character": true,
+        "settings": {
+          "stability": 0.58,
+          "similarity_boost": 0.87,
+          "style": 0.14,
+          "use_speaker_boost": true,
+          "speed": 0.97
+        },
+        "profile_key": "male_warm"
+      },
+      "entity_refs": [
+        {
+          "entity_type": "dialogue_turn",
+          "entity_uuid": "2b96d453-fa88-5fc9-9df5-a5b9ce219818",
+          "entity_key": "d_ko_ko-about-me_origin_age:4"
+        }
+      ],
+      "metadata": {
+        "character": "민수",
+        "dialogue": "d_ko_ko-about-me_origin_age",
+        "turn": 4,
+        "persona": {
+          "voice_presentation": "male",
+          "style": "warm_conversational",
+          "target_accent": "standard_seoul_korean"
+        },
+        "voice_profile": "male_warm"
+      },
+      "relative_path": "audio/generated/ko-KR/dialogues/7cfe7085f381aa1d6506e7f3859a5ca2dc4f8db9bff99fc62f1a9f3491a6c4bf.mp3"
+    },
+    {
       "audio_key": "7d0ecae022ed459cc1ef48a0562060bbd5361d5e205e6724856a331038ce0d8f",
       "category": "dialogues",
       "locale": "ko-KR",
@@ -1765,6 +2552,98 @@
         "voice_profile": "male_bright"
       },
       "relative_path": "audio/generated/ko-KR/dialogues/7d0ecae022ed459cc1ef48a0562060bbd5361d5e205e6724856a331038ce0d8f.mp3"
+    },
+    {
+      "audio_key": "7e4d8965049b1fff6a9c027196f3fb6e43f6f048cad9acb0b5d5b0786c8d67e7",
+      "category": "dialogues",
+      "locale": "ko-KR",
+      "text": "출구가 어디예요?",
+      "source_text_hash": "eef29f00727e489aa72e3e23444865969bb47aa2dd4b6b25a3ea9dba0de67ec8",
+      "voice_key": "character:태호:male_calm",
+      "voice_spec": {
+        "voice_name": null,
+        "description": "Calm precise male adult Standard Seoul Korean voice, grounded, natural and highly intelligible.",
+        "required_language": "ko",
+        "preferred_accent": "korean",
+        "prefer_high_quality": true,
+        "required_labels": {
+          "gender": "male"
+        },
+        "distinct_character": true,
+        "settings": {
+          "stability": 0.68,
+          "similarity_boost": 0.89,
+          "style": 0.06,
+          "use_speaker_boost": true,
+          "speed": 0.95
+        },
+        "profile_key": "male_calm"
+      },
+      "entity_refs": [
+        {
+          "entity_type": "dialogue_turn",
+          "entity_uuid": "09808c24-292e-546d-a421-ef3955610897",
+          "entity_key": "d_ko_ko-real-world-gate_public_task:5"
+        }
+      ],
+      "metadata": {
+        "character": "태호",
+        "dialogue": "d_ko_ko-real-world-gate_public_task",
+        "turn": 5,
+        "persona": {
+          "voice_presentation": "male",
+          "style": "calm_clear",
+          "target_accent": "standard_seoul_korean"
+        },
+        "voice_profile": "male_calm"
+      },
+      "relative_path": "audio/generated/ko-KR/dialogues/7e4d8965049b1fff6a9c027196f3fb6e43f6f048cad9acb0b5d5b0786c8d67e7.mp3"
+    },
+    {
+      "audio_key": "7f317aa675cbbb94ba3d0a47d81b242861c1d8ee2400a737c9a69ad29faafab1",
+      "category": "dialogues",
+      "locale": "ko-KR",
+      "text": "오천 원이에요.",
+      "source_text_hash": "b332361b479b105b2a370da3b15a39e8b53dccc78b078f31389185a9a725c272",
+      "voice_key": "character:태호:male_calm",
+      "voice_spec": {
+        "voice_name": null,
+        "description": "Calm precise male adult Standard Seoul Korean voice, grounded, natural and highly intelligible.",
+        "required_language": "ko",
+        "preferred_accent": "korean",
+        "prefer_high_quality": true,
+        "required_labels": {
+          "gender": "male"
+        },
+        "distinct_character": true,
+        "settings": {
+          "stability": 0.68,
+          "similarity_boost": 0.89,
+          "style": 0.06,
+          "use_speaker_boost": true,
+          "speed": 0.95
+        },
+        "profile_key": "male_calm"
+      },
+      "entity_refs": [
+        {
+          "entity_type": "dialogue_turn",
+          "entity_uuid": "0d928c0d-bd43-58a5-9800-e23d1c3efd40",
+          "entity_key": "d_ko_ko-real-world-gate_public_task:4"
+        }
+      ],
+      "metadata": {
+        "character": "태호",
+        "dialogue": "d_ko_ko-real-world-gate_public_task",
+        "turn": 4,
+        "persona": {
+          "voice_presentation": "male",
+          "style": "calm_clear",
+          "target_accent": "standard_seoul_korean"
+        },
+        "voice_profile": "male_calm"
+      },
+      "relative_path": "audio/generated/ko-KR/dialogues/7f317aa675cbbb94ba3d0a47d81b242861c1d8ee2400a737c9a69ad29faafab1.mp3"
     },
     {
       "audio_key": "8113d7be4f04a4a8cacd8355777b32f176fe3bce4de465f3450578b29d2d3958",
@@ -2181,6 +3060,52 @@
       "relative_path": "audio/generated/ko-KR/dialogues/9117d8b82ae0cdc772900ad5d4159a0ca32b9711c243f3be01450e7cc5b015f8.mp3"
     },
     {
+      "audio_key": "91fd78a97bdf96caa12945de96fb545611ad0115e6ecfb66dc1dd5627cdf5e3b",
+      "category": "dialogues",
+      "locale": "ko-KR",
+      "text": "아, 알겠어요. 감사합니다.",
+      "source_text_hash": "e9dcd36d05bf1fcaa245ef4fe546d7b17d15b8345a20bf497e0b1b9e4b1ef85c",
+      "voice_key": "character:민수:male_warm",
+      "voice_spec": {
+        "voice_name": null,
+        "description": "Warm natural male adult Standard Seoul Korean voice, friendly and conversational with clear beginner-level articulation.",
+        "required_language": "ko",
+        "preferred_accent": "korean",
+        "prefer_high_quality": true,
+        "required_labels": {
+          "gender": "male"
+        },
+        "distinct_character": true,
+        "settings": {
+          "stability": 0.58,
+          "similarity_boost": 0.87,
+          "style": 0.14,
+          "use_speaker_boost": true,
+          "speed": 0.97
+        },
+        "profile_key": "male_warm"
+      },
+      "entity_refs": [
+        {
+          "entity_type": "dialogue_turn",
+          "entity_uuid": "fc4518e4-9198-5262-9751-568b1680ae3d",
+          "entity_key": "d_ko_meaning_help:6"
+        }
+      ],
+      "metadata": {
+        "character": "민수",
+        "dialogue": "d_ko_meaning_help",
+        "turn": 6,
+        "persona": {
+          "voice_presentation": "male",
+          "style": "warm_conversational",
+          "target_accent": "standard_seoul_korean"
+        },
+        "voice_profile": "male_warm"
+      },
+      "relative_path": "audio/generated/ko-KR/dialogues/91fd78a97bdf96caa12945de96fb545611ad0115e6ecfb66dc1dd5627cdf5e3b.mp3"
+    },
+    {
       "audio_key": "94e93bf3e1572b7c5c181efd8df1c40d20d54d2b831e28a13b80223e862149a1",
       "category": "dialogues",
       "locale": "ko-KR",
@@ -2230,6 +3155,144 @@
         "voice_profile": "female_bright"
       },
       "relative_path": "audio/generated/ko-KR/dialogues/94e93bf3e1572b7c5c181efd8df1c40d20d54d2b831e28a13b80223e862149a1.mp3"
+    },
+    {
+      "audio_key": "95ca0e327cfa15e96fb5832bfc9ebe3d861475aff3c7ff964ea77482410499ad",
+      "category": "dialogues",
+      "locale": "ko-KR",
+      "text": "어디에서 왔어요?",
+      "source_text_hash": "828ace6339fb2f74fc0c8356a23f9982acd88d43578d059821ced51133d16169",
+      "voice_key": "character:지민:female_warm",
+      "voice_spec": {
+        "voice_name": null,
+        "description": "Warm natural female adult Standard Seoul Korean voice, friendly and conversational with clear beginner-level articulation.",
+        "required_language": "ko",
+        "preferred_accent": "korean",
+        "prefer_high_quality": true,
+        "required_labels": {
+          "gender": "female"
+        },
+        "distinct_character": true,
+        "settings": {
+          "stability": 0.58,
+          "similarity_boost": 0.87,
+          "style": 0.14,
+          "use_speaker_boost": true,
+          "speed": 0.97
+        },
+        "profile_key": "female_warm"
+      },
+      "entity_refs": [
+        {
+          "entity_type": "dialogue_turn",
+          "entity_uuid": "7466d283-566f-5f76-8783-c5ef485f2e3b",
+          "entity_key": "d_ko_ko-about-me_origin_age:3"
+        }
+      ],
+      "metadata": {
+        "character": "지민",
+        "dialogue": "d_ko_ko-about-me_origin_age",
+        "turn": 3,
+        "persona": {
+          "voice_presentation": "female",
+          "style": "warm_conversational",
+          "target_accent": "standard_seoul_korean"
+        },
+        "voice_profile": "female_warm"
+      },
+      "relative_path": "audio/generated/ko-KR/dialogues/95ca0e327cfa15e96fb5832bfc9ebe3d861475aff3c7ff964ea77482410499ad.mp3"
+    },
+    {
+      "audio_key": "983214c414be0d88454e60206f94157dfd3bcb7c8ff0e2ef70214766bfd112c5",
+      "category": "dialogues",
+      "locale": "ko-KR",
+      "text": "오월 오일",
+      "source_text_hash": "8db3a24dc6f22eccd0505175371e0a9aed72c80b266ff85fc4962af1bc4a1278",
+      "voice_key": "character:도윤:male_professional",
+      "voice_spec": {
+        "voice_name": null,
+        "description": "Neutral professional male adult Standard Seoul Korean voice, confident, clean and highly intelligible.",
+        "required_language": "ko",
+        "preferred_accent": "korean",
+        "prefer_high_quality": true,
+        "required_labels": {
+          "gender": "male"
+        },
+        "distinct_character": true,
+        "settings": {
+          "stability": 0.71,
+          "similarity_boost": 0.9,
+          "style": 0.05,
+          "use_speaker_boost": true,
+          "speed": 0.96
+        },
+        "profile_key": "male_professional"
+      },
+      "entity_refs": [
+        {
+          "entity_type": "dialogue_turn",
+          "entity_uuid": "f796e68c-f45f-55e5-8952-cf01c26a9a37",
+          "entity_key": "d_ko_ko-real-life-numbers_price_day:4"
+        }
+      ],
+      "metadata": {
+        "character": "도윤",
+        "dialogue": "d_ko_ko-real-life-numbers_price_day",
+        "turn": 4,
+        "persona": {
+          "voice_presentation": "male",
+          "style": "professional_neutral",
+          "target_accent": "standard_seoul_korean"
+        },
+        "voice_profile": "male_professional"
+      },
+      "relative_path": "audio/generated/ko-KR/dialogues/983214c414be0d88454e60206f94157dfd3bcb7c8ff0e2ef70214766bfd112c5.mp3"
+    },
+    {
+      "audio_key": "9a65a4c8aa004f01f65ca13521a4dc9661b87e67ad44785b3e9a70b35347c12f",
+      "category": "dialogues",
+      "locale": "ko-KR",
+      "text": "어디에서 왔어요?",
+      "source_text_hash": "828ace6339fb2f74fc0c8356a23f9982acd88d43578d059821ced51133d16169",
+      "voice_key": "character:하나:female_calm",
+      "voice_spec": {
+        "voice_name": null,
+        "description": "Calm precise female adult Standard Seoul Korean voice, gentle, natural and highly intelligible.",
+        "required_language": "ko",
+        "preferred_accent": "korean",
+        "prefer_high_quality": true,
+        "required_labels": {
+          "gender": "female"
+        },
+        "distinct_character": true,
+        "settings": {
+          "stability": 0.68,
+          "similarity_boost": 0.89,
+          "style": 0.06,
+          "use_speaker_boost": true,
+          "speed": 0.95
+        },
+        "profile_key": "female_calm"
+      },
+      "entity_refs": [
+        {
+          "entity_type": "dialogue_turn",
+          "entity_uuid": "9fed1cce-0b93-5a33-a112-29e8d26ac8f4",
+          "entity_key": "d_ko_ko-real-world-gate_meet:3"
+        }
+      ],
+      "metadata": {
+        "character": "하나",
+        "dialogue": "d_ko_ko-real-world-gate_meet",
+        "turn": 3,
+        "persona": {
+          "voice_presentation": "female",
+          "style": "calm_clear",
+          "target_accent": "standard_seoul_korean"
+        },
+        "voice_profile": "female_calm"
+      },
+      "relative_path": "audio/generated/ko-KR/dialogues/9a65a4c8aa004f01f65ca13521a4dc9661b87e67ad44785b3e9a70b35347c12f.mp3"
     },
     {
       "audio_key": "9b3546278636aae9413ecbb6ba634a92b0c5138aec331abf0e5564c8f81c328d",
@@ -2600,6 +3663,52 @@
       "relative_path": "audio/generated/ko-KR/dialogues/a68a8891cbeeb3e8cd6225e4fcfed34c9d1c8ff311586e91af8555d3c0d70ff6.mp3"
     },
     {
+      "audio_key": "a73ca92169c7b8fe32d8a702a4d40cc2cb755e321db4c55a10457ef73e1626a0",
+      "category": "dialogues",
+      "locale": "ko-KR",
+      "text": "다시 말해 주세요.",
+      "source_text_hash": "67c64c9cae445f707ce250b88595fa992fa4c6e2e5e05b1f2032c73d70151dd1",
+      "voice_key": "character:하나:female_calm",
+      "voice_spec": {
+        "voice_name": null,
+        "description": "Calm precise female adult Standard Seoul Korean voice, gentle, natural and highly intelligible.",
+        "required_language": "ko",
+        "preferred_accent": "korean",
+        "prefer_high_quality": true,
+        "required_labels": {
+          "gender": "female"
+        },
+        "distinct_character": true,
+        "settings": {
+          "stability": 0.68,
+          "similarity_boost": 0.89,
+          "style": 0.06,
+          "use_speaker_boost": true,
+          "speed": 0.95
+        },
+        "profile_key": "female_calm"
+      },
+      "entity_refs": [
+        {
+          "entity_type": "dialogue_turn",
+          "entity_uuid": "c0f3d490-0c1c-583a-8601-e8bff1780c65",
+          "entity_key": "d_ko_ko-real-life-numbers_phone:3"
+        }
+      ],
+      "metadata": {
+        "character": "하나",
+        "dialogue": "d_ko_ko-real-life-numbers_phone",
+        "turn": 3,
+        "persona": {
+          "voice_presentation": "female",
+          "style": "calm_clear",
+          "target_accent": "standard_seoul_korean"
+        },
+        "voice_profile": "female_calm"
+      },
+      "relative_path": "audio/generated/ko-KR/dialogues/a73ca92169c7b8fe32d8a702a4d40cc2cb755e321db4c55a10457ef73e1626a0.mp3"
+    },
+    {
       "audio_key": "a742a7abf623de7edc99f1015fc951df729aa58af0b7cf3ef1e23619a5a38829",
       "category": "dialogues",
       "locale": "ko-KR",
@@ -2784,6 +3893,190 @@
       "relative_path": "audio/generated/ko-KR/dialogues/adf520c1d7353e1e8ca0f05c4579e6ffdb52fc1315e07ffdacb10688b5a3298f.mp3"
     },
     {
+      "audio_key": "b2f57d7af901514e7433483a21b8aa932b3c6ceabed2fe2326efbf955de13614",
+      "category": "dialogues",
+      "locale": "ko-KR",
+      "text": "저는 이란에서 왔어요.",
+      "source_text_hash": "c64bb303cccd212cb6b8a0b3a36705cb05f9e07b9b3eba2226b628d7b7f42a8e",
+      "voice_key": "character:도윤:male_professional",
+      "voice_spec": {
+        "voice_name": null,
+        "description": "Neutral professional male adult Standard Seoul Korean voice, confident, clean and highly intelligible.",
+        "required_language": "ko",
+        "preferred_accent": "korean",
+        "prefer_high_quality": true,
+        "required_labels": {
+          "gender": "male"
+        },
+        "distinct_character": true,
+        "settings": {
+          "stability": 0.71,
+          "similarity_boost": 0.9,
+          "style": 0.05,
+          "use_speaker_boost": true,
+          "speed": 0.96
+        },
+        "profile_key": "male_professional"
+      },
+      "entity_refs": [
+        {
+          "entity_type": "dialogue_turn",
+          "entity_uuid": "9c0947bb-7cc4-5945-948e-0e75fd4d707b",
+          "entity_key": "d_ko_ko-real-world-gate_meet:4"
+        }
+      ],
+      "metadata": {
+        "character": "도윤",
+        "dialogue": "d_ko_ko-real-world-gate_meet",
+        "turn": 4,
+        "persona": {
+          "voice_presentation": "male",
+          "style": "professional_neutral",
+          "target_accent": "standard_seoul_korean"
+        },
+        "voice_profile": "male_professional"
+      },
+      "relative_path": "audio/generated/ko-KR/dialogues/b2f57d7af901514e7433483a21b8aa932b3c6ceabed2fe2326efbf955de13614.mp3"
+    },
+    {
+      "audio_key": "b3c63de95b16aa5abcac7c5b045fb36d193369f004a691786ea7f3ff0d73c619",
+      "category": "dialogues",
+      "locale": "ko-KR",
+      "text": "나라?",
+      "source_text_hash": "21cf2c9cac2af8ccc0b86b23244f495bd9181f1dfb8813f97c85c05111d58a6a",
+      "voice_key": "character:지민:female_warm",
+      "voice_spec": {
+        "voice_name": null,
+        "description": "Warm natural female adult Standard Seoul Korean voice, friendly and conversational with clear beginner-level articulation.",
+        "required_language": "ko",
+        "preferred_accent": "korean",
+        "prefer_high_quality": true,
+        "required_labels": {
+          "gender": "female"
+        },
+        "distinct_character": true,
+        "settings": {
+          "stability": 0.58,
+          "similarity_boost": 0.87,
+          "style": 0.14,
+          "use_speaker_boost": true,
+          "speed": 0.97
+        },
+        "profile_key": "female_warm"
+      },
+      "entity_refs": [
+        {
+          "entity_type": "dialogue_turn",
+          "entity_uuid": "5a742c37-f1bc-55fe-a49d-05c639681c87",
+          "entity_key": "d_ko_ko-forms-signs_form:3"
+        }
+      ],
+      "metadata": {
+        "character": "지민",
+        "dialogue": "d_ko_ko-forms-signs_form",
+        "turn": 3,
+        "persona": {
+          "voice_presentation": "female",
+          "style": "warm_conversational",
+          "target_accent": "standard_seoul_korean"
+        },
+        "voice_profile": "female_warm"
+      },
+      "relative_path": "audio/generated/ko-KR/dialogues/b3c63de95b16aa5abcac7c5b045fb36d193369f004a691786ea7f3ff0d73c619.mp3"
+    },
+    {
+      "audio_key": "b5c2fa073b8ccd8c5bd7e2418f1c7c81f041f62198ffbff1036400465a0ed3d0",
+      "category": "dialogues",
+      "locale": "ko-KR",
+      "text": "안녕하세요!",
+      "source_text_hash": "e0f639938481a5a0c0632b36b0fc7d363c18c8ee5b0a2484d168d5c99b55b9f3",
+      "voice_key": "character:지민:female_warm",
+      "voice_spec": {
+        "voice_name": null,
+        "description": "Warm natural female adult Standard Seoul Korean voice, friendly and conversational with clear beginner-level articulation.",
+        "required_language": "ko",
+        "preferred_accent": "korean",
+        "prefer_high_quality": true,
+        "required_labels": {
+          "gender": "female"
+        },
+        "distinct_character": true,
+        "settings": {
+          "stability": 0.58,
+          "similarity_boost": 0.87,
+          "style": 0.14,
+          "use_speaker_boost": true,
+          "speed": 0.97
+        },
+        "profile_key": "female_warm"
+      },
+      "entity_refs": [
+        {
+          "entity_type": "dialogue_turn",
+          "entity_uuid": "db523e60-ba55-584b-912e-856413e40bb8",
+          "entity_key": "d_ko_ko-about-me_origin_age:1"
+        }
+      ],
+      "metadata": {
+        "character": "지민",
+        "dialogue": "d_ko_ko-about-me_origin_age",
+        "turn": 1,
+        "persona": {
+          "voice_presentation": "female",
+          "style": "warm_conversational",
+          "target_accent": "standard_seoul_korean"
+        },
+        "voice_profile": "female_warm"
+      },
+      "relative_path": "audio/generated/ko-KR/dialogues/b5c2fa073b8ccd8c5bd7e2418f1c7c81f041f62198ffbff1036400465a0ed3d0.mp3"
+    },
+    {
+      "audio_key": "b5c3de49f0ba6e24175153aa65232a524672bb30feb9f3867659dbf77a84be32",
+      "category": "dialogues",
+      "locale": "ko-KR",
+      "text": "가방. 이거예요.",
+      "source_text_hash": "7910988af8e9e270798e18e02cc2fbe17df8cbb60321bd97ad73c3cdd2233c49",
+      "voice_key": "character:지민:female_warm",
+      "voice_spec": {
+        "voice_name": null,
+        "description": "Warm natural female adult Standard Seoul Korean voice, friendly and conversational with clear beginner-level articulation.",
+        "required_language": "ko",
+        "preferred_accent": "korean",
+        "prefer_high_quality": true,
+        "required_labels": {
+          "gender": "female"
+        },
+        "distinct_character": true,
+        "settings": {
+          "stability": 0.58,
+          "similarity_boost": 0.87,
+          "style": 0.14,
+          "use_speaker_boost": true,
+          "speed": 0.97
+        },
+        "profile_key": "female_warm"
+      },
+      "entity_refs": [
+        {
+          "entity_type": "dialogue_turn",
+          "entity_uuid": "bd2730c8-de9a-5fbc-bf08-1c4ea8aae9ba",
+          "entity_key": "d_ko_meaning_help:3"
+        }
+      ],
+      "metadata": {
+        "character": "지민",
+        "dialogue": "d_ko_meaning_help",
+        "turn": 3,
+        "persona": {
+          "voice_presentation": "female",
+          "style": "warm_conversational",
+          "target_accent": "standard_seoul_korean"
+        },
+        "voice_profile": "female_warm"
+      },
+      "relative_path": "audio/generated/ko-KR/dialogues/b5c3de49f0ba6e24175153aa65232a524672bb30feb9f3867659dbf77a84be32.mp3"
+    },
+    {
       "audio_key": "b7e22a3f521248492ab8a6848b0709c1b2231ed4e9edaa503d0d0e632b237d8e",
       "category": "dialogues",
       "locale": "ko-KR",
@@ -2920,6 +4213,52 @@
         "voice_profile": "female_bright"
       },
       "relative_path": "audio/generated/ko-KR/dialogues/b844bafc11af6f7f088e08b33672ff94e74d06bd1e535aad5b8b642c735ed587.mp3"
+    },
+    {
+      "audio_key": "bcb60963e9165559fb87480465a52e23de3f1a7a63df704365526a1d8faa9083",
+      "category": "dialogues",
+      "locale": "ko-KR",
+      "text": "제 가족이에요.",
+      "source_text_hash": "eff5afb76409af2679c7c6dcfd3024b902aeb2a1b2a9cd4c6a8e3b12acc28d8a",
+      "voice_key": "character:준호:male_bright",
+      "voice_spec": {
+        "voice_name": null,
+        "description": "Bright lively male young-adult Standard Seoul Korean voice, friendly and energetic without sounding theatrical.",
+        "required_language": "ko",
+        "preferred_accent": "korean",
+        "prefer_high_quality": true,
+        "required_labels": {
+          "gender": "male"
+        },
+        "distinct_character": true,
+        "settings": {
+          "stability": 0.52,
+          "similarity_boost": 0.86,
+          "style": 0.2,
+          "use_speaker_boost": true,
+          "speed": 0.99
+        },
+        "profile_key": "male_bright"
+      },
+      "entity_refs": [
+        {
+          "entity_type": "dialogue_turn",
+          "entity_uuid": "c597b8c7-63c3-5e91-96c3-c85864067ce7",
+          "entity_key": "d_ko_ko-about-me_feeling_family:3"
+        }
+      ],
+      "metadata": {
+        "character": "준호",
+        "dialogue": "d_ko_ko-about-me_feeling_family",
+        "turn": 3,
+        "persona": {
+          "voice_presentation": "male",
+          "style": "bright_social",
+          "target_accent": "standard_seoul_korean"
+        },
+        "voice_profile": "male_bright"
+      },
+      "relative_path": "audio/generated/ko-KR/dialogues/bcb60963e9165559fb87480465a52e23de3f1a7a63df704365526a1d8faa9083.mp3"
     },
     {
       "audio_key": "c06f411edcde0cf142a983cba057f4b41d743d6662f2753224dca811cd17589f",
@@ -3104,52 +4443,6 @@
         "voice_profile": "male_professional"
       },
       "relative_path": "audio/generated/ko-KR/dialogues/c3d19f5cf1fcd97a63dd53bff3bdead2b05942d15af4489ab32f8aa8694fb25a.mp3"
-    },
-    {
-      "audio_key": "c470f666f529f478ea4257fbdea7383c86eef4bd4e1b12da8886c935ab3cfdac",
-      "category": "dialogues",
-      "locale": "ko-KR",
-      "text": "우산이에요.",
-      "source_text_hash": "c7de3a1f4a971138cab06f613910f99794b3fe8ed0187e69fc1cbc1a87a503a4",
-      "voice_key": "character:하나:female_calm",
-      "voice_spec": {
-        "voice_name": null,
-        "description": "Calm precise female adult Standard Seoul Korean voice, gentle, natural and highly intelligible.",
-        "required_language": "ko",
-        "preferred_accent": "korean",
-        "prefer_high_quality": true,
-        "required_labels": {
-          "gender": "female"
-        },
-        "distinct_character": true,
-        "settings": {
-          "stability": 0.68,
-          "similarity_boost": 0.89,
-          "style": 0.06,
-          "use_speaker_boost": true,
-          "speed": 0.95
-        },
-        "profile_key": "female_calm"
-      },
-      "entity_refs": [
-        {
-          "entity_type": "dialogue_turn",
-          "entity_uuid": "9c39d986-9b24-5b53-8a35-246263e052ea",
-          "entity_key": "d_ko_ready_repair:3"
-        }
-      ],
-      "metadata": {
-        "character": "하나",
-        "dialogue": "d_ko_ready_repair",
-        "turn": 3,
-        "persona": {
-          "voice_presentation": "female",
-          "style": "calm_clear",
-          "target_accent": "standard_seoul_korean"
-        },
-        "voice_profile": "female_calm"
-      },
-      "relative_path": "audio/generated/ko-KR/dialogues/c470f666f529f478ea4257fbdea7383c86eef4bd4e1b12da8886c935ab3cfdac.mp3"
     },
     {
       "audio_key": "c4978b23128c9ea58bb66829af29413dc07319ae965f9389f5d20e4ab7cbd874",
@@ -3382,6 +4675,52 @@
       "relative_path": "audio/generated/ko-KR/dialogues/c9a166a1fa93ae30c1769af303d25b0bd743a57e844ee676303381867c40121d.mp3"
     },
     {
+      "audio_key": "ca25dcbf6dce14bce329c5c171295ad2a3bd8baaefdbdc82a8270b60ca7ed7d9",
+      "category": "dialogues",
+      "locale": "ko-KR",
+      "text": "오천 원이에요.",
+      "source_text_hash": "b332361b479b105b2a370da3b15a39e8b53dccc78b078f31389185a9a725c272",
+      "voice_key": "character:도윤:male_professional",
+      "voice_spec": {
+        "voice_name": null,
+        "description": "Neutral professional male adult Standard Seoul Korean voice, confident, clean and highly intelligible.",
+        "required_language": "ko",
+        "preferred_accent": "korean",
+        "prefer_high_quality": true,
+        "required_labels": {
+          "gender": "male"
+        },
+        "distinct_character": true,
+        "settings": {
+          "stability": 0.71,
+          "similarity_boost": 0.9,
+          "style": 0.05,
+          "use_speaker_boost": true,
+          "speed": 0.96
+        },
+        "profile_key": "male_professional"
+      },
+      "entity_refs": [
+        {
+          "entity_type": "dialogue_turn",
+          "entity_uuid": "caecb56c-94ff-5205-9ba0-ea58e18cc8d8",
+          "entity_key": "d_ko_ko-real-life-numbers_price_day:2"
+        }
+      ],
+      "metadata": {
+        "character": "도윤",
+        "dialogue": "d_ko_ko-real-life-numbers_price_day",
+        "turn": 2,
+        "persona": {
+          "voice_presentation": "male",
+          "style": "professional_neutral",
+          "target_accent": "standard_seoul_korean"
+        },
+        "voice_profile": "male_professional"
+      },
+      "relative_path": "audio/generated/ko-KR/dialogues/ca25dcbf6dce14bce329c5c171295ad2a3bd8baaefdbdc82a8270b60ca7ed7d9.mp3"
+    },
+    {
       "audio_key": "cc1503f38b601f8fcf20109afc3d4517a00f21f0e371487ee6bd249e23d65296",
       "category": "dialogues",
       "locale": "ko-KR",
@@ -3520,6 +4859,103 @@
       "relative_path": "audio/generated/ko-KR/dialogues/d27236d6e7a5971161d92939619a56c14510f2840e4acb2636ec5e55a8a96772.mp3"
     },
     {
+      "audio_key": "d536ea1cccf72651f24cb5962e04ceef630643e59e36a8bce1567ec368f9e923",
+      "category": "dialogues",
+      "locale": "ko-KR",
+      "text": "다시 말해 주세요.",
+      "source_text_hash": "67c64c9cae445f707ce250b88595fa992fa4c6e2e5e05b1f2032c73d70151dd1",
+      "voice_key": "character:서연:female_bright",
+      "voice_spec": {
+        "voice_name": null,
+        "description": "Bright lively female young-adult Standard Seoul Korean voice, friendly and energetic without sounding theatrical.",
+        "required_language": "ko",
+        "preferred_accent": "korean",
+        "prefer_high_quality": true,
+        "required_labels": {
+          "gender": "female"
+        },
+        "distinct_character": true,
+        "settings": {
+          "stability": 0.52,
+          "similarity_boost": 0.86,
+          "style": 0.2,
+          "use_speaker_boost": true,
+          "speed": 0.99
+        },
+        "profile_key": "female_bright"
+      },
+      "entity_refs": [
+        {
+          "entity_type": "dialogue_turn",
+          "entity_uuid": "142f5ad0-a51b-5a8d-b87e-85bac63ae988",
+          "entity_key": "d_ko_ko-forms-signs_sign:3"
+        }
+      ],
+      "metadata": {
+        "character": "서연",
+        "dialogue": "d_ko_ko-forms-signs_sign",
+        "turn": 3,
+        "persona": {
+          "voice_presentation": "female",
+          "style": "bright_social",
+          "target_accent": "standard_seoul_korean"
+        },
+        "voice_profile": "female_bright"
+      },
+      "relative_path": "audio/generated/ko-KR/dialogues/d536ea1cccf72651f24cb5962e04ceef630643e59e36a8bce1567ec368f9e923.mp3"
+    },
+    {
+      "audio_key": "d9749ee19dbb0d32448f4acc4462eb6d9194464d34e8772c36fe98fcdb16a450",
+      "category": "dialogues",
+      "locale": "ko-KR",
+      "text": "저기예요.",
+      "source_text_hash": "290b2cc57330166c23092f982e322e6fd078e861194d28a76d1ce87a1a5fa5b8",
+      "voice_key": "character:민수:male_warm",
+      "voice_spec": {
+        "voice_name": null,
+        "description": "Warm natural male adult Standard Seoul Korean voice, friendly and conversational with clear beginner-level articulation.",
+        "required_language": "ko",
+        "preferred_accent": "korean",
+        "prefer_high_quality": true,
+        "required_labels": {
+          "gender": "male"
+        },
+        "distinct_character": true,
+        "settings": {
+          "stability": 0.58,
+          "similarity_boost": 0.87,
+          "style": 0.14,
+          "use_speaker_boost": true,
+          "speed": 0.97
+        },
+        "profile_key": "male_warm"
+      },
+      "entity_refs": [
+        {
+          "entity_type": "dialogue_turn",
+          "entity_uuid": "86762b9d-9848-5be1-b909-16768b35c414",
+          "entity_key": "d_ko_ko-forms-signs_sign:2"
+        },
+        {
+          "entity_type": "dialogue_turn",
+          "entity_uuid": "398dc92d-c5bf-59c0-abb0-05b09b54ff43",
+          "entity_key": "d_ko_ko-forms-signs_sign:4"
+        }
+      ],
+      "metadata": {
+        "character": "민수",
+        "dialogue": "d_ko_ko-forms-signs_sign",
+        "turn": 2,
+        "persona": {
+          "voice_presentation": "male",
+          "style": "warm_conversational",
+          "target_accent": "standard_seoul_korean"
+        },
+        "voice_profile": "male_warm"
+      },
+      "relative_path": "audio/generated/ko-KR/dialogues/d9749ee19dbb0d32448f4acc4462eb6d9194464d34e8772c36fe98fcdb16a450.mp3"
+    },
+    {
       "audio_key": "d976907029734fb9a62ee9480a510d4e74e75b378b879eede58e1207a715bc13",
       "category": "dialogues",
       "locale": "ko-KR",
@@ -3612,6 +5048,52 @@
       "relative_path": "audio/generated/ko-KR/dialogues/da192994ce710d5d86c46abdccebf61ad1cb89b9e2237de666f097823b5b7df9.mp3"
     },
     {
+      "audio_key": "dbbfef9396eee7b457eeba114e9ae93a03fc9ecbddc55a4202257ad5a66631e7",
+      "category": "dialogues",
+      "locale": "ko-KR",
+      "text": "저는 사라예요.",
+      "source_text_hash": "86423ad4e65b327df933440f8591a5c11edd1ba7dd47cf4d56540ab033259c51",
+      "voice_key": "character:준호:male_bright",
+      "voice_spec": {
+        "voice_name": null,
+        "description": "Bright lively male young-adult Standard Seoul Korean voice, friendly and energetic without sounding theatrical.",
+        "required_language": "ko",
+        "preferred_accent": "korean",
+        "prefer_high_quality": true,
+        "required_labels": {
+          "gender": "male"
+        },
+        "distinct_character": true,
+        "settings": {
+          "stability": 0.52,
+          "similarity_boost": 0.86,
+          "style": 0.2,
+          "use_speaker_boost": true,
+          "speed": 0.99
+        },
+        "profile_key": "male_bright"
+      },
+      "entity_refs": [
+        {
+          "entity_type": "dialogue_turn",
+          "entity_uuid": "be0ed77b-2167-5d07-a7f0-331eb2088f38",
+          "entity_key": "d_ko_ko-forms-signs_form:2"
+        }
+      ],
+      "metadata": {
+        "character": "준호",
+        "dialogue": "d_ko_ko-forms-signs_form",
+        "turn": 2,
+        "persona": {
+          "voice_presentation": "male",
+          "style": "bright_social",
+          "target_accent": "standard_seoul_korean"
+        },
+        "voice_profile": "male_bright"
+      },
+      "relative_path": "audio/generated/ko-KR/dialogues/dbbfef9396eee7b457eeba114e9ae93a03fc9ecbddc55a4202257ad5a66631e7.mp3"
+    },
+    {
       "audio_key": "dc405b02932894b784422cf64823bf7ae654ca0fb521e3a6d61b2cbfb206b1ac",
       "category": "dialogues",
       "locale": "ko-KR",
@@ -3702,6 +5184,52 @@
         "voice_profile": "male_warm"
       },
       "relative_path": "audio/generated/ko-KR/dialogues/ddc0824f44dee3f21652b1cf0ee436c31db5a1367b7c0e9f9b8ba34d8785b77a.mp3"
+    },
+    {
+      "audio_key": "e2e8a7989dff3fceb5ef4f23ce097c23e1e08af62b06d709207581c62ce08235",
+      "category": "dialogues",
+      "locale": "ko-KR",
+      "text": "잘 지내요?",
+      "source_text_hash": "478c962d7db98238a9254aae79d1cf571f955f4bf6b28c17386f1c51fd1f3f66",
+      "voice_key": "character:하나:female_calm",
+      "voice_spec": {
+        "voice_name": null,
+        "description": "Calm precise female adult Standard Seoul Korean voice, gentle, natural and highly intelligible.",
+        "required_language": "ko",
+        "preferred_accent": "korean",
+        "prefer_high_quality": true,
+        "required_labels": {
+          "gender": "female"
+        },
+        "distinct_character": true,
+        "settings": {
+          "stability": 0.68,
+          "similarity_boost": 0.89,
+          "style": 0.06,
+          "use_speaker_boost": true,
+          "speed": 0.95
+        },
+        "profile_key": "female_calm"
+      },
+      "entity_refs": [
+        {
+          "entity_type": "dialogue_turn",
+          "entity_uuid": "58b1faab-f1d9-57ab-bf18-ab4b5366882d",
+          "entity_key": "d_ko_ko-real-world-gate_meet:5"
+        }
+      ],
+      "metadata": {
+        "character": "하나",
+        "dialogue": "d_ko_ko-real-world-gate_meet",
+        "turn": 5,
+        "persona": {
+          "voice_presentation": "female",
+          "style": "calm_clear",
+          "target_accent": "standard_seoul_korean"
+        },
+        "voice_profile": "female_calm"
+      },
+      "relative_path": "audio/generated/ko-KR/dialogues/e2e8a7989dff3fceb5ef4f23ce097c23e1e08af62b06d709207581c62ce08235.mp3"
     },
     {
       "audio_key": "e7acf6de0d74dde8b41d6c398367c73452097134a784d4754581b287dc4d58db",
@@ -3985,6 +5513,52 @@
       "relative_path": "audio/generated/ko-KR/dialogues/f11a15c1cd0208cdd9cfcd2093a24e3002fe42657cbe1707e55f513c151dc814.mp3"
     },
     {
+      "audio_key": "f126ab20026cf6ee4b10ded9ef29ab30c910ed5f8f4daa41e53ed29673bb9647",
+      "category": "dialogues",
+      "locale": "ko-KR",
+      "text": "이름이 뭐예요?",
+      "source_text_hash": "588d25be7d113ed1f1cfa0573ce4193253f6f8a3bc12426758159d2fbfc3ec4e",
+      "voice_key": "character:하나:female_calm",
+      "voice_spec": {
+        "voice_name": null,
+        "description": "Calm precise female adult Standard Seoul Korean voice, gentle, natural and highly intelligible.",
+        "required_language": "ko",
+        "preferred_accent": "korean",
+        "prefer_high_quality": true,
+        "required_labels": {
+          "gender": "female"
+        },
+        "distinct_character": true,
+        "settings": {
+          "stability": 0.68,
+          "similarity_boost": 0.89,
+          "style": 0.06,
+          "use_speaker_boost": true,
+          "speed": 0.95
+        },
+        "profile_key": "female_calm"
+      },
+      "entity_refs": [
+        {
+          "entity_type": "dialogue_turn",
+          "entity_uuid": "2885d93d-bc2f-5858-b9cb-1eec0756c572",
+          "entity_key": "d_ko_ko-real-world-gate_meet:1"
+        }
+      ],
+      "metadata": {
+        "character": "하나",
+        "dialogue": "d_ko_ko-real-world-gate_meet",
+        "turn": 1,
+        "persona": {
+          "voice_presentation": "female",
+          "style": "calm_clear",
+          "target_accent": "standard_seoul_korean"
+        },
+        "voice_profile": "female_calm"
+      },
+      "relative_path": "audio/generated/ko-KR/dialogues/f126ab20026cf6ee4b10ded9ef29ab30c910ed5f8f4daa41e53ed29673bb9647.mp3"
+    },
+    {
       "audio_key": "f18254889c20eaf29b03be34b2310ccd18453280eaf95f4a095f345505715f94",
       "category": "dialogues",
       "locale": "ko-KR",
@@ -4029,6 +5603,52 @@
         "voice_profile": "male_warm"
       },
       "relative_path": "audio/generated/ko-KR/dialogues/f18254889c20eaf29b03be34b2310ccd18453280eaf95f4a095f345505715f94.mp3"
+    },
+    {
+      "audio_key": "f62846ad9083322b992aeb0fc52c2d5bc94952b404fe091c798e80ae8e1ff29b",
+      "category": "dialogues",
+      "locale": "ko-KR",
+      "text": "네, 잘 지내요.",
+      "source_text_hash": "52803505ac46a28c9a27ea692b9239eb362dce3b91efbc700f3f52ae0692b157",
+      "voice_key": "character:서연:female_bright",
+      "voice_spec": {
+        "voice_name": null,
+        "description": "Bright lively female young-adult Standard Seoul Korean voice, friendly and energetic without sounding theatrical.",
+        "required_language": "ko",
+        "preferred_accent": "korean",
+        "prefer_high_quality": true,
+        "required_labels": {
+          "gender": "female"
+        },
+        "distinct_character": true,
+        "settings": {
+          "stability": 0.52,
+          "similarity_boost": 0.86,
+          "style": 0.2,
+          "use_speaker_boost": true,
+          "speed": 0.99
+        },
+        "profile_key": "female_bright"
+      },
+      "entity_refs": [
+        {
+          "entity_type": "dialogue_turn",
+          "entity_uuid": "ad169d9f-10b9-5f64-855c-5b4457df7c8a",
+          "entity_key": "d_ko_ko-about-me_feeling_family:4"
+        }
+      ],
+      "metadata": {
+        "character": "서연",
+        "dialogue": "d_ko_ko-about-me_feeling_family",
+        "turn": 4,
+        "persona": {
+          "voice_presentation": "female",
+          "style": "bright_social",
+          "target_accent": "standard_seoul_korean"
+        },
+        "voice_profile": "female_bright"
+      },
+      "relative_path": "audio/generated/ko-KR/dialogues/f62846ad9083322b992aeb0fc52c2d5bc94952b404fe091c798e80ae8e1ff29b.mp3"
     },
     {
       "audio_key": "f67d14be4d993e8639dfed6a9e7d06da0827e4b82c4a7ee0708169f86dc0a1b8",
@@ -4167,6 +5787,57 @@
         "voice_profile": "female_calm"
       },
       "relative_path": "audio/generated/ko-KR/dialogues/f899615217d962ee01ddf0d5dced52e86253b69abf51fd0bc69a654b5fa963b8.mp3"
+    },
+    {
+      "audio_key": "fa106e343ed527573d88b93c1b479320f69ad55948829d439db124be8ec0c868",
+      "category": "dialogues",
+      "locale": "ko-KR",
+      "text": "얼마예요?",
+      "source_text_hash": "3332c62617329c5a2c262845c3cc500b2e38aa96c568ba711673e628b2f9e707",
+      "voice_key": "character:유나:female_professional",
+      "voice_spec": {
+        "voice_name": null,
+        "description": "Neutral professional female adult Standard Seoul Korean voice, confident, clean and highly intelligible.",
+        "required_language": "ko",
+        "preferred_accent": "korean",
+        "prefer_high_quality": true,
+        "required_labels": {
+          "gender": "female"
+        },
+        "distinct_character": true,
+        "settings": {
+          "stability": 0.71,
+          "similarity_boost": 0.9,
+          "style": 0.05,
+          "use_speaker_boost": true,
+          "speed": 0.96
+        },
+        "profile_key": "female_professional"
+      },
+      "entity_refs": [
+        {
+          "entity_type": "dialogue_turn",
+          "entity_uuid": "f8f428de-76a8-5ec6-be55-d23e4f576123",
+          "entity_key": "d_ko_ko-real-life-numbers_price_day:1"
+        },
+        {
+          "entity_type": "dialogue_turn",
+          "entity_uuid": "dc033cb6-6dc3-5b76-a1d5-a16b496f2676",
+          "entity_key": "d_ko_ko-real-world-gate_public_task:3"
+        }
+      ],
+      "metadata": {
+        "character": "유나",
+        "dialogue": "d_ko_ko-real-life-numbers_price_day",
+        "turn": 1,
+        "persona": {
+          "voice_presentation": "female",
+          "style": "professional_neutral",
+          "target_accent": "standard_seoul_korean"
+        },
+        "voice_profile": "female_professional"
+      },
+      "relative_path": "audio/generated/ko-KR/dialogues/fa106e343ed527573d88b93c1b479320f69ad55948829d439db124be8ec0c868.mp3"
     },
     {
       "audio_key": "015424336a1849406dc5bba3d6b7a6121eccf227550556cab2420adfeb81eb48",
@@ -6625,6 +8296,43 @@
       "relative_path": "audio/generated/ko-KR/lexical/f3571e40f3e8f1a247b7fa1b9f1e1c2862e9ea0a224ba792c97301c396ba88ae.mp3"
     },
     {
+      "audio_key": "02fad9050406abdf3726c08fa4cc8d1964434b66793eaa6eeae2bd4ba4b91bc6",
+      "category": "utterances",
+      "locale": "ko-KR",
+      "text": "이십",
+      "source_text_hash": "b97d27f097a8b4a033bb65a101f6dd7abd69ea7d19b743276dbd7b3a57f57516",
+      "voice_key": "ko-kr.sentence.native-clear",
+      "voice_spec": {
+        "voice_key": "ko-kr.sentence.native-clear",
+        "voice_name": null,
+        "require_exact_name": false,
+        "allow_named_fallback": false,
+        "description": "Native-quality Standard Seoul Korean female adult narrator for learning sentences, natural polite-speech rhythm and very clear articulation.",
+        "prefer_high_quality": true,
+        "required_language": "ko",
+        "preferred_accent": "korean",
+        "required_labels": {
+          "gender": "female"
+        },
+        "settings": {
+          "stability": 0.68,
+          "similarity_boost": 0.88,
+          "style": 0.0,
+          "use_speaker_boost": true,
+          "speed": 0.95
+        }
+      },
+      "entity_refs": [
+        {
+          "entity_type": "utterance",
+          "entity_uuid": "821456dc-ceb4-5abb-ab65-51ae29ab5f86",
+          "entity_key": "u_ko_ko-real-life-numbers_n20"
+        }
+      ],
+      "metadata": {},
+      "relative_path": "audio/generated/ko-KR/utterances/02fad9050406abdf3726c08fa4cc8d1964434b66793eaa6eeae2bd4ba4b91bc6.mp3"
+    },
+    {
       "audio_key": "06097f43d770df860f0e7b9c9a8692196abb3acc9bf65c7f97ca776142e630c3",
       "category": "utterances",
       "locale": "ko-KR",
@@ -6862,6 +8570,50 @@
       "relative_path": "audio/generated/ko-KR/utterances/10a44c4a22e10723e5624cb90cf5f3991b8dd2744830364a874f9ff74622a348.mp3"
     },
     {
+      "audio_key": "10e126b780c112a9a5732bc95221ac015f8e58aa44a4f78bfd19cf5c5f722eaf",
+      "category": "utterances",
+      "locale": "ko-KR",
+      "text": "이름: 사라 나라: 이란 전화번호: 010 1234 5678",
+      "source_text_hash": "5eef1d529de5fcdd3449da0faa95ac290454cca6dcecdafe561101a3d8916dfe",
+      "voice_key": "ko-kr.sentence.native-clear",
+      "voice_spec": {
+        "voice_key": "ko-kr.sentence.native-clear",
+        "voice_name": null,
+        "require_exact_name": false,
+        "allow_named_fallback": false,
+        "description": "Native-quality Standard Seoul Korean female adult narrator for learning sentences, natural polite-speech rhythm and very clear articulation.",
+        "prefer_high_quality": true,
+        "required_language": "ko",
+        "preferred_accent": "korean",
+        "required_labels": {
+          "gender": "female"
+        },
+        "settings": {
+          "stability": 0.68,
+          "similarity_boost": 0.88,
+          "style": 0.0,
+          "use_speaker_boost": true,
+          "speed": 0.95
+        }
+      },
+      "entity_refs": [
+        {
+          "entity_type": "exercise",
+          "entity_uuid": "22407118-5c3e-56d0-a1a5-08756a21e710",
+          "entity_key": "ex_ko_ko-forms-signs_form_write:model"
+        },
+        {
+          "entity_type": "exercise",
+          "entity_uuid": "62540adc-b3d7-5de7-b5f2-e429830a2cf4",
+          "entity_key": "ex_ko_ko-real-world-gate_personal_form:model"
+        }
+      ],
+      "metadata": {
+        "usage": "model_after_response"
+      },
+      "relative_path": "audio/generated/ko-KR/utterances/10e126b780c112a9a5732bc95221ac015f8e58aa44a4f78bfd19cf5c5f722eaf.mp3"
+    },
+    {
       "audio_key": "121e2aed76fde8f6b290a3b1e57e6266dcdaabfa2136b2a1ce908e922cf44089",
       "category": "utterances",
       "locale": "ko-KR",
@@ -7018,6 +8770,43 @@
       ],
       "metadata": {},
       "relative_path": "audio/generated/ko-KR/utterances/18f99c3e7677a9dc0567d4755399fe5b40fc4e405a5f5b0218d82673505f0566.mp3"
+    },
+    {
+      "audio_key": "1d67d756a25c71d738a707d66efa6dc6b8e46e00a5b9ca18fd5d99abb98ea06b",
+      "category": "utterances",
+      "locale": "ko-KR",
+      "text": "십일",
+      "source_text_hash": "75e7501c3331503a35f76847e742f104d093c29cce8dfdb6e3d38d1613adf046",
+      "voice_key": "ko-kr.sentence.native-clear",
+      "voice_spec": {
+        "voice_key": "ko-kr.sentence.native-clear",
+        "voice_name": null,
+        "require_exact_name": false,
+        "allow_named_fallback": false,
+        "description": "Native-quality Standard Seoul Korean female adult narrator for learning sentences, natural polite-speech rhythm and very clear articulation.",
+        "prefer_high_quality": true,
+        "required_language": "ko",
+        "preferred_accent": "korean",
+        "required_labels": {
+          "gender": "female"
+        },
+        "settings": {
+          "stability": 0.68,
+          "similarity_boost": 0.88,
+          "style": 0.0,
+          "use_speaker_boost": true,
+          "speed": 0.95
+        }
+      },
+      "entity_refs": [
+        {
+          "entity_type": "utterance",
+          "entity_uuid": "93e24aa5-5268-5929-8c1e-0db0e07f8f09",
+          "entity_key": "u_ko_ko-real-life-numbers_n11"
+        }
+      ],
+      "metadata": {},
+      "relative_path": "audio/generated/ko-KR/utterances/1d67d756a25c71d738a707d66efa6dc6b8e46e00a5b9ca18fd5d99abb98ea06b.mp3"
     },
     {
       "audio_key": "1e409d4c8ff1f3c86ead4dd40e3ab66ea231982f935572cd7f3e242bcefb52c4",
@@ -7252,6 +9041,16 @@
         }
       },
       "entity_refs": [
+        {
+          "entity_type": "utterance",
+          "entity_uuid": "6d3e0b01-f4f9-5d2b-9b84-26323a9f3c44",
+          "entity_key": "u_ko_ko-about-me_feeling"
+        },
+        {
+          "entity_type": "grammar_point",
+          "entity_uuid": "c6f5a1b7-34ae-5225-8c6c-94871a0fce6a",
+          "entity_key": "g_ko_ko-about-me:example:3"
+        },
         {
           "entity_type": "utterance",
           "entity_uuid": "7a864c4f-a549-5460-9ac3-3063c54d41e7",
@@ -7541,6 +9340,55 @@
       "relative_path": "audio/generated/ko-KR/utterances/4a2fdef62d853b44f3f14945a2db2796c43b00d9ac24684e4e19119605516ffe.mp3"
     },
     {
+      "audio_key": "4b240e5e62260091201e6c2182899c968d30610e79411d4547eabcb75c9d1ba1",
+      "category": "utterances",
+      "locale": "ko-KR",
+      "text": "저는 사라예요. 이란에서 왔어요. 잘 지내요.",
+      "source_text_hash": "789e4d1a3a2322b4579a2bce928add1e9c59f7b1de58fee615aad39686d63299",
+      "voice_key": "ko-kr.sentence.native-clear",
+      "voice_spec": {
+        "voice_key": "ko-kr.sentence.native-clear",
+        "voice_name": null,
+        "require_exact_name": false,
+        "allow_named_fallback": false,
+        "description": "Native-quality Standard Seoul Korean female adult narrator for learning sentences, natural polite-speech rhythm and very clear articulation.",
+        "prefer_high_quality": true,
+        "required_language": "ko",
+        "preferred_accent": "korean",
+        "required_labels": {
+          "gender": "female"
+        },
+        "settings": {
+          "stability": 0.68,
+          "similarity_boost": 0.88,
+          "style": 0.0,
+          "use_speaker_boost": true,
+          "speed": 0.95
+        }
+      },
+      "entity_refs": [
+        {
+          "entity_type": "exercise",
+          "entity_uuid": "7537114b-8ede-5fe4-88a2-9cb3d074b781",
+          "entity_key": "ex_ko_ko-about-me_about_write:model"
+        },
+        {
+          "entity_type": "exercise",
+          "entity_uuid": "321e3868-75e2-5ece-ac26-fa15e679e2a2",
+          "entity_key": "ex_ko_ko-real-world-gate_personal_speaking:model"
+        },
+        {
+          "entity_type": "grammar_point",
+          "entity_uuid": "7a36782d-7cd9-55dc-9f44-8640aa263c36",
+          "entity_key": "g_ko_ko-real-world-gate:example:1"
+        }
+      ],
+      "metadata": {
+        "usage": "model_after_response"
+      },
+      "relative_path": "audio/generated/ko-KR/utterances/4b240e5e62260091201e6c2182899c968d30610e79411d4547eabcb75c9d1ba1.mp3"
+    },
+    {
       "audio_key": "4bd1534e7464e719abaa91c22f1e60356cc95f48e3b2ffe58a304f2f4f34ad65",
       "category": "utterances",
       "locale": "ko-KR",
@@ -7605,6 +9453,21 @@
         }
       },
       "entity_refs": [
+        {
+          "entity_type": "utterance",
+          "entity_uuid": "271e9114-e611-5ca9-8221-54f6a554e609",
+          "entity_key": "u_ko_ko-about-me_origin"
+        },
+        {
+          "entity_type": "exercise",
+          "entity_uuid": "4c192608-6c01-55eb-becd-7724dbb1784b",
+          "entity_key": "ex_ko_ko-about-me_origin_listen"
+        },
+        {
+          "entity_type": "grammar_point",
+          "entity_uuid": "c6f5a1b7-34ae-5225-8c6c-94871a0fce6a",
+          "entity_key": "g_ko_ko-about-me:example:1"
+        },
         {
           "entity_type": "utterance",
           "entity_uuid": "55bd3a22-4154-502a-9c99-7ac37b8ab3d2",
@@ -7776,6 +9639,43 @@
       ],
       "metadata": {},
       "relative_path": "audio/generated/ko-KR/utterances/5492d3111fddec4eafce37903ed9c7c6c07d0fc29cf607341078a2c662d802fd.mp3"
+    },
+    {
+      "audio_key": "57b1bb5f8d25524ea263423fb32ed16016f2a105e1e3954ee2cdc7800167b1c4",
+      "category": "utterances",
+      "locale": "ko-KR",
+      "text": "출구가 어디예요?",
+      "source_text_hash": "eef29f00727e489aa72e3e23444865969bb47aa2dd4b6b25a3ea9dba0de67ec8",
+      "voice_key": "ko-kr.sentence.native-clear",
+      "voice_spec": {
+        "voice_key": "ko-kr.sentence.native-clear",
+        "voice_name": null,
+        "require_exact_name": false,
+        "allow_named_fallback": false,
+        "description": "Native-quality Standard Seoul Korean female adult narrator for learning sentences, natural polite-speech rhythm and very clear articulation.",
+        "prefer_high_quality": true,
+        "required_language": "ko",
+        "preferred_accent": "korean",
+        "required_labels": {
+          "gender": "female"
+        },
+        "settings": {
+          "stability": 0.68,
+          "similarity_boost": 0.88,
+          "style": 0.0,
+          "use_speaker_boost": true,
+          "speed": 0.95
+        }
+      },
+      "entity_refs": [
+        {
+          "entity_type": "utterance",
+          "entity_uuid": "04a2d2d8-0927-51f1-bdde-65ea586fe323",
+          "entity_key": "u_ko_ko-forms-signs_exit_q"
+        }
+      ],
+      "metadata": {},
+      "relative_path": "audio/generated/ko-KR/utterances/57b1bb5f8d25524ea263423fb32ed16016f2a105e1e3954ee2cdc7800167b1c4.mp3"
     },
     {
       "audio_key": "58d4071ce9e9e39634ec53543845be856be2322d7b2f195ba8485466bcac0e71",
@@ -8010,6 +9910,43 @@
       "relative_path": "audio/generated/ko-KR/utterances/66dade657c80144ee1967c4280bf343846ad7d90c8c221c5b97b6d1e986de64e.mp3"
     },
     {
+      "audio_key": "69a74bbf681b4f1f011b29c338e22863c761a5deb4da9e68670f0c0c98688af7",
+      "category": "utterances",
+      "locale": "ko-KR",
+      "text": "전화번호",
+      "source_text_hash": "4edc94394feec0a6ca6b04c04db74384ad82a009922c2195ea48a7c1cda5088e",
+      "voice_key": "ko-kr.sentence.native-clear",
+      "voice_spec": {
+        "voice_key": "ko-kr.sentence.native-clear",
+        "voice_name": null,
+        "require_exact_name": false,
+        "allow_named_fallback": false,
+        "description": "Native-quality Standard Seoul Korean female adult narrator for learning sentences, natural polite-speech rhythm and very clear articulation.",
+        "prefer_high_quality": true,
+        "required_language": "ko",
+        "preferred_accent": "korean",
+        "required_labels": {
+          "gender": "female"
+        },
+        "settings": {
+          "stability": 0.68,
+          "similarity_boost": 0.88,
+          "style": 0.0,
+          "use_speaker_boost": true,
+          "speed": 0.95
+        }
+      },
+      "entity_refs": [
+        {
+          "entity_type": "exercise",
+          "entity_uuid": "6dc7d43c-ff2b-5519-abcd-f9b4f52455d6",
+          "entity_key": "ex_ko_ko-forms-signs_field_listen"
+        }
+      ],
+      "metadata": {},
+      "relative_path": "audio/generated/ko-KR/utterances/69a74bbf681b4f1f011b29c338e22863c761a5deb4da9e68670f0c0c98688af7.mp3"
+    },
+    {
       "audio_key": "6fa86e68ce3c3d7c44074abb5623260aa0dab5d9073837a05155ecbf7110e784",
       "category": "utterances",
       "locale": "ko-KR",
@@ -8045,6 +9982,48 @@
       ],
       "metadata": {},
       "relative_path": "audio/generated/ko-KR/utterances/6fa86e68ce3c3d7c44074abb5623260aa0dab5d9073837a05155ecbf7110e784.mp3"
+    },
+    {
+      "audio_key": "70023e192d5409f4e13fc4ad3209236a2b066044bc7f217b6abc2eda443959e7",
+      "category": "utterances",
+      "locale": "ko-KR",
+      "text": "오월 오일",
+      "source_text_hash": "8db3a24dc6f22eccd0505175371e0a9aed72c80b266ff85fc4962af1bc4a1278",
+      "voice_key": "ko-kr.sentence.native-clear",
+      "voice_spec": {
+        "voice_key": "ko-kr.sentence.native-clear",
+        "voice_name": null,
+        "require_exact_name": false,
+        "allow_named_fallback": false,
+        "description": "Native-quality Standard Seoul Korean female adult narrator for learning sentences, natural polite-speech rhythm and very clear articulation.",
+        "prefer_high_quality": true,
+        "required_language": "ko",
+        "preferred_accent": "korean",
+        "required_labels": {
+          "gender": "female"
+        },
+        "settings": {
+          "stability": 0.68,
+          "similarity_boost": 0.88,
+          "style": 0.0,
+          "use_speaker_boost": true,
+          "speed": 0.95
+        }
+      },
+      "entity_refs": [
+        {
+          "entity_type": "utterance",
+          "entity_uuid": "8d60fdc4-9632-519c-a34f-629257137717",
+          "entity_key": "u_ko_ko-real-life-numbers_date"
+        },
+        {
+          "entity_type": "grammar_point",
+          "entity_uuid": "a256bead-50a6-54dc-9d7a-08eced937299",
+          "entity_key": "g_ko_ko-real-life-numbers:example:3"
+        }
+      ],
+      "metadata": {},
+      "relative_path": "audio/generated/ko-KR/utterances/70023e192d5409f4e13fc4ad3209236a2b066044bc7f217b6abc2eda443959e7.mp3"
     },
     {
       "audio_key": "71479725a34bd707536b959ed9b2f85086e2cf338646270055acadd6bcb7c7eb",
@@ -8210,6 +10189,53 @@
       "relative_path": "audio/generated/ko-KR/utterances/7a4575234eb44287d67ad3ec3bdf1bf28e5b94a37f36fedf435082669c3ea713.mp3"
     },
     {
+      "audio_key": "7f89966bb5d46d6a02b87be4e3833a873af56c8bdfcc7795e1644191c2d59eea",
+      "category": "utterances",
+      "locale": "ko-KR",
+      "text": "공일공, 일이삼사, 오육칠팔이에요.",
+      "source_text_hash": "6787b9084d72d6255456ff518eddb41ac9d195c76e1bd473947602b782cade4c",
+      "voice_key": "ko-kr.sentence.native-clear",
+      "voice_spec": {
+        "voice_key": "ko-kr.sentence.native-clear",
+        "voice_name": null,
+        "require_exact_name": false,
+        "allow_named_fallback": false,
+        "description": "Native-quality Standard Seoul Korean female adult narrator for learning sentences, natural polite-speech rhythm and very clear articulation.",
+        "prefer_high_quality": true,
+        "required_language": "ko",
+        "preferred_accent": "korean",
+        "required_labels": {
+          "gender": "female"
+        },
+        "settings": {
+          "stability": 0.68,
+          "similarity_boost": 0.88,
+          "style": 0.0,
+          "use_speaker_boost": true,
+          "speed": 0.95
+        }
+      },
+      "entity_refs": [
+        {
+          "entity_type": "utterance",
+          "entity_uuid": "1a45fc5c-ad44-5b41-ac1a-4ce24220618b",
+          "entity_key": "u_ko_ko-real-life-numbers_phone"
+        },
+        {
+          "entity_type": "grammar_point",
+          "entity_uuid": "a256bead-50a6-54dc-9d7a-08eced937299",
+          "entity_key": "g_ko_ko-real-life-numbers:example:1"
+        },
+        {
+          "entity_type": "exercise",
+          "entity_uuid": "7c2d86e3-3494-53bd-8b09-ba404b18fa66",
+          "entity_key": "ex_ko_ko-real-world-gate_phone_listen"
+        }
+      ],
+      "metadata": {},
+      "relative_path": "audio/generated/ko-KR/utterances/7f89966bb5d46d6a02b87be4e3833a873af56c8bdfcc7795e1644191c2d59eea.mp3"
+    },
+    {
       "audio_key": "8d1fa7170b6457b11e7e86c02b20f8ac7691fdadab46a45003da4f055f29ba2b",
       "category": "utterances",
       "locale": "ko-KR",
@@ -8284,6 +10310,48 @@
       "relative_path": "audio/generated/ko-KR/utterances/8e268e5818d06c3117d0c6b567b61533d03c6dd513313b76729843aa284c9805.mp3"
     },
     {
+      "audio_key": "911413544434b8b510c44f36b561a93db4e3bf9a8a4a9372588ef5c00b9c9d8b",
+      "category": "utterances",
+      "locale": "ko-KR",
+      "text": "십오",
+      "source_text_hash": "040202745858e436ea647cad2d5a6939d0b70006148ac291855b2a5fc05eca48",
+      "voice_key": "ko-kr.sentence.native-clear",
+      "voice_spec": {
+        "voice_key": "ko-kr.sentence.native-clear",
+        "voice_name": null,
+        "require_exact_name": false,
+        "allow_named_fallback": false,
+        "description": "Native-quality Standard Seoul Korean female adult narrator for learning sentences, natural polite-speech rhythm and very clear articulation.",
+        "prefer_high_quality": true,
+        "required_language": "ko",
+        "preferred_accent": "korean",
+        "required_labels": {
+          "gender": "female"
+        },
+        "settings": {
+          "stability": 0.68,
+          "similarity_boost": 0.88,
+          "style": 0.0,
+          "use_speaker_boost": true,
+          "speed": 0.95
+        }
+      },
+      "entity_refs": [
+        {
+          "entity_type": "utterance",
+          "entity_uuid": "ab97e6f1-889b-5e81-afb0-0ce6b216e27d",
+          "entity_key": "u_ko_ko-real-life-numbers_n15"
+        },
+        {
+          "entity_type": "exercise",
+          "entity_uuid": "00dc7d89-6f0f-5fdd-a730-d013e48e7eae",
+          "entity_key": "ex_ko_ko-real-life-numbers_number_listen"
+        }
+      ],
+      "metadata": {},
+      "relative_path": "audio/generated/ko-KR/utterances/911413544434b8b510c44f36b561a93db4e3bf9a8a4a9372588ef5c00b9c9d8b.mp3"
+    },
+    {
       "audio_key": "9b39ba9e4576a7706e7460de404f547cf2f368fc61e4de908169b1b16895077f",
       "category": "utterances",
       "locale": "ko-KR",
@@ -8319,6 +10387,43 @@
       ],
       "metadata": {},
       "relative_path": "audio/generated/ko-KR/utterances/9b39ba9e4576a7706e7460de404f547cf2f368fc61e4de908169b1b16895077f.mp3"
+    },
+    {
+      "audio_key": "9e3c74c0d6f98338db71e6a05a64f4914670a1fbb482b8f8774b0b8e41dc0f3d",
+      "category": "utterances",
+      "locale": "ko-KR",
+      "text": "제 가족이에요.",
+      "source_text_hash": "eff5afb76409af2679c7c6dcfd3024b902aeb2a1b2a9cd4c6a8e3b12acc28d8a",
+      "voice_key": "ko-kr.sentence.native-clear",
+      "voice_spec": {
+        "voice_key": "ko-kr.sentence.native-clear",
+        "voice_name": null,
+        "require_exact_name": false,
+        "allow_named_fallback": false,
+        "description": "Native-quality Standard Seoul Korean female adult narrator for learning sentences, natural polite-speech rhythm and very clear articulation.",
+        "prefer_high_quality": true,
+        "required_language": "ko",
+        "preferred_accent": "korean",
+        "required_labels": {
+          "gender": "female"
+        },
+        "settings": {
+          "stability": 0.68,
+          "similarity_boost": 0.88,
+          "style": 0.0,
+          "use_speaker_boost": true,
+          "speed": 0.95
+        }
+      },
+      "entity_refs": [
+        {
+          "entity_type": "utterance",
+          "entity_uuid": "644ef33a-4652-51b6-bd86-cdda40e8db3e",
+          "entity_key": "u_ko_ko-about-me_family"
+        }
+      ],
+      "metadata": {},
+      "relative_path": "audio/generated/ko-KR/utterances/9e3c74c0d6f98338db71e6a05a64f4914670a1fbb482b8f8774b0b8e41dc0f3d.mp3"
     },
     {
       "audio_key": "9e9b366e179afa7a154f201ffbe8ceeae1168ad155c0022d40dc3ae370ba8dea",
@@ -8437,6 +10542,43 @@
       "relative_path": "audio/generated/ko-KR/utterances/ad7e0d6b43bf8ab390293a1e52a0dac49b498fafa326510bb9757de754745a1d.mp3"
     },
     {
+      "audio_key": "b30e6a70a7b88a3238b548a513a4545b7ee44839717a39ab5110c6fde96fde7d",
+      "category": "utterances",
+      "locale": "ko-KR",
+      "text": "월요일",
+      "source_text_hash": "6c95540e90f1a66864be896a441a4a5d4cc012901b4f7494e1faceab210cdd98",
+      "voice_key": "ko-kr.sentence.native-clear",
+      "voice_spec": {
+        "voice_key": "ko-kr.sentence.native-clear",
+        "voice_name": null,
+        "require_exact_name": false,
+        "allow_named_fallback": false,
+        "description": "Native-quality Standard Seoul Korean female adult narrator for learning sentences, natural polite-speech rhythm and very clear articulation.",
+        "prefer_high_quality": true,
+        "required_language": "ko",
+        "preferred_accent": "korean",
+        "required_labels": {
+          "gender": "female"
+        },
+        "settings": {
+          "stability": 0.68,
+          "similarity_boost": 0.88,
+          "style": 0.0,
+          "use_speaker_boost": true,
+          "speed": 0.95
+        }
+      },
+      "entity_refs": [
+        {
+          "entity_type": "utterance",
+          "entity_uuid": "f902ae5b-754e-5b20-9fc6-0105cb83f537",
+          "entity_key": "u_ko_ko-real-life-numbers_day"
+        }
+      ],
+      "metadata": {},
+      "relative_path": "audio/generated/ko-KR/utterances/b30e6a70a7b88a3238b548a513a4545b7ee44839717a39ab5110c6fde96fde7d.mp3"
+    },
+    {
       "audio_key": "b977ade52323ee722837fb15d7b60061f616d47dbb142d473a130339d2a0e948",
       "category": "utterances",
       "locale": "ko-KR",
@@ -8509,6 +10651,48 @@
       ],
       "metadata": {},
       "relative_path": "audio/generated/ko-KR/utterances/bd3575f411de6b32607eaaa86129cdcd19a97b0893d4581b7af2218587c41c49.mp3"
+    },
+    {
+      "audio_key": "bf12fbcede13a2ef71502bb6ad56b3c51076e3d9dc829fcad85e323a3b96249b",
+      "category": "utterances",
+      "locale": "ko-KR",
+      "text": "오천 원이에요.",
+      "source_text_hash": "b332361b479b105b2a370da3b15a39e8b53dccc78b078f31389185a9a725c272",
+      "voice_key": "ko-kr.sentence.native-clear",
+      "voice_spec": {
+        "voice_key": "ko-kr.sentence.native-clear",
+        "voice_name": null,
+        "require_exact_name": false,
+        "allow_named_fallback": false,
+        "description": "Native-quality Standard Seoul Korean female adult narrator for learning sentences, natural polite-speech rhythm and very clear articulation.",
+        "prefer_high_quality": true,
+        "required_language": "ko",
+        "preferred_accent": "korean",
+        "required_labels": {
+          "gender": "female"
+        },
+        "settings": {
+          "stability": 0.68,
+          "similarity_boost": 0.88,
+          "style": 0.0,
+          "use_speaker_boost": true,
+          "speed": 0.95
+        }
+      },
+      "entity_refs": [
+        {
+          "entity_type": "utterance",
+          "entity_uuid": "74a4714d-1f24-5945-99c7-2d49a83adb47",
+          "entity_key": "u_ko_ko-real-life-numbers_price"
+        },
+        {
+          "entity_type": "grammar_point",
+          "entity_uuid": "a256bead-50a6-54dc-9d7a-08eced937299",
+          "entity_key": "g_ko_ko-real-life-numbers:example:2"
+        }
+      ],
+      "metadata": {},
+      "relative_path": "audio/generated/ko-KR/utterances/bf12fbcede13a2ef71502bb6ad56b3c51076e3d9dc829fcad85e323a3b96249b.mp3"
     },
     {
       "audio_key": "bfd38316831019818d36ee882f32394981bbd8eabb3ddaf3ccfc48e12fda8f4b",
@@ -8657,6 +10841,85 @@
       ],
       "metadata": {},
       "relative_path": "audio/generated/ko-KR/utterances/c574b280f5ef37ffcbe0f8f914a0d8844dca4856b4bd1deeecc16a444cf45bc0.mp3"
+    },
+    {
+      "audio_key": "c8898230bcfa78efb0f7fe82bad956958dcc2e48850374bf6b05dfe7fb66fdfd",
+      "category": "utterances",
+      "locale": "ko-KR",
+      "text": "스무 살이에요.",
+      "source_text_hash": "980077856d3b41c2260e9598d3a2f2c62ad369e14908675a84224c27d0997d8a",
+      "voice_key": "ko-kr.sentence.native-clear",
+      "voice_spec": {
+        "voice_key": "ko-kr.sentence.native-clear",
+        "voice_name": null,
+        "require_exact_name": false,
+        "allow_named_fallback": false,
+        "description": "Native-quality Standard Seoul Korean female adult narrator for learning sentences, natural polite-speech rhythm and very clear articulation.",
+        "prefer_high_quality": true,
+        "required_language": "ko",
+        "preferred_accent": "korean",
+        "required_labels": {
+          "gender": "female"
+        },
+        "settings": {
+          "stability": 0.68,
+          "similarity_boost": 0.88,
+          "style": 0.0,
+          "use_speaker_boost": true,
+          "speed": 0.95
+        }
+      },
+      "entity_refs": [
+        {
+          "entity_type": "utterance",
+          "entity_uuid": "4007e0f1-6ff3-5129-9880-4df12132bade",
+          "entity_key": "u_ko_ko-about-me_age"
+        },
+        {
+          "entity_type": "grammar_point",
+          "entity_uuid": "c6f5a1b7-34ae-5225-8c6c-94871a0fce6a",
+          "entity_key": "g_ko_ko-about-me:example:2"
+        }
+      ],
+      "metadata": {},
+      "relative_path": "audio/generated/ko-KR/utterances/c8898230bcfa78efb0f7fe82bad956958dcc2e48850374bf6b05dfe7fb66fdfd.mp3"
+    },
+    {
+      "audio_key": "cbec86ae3b8f9a2b1ef8689a2d9e7dfa53ace98a3565ab9a199c3014d56706bd",
+      "category": "utterances",
+      "locale": "ko-KR",
+      "text": "출구",
+      "source_text_hash": "b4231a6de8f04520b2cd01542a56c71ec5bbf6340025c5820372e9826efd674f",
+      "voice_key": "ko-kr.sentence.native-clear",
+      "voice_spec": {
+        "voice_key": "ko-kr.sentence.native-clear",
+        "voice_name": null,
+        "require_exact_name": false,
+        "allow_named_fallback": false,
+        "description": "Native-quality Standard Seoul Korean female adult narrator for learning sentences, natural polite-speech rhythm and very clear articulation.",
+        "prefer_high_quality": true,
+        "required_language": "ko",
+        "preferred_accent": "korean",
+        "required_labels": {
+          "gender": "female"
+        },
+        "settings": {
+          "stability": 0.68,
+          "similarity_boost": 0.88,
+          "style": 0.0,
+          "use_speaker_boost": true,
+          "speed": 0.95
+        }
+      },
+      "entity_refs": [
+        {
+          "entity_type": "grammar_point",
+          "entity_uuid": "26d9f0da-a21c-512a-89f8-db96190d7435",
+          "entity_key": "g_ko_ko-forms-signs:example:1"
+        }
+      ],
+      "metadata": {},
+      "relative_path": "audio/generated/ko-KR/utterances/cbec86ae3b8f9a2b1ef8689a2d9e7dfa53ace98a3565ab9a199c3014d56706bd.mp3"
     },
     {
       "audio_key": "cc7ce3bc5ee70b125e3cff45d05deb72aa75940b239ec8f20f7fa0b7937e7316",
@@ -8849,6 +11112,48 @@
       "relative_path": "audio/generated/ko-KR/utterances/da3538f873b88e6e725af09d42108ecef97ac5c8a9dd3940e4d46df5a208a6b5.mp3"
     },
     {
+      "audio_key": "dcb73f44e64dd0da9becd22e37f4a818a8a89551475412f1f3e68082fc6cb625",
+      "category": "utterances",
+      "locale": "ko-KR",
+      "text": "이름",
+      "source_text_hash": "253d1510caf5362045ce50b1bdc33758fc4b3fd6ddc552d8dc0619784bd9c7d1",
+      "voice_key": "ko-kr.sentence.native-clear",
+      "voice_spec": {
+        "voice_key": "ko-kr.sentence.native-clear",
+        "voice_name": null,
+        "require_exact_name": false,
+        "allow_named_fallback": false,
+        "description": "Native-quality Standard Seoul Korean female adult narrator for learning sentences, natural polite-speech rhythm and very clear articulation.",
+        "prefer_high_quality": true,
+        "required_language": "ko",
+        "preferred_accent": "korean",
+        "required_labels": {
+          "gender": "female"
+        },
+        "settings": {
+          "stability": 0.68,
+          "similarity_boost": 0.88,
+          "style": 0.0,
+          "use_speaker_boost": true,
+          "speed": 0.95
+        }
+      },
+      "entity_refs": [
+        {
+          "entity_type": "utterance",
+          "entity_uuid": "65ac7b65-898b-5faa-84ee-42c1e1382b5e",
+          "entity_key": "u_ko_ko-forms-signs_name_field"
+        },
+        {
+          "entity_type": "grammar_point",
+          "entity_uuid": "26d9f0da-a21c-512a-89f8-db96190d7435",
+          "entity_key": "g_ko_ko-forms-signs:example:2"
+        }
+      ],
+      "metadata": {},
+      "relative_path": "audio/generated/ko-KR/utterances/dcb73f44e64dd0da9becd22e37f4a818a8a89551475412f1f3e68082fc6cb625.mp3"
+    },
+    {
       "audio_key": "ddd643014eb4353591f7c8f244b526fc96ae968bdb593950473f12bf4c26ad31",
       "category": "utterances",
       "locale": "ko-KR",
@@ -9007,6 +11312,43 @@
       "relative_path": "audio/generated/ko-KR/utterances/eef47246d6ce27a6830f4d01b4a65c93b66bd37d07778adb8d5593f49789ebef.mp3"
     },
     {
+      "audio_key": "f7ee41188045743ffb47267e7e6bd83772d361e440c8b975ea7af177f0e56623",
+      "category": "utterances",
+      "locale": "ko-KR",
+      "text": "저기예요.",
+      "source_text_hash": "290b2cc57330166c23092f982e322e6fd078e861194d28a76d1ce87a1a5fa5b8",
+      "voice_key": "ko-kr.sentence.native-clear",
+      "voice_spec": {
+        "voice_key": "ko-kr.sentence.native-clear",
+        "voice_name": null,
+        "require_exact_name": false,
+        "allow_named_fallback": false,
+        "description": "Native-quality Standard Seoul Korean female adult narrator for learning sentences, natural polite-speech rhythm and very clear articulation.",
+        "prefer_high_quality": true,
+        "required_language": "ko",
+        "preferred_accent": "korean",
+        "required_labels": {
+          "gender": "female"
+        },
+        "settings": {
+          "stability": 0.68,
+          "similarity_boost": 0.88,
+          "style": 0.0,
+          "use_speaker_boost": true,
+          "speed": 0.95
+        }
+      },
+      "entity_refs": [
+        {
+          "entity_type": "utterance",
+          "entity_uuid": "4c4186e4-1eb7-54dc-a208-37d751740878",
+          "entity_key": "u_ko_ko-forms-signs_exit_a"
+        }
+      ],
+      "metadata": {},
+      "relative_path": "audio/generated/ko-KR/utterances/f7ee41188045743ffb47267e7e6bd83772d361e440c8b975ea7af177f0e56623.mp3"
+    },
+    {
       "audio_key": "f87f38427c2ff76f382559ee37dd2e502b62b0d47acfd8544969b81e7dd4c86d",
       "category": "utterances",
       "locale": "ko-KR",
@@ -9053,6 +11395,11 @@
           "entity_type": "grammar_point",
           "entity_uuid": "0621062c-9141-5b25-98f3-c2f793da23a2",
           "entity_key": "g_ko_ready_gate:example:2"
+        },
+        {
+          "entity_type": "grammar_point",
+          "entity_uuid": "7a36782d-7cd9-55dc-9f44-8640aa263c36",
+          "entity_key": "g_ko_ko-real-world-gate:example:2"
         },
         {
           "entity_type": "utterance",

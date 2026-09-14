@@ -23,10 +23,35 @@
     "descriptive": "casual"
   },
   "output_format": "mp3_44100_192",
-  "file_sha256": "b03d17339acba3b6c04ee9abc83259e046d0eb1ee34ce7c68ba55d96a7866e58",
+  "file_sha256": "1ad874716d90342741b33c64751611096cc65913ec3135c19e7ab8c4d312d38d",
   "duration_ms": 1488,
-  "generated_at": "2026-09-13T21:06:08.509651+00:00",
+  "generated_at": "2026-09-14T13:43:56.853144+00:00",
   "entity_refs": [
+    {
+      "entity_type": "utterance",
+      "entity_uuid": "7cd9cd71-a34f-554f-a7fc-bd45ac0a7c81",
+      "entity_key": "u_ko_meaning_repeat"
+    },
+    {
+      "entity_type": "exercise",
+      "entity_uuid": "e2831cce-73ff-5eca-a77b-d8988354e75c",
+      "entity_key": "ex_ko_meaning_listen_repeat"
+    },
+    {
+      "entity_type": "grammar_point",
+      "entity_uuid": "5e5b068b-752b-503c-92c8-54f52742ac0e",
+      "entity_key": "g_ko_meaning_chunks:example:2"
+    },
+    {
+      "entity_type": "grammar_point",
+      "entity_uuid": "0621062c-9141-5b25-98f3-c2f793da23a2",
+      "entity_key": "g_ko_ready_gate:example:2"
+    },
+    {
+      "entity_type": "grammar_point",
+      "entity_uuid": "7a36782d-7cd9-55dc-9f44-8640aa263c36",
+      "entity_key": "g_ko_ko-real-world-gate:example:2"
+    },
     {
       "entity_type": "utterance",
       "entity_uuid": "e8a73445-1432-5fd2-a81c-8121fcfa9e2a",
