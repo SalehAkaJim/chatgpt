@@ -1,0 +1,36 @@
+{
+  "source_text_hash": "488ff9ef26bbe9866562004ab38f47ff267dd33ce955570552f323a49262b3fb",
+  "voice_id": "rstA752XNcJHV3KFLRON",
+  "model": "eleven_multilingual_v2",
+  "settings": {
+    "stability": 0.68,
+    "similarity_boost": 0.89,
+    "style": 0.06,
+    "use_speaker_boost": true,
+    "speed": 0.95
+  },
+  "provider": "elevenlabs",
+  "audio_key": "71bee507ba192206f4cf4aa4fbeec4b5b2d01aa7ea157bf3cc6b7033be5ca1fb",
+  "voice_key": "character:deniz:female_calm",
+  "voice_name": "Seth - Bright, Sincere and Clean",
+  "voice_labels": {
+    "gender": "female",
+    "accent": "standard",
+    "age": "young",
+    "category": "professional",
+    "language": "tr",
+    "use_case": "conversational",
+    "descriptive": "calm"
+  },
+  "output_format": "mp3_44100_192",
+  "file_sha256": "c6b337c9d5600fddd009e45958643ecb31e6aa3a695f88f54f1796287019629e",
+  "duration_ms": 1488,
+  "generated_at": "2026-09-14T11:31:46.756121+00:00",
+  "entity_refs": [
+    {
+      "entity_type": "dialogue_turn",
+      "entity_uuid": "0eb44a1c-4dfb-5e42-82ef-75a6032bdbb9",
+      "entity_key": "d_weather_and_clothes_01:3"
+    }
+  ]
+}

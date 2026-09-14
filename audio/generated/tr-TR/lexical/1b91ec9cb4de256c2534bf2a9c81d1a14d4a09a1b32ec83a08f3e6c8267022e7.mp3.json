@@ -1,0 +1,41 @@
+{
+  "source_text_hash": "3a83804ab4067b56e9429dd3189cf51bc5093cb64a7cd5e667031d1be861fa37",
+  "voice_id": "FDs1ZX5J4e4f2c2erxtW",
+  "model": "eleven_multilingual_v2",
+  "settings": {
+    "stability": 0.72,
+    "similarity_boost": 0.88,
+    "style": 0.0,
+    "use_speaker_boost": true,
+    "speed": 0.92
+  },
+  "provider": "elevenlabs",
+  "audio_key": "1b91ec9cb4de256c2534bf2a9c81d1a14d4a09a1b32ec83a08f3e6c8267022e7",
+  "voice_key": "tr-tr.lexical.native-clear",
+  "voice_name": "Fili - Warm Turkish Female ",
+  "voice_labels": {
+    "gender": "female",
+    "accent": "istanbul",
+    "age": "young",
+    "category": "professional",
+    "language": "tr",
+    "use_case": "conversational",
+    "descriptive": "calm"
+  },
+  "output_format": "mp3_44100_192",
+  "file_sha256": "0574200db890701685f4c53f72cbce8bd88779fa4430cfa33666c37191a6f74f",
+  "duration_ms": 1253,
+  "generated_at": "2026-09-14T11:32:14.651707+00:00",
+  "entity_refs": [
+    {
+      "entity_type": "lexeme",
+      "entity_uuid": "6f4d4f55-4067-583b-bd9d-6e6b04223832",
+      "entity_key": "lx_weather_and_clothes_02"
+    },
+    {
+      "entity_type": "word_form",
+      "entity_uuid": "337e4621-5073-5690-b480-d14591485ef5",
+      "entity_key": "wf_weather_and_clothes_02"
+    }
+  ]
+}

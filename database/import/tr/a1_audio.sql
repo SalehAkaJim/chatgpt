@@ -1,6 +1,6 @@
 -- Generated audio link import for tr-TR A1
 -- Source manifest: audio/manifests/tr/A1.json
--- Generated rows: 261
+-- Generated rows: 521
 -- Storage mode: relative_path
 -- storage_url is intentionally portable; prepend your server/CDN base URL at runtime.
 -- Run AFTER the matching level content import.
@@ -36,6 +36,32 @@ INSERT INTO audio_assets (
   status = VALUES(status),
   metadata = VALUES(metadata);
 
+-- d_can_you_help_02:3 -> audio/generated/tr-TR/dialogues/0124a85081797888e0eb527d0757954d01309f37f42dee153c347205f045cce1.mp3
+UPDATE audio_assets
+SET status = 'archived'
+WHERE entity_type = 'dialogue_turn'
+  AND entity_id = UUID_TO_BIN('d7b847c8-2683-5a74-bc4c-0e4b0ffc0bd1', 1)
+  AND voice_key = 'character:mert:male_warm'
+  AND (entity_type NOT IN ('grammar_point','exercise') OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'd_can_you_help_02:3')
+  AND source_text_hash IS NOT NULL
+  AND source_text_hash <> '4083df5f0438bbdf883f16676b7099cbbc90d6d3b71fe1e0edf432ad8046d63e'
+  AND status <> 'archived';
+INSERT INTO audio_assets (
+  id, language_id, language_variant_id, entity_type, entity_id, source_text_hash,
+  voice_key, provider, provider_model, storage_url, duration_ms, generated_at, checksum, status, metadata
+) VALUES (
+  UUID_TO_BIN('4e61929d-c293-5e3c-8bc2-899c12f0581a', 1), @audio_language_id, @audio_variant_id, 'dialogue_turn', UUID_TO_BIN('d7b847c8-2683-5a74-bc4c-0e4b0ffc0bd1', 1), '4083df5f0438bbdf883f16676b7099cbbc90d6d3b71fe1e0edf432ad8046d63e',
+  'character:mert:male_warm', 'elevenlabs', 'eleven_multilingual_v2', 'audio/generated/tr-TR/dialogues/0124a85081797888e0eb527d0757954d01309f37f42dee153c347205f045cce1.mp3', 1097, '2026-09-14 11:31:28.517004', '8b69d8c55561860553b53edcbf121cfddf63d5b9c482ce1796cb5b601adbdda9', 'validated', '{"audio_key":"0124a85081797888e0eb527d0757954d01309f37f42dee153c347205f045cce1","entity_key":"d_can_you_help_02:3","voice_id":"jGqlr3dGaFN0IfJZa3zS","voice_name":"Talha - Friendly, Energetic and Neutral","voice_labels":{"gender":"male","accent":"central","age":"young","category":"professional","language":"tr","use_case":"conversational","descriptive":"casual"},"output_format":"mp3_44100_192","file_sha256":"8b69d8c55561860553b53edcbf121cfddf63d5b9c482ce1796cb5b601adbdda9","settings":{"stability":0.58,"similarity_boost":0.87,"style":0.14,"use_speaker_boost":true,"speed":0.97},"relative_path":"audio/generated/tr-TR/dialogues/0124a85081797888e0eb527d0757954d01309f37f42dee153c347205f045cce1.mp3"}'
+) ON DUPLICATE KEY UPDATE
+  provider = VALUES(provider),
+  provider_model = VALUES(provider_model),
+  storage_url = VALUES(storage_url),
+  duration_ms = VALUES(duration_ms),
+  generated_at = VALUES(generated_at),
+  checksum = VALUES(checksum),
+  status = VALUES(status),
+  metadata = VALUES(metadata);
+
 -- d_my_family_01:4 -> audio/generated/tr-TR/dialogues/02707b4db44b1b6ebfe92264f391e230b2b1e056e38076dd007379d3a8f02bde.mp3
 UPDATE audio_assets
 SET status = 'archived'
@@ -52,6 +78,110 @@ INSERT INTO audio_assets (
 ) VALUES (
   UUID_TO_BIN('dde2ebe3-6bfc-5e50-a0f4-57187a2c775a', 1), @audio_language_id, @audio_variant_id, 'dialogue_turn', UUID_TO_BIN('3213c994-68a2-564a-a4db-f2923feaa8ed', 1), '0f1660b952ef0a1666a488e97ba88e346d30bb2c5f5b28e8bede83212c40a50d',
   'character:kaan:male_bright', 'elevenlabs', 'eleven_multilingual_v2', 'audio/generated/tr-TR/dialogues/02707b4db44b1b6ebfe92264f391e230b2b1e056e38076dd007379d3a8f02bde.mp3', 1201, '2026-09-13 15:54:27.494739', 'cca64ef4359469e05e32d576c62efa5377d6826ac0e466fc1f66233e2f9076ee', 'validated', '{"audio_key":"02707b4db44b1b6ebfe92264f391e230b2b1e056e38076dd007379d3a8f02bde","entity_key":"d_my_family_01:4","voice_id":"7mBFv1btncDZu2Bfgv0r","voice_name":"Tuna - Young and Soft","voice_labels":{"gender":"male","accent":"istanbul","age":"young","category":"professional","language":"tr","use_case":"social_media","descriptive":"casual"},"output_format":"mp3_44100_192","file_sha256":"cca64ef4359469e05e32d576c62efa5377d6826ac0e466fc1f66233e2f9076ee","settings":{"stability":0.52,"similarity_boost":0.86,"style":0.2,"use_speaker_boost":true,"speed":0.99},"relative_path":"audio/generated/tr-TR/dialogues/02707b4db44b1b6ebfe92264f391e230b2b1e056e38076dd007379d3a8f02bde.mp3"}'
+) ON DUPLICATE KEY UPDATE
+  provider = VALUES(provider),
+  provider_model = VALUES(provider_model),
+  storage_url = VALUES(storage_url),
+  duration_ms = VALUES(duration_ms),
+  generated_at = VALUES(generated_at),
+  checksum = VALUES(checksum),
+  status = VALUES(status),
+  metadata = VALUES(metadata);
+
+-- d_from_here_to_there_02:4 -> audio/generated/tr-TR/dialogues/036764762b23e3a982770dc8540c08375d375dd16ded23be09c76f337391bd38.mp3
+UPDATE audio_assets
+SET status = 'archived'
+WHERE entity_type = 'dialogue_turn'
+  AND entity_id = UUID_TO_BIN('714c281e-69b4-5641-afad-cfca9346ce53', 1)
+  AND voice_key = 'character:elif:female_warm'
+  AND (entity_type NOT IN ('grammar_point','exercise') OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'd_from_here_to_there_02:4')
+  AND source_text_hash IS NOT NULL
+  AND source_text_hash <> '9ab761ff0b7bcfbb6ec8cfbe067b72128d394faf50826d89d5456446a99a6959'
+  AND status <> 'archived';
+INSERT INTO audio_assets (
+  id, language_id, language_variant_id, entity_type, entity_id, source_text_hash,
+  voice_key, provider, provider_model, storage_url, duration_ms, generated_at, checksum, status, metadata
+) VALUES (
+  UUID_TO_BIN('f086c406-a735-51ff-bd35-6ade68f17231', 1), @audio_language_id, @audio_variant_id, 'dialogue_turn', UUID_TO_BIN('714c281e-69b4-5641-afad-cfca9346ce53', 1), '9ab761ff0b7bcfbb6ec8cfbe067b72128d394faf50826d89d5456446a99a6959',
+  'character:elif:female_warm', 'elevenlabs', 'eleven_multilingual_v2', 'audio/generated/tr-TR/dialogues/036764762b23e3a982770dc8540c08375d375dd16ded23be09c76f337391bd38.mp3', 1802, '2026-09-14 11:31:28.755783', 'c629c3f0293d38986de06655231cc0dfbb0b88a18e649b63d2f83cf64a0ce3bb', 'validated', '{"audio_key":"036764762b23e3a982770dc8540c08375d375dd16ded23be09c76f337391bd38","entity_key":"d_from_here_to_there_02:4","voice_id":"aEJD8mYP0nuof1XHShVY","voice_name":"Gozde Arikan - Soft, Warm and Clear","voice_labels":{"gender":"female","accent":"standard","age":"young","category":"professional","language":"tr","use_case":"conversational","descriptive":"casual"},"output_format":"mp3_44100_192","file_sha256":"c629c3f0293d38986de06655231cc0dfbb0b88a18e649b63d2f83cf64a0ce3bb","settings":{"stability":0.58,"similarity_boost":0.87,"style":0.14,"use_speaker_boost":true,"speed":0.97},"relative_path":"audio/generated/tr-TR/dialogues/036764762b23e3a982770dc8540c08375d375dd16ded23be09c76f337391bd38.mp3"}'
+) ON DUPLICATE KEY UPDATE
+  provider = VALUES(provider),
+  provider_model = VALUES(provider_model),
+  storage_url = VALUES(storage_url),
+  duration_ms = VALUES(duration_ms),
+  generated_at = VALUES(generated_at),
+  checksum = VALUES(checksum),
+  status = VALUES(status),
+  metadata = VALUES(metadata);
+
+-- d_likes_and_specific_things_02:2 -> audio/generated/tr-TR/dialogues/04cc89a78677312a82d2e9e2f69c0f137b60a7109ff44402715a7fb33e0f142f.mp3
+UPDATE audio_assets
+SET status = 'archived'
+WHERE entity_type = 'dialogue_turn'
+  AND entity_id = UUID_TO_BIN('7004b767-ab0e-509e-92fe-a93357ce0103', 1)
+  AND voice_key = 'character:burak:male_professional'
+  AND (entity_type NOT IN ('grammar_point','exercise') OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'd_likes_and_specific_things_02:2')
+  AND source_text_hash IS NOT NULL
+  AND source_text_hash <> '5db860defc9687657ec34f73b3982ecc12c76b5da0979db9af75a147b335c4a0'
+  AND status <> 'archived';
+INSERT INTO audio_assets (
+  id, language_id, language_variant_id, entity_type, entity_id, source_text_hash,
+  voice_key, provider, provider_model, storage_url, duration_ms, generated_at, checksum, status, metadata
+) VALUES (
+  UUID_TO_BIN('300aca75-e83c-5945-a5e0-a17c6ec3376d', 1), @audio_language_id, @audio_variant_id, 'dialogue_turn', UUID_TO_BIN('7004b767-ab0e-509e-92fe-a93357ce0103', 1), '5db860defc9687657ec34f73b3982ecc12c76b5da0979db9af75a147b335c4a0',
+  'character:burak:male_professional', 'elevenlabs', 'eleven_multilingual_v2', 'audio/generated/tr-TR/dialogues/04cc89a78677312a82d2e9e2f69c0f137b60a7109ff44402715a7fb33e0f142f.mp3', 2533, '2026-09-14 11:31:29.696624', '4d3088fb2f35d1fc77a4a6e945af5639d85fafb332e9c0130a43ad8751d20799', 'validated', '{"audio_key":"04cc89a78677312a82d2e9e2f69c0f137b60a7109ff44402715a7fb33e0f142f","entity_key":"d_likes_and_specific_things_02:2","voice_id":"5HEFEBb9WCCpCdgZE77B","voice_name":"Eyüp Tulûhan Etker - Deep and Rich","voice_labels":{"gender":"male","accent":"istanbul","age":"middle_aged","category":"professional","language":"tr","use_case":"conversational","descriptive":"neutral"},"output_format":"mp3_44100_192","file_sha256":"4d3088fb2f35d1fc77a4a6e945af5639d85fafb332e9c0130a43ad8751d20799","settings":{"stability":0.71,"similarity_boost":0.9,"style":0.05,"use_speaker_boost":true,"speed":0.96},"relative_path":"audio/generated/tr-TR/dialogues/04cc89a78677312a82d2e9e2f69c0f137b60a7109ff44402715a7fb33e0f142f.mp3"}'
+) ON DUPLICATE KEY UPDATE
+  provider = VALUES(provider),
+  provider_model = VALUES(provider_model),
+  storage_url = VALUES(storage_url),
+  duration_ms = VALUES(duration_ms),
+  generated_at = VALUES(generated_at),
+  checksum = VALUES(checksum),
+  status = VALUES(status),
+  metadata = VALUES(metadata);
+
+-- d_from_here_to_there_01:1 -> audio/generated/tr-TR/dialogues/05a61f0cf73408f1218082b392ae75f80d0910314017043eb9e37e949652ba78.mp3
+UPDATE audio_assets
+SET status = 'archived'
+WHERE entity_type = 'dialogue_turn'
+  AND entity_id = UUID_TO_BIN('f281139f-cc50-58b2-890d-51e89002c040', 1)
+  AND voice_key = 'character:zeynep:female_professional'
+  AND (entity_type NOT IN ('grammar_point','exercise') OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'd_from_here_to_there_01:1')
+  AND source_text_hash IS NOT NULL
+  AND source_text_hash <> '730da8b3d8eba658d252df2867beadf50f91e6a17a2c285619d1a2210110650e'
+  AND status <> 'archived';
+INSERT INTO audio_assets (
+  id, language_id, language_variant_id, entity_type, entity_id, source_text_hash,
+  voice_key, provider, provider_model, storage_url, duration_ms, generated_at, checksum, status, metadata
+) VALUES (
+  UUID_TO_BIN('f6cde4be-ed78-580a-b3bd-12e02032a6c0', 1), @audio_language_id, @audio_variant_id, 'dialogue_turn', UUID_TO_BIN('f281139f-cc50-58b2-890d-51e89002c040', 1), '730da8b3d8eba658d252df2867beadf50f91e6a17a2c285619d1a2210110650e',
+  'character:zeynep:female_professional', 'elevenlabs', 'eleven_multilingual_v2', 'audio/generated/tr-TR/dialogues/05a61f0cf73408f1218082b392ae75f80d0910314017043eb9e37e949652ba78.mp3', 1488, '2026-09-14 11:31:30.129441', 'bb59ac47b926e202e1e2071d0f337b2fd9dfa9290c1f586a3c0bf7e1422f6580', 'validated', '{"audio_key":"05a61f0cf73408f1218082b392ae75f80d0910314017043eb9e37e949652ba78","entity_key":"d_from_here_to_there_01:1","voice_id":"4XsbOSxQHw4NUVaEeo2o","voice_name":"Elif - Calm & Natural","voice_labels":{"gender":"female","accent":"istanbul","age":"young","category":"professional","language":"tr","use_case":"conversational","descriptive":"calm"},"output_format":"mp3_44100_192","file_sha256":"bb59ac47b926e202e1e2071d0f337b2fd9dfa9290c1f586a3c0bf7e1422f6580","settings":{"stability":0.71,"similarity_boost":0.9,"style":0.05,"use_speaker_boost":true,"speed":0.96},"relative_path":"audio/generated/tr-TR/dialogues/05a61f0cf73408f1218082b392ae75f80d0910314017043eb9e37e949652ba78.mp3"}'
+) ON DUPLICATE KEY UPDATE
+  provider = VALUES(provider),
+  provider_model = VALUES(provider_model),
+  storage_url = VALUES(storage_url),
+  duration_ms = VALUES(duration_ms),
+  generated_at = VALUES(generated_at),
+  checksum = VALUES(checksum),
+  status = VALUES(status),
+  metadata = VALUES(metadata);
+
+-- d_before_and_after_02:4 -> audio/generated/tr-TR/dialogues/06480246589160f3376fbac310ed396b850f89bbff6e6af5bbb21dd5a9f22a0d.mp3
+UPDATE audio_assets
+SET status = 'archived'
+WHERE entity_type = 'dialogue_turn'
+  AND entity_id = UUID_TO_BIN('3cee4944-6031-59f1-80ac-d3426ea4c5fa', 1)
+  AND voice_key = 'character:deniz:female_calm'
+  AND (entity_type NOT IN ('grammar_point','exercise') OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'd_before_and_after_02:4')
+  AND source_text_hash IS NOT NULL
+  AND source_text_hash <> 'cb5b115ef72b03aaac545621723ed000791f6fcbc98d884bcbd217ca8d796163'
+  AND status <> 'archived';
+INSERT INTO audio_assets (
+  id, language_id, language_variant_id, entity_type, entity_id, source_text_hash,
+  voice_key, provider, provider_model, storage_url, duration_ms, generated_at, checksum, status, metadata
+) VALUES (
+  UUID_TO_BIN('d18f6774-a2b5-5f6f-ba92-ad6f06ea8b1e', 1), @audio_language_id, @audio_variant_id, 'dialogue_turn', UUID_TO_BIN('3cee4944-6031-59f1-80ac-d3426ea4c5fa', 1), 'cb5b115ef72b03aaac545621723ed000791f6fcbc98d884bcbd217ca8d796163',
+  'character:deniz:female_calm', 'elevenlabs', 'eleven_multilingual_v2', 'audio/generated/tr-TR/dialogues/06480246589160f3376fbac310ed396b850f89bbff6e6af5bbb21dd5a9f22a0d.mp3', 1619, '2026-09-14 11:31:31.106444', '95589f7cd4a359fa646dfce4bb502e0d6e9cde8ff1e7ea8354c45395d6180c8a', 'validated', '{"audio_key":"06480246589160f3376fbac310ed396b850f89bbff6e6af5bbb21dd5a9f22a0d","entity_key":"d_before_and_after_02:4","voice_id":"rstA752XNcJHV3KFLRON","voice_name":"Seth - Bright, Sincere and Clean","voice_labels":{"gender":"female","accent":"standard","age":"young","category":"professional","language":"tr","use_case":"conversational","descriptive":"calm"},"output_format":"mp3_44100_192","file_sha256":"95589f7cd4a359fa646dfce4bb502e0d6e9cde8ff1e7ea8354c45395d6180c8a","settings":{"stability":0.68,"similarity_boost":0.89,"style":0.06,"use_speaker_boost":true,"speed":0.95},"relative_path":"audio/generated/tr-TR/dialogues/06480246589160f3376fbac310ed396b850f89bbff6e6af5bbb21dd5a9f22a0d.mp3"}'
 ) ON DUPLICATE KEY UPDATE
   provider = VALUES(provider),
   provider_model = VALUES(provider_model),
@@ -114,6 +244,32 @@ INSERT INTO audio_assets (
   status = VALUES(status),
   metadata = VALUES(metadata);
 
+-- d_likes_and_specific_things_02:3 -> audio/generated/tr-TR/dialogues/0d7d2cbc87ab4e84e618ec62aa4ffe5568bb4d499d3cc34852926380332dbc88.mp3
+UPDATE audio_assets
+SET status = 'archived'
+WHERE entity_type = 'dialogue_turn'
+  AND entity_id = UUID_TO_BIN('d8726e88-1df8-5702-bdbb-feee59234dc8', 1)
+  AND voice_key = 'character:emre:male_calm'
+  AND (entity_type NOT IN ('grammar_point','exercise') OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'd_likes_and_specific_things_02:3')
+  AND source_text_hash IS NOT NULL
+  AND source_text_hash <> '5b37cafb106deb2c7f37e4e96b6a0dfab7cbe2f55df249b854e13790ab956e57'
+  AND status <> 'archived';
+INSERT INTO audio_assets (
+  id, language_id, language_variant_id, entity_type, entity_id, source_text_hash,
+  voice_key, provider, provider_model, storage_url, duration_ms, generated_at, checksum, status, metadata
+) VALUES (
+  UUID_TO_BIN('e18b8b6d-1cfc-57ac-a592-f0aeeb95701c', 1), @audio_language_id, @audio_variant_id, 'dialogue_turn', UUID_TO_BIN('d8726e88-1df8-5702-bdbb-feee59234dc8', 1), '5b37cafb106deb2c7f37e4e96b6a0dfab7cbe2f55df249b854e13790ab956e57',
+  'character:emre:male_calm', 'elevenlabs', 'eleven_multilingual_v2', 'audio/generated/tr-TR/dialogues/0d7d2cbc87ab4e84e618ec62aa4ffe5568bb4d499d3cc34852926380332dbc88.mp3', 1619, '2026-09-14 11:31:31.315943', '87e299efcc1591e5ab39f17157951e85518395520e5afd61036c017b2410b8cb', 'validated', '{"audio_key":"0d7d2cbc87ab4e84e618ec62aa4ffe5568bb4d499d3cc34852926380332dbc88","entity_key":"d_likes_and_specific_things_02:3","voice_id":"Md4RAnfKt9kVIbvqUxly","voice_name":"Cihan - Warm, Natural and Friendly","voice_labels":{"gender":"male","accent":"istanbul","age":"middle_aged","category":"high_quality","language":"tr","use_case":"conversational","descriptive":"calm"},"output_format":"mp3_44100_192","file_sha256":"87e299efcc1591e5ab39f17157951e85518395520e5afd61036c017b2410b8cb","settings":{"stability":0.68,"similarity_boost":0.89,"style":0.06,"use_speaker_boost":true,"speed":0.95},"relative_path":"audio/generated/tr-TR/dialogues/0d7d2cbc87ab4e84e618ec62aa4ffe5568bb4d499d3cc34852926380332dbc88.mp3"}'
+) ON DUPLICATE KEY UPDATE
+  provider = VALUES(provider),
+  provider_model = VALUES(provider_model),
+  storage_url = VALUES(storage_url),
+  duration_ms = VALUES(duration_ms),
+  generated_at = VALUES(generated_at),
+  checksum = VALUES(checksum),
+  status = VALUES(status),
+  metadata = VALUES(metadata);
+
 -- d_who_i_am_01:3 -> audio/generated/tr-TR/dialogues/0f1ead35a74fd72ad7cd0ebfb9ba0c3f6e48f475e31429eeafe1aa91ffccc510.mp3
 UPDATE audio_assets
 SET status = 'archived'
@@ -130,6 +286,32 @@ INSERT INTO audio_assets (
 ) VALUES (
   UUID_TO_BIN('3820228c-69c2-555c-b118-5f54e654e7eb', 1), @audio_language_id, @audio_variant_id, 'dialogue_turn', UUID_TO_BIN('5ff4b1f4-841f-500b-b8c2-1737d0461d80', 1), 'a386b65e71317b358b54a94f8378d3d9b64c1c7bf2ad62bbcff0a676c75736fe',
   'character:elif:female_warm', 'elevenlabs', 'eleven_multilingual_v2', 'audio/generated/tr-TR/dialogues/0f1ead35a74fd72ad7cd0ebfb9ba0c3f6e48f475e31429eeafe1aa91ffccc510.mp3', 1515, '2026-09-13 15:54:28.639193', '473321ddad355bb74329eed71692610b482a4bfe88ed0ec64bb852fc5ad4867c', 'validated', '{"audio_key":"0f1ead35a74fd72ad7cd0ebfb9ba0c3f6e48f475e31429eeafe1aa91ffccc510","entity_key":"d_who_i_am_01:3","voice_id":"aEJD8mYP0nuof1XHShVY","voice_name":"Gozde Arikan - Soft, Warm and Clear","voice_labels":{"gender":"female","accent":"standard","age":"young","category":"professional","language":"tr","use_case":"conversational","descriptive":"casual"},"output_format":"mp3_44100_192","file_sha256":"473321ddad355bb74329eed71692610b482a4bfe88ed0ec64bb852fc5ad4867c","settings":{"stability":0.58,"similarity_boost":0.87,"style":0.14,"use_speaker_boost":true,"speed":0.97},"relative_path":"audio/generated/tr-TR/dialogues/0f1ead35a74fd72ad7cd0ebfb9ba0c3f6e48f475e31429eeafe1aa91ffccc510.mp3"}'
+) ON DUPLICATE KEY UPDATE
+  provider = VALUES(provider),
+  provider_model = VALUES(provider_model),
+  storage_url = VALUES(storage_url),
+  duration_ms = VALUES(duration_ms),
+  generated_at = VALUES(generated_at),
+  checksum = VALUES(checksum),
+  status = VALUES(status),
+  metadata = VALUES(metadata);
+
+-- d_near_future_plans_01:1 -> audio/generated/tr-TR/dialogues/0fb523b86ac0cbce08186e7f8f38caa6cd8c384bfaea0c4864eb1b850c20540a.mp3
+UPDATE audio_assets
+SET status = 'archived'
+WHERE entity_type = 'dialogue_turn'
+  AND entity_id = UUID_TO_BIN('1d3ccbec-554f-5b98-b557-cffcd6f42418', 1)
+  AND voice_key = 'character:elif:female_warm'
+  AND (entity_type NOT IN ('grammar_point','exercise') OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'd_near_future_plans_01:1')
+  AND source_text_hash IS NOT NULL
+  AND source_text_hash <> '94dcbcf5c102c9ec59070d59a5e51cb9db3a4635ba8a5cd368d67aae89381091'
+  AND status <> 'archived';
+INSERT INTO audio_assets (
+  id, language_id, language_variant_id, entity_type, entity_id, source_text_hash,
+  voice_key, provider, provider_model, storage_url, duration_ms, generated_at, checksum, status, metadata
+) VALUES (
+  UUID_TO_BIN('4da116c7-f3e5-517f-b93f-6acb7de867fb', 1), @audio_language_id, @audio_variant_id, 'dialogue_turn', UUID_TO_BIN('1d3ccbec-554f-5b98-b557-cffcd6f42418', 1), '94dcbcf5c102c9ec59070d59a5e51cb9db3a4635ba8a5cd368d67aae89381091',
+  'character:elif:female_warm', 'elevenlabs', 'eleven_multilingual_v2', 'audio/generated/tr-TR/dialogues/0fb523b86ac0cbce08186e7f8f38caa6cd8c384bfaea0c4864eb1b850c20540a.mp3', 1697, '2026-09-14 11:31:32.131798', '2ea1e498d0780172ea7c786c51d7d7dffbec6fe808f7b10862eaec7fe6271d5e', 'validated', '{"audio_key":"0fb523b86ac0cbce08186e7f8f38caa6cd8c384bfaea0c4864eb1b850c20540a","entity_key":"d_near_future_plans_01:1","voice_id":"aEJD8mYP0nuof1XHShVY","voice_name":"Gozde Arikan - Soft, Warm and Clear","voice_labels":{"gender":"female","accent":"standard","age":"young","category":"professional","language":"tr","use_case":"conversational","descriptive":"casual"},"output_format":"mp3_44100_192","file_sha256":"2ea1e498d0780172ea7c786c51d7d7dffbec6fe808f7b10862eaec7fe6271d5e","settings":{"stability":0.58,"similarity_boost":0.87,"style":0.14,"use_speaker_boost":true,"speed":0.97},"relative_path":"audio/generated/tr-TR/dialogues/0fb523b86ac0cbce08186e7f8f38caa6cd8c384bfaea0c4864eb1b850c20540a.mp3"}'
 ) ON DUPLICATE KEY UPDATE
   provider = VALUES(provider),
   provider_model = VALUES(provider_model),
@@ -192,6 +374,32 @@ INSERT INTO audio_assets (
   status = VALUES(status),
   metadata = VALUES(metadata);
 
+-- d_a1_everyday_capstone_02:3 -> audio/generated/tr-TR/dialogues/13a5a123953d4912d4184907fd7eae9f84ddad63ac26414ac13e5c1948d5a22d.mp3
+UPDATE audio_assets
+SET status = 'archived'
+WHERE entity_type = 'dialogue_turn'
+  AND entity_id = UUID_TO_BIN('4b9c93d9-7ab1-54ad-bec8-e0c14d12c6db', 1)
+  AND voice_key = 'character:selin:female_bright'
+  AND (entity_type NOT IN ('grammar_point','exercise') OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'd_a1_everyday_capstone_02:3')
+  AND source_text_hash IS NOT NULL
+  AND source_text_hash <> 'ff4a3b0bde63cee8e3198be11c0e7f4e44989a338f5f05775f085827d43d14f6'
+  AND status <> 'archived';
+INSERT INTO audio_assets (
+  id, language_id, language_variant_id, entity_type, entity_id, source_text_hash,
+  voice_key, provider, provider_model, storage_url, duration_ms, generated_at, checksum, status, metadata
+) VALUES (
+  UUID_TO_BIN('e4d8eb70-00fb-5133-b4e4-bf5fc46ccc8f', 1), @audio_language_id, @audio_variant_id, 'dialogue_turn', UUID_TO_BIN('4b9c93d9-7ab1-54ad-bec8-e0c14d12c6db', 1), 'ff4a3b0bde63cee8e3198be11c0e7f4e44989a338f5f05775f085827d43d14f6',
+  'character:selin:female_bright', 'elevenlabs', 'eleven_multilingual_v2', 'audio/generated/tr-TR/dialogues/13a5a123953d4912d4184907fd7eae9f84ddad63ac26414ac13e5c1948d5a22d.mp3', 1332, '2026-09-14 11:31:32.324981', '8bd977c94261f6e61026bf27b5bc8b93aff5435924f559837809a7ae19109055', 'validated', '{"audio_key":"13a5a123953d4912d4184907fd7eae9f84ddad63ac26414ac13e5c1948d5a22d","entity_key":"d_a1_everyday_capstone_02:3","voice_id":"D6QpOJ61ltQ3whot6iJZ","voice_name":"Tugba","voice_labels":{"gender":"female","accent":"istanbul","age":"young","category":"professional","language":"tr","use_case":"conversational","descriptive":"calm"},"output_format":"mp3_44100_192","file_sha256":"8bd977c94261f6e61026bf27b5bc8b93aff5435924f559837809a7ae19109055","settings":{"stability":0.52,"similarity_boost":0.86,"style":0.2,"use_speaker_boost":true,"speed":0.99},"relative_path":"audio/generated/tr-TR/dialogues/13a5a123953d4912d4184907fd7eae9f84ddad63ac26414ac13e5c1948d5a22d.mp3"}'
+) ON DUPLICATE KEY UPDATE
+  provider = VALUES(provider),
+  provider_model = VALUES(provider_model),
+  storage_url = VALUES(storage_url),
+  duration_ms = VALUES(duration_ms),
+  generated_at = VALUES(generated_at),
+  checksum = VALUES(checksum),
+  status = VALUES(status),
+  metadata = VALUES(metadata);
+
 -- d_at_the_cafe_01:1 -> audio/generated/tr-TR/dialogues/159757a6e2f143753f08c3ccf03bb84960f789f2b0a9cae4ddaad0c389d2ac0e.mp3
 UPDATE audio_assets
 SET status = 'archived'
@@ -218,6 +426,32 @@ INSERT INTO audio_assets (
   status = VALUES(status),
   metadata = VALUES(metadata);
 
+-- d_near_future_plans_01:4 -> audio/generated/tr-TR/dialogues/159d3b82bf3594213a98369bc2247696d3e1e6266684296da3975d9ab09c8ebd.mp3
+UPDATE audio_assets
+SET status = 'archived'
+WHERE entity_type = 'dialogue_turn'
+  AND entity_id = UUID_TO_BIN('67b5eb12-8596-50a5-a0df-f745bda70193', 1)
+  AND voice_key = 'character:burak:male_professional'
+  AND (entity_type NOT IN ('grammar_point','exercise') OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'd_near_future_plans_01:4')
+  AND source_text_hash IS NOT NULL
+  AND source_text_hash <> '90d889d441a4274071f0f5da55240df5dc16fb428506816126e72d5a8bdf67e3'
+  AND status <> 'archived';
+INSERT INTO audio_assets (
+  id, language_id, language_variant_id, entity_type, entity_id, source_text_hash,
+  voice_key, provider, provider_model, storage_url, duration_ms, generated_at, checksum, status, metadata
+) VALUES (
+  UUID_TO_BIN('16f568fb-faf9-5662-af6b-b2b055977a07', 1), @audio_language_id, @audio_variant_id, 'dialogue_turn', UUID_TO_BIN('67b5eb12-8596-50a5-a0df-f745bda70193', 1), '90d889d441a4274071f0f5da55240df5dc16fb428506816126e72d5a8bdf67e3',
+  'character:burak:male_professional', 'elevenlabs', 'eleven_multilingual_v2', 'audio/generated/tr-TR/dialogues/159d3b82bf3594213a98369bc2247696d3e1e6266684296da3975d9ab09c8ebd.mp3', 1436, '2026-09-14 11:31:33.238144', '8b2ad4c9d2fb527afdaab8955f78cd61bdd06383484293e4cfaf80c029ef0cdf', 'validated', '{"audio_key":"159d3b82bf3594213a98369bc2247696d3e1e6266684296da3975d9ab09c8ebd","entity_key":"d_near_future_plans_01:4","voice_id":"5HEFEBb9WCCpCdgZE77B","voice_name":"Eyüp Tulûhan Etker - Deep and Rich","voice_labels":{"gender":"male","accent":"istanbul","age":"middle_aged","category":"professional","language":"tr","use_case":"conversational","descriptive":"neutral"},"output_format":"mp3_44100_192","file_sha256":"8b2ad4c9d2fb527afdaab8955f78cd61bdd06383484293e4cfaf80c029ef0cdf","settings":{"stability":0.71,"similarity_boost":0.9,"style":0.05,"use_speaker_boost":true,"speed":0.96},"relative_path":"audio/generated/tr-TR/dialogues/159d3b82bf3594213a98369bc2247696d3e1e6266684296da3975d9ab09c8ebd.mp3"}'
+) ON DUPLICATE KEY UPDATE
+  provider = VALUES(provider),
+  provider_model = VALUES(provider_model),
+  storage_url = VALUES(storage_url),
+  duration_ms = VALUES(duration_ms),
+  generated_at = VALUES(generated_at),
+  checksum = VALUES(checksum),
+  status = VALUES(status),
+  metadata = VALUES(metadata);
+
 -- d_shopping_basics_01:4 -> audio/generated/tr-TR/dialogues/15b07bf1453148f2f80d167eb570ecf6c47f04390bb133055c92c8d0bb789501.mp3
 UPDATE audio_assets
 SET status = 'archived'
@@ -234,6 +468,32 @@ INSERT INTO audio_assets (
 ) VALUES (
   UUID_TO_BIN('ca9b9922-304d-53bb-95de-9597213110b1', 1), @audio_language_id, @audio_variant_id, 'dialogue_turn', UUID_TO_BIN('161e0e45-ac59-5657-ac35-12741d0acc00', 1), '2e8e5bee0543e566c24b469a3f88555f04b428704dee3602a57a438abd144d23',
   'character:burak:male_professional', 'elevenlabs', 'eleven_multilingual_v2', 'audio/generated/tr-TR/dialogues/15b07bf1453148f2f80d167eb570ecf6c47f04390bb133055c92c8d0bb789501.mp3', 835, '2026-09-13 15:54:30.681217', '2aee88f99310ae469ec216af26fd57d4b2c3e146f5f6c4f7753687fa57034148', 'validated', '{"audio_key":"15b07bf1453148f2f80d167eb570ecf6c47f04390bb133055c92c8d0bb789501","entity_key":"d_shopping_basics_01:4","voice_id":"5HEFEBb9WCCpCdgZE77B","voice_name":"Eyüp Tulûhan Etker - Deep and Rich","voice_labels":{"gender":"male","accent":"istanbul","age":"middle_aged","category":"professional","language":"tr","use_case":"conversational","descriptive":"neutral"},"output_format":"mp3_44100_192","file_sha256":"2aee88f99310ae469ec216af26fd57d4b2c3e146f5f6c4f7753687fa57034148","settings":{"stability":0.71,"similarity_boost":0.9,"style":0.05,"use_speaker_boost":true,"speed":0.96},"relative_path":"audio/generated/tr-TR/dialogues/15b07bf1453148f2f80d167eb570ecf6c47f04390bb133055c92c8d0bb789501.mp3"}'
+) ON DUPLICATE KEY UPDATE
+  provider = VALUES(provider),
+  provider_model = VALUES(provider_model),
+  storage_url = VALUES(storage_url),
+  duration_ms = VALUES(duration_ms),
+  generated_at = VALUES(generated_at),
+  checksum = VALUES(checksum),
+  status = VALUES(status),
+  metadata = VALUES(metadata);
+
+-- d_weather_and_clothes_02:3 -> audio/generated/tr-TR/dialogues/18dd22b0bce94fca5c5c5d9d2d7747e5eb61b3a68bc55be9fcda0f8b7f87a50a.mp3
+UPDATE audio_assets
+SET status = 'archived'
+WHERE entity_type = 'dialogue_turn'
+  AND entity_id = UUID_TO_BIN('55a51455-b87c-575f-95a8-5e59ef818810', 1)
+  AND voice_key = 'character:selin:female_bright'
+  AND (entity_type NOT IN ('grammar_point','exercise') OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'd_weather_and_clothes_02:3')
+  AND source_text_hash IS NOT NULL
+  AND source_text_hash <> 'b8c8f62746de7518bccd82ff25b86ed4c176a4d7dc74b4a7dc35732ef80be9ea'
+  AND status <> 'archived';
+INSERT INTO audio_assets (
+  id, language_id, language_variant_id, entity_type, entity_id, source_text_hash,
+  voice_key, provider, provider_model, storage_url, duration_ms, generated_at, checksum, status, metadata
+) VALUES (
+  UUID_TO_BIN('fb376c2f-2566-5199-b067-299611ab7b33', 1), @audio_language_id, @audio_variant_id, 'dialogue_turn', UUID_TO_BIN('55a51455-b87c-575f-95a8-5e59ef818810', 1), 'b8c8f62746de7518bccd82ff25b86ed4c176a4d7dc74b4a7dc35732ef80be9ea',
+  'character:selin:female_bright', 'elevenlabs', 'eleven_multilingual_v2', 'audio/generated/tr-TR/dialogues/18dd22b0bce94fca5c5c5d9d2d7747e5eb61b3a68bc55be9fcda0f8b7f87a50a.mp3', 1619, '2026-09-14 11:31:33.365275', 'a27bf251d03a066427eba0a6d2c2d4121c6a61d137511e3446ce0035ab69ec90', 'validated', '{"audio_key":"18dd22b0bce94fca5c5c5d9d2d7747e5eb61b3a68bc55be9fcda0f8b7f87a50a","entity_key":"d_weather_and_clothes_02:3","voice_id":"D6QpOJ61ltQ3whot6iJZ","voice_name":"Tugba","voice_labels":{"gender":"female","accent":"istanbul","age":"young","category":"professional","language":"tr","use_case":"conversational","descriptive":"calm"},"output_format":"mp3_44100_192","file_sha256":"a27bf251d03a066427eba0a6d2c2d4121c6a61d137511e3446ce0035ab69ec90","settings":{"stability":0.52,"similarity_boost":0.86,"style":0.2,"use_speaker_boost":true,"speed":0.99},"relative_path":"audio/generated/tr-TR/dialogues/18dd22b0bce94fca5c5c5d9d2d7747e5eb61b3a68bc55be9fcda0f8b7f87a50a.mp3"}'
 ) ON DUPLICATE KEY UPDATE
   provider = VALUES(provider),
   provider_model = VALUES(provider_model),
@@ -348,6 +608,32 @@ INSERT INTO audio_assets (
   status = VALUES(status),
   metadata = VALUES(metadata);
 
+-- d_basic_health_01:3 -> audio/generated/tr-TR/dialogues/20e26a5fae54e64cdadfe7666833a9c3953373e8f53e2914f4ccc47536b1979d.mp3
+UPDATE audio_assets
+SET status = 'archived'
+WHERE entity_type = 'dialogue_turn'
+  AND entity_id = UUID_TO_BIN('9d36d1a1-c289-5739-919e-0cd13b96e1d0', 1)
+  AND voice_key = 'character:kaan:male_bright'
+  AND (entity_type NOT IN ('grammar_point','exercise') OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'd_basic_health_01:3')
+  AND source_text_hash IS NOT NULL
+  AND source_text_hash <> 'f72742458538fa555b11fe0f32b9aa8623e96eb160d92fe6016c18ed576a61de'
+  AND status <> 'archived';
+INSERT INTO audio_assets (
+  id, language_id, language_variant_id, entity_type, entity_id, source_text_hash,
+  voice_key, provider, provider_model, storage_url, duration_ms, generated_at, checksum, status, metadata
+) VALUES (
+  UUID_TO_BIN('8d5b7a30-eb77-5be5-8f7f-0d7f7855551a', 1), @audio_language_id, @audio_variant_id, 'dialogue_turn', UUID_TO_BIN('9d36d1a1-c289-5739-919e-0cd13b96e1d0', 1), 'f72742458538fa555b11fe0f32b9aa8623e96eb160d92fe6016c18ed576a61de',
+  'character:kaan:male_bright', 'elevenlabs', 'eleven_multilingual_v2', 'audio/generated/tr-TR/dialogues/20e26a5fae54e64cdadfe7666833a9c3953373e8f53e2914f4ccc47536b1979d.mp3', 1253, '2026-09-14 11:31:34.366141', '0177dd4f7d8fbaa0eccb3602fc9c7f2de64dda4d12d699db4c2c53edbbd8bc5e', 'validated', '{"audio_key":"20e26a5fae54e64cdadfe7666833a9c3953373e8f53e2914f4ccc47536b1979d","entity_key":"d_basic_health_01:3","voice_id":"7mBFv1btncDZu2Bfgv0r","voice_name":"Tuna - Young and Soft","voice_labels":{"gender":"male","accent":"istanbul","age":"young","category":"professional","language":"tr","use_case":"social_media","descriptive":"casual"},"output_format":"mp3_44100_192","file_sha256":"0177dd4f7d8fbaa0eccb3602fc9c7f2de64dda4d12d699db4c2c53edbbd8bc5e","settings":{"stability":0.52,"similarity_boost":0.86,"style":0.2,"use_speaker_boost":true,"speed":0.99},"relative_path":"audio/generated/tr-TR/dialogues/20e26a5fae54e64cdadfe7666833a9c3953373e8f53e2914f4ccc47536b1979d.mp3"}'
+) ON DUPLICATE KEY UPDATE
+  provider = VALUES(provider),
+  provider_model = VALUES(provider_model),
+  storage_url = VALUES(storage_url),
+  duration_ms = VALUES(duration_ms),
+  generated_at = VALUES(generated_at),
+  checksum = VALUES(checksum),
+  status = VALUES(status),
+  metadata = VALUES(metadata);
+
 -- d_this_and_these_01:4 -> audio/generated/tr-TR/dialogues/2190205939a903d549fa82900525f23dc30716f5f45360e29da99e52f6bf4b36.mp3
 UPDATE audio_assets
 SET status = 'archived'
@@ -400,6 +686,32 @@ INSERT INTO audio_assets (
   status = VALUES(status),
   metadata = VALUES(metadata);
 
+-- d_everyday_routine_02:4 -> audio/generated/tr-TR/dialogues/27700bcaa8cb26be9bc9dd837900ee3614b7af5a2283722148e5112a8fa0e2ab.mp3
+UPDATE audio_assets
+SET status = 'archived'
+WHERE entity_type = 'dialogue_turn'
+  AND entity_id = UUID_TO_BIN('2583050b-0bdc-54fb-8f5c-853dfa911925', 1)
+  AND voice_key = 'character:zeynep:female_professional'
+  AND (entity_type NOT IN ('grammar_point','exercise') OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'd_everyday_routine_02:4')
+  AND source_text_hash IS NOT NULL
+  AND source_text_hash <> '63c17e637b1bd4cc58f0cb3389251a923321a351a6801f17086a6133d135355c'
+  AND status <> 'archived';
+INSERT INTO audio_assets (
+  id, language_id, language_variant_id, entity_type, entity_id, source_text_hash,
+  voice_key, provider, provider_model, storage_url, duration_ms, generated_at, checksum, status, metadata
+) VALUES (
+  UUID_TO_BIN('feae9797-78d6-5853-9b16-e253186b8e5e', 1), @audio_language_id, @audio_variant_id, 'dialogue_turn', UUID_TO_BIN('2583050b-0bdc-54fb-8f5c-853dfa911925', 1), '63c17e637b1bd4cc58f0cb3389251a923321a351a6801f17086a6133d135355c',
+  'character:zeynep:female_professional', 'elevenlabs', 'eleven_multilingual_v2', 'audio/generated/tr-TR/dialogues/27700bcaa8cb26be9bc9dd837900ee3614b7af5a2283722148e5112a8fa0e2ab.mp3', 1567, '2026-09-14 11:31:34.437802', '05ccc7c358e41d502d13b3cf6266e462656d9bb5a1c15d56e5f83bc41e51c0db', 'validated', '{"audio_key":"27700bcaa8cb26be9bc9dd837900ee3614b7af5a2283722148e5112a8fa0e2ab","entity_key":"d_everyday_routine_02:4","voice_id":"4XsbOSxQHw4NUVaEeo2o","voice_name":"Elif - Calm & Natural","voice_labels":{"gender":"female","accent":"istanbul","age":"young","category":"professional","language":"tr","use_case":"conversational","descriptive":"calm"},"output_format":"mp3_44100_192","file_sha256":"05ccc7c358e41d502d13b3cf6266e462656d9bb5a1c15d56e5f83bc41e51c0db","settings":{"stability":0.71,"similarity_boost":0.9,"style":0.05,"use_speaker_boost":true,"speed":0.96},"relative_path":"audio/generated/tr-TR/dialogues/27700bcaa8cb26be9bc9dd837900ee3614b7af5a2283722148e5112a8fa0e2ab.mp3"}'
+) ON DUPLICATE KEY UPDATE
+  provider = VALUES(provider),
+  provider_model = VALUES(provider_model),
+  storage_url = VALUES(storage_url),
+  duration_ms = VALUES(duration_ms),
+  generated_at = VALUES(generated_at),
+  checksum = VALUES(checksum),
+  status = VALUES(status),
+  metadata = VALUES(metadata);
+
 -- d_time_and_plans_02:1 -> audio/generated/tr-TR/dialogues/2a35418e305829895782c572f53a1fe3ab0f83a7ff5947dff57981645591db7a.mp3
 UPDATE audio_assets
 SET status = 'archived'
@@ -416,6 +728,32 @@ INSERT INTO audio_assets (
 ) VALUES (
   UUID_TO_BIN('43d3145e-9657-51c1-8ad1-30ccfb7e40c9', 1), @audio_language_id, @audio_variant_id, 'dialogue_turn', UUID_TO_BIN('08f94d34-e16b-5fe9-919d-1fb611d5b3d6', 1), '441de20a696dd073d70fa8d3cc1b06b56b70f993dc68eb4b5cab1386b2329824',
   'character:burak:male_professional', 'elevenlabs', 'eleven_multilingual_v2', 'audio/generated/tr-TR/dialogues/2a35418e305829895782c572f53a1fe3ab0f83a7ff5947dff57981645591db7a.mp3', 1567, '2026-09-13 15:54:35.031729', 'd104eca7027d36065182b44a1f7621dcffbd7b24e747810f45cafb672c2ff0e1', 'validated', '{"audio_key":"2a35418e305829895782c572f53a1fe3ab0f83a7ff5947dff57981645591db7a","entity_key":"d_time_and_plans_02:1","voice_id":"5HEFEBb9WCCpCdgZE77B","voice_name":"Eyüp Tulûhan Etker - Deep and Rich","voice_labels":{"gender":"male","accent":"istanbul","age":"middle_aged","category":"professional","language":"tr","use_case":"conversational","descriptive":"neutral"},"output_format":"mp3_44100_192","file_sha256":"d104eca7027d36065182b44a1f7621dcffbd7b24e747810f45cafb672c2ff0e1","settings":{"stability":0.71,"similarity_boost":0.9,"style":0.05,"use_speaker_boost":true,"speed":0.96},"relative_path":"audio/generated/tr-TR/dialogues/2a35418e305829895782c572f53a1fe3ab0f83a7ff5947dff57981645591db7a.mp3"}'
+) ON DUPLICATE KEY UPDATE
+  provider = VALUES(provider),
+  provider_model = VALUES(provider_model),
+  storage_url = VALUES(storage_url),
+  duration_ms = VALUES(duration_ms),
+  generated_at = VALUES(generated_at),
+  checksum = VALUES(checksum),
+  status = VALUES(status),
+  metadata = VALUES(metadata);
+
+-- d_from_here_to_there_02:3 -> audio/generated/tr-TR/dialogues/2aa31338c02e80ede3b2900f97b0ea3281ee241baa0ae0a69b24c58745c1cf64.mp3
+UPDATE audio_assets
+SET status = 'archived'
+WHERE entity_type = 'dialogue_turn'
+  AND entity_id = UUID_TO_BIN('ac4a622d-c5c9-5ad7-9db3-a309e7a723f5', 1)
+  AND voice_key = 'character:kaan:male_bright'
+  AND (entity_type NOT IN ('grammar_point','exercise') OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'd_from_here_to_there_02:3')
+  AND source_text_hash IS NOT NULL
+  AND source_text_hash <> '139208d841b2a97fedbbdf8dc3ffdcf2f06094b6a257f47e28f1991ba28dc505'
+  AND status <> 'archived';
+INSERT INTO audio_assets (
+  id, language_id, language_variant_id, entity_type, entity_id, source_text_hash,
+  voice_key, provider, provider_model, storage_url, duration_ms, generated_at, checksum, status, metadata
+) VALUES (
+  UUID_TO_BIN('fabc5c56-8b78-5f04-8202-2e25bd309b06', 1), @audio_language_id, @audio_variant_id, 'dialogue_turn', UUID_TO_BIN('ac4a622d-c5c9-5ad7-9db3-a309e7a723f5', 1), '139208d841b2a97fedbbdf8dc3ffdcf2f06094b6a257f47e28f1991ba28dc505',
+  'character:kaan:male_bright', 'elevenlabs', 'eleven_multilingual_v2', 'audio/generated/tr-TR/dialogues/2aa31338c02e80ede3b2900f97b0ea3281ee241baa0ae0a69b24c58745c1cf64.mp3', 1488, '2026-09-14 11:31:35.337649', '1169b75f530585f9b5e85a290af80ac738ade387a9051d61cbab176b9825c0c3', 'validated', '{"audio_key":"2aa31338c02e80ede3b2900f97b0ea3281ee241baa0ae0a69b24c58745c1cf64","entity_key":"d_from_here_to_there_02:3","voice_id":"7mBFv1btncDZu2Bfgv0r","voice_name":"Tuna - Young and Soft","voice_labels":{"gender":"male","accent":"istanbul","age":"young","category":"professional","language":"tr","use_case":"social_media","descriptive":"casual"},"output_format":"mp3_44100_192","file_sha256":"1169b75f530585f9b5e85a290af80ac738ade387a9051d61cbab176b9825c0c3","settings":{"stability":0.52,"similarity_boost":0.86,"style":0.2,"use_speaker_boost":true,"speed":0.99},"relative_path":"audio/generated/tr-TR/dialogues/2aa31338c02e80ede3b2900f97b0ea3281ee241baa0ae0a69b24c58745c1cf64.mp3"}'
 ) ON DUPLICATE KEY UPDATE
   provider = VALUES(provider),
   provider_model = VALUES(provider_model),
@@ -504,6 +842,32 @@ INSERT INTO audio_assets (
   status = VALUES(status),
   metadata = VALUES(metadata);
 
+-- d_can_you_help_02:1 -> audio/generated/tr-TR/dialogues/2d311797b26bd95c845ef0597abb58809d6b4a26ab00e2dc823790950c760017.mp3
+UPDATE audio_assets
+SET status = 'archived'
+WHERE entity_type = 'dialogue_turn'
+  AND entity_id = UUID_TO_BIN('b86869e4-4241-5a9a-b309-493e8097ae1d', 1)
+  AND voice_key = 'character:mert:male_warm'
+  AND (entity_type NOT IN ('grammar_point','exercise') OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'd_can_you_help_02:1')
+  AND source_text_hash IS NOT NULL
+  AND source_text_hash <> '18efbbc91b2d790329e6706ad58640856d3c0dc4d2e61e062eaac76830ae3461'
+  AND status <> 'archived';
+INSERT INTO audio_assets (
+  id, language_id, language_variant_id, entity_type, entity_id, source_text_hash,
+  voice_key, provider, provider_model, storage_url, duration_ms, generated_at, checksum, status, metadata
+) VALUES (
+  UUID_TO_BIN('2b19ca07-8c5c-5043-97eb-4fd68b325b55', 1), @audio_language_id, @audio_variant_id, 'dialogue_turn', UUID_TO_BIN('b86869e4-4241-5a9a-b309-493e8097ae1d', 1), '18efbbc91b2d790329e6706ad58640856d3c0dc4d2e61e062eaac76830ae3461',
+  'character:mert:male_warm', 'elevenlabs', 'eleven_multilingual_v2', 'audio/generated/tr-TR/dialogues/2d311797b26bd95c845ef0597abb58809d6b4a26ab00e2dc823790950c760017.mp3', 1332, '2026-09-14 11:31:35.472612', '0b07cc043e309fb4cebbdf07d6f6f25960b73c54804c09247360d91772f4d975', 'validated', '{"audio_key":"2d311797b26bd95c845ef0597abb58809d6b4a26ab00e2dc823790950c760017","entity_key":"d_can_you_help_02:1","voice_id":"jGqlr3dGaFN0IfJZa3zS","voice_name":"Talha - Friendly, Energetic and Neutral","voice_labels":{"gender":"male","accent":"central","age":"young","category":"professional","language":"tr","use_case":"conversational","descriptive":"casual"},"output_format":"mp3_44100_192","file_sha256":"0b07cc043e309fb4cebbdf07d6f6f25960b73c54804c09247360d91772f4d975","settings":{"stability":0.58,"similarity_boost":0.87,"style":0.14,"use_speaker_boost":true,"speed":0.97},"relative_path":"audio/generated/tr-TR/dialogues/2d311797b26bd95c845ef0597abb58809d6b4a26ab00e2dc823790950c760017.mp3"}'
+) ON DUPLICATE KEY UPDATE
+  provider = VALUES(provider),
+  provider_model = VALUES(provider_model),
+  storage_url = VALUES(storage_url),
+  duration_ms = VALUES(duration_ms),
+  generated_at = VALUES(generated_at),
+  checksum = VALUES(checksum),
+  status = VALUES(status),
+  metadata = VALUES(metadata);
+
 -- d_my_family_02:2 -> audio/generated/tr-TR/dialogues/2e38cbf2f24281b4baa2efc83e879f679a10f232e1c79ad1567b6923ae220e71.mp3
 UPDATE audio_assets
 SET status = 'archived'
@@ -556,6 +920,32 @@ INSERT INTO audio_assets (
   status = VALUES(status),
   metadata = VALUES(metadata);
 
+-- d_before_and_after_01:1 -> audio/generated/tr-TR/dialogues/2f0f5cc1c1e15c5ad9129aab21990ebc536ab49072107b6edda7948c2733d5fb.mp3
+UPDATE audio_assets
+SET status = 'archived'
+WHERE entity_type = 'dialogue_turn'
+  AND entity_id = UUID_TO_BIN('52a2a0dc-770e-5ce5-b00b-6649b165d687', 1)
+  AND voice_key = 'character:mert:male_warm'
+  AND (entity_type NOT IN ('grammar_point','exercise') OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'd_before_and_after_01:1')
+  AND source_text_hash IS NOT NULL
+  AND source_text_hash <> '18b2c34cb845abb6c0166852d9daefee693db167e067f960ffd0e823d7cefc6a'
+  AND status <> 'archived';
+INSERT INTO audio_assets (
+  id, language_id, language_variant_id, entity_type, entity_id, source_text_hash,
+  voice_key, provider, provider_model, storage_url, duration_ms, generated_at, checksum, status, metadata
+) VALUES (
+  UUID_TO_BIN('c1cbd428-bd30-5a4e-a4a6-0c4734ebdfa4', 1), @audio_language_id, @audio_variant_id, 'dialogue_turn', UUID_TO_BIN('52a2a0dc-770e-5ce5-b00b-6649b165d687', 1), '18b2c34cb845abb6c0166852d9daefee693db167e067f960ffd0e823d7cefc6a',
+  'character:mert:male_warm', 'elevenlabs', 'eleven_multilingual_v2', 'audio/generated/tr-TR/dialogues/2f0f5cc1c1e15c5ad9129aab21990ebc536ab49072107b6edda7948c2733d5fb.mp3', 1332, '2026-09-14 11:31:36.330357', 'e3e3d32a42f60ce1a37a0ed705889dc912ebee344f3e81aa35c46426447c6c02', 'validated', '{"audio_key":"2f0f5cc1c1e15c5ad9129aab21990ebc536ab49072107b6edda7948c2733d5fb","entity_key":"d_before_and_after_01:1","voice_id":"jGqlr3dGaFN0IfJZa3zS","voice_name":"Talha - Friendly, Energetic and Neutral","voice_labels":{"gender":"male","accent":"central","age":"young","category":"professional","language":"tr","use_case":"conversational","descriptive":"casual"},"output_format":"mp3_44100_192","file_sha256":"e3e3d32a42f60ce1a37a0ed705889dc912ebee344f3e81aa35c46426447c6c02","settings":{"stability":0.58,"similarity_boost":0.87,"style":0.14,"use_speaker_boost":true,"speed":0.97},"relative_path":"audio/generated/tr-TR/dialogues/2f0f5cc1c1e15c5ad9129aab21990ebc536ab49072107b6edda7948c2733d5fb.mp3"}'
+) ON DUPLICATE KEY UPDATE
+  provider = VALUES(provider),
+  provider_model = VALUES(provider_model),
+  storage_url = VALUES(storage_url),
+  duration_ms = VALUES(duration_ms),
+  generated_at = VALUES(generated_at),
+  checksum = VALUES(checksum),
+  status = VALUES(status),
+  metadata = VALUES(metadata);
+
 -- d_time_and_plans_02:4 -> audio/generated/tr-TR/dialogues/2f43e443bda5eac23fcf3d56fca52e52709615f109aa1b27ae265e258c0f1aec.mp3
 UPDATE audio_assets
 SET status = 'archived'
@@ -572,6 +962,32 @@ INSERT INTO audio_assets (
 ) VALUES (
   UUID_TO_BIN('13294b2d-7b99-5919-9196-c2bd1541958c', 1), @audio_language_id, @audio_variant_id, 'dialogue_turn', UUID_TO_BIN('82d2dd70-0fbb-5582-9221-2ec03e602a57', 1), '007fd197599e9ebda7823fb53e223e921021a45a4ef867894d7fa70cbe025bee',
   'character:deniz:female_calm', 'elevenlabs', 'eleven_multilingual_v2', 'audio/generated/tr-TR/dialogues/2f43e443bda5eac23fcf3d56fca52e52709615f109aa1b27ae265e258c0f1aec.mp3', 1149, '2026-09-13 15:54:38.215910', 'cd29f600657a3a8264862e868f0732ff4029e5ff3bf5dfb893726d836e453e06', 'validated', '{"audio_key":"2f43e443bda5eac23fcf3d56fca52e52709615f109aa1b27ae265e258c0f1aec","entity_key":"d_time_and_plans_02:4","voice_id":"rstA752XNcJHV3KFLRON","voice_name":"Seth - Bright, Sincere and Clean","voice_labels":{"gender":"female","accent":"standard","age":"young","category":"professional","language":"tr","use_case":"conversational","descriptive":"calm"},"output_format":"mp3_44100_192","file_sha256":"cd29f600657a3a8264862e868f0732ff4029e5ff3bf5dfb893726d836e453e06","settings":{"stability":0.68,"similarity_boost":0.89,"style":0.06,"use_speaker_boost":true,"speed":0.95},"relative_path":"audio/generated/tr-TR/dialogues/2f43e443bda5eac23fcf3d56fca52e52709615f109aa1b27ae265e258c0f1aec.mp3"}'
+) ON DUPLICATE KEY UPDATE
+  provider = VALUES(provider),
+  provider_model = VALUES(provider_model),
+  storage_url = VALUES(storage_url),
+  duration_ms = VALUES(duration_ms),
+  generated_at = VALUES(generated_at),
+  checksum = VALUES(checksum),
+  status = VALUES(status),
+  metadata = VALUES(metadata);
+
+-- d_yesterday_02:3 -> audio/generated/tr-TR/dialogues/3553d7c34836edab1de0f9148e8ea9a5d0d9c009ad1f456dfb300de547b8f0a5.mp3
+UPDATE audio_assets
+SET status = 'archived'
+WHERE entity_type = 'dialogue_turn'
+  AND entity_id = UUID_TO_BIN('8a910b72-f891-5cd8-b5e8-55a46df18852', 1)
+  AND voice_key = 'character:zeynep:female_professional'
+  AND (entity_type NOT IN ('grammar_point','exercise') OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'd_yesterday_02:3')
+  AND source_text_hash IS NOT NULL
+  AND source_text_hash <> 'fe0583943b7552366d1ea8bf993ba87127ca9d8f5e2456acc43f7c753ef65174'
+  AND status <> 'archived';
+INSERT INTO audio_assets (
+  id, language_id, language_variant_id, entity_type, entity_id, source_text_hash,
+  voice_key, provider, provider_model, storage_url, duration_ms, generated_at, checksum, status, metadata
+) VALUES (
+  UUID_TO_BIN('4e0f09b9-97eb-5c0c-ac87-a48729b5b2a9', 1), @audio_language_id, @audio_variant_id, 'dialogue_turn', UUID_TO_BIN('8a910b72-f891-5cd8-b5e8-55a46df18852', 1), 'fe0583943b7552366d1ea8bf993ba87127ca9d8f5e2456acc43f7c753ef65174',
+  'character:zeynep:female_professional', 'elevenlabs', 'eleven_multilingual_v2', 'audio/generated/tr-TR/dialogues/3553d7c34836edab1de0f9148e8ea9a5d0d9c009ad1f456dfb300de547b8f0a5.mp3', 1149, '2026-09-14 11:31:36.436631', '6cfb7470887392300485e9ae672d7daa1d05c83ce675e6a5e2abcabda03682b3', 'validated', '{"audio_key":"3553d7c34836edab1de0f9148e8ea9a5d0d9c009ad1f456dfb300de547b8f0a5","entity_key":"d_yesterday_02:3","voice_id":"4XsbOSxQHw4NUVaEeo2o","voice_name":"Elif - Calm & Natural","voice_labels":{"gender":"female","accent":"istanbul","age":"young","category":"professional","language":"tr","use_case":"conversational","descriptive":"calm"},"output_format":"mp3_44100_192","file_sha256":"6cfb7470887392300485e9ae672d7daa1d05c83ce675e6a5e2abcabda03682b3","settings":{"stability":0.71,"similarity_boost":0.9,"style":0.05,"use_speaker_boost":true,"speed":0.96},"relative_path":"audio/generated/tr-TR/dialogues/3553d7c34836edab1de0f9148e8ea9a5d0d9c009ad1f456dfb300de547b8f0a5.mp3"}'
 ) ON DUPLICATE KEY UPDATE
   provider = VALUES(provider),
   provider_model = VALUES(provider_model),
@@ -608,6 +1024,32 @@ INSERT INTO audio_assets (
   status = VALUES(status),
   metadata = VALUES(metadata);
 
+-- d_likes_and_specific_things_01:1 -> audio/generated/tr-TR/dialogues/3c21c02034345d883395ae0ed4d721d21841523c0dd268597e09ba8aadf03850.mp3
+UPDATE audio_assets
+SET status = 'archived'
+WHERE entity_type = 'dialogue_turn'
+  AND entity_id = UUID_TO_BIN('38d4109e-16de-5f21-89e4-c0592e4fba71', 1)
+  AND voice_key = 'character:deniz:female_calm'
+  AND (entity_type NOT IN ('grammar_point','exercise') OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'd_likes_and_specific_things_01:1')
+  AND source_text_hash IS NOT NULL
+  AND source_text_hash <> '58991d1ad83a24a36a35181345a1d0b52ef1dc885544748339ce544a267d1ecd'
+  AND status <> 'archived';
+INSERT INTO audio_assets (
+  id, language_id, language_variant_id, entity_type, entity_id, source_text_hash,
+  voice_key, provider, provider_model, storage_url, duration_ms, generated_at, checksum, status, metadata
+) VALUES (
+  UUID_TO_BIN('6fe1bad9-2fd7-5d0f-8e44-eb6146d7ce5a', 1), @audio_language_id, @audio_variant_id, 'dialogue_turn', UUID_TO_BIN('38d4109e-16de-5f21-89e4-c0592e4fba71', 1), '58991d1ad83a24a36a35181345a1d0b52ef1dc885544748339ce544a267d1ecd',
+  'character:deniz:female_calm', 'elevenlabs', 'eleven_multilingual_v2', 'audio/generated/tr-TR/dialogues/3c21c02034345d883395ae0ed4d721d21841523c0dd268597e09ba8aadf03850.mp3', 1436, '2026-09-14 11:31:37.454951', '1557680f9822f12b4234bd4d5a76180ef574ac636dd76c06a044e708885056ed', 'validated', '{"audio_key":"3c21c02034345d883395ae0ed4d721d21841523c0dd268597e09ba8aadf03850","entity_key":"d_likes_and_specific_things_01:1","voice_id":"rstA752XNcJHV3KFLRON","voice_name":"Seth - Bright, Sincere and Clean","voice_labels":{"gender":"female","accent":"standard","age":"young","category":"professional","language":"tr","use_case":"conversational","descriptive":"calm"},"output_format":"mp3_44100_192","file_sha256":"1557680f9822f12b4234bd4d5a76180ef574ac636dd76c06a044e708885056ed","settings":{"stability":0.68,"similarity_boost":0.89,"style":0.06,"use_speaker_boost":true,"speed":0.95},"relative_path":"audio/generated/tr-TR/dialogues/3c21c02034345d883395ae0ed4d721d21841523c0dd268597e09ba8aadf03850.mp3"}'
+) ON DUPLICATE KEY UPDATE
+  provider = VALUES(provider),
+  provider_model = VALUES(provider_model),
+  storage_url = VALUES(storage_url),
+  duration_ms = VALUES(duration_ms),
+  generated_at = VALUES(generated_at),
+  checksum = VALUES(checksum),
+  status = VALUES(status),
+  metadata = VALUES(metadata);
+
 -- d_getting_around_01:4 -> audio/generated/tr-TR/dialogues/3ed044f96a412d718f05980641d0a2d9f97405d83a31803290ffbc7caf7bb5ef.mp3
 UPDATE audio_assets
 SET status = 'archived'
@@ -634,6 +1076,110 @@ INSERT INTO audio_assets (
   status = VALUES(status),
   metadata = VALUES(metadata);
 
+-- d_yesterday_02:4 -> audio/generated/tr-TR/dialogues/424a11e0a1250e79e67e2834fb86733f7382029a4983e28038de9bdd10260d9c.mp3
+UPDATE audio_assets
+SET status = 'archived'
+WHERE entity_type = 'dialogue_turn'
+  AND entity_id = UUID_TO_BIN('b2a46d9a-e62d-5f15-abaa-6d37286cc753', 1)
+  AND voice_key = 'character:kaan:male_bright'
+  AND (entity_type NOT IN ('grammar_point','exercise') OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'd_yesterday_02:4')
+  AND source_text_hash IS NOT NULL
+  AND source_text_hash <> 'b38e22387e0505e38d3fd3bc97e5b7cb05e873eb18f42f6e70396c3efb2c38f5'
+  AND status <> 'archived';
+INSERT INTO audio_assets (
+  id, language_id, language_variant_id, entity_type, entity_id, source_text_hash,
+  voice_key, provider, provider_model, storage_url, duration_ms, generated_at, checksum, status, metadata
+) VALUES (
+  UUID_TO_BIN('4679321a-50b0-5df3-93e4-e8dc33dfd93d', 1), @audio_language_id, @audio_variant_id, 'dialogue_turn', UUID_TO_BIN('b2a46d9a-e62d-5f15-abaa-6d37286cc753', 1), 'b38e22387e0505e38d3fd3bc97e5b7cb05e873eb18f42f6e70396c3efb2c38f5',
+  'character:kaan:male_bright', 'elevenlabs', 'eleven_multilingual_v2', 'audio/generated/tr-TR/dialogues/424a11e0a1250e79e67e2834fb86733f7382029a4983e28038de9bdd10260d9c.mp3', 1436, '2026-09-14 11:31:37.461460', 'de7fc4a5dac9fe5e4d2306b144fa2dd69797bda5ed9fd7f1c8840835cc727a90', 'validated', '{"audio_key":"424a11e0a1250e79e67e2834fb86733f7382029a4983e28038de9bdd10260d9c","entity_key":"d_yesterday_02:4","voice_id":"7mBFv1btncDZu2Bfgv0r","voice_name":"Tuna - Young and Soft","voice_labels":{"gender":"male","accent":"istanbul","age":"young","category":"professional","language":"tr","use_case":"social_media","descriptive":"casual"},"output_format":"mp3_44100_192","file_sha256":"de7fc4a5dac9fe5e4d2306b144fa2dd69797bda5ed9fd7f1c8840835cc727a90","settings":{"stability":0.52,"similarity_boost":0.86,"style":0.2,"use_speaker_boost":true,"speed":0.99},"relative_path":"audio/generated/tr-TR/dialogues/424a11e0a1250e79e67e2834fb86733f7382029a4983e28038de9bdd10260d9c.mp3"}'
+) ON DUPLICATE KEY UPDATE
+  provider = VALUES(provider),
+  provider_model = VALUES(provider_model),
+  storage_url = VALUES(storage_url),
+  duration_ms = VALUES(duration_ms),
+  generated_at = VALUES(generated_at),
+  checksum = VALUES(checksum),
+  status = VALUES(status),
+  metadata = VALUES(metadata);
+
+-- d_can_you_help_01:4 -> audio/generated/tr-TR/dialogues/44022ee55992649a3e8f94e3313ec7e90f74ce9744860cad4ab07f4f6cf6666d.mp3
+UPDATE audio_assets
+SET status = 'archived'
+WHERE entity_type = 'dialogue_turn'
+  AND entity_id = UUID_TO_BIN('d680486b-f6f6-5c65-8e50-f8bb8cc8e10a', 1)
+  AND voice_key = 'character:selin:female_bright'
+  AND (entity_type NOT IN ('grammar_point','exercise') OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'd_can_you_help_01:4')
+  AND source_text_hash IS NOT NULL
+  AND source_text_hash <> '5a3788ab0e5278e035aa53daa15fe82697143d6a6cc46c5e5d7a662ee744e066'
+  AND status <> 'archived';
+INSERT INTO audio_assets (
+  id, language_id, language_variant_id, entity_type, entity_id, source_text_hash,
+  voice_key, provider, provider_model, storage_url, duration_ms, generated_at, checksum, status, metadata
+) VALUES (
+  UUID_TO_BIN('638fdefc-01fe-5df3-93fe-d72e5e0ab7e1', 1), @audio_language_id, @audio_variant_id, 'dialogue_turn', UUID_TO_BIN('d680486b-f6f6-5c65-8e50-f8bb8cc8e10a', 1), '5a3788ab0e5278e035aa53daa15fe82697143d6a6cc46c5e5d7a662ee744e066',
+  'character:selin:female_bright', 'elevenlabs', 'eleven_multilingual_v2', 'audio/generated/tr-TR/dialogues/44022ee55992649a3e8f94e3313ec7e90f74ce9744860cad4ab07f4f6cf6666d.mp3', 1280, '2026-09-14 11:31:38.457421', 'eb494e56ae1a1be8675d9be8f876ae424f070ab8509be45dfcecc9f3bb51e899', 'validated', '{"audio_key":"44022ee55992649a3e8f94e3313ec7e90f74ce9744860cad4ab07f4f6cf6666d","entity_key":"d_can_you_help_01:4","voice_id":"D6QpOJ61ltQ3whot6iJZ","voice_name":"Tugba","voice_labels":{"gender":"female","accent":"istanbul","age":"young","category":"professional","language":"tr","use_case":"conversational","descriptive":"calm"},"output_format":"mp3_44100_192","file_sha256":"eb494e56ae1a1be8675d9be8f876ae424f070ab8509be45dfcecc9f3bb51e899","settings":{"stability":0.52,"similarity_boost":0.86,"style":0.2,"use_speaker_boost":true,"speed":0.99},"relative_path":"audio/generated/tr-TR/dialogues/44022ee55992649a3e8f94e3313ec7e90f74ce9744860cad4ab07f4f6cf6666d.mp3"}'
+) ON DUPLICATE KEY UPDATE
+  provider = VALUES(provider),
+  provider_model = VALUES(provider_model),
+  storage_url = VALUES(storage_url),
+  duration_ms = VALUES(duration_ms),
+  generated_at = VALUES(generated_at),
+  checksum = VALUES(checksum),
+  status = VALUES(status),
+  metadata = VALUES(metadata);
+
+-- d_can_you_help_01:1 -> audio/generated/tr-TR/dialogues/448979bd5dacb6feb705506155dd7a1c45d460c95eba4c00a3c9a76663ffc94e.mp3
+UPDATE audio_assets
+SET status = 'archived'
+WHERE entity_type = 'dialogue_turn'
+  AND entity_id = UUID_TO_BIN('4960a6c1-ec12-52cc-9561-20364285da6a', 1)
+  AND voice_key = 'character:burak:male_professional'
+  AND (entity_type NOT IN ('grammar_point','exercise') OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'd_can_you_help_01:1')
+  AND source_text_hash IS NOT NULL
+  AND source_text_hash <> '0431bda07d54b910b3f628465d63cdd4fc83da3374c17768a5539d2f0b636d6d'
+  AND status <> 'archived';
+INSERT INTO audio_assets (
+  id, language_id, language_variant_id, entity_type, entity_id, source_text_hash,
+  voice_key, provider, provider_model, storage_url, duration_ms, generated_at, checksum, status, metadata
+) VALUES (
+  UUID_TO_BIN('3f3aa6e5-7c4c-5764-8007-c0ce9e51ac40', 1), @audio_language_id, @audio_variant_id, 'dialogue_turn', UUID_TO_BIN('4960a6c1-ec12-52cc-9561-20364285da6a', 1), '0431bda07d54b910b3f628465d63cdd4fc83da3374c17768a5539d2f0b636d6d',
+  'character:burak:male_professional', 'elevenlabs', 'eleven_multilingual_v2', 'audio/generated/tr-TR/dialogues/448979bd5dacb6feb705506155dd7a1c45d460c95eba4c00a3c9a76663ffc94e.mp3', 1436, '2026-09-14 11:31:38.456187', '5b31a9eb63923f4530ddfd09f8f5a808f4e13a94551e5197612aae60adb8d244', 'validated', '{"audio_key":"448979bd5dacb6feb705506155dd7a1c45d460c95eba4c00a3c9a76663ffc94e","entity_key":"d_can_you_help_01:1","voice_id":"5HEFEBb9WCCpCdgZE77B","voice_name":"Eyüp Tulûhan Etker - Deep and Rich","voice_labels":{"gender":"male","accent":"istanbul","age":"middle_aged","category":"professional","language":"tr","use_case":"conversational","descriptive":"neutral"},"output_format":"mp3_44100_192","file_sha256":"5b31a9eb63923f4530ddfd09f8f5a808f4e13a94551e5197612aae60adb8d244","settings":{"stability":0.71,"similarity_boost":0.9,"style":0.05,"use_speaker_boost":true,"speed":0.96},"relative_path":"audio/generated/tr-TR/dialogues/448979bd5dacb6feb705506155dd7a1c45d460c95eba4c00a3c9a76663ffc94e.mp3"}'
+) ON DUPLICATE KEY UPDATE
+  provider = VALUES(provider),
+  provider_model = VALUES(provider_model),
+  storage_url = VALUES(storage_url),
+  duration_ms = VALUES(duration_ms),
+  generated_at = VALUES(generated_at),
+  checksum = VALUES(checksum),
+  status = VALUES(status),
+  metadata = VALUES(metadata);
+
+-- d_can_you_help_01:2 -> audio/generated/tr-TR/dialogues/45f0e6566cdc5d877c618dfcafd785fe48cb374e87f6001fe96853e3e2c21934.mp3
+UPDATE audio_assets
+SET status = 'archived'
+WHERE entity_type = 'dialogue_turn'
+  AND entity_id = UUID_TO_BIN('faf61ed0-1df6-56d2-a9c3-b72aa1022250', 1)
+  AND voice_key = 'character:selin:female_bright'
+  AND (entity_type NOT IN ('grammar_point','exercise') OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'd_can_you_help_01:2')
+  AND source_text_hash IS NOT NULL
+  AND source_text_hash <> '462a5416d4470b69a2bca055958448c3f2266eb957371c2864baae1928dbd51d'
+  AND status <> 'archived';
+INSERT INTO audio_assets (
+  id, language_id, language_variant_id, entity_type, entity_id, source_text_hash,
+  voice_key, provider, provider_model, storage_url, duration_ms, generated_at, checksum, status, metadata
+) VALUES (
+  UUID_TO_BIN('38ed1eef-7af5-5978-9eae-2fba761592dc', 1), @audio_language_id, @audio_variant_id, 'dialogue_turn', UUID_TO_BIN('faf61ed0-1df6-56d2-a9c3-b72aa1022250', 1), '462a5416d4470b69a2bca055958448c3f2266eb957371c2864baae1928dbd51d',
+  'character:selin:female_bright', 'elevenlabs', 'eleven_multilingual_v2', 'audio/generated/tr-TR/dialogues/45f0e6566cdc5d877c618dfcafd785fe48cb374e87f6001fe96853e3e2c21934.mp3', 1280, '2026-09-14 11:31:39.478832', '3e6db6648e869932fbbdf1988a284be57925943c80cb7537871200ac98b0dd69', 'validated', '{"audio_key":"45f0e6566cdc5d877c618dfcafd785fe48cb374e87f6001fe96853e3e2c21934","entity_key":"d_can_you_help_01:2","voice_id":"D6QpOJ61ltQ3whot6iJZ","voice_name":"Tugba","voice_labels":{"gender":"female","accent":"istanbul","age":"young","category":"professional","language":"tr","use_case":"conversational","descriptive":"calm"},"output_format":"mp3_44100_192","file_sha256":"3e6db6648e869932fbbdf1988a284be57925943c80cb7537871200ac98b0dd69","settings":{"stability":0.52,"similarity_boost":0.86,"style":0.2,"use_speaker_boost":true,"speed":0.99},"relative_path":"audio/generated/tr-TR/dialogues/45f0e6566cdc5d877c618dfcafd785fe48cb374e87f6001fe96853e3e2c21934.mp3"}'
+) ON DUPLICATE KEY UPDATE
+  provider = VALUES(provider),
+  provider_model = VALUES(provider_model),
+  storage_url = VALUES(storage_url),
+  duration_ms = VALUES(duration_ms),
+  generated_at = VALUES(generated_at),
+  checksum = VALUES(checksum),
+  status = VALUES(status),
+  metadata = VALUES(metadata);
+
 -- d_this_and_these_02:2 -> audio/generated/tr-TR/dialogues/460b3c8a69dec452cf466e6c4cdf8811099ae55da62ed3345c6597088f53c1ef.mp3
 UPDATE audio_assets
 SET status = 'archived'
@@ -650,6 +1196,266 @@ INSERT INTO audio_assets (
 ) VALUES (
   UUID_TO_BIN('a4533e7d-4f03-588f-a88e-42c48fd87bb7', 1), @audio_language_id, @audio_variant_id, 'dialogue_turn', UUID_TO_BIN('8bcfd34e-0ac3-5a06-ad10-1ff4f1f3ca0e', 1), '4869d88355ccb8729781c47c1194b10f84b760c41d9ab9eef7ad7fd2b90a83cf',
   'character:burak:male_professional', 'elevenlabs', 'eleven_multilingual_v2', 'audio/generated/tr-TR/dialogues/460b3c8a69dec452cf466e6c4cdf8811099ae55da62ed3345c6597088f53c1ef.mp3', 1436, '2026-09-13 15:54:39.438618', '259bc514925b5b943174af9bce2d8fb5553b1361d31a4843f82dccbf412486bf', 'validated', '{"audio_key":"460b3c8a69dec452cf466e6c4cdf8811099ae55da62ed3345c6597088f53c1ef","entity_key":"d_this_and_these_02:2","voice_id":"5HEFEBb9WCCpCdgZE77B","voice_name":"Eyüp Tulûhan Etker - Deep and Rich","voice_labels":{"gender":"male","accent":"istanbul","age":"middle_aged","category":"professional","language":"tr","use_case":"conversational","descriptive":"neutral"},"output_format":"mp3_44100_192","file_sha256":"259bc514925b5b943174af9bce2d8fb5553b1361d31a4843f82dccbf412486bf","settings":{"stability":0.71,"similarity_boost":0.9,"style":0.05,"use_speaker_boost":true,"speed":0.96},"relative_path":"audio/generated/tr-TR/dialogues/460b3c8a69dec452cf466e6c4cdf8811099ae55da62ed3345c6597088f53c1ef.mp3"}'
+) ON DUPLICATE KEY UPDATE
+  provider = VALUES(provider),
+  provider_model = VALUES(provider_model),
+  storage_url = VALUES(storage_url),
+  duration_ms = VALUES(duration_ms),
+  generated_at = VALUES(generated_at),
+  checksum = VALUES(checksum),
+  status = VALUES(status),
+  metadata = VALUES(metadata);
+
+-- d_everyday_routine_02:1 -> audio/generated/tr-TR/dialogues/47383f01161293f4236cda8c2520c1676679e3a426d7976348d6d87aff65a1dc.mp3
+UPDATE audio_assets
+SET status = 'archived'
+WHERE entity_type = 'dialogue_turn'
+  AND entity_id = UUID_TO_BIN('63ac8fa5-7d2c-5319-b86c-ff5eb7234aa6', 1)
+  AND voice_key = 'character:mert:male_warm'
+  AND (entity_type NOT IN ('grammar_point','exercise') OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'd_everyday_routine_02:1')
+  AND source_text_hash IS NOT NULL
+  AND source_text_hash <> '9bba2ab43dc43eb8ff1b2a681d18da8d243b845aa210c222aa96af8a612eaf3d'
+  AND status <> 'archived';
+INSERT INTO audio_assets (
+  id, language_id, language_variant_id, entity_type, entity_id, source_text_hash,
+  voice_key, provider, provider_model, storage_url, duration_ms, generated_at, checksum, status, metadata
+) VALUES (
+  UUID_TO_BIN('00fab337-f456-5259-81d8-d276b94b3f49', 1), @audio_language_id, @audio_variant_id, 'dialogue_turn', UUID_TO_BIN('63ac8fa5-7d2c-5319-b86c-ff5eb7234aa6', 1), '9bba2ab43dc43eb8ff1b2a681d18da8d243b845aa210c222aa96af8a612eaf3d',
+  'character:mert:male_warm', 'elevenlabs', 'eleven_multilingual_v2', 'audio/generated/tr-TR/dialogues/47383f01161293f4236cda8c2520c1676679e3a426d7976348d6d87aff65a1dc.mp3', 1384, '2026-09-14 11:31:39.461520', '57fdaa4dce671546f206bbdb768c9be87413375d909b5973df117e8958856bee', 'validated', '{"audio_key":"47383f01161293f4236cda8c2520c1676679e3a426d7976348d6d87aff65a1dc","entity_key":"d_everyday_routine_02:1","voice_id":"jGqlr3dGaFN0IfJZa3zS","voice_name":"Talha - Friendly, Energetic and Neutral","voice_labels":{"gender":"male","accent":"central","age":"young","category":"professional","language":"tr","use_case":"conversational","descriptive":"casual"},"output_format":"mp3_44100_192","file_sha256":"57fdaa4dce671546f206bbdb768c9be87413375d909b5973df117e8958856bee","settings":{"stability":0.58,"similarity_boost":0.87,"style":0.14,"use_speaker_boost":true,"speed":0.97},"relative_path":"audio/generated/tr-TR/dialogues/47383f01161293f4236cda8c2520c1676679e3a426d7976348d6d87aff65a1dc.mp3"}'
+) ON DUPLICATE KEY UPDATE
+  provider = VALUES(provider),
+  provider_model = VALUES(provider_model),
+  storage_url = VALUES(storage_url),
+  duration_ms = VALUES(duration_ms),
+  generated_at = VALUES(generated_at),
+  checksum = VALUES(checksum),
+  status = VALUES(status),
+  metadata = VALUES(metadata);
+
+-- d_weather_and_clothes_02:4 -> audio/generated/tr-TR/dialogues/48b78e4341ef49171ee930400ed57973d55b68dd6dbe2e497aa7f6048c98e7bc.mp3
+UPDATE audio_assets
+SET status = 'archived'
+WHERE entity_type = 'dialogue_turn'
+  AND entity_id = UUID_TO_BIN('458cf735-c4bc-5298-a336-b7c1d6d99130', 1)
+  AND voice_key = 'character:burak:male_professional'
+  AND (entity_type NOT IN ('grammar_point','exercise') OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'd_weather_and_clothes_02:4')
+  AND source_text_hash IS NOT NULL
+  AND source_text_hash <> '4ad039ac26466557c51c8fc13faed8b5781236c500a2f3f8926c32de29c88f9b'
+  AND status <> 'archived';
+INSERT INTO audio_assets (
+  id, language_id, language_variant_id, entity_type, entity_id, source_text_hash,
+  voice_key, provider, provider_model, storage_url, duration_ms, generated_at, checksum, status, metadata
+) VALUES (
+  UUID_TO_BIN('b204246d-3b47-5752-a9d2-b13952da5ef9', 1), @audio_language_id, @audio_variant_id, 'dialogue_turn', UUID_TO_BIN('458cf735-c4bc-5298-a336-b7c1d6d99130', 1), '4ad039ac26466557c51c8fc13faed8b5781236c500a2f3f8926c32de29c88f9b',
+  'character:burak:male_professional', 'elevenlabs', 'eleven_multilingual_v2', 'audio/generated/tr-TR/dialogues/48b78e4341ef49171ee930400ed57973d55b68dd6dbe2e497aa7f6048c98e7bc.mp3', 1567, '2026-09-14 11:31:40.469131', '4bafee83632bc86a82a223457d4079e561ac8cbcdd055fa9bbc626a92a141aeb', 'validated', '{"audio_key":"48b78e4341ef49171ee930400ed57973d55b68dd6dbe2e497aa7f6048c98e7bc","entity_key":"d_weather_and_clothes_02:4","voice_id":"5HEFEBb9WCCpCdgZE77B","voice_name":"Eyüp Tulûhan Etker - Deep and Rich","voice_labels":{"gender":"male","accent":"istanbul","age":"middle_aged","category":"professional","language":"tr","use_case":"conversational","descriptive":"neutral"},"output_format":"mp3_44100_192","file_sha256":"4bafee83632bc86a82a223457d4079e561ac8cbcdd055fa9bbc626a92a141aeb","settings":{"stability":0.71,"similarity_boost":0.9,"style":0.05,"use_speaker_boost":true,"speed":0.96},"relative_path":"audio/generated/tr-TR/dialogues/48b78e4341ef49171ee930400ed57973d55b68dd6dbe2e497aa7f6048c98e7bc.mp3"}'
+) ON DUPLICATE KEY UPDATE
+  provider = VALUES(provider),
+  provider_model = VALUES(provider_model),
+  storage_url = VALUES(storage_url),
+  duration_ms = VALUES(duration_ms),
+  generated_at = VALUES(generated_at),
+  checksum = VALUES(checksum),
+  status = VALUES(status),
+  metadata = VALUES(metadata);
+
+-- d_weather_and_clothes_02:1 -> audio/generated/tr-TR/dialogues/4b9b58b2c44d651d08b095f8425b9cf2fa7f7938a5c14022269662d5411a9b52.mp3
+UPDATE audio_assets
+SET status = 'archived'
+WHERE entity_type = 'dialogue_turn'
+  AND entity_id = UUID_TO_BIN('6385cb41-87eb-5623-a283-5c0f13e8117c', 1)
+  AND voice_key = 'character:selin:female_bright'
+  AND (entity_type NOT IN ('grammar_point','exercise') OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'd_weather_and_clothes_02:1')
+  AND source_text_hash IS NOT NULL
+  AND source_text_hash <> '606777dffff4bce169af1e0e07a8f58b7d757d9f35043f9bbaf416ae3ac48229'
+  AND status <> 'archived';
+INSERT INTO audio_assets (
+  id, language_id, language_variant_id, entity_type, entity_id, source_text_hash,
+  voice_key, provider, provider_model, storage_url, duration_ms, generated_at, checksum, status, metadata
+) VALUES (
+  UUID_TO_BIN('d1b65556-6431-5512-9e9e-c3c2f29ca88e', 1), @audio_language_id, @audio_variant_id, 'dialogue_turn', UUID_TO_BIN('6385cb41-87eb-5623-a283-5c0f13e8117c', 1), '606777dffff4bce169af1e0e07a8f58b7d757d9f35043f9bbaf416ae3ac48229',
+  'character:selin:female_bright', 'elevenlabs', 'eleven_multilingual_v2', 'audio/generated/tr-TR/dialogues/4b9b58b2c44d651d08b095f8425b9cf2fa7f7938a5c14022269662d5411a9b52.mp3', 1567, '2026-09-14 11:31:40.502679', '468110ae741c83d1284bf7a3ab3f227bbef84fa48ce6011c7945a208f595a986', 'validated', '{"audio_key":"4b9b58b2c44d651d08b095f8425b9cf2fa7f7938a5c14022269662d5411a9b52","entity_key":"d_weather_and_clothes_02:1","voice_id":"D6QpOJ61ltQ3whot6iJZ","voice_name":"Tugba","voice_labels":{"gender":"female","accent":"istanbul","age":"young","category":"professional","language":"tr","use_case":"conversational","descriptive":"calm"},"output_format":"mp3_44100_192","file_sha256":"468110ae741c83d1284bf7a3ab3f227bbef84fa48ce6011c7945a208f595a986","settings":{"stability":0.52,"similarity_boost":0.86,"style":0.2,"use_speaker_boost":true,"speed":0.99},"relative_path":"audio/generated/tr-TR/dialogues/4b9b58b2c44d651d08b095f8425b9cf2fa7f7938a5c14022269662d5411a9b52.mp3"}'
+) ON DUPLICATE KEY UPDATE
+  provider = VALUES(provider),
+  provider_model = VALUES(provider_model),
+  storage_url = VALUES(storage_url),
+  duration_ms = VALUES(duration_ms),
+  generated_at = VALUES(generated_at),
+  checksum = VALUES(checksum),
+  status = VALUES(status),
+  metadata = VALUES(metadata);
+
+-- d_from_here_to_there_01:2 -> audio/generated/tr-TR/dialogues/4c0a478e6e59d0f7cd587229bfd950c0ab20c7f83bf5a3b87cbc5bf14a2346e2.mp3
+UPDATE audio_assets
+SET status = 'archived'
+WHERE entity_type = 'dialogue_turn'
+  AND entity_id = UUID_TO_BIN('12d24a8f-400e-52f6-a7a3-f31c62a3c3ae', 1)
+  AND voice_key = 'character:deniz:female_calm'
+  AND (entity_type NOT IN ('grammar_point','exercise') OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'd_from_here_to_there_01:2')
+  AND source_text_hash IS NOT NULL
+  AND source_text_hash <> 'f02adaea7b44c7b435a995237bb1f87def76d6c894a712af539ce24d5b819537'
+  AND status <> 'archived';
+INSERT INTO audio_assets (
+  id, language_id, language_variant_id, entity_type, entity_id, source_text_hash,
+  voice_key, provider, provider_model, storage_url, duration_ms, generated_at, checksum, status, metadata
+) VALUES (
+  UUID_TO_BIN('e16bbd47-84a9-56ca-8a4c-70107aa553d7', 1), @audio_language_id, @audio_variant_id, 'dialogue_turn', UUID_TO_BIN('12d24a8f-400e-52f6-a7a3-f31c62a3c3ae', 1), 'f02adaea7b44c7b435a995237bb1f87def76d6c894a712af539ce24d5b819537',
+  'character:deniz:female_calm', 'elevenlabs', 'eleven_multilingual_v2', 'audio/generated/tr-TR/dialogues/4c0a478e6e59d0f7cd587229bfd950c0ab20c7f83bf5a3b87cbc5bf14a2346e2.mp3', 1488, '2026-09-14 11:31:41.482256', 'fa8c6880ffa7743b867263234abccbcd2e5e1fa7e06f33be1f81e34e4bf99451', 'validated', '{"audio_key":"4c0a478e6e59d0f7cd587229bfd950c0ab20c7f83bf5a3b87cbc5bf14a2346e2","entity_key":"d_from_here_to_there_01:2","voice_id":"rstA752XNcJHV3KFLRON","voice_name":"Seth - Bright, Sincere and Clean","voice_labels":{"gender":"female","accent":"standard","age":"young","category":"professional","language":"tr","use_case":"conversational","descriptive":"calm"},"output_format":"mp3_44100_192","file_sha256":"fa8c6880ffa7743b867263234abccbcd2e5e1fa7e06f33be1f81e34e4bf99451","settings":{"stability":0.68,"similarity_boost":0.89,"style":0.06,"use_speaker_boost":true,"speed":0.95},"relative_path":"audio/generated/tr-TR/dialogues/4c0a478e6e59d0f7cd587229bfd950c0ab20c7f83bf5a3b87cbc5bf14a2346e2.mp3"}'
+) ON DUPLICATE KEY UPDATE
+  provider = VALUES(provider),
+  provider_model = VALUES(provider_model),
+  storage_url = VALUES(storage_url),
+  duration_ms = VALUES(duration_ms),
+  generated_at = VALUES(generated_at),
+  checksum = VALUES(checksum),
+  status = VALUES(status),
+  metadata = VALUES(metadata);
+
+-- d_weather_and_clothes_01:4 -> audio/generated/tr-TR/dialogues/4c2f111fb8e1cda4c48f51ae19994b319d63339d149b5facf02f03c1c5e3522b.mp3
+UPDATE audio_assets
+SET status = 'archived'
+WHERE entity_type = 'dialogue_turn'
+  AND entity_id = UUID_TO_BIN('f765f726-4861-5cf0-9abf-f7d4154b6371', 1)
+  AND voice_key = 'character:mert:male_warm'
+  AND (entity_type NOT IN ('grammar_point','exercise') OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'd_weather_and_clothes_01:4')
+  AND source_text_hash IS NOT NULL
+  AND source_text_hash <> 'b2f2c261bf1c13ef6d2db221f5ce8e99d8dee56c265dd0a39027794adf9eaf36'
+  AND status <> 'archived';
+INSERT INTO audio_assets (
+  id, language_id, language_variant_id, entity_type, entity_id, source_text_hash,
+  voice_key, provider, provider_model, storage_url, duration_ms, generated_at, checksum, status, metadata
+) VALUES (
+  UUID_TO_BIN('c8402e43-79e4-549a-859f-24a22585dae0', 1), @audio_language_id, @audio_variant_id, 'dialogue_turn', UUID_TO_BIN('f765f726-4861-5cf0-9abf-f7d4154b6371', 1), 'b2f2c261bf1c13ef6d2db221f5ce8e99d8dee56c265dd0a39027794adf9eaf36',
+  'character:mert:male_warm', 'elevenlabs', 'eleven_multilingual_v2', 'audio/generated/tr-TR/dialogues/4c2f111fb8e1cda4c48f51ae19994b319d63339d149b5facf02f03c1c5e3522b.mp3', 1201, '2026-09-14 11:31:41.727322', '10d09435c1cc750812562109e00d9a793b131fa1284fedc30d4b05640c49069e', 'validated', '{"audio_key":"4c2f111fb8e1cda4c48f51ae19994b319d63339d149b5facf02f03c1c5e3522b","entity_key":"d_weather_and_clothes_01:4","voice_id":"jGqlr3dGaFN0IfJZa3zS","voice_name":"Talha - Friendly, Energetic and Neutral","voice_labels":{"gender":"male","accent":"central","age":"young","category":"professional","language":"tr","use_case":"conversational","descriptive":"casual"},"output_format":"mp3_44100_192","file_sha256":"10d09435c1cc750812562109e00d9a793b131fa1284fedc30d4b05640c49069e","settings":{"stability":0.58,"similarity_boost":0.87,"style":0.14,"use_speaker_boost":true,"speed":0.97},"relative_path":"audio/generated/tr-TR/dialogues/4c2f111fb8e1cda4c48f51ae19994b319d63339d149b5facf02f03c1c5e3522b.mp3"}'
+) ON DUPLICATE KEY UPDATE
+  provider = VALUES(provider),
+  provider_model = VALUES(provider_model),
+  storage_url = VALUES(storage_url),
+  duration_ms = VALUES(duration_ms),
+  generated_at = VALUES(generated_at),
+  checksum = VALUES(checksum),
+  status = VALUES(status),
+  metadata = VALUES(metadata);
+
+-- d_before_and_after_02:3 -> audio/generated/tr-TR/dialogues/4f52dd495edd086d1270bedc6be6d64183c3e5c69021e8ee11d4a25fb11d7c2f.mp3
+UPDATE audio_assets
+SET status = 'archived'
+WHERE entity_type = 'dialogue_turn'
+  AND entity_id = UUID_TO_BIN('8ce7bb1d-79de-5931-9107-2d5345947e33', 1)
+  AND voice_key = 'character:burak:male_professional'
+  AND (entity_type NOT IN ('grammar_point','exercise') OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'd_before_and_after_02:3')
+  AND source_text_hash IS NOT NULL
+  AND source_text_hash <> 'c7c863d2c1cbfec8c8d870ae202b2af568edd4160523425a29afc0105cdef830'
+  AND status <> 'archived';
+INSERT INTO audio_assets (
+  id, language_id, language_variant_id, entity_type, entity_id, source_text_hash,
+  voice_key, provider, provider_model, storage_url, duration_ms, generated_at, checksum, status, metadata
+) VALUES (
+  UUID_TO_BIN('96f3adea-d869-5a44-b75a-479817d335c3', 1), @audio_language_id, @audio_variant_id, 'dialogue_turn', UUID_TO_BIN('8ce7bb1d-79de-5931-9107-2d5345947e33', 1), 'c7c863d2c1cbfec8c8d870ae202b2af568edd4160523425a29afc0105cdef830',
+  'character:burak:male_professional', 'elevenlabs', 'eleven_multilingual_v2', 'audio/generated/tr-TR/dialogues/4f52dd495edd086d1270bedc6be6d64183c3e5c69021e8ee11d4a25fb11d7c2f.mp3', 1567, '2026-09-14 11:31:42.484843', 'eec2ded95e4362a54bd779811165f41d4132ff89be70f46f014bf0464d056890', 'validated', '{"audio_key":"4f52dd495edd086d1270bedc6be6d64183c3e5c69021e8ee11d4a25fb11d7c2f","entity_key":"d_before_and_after_02:3","voice_id":"5HEFEBb9WCCpCdgZE77B","voice_name":"Eyüp Tulûhan Etker - Deep and Rich","voice_labels":{"gender":"male","accent":"istanbul","age":"middle_aged","category":"professional","language":"tr","use_case":"conversational","descriptive":"neutral"},"output_format":"mp3_44100_192","file_sha256":"eec2ded95e4362a54bd779811165f41d4132ff89be70f46f014bf0464d056890","settings":{"stability":0.71,"similarity_boost":0.9,"style":0.05,"use_speaker_boost":true,"speed":0.96},"relative_path":"audio/generated/tr-TR/dialogues/4f52dd495edd086d1270bedc6be6d64183c3e5c69021e8ee11d4a25fb11d7c2f.mp3"}'
+) ON DUPLICATE KEY UPDATE
+  provider = VALUES(provider),
+  provider_model = VALUES(provider_model),
+  storage_url = VALUES(storage_url),
+  duration_ms = VALUES(duration_ms),
+  generated_at = VALUES(generated_at),
+  checksum = VALUES(checksum),
+  status = VALUES(status),
+  metadata = VALUES(metadata);
+
+-- d_everyday_routine_01:4 -> audio/generated/tr-TR/dialogues/5351ce57960329f91fcde8465e4445f325db0a81cc5611cd934fc550908b8787.mp3
+UPDATE audio_assets
+SET status = 'archived'
+WHERE entity_type = 'dialogue_turn'
+  AND entity_id = UUID_TO_BIN('c17c5c59-4d41-5178-8387-0fd4ffa2b425', 1)
+  AND voice_key = 'character:kaan:male_bright'
+  AND (entity_type NOT IN ('grammar_point','exercise') OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'd_everyday_routine_01:4')
+  AND source_text_hash IS NOT NULL
+  AND source_text_hash <> 'f737393b12f67945d4e45056bc7fb7665ce2145a791e671da53943bb7f71ab2b'
+  AND status <> 'archived';
+INSERT INTO audio_assets (
+  id, language_id, language_variant_id, entity_type, entity_id, source_text_hash,
+  voice_key, provider, provider_model, storage_url, duration_ms, generated_at, checksum, status, metadata
+) VALUES (
+  UUID_TO_BIN('c3b4d65d-e743-55cb-87e1-9b9f11007d23', 1), @audio_language_id, @audio_variant_id, 'dialogue_turn', UUID_TO_BIN('c17c5c59-4d41-5178-8387-0fd4ffa2b425', 1), 'f737393b12f67945d4e45056bc7fb7665ce2145a791e671da53943bb7f71ab2b',
+  'character:kaan:male_bright', 'elevenlabs', 'eleven_multilingual_v2', 'audio/generated/tr-TR/dialogues/5351ce57960329f91fcde8465e4445f325db0a81cc5611cd934fc550908b8787.mp3', 1619, '2026-09-14 11:31:42.771505', '7412c708885788e43bd78ecfee66ec694fc2268830672be43bc0e21d75a07fef', 'validated', '{"audio_key":"5351ce57960329f91fcde8465e4445f325db0a81cc5611cd934fc550908b8787","entity_key":"d_everyday_routine_01:4","voice_id":"7mBFv1btncDZu2Bfgv0r","voice_name":"Tuna - Young and Soft","voice_labels":{"gender":"male","accent":"istanbul","age":"young","category":"professional","language":"tr","use_case":"social_media","descriptive":"casual"},"output_format":"mp3_44100_192","file_sha256":"7412c708885788e43bd78ecfee66ec694fc2268830672be43bc0e21d75a07fef","settings":{"stability":0.52,"similarity_boost":0.86,"style":0.2,"use_speaker_boost":true,"speed":0.99},"relative_path":"audio/generated/tr-TR/dialogues/5351ce57960329f91fcde8465e4445f325db0a81cc5611cd934fc550908b8787.mp3"}'
+) ON DUPLICATE KEY UPDATE
+  provider = VALUES(provider),
+  provider_model = VALUES(provider_model),
+  storage_url = VALUES(storage_url),
+  duration_ms = VALUES(duration_ms),
+  generated_at = VALUES(generated_at),
+  checksum = VALUES(checksum),
+  status = VALUES(status),
+  metadata = VALUES(metadata);
+
+-- d_yesterday_01:3 -> audio/generated/tr-TR/dialogues/574614af0b87b16d505dca5a4b2080c9519509d9be5a031deb2bf5e166bd2b05.mp3
+UPDATE audio_assets
+SET status = 'archived'
+WHERE entity_type = 'dialogue_turn'
+  AND entity_id = UUID_TO_BIN('7ca50449-40d8-5663-95e4-ab47f9c3018e', 1)
+  AND voice_key = 'character:elif:female_warm'
+  AND (entity_type NOT IN ('grammar_point','exercise') OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'd_yesterday_01:3')
+  AND source_text_hash IS NOT NULL
+  AND source_text_hash <> '0c4617f523c731a0f382495175fcc1e80108280de44fe12f29c74f7ef7620fd0'
+  AND status <> 'archived';
+INSERT INTO audio_assets (
+  id, language_id, language_variant_id, entity_type, entity_id, source_text_hash,
+  voice_key, provider, provider_model, storage_url, duration_ms, generated_at, checksum, status, metadata
+) VALUES (
+  UUID_TO_BIN('fb069502-1baa-5cef-b278-9d8a36b8dc52', 1), @audio_language_id, @audio_variant_id, 'dialogue_turn', UUID_TO_BIN('7ca50449-40d8-5663-95e4-ab47f9c3018e', 1), '0c4617f523c731a0f382495175fcc1e80108280de44fe12f29c74f7ef7620fd0',
+  'character:elif:female_warm', 'elevenlabs', 'eleven_multilingual_v2', 'audio/generated/tr-TR/dialogues/574614af0b87b16d505dca5a4b2080c9519509d9be5a031deb2bf5e166bd2b05.mp3', 1384, '2026-09-14 11:31:43.451155', '0cf1249c117d68aea3cc7edb9e512a321de861470857262999c40d2711560e67', 'validated', '{"audio_key":"574614af0b87b16d505dca5a4b2080c9519509d9be5a031deb2bf5e166bd2b05","entity_key":"d_yesterday_01:3","voice_id":"aEJD8mYP0nuof1XHShVY","voice_name":"Gozde Arikan - Soft, Warm and Clear","voice_labels":{"gender":"female","accent":"standard","age":"young","category":"professional","language":"tr","use_case":"conversational","descriptive":"casual"},"output_format":"mp3_44100_192","file_sha256":"0cf1249c117d68aea3cc7edb9e512a321de861470857262999c40d2711560e67","settings":{"stability":0.58,"similarity_boost":0.87,"style":0.14,"use_speaker_boost":true,"speed":0.97},"relative_path":"audio/generated/tr-TR/dialogues/574614af0b87b16d505dca5a4b2080c9519509d9be5a031deb2bf5e166bd2b05.mp3"}'
+) ON DUPLICATE KEY UPDATE
+  provider = VALUES(provider),
+  provider_model = VALUES(provider_model),
+  storage_url = VALUES(storage_url),
+  duration_ms = VALUES(duration_ms),
+  generated_at = VALUES(generated_at),
+  checksum = VALUES(checksum),
+  status = VALUES(status),
+  metadata = VALUES(metadata);
+
+-- d_likes_and_specific_things_02:4 -> audio/generated/tr-TR/dialogues/5775fc6bb1ff20ab6782abc48176b123a8d63a84a6da273d761e09148e3d32dc.mp3
+UPDATE audio_assets
+SET status = 'archived'
+WHERE entity_type = 'dialogue_turn'
+  AND entity_id = UUID_TO_BIN('fac8ec0d-4532-5e78-963e-3cab7cb98aac', 1)
+  AND voice_key = 'character:burak:male_professional'
+  AND (entity_type NOT IN ('grammar_point','exercise') OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'd_likes_and_specific_things_02:4')
+  AND source_text_hash IS NOT NULL
+  AND source_text_hash <> '55b69cee70980402bbc04e2d53320c7fc311ef131adc9c088569874a9c7c08d6'
+  AND status <> 'archived';
+INSERT INTO audio_assets (
+  id, language_id, language_variant_id, entity_type, entity_id, source_text_hash,
+  voice_key, provider, provider_model, storage_url, duration_ms, generated_at, checksum, status, metadata
+) VALUES (
+  UUID_TO_BIN('a7b70cf3-d428-5049-b973-0af3d9f13a0a', 1), @audio_language_id, @audio_variant_id, 'dialogue_turn', UUID_TO_BIN('fac8ec0d-4532-5e78-963e-3cab7cb98aac', 1), '55b69cee70980402bbc04e2d53320c7fc311ef131adc9c088569874a9c7c08d6',
+  'character:burak:male_professional', 'elevenlabs', 'eleven_multilingual_v2', 'audio/generated/tr-TR/dialogues/5775fc6bb1ff20ab6782abc48176b123a8d63a84a6da273d761e09148e3d32dc.mp3', 1488, '2026-09-14 11:31:43.802152', '63771a9fa2513ef77136483413cd96425e195220f9927da04ade0b3138f8c8f7', 'validated', '{"audio_key":"5775fc6bb1ff20ab6782abc48176b123a8d63a84a6da273d761e09148e3d32dc","entity_key":"d_likes_and_specific_things_02:4","voice_id":"5HEFEBb9WCCpCdgZE77B","voice_name":"Eyüp Tulûhan Etker - Deep and Rich","voice_labels":{"gender":"male","accent":"istanbul","age":"middle_aged","category":"professional","language":"tr","use_case":"conversational","descriptive":"neutral"},"output_format":"mp3_44100_192","file_sha256":"63771a9fa2513ef77136483413cd96425e195220f9927da04ade0b3138f8c8f7","settings":{"stability":0.71,"similarity_boost":0.9,"style":0.05,"use_speaker_boost":true,"speed":0.96},"relative_path":"audio/generated/tr-TR/dialogues/5775fc6bb1ff20ab6782abc48176b123a8d63a84a6da273d761e09148e3d32dc.mp3"}'
+) ON DUPLICATE KEY UPDATE
+  provider = VALUES(provider),
+  provider_model = VALUES(provider_model),
+  storage_url = VALUES(storage_url),
+  duration_ms = VALUES(duration_ms),
+  generated_at = VALUES(generated_at),
+  checksum = VALUES(checksum),
+  status = VALUES(status),
+  metadata = VALUES(metadata);
+
+-- d_before_and_after_01:4 -> audio/generated/tr-TR/dialogues/585e7aa7cfd448c6779c56ec75b5649751cbe946276b31001e954e1cd6b186d5.mp3
+UPDATE audio_assets
+SET status = 'archived'
+WHERE entity_type = 'dialogue_turn'
+  AND entity_id = UUID_TO_BIN('d67d4cb8-d63c-55fa-bb72-b0b511f94b2e', 1)
+  AND voice_key = 'character:selin:female_bright'
+  AND (entity_type NOT IN ('grammar_point','exercise') OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'd_before_and_after_01:4')
+  AND source_text_hash IS NOT NULL
+  AND source_text_hash <> '1625d421833289fb621c1fa044e79e45360c54aacbb22f86042625ed534d5e5b'
+  AND status <> 'archived';
+INSERT INTO audio_assets (
+  id, language_id, language_variant_id, entity_type, entity_id, source_text_hash,
+  voice_key, provider, provider_model, storage_url, duration_ms, generated_at, checksum, status, metadata
+) VALUES (
+  UUID_TO_BIN('b8bbf987-0c42-57d9-99b1-c91448c9c62f', 1), @audio_language_id, @audio_variant_id, 'dialogue_turn', UUID_TO_BIN('d67d4cb8-d63c-55fa-bb72-b0b511f94b2e', 1), '1625d421833289fb621c1fa044e79e45360c54aacbb22f86042625ed534d5e5b',
+  'character:selin:female_bright', 'elevenlabs', 'eleven_multilingual_v2', 'audio/generated/tr-TR/dialogues/585e7aa7cfd448c6779c56ec75b5649751cbe946276b31001e954e1cd6b186d5.mp3', 1097, '2026-09-14 11:31:44.423583', 'b03dba2af910b231fb55fdc3d45aedc64026e5b8f3a1e4f84f995d9aabeac9af', 'validated', '{"audio_key":"585e7aa7cfd448c6779c56ec75b5649751cbe946276b31001e954e1cd6b186d5","entity_key":"d_before_and_after_01:4","voice_id":"D6QpOJ61ltQ3whot6iJZ","voice_name":"Tugba","voice_labels":{"gender":"female","accent":"istanbul","age":"young","category":"professional","language":"tr","use_case":"conversational","descriptive":"calm"},"output_format":"mp3_44100_192","file_sha256":"b03dba2af910b231fb55fdc3d45aedc64026e5b8f3a1e4f84f995d9aabeac9af","settings":{"stability":0.52,"similarity_boost":0.86,"style":0.2,"use_speaker_boost":true,"speed":0.99},"relative_path":"audio/generated/tr-TR/dialogues/585e7aa7cfd448c6779c56ec75b5649751cbe946276b31001e954e1cd6b186d5.mp3"}'
 ) ON DUPLICATE KEY UPDATE
   provider = VALUES(provider),
   provider_model = VALUES(provider_model),
@@ -712,6 +1518,32 @@ INSERT INTO audio_assets (
   status = VALUES(status),
   metadata = VALUES(metadata);
 
+-- d_before_and_after_01:3 -> audio/generated/tr-TR/dialogues/5a419fc342ebea02da1fc214878deb4e86add89a7471ca16aa19f7578691853a.mp3
+UPDATE audio_assets
+SET status = 'archived'
+WHERE entity_type = 'dialogue_turn'
+  AND entity_id = UUID_TO_BIN('2fbc4b39-3051-5cea-aa81-539767c7b3b7', 1)
+  AND voice_key = 'character:mert:male_warm'
+  AND (entity_type NOT IN ('grammar_point','exercise') OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'd_before_and_after_01:3')
+  AND source_text_hash IS NOT NULL
+  AND source_text_hash <> '91e1831da63168e11a2ec44ab335655508b8b1457a51b2650488e39639669303'
+  AND status <> 'archived';
+INSERT INTO audio_assets (
+  id, language_id, language_variant_id, entity_type, entity_id, source_text_hash,
+  voice_key, provider, provider_model, storage_url, duration_ms, generated_at, checksum, status, metadata
+) VALUES (
+  UUID_TO_BIN('20063f59-a102-5f6b-9d63-0831c1d85ab0', 1), @audio_language_id, @audio_variant_id, 'dialogue_turn', UUID_TO_BIN('2fbc4b39-3051-5cea-aa81-539767c7b3b7', 1), '91e1831da63168e11a2ec44ab335655508b8b1457a51b2650488e39639669303',
+  'character:mert:male_warm', 'elevenlabs', 'eleven_multilingual_v2', 'audio/generated/tr-TR/dialogues/5a419fc342ebea02da1fc214878deb4e86add89a7471ca16aa19f7578691853a.mp3', 1149, '2026-09-14 11:31:44.767854', '05b1d85b9b1028c065d90eeacde40a44e00101816b7076318abc2e4b92c0b0f5', 'validated', '{"audio_key":"5a419fc342ebea02da1fc214878deb4e86add89a7471ca16aa19f7578691853a","entity_key":"d_before_and_after_01:3","voice_id":"jGqlr3dGaFN0IfJZa3zS","voice_name":"Talha - Friendly, Energetic and Neutral","voice_labels":{"gender":"male","accent":"central","age":"young","category":"professional","language":"tr","use_case":"conversational","descriptive":"casual"},"output_format":"mp3_44100_192","file_sha256":"05b1d85b9b1028c065d90eeacde40a44e00101816b7076318abc2e4b92c0b0f5","settings":{"stability":0.58,"similarity_boost":0.87,"style":0.14,"use_speaker_boost":true,"speed":0.97},"relative_path":"audio/generated/tr-TR/dialogues/5a419fc342ebea02da1fc214878deb4e86add89a7471ca16aa19f7578691853a.mp3"}'
+) ON DUPLICATE KEY UPDATE
+  provider = VALUES(provider),
+  provider_model = VALUES(provider_model),
+  storage_url = VALUES(storage_url),
+  duration_ms = VALUES(duration_ms),
+  generated_at = VALUES(generated_at),
+  checksum = VALUES(checksum),
+  status = VALUES(status),
+  metadata = VALUES(metadata);
+
 -- d_what_im_doing_02:1 -> audio/generated/tr-TR/dialogues/5f3b386fc9f9256a75b6466712d531be967ba0fdf7c797f595db0fee926e7f3f.mp3
 UPDATE audio_assets
 SET status = 'archived'
@@ -728,6 +1560,32 @@ INSERT INTO audio_assets (
 ) VALUES (
   UUID_TO_BIN('379b45d3-1432-5b0f-9626-f04b4cdc00b1', 1), @audio_language_id, @audio_variant_id, 'dialogue_turn', UUID_TO_BIN('83801805-6297-5db6-b24b-b8b7e9fcb78c', 1), '6313ed5d17b7ae46801afc223628db50c0cee0a897eed4dbb197cfc9117c0dee',
   'character:mert:male_warm', 'elevenlabs', 'eleven_multilingual_v2', 'audio/generated/tr-TR/dialogues/5f3b386fc9f9256a75b6466712d531be967ba0fdf7c797f595db0fee926e7f3f.mp3', 1071, '2026-09-13 15:54:41.518765', 'fdd4f620f13fb8e48fed2f58f392c6977617a21140f99b62b958f789f1a7f6ae', 'validated', '{"audio_key":"5f3b386fc9f9256a75b6466712d531be967ba0fdf7c797f595db0fee926e7f3f","entity_key":"d_what_im_doing_02:1","voice_id":"jGqlr3dGaFN0IfJZa3zS","voice_name":"Talha - Friendly, Energetic and Neutral","voice_labels":{"gender":"male","accent":"central","age":"young","category":"professional","language":"tr","use_case":"conversational","descriptive":"casual"},"output_format":"mp3_44100_192","file_sha256":"fdd4f620f13fb8e48fed2f58f392c6977617a21140f99b62b958f789f1a7f6ae","settings":{"stability":0.58,"similarity_boost":0.87,"style":0.14,"use_speaker_boost":true,"speed":0.97},"relative_path":"audio/generated/tr-TR/dialogues/5f3b386fc9f9256a75b6466712d531be967ba0fdf7c797f595db0fee926e7f3f.mp3"}'
+) ON DUPLICATE KEY UPDATE
+  provider = VALUES(provider),
+  provider_model = VALUES(provider_model),
+  storage_url = VALUES(storage_url),
+  duration_ms = VALUES(duration_ms),
+  generated_at = VALUES(generated_at),
+  checksum = VALUES(checksum),
+  status = VALUES(status),
+  metadata = VALUES(metadata);
+
+-- d_can_you_help_02:2 -> audio/generated/tr-TR/dialogues/5fb82cfac558439abebdc18fea2678b926381ceda9ae314c132599ac62bebaac.mp3
+UPDATE audio_assets
+SET status = 'archived'
+WHERE entity_type = 'dialogue_turn'
+  AND entity_id = UUID_TO_BIN('18d9c2f3-e719-536f-b5fe-facf9060edd4', 1)
+  AND voice_key = 'character:emre:male_calm'
+  AND (entity_type NOT IN ('grammar_point','exercise') OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'd_can_you_help_02:2')
+  AND source_text_hash IS NOT NULL
+  AND source_text_hash <> 'd21ecbeaaae3b48be425d362b311811493aedee74b45b15b8b00920364a94ac6'
+  AND status <> 'archived';
+INSERT INTO audio_assets (
+  id, language_id, language_variant_id, entity_type, entity_id, source_text_hash,
+  voice_key, provider, provider_model, storage_url, duration_ms, generated_at, checksum, status, metadata
+) VALUES (
+  UUID_TO_BIN('ba9a4fbb-3bd1-5836-9d9f-bb7da9f1942c', 1), @audio_language_id, @audio_variant_id, 'dialogue_turn', UUID_TO_BIN('18d9c2f3-e719-536f-b5fe-facf9060edd4', 1), 'd21ecbeaaae3b48be425d362b311811493aedee74b45b15b8b00920364a94ac6',
+  'character:emre:male_calm', 'elevenlabs', 'eleven_multilingual_v2', 'audio/generated/tr-TR/dialogues/5fb82cfac558439abebdc18fea2678b926381ceda9ae314c132599ac62bebaac.mp3', 1201, '2026-09-14 11:31:45.397324', '294f83e8f63399737589c751125329879c44a45753b2dcb58dfddb296a5e4c8e', 'validated', '{"audio_key":"5fb82cfac558439abebdc18fea2678b926381ceda9ae314c132599ac62bebaac","entity_key":"d_can_you_help_02:2","voice_id":"Md4RAnfKt9kVIbvqUxly","voice_name":"Cihan - Warm, Natural and Friendly","voice_labels":{"gender":"male","accent":"istanbul","age":"middle_aged","category":"high_quality","language":"tr","use_case":"conversational","descriptive":"calm"},"output_format":"mp3_44100_192","file_sha256":"294f83e8f63399737589c751125329879c44a45753b2dcb58dfddb296a5e4c8e","settings":{"stability":0.68,"similarity_boost":0.89,"style":0.06,"use_speaker_boost":true,"speed":0.95},"relative_path":"audio/generated/tr-TR/dialogues/5fb82cfac558439abebdc18fea2678b926381ceda9ae314c132599ac62bebaac.mp3"}'
 ) ON DUPLICATE KEY UPDATE
   provider = VALUES(provider),
   provider_model = VALUES(provider_model),
@@ -868,6 +1726,32 @@ INSERT INTO audio_assets (
   status = VALUES(status),
   metadata = VALUES(metadata);
 
+-- d_basic_health_02:4 -> audio/generated/tr-TR/dialogues/6bdd3c583b4bb8b910b359011edfc55e173f9eadf009c34e7df84b0937cc7b6c.mp3
+UPDATE audio_assets
+SET status = 'archived'
+WHERE entity_type = 'dialogue_turn'
+  AND entity_id = UUID_TO_BIN('74b5195b-ca1c-5f0e-ba54-c177befb5f4b', 1)
+  AND voice_key = 'character:elif:female_warm'
+  AND (entity_type NOT IN ('grammar_point','exercise') OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'd_basic_health_02:4')
+  AND source_text_hash IS NOT NULL
+  AND source_text_hash <> '236f13e49e33ef89b1e7f678de7f09c5a4bcffd5f2ba6190f50f018325a788e5'
+  AND status <> 'archived';
+INSERT INTO audio_assets (
+  id, language_id, language_variant_id, entity_type, entity_id, source_text_hash,
+  voice_key, provider, provider_model, storage_url, duration_ms, generated_at, checksum, status, metadata
+) VALUES (
+  UUID_TO_BIN('2b54bc0d-ad81-54db-aae7-9fc381863ed0', 1), @audio_language_id, @audio_variant_id, 'dialogue_turn', UUID_TO_BIN('74b5195b-ca1c-5f0e-ba54-c177befb5f4b', 1), '236f13e49e33ef89b1e7f678de7f09c5a4bcffd5f2ba6190f50f018325a788e5',
+  'character:elif:female_warm', 'elevenlabs', 'eleven_multilingual_v2', 'audio/generated/tr-TR/dialogues/6bdd3c583b4bb8b910b359011edfc55e173f9eadf009c34e7df84b0937cc7b6c.mp3', 1488, '2026-09-14 11:31:45.761137', 'd7b37b20e0bc1b0d1be4050d8aada2a3d6c3dad08fd015dd756868a54d401584', 'validated', '{"audio_key":"6bdd3c583b4bb8b910b359011edfc55e173f9eadf009c34e7df84b0937cc7b6c","entity_key":"d_basic_health_02:4","voice_id":"aEJD8mYP0nuof1XHShVY","voice_name":"Gozde Arikan - Soft, Warm and Clear","voice_labels":{"gender":"female","accent":"standard","age":"young","category":"professional","language":"tr","use_case":"conversational","descriptive":"casual"},"output_format":"mp3_44100_192","file_sha256":"d7b37b20e0bc1b0d1be4050d8aada2a3d6c3dad08fd015dd756868a54d401584","settings":{"stability":0.58,"similarity_boost":0.87,"style":0.14,"use_speaker_boost":true,"speed":0.97},"relative_path":"audio/generated/tr-TR/dialogues/6bdd3c583b4bb8b910b359011edfc55e173f9eadf009c34e7df84b0937cc7b6c.mp3"}'
+) ON DUPLICATE KEY UPDATE
+  provider = VALUES(provider),
+  provider_model = VALUES(provider_model),
+  storage_url = VALUES(storage_url),
+  duration_ms = VALUES(duration_ms),
+  generated_at = VALUES(generated_at),
+  checksum = VALUES(checksum),
+  status = VALUES(status),
+  metadata = VALUES(metadata);
+
 -- d_who_i_am_02:2 -> audio/generated/tr-TR/dialogues/6ea7cd8880a2cfce62e271e8037671d9f697a250d839d44f334a37116789200e.mp3
 UPDATE audio_assets
 SET status = 'archived'
@@ -920,6 +1804,58 @@ INSERT INTO audio_assets (
   status = VALUES(status),
   metadata = VALUES(metadata);
 
+-- d_everyday_routine_01:3 -> audio/generated/tr-TR/dialogues/712bd8a7d6ac4a943a9c075fc20e4afd68070268d206c1da4f726edbc9157333.mp3
+UPDATE audio_assets
+SET status = 'archived'
+WHERE entity_type = 'dialogue_turn'
+  AND entity_id = UUID_TO_BIN('b27c17e9-e838-5e97-82eb-5f8b2ed1f82b', 1)
+  AND voice_key = 'character:elif:female_warm'
+  AND (entity_type NOT IN ('grammar_point','exercise') OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'd_everyday_routine_01:3')
+  AND source_text_hash IS NOT NULL
+  AND source_text_hash <> 'a3dbafb3e18b81125fb39b2c86df4e7608822e270e0f2aa6812d6e4764f9c804'
+  AND status <> 'archived';
+INSERT INTO audio_assets (
+  id, language_id, language_variant_id, entity_type, entity_id, source_text_hash,
+  voice_key, provider, provider_model, storage_url, duration_ms, generated_at, checksum, status, metadata
+) VALUES (
+  UUID_TO_BIN('4ef3514b-315b-532f-99de-5e4e875ee6ce', 1), @audio_language_id, @audio_variant_id, 'dialogue_turn', UUID_TO_BIN('b27c17e9-e838-5e97-82eb-5f8b2ed1f82b', 1), 'a3dbafb3e18b81125fb39b2c86df4e7608822e270e0f2aa6812d6e4764f9c804',
+  'character:elif:female_warm', 'elevenlabs', 'eleven_multilingual_v2', 'audio/generated/tr-TR/dialogues/712bd8a7d6ac4a943a9c075fc20e4afd68070268d206c1da4f726edbc9157333.mp3', 2351, '2026-09-14 11:31:46.636769', '5d28c53e70623557b32d07190b8ec37e09a95aeb49fe386e01c2030084d07339', 'validated', '{"audio_key":"712bd8a7d6ac4a943a9c075fc20e4afd68070268d206c1da4f726edbc9157333","entity_key":"d_everyday_routine_01:3","voice_id":"aEJD8mYP0nuof1XHShVY","voice_name":"Gozde Arikan - Soft, Warm and Clear","voice_labels":{"gender":"female","accent":"standard","age":"young","category":"professional","language":"tr","use_case":"conversational","descriptive":"casual"},"output_format":"mp3_44100_192","file_sha256":"5d28c53e70623557b32d07190b8ec37e09a95aeb49fe386e01c2030084d07339","settings":{"stability":0.58,"similarity_boost":0.87,"style":0.14,"use_speaker_boost":true,"speed":0.97},"relative_path":"audio/generated/tr-TR/dialogues/712bd8a7d6ac4a943a9c075fc20e4afd68070268d206c1da4f726edbc9157333.mp3"}'
+) ON DUPLICATE KEY UPDATE
+  provider = VALUES(provider),
+  provider_model = VALUES(provider_model),
+  storage_url = VALUES(storage_url),
+  duration_ms = VALUES(duration_ms),
+  generated_at = VALUES(generated_at),
+  checksum = VALUES(checksum),
+  status = VALUES(status),
+  metadata = VALUES(metadata);
+
+-- d_weather_and_clothes_01:3 -> audio/generated/tr-TR/dialogues/71bee507ba192206f4cf4aa4fbeec4b5b2d01aa7ea157bf3cc6b7033be5ca1fb.mp3
+UPDATE audio_assets
+SET status = 'archived'
+WHERE entity_type = 'dialogue_turn'
+  AND entity_id = UUID_TO_BIN('0eb44a1c-4dfb-5e42-82ef-75a6032bdbb9', 1)
+  AND voice_key = 'character:deniz:female_calm'
+  AND (entity_type NOT IN ('grammar_point','exercise') OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'd_weather_and_clothes_01:3')
+  AND source_text_hash IS NOT NULL
+  AND source_text_hash <> '488ff9ef26bbe9866562004ab38f47ff267dd33ce955570552f323a49262b3fb'
+  AND status <> 'archived';
+INSERT INTO audio_assets (
+  id, language_id, language_variant_id, entity_type, entity_id, source_text_hash,
+  voice_key, provider, provider_model, storage_url, duration_ms, generated_at, checksum, status, metadata
+) VALUES (
+  UUID_TO_BIN('ee10e76c-dff1-56eb-8340-fce56716cad6', 1), @audio_language_id, @audio_variant_id, 'dialogue_turn', UUID_TO_BIN('0eb44a1c-4dfb-5e42-82ef-75a6032bdbb9', 1), '488ff9ef26bbe9866562004ab38f47ff267dd33ce955570552f323a49262b3fb',
+  'character:deniz:female_calm', 'elevenlabs', 'eleven_multilingual_v2', 'audio/generated/tr-TR/dialogues/71bee507ba192206f4cf4aa4fbeec4b5b2d01aa7ea157bf3cc6b7033be5ca1fb.mp3', 1488, '2026-09-14 11:31:46.756121', 'c6b337c9d5600fddd009e45958643ecb31e6aa3a695f88f54f1796287019629e', 'validated', '{"audio_key":"71bee507ba192206f4cf4aa4fbeec4b5b2d01aa7ea157bf3cc6b7033be5ca1fb","entity_key":"d_weather_and_clothes_01:3","voice_id":"rstA752XNcJHV3KFLRON","voice_name":"Seth - Bright, Sincere and Clean","voice_labels":{"gender":"female","accent":"standard","age":"young","category":"professional","language":"tr","use_case":"conversational","descriptive":"calm"},"output_format":"mp3_44100_192","file_sha256":"c6b337c9d5600fddd009e45958643ecb31e6aa3a695f88f54f1796287019629e","settings":{"stability":0.68,"similarity_boost":0.89,"style":0.06,"use_speaker_boost":true,"speed":0.95},"relative_path":"audio/generated/tr-TR/dialogues/71bee507ba192206f4cf4aa4fbeec4b5b2d01aa7ea157bf3cc6b7033be5ca1fb.mp3"}'
+) ON DUPLICATE KEY UPDATE
+  provider = VALUES(provider),
+  provider_model = VALUES(provider_model),
+  storage_url = VALUES(storage_url),
+  duration_ms = VALUES(duration_ms),
+  generated_at = VALUES(generated_at),
+  checksum = VALUES(checksum),
+  status = VALUES(status),
+  metadata = VALUES(metadata);
+
 -- d_time_and_plans_02:3 -> audio/generated/tr-TR/dialogues/75a48bc9c58e99337fb5c32dd8e28a86afa76ce56a14c820732c8dfe237093ae.mp3
 UPDATE audio_assets
 SET status = 'archived'
@@ -936,6 +1872,110 @@ INSERT INTO audio_assets (
 ) VALUES (
   UUID_TO_BIN('8fc4092e-b8cb-556a-b4e9-82e7622af616', 1), @audio_language_id, @audio_variant_id, 'dialogue_turn', UUID_TO_BIN('cad9dc8a-171b-5181-8587-e8bf35cbc0ab', 1), '4c6262b9cd388f30924f0301edd5c53da99d99cd5e2475c1a97873ac141ea0bd',
   'character:burak:male_professional', 'elevenlabs', 'eleven_multilingual_v2', 'audio/generated/tr-TR/dialogues/75a48bc9c58e99337fb5c32dd8e28a86afa76ce56a14c820732c8dfe237093ae.mp3', 1253, '2026-09-13 15:54:46.394209', 'dc1bae72c98eae09206a5918961b1f15e7cd3c3008606ac6ad669effd4544056', 'validated', '{"audio_key":"75a48bc9c58e99337fb5c32dd8e28a86afa76ce56a14c820732c8dfe237093ae","entity_key":"d_time_and_plans_02:3","voice_id":"5HEFEBb9WCCpCdgZE77B","voice_name":"Eyüp Tulûhan Etker - Deep and Rich","voice_labels":{"gender":"male","accent":"istanbul","age":"middle_aged","category":"professional","language":"tr","use_case":"conversational","descriptive":"neutral"},"output_format":"mp3_44100_192","file_sha256":"dc1bae72c98eae09206a5918961b1f15e7cd3c3008606ac6ad669effd4544056","settings":{"stability":0.71,"similarity_boost":0.9,"style":0.05,"use_speaker_boost":true,"speed":0.96},"relative_path":"audio/generated/tr-TR/dialogues/75a48bc9c58e99337fb5c32dd8e28a86afa76ce56a14c820732c8dfe237093ae.mp3"}'
+) ON DUPLICATE KEY UPDATE
+  provider = VALUES(provider),
+  provider_model = VALUES(provider_model),
+  storage_url = VALUES(storage_url),
+  duration_ms = VALUES(duration_ms),
+  generated_at = VALUES(generated_at),
+  checksum = VALUES(checksum),
+  status = VALUES(status),
+  metadata = VALUES(metadata);
+
+-- d_yesterday_01:1 -> audio/generated/tr-TR/dialogues/7a637f6b8a28ffa1c2f57e165f2d9547386e5efe3557629fbe5c23275f71eb60.mp3
+UPDATE audio_assets
+SET status = 'archived'
+WHERE entity_type = 'dialogue_turn'
+  AND entity_id = UUID_TO_BIN('7551df51-76d2-5c6a-b69e-a5a93ace3ef8', 1)
+  AND voice_key = 'character:elif:female_warm'
+  AND (entity_type NOT IN ('grammar_point','exercise') OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'd_yesterday_01:1')
+  AND source_text_hash IS NOT NULL
+  AND source_text_hash <> '06d8e72e360e5d383c057e2f5e3ffc4b84039441cb0770d437dde0f0dd041b89'
+  AND status <> 'archived';
+INSERT INTO audio_assets (
+  id, language_id, language_variant_id, entity_type, entity_id, source_text_hash,
+  voice_key, provider, provider_model, storage_url, duration_ms, generated_at, checksum, status, metadata
+) VALUES (
+  UUID_TO_BIN('9795fdf6-289d-5596-a2a9-ac2144e74439', 1), @audio_language_id, @audio_variant_id, 'dialogue_turn', UUID_TO_BIN('7551df51-76d2-5c6a-b69e-a5a93ace3ef8', 1), '06d8e72e360e5d383c057e2f5e3ffc4b84039441cb0770d437dde0f0dd041b89',
+  'character:elif:female_warm', 'elevenlabs', 'eleven_multilingual_v2', 'audio/generated/tr-TR/dialogues/7a637f6b8a28ffa1c2f57e165f2d9547386e5efe3557629fbe5c23275f71eb60.mp3', 1515, '2026-09-14 11:31:47.666534', 'a0ebd27466e6781f4d93d583d6ae23f9d5b3cc93b2577f575f6055543f59c29e', 'validated', '{"audio_key":"7a637f6b8a28ffa1c2f57e165f2d9547386e5efe3557629fbe5c23275f71eb60","entity_key":"d_yesterday_01:1","voice_id":"aEJD8mYP0nuof1XHShVY","voice_name":"Gozde Arikan - Soft, Warm and Clear","voice_labels":{"gender":"female","accent":"standard","age":"young","category":"professional","language":"tr","use_case":"conversational","descriptive":"casual"},"output_format":"mp3_44100_192","file_sha256":"a0ebd27466e6781f4d93d583d6ae23f9d5b3cc93b2577f575f6055543f59c29e","settings":{"stability":0.58,"similarity_boost":0.87,"style":0.14,"use_speaker_boost":true,"speed":0.97},"relative_path":"audio/generated/tr-TR/dialogues/7a637f6b8a28ffa1c2f57e165f2d9547386e5efe3557629fbe5c23275f71eb60.mp3"}'
+) ON DUPLICATE KEY UPDATE
+  provider = VALUES(provider),
+  provider_model = VALUES(provider_model),
+  storage_url = VALUES(storage_url),
+  duration_ms = VALUES(duration_ms),
+  generated_at = VALUES(generated_at),
+  checksum = VALUES(checksum),
+  status = VALUES(status),
+  metadata = VALUES(metadata);
+
+-- d_near_future_plans_02:3 -> audio/generated/tr-TR/dialogues/7aaa26e6ab2401363bd6f72ba7605c432504338d3f1b990a47c4fa055256d12d.mp3
+UPDATE audio_assets
+SET status = 'archived'
+WHERE entity_type = 'dialogue_turn'
+  AND entity_id = UUID_TO_BIN('e9879bae-f759-5eac-adb1-80f10531a77f', 1)
+  AND voice_key = 'character:zeynep:female_professional'
+  AND (entity_type NOT IN ('grammar_point','exercise') OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'd_near_future_plans_02:3')
+  AND source_text_hash IS NOT NULL
+  AND source_text_hash <> '418d00be8ef5cc95c7e149834d3953262d786802d3127f0c6b0e934f9acd0ff8'
+  AND status <> 'archived';
+INSERT INTO audio_assets (
+  id, language_id, language_variant_id, entity_type, entity_id, source_text_hash,
+  voice_key, provider, provider_model, storage_url, duration_ms, generated_at, checksum, status, metadata
+) VALUES (
+  UUID_TO_BIN('b836b84d-186f-568e-8c81-263d066a0f7c', 1), @audio_language_id, @audio_variant_id, 'dialogue_turn', UUID_TO_BIN('e9879bae-f759-5eac-adb1-80f10531a77f', 1), '418d00be8ef5cc95c7e149834d3953262d786802d3127f0c6b0e934f9acd0ff8',
+  'character:zeynep:female_professional', 'elevenlabs', 'eleven_multilingual_v2', 'audio/generated/tr-TR/dialogues/7aaa26e6ab2401363bd6f72ba7605c432504338d3f1b990a47c4fa055256d12d.mp3', 1515, '2026-09-14 11:31:47.766295', 'ade7fa14177b92a9ca84207f447584078019c5e0c1ffae39e8c5cf765f433375', 'validated', '{"audio_key":"7aaa26e6ab2401363bd6f72ba7605c432504338d3f1b990a47c4fa055256d12d","entity_key":"d_near_future_plans_02:3","voice_id":"4XsbOSxQHw4NUVaEeo2o","voice_name":"Elif - Calm & Natural","voice_labels":{"gender":"female","accent":"istanbul","age":"young","category":"professional","language":"tr","use_case":"conversational","descriptive":"calm"},"output_format":"mp3_44100_192","file_sha256":"ade7fa14177b92a9ca84207f447584078019c5e0c1ffae39e8c5cf765f433375","settings":{"stability":0.71,"similarity_boost":0.9,"style":0.05,"use_speaker_boost":true,"speed":0.96},"relative_path":"audio/generated/tr-TR/dialogues/7aaa26e6ab2401363bd6f72ba7605c432504338d3f1b990a47c4fa055256d12d.mp3"}'
+) ON DUPLICATE KEY UPDATE
+  provider = VALUES(provider),
+  provider_model = VALUES(provider_model),
+  storage_url = VALUES(storage_url),
+  duration_ms = VALUES(duration_ms),
+  generated_at = VALUES(generated_at),
+  checksum = VALUES(checksum),
+  status = VALUES(status),
+  metadata = VALUES(metadata);
+
+-- d_weather_and_clothes_01:1 -> audio/generated/tr-TR/dialogues/7dae1beaf062513bcbda9e45a0664b3a812b0d7d943a0298b99e15710201d4c7.mp3
+UPDATE audio_assets
+SET status = 'archived'
+WHERE entity_type = 'dialogue_turn'
+  AND entity_id = UUID_TO_BIN('d5eb93aa-9051-52a7-97e9-ef731ecfc4a2', 1)
+  AND voice_key = 'character:deniz:female_calm'
+  AND (entity_type NOT IN ('grammar_point','exercise') OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'd_weather_and_clothes_01:1')
+  AND source_text_hash IS NOT NULL
+  AND source_text_hash <> '37a5e588fe142d4955f5e9e9bc2ad7f73376bdf6910da85714b7b4eb9de64c25'
+  AND status <> 'archived';
+INSERT INTO audio_assets (
+  id, language_id, language_variant_id, entity_type, entity_id, source_text_hash,
+  voice_key, provider, provider_model, storage_url, duration_ms, generated_at, checksum, status, metadata
+) VALUES (
+  UUID_TO_BIN('1eb7037f-bd7d-5c1c-b16a-74de85f906c4', 1), @audio_language_id, @audio_variant_id, 'dialogue_turn', UUID_TO_BIN('d5eb93aa-9051-52a7-97e9-ef731ecfc4a2', 1), '37a5e588fe142d4955f5e9e9bc2ad7f73376bdf6910da85714b7b4eb9de64c25',
+  'character:deniz:female_calm', 'elevenlabs', 'eleven_multilingual_v2', 'audio/generated/tr-TR/dialogues/7dae1beaf062513bcbda9e45a0664b3a812b0d7d943a0298b99e15710201d4c7.mp3', 1280, '2026-09-14 11:31:48.647658', '14b0225a2682181604f4b7a60b2602dfccdafead7e37d67f4a2daad153f3ae32', 'validated', '{"audio_key":"7dae1beaf062513bcbda9e45a0664b3a812b0d7d943a0298b99e15710201d4c7","entity_key":"d_weather_and_clothes_01:1","voice_id":"rstA752XNcJHV3KFLRON","voice_name":"Seth - Bright, Sincere and Clean","voice_labels":{"gender":"female","accent":"standard","age":"young","category":"professional","language":"tr","use_case":"conversational","descriptive":"calm"},"output_format":"mp3_44100_192","file_sha256":"14b0225a2682181604f4b7a60b2602dfccdafead7e37d67f4a2daad153f3ae32","settings":{"stability":0.68,"similarity_boost":0.89,"style":0.06,"use_speaker_boost":true,"speed":0.95},"relative_path":"audio/generated/tr-TR/dialogues/7dae1beaf062513bcbda9e45a0664b3a812b0d7d943a0298b99e15710201d4c7.mp3"}'
+) ON DUPLICATE KEY UPDATE
+  provider = VALUES(provider),
+  provider_model = VALUES(provider_model),
+  storage_url = VALUES(storage_url),
+  duration_ms = VALUES(duration_ms),
+  generated_at = VALUES(generated_at),
+  checksum = VALUES(checksum),
+  status = VALUES(status),
+  metadata = VALUES(metadata);
+
+-- d_from_here_to_there_02:1 -> audio/generated/tr-TR/dialogues/7e947557b7d01fa5bdff5f94457f8b9f47be4ae4456ffe3860b46002140e066f.mp3
+UPDATE audio_assets
+SET status = 'archived'
+WHERE entity_type = 'dialogue_turn'
+  AND entity_id = UUID_TO_BIN('5b6d258e-417a-5bb2-93b2-a16899bb53bf', 1)
+  AND voice_key = 'character:kaan:male_bright'
+  AND (entity_type NOT IN ('grammar_point','exercise') OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'd_from_here_to_there_02:1')
+  AND source_text_hash IS NOT NULL
+  AND source_text_hash <> '05d67cd329807ba91c8f6d24abcd8af1846f9ff067d078c44a7eed28a82e4364'
+  AND status <> 'archived';
+INSERT INTO audio_assets (
+  id, language_id, language_variant_id, entity_type, entity_id, source_text_hash,
+  voice_key, provider, provider_model, storage_url, duration_ms, generated_at, checksum, status, metadata
+) VALUES (
+  UUID_TO_BIN('c9c96017-18d6-50b2-a702-0dc050021a13', 1), @audio_language_id, @audio_variant_id, 'dialogue_turn', UUID_TO_BIN('5b6d258e-417a-5bb2-93b2-a16899bb53bf', 1), '05d67cd329807ba91c8f6d24abcd8af1846f9ff067d078c44a7eed28a82e4364',
+  'character:kaan:male_bright', 'elevenlabs', 'eleven_multilingual_v2', 'audio/generated/tr-TR/dialogues/7e947557b7d01fa5bdff5f94457f8b9f47be4ae4456ffe3860b46002140e066f.mp3', 1436, '2026-09-14 11:31:48.834207', 'a133d52065bd9fdc6a0b877a79c79d908ced48e7ed727b9d7e0d69a828886d57', 'validated', '{"audio_key":"7e947557b7d01fa5bdff5f94457f8b9f47be4ae4456ffe3860b46002140e066f","entity_key":"d_from_here_to_there_02:1","voice_id":"7mBFv1btncDZu2Bfgv0r","voice_name":"Tuna - Young and Soft","voice_labels":{"gender":"male","accent":"istanbul","age":"young","category":"professional","language":"tr","use_case":"social_media","descriptive":"casual"},"output_format":"mp3_44100_192","file_sha256":"a133d52065bd9fdc6a0b877a79c79d908ced48e7ed727b9d7e0d69a828886d57","settings":{"stability":0.52,"similarity_boost":0.86,"style":0.2,"use_speaker_boost":true,"speed":0.99},"relative_path":"audio/generated/tr-TR/dialogues/7e947557b7d01fa5bdff5f94457f8b9f47be4ae4456ffe3860b46002140e066f.mp3"}'
 ) ON DUPLICATE KEY UPDATE
   provider = VALUES(provider),
   provider_model = VALUES(provider_model),
@@ -1050,6 +2090,136 @@ INSERT INTO audio_assets (
   status = VALUES(status),
   metadata = VALUES(metadata);
 
+-- d_yesterday_01:4 -> audio/generated/tr-TR/dialogues/87366234ad79241e69ac643ececdc8ac21add5124721aee795aa5d30ba8ee8b4.mp3
+UPDATE audio_assets
+SET status = 'archived'
+WHERE entity_type = 'dialogue_turn'
+  AND entity_id = UUID_TO_BIN('8b025d1b-3c13-5518-b289-887b48705086', 1)
+  AND voice_key = 'character:emre:male_calm'
+  AND (entity_type NOT IN ('grammar_point','exercise') OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'd_yesterday_01:4')
+  AND source_text_hash IS NOT NULL
+  AND source_text_hash <> 'f2304c4af44122a5cbe0bb2638f963ee66439e3c09cadd9a9098d11a8dd9021b'
+  AND status <> 'archived';
+INSERT INTO audio_assets (
+  id, language_id, language_variant_id, entity_type, entity_id, source_text_hash,
+  voice_key, provider, provider_model, storage_url, duration_ms, generated_at, checksum, status, metadata
+) VALUES (
+  UUID_TO_BIN('459a30e9-53be-53cb-9cbf-d2c504e15eaf', 1), @audio_language_id, @audio_variant_id, 'dialogue_turn', UUID_TO_BIN('8b025d1b-3c13-5518-b289-887b48705086', 1), 'f2304c4af44122a5cbe0bb2638f963ee66439e3c09cadd9a9098d11a8dd9021b',
+  'character:emre:male_calm', 'elevenlabs', 'eleven_multilingual_v2', 'audio/generated/tr-TR/dialogues/87366234ad79241e69ac643ececdc8ac21add5124721aee795aa5d30ba8ee8b4.mp3', 1280, '2026-09-14 11:31:49.643615', '410ba21727d1e774277cf468fae994dae963138d0f2384ccefcc9c88a441eb5e', 'validated', '{"audio_key":"87366234ad79241e69ac643ececdc8ac21add5124721aee795aa5d30ba8ee8b4","entity_key":"d_yesterday_01:4","voice_id":"Md4RAnfKt9kVIbvqUxly","voice_name":"Cihan - Warm, Natural and Friendly","voice_labels":{"gender":"male","accent":"istanbul","age":"middle_aged","category":"high_quality","language":"tr","use_case":"conversational","descriptive":"calm"},"output_format":"mp3_44100_192","file_sha256":"410ba21727d1e774277cf468fae994dae963138d0f2384ccefcc9c88a441eb5e","settings":{"stability":0.68,"similarity_boost":0.89,"style":0.06,"use_speaker_boost":true,"speed":0.95},"relative_path":"audio/generated/tr-TR/dialogues/87366234ad79241e69ac643ececdc8ac21add5124721aee795aa5d30ba8ee8b4.mp3"}'
+) ON DUPLICATE KEY UPDATE
+  provider = VALUES(provider),
+  provider_model = VALUES(provider_model),
+  storage_url = VALUES(storage_url),
+  duration_ms = VALUES(duration_ms),
+  generated_at = VALUES(generated_at),
+  checksum = VALUES(checksum),
+  status = VALUES(status),
+  metadata = VALUES(metadata);
+
+-- d_basic_health_02:1 -> audio/generated/tr-TR/dialogues/89b3f310b4f1a8ad52dbebabed69c15270fb5897361fd2d78d77c0b587f39e49.mp3
+UPDATE audio_assets
+SET status = 'archived'
+WHERE entity_type = 'dialogue_turn'
+  AND entity_id = UUID_TO_BIN('00da70af-c801-57c7-86ef-fc4972cd709c', 1)
+  AND voice_key = 'character:emre:male_calm'
+  AND (entity_type NOT IN ('grammar_point','exercise') OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'd_basic_health_02:1')
+  AND source_text_hash IS NOT NULL
+  AND source_text_hash <> '9a0d1ad2a9ee1ddb5a9029915e59c347c74285d30990d67aff93da7e1272bbcf'
+  AND status <> 'archived';
+INSERT INTO audio_assets (
+  id, language_id, language_variant_id, entity_type, entity_id, source_text_hash,
+  voice_key, provider, provider_model, storage_url, duration_ms, generated_at, checksum, status, metadata
+) VALUES (
+  UUID_TO_BIN('2a625dc5-ece1-5f7f-930c-2c36d3f01ab0', 1), @audio_language_id, @audio_variant_id, 'dialogue_turn', UUID_TO_BIN('00da70af-c801-57c7-86ef-fc4972cd709c', 1), '9a0d1ad2a9ee1ddb5a9029915e59c347c74285d30990d67aff93da7e1272bbcf',
+  'character:emre:male_calm', 'elevenlabs', 'eleven_multilingual_v2', 'audio/generated/tr-TR/dialogues/89b3f310b4f1a8ad52dbebabed69c15270fb5897361fd2d78d77c0b587f39e49.mp3', 2220, '2026-09-14 11:31:49.905403', '82d798b9e6ab1284a8f1228034423cad45092161b01982f87816cd7007fe5acb', 'validated', '{"audio_key":"89b3f310b4f1a8ad52dbebabed69c15270fb5897361fd2d78d77c0b587f39e49","entity_key":"d_basic_health_02:1","voice_id":"Md4RAnfKt9kVIbvqUxly","voice_name":"Cihan - Warm, Natural and Friendly","voice_labels":{"gender":"male","accent":"istanbul","age":"middle_aged","category":"high_quality","language":"tr","use_case":"conversational","descriptive":"calm"},"output_format":"mp3_44100_192","file_sha256":"82d798b9e6ab1284a8f1228034423cad45092161b01982f87816cd7007fe5acb","settings":{"stability":0.68,"similarity_boost":0.89,"style":0.06,"use_speaker_boost":true,"speed":0.95},"relative_path":"audio/generated/tr-TR/dialogues/89b3f310b4f1a8ad52dbebabed69c15270fb5897361fd2d78d77c0b587f39e49.mp3"}'
+) ON DUPLICATE KEY UPDATE
+  provider = VALUES(provider),
+  provider_model = VALUES(provider_model),
+  storage_url = VALUES(storage_url),
+  duration_ms = VALUES(duration_ms),
+  generated_at = VALUES(generated_at),
+  checksum = VALUES(checksum),
+  status = VALUES(status),
+  metadata = VALUES(metadata);
+
+-- d_everyday_routine_02:2 -> audio/generated/tr-TR/dialogues/8d61eea70ddec624a62c831bb00018a846cb388c7b73d381625fb05eb0d69dc6.mp3
+UPDATE audio_assets
+SET status = 'archived'
+WHERE entity_type = 'dialogue_turn'
+  AND entity_id = UUID_TO_BIN('adb6d7bf-a94c-5d68-b8c4-bb453e11e798', 1)
+  AND voice_key = 'character:zeynep:female_professional'
+  AND (entity_type NOT IN ('grammar_point','exercise') OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'd_everyday_routine_02:2')
+  AND source_text_hash IS NOT NULL
+  AND source_text_hash <> 'ab7047810eee66ec02f27fc6b0d15893e3b6b9a28aec93ca9638b3ac75a906c4'
+  AND status <> 'archived';
+INSERT INTO audio_assets (
+  id, language_id, language_variant_id, entity_type, entity_id, source_text_hash,
+  voice_key, provider, provider_model, storage_url, duration_ms, generated_at, checksum, status, metadata
+) VALUES (
+  UUID_TO_BIN('1a571d44-c7b7-516e-ab00-55c24f147e86', 1), @audio_language_id, @audio_variant_id, 'dialogue_turn', UUID_TO_BIN('adb6d7bf-a94c-5d68-b8c4-bb453e11e798', 1), 'ab7047810eee66ec02f27fc6b0d15893e3b6b9a28aec93ca9638b3ac75a906c4',
+  'character:zeynep:female_professional', 'elevenlabs', 'eleven_multilingual_v2', 'audio/generated/tr-TR/dialogues/8d61eea70ddec624a62c831bb00018a846cb388c7b73d381625fb05eb0d69dc6.mp3', 1750, '2026-09-14 11:31:50.671900', '80bd546512fd02783a76b98c2761cf2ed3154620843c3ce5856d7bbf209b64e9', 'validated', '{"audio_key":"8d61eea70ddec624a62c831bb00018a846cb388c7b73d381625fb05eb0d69dc6","entity_key":"d_everyday_routine_02:2","voice_id":"4XsbOSxQHw4NUVaEeo2o","voice_name":"Elif - Calm & Natural","voice_labels":{"gender":"female","accent":"istanbul","age":"young","category":"professional","language":"tr","use_case":"conversational","descriptive":"calm"},"output_format":"mp3_44100_192","file_sha256":"80bd546512fd02783a76b98c2761cf2ed3154620843c3ce5856d7bbf209b64e9","settings":{"stability":0.71,"similarity_boost":0.9,"style":0.05,"use_speaker_boost":true,"speed":0.96},"relative_path":"audio/generated/tr-TR/dialogues/8d61eea70ddec624a62c831bb00018a846cb388c7b73d381625fb05eb0d69dc6.mp3"}'
+) ON DUPLICATE KEY UPDATE
+  provider = VALUES(provider),
+  provider_model = VALUES(provider_model),
+  storage_url = VALUES(storage_url),
+  duration_ms = VALUES(duration_ms),
+  generated_at = VALUES(generated_at),
+  checksum = VALUES(checksum),
+  status = VALUES(status),
+  metadata = VALUES(metadata);
+
+-- d_likes_and_specific_things_02:1 -> audio/generated/tr-TR/dialogues/8e3bfb34837a1ddfb348144861794cdaba0006ab4c63a2c6e1c61f93c9655893.mp3
+UPDATE audio_assets
+SET status = 'archived'
+WHERE entity_type = 'dialogue_turn'
+  AND entity_id = UUID_TO_BIN('3e50d528-1212-5844-b376-01e9e718f59b', 1)
+  AND voice_key = 'character:emre:male_calm'
+  AND (entity_type NOT IN ('grammar_point','exercise') OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'd_likes_and_specific_things_02:1')
+  AND source_text_hash IS NOT NULL
+  AND source_text_hash <> '5963ae1acf14e2e43527dc870d8f0df5b628d3a5738f7d125964c12af698ca76'
+  AND status <> 'archived';
+INSERT INTO audio_assets (
+  id, language_id, language_variant_id, entity_type, entity_id, source_text_hash,
+  voice_key, provider, provider_model, storage_url, duration_ms, generated_at, checksum, status, metadata
+) VALUES (
+  UUID_TO_BIN('dfa0d770-0966-5da2-9368-630d5c01edc7', 1), @audio_language_id, @audio_variant_id, 'dialogue_turn', UUID_TO_BIN('3e50d528-1212-5844-b376-01e9e718f59b', 1), '5963ae1acf14e2e43527dc870d8f0df5b628d3a5738f7d125964c12af698ca76',
+  'character:emre:male_calm', 'elevenlabs', 'eleven_multilingual_v2', 'audio/generated/tr-TR/dialogues/8e3bfb34837a1ddfb348144861794cdaba0006ab4c63a2c6e1c61f93c9655893.mp3', 1619, '2026-09-14 11:31:50.925579', 'c7a4dfafd42648ca3a97479e1564711af85ac401e450c69f4166ee64b35fc749', 'validated', '{"audio_key":"8e3bfb34837a1ddfb348144861794cdaba0006ab4c63a2c6e1c61f93c9655893","entity_key":"d_likes_and_specific_things_02:1","voice_id":"Md4RAnfKt9kVIbvqUxly","voice_name":"Cihan - Warm, Natural and Friendly","voice_labels":{"gender":"male","accent":"istanbul","age":"middle_aged","category":"high_quality","language":"tr","use_case":"conversational","descriptive":"calm"},"output_format":"mp3_44100_192","file_sha256":"c7a4dfafd42648ca3a97479e1564711af85ac401e450c69f4166ee64b35fc749","settings":{"stability":0.68,"similarity_boost":0.89,"style":0.06,"use_speaker_boost":true,"speed":0.95},"relative_path":"audio/generated/tr-TR/dialogues/8e3bfb34837a1ddfb348144861794cdaba0006ab4c63a2c6e1c61f93c9655893.mp3"}'
+) ON DUPLICATE KEY UPDATE
+  provider = VALUES(provider),
+  provider_model = VALUES(provider_model),
+  storage_url = VALUES(storage_url),
+  duration_ms = VALUES(duration_ms),
+  generated_at = VALUES(generated_at),
+  checksum = VALUES(checksum),
+  status = VALUES(status),
+  metadata = VALUES(metadata);
+
+-- d_a1_everyday_capstone_01:3 -> audio/generated/tr-TR/dialogues/8f7174345c9f56cb34e76a536ab0cb1101b4907ef668d23621468a7bf1bac1a7.mp3
+UPDATE audio_assets
+SET status = 'archived'
+WHERE entity_type = 'dialogue_turn'
+  AND entity_id = UUID_TO_BIN('2acb7937-d009-56af-8fd4-3817959de909', 1)
+  AND voice_key = 'character:deniz:female_calm'
+  AND (entity_type NOT IN ('grammar_point','exercise') OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'd_a1_everyday_capstone_01:3')
+  AND source_text_hash IS NOT NULL
+  AND source_text_hash <> '847c6ab751a1d1efe49a2cbb6ca707d6e88512c13927d1912fedd02e2911f191'
+  AND status <> 'archived';
+INSERT INTO audio_assets (
+  id, language_id, language_variant_id, entity_type, entity_id, source_text_hash,
+  voice_key, provider, provider_model, storage_url, duration_ms, generated_at, checksum, status, metadata
+) VALUES (
+  UUID_TO_BIN('a08eea28-51f4-5044-8a8c-5e21d3e8965e', 1), @audio_language_id, @audio_variant_id, 'dialogue_turn', UUID_TO_BIN('2acb7937-d009-56af-8fd4-3817959de909', 1), '847c6ab751a1d1efe49a2cbb6ca707d6e88512c13927d1912fedd02e2911f191',
+  'character:deniz:female_calm', 'elevenlabs', 'eleven_multilingual_v2', 'audio/generated/tr-TR/dialogues/8f7174345c9f56cb34e76a536ab0cb1101b4907ef668d23621468a7bf1bac1a7.mp3', 2821, '2026-09-14 11:31:51.817792', 'c5855f621a7343c513eb2515efd9702d120c9985e86d03a6d9851efc44ac5dfe', 'validated', '{"audio_key":"8f7174345c9f56cb34e76a536ab0cb1101b4907ef668d23621468a7bf1bac1a7","entity_key":"d_a1_everyday_capstone_01:3","voice_id":"rstA752XNcJHV3KFLRON","voice_name":"Seth - Bright, Sincere and Clean","voice_labels":{"gender":"female","accent":"standard","age":"young","category":"professional","language":"tr","use_case":"conversational","descriptive":"calm"},"output_format":"mp3_44100_192","file_sha256":"c5855f621a7343c513eb2515efd9702d120c9985e86d03a6d9851efc44ac5dfe","settings":{"stability":0.68,"similarity_boost":0.89,"style":0.06,"use_speaker_boost":true,"speed":0.95},"relative_path":"audio/generated/tr-TR/dialogues/8f7174345c9f56cb34e76a536ab0cb1101b4907ef668d23621468a7bf1bac1a7.mp3"}'
+) ON DUPLICATE KEY UPDATE
+  provider = VALUES(provider),
+  provider_model = VALUES(provider_model),
+  storage_url = VALUES(storage_url),
+  duration_ms = VALUES(duration_ms),
+  generated_at = VALUES(generated_at),
+  checksum = VALUES(checksum),
+  status = VALUES(status),
+  metadata = VALUES(metadata);
+
 -- d_my_family_02:3 -> audio/generated/tr-TR/dialogues/905f6086e92d36fb914d178457d2834dfdec62c1bc6ebc5f0b4739898b7ab566.mp3
 UPDATE audio_assets
 SET status = 'archived'
@@ -1066,6 +2236,58 @@ INSERT INTO audio_assets (
 ) VALUES (
   UUID_TO_BIN('04185702-0d22-58e6-9ccc-d72fd34ae5cc', 1), @audio_language_id, @audio_variant_id, 'dialogue_turn', UUID_TO_BIN('02c6f81c-b2ba-5639-a86f-69401c9ed453', 1), '17fe3d68df8c76d5fdb330d628b7771cb2519643b49932e9e5d296b35eb63040',
   'character:selin:female_bright', 'elevenlabs', 'eleven_multilingual_v2', 'audio/generated/tr-TR/dialogues/905f6086e92d36fb914d178457d2834dfdec62c1bc6ebc5f0b4739898b7ab566.mp3', 1515, '2026-09-13 15:54:48.647207', '1ca269e59694e1ffaebf65a42933825129e467434e96bdc90155ed92d04115f4', 'validated', '{"audio_key":"905f6086e92d36fb914d178457d2834dfdec62c1bc6ebc5f0b4739898b7ab566","entity_key":"d_my_family_02:3","voice_id":"D6QpOJ61ltQ3whot6iJZ","voice_name":"Tugba","voice_labels":{"gender":"female","accent":"istanbul","age":"young","category":"professional","language":"tr","use_case":"conversational","descriptive":"calm"},"output_format":"mp3_44100_192","file_sha256":"1ca269e59694e1ffaebf65a42933825129e467434e96bdc90155ed92d04115f4","settings":{"stability":0.52,"similarity_boost":0.86,"style":0.2,"use_speaker_boost":true,"speed":0.99},"relative_path":"audio/generated/tr-TR/dialogues/905f6086e92d36fb914d178457d2834dfdec62c1bc6ebc5f0b4739898b7ab566.mp3"}'
+) ON DUPLICATE KEY UPDATE
+  provider = VALUES(provider),
+  provider_model = VALUES(provider_model),
+  storage_url = VALUES(storage_url),
+  duration_ms = VALUES(duration_ms),
+  generated_at = VALUES(generated_at),
+  checksum = VALUES(checksum),
+  status = VALUES(status),
+  metadata = VALUES(metadata);
+
+-- d_can_you_help_02:4 -> audio/generated/tr-TR/dialogues/918aae6b9d2e4a0b13dadad44c6a28e96110847e82436e4d37bdc20ffecbddeb.mp3
+UPDATE audio_assets
+SET status = 'archived'
+WHERE entity_type = 'dialogue_turn'
+  AND entity_id = UUID_TO_BIN('6bc60661-7a8f-59ea-9d91-860c74d9635c', 1)
+  AND voice_key = 'character:emre:male_calm'
+  AND (entity_type NOT IN ('grammar_point','exercise') OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'd_can_you_help_02:4')
+  AND source_text_hash IS NOT NULL
+  AND source_text_hash <> '0d09cb1be68755ae841c0850c0d5beab95a274992553cdceebdeba1057d68490'
+  AND status <> 'archived';
+INSERT INTO audio_assets (
+  id, language_id, language_variant_id, entity_type, entity_id, source_text_hash,
+  voice_key, provider, provider_model, storage_url, duration_ms, generated_at, checksum, status, metadata
+) VALUES (
+  UUID_TO_BIN('c6868235-e420-5f99-95d9-f524c7c13ddc', 1), @audio_language_id, @audio_variant_id, 'dialogue_turn', UUID_TO_BIN('6bc60661-7a8f-59ea-9d91-860c74d9635c', 1), '0d09cb1be68755ae841c0850c0d5beab95a274992553cdceebdeba1057d68490',
+  'character:emre:male_calm', 'elevenlabs', 'eleven_multilingual_v2', 'audio/generated/tr-TR/dialogues/918aae6b9d2e4a0b13dadad44c6a28e96110847e82436e4d37bdc20ffecbddeb.mp3', 1488, '2026-09-14 11:31:51.963532', '292297534a5c5cb8c628d002412847d5c07a990af0b694918c06ef58e8f492c7', 'validated', '{"audio_key":"918aae6b9d2e4a0b13dadad44c6a28e96110847e82436e4d37bdc20ffecbddeb","entity_key":"d_can_you_help_02:4","voice_id":"Md4RAnfKt9kVIbvqUxly","voice_name":"Cihan - Warm, Natural and Friendly","voice_labels":{"gender":"male","accent":"istanbul","age":"middle_aged","category":"high_quality","language":"tr","use_case":"conversational","descriptive":"calm"},"output_format":"mp3_44100_192","file_sha256":"292297534a5c5cb8c628d002412847d5c07a990af0b694918c06ef58e8f492c7","settings":{"stability":0.68,"similarity_boost":0.89,"style":0.06,"use_speaker_boost":true,"speed":0.95},"relative_path":"audio/generated/tr-TR/dialogues/918aae6b9d2e4a0b13dadad44c6a28e96110847e82436e4d37bdc20ffecbddeb.mp3"}'
+) ON DUPLICATE KEY UPDATE
+  provider = VALUES(provider),
+  provider_model = VALUES(provider_model),
+  storage_url = VALUES(storage_url),
+  duration_ms = VALUES(duration_ms),
+  generated_at = VALUES(generated_at),
+  checksum = VALUES(checksum),
+  status = VALUES(status),
+  metadata = VALUES(metadata);
+
+-- d_a1_everyday_capstone_01:4 -> audio/generated/tr-TR/dialogues/931aff77b61030230f6600210454f0117d772b5225f02bf7d62337e9a3fe4031.mp3
+UPDATE audio_assets
+SET status = 'archived'
+WHERE entity_type = 'dialogue_turn'
+  AND entity_id = UUID_TO_BIN('93a8e68e-8fc7-559d-998e-4d34476a2491', 1)
+  AND voice_key = 'character:kaan:male_bright'
+  AND (entity_type NOT IN ('grammar_point','exercise') OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'd_a1_everyday_capstone_01:4')
+  AND source_text_hash IS NOT NULL
+  AND source_text_hash <> '1c93629bbbe0ac3f7076f4140d8cd5200c961ae86b22702f7c37956b39601dd1'
+  AND status <> 'archived';
+INSERT INTO audio_assets (
+  id, language_id, language_variant_id, entity_type, entity_id, source_text_hash,
+  voice_key, provider, provider_model, storage_url, duration_ms, generated_at, checksum, status, metadata
+) VALUES (
+  UUID_TO_BIN('6141aa86-dda6-5e2b-8ae9-a19f59c51821', 1), @audio_language_id, @audio_variant_id, 'dialogue_turn', UUID_TO_BIN('93a8e68e-8fc7-559d-998e-4d34476a2491', 1), '1c93629bbbe0ac3f7076f4140d8cd5200c961ae86b22702f7c37956b39601dd1',
+  'character:kaan:male_bright', 'elevenlabs', 'eleven_multilingual_v2', 'audio/generated/tr-TR/dialogues/931aff77b61030230f6600210454f0117d772b5225f02bf7d62337e9a3fe4031.mp3', 2168, '2026-09-14 11:31:52.887037', 'e0cf55936c44f1cf31a2a1979111cf5b482002cb6b90f2e97a7ec3f6595a86c6', 'validated', '{"audio_key":"931aff77b61030230f6600210454f0117d772b5225f02bf7d62337e9a3fe4031","entity_key":"d_a1_everyday_capstone_01:4","voice_id":"7mBFv1btncDZu2Bfgv0r","voice_name":"Tuna - Young and Soft","voice_labels":{"gender":"male","accent":"istanbul","age":"young","category":"professional","language":"tr","use_case":"social_media","descriptive":"casual"},"output_format":"mp3_44100_192","file_sha256":"e0cf55936c44f1cf31a2a1979111cf5b482002cb6b90f2e97a7ec3f6595a86c6","settings":{"stability":0.52,"similarity_boost":0.86,"style":0.2,"use_speaker_boost":true,"speed":0.99},"relative_path":"audio/generated/tr-TR/dialogues/931aff77b61030230f6600210454f0117d772b5225f02bf7d62337e9a3fe4031.mp3"}'
 ) ON DUPLICATE KEY UPDATE
   provider = VALUES(provider),
   provider_model = VALUES(provider_model),
@@ -1102,6 +2324,32 @@ INSERT INTO audio_assets (
   status = VALUES(status),
   metadata = VALUES(metadata);
 
+-- d_likes_and_specific_things_01:2 -> audio/generated/tr-TR/dialogues/94b106b05cd660da626f1b660c6e3b769b4bbfc5bc2d15697a77873ebe0f4cbf.mp3
+UPDATE audio_assets
+SET status = 'archived'
+WHERE entity_type = 'dialogue_turn'
+  AND entity_id = UUID_TO_BIN('dd62f34c-466d-5232-a26c-e81d30fecd84', 1)
+  AND voice_key = 'character:selin:female_bright'
+  AND (entity_type NOT IN ('grammar_point','exercise') OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'd_likes_and_specific_things_01:2')
+  AND source_text_hash IS NOT NULL
+  AND source_text_hash <> 'a536aa928c37ed100647b529d7c5d74f48c42a7ff335f2987169680b9ddc9940'
+  AND status <> 'archived';
+INSERT INTO audio_assets (
+  id, language_id, language_variant_id, entity_type, entity_id, source_text_hash,
+  voice_key, provider, provider_model, storage_url, duration_ms, generated_at, checksum, status, metadata
+) VALUES (
+  UUID_TO_BIN('9ea649aa-96ec-5cb8-9344-2244e760afe2', 1), @audio_language_id, @audio_variant_id, 'dialogue_turn', UUID_TO_BIN('dd62f34c-466d-5232-a26c-e81d30fecd84', 1), 'a536aa928c37ed100647b529d7c5d74f48c42a7ff335f2987169680b9ddc9940',
+  'character:selin:female_bright', 'elevenlabs', 'eleven_multilingual_v2', 'audio/generated/tr-TR/dialogues/94b106b05cd660da626f1b660c6e3b769b4bbfc5bc2d15697a77873ebe0f4cbf.mp3', 1436, '2026-09-14 11:31:53.008220', '2ac248c60b4a3b06f1123501155e516c4e08c23e34745e0e2e817f7207aede0e', 'validated', '{"audio_key":"94b106b05cd660da626f1b660c6e3b769b4bbfc5bc2d15697a77873ebe0f4cbf","entity_key":"d_likes_and_specific_things_01:2","voice_id":"D6QpOJ61ltQ3whot6iJZ","voice_name":"Tugba","voice_labels":{"gender":"female","accent":"istanbul","age":"young","category":"professional","language":"tr","use_case":"conversational","descriptive":"calm"},"output_format":"mp3_44100_192","file_sha256":"2ac248c60b4a3b06f1123501155e516c4e08c23e34745e0e2e817f7207aede0e","settings":{"stability":0.52,"similarity_boost":0.86,"style":0.2,"use_speaker_boost":true,"speed":0.99},"relative_path":"audio/generated/tr-TR/dialogues/94b106b05cd660da626f1b660c6e3b769b4bbfc5bc2d15697a77873ebe0f4cbf.mp3"}'
+) ON DUPLICATE KEY UPDATE
+  provider = VALUES(provider),
+  provider_model = VALUES(provider_model),
+  storage_url = VALUES(storage_url),
+  duration_ms = VALUES(duration_ms),
+  generated_at = VALUES(generated_at),
+  checksum = VALUES(checksum),
+  status = VALUES(status),
+  metadata = VALUES(metadata);
+
 -- d_my_family_02:4 -> audio/generated/tr-TR/dialogues/962a613cfb857fd6bfebd79c43d8a6dc494c09ec3faa19618f654db503d002d7.mp3
 UPDATE audio_assets
 SET status = 'archived'
@@ -1118,6 +2366,110 @@ INSERT INTO audio_assets (
 ) VALUES (
   UUID_TO_BIN('1be4dbc2-d68e-531d-8407-1935c5e0c924', 1), @audio_language_id, @audio_variant_id, 'dialogue_turn', UUID_TO_BIN('18130cff-3ad3-59b2-997a-4033e2776e20', 1), 'cf4aa4cfc2c66b8c94f5cceec0edd94b61616cd485a5a96367a6e6d7e7ea5b93',
   'character:mert:male_warm', 'elevenlabs', 'eleven_multilingual_v2', 'audio/generated/tr-TR/dialogues/962a613cfb857fd6bfebd79c43d8a6dc494c09ec3faa19618f654db503d002d7.mp3', 1018, '2026-09-13 15:54:49.669106', 'be8ca166095af2f350aab0c5b5233de92de1b48648d241542aa09fed920123af', 'validated', '{"audio_key":"962a613cfb857fd6bfebd79c43d8a6dc494c09ec3faa19618f654db503d002d7","entity_key":"d_my_family_02:4","voice_id":"jGqlr3dGaFN0IfJZa3zS","voice_name":"Talha - Friendly, Energetic and Neutral","voice_labels":{"gender":"male","accent":"central","age":"young","category":"professional","language":"tr","use_case":"conversational","descriptive":"casual"},"output_format":"mp3_44100_192","file_sha256":"be8ca166095af2f350aab0c5b5233de92de1b48648d241542aa09fed920123af","settings":{"stability":0.58,"similarity_boost":0.87,"style":0.14,"use_speaker_boost":true,"speed":0.97},"relative_path":"audio/generated/tr-TR/dialogues/962a613cfb857fd6bfebd79c43d8a6dc494c09ec3faa19618f654db503d002d7.mp3"}'
+) ON DUPLICATE KEY UPDATE
+  provider = VALUES(provider),
+  provider_model = VALUES(provider_model),
+  storage_url = VALUES(storage_url),
+  duration_ms = VALUES(duration_ms),
+  generated_at = VALUES(generated_at),
+  checksum = VALUES(checksum),
+  status = VALUES(status),
+  metadata = VALUES(metadata);
+
+-- d_likes_and_specific_things_01:3 -> audio/generated/tr-TR/dialogues/96d99b21662fbbb57de009301393abf44f37979f80344ff5667dca21dd4b0ccf.mp3
+UPDATE audio_assets
+SET status = 'archived'
+WHERE entity_type = 'dialogue_turn'
+  AND entity_id = UUID_TO_BIN('eb272cb3-8ddf-524d-ba15-36d370936bd8', 1)
+  AND voice_key = 'character:deniz:female_calm'
+  AND (entity_type NOT IN ('grammar_point','exercise') OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'd_likes_and_specific_things_01:3')
+  AND source_text_hash IS NOT NULL
+  AND source_text_hash <> '87892bab60fe594201bad2ec1f50cd8f49eb81de8c1173bce1f9cfd4f1f1fd7f'
+  AND status <> 'archived';
+INSERT INTO audio_assets (
+  id, language_id, language_variant_id, entity_type, entity_id, source_text_hash,
+  voice_key, provider, provider_model, storage_url, duration_ms, generated_at, checksum, status, metadata
+) VALUES (
+  UUID_TO_BIN('42849ec0-4365-508c-a749-4bb490e2211d', 1), @audio_language_id, @audio_variant_id, 'dialogue_turn', UUID_TO_BIN('eb272cb3-8ddf-524d-ba15-36d370936bd8', 1), '87892bab60fe594201bad2ec1f50cd8f49eb81de8c1173bce1f9cfd4f1f1fd7f',
+  'character:deniz:female_calm', 'elevenlabs', 'eleven_multilingual_v2', 'audio/generated/tr-TR/dialogues/96d99b21662fbbb57de009301393abf44f37979f80344ff5667dca21dd4b0ccf.mp3', 1750, '2026-09-14 11:31:53.991516', '45e2be54cd7ec20409b118009fac5e64df37b36a940653e5629b6dbeee6cc9a0', 'validated', '{"audio_key":"96d99b21662fbbb57de009301393abf44f37979f80344ff5667dca21dd4b0ccf","entity_key":"d_likes_and_specific_things_01:3","voice_id":"rstA752XNcJHV3KFLRON","voice_name":"Seth - Bright, Sincere and Clean","voice_labels":{"gender":"female","accent":"standard","age":"young","category":"professional","language":"tr","use_case":"conversational","descriptive":"calm"},"output_format":"mp3_44100_192","file_sha256":"45e2be54cd7ec20409b118009fac5e64df37b36a940653e5629b6dbeee6cc9a0","settings":{"stability":0.68,"similarity_boost":0.89,"style":0.06,"use_speaker_boost":true,"speed":0.95},"relative_path":"audio/generated/tr-TR/dialogues/96d99b21662fbbb57de009301393abf44f37979f80344ff5667dca21dd4b0ccf.mp3"}'
+) ON DUPLICATE KEY UPDATE
+  provider = VALUES(provider),
+  provider_model = VALUES(provider_model),
+  storage_url = VALUES(storage_url),
+  duration_ms = VALUES(duration_ms),
+  generated_at = VALUES(generated_at),
+  checksum = VALUES(checksum),
+  status = VALUES(status),
+  metadata = VALUES(metadata);
+
+-- d_basic_health_01:2 -> audio/generated/tr-TR/dialogues/9ae669389355bd60e0ef27325bbebcf15e2a374e8286ea5ecb45f23eacebbd58.mp3
+UPDATE audio_assets
+SET status = 'archived'
+WHERE entity_type = 'dialogue_turn'
+  AND entity_id = UUID_TO_BIN('de8fd983-cddd-5721-9b26-c175563a847c', 1)
+  AND voice_key = 'character:zeynep:female_professional'
+  AND (entity_type NOT IN ('grammar_point','exercise') OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'd_basic_health_01:2')
+  AND source_text_hash IS NOT NULL
+  AND source_text_hash <> 'e69c0210833a7f56129980139000067595b98dd9ec6fc01feb2ae9e9d81c53b5'
+  AND status <> 'archived';
+INSERT INTO audio_assets (
+  id, language_id, language_variant_id, entity_type, entity_id, source_text_hash,
+  voice_key, provider, provider_model, storage_url, duration_ms, generated_at, checksum, status, metadata
+) VALUES (
+  UUID_TO_BIN('0ede2b1a-07bd-5caf-9489-3cee27a6d113', 1), @audio_language_id, @audio_variant_id, 'dialogue_turn', UUID_TO_BIN('de8fd983-cddd-5721-9b26-c175563a847c', 1), 'e69c0210833a7f56129980139000067595b98dd9ec6fc01feb2ae9e9d81c53b5',
+  'character:zeynep:female_professional', 'elevenlabs', 'eleven_multilingual_v2', 'audio/generated/tr-TR/dialogues/9ae669389355bd60e0ef27325bbebcf15e2a374e8286ea5ecb45f23eacebbd58.mp3', 1253, '2026-09-14 11:31:54.017991', 'd0230f68ff5bed5108a977228577726061ca9a544a7716cae192c59a4d6b280c', 'validated', '{"audio_key":"9ae669389355bd60e0ef27325bbebcf15e2a374e8286ea5ecb45f23eacebbd58","entity_key":"d_basic_health_01:2","voice_id":"4XsbOSxQHw4NUVaEeo2o","voice_name":"Elif - Calm & Natural","voice_labels":{"gender":"female","accent":"istanbul","age":"young","category":"professional","language":"tr","use_case":"conversational","descriptive":"calm"},"output_format":"mp3_44100_192","file_sha256":"d0230f68ff5bed5108a977228577726061ca9a544a7716cae192c59a4d6b280c","settings":{"stability":0.71,"similarity_boost":0.9,"style":0.05,"use_speaker_boost":true,"speed":0.96},"relative_path":"audio/generated/tr-TR/dialogues/9ae669389355bd60e0ef27325bbebcf15e2a374e8286ea5ecb45f23eacebbd58.mp3"}'
+) ON DUPLICATE KEY UPDATE
+  provider = VALUES(provider),
+  provider_model = VALUES(provider_model),
+  storage_url = VALUES(storage_url),
+  duration_ms = VALUES(duration_ms),
+  generated_at = VALUES(generated_at),
+  checksum = VALUES(checksum),
+  status = VALUES(status),
+  metadata = VALUES(metadata);
+
+-- d_yesterday_02:2 -> audio/generated/tr-TR/dialogues/9d71727389ced6c315ab2e8d44e7a67cdd135ba1fc417e8187f39cbd59779624.mp3
+UPDATE audio_assets
+SET status = 'archived'
+WHERE entity_type = 'dialogue_turn'
+  AND entity_id = UUID_TO_BIN('3b9e0750-c387-5b36-aa00-94018dd37e15', 1)
+  AND voice_key = 'character:kaan:male_bright'
+  AND (entity_type NOT IN ('grammar_point','exercise') OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'd_yesterday_02:2')
+  AND source_text_hash IS NOT NULL
+  AND source_text_hash <> 'f6e34e18748808d4862f99f9586d75739bef8af9690e0791114731cfb93b2744'
+  AND status <> 'archived';
+INSERT INTO audio_assets (
+  id, language_id, language_variant_id, entity_type, entity_id, source_text_hash,
+  voice_key, provider, provider_model, storage_url, duration_ms, generated_at, checksum, status, metadata
+) VALUES (
+  UUID_TO_BIN('bcb5a360-1495-555c-8593-b193a0fb25b8', 1), @audio_language_id, @audio_variant_id, 'dialogue_turn', UUID_TO_BIN('3b9e0750-c387-5b36-aa00-94018dd37e15', 1), 'f6e34e18748808d4862f99f9586d75739bef8af9690e0791114731cfb93b2744',
+  'character:kaan:male_bright', 'elevenlabs', 'eleven_multilingual_v2', 'audio/generated/tr-TR/dialogues/9d71727389ced6c315ab2e8d44e7a67cdd135ba1fc417e8187f39cbd59779624.mp3', 1384, '2026-09-14 11:31:54.986030', '0f9f694b8424954917a5751881b39e7146581d1262679fd2731ef0a39fd6ece2', 'validated', '{"audio_key":"9d71727389ced6c315ab2e8d44e7a67cdd135ba1fc417e8187f39cbd59779624","entity_key":"d_yesterday_02:2","voice_id":"7mBFv1btncDZu2Bfgv0r","voice_name":"Tuna - Young and Soft","voice_labels":{"gender":"male","accent":"istanbul","age":"young","category":"professional","language":"tr","use_case":"social_media","descriptive":"casual"},"output_format":"mp3_44100_192","file_sha256":"0f9f694b8424954917a5751881b39e7146581d1262679fd2731ef0a39fd6ece2","settings":{"stability":0.52,"similarity_boost":0.86,"style":0.2,"use_speaker_boost":true,"speed":0.99},"relative_path":"audio/generated/tr-TR/dialogues/9d71727389ced6c315ab2e8d44e7a67cdd135ba1fc417e8187f39cbd59779624.mp3"}'
+) ON DUPLICATE KEY UPDATE
+  provider = VALUES(provider),
+  provider_model = VALUES(provider_model),
+  storage_url = VALUES(storage_url),
+  duration_ms = VALUES(duration_ms),
+  generated_at = VALUES(generated_at),
+  checksum = VALUES(checksum),
+  status = VALUES(status),
+  metadata = VALUES(metadata);
+
+-- d_everyday_routine_01:1 -> audio/generated/tr-TR/dialogues/9eb299c9b08bcd7ac243c117912cd286f7ec3ae863aec0d4f54d09e899469b6b.mp3
+UPDATE audio_assets
+SET status = 'archived'
+WHERE entity_type = 'dialogue_turn'
+  AND entity_id = UUID_TO_BIN('8d9040dd-f789-578e-b042-123e7b45d83f', 1)
+  AND voice_key = 'character:elif:female_warm'
+  AND (entity_type NOT IN ('grammar_point','exercise') OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'd_everyday_routine_01:1')
+  AND source_text_hash IS NOT NULL
+  AND source_text_hash <> 'f1c8fbf12fc7a0355f42e26c95bdbc53fc6e0e5fae5b0d2818df4e7974dc12a9'
+  AND status <> 'archived';
+INSERT INTO audio_assets (
+  id, language_id, language_variant_id, entity_type, entity_id, source_text_hash,
+  voice_key, provider, provider_model, storage_url, duration_ms, generated_at, checksum, status, metadata
+) VALUES (
+  UUID_TO_BIN('42c0d831-6ee2-5eb1-9c09-a6c6f69d7200', 1), @audio_language_id, @audio_variant_id, 'dialogue_turn', UUID_TO_BIN('8d9040dd-f789-578e-b042-123e7b45d83f', 1), 'f1c8fbf12fc7a0355f42e26c95bdbc53fc6e0e5fae5b0d2818df4e7974dc12a9',
+  'character:elif:female_warm', 'elevenlabs', 'eleven_multilingual_v2', 'audio/generated/tr-TR/dialogues/9eb299c9b08bcd7ac243c117912cd286f7ec3ae863aec0d4f54d09e899469b6b.mp3', 1697, '2026-09-14 11:31:55.036488', '96e08ba21de515adfd6616754ebcab9a1a68b1df66ad0eb9b15d941ab179c362', 'validated', '{"audio_key":"9eb299c9b08bcd7ac243c117912cd286f7ec3ae863aec0d4f54d09e899469b6b","entity_key":"d_everyday_routine_01:1","voice_id":"aEJD8mYP0nuof1XHShVY","voice_name":"Gozde Arikan - Soft, Warm and Clear","voice_labels":{"gender":"female","accent":"standard","age":"young","category":"professional","language":"tr","use_case":"conversational","descriptive":"casual"},"output_format":"mp3_44100_192","file_sha256":"96e08ba21de515adfd6616754ebcab9a1a68b1df66ad0eb9b15d941ab179c362","settings":{"stability":0.58,"similarity_boost":0.87,"style":0.14,"use_speaker_boost":true,"speed":0.97},"relative_path":"audio/generated/tr-TR/dialogues/9eb299c9b08bcd7ac243c117912cd286f7ec3ae863aec0d4f54d09e899469b6b.mp3"}'
 ) ON DUPLICATE KEY UPDATE
   provider = VALUES(provider),
   provider_model = VALUES(provider_model),
@@ -1258,6 +2610,32 @@ INSERT INTO audio_assets (
   status = VALUES(status),
   metadata = VALUES(metadata);
 
+-- d_a1_everyday_capstone_01:2 -> audio/generated/tr-TR/dialogues/a8654b70d76124a3b5f4af31e220472174ee9e81f4b715b4f080bfdd12667b44.mp3
+UPDATE audio_assets
+SET status = 'archived'
+WHERE entity_type = 'dialogue_turn'
+  AND entity_id = UUID_TO_BIN('50f18e4e-1dc6-5099-b0d4-c4cfb65a4edc', 1)
+  AND voice_key = 'character:kaan:male_bright'
+  AND (entity_type NOT IN ('grammar_point','exercise') OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'd_a1_everyday_capstone_01:2')
+  AND source_text_hash IS NOT NULL
+  AND source_text_hash <> 'e44ba1121e1d5da625737dbeb273021303fe64dfe88aae8de8d59d8eefc58ec2'
+  AND status <> 'archived';
+INSERT INTO audio_assets (
+  id, language_id, language_variant_id, entity_type, entity_id, source_text_hash,
+  voice_key, provider, provider_model, storage_url, duration_ms, generated_at, checksum, status, metadata
+) VALUES (
+  UUID_TO_BIN('85f9158f-3e1b-5ec9-8bb9-991233f9f253', 1), @audio_language_id, @audio_variant_id, 'dialogue_turn', UUID_TO_BIN('50f18e4e-1dc6-5099-b0d4-c4cfb65a4edc', 1), 'e44ba1121e1d5da625737dbeb273021303fe64dfe88aae8de8d59d8eefc58ec2',
+  'character:kaan:male_bright', 'elevenlabs', 'eleven_multilingual_v2', 'audio/generated/tr-TR/dialogues/a8654b70d76124a3b5f4af31e220472174ee9e81f4b715b4f080bfdd12667b44.mp3', 2455, '2026-09-14 11:31:56.054273', 'e8a1fcbfb3db54e4c6c39c4ee4d8b5b5d29e7d5eaf54c869cff921e83672e950', 'validated', '{"audio_key":"a8654b70d76124a3b5f4af31e220472174ee9e81f4b715b4f080bfdd12667b44","entity_key":"d_a1_everyday_capstone_01:2","voice_id":"7mBFv1btncDZu2Bfgv0r","voice_name":"Tuna - Young and Soft","voice_labels":{"gender":"male","accent":"istanbul","age":"young","category":"professional","language":"tr","use_case":"social_media","descriptive":"casual"},"output_format":"mp3_44100_192","file_sha256":"e8a1fcbfb3db54e4c6c39c4ee4d8b5b5d29e7d5eaf54c869cff921e83672e950","settings":{"stability":0.52,"similarity_boost":0.86,"style":0.2,"use_speaker_boost":true,"speed":0.99},"relative_path":"audio/generated/tr-TR/dialogues/a8654b70d76124a3b5f4af31e220472174ee9e81f4b715b4f080bfdd12667b44.mp3"}'
+) ON DUPLICATE KEY UPDATE
+  provider = VALUES(provider),
+  provider_model = VALUES(provider_model),
+  storage_url = VALUES(storage_url),
+  duration_ms = VALUES(duration_ms),
+  generated_at = VALUES(generated_at),
+  checksum = VALUES(checksum),
+  status = VALUES(status),
+  metadata = VALUES(metadata);
+
 -- d_what_im_doing_02:2 -> audio/generated/tr-TR/dialogues/a9591a68c15f37f9cd6061b2314d53a27c6368914ef42f75a550833243b6c96b.mp3
 UPDATE audio_assets
 SET status = 'archived'
@@ -1274,6 +2652,110 @@ INSERT INTO audio_assets (
 ) VALUES (
   UUID_TO_BIN('2ddfc8dd-1e11-5fb3-953f-b0e78ed619eb', 1), @audio_language_id, @audio_variant_id, 'dialogue_turn', UUID_TO_BIN('278ab736-7976-514b-943b-830285789e60', 1), '6503f41b35d37a8119a05678c8a0985f4407c890f54c12880b42c4542a46145d',
   'character:selin:female_bright', 'elevenlabs', 'eleven_multilingual_v2', 'audio/generated/tr-TR/dialogues/a9591a68c15f37f9cd6061b2314d53a27c6368914ef42f75a550833243b6c96b.mp3', 1097, '2026-09-13 15:54:52.785801', 'd378772d6a8d9c0acdf1876d9e9a517a3a3fe7cab622599c35b181b9f1d7d4c1', 'validated', '{"audio_key":"a9591a68c15f37f9cd6061b2314d53a27c6368914ef42f75a550833243b6c96b","entity_key":"d_what_im_doing_02:2","voice_id":"D6QpOJ61ltQ3whot6iJZ","voice_name":"Tugba","voice_labels":{"gender":"female","accent":"istanbul","age":"young","category":"professional","language":"tr","use_case":"conversational","descriptive":"calm"},"output_format":"mp3_44100_192","file_sha256":"d378772d6a8d9c0acdf1876d9e9a517a3a3fe7cab622599c35b181b9f1d7d4c1","settings":{"stability":0.52,"similarity_boost":0.86,"style":0.2,"use_speaker_boost":true,"speed":0.99},"relative_path":"audio/generated/tr-TR/dialogues/a9591a68c15f37f9cd6061b2314d53a27c6368914ef42f75a550833243b6c96b.mp3"}'
+) ON DUPLICATE KEY UPDATE
+  provider = VALUES(provider),
+  provider_model = VALUES(provider_model),
+  storage_url = VALUES(storage_url),
+  duration_ms = VALUES(duration_ms),
+  generated_at = VALUES(generated_at),
+  checksum = VALUES(checksum),
+  status = VALUES(status),
+  metadata = VALUES(metadata);
+
+-- d_everyday_routine_01:2 -> audio/generated/tr-TR/dialogues/a9ceeb90a4c98afe70af8a8e33c2d8d0e3d22d2124e0a6b8f447b676e67fcd20.mp3
+UPDATE audio_assets
+SET status = 'archived'
+WHERE entity_type = 'dialogue_turn'
+  AND entity_id = UUID_TO_BIN('546baaa4-e459-5f61-96b7-480fdd297606', 1)
+  AND voice_key = 'character:kaan:male_bright'
+  AND (entity_type NOT IN ('grammar_point','exercise') OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'd_everyday_routine_01:2')
+  AND source_text_hash IS NOT NULL
+  AND source_text_hash <> '291abc44416c080fc3686edfee9e7dfbebf048f1afca57be7ff1ee7941a4caa5'
+  AND status <> 'archived';
+INSERT INTO audio_assets (
+  id, language_id, language_variant_id, entity_type, entity_id, source_text_hash,
+  voice_key, provider, provider_model, storage_url, duration_ms, generated_at, checksum, status, metadata
+) VALUES (
+  UUID_TO_BIN('fe370223-c829-59a4-b6ee-a8c62c433321', 1), @audio_language_id, @audio_variant_id, 'dialogue_turn', UUID_TO_BIN('546baaa4-e459-5f61-96b7-480fdd297606', 1), '291abc44416c080fc3686edfee9e7dfbebf048f1afca57be7ff1ee7941a4caa5',
+  'character:kaan:male_bright', 'elevenlabs', 'eleven_multilingual_v2', 'audio/generated/tr-TR/dialogues/a9ceeb90a4c98afe70af8a8e33c2d8d0e3d22d2124e0a6b8f447b676e67fcd20.mp3', 1671, '2026-09-14 11:31:56.033118', 'df0239845af2f4108e76462f19515821355fcd8a8e44fb16d56f346fa6ab26cf', 'validated', '{"audio_key":"a9ceeb90a4c98afe70af8a8e33c2d8d0e3d22d2124e0a6b8f447b676e67fcd20","entity_key":"d_everyday_routine_01:2","voice_id":"7mBFv1btncDZu2Bfgv0r","voice_name":"Tuna - Young and Soft","voice_labels":{"gender":"male","accent":"istanbul","age":"young","category":"professional","language":"tr","use_case":"social_media","descriptive":"casual"},"output_format":"mp3_44100_192","file_sha256":"df0239845af2f4108e76462f19515821355fcd8a8e44fb16d56f346fa6ab26cf","settings":{"stability":0.52,"similarity_boost":0.86,"style":0.2,"use_speaker_boost":true,"speed":0.99},"relative_path":"audio/generated/tr-TR/dialogues/a9ceeb90a4c98afe70af8a8e33c2d8d0e3d22d2124e0a6b8f447b676e67fcd20.mp3"}'
+) ON DUPLICATE KEY UPDATE
+  provider = VALUES(provider),
+  provider_model = VALUES(provider_model),
+  storage_url = VALUES(storage_url),
+  duration_ms = VALUES(duration_ms),
+  generated_at = VALUES(generated_at),
+  checksum = VALUES(checksum),
+  status = VALUES(status),
+  metadata = VALUES(metadata);
+
+-- d_a1_everyday_capstone_02:1 -> audio/generated/tr-TR/dialogues/aa3fcd068c02e001e36ed9b7ad636bd83aecd4bfeb2944b186252e26a685d95b.mp3
+UPDATE audio_assets
+SET status = 'archived'
+WHERE entity_type = 'dialogue_turn'
+  AND entity_id = UUID_TO_BIN('f711b230-1522-589d-ab72-d3dceb6573fe', 1)
+  AND voice_key = 'character:selin:female_bright'
+  AND (entity_type NOT IN ('grammar_point','exercise') OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'd_a1_everyday_capstone_02:1')
+  AND source_text_hash IS NOT NULL
+  AND source_text_hash <> '261433c1eaae0a0834b5dc5e4552619f83cc0326e7fd8c3512c739616e8917fe'
+  AND status <> 'archived';
+INSERT INTO audio_assets (
+  id, language_id, language_variant_id, entity_type, entity_id, source_text_hash,
+  voice_key, provider, provider_model, storage_url, duration_ms, generated_at, checksum, status, metadata
+) VALUES (
+  UUID_TO_BIN('774b5f79-e7df-56c0-85f7-c35778db49a5', 1), @audio_language_id, @audio_variant_id, 'dialogue_turn', UUID_TO_BIN('f711b230-1522-589d-ab72-d3dceb6573fe', 1), '261433c1eaae0a0834b5dc5e4552619f83cc0326e7fd8c3512c739616e8917fe',
+  'character:selin:female_bright', 'elevenlabs', 'eleven_multilingual_v2', 'audio/generated/tr-TR/dialogues/aa3fcd068c02e001e36ed9b7ad636bd83aecd4bfeb2944b186252e26a685d95b.mp3', 1567, '2026-09-14 11:31:57.045467', '5254ecd1127bfe65e65082393af8ff5ffd81ce91c29231ce2376ac136f1ea05a', 'validated', '{"audio_key":"aa3fcd068c02e001e36ed9b7ad636bd83aecd4bfeb2944b186252e26a685d95b","entity_key":"d_a1_everyday_capstone_02:1","voice_id":"D6QpOJ61ltQ3whot6iJZ","voice_name":"Tugba","voice_labels":{"gender":"female","accent":"istanbul","age":"young","category":"professional","language":"tr","use_case":"conversational","descriptive":"calm"},"output_format":"mp3_44100_192","file_sha256":"5254ecd1127bfe65e65082393af8ff5ffd81ce91c29231ce2376ac136f1ea05a","settings":{"stability":0.52,"similarity_boost":0.86,"style":0.2,"use_speaker_boost":true,"speed":0.99},"relative_path":"audio/generated/tr-TR/dialogues/aa3fcd068c02e001e36ed9b7ad636bd83aecd4bfeb2944b186252e26a685d95b.mp3"}'
+) ON DUPLICATE KEY UPDATE
+  provider = VALUES(provider),
+  provider_model = VALUES(provider_model),
+  storage_url = VALUES(storage_url),
+  duration_ms = VALUES(duration_ms),
+  generated_at = VALUES(generated_at),
+  checksum = VALUES(checksum),
+  status = VALUES(status),
+  metadata = VALUES(metadata);
+
+-- d_a1_everyday_capstone_02:2 -> audio/generated/tr-TR/dialogues/b0c59e8100f5aecfbcb9e8f437617c3c065f50c734d318fc1914d7a0751f93ac.mp3
+UPDATE audio_assets
+SET status = 'archived'
+WHERE entity_type = 'dialogue_turn'
+  AND entity_id = UUID_TO_BIN('c9b0e97d-f7e4-546c-9339-54f4b524194a', 1)
+  AND voice_key = 'character:mert:male_warm'
+  AND (entity_type NOT IN ('grammar_point','exercise') OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'd_a1_everyday_capstone_02:2')
+  AND source_text_hash IS NOT NULL
+  AND source_text_hash <> '7cb29a7ab1cbf92841e517f91e9623ade980bd3f4a9052506bd4d13614f845bc'
+  AND status <> 'archived';
+INSERT INTO audio_assets (
+  id, language_id, language_variant_id, entity_type, entity_id, source_text_hash,
+  voice_key, provider, provider_model, storage_url, duration_ms, generated_at, checksum, status, metadata
+) VALUES (
+  UUID_TO_BIN('84f3bd65-8b9d-50b7-88ed-36aa17452aa5', 1), @audio_language_id, @audio_variant_id, 'dialogue_turn', UUID_TO_BIN('c9b0e97d-f7e4-546c-9339-54f4b524194a', 1), '7cb29a7ab1cbf92841e517f91e9623ade980bd3f4a9052506bd4d13614f845bc',
+  'character:mert:male_warm', 'elevenlabs', 'eleven_multilingual_v2', 'audio/generated/tr-TR/dialogues/b0c59e8100f5aecfbcb9e8f437617c3c065f50c734d318fc1914d7a0751f93ac.mp3', 2351, '2026-09-14 11:31:57.126101', '7f5a4cb7a2073440e9346c72c87362b5db54de102382d1b243bc8bb7d181f313', 'validated', '{"audio_key":"b0c59e8100f5aecfbcb9e8f437617c3c065f50c734d318fc1914d7a0751f93ac","entity_key":"d_a1_everyday_capstone_02:2","voice_id":"jGqlr3dGaFN0IfJZa3zS","voice_name":"Talha - Friendly, Energetic and Neutral","voice_labels":{"gender":"male","accent":"central","age":"young","category":"professional","language":"tr","use_case":"conversational","descriptive":"casual"},"output_format":"mp3_44100_192","file_sha256":"7f5a4cb7a2073440e9346c72c87362b5db54de102382d1b243bc8bb7d181f313","settings":{"stability":0.58,"similarity_boost":0.87,"style":0.14,"use_speaker_boost":true,"speed":0.97},"relative_path":"audio/generated/tr-TR/dialogues/b0c59e8100f5aecfbcb9e8f437617c3c065f50c734d318fc1914d7a0751f93ac.mp3"}'
+) ON DUPLICATE KEY UPDATE
+  provider = VALUES(provider),
+  provider_model = VALUES(provider_model),
+  storage_url = VALUES(storage_url),
+  duration_ms = VALUES(duration_ms),
+  generated_at = VALUES(generated_at),
+  checksum = VALUES(checksum),
+  status = VALUES(status),
+  metadata = VALUES(metadata);
+
+-- d_everyday_routine_02:3 -> audio/generated/tr-TR/dialogues/b105229b1aa29c87b81383cda139c4b3ef9ba5e0c06f0f363bacc66ccb5729fc.mp3
+UPDATE audio_assets
+SET status = 'archived'
+WHERE entity_type = 'dialogue_turn'
+  AND entity_id = UUID_TO_BIN('7e3256bd-e5f2-5e7b-8135-ccd2183fd288', 1)
+  AND voice_key = 'character:mert:male_warm'
+  AND (entity_type NOT IN ('grammar_point','exercise') OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'd_everyday_routine_02:3')
+  AND source_text_hash IS NOT NULL
+  AND source_text_hash <> 'b86a23f1e6f7b821707edff9289381773381cd11049c1de54fbb0d38188a846e'
+  AND status <> 'archived';
+INSERT INTO audio_assets (
+  id, language_id, language_variant_id, entity_type, entity_id, source_text_hash,
+  voice_key, provider, provider_model, storage_url, duration_ms, generated_at, checksum, status, metadata
+) VALUES (
+  UUID_TO_BIN('ad0e3570-3d00-59cf-9f99-b8f13846805f', 1), @audio_language_id, @audio_variant_id, 'dialogue_turn', UUID_TO_BIN('7e3256bd-e5f2-5e7b-8135-ccd2183fd288', 1), 'b86a23f1e6f7b821707edff9289381773381cd11049c1de54fbb0d38188a846e',
+  'character:mert:male_warm', 'elevenlabs', 'eleven_multilingual_v2', 'audio/generated/tr-TR/dialogues/b105229b1aa29c87b81383cda139c4b3ef9ba5e0c06f0f363bacc66ccb5729fc.mp3', 1488, '2026-09-14 11:31:58.026943', '787590245a6554e935a1fa2f6a6c90ffa9fd881120d38de52cce52d8f948bf04', 'validated', '{"audio_key":"b105229b1aa29c87b81383cda139c4b3ef9ba5e0c06f0f363bacc66ccb5729fc","entity_key":"d_everyday_routine_02:3","voice_id":"jGqlr3dGaFN0IfJZa3zS","voice_name":"Talha - Friendly, Energetic and Neutral","voice_labels":{"gender":"male","accent":"central","age":"young","category":"professional","language":"tr","use_case":"conversational","descriptive":"casual"},"output_format":"mp3_44100_192","file_sha256":"787590245a6554e935a1fa2f6a6c90ffa9fd881120d38de52cce52d8f948bf04","settings":{"stability":0.58,"similarity_boost":0.87,"style":0.14,"use_speaker_boost":true,"speed":0.97},"relative_path":"audio/generated/tr-TR/dialogues/b105229b1aa29c87b81383cda139c4b3ef9ba5e0c06f0f363bacc66ccb5729fc.mp3"}'
 ) ON DUPLICATE KEY UPDATE
   provider = VALUES(provider),
   provider_model = VALUES(provider_model),
@@ -1414,6 +2896,58 @@ INSERT INTO audio_assets (
   status = VALUES(status),
   metadata = VALUES(metadata);
 
+-- d_before_and_after_02:2 -> audio/generated/tr-TR/dialogues/b7a6b82cf198fbbade071c13facf0e53beffa97881a5e0998fcec3333df98ed1.mp3
+UPDATE audio_assets
+SET status = 'archived'
+WHERE entity_type = 'dialogue_turn'
+  AND entity_id = UUID_TO_BIN('86944427-0460-518b-a5ca-f7315703d5d4', 1)
+  AND voice_key = 'character:deniz:female_calm'
+  AND (entity_type NOT IN ('grammar_point','exercise') OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'd_before_and_after_02:2')
+  AND source_text_hash IS NOT NULL
+  AND source_text_hash <> '735652f6cfe67f6d1d6cb8d8ce8f8ecf1dac5b07313b2b76347a9e5b4724321e'
+  AND status <> 'archived';
+INSERT INTO audio_assets (
+  id, language_id, language_variant_id, entity_type, entity_id, source_text_hash,
+  voice_key, provider, provider_model, storage_url, duration_ms, generated_at, checksum, status, metadata
+) VALUES (
+  UUID_TO_BIN('c66d41b1-e724-57bc-8116-6acdeb44cc2c', 1), @audio_language_id, @audio_variant_id, 'dialogue_turn', UUID_TO_BIN('86944427-0460-518b-a5ca-f7315703d5d4', 1), '735652f6cfe67f6d1d6cb8d8ce8f8ecf1dac5b07313b2b76347a9e5b4724321e',
+  'character:deniz:female_calm', 'elevenlabs', 'eleven_multilingual_v2', 'audio/generated/tr-TR/dialogues/b7a6b82cf198fbbade071c13facf0e53beffa97881a5e0998fcec3333df98ed1.mp3', 1802, '2026-09-14 11:31:58.141590', '7cdce0e160a1d42a3b619be72bfbcf87dbf3a35b6098f60be880c8d897cc111f', 'validated', '{"audio_key":"b7a6b82cf198fbbade071c13facf0e53beffa97881a5e0998fcec3333df98ed1","entity_key":"d_before_and_after_02:2","voice_id":"rstA752XNcJHV3KFLRON","voice_name":"Seth - Bright, Sincere and Clean","voice_labels":{"gender":"female","accent":"standard","age":"young","category":"professional","language":"tr","use_case":"conversational","descriptive":"calm"},"output_format":"mp3_44100_192","file_sha256":"7cdce0e160a1d42a3b619be72bfbcf87dbf3a35b6098f60be880c8d897cc111f","settings":{"stability":0.68,"similarity_boost":0.89,"style":0.06,"use_speaker_boost":true,"speed":0.95},"relative_path":"audio/generated/tr-TR/dialogues/b7a6b82cf198fbbade071c13facf0e53beffa97881a5e0998fcec3333df98ed1.mp3"}'
+) ON DUPLICATE KEY UPDATE
+  provider = VALUES(provider),
+  provider_model = VALUES(provider_model),
+  storage_url = VALUES(storage_url),
+  duration_ms = VALUES(duration_ms),
+  generated_at = VALUES(generated_at),
+  checksum = VALUES(checksum),
+  status = VALUES(status),
+  metadata = VALUES(metadata);
+
+-- d_yesterday_02:1 -> audio/generated/tr-TR/dialogues/b7aef14acee6d40bb27dd5392f4774bf3a72a0f8d389efa9aaf5bf585189b9bb.mp3
+UPDATE audio_assets
+SET status = 'archived'
+WHERE entity_type = 'dialogue_turn'
+  AND entity_id = UUID_TO_BIN('4311af6f-a82a-527d-b770-79e4bbaf31f9', 1)
+  AND voice_key = 'character:zeynep:female_professional'
+  AND (entity_type NOT IN ('grammar_point','exercise') OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'd_yesterday_02:1')
+  AND source_text_hash IS NOT NULL
+  AND source_text_hash <> '4767ab16ee4fe11d5485d97f489a1273db74ac86e3bf0116f912c9296a97c815'
+  AND status <> 'archived';
+INSERT INTO audio_assets (
+  id, language_id, language_variant_id, entity_type, entity_id, source_text_hash,
+  voice_key, provider, provider_model, storage_url, duration_ms, generated_at, checksum, status, metadata
+) VALUES (
+  UUID_TO_BIN('9cae29d0-e406-5af7-a706-27efe4eda384', 1), @audio_language_id, @audio_variant_id, 'dialogue_turn', UUID_TO_BIN('4311af6f-a82a-527d-b770-79e4bbaf31f9', 1), '4767ab16ee4fe11d5485d97f489a1273db74ac86e3bf0116f912c9296a97c815',
+  'character:zeynep:female_professional', 'elevenlabs', 'eleven_multilingual_v2', 'audio/generated/tr-TR/dialogues/b7aef14acee6d40bb27dd5392f4774bf3a72a0f8d389efa9aaf5bf585189b9bb.mp3', 1567, '2026-09-14 11:31:59.030410', '89ed0c40b636890504e5006eb02756860455cdcde15cdb1e6ca1c47daebcffce', 'validated', '{"audio_key":"b7aef14acee6d40bb27dd5392f4774bf3a72a0f8d389efa9aaf5bf585189b9bb","entity_key":"d_yesterday_02:1","voice_id":"4XsbOSxQHw4NUVaEeo2o","voice_name":"Elif - Calm & Natural","voice_labels":{"gender":"female","accent":"istanbul","age":"young","category":"professional","language":"tr","use_case":"conversational","descriptive":"calm"},"output_format":"mp3_44100_192","file_sha256":"89ed0c40b636890504e5006eb02756860455cdcde15cdb1e6ca1c47daebcffce","settings":{"stability":0.71,"similarity_boost":0.9,"style":0.05,"use_speaker_boost":true,"speed":0.96},"relative_path":"audio/generated/tr-TR/dialogues/b7aef14acee6d40bb27dd5392f4774bf3a72a0f8d389efa9aaf5bf585189b9bb.mp3"}'
+) ON DUPLICATE KEY UPDATE
+  provider = VALUES(provider),
+  provider_model = VALUES(provider_model),
+  storage_url = VALUES(storage_url),
+  duration_ms = VALUES(duration_ms),
+  generated_at = VALUES(generated_at),
+  checksum = VALUES(checksum),
+  status = VALUES(status),
+  metadata = VALUES(metadata);
+
 -- d_at_the_cafe_01:4 -> audio/generated/tr-TR/dialogues/b973e1990f5d7ef6d0e02949f300b6423d06e433121c5c9ea045085f1f1ee320.mp3
 UPDATE audio_assets
 SET status = 'archived'
@@ -1456,6 +2990,32 @@ INSERT INTO audio_assets (
 ) VALUES (
   UUID_TO_BIN('83fd13ea-84e5-50da-89bd-68013597f0ef', 1), @audio_language_id, @audio_variant_id, 'dialogue_turn', UUID_TO_BIN('18c33593-17df-5701-8c32-7ab16ab14d9b', 1), '4083df5f0438bbdf883f16676b7099cbbc90d6d3b71fe1e0edf432ad8046d63e',
   'character:elif:female_warm', 'elevenlabs', 'eleven_multilingual_v2', 'audio/generated/tr-TR/dialogues/ba0fc0d42e46ca013f940c5554f3d6969cbe2fd2b7f8248560bb688f9060c7a8.mp3', 1280, '2026-09-13 15:54:56.557551', '7a5846c27f616841ffb95021633a25a9eb8c63f10fac0d5582a0ab1a7142cc4e', 'validated', '{"audio_key":"ba0fc0d42e46ca013f940c5554f3d6969cbe2fd2b7f8248560bb688f9060c7a8","entity_key":"d_at_the_cafe_02:3","voice_id":"aEJD8mYP0nuof1XHShVY","voice_name":"Gozde Arikan - Soft, Warm and Clear","voice_labels":{"gender":"female","accent":"standard","age":"young","category":"professional","language":"tr","use_case":"conversational","descriptive":"casual"},"output_format":"mp3_44100_192","file_sha256":"7a5846c27f616841ffb95021633a25a9eb8c63f10fac0d5582a0ab1a7142cc4e","settings":{"stability":0.58,"similarity_boost":0.87,"style":0.14,"use_speaker_boost":true,"speed":0.97},"relative_path":"audio/generated/tr-TR/dialogues/ba0fc0d42e46ca013f940c5554f3d6969cbe2fd2b7f8248560bb688f9060c7a8.mp3"}'
+) ON DUPLICATE KEY UPDATE
+  provider = VALUES(provider),
+  provider_model = VALUES(provider_model),
+  storage_url = VALUES(storage_url),
+  duration_ms = VALUES(duration_ms),
+  generated_at = VALUES(generated_at),
+  checksum = VALUES(checksum),
+  status = VALUES(status),
+  metadata = VALUES(metadata);
+
+-- d_basic_health_02:3 -> audio/generated/tr-TR/dialogues/bae95e345985bbfbfc5090788e3b9fa2fdf9c873466d762d5eee7da5e672830f.mp3
+UPDATE audio_assets
+SET status = 'archived'
+WHERE entity_type = 'dialogue_turn'
+  AND entity_id = UUID_TO_BIN('950908be-1f9c-5939-a7ca-38aea2887864', 1)
+  AND voice_key = 'character:emre:male_calm'
+  AND (entity_type NOT IN ('grammar_point','exercise') OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'd_basic_health_02:3')
+  AND source_text_hash IS NOT NULL
+  AND source_text_hash <> '5c2643a5bc73fa40cda2fc36ab0f46cbdb03ccca23fb32ae1d07eacacee5ce9f'
+  AND status <> 'archived';
+INSERT INTO audio_assets (
+  id, language_id, language_variant_id, entity_type, entity_id, source_text_hash,
+  voice_key, provider, provider_model, storage_url, duration_ms, generated_at, checksum, status, metadata
+) VALUES (
+  UUID_TO_BIN('d3e41c66-ead1-5900-ab15-67f82f385a68', 1), @audio_language_id, @audio_variant_id, 'dialogue_turn', UUID_TO_BIN('950908be-1f9c-5939-a7ca-38aea2887864', 1), '5c2643a5bc73fa40cda2fc36ab0f46cbdb03ccca23fb32ae1d07eacacee5ce9f',
+  'character:emre:male_calm', 'elevenlabs', 'eleven_multilingual_v2', 'audio/generated/tr-TR/dialogues/bae95e345985bbfbfc5090788e3b9fa2fdf9c873466d762d5eee7da5e672830f.mp3', 1253, '2026-09-14 11:31:59.117474', 'ad70e700e3555ba6ea4f15930b188eb8f1fa1a11734563cfa3a66aa96e74bd75', 'validated', '{"audio_key":"bae95e345985bbfbfc5090788e3b9fa2fdf9c873466d762d5eee7da5e672830f","entity_key":"d_basic_health_02:3","voice_id":"Md4RAnfKt9kVIbvqUxly","voice_name":"Cihan - Warm, Natural and Friendly","voice_labels":{"gender":"male","accent":"istanbul","age":"middle_aged","category":"high_quality","language":"tr","use_case":"conversational","descriptive":"calm"},"output_format":"mp3_44100_192","file_sha256":"ad70e700e3555ba6ea4f15930b188eb8f1fa1a11734563cfa3a66aa96e74bd75","settings":{"stability":0.68,"similarity_boost":0.89,"style":0.06,"use_speaker_boost":true,"speed":0.95},"relative_path":"audio/generated/tr-TR/dialogues/bae95e345985bbfbfc5090788e3b9fa2fdf9c873466d762d5eee7da5e672830f.mp3"}'
 ) ON DUPLICATE KEY UPDATE
   provider = VALUES(provider),
   provider_model = VALUES(provider_model),
@@ -1544,6 +3104,32 @@ INSERT INTO audio_assets (
   status = VALUES(status),
   metadata = VALUES(metadata);
 
+-- d_can_you_help_01:3 -> audio/generated/tr-TR/dialogues/c60241c9eedeb5cb37c26d05201893de507b7deab78c0213d76c986065ccf3a2.mp3
+UPDATE audio_assets
+SET status = 'archived'
+WHERE entity_type = 'dialogue_turn'
+  AND entity_id = UUID_TO_BIN('00020cd8-50c3-58af-9740-bf1f9b5fa6b6', 1)
+  AND voice_key = 'character:burak:male_professional'
+  AND (entity_type NOT IN ('grammar_point','exercise') OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'd_can_you_help_01:3')
+  AND source_text_hash IS NOT NULL
+  AND source_text_hash <> '3819a0dcefa97f16b39ee5a610777123c534057a3bed89208815881611125b75'
+  AND status <> 'archived';
+INSERT INTO audio_assets (
+  id, language_id, language_variant_id, entity_type, entity_id, source_text_hash,
+  voice_key, provider, provider_model, storage_url, duration_ms, generated_at, checksum, status, metadata
+) VALUES (
+  UUID_TO_BIN('40bfb868-24e2-51ad-9e8d-1070930aee06', 1), @audio_language_id, @audio_variant_id, 'dialogue_turn', UUID_TO_BIN('00020cd8-50c3-58af-9740-bf1f9b5fa6b6', 1), '3819a0dcefa97f16b39ee5a610777123c534057a3bed89208815881611125b75',
+  'character:burak:male_professional', 'elevenlabs', 'eleven_multilingual_v2', 'audio/generated/tr-TR/dialogues/c60241c9eedeb5cb37c26d05201893de507b7deab78c0213d76c986065ccf3a2.mp3', 1201, '2026-09-14 11:32:00.002636', 'e4e2b6ff5d7bbc1228a835d1c53a7c91a80b301d3965f90a7048f5e9a61e2874', 'validated', '{"audio_key":"c60241c9eedeb5cb37c26d05201893de507b7deab78c0213d76c986065ccf3a2","entity_key":"d_can_you_help_01:3","voice_id":"5HEFEBb9WCCpCdgZE77B","voice_name":"Eyüp Tulûhan Etker - Deep and Rich","voice_labels":{"gender":"male","accent":"istanbul","age":"middle_aged","category":"professional","language":"tr","use_case":"conversational","descriptive":"neutral"},"output_format":"mp3_44100_192","file_sha256":"e4e2b6ff5d7bbc1228a835d1c53a7c91a80b301d3965f90a7048f5e9a61e2874","settings":{"stability":0.71,"similarity_boost":0.9,"style":0.05,"use_speaker_boost":true,"speed":0.96},"relative_path":"audio/generated/tr-TR/dialogues/c60241c9eedeb5cb37c26d05201893de507b7deab78c0213d76c986065ccf3a2.mp3"}'
+) ON DUPLICATE KEY UPDATE
+  provider = VALUES(provider),
+  provider_model = VALUES(provider_model),
+  storage_url = VALUES(storage_url),
+  duration_ms = VALUES(duration_ms),
+  generated_at = VALUES(generated_at),
+  checksum = VALUES(checksum),
+  status = VALUES(status),
+  metadata = VALUES(metadata);
+
 -- d_shopping_basics_01:2 -> audio/generated/tr-TR/dialogues/c7a983c6d073d58131cbf13a18d46fc917125555001b73d2ac01ae7c3233783a.mp3
 UPDATE audio_assets
 SET status = 'archived'
@@ -1586,6 +3172,58 @@ INSERT INTO audio_assets (
 ) VALUES (
   UUID_TO_BIN('0b2cc044-ce2f-5446-b7a7-51b1a92a260a', 1), @audio_language_id, @audio_variant_id, 'dialogue_turn', UUID_TO_BIN('36f65eb1-8452-5f5a-bf50-48594ac00bfd', 1), '338f022c6afd832b03f9d9a6794a61a45702840619e4b863bb9d01e45883721a',
   'character:deniz:female_calm', 'elevenlabs', 'eleven_multilingual_v2', 'audio/generated/tr-TR/dialogues/c879f1ce989cb2088bf821494e0f74f33da0f9c5bbadf3e87e2e40b3c91e5f3b.mp3', 1515, '2026-09-13 15:55:00.272716', 'abdbb53298ab3afb98b9ced0ea63c8ec7124137a4e3a9e115262c531c08ace2d', 'validated', '{"audio_key":"c879f1ce989cb2088bf821494e0f74f33da0f9c5bbadf3e87e2e40b3c91e5f3b","entity_key":"d_time_and_plans_02:2","voice_id":"rstA752XNcJHV3KFLRON","voice_name":"Seth - Bright, Sincere and Clean","voice_labels":{"gender":"female","accent":"standard","age":"young","category":"professional","language":"tr","use_case":"conversational","descriptive":"calm"},"output_format":"mp3_44100_192","file_sha256":"abdbb53298ab3afb98b9ced0ea63c8ec7124137a4e3a9e115262c531c08ace2d","settings":{"stability":0.68,"similarity_boost":0.89,"style":0.06,"use_speaker_boost":true,"speed":0.95},"relative_path":"audio/generated/tr-TR/dialogues/c879f1ce989cb2088bf821494e0f74f33da0f9c5bbadf3e87e2e40b3c91e5f3b.mp3"}'
+) ON DUPLICATE KEY UPDATE
+  provider = VALUES(provider),
+  provider_model = VALUES(provider_model),
+  storage_url = VALUES(storage_url),
+  duration_ms = VALUES(duration_ms),
+  generated_at = VALUES(generated_at),
+  checksum = VALUES(checksum),
+  status = VALUES(status),
+  metadata = VALUES(metadata);
+
+-- d_a1_everyday_capstone_02:4 -> audio/generated/tr-TR/dialogues/c8b342a0312429d83fc0a844a9998c5eb1a1fe6dedcffb75450fcfcf3ed6363c.mp3
+UPDATE audio_assets
+SET status = 'archived'
+WHERE entity_type = 'dialogue_turn'
+  AND entity_id = UUID_TO_BIN('b2b7853d-b8a5-5f1f-a304-d6102c65c7db', 1)
+  AND voice_key = 'character:mert:male_warm'
+  AND (entity_type NOT IN ('grammar_point','exercise') OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'd_a1_everyday_capstone_02:4')
+  AND source_text_hash IS NOT NULL
+  AND source_text_hash <> 'deb3a09347d19c99b381ad43b11fc66afc499d05ff56717c8cbcfde043f321d6'
+  AND status <> 'archived';
+INSERT INTO audio_assets (
+  id, language_id, language_variant_id, entity_type, entity_id, source_text_hash,
+  voice_key, provider, provider_model, storage_url, duration_ms, generated_at, checksum, status, metadata
+) VALUES (
+  UUID_TO_BIN('6ed32c41-a815-5f23-945d-8fbd00f79e1b', 1), @audio_language_id, @audio_variant_id, 'dialogue_turn', UUID_TO_BIN('b2b7853d-b8a5-5f1f-a304-d6102c65c7db', 1), 'deb3a09347d19c99b381ad43b11fc66afc499d05ff56717c8cbcfde043f321d6',
+  'character:mert:male_warm', 'elevenlabs', 'eleven_multilingual_v2', 'audio/generated/tr-TR/dialogues/c8b342a0312429d83fc0a844a9998c5eb1a1fe6dedcffb75450fcfcf3ed6363c.mp3', 2272, '2026-09-14 11:32:00.175261', 'fc17389512d4764456723fd61ac0220a43700e9a7967c1fc866dd742f1b55ab8', 'validated', '{"audio_key":"c8b342a0312429d83fc0a844a9998c5eb1a1fe6dedcffb75450fcfcf3ed6363c","entity_key":"d_a1_everyday_capstone_02:4","voice_id":"jGqlr3dGaFN0IfJZa3zS","voice_name":"Talha - Friendly, Energetic and Neutral","voice_labels":{"gender":"male","accent":"central","age":"young","category":"professional","language":"tr","use_case":"conversational","descriptive":"casual"},"output_format":"mp3_44100_192","file_sha256":"fc17389512d4764456723fd61ac0220a43700e9a7967c1fc866dd742f1b55ab8","settings":{"stability":0.58,"similarity_boost":0.87,"style":0.14,"use_speaker_boost":true,"speed":0.97},"relative_path":"audio/generated/tr-TR/dialogues/c8b342a0312429d83fc0a844a9998c5eb1a1fe6dedcffb75450fcfcf3ed6363c.mp3"}'
+) ON DUPLICATE KEY UPDATE
+  provider = VALUES(provider),
+  provider_model = VALUES(provider_model),
+  storage_url = VALUES(storage_url),
+  duration_ms = VALUES(duration_ms),
+  generated_at = VALUES(generated_at),
+  checksum = VALUES(checksum),
+  status = VALUES(status),
+  metadata = VALUES(metadata);
+
+-- d_weather_and_clothes_01:2 -> audio/generated/tr-TR/dialogues/c98c89f51fb2c112e73d4c7567db5732d215aef31951ee410b4962a19d7ec687.mp3
+UPDATE audio_assets
+SET status = 'archived'
+WHERE entity_type = 'dialogue_turn'
+  AND entity_id = UUID_TO_BIN('b265acb8-4f8d-5f3e-a5f8-b5ac31ce9a74', 1)
+  AND voice_key = 'character:mert:male_warm'
+  AND (entity_type NOT IN ('grammar_point','exercise') OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'd_weather_and_clothes_01:2')
+  AND source_text_hash IS NOT NULL
+  AND source_text_hash <> '0fab8cdb8e5fa22ed787fb397ed509d73470e3ded359c45f513b4382b9e941f9'
+  AND status <> 'archived';
+INSERT INTO audio_assets (
+  id, language_id, language_variant_id, entity_type, entity_id, source_text_hash,
+  voice_key, provider, provider_model, storage_url, duration_ms, generated_at, checksum, status, metadata
+) VALUES (
+  UUID_TO_BIN('7ad9aec2-582d-5f89-bae4-789f75814b7c', 1), @audio_language_id, @audio_variant_id, 'dialogue_turn', UUID_TO_BIN('b265acb8-4f8d-5f3e-a5f8-b5ac31ce9a74', 1), '0fab8cdb8e5fa22ed787fb397ed509d73470e3ded359c45f513b4382b9e941f9',
+  'character:mert:male_warm', 'elevenlabs', 'eleven_multilingual_v2', 'audio/generated/tr-TR/dialogues/c98c89f51fb2c112e73d4c7567db5732d215aef31951ee410b4962a19d7ec687.mp3', 1384, '2026-09-14 11:32:00.973970', '12e4dccdef286517d28f872dc02c579955943eb2a8fc1509b61aee02a9f1e041', 'validated', '{"audio_key":"c98c89f51fb2c112e73d4c7567db5732d215aef31951ee410b4962a19d7ec687","entity_key":"d_weather_and_clothes_01:2","voice_id":"jGqlr3dGaFN0IfJZa3zS","voice_name":"Talha - Friendly, Energetic and Neutral","voice_labels":{"gender":"male","accent":"central","age":"young","category":"professional","language":"tr","use_case":"conversational","descriptive":"casual"},"output_format":"mp3_44100_192","file_sha256":"12e4dccdef286517d28f872dc02c579955943eb2a8fc1509b61aee02a9f1e041","settings":{"stability":0.58,"similarity_boost":0.87,"style":0.14,"use_speaker_boost":true,"speed":0.97},"relative_path":"audio/generated/tr-TR/dialogues/c98c89f51fb2c112e73d4c7567db5732d215aef31951ee410b4962a19d7ec687.mp3"}'
 ) ON DUPLICATE KEY UPDATE
   provider = VALUES(provider),
   provider_model = VALUES(provider_model),
@@ -1726,6 +3364,136 @@ INSERT INTO audio_assets (
   status = VALUES(status),
   metadata = VALUES(metadata);
 
+-- d_basic_health_02:2 -> audio/generated/tr-TR/dialogues/d1e1e2bf9c5b0ff67b83109a3975422e46341525761b97f14b96b397b4c3273d.mp3
+UPDATE audio_assets
+SET status = 'archived'
+WHERE entity_type = 'dialogue_turn'
+  AND entity_id = UUID_TO_BIN('5ad1a4c0-1914-565f-8908-362640a16b0c', 1)
+  AND voice_key = 'character:elif:female_warm'
+  AND (entity_type NOT IN ('grammar_point','exercise') OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'd_basic_health_02:2')
+  AND source_text_hash IS NOT NULL
+  AND source_text_hash <> 'fbfbfa0165b3648f56fd087168f3ff5f9ef525d8487d9c0c14d78ba9c756a2f3'
+  AND status <> 'archived';
+INSERT INTO audio_assets (
+  id, language_id, language_variant_id, entity_type, entity_id, source_text_hash,
+  voice_key, provider, provider_model, storage_url, duration_ms, generated_at, checksum, status, metadata
+) VALUES (
+  UUID_TO_BIN('f27bc356-72ba-5e5e-9e46-e925420da07a', 1), @audio_language_id, @audio_variant_id, 'dialogue_turn', UUID_TO_BIN('5ad1a4c0-1914-565f-8908-362640a16b0c', 1), 'fbfbfa0165b3648f56fd087168f3ff5f9ef525d8487d9c0c14d78ba9c756a2f3',
+  'character:elif:female_warm', 'elevenlabs', 'eleven_multilingual_v2', 'audio/generated/tr-TR/dialogues/d1e1e2bf9c5b0ff67b83109a3975422e46341525761b97f14b96b397b4c3273d.mp3', 1488, '2026-09-14 11:32:01.152957', '5980632e68048fa9103b6f26911eed05a17513c7ae01933b1196a05a28009812', 'validated', '{"audio_key":"d1e1e2bf9c5b0ff67b83109a3975422e46341525761b97f14b96b397b4c3273d","entity_key":"d_basic_health_02:2","voice_id":"aEJD8mYP0nuof1XHShVY","voice_name":"Gozde Arikan - Soft, Warm and Clear","voice_labels":{"gender":"female","accent":"standard","age":"young","category":"professional","language":"tr","use_case":"conversational","descriptive":"casual"},"output_format":"mp3_44100_192","file_sha256":"5980632e68048fa9103b6f26911eed05a17513c7ae01933b1196a05a28009812","settings":{"stability":0.58,"similarity_boost":0.87,"style":0.14,"use_speaker_boost":true,"speed":0.97},"relative_path":"audio/generated/tr-TR/dialogues/d1e1e2bf9c5b0ff67b83109a3975422e46341525761b97f14b96b397b4c3273d.mp3"}'
+) ON DUPLICATE KEY UPDATE
+  provider = VALUES(provider),
+  provider_model = VALUES(provider_model),
+  storage_url = VALUES(storage_url),
+  duration_ms = VALUES(duration_ms),
+  generated_at = VALUES(generated_at),
+  checksum = VALUES(checksum),
+  status = VALUES(status),
+  metadata = VALUES(metadata);
+
+-- d_weather_and_clothes_02:2 -> audio/generated/tr-TR/dialogues/d3a1e934d223db03f03e42e5d07dddbd20dd4e510dc49282a3a4a3bffcab9a0b.mp3
+UPDATE audio_assets
+SET status = 'archived'
+WHERE entity_type = 'dialogue_turn'
+  AND entity_id = UUID_TO_BIN('54700328-dc34-56fa-aac2-f0e539e69a1b', 1)
+  AND voice_key = 'character:burak:male_professional'
+  AND (entity_type NOT IN ('grammar_point','exercise') OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'd_weather_and_clothes_02:2')
+  AND source_text_hash IS NOT NULL
+  AND source_text_hash <> '5e408c30b99b2cfa3b7acb325e04883832d4204770dcd3302999e2e228698a9d'
+  AND status <> 'archived';
+INSERT INTO audio_assets (
+  id, language_id, language_variant_id, entity_type, entity_id, source_text_hash,
+  voice_key, provider, provider_model, storage_url, duration_ms, generated_at, checksum, status, metadata
+) VALUES (
+  UUID_TO_BIN('db26d0a3-c3cb-5d91-808d-400e675cf055', 1), @audio_language_id, @audio_variant_id, 'dialogue_turn', UUID_TO_BIN('54700328-dc34-56fa-aac2-f0e539e69a1b', 1), '5e408c30b99b2cfa3b7acb325e04883832d4204770dcd3302999e2e228698a9d',
+  'character:burak:male_professional', 'elevenlabs', 'eleven_multilingual_v2', 'audio/generated/tr-TR/dialogues/d3a1e934d223db03f03e42e5d07dddbd20dd4e510dc49282a3a4a3bffcab9a0b.mp3', 1253, '2026-09-14 11:32:01.955289', 'bd3b551314952ceb071471c41e93a93499939176e4cf2ac2961a10f8055b33eb', 'validated', '{"audio_key":"d3a1e934d223db03f03e42e5d07dddbd20dd4e510dc49282a3a4a3bffcab9a0b","entity_key":"d_weather_and_clothes_02:2","voice_id":"5HEFEBb9WCCpCdgZE77B","voice_name":"Eyüp Tulûhan Etker - Deep and Rich","voice_labels":{"gender":"male","accent":"istanbul","age":"middle_aged","category":"professional","language":"tr","use_case":"conversational","descriptive":"neutral"},"output_format":"mp3_44100_192","file_sha256":"bd3b551314952ceb071471c41e93a93499939176e4cf2ac2961a10f8055b33eb","settings":{"stability":0.71,"similarity_boost":0.9,"style":0.05,"use_speaker_boost":true,"speed":0.96},"relative_path":"audio/generated/tr-TR/dialogues/d3a1e934d223db03f03e42e5d07dddbd20dd4e510dc49282a3a4a3bffcab9a0b.mp3"}'
+) ON DUPLICATE KEY UPDATE
+  provider = VALUES(provider),
+  provider_model = VALUES(provider_model),
+  storage_url = VALUES(storage_url),
+  duration_ms = VALUES(duration_ms),
+  generated_at = VALUES(generated_at),
+  checksum = VALUES(checksum),
+  status = VALUES(status),
+  metadata = VALUES(metadata);
+
+-- d_basic_health_01:4 -> audio/generated/tr-TR/dialogues/da913d5fa0a2879eb0913289f996b7b1a7690dc5fbb395069923783d1f30a200.mp3
+UPDATE audio_assets
+SET status = 'archived'
+WHERE entity_type = 'dialogue_turn'
+  AND entity_id = UUID_TO_BIN('e4b13f54-ee56-5b6c-ae86-9f9e4f36ee0a', 1)
+  AND voice_key = 'character:zeynep:female_professional'
+  AND (entity_type NOT IN ('grammar_point','exercise') OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'd_basic_health_01:4')
+  AND source_text_hash IS NOT NULL
+  AND source_text_hash <> 'a7f0eaee8b9895a224836ba6121756bc818b6042b734c4e79c8a0a7562fa6955'
+  AND status <> 'archived';
+INSERT INTO audio_assets (
+  id, language_id, language_variant_id, entity_type, entity_id, source_text_hash,
+  voice_key, provider, provider_model, storage_url, duration_ms, generated_at, checksum, status, metadata
+) VALUES (
+  UUID_TO_BIN('e5eacdde-0d2e-5b82-864a-5f08145a8d9d', 1), @audio_language_id, @audio_variant_id, 'dialogue_turn', UUID_TO_BIN('e4b13f54-ee56-5b6c-ae86-9f9e4f36ee0a', 1), 'a7f0eaee8b9895a224836ba6121756bc818b6042b734c4e79c8a0a7562fa6955',
+  'character:zeynep:female_professional', 'elevenlabs', 'eleven_multilingual_v2', 'audio/generated/tr-TR/dialogues/da913d5fa0a2879eb0913289f996b7b1a7690dc5fbb395069923783d1f30a200.mp3', 966, '2026-09-14 11:32:02.088993', '5c0951fd1a18c73868161c62006cf4aea46d10030d7537efb42f28b1862f0c88', 'validated', '{"audio_key":"da913d5fa0a2879eb0913289f996b7b1a7690dc5fbb395069923783d1f30a200","entity_key":"d_basic_health_01:4","voice_id":"4XsbOSxQHw4NUVaEeo2o","voice_name":"Elif - Calm & Natural","voice_labels":{"gender":"female","accent":"istanbul","age":"young","category":"professional","language":"tr","use_case":"conversational","descriptive":"calm"},"output_format":"mp3_44100_192","file_sha256":"5c0951fd1a18c73868161c62006cf4aea46d10030d7537efb42f28b1862f0c88","settings":{"stability":0.71,"similarity_boost":0.9,"style":0.05,"use_speaker_boost":true,"speed":0.96},"relative_path":"audio/generated/tr-TR/dialogues/da913d5fa0a2879eb0913289f996b7b1a7690dc5fbb395069923783d1f30a200.mp3"}'
+) ON DUPLICATE KEY UPDATE
+  provider = VALUES(provider),
+  provider_model = VALUES(provider_model),
+  storage_url = VALUES(storage_url),
+  duration_ms = VALUES(duration_ms),
+  generated_at = VALUES(generated_at),
+  checksum = VALUES(checksum),
+  status = VALUES(status),
+  metadata = VALUES(metadata);
+
+-- d_before_and_after_01:2 -> audio/generated/tr-TR/dialogues/dc100668a70076bc938065d17d1444576862294286a03ceb22b7d2dba12c7d6a.mp3
+UPDATE audio_assets
+SET status = 'archived'
+WHERE entity_type = 'dialogue_turn'
+  AND entity_id = UUID_TO_BIN('e6635a49-a255-591f-ae23-b72c84304764', 1)
+  AND voice_key = 'character:selin:female_bright'
+  AND (entity_type NOT IN ('grammar_point','exercise') OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'd_before_and_after_01:2')
+  AND source_text_hash IS NOT NULL
+  AND source_text_hash <> '118466d328511f8166808b490dba973568bd323b8e6da976387929c284edf46c'
+  AND status <> 'archived';
+INSERT INTO audio_assets (
+  id, language_id, language_variant_id, entity_type, entity_id, source_text_hash,
+  voice_key, provider, provider_model, storage_url, duration_ms, generated_at, checksum, status, metadata
+) VALUES (
+  UUID_TO_BIN('9c60f12f-f11e-5665-8009-8c8fb0d275cb', 1), @audio_language_id, @audio_variant_id, 'dialogue_turn', UUID_TO_BIN('e6635a49-a255-591f-ae23-b72c84304764', 1), '118466d328511f8166808b490dba973568bd323b8e6da976387929c284edf46c',
+  'character:selin:female_bright', 'elevenlabs', 'eleven_multilingual_v2', 'audio/generated/tr-TR/dialogues/dc100668a70076bc938065d17d1444576862294286a03ceb22b7d2dba12c7d6a.mp3', 1149, '2026-09-14 11:32:02.928907', 'bc2f264ee447394f55497869db39fd773c64f6cb97177fdd6667d02e0b4399ac', 'validated', '{"audio_key":"dc100668a70076bc938065d17d1444576862294286a03ceb22b7d2dba12c7d6a","entity_key":"d_before_and_after_01:2","voice_id":"D6QpOJ61ltQ3whot6iJZ","voice_name":"Tugba","voice_labels":{"gender":"female","accent":"istanbul","age":"young","category":"professional","language":"tr","use_case":"conversational","descriptive":"calm"},"output_format":"mp3_44100_192","file_sha256":"bc2f264ee447394f55497869db39fd773c64f6cb97177fdd6667d02e0b4399ac","settings":{"stability":0.52,"similarity_boost":0.86,"style":0.2,"use_speaker_boost":true,"speed":0.99},"relative_path":"audio/generated/tr-TR/dialogues/dc100668a70076bc938065d17d1444576862294286a03ceb22b7d2dba12c7d6a.mp3"}'
+) ON DUPLICATE KEY UPDATE
+  provider = VALUES(provider),
+  provider_model = VALUES(provider_model),
+  storage_url = VALUES(storage_url),
+  duration_ms = VALUES(duration_ms),
+  generated_at = VALUES(generated_at),
+  checksum = VALUES(checksum),
+  status = VALUES(status),
+  metadata = VALUES(metadata);
+
+-- d_from_here_to_there_01:4 -> audio/generated/tr-TR/dialogues/dcf9962cd49f4799c3971d3473167f9cda92d453f88fc68c045d69120f6fec49.mp3
+UPDATE audio_assets
+SET status = 'archived'
+WHERE entity_type = 'dialogue_turn'
+  AND entity_id = UUID_TO_BIN('4b2883bf-4148-570a-80cd-f27e555eb61f', 1)
+  AND voice_key = 'character:deniz:female_calm'
+  AND (entity_type NOT IN ('grammar_point','exercise') OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'd_from_here_to_there_01:4')
+  AND source_text_hash IS NOT NULL
+  AND source_text_hash <> '81599816c7c1deacdf44091bb2fc0a9ff65da7baa7298c883b3eeb3a1b8e7bc0'
+  AND status <> 'archived';
+INSERT INTO audio_assets (
+  id, language_id, language_variant_id, entity_type, entity_id, source_text_hash,
+  voice_key, provider, provider_model, storage_url, duration_ms, generated_at, checksum, status, metadata
+) VALUES (
+  UUID_TO_BIN('22d3868b-8386-5d00-941b-2498c2379586', 1), @audio_language_id, @audio_variant_id, 'dialogue_turn', UUID_TO_BIN('4b2883bf-4148-570a-80cd-f27e555eb61f', 1), '81599816c7c1deacdf44091bb2fc0a9ff65da7baa7298c883b3eeb3a1b8e7bc0',
+  'character:deniz:female_calm', 'elevenlabs', 'eleven_multilingual_v2', 'audio/generated/tr-TR/dialogues/dcf9962cd49f4799c3971d3473167f9cda92d453f88fc68c045d69120f6fec49.mp3', 2089, '2026-09-14 11:32:03.140406', 'd1cd7a01c06bc72356c2b3ed76f1dd0d2521820831c988c9e7d146d58a58cf15', 'validated', '{"audio_key":"dcf9962cd49f4799c3971d3473167f9cda92d453f88fc68c045d69120f6fec49","entity_key":"d_from_here_to_there_01:4","voice_id":"rstA752XNcJHV3KFLRON","voice_name":"Seth - Bright, Sincere and Clean","voice_labels":{"gender":"female","accent":"standard","age":"young","category":"professional","language":"tr","use_case":"conversational","descriptive":"calm"},"output_format":"mp3_44100_192","file_sha256":"d1cd7a01c06bc72356c2b3ed76f1dd0d2521820831c988c9e7d146d58a58cf15","settings":{"stability":0.68,"similarity_boost":0.89,"style":0.06,"use_speaker_boost":true,"speed":0.95},"relative_path":"audio/generated/tr-TR/dialogues/dcf9962cd49f4799c3971d3473167f9cda92d453f88fc68c045d69120f6fec49.mp3"}'
+) ON DUPLICATE KEY UPDATE
+  provider = VALUES(provider),
+  provider_model = VALUES(provider_model),
+  storage_url = VALUES(storage_url),
+  duration_ms = VALUES(duration_ms),
+  generated_at = VALUES(generated_at),
+  checksum = VALUES(checksum),
+  status = VALUES(status),
+  metadata = VALUES(metadata);
+
 -- d_time_and_plans_01:3 -> audio/generated/tr-TR/dialogues/dd85e984f19c500fb21aace7d0169ebf603f0fc6ef4e6315bdf004ee7dfc7ebf.mp3
 UPDATE audio_assets
 SET status = 'archived'
@@ -1768,6 +3536,58 @@ INSERT INTO audio_assets (
 ) VALUES (
   UUID_TO_BIN('e2dd3e63-aa53-516e-b539-5269f7216980', 1), @audio_language_id, @audio_variant_id, 'dialogue_turn', UUID_TO_BIN('c85022f0-4fa3-53c0-b168-7b45313e5173', 1), '72c15cd90db7e494f0300ae5dc406c9483e07d3f59b4f46a674e6d49cc984ad2',
   'character:mert:male_warm', 'elevenlabs', 'eleven_multilingual_v2', 'audio/generated/tr-TR/dialogues/e01f284424c9ea0aecf2c95f512543a1b45d08e2ec0675ea79b18d43c1be0cef.mp3', 1201, '2026-09-13 15:55:03.647705', 'b1697bb34d7b5c177603f4bfe68d633a652087c8cb1861d3e533b22525280b54', 'validated', '{"audio_key":"e01f284424c9ea0aecf2c95f512543a1b45d08e2ec0675ea79b18d43c1be0cef","entity_key":"d_at_the_cafe_02:2","voice_id":"jGqlr3dGaFN0IfJZa3zS","voice_name":"Talha - Friendly, Energetic and Neutral","voice_labels":{"gender":"male","accent":"central","age":"young","category":"professional","language":"tr","use_case":"conversational","descriptive":"casual"},"output_format":"mp3_44100_192","file_sha256":"b1697bb34d7b5c177603f4bfe68d633a652087c8cb1861d3e533b22525280b54","settings":{"stability":0.58,"similarity_boost":0.87,"style":0.14,"use_speaker_boost":true,"speed":0.97},"relative_path":"audio/generated/tr-TR/dialogues/e01f284424c9ea0aecf2c95f512543a1b45d08e2ec0675ea79b18d43c1be0cef.mp3"}'
+) ON DUPLICATE KEY UPDATE
+  provider = VALUES(provider),
+  provider_model = VALUES(provider_model),
+  storage_url = VALUES(storage_url),
+  duration_ms = VALUES(duration_ms),
+  generated_at = VALUES(generated_at),
+  checksum = VALUES(checksum),
+  status = VALUES(status),
+  metadata = VALUES(metadata);
+
+-- d_near_future_plans_01:2 -> audio/generated/tr-TR/dialogues/e36fe25f3dbea1a1f6e8f44e0fedc570151310415fd3d50a25607c51d6063b5b.mp3
+UPDATE audio_assets
+SET status = 'archived'
+WHERE entity_type = 'dialogue_turn'
+  AND entity_id = UUID_TO_BIN('0b7ffdd5-7f1b-5ef8-88fe-d33a87300122', 1)
+  AND voice_key = 'character:burak:male_professional'
+  AND (entity_type NOT IN ('grammar_point','exercise') OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'd_near_future_plans_01:2')
+  AND source_text_hash IS NOT NULL
+  AND source_text_hash <> 'd65050812c94a46f5d65dfd79a708b8b044be31ee9ccf271254adee14a68e7fb'
+  AND status <> 'archived';
+INSERT INTO audio_assets (
+  id, language_id, language_variant_id, entity_type, entity_id, source_text_hash,
+  voice_key, provider, provider_model, storage_url, duration_ms, generated_at, checksum, status, metadata
+) VALUES (
+  UUID_TO_BIN('0c402c9f-e55e-58f6-af32-53f8528d8d5b', 1), @audio_language_id, @audio_variant_id, 'dialogue_turn', UUID_TO_BIN('0b7ffdd5-7f1b-5ef8-88fe-d33a87300122', 1), 'd65050812c94a46f5d65dfd79a708b8b044be31ee9ccf271254adee14a68e7fb',
+  'character:burak:male_professional', 'elevenlabs', 'eleven_multilingual_v2', 'audio/generated/tr-TR/dialogues/e36fe25f3dbea1a1f6e8f44e0fedc570151310415fd3d50a25607c51d6063b5b.mp3', 1515, '2026-09-14 11:32:03.908219', 'e3dad9639ed27d8e9ee2e943c4e45a15e1afd68187faaad14afd342c065171b2', 'validated', '{"audio_key":"e36fe25f3dbea1a1f6e8f44e0fedc570151310415fd3d50a25607c51d6063b5b","entity_key":"d_near_future_plans_01:2","voice_id":"5HEFEBb9WCCpCdgZE77B","voice_name":"Eyüp Tulûhan Etker - Deep and Rich","voice_labels":{"gender":"male","accent":"istanbul","age":"middle_aged","category":"professional","language":"tr","use_case":"conversational","descriptive":"neutral"},"output_format":"mp3_44100_192","file_sha256":"e3dad9639ed27d8e9ee2e943c4e45a15e1afd68187faaad14afd342c065171b2","settings":{"stability":0.71,"similarity_boost":0.9,"style":0.05,"use_speaker_boost":true,"speed":0.96},"relative_path":"audio/generated/tr-TR/dialogues/e36fe25f3dbea1a1f6e8f44e0fedc570151310415fd3d50a25607c51d6063b5b.mp3"}'
+) ON DUPLICATE KEY UPDATE
+  provider = VALUES(provider),
+  provider_model = VALUES(provider_model),
+  storage_url = VALUES(storage_url),
+  duration_ms = VALUES(duration_ms),
+  generated_at = VALUES(generated_at),
+  checksum = VALUES(checksum),
+  status = VALUES(status),
+  metadata = VALUES(metadata);
+
+-- d_before_and_after_02:1 -> audio/generated/tr-TR/dialogues/e403c1f51499557b3163f8a8a8348360085c9a5aba5f069088e00f02a41a1f60.mp3
+UPDATE audio_assets
+SET status = 'archived'
+WHERE entity_type = 'dialogue_turn'
+  AND entity_id = UUID_TO_BIN('c7105571-e973-5887-b4bf-a7b6d307c9c8', 1)
+  AND voice_key = 'character:burak:male_professional'
+  AND (entity_type NOT IN ('grammar_point','exercise') OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'd_before_and_after_02:1')
+  AND source_text_hash IS NOT NULL
+  AND source_text_hash <> '97bdc2df88c16013d86a54f9c606d602835e9b07395ee048952aaebbdf7f1f5e'
+  AND status <> 'archived';
+INSERT INTO audio_assets (
+  id, language_id, language_variant_id, entity_type, entity_id, source_text_hash,
+  voice_key, provider, provider_model, storage_url, duration_ms, generated_at, checksum, status, metadata
+) VALUES (
+  UUID_TO_BIN('a2b6143d-2fdc-552d-92b9-f3a8ae43e374', 1), @audio_language_id, @audio_variant_id, 'dialogue_turn', UUID_TO_BIN('c7105571-e973-5887-b4bf-a7b6d307c9c8', 1), '97bdc2df88c16013d86a54f9c606d602835e9b07395ee048952aaebbdf7f1f5e',
+  'character:burak:male_professional', 'elevenlabs', 'eleven_multilingual_v2', 'audio/generated/tr-TR/dialogues/e403c1f51499557b3163f8a8a8348360085c9a5aba5f069088e00f02a41a1f60.mp3', 1750, '2026-09-14 11:32:04.162284', 'a1fb63744a2983e9c169970d5b5277e457f296aa62c22d2958a4daccdaceddfb', 'validated', '{"audio_key":"e403c1f51499557b3163f8a8a8348360085c9a5aba5f069088e00f02a41a1f60","entity_key":"d_before_and_after_02:1","voice_id":"5HEFEBb9WCCpCdgZE77B","voice_name":"Eyüp Tulûhan Etker - Deep and Rich","voice_labels":{"gender":"male","accent":"istanbul","age":"middle_aged","category":"professional","language":"tr","use_case":"conversational","descriptive":"neutral"},"output_format":"mp3_44100_192","file_sha256":"a1fb63744a2983e9c169970d5b5277e457f296aa62c22d2958a4daccdaceddfb","settings":{"stability":0.71,"similarity_boost":0.9,"style":0.05,"use_speaker_boost":true,"speed":0.96},"relative_path":"audio/generated/tr-TR/dialogues/e403c1f51499557b3163f8a8a8348360085c9a5aba5f069088e00f02a41a1f60.mp3"}'
 ) ON DUPLICATE KEY UPDATE
   provider = VALUES(provider),
   provider_model = VALUES(provider_model),
@@ -1830,6 +3650,32 @@ INSERT INTO audio_assets (
   status = VALUES(status),
   metadata = VALUES(metadata);
 
+-- d_near_future_plans_01:3 -> audio/generated/tr-TR/dialogues/e7b2f814b3e96149274a14f036d539f019e9ae4c8ade12b916d0605a1c014320.mp3
+UPDATE audio_assets
+SET status = 'archived'
+WHERE entity_type = 'dialogue_turn'
+  AND entity_id = UUID_TO_BIN('29cf38a3-49cd-57a4-9d2b-5abcb9aab4a6', 1)
+  AND voice_key = 'character:elif:female_warm'
+  AND (entity_type NOT IN ('grammar_point','exercise') OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'd_near_future_plans_01:3')
+  AND source_text_hash IS NOT NULL
+  AND source_text_hash <> 'fbc3ae1fbf0949959e8416d0dbedf15ea1ca6766f47fdde9456a4debb043dac2'
+  AND status <> 'archived';
+INSERT INTO audio_assets (
+  id, language_id, language_variant_id, entity_type, entity_id, source_text_hash,
+  voice_key, provider, provider_model, storage_url, duration_ms, generated_at, checksum, status, metadata
+) VALUES (
+  UUID_TO_BIN('8e87055d-002f-5b02-a559-7ad8168d443d', 1), @audio_language_id, @audio_variant_id, 'dialogue_turn', UUID_TO_BIN('29cf38a3-49cd-57a4-9d2b-5abcb9aab4a6', 1), 'fbc3ae1fbf0949959e8416d0dbedf15ea1ca6766f47fdde9456a4debb043dac2',
+  'character:elif:female_warm', 'elevenlabs', 'eleven_multilingual_v2', 'audio/generated/tr-TR/dialogues/e7b2f814b3e96149274a14f036d539f019e9ae4c8ade12b916d0605a1c014320.mp3', 1488, '2026-09-14 11:32:04.924594', 'b26353fbb0da856db8aa8c780190249ca64a4930b4c46aeaa5404bbc25613197', 'validated', '{"audio_key":"e7b2f814b3e96149274a14f036d539f019e9ae4c8ade12b916d0605a1c014320","entity_key":"d_near_future_plans_01:3","voice_id":"aEJD8mYP0nuof1XHShVY","voice_name":"Gozde Arikan - Soft, Warm and Clear","voice_labels":{"gender":"female","accent":"standard","age":"young","category":"professional","language":"tr","use_case":"conversational","descriptive":"casual"},"output_format":"mp3_44100_192","file_sha256":"b26353fbb0da856db8aa8c780190249ca64a4930b4c46aeaa5404bbc25613197","settings":{"stability":0.58,"similarity_boost":0.87,"style":0.14,"use_speaker_boost":true,"speed":0.97},"relative_path":"audio/generated/tr-TR/dialogues/e7b2f814b3e96149274a14f036d539f019e9ae4c8ade12b916d0605a1c014320.mp3"}'
+) ON DUPLICATE KEY UPDATE
+  provider = VALUES(provider),
+  provider_model = VALUES(provider_model),
+  storage_url = VALUES(storage_url),
+  duration_ms = VALUES(duration_ms),
+  generated_at = VALUES(generated_at),
+  checksum = VALUES(checksum),
+  status = VALUES(status),
+  metadata = VALUES(metadata);
+
 -- d_at_home_02:3 -> audio/generated/tr-TR/dialogues/e9f660ea003a288127614838b5a8fc0567e4e1423dd472010a04bc0d044aaa90.mp3
 UPDATE audio_assets
 SET status = 'archived'
@@ -1872,6 +3718,32 @@ INSERT INTO audio_assets (
 ) VALUES (
   UUID_TO_BIN('acd7a445-4b27-522d-a8fb-39816c345cc1', 1), @audio_language_id, @audio_variant_id, 'dialogue_turn', UUID_TO_BIN('fc5f2f68-af0e-5f94-a891-9e91dd7bca44', 1), '968b0a2d07b5a96691004ca2b24549d61f3fbe139ce36ed7b3bf220daffb8648',
   'character:elif:female_warm', 'elevenlabs', 'eleven_multilingual_v2', 'audio/generated/tr-TR/dialogues/ea16d8af8349f8efe558aac4521bba6e5780823a6fb3bb09a78c08259d7303f6.mp3', 1384, '2026-09-13 15:55:05.820528', 'fbb4b7fcb65f3294d474d15674ca13165e14a556a32c038c7a6cbd606d2674b3', 'validated', '{"audio_key":"ea16d8af8349f8efe558aac4521bba6e5780823a6fb3bb09a78c08259d7303f6","entity_key":"d_what_im_doing_01:4","voice_id":"aEJD8mYP0nuof1XHShVY","voice_name":"Gozde Arikan - Soft, Warm and Clear","voice_labels":{"gender":"female","accent":"standard","age":"young","category":"professional","language":"tr","use_case":"conversational","descriptive":"casual"},"output_format":"mp3_44100_192","file_sha256":"fbb4b7fcb65f3294d474d15674ca13165e14a556a32c038c7a6cbd606d2674b3","settings":{"stability":0.58,"similarity_boost":0.87,"style":0.14,"use_speaker_boost":true,"speed":0.97},"relative_path":"audio/generated/tr-TR/dialogues/ea16d8af8349f8efe558aac4521bba6e5780823a6fb3bb09a78c08259d7303f6.mp3"}'
+) ON DUPLICATE KEY UPDATE
+  provider = VALUES(provider),
+  provider_model = VALUES(provider_model),
+  storage_url = VALUES(storage_url),
+  duration_ms = VALUES(duration_ms),
+  generated_at = VALUES(generated_at),
+  checksum = VALUES(checksum),
+  status = VALUES(status),
+  metadata = VALUES(metadata);
+
+-- d_from_here_to_there_01:3 -> audio/generated/tr-TR/dialogues/eb2fbd2ca785a133c57d36f34ceff1faa14bf02ba39e962aac641b91a2d8d22b.mp3
+UPDATE audio_assets
+SET status = 'archived'
+WHERE entity_type = 'dialogue_turn'
+  AND entity_id = UUID_TO_BIN('4a6e764e-fcc7-52b6-b756-7d0377642e46', 1)
+  AND voice_key = 'character:zeynep:female_professional'
+  AND (entity_type NOT IN ('grammar_point','exercise') OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'd_from_here_to_there_01:3')
+  AND source_text_hash IS NOT NULL
+  AND source_text_hash <> '7c01192e9c770eb0a16049c2f24dfb86893b3b4de5bf7a398084dfb5e0eb2966'
+  AND status <> 'archived';
+INSERT INTO audio_assets (
+  id, language_id, language_variant_id, entity_type, entity_id, source_text_hash,
+  voice_key, provider, provider_model, storage_url, duration_ms, generated_at, checksum, status, metadata
+) VALUES (
+  UUID_TO_BIN('e51454c3-b067-540f-b34b-4f382d967b91', 1), @audio_language_id, @audio_variant_id, 'dialogue_turn', UUID_TO_BIN('4a6e764e-fcc7-52b6-b756-7d0377642e46', 1), '7c01192e9c770eb0a16049c2f24dfb86893b3b4de5bf7a398084dfb5e0eb2966',
+  'character:zeynep:female_professional', 'elevenlabs', 'eleven_multilingual_v2', 'audio/generated/tr-TR/dialogues/eb2fbd2ca785a133c57d36f34ceff1faa14bf02ba39e962aac641b91a2d8d22b.mp3', 1515, '2026-09-14 11:32:05.179093', '47cce80eb0d521438ab50d9e8bbd9a2cc6174f47c6fab49cb68d25c80ac120a3', 'validated', '{"audio_key":"eb2fbd2ca785a133c57d36f34ceff1faa14bf02ba39e962aac641b91a2d8d22b","entity_key":"d_from_here_to_there_01:3","voice_id":"4XsbOSxQHw4NUVaEeo2o","voice_name":"Elif - Calm & Natural","voice_labels":{"gender":"female","accent":"istanbul","age":"young","category":"professional","language":"tr","use_case":"conversational","descriptive":"calm"},"output_format":"mp3_44100_192","file_sha256":"47cce80eb0d521438ab50d9e8bbd9a2cc6174f47c6fab49cb68d25c80ac120a3","settings":{"stability":0.71,"similarity_boost":0.9,"style":0.05,"use_speaker_boost":true,"speed":0.96},"relative_path":"audio/generated/tr-TR/dialogues/eb2fbd2ca785a133c57d36f34ceff1faa14bf02ba39e962aac641b91a2d8d22b.mp3"}'
 ) ON DUPLICATE KEY UPDATE
   provider = VALUES(provider),
   provider_model = VALUES(provider_model),
@@ -1986,6 +3858,58 @@ INSERT INTO audio_assets (
   status = VALUES(status),
   metadata = VALUES(metadata);
 
+-- d_near_future_plans_02:4 -> audio/generated/tr-TR/dialogues/f0ff098f9f34383d98b2ff79174d8097e3e65f05b7a845bef342b7f80c101b18.mp3
+UPDATE audio_assets
+SET status = 'archived'
+WHERE entity_type = 'dialogue_turn'
+  AND entity_id = UUID_TO_BIN('c675cf3e-8092-5f88-97c3-6b4518d49905', 1)
+  AND voice_key = 'character:emre:male_calm'
+  AND (entity_type NOT IN ('grammar_point','exercise') OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'd_near_future_plans_02:4')
+  AND source_text_hash IS NOT NULL
+  AND source_text_hash <> '1f91d6378c5e9fcd0d56309a690fca5945276c2520211a7a0bc9a12a6fa04476'
+  AND status <> 'archived';
+INSERT INTO audio_assets (
+  id, language_id, language_variant_id, entity_type, entity_id, source_text_hash,
+  voice_key, provider, provider_model, storage_url, duration_ms, generated_at, checksum, status, metadata
+) VALUES (
+  UUID_TO_BIN('b951096e-bb5b-5952-ae03-dafe420e987f', 1), @audio_language_id, @audio_variant_id, 'dialogue_turn', UUID_TO_BIN('c675cf3e-8092-5f88-97c3-6b4518d49905', 1), '1f91d6378c5e9fcd0d56309a690fca5945276c2520211a7a0bc9a12a6fa04476',
+  'character:emre:male_calm', 'elevenlabs', 'eleven_multilingual_v2', 'audio/generated/tr-TR/dialogues/f0ff098f9f34383d98b2ff79174d8097e3e65f05b7a845bef342b7f80c101b18.mp3', 1436, '2026-09-14 11:32:05.891107', 'f79a56dad60baff73a5ce59c4183f82b33471f4645a35cfba156a49be5556cfe', 'validated', '{"audio_key":"f0ff098f9f34383d98b2ff79174d8097e3e65f05b7a845bef342b7f80c101b18","entity_key":"d_near_future_plans_02:4","voice_id":"Md4RAnfKt9kVIbvqUxly","voice_name":"Cihan - Warm, Natural and Friendly","voice_labels":{"gender":"male","accent":"istanbul","age":"middle_aged","category":"high_quality","language":"tr","use_case":"conversational","descriptive":"calm"},"output_format":"mp3_44100_192","file_sha256":"f79a56dad60baff73a5ce59c4183f82b33471f4645a35cfba156a49be5556cfe","settings":{"stability":0.68,"similarity_boost":0.89,"style":0.06,"use_speaker_boost":true,"speed":0.95},"relative_path":"audio/generated/tr-TR/dialogues/f0ff098f9f34383d98b2ff79174d8097e3e65f05b7a845bef342b7f80c101b18.mp3"}'
+) ON DUPLICATE KEY UPDATE
+  provider = VALUES(provider),
+  provider_model = VALUES(provider_model),
+  storage_url = VALUES(storage_url),
+  duration_ms = VALUES(duration_ms),
+  generated_at = VALUES(generated_at),
+  checksum = VALUES(checksum),
+  status = VALUES(status),
+  metadata = VALUES(metadata);
+
+-- d_a1_everyday_capstone_01:1 -> audio/generated/tr-TR/dialogues/f422bdc4fc52914d24b7a6706681a45f8a88292b612d36ab1cf23af5b7045ff9.mp3
+UPDATE audio_assets
+SET status = 'archived'
+WHERE entity_type = 'dialogue_turn'
+  AND entity_id = UUID_TO_BIN('7e2b7bbc-72b5-59aa-bbc7-e9b1317251df', 1)
+  AND voice_key = 'character:deniz:female_calm'
+  AND (entity_type NOT IN ('grammar_point','exercise') OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'd_a1_everyday_capstone_01:1')
+  AND source_text_hash IS NOT NULL
+  AND source_text_hash <> 'c77a1af9bdf078bc5af628c9db90ed4250f496f53a712723fe3e7e639d1c7ae2'
+  AND status <> 'archived';
+INSERT INTO audio_assets (
+  id, language_id, language_variant_id, entity_type, entity_id, source_text_hash,
+  voice_key, provider, provider_model, storage_url, duration_ms, generated_at, checksum, status, metadata
+) VALUES (
+  UUID_TO_BIN('9f270907-2027-53b4-87d6-798a2da0ca2d', 1), @audio_language_id, @audio_variant_id, 'dialogue_turn', UUID_TO_BIN('7e2b7bbc-72b5-59aa-bbc7-e9b1317251df', 1), 'c77a1af9bdf078bc5af628c9db90ed4250f496f53a712723fe3e7e639d1c7ae2',
+  'character:deniz:female_calm', 'elevenlabs', 'eleven_multilingual_v2', 'audio/generated/tr-TR/dialogues/f422bdc4fc52914d24b7a6706681a45f8a88292b612d36ab1cf23af5b7045ff9.mp3', 2220, '2026-09-14 11:32:06.318333', 'e9758d1ca5abc986cc2e3f2c4803e4f51a67dda470275bfa684f643107e70569', 'validated', '{"audio_key":"f422bdc4fc52914d24b7a6706681a45f8a88292b612d36ab1cf23af5b7045ff9","entity_key":"d_a1_everyday_capstone_01:1","voice_id":"rstA752XNcJHV3KFLRON","voice_name":"Seth - Bright, Sincere and Clean","voice_labels":{"gender":"female","accent":"standard","age":"young","category":"professional","language":"tr","use_case":"conversational","descriptive":"calm"},"output_format":"mp3_44100_192","file_sha256":"e9758d1ca5abc986cc2e3f2c4803e4f51a67dda470275bfa684f643107e70569","settings":{"stability":0.68,"similarity_boost":0.89,"style":0.06,"use_speaker_boost":true,"speed":0.95},"relative_path":"audio/generated/tr-TR/dialogues/f422bdc4fc52914d24b7a6706681a45f8a88292b612d36ab1cf23af5b7045ff9.mp3"}'
+) ON DUPLICATE KEY UPDATE
+  provider = VALUES(provider),
+  provider_model = VALUES(provider_model),
+  storage_url = VALUES(storage_url),
+  duration_ms = VALUES(duration_ms),
+  generated_at = VALUES(generated_at),
+  checksum = VALUES(checksum),
+  status = VALUES(status),
+  metadata = VALUES(metadata);
+
 -- d_what_im_doing_01:3 -> audio/generated/tr-TR/dialogues/f56f9ba6dc53f1a92789f4ae8b7b9dc9421b25c1ae631c04993717b3c4134e03.mp3
 UPDATE audio_assets
 SET status = 'archived'
@@ -2002,6 +3926,58 @@ INSERT INTO audio_assets (
 ) VALUES (
   UUID_TO_BIN('cdd7ce0c-ef60-53de-ab79-354bf68e01de', 1), @audio_language_id, @audio_variant_id, 'dialogue_turn', UUID_TO_BIN('121cdc41-0b99-5868-9d4c-53cd388cebe5', 1), '1625d421833289fb621c1fa044e79e45360c54aacbb22f86042625ed534d5e5b',
   'character:kaan:male_bright', 'elevenlabs', 'eleven_multilingual_v2', 'audio/generated/tr-TR/dialogues/f56f9ba6dc53f1a92789f4ae8b7b9dc9421b25c1ae631c04993717b3c4134e03.mp3', 1071, '2026-09-13 15:55:08.843591', '50f32b2d29eaf10f7bbf989b167d7fd8aa10c3c0f5da2dfa8d1c20cb2f5147dc', 'validated', '{"audio_key":"f56f9ba6dc53f1a92789f4ae8b7b9dc9421b25c1ae631c04993717b3c4134e03","entity_key":"d_what_im_doing_01:3","voice_id":"7mBFv1btncDZu2Bfgv0r","voice_name":"Tuna - Young and Soft","voice_labels":{"gender":"male","accent":"istanbul","age":"young","category":"professional","language":"tr","use_case":"social_media","descriptive":"casual"},"output_format":"mp3_44100_192","file_sha256":"50f32b2d29eaf10f7bbf989b167d7fd8aa10c3c0f5da2dfa8d1c20cb2f5147dc","settings":{"stability":0.52,"similarity_boost":0.86,"style":0.2,"use_speaker_boost":true,"speed":0.99},"relative_path":"audio/generated/tr-TR/dialogues/f56f9ba6dc53f1a92789f4ae8b7b9dc9421b25c1ae631c04993717b3c4134e03.mp3"}'
+) ON DUPLICATE KEY UPDATE
+  provider = VALUES(provider),
+  provider_model = VALUES(provider_model),
+  storage_url = VALUES(storage_url),
+  duration_ms = VALUES(duration_ms),
+  generated_at = VALUES(generated_at),
+  checksum = VALUES(checksum),
+  status = VALUES(status),
+  metadata = VALUES(metadata);
+
+-- d_from_here_to_there_02:2 -> audio/generated/tr-TR/dialogues/f6212e92f41a54b4a1f7ea9fa28dc3693064cabf6259827bd243d8ea62e948a7.mp3
+UPDATE audio_assets
+SET status = 'archived'
+WHERE entity_type = 'dialogue_turn'
+  AND entity_id = UUID_TO_BIN('4c2609ce-e679-5738-9ae5-fcb51e629234', 1)
+  AND voice_key = 'character:elif:female_warm'
+  AND (entity_type NOT IN ('grammar_point','exercise') OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'd_from_here_to_there_02:2')
+  AND source_text_hash IS NOT NULL
+  AND source_text_hash <> 'ceda7d30f8cdb15c8d5c4497c921b3867bad9a2b1625734636957fded2205240'
+  AND status <> 'archived';
+INSERT INTO audio_assets (
+  id, language_id, language_variant_id, entity_type, entity_id, source_text_hash,
+  voice_key, provider, provider_model, storage_url, duration_ms, generated_at, checksum, status, metadata
+) VALUES (
+  UUID_TO_BIN('b0a267a9-0340-5ac9-9684-96b6e23d5cd1', 1), @audio_language_id, @audio_variant_id, 'dialogue_turn', UUID_TO_BIN('4c2609ce-e679-5738-9ae5-fcb51e629234', 1), 'ceda7d30f8cdb15c8d5c4497c921b3867bad9a2b1625734636957fded2205240',
+  'character:elif:female_warm', 'elevenlabs', 'eleven_multilingual_v2', 'audio/generated/tr-TR/dialogues/f6212e92f41a54b4a1f7ea9fa28dc3693064cabf6259827bd243d8ea62e948a7.mp3', 1567, '2026-09-14 11:32:06.880769', 'cdfea0aea9bf38f9ce469e9146661bdce83c35d9e69484639621d82d9607d62e', 'validated', '{"audio_key":"f6212e92f41a54b4a1f7ea9fa28dc3693064cabf6259827bd243d8ea62e948a7","entity_key":"d_from_here_to_there_02:2","voice_id":"aEJD8mYP0nuof1XHShVY","voice_name":"Gozde Arikan - Soft, Warm and Clear","voice_labels":{"gender":"female","accent":"standard","age":"young","category":"professional","language":"tr","use_case":"conversational","descriptive":"casual"},"output_format":"mp3_44100_192","file_sha256":"cdfea0aea9bf38f9ce469e9146661bdce83c35d9e69484639621d82d9607d62e","settings":{"stability":0.58,"similarity_boost":0.87,"style":0.14,"use_speaker_boost":true,"speed":0.97},"relative_path":"audio/generated/tr-TR/dialogues/f6212e92f41a54b4a1f7ea9fa28dc3693064cabf6259827bd243d8ea62e948a7.mp3"}'
+) ON DUPLICATE KEY UPDATE
+  provider = VALUES(provider),
+  provider_model = VALUES(provider_model),
+  storage_url = VALUES(storage_url),
+  duration_ms = VALUES(duration_ms),
+  generated_at = VALUES(generated_at),
+  checksum = VALUES(checksum),
+  status = VALUES(status),
+  metadata = VALUES(metadata);
+
+-- d_yesterday_01:2 -> audio/generated/tr-TR/dialogues/f773b48b4f4b89662f14521921134ed44ad138ed18460f36b8e55d514be1db70.mp3
+UPDATE audio_assets
+SET status = 'archived'
+WHERE entity_type = 'dialogue_turn'
+  AND entity_id = UUID_TO_BIN('15f22f30-8548-58d5-9a14-0c66aa433e68', 1)
+  AND voice_key = 'character:emre:male_calm'
+  AND (entity_type NOT IN ('grammar_point','exercise') OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'd_yesterday_01:2')
+  AND source_text_hash IS NOT NULL
+  AND source_text_hash <> '9315b8396ef689220ee183f975f3e5641b274fd1f9f8b6977ad08cc71825db60'
+  AND status <> 'archived';
+INSERT INTO audio_assets (
+  id, language_id, language_variant_id, entity_type, entity_id, source_text_hash,
+  voice_key, provider, provider_model, storage_url, duration_ms, generated_at, checksum, status, metadata
+) VALUES (
+  UUID_TO_BIN('cbe06aa7-c2a5-53f8-9a56-e9b10aa92573', 1), @audio_language_id, @audio_variant_id, 'dialogue_turn', UUID_TO_BIN('15f22f30-8548-58d5-9a14-0c66aa433e68', 1), '9315b8396ef689220ee183f975f3e5641b274fd1f9f8b6977ad08cc71825db60',
+  'character:emre:male_calm', 'elevenlabs', 'eleven_multilingual_v2', 'audio/generated/tr-TR/dialogues/f773b48b4f4b89662f14521921134ed44ad138ed18460f36b8e55d514be1db70.mp3', 1384, '2026-09-14 11:32:07.284103', 'ba48bd6c1b50b1aa097ec04c44a461d1ea496e5f79880171a11d4a5c28f61550', 'validated', '{"audio_key":"f773b48b4f4b89662f14521921134ed44ad138ed18460f36b8e55d514be1db70","entity_key":"d_yesterday_01:2","voice_id":"Md4RAnfKt9kVIbvqUxly","voice_name":"Cihan - Warm, Natural and Friendly","voice_labels":{"gender":"male","accent":"istanbul","age":"middle_aged","category":"high_quality","language":"tr","use_case":"conversational","descriptive":"calm"},"output_format":"mp3_44100_192","file_sha256":"ba48bd6c1b50b1aa097ec04c44a461d1ea496e5f79880171a11d4a5c28f61550","settings":{"stability":0.68,"similarity_boost":0.89,"style":0.06,"use_speaker_boost":true,"speed":0.95},"relative_path":"audio/generated/tr-TR/dialogues/f773b48b4f4b89662f14521921134ed44ad138ed18460f36b8e55d514be1db70.mp3"}'
 ) ON DUPLICATE KEY UPDATE
   provider = VALUES(provider),
   provider_model = VALUES(provider_model),
@@ -2038,6 +4014,32 @@ INSERT INTO audio_assets (
   status = VALUES(status),
   metadata = VALUES(metadata);
 
+-- d_near_future_plans_02:1 -> audio/generated/tr-TR/dialogues/f83c1d08d345d59093f569dcef15bec7cc58a37172980f54c2efd8ef1d81004b.mp3
+UPDATE audio_assets
+SET status = 'archived'
+WHERE entity_type = 'dialogue_turn'
+  AND entity_id = UUID_TO_BIN('46934298-93d9-5223-8bed-7407f4e8d3c5', 1)
+  AND voice_key = 'character:zeynep:female_professional'
+  AND (entity_type NOT IN ('grammar_point','exercise') OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'd_near_future_plans_02:1')
+  AND source_text_hash IS NOT NULL
+  AND source_text_hash <> 'd5714b0c64382a12d52652b00a23b792a8ddc495e97af8a5bc3cc534b8d990ec'
+  AND status <> 'archived';
+INSERT INTO audio_assets (
+  id, language_id, language_variant_id, entity_type, entity_id, source_text_hash,
+  voice_key, provider, provider_model, storage_url, duration_ms, generated_at, checksum, status, metadata
+) VALUES (
+  UUID_TO_BIN('f344938b-0dd4-5124-ae33-9e8b600a64ca', 1), @audio_language_id, @audio_variant_id, 'dialogue_turn', UUID_TO_BIN('46934298-93d9-5223-8bed-7407f4e8d3c5', 1), 'd5714b0c64382a12d52652b00a23b792a8ddc495e97af8a5bc3cc534b8d990ec',
+  'character:zeynep:female_professional', 'elevenlabs', 'eleven_multilingual_v2', 'audio/generated/tr-TR/dialogues/f83c1d08d345d59093f569dcef15bec7cc58a37172980f54c2efd8ef1d81004b.mp3', 1750, '2026-09-14 11:32:07.934586', '4245ac631da76f05dbf565df1f3996fd2387795f8438aa1b8c4d8ac5fd408dc6', 'validated', '{"audio_key":"f83c1d08d345d59093f569dcef15bec7cc58a37172980f54c2efd8ef1d81004b","entity_key":"d_near_future_plans_02:1","voice_id":"4XsbOSxQHw4NUVaEeo2o","voice_name":"Elif - Calm & Natural","voice_labels":{"gender":"female","accent":"istanbul","age":"young","category":"professional","language":"tr","use_case":"conversational","descriptive":"calm"},"output_format":"mp3_44100_192","file_sha256":"4245ac631da76f05dbf565df1f3996fd2387795f8438aa1b8c4d8ac5fd408dc6","settings":{"stability":0.71,"similarity_boost":0.9,"style":0.05,"use_speaker_boost":true,"speed":0.96},"relative_path":"audio/generated/tr-TR/dialogues/f83c1d08d345d59093f569dcef15bec7cc58a37172980f54c2efd8ef1d81004b.mp3"}'
+) ON DUPLICATE KEY UPDATE
+  provider = VALUES(provider),
+  provider_model = VALUES(provider_model),
+  storage_url = VALUES(storage_url),
+  duration_ms = VALUES(duration_ms),
+  generated_at = VALUES(generated_at),
+  checksum = VALUES(checksum),
+  status = VALUES(status),
+  metadata = VALUES(metadata);
+
 -- d_a1_first_day_capstone_01:4 -> audio/generated/tr-TR/dialogues/f85a7a24ae54c6ac91ea3d035f2639958de3de7a28214c1e37f0946d3a0c8a76.mp3
 UPDATE audio_assets
 SET status = 'archived'
@@ -2054,6 +4056,32 @@ INSERT INTO audio_assets (
 ) VALUES (
   UUID_TO_BIN('39c5f12b-a672-57f3-9537-8ad81db85c7c', 1), @audio_language_id, @audio_variant_id, 'dialogue_turn', UUID_TO_BIN('a96deac7-0764-53b1-9667-ab5d64aa67bc', 1), 'eb71d4c6dc104619e907aee13d780cc26f5b325f9e4133b4ce10cd6145fc9787',
   'character:zeynep:female_professional', 'elevenlabs', 'eleven_multilingual_v2', 'audio/generated/tr-TR/dialogues/f85a7a24ae54c6ac91ea3d035f2639958de3de7a28214c1e37f0946d3a0c8a76.mp3', 862, '2026-09-13 15:55:09.897576', '96e67193acf272de3e064df8d04938228c9cd777b0b8bc5577b7c73d6eee005d', 'validated', '{"audio_key":"f85a7a24ae54c6ac91ea3d035f2639958de3de7a28214c1e37f0946d3a0c8a76","entity_key":"d_a1_first_day_capstone_01:4","voice_id":"4XsbOSxQHw4NUVaEeo2o","voice_name":"Elif - Calm & Natural","voice_labels":{"gender":"female","accent":"istanbul","age":"young","category":"professional","language":"tr","use_case":"conversational","descriptive":"calm"},"output_format":"mp3_44100_192","file_sha256":"96e67193acf272de3e064df8d04938228c9cd777b0b8bc5577b7c73d6eee005d","settings":{"stability":0.71,"similarity_boost":0.9,"style":0.05,"use_speaker_boost":true,"speed":0.96},"relative_path":"audio/generated/tr-TR/dialogues/f85a7a24ae54c6ac91ea3d035f2639958de3de7a28214c1e37f0946d3a0c8a76.mp3"}'
+) ON DUPLICATE KEY UPDATE
+  provider = VALUES(provider),
+  provider_model = VALUES(provider_model),
+  storage_url = VALUES(storage_url),
+  duration_ms = VALUES(duration_ms),
+  generated_at = VALUES(generated_at),
+  checksum = VALUES(checksum),
+  status = VALUES(status),
+  metadata = VALUES(metadata);
+
+-- d_near_future_plans_02:2 -> audio/generated/tr-TR/dialogues/faec35e5f1135dbcd4a4a51b34e7faa49ce3c4b27dac4fb8cde7d4aedf8497bc.mp3
+UPDATE audio_assets
+SET status = 'archived'
+WHERE entity_type = 'dialogue_turn'
+  AND entity_id = UUID_TO_BIN('006e6fda-a18b-57a3-9674-fbfa86f90f5a', 1)
+  AND voice_key = 'character:emre:male_calm'
+  AND (entity_type NOT IN ('grammar_point','exercise') OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'd_near_future_plans_02:2')
+  AND source_text_hash IS NOT NULL
+  AND source_text_hash <> 'bbcabfbaf7ff45d36c339759c79f8594a143a178ab36652e3d0086670e3e435a'
+  AND status <> 'archived';
+INSERT INTO audio_assets (
+  id, language_id, language_variant_id, entity_type, entity_id, source_text_hash,
+  voice_key, provider, provider_model, storage_url, duration_ms, generated_at, checksum, status, metadata
+) VALUES (
+  UUID_TO_BIN('35d20c18-8267-58c0-aca2-922d7585e091', 1), @audio_language_id, @audio_variant_id, 'dialogue_turn', UUID_TO_BIN('006e6fda-a18b-57a3-9674-fbfa86f90f5a', 1), 'bbcabfbaf7ff45d36c339759c79f8594a143a178ab36652e3d0086670e3e435a',
+  'character:emre:male_calm', 'elevenlabs', 'eleven_multilingual_v2', 'audio/generated/tr-TR/dialogues/faec35e5f1135dbcd4a4a51b34e7faa49ce3c4b27dac4fb8cde7d4aedf8497bc.mp3', 1750, '2026-09-14 11:32:08.317776', '256a164f5b3d4526411240904f146beeea61f71d757c93ffc48233c1fe4865cc', 'validated', '{"audio_key":"faec35e5f1135dbcd4a4a51b34e7faa49ce3c4b27dac4fb8cde7d4aedf8497bc","entity_key":"d_near_future_plans_02:2","voice_id":"Md4RAnfKt9kVIbvqUxly","voice_name":"Cihan - Warm, Natural and Friendly","voice_labels":{"gender":"male","accent":"istanbul","age":"middle_aged","category":"high_quality","language":"tr","use_case":"conversational","descriptive":"calm"},"output_format":"mp3_44100_192","file_sha256":"256a164f5b3d4526411240904f146beeea61f71d757c93ffc48233c1fe4865cc","settings":{"stability":0.68,"similarity_boost":0.89,"style":0.06,"use_speaker_boost":true,"speed":0.95},"relative_path":"audio/generated/tr-TR/dialogues/faec35e5f1135dbcd4a4a51b34e7faa49ce3c4b27dac4fb8cde7d4aedf8497bc.mp3"}'
 ) ON DUPLICATE KEY UPDATE
   provider = VALUES(provider),
   provider_model = VALUES(provider_model),
@@ -2090,6 +4118,58 @@ INSERT INTO audio_assets (
   status = VALUES(status),
   metadata = VALUES(metadata);
 
+-- d_basic_health_01:1 -> audio/generated/tr-TR/dialogues/fcbd196a3e53d1f6c7ad9166735373598193aab6c876970b227e0069659dddea.mp3
+UPDATE audio_assets
+SET status = 'archived'
+WHERE entity_type = 'dialogue_turn'
+  AND entity_id = UUID_TO_BIN('7216f633-9ebf-5e4a-ae18-326d32ff9d5a', 1)
+  AND voice_key = 'character:kaan:male_bright'
+  AND (entity_type NOT IN ('grammar_point','exercise') OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'd_basic_health_01:1')
+  AND source_text_hash IS NOT NULL
+  AND source_text_hash <> '33207e8d5c78133517b432172732e20e454837785a17e0545f96878e89674d52'
+  AND status <> 'archived';
+INSERT INTO audio_assets (
+  id, language_id, language_variant_id, entity_type, entity_id, source_text_hash,
+  voice_key, provider, provider_model, storage_url, duration_ms, generated_at, checksum, status, metadata
+) VALUES (
+  UUID_TO_BIN('ea20aef6-0860-50ef-9083-9a82b93314dc', 1), @audio_language_id, @audio_variant_id, 'dialogue_turn', UUID_TO_BIN('7216f633-9ebf-5e4a-ae18-326d32ff9d5a', 1), '33207e8d5c78133517b432172732e20e454837785a17e0545f96878e89674d52',
+  'character:kaan:male_bright', 'elevenlabs', 'eleven_multilingual_v2', 'audio/generated/tr-TR/dialogues/fcbd196a3e53d1f6c7ad9166735373598193aab6c876970b227e0069659dddea.mp3', 1097, '2026-09-14 11:32:08.891986', '9cfb23260cb80dc61aa2e72accd15d3a9524693ce6889806da9e1e1ea90bbf5d', 'validated', '{"audio_key":"fcbd196a3e53d1f6c7ad9166735373598193aab6c876970b227e0069659dddea","entity_key":"d_basic_health_01:1","voice_id":"7mBFv1btncDZu2Bfgv0r","voice_name":"Tuna - Young and Soft","voice_labels":{"gender":"male","accent":"istanbul","age":"young","category":"professional","language":"tr","use_case":"social_media","descriptive":"casual"},"output_format":"mp3_44100_192","file_sha256":"9cfb23260cb80dc61aa2e72accd15d3a9524693ce6889806da9e1e1ea90bbf5d","settings":{"stability":0.52,"similarity_boost":0.86,"style":0.2,"use_speaker_boost":true,"speed":0.99},"relative_path":"audio/generated/tr-TR/dialogues/fcbd196a3e53d1f6c7ad9166735373598193aab6c876970b227e0069659dddea.mp3"}'
+) ON DUPLICATE KEY UPDATE
+  provider = VALUES(provider),
+  provider_model = VALUES(provider_model),
+  storage_url = VALUES(storage_url),
+  duration_ms = VALUES(duration_ms),
+  generated_at = VALUES(generated_at),
+  checksum = VALUES(checksum),
+  status = VALUES(status),
+  metadata = VALUES(metadata);
+
+-- d_likes_and_specific_things_01:4 -> audio/generated/tr-TR/dialogues/fe17f3e533fc96bdcbea07bb6518beb764784143e503f692f21db651f995192e.mp3
+UPDATE audio_assets
+SET status = 'archived'
+WHERE entity_type = 'dialogue_turn'
+  AND entity_id = UUID_TO_BIN('6d219dc9-de0e-5a8b-9e03-a6a4c6f3a747', 1)
+  AND voice_key = 'character:selin:female_bright'
+  AND (entity_type NOT IN ('grammar_point','exercise') OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'd_likes_and_specific_things_01:4')
+  AND source_text_hash IS NOT NULL
+  AND source_text_hash <> '0532ce828f04ea8846b28f8af4d420224ae01f58fa2acef2a0bd7ef89d664d77'
+  AND status <> 'archived';
+INSERT INTO audio_assets (
+  id, language_id, language_variant_id, entity_type, entity_id, source_text_hash,
+  voice_key, provider, provider_model, storage_url, duration_ms, generated_at, checksum, status, metadata
+) VALUES (
+  UUID_TO_BIN('34612678-89d6-5937-b486-3c7fe3cff089', 1), @audio_language_id, @audio_variant_id, 'dialogue_turn', UUID_TO_BIN('6d219dc9-de0e-5a8b-9e03-a6a4c6f3a747', 1), '0532ce828f04ea8846b28f8af4d420224ae01f58fa2acef2a0bd7ef89d664d77',
+  'character:selin:female_bright', 'elevenlabs', 'eleven_multilingual_v2', 'audio/generated/tr-TR/dialogues/fe17f3e533fc96bdcbea07bb6518beb764784143e503f692f21db651f995192e.mp3', 966, '2026-09-14 11:32:09.242093', 'f34537b25131bdb41c7d0dd7f2e2ed0a66506166bb1bbb5e7624519a46a1f6b6', 'validated', '{"audio_key":"fe17f3e533fc96bdcbea07bb6518beb764784143e503f692f21db651f995192e","entity_key":"d_likes_and_specific_things_01:4","voice_id":"D6QpOJ61ltQ3whot6iJZ","voice_name":"Tugba","voice_labels":{"gender":"female","accent":"istanbul","age":"young","category":"professional","language":"tr","use_case":"conversational","descriptive":"calm"},"output_format":"mp3_44100_192","file_sha256":"f34537b25131bdb41c7d0dd7f2e2ed0a66506166bb1bbb5e7624519a46a1f6b6","settings":{"stability":0.52,"similarity_boost":0.86,"style":0.2,"use_speaker_boost":true,"speed":0.99},"relative_path":"audio/generated/tr-TR/dialogues/fe17f3e533fc96bdcbea07bb6518beb764784143e503f692f21db651f995192e.mp3"}'
+) ON DUPLICATE KEY UPDATE
+  provider = VALUES(provider),
+  provider_model = VALUES(provider_model),
+  storage_url = VALUES(storage_url),
+  duration_ms = VALUES(duration_ms),
+  generated_at = VALUES(generated_at),
+  checksum = VALUES(checksum),
+  status = VALUES(status),
+  metadata = VALUES(metadata);
+
 -- d_a1_first_day_capstone_01:3 -> audio/generated/tr-TR/dialogues/fe6bd44b3eda1993386afe6fdb9a6fbd76d9ad0a0c112cbb81698d439ac6927d.mp3
 UPDATE audio_assets
 SET status = 'archived'
@@ -2106,6 +4186,474 @@ INSERT INTO audio_assets (
 ) VALUES (
   UUID_TO_BIN('2f92b26d-790a-549b-a62c-44d757b37960', 1), @audio_language_id, @audio_variant_id, 'dialogue_turn', UUID_TO_BIN('553edd8f-cc06-5392-bcb4-017745d6cf70', 1), 'c3d3423f8f9ee75ac4b58dbd7c2e2737810cfca0736136fba79a655622aa8ce0',
   'character:emre:male_calm', 'elevenlabs', 'eleven_multilingual_v2', 'audio/generated/tr-TR/dialogues/fe6bd44b3eda1993386afe6fdb9a6fbd76d9ad0a0c112cbb81698d439ac6927d.mp3', 1985, '2026-09-13 15:55:11.013991', '23d0a14421124e3db1c5aa494ea9f181a522890e7c32d151905afcbb0b88ec35', 'validated', '{"audio_key":"fe6bd44b3eda1993386afe6fdb9a6fbd76d9ad0a0c112cbb81698d439ac6927d","entity_key":"d_a1_first_day_capstone_01:3","voice_id":"Md4RAnfKt9kVIbvqUxly","voice_name":"Cihan - Warm, Natural and Friendly","voice_labels":{"gender":"male","accent":"istanbul","age":"middle_aged","category":"high_quality","language":"tr","use_case":"conversational","descriptive":"calm"},"output_format":"mp3_44100_192","file_sha256":"23d0a14421124e3db1c5aa494ea9f181a522890e7c32d151905afcbb0b88ec35","settings":{"stability":0.68,"similarity_boost":0.89,"style":0.06,"use_speaker_boost":true,"speed":0.95},"relative_path":"audio/generated/tr-TR/dialogues/fe6bd44b3eda1993386afe6fdb9a6fbd76d9ad0a0c112cbb81698d439ac6927d.mp3"}'
+) ON DUPLICATE KEY UPDATE
+  provider = VALUES(provider),
+  provider_model = VALUES(provider_model),
+  storage_url = VALUES(storage_url),
+  duration_ms = VALUES(duration_ms),
+  generated_at = VALUES(generated_at),
+  checksum = VALUES(checksum),
+  status = VALUES(status),
+  metadata = VALUES(metadata);
+
+-- lx_basic_health_04 -> audio/generated/tr-TR/lexical/015f309a2db1b19a73f9b6ac65c8b1acffce9b5d2c01322e12190bcfcf55f550.mp3
+UPDATE audio_assets
+SET status = 'archived'
+WHERE entity_type = 'lexeme'
+  AND entity_id = UUID_TO_BIN('193b558c-6c2a-5f4b-8669-8db193454aa6', 1)
+  AND voice_key = 'tr-tr.lexical.native-clear'
+  AND (entity_type NOT IN ('grammar_point','exercise') OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'lx_basic_health_04')
+  AND source_text_hash IS NOT NULL
+  AND source_text_hash <> '2232c81c4118f6676769d59fd30564d2626c4435883614db22a3e9a4ec873611'
+  AND status <> 'archived';
+INSERT INTO audio_assets (
+  id, language_id, language_variant_id, entity_type, entity_id, source_text_hash,
+  voice_key, provider, provider_model, storage_url, duration_ms, generated_at, checksum, status, metadata
+) VALUES (
+  UUID_TO_BIN('242c79b1-e5f7-5659-82ff-737eddf06488', 1), @audio_language_id, @audio_variant_id, 'lexeme', UUID_TO_BIN('193b558c-6c2a-5f4b-8669-8db193454aa6', 1), '2232c81c4118f6676769d59fd30564d2626c4435883614db22a3e9a4ec873611',
+  'tr-tr.lexical.native-clear', 'elevenlabs', 'eleven_multilingual_v2', 'audio/generated/tr-TR/lexical/015f309a2db1b19a73f9b6ac65c8b1acffce9b5d2c01322e12190bcfcf55f550.mp3', 1253, '2026-09-13 17:08:15.187311', '29c6f632c4985fdf968ecfec8e42423cd117cc3942e889b87a9c81f8836d8fea', 'validated', '{"audio_key":"015f309a2db1b19a73f9b6ac65c8b1acffce9b5d2c01322e12190bcfcf55f550","entity_key":"lx_basic_health_04","voice_id":"FDs1ZX5J4e4f2c2erxtW","voice_name":"Fili - Warm Turkish Female ","voice_labels":{"gender":"female","accent":"istanbul","age":"young","category":"professional","language":"tr","use_case":"conversational","descriptive":"calm"},"output_format":"mp3_44100_192","file_sha256":"29c6f632c4985fdf968ecfec8e42423cd117cc3942e889b87a9c81f8836d8fea","settings":{"stability":0.72,"similarity_boost":0.88,"style":0.0,"use_speaker_boost":true,"speed":0.92},"relative_path":"audio/generated/tr-TR/lexical/015f309a2db1b19a73f9b6ac65c8b1acffce9b5d2c01322e12190bcfcf55f550.mp3"}'
+) ON DUPLICATE KEY UPDATE
+  provider = VALUES(provider),
+  provider_model = VALUES(provider_model),
+  storage_url = VALUES(storage_url),
+  duration_ms = VALUES(duration_ms),
+  generated_at = VALUES(generated_at),
+  checksum = VALUES(checksum),
+  status = VALUES(status),
+  metadata = VALUES(metadata);
+
+-- wf_basic_health_04 -> audio/generated/tr-TR/lexical/015f309a2db1b19a73f9b6ac65c8b1acffce9b5d2c01322e12190bcfcf55f550.mp3
+UPDATE audio_assets
+SET status = 'archived'
+WHERE entity_type = 'word_form'
+  AND entity_id = UUID_TO_BIN('605ff416-f5c4-5176-9ece-5479aef31ffa', 1)
+  AND voice_key = 'tr-tr.lexical.native-clear'
+  AND (entity_type NOT IN ('grammar_point','exercise') OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'wf_basic_health_04')
+  AND source_text_hash IS NOT NULL
+  AND source_text_hash <> '2232c81c4118f6676769d59fd30564d2626c4435883614db22a3e9a4ec873611'
+  AND status <> 'archived';
+INSERT INTO audio_assets (
+  id, language_id, language_variant_id, entity_type, entity_id, source_text_hash,
+  voice_key, provider, provider_model, storage_url, duration_ms, generated_at, checksum, status, metadata
+) VALUES (
+  UUID_TO_BIN('fdfc2112-b754-5bc9-b79c-4db043048962', 1), @audio_language_id, @audio_variant_id, 'word_form', UUID_TO_BIN('605ff416-f5c4-5176-9ece-5479aef31ffa', 1), '2232c81c4118f6676769d59fd30564d2626c4435883614db22a3e9a4ec873611',
+  'tr-tr.lexical.native-clear', 'elevenlabs', 'eleven_multilingual_v2', 'audio/generated/tr-TR/lexical/015f309a2db1b19a73f9b6ac65c8b1acffce9b5d2c01322e12190bcfcf55f550.mp3', 1253, '2026-09-13 17:08:15.187311', '29c6f632c4985fdf968ecfec8e42423cd117cc3942e889b87a9c81f8836d8fea', 'validated', '{"audio_key":"015f309a2db1b19a73f9b6ac65c8b1acffce9b5d2c01322e12190bcfcf55f550","entity_key":"wf_basic_health_04","voice_id":"FDs1ZX5J4e4f2c2erxtW","voice_name":"Fili - Warm Turkish Female ","voice_labels":{"gender":"female","accent":"istanbul","age":"young","category":"professional","language":"tr","use_case":"conversational","descriptive":"calm"},"output_format":"mp3_44100_192","file_sha256":"29c6f632c4985fdf968ecfec8e42423cd117cc3942e889b87a9c81f8836d8fea","settings":{"stability":0.72,"similarity_boost":0.88,"style":0.0,"use_speaker_boost":true,"speed":0.92},"relative_path":"audio/generated/tr-TR/lexical/015f309a2db1b19a73f9b6ac65c8b1acffce9b5d2c01322e12190bcfcf55f550.mp3"}'
+) ON DUPLICATE KEY UPDATE
+  provider = VALUES(provider),
+  provider_model = VALUES(provider_model),
+  storage_url = VALUES(storage_url),
+  duration_ms = VALUES(duration_ms),
+  generated_at = VALUES(generated_at),
+  checksum = VALUES(checksum),
+  status = VALUES(status),
+  metadata = VALUES(metadata);
+
+-- lx_everyday_routine_06 -> audio/generated/tr-TR/lexical/02ba198563702a267d39efdd1951d6d6867bf5c450098dd9c830e633bffa7048.mp3
+UPDATE audio_assets
+SET status = 'archived'
+WHERE entity_type = 'lexeme'
+  AND entity_id = UUID_TO_BIN('32298f04-d161-5ff0-8a84-e6e455630f6f', 1)
+  AND voice_key = 'tr-tr.lexical.native-clear'
+  AND (entity_type NOT IN ('grammar_point','exercise') OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'lx_everyday_routine_06')
+  AND source_text_hash IS NOT NULL
+  AND source_text_hash <> '698dd2fba2505ce592705829107214fda3cac266ccaa917034a192772c97e601'
+  AND status <> 'archived';
+INSERT INTO audio_assets (
+  id, language_id, language_variant_id, entity_type, entity_id, source_text_hash,
+  voice_key, provider, provider_model, storage_url, duration_ms, generated_at, checksum, status, metadata
+) VALUES (
+  UUID_TO_BIN('31bd644d-6f12-5d4f-9750-5ce3ac8a270b', 1), @audio_language_id, @audio_variant_id, 'lexeme', UUID_TO_BIN('32298f04-d161-5ff0-8a84-e6e455630f6f', 1), '698dd2fba2505ce592705829107214fda3cac266ccaa917034a192772c97e601',
+  'tr-tr.lexical.native-clear', 'elevenlabs', 'eleven_multilingual_v2', 'audio/generated/tr-TR/lexical/02ba198563702a267d39efdd1951d6d6867bf5c450098dd9c830e633bffa7048.mp3', 1515, '2026-09-14 11:32:09.923248', 'aeb6a2c6f308429d2fd2be9e67dcc8fcd3709ce4818c504d4e3f41d69230fce4', 'validated', '{"audio_key":"02ba198563702a267d39efdd1951d6d6867bf5c450098dd9c830e633bffa7048","entity_key":"lx_everyday_routine_06","voice_id":"FDs1ZX5J4e4f2c2erxtW","voice_name":"Fili - Warm Turkish Female ","voice_labels":{"gender":"female","accent":"istanbul","age":"young","category":"professional","language":"tr","use_case":"conversational","descriptive":"calm"},"output_format":"mp3_44100_192","file_sha256":"aeb6a2c6f308429d2fd2be9e67dcc8fcd3709ce4818c504d4e3f41d69230fce4","settings":{"stability":0.72,"similarity_boost":0.88,"style":0.0,"use_speaker_boost":true,"speed":0.92},"relative_path":"audio/generated/tr-TR/lexical/02ba198563702a267d39efdd1951d6d6867bf5c450098dd9c830e633bffa7048.mp3"}'
+) ON DUPLICATE KEY UPDATE
+  provider = VALUES(provider),
+  provider_model = VALUES(provider_model),
+  storage_url = VALUES(storage_url),
+  duration_ms = VALUES(duration_ms),
+  generated_at = VALUES(generated_at),
+  checksum = VALUES(checksum),
+  status = VALUES(status),
+  metadata = VALUES(metadata);
+
+-- wf_everyday_routine_06 -> audio/generated/tr-TR/lexical/02ba198563702a267d39efdd1951d6d6867bf5c450098dd9c830e633bffa7048.mp3
+UPDATE audio_assets
+SET status = 'archived'
+WHERE entity_type = 'word_form'
+  AND entity_id = UUID_TO_BIN('78b5db63-e17d-5650-9a61-e395bda1b8df', 1)
+  AND voice_key = 'tr-tr.lexical.native-clear'
+  AND (entity_type NOT IN ('grammar_point','exercise') OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'wf_everyday_routine_06')
+  AND source_text_hash IS NOT NULL
+  AND source_text_hash <> '698dd2fba2505ce592705829107214fda3cac266ccaa917034a192772c97e601'
+  AND status <> 'archived';
+INSERT INTO audio_assets (
+  id, language_id, language_variant_id, entity_type, entity_id, source_text_hash,
+  voice_key, provider, provider_model, storage_url, duration_ms, generated_at, checksum, status, metadata
+) VALUES (
+  UUID_TO_BIN('a01cab99-0fec-5f19-8845-cc8031d1084d', 1), @audio_language_id, @audio_variant_id, 'word_form', UUID_TO_BIN('78b5db63-e17d-5650-9a61-e395bda1b8df', 1), '698dd2fba2505ce592705829107214fda3cac266ccaa917034a192772c97e601',
+  'tr-tr.lexical.native-clear', 'elevenlabs', 'eleven_multilingual_v2', 'audio/generated/tr-TR/lexical/02ba198563702a267d39efdd1951d6d6867bf5c450098dd9c830e633bffa7048.mp3', 1515, '2026-09-14 11:32:09.923248', 'aeb6a2c6f308429d2fd2be9e67dcc8fcd3709ce4818c504d4e3f41d69230fce4', 'validated', '{"audio_key":"02ba198563702a267d39efdd1951d6d6867bf5c450098dd9c830e633bffa7048","entity_key":"wf_everyday_routine_06","voice_id":"FDs1ZX5J4e4f2c2erxtW","voice_name":"Fili - Warm Turkish Female ","voice_labels":{"gender":"female","accent":"istanbul","age":"young","category":"professional","language":"tr","use_case":"conversational","descriptive":"calm"},"output_format":"mp3_44100_192","file_sha256":"aeb6a2c6f308429d2fd2be9e67dcc8fcd3709ce4818c504d4e3f41d69230fce4","settings":{"stability":0.72,"similarity_boost":0.88,"style":0.0,"use_speaker_boost":true,"speed":0.92},"relative_path":"audio/generated/tr-TR/lexical/02ba198563702a267d39efdd1951d6d6867bf5c450098dd9c830e633bffa7048.mp3"}'
+) ON DUPLICATE KEY UPDATE
+  provider = VALUES(provider),
+  provider_model = VALUES(provider_model),
+  storage_url = VALUES(storage_url),
+  duration_ms = VALUES(duration_ms),
+  generated_at = VALUES(generated_at),
+  checksum = VALUES(checksum),
+  status = VALUES(status),
+  metadata = VALUES(metadata);
+
+-- lx_can_you_help_03 -> audio/generated/tr-TR/lexical/048027a2cf039c5404fd06e8a0174142f417cb308f190248a91b3a97837a9562.mp3
+UPDATE audio_assets
+SET status = 'archived'
+WHERE entity_type = 'lexeme'
+  AND entity_id = UUID_TO_BIN('2795e419-eec7-59ca-8e61-e0cb00c5fbb2', 1)
+  AND voice_key = 'tr-tr.lexical.native-clear'
+  AND (entity_type NOT IN ('grammar_point','exercise') OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'lx_can_you_help_03')
+  AND source_text_hash IS NOT NULL
+  AND source_text_hash <> '1dff127606b71f3ad4e03bcabb9e3ca410d297155ae01e5eada7e0d02b8cff43'
+  AND status <> 'archived';
+INSERT INTO audio_assets (
+  id, language_id, language_variant_id, entity_type, entity_id, source_text_hash,
+  voice_key, provider, provider_model, storage_url, duration_ms, generated_at, checksum, status, metadata
+) VALUES (
+  UUID_TO_BIN('20bcbfd2-358a-54d1-a3c2-2e91e446fde8', 1), @audio_language_id, @audio_variant_id, 'lexeme', UUID_TO_BIN('2795e419-eec7-59ca-8e61-e0cb00c5fbb2', 1), '1dff127606b71f3ad4e03bcabb9e3ca410d297155ae01e5eada7e0d02b8cff43',
+  'tr-tr.lexical.native-clear', 'elevenlabs', 'eleven_multilingual_v2', 'audio/generated/tr-TR/lexical/048027a2cf039c5404fd06e8a0174142f417cb308f190248a91b3a97837a9562.mp3', 1201, '2026-09-14 11:32:10.246286', 'ea4b6f682fbcd387429841e1dadf27d09e540160dd4b4443e9861efec716e19d', 'validated', '{"audio_key":"048027a2cf039c5404fd06e8a0174142f417cb308f190248a91b3a97837a9562","entity_key":"lx_can_you_help_03","voice_id":"FDs1ZX5J4e4f2c2erxtW","voice_name":"Fili - Warm Turkish Female ","voice_labels":{"gender":"female","accent":"istanbul","age":"young","category":"professional","language":"tr","use_case":"conversational","descriptive":"calm"},"output_format":"mp3_44100_192","file_sha256":"ea4b6f682fbcd387429841e1dadf27d09e540160dd4b4443e9861efec716e19d","settings":{"stability":0.72,"similarity_boost":0.88,"style":0.0,"use_speaker_boost":true,"speed":0.92},"relative_path":"audio/generated/tr-TR/lexical/048027a2cf039c5404fd06e8a0174142f417cb308f190248a91b3a97837a9562.mp3"}'
+) ON DUPLICATE KEY UPDATE
+  provider = VALUES(provider),
+  provider_model = VALUES(provider_model),
+  storage_url = VALUES(storage_url),
+  duration_ms = VALUES(duration_ms),
+  generated_at = VALUES(generated_at),
+  checksum = VALUES(checksum),
+  status = VALUES(status),
+  metadata = VALUES(metadata);
+
+-- wf_can_you_help_03 -> audio/generated/tr-TR/lexical/048027a2cf039c5404fd06e8a0174142f417cb308f190248a91b3a97837a9562.mp3
+UPDATE audio_assets
+SET status = 'archived'
+WHERE entity_type = 'word_form'
+  AND entity_id = UUID_TO_BIN('73ff3618-00ee-5180-bef1-a9102bae95a8', 1)
+  AND voice_key = 'tr-tr.lexical.native-clear'
+  AND (entity_type NOT IN ('grammar_point','exercise') OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'wf_can_you_help_03')
+  AND source_text_hash IS NOT NULL
+  AND source_text_hash <> '1dff127606b71f3ad4e03bcabb9e3ca410d297155ae01e5eada7e0d02b8cff43'
+  AND status <> 'archived';
+INSERT INTO audio_assets (
+  id, language_id, language_variant_id, entity_type, entity_id, source_text_hash,
+  voice_key, provider, provider_model, storage_url, duration_ms, generated_at, checksum, status, metadata
+) VALUES (
+  UUID_TO_BIN('e6bf44c2-3be5-596e-8105-e85a6e74e905', 1), @audio_language_id, @audio_variant_id, 'word_form', UUID_TO_BIN('73ff3618-00ee-5180-bef1-a9102bae95a8', 1), '1dff127606b71f3ad4e03bcabb9e3ca410d297155ae01e5eada7e0d02b8cff43',
+  'tr-tr.lexical.native-clear', 'elevenlabs', 'eleven_multilingual_v2', 'audio/generated/tr-TR/lexical/048027a2cf039c5404fd06e8a0174142f417cb308f190248a91b3a97837a9562.mp3', 1201, '2026-09-14 11:32:10.246286', 'ea4b6f682fbcd387429841e1dadf27d09e540160dd4b4443e9861efec716e19d', 'validated', '{"audio_key":"048027a2cf039c5404fd06e8a0174142f417cb308f190248a91b3a97837a9562","entity_key":"wf_can_you_help_03","voice_id":"FDs1ZX5J4e4f2c2erxtW","voice_name":"Fili - Warm Turkish Female ","voice_labels":{"gender":"female","accent":"istanbul","age":"young","category":"professional","language":"tr","use_case":"conversational","descriptive":"calm"},"output_format":"mp3_44100_192","file_sha256":"ea4b6f682fbcd387429841e1dadf27d09e540160dd4b4443e9861efec716e19d","settings":{"stability":0.72,"similarity_boost":0.88,"style":0.0,"use_speaker_boost":true,"speed":0.92},"relative_path":"audio/generated/tr-TR/lexical/048027a2cf039c5404fd06e8a0174142f417cb308f190248a91b3a97837a9562.mp3"}'
+) ON DUPLICATE KEY UPDATE
+  provider = VALUES(provider),
+  provider_model = VALUES(provider_model),
+  storage_url = VALUES(storage_url),
+  duration_ms = VALUES(duration_ms),
+  generated_at = VALUES(generated_at),
+  checksum = VALUES(checksum),
+  status = VALUES(status),
+  metadata = VALUES(metadata);
+
+-- lx_yesterday_05 -> audio/generated/tr-TR/lexical/04c315f78d3d2385f5ced831233cd1da8f4a0593be5a1e9c08d1e7318889e1c5.mp3
+UPDATE audio_assets
+SET status = 'archived'
+WHERE entity_type = 'lexeme'
+  AND entity_id = UUID_TO_BIN('b7c35c4c-1172-532e-be20-de07afcec8c4', 1)
+  AND voice_key = 'tr-tr.lexical.native-clear'
+  AND (entity_type NOT IN ('grammar_point','exercise') OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'lx_yesterday_05')
+  AND source_text_hash IS NOT NULL
+  AND source_text_hash <> 'b893200b2bc33dc5a4ce1c08040e0d2c9107691be8d2d01f507aef46ab56ea4a'
+  AND status <> 'archived';
+INSERT INTO audio_assets (
+  id, language_id, language_variant_id, entity_type, entity_id, source_text_hash,
+  voice_key, provider, provider_model, storage_url, duration_ms, generated_at, checksum, status, metadata
+) VALUES (
+  UUID_TO_BIN('d5a06ae6-0658-53a2-a677-98fcd1a542b3', 1), @audio_language_id, @audio_variant_id, 'lexeme', UUID_TO_BIN('b7c35c4c-1172-532e-be20-de07afcec8c4', 1), 'b893200b2bc33dc5a4ce1c08040e0d2c9107691be8d2d01f507aef46ab56ea4a',
+  'tr-tr.lexical.native-clear', 'elevenlabs', 'eleven_multilingual_v2', 'audio/generated/tr-TR/lexical/04c315f78d3d2385f5ced831233cd1da8f4a0593be5a1e9c08d1e7318889e1c5.mp3', 1071, '2026-09-14 11:32:10.869576', 'bc70a981ab64d8c70bffe1012b6a62edc2116e40801dc2d291781d7053b24bd2', 'validated', '{"audio_key":"04c315f78d3d2385f5ced831233cd1da8f4a0593be5a1e9c08d1e7318889e1c5","entity_key":"lx_yesterday_05","voice_id":"FDs1ZX5J4e4f2c2erxtW","voice_name":"Fili - Warm Turkish Female ","voice_labels":{"gender":"female","accent":"istanbul","age":"young","category":"professional","language":"tr","use_case":"conversational","descriptive":"calm"},"output_format":"mp3_44100_192","file_sha256":"bc70a981ab64d8c70bffe1012b6a62edc2116e40801dc2d291781d7053b24bd2","settings":{"stability":0.72,"similarity_boost":0.88,"style":0.0,"use_speaker_boost":true,"speed":0.92},"relative_path":"audio/generated/tr-TR/lexical/04c315f78d3d2385f5ced831233cd1da8f4a0593be5a1e9c08d1e7318889e1c5.mp3"}'
+) ON DUPLICATE KEY UPDATE
+  provider = VALUES(provider),
+  provider_model = VALUES(provider_model),
+  storage_url = VALUES(storage_url),
+  duration_ms = VALUES(duration_ms),
+  generated_at = VALUES(generated_at),
+  checksum = VALUES(checksum),
+  status = VALUES(status),
+  metadata = VALUES(metadata);
+
+-- wf_yesterday_05 -> audio/generated/tr-TR/lexical/04c315f78d3d2385f5ced831233cd1da8f4a0593be5a1e9c08d1e7318889e1c5.mp3
+UPDATE audio_assets
+SET status = 'archived'
+WHERE entity_type = 'word_form'
+  AND entity_id = UUID_TO_BIN('e33cf953-e627-5fbe-ae60-fca52e7a9038', 1)
+  AND voice_key = 'tr-tr.lexical.native-clear'
+  AND (entity_type NOT IN ('grammar_point','exercise') OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'wf_yesterday_05')
+  AND source_text_hash IS NOT NULL
+  AND source_text_hash <> 'b893200b2bc33dc5a4ce1c08040e0d2c9107691be8d2d01f507aef46ab56ea4a'
+  AND status <> 'archived';
+INSERT INTO audio_assets (
+  id, language_id, language_variant_id, entity_type, entity_id, source_text_hash,
+  voice_key, provider, provider_model, storage_url, duration_ms, generated_at, checksum, status, metadata
+) VALUES (
+  UUID_TO_BIN('6d67374d-b8d1-5182-a815-a0caac985321', 1), @audio_language_id, @audio_variant_id, 'word_form', UUID_TO_BIN('e33cf953-e627-5fbe-ae60-fca52e7a9038', 1), 'b893200b2bc33dc5a4ce1c08040e0d2c9107691be8d2d01f507aef46ab56ea4a',
+  'tr-tr.lexical.native-clear', 'elevenlabs', 'eleven_multilingual_v2', 'audio/generated/tr-TR/lexical/04c315f78d3d2385f5ced831233cd1da8f4a0593be5a1e9c08d1e7318889e1c5.mp3', 1071, '2026-09-14 11:32:10.869576', 'bc70a981ab64d8c70bffe1012b6a62edc2116e40801dc2d291781d7053b24bd2', 'validated', '{"audio_key":"04c315f78d3d2385f5ced831233cd1da8f4a0593be5a1e9c08d1e7318889e1c5","entity_key":"wf_yesterday_05","voice_id":"FDs1ZX5J4e4f2c2erxtW","voice_name":"Fili - Warm Turkish Female ","voice_labels":{"gender":"female","accent":"istanbul","age":"young","category":"professional","language":"tr","use_case":"conversational","descriptive":"calm"},"output_format":"mp3_44100_192","file_sha256":"bc70a981ab64d8c70bffe1012b6a62edc2116e40801dc2d291781d7053b24bd2","settings":{"stability":0.72,"similarity_boost":0.88,"style":0.0,"use_speaker_boost":true,"speed":0.92},"relative_path":"audio/generated/tr-TR/lexical/04c315f78d3d2385f5ced831233cd1da8f4a0593be5a1e9c08d1e7318889e1c5.mp3"}'
+) ON DUPLICATE KEY UPDATE
+  provider = VALUES(provider),
+  provider_model = VALUES(provider_model),
+  storage_url = VALUES(storage_url),
+  duration_ms = VALUES(duration_ms),
+  generated_at = VALUES(generated_at),
+  checksum = VALUES(checksum),
+  status = VALUES(status),
+  metadata = VALUES(metadata);
+
+-- lx_everyday_routine_05 -> audio/generated/tr-TR/lexical/084bb5963fe8995d4db2d9fab73a1ad1fc3f1c928fc057c59951ef7eab02d1ad.mp3
+UPDATE audio_assets
+SET status = 'archived'
+WHERE entity_type = 'lexeme'
+  AND entity_id = UUID_TO_BIN('41883d04-a14c-5491-86b0-475ccb394817', 1)
+  AND voice_key = 'tr-tr.lexical.native-clear'
+  AND (entity_type NOT IN ('grammar_point','exercise') OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'lx_everyday_routine_05')
+  AND source_text_hash IS NOT NULL
+  AND source_text_hash <> '824bbdae4e5c4aa545a6d99ba7eb938cf92dfaf8dd3a1149e2f21f99bfbf7279'
+  AND status <> 'archived';
+INSERT INTO audio_assets (
+  id, language_id, language_variant_id, entity_type, entity_id, source_text_hash,
+  voice_key, provider, provider_model, storage_url, duration_ms, generated_at, checksum, status, metadata
+) VALUES (
+  UUID_TO_BIN('2e100409-e1d3-5e5d-b89c-863fe07d9afb', 1), @audio_language_id, @audio_variant_id, 'lexeme', UUID_TO_BIN('41883d04-a14c-5491-86b0-475ccb394817', 1), '824bbdae4e5c4aa545a6d99ba7eb938cf92dfaf8dd3a1149e2f21f99bfbf7279',
+  'tr-tr.lexical.native-clear', 'elevenlabs', 'eleven_multilingual_v2', 'audio/generated/tr-TR/lexical/084bb5963fe8995d4db2d9fab73a1ad1fc3f1c928fc057c59951ef7eab02d1ad.mp3', 1253, '2026-09-14 11:32:11.213721', '77d079946b319fe62227085000ad059802b71334423c1a666c9da4d99037d18c', 'validated', '{"audio_key":"084bb5963fe8995d4db2d9fab73a1ad1fc3f1c928fc057c59951ef7eab02d1ad","entity_key":"lx_everyday_routine_05","voice_id":"FDs1ZX5J4e4f2c2erxtW","voice_name":"Fili - Warm Turkish Female ","voice_labels":{"gender":"female","accent":"istanbul","age":"young","category":"professional","language":"tr","use_case":"conversational","descriptive":"calm"},"output_format":"mp3_44100_192","file_sha256":"77d079946b319fe62227085000ad059802b71334423c1a666c9da4d99037d18c","settings":{"stability":0.72,"similarity_boost":0.88,"style":0.0,"use_speaker_boost":true,"speed":0.92},"relative_path":"audio/generated/tr-TR/lexical/084bb5963fe8995d4db2d9fab73a1ad1fc3f1c928fc057c59951ef7eab02d1ad.mp3"}'
+) ON DUPLICATE KEY UPDATE
+  provider = VALUES(provider),
+  provider_model = VALUES(provider_model),
+  storage_url = VALUES(storage_url),
+  duration_ms = VALUES(duration_ms),
+  generated_at = VALUES(generated_at),
+  checksum = VALUES(checksum),
+  status = VALUES(status),
+  metadata = VALUES(metadata);
+
+-- wf_everyday_routine_05 -> audio/generated/tr-TR/lexical/084bb5963fe8995d4db2d9fab73a1ad1fc3f1c928fc057c59951ef7eab02d1ad.mp3
+UPDATE audio_assets
+SET status = 'archived'
+WHERE entity_type = 'word_form'
+  AND entity_id = UUID_TO_BIN('8351f2ee-719d-551e-ba5e-88f34d2a2b8a', 1)
+  AND voice_key = 'tr-tr.lexical.native-clear'
+  AND (entity_type NOT IN ('grammar_point','exercise') OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'wf_everyday_routine_05')
+  AND source_text_hash IS NOT NULL
+  AND source_text_hash <> '824bbdae4e5c4aa545a6d99ba7eb938cf92dfaf8dd3a1149e2f21f99bfbf7279'
+  AND status <> 'archived';
+INSERT INTO audio_assets (
+  id, language_id, language_variant_id, entity_type, entity_id, source_text_hash,
+  voice_key, provider, provider_model, storage_url, duration_ms, generated_at, checksum, status, metadata
+) VALUES (
+  UUID_TO_BIN('7c059a63-654e-59f9-9283-e80e737a31e7', 1), @audio_language_id, @audio_variant_id, 'word_form', UUID_TO_BIN('8351f2ee-719d-551e-ba5e-88f34d2a2b8a', 1), '824bbdae4e5c4aa545a6d99ba7eb938cf92dfaf8dd3a1149e2f21f99bfbf7279',
+  'tr-tr.lexical.native-clear', 'elevenlabs', 'eleven_multilingual_v2', 'audio/generated/tr-TR/lexical/084bb5963fe8995d4db2d9fab73a1ad1fc3f1c928fc057c59951ef7eab02d1ad.mp3', 1253, '2026-09-14 11:32:11.213721', '77d079946b319fe62227085000ad059802b71334423c1a666c9da4d99037d18c', 'validated', '{"audio_key":"084bb5963fe8995d4db2d9fab73a1ad1fc3f1c928fc057c59951ef7eab02d1ad","entity_key":"wf_everyday_routine_05","voice_id":"FDs1ZX5J4e4f2c2erxtW","voice_name":"Fili - Warm Turkish Female ","voice_labels":{"gender":"female","accent":"istanbul","age":"young","category":"professional","language":"tr","use_case":"conversational","descriptive":"calm"},"output_format":"mp3_44100_192","file_sha256":"77d079946b319fe62227085000ad059802b71334423c1a666c9da4d99037d18c","settings":{"stability":0.72,"similarity_boost":0.88,"style":0.0,"use_speaker_boost":true,"speed":0.92},"relative_path":"audio/generated/tr-TR/lexical/084bb5963fe8995d4db2d9fab73a1ad1fc3f1c928fc057c59951ef7eab02d1ad.mp3"}'
+) ON DUPLICATE KEY UPDATE
+  provider = VALUES(provider),
+  provider_model = VALUES(provider_model),
+  storage_url = VALUES(storage_url),
+  duration_ms = VALUES(duration_ms),
+  generated_at = VALUES(generated_at),
+  checksum = VALUES(checksum),
+  status = VALUES(status),
+  metadata = VALUES(metadata);
+
+-- lx_before_and_after_01 -> audio/generated/tr-TR/lexical/09836601d74e384aa1f5397491ec060dde99b21e237942846f81f9667578e23c.mp3
+UPDATE audio_assets
+SET status = 'archived'
+WHERE entity_type = 'lexeme'
+  AND entity_id = UUID_TO_BIN('0abcd7a5-ff43-5b41-89c2-19f687ef9624', 1)
+  AND voice_key = 'tr-tr.lexical.native-clear'
+  AND (entity_type NOT IN ('grammar_point','exercise') OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'lx_before_and_after_01')
+  AND source_text_hash IS NOT NULL
+  AND source_text_hash <> '16ef24fc3b2662a918d2fe6fe967675b2e06298c326b3f3016975b41d8cd08e9'
+  AND status <> 'archived';
+INSERT INTO audio_assets (
+  id, language_id, language_variant_id, entity_type, entity_id, source_text_hash,
+  voice_key, provider, provider_model, storage_url, duration_ms, generated_at, checksum, status, metadata
+) VALUES (
+  UUID_TO_BIN('4e201714-5399-5757-878f-82d921326ccb', 1), @audio_language_id, @audio_variant_id, 'lexeme', UUID_TO_BIN('0abcd7a5-ff43-5b41-89c2-19f687ef9624', 1), '16ef24fc3b2662a918d2fe6fe967675b2e06298c326b3f3016975b41d8cd08e9',
+  'tr-tr.lexical.native-clear', 'elevenlabs', 'eleven_multilingual_v2', 'audio/generated/tr-TR/lexical/09836601d74e384aa1f5397491ec060dde99b21e237942846f81f9667578e23c.mp3', 966, '2026-09-14 11:32:11.814207', 'c4392f116025b326a55bcaa2f8290478d173b5865c0c6c6c75854eac039064a6', 'validated', '{"audio_key":"09836601d74e384aa1f5397491ec060dde99b21e237942846f81f9667578e23c","entity_key":"lx_before_and_after_01","voice_id":"FDs1ZX5J4e4f2c2erxtW","voice_name":"Fili - Warm Turkish Female ","voice_labels":{"gender":"female","accent":"istanbul","age":"young","category":"professional","language":"tr","use_case":"conversational","descriptive":"calm"},"output_format":"mp3_44100_192","file_sha256":"c4392f116025b326a55bcaa2f8290478d173b5865c0c6c6c75854eac039064a6","settings":{"stability":0.72,"similarity_boost":0.88,"style":0.0,"use_speaker_boost":true,"speed":0.92},"relative_path":"audio/generated/tr-TR/lexical/09836601d74e384aa1f5397491ec060dde99b21e237942846f81f9667578e23c.mp3"}'
+) ON DUPLICATE KEY UPDATE
+  provider = VALUES(provider),
+  provider_model = VALUES(provider_model),
+  storage_url = VALUES(storage_url),
+  duration_ms = VALUES(duration_ms),
+  generated_at = VALUES(generated_at),
+  checksum = VALUES(checksum),
+  status = VALUES(status),
+  metadata = VALUES(metadata);
+
+-- wf_before_and_after_01 -> audio/generated/tr-TR/lexical/09836601d74e384aa1f5397491ec060dde99b21e237942846f81f9667578e23c.mp3
+UPDATE audio_assets
+SET status = 'archived'
+WHERE entity_type = 'word_form'
+  AND entity_id = UUID_TO_BIN('cd2743ff-90e9-5499-9620-f08a8b05f2e6', 1)
+  AND voice_key = 'tr-tr.lexical.native-clear'
+  AND (entity_type NOT IN ('grammar_point','exercise') OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'wf_before_and_after_01')
+  AND source_text_hash IS NOT NULL
+  AND source_text_hash <> '16ef24fc3b2662a918d2fe6fe967675b2e06298c326b3f3016975b41d8cd08e9'
+  AND status <> 'archived';
+INSERT INTO audio_assets (
+  id, language_id, language_variant_id, entity_type, entity_id, source_text_hash,
+  voice_key, provider, provider_model, storage_url, duration_ms, generated_at, checksum, status, metadata
+) VALUES (
+  UUID_TO_BIN('2ae7bccf-8fce-5313-b861-21837c62b749', 1), @audio_language_id, @audio_variant_id, 'word_form', UUID_TO_BIN('cd2743ff-90e9-5499-9620-f08a8b05f2e6', 1), '16ef24fc3b2662a918d2fe6fe967675b2e06298c326b3f3016975b41d8cd08e9',
+  'tr-tr.lexical.native-clear', 'elevenlabs', 'eleven_multilingual_v2', 'audio/generated/tr-TR/lexical/09836601d74e384aa1f5397491ec060dde99b21e237942846f81f9667578e23c.mp3', 966, '2026-09-14 11:32:11.814207', 'c4392f116025b326a55bcaa2f8290478d173b5865c0c6c6c75854eac039064a6', 'validated', '{"audio_key":"09836601d74e384aa1f5397491ec060dde99b21e237942846f81f9667578e23c","entity_key":"wf_before_and_after_01","voice_id":"FDs1ZX5J4e4f2c2erxtW","voice_name":"Fili - Warm Turkish Female ","voice_labels":{"gender":"female","accent":"istanbul","age":"young","category":"professional","language":"tr","use_case":"conversational","descriptive":"calm"},"output_format":"mp3_44100_192","file_sha256":"c4392f116025b326a55bcaa2f8290478d173b5865c0c6c6c75854eac039064a6","settings":{"stability":0.72,"similarity_boost":0.88,"style":0.0,"use_speaker_boost":true,"speed":0.92},"relative_path":"audio/generated/tr-TR/lexical/09836601d74e384aa1f5397491ec060dde99b21e237942846f81f9667578e23c.mp3"}'
+) ON DUPLICATE KEY UPDATE
+  provider = VALUES(provider),
+  provider_model = VALUES(provider_model),
+  storage_url = VALUES(storage_url),
+  duration_ms = VALUES(duration_ms),
+  generated_at = VALUES(generated_at),
+  checksum = VALUES(checksum),
+  status = VALUES(status),
+  metadata = VALUES(metadata);
+
+-- lx_everyday_routine_02 -> audio/generated/tr-TR/lexical/099b8a4e4f5003d232cc8e57afe1ace2cf846a500bbce6709a9bda20b01342ee.mp3
+UPDATE audio_assets
+SET status = 'archived'
+WHERE entity_type = 'lexeme'
+  AND entity_id = UUID_TO_BIN('2ae2d9da-9b1d-5d94-a317-02874761d8fd', 1)
+  AND voice_key = 'tr-tr.lexical.native-clear'
+  AND (entity_type NOT IN ('grammar_point','exercise') OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'lx_everyday_routine_02')
+  AND source_text_hash IS NOT NULL
+  AND source_text_hash <> '225bdf335c55dc929d094c4d1796f301a9051aab31560f67badafc283b18e766'
+  AND status <> 'archived';
+INSERT INTO audio_assets (
+  id, language_id, language_variant_id, entity_type, entity_id, source_text_hash,
+  voice_key, provider, provider_model, storage_url, duration_ms, generated_at, checksum, status, metadata
+) VALUES (
+  UUID_TO_BIN('450e2a71-c297-5590-9823-ffe34efab773', 1), @audio_language_id, @audio_variant_id, 'lexeme', UUID_TO_BIN('2ae2d9da-9b1d-5d94-a317-02874761d8fd', 1), '225bdf335c55dc929d094c4d1796f301a9051aab31560f67badafc283b18e766',
+  'tr-tr.lexical.native-clear', 'elevenlabs', 'eleven_multilingual_v2', 'audio/generated/tr-TR/lexical/099b8a4e4f5003d232cc8e57afe1ace2cf846a500bbce6709a9bda20b01342ee.mp3', 1332, '2026-09-14 11:32:12.237356', '04ccf783257132b2f657a7e17ba9edb8c868047fd63dd40df143259605aa4769', 'validated', '{"audio_key":"099b8a4e4f5003d232cc8e57afe1ace2cf846a500bbce6709a9bda20b01342ee","entity_key":"lx_everyday_routine_02","voice_id":"FDs1ZX5J4e4f2c2erxtW","voice_name":"Fili - Warm Turkish Female ","voice_labels":{"gender":"female","accent":"istanbul","age":"young","category":"professional","language":"tr","use_case":"conversational","descriptive":"calm"},"output_format":"mp3_44100_192","file_sha256":"04ccf783257132b2f657a7e17ba9edb8c868047fd63dd40df143259605aa4769","settings":{"stability":0.72,"similarity_boost":0.88,"style":0.0,"use_speaker_boost":true,"speed":0.92},"relative_path":"audio/generated/tr-TR/lexical/099b8a4e4f5003d232cc8e57afe1ace2cf846a500bbce6709a9bda20b01342ee.mp3"}'
+) ON DUPLICATE KEY UPDATE
+  provider = VALUES(provider),
+  provider_model = VALUES(provider_model),
+  storage_url = VALUES(storage_url),
+  duration_ms = VALUES(duration_ms),
+  generated_at = VALUES(generated_at),
+  checksum = VALUES(checksum),
+  status = VALUES(status),
+  metadata = VALUES(metadata);
+
+-- wf_everyday_routine_02 -> audio/generated/tr-TR/lexical/099b8a4e4f5003d232cc8e57afe1ace2cf846a500bbce6709a9bda20b01342ee.mp3
+UPDATE audio_assets
+SET status = 'archived'
+WHERE entity_type = 'word_form'
+  AND entity_id = UUID_TO_BIN('f71de20c-f666-5c12-ba67-468969089eff', 1)
+  AND voice_key = 'tr-tr.lexical.native-clear'
+  AND (entity_type NOT IN ('grammar_point','exercise') OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'wf_everyday_routine_02')
+  AND source_text_hash IS NOT NULL
+  AND source_text_hash <> '225bdf335c55dc929d094c4d1796f301a9051aab31560f67badafc283b18e766'
+  AND status <> 'archived';
+INSERT INTO audio_assets (
+  id, language_id, language_variant_id, entity_type, entity_id, source_text_hash,
+  voice_key, provider, provider_model, storage_url, duration_ms, generated_at, checksum, status, metadata
+) VALUES (
+  UUID_TO_BIN('aec84a3a-b850-57e2-9f01-5489ff56a37a', 1), @audio_language_id, @audio_variant_id, 'word_form', UUID_TO_BIN('f71de20c-f666-5c12-ba67-468969089eff', 1), '225bdf335c55dc929d094c4d1796f301a9051aab31560f67badafc283b18e766',
+  'tr-tr.lexical.native-clear', 'elevenlabs', 'eleven_multilingual_v2', 'audio/generated/tr-TR/lexical/099b8a4e4f5003d232cc8e57afe1ace2cf846a500bbce6709a9bda20b01342ee.mp3', 1332, '2026-09-14 11:32:12.237356', '04ccf783257132b2f657a7e17ba9edb8c868047fd63dd40df143259605aa4769', 'validated', '{"audio_key":"099b8a4e4f5003d232cc8e57afe1ace2cf846a500bbce6709a9bda20b01342ee","entity_key":"wf_everyday_routine_02","voice_id":"FDs1ZX5J4e4f2c2erxtW","voice_name":"Fili - Warm Turkish Female ","voice_labels":{"gender":"female","accent":"istanbul","age":"young","category":"professional","language":"tr","use_case":"conversational","descriptive":"calm"},"output_format":"mp3_44100_192","file_sha256":"04ccf783257132b2f657a7e17ba9edb8c868047fd63dd40df143259605aa4769","settings":{"stability":0.72,"similarity_boost":0.88,"style":0.0,"use_speaker_boost":true,"speed":0.92},"relative_path":"audio/generated/tr-TR/lexical/099b8a4e4f5003d232cc8e57afe1ace2cf846a500bbce6709a9bda20b01342ee.mp3"}'
+) ON DUPLICATE KEY UPDATE
+  provider = VALUES(provider),
+  provider_model = VALUES(provider_model),
+  storage_url = VALUES(storage_url),
+  duration_ms = VALUES(duration_ms),
+  generated_at = VALUES(generated_at),
+  checksum = VALUES(checksum),
+  status = VALUES(status),
+  metadata = VALUES(metadata);
+
+-- lx_near_future_plans_01 -> audio/generated/tr-TR/lexical/0d1fde49a9263e09a23a1dc69ddab5900829c9cbe05237f2ad9142e481bd9a25.mp3
+UPDATE audio_assets
+SET status = 'archived'
+WHERE entity_type = 'lexeme'
+  AND entity_id = UUID_TO_BIN('001b00f6-37f8-5565-9e21-5720f4294328', 1)
+  AND voice_key = 'tr-tr.lexical.native-clear'
+  AND (entity_type NOT IN ('grammar_point','exercise') OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'lx_near_future_plans_01')
+  AND source_text_hash IS NOT NULL
+  AND source_text_hash <> '1a6f0a4f636ededd69523aef398c19e011f6b9fd01e26d8cd405febded0e0280'
+  AND status <> 'archived';
+INSERT INTO audio_assets (
+  id, language_id, language_variant_id, entity_type, entity_id, source_text_hash,
+  voice_key, provider, provider_model, storage_url, duration_ms, generated_at, checksum, status, metadata
+) VALUES (
+  UUID_TO_BIN('b9520564-0824-55f4-98b7-0ed400339148', 1), @audio_language_id, @audio_variant_id, 'lexeme', UUID_TO_BIN('001b00f6-37f8-5565-9e21-5720f4294328', 1), '1a6f0a4f636ededd69523aef398c19e011f6b9fd01e26d8cd405febded0e0280',
+  'tr-tr.lexical.native-clear', 'elevenlabs', 'eleven_multilingual_v2', 'audio/generated/tr-TR/lexical/0d1fde49a9263e09a23a1dc69ddab5900829c9cbe05237f2ad9142e481bd9a25.mp3', 1280, '2026-09-13 17:08:16.369020', '650ecd7e3662af59c1398d2c738d64c34361becf06b69497489d4127617d877c', 'validated', '{"audio_key":"0d1fde49a9263e09a23a1dc69ddab5900829c9cbe05237f2ad9142e481bd9a25","entity_key":"lx_near_future_plans_01","voice_id":"FDs1ZX5J4e4f2c2erxtW","voice_name":"Fili - Warm Turkish Female ","voice_labels":{"gender":"female","accent":"istanbul","age":"young","category":"professional","language":"tr","use_case":"conversational","descriptive":"calm"},"output_format":"mp3_44100_192","file_sha256":"650ecd7e3662af59c1398d2c738d64c34361becf06b69497489d4127617d877c","settings":{"stability":0.72,"similarity_boost":0.88,"style":0.0,"use_speaker_boost":true,"speed":0.92},"relative_path":"audio/generated/tr-TR/lexical/0d1fde49a9263e09a23a1dc69ddab5900829c9cbe05237f2ad9142e481bd9a25.mp3"}'
+) ON DUPLICATE KEY UPDATE
+  provider = VALUES(provider),
+  provider_model = VALUES(provider_model),
+  storage_url = VALUES(storage_url),
+  duration_ms = VALUES(duration_ms),
+  generated_at = VALUES(generated_at),
+  checksum = VALUES(checksum),
+  status = VALUES(status),
+  metadata = VALUES(metadata);
+
+-- wf_near_future_plans_01 -> audio/generated/tr-TR/lexical/0d1fde49a9263e09a23a1dc69ddab5900829c9cbe05237f2ad9142e481bd9a25.mp3
+UPDATE audio_assets
+SET status = 'archived'
+WHERE entity_type = 'word_form'
+  AND entity_id = UUID_TO_BIN('0ba03178-dbf7-52aa-a9fd-c9b5244c2a0e', 1)
+  AND voice_key = 'tr-tr.lexical.native-clear'
+  AND (entity_type NOT IN ('grammar_point','exercise') OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'wf_near_future_plans_01')
+  AND source_text_hash IS NOT NULL
+  AND source_text_hash <> '1a6f0a4f636ededd69523aef398c19e011f6b9fd01e26d8cd405febded0e0280'
+  AND status <> 'archived';
+INSERT INTO audio_assets (
+  id, language_id, language_variant_id, entity_type, entity_id, source_text_hash,
+  voice_key, provider, provider_model, storage_url, duration_ms, generated_at, checksum, status, metadata
+) VALUES (
+  UUID_TO_BIN('922743b8-64ce-59ef-a667-50c57b968b8b', 1), @audio_language_id, @audio_variant_id, 'word_form', UUID_TO_BIN('0ba03178-dbf7-52aa-a9fd-c9b5244c2a0e', 1), '1a6f0a4f636ededd69523aef398c19e011f6b9fd01e26d8cd405febded0e0280',
+  'tr-tr.lexical.native-clear', 'elevenlabs', 'eleven_multilingual_v2', 'audio/generated/tr-TR/lexical/0d1fde49a9263e09a23a1dc69ddab5900829c9cbe05237f2ad9142e481bd9a25.mp3', 1280, '2026-09-13 17:08:16.369020', '650ecd7e3662af59c1398d2c738d64c34361becf06b69497489d4127617d877c', 'validated', '{"audio_key":"0d1fde49a9263e09a23a1dc69ddab5900829c9cbe05237f2ad9142e481bd9a25","entity_key":"wf_near_future_plans_01","voice_id":"FDs1ZX5J4e4f2c2erxtW","voice_name":"Fili - Warm Turkish Female ","voice_labels":{"gender":"female","accent":"istanbul","age":"young","category":"professional","language":"tr","use_case":"conversational","descriptive":"calm"},"output_format":"mp3_44100_192","file_sha256":"650ecd7e3662af59c1398d2c738d64c34361becf06b69497489d4127617d877c","settings":{"stability":0.72,"similarity_boost":0.88,"style":0.0,"use_speaker_boost":true,"speed":0.92},"relative_path":"audio/generated/tr-TR/lexical/0d1fde49a9263e09a23a1dc69ddab5900829c9cbe05237f2ad9142e481bd9a25.mp3"}'
+) ON DUPLICATE KEY UPDATE
+  provider = VALUES(provider),
+  provider_model = VALUES(provider_model),
+  storage_url = VALUES(storage_url),
+  duration_ms = VALUES(duration_ms),
+  generated_at = VALUES(generated_at),
+  checksum = VALUES(checksum),
+  status = VALUES(status),
+  metadata = VALUES(metadata);
+
+-- lx_yesterday_01 -> audio/generated/tr-TR/lexical/0dfd2e20abe5580f9821a273cc52bb0946fd5c46c45a26e513615d70c37a8428.mp3
+UPDATE audio_assets
+SET status = 'archived'
+WHERE entity_type = 'lexeme'
+  AND entity_id = UUID_TO_BIN('a44b777d-e276-5aed-b1e7-1caab1c9022f', 1)
+  AND voice_key = 'tr-tr.lexical.native-clear'
+  AND (entity_type NOT IN ('grammar_point','exercise') OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'lx_yesterday_01')
+  AND source_text_hash IS NOT NULL
+  AND source_text_hash <> '78b0274970cc27c07d8b687040514e67d1e9bfa2f4b1952af1d752cdd46334a0'
+  AND status <> 'archived';
+INSERT INTO audio_assets (
+  id, language_id, language_variant_id, entity_type, entity_id, source_text_hash,
+  voice_key, provider, provider_model, storage_url, duration_ms, generated_at, checksum, status, metadata
+) VALUES (
+  UUID_TO_BIN('9b9f512c-f550-58fe-9e9a-6cee8537b31f', 1), @audio_language_id, @audio_variant_id, 'lexeme', UUID_TO_BIN('a44b777d-e276-5aed-b1e7-1caab1c9022f', 1), '78b0274970cc27c07d8b687040514e67d1e9bfa2f4b1952af1d752cdd46334a0',
+  'tr-tr.lexical.native-clear', 'elevenlabs', 'eleven_multilingual_v2', 'audio/generated/tr-TR/lexical/0dfd2e20abe5580f9821a273cc52bb0946fd5c46c45a26e513615d70c37a8428.mp3', 914, '2026-09-13 17:08:16.900598', '9737943c5fe51fafdcb1a43254d759c9d1b04cc38f7488d44bff36363d4c901c', 'validated', '{"audio_key":"0dfd2e20abe5580f9821a273cc52bb0946fd5c46c45a26e513615d70c37a8428","entity_key":"lx_yesterday_01","voice_id":"FDs1ZX5J4e4f2c2erxtW","voice_name":"Fili - Warm Turkish Female ","voice_labels":{"gender":"female","accent":"istanbul","age":"young","category":"professional","language":"tr","use_case":"conversational","descriptive":"calm"},"output_format":"mp3_44100_192","file_sha256":"9737943c5fe51fafdcb1a43254d759c9d1b04cc38f7488d44bff36363d4c901c","settings":{"stability":0.72,"similarity_boost":0.88,"style":0.0,"use_speaker_boost":true,"speed":0.92},"relative_path":"audio/generated/tr-TR/lexical/0dfd2e20abe5580f9821a273cc52bb0946fd5c46c45a26e513615d70c37a8428.mp3"}'
+) ON DUPLICATE KEY UPDATE
+  provider = VALUES(provider),
+  provider_model = VALUES(provider_model),
+  storage_url = VALUES(storage_url),
+  duration_ms = VALUES(duration_ms),
+  generated_at = VALUES(generated_at),
+  checksum = VALUES(checksum),
+  status = VALUES(status),
+  metadata = VALUES(metadata);
+
+-- wf_yesterday_01 -> audio/generated/tr-TR/lexical/0dfd2e20abe5580f9821a273cc52bb0946fd5c46c45a26e513615d70c37a8428.mp3
+UPDATE audio_assets
+SET status = 'archived'
+WHERE entity_type = 'word_form'
+  AND entity_id = UUID_TO_BIN('3e27f892-97e0-552d-b2ff-29245e502bea', 1)
+  AND voice_key = 'tr-tr.lexical.native-clear'
+  AND (entity_type NOT IN ('grammar_point','exercise') OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'wf_yesterday_01')
+  AND source_text_hash IS NOT NULL
+  AND source_text_hash <> '78b0274970cc27c07d8b687040514e67d1e9bfa2f4b1952af1d752cdd46334a0'
+  AND status <> 'archived';
+INSERT INTO audio_assets (
+  id, language_id, language_variant_id, entity_type, entity_id, source_text_hash,
+  voice_key, provider, provider_model, storage_url, duration_ms, generated_at, checksum, status, metadata
+) VALUES (
+  UUID_TO_BIN('1a1eb47a-e514-555b-8610-1f419cdff6ab', 1), @audio_language_id, @audio_variant_id, 'word_form', UUID_TO_BIN('3e27f892-97e0-552d-b2ff-29245e502bea', 1), '78b0274970cc27c07d8b687040514e67d1e9bfa2f4b1952af1d752cdd46334a0',
+  'tr-tr.lexical.native-clear', 'elevenlabs', 'eleven_multilingual_v2', 'audio/generated/tr-TR/lexical/0dfd2e20abe5580f9821a273cc52bb0946fd5c46c45a26e513615d70c37a8428.mp3', 914, '2026-09-13 17:08:16.900598', '9737943c5fe51fafdcb1a43254d759c9d1b04cc38f7488d44bff36363d4c901c', 'validated', '{"audio_key":"0dfd2e20abe5580f9821a273cc52bb0946fd5c46c45a26e513615d70c37a8428","entity_key":"wf_yesterday_01","voice_id":"FDs1ZX5J4e4f2c2erxtW","voice_name":"Fili - Warm Turkish Female ","voice_labels":{"gender":"female","accent":"istanbul","age":"young","category":"professional","language":"tr","use_case":"conversational","descriptive":"calm"},"output_format":"mp3_44100_192","file_sha256":"9737943c5fe51fafdcb1a43254d759c9d1b04cc38f7488d44bff36363d4c901c","settings":{"stability":0.72,"similarity_boost":0.88,"style":0.0,"use_speaker_boost":true,"speed":0.92},"relative_path":"audio/generated/tr-TR/lexical/0dfd2e20abe5580f9821a273cc52bb0946fd5c46c45a26e513615d70c37a8428.mp3"}'
 ) ON DUPLICATE KEY UPDATE
   provider = VALUES(provider),
   provider_model = VALUES(provider_model),
@@ -2220,6 +4768,162 @@ INSERT INTO audio_assets (
   status = VALUES(status),
   metadata = VALUES(metadata);
 
+-- lx_basic_health_02 -> audio/generated/tr-TR/lexical/10455f3db4784a392f2e0953ddbb17864ae941f2fa482450d5429cdb3ad39144.mp3
+UPDATE audio_assets
+SET status = 'archived'
+WHERE entity_type = 'lexeme'
+  AND entity_id = UUID_TO_BIN('c2eb3c21-ab5f-5f3f-96f7-9248a71c76e7', 1)
+  AND voice_key = 'tr-tr.lexical.native-clear'
+  AND (entity_type NOT IN ('grammar_point','exercise') OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'lx_basic_health_02')
+  AND source_text_hash IS NOT NULL
+  AND source_text_hash <> '7dde97bede1a03584264ed927700cc858f36e9ed736d5debfcff0d4b0b580e0e'
+  AND status <> 'archived';
+INSERT INTO audio_assets (
+  id, language_id, language_variant_id, entity_type, entity_id, source_text_hash,
+  voice_key, provider, provider_model, storage_url, duration_ms, generated_at, checksum, status, metadata
+) VALUES (
+  UUID_TO_BIN('1f088bad-c80b-52a3-93ce-f8658a64ddeb', 1), @audio_language_id, @audio_variant_id, 'lexeme', UUID_TO_BIN('c2eb3c21-ab5f-5f3f-96f7-9248a71c76e7', 1), '7dde97bede1a03584264ed927700cc858f36e9ed736d5debfcff0d4b0b580e0e',
+  'tr-tr.lexical.native-clear', 'elevenlabs', 'eleven_multilingual_v2', 'audio/generated/tr-TR/lexical/10455f3db4784a392f2e0953ddbb17864ae941f2fa482450d5429cdb3ad39144.mp3', 1097, '2026-09-14 11:32:12.759029', '76dd53de585f9faa32dbe1b16ba472948653808eb72a63903ea919c6530e136a', 'validated', '{"audio_key":"10455f3db4784a392f2e0953ddbb17864ae941f2fa482450d5429cdb3ad39144","entity_key":"lx_basic_health_02","voice_id":"FDs1ZX5J4e4f2c2erxtW","voice_name":"Fili - Warm Turkish Female ","voice_labels":{"gender":"female","accent":"istanbul","age":"young","category":"professional","language":"tr","use_case":"conversational","descriptive":"calm"},"output_format":"mp3_44100_192","file_sha256":"76dd53de585f9faa32dbe1b16ba472948653808eb72a63903ea919c6530e136a","settings":{"stability":0.72,"similarity_boost":0.88,"style":0.0,"use_speaker_boost":true,"speed":0.92},"relative_path":"audio/generated/tr-TR/lexical/10455f3db4784a392f2e0953ddbb17864ae941f2fa482450d5429cdb3ad39144.mp3"}'
+) ON DUPLICATE KEY UPDATE
+  provider = VALUES(provider),
+  provider_model = VALUES(provider_model),
+  storage_url = VALUES(storage_url),
+  duration_ms = VALUES(duration_ms),
+  generated_at = VALUES(generated_at),
+  checksum = VALUES(checksum),
+  status = VALUES(status),
+  metadata = VALUES(metadata);
+
+-- wf_basic_health_02 -> audio/generated/tr-TR/lexical/10455f3db4784a392f2e0953ddbb17864ae941f2fa482450d5429cdb3ad39144.mp3
+UPDATE audio_assets
+SET status = 'archived'
+WHERE entity_type = 'word_form'
+  AND entity_id = UUID_TO_BIN('894eda8d-627e-5f5d-ad3a-03b03c288248', 1)
+  AND voice_key = 'tr-tr.lexical.native-clear'
+  AND (entity_type NOT IN ('grammar_point','exercise') OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'wf_basic_health_02')
+  AND source_text_hash IS NOT NULL
+  AND source_text_hash <> '7dde97bede1a03584264ed927700cc858f36e9ed736d5debfcff0d4b0b580e0e'
+  AND status <> 'archived';
+INSERT INTO audio_assets (
+  id, language_id, language_variant_id, entity_type, entity_id, source_text_hash,
+  voice_key, provider, provider_model, storage_url, duration_ms, generated_at, checksum, status, metadata
+) VALUES (
+  UUID_TO_BIN('4002f00e-8117-5f6e-a4f9-0307301ccd2f', 1), @audio_language_id, @audio_variant_id, 'word_form', UUID_TO_BIN('894eda8d-627e-5f5d-ad3a-03b03c288248', 1), '7dde97bede1a03584264ed927700cc858f36e9ed736d5debfcff0d4b0b580e0e',
+  'tr-tr.lexical.native-clear', 'elevenlabs', 'eleven_multilingual_v2', 'audio/generated/tr-TR/lexical/10455f3db4784a392f2e0953ddbb17864ae941f2fa482450d5429cdb3ad39144.mp3', 1097, '2026-09-14 11:32:12.759029', '76dd53de585f9faa32dbe1b16ba472948653808eb72a63903ea919c6530e136a', 'validated', '{"audio_key":"10455f3db4784a392f2e0953ddbb17864ae941f2fa482450d5429cdb3ad39144","entity_key":"wf_basic_health_02","voice_id":"FDs1ZX5J4e4f2c2erxtW","voice_name":"Fili - Warm Turkish Female ","voice_labels":{"gender":"female","accent":"istanbul","age":"young","category":"professional","language":"tr","use_case":"conversational","descriptive":"calm"},"output_format":"mp3_44100_192","file_sha256":"76dd53de585f9faa32dbe1b16ba472948653808eb72a63903ea919c6530e136a","settings":{"stability":0.72,"similarity_boost":0.88,"style":0.0,"use_speaker_boost":true,"speed":0.92},"relative_path":"audio/generated/tr-TR/lexical/10455f3db4784a392f2e0953ddbb17864ae941f2fa482450d5429cdb3ad39144.mp3"}'
+) ON DUPLICATE KEY UPDATE
+  provider = VALUES(provider),
+  provider_model = VALUES(provider_model),
+  storage_url = VALUES(storage_url),
+  duration_ms = VALUES(duration_ms),
+  generated_at = VALUES(generated_at),
+  checksum = VALUES(checksum),
+  status = VALUES(status),
+  metadata = VALUES(metadata);
+
+-- lx_a1_everyday_capstone_05 -> audio/generated/tr-TR/lexical/117d64b4656c673a7d4278c8793f7472ecb794c419148254aa601438eb31f28f.mp3
+UPDATE audio_assets
+SET status = 'archived'
+WHERE entity_type = 'lexeme'
+  AND entity_id = UUID_TO_BIN('f2589629-fc69-571c-9d1d-ac6462013960', 1)
+  AND voice_key = 'tr-tr.lexical.native-clear'
+  AND (entity_type NOT IN ('grammar_point','exercise') OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'lx_a1_everyday_capstone_05')
+  AND source_text_hash IS NOT NULL
+  AND source_text_hash <> '45a13d79bbcc310e87410d769acf33cadb62c554706218eb17e25ea8b85c3e27'
+  AND status <> 'archived';
+INSERT INTO audio_assets (
+  id, language_id, language_variant_id, entity_type, entity_id, source_text_hash,
+  voice_key, provider, provider_model, storage_url, duration_ms, generated_at, checksum, status, metadata
+) VALUES (
+  UUID_TO_BIN('59997866-2d93-5346-8f55-e6892d239d02', 1), @audio_language_id, @audio_variant_id, 'lexeme', UUID_TO_BIN('f2589629-fc69-571c-9d1d-ac6462013960', 1), '45a13d79bbcc310e87410d769acf33cadb62c554706218eb17e25ea8b85c3e27',
+  'tr-tr.lexical.native-clear', 'elevenlabs', 'eleven_multilingual_v2', 'audio/generated/tr-TR/lexical/117d64b4656c673a7d4278c8793f7472ecb794c419148254aa601438eb31f28f.mp3', 1149, '2026-09-14 11:32:13.179446', '2d43d4f2edb868dc8f7fd7474c1c38ac1d68b64a70232e527da398a3346a39d8', 'validated', '{"audio_key":"117d64b4656c673a7d4278c8793f7472ecb794c419148254aa601438eb31f28f","entity_key":"lx_a1_everyday_capstone_05","voice_id":"FDs1ZX5J4e4f2c2erxtW","voice_name":"Fili - Warm Turkish Female ","voice_labels":{"gender":"female","accent":"istanbul","age":"young","category":"professional","language":"tr","use_case":"conversational","descriptive":"calm"},"output_format":"mp3_44100_192","file_sha256":"2d43d4f2edb868dc8f7fd7474c1c38ac1d68b64a70232e527da398a3346a39d8","settings":{"stability":0.72,"similarity_boost":0.88,"style":0.0,"use_speaker_boost":true,"speed":0.92},"relative_path":"audio/generated/tr-TR/lexical/117d64b4656c673a7d4278c8793f7472ecb794c419148254aa601438eb31f28f.mp3"}'
+) ON DUPLICATE KEY UPDATE
+  provider = VALUES(provider),
+  provider_model = VALUES(provider_model),
+  storage_url = VALUES(storage_url),
+  duration_ms = VALUES(duration_ms),
+  generated_at = VALUES(generated_at),
+  checksum = VALUES(checksum),
+  status = VALUES(status),
+  metadata = VALUES(metadata);
+
+-- wf_a1_everyday_capstone_05 -> audio/generated/tr-TR/lexical/117d64b4656c673a7d4278c8793f7472ecb794c419148254aa601438eb31f28f.mp3
+UPDATE audio_assets
+SET status = 'archived'
+WHERE entity_type = 'word_form'
+  AND entity_id = UUID_TO_BIN('c0baf5be-a9cb-596e-b182-4f503556525a', 1)
+  AND voice_key = 'tr-tr.lexical.native-clear'
+  AND (entity_type NOT IN ('grammar_point','exercise') OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'wf_a1_everyday_capstone_05')
+  AND source_text_hash IS NOT NULL
+  AND source_text_hash <> '45a13d79bbcc310e87410d769acf33cadb62c554706218eb17e25ea8b85c3e27'
+  AND status <> 'archived';
+INSERT INTO audio_assets (
+  id, language_id, language_variant_id, entity_type, entity_id, source_text_hash,
+  voice_key, provider, provider_model, storage_url, duration_ms, generated_at, checksum, status, metadata
+) VALUES (
+  UUID_TO_BIN('751c10eb-2999-54e4-8f98-d334adad7318', 1), @audio_language_id, @audio_variant_id, 'word_form', UUID_TO_BIN('c0baf5be-a9cb-596e-b182-4f503556525a', 1), '45a13d79bbcc310e87410d769acf33cadb62c554706218eb17e25ea8b85c3e27',
+  'tr-tr.lexical.native-clear', 'elevenlabs', 'eleven_multilingual_v2', 'audio/generated/tr-TR/lexical/117d64b4656c673a7d4278c8793f7472ecb794c419148254aa601438eb31f28f.mp3', 1149, '2026-09-14 11:32:13.179446', '2d43d4f2edb868dc8f7fd7474c1c38ac1d68b64a70232e527da398a3346a39d8', 'validated', '{"audio_key":"117d64b4656c673a7d4278c8793f7472ecb794c419148254aa601438eb31f28f","entity_key":"wf_a1_everyday_capstone_05","voice_id":"FDs1ZX5J4e4f2c2erxtW","voice_name":"Fili - Warm Turkish Female ","voice_labels":{"gender":"female","accent":"istanbul","age":"young","category":"professional","language":"tr","use_case":"conversational","descriptive":"calm"},"output_format":"mp3_44100_192","file_sha256":"2d43d4f2edb868dc8f7fd7474c1c38ac1d68b64a70232e527da398a3346a39d8","settings":{"stability":0.72,"similarity_boost":0.88,"style":0.0,"use_speaker_boost":true,"speed":0.92},"relative_path":"audio/generated/tr-TR/lexical/117d64b4656c673a7d4278c8793f7472ecb794c419148254aa601438eb31f28f.mp3"}'
+) ON DUPLICATE KEY UPDATE
+  provider = VALUES(provider),
+  provider_model = VALUES(provider_model),
+  storage_url = VALUES(storage_url),
+  duration_ms = VALUES(duration_ms),
+  generated_at = VALUES(generated_at),
+  checksum = VALUES(checksum),
+  status = VALUES(status),
+  metadata = VALUES(metadata);
+
+-- lx_yesterday_03 -> audio/generated/tr-TR/lexical/121c0d1707b8ae04b8c22dba3466c66b1668d817cda58f11ef15f5bb4cd0d768.mp3
+UPDATE audio_assets
+SET status = 'archived'
+WHERE entity_type = 'lexeme'
+  AND entity_id = UUID_TO_BIN('01436d32-486f-5708-afb9-70fd23a59365', 1)
+  AND voice_key = 'tr-tr.lexical.native-clear'
+  AND (entity_type NOT IN ('grammar_point','exercise') OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'lx_yesterday_03')
+  AND source_text_hash IS NOT NULL
+  AND source_text_hash <> 'bd6892af7657637da74711592e8168186d646445d9aeedd635a19cf17b1ce361'
+  AND status <> 'archived';
+INSERT INTO audio_assets (
+  id, language_id, language_variant_id, entity_type, entity_id, source_text_hash,
+  voice_key, provider, provider_model, storage_url, duration_ms, generated_at, checksum, status, metadata
+) VALUES (
+  UUID_TO_BIN('f889d6f7-8c0b-52ca-b185-03c07abb22cf', 1), @audio_language_id, @audio_variant_id, 'lexeme', UUID_TO_BIN('01436d32-486f-5708-afb9-70fd23a59365', 1), 'bd6892af7657637da74711592e8168186d646445d9aeedd635a19cf17b1ce361',
+  'tr-tr.lexical.native-clear', 'elevenlabs', 'eleven_multilingual_v2', 'audio/generated/tr-TR/lexical/121c0d1707b8ae04b8c22dba3466c66b1668d817cda58f11ef15f5bb4cd0d768.mp3', 1071, '2026-09-14 11:32:13.696597', '372a6aaaaa802b9a261eda5c414d83b988b32f0a46b2dea50bc2c3fa366d724d', 'validated', '{"audio_key":"121c0d1707b8ae04b8c22dba3466c66b1668d817cda58f11ef15f5bb4cd0d768","entity_key":"lx_yesterday_03","voice_id":"FDs1ZX5J4e4f2c2erxtW","voice_name":"Fili - Warm Turkish Female ","voice_labels":{"gender":"female","accent":"istanbul","age":"young","category":"professional","language":"tr","use_case":"conversational","descriptive":"calm"},"output_format":"mp3_44100_192","file_sha256":"372a6aaaaa802b9a261eda5c414d83b988b32f0a46b2dea50bc2c3fa366d724d","settings":{"stability":0.72,"similarity_boost":0.88,"style":0.0,"use_speaker_boost":true,"speed":0.92},"relative_path":"audio/generated/tr-TR/lexical/121c0d1707b8ae04b8c22dba3466c66b1668d817cda58f11ef15f5bb4cd0d768.mp3"}'
+) ON DUPLICATE KEY UPDATE
+  provider = VALUES(provider),
+  provider_model = VALUES(provider_model),
+  storage_url = VALUES(storage_url),
+  duration_ms = VALUES(duration_ms),
+  generated_at = VALUES(generated_at),
+  checksum = VALUES(checksum),
+  status = VALUES(status),
+  metadata = VALUES(metadata);
+
+-- wf_yesterday_03 -> audio/generated/tr-TR/lexical/121c0d1707b8ae04b8c22dba3466c66b1668d817cda58f11ef15f5bb4cd0d768.mp3
+UPDATE audio_assets
+SET status = 'archived'
+WHERE entity_type = 'word_form'
+  AND entity_id = UUID_TO_BIN('5eb914e4-68ed-5e8a-ad21-aa3ed078b260', 1)
+  AND voice_key = 'tr-tr.lexical.native-clear'
+  AND (entity_type NOT IN ('grammar_point','exercise') OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'wf_yesterday_03')
+  AND source_text_hash IS NOT NULL
+  AND source_text_hash <> 'bd6892af7657637da74711592e8168186d646445d9aeedd635a19cf17b1ce361'
+  AND status <> 'archived';
+INSERT INTO audio_assets (
+  id, language_id, language_variant_id, entity_type, entity_id, source_text_hash,
+  voice_key, provider, provider_model, storage_url, duration_ms, generated_at, checksum, status, metadata
+) VALUES (
+  UUID_TO_BIN('fc7e2304-6619-51af-8ae9-16128b41f6f4', 1), @audio_language_id, @audio_variant_id, 'word_form', UUID_TO_BIN('5eb914e4-68ed-5e8a-ad21-aa3ed078b260', 1), 'bd6892af7657637da74711592e8168186d646445d9aeedd635a19cf17b1ce361',
+  'tr-tr.lexical.native-clear', 'elevenlabs', 'eleven_multilingual_v2', 'audio/generated/tr-TR/lexical/121c0d1707b8ae04b8c22dba3466c66b1668d817cda58f11ef15f5bb4cd0d768.mp3', 1071, '2026-09-14 11:32:13.696597', '372a6aaaaa802b9a261eda5c414d83b988b32f0a46b2dea50bc2c3fa366d724d', 'validated', '{"audio_key":"121c0d1707b8ae04b8c22dba3466c66b1668d817cda58f11ef15f5bb4cd0d768","entity_key":"wf_yesterday_03","voice_id":"FDs1ZX5J4e4f2c2erxtW","voice_name":"Fili - Warm Turkish Female ","voice_labels":{"gender":"female","accent":"istanbul","age":"young","category":"professional","language":"tr","use_case":"conversational","descriptive":"calm"},"output_format":"mp3_44100_192","file_sha256":"372a6aaaaa802b9a261eda5c414d83b988b32f0a46b2dea50bc2c3fa366d724d","settings":{"stability":0.72,"similarity_boost":0.88,"style":0.0,"use_speaker_boost":true,"speed":0.92},"relative_path":"audio/generated/tr-TR/lexical/121c0d1707b8ae04b8c22dba3466c66b1668d817cda58f11ef15f5bb4cd0d768.mp3"}'
+) ON DUPLICATE KEY UPDATE
+  provider = VALUES(provider),
+  provider_model = VALUES(provider_model),
+  storage_url = VALUES(storage_url),
+  duration_ms = VALUES(duration_ms),
+  generated_at = VALUES(generated_at),
+  checksum = VALUES(checksum),
+  status = VALUES(status),
+  metadata = VALUES(metadata);
+
 -- lx_getting_around_04 -> audio/generated/tr-TR/lexical/12f880e8d186bc6078325065066a086177c5863afb65f268798df8cc81fc1933.mp3
 UPDATE audio_assets
 SET status = 'archived'
@@ -2324,6 +5028,58 @@ INSERT INTO audio_assets (
   status = VALUES(status),
   metadata = VALUES(metadata);
 
+-- lx_weather_and_clothes_06 -> audio/generated/tr-TR/lexical/16c2953f61829556ce1df8142e02e6dc1cb973c84beacbb9ba54932ba4ebcfa3.mp3
+UPDATE audio_assets
+SET status = 'archived'
+WHERE entity_type = 'lexeme'
+  AND entity_id = UUID_TO_BIN('fc94f434-8abc-5d62-b50a-cff7fdf5d7a9', 1)
+  AND voice_key = 'tr-tr.lexical.native-clear'
+  AND (entity_type NOT IN ('grammar_point','exercise') OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'lx_weather_and_clothes_06')
+  AND source_text_hash IS NOT NULL
+  AND source_text_hash <> '3d4728bd344b6866866623cabd8458da5c4e6612e98ce1f130b1cca5f8e1f975'
+  AND status <> 'archived';
+INSERT INTO audio_assets (
+  id, language_id, language_variant_id, entity_type, entity_id, source_text_hash,
+  voice_key, provider, provider_model, storage_url, duration_ms, generated_at, checksum, status, metadata
+) VALUES (
+  UUID_TO_BIN('71daab70-d9a5-5590-a0ec-d6cdba392d53', 1), @audio_language_id, @audio_variant_id, 'lexeme', UUID_TO_BIN('fc94f434-8abc-5d62-b50a-cff7fdf5d7a9', 1), '3d4728bd344b6866866623cabd8458da5c4e6612e98ce1f130b1cca5f8e1f975',
+  'tr-tr.lexical.native-clear', 'elevenlabs', 'eleven_multilingual_v2', 'audio/generated/tr-TR/lexical/16c2953f61829556ce1df8142e02e6dc1cb973c84beacbb9ba54932ba4ebcfa3.mp3', 1071, '2026-09-14 11:32:14.116305', '18042e890791a47cea17f355ab67ed371b20931c7c6e664cfe6646399097937c', 'validated', '{"audio_key":"16c2953f61829556ce1df8142e02e6dc1cb973c84beacbb9ba54932ba4ebcfa3","entity_key":"lx_weather_and_clothes_06","voice_id":"FDs1ZX5J4e4f2c2erxtW","voice_name":"Fili - Warm Turkish Female ","voice_labels":{"gender":"female","accent":"istanbul","age":"young","category":"professional","language":"tr","use_case":"conversational","descriptive":"calm"},"output_format":"mp3_44100_192","file_sha256":"18042e890791a47cea17f355ab67ed371b20931c7c6e664cfe6646399097937c","settings":{"stability":0.72,"similarity_boost":0.88,"style":0.0,"use_speaker_boost":true,"speed":0.92},"relative_path":"audio/generated/tr-TR/lexical/16c2953f61829556ce1df8142e02e6dc1cb973c84beacbb9ba54932ba4ebcfa3.mp3"}'
+) ON DUPLICATE KEY UPDATE
+  provider = VALUES(provider),
+  provider_model = VALUES(provider_model),
+  storage_url = VALUES(storage_url),
+  duration_ms = VALUES(duration_ms),
+  generated_at = VALUES(generated_at),
+  checksum = VALUES(checksum),
+  status = VALUES(status),
+  metadata = VALUES(metadata);
+
+-- wf_weather_and_clothes_06 -> audio/generated/tr-TR/lexical/16c2953f61829556ce1df8142e02e6dc1cb973c84beacbb9ba54932ba4ebcfa3.mp3
+UPDATE audio_assets
+SET status = 'archived'
+WHERE entity_type = 'word_form'
+  AND entity_id = UUID_TO_BIN('c0ad429a-95fa-5910-9d4f-587d2b554a7d', 1)
+  AND voice_key = 'tr-tr.lexical.native-clear'
+  AND (entity_type NOT IN ('grammar_point','exercise') OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'wf_weather_and_clothes_06')
+  AND source_text_hash IS NOT NULL
+  AND source_text_hash <> '3d4728bd344b6866866623cabd8458da5c4e6612e98ce1f130b1cca5f8e1f975'
+  AND status <> 'archived';
+INSERT INTO audio_assets (
+  id, language_id, language_variant_id, entity_type, entity_id, source_text_hash,
+  voice_key, provider, provider_model, storage_url, duration_ms, generated_at, checksum, status, metadata
+) VALUES (
+  UUID_TO_BIN('8a017db7-39da-5d90-aa03-ada0d57c8478', 1), @audio_language_id, @audio_variant_id, 'word_form', UUID_TO_BIN('c0ad429a-95fa-5910-9d4f-587d2b554a7d', 1), '3d4728bd344b6866866623cabd8458da5c4e6612e98ce1f130b1cca5f8e1f975',
+  'tr-tr.lexical.native-clear', 'elevenlabs', 'eleven_multilingual_v2', 'audio/generated/tr-TR/lexical/16c2953f61829556ce1df8142e02e6dc1cb973c84beacbb9ba54932ba4ebcfa3.mp3', 1071, '2026-09-14 11:32:14.116305', '18042e890791a47cea17f355ab67ed371b20931c7c6e664cfe6646399097937c', 'validated', '{"audio_key":"16c2953f61829556ce1df8142e02e6dc1cb973c84beacbb9ba54932ba4ebcfa3","entity_key":"wf_weather_and_clothes_06","voice_id":"FDs1ZX5J4e4f2c2erxtW","voice_name":"Fili - Warm Turkish Female ","voice_labels":{"gender":"female","accent":"istanbul","age":"young","category":"professional","language":"tr","use_case":"conversational","descriptive":"calm"},"output_format":"mp3_44100_192","file_sha256":"18042e890791a47cea17f355ab67ed371b20931c7c6e664cfe6646399097937c","settings":{"stability":0.72,"similarity_boost":0.88,"style":0.0,"use_speaker_boost":true,"speed":0.92},"relative_path":"audio/generated/tr-TR/lexical/16c2953f61829556ce1df8142e02e6dc1cb973c84beacbb9ba54932ba4ebcfa3.mp3"}'
+) ON DUPLICATE KEY UPDATE
+  provider = VALUES(provider),
+  provider_model = VALUES(provider_model),
+  storage_url = VALUES(storage_url),
+  duration_ms = VALUES(duration_ms),
+  generated_at = VALUES(generated_at),
+  checksum = VALUES(checksum),
+  status = VALUES(status),
+  metadata = VALUES(metadata);
+
 -- lx_a1_first_day_capstone_02 -> audio/generated/tr-TR/lexical/16cfc5a001c08e631ba532121df62853424ef283e72ac3b2b156485b4786d164.mp3
 UPDATE audio_assets
 SET status = 'archived'
@@ -2376,6 +5132,58 @@ INSERT INTO audio_assets (
   status = VALUES(status),
   metadata = VALUES(metadata);
 
+-- lx_weather_and_clothes_02 -> audio/generated/tr-TR/lexical/1b91ec9cb4de256c2534bf2a9c81d1a14d4a09a1b32ec83a08f3e6c8267022e7.mp3
+UPDATE audio_assets
+SET status = 'archived'
+WHERE entity_type = 'lexeme'
+  AND entity_id = UUID_TO_BIN('6f4d4f55-4067-583b-bd9d-6e6b04223832', 1)
+  AND voice_key = 'tr-tr.lexical.native-clear'
+  AND (entity_type NOT IN ('grammar_point','exercise') OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'lx_weather_and_clothes_02')
+  AND source_text_hash IS NOT NULL
+  AND source_text_hash <> '3a83804ab4067b56e9429dd3189cf51bc5093cb64a7cd5e667031d1be861fa37'
+  AND status <> 'archived';
+INSERT INTO audio_assets (
+  id, language_id, language_variant_id, entity_type, entity_id, source_text_hash,
+  voice_key, provider, provider_model, storage_url, duration_ms, generated_at, checksum, status, metadata
+) VALUES (
+  UUID_TO_BIN('2f57a4bb-82c5-5f23-87f5-d1cb9979e1f4', 1), @audio_language_id, @audio_variant_id, 'lexeme', UUID_TO_BIN('6f4d4f55-4067-583b-bd9d-6e6b04223832', 1), '3a83804ab4067b56e9429dd3189cf51bc5093cb64a7cd5e667031d1be861fa37',
+  'tr-tr.lexical.native-clear', 'elevenlabs', 'eleven_multilingual_v2', 'audio/generated/tr-TR/lexical/1b91ec9cb4de256c2534bf2a9c81d1a14d4a09a1b32ec83a08f3e6c8267022e7.mp3', 1253, '2026-09-14 11:32:14.651707', '0574200db890701685f4c53f72cbce8bd88779fa4430cfa33666c37191a6f74f', 'validated', '{"audio_key":"1b91ec9cb4de256c2534bf2a9c81d1a14d4a09a1b32ec83a08f3e6c8267022e7","entity_key":"lx_weather_and_clothes_02","voice_id":"FDs1ZX5J4e4f2c2erxtW","voice_name":"Fili - Warm Turkish Female ","voice_labels":{"gender":"female","accent":"istanbul","age":"young","category":"professional","language":"tr","use_case":"conversational","descriptive":"calm"},"output_format":"mp3_44100_192","file_sha256":"0574200db890701685f4c53f72cbce8bd88779fa4430cfa33666c37191a6f74f","settings":{"stability":0.72,"similarity_boost":0.88,"style":0.0,"use_speaker_boost":true,"speed":0.92},"relative_path":"audio/generated/tr-TR/lexical/1b91ec9cb4de256c2534bf2a9c81d1a14d4a09a1b32ec83a08f3e6c8267022e7.mp3"}'
+) ON DUPLICATE KEY UPDATE
+  provider = VALUES(provider),
+  provider_model = VALUES(provider_model),
+  storage_url = VALUES(storage_url),
+  duration_ms = VALUES(duration_ms),
+  generated_at = VALUES(generated_at),
+  checksum = VALUES(checksum),
+  status = VALUES(status),
+  metadata = VALUES(metadata);
+
+-- wf_weather_and_clothes_02 -> audio/generated/tr-TR/lexical/1b91ec9cb4de256c2534bf2a9c81d1a14d4a09a1b32ec83a08f3e6c8267022e7.mp3
+UPDATE audio_assets
+SET status = 'archived'
+WHERE entity_type = 'word_form'
+  AND entity_id = UUID_TO_BIN('337e4621-5073-5690-b480-d14591485ef5', 1)
+  AND voice_key = 'tr-tr.lexical.native-clear'
+  AND (entity_type NOT IN ('grammar_point','exercise') OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'wf_weather_and_clothes_02')
+  AND source_text_hash IS NOT NULL
+  AND source_text_hash <> '3a83804ab4067b56e9429dd3189cf51bc5093cb64a7cd5e667031d1be861fa37'
+  AND status <> 'archived';
+INSERT INTO audio_assets (
+  id, language_id, language_variant_id, entity_type, entity_id, source_text_hash,
+  voice_key, provider, provider_model, storage_url, duration_ms, generated_at, checksum, status, metadata
+) VALUES (
+  UUID_TO_BIN('845f2a75-9d81-55df-a334-021e809c20f2', 1), @audio_language_id, @audio_variant_id, 'word_form', UUID_TO_BIN('337e4621-5073-5690-b480-d14591485ef5', 1), '3a83804ab4067b56e9429dd3189cf51bc5093cb64a7cd5e667031d1be861fa37',
+  'tr-tr.lexical.native-clear', 'elevenlabs', 'eleven_multilingual_v2', 'audio/generated/tr-TR/lexical/1b91ec9cb4de256c2534bf2a9c81d1a14d4a09a1b32ec83a08f3e6c8267022e7.mp3', 1253, '2026-09-14 11:32:14.651707', '0574200db890701685f4c53f72cbce8bd88779fa4430cfa33666c37191a6f74f', 'validated', '{"audio_key":"1b91ec9cb4de256c2534bf2a9c81d1a14d4a09a1b32ec83a08f3e6c8267022e7","entity_key":"wf_weather_and_clothes_02","voice_id":"FDs1ZX5J4e4f2c2erxtW","voice_name":"Fili - Warm Turkish Female ","voice_labels":{"gender":"female","accent":"istanbul","age":"young","category":"professional","language":"tr","use_case":"conversational","descriptive":"calm"},"output_format":"mp3_44100_192","file_sha256":"0574200db890701685f4c53f72cbce8bd88779fa4430cfa33666c37191a6f74f","settings":{"stability":0.72,"similarity_boost":0.88,"style":0.0,"use_speaker_boost":true,"speed":0.92},"relative_path":"audio/generated/tr-TR/lexical/1b91ec9cb4de256c2534bf2a9c81d1a14d4a09a1b32ec83a08f3e6c8267022e7.mp3"}'
+) ON DUPLICATE KEY UPDATE
+  provider = VALUES(provider),
+  provider_model = VALUES(provider_model),
+  storage_url = VALUES(storage_url),
+  duration_ms = VALUES(duration_ms),
+  generated_at = VALUES(generated_at),
+  checksum = VALUES(checksum),
+  status = VALUES(status),
+  metadata = VALUES(metadata);
+
 -- lx_my_family_01 -> audio/generated/tr-TR/lexical/1e75afd8017b0645797272ee75bdfaa4154067ee0f30283ba789d72f3996c2c6.mp3
 UPDATE audio_assets
 SET status = 'archived'
@@ -2418,6 +5226,162 @@ INSERT INTO audio_assets (
 ) VALUES (
   UUID_TO_BIN('b5dfd978-5b34-5fa1-aefc-5fbb1498d345', 1), @audio_language_id, @audio_variant_id, 'word_form', UUID_TO_BIN('3a943da5-dcdd-5007-8067-2051b90ebb18', 1), '90b8de4051f02b7a29484341f3a903e1b2c6a233f5465e19c634535c7b315e6f',
   'tr-tr.lexical.native-clear', 'elevenlabs', 'eleven_multilingual_v2', 'audio/generated/tr-TR/lexical/1e75afd8017b0645797272ee75bdfaa4154067ee0f30283ba789d72f3996c2c6.mp3', 966, '2026-09-13 15:55:14.231068', '924eb2800eb8b76a7ed5d3198289d7f2b3db712049d9312703553acb83ac6fe9', 'validated', '{"audio_key":"1e75afd8017b0645797272ee75bdfaa4154067ee0f30283ba789d72f3996c2c6","entity_key":"wf_my_family_01","voice_id":"FDs1ZX5J4e4f2c2erxtW","voice_name":"Fili - Warm Turkish Female ","voice_labels":{"gender":"female","accent":"istanbul","age":"young","category":"professional","language":"tr","use_case":"conversational","descriptive":"calm"},"output_format":"mp3_44100_192","file_sha256":"924eb2800eb8b76a7ed5d3198289d7f2b3db712049d9312703553acb83ac6fe9","settings":{"stability":0.72,"similarity_boost":0.88,"style":0.0,"use_speaker_boost":true,"speed":0.92},"relative_path":"audio/generated/tr-TR/lexical/1e75afd8017b0645797272ee75bdfaa4154067ee0f30283ba789d72f3996c2c6.mp3"}'
+) ON DUPLICATE KEY UPDATE
+  provider = VALUES(provider),
+  provider_model = VALUES(provider_model),
+  storage_url = VALUES(storage_url),
+  duration_ms = VALUES(duration_ms),
+  generated_at = VALUES(generated_at),
+  checksum = VALUES(checksum),
+  status = VALUES(status),
+  metadata = VALUES(metadata);
+
+-- lx_can_you_help_02 -> audio/generated/tr-TR/lexical/1ff828098139dcf60fdbfc5a65250aa588966eea0db505f3ff2c629510cf5f9f.mp3
+UPDATE audio_assets
+SET status = 'archived'
+WHERE entity_type = 'lexeme'
+  AND entity_id = UUID_TO_BIN('d4f98fa8-b2b2-5f13-bb8a-4149679c401e', 1)
+  AND voice_key = 'tr-tr.lexical.native-clear'
+  AND (entity_type NOT IN ('grammar_point','exercise') OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'lx_can_you_help_02')
+  AND source_text_hash IS NOT NULL
+  AND source_text_hash <> 'fb9092b32cca5863e5b660da6f207a5feb0166229df4ea826cda9705019c2695'
+  AND status <> 'archived';
+INSERT INTO audio_assets (
+  id, language_id, language_variant_id, entity_type, entity_id, source_text_hash,
+  voice_key, provider, provider_model, storage_url, duration_ms, generated_at, checksum, status, metadata
+) VALUES (
+  UUID_TO_BIN('9fe8e073-e1bc-51d1-b4e5-77c5d1865699', 1), @audio_language_id, @audio_variant_id, 'lexeme', UUID_TO_BIN('d4f98fa8-b2b2-5f13-bb8a-4149679c401e', 1), 'fb9092b32cca5863e5b660da6f207a5feb0166229df4ea826cda9705019c2695',
+  'tr-tr.lexical.native-clear', 'elevenlabs', 'eleven_multilingual_v2', 'audio/generated/tr-TR/lexical/1ff828098139dcf60fdbfc5a65250aa588966eea0db505f3ff2c629510cf5f9f.mp3', 966, '2026-09-14 11:32:15.118239', '38cd50dc01f2e28e5888c4c14a18715b9a7e354e36a2d9b95e7ed5a460db2525', 'validated', '{"audio_key":"1ff828098139dcf60fdbfc5a65250aa588966eea0db505f3ff2c629510cf5f9f","entity_key":"lx_can_you_help_02","voice_id":"FDs1ZX5J4e4f2c2erxtW","voice_name":"Fili - Warm Turkish Female ","voice_labels":{"gender":"female","accent":"istanbul","age":"young","category":"professional","language":"tr","use_case":"conversational","descriptive":"calm"},"output_format":"mp3_44100_192","file_sha256":"38cd50dc01f2e28e5888c4c14a18715b9a7e354e36a2d9b95e7ed5a460db2525","settings":{"stability":0.72,"similarity_boost":0.88,"style":0.0,"use_speaker_boost":true,"speed":0.92},"relative_path":"audio/generated/tr-TR/lexical/1ff828098139dcf60fdbfc5a65250aa588966eea0db505f3ff2c629510cf5f9f.mp3"}'
+) ON DUPLICATE KEY UPDATE
+  provider = VALUES(provider),
+  provider_model = VALUES(provider_model),
+  storage_url = VALUES(storage_url),
+  duration_ms = VALUES(duration_ms),
+  generated_at = VALUES(generated_at),
+  checksum = VALUES(checksum),
+  status = VALUES(status),
+  metadata = VALUES(metadata);
+
+-- wf_can_you_help_02 -> audio/generated/tr-TR/lexical/1ff828098139dcf60fdbfc5a65250aa588966eea0db505f3ff2c629510cf5f9f.mp3
+UPDATE audio_assets
+SET status = 'archived'
+WHERE entity_type = 'word_form'
+  AND entity_id = UUID_TO_BIN('27533522-3e17-5ad1-ae81-388034864038', 1)
+  AND voice_key = 'tr-tr.lexical.native-clear'
+  AND (entity_type NOT IN ('grammar_point','exercise') OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'wf_can_you_help_02')
+  AND source_text_hash IS NOT NULL
+  AND source_text_hash <> 'fb9092b32cca5863e5b660da6f207a5feb0166229df4ea826cda9705019c2695'
+  AND status <> 'archived';
+INSERT INTO audio_assets (
+  id, language_id, language_variant_id, entity_type, entity_id, source_text_hash,
+  voice_key, provider, provider_model, storage_url, duration_ms, generated_at, checksum, status, metadata
+) VALUES (
+  UUID_TO_BIN('a325a794-f143-5db1-bea6-0ed925382396', 1), @audio_language_id, @audio_variant_id, 'word_form', UUID_TO_BIN('27533522-3e17-5ad1-ae81-388034864038', 1), 'fb9092b32cca5863e5b660da6f207a5feb0166229df4ea826cda9705019c2695',
+  'tr-tr.lexical.native-clear', 'elevenlabs', 'eleven_multilingual_v2', 'audio/generated/tr-TR/lexical/1ff828098139dcf60fdbfc5a65250aa588966eea0db505f3ff2c629510cf5f9f.mp3', 966, '2026-09-14 11:32:15.118239', '38cd50dc01f2e28e5888c4c14a18715b9a7e354e36a2d9b95e7ed5a460db2525', 'validated', '{"audio_key":"1ff828098139dcf60fdbfc5a65250aa588966eea0db505f3ff2c629510cf5f9f","entity_key":"wf_can_you_help_02","voice_id":"FDs1ZX5J4e4f2c2erxtW","voice_name":"Fili - Warm Turkish Female ","voice_labels":{"gender":"female","accent":"istanbul","age":"young","category":"professional","language":"tr","use_case":"conversational","descriptive":"calm"},"output_format":"mp3_44100_192","file_sha256":"38cd50dc01f2e28e5888c4c14a18715b9a7e354e36a2d9b95e7ed5a460db2525","settings":{"stability":0.72,"similarity_boost":0.88,"style":0.0,"use_speaker_boost":true,"speed":0.92},"relative_path":"audio/generated/tr-TR/lexical/1ff828098139dcf60fdbfc5a65250aa588966eea0db505f3ff2c629510cf5f9f.mp3"}'
+) ON DUPLICATE KEY UPDATE
+  provider = VALUES(provider),
+  provider_model = VALUES(provider_model),
+  storage_url = VALUES(storage_url),
+  duration_ms = VALUES(duration_ms),
+  generated_at = VALUES(generated_at),
+  checksum = VALUES(checksum),
+  status = VALUES(status),
+  metadata = VALUES(metadata);
+
+-- lx_before_and_after_03 -> audio/generated/tr-TR/lexical/20aade29d59dd2bd011ea1cd601307aa121eacf7d4c2c19a5fa039ebf935ed53.mp3
+UPDATE audio_assets
+SET status = 'archived'
+WHERE entity_type = 'lexeme'
+  AND entity_id = UUID_TO_BIN('eec3ffcc-668a-5fdf-9d9a-2efae9a37727', 1)
+  AND voice_key = 'tr-tr.lexical.native-clear'
+  AND (entity_type NOT IN ('grammar_point','exercise') OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'lx_before_and_after_03')
+  AND source_text_hash IS NOT NULL
+  AND source_text_hash <> '4b635fc0b2aac6987fb04814ce5b42b6ff27c33c3cb319f407f7ae09f962825d'
+  AND status <> 'archived';
+INSERT INTO audio_assets (
+  id, language_id, language_variant_id, entity_type, entity_id, source_text_hash,
+  voice_key, provider, provider_model, storage_url, duration_ms, generated_at, checksum, status, metadata
+) VALUES (
+  UUID_TO_BIN('8ee7bc3d-671b-5f34-a369-de2aae9cdc12', 1), @audio_language_id, @audio_variant_id, 'lexeme', UUID_TO_BIN('eec3ffcc-668a-5fdf-9d9a-2efae9a37727', 1), '4b635fc0b2aac6987fb04814ce5b42b6ff27c33c3cb319f407f7ae09f962825d',
+  'tr-tr.lexical.native-clear', 'elevenlabs', 'eleven_multilingual_v2', 'audio/generated/tr-TR/lexical/20aade29d59dd2bd011ea1cd601307aa121eacf7d4c2c19a5fa039ebf935ed53.mp3', 1384, '2026-09-14 11:32:15.678677', '5ad584d682fe8f349606110ee021327c0048d457beeeaa5b9cd1e0254038208c', 'validated', '{"audio_key":"20aade29d59dd2bd011ea1cd601307aa121eacf7d4c2c19a5fa039ebf935ed53","entity_key":"lx_before_and_after_03","voice_id":"FDs1ZX5J4e4f2c2erxtW","voice_name":"Fili - Warm Turkish Female ","voice_labels":{"gender":"female","accent":"istanbul","age":"young","category":"professional","language":"tr","use_case":"conversational","descriptive":"calm"},"output_format":"mp3_44100_192","file_sha256":"5ad584d682fe8f349606110ee021327c0048d457beeeaa5b9cd1e0254038208c","settings":{"stability":0.72,"similarity_boost":0.88,"style":0.0,"use_speaker_boost":true,"speed":0.92},"relative_path":"audio/generated/tr-TR/lexical/20aade29d59dd2bd011ea1cd601307aa121eacf7d4c2c19a5fa039ebf935ed53.mp3"}'
+) ON DUPLICATE KEY UPDATE
+  provider = VALUES(provider),
+  provider_model = VALUES(provider_model),
+  storage_url = VALUES(storage_url),
+  duration_ms = VALUES(duration_ms),
+  generated_at = VALUES(generated_at),
+  checksum = VALUES(checksum),
+  status = VALUES(status),
+  metadata = VALUES(metadata);
+
+-- wf_before_and_after_03 -> audio/generated/tr-TR/lexical/20aade29d59dd2bd011ea1cd601307aa121eacf7d4c2c19a5fa039ebf935ed53.mp3
+UPDATE audio_assets
+SET status = 'archived'
+WHERE entity_type = 'word_form'
+  AND entity_id = UUID_TO_BIN('c5c99f3e-ce51-5f3a-a648-d36b0a061075', 1)
+  AND voice_key = 'tr-tr.lexical.native-clear'
+  AND (entity_type NOT IN ('grammar_point','exercise') OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'wf_before_and_after_03')
+  AND source_text_hash IS NOT NULL
+  AND source_text_hash <> '4b635fc0b2aac6987fb04814ce5b42b6ff27c33c3cb319f407f7ae09f962825d'
+  AND status <> 'archived';
+INSERT INTO audio_assets (
+  id, language_id, language_variant_id, entity_type, entity_id, source_text_hash,
+  voice_key, provider, provider_model, storage_url, duration_ms, generated_at, checksum, status, metadata
+) VALUES (
+  UUID_TO_BIN('b89fd74b-73b1-54c2-98c0-098eb37fc88d', 1), @audio_language_id, @audio_variant_id, 'word_form', UUID_TO_BIN('c5c99f3e-ce51-5f3a-a648-d36b0a061075', 1), '4b635fc0b2aac6987fb04814ce5b42b6ff27c33c3cb319f407f7ae09f962825d',
+  'tr-tr.lexical.native-clear', 'elevenlabs', 'eleven_multilingual_v2', 'audio/generated/tr-TR/lexical/20aade29d59dd2bd011ea1cd601307aa121eacf7d4c2c19a5fa039ebf935ed53.mp3', 1384, '2026-09-14 11:32:15.678677', '5ad584d682fe8f349606110ee021327c0048d457beeeaa5b9cd1e0254038208c', 'validated', '{"audio_key":"20aade29d59dd2bd011ea1cd601307aa121eacf7d4c2c19a5fa039ebf935ed53","entity_key":"wf_before_and_after_03","voice_id":"FDs1ZX5J4e4f2c2erxtW","voice_name":"Fili - Warm Turkish Female ","voice_labels":{"gender":"female","accent":"istanbul","age":"young","category":"professional","language":"tr","use_case":"conversational","descriptive":"calm"},"output_format":"mp3_44100_192","file_sha256":"5ad584d682fe8f349606110ee021327c0048d457beeeaa5b9cd1e0254038208c","settings":{"stability":0.72,"similarity_boost":0.88,"style":0.0,"use_speaker_boost":true,"speed":0.92},"relative_path":"audio/generated/tr-TR/lexical/20aade29d59dd2bd011ea1cd601307aa121eacf7d4c2c19a5fa039ebf935ed53.mp3"}'
+) ON DUPLICATE KEY UPDATE
+  provider = VALUES(provider),
+  provider_model = VALUES(provider_model),
+  storage_url = VALUES(storage_url),
+  duration_ms = VALUES(duration_ms),
+  generated_at = VALUES(generated_at),
+  checksum = VALUES(checksum),
+  status = VALUES(status),
+  metadata = VALUES(metadata);
+
+-- lx_basic_health_03 -> audio/generated/tr-TR/lexical/20fadb7b71b8293c51a4ec5de422c119754dd8bf22ff16ec5b43999952d8c1c9.mp3
+UPDATE audio_assets
+SET status = 'archived'
+WHERE entity_type = 'lexeme'
+  AND entity_id = UUID_TO_BIN('b8e9caa2-acf8-591d-82a8-98adc3003cf7', 1)
+  AND voice_key = 'tr-tr.lexical.native-clear'
+  AND (entity_type NOT IN ('grammar_point','exercise') OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'lx_basic_health_03')
+  AND source_text_hash IS NOT NULL
+  AND source_text_hash <> 'e1acbe404454ba0314a8b1ae481c006830c464474e38856c7a00d860390790f0'
+  AND status <> 'archived';
+INSERT INTO audio_assets (
+  id, language_id, language_variant_id, entity_type, entity_id, source_text_hash,
+  voice_key, provider, provider_model, storage_url, duration_ms, generated_at, checksum, status, metadata
+) VALUES (
+  UUID_TO_BIN('72f2ea17-e493-5402-b135-a273fed1ca35', 1), @audio_language_id, @audio_variant_id, 'lexeme', UUID_TO_BIN('b8e9caa2-acf8-591d-82a8-98adc3003cf7', 1), 'e1acbe404454ba0314a8b1ae481c006830c464474e38856c7a00d860390790f0',
+  'tr-tr.lexical.native-clear', 'elevenlabs', 'eleven_multilingual_v2', 'audio/generated/tr-TR/lexical/20fadb7b71b8293c51a4ec5de422c119754dd8bf22ff16ec5b43999952d8c1c9.mp3', 1018, '2026-09-14 11:32:16.065484', 'a6cc1c1939f589c07630e6c40100fe4e46915cae1fbbfcc71561c71db9ffafdb', 'validated', '{"audio_key":"20fadb7b71b8293c51a4ec5de422c119754dd8bf22ff16ec5b43999952d8c1c9","entity_key":"lx_basic_health_03","voice_id":"FDs1ZX5J4e4f2c2erxtW","voice_name":"Fili - Warm Turkish Female ","voice_labels":{"gender":"female","accent":"istanbul","age":"young","category":"professional","language":"tr","use_case":"conversational","descriptive":"calm"},"output_format":"mp3_44100_192","file_sha256":"a6cc1c1939f589c07630e6c40100fe4e46915cae1fbbfcc71561c71db9ffafdb","settings":{"stability":0.72,"similarity_boost":0.88,"style":0.0,"use_speaker_boost":true,"speed":0.92},"relative_path":"audio/generated/tr-TR/lexical/20fadb7b71b8293c51a4ec5de422c119754dd8bf22ff16ec5b43999952d8c1c9.mp3"}'
+) ON DUPLICATE KEY UPDATE
+  provider = VALUES(provider),
+  provider_model = VALUES(provider_model),
+  storage_url = VALUES(storage_url),
+  duration_ms = VALUES(duration_ms),
+  generated_at = VALUES(generated_at),
+  checksum = VALUES(checksum),
+  status = VALUES(status),
+  metadata = VALUES(metadata);
+
+-- wf_basic_health_03 -> audio/generated/tr-TR/lexical/20fadb7b71b8293c51a4ec5de422c119754dd8bf22ff16ec5b43999952d8c1c9.mp3
+UPDATE audio_assets
+SET status = 'archived'
+WHERE entity_type = 'word_form'
+  AND entity_id = UUID_TO_BIN('10a4ba0e-c1d3-5613-baba-b9791fd73544', 1)
+  AND voice_key = 'tr-tr.lexical.native-clear'
+  AND (entity_type NOT IN ('grammar_point','exercise') OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'wf_basic_health_03')
+  AND source_text_hash IS NOT NULL
+  AND source_text_hash <> 'e1acbe404454ba0314a8b1ae481c006830c464474e38856c7a00d860390790f0'
+  AND status <> 'archived';
+INSERT INTO audio_assets (
+  id, language_id, language_variant_id, entity_type, entity_id, source_text_hash,
+  voice_key, provider, provider_model, storage_url, duration_ms, generated_at, checksum, status, metadata
+) VALUES (
+  UUID_TO_BIN('4854b8ec-7f32-5998-89c4-5e809922a1b2', 1), @audio_language_id, @audio_variant_id, 'word_form', UUID_TO_BIN('10a4ba0e-c1d3-5613-baba-b9791fd73544', 1), 'e1acbe404454ba0314a8b1ae481c006830c464474e38856c7a00d860390790f0',
+  'tr-tr.lexical.native-clear', 'elevenlabs', 'eleven_multilingual_v2', 'audio/generated/tr-TR/lexical/20fadb7b71b8293c51a4ec5de422c119754dd8bf22ff16ec5b43999952d8c1c9.mp3', 1018, '2026-09-14 11:32:16.065484', 'a6cc1c1939f589c07630e6c40100fe4e46915cae1fbbfcc71561c71db9ffafdb', 'validated', '{"audio_key":"20fadb7b71b8293c51a4ec5de422c119754dd8bf22ff16ec5b43999952d8c1c9","entity_key":"wf_basic_health_03","voice_id":"FDs1ZX5J4e4f2c2erxtW","voice_name":"Fili - Warm Turkish Female ","voice_labels":{"gender":"female","accent":"istanbul","age":"young","category":"professional","language":"tr","use_case":"conversational","descriptive":"calm"},"output_format":"mp3_44100_192","file_sha256":"a6cc1c1939f589c07630e6c40100fe4e46915cae1fbbfcc71561c71db9ffafdb","settings":{"stability":0.72,"similarity_boost":0.88,"style":0.0,"use_speaker_boost":true,"speed":0.92},"relative_path":"audio/generated/tr-TR/lexical/20fadb7b71b8293c51a4ec5de422c119754dd8bf22ff16ec5b43999952d8c1c9.mp3"}'
 ) ON DUPLICATE KEY UPDATE
   provider = VALUES(provider),
   provider_model = VALUES(provider_model),
@@ -2532,6 +5496,162 @@ INSERT INTO audio_assets (
   status = VALUES(status),
   metadata = VALUES(metadata);
 
+-- lx_weather_and_clothes_03 -> audio/generated/tr-TR/lexical/32176a1aeec06cd71f962090407b7174649a7e30d31c21337d52c69f06e1d962.mp3
+UPDATE audio_assets
+SET status = 'archived'
+WHERE entity_type = 'lexeme'
+  AND entity_id = UUID_TO_BIN('d0d9b01e-823e-5f58-b28a-d476cab115c9', 1)
+  AND voice_key = 'tr-tr.lexical.native-clear'
+  AND (entity_type NOT IN ('grammar_point','exercise') OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'lx_weather_and_clothes_03')
+  AND source_text_hash IS NOT NULL
+  AND source_text_hash <> 'ac504fc99570948f7d1bcd7c42e308bfe131f682daec8778e15333aa875808c4'
+  AND status <> 'archived';
+INSERT INTO audio_assets (
+  id, language_id, language_variant_id, entity_type, entity_id, source_text_hash,
+  voice_key, provider, provider_model, storage_url, duration_ms, generated_at, checksum, status, metadata
+) VALUES (
+  UUID_TO_BIN('d90ce6a2-e78d-5173-aeeb-4bd30ba1651c', 1), @audio_language_id, @audio_variant_id, 'lexeme', UUID_TO_BIN('d0d9b01e-823e-5f58-b28a-d476cab115c9', 1), 'ac504fc99570948f7d1bcd7c42e308bfe131f682daec8778e15333aa875808c4',
+  'tr-tr.lexical.native-clear', 'elevenlabs', 'eleven_multilingual_v2', 'audio/generated/tr-TR/lexical/32176a1aeec06cd71f962090407b7174649a7e30d31c21337d52c69f06e1d962.mp3', 1018, '2026-09-14 11:32:16.605890', '0557e318ad704cb8a0561d1d5dc8920da78dd2597aba969eb2cfc20c191e0e81', 'validated', '{"audio_key":"32176a1aeec06cd71f962090407b7174649a7e30d31c21337d52c69f06e1d962","entity_key":"lx_weather_and_clothes_03","voice_id":"FDs1ZX5J4e4f2c2erxtW","voice_name":"Fili - Warm Turkish Female ","voice_labels":{"gender":"female","accent":"istanbul","age":"young","category":"professional","language":"tr","use_case":"conversational","descriptive":"calm"},"output_format":"mp3_44100_192","file_sha256":"0557e318ad704cb8a0561d1d5dc8920da78dd2597aba969eb2cfc20c191e0e81","settings":{"stability":0.72,"similarity_boost":0.88,"style":0.0,"use_speaker_boost":true,"speed":0.92},"relative_path":"audio/generated/tr-TR/lexical/32176a1aeec06cd71f962090407b7174649a7e30d31c21337d52c69f06e1d962.mp3"}'
+) ON DUPLICATE KEY UPDATE
+  provider = VALUES(provider),
+  provider_model = VALUES(provider_model),
+  storage_url = VALUES(storage_url),
+  duration_ms = VALUES(duration_ms),
+  generated_at = VALUES(generated_at),
+  checksum = VALUES(checksum),
+  status = VALUES(status),
+  metadata = VALUES(metadata);
+
+-- wf_weather_and_clothes_03 -> audio/generated/tr-TR/lexical/32176a1aeec06cd71f962090407b7174649a7e30d31c21337d52c69f06e1d962.mp3
+UPDATE audio_assets
+SET status = 'archived'
+WHERE entity_type = 'word_form'
+  AND entity_id = UUID_TO_BIN('6850b440-72fc-5d46-a5f1-e9f2188e3209', 1)
+  AND voice_key = 'tr-tr.lexical.native-clear'
+  AND (entity_type NOT IN ('grammar_point','exercise') OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'wf_weather_and_clothes_03')
+  AND source_text_hash IS NOT NULL
+  AND source_text_hash <> 'ac504fc99570948f7d1bcd7c42e308bfe131f682daec8778e15333aa875808c4'
+  AND status <> 'archived';
+INSERT INTO audio_assets (
+  id, language_id, language_variant_id, entity_type, entity_id, source_text_hash,
+  voice_key, provider, provider_model, storage_url, duration_ms, generated_at, checksum, status, metadata
+) VALUES (
+  UUID_TO_BIN('3eb89f80-4395-5dda-bd68-6995c43a533c', 1), @audio_language_id, @audio_variant_id, 'word_form', UUID_TO_BIN('6850b440-72fc-5d46-a5f1-e9f2188e3209', 1), 'ac504fc99570948f7d1bcd7c42e308bfe131f682daec8778e15333aa875808c4',
+  'tr-tr.lexical.native-clear', 'elevenlabs', 'eleven_multilingual_v2', 'audio/generated/tr-TR/lexical/32176a1aeec06cd71f962090407b7174649a7e30d31c21337d52c69f06e1d962.mp3', 1018, '2026-09-14 11:32:16.605890', '0557e318ad704cb8a0561d1d5dc8920da78dd2597aba969eb2cfc20c191e0e81', 'validated', '{"audio_key":"32176a1aeec06cd71f962090407b7174649a7e30d31c21337d52c69f06e1d962","entity_key":"wf_weather_and_clothes_03","voice_id":"FDs1ZX5J4e4f2c2erxtW","voice_name":"Fili - Warm Turkish Female ","voice_labels":{"gender":"female","accent":"istanbul","age":"young","category":"professional","language":"tr","use_case":"conversational","descriptive":"calm"},"output_format":"mp3_44100_192","file_sha256":"0557e318ad704cb8a0561d1d5dc8920da78dd2597aba969eb2cfc20c191e0e81","settings":{"stability":0.72,"similarity_boost":0.88,"style":0.0,"use_speaker_boost":true,"speed":0.92},"relative_path":"audio/generated/tr-TR/lexical/32176a1aeec06cd71f962090407b7174649a7e30d31c21337d52c69f06e1d962.mp3"}'
+) ON DUPLICATE KEY UPDATE
+  provider = VALUES(provider),
+  provider_model = VALUES(provider_model),
+  storage_url = VALUES(storage_url),
+  duration_ms = VALUES(duration_ms),
+  generated_at = VALUES(generated_at),
+  checksum = VALUES(checksum),
+  status = VALUES(status),
+  metadata = VALUES(metadata);
+
+-- lx_before_and_after_06 -> audio/generated/tr-TR/lexical/33b02146043d5b0a935b3ccab4be9d3a6328ad46579ccccb48765a1609281079.mp3
+UPDATE audio_assets
+SET status = 'archived'
+WHERE entity_type = 'lexeme'
+  AND entity_id = UUID_TO_BIN('091054a6-ba82-5a12-9ead-d462c8da62e6', 1)
+  AND voice_key = 'tr-tr.lexical.native-clear'
+  AND (entity_type NOT IN ('grammar_point','exercise') OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'lx_before_and_after_06')
+  AND source_text_hash IS NOT NULL
+  AND source_text_hash <> 'cfddfc65214f04d92ececc39b61bf318fd937565498dd6ee476487cb0e5abfae'
+  AND status <> 'archived';
+INSERT INTO audio_assets (
+  id, language_id, language_variant_id, entity_type, entity_id, source_text_hash,
+  voice_key, provider, provider_model, storage_url, duration_ms, generated_at, checksum, status, metadata
+) VALUES (
+  UUID_TO_BIN('df04556b-e9af-5688-81c4-6c34eb5cc5b6', 1), @audio_language_id, @audio_variant_id, 'lexeme', UUID_TO_BIN('091054a6-ba82-5a12-9ead-d462c8da62e6', 1), 'cfddfc65214f04d92ececc39b61bf318fd937565498dd6ee476487cb0e5abfae',
+  'tr-tr.lexical.native-clear', 'elevenlabs', 'eleven_multilingual_v2', 'audio/generated/tr-TR/lexical/33b02146043d5b0a935b3ccab4be9d3a6328ad46579ccccb48765a1609281079.mp3', 1018, '2026-09-13 17:08:18.330876', '61da2734a066e123910d604543e240a4a612649c17c4b043afc0e76fd4559a40', 'validated', '{"audio_key":"33b02146043d5b0a935b3ccab4be9d3a6328ad46579ccccb48765a1609281079","entity_key":"lx_before_and_after_06","voice_id":"FDs1ZX5J4e4f2c2erxtW","voice_name":"Fili - Warm Turkish Female ","voice_labels":{"gender":"female","accent":"istanbul","age":"young","category":"professional","language":"tr","use_case":"conversational","descriptive":"calm"},"output_format":"mp3_44100_192","file_sha256":"61da2734a066e123910d604543e240a4a612649c17c4b043afc0e76fd4559a40","settings":{"stability":0.72,"similarity_boost":0.88,"style":0.0,"use_speaker_boost":true,"speed":0.92},"relative_path":"audio/generated/tr-TR/lexical/33b02146043d5b0a935b3ccab4be9d3a6328ad46579ccccb48765a1609281079.mp3"}'
+) ON DUPLICATE KEY UPDATE
+  provider = VALUES(provider),
+  provider_model = VALUES(provider_model),
+  storage_url = VALUES(storage_url),
+  duration_ms = VALUES(duration_ms),
+  generated_at = VALUES(generated_at),
+  checksum = VALUES(checksum),
+  status = VALUES(status),
+  metadata = VALUES(metadata);
+
+-- wf_before_and_after_06 -> audio/generated/tr-TR/lexical/33b02146043d5b0a935b3ccab4be9d3a6328ad46579ccccb48765a1609281079.mp3
+UPDATE audio_assets
+SET status = 'archived'
+WHERE entity_type = 'word_form'
+  AND entity_id = UUID_TO_BIN('d8eb52a2-45b0-5917-b9a7-37a1e3552e0f', 1)
+  AND voice_key = 'tr-tr.lexical.native-clear'
+  AND (entity_type NOT IN ('grammar_point','exercise') OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'wf_before_and_after_06')
+  AND source_text_hash IS NOT NULL
+  AND source_text_hash <> 'cfddfc65214f04d92ececc39b61bf318fd937565498dd6ee476487cb0e5abfae'
+  AND status <> 'archived';
+INSERT INTO audio_assets (
+  id, language_id, language_variant_id, entity_type, entity_id, source_text_hash,
+  voice_key, provider, provider_model, storage_url, duration_ms, generated_at, checksum, status, metadata
+) VALUES (
+  UUID_TO_BIN('6c6b79e6-31ba-5cbb-8503-eed3add850df', 1), @audio_language_id, @audio_variant_id, 'word_form', UUID_TO_BIN('d8eb52a2-45b0-5917-b9a7-37a1e3552e0f', 1), 'cfddfc65214f04d92ececc39b61bf318fd937565498dd6ee476487cb0e5abfae',
+  'tr-tr.lexical.native-clear', 'elevenlabs', 'eleven_multilingual_v2', 'audio/generated/tr-TR/lexical/33b02146043d5b0a935b3ccab4be9d3a6328ad46579ccccb48765a1609281079.mp3', 1018, '2026-09-13 17:08:18.330876', '61da2734a066e123910d604543e240a4a612649c17c4b043afc0e76fd4559a40', 'validated', '{"audio_key":"33b02146043d5b0a935b3ccab4be9d3a6328ad46579ccccb48765a1609281079","entity_key":"wf_before_and_after_06","voice_id":"FDs1ZX5J4e4f2c2erxtW","voice_name":"Fili - Warm Turkish Female ","voice_labels":{"gender":"female","accent":"istanbul","age":"young","category":"professional","language":"tr","use_case":"conversational","descriptive":"calm"},"output_format":"mp3_44100_192","file_sha256":"61da2734a066e123910d604543e240a4a612649c17c4b043afc0e76fd4559a40","settings":{"stability":0.72,"similarity_boost":0.88,"style":0.0,"use_speaker_boost":true,"speed":0.92},"relative_path":"audio/generated/tr-TR/lexical/33b02146043d5b0a935b3ccab4be9d3a6328ad46579ccccb48765a1609281079.mp3"}'
+) ON DUPLICATE KEY UPDATE
+  provider = VALUES(provider),
+  provider_model = VALUES(provider_model),
+  storage_url = VALUES(storage_url),
+  duration_ms = VALUES(duration_ms),
+  generated_at = VALUES(generated_at),
+  checksum = VALUES(checksum),
+  status = VALUES(status),
+  metadata = VALUES(metadata);
+
+-- lx_weather_and_clothes_05 -> audio/generated/tr-TR/lexical/33ec00ea6095f15e18fc2b1cb901bd7b8f8be49f39048695267d25f63aa9ddd3.mp3
+UPDATE audio_assets
+SET status = 'archived'
+WHERE entity_type = 'lexeme'
+  AND entity_id = UUID_TO_BIN('a9049c71-eb76-571a-a44e-83975d531ab8', 1)
+  AND voice_key = 'tr-tr.lexical.native-clear'
+  AND (entity_type NOT IN ('grammar_point','exercise') OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'lx_weather_and_clothes_05')
+  AND source_text_hash IS NOT NULL
+  AND source_text_hash <> '2efc0dd0d0b1fcfb064719d53a35c5fa771bfac8071f0a5f09ec57e76e587d18'
+  AND status <> 'archived';
+INSERT INTO audio_assets (
+  id, language_id, language_variant_id, entity_type, entity_id, source_text_hash,
+  voice_key, provider, provider_model, storage_url, duration_ms, generated_at, checksum, status, metadata
+) VALUES (
+  UUID_TO_BIN('1a0b8b63-6e16-59cb-b586-c2b6c03161f8', 1), @audio_language_id, @audio_variant_id, 'lexeme', UUID_TO_BIN('a9049c71-eb76-571a-a44e-83975d531ab8', 1), '2efc0dd0d0b1fcfb064719d53a35c5fa771bfac8071f0a5f09ec57e76e587d18',
+  'tr-tr.lexical.native-clear', 'elevenlabs', 'eleven_multilingual_v2', 'audio/generated/tr-TR/lexical/33ec00ea6095f15e18fc2b1cb901bd7b8f8be49f39048695267d25f63aa9ddd3.mp3', 1201, '2026-09-14 11:32:17.329203', 'd46eca81e3c5af1a4bddaca7263f29a3fa900f190eb2c82c63d5da3c5c493cd4', 'validated', '{"audio_key":"33ec00ea6095f15e18fc2b1cb901bd7b8f8be49f39048695267d25f63aa9ddd3","entity_key":"lx_weather_and_clothes_05","voice_id":"FDs1ZX5J4e4f2c2erxtW","voice_name":"Fili - Warm Turkish Female ","voice_labels":{"gender":"female","accent":"istanbul","age":"young","category":"professional","language":"tr","use_case":"conversational","descriptive":"calm"},"output_format":"mp3_44100_192","file_sha256":"d46eca81e3c5af1a4bddaca7263f29a3fa900f190eb2c82c63d5da3c5c493cd4","settings":{"stability":0.72,"similarity_boost":0.88,"style":0.0,"use_speaker_boost":true,"speed":0.92},"relative_path":"audio/generated/tr-TR/lexical/33ec00ea6095f15e18fc2b1cb901bd7b8f8be49f39048695267d25f63aa9ddd3.mp3"}'
+) ON DUPLICATE KEY UPDATE
+  provider = VALUES(provider),
+  provider_model = VALUES(provider_model),
+  storage_url = VALUES(storage_url),
+  duration_ms = VALUES(duration_ms),
+  generated_at = VALUES(generated_at),
+  checksum = VALUES(checksum),
+  status = VALUES(status),
+  metadata = VALUES(metadata);
+
+-- wf_weather_and_clothes_05 -> audio/generated/tr-TR/lexical/33ec00ea6095f15e18fc2b1cb901bd7b8f8be49f39048695267d25f63aa9ddd3.mp3
+UPDATE audio_assets
+SET status = 'archived'
+WHERE entity_type = 'word_form'
+  AND entity_id = UUID_TO_BIN('27541b0a-01ef-5b74-9b8d-262e9a35a29d', 1)
+  AND voice_key = 'tr-tr.lexical.native-clear'
+  AND (entity_type NOT IN ('grammar_point','exercise') OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'wf_weather_and_clothes_05')
+  AND source_text_hash IS NOT NULL
+  AND source_text_hash <> '2efc0dd0d0b1fcfb064719d53a35c5fa771bfac8071f0a5f09ec57e76e587d18'
+  AND status <> 'archived';
+INSERT INTO audio_assets (
+  id, language_id, language_variant_id, entity_type, entity_id, source_text_hash,
+  voice_key, provider, provider_model, storage_url, duration_ms, generated_at, checksum, status, metadata
+) VALUES (
+  UUID_TO_BIN('fa1da469-5167-5b09-8d2e-be0b8339a73f', 1), @audio_language_id, @audio_variant_id, 'word_form', UUID_TO_BIN('27541b0a-01ef-5b74-9b8d-262e9a35a29d', 1), '2efc0dd0d0b1fcfb064719d53a35c5fa771bfac8071f0a5f09ec57e76e587d18',
+  'tr-tr.lexical.native-clear', 'elevenlabs', 'eleven_multilingual_v2', 'audio/generated/tr-TR/lexical/33ec00ea6095f15e18fc2b1cb901bd7b8f8be49f39048695267d25f63aa9ddd3.mp3', 1201, '2026-09-14 11:32:17.329203', 'd46eca81e3c5af1a4bddaca7263f29a3fa900f190eb2c82c63d5da3c5c493cd4', 'validated', '{"audio_key":"33ec00ea6095f15e18fc2b1cb901bd7b8f8be49f39048695267d25f63aa9ddd3","entity_key":"wf_weather_and_clothes_05","voice_id":"FDs1ZX5J4e4f2c2erxtW","voice_name":"Fili - Warm Turkish Female ","voice_labels":{"gender":"female","accent":"istanbul","age":"young","category":"professional","language":"tr","use_case":"conversational","descriptive":"calm"},"output_format":"mp3_44100_192","file_sha256":"d46eca81e3c5af1a4bddaca7263f29a3fa900f190eb2c82c63d5da3c5c493cd4","settings":{"stability":0.72,"similarity_boost":0.88,"style":0.0,"use_speaker_boost":true,"speed":0.92},"relative_path":"audio/generated/tr-TR/lexical/33ec00ea6095f15e18fc2b1cb901bd7b8f8be49f39048695267d25f63aa9ddd3.mp3"}'
+) ON DUPLICATE KEY UPDATE
+  provider = VALUES(provider),
+  provider_model = VALUES(provider_model),
+  storage_url = VALUES(storage_url),
+  duration_ms = VALUES(duration_ms),
+  generated_at = VALUES(generated_at),
+  checksum = VALUES(checksum),
+  status = VALUES(status),
+  metadata = VALUES(metadata);
+
 -- lx_time_and_plans_06 -> audio/generated/tr-TR/lexical/35f0a94b5eaa759108684d5c6e601e5725c29a7d9fe9dd027086cb77947e6a1b.mp3
 UPDATE audio_assets
 SET status = 'archived'
@@ -2574,6 +5694,214 @@ INSERT INTO audio_assets (
 ) VALUES (
   UUID_TO_BIN('76027217-109b-5999-98a3-c408e039aeee', 1), @audio_language_id, @audio_variant_id, 'word_form', UUID_TO_BIN('7be42e47-cb0a-5b57-934b-88e5f3050b52', 1), 'bf2c0478962ee90d70a4c79cd9a02a6ec9b7d4f3330ce4191b0b1d9d7c796f7f',
   'tr-tr.lexical.native-clear', 'elevenlabs', 'eleven_multilingual_v2', 'audio/generated/tr-TR/lexical/35f0a94b5eaa759108684d5c6e601e5725c29a7d9fe9dd027086cb77947e6a1b.mp3', 1201, '2026-09-13 15:55:15.365832', '2837984649fa96b5f00e87eac94b3959565bb77d99c69f0681de3b01eacc8128', 'validated', '{"audio_key":"35f0a94b5eaa759108684d5c6e601e5725c29a7d9fe9dd027086cb77947e6a1b","entity_key":"wf_time_and_plans_06","voice_id":"FDs1ZX5J4e4f2c2erxtW","voice_name":"Fili - Warm Turkish Female ","voice_labels":{"gender":"female","accent":"istanbul","age":"young","category":"professional","language":"tr","use_case":"conversational","descriptive":"calm"},"output_format":"mp3_44100_192","file_sha256":"2837984649fa96b5f00e87eac94b3959565bb77d99c69f0681de3b01eacc8128","settings":{"stability":0.72,"similarity_boost":0.88,"style":0.0,"use_speaker_boost":true,"speed":0.92},"relative_path":"audio/generated/tr-TR/lexical/35f0a94b5eaa759108684d5c6e601e5725c29a7d9fe9dd027086cb77947e6a1b.mp3"}'
+) ON DUPLICATE KEY UPDATE
+  provider = VALUES(provider),
+  provider_model = VALUES(provider_model),
+  storage_url = VALUES(storage_url),
+  duration_ms = VALUES(duration_ms),
+  generated_at = VALUES(generated_at),
+  checksum = VALUES(checksum),
+  status = VALUES(status),
+  metadata = VALUES(metadata);
+
+-- lx_yesterday_06 -> audio/generated/tr-TR/lexical/37fb27327bc755fc3dfdf7d086e778b6a5b83bc920f8cf36206ffa1502366a25.mp3
+UPDATE audio_assets
+SET status = 'archived'
+WHERE entity_type = 'lexeme'
+  AND entity_id = UUID_TO_BIN('49c42458-d6ec-5f35-b0d8-5263c9eb12ee', 1)
+  AND voice_key = 'tr-tr.lexical.native-clear'
+  AND (entity_type NOT IN ('grammar_point','exercise') OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'lx_yesterday_06')
+  AND source_text_hash IS NOT NULL
+  AND source_text_hash <> '32ccd59351fa3df266ecdedf3b5d4306b5720b39589bc9cc1408f1cc564b7d54'
+  AND status <> 'archived';
+INSERT INTO audio_assets (
+  id, language_id, language_variant_id, entity_type, entity_id, source_text_hash,
+  voice_key, provider, provider_model, storage_url, duration_ms, generated_at, checksum, status, metadata
+) VALUES (
+  UUID_TO_BIN('b2338f5e-ac59-52a5-81b5-730ffa38750d', 1), @audio_language_id, @audio_variant_id, 'lexeme', UUID_TO_BIN('49c42458-d6ec-5f35-b0d8-5263c9eb12ee', 1), '32ccd59351fa3df266ecdedf3b5d4306b5720b39589bc9cc1408f1cc564b7d54',
+  'tr-tr.lexical.native-clear', 'elevenlabs', 'eleven_multilingual_v2', 'audio/generated/tr-TR/lexical/37fb27327bc755fc3dfdf7d086e778b6a5b83bc920f8cf36206ffa1502366a25.mp3', 914, '2026-09-13 17:08:18.847208', 'eb0666b3881faac360f4c9aba14bc0eb1d58bd3b00388e194f68b7df717b2705', 'validated', '{"audio_key":"37fb27327bc755fc3dfdf7d086e778b6a5b83bc920f8cf36206ffa1502366a25","entity_key":"lx_yesterday_06","voice_id":"FDs1ZX5J4e4f2c2erxtW","voice_name":"Fili - Warm Turkish Female ","voice_labels":{"gender":"female","accent":"istanbul","age":"young","category":"professional","language":"tr","use_case":"conversational","descriptive":"calm"},"output_format":"mp3_44100_192","file_sha256":"eb0666b3881faac360f4c9aba14bc0eb1d58bd3b00388e194f68b7df717b2705","settings":{"stability":0.72,"similarity_boost":0.88,"style":0.0,"use_speaker_boost":true,"speed":0.92},"relative_path":"audio/generated/tr-TR/lexical/37fb27327bc755fc3dfdf7d086e778b6a5b83bc920f8cf36206ffa1502366a25.mp3"}'
+) ON DUPLICATE KEY UPDATE
+  provider = VALUES(provider),
+  provider_model = VALUES(provider_model),
+  storage_url = VALUES(storage_url),
+  duration_ms = VALUES(duration_ms),
+  generated_at = VALUES(generated_at),
+  checksum = VALUES(checksum),
+  status = VALUES(status),
+  metadata = VALUES(metadata);
+
+-- wf_yesterday_06 -> audio/generated/tr-TR/lexical/37fb27327bc755fc3dfdf7d086e778b6a5b83bc920f8cf36206ffa1502366a25.mp3
+UPDATE audio_assets
+SET status = 'archived'
+WHERE entity_type = 'word_form'
+  AND entity_id = UUID_TO_BIN('854f73f9-9674-5a63-836b-b9c7aa7c97d6', 1)
+  AND voice_key = 'tr-tr.lexical.native-clear'
+  AND (entity_type NOT IN ('grammar_point','exercise') OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'wf_yesterday_06')
+  AND source_text_hash IS NOT NULL
+  AND source_text_hash <> '32ccd59351fa3df266ecdedf3b5d4306b5720b39589bc9cc1408f1cc564b7d54'
+  AND status <> 'archived';
+INSERT INTO audio_assets (
+  id, language_id, language_variant_id, entity_type, entity_id, source_text_hash,
+  voice_key, provider, provider_model, storage_url, duration_ms, generated_at, checksum, status, metadata
+) VALUES (
+  UUID_TO_BIN('70d3145a-6cb1-5315-8eb1-8ba59d36d8fa', 1), @audio_language_id, @audio_variant_id, 'word_form', UUID_TO_BIN('854f73f9-9674-5a63-836b-b9c7aa7c97d6', 1), '32ccd59351fa3df266ecdedf3b5d4306b5720b39589bc9cc1408f1cc564b7d54',
+  'tr-tr.lexical.native-clear', 'elevenlabs', 'eleven_multilingual_v2', 'audio/generated/tr-TR/lexical/37fb27327bc755fc3dfdf7d086e778b6a5b83bc920f8cf36206ffa1502366a25.mp3', 914, '2026-09-13 17:08:18.847208', 'eb0666b3881faac360f4c9aba14bc0eb1d58bd3b00388e194f68b7df717b2705', 'validated', '{"audio_key":"37fb27327bc755fc3dfdf7d086e778b6a5b83bc920f8cf36206ffa1502366a25","entity_key":"wf_yesterday_06","voice_id":"FDs1ZX5J4e4f2c2erxtW","voice_name":"Fili - Warm Turkish Female ","voice_labels":{"gender":"female","accent":"istanbul","age":"young","category":"professional","language":"tr","use_case":"conversational","descriptive":"calm"},"output_format":"mp3_44100_192","file_sha256":"eb0666b3881faac360f4c9aba14bc0eb1d58bd3b00388e194f68b7df717b2705","settings":{"stability":0.72,"similarity_boost":0.88,"style":0.0,"use_speaker_boost":true,"speed":0.92},"relative_path":"audio/generated/tr-TR/lexical/37fb27327bc755fc3dfdf7d086e778b6a5b83bc920f8cf36206ffa1502366a25.mp3"}'
+) ON DUPLICATE KEY UPDATE
+  provider = VALUES(provider),
+  provider_model = VALUES(provider_model),
+  storage_url = VALUES(storage_url),
+  duration_ms = VALUES(duration_ms),
+  generated_at = VALUES(generated_at),
+  checksum = VALUES(checksum),
+  status = VALUES(status),
+  metadata = VALUES(metadata);
+
+-- lx_basic_health_01 -> audio/generated/tr-TR/lexical/3d74224eb4bf70a537ce698560a46986ec2b8965ffa0d4ccadcccaded301d7a4.mp3
+UPDATE audio_assets
+SET status = 'archived'
+WHERE entity_type = 'lexeme'
+  AND entity_id = UUID_TO_BIN('45102fe9-8372-5765-98a2-a33d2e4e33b5', 1)
+  AND voice_key = 'tr-tr.lexical.native-clear'
+  AND (entity_type NOT IN ('grammar_point','exercise') OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'lx_basic_health_01')
+  AND source_text_hash IS NOT NULL
+  AND source_text_hash <> '9bb8d1f8471aad0e1896e8e1b14706fbef36e911041885adce68c8282cefc634'
+  AND status <> 'archived';
+INSERT INTO audio_assets (
+  id, language_id, language_variant_id, entity_type, entity_id, source_text_hash,
+  voice_key, provider, provider_model, storage_url, duration_ms, generated_at, checksum, status, metadata
+) VALUES (
+  UUID_TO_BIN('6d690ddc-25eb-5cc8-84f7-4e549000680d', 1), @audio_language_id, @audio_variant_id, 'lexeme', UUID_TO_BIN('45102fe9-8372-5765-98a2-a33d2e4e33b5', 1), '9bb8d1f8471aad0e1896e8e1b14706fbef36e911041885adce68c8282cefc634',
+  'tr-tr.lexical.native-clear', 'elevenlabs', 'eleven_multilingual_v2', 'audio/generated/tr-TR/lexical/3d74224eb4bf70a537ce698560a46986ec2b8965ffa0d4ccadcccaded301d7a4.mp3', 966, '2026-09-13 17:08:19.805265', '43bb4e34020294cbc06920b535519bcc5327ed3b496af193495cc848fe216b53', 'validated', '{"audio_key":"3d74224eb4bf70a537ce698560a46986ec2b8965ffa0d4ccadcccaded301d7a4","entity_key":"lx_basic_health_01","voice_id":"FDs1ZX5J4e4f2c2erxtW","voice_name":"Fili - Warm Turkish Female ","voice_labels":{"gender":"female","accent":"istanbul","age":"young","category":"professional","language":"tr","use_case":"conversational","descriptive":"calm"},"output_format":"mp3_44100_192","file_sha256":"43bb4e34020294cbc06920b535519bcc5327ed3b496af193495cc848fe216b53","settings":{"stability":0.72,"similarity_boost":0.88,"style":0.0,"use_speaker_boost":true,"speed":0.92},"relative_path":"audio/generated/tr-TR/lexical/3d74224eb4bf70a537ce698560a46986ec2b8965ffa0d4ccadcccaded301d7a4.mp3"}'
+) ON DUPLICATE KEY UPDATE
+  provider = VALUES(provider),
+  provider_model = VALUES(provider_model),
+  storage_url = VALUES(storage_url),
+  duration_ms = VALUES(duration_ms),
+  generated_at = VALUES(generated_at),
+  checksum = VALUES(checksum),
+  status = VALUES(status),
+  metadata = VALUES(metadata);
+
+-- wf_basic_health_01 -> audio/generated/tr-TR/lexical/3d74224eb4bf70a537ce698560a46986ec2b8965ffa0d4ccadcccaded301d7a4.mp3
+UPDATE audio_assets
+SET status = 'archived'
+WHERE entity_type = 'word_form'
+  AND entity_id = UUID_TO_BIN('3553f363-98d9-5df0-8f6f-11d95dff3953', 1)
+  AND voice_key = 'tr-tr.lexical.native-clear'
+  AND (entity_type NOT IN ('grammar_point','exercise') OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'wf_basic_health_01')
+  AND source_text_hash IS NOT NULL
+  AND source_text_hash <> '9bb8d1f8471aad0e1896e8e1b14706fbef36e911041885adce68c8282cefc634'
+  AND status <> 'archived';
+INSERT INTO audio_assets (
+  id, language_id, language_variant_id, entity_type, entity_id, source_text_hash,
+  voice_key, provider, provider_model, storage_url, duration_ms, generated_at, checksum, status, metadata
+) VALUES (
+  UUID_TO_BIN('16c1ea5c-1f7c-5216-9db8-8c881fec9e96', 1), @audio_language_id, @audio_variant_id, 'word_form', UUID_TO_BIN('3553f363-98d9-5df0-8f6f-11d95dff3953', 1), '9bb8d1f8471aad0e1896e8e1b14706fbef36e911041885adce68c8282cefc634',
+  'tr-tr.lexical.native-clear', 'elevenlabs', 'eleven_multilingual_v2', 'audio/generated/tr-TR/lexical/3d74224eb4bf70a537ce698560a46986ec2b8965ffa0d4ccadcccaded301d7a4.mp3', 966, '2026-09-13 17:08:19.805265', '43bb4e34020294cbc06920b535519bcc5327ed3b496af193495cc848fe216b53', 'validated', '{"audio_key":"3d74224eb4bf70a537ce698560a46986ec2b8965ffa0d4ccadcccaded301d7a4","entity_key":"wf_basic_health_01","voice_id":"FDs1ZX5J4e4f2c2erxtW","voice_name":"Fili - Warm Turkish Female ","voice_labels":{"gender":"female","accent":"istanbul","age":"young","category":"professional","language":"tr","use_case":"conversational","descriptive":"calm"},"output_format":"mp3_44100_192","file_sha256":"43bb4e34020294cbc06920b535519bcc5327ed3b496af193495cc848fe216b53","settings":{"stability":0.72,"similarity_boost":0.88,"style":0.0,"use_speaker_boost":true,"speed":0.92},"relative_path":"audio/generated/tr-TR/lexical/3d74224eb4bf70a537ce698560a46986ec2b8965ffa0d4ccadcccaded301d7a4.mp3"}'
+) ON DUPLICATE KEY UPDATE
+  provider = VALUES(provider),
+  provider_model = VALUES(provider_model),
+  storage_url = VALUES(storage_url),
+  duration_ms = VALUES(duration_ms),
+  generated_at = VALUES(generated_at),
+  checksum = VALUES(checksum),
+  status = VALUES(status),
+  metadata = VALUES(metadata);
+
+-- lx_everyday_routine_01 -> audio/generated/tr-TR/lexical/405b5647b41c042399ee97684bc7edd32ae04d7002ef16a1fd4f362604f6a3d0.mp3
+UPDATE audio_assets
+SET status = 'archived'
+WHERE entity_type = 'lexeme'
+  AND entity_id = UUID_TO_BIN('621b3127-e25a-5024-a59a-719bdafbf230', 1)
+  AND voice_key = 'tr-tr.lexical.native-clear'
+  AND (entity_type NOT IN ('grammar_point','exercise') OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'lx_everyday_routine_01')
+  AND source_text_hash IS NOT NULL
+  AND source_text_hash <> '7fd6b46f2f9a5faf9f7bc4ed0cc3271dd4aaa830e43b7ab0edaedd5d3f4b6a77'
+  AND status <> 'archived';
+INSERT INTO audio_assets (
+  id, language_id, language_variant_id, entity_type, entity_id, source_text_hash,
+  voice_key, provider, provider_model, storage_url, duration_ms, generated_at, checksum, status, metadata
+) VALUES (
+  UUID_TO_BIN('5fc33462-5406-5bf5-9f76-baf7f7885835', 1), @audio_language_id, @audio_variant_id, 'lexeme', UUID_TO_BIN('621b3127-e25a-5024-a59a-719bdafbf230', 1), '7fd6b46f2f9a5faf9f7bc4ed0cc3271dd4aaa830e43b7ab0edaedd5d3f4b6a77',
+  'tr-tr.lexical.native-clear', 'elevenlabs', 'eleven_multilingual_v2', 'audio/generated/tr-TR/lexical/405b5647b41c042399ee97684bc7edd32ae04d7002ef16a1fd4f362604f6a3d0.mp3', 1149, '2026-09-14 11:32:17.578980', 'd4188ede1ffb6d368242d389ead2c73df42f1fd5c64b30fb737ec3c32808cda6', 'validated', '{"audio_key":"405b5647b41c042399ee97684bc7edd32ae04d7002ef16a1fd4f362604f6a3d0","entity_key":"lx_everyday_routine_01","voice_id":"FDs1ZX5J4e4f2c2erxtW","voice_name":"Fili - Warm Turkish Female ","voice_labels":{"gender":"female","accent":"istanbul","age":"young","category":"professional","language":"tr","use_case":"conversational","descriptive":"calm"},"output_format":"mp3_44100_192","file_sha256":"d4188ede1ffb6d368242d389ead2c73df42f1fd5c64b30fb737ec3c32808cda6","settings":{"stability":0.72,"similarity_boost":0.88,"style":0.0,"use_speaker_boost":true,"speed":0.92},"relative_path":"audio/generated/tr-TR/lexical/405b5647b41c042399ee97684bc7edd32ae04d7002ef16a1fd4f362604f6a3d0.mp3"}'
+) ON DUPLICATE KEY UPDATE
+  provider = VALUES(provider),
+  provider_model = VALUES(provider_model),
+  storage_url = VALUES(storage_url),
+  duration_ms = VALUES(duration_ms),
+  generated_at = VALUES(generated_at),
+  checksum = VALUES(checksum),
+  status = VALUES(status),
+  metadata = VALUES(metadata);
+
+-- wf_everyday_routine_01 -> audio/generated/tr-TR/lexical/405b5647b41c042399ee97684bc7edd32ae04d7002ef16a1fd4f362604f6a3d0.mp3
+UPDATE audio_assets
+SET status = 'archived'
+WHERE entity_type = 'word_form'
+  AND entity_id = UUID_TO_BIN('ce010be7-3e86-5a17-ad61-ad4e89554d59', 1)
+  AND voice_key = 'tr-tr.lexical.native-clear'
+  AND (entity_type NOT IN ('grammar_point','exercise') OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'wf_everyday_routine_01')
+  AND source_text_hash IS NOT NULL
+  AND source_text_hash <> '7fd6b46f2f9a5faf9f7bc4ed0cc3271dd4aaa830e43b7ab0edaedd5d3f4b6a77'
+  AND status <> 'archived';
+INSERT INTO audio_assets (
+  id, language_id, language_variant_id, entity_type, entity_id, source_text_hash,
+  voice_key, provider, provider_model, storage_url, duration_ms, generated_at, checksum, status, metadata
+) VALUES (
+  UUID_TO_BIN('12960a75-c712-52c9-a0fb-e7a303a4eb3c', 1), @audio_language_id, @audio_variant_id, 'word_form', UUID_TO_BIN('ce010be7-3e86-5a17-ad61-ad4e89554d59', 1), '7fd6b46f2f9a5faf9f7bc4ed0cc3271dd4aaa830e43b7ab0edaedd5d3f4b6a77',
+  'tr-tr.lexical.native-clear', 'elevenlabs', 'eleven_multilingual_v2', 'audio/generated/tr-TR/lexical/405b5647b41c042399ee97684bc7edd32ae04d7002ef16a1fd4f362604f6a3d0.mp3', 1149, '2026-09-14 11:32:17.578980', 'd4188ede1ffb6d368242d389ead2c73df42f1fd5c64b30fb737ec3c32808cda6', 'validated', '{"audio_key":"405b5647b41c042399ee97684bc7edd32ae04d7002ef16a1fd4f362604f6a3d0","entity_key":"wf_everyday_routine_01","voice_id":"FDs1ZX5J4e4f2c2erxtW","voice_name":"Fili - Warm Turkish Female ","voice_labels":{"gender":"female","accent":"istanbul","age":"young","category":"professional","language":"tr","use_case":"conversational","descriptive":"calm"},"output_format":"mp3_44100_192","file_sha256":"d4188ede1ffb6d368242d389ead2c73df42f1fd5c64b30fb737ec3c32808cda6","settings":{"stability":0.72,"similarity_boost":0.88,"style":0.0,"use_speaker_boost":true,"speed":0.92},"relative_path":"audio/generated/tr-TR/lexical/405b5647b41c042399ee97684bc7edd32ae04d7002ef16a1fd4f362604f6a3d0.mp3"}'
+) ON DUPLICATE KEY UPDATE
+  provider = VALUES(provider),
+  provider_model = VALUES(provider_model),
+  storage_url = VALUES(storage_url),
+  duration_ms = VALUES(duration_ms),
+  generated_at = VALUES(generated_at),
+  checksum = VALUES(checksum),
+  status = VALUES(status),
+  metadata = VALUES(metadata);
+
+-- lx_can_you_help_01 -> audio/generated/tr-TR/lexical/406a397f2b5cc065b3a6c2cf276f45e2a93bf4eab915b0053bffd0b4ac624b9c.mp3
+UPDATE audio_assets
+SET status = 'archived'
+WHERE entity_type = 'lexeme'
+  AND entity_id = UUID_TO_BIN('fee6f0ed-2b29-58db-b747-c0403fd1f122', 1)
+  AND voice_key = 'tr-tr.lexical.native-clear'
+  AND (entity_type NOT IN ('grammar_point','exercise') OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'lx_can_you_help_01')
+  AND source_text_hash IS NOT NULL
+  AND source_text_hash <> 'e68e851a5503866fbe10225ecfc3fe6843643df01317c6d6e2ebd40551531500'
+  AND status <> 'archived';
+INSERT INTO audio_assets (
+  id, language_id, language_variant_id, entity_type, entity_id, source_text_hash,
+  voice_key, provider, provider_model, storage_url, duration_ms, generated_at, checksum, status, metadata
+) VALUES (
+  UUID_TO_BIN('013cd608-2383-5a49-b3a4-fa9c37cae5bd', 1), @audio_language_id, @audio_variant_id, 'lexeme', UUID_TO_BIN('fee6f0ed-2b29-58db-b747-c0403fd1f122', 1), 'e68e851a5503866fbe10225ecfc3fe6843643df01317c6d6e2ebd40551531500',
+  'tr-tr.lexical.native-clear', 'elevenlabs', 'eleven_multilingual_v2', 'audio/generated/tr-TR/lexical/406a397f2b5cc065b3a6c2cf276f45e2a93bf4eab915b0053bffd0b4ac624b9c.mp3', 1201, '2026-09-13 17:08:20.766176', 'e518ca488ffdd03302fd308ab1d923afb6c241c09630fc150eefd3897e12d334', 'validated', '{"audio_key":"406a397f2b5cc065b3a6c2cf276f45e2a93bf4eab915b0053bffd0b4ac624b9c","entity_key":"lx_can_you_help_01","voice_id":"FDs1ZX5J4e4f2c2erxtW","voice_name":"Fili - Warm Turkish Female ","voice_labels":{"gender":"female","accent":"istanbul","age":"young","category":"professional","language":"tr","use_case":"conversational","descriptive":"calm"},"output_format":"mp3_44100_192","file_sha256":"e518ca488ffdd03302fd308ab1d923afb6c241c09630fc150eefd3897e12d334","settings":{"stability":0.72,"similarity_boost":0.88,"style":0.0,"use_speaker_boost":true,"speed":0.92},"relative_path":"audio/generated/tr-TR/lexical/406a397f2b5cc065b3a6c2cf276f45e2a93bf4eab915b0053bffd0b4ac624b9c.mp3"}'
+) ON DUPLICATE KEY UPDATE
+  provider = VALUES(provider),
+  provider_model = VALUES(provider_model),
+  storage_url = VALUES(storage_url),
+  duration_ms = VALUES(duration_ms),
+  generated_at = VALUES(generated_at),
+  checksum = VALUES(checksum),
+  status = VALUES(status),
+  metadata = VALUES(metadata);
+
+-- wf_can_you_help_01 -> audio/generated/tr-TR/lexical/406a397f2b5cc065b3a6c2cf276f45e2a93bf4eab915b0053bffd0b4ac624b9c.mp3
+UPDATE audio_assets
+SET status = 'archived'
+WHERE entity_type = 'word_form'
+  AND entity_id = UUID_TO_BIN('5b874f7a-4867-59af-8e33-4aac32001059', 1)
+  AND voice_key = 'tr-tr.lexical.native-clear'
+  AND (entity_type NOT IN ('grammar_point','exercise') OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'wf_can_you_help_01')
+  AND source_text_hash IS NOT NULL
+  AND source_text_hash <> 'e68e851a5503866fbe10225ecfc3fe6843643df01317c6d6e2ebd40551531500'
+  AND status <> 'archived';
+INSERT INTO audio_assets (
+  id, language_id, language_variant_id, entity_type, entity_id, source_text_hash,
+  voice_key, provider, provider_model, storage_url, duration_ms, generated_at, checksum, status, metadata
+) VALUES (
+  UUID_TO_BIN('b50ac8ae-069f-5608-9308-4dd8dd494b0f', 1), @audio_language_id, @audio_variant_id, 'word_form', UUID_TO_BIN('5b874f7a-4867-59af-8e33-4aac32001059', 1), 'e68e851a5503866fbe10225ecfc3fe6843643df01317c6d6e2ebd40551531500',
+  'tr-tr.lexical.native-clear', 'elevenlabs', 'eleven_multilingual_v2', 'audio/generated/tr-TR/lexical/406a397f2b5cc065b3a6c2cf276f45e2a93bf4eab915b0053bffd0b4ac624b9c.mp3', 1201, '2026-09-13 17:08:20.766176', 'e518ca488ffdd03302fd308ab1d923afb6c241c09630fc150eefd3897e12d334', 'validated', '{"audio_key":"406a397f2b5cc065b3a6c2cf276f45e2a93bf4eab915b0053bffd0b4ac624b9c","entity_key":"wf_can_you_help_01","voice_id":"FDs1ZX5J4e4f2c2erxtW","voice_name":"Fili - Warm Turkish Female ","voice_labels":{"gender":"female","accent":"istanbul","age":"young","category":"professional","language":"tr","use_case":"conversational","descriptive":"calm"},"output_format":"mp3_44100_192","file_sha256":"e518ca488ffdd03302fd308ab1d923afb6c241c09630fc150eefd3897e12d334","settings":{"stability":0.72,"similarity_boost":0.88,"style":0.0,"use_speaker_boost":true,"speed":0.92},"relative_path":"audio/generated/tr-TR/lexical/406a397f2b5cc065b3a6c2cf276f45e2a93bf4eab915b0053bffd0b4ac624b9c.mp3"}'
 ) ON DUPLICATE KEY UPDATE
   provider = VALUES(provider),
   provider_model = VALUES(provider_model),
@@ -2740,6 +6068,58 @@ INSERT INTO audio_assets (
   status = VALUES(status),
   metadata = VALUES(metadata);
 
+-- lx_a1_everyday_capstone_03 -> audio/generated/tr-TR/lexical/45a96925a64bba383b78b09ce26ac5d04142c6a92e70b7dfa275cbe40a4a5d2f.mp3
+UPDATE audio_assets
+SET status = 'archived'
+WHERE entity_type = 'lexeme'
+  AND entity_id = UUID_TO_BIN('5d30c11a-74c0-5ff1-9e95-713ed87f3715', 1)
+  AND voice_key = 'tr-tr.lexical.native-clear'
+  AND (entity_type NOT IN ('grammar_point','exercise') OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'lx_a1_everyday_capstone_03')
+  AND source_text_hash IS NOT NULL
+  AND source_text_hash <> '3150db148569d92b6c2c733ac4f1343ac386e90fb7fc8e81193a235f1e408c18'
+  AND status <> 'archived';
+INSERT INTO audio_assets (
+  id, language_id, language_variant_id, entity_type, entity_id, source_text_hash,
+  voice_key, provider, provider_model, storage_url, duration_ms, generated_at, checksum, status, metadata
+) VALUES (
+  UUID_TO_BIN('12af43ec-0207-54f9-9865-62cb2fbb7faa', 1), @audio_language_id, @audio_variant_id, 'lexeme', UUID_TO_BIN('5d30c11a-74c0-5ff1-9e95-713ed87f3715', 1), '3150db148569d92b6c2c733ac4f1343ac386e90fb7fc8e81193a235f1e408c18',
+  'tr-tr.lexical.native-clear', 'elevenlabs', 'eleven_multilingual_v2', 'audio/generated/tr-TR/lexical/45a96925a64bba383b78b09ce26ac5d04142c6a92e70b7dfa275cbe40a4a5d2f.mp3', 1097, '2026-09-14 11:32:18.310243', '056e894f23405a07b731acaa5d459c4c83697138e4b8db7f5820dbfdd946d42b', 'validated', '{"audio_key":"45a96925a64bba383b78b09ce26ac5d04142c6a92e70b7dfa275cbe40a4a5d2f","entity_key":"lx_a1_everyday_capstone_03","voice_id":"FDs1ZX5J4e4f2c2erxtW","voice_name":"Fili - Warm Turkish Female ","voice_labels":{"gender":"female","accent":"istanbul","age":"young","category":"professional","language":"tr","use_case":"conversational","descriptive":"calm"},"output_format":"mp3_44100_192","file_sha256":"056e894f23405a07b731acaa5d459c4c83697138e4b8db7f5820dbfdd946d42b","settings":{"stability":0.72,"similarity_boost":0.88,"style":0.0,"use_speaker_boost":true,"speed":0.92},"relative_path":"audio/generated/tr-TR/lexical/45a96925a64bba383b78b09ce26ac5d04142c6a92e70b7dfa275cbe40a4a5d2f.mp3"}'
+) ON DUPLICATE KEY UPDATE
+  provider = VALUES(provider),
+  provider_model = VALUES(provider_model),
+  storage_url = VALUES(storage_url),
+  duration_ms = VALUES(duration_ms),
+  generated_at = VALUES(generated_at),
+  checksum = VALUES(checksum),
+  status = VALUES(status),
+  metadata = VALUES(metadata);
+
+-- wf_a1_everyday_capstone_03 -> audio/generated/tr-TR/lexical/45a96925a64bba383b78b09ce26ac5d04142c6a92e70b7dfa275cbe40a4a5d2f.mp3
+UPDATE audio_assets
+SET status = 'archived'
+WHERE entity_type = 'word_form'
+  AND entity_id = UUID_TO_BIN('105d96ce-e4a0-5d85-88e2-81bd32517943', 1)
+  AND voice_key = 'tr-tr.lexical.native-clear'
+  AND (entity_type NOT IN ('grammar_point','exercise') OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'wf_a1_everyday_capstone_03')
+  AND source_text_hash IS NOT NULL
+  AND source_text_hash <> '3150db148569d92b6c2c733ac4f1343ac386e90fb7fc8e81193a235f1e408c18'
+  AND status <> 'archived';
+INSERT INTO audio_assets (
+  id, language_id, language_variant_id, entity_type, entity_id, source_text_hash,
+  voice_key, provider, provider_model, storage_url, duration_ms, generated_at, checksum, status, metadata
+) VALUES (
+  UUID_TO_BIN('cdb55e8e-0b51-57fd-813a-755ea216264c', 1), @audio_language_id, @audio_variant_id, 'word_form', UUID_TO_BIN('105d96ce-e4a0-5d85-88e2-81bd32517943', 1), '3150db148569d92b6c2c733ac4f1343ac386e90fb7fc8e81193a235f1e408c18',
+  'tr-tr.lexical.native-clear', 'elevenlabs', 'eleven_multilingual_v2', 'audio/generated/tr-TR/lexical/45a96925a64bba383b78b09ce26ac5d04142c6a92e70b7dfa275cbe40a4a5d2f.mp3', 1097, '2026-09-14 11:32:18.310243', '056e894f23405a07b731acaa5d459c4c83697138e4b8db7f5820dbfdd946d42b', 'validated', '{"audio_key":"45a96925a64bba383b78b09ce26ac5d04142c6a92e70b7dfa275cbe40a4a5d2f","entity_key":"wf_a1_everyday_capstone_03","voice_id":"FDs1ZX5J4e4f2c2erxtW","voice_name":"Fili - Warm Turkish Female ","voice_labels":{"gender":"female","accent":"istanbul","age":"young","category":"professional","language":"tr","use_case":"conversational","descriptive":"calm"},"output_format":"mp3_44100_192","file_sha256":"056e894f23405a07b731acaa5d459c4c83697138e4b8db7f5820dbfdd946d42b","settings":{"stability":0.72,"similarity_boost":0.88,"style":0.0,"use_speaker_boost":true,"speed":0.92},"relative_path":"audio/generated/tr-TR/lexical/45a96925a64bba383b78b09ce26ac5d04142c6a92e70b7dfa275cbe40a4a5d2f.mp3"}'
+) ON DUPLICATE KEY UPDATE
+  provider = VALUES(provider),
+  provider_model = VALUES(provider_model),
+  storage_url = VALUES(storage_url),
+  duration_ms = VALUES(duration_ms),
+  generated_at = VALUES(generated_at),
+  checksum = VALUES(checksum),
+  status = VALUES(status),
+  metadata = VALUES(metadata);
+
 -- lx_shopping_basics_05 -> audio/generated/tr-TR/lexical/462a6571a564884cc0bb828995d02a3fe30454f6da2387130297deb08db6d3ae.mp3
 UPDATE audio_assets
 SET status = 'archived'
@@ -2782,6 +6162,58 @@ INSERT INTO audio_assets (
 ) VALUES (
   UUID_TO_BIN('52e714dc-dbf3-59e5-86ef-1b90f8acc94a', 1), @audio_language_id, @audio_variant_id, 'word_form', UUID_TO_BIN('02815813-7e4f-51e4-8745-4013b1a3c4f7', 1), 'e6b2cc2ee3d9d3fe0d7794e8c8050e3af9d81e7b0f9c8a5d8fbff0854802ac91',
   'tr-tr.lexical.native-clear', 'elevenlabs', 'eleven_multilingual_v2', 'audio/generated/tr-TR/lexical/462a6571a564884cc0bb828995d02a3fe30454f6da2387130297deb08db6d3ae.mp3', 1018, '2026-09-13 15:55:17.367642', '4b273c6fd40ca1de653ed57a53a7ba86f88bb62568175c57eb1aae990932232e', 'validated', '{"audio_key":"462a6571a564884cc0bb828995d02a3fe30454f6da2387130297deb08db6d3ae","entity_key":"wf_shopping_basics_05","voice_id":"FDs1ZX5J4e4f2c2erxtW","voice_name":"Fili - Warm Turkish Female ","voice_labels":{"gender":"female","accent":"istanbul","age":"young","category":"professional","language":"tr","use_case":"conversational","descriptive":"calm"},"output_format":"mp3_44100_192","file_sha256":"4b273c6fd40ca1de653ed57a53a7ba86f88bb62568175c57eb1aae990932232e","settings":{"stability":0.72,"similarity_boost":0.88,"style":0.0,"use_speaker_boost":true,"speed":0.92},"relative_path":"audio/generated/tr-TR/lexical/462a6571a564884cc0bb828995d02a3fe30454f6da2387130297deb08db6d3ae.mp3"}'
+) ON DUPLICATE KEY UPDATE
+  provider = VALUES(provider),
+  provider_model = VALUES(provider_model),
+  storage_url = VALUES(storage_url),
+  duration_ms = VALUES(duration_ms),
+  generated_at = VALUES(generated_at),
+  checksum = VALUES(checksum),
+  status = VALUES(status),
+  metadata = VALUES(metadata);
+
+-- lx_near_future_plans_02 -> audio/generated/tr-TR/lexical/4779d8e522625c6b8628829efcb283e2d59b6edc4c40c91f56abd314838c4ca7.mp3
+UPDATE audio_assets
+SET status = 'archived'
+WHERE entity_type = 'lexeme'
+  AND entity_id = UUID_TO_BIN('8ce8118c-6b89-5c8c-b3a8-116997f36096', 1)
+  AND voice_key = 'tr-tr.lexical.native-clear'
+  AND (entity_type NOT IN ('grammar_point','exercise') OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'lx_near_future_plans_02')
+  AND source_text_hash IS NOT NULL
+  AND source_text_hash <> 'deb37b60d1f518bbe59c0ace1463b9f31e29a5ec7fd5b616d60e4a7382553316'
+  AND status <> 'archived';
+INSERT INTO audio_assets (
+  id, language_id, language_variant_id, entity_type, entity_id, source_text_hash,
+  voice_key, provider, provider_model, storage_url, duration_ms, generated_at, checksum, status, metadata
+) VALUES (
+  UUID_TO_BIN('5c16e366-2b3e-5366-af1a-8cdc041a1d3f', 1), @audio_language_id, @audio_variant_id, 'lexeme', UUID_TO_BIN('8ce8118c-6b89-5c8c-b3a8-116997f36096', 1), 'deb37b60d1f518bbe59c0ace1463b9f31e29a5ec7fd5b616d60e4a7382553316',
+  'tr-tr.lexical.native-clear', 'elevenlabs', 'eleven_multilingual_v2', 'audio/generated/tr-TR/lexical/4779d8e522625c6b8628829efcb283e2d59b6edc4c40c91f56abd314838c4ca7.mp3', 1488, '2026-09-14 11:32:18.552263', 'ecc579b9a6821a54823ca4f407cfd0cc2584483dd3522b64ecd253083e8c4042', 'validated', '{"audio_key":"4779d8e522625c6b8628829efcb283e2d59b6edc4c40c91f56abd314838c4ca7","entity_key":"lx_near_future_plans_02","voice_id":"FDs1ZX5J4e4f2c2erxtW","voice_name":"Fili - Warm Turkish Female ","voice_labels":{"gender":"female","accent":"istanbul","age":"young","category":"professional","language":"tr","use_case":"conversational","descriptive":"calm"},"output_format":"mp3_44100_192","file_sha256":"ecc579b9a6821a54823ca4f407cfd0cc2584483dd3522b64ecd253083e8c4042","settings":{"stability":0.72,"similarity_boost":0.88,"style":0.0,"use_speaker_boost":true,"speed":0.92},"relative_path":"audio/generated/tr-TR/lexical/4779d8e522625c6b8628829efcb283e2d59b6edc4c40c91f56abd314838c4ca7.mp3"}'
+) ON DUPLICATE KEY UPDATE
+  provider = VALUES(provider),
+  provider_model = VALUES(provider_model),
+  storage_url = VALUES(storage_url),
+  duration_ms = VALUES(duration_ms),
+  generated_at = VALUES(generated_at),
+  checksum = VALUES(checksum),
+  status = VALUES(status),
+  metadata = VALUES(metadata);
+
+-- wf_near_future_plans_02 -> audio/generated/tr-TR/lexical/4779d8e522625c6b8628829efcb283e2d59b6edc4c40c91f56abd314838c4ca7.mp3
+UPDATE audio_assets
+SET status = 'archived'
+WHERE entity_type = 'word_form'
+  AND entity_id = UUID_TO_BIN('4746c04b-401f-5040-93e2-3ca1e668734d', 1)
+  AND voice_key = 'tr-tr.lexical.native-clear'
+  AND (entity_type NOT IN ('grammar_point','exercise') OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'wf_near_future_plans_02')
+  AND source_text_hash IS NOT NULL
+  AND source_text_hash <> 'deb37b60d1f518bbe59c0ace1463b9f31e29a5ec7fd5b616d60e4a7382553316'
+  AND status <> 'archived';
+INSERT INTO audio_assets (
+  id, language_id, language_variant_id, entity_type, entity_id, source_text_hash,
+  voice_key, provider, provider_model, storage_url, duration_ms, generated_at, checksum, status, metadata
+) VALUES (
+  UUID_TO_BIN('320cb171-0a55-5e3e-9c5f-b70436e9cfd4', 1), @audio_language_id, @audio_variant_id, 'word_form', UUID_TO_BIN('4746c04b-401f-5040-93e2-3ca1e668734d', 1), 'deb37b60d1f518bbe59c0ace1463b9f31e29a5ec7fd5b616d60e4a7382553316',
+  'tr-tr.lexical.native-clear', 'elevenlabs', 'eleven_multilingual_v2', 'audio/generated/tr-TR/lexical/4779d8e522625c6b8628829efcb283e2d59b6edc4c40c91f56abd314838c4ca7.mp3', 1488, '2026-09-14 11:32:18.552263', 'ecc579b9a6821a54823ca4f407cfd0cc2584483dd3522b64ecd253083e8c4042', 'validated', '{"audio_key":"4779d8e522625c6b8628829efcb283e2d59b6edc4c40c91f56abd314838c4ca7","entity_key":"wf_near_future_plans_02","voice_id":"FDs1ZX5J4e4f2c2erxtW","voice_name":"Fili - Warm Turkish Female ","voice_labels":{"gender":"female","accent":"istanbul","age":"young","category":"professional","language":"tr","use_case":"conversational","descriptive":"calm"},"output_format":"mp3_44100_192","file_sha256":"ecc579b9a6821a54823ca4f407cfd0cc2584483dd3522b64ecd253083e8c4042","settings":{"stability":0.72,"similarity_boost":0.88,"style":0.0,"use_speaker_boost":true,"speed":0.92},"relative_path":"audio/generated/tr-TR/lexical/4779d8e522625c6b8628829efcb283e2d59b6edc4c40c91f56abd314838c4ca7.mp3"}'
 ) ON DUPLICATE KEY UPDATE
   provider = VALUES(provider),
   provider_model = VALUES(provider_model),
@@ -2886,6 +6318,58 @@ INSERT INTO audio_assets (
 ) VALUES (
   UUID_TO_BIN('7c14e0a7-658f-5cd2-b9e1-cdd14eb85699', 1), @audio_language_id, @audio_variant_id, 'word_form', UUID_TO_BIN('7f604f84-5362-56dd-99bd-d3f275c726d6', 1), '626ff5aad36e2141e8f03cbb5ba7ee3e6ec354b8f845dac1cf83d700a20d775d',
   'tr-tr.lexical.native-clear', 'elevenlabs', 'eleven_multilingual_v2', 'audio/generated/tr-TR/lexical/52566e0c5353a8f9b1b1a289025e2d107e7e5ee17b87564aa8a4d72c07bbd846.mp3', 966, '2026-09-13 15:55:18.404647', '8d4256edd0410ed2ca883bc5d390f0be5a1647275f0d36263d6baee42a43141f', 'validated', '{"audio_key":"52566e0c5353a8f9b1b1a289025e2d107e7e5ee17b87564aa8a4d72c07bbd846","entity_key":"wf_at_home_04","voice_id":"FDs1ZX5J4e4f2c2erxtW","voice_name":"Fili - Warm Turkish Female ","voice_labels":{"gender":"female","accent":"istanbul","age":"young","category":"professional","language":"tr","use_case":"conversational","descriptive":"calm"},"output_format":"mp3_44100_192","file_sha256":"8d4256edd0410ed2ca883bc5d390f0be5a1647275f0d36263d6baee42a43141f","settings":{"stability":0.72,"similarity_boost":0.88,"style":0.0,"use_speaker_boost":true,"speed":0.92},"relative_path":"audio/generated/tr-TR/lexical/52566e0c5353a8f9b1b1a289025e2d107e7e5ee17b87564aa8a4d72c07bbd846.mp3"}'
+) ON DUPLICATE KEY UPDATE
+  provider = VALUES(provider),
+  provider_model = VALUES(provider_model),
+  storage_url = VALUES(storage_url),
+  duration_ms = VALUES(duration_ms),
+  generated_at = VALUES(generated_at),
+  checksum = VALUES(checksum),
+  status = VALUES(status),
+  metadata = VALUES(metadata);
+
+-- lx_likes_and_specific_things_04 -> audio/generated/tr-TR/lexical/5515c15a227fca7ecbae03dc12372ce37e8ee9f6f32760f7d00f7132ac7b29ae.mp3
+UPDATE audio_assets
+SET status = 'archived'
+WHERE entity_type = 'lexeme'
+  AND entity_id = UUID_TO_BIN('79f470a1-2021-5463-81aa-66d0da9cab95', 1)
+  AND voice_key = 'tr-tr.lexical.native-clear'
+  AND (entity_type NOT IN ('grammar_point','exercise') OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'lx_likes_and_specific_things_04')
+  AND source_text_hash IS NOT NULL
+  AND source_text_hash <> 'c66436b945452a3972065424feb7f54c2305ee328b9df95a991bb93d76b202ab'
+  AND status <> 'archived';
+INSERT INTO audio_assets (
+  id, language_id, language_variant_id, entity_type, entity_id, source_text_hash,
+  voice_key, provider, provider_model, storage_url, duration_ms, generated_at, checksum, status, metadata
+) VALUES (
+  UUID_TO_BIN('e74816ef-71b8-52e5-baad-3ee9b67d989b', 1), @audio_language_id, @audio_variant_id, 'lexeme', UUID_TO_BIN('79f470a1-2021-5463-81aa-66d0da9cab95', 1), 'c66436b945452a3972065424feb7f54c2305ee328b9df95a991bb93d76b202ab',
+  'tr-tr.lexical.native-clear', 'elevenlabs', 'eleven_multilingual_v2', 'audio/generated/tr-TR/lexical/5515c15a227fca7ecbae03dc12372ce37e8ee9f6f32760f7d00f7132ac7b29ae.mp3', 1436, '2026-09-14 11:32:19.285750', '2781bf18ffc76e12f902c767ce523610046315f9c96505bdd7a8ae2c9ed585ff', 'validated', '{"audio_key":"5515c15a227fca7ecbae03dc12372ce37e8ee9f6f32760f7d00f7132ac7b29ae","entity_key":"lx_likes_and_specific_things_04","voice_id":"FDs1ZX5J4e4f2c2erxtW","voice_name":"Fili - Warm Turkish Female ","voice_labels":{"gender":"female","accent":"istanbul","age":"young","category":"professional","language":"tr","use_case":"conversational","descriptive":"calm"},"output_format":"mp3_44100_192","file_sha256":"2781bf18ffc76e12f902c767ce523610046315f9c96505bdd7a8ae2c9ed585ff","settings":{"stability":0.72,"similarity_boost":0.88,"style":0.0,"use_speaker_boost":true,"speed":0.92},"relative_path":"audio/generated/tr-TR/lexical/5515c15a227fca7ecbae03dc12372ce37e8ee9f6f32760f7d00f7132ac7b29ae.mp3"}'
+) ON DUPLICATE KEY UPDATE
+  provider = VALUES(provider),
+  provider_model = VALUES(provider_model),
+  storage_url = VALUES(storage_url),
+  duration_ms = VALUES(duration_ms),
+  generated_at = VALUES(generated_at),
+  checksum = VALUES(checksum),
+  status = VALUES(status),
+  metadata = VALUES(metadata);
+
+-- wf_likes_and_specific_things_04 -> audio/generated/tr-TR/lexical/5515c15a227fca7ecbae03dc12372ce37e8ee9f6f32760f7d00f7132ac7b29ae.mp3
+UPDATE audio_assets
+SET status = 'archived'
+WHERE entity_type = 'word_form'
+  AND entity_id = UUID_TO_BIN('5e89d0e6-92d0-5159-a85b-261abcfcbc44', 1)
+  AND voice_key = 'tr-tr.lexical.native-clear'
+  AND (entity_type NOT IN ('grammar_point','exercise') OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'wf_likes_and_specific_things_04')
+  AND source_text_hash IS NOT NULL
+  AND source_text_hash <> 'c66436b945452a3972065424feb7f54c2305ee328b9df95a991bb93d76b202ab'
+  AND status <> 'archived';
+INSERT INTO audio_assets (
+  id, language_id, language_variant_id, entity_type, entity_id, source_text_hash,
+  voice_key, provider, provider_model, storage_url, duration_ms, generated_at, checksum, status, metadata
+) VALUES (
+  UUID_TO_BIN('fa9ff0f7-aa70-5a06-9e5e-33cb7dfbafbc', 1), @audio_language_id, @audio_variant_id, 'word_form', UUID_TO_BIN('5e89d0e6-92d0-5159-a85b-261abcfcbc44', 1), 'c66436b945452a3972065424feb7f54c2305ee328b9df95a991bb93d76b202ab',
+  'tr-tr.lexical.native-clear', 'elevenlabs', 'eleven_multilingual_v2', 'audio/generated/tr-TR/lexical/5515c15a227fca7ecbae03dc12372ce37e8ee9f6f32760f7d00f7132ac7b29ae.mp3', 1436, '2026-09-14 11:32:19.285750', '2781bf18ffc76e12f902c767ce523610046315f9c96505bdd7a8ae2c9ed585ff', 'validated', '{"audio_key":"5515c15a227fca7ecbae03dc12372ce37e8ee9f6f32760f7d00f7132ac7b29ae","entity_key":"wf_likes_and_specific_things_04","voice_id":"FDs1ZX5J4e4f2c2erxtW","voice_name":"Fili - Warm Turkish Female ","voice_labels":{"gender":"female","accent":"istanbul","age":"young","category":"professional","language":"tr","use_case":"conversational","descriptive":"calm"},"output_format":"mp3_44100_192","file_sha256":"2781bf18ffc76e12f902c767ce523610046315f9c96505bdd7a8ae2c9ed585ff","settings":{"stability":0.72,"similarity_boost":0.88,"style":0.0,"use_speaker_boost":true,"speed":0.92},"relative_path":"audio/generated/tr-TR/lexical/5515c15a227fca7ecbae03dc12372ce37e8ee9f6f32760f7d00f7132ac7b29ae.mp3"}'
 ) ON DUPLICATE KEY UPDATE
   provider = VALUES(provider),
   provider_model = VALUES(provider_model),
@@ -3104,6 +6588,58 @@ INSERT INTO audio_assets (
   status = VALUES(status),
   metadata = VALUES(metadata);
 
+-- lx_before_and_after_04 -> audio/generated/tr-TR/lexical/6caf68e794eeb0c62e0d37baf1df0ebd9b37ddf4ad713a351ea155a67e7098fa.mp3
+UPDATE audio_assets
+SET status = 'archived'
+WHERE entity_type = 'lexeme'
+  AND entity_id = UUID_TO_BIN('df2121e1-555f-56f3-9006-c50dc0060d82', 1)
+  AND voice_key = 'tr-tr.lexical.native-clear'
+  AND (entity_type NOT IN ('grammar_point','exercise') OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'lx_before_and_after_04')
+  AND source_text_hash IS NOT NULL
+  AND source_text_hash <> '6ffa6caf3d5d2422803d5d77470b0c6736530c57aced83719128078225006ca5'
+  AND status <> 'archived';
+INSERT INTO audio_assets (
+  id, language_id, language_variant_id, entity_type, entity_id, source_text_hash,
+  voice_key, provider, provider_model, storage_url, duration_ms, generated_at, checksum, status, metadata
+) VALUES (
+  UUID_TO_BIN('a4ce2a06-484c-57d5-912d-f9debae926e3', 1), @audio_language_id, @audio_variant_id, 'lexeme', UUID_TO_BIN('df2121e1-555f-56f3-9006-c50dc0060d82', 1), '6ffa6caf3d5d2422803d5d77470b0c6736530c57aced83719128078225006ca5',
+  'tr-tr.lexical.native-clear', 'elevenlabs', 'eleven_multilingual_v2', 'audio/generated/tr-TR/lexical/6caf68e794eeb0c62e0d37baf1df0ebd9b37ddf4ad713a351ea155a67e7098fa.mp3', 966, '2026-09-14 11:32:19.493031', 'babd6014bbf334bc8d46782187bb1a670a9dd75075fd27aea569c8c43bab1d3b', 'validated', '{"audio_key":"6caf68e794eeb0c62e0d37baf1df0ebd9b37ddf4ad713a351ea155a67e7098fa","entity_key":"lx_before_and_after_04","voice_id":"FDs1ZX5J4e4f2c2erxtW","voice_name":"Fili - Warm Turkish Female ","voice_labels":{"gender":"female","accent":"istanbul","age":"young","category":"professional","language":"tr","use_case":"conversational","descriptive":"calm"},"output_format":"mp3_44100_192","file_sha256":"babd6014bbf334bc8d46782187bb1a670a9dd75075fd27aea569c8c43bab1d3b","settings":{"stability":0.72,"similarity_boost":0.88,"style":0.0,"use_speaker_boost":true,"speed":0.92},"relative_path":"audio/generated/tr-TR/lexical/6caf68e794eeb0c62e0d37baf1df0ebd9b37ddf4ad713a351ea155a67e7098fa.mp3"}'
+) ON DUPLICATE KEY UPDATE
+  provider = VALUES(provider),
+  provider_model = VALUES(provider_model),
+  storage_url = VALUES(storage_url),
+  duration_ms = VALUES(duration_ms),
+  generated_at = VALUES(generated_at),
+  checksum = VALUES(checksum),
+  status = VALUES(status),
+  metadata = VALUES(metadata);
+
+-- wf_before_and_after_04 -> audio/generated/tr-TR/lexical/6caf68e794eeb0c62e0d37baf1df0ebd9b37ddf4ad713a351ea155a67e7098fa.mp3
+UPDATE audio_assets
+SET status = 'archived'
+WHERE entity_type = 'word_form'
+  AND entity_id = UUID_TO_BIN('c21606fc-5ad9-59e6-8721-9eff46083a32', 1)
+  AND voice_key = 'tr-tr.lexical.native-clear'
+  AND (entity_type NOT IN ('grammar_point','exercise') OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'wf_before_and_after_04')
+  AND source_text_hash IS NOT NULL
+  AND source_text_hash <> '6ffa6caf3d5d2422803d5d77470b0c6736530c57aced83719128078225006ca5'
+  AND status <> 'archived';
+INSERT INTO audio_assets (
+  id, language_id, language_variant_id, entity_type, entity_id, source_text_hash,
+  voice_key, provider, provider_model, storage_url, duration_ms, generated_at, checksum, status, metadata
+) VALUES (
+  UUID_TO_BIN('26bb6939-1bd0-5568-bf84-0670a443ca98', 1), @audio_language_id, @audio_variant_id, 'word_form', UUID_TO_BIN('c21606fc-5ad9-59e6-8721-9eff46083a32', 1), '6ffa6caf3d5d2422803d5d77470b0c6736530c57aced83719128078225006ca5',
+  'tr-tr.lexical.native-clear', 'elevenlabs', 'eleven_multilingual_v2', 'audio/generated/tr-TR/lexical/6caf68e794eeb0c62e0d37baf1df0ebd9b37ddf4ad713a351ea155a67e7098fa.mp3', 966, '2026-09-14 11:32:19.493031', 'babd6014bbf334bc8d46782187bb1a670a9dd75075fd27aea569c8c43bab1d3b', 'validated', '{"audio_key":"6caf68e794eeb0c62e0d37baf1df0ebd9b37ddf4ad713a351ea155a67e7098fa","entity_key":"wf_before_and_after_04","voice_id":"FDs1ZX5J4e4f2c2erxtW","voice_name":"Fili - Warm Turkish Female ","voice_labels":{"gender":"female","accent":"istanbul","age":"young","category":"professional","language":"tr","use_case":"conversational","descriptive":"calm"},"output_format":"mp3_44100_192","file_sha256":"babd6014bbf334bc8d46782187bb1a670a9dd75075fd27aea569c8c43bab1d3b","settings":{"stability":0.72,"similarity_boost":0.88,"style":0.0,"use_speaker_boost":true,"speed":0.92},"relative_path":"audio/generated/tr-TR/lexical/6caf68e794eeb0c62e0d37baf1df0ebd9b37ddf4ad713a351ea155a67e7098fa.mp3"}'
+) ON DUPLICATE KEY UPDATE
+  provider = VALUES(provider),
+  provider_model = VALUES(provider_model),
+  storage_url = VALUES(storage_url),
+  duration_ms = VALUES(duration_ms),
+  generated_at = VALUES(generated_at),
+  checksum = VALUES(checksum),
+  status = VALUES(status),
+  metadata = VALUES(metadata);
+
 -- lx_time_and_plans_04 -> audio/generated/tr-TR/lexical/6d3b74d7586269eb943e753597dcd4cae747f9dc0aabc9a504479db6c71934d8.mp3
 UPDATE audio_assets
 SET status = 'archived'
@@ -3198,6 +6734,58 @@ INSERT INTO audio_assets (
 ) VALUES (
   UUID_TO_BIN('c8367125-d57f-5199-849f-359ab638a4af', 1), @audio_language_id, @audio_variant_id, 'word_form', UUID_TO_BIN('a263b37b-6692-5279-a08b-89d9cba0dd74', 1), '9346d8f88882b76b8733c463376fa97c2235e5c2c0bc8243e0ca8f45cb00cea1',
   'tr-tr.lexical.native-clear', 'elevenlabs', 'eleven_multilingual_v2', 'audio/generated/tr-TR/lexical/6ec2b478fd01fbace83fb622767863054770ca0f3679a798f05e82349effa66a.mp3', 1071, '2026-09-13 15:55:21.640498', '66f92faed4c3637b66ae19f15319b3568989e890f2ea1487b80748cd6048fa47', 'validated', '{"audio_key":"6ec2b478fd01fbace83fb622767863054770ca0f3679a798f05e82349effa66a","entity_key":"wf_shopping_basics_02","voice_id":"FDs1ZX5J4e4f2c2erxtW","voice_name":"Fili - Warm Turkish Female ","voice_labels":{"gender":"female","accent":"istanbul","age":"young","category":"professional","language":"tr","use_case":"conversational","descriptive":"calm"},"output_format":"mp3_44100_192","file_sha256":"66f92faed4c3637b66ae19f15319b3568989e890f2ea1487b80748cd6048fa47","settings":{"stability":0.72,"similarity_boost":0.88,"style":0.0,"use_speaker_boost":true,"speed":0.92},"relative_path":"audio/generated/tr-TR/lexical/6ec2b478fd01fbace83fb622767863054770ca0f3679a798f05e82349effa66a.mp3"}'
+) ON DUPLICATE KEY UPDATE
+  provider = VALUES(provider),
+  provider_model = VALUES(provider_model),
+  storage_url = VALUES(storage_url),
+  duration_ms = VALUES(duration_ms),
+  generated_at = VALUES(generated_at),
+  checksum = VALUES(checksum),
+  status = VALUES(status),
+  metadata = VALUES(metadata);
+
+-- lx_basic_health_05 -> audio/generated/tr-TR/lexical/6f353ee0139e6e2fa4efd7df0408eac5dcee30c43290242e251e746e693f55e2.mp3
+UPDATE audio_assets
+SET status = 'archived'
+WHERE entity_type = 'lexeme'
+  AND entity_id = UUID_TO_BIN('e6a3b995-ccc9-56b5-9968-e4cc12f1fe70', 1)
+  AND voice_key = 'tr-tr.lexical.native-clear'
+  AND (entity_type NOT IN ('grammar_point','exercise') OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'lx_basic_health_05')
+  AND source_text_hash IS NOT NULL
+  AND source_text_hash <> '553cee683d7e46c0df7ce1ccf6cbbf78e3e6e8c9d0fe95079aca7ad3de738530'
+  AND status <> 'archived';
+INSERT INTO audio_assets (
+  id, language_id, language_variant_id, entity_type, entity_id, source_text_hash,
+  voice_key, provider, provider_model, storage_url, duration_ms, generated_at, checksum, status, metadata
+) VALUES (
+  UUID_TO_BIN('65395372-df06-53cc-ba93-bfb45bb1968a', 1), @audio_language_id, @audio_variant_id, 'lexeme', UUID_TO_BIN('e6a3b995-ccc9-56b5-9968-e4cc12f1fe70', 1), '553cee683d7e46c0df7ce1ccf6cbbf78e3e6e8c9d0fe95079aca7ad3de738530',
+  'tr-tr.lexical.native-clear', 'elevenlabs', 'eleven_multilingual_v2', 'audio/generated/tr-TR/lexical/6f353ee0139e6e2fa4efd7df0408eac5dcee30c43290242e251e746e693f55e2.mp3', 1018, '2026-09-13 17:08:24.238043', '5ba4da80e555d95eaacb6fd012d11acaf25248b9d79de280f50fb22e8dc22b32', 'validated', '{"audio_key":"6f353ee0139e6e2fa4efd7df0408eac5dcee30c43290242e251e746e693f55e2","entity_key":"lx_basic_health_05","voice_id":"FDs1ZX5J4e4f2c2erxtW","voice_name":"Fili - Warm Turkish Female ","voice_labels":{"gender":"female","accent":"istanbul","age":"young","category":"professional","language":"tr","use_case":"conversational","descriptive":"calm"},"output_format":"mp3_44100_192","file_sha256":"5ba4da80e555d95eaacb6fd012d11acaf25248b9d79de280f50fb22e8dc22b32","settings":{"stability":0.72,"similarity_boost":0.88,"style":0.0,"use_speaker_boost":true,"speed":0.92},"relative_path":"audio/generated/tr-TR/lexical/6f353ee0139e6e2fa4efd7df0408eac5dcee30c43290242e251e746e693f55e2.mp3"}'
+) ON DUPLICATE KEY UPDATE
+  provider = VALUES(provider),
+  provider_model = VALUES(provider_model),
+  storage_url = VALUES(storage_url),
+  duration_ms = VALUES(duration_ms),
+  generated_at = VALUES(generated_at),
+  checksum = VALUES(checksum),
+  status = VALUES(status),
+  metadata = VALUES(metadata);
+
+-- wf_basic_health_05 -> audio/generated/tr-TR/lexical/6f353ee0139e6e2fa4efd7df0408eac5dcee30c43290242e251e746e693f55e2.mp3
+UPDATE audio_assets
+SET status = 'archived'
+WHERE entity_type = 'word_form'
+  AND entity_id = UUID_TO_BIN('adad3837-7d8e-5ce4-b3ac-417034484b1b', 1)
+  AND voice_key = 'tr-tr.lexical.native-clear'
+  AND (entity_type NOT IN ('grammar_point','exercise') OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'wf_basic_health_05')
+  AND source_text_hash IS NOT NULL
+  AND source_text_hash <> '553cee683d7e46c0df7ce1ccf6cbbf78e3e6e8c9d0fe95079aca7ad3de738530'
+  AND status <> 'archived';
+INSERT INTO audio_assets (
+  id, language_id, language_variant_id, entity_type, entity_id, source_text_hash,
+  voice_key, provider, provider_model, storage_url, duration_ms, generated_at, checksum, status, metadata
+) VALUES (
+  UUID_TO_BIN('cba41827-da81-5465-bc63-aacc4225225b', 1), @audio_language_id, @audio_variant_id, 'word_form', UUID_TO_BIN('adad3837-7d8e-5ce4-b3ac-417034484b1b', 1), '553cee683d7e46c0df7ce1ccf6cbbf78e3e6e8c9d0fe95079aca7ad3de738530',
+  'tr-tr.lexical.native-clear', 'elevenlabs', 'eleven_multilingual_v2', 'audio/generated/tr-TR/lexical/6f353ee0139e6e2fa4efd7df0408eac5dcee30c43290242e251e746e693f55e2.mp3', 1018, '2026-09-13 17:08:24.238043', '5ba4da80e555d95eaacb6fd012d11acaf25248b9d79de280f50fb22e8dc22b32', 'validated', '{"audio_key":"6f353ee0139e6e2fa4efd7df0408eac5dcee30c43290242e251e746e693f55e2","entity_key":"wf_basic_health_05","voice_id":"FDs1ZX5J4e4f2c2erxtW","voice_name":"Fili - Warm Turkish Female ","voice_labels":{"gender":"female","accent":"istanbul","age":"young","category":"professional","language":"tr","use_case":"conversational","descriptive":"calm"},"output_format":"mp3_44100_192","file_sha256":"5ba4da80e555d95eaacb6fd012d11acaf25248b9d79de280f50fb22e8dc22b32","settings":{"stability":0.72,"similarity_boost":0.88,"style":0.0,"use_speaker_boost":true,"speed":0.92},"relative_path":"audio/generated/tr-TR/lexical/6f353ee0139e6e2fa4efd7df0408eac5dcee30c43290242e251e746e693f55e2.mp3"}'
 ) ON DUPLICATE KEY UPDATE
   provider = VALUES(provider),
   provider_model = VALUES(provider_model),
@@ -3416,6 +7004,58 @@ INSERT INTO audio_assets (
   status = VALUES(status),
   metadata = VALUES(metadata);
 
+-- lx_likes_and_specific_things_02 -> audio/generated/tr-TR/lexical/7c7edcb32bdc5b2809962604c7a6e6c8df778b7bb873408fb6ae50b97099dff6.mp3
+UPDATE audio_assets
+SET status = 'archived'
+WHERE entity_type = 'lexeme'
+  AND entity_id = UUID_TO_BIN('a14edae6-af19-5360-833c-226cf9145946', 1)
+  AND voice_key = 'tr-tr.lexical.native-clear'
+  AND (entity_type NOT IN ('grammar_point','exercise') OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'lx_likes_and_specific_things_02')
+  AND source_text_hash IS NOT NULL
+  AND source_text_hash <> '489da86ea8281010ceb28d9bb7e177e3bd4cc3626391d6f79cb472d4d89a66b1'
+  AND status <> 'archived';
+INSERT INTO audio_assets (
+  id, language_id, language_variant_id, entity_type, entity_id, source_text_hash,
+  voice_key, provider, provider_model, storage_url, duration_ms, generated_at, checksum, status, metadata
+) VALUES (
+  UUID_TO_BIN('8375cd8a-c1f8-5ce1-a317-a64893a77fc3', 1), @audio_language_id, @audio_variant_id, 'lexeme', UUID_TO_BIN('a14edae6-af19-5360-833c-226cf9145946', 1), '489da86ea8281010ceb28d9bb7e177e3bd4cc3626391d6f79cb472d4d89a66b1',
+  'tr-tr.lexical.native-clear', 'elevenlabs', 'eleven_multilingual_v2', 'audio/generated/tr-TR/lexical/7c7edcb32bdc5b2809962604c7a6e6c8df778b7bb873408fb6ae50b97099dff6.mp3', 1018, '2026-09-14 11:32:20.370900', '24541264a6523525d32d600847e01c9effc5a51bc26784fac35f6a6eac2562e1', 'validated', '{"audio_key":"7c7edcb32bdc5b2809962604c7a6e6c8df778b7bb873408fb6ae50b97099dff6","entity_key":"lx_likes_and_specific_things_02","voice_id":"FDs1ZX5J4e4f2c2erxtW","voice_name":"Fili - Warm Turkish Female ","voice_labels":{"gender":"female","accent":"istanbul","age":"young","category":"professional","language":"tr","use_case":"conversational","descriptive":"calm"},"output_format":"mp3_44100_192","file_sha256":"24541264a6523525d32d600847e01c9effc5a51bc26784fac35f6a6eac2562e1","settings":{"stability":0.72,"similarity_boost":0.88,"style":0.0,"use_speaker_boost":true,"speed":0.92},"relative_path":"audio/generated/tr-TR/lexical/7c7edcb32bdc5b2809962604c7a6e6c8df778b7bb873408fb6ae50b97099dff6.mp3"}'
+) ON DUPLICATE KEY UPDATE
+  provider = VALUES(provider),
+  provider_model = VALUES(provider_model),
+  storage_url = VALUES(storage_url),
+  duration_ms = VALUES(duration_ms),
+  generated_at = VALUES(generated_at),
+  checksum = VALUES(checksum),
+  status = VALUES(status),
+  metadata = VALUES(metadata);
+
+-- wf_likes_and_specific_things_02 -> audio/generated/tr-TR/lexical/7c7edcb32bdc5b2809962604c7a6e6c8df778b7bb873408fb6ae50b97099dff6.mp3
+UPDATE audio_assets
+SET status = 'archived'
+WHERE entity_type = 'word_form'
+  AND entity_id = UUID_TO_BIN('7b5651e1-6303-59ad-bad4-374d4261cf80', 1)
+  AND voice_key = 'tr-tr.lexical.native-clear'
+  AND (entity_type NOT IN ('grammar_point','exercise') OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'wf_likes_and_specific_things_02')
+  AND source_text_hash IS NOT NULL
+  AND source_text_hash <> '489da86ea8281010ceb28d9bb7e177e3bd4cc3626391d6f79cb472d4d89a66b1'
+  AND status <> 'archived';
+INSERT INTO audio_assets (
+  id, language_id, language_variant_id, entity_type, entity_id, source_text_hash,
+  voice_key, provider, provider_model, storage_url, duration_ms, generated_at, checksum, status, metadata
+) VALUES (
+  UUID_TO_BIN('fbff27ab-1d52-5316-9030-584de302a37e', 1), @audio_language_id, @audio_variant_id, 'word_form', UUID_TO_BIN('7b5651e1-6303-59ad-bad4-374d4261cf80', 1), '489da86ea8281010ceb28d9bb7e177e3bd4cc3626391d6f79cb472d4d89a66b1',
+  'tr-tr.lexical.native-clear', 'elevenlabs', 'eleven_multilingual_v2', 'audio/generated/tr-TR/lexical/7c7edcb32bdc5b2809962604c7a6e6c8df778b7bb873408fb6ae50b97099dff6.mp3', 1018, '2026-09-14 11:32:20.370900', '24541264a6523525d32d600847e01c9effc5a51bc26784fac35f6a6eac2562e1', 'validated', '{"audio_key":"7c7edcb32bdc5b2809962604c7a6e6c8df778b7bb873408fb6ae50b97099dff6","entity_key":"wf_likes_and_specific_things_02","voice_id":"FDs1ZX5J4e4f2c2erxtW","voice_name":"Fili - Warm Turkish Female ","voice_labels":{"gender":"female","accent":"istanbul","age":"young","category":"professional","language":"tr","use_case":"conversational","descriptive":"calm"},"output_format":"mp3_44100_192","file_sha256":"24541264a6523525d32d600847e01c9effc5a51bc26784fac35f6a6eac2562e1","settings":{"stability":0.72,"similarity_boost":0.88,"style":0.0,"use_speaker_boost":true,"speed":0.92},"relative_path":"audio/generated/tr-TR/lexical/7c7edcb32bdc5b2809962604c7a6e6c8df778b7bb873408fb6ae50b97099dff6.mp3"}'
+) ON DUPLICATE KEY UPDATE
+  provider = VALUES(provider),
+  provider_model = VALUES(provider_model),
+  storage_url = VALUES(storage_url),
+  duration_ms = VALUES(duration_ms),
+  generated_at = VALUES(generated_at),
+  checksum = VALUES(checksum),
+  status = VALUES(status),
+  metadata = VALUES(metadata);
+
 -- lx_a1_first_day_capstone_04 -> audio/generated/tr-TR/lexical/82758c77a77a8aea653ed273f0ccdf30db10198d1df746f69cc9495bb68adfab.mp3
 UPDATE audio_assets
 SET status = 'archived'
@@ -3458,6 +7098,110 @@ INSERT INTO audio_assets (
 ) VALUES (
   UUID_TO_BIN('9871e706-e6e7-58f6-b883-4474bae085a4', 1), @audio_language_id, @audio_variant_id, 'word_form', UUID_TO_BIN('12c7b69c-73ac-548e-aa36-3ca09d685533', 1), '8c10715386ffd0dee2ad63e0635abcecaf01c6067de01ec7452ec6e5c5f51e3c',
   'tr-tr.lexical.native-clear', 'elevenlabs', 'eleven_multilingual_v2', 'audio/generated/tr-TR/lexical/82758c77a77a8aea653ed273f0ccdf30db10198d1df746f69cc9495bb68adfab.mp3', 1097, '2026-09-13 15:55:23.798279', 'c5034baf129b1884d13446e7f685062cf7ddc3f50aa358f167eaca889810f60e', 'validated', '{"audio_key":"82758c77a77a8aea653ed273f0ccdf30db10198d1df746f69cc9495bb68adfab","entity_key":"wf_a1_first_day_capstone_04","voice_id":"FDs1ZX5J4e4f2c2erxtW","voice_name":"Fili - Warm Turkish Female ","voice_labels":{"gender":"female","accent":"istanbul","age":"young","category":"professional","language":"tr","use_case":"conversational","descriptive":"calm"},"output_format":"mp3_44100_192","file_sha256":"c5034baf129b1884d13446e7f685062cf7ddc3f50aa358f167eaca889810f60e","settings":{"stability":0.72,"similarity_boost":0.88,"style":0.0,"use_speaker_boost":true,"speed":0.92},"relative_path":"audio/generated/tr-TR/lexical/82758c77a77a8aea653ed273f0ccdf30db10198d1df746f69cc9495bb68adfab.mp3"}'
+) ON DUPLICATE KEY UPDATE
+  provider = VALUES(provider),
+  provider_model = VALUES(provider_model),
+  storage_url = VALUES(storage_url),
+  duration_ms = VALUES(duration_ms),
+  generated_at = VALUES(generated_at),
+  checksum = VALUES(checksum),
+  status = VALUES(status),
+  metadata = VALUES(metadata);
+
+-- lx_before_and_after_02 -> audio/generated/tr-TR/lexical/82758c77a77a8aea653ed273f0ccdf30db10198d1df746f69cc9495bb68adfab.mp3
+UPDATE audio_assets
+SET status = 'archived'
+WHERE entity_type = 'lexeme'
+  AND entity_id = UUID_TO_BIN('5910ce9c-8c1e-57ef-94f8-7ccec7220be7', 1)
+  AND voice_key = 'tr-tr.lexical.native-clear'
+  AND (entity_type NOT IN ('grammar_point','exercise') OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'lx_before_and_after_02')
+  AND source_text_hash IS NOT NULL
+  AND source_text_hash <> '8c10715386ffd0dee2ad63e0635abcecaf01c6067de01ec7452ec6e5c5f51e3c'
+  AND status <> 'archived';
+INSERT INTO audio_assets (
+  id, language_id, language_variant_id, entity_type, entity_id, source_text_hash,
+  voice_key, provider, provider_model, storage_url, duration_ms, generated_at, checksum, status, metadata
+) VALUES (
+  UUID_TO_BIN('ef49b4d8-307b-5a47-81e1-24fe17964dbe', 1), @audio_language_id, @audio_variant_id, 'lexeme', UUID_TO_BIN('5910ce9c-8c1e-57ef-94f8-7ccec7220be7', 1), '8c10715386ffd0dee2ad63e0635abcecaf01c6067de01ec7452ec6e5c5f51e3c',
+  'tr-tr.lexical.native-clear', 'elevenlabs', 'eleven_multilingual_v2', 'audio/generated/tr-TR/lexical/82758c77a77a8aea653ed273f0ccdf30db10198d1df746f69cc9495bb68adfab.mp3', 1097, '2026-09-13 15:55:23.798279', 'c5034baf129b1884d13446e7f685062cf7ddc3f50aa358f167eaca889810f60e', 'validated', '{"audio_key":"82758c77a77a8aea653ed273f0ccdf30db10198d1df746f69cc9495bb68adfab","entity_key":"lx_before_and_after_02","voice_id":"FDs1ZX5J4e4f2c2erxtW","voice_name":"Fili - Warm Turkish Female ","voice_labels":{"gender":"female","accent":"istanbul","age":"young","category":"professional","language":"tr","use_case":"conversational","descriptive":"calm"},"output_format":"mp3_44100_192","file_sha256":"c5034baf129b1884d13446e7f685062cf7ddc3f50aa358f167eaca889810f60e","settings":{"stability":0.72,"similarity_boost":0.88,"style":0.0,"use_speaker_boost":true,"speed":0.92},"relative_path":"audio/generated/tr-TR/lexical/82758c77a77a8aea653ed273f0ccdf30db10198d1df746f69cc9495bb68adfab.mp3"}'
+) ON DUPLICATE KEY UPDATE
+  provider = VALUES(provider),
+  provider_model = VALUES(provider_model),
+  storage_url = VALUES(storage_url),
+  duration_ms = VALUES(duration_ms),
+  generated_at = VALUES(generated_at),
+  checksum = VALUES(checksum),
+  status = VALUES(status),
+  metadata = VALUES(metadata);
+
+-- wf_before_and_after_02 -> audio/generated/tr-TR/lexical/82758c77a77a8aea653ed273f0ccdf30db10198d1df746f69cc9495bb68adfab.mp3
+UPDATE audio_assets
+SET status = 'archived'
+WHERE entity_type = 'word_form'
+  AND entity_id = UUID_TO_BIN('11c08d18-8453-5c92-af53-c730e8b191df', 1)
+  AND voice_key = 'tr-tr.lexical.native-clear'
+  AND (entity_type NOT IN ('grammar_point','exercise') OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'wf_before_and_after_02')
+  AND source_text_hash IS NOT NULL
+  AND source_text_hash <> '8c10715386ffd0dee2ad63e0635abcecaf01c6067de01ec7452ec6e5c5f51e3c'
+  AND status <> 'archived';
+INSERT INTO audio_assets (
+  id, language_id, language_variant_id, entity_type, entity_id, source_text_hash,
+  voice_key, provider, provider_model, storage_url, duration_ms, generated_at, checksum, status, metadata
+) VALUES (
+  UUID_TO_BIN('ea4edd53-0f63-5ba2-82e2-3263f7854e9a', 1), @audio_language_id, @audio_variant_id, 'word_form', UUID_TO_BIN('11c08d18-8453-5c92-af53-c730e8b191df', 1), '8c10715386ffd0dee2ad63e0635abcecaf01c6067de01ec7452ec6e5c5f51e3c',
+  'tr-tr.lexical.native-clear', 'elevenlabs', 'eleven_multilingual_v2', 'audio/generated/tr-TR/lexical/82758c77a77a8aea653ed273f0ccdf30db10198d1df746f69cc9495bb68adfab.mp3', 1097, '2026-09-13 15:55:23.798279', 'c5034baf129b1884d13446e7f685062cf7ddc3f50aa358f167eaca889810f60e', 'validated', '{"audio_key":"82758c77a77a8aea653ed273f0ccdf30db10198d1df746f69cc9495bb68adfab","entity_key":"wf_before_and_after_02","voice_id":"FDs1ZX5J4e4f2c2erxtW","voice_name":"Fili - Warm Turkish Female ","voice_labels":{"gender":"female","accent":"istanbul","age":"young","category":"professional","language":"tr","use_case":"conversational","descriptive":"calm"},"output_format":"mp3_44100_192","file_sha256":"c5034baf129b1884d13446e7f685062cf7ddc3f50aa358f167eaca889810f60e","settings":{"stability":0.72,"similarity_boost":0.88,"style":0.0,"use_speaker_boost":true,"speed":0.92},"relative_path":"audio/generated/tr-TR/lexical/82758c77a77a8aea653ed273f0ccdf30db10198d1df746f69cc9495bb68adfab.mp3"}'
+) ON DUPLICATE KEY UPDATE
+  provider = VALUES(provider),
+  provider_model = VALUES(provider_model),
+  storage_url = VALUES(storage_url),
+  duration_ms = VALUES(duration_ms),
+  generated_at = VALUES(generated_at),
+  checksum = VALUES(checksum),
+  status = VALUES(status),
+  metadata = VALUES(metadata);
+
+-- lx_likes_and_specific_things_05 -> audio/generated/tr-TR/lexical/835e7341a175f66046f2abcbad1a5fc3c53147c7d737ff9b4d888fd689abba1d.mp3
+UPDATE audio_assets
+SET status = 'archived'
+WHERE entity_type = 'lexeme'
+  AND entity_id = UUID_TO_BIN('1c7d39bf-ea18-53fe-8244-90f261abb65d', 1)
+  AND voice_key = 'tr-tr.lexical.native-clear'
+  AND (entity_type NOT IN ('grammar_point','exercise') OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'lx_likes_and_specific_things_05')
+  AND source_text_hash IS NOT NULL
+  AND source_text_hash <> '2a786b2a59800b6780b0196bb80fb5bc1a4dd35e414d647ee46285962820478e'
+  AND status <> 'archived';
+INSERT INTO audio_assets (
+  id, language_id, language_variant_id, entity_type, entity_id, source_text_hash,
+  voice_key, provider, provider_model, storage_url, duration_ms, generated_at, checksum, status, metadata
+) VALUES (
+  UUID_TO_BIN('ecab0959-ee0a-52a7-8df3-918c31d3f43f', 1), @audio_language_id, @audio_variant_id, 'lexeme', UUID_TO_BIN('1c7d39bf-ea18-53fe-8244-90f261abb65d', 1), '2a786b2a59800b6780b0196bb80fb5bc1a4dd35e414d647ee46285962820478e',
+  'tr-tr.lexical.native-clear', 'elevenlabs', 'eleven_multilingual_v2', 'audio/generated/tr-TR/lexical/835e7341a175f66046f2abcbad1a5fc3c53147c7d737ff9b4d888fd689abba1d.mp3', 1201, '2026-09-14 11:32:20.478913', 'e942e2acd6f1fbfd659242c386497bf49efb8199df68b20fe60c308c6ab4f93b', 'validated', '{"audio_key":"835e7341a175f66046f2abcbad1a5fc3c53147c7d737ff9b4d888fd689abba1d","entity_key":"lx_likes_and_specific_things_05","voice_id":"FDs1ZX5J4e4f2c2erxtW","voice_name":"Fili - Warm Turkish Female ","voice_labels":{"gender":"female","accent":"istanbul","age":"young","category":"professional","language":"tr","use_case":"conversational","descriptive":"calm"},"output_format":"mp3_44100_192","file_sha256":"e942e2acd6f1fbfd659242c386497bf49efb8199df68b20fe60c308c6ab4f93b","settings":{"stability":0.72,"similarity_boost":0.88,"style":0.0,"use_speaker_boost":true,"speed":0.92},"relative_path":"audio/generated/tr-TR/lexical/835e7341a175f66046f2abcbad1a5fc3c53147c7d737ff9b4d888fd689abba1d.mp3"}'
+) ON DUPLICATE KEY UPDATE
+  provider = VALUES(provider),
+  provider_model = VALUES(provider_model),
+  storage_url = VALUES(storage_url),
+  duration_ms = VALUES(duration_ms),
+  generated_at = VALUES(generated_at),
+  checksum = VALUES(checksum),
+  status = VALUES(status),
+  metadata = VALUES(metadata);
+
+-- wf_likes_and_specific_things_05 -> audio/generated/tr-TR/lexical/835e7341a175f66046f2abcbad1a5fc3c53147c7d737ff9b4d888fd689abba1d.mp3
+UPDATE audio_assets
+SET status = 'archived'
+WHERE entity_type = 'word_form'
+  AND entity_id = UUID_TO_BIN('65b81b06-d065-5da8-b0d6-a18a84f277db', 1)
+  AND voice_key = 'tr-tr.lexical.native-clear'
+  AND (entity_type NOT IN ('grammar_point','exercise') OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'wf_likes_and_specific_things_05')
+  AND source_text_hash IS NOT NULL
+  AND source_text_hash <> '2a786b2a59800b6780b0196bb80fb5bc1a4dd35e414d647ee46285962820478e'
+  AND status <> 'archived';
+INSERT INTO audio_assets (
+  id, language_id, language_variant_id, entity_type, entity_id, source_text_hash,
+  voice_key, provider, provider_model, storage_url, duration_ms, generated_at, checksum, status, metadata
+) VALUES (
+  UUID_TO_BIN('05087359-6fb4-59c3-a621-dda58eda7de0', 1), @audio_language_id, @audio_variant_id, 'word_form', UUID_TO_BIN('65b81b06-d065-5da8-b0d6-a18a84f277db', 1), '2a786b2a59800b6780b0196bb80fb5bc1a4dd35e414d647ee46285962820478e',
+  'tr-tr.lexical.native-clear', 'elevenlabs', 'eleven_multilingual_v2', 'audio/generated/tr-TR/lexical/835e7341a175f66046f2abcbad1a5fc3c53147c7d737ff9b4d888fd689abba1d.mp3', 1201, '2026-09-14 11:32:20.478913', 'e942e2acd6f1fbfd659242c386497bf49efb8199df68b20fe60c308c6ab4f93b', 'validated', '{"audio_key":"835e7341a175f66046f2abcbad1a5fc3c53147c7d737ff9b4d888fd689abba1d","entity_key":"wf_likes_and_specific_things_05","voice_id":"FDs1ZX5J4e4f2c2erxtW","voice_name":"Fili - Warm Turkish Female ","voice_labels":{"gender":"female","accent":"istanbul","age":"young","category":"professional","language":"tr","use_case":"conversational","descriptive":"calm"},"output_format":"mp3_44100_192","file_sha256":"e942e2acd6f1fbfd659242c386497bf49efb8199df68b20fe60c308c6ab4f93b","settings":{"stability":0.72,"similarity_boost":0.88,"style":0.0,"use_speaker_boost":true,"speed":0.92},"relative_path":"audio/generated/tr-TR/lexical/835e7341a175f66046f2abcbad1a5fc3c53147c7d737ff9b4d888fd689abba1d.mp3"}'
 ) ON DUPLICATE KEY UPDATE
   provider = VALUES(provider),
   provider_model = VALUES(provider_model),
@@ -3520,6 +7264,58 @@ INSERT INTO audio_assets (
   status = VALUES(status),
   metadata = VALUES(metadata);
 
+-- lx_can_you_help_05 -> audio/generated/tr-TR/lexical/84f208e22e25ae8873424207ce30d25393021d1c75d974116ed5175e34b76cfc.mp3
+UPDATE audio_assets
+SET status = 'archived'
+WHERE entity_type = 'lexeme'
+  AND entity_id = UUID_TO_BIN('0a9a5057-1802-5a52-bcc1-c439b41c5c60', 1)
+  AND voice_key = 'tr-tr.lexical.native-clear'
+  AND (entity_type NOT IN ('grammar_point','exercise') OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'lx_can_you_help_05')
+  AND source_text_hash IS NOT NULL
+  AND source_text_hash <> 'b5054701dec15cb10eea88ff648cbf1da14f62395da73fb153498fe1928cf6c4'
+  AND status <> 'archived';
+INSERT INTO audio_assets (
+  id, language_id, language_variant_id, entity_type, entity_id, source_text_hash,
+  voice_key, provider, provider_model, storage_url, duration_ms, generated_at, checksum, status, metadata
+) VALUES (
+  UUID_TO_BIN('94b06fb2-d113-54eb-b94c-51831667835c', 1), @audio_language_id, @audio_variant_id, 'lexeme', UUID_TO_BIN('0a9a5057-1802-5a52-bcc1-c439b41c5c60', 1), 'b5054701dec15cb10eea88ff648cbf1da14f62395da73fb153498fe1928cf6c4',
+  'tr-tr.lexical.native-clear', 'elevenlabs', 'eleven_multilingual_v2', 'audio/generated/tr-TR/lexical/84f208e22e25ae8873424207ce30d25393021d1c75d974116ed5175e34b76cfc.mp3', 1097, '2026-09-13 17:08:28.177504', '1886a4dc8dc2f767ec61f94b6c79bc8c4dc2d2f3e75549f159813b392b9fe0ba', 'validated', '{"audio_key":"84f208e22e25ae8873424207ce30d25393021d1c75d974116ed5175e34b76cfc","entity_key":"lx_can_you_help_05","voice_id":"FDs1ZX5J4e4f2c2erxtW","voice_name":"Fili - Warm Turkish Female ","voice_labels":{"gender":"female","accent":"istanbul","age":"young","category":"professional","language":"tr","use_case":"conversational","descriptive":"calm"},"output_format":"mp3_44100_192","file_sha256":"1886a4dc8dc2f767ec61f94b6c79bc8c4dc2d2f3e75549f159813b392b9fe0ba","settings":{"stability":0.72,"similarity_boost":0.88,"style":0.0,"use_speaker_boost":true,"speed":0.92},"relative_path":"audio/generated/tr-TR/lexical/84f208e22e25ae8873424207ce30d25393021d1c75d974116ed5175e34b76cfc.mp3"}'
+) ON DUPLICATE KEY UPDATE
+  provider = VALUES(provider),
+  provider_model = VALUES(provider_model),
+  storage_url = VALUES(storage_url),
+  duration_ms = VALUES(duration_ms),
+  generated_at = VALUES(generated_at),
+  checksum = VALUES(checksum),
+  status = VALUES(status),
+  metadata = VALUES(metadata);
+
+-- wf_can_you_help_05 -> audio/generated/tr-TR/lexical/84f208e22e25ae8873424207ce30d25393021d1c75d974116ed5175e34b76cfc.mp3
+UPDATE audio_assets
+SET status = 'archived'
+WHERE entity_type = 'word_form'
+  AND entity_id = UUID_TO_BIN('ed64c51c-0d1c-5e22-845f-18daf1fa434c', 1)
+  AND voice_key = 'tr-tr.lexical.native-clear'
+  AND (entity_type NOT IN ('grammar_point','exercise') OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'wf_can_you_help_05')
+  AND source_text_hash IS NOT NULL
+  AND source_text_hash <> 'b5054701dec15cb10eea88ff648cbf1da14f62395da73fb153498fe1928cf6c4'
+  AND status <> 'archived';
+INSERT INTO audio_assets (
+  id, language_id, language_variant_id, entity_type, entity_id, source_text_hash,
+  voice_key, provider, provider_model, storage_url, duration_ms, generated_at, checksum, status, metadata
+) VALUES (
+  UUID_TO_BIN('4933dc81-1b95-5791-b917-5c35fe161f51', 1), @audio_language_id, @audio_variant_id, 'word_form', UUID_TO_BIN('ed64c51c-0d1c-5e22-845f-18daf1fa434c', 1), 'b5054701dec15cb10eea88ff648cbf1da14f62395da73fb153498fe1928cf6c4',
+  'tr-tr.lexical.native-clear', 'elevenlabs', 'eleven_multilingual_v2', 'audio/generated/tr-TR/lexical/84f208e22e25ae8873424207ce30d25393021d1c75d974116ed5175e34b76cfc.mp3', 1097, '2026-09-13 17:08:28.177504', '1886a4dc8dc2f767ec61f94b6c79bc8c4dc2d2f3e75549f159813b392b9fe0ba', 'validated', '{"audio_key":"84f208e22e25ae8873424207ce30d25393021d1c75d974116ed5175e34b76cfc","entity_key":"wf_can_you_help_05","voice_id":"FDs1ZX5J4e4f2c2erxtW","voice_name":"Fili - Warm Turkish Female ","voice_labels":{"gender":"female","accent":"istanbul","age":"young","category":"professional","language":"tr","use_case":"conversational","descriptive":"calm"},"output_format":"mp3_44100_192","file_sha256":"1886a4dc8dc2f767ec61f94b6c79bc8c4dc2d2f3e75549f159813b392b9fe0ba","settings":{"stability":0.72,"similarity_boost":0.88,"style":0.0,"use_speaker_boost":true,"speed":0.92},"relative_path":"audio/generated/tr-TR/lexical/84f208e22e25ae8873424207ce30d25393021d1c75d974116ed5175e34b76cfc.mp3"}'
+) ON DUPLICATE KEY UPDATE
+  provider = VALUES(provider),
+  provider_model = VALUES(provider_model),
+  storage_url = VALUES(storage_url),
+  duration_ms = VALUES(duration_ms),
+  generated_at = VALUES(generated_at),
+  checksum = VALUES(checksum),
+  status = VALUES(status),
+  metadata = VALUES(metadata);
+
 -- lx_who_i_am_02 -> audio/generated/tr-TR/lexical/87f83ce32df5da015c7515dc19ddb55608351e584084c8bf58c244e7576b05ee.mp3
 UPDATE audio_assets
 SET status = 'archived'
@@ -3562,6 +7358,266 @@ INSERT INTO audio_assets (
 ) VALUES (
   UUID_TO_BIN('6f983d44-0768-58ef-9dff-d27308dee912', 1), @audio_language_id, @audio_variant_id, 'word_form', UUID_TO_BIN('145a9d4f-6c1b-53d7-a4b7-0a9327d229b2', 1), '5c34cd5554d4a72765cc8189ee824eb36c464a768e80c2749272b906846d9700',
   'tr-tr.lexical.native-clear', 'elevenlabs', 'eleven_multilingual_v2', 'audio/generated/tr-TR/lexical/87f83ce32df5da015c7515dc19ddb55608351e584084c8bf58c244e7576b05ee.mp3', 1201, '2026-09-13 15:55:24.868717', 'c995e96a9bd88811f20d960cb38d71ba7fc5a552109d5281704111f9a94d06bd', 'validated', '{"audio_key":"87f83ce32df5da015c7515dc19ddb55608351e584084c8bf58c244e7576b05ee","entity_key":"wf_who_i_am_02","voice_id":"FDs1ZX5J4e4f2c2erxtW","voice_name":"Fili - Warm Turkish Female ","voice_labels":{"gender":"female","accent":"istanbul","age":"young","category":"professional","language":"tr","use_case":"conversational","descriptive":"calm"},"output_format":"mp3_44100_192","file_sha256":"c995e96a9bd88811f20d960cb38d71ba7fc5a552109d5281704111f9a94d06bd","settings":{"stability":0.72,"similarity_boost":0.88,"style":0.0,"use_speaker_boost":true,"speed":0.92},"relative_path":"audio/generated/tr-TR/lexical/87f83ce32df5da015c7515dc19ddb55608351e584084c8bf58c244e7576b05ee.mp3"}'
+) ON DUPLICATE KEY UPDATE
+  provider = VALUES(provider),
+  provider_model = VALUES(provider_model),
+  storage_url = VALUES(storage_url),
+  duration_ms = VALUES(duration_ms),
+  generated_at = VALUES(generated_at),
+  checksum = VALUES(checksum),
+  status = VALUES(status),
+  metadata = VALUES(metadata);
+
+-- lx_from_here_to_there_02 -> audio/generated/tr-TR/lexical/882ae7271f1950facfcf83c6b5c76d420d3d579e592b5155985b00cdd0ac05ad.mp3
+UPDATE audio_assets
+SET status = 'archived'
+WHERE entity_type = 'lexeme'
+  AND entity_id = UUID_TO_BIN('70697b1c-d542-5084-95a2-9acea12f25b6', 1)
+  AND voice_key = 'tr-tr.lexical.native-clear'
+  AND (entity_type NOT IN ('grammar_point','exercise') OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'lx_from_here_to_there_02')
+  AND source_text_hash IS NOT NULL
+  AND source_text_hash <> 'e9c63c8286e8924d4b917779c3bf623c12f32cb8d851cafd02735d3cc26d6b0d'
+  AND status <> 'archived';
+INSERT INTO audio_assets (
+  id, language_id, language_variant_id, entity_type, entity_id, source_text_hash,
+  voice_key, provider, provider_model, storage_url, duration_ms, generated_at, checksum, status, metadata
+) VALUES (
+  UUID_TO_BIN('ea69aac2-eeb1-5513-adeb-c78b851f0e75', 1), @audio_language_id, @audio_variant_id, 'lexeme', UUID_TO_BIN('70697b1c-d542-5084-95a2-9acea12f25b6', 1), 'e9c63c8286e8924d4b917779c3bf623c12f32cb8d851cafd02735d3cc26d6b0d',
+  'tr-tr.lexical.native-clear', 'elevenlabs', 'eleven_multilingual_v2', 'audio/generated/tr-TR/lexical/882ae7271f1950facfcf83c6b5c76d420d3d579e592b5155985b00cdd0ac05ad.mp3', 966, '2026-09-14 11:32:21.315002', '9f7ad1a280e2d927496ee4b862a45a9d957e9cac2ec5d4771f5ecbacee278614', 'validated', '{"audio_key":"882ae7271f1950facfcf83c6b5c76d420d3d579e592b5155985b00cdd0ac05ad","entity_key":"lx_from_here_to_there_02","voice_id":"FDs1ZX5J4e4f2c2erxtW","voice_name":"Fili - Warm Turkish Female ","voice_labels":{"gender":"female","accent":"istanbul","age":"young","category":"professional","language":"tr","use_case":"conversational","descriptive":"calm"},"output_format":"mp3_44100_192","file_sha256":"9f7ad1a280e2d927496ee4b862a45a9d957e9cac2ec5d4771f5ecbacee278614","settings":{"stability":0.72,"similarity_boost":0.88,"style":0.0,"use_speaker_boost":true,"speed":0.92},"relative_path":"audio/generated/tr-TR/lexical/882ae7271f1950facfcf83c6b5c76d420d3d579e592b5155985b00cdd0ac05ad.mp3"}'
+) ON DUPLICATE KEY UPDATE
+  provider = VALUES(provider),
+  provider_model = VALUES(provider_model),
+  storage_url = VALUES(storage_url),
+  duration_ms = VALUES(duration_ms),
+  generated_at = VALUES(generated_at),
+  checksum = VALUES(checksum),
+  status = VALUES(status),
+  metadata = VALUES(metadata);
+
+-- wf_from_here_to_there_02 -> audio/generated/tr-TR/lexical/882ae7271f1950facfcf83c6b5c76d420d3d579e592b5155985b00cdd0ac05ad.mp3
+UPDATE audio_assets
+SET status = 'archived'
+WHERE entity_type = 'word_form'
+  AND entity_id = UUID_TO_BIN('2f302410-50f7-55ea-9aeb-fe5e61601d7a', 1)
+  AND voice_key = 'tr-tr.lexical.native-clear'
+  AND (entity_type NOT IN ('grammar_point','exercise') OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'wf_from_here_to_there_02')
+  AND source_text_hash IS NOT NULL
+  AND source_text_hash <> 'e9c63c8286e8924d4b917779c3bf623c12f32cb8d851cafd02735d3cc26d6b0d'
+  AND status <> 'archived';
+INSERT INTO audio_assets (
+  id, language_id, language_variant_id, entity_type, entity_id, source_text_hash,
+  voice_key, provider, provider_model, storage_url, duration_ms, generated_at, checksum, status, metadata
+) VALUES (
+  UUID_TO_BIN('77775ac7-134c-58c2-bf7d-1486ca0b08b0', 1), @audio_language_id, @audio_variant_id, 'word_form', UUID_TO_BIN('2f302410-50f7-55ea-9aeb-fe5e61601d7a', 1), 'e9c63c8286e8924d4b917779c3bf623c12f32cb8d851cafd02735d3cc26d6b0d',
+  'tr-tr.lexical.native-clear', 'elevenlabs', 'eleven_multilingual_v2', 'audio/generated/tr-TR/lexical/882ae7271f1950facfcf83c6b5c76d420d3d579e592b5155985b00cdd0ac05ad.mp3', 966, '2026-09-14 11:32:21.315002', '9f7ad1a280e2d927496ee4b862a45a9d957e9cac2ec5d4771f5ecbacee278614', 'validated', '{"audio_key":"882ae7271f1950facfcf83c6b5c76d420d3d579e592b5155985b00cdd0ac05ad","entity_key":"wf_from_here_to_there_02","voice_id":"FDs1ZX5J4e4f2c2erxtW","voice_name":"Fili - Warm Turkish Female ","voice_labels":{"gender":"female","accent":"istanbul","age":"young","category":"professional","language":"tr","use_case":"conversational","descriptive":"calm"},"output_format":"mp3_44100_192","file_sha256":"9f7ad1a280e2d927496ee4b862a45a9d957e9cac2ec5d4771f5ecbacee278614","settings":{"stability":0.72,"similarity_boost":0.88,"style":0.0,"use_speaker_boost":true,"speed":0.92},"relative_path":"audio/generated/tr-TR/lexical/882ae7271f1950facfcf83c6b5c76d420d3d579e592b5155985b00cdd0ac05ad.mp3"}'
+) ON DUPLICATE KEY UPDATE
+  provider = VALUES(provider),
+  provider_model = VALUES(provider_model),
+  storage_url = VALUES(storage_url),
+  duration_ms = VALUES(duration_ms),
+  generated_at = VALUES(generated_at),
+  checksum = VALUES(checksum),
+  status = VALUES(status),
+  metadata = VALUES(metadata);
+
+-- lx_near_future_plans_06 -> audio/generated/tr-TR/lexical/887029d1f38526ab51e2ef7337277925bc336ace678aa7fc6805393190658883.mp3
+UPDATE audio_assets
+SET status = 'archived'
+WHERE entity_type = 'lexeme'
+  AND entity_id = UUID_TO_BIN('d926d130-29b4-5eaa-b33a-6a90e2ffdd35', 1)
+  AND voice_key = 'tr-tr.lexical.native-clear'
+  AND (entity_type NOT IN ('grammar_point','exercise') OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'lx_near_future_plans_06')
+  AND source_text_hash IS NOT NULL
+  AND source_text_hash <> '4904879d06869b26fb2942b0b05629f73164f2d273aaa69d8d504c0c5f4121db'
+  AND status <> 'archived';
+INSERT INTO audio_assets (
+  id, language_id, language_variant_id, entity_type, entity_id, source_text_hash,
+  voice_key, provider, provider_model, storage_url, duration_ms, generated_at, checksum, status, metadata
+) VALUES (
+  UUID_TO_BIN('ad13bbb8-e1e8-5df9-a5fe-a2d6f191414c', 1), @audio_language_id, @audio_variant_id, 'lexeme', UUID_TO_BIN('d926d130-29b4-5eaa-b33a-6a90e2ffdd35', 1), '4904879d06869b26fb2942b0b05629f73164f2d273aaa69d8d504c0c5f4121db',
+  'tr-tr.lexical.native-clear', 'elevenlabs', 'eleven_multilingual_v2', 'audio/generated/tr-TR/lexical/887029d1f38526ab51e2ef7337277925bc336ace678aa7fc6805393190658883.mp3', 1071, '2026-09-13 17:08:29.138812', 'fe3f61dddf740c36fed95da73898858a7c52a4d0aa4677dbb564d62eb8ead226', 'validated', '{"audio_key":"887029d1f38526ab51e2ef7337277925bc336ace678aa7fc6805393190658883","entity_key":"lx_near_future_plans_06","voice_id":"FDs1ZX5J4e4f2c2erxtW","voice_name":"Fili - Warm Turkish Female ","voice_labels":{"gender":"female","accent":"istanbul","age":"young","category":"professional","language":"tr","use_case":"conversational","descriptive":"calm"},"output_format":"mp3_44100_192","file_sha256":"fe3f61dddf740c36fed95da73898858a7c52a4d0aa4677dbb564d62eb8ead226","settings":{"stability":0.72,"similarity_boost":0.88,"style":0.0,"use_speaker_boost":true,"speed":0.92},"relative_path":"audio/generated/tr-TR/lexical/887029d1f38526ab51e2ef7337277925bc336ace678aa7fc6805393190658883.mp3"}'
+) ON DUPLICATE KEY UPDATE
+  provider = VALUES(provider),
+  provider_model = VALUES(provider_model),
+  storage_url = VALUES(storage_url),
+  duration_ms = VALUES(duration_ms),
+  generated_at = VALUES(generated_at),
+  checksum = VALUES(checksum),
+  status = VALUES(status),
+  metadata = VALUES(metadata);
+
+-- wf_near_future_plans_06 -> audio/generated/tr-TR/lexical/887029d1f38526ab51e2ef7337277925bc336ace678aa7fc6805393190658883.mp3
+UPDATE audio_assets
+SET status = 'archived'
+WHERE entity_type = 'word_form'
+  AND entity_id = UUID_TO_BIN('9f6a36b3-f967-5249-a9e9-56b3caf16d28', 1)
+  AND voice_key = 'tr-tr.lexical.native-clear'
+  AND (entity_type NOT IN ('grammar_point','exercise') OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'wf_near_future_plans_06')
+  AND source_text_hash IS NOT NULL
+  AND source_text_hash <> '4904879d06869b26fb2942b0b05629f73164f2d273aaa69d8d504c0c5f4121db'
+  AND status <> 'archived';
+INSERT INTO audio_assets (
+  id, language_id, language_variant_id, entity_type, entity_id, source_text_hash,
+  voice_key, provider, provider_model, storage_url, duration_ms, generated_at, checksum, status, metadata
+) VALUES (
+  UUID_TO_BIN('56010fec-c714-5b26-a89c-639bafb9fec8', 1), @audio_language_id, @audio_variant_id, 'word_form', UUID_TO_BIN('9f6a36b3-f967-5249-a9e9-56b3caf16d28', 1), '4904879d06869b26fb2942b0b05629f73164f2d273aaa69d8d504c0c5f4121db',
+  'tr-tr.lexical.native-clear', 'elevenlabs', 'eleven_multilingual_v2', 'audio/generated/tr-TR/lexical/887029d1f38526ab51e2ef7337277925bc336ace678aa7fc6805393190658883.mp3', 1071, '2026-09-13 17:08:29.138812', 'fe3f61dddf740c36fed95da73898858a7c52a4d0aa4677dbb564d62eb8ead226', 'validated', '{"audio_key":"887029d1f38526ab51e2ef7337277925bc336ace678aa7fc6805393190658883","entity_key":"wf_near_future_plans_06","voice_id":"FDs1ZX5J4e4f2c2erxtW","voice_name":"Fili - Warm Turkish Female ","voice_labels":{"gender":"female","accent":"istanbul","age":"young","category":"professional","language":"tr","use_case":"conversational","descriptive":"calm"},"output_format":"mp3_44100_192","file_sha256":"fe3f61dddf740c36fed95da73898858a7c52a4d0aa4677dbb564d62eb8ead226","settings":{"stability":0.72,"similarity_boost":0.88,"style":0.0,"use_speaker_boost":true,"speed":0.92},"relative_path":"audio/generated/tr-TR/lexical/887029d1f38526ab51e2ef7337277925bc336ace678aa7fc6805393190658883.mp3"}'
+) ON DUPLICATE KEY UPDATE
+  provider = VALUES(provider),
+  provider_model = VALUES(provider_model),
+  storage_url = VALUES(storage_url),
+  duration_ms = VALUES(duration_ms),
+  generated_at = VALUES(generated_at),
+  checksum = VALUES(checksum),
+  status = VALUES(status),
+  metadata = VALUES(metadata);
+
+-- lx_weather_and_clothes_04 -> audio/generated/tr-TR/lexical/8929e02f663a01e8b28c04e277f33921fa4e186f30d7671b5df7c297880703bb.mp3
+UPDATE audio_assets
+SET status = 'archived'
+WHERE entity_type = 'lexeme'
+  AND entity_id = UUID_TO_BIN('b412887a-a69d-56fb-b015-3c3f3317ef36', 1)
+  AND voice_key = 'tr-tr.lexical.native-clear'
+  AND (entity_type NOT IN ('grammar_point','exercise') OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'lx_weather_and_clothes_04')
+  AND source_text_hash IS NOT NULL
+  AND source_text_hash <> 'cf33187ccf7d9dd7f50dadc713eb71cc1e811c9b19922ca9f44b57ece59c60d2'
+  AND status <> 'archived';
+INSERT INTO audio_assets (
+  id, language_id, language_variant_id, entity_type, entity_id, source_text_hash,
+  voice_key, provider, provider_model, storage_url, duration_ms, generated_at, checksum, status, metadata
+) VALUES (
+  UUID_TO_BIN('508bb900-a7e3-544f-9e1a-0e3fded8866a', 1), @audio_language_id, @audio_variant_id, 'lexeme', UUID_TO_BIN('b412887a-a69d-56fb-b015-3c3f3317ef36', 1), 'cf33187ccf7d9dd7f50dadc713eb71cc1e811c9b19922ca9f44b57ece59c60d2',
+  'tr-tr.lexical.native-clear', 'elevenlabs', 'eleven_multilingual_v2', 'audio/generated/tr-TR/lexical/8929e02f663a01e8b28c04e277f33921fa4e186f30d7671b5df7c297880703bb.mp3', 1071, '2026-09-14 11:32:21.454693', 'a930dcb32d1ff5fbecdfe5f4781d380f6e5f2867342230870e6afe8b7c4a8669', 'validated', '{"audio_key":"8929e02f663a01e8b28c04e277f33921fa4e186f30d7671b5df7c297880703bb","entity_key":"lx_weather_and_clothes_04","voice_id":"FDs1ZX5J4e4f2c2erxtW","voice_name":"Fili - Warm Turkish Female ","voice_labels":{"gender":"female","accent":"istanbul","age":"young","category":"professional","language":"tr","use_case":"conversational","descriptive":"calm"},"output_format":"mp3_44100_192","file_sha256":"a930dcb32d1ff5fbecdfe5f4781d380f6e5f2867342230870e6afe8b7c4a8669","settings":{"stability":0.72,"similarity_boost":0.88,"style":0.0,"use_speaker_boost":true,"speed":0.92},"relative_path":"audio/generated/tr-TR/lexical/8929e02f663a01e8b28c04e277f33921fa4e186f30d7671b5df7c297880703bb.mp3"}'
+) ON DUPLICATE KEY UPDATE
+  provider = VALUES(provider),
+  provider_model = VALUES(provider_model),
+  storage_url = VALUES(storage_url),
+  duration_ms = VALUES(duration_ms),
+  generated_at = VALUES(generated_at),
+  checksum = VALUES(checksum),
+  status = VALUES(status),
+  metadata = VALUES(metadata);
+
+-- wf_weather_and_clothes_04 -> audio/generated/tr-TR/lexical/8929e02f663a01e8b28c04e277f33921fa4e186f30d7671b5df7c297880703bb.mp3
+UPDATE audio_assets
+SET status = 'archived'
+WHERE entity_type = 'word_form'
+  AND entity_id = UUID_TO_BIN('f7ac21eb-4d8b-53b4-ae4a-483f513961e7', 1)
+  AND voice_key = 'tr-tr.lexical.native-clear'
+  AND (entity_type NOT IN ('grammar_point','exercise') OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'wf_weather_and_clothes_04')
+  AND source_text_hash IS NOT NULL
+  AND source_text_hash <> 'cf33187ccf7d9dd7f50dadc713eb71cc1e811c9b19922ca9f44b57ece59c60d2'
+  AND status <> 'archived';
+INSERT INTO audio_assets (
+  id, language_id, language_variant_id, entity_type, entity_id, source_text_hash,
+  voice_key, provider, provider_model, storage_url, duration_ms, generated_at, checksum, status, metadata
+) VALUES (
+  UUID_TO_BIN('1bbe8960-7499-5caf-bd0c-4997bb94f0a8', 1), @audio_language_id, @audio_variant_id, 'word_form', UUID_TO_BIN('f7ac21eb-4d8b-53b4-ae4a-483f513961e7', 1), 'cf33187ccf7d9dd7f50dadc713eb71cc1e811c9b19922ca9f44b57ece59c60d2',
+  'tr-tr.lexical.native-clear', 'elevenlabs', 'eleven_multilingual_v2', 'audio/generated/tr-TR/lexical/8929e02f663a01e8b28c04e277f33921fa4e186f30d7671b5df7c297880703bb.mp3', 1071, '2026-09-14 11:32:21.454693', 'a930dcb32d1ff5fbecdfe5f4781d380f6e5f2867342230870e6afe8b7c4a8669', 'validated', '{"audio_key":"8929e02f663a01e8b28c04e277f33921fa4e186f30d7671b5df7c297880703bb","entity_key":"wf_weather_and_clothes_04","voice_id":"FDs1ZX5J4e4f2c2erxtW","voice_name":"Fili - Warm Turkish Female ","voice_labels":{"gender":"female","accent":"istanbul","age":"young","category":"professional","language":"tr","use_case":"conversational","descriptive":"calm"},"output_format":"mp3_44100_192","file_sha256":"a930dcb32d1ff5fbecdfe5f4781d380f6e5f2867342230870e6afe8b7c4a8669","settings":{"stability":0.72,"similarity_boost":0.88,"style":0.0,"use_speaker_boost":true,"speed":0.92},"relative_path":"audio/generated/tr-TR/lexical/8929e02f663a01e8b28c04e277f33921fa4e186f30d7671b5df7c297880703bb.mp3"}'
+) ON DUPLICATE KEY UPDATE
+  provider = VALUES(provider),
+  provider_model = VALUES(provider_model),
+  storage_url = VALUES(storage_url),
+  duration_ms = VALUES(duration_ms),
+  generated_at = VALUES(generated_at),
+  checksum = VALUES(checksum),
+  status = VALUES(status),
+  metadata = VALUES(metadata);
+
+-- lx_a1_everyday_capstone_04 -> audio/generated/tr-TR/lexical/89f311410f4aefd221b4ffa871b39a3111a35181c56a15f75f4c459595a9ebcb.mp3
+UPDATE audio_assets
+SET status = 'archived'
+WHERE entity_type = 'lexeme'
+  AND entity_id = UUID_TO_BIN('3c44a701-d36c-5c40-b7db-ec63cda04dab', 1)
+  AND voice_key = 'tr-tr.lexical.native-clear'
+  AND (entity_type NOT IN ('grammar_point','exercise') OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'lx_a1_everyday_capstone_04')
+  AND source_text_hash IS NOT NULL
+  AND source_text_hash <> '6350a7818fae681581d1a5ab3b3458cf184fe687d148b64b5930f4a0186c98d5'
+  AND status <> 'archived';
+INSERT INTO audio_assets (
+  id, language_id, language_variant_id, entity_type, entity_id, source_text_hash,
+  voice_key, provider, provider_model, storage_url, duration_ms, generated_at, checksum, status, metadata
+) VALUES (
+  UUID_TO_BIN('ccd7ba24-7539-5141-8b98-429f9e45ff73', 1), @audio_language_id, @audio_variant_id, 'lexeme', UUID_TO_BIN('3c44a701-d36c-5c40-b7db-ec63cda04dab', 1), '6350a7818fae681581d1a5ab3b3458cf184fe687d148b64b5930f4a0186c98d5',
+  'tr-tr.lexical.native-clear', 'elevenlabs', 'eleven_multilingual_v2', 'audio/generated/tr-TR/lexical/89f311410f4aefd221b4ffa871b39a3111a35181c56a15f75f4c459595a9ebcb.mp3', 1097, '2026-09-14 11:32:22.349936', '0157acaef8e8389f019770f7330fd2a9f7c513419d6184ef90b511f096447021', 'validated', '{"audio_key":"89f311410f4aefd221b4ffa871b39a3111a35181c56a15f75f4c459595a9ebcb","entity_key":"lx_a1_everyday_capstone_04","voice_id":"FDs1ZX5J4e4f2c2erxtW","voice_name":"Fili - Warm Turkish Female ","voice_labels":{"gender":"female","accent":"istanbul","age":"young","category":"professional","language":"tr","use_case":"conversational","descriptive":"calm"},"output_format":"mp3_44100_192","file_sha256":"0157acaef8e8389f019770f7330fd2a9f7c513419d6184ef90b511f096447021","settings":{"stability":0.72,"similarity_boost":0.88,"style":0.0,"use_speaker_boost":true,"speed":0.92},"relative_path":"audio/generated/tr-TR/lexical/89f311410f4aefd221b4ffa871b39a3111a35181c56a15f75f4c459595a9ebcb.mp3"}'
+) ON DUPLICATE KEY UPDATE
+  provider = VALUES(provider),
+  provider_model = VALUES(provider_model),
+  storage_url = VALUES(storage_url),
+  duration_ms = VALUES(duration_ms),
+  generated_at = VALUES(generated_at),
+  checksum = VALUES(checksum),
+  status = VALUES(status),
+  metadata = VALUES(metadata);
+
+-- wf_a1_everyday_capstone_04 -> audio/generated/tr-TR/lexical/89f311410f4aefd221b4ffa871b39a3111a35181c56a15f75f4c459595a9ebcb.mp3
+UPDATE audio_assets
+SET status = 'archived'
+WHERE entity_type = 'word_form'
+  AND entity_id = UUID_TO_BIN('76eb5159-b4d9-5afd-b992-201b3f197c44', 1)
+  AND voice_key = 'tr-tr.lexical.native-clear'
+  AND (entity_type NOT IN ('grammar_point','exercise') OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'wf_a1_everyday_capstone_04')
+  AND source_text_hash IS NOT NULL
+  AND source_text_hash <> '6350a7818fae681581d1a5ab3b3458cf184fe687d148b64b5930f4a0186c98d5'
+  AND status <> 'archived';
+INSERT INTO audio_assets (
+  id, language_id, language_variant_id, entity_type, entity_id, source_text_hash,
+  voice_key, provider, provider_model, storage_url, duration_ms, generated_at, checksum, status, metadata
+) VALUES (
+  UUID_TO_BIN('df3eda08-b5aa-57d9-a079-45be93d01a4a', 1), @audio_language_id, @audio_variant_id, 'word_form', UUID_TO_BIN('76eb5159-b4d9-5afd-b992-201b3f197c44', 1), '6350a7818fae681581d1a5ab3b3458cf184fe687d148b64b5930f4a0186c98d5',
+  'tr-tr.lexical.native-clear', 'elevenlabs', 'eleven_multilingual_v2', 'audio/generated/tr-TR/lexical/89f311410f4aefd221b4ffa871b39a3111a35181c56a15f75f4c459595a9ebcb.mp3', 1097, '2026-09-14 11:32:22.349936', '0157acaef8e8389f019770f7330fd2a9f7c513419d6184ef90b511f096447021', 'validated', '{"audio_key":"89f311410f4aefd221b4ffa871b39a3111a35181c56a15f75f4c459595a9ebcb","entity_key":"wf_a1_everyday_capstone_04","voice_id":"FDs1ZX5J4e4f2c2erxtW","voice_name":"Fili - Warm Turkish Female ","voice_labels":{"gender":"female","accent":"istanbul","age":"young","category":"professional","language":"tr","use_case":"conversational","descriptive":"calm"},"output_format":"mp3_44100_192","file_sha256":"0157acaef8e8389f019770f7330fd2a9f7c513419d6184ef90b511f096447021","settings":{"stability":0.72,"similarity_boost":0.88,"style":0.0,"use_speaker_boost":true,"speed":0.92},"relative_path":"audio/generated/tr-TR/lexical/89f311410f4aefd221b4ffa871b39a3111a35181c56a15f75f4c459595a9ebcb.mp3"}'
+) ON DUPLICATE KEY UPDATE
+  provider = VALUES(provider),
+  provider_model = VALUES(provider_model),
+  storage_url = VALUES(storage_url),
+  duration_ms = VALUES(duration_ms),
+  generated_at = VALUES(generated_at),
+  checksum = VALUES(checksum),
+  status = VALUES(status),
+  metadata = VALUES(metadata);
+
+-- lx_weather_and_clothes_01 -> audio/generated/tr-TR/lexical/8bfaa7319c3e4e177d364eada58e3f430297455ff4d405ebe6147594c50f78fa.mp3
+UPDATE audio_assets
+SET status = 'archived'
+WHERE entity_type = 'lexeme'
+  AND entity_id = UUID_TO_BIN('1f6b7b8e-915e-5ecb-8b67-93ecd0ed27ea', 1)
+  AND voice_key = 'tr-tr.lexical.native-clear'
+  AND (entity_type NOT IN ('grammar_point','exercise') OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'lx_weather_and_clothes_01')
+  AND source_text_hash IS NOT NULL
+  AND source_text_hash <> '3e5c19126465b084e551d1a68edba16faf7a052cdbae536c8cf1f49b6d83e25e'
+  AND status <> 'archived';
+INSERT INTO audio_assets (
+  id, language_id, language_variant_id, entity_type, entity_id, source_text_hash,
+  voice_key, provider, provider_model, storage_url, duration_ms, generated_at, checksum, status, metadata
+) VALUES (
+  UUID_TO_BIN('7ce046d8-331a-5c84-bd2e-984acacbc933', 1), @audio_language_id, @audio_variant_id, 'lexeme', UUID_TO_BIN('1f6b7b8e-915e-5ecb-8b67-93ecd0ed27ea', 1), '3e5c19126465b084e551d1a68edba16faf7a052cdbae536c8cf1f49b6d83e25e',
+  'tr-tr.lexical.native-clear', 'elevenlabs', 'eleven_multilingual_v2', 'audio/generated/tr-TR/lexical/8bfaa7319c3e4e177d364eada58e3f430297455ff4d405ebe6147594c50f78fa.mp3', 1201, '2026-09-14 11:32:22.448954', '71b62487370c27701805d41c1f8846f82fc1a9c0ec35955bd2e452c504da9c5d', 'validated', '{"audio_key":"8bfaa7319c3e4e177d364eada58e3f430297455ff4d405ebe6147594c50f78fa","entity_key":"lx_weather_and_clothes_01","voice_id":"FDs1ZX5J4e4f2c2erxtW","voice_name":"Fili - Warm Turkish Female ","voice_labels":{"gender":"female","accent":"istanbul","age":"young","category":"professional","language":"tr","use_case":"conversational","descriptive":"calm"},"output_format":"mp3_44100_192","file_sha256":"71b62487370c27701805d41c1f8846f82fc1a9c0ec35955bd2e452c504da9c5d","settings":{"stability":0.72,"similarity_boost":0.88,"style":0.0,"use_speaker_boost":true,"speed":0.92},"relative_path":"audio/generated/tr-TR/lexical/8bfaa7319c3e4e177d364eada58e3f430297455ff4d405ebe6147594c50f78fa.mp3"}'
+) ON DUPLICATE KEY UPDATE
+  provider = VALUES(provider),
+  provider_model = VALUES(provider_model),
+  storage_url = VALUES(storage_url),
+  duration_ms = VALUES(duration_ms),
+  generated_at = VALUES(generated_at),
+  checksum = VALUES(checksum),
+  status = VALUES(status),
+  metadata = VALUES(metadata);
+
+-- wf_weather_and_clothes_01 -> audio/generated/tr-TR/lexical/8bfaa7319c3e4e177d364eada58e3f430297455ff4d405ebe6147594c50f78fa.mp3
+UPDATE audio_assets
+SET status = 'archived'
+WHERE entity_type = 'word_form'
+  AND entity_id = UUID_TO_BIN('f7841c27-3a02-549b-b7c0-2f4ad8790117', 1)
+  AND voice_key = 'tr-tr.lexical.native-clear'
+  AND (entity_type NOT IN ('grammar_point','exercise') OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'wf_weather_and_clothes_01')
+  AND source_text_hash IS NOT NULL
+  AND source_text_hash <> '3e5c19126465b084e551d1a68edba16faf7a052cdbae536c8cf1f49b6d83e25e'
+  AND status <> 'archived';
+INSERT INTO audio_assets (
+  id, language_id, language_variant_id, entity_type, entity_id, source_text_hash,
+  voice_key, provider, provider_model, storage_url, duration_ms, generated_at, checksum, status, metadata
+) VALUES (
+  UUID_TO_BIN('0950b7c2-aecc-5e44-bf7f-b6e77f7c741c', 1), @audio_language_id, @audio_variant_id, 'word_form', UUID_TO_BIN('f7841c27-3a02-549b-b7c0-2f4ad8790117', 1), '3e5c19126465b084e551d1a68edba16faf7a052cdbae536c8cf1f49b6d83e25e',
+  'tr-tr.lexical.native-clear', 'elevenlabs', 'eleven_multilingual_v2', 'audio/generated/tr-TR/lexical/8bfaa7319c3e4e177d364eada58e3f430297455ff4d405ebe6147594c50f78fa.mp3', 1201, '2026-09-14 11:32:22.448954', '71b62487370c27701805d41c1f8846f82fc1a9c0ec35955bd2e452c504da9c5d', 'validated', '{"audio_key":"8bfaa7319c3e4e177d364eada58e3f430297455ff4d405ebe6147594c50f78fa","entity_key":"wf_weather_and_clothes_01","voice_id":"FDs1ZX5J4e4f2c2erxtW","voice_name":"Fili - Warm Turkish Female ","voice_labels":{"gender":"female","accent":"istanbul","age":"young","category":"professional","language":"tr","use_case":"conversational","descriptive":"calm"},"output_format":"mp3_44100_192","file_sha256":"71b62487370c27701805d41c1f8846f82fc1a9c0ec35955bd2e452c504da9c5d","settings":{"stability":0.72,"similarity_boost":0.88,"style":0.0,"use_speaker_boost":true,"speed":0.92},"relative_path":"audio/generated/tr-TR/lexical/8bfaa7319c3e4e177d364eada58e3f430297455ff4d405ebe6147594c50f78fa.mp3"}'
 ) ON DUPLICATE KEY UPDATE
   provider = VALUES(provider),
   provider_model = VALUES(provider_model),
@@ -3624,6 +7680,110 @@ INSERT INTO audio_assets (
   status = VALUES(status),
   metadata = VALUES(metadata);
 
+-- lx_can_you_help_06 -> audio/generated/tr-TR/lexical/8d897382e7b6158d2fc9ce4a263fce21168b70caec69e4b41534d2c7a0ecdc89.mp3
+UPDATE audio_assets
+SET status = 'archived'
+WHERE entity_type = 'lexeme'
+  AND entity_id = UUID_TO_BIN('b5e9c11e-fb92-57e3-bf47-06d221511386', 1)
+  AND voice_key = 'tr-tr.lexical.native-clear'
+  AND (entity_type NOT IN ('grammar_point','exercise') OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'lx_can_you_help_06')
+  AND source_text_hash IS NOT NULL
+  AND source_text_hash <> '19093b4d3eeeaaab1386f088cf4075cdf0b27886179ae4800b01e6f4ee2277e6'
+  AND status <> 'archived';
+INSERT INTO audio_assets (
+  id, language_id, language_variant_id, entity_type, entity_id, source_text_hash,
+  voice_key, provider, provider_model, storage_url, duration_ms, generated_at, checksum, status, metadata
+) VALUES (
+  UUID_TO_BIN('214cc5d6-5a03-5d8e-bc87-76d8372bbb15', 1), @audio_language_id, @audio_variant_id, 'lexeme', UUID_TO_BIN('b5e9c11e-fb92-57e3-bf47-06d221511386', 1), '19093b4d3eeeaaab1386f088cf4075cdf0b27886179ae4800b01e6f4ee2277e6',
+  'tr-tr.lexical.native-clear', 'elevenlabs', 'eleven_multilingual_v2', 'audio/generated/tr-TR/lexical/8d897382e7b6158d2fc9ce4a263fce21168b70caec69e4b41534d2c7a0ecdc89.mp3', 1071, '2026-09-13 15:17:28.896862', '34ccbf5ae36ef8e44a350b6c8742b05260b6913d09de4cb4a728fc32a5328759', 'validated', '{"audio_key":"8d897382e7b6158d2fc9ce4a263fce21168b70caec69e4b41534d2c7a0ecdc89","entity_key":"lx_can_you_help_06","voice_id":"FDs1ZX5J4e4f2c2erxtW","voice_name":"Fili - Warm Turkish Female ","voice_labels":{"gender":"female","accent":"istanbul","age":"young","category":"professional","language":"tr","use_case":"conversational","descriptive":"calm"},"output_format":"mp3_44100_192","file_sha256":"34ccbf5ae36ef8e44a350b6c8742b05260b6913d09de4cb4a728fc32a5328759","settings":{"stability":0.72,"similarity_boost":0.88,"style":0.0,"use_speaker_boost":true,"speed":0.92},"relative_path":"audio/generated/tr-TR/lexical/8d897382e7b6158d2fc9ce4a263fce21168b70caec69e4b41534d2c7a0ecdc89.mp3"}'
+) ON DUPLICATE KEY UPDATE
+  provider = VALUES(provider),
+  provider_model = VALUES(provider_model),
+  storage_url = VALUES(storage_url),
+  duration_ms = VALUES(duration_ms),
+  generated_at = VALUES(generated_at),
+  checksum = VALUES(checksum),
+  status = VALUES(status),
+  metadata = VALUES(metadata);
+
+-- wf_can_you_help_06 -> audio/generated/tr-TR/lexical/8d897382e7b6158d2fc9ce4a263fce21168b70caec69e4b41534d2c7a0ecdc89.mp3
+UPDATE audio_assets
+SET status = 'archived'
+WHERE entity_type = 'word_form'
+  AND entity_id = UUID_TO_BIN('63172fb9-e2a5-5672-a108-38af2172e273', 1)
+  AND voice_key = 'tr-tr.lexical.native-clear'
+  AND (entity_type NOT IN ('grammar_point','exercise') OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'wf_can_you_help_06')
+  AND source_text_hash IS NOT NULL
+  AND source_text_hash <> '19093b4d3eeeaaab1386f088cf4075cdf0b27886179ae4800b01e6f4ee2277e6'
+  AND status <> 'archived';
+INSERT INTO audio_assets (
+  id, language_id, language_variant_id, entity_type, entity_id, source_text_hash,
+  voice_key, provider, provider_model, storage_url, duration_ms, generated_at, checksum, status, metadata
+) VALUES (
+  UUID_TO_BIN('1b24e0eb-46e1-531e-86da-f5ab1febc18d', 1), @audio_language_id, @audio_variant_id, 'word_form', UUID_TO_BIN('63172fb9-e2a5-5672-a108-38af2172e273', 1), '19093b4d3eeeaaab1386f088cf4075cdf0b27886179ae4800b01e6f4ee2277e6',
+  'tr-tr.lexical.native-clear', 'elevenlabs', 'eleven_multilingual_v2', 'audio/generated/tr-TR/lexical/8d897382e7b6158d2fc9ce4a263fce21168b70caec69e4b41534d2c7a0ecdc89.mp3', 1071, '2026-09-13 15:17:28.896862', '34ccbf5ae36ef8e44a350b6c8742b05260b6913d09de4cb4a728fc32a5328759', 'validated', '{"audio_key":"8d897382e7b6158d2fc9ce4a263fce21168b70caec69e4b41534d2c7a0ecdc89","entity_key":"wf_can_you_help_06","voice_id":"FDs1ZX5J4e4f2c2erxtW","voice_name":"Fili - Warm Turkish Female ","voice_labels":{"gender":"female","accent":"istanbul","age":"young","category":"professional","language":"tr","use_case":"conversational","descriptive":"calm"},"output_format":"mp3_44100_192","file_sha256":"34ccbf5ae36ef8e44a350b6c8742b05260b6913d09de4cb4a728fc32a5328759","settings":{"stability":0.72,"similarity_boost":0.88,"style":0.0,"use_speaker_boost":true,"speed":0.92},"relative_path":"audio/generated/tr-TR/lexical/8d897382e7b6158d2fc9ce4a263fce21168b70caec69e4b41534d2c7a0ecdc89.mp3"}'
+) ON DUPLICATE KEY UPDATE
+  provider = VALUES(provider),
+  provider_model = VALUES(provider_model),
+  storage_url = VALUES(storage_url),
+  duration_ms = VALUES(duration_ms),
+  generated_at = VALUES(generated_at),
+  checksum = VALUES(checksum),
+  status = VALUES(status),
+  metadata = VALUES(metadata);
+
+-- lx_likes_and_specific_things_01 -> audio/generated/tr-TR/lexical/8fab46827601befd8be39bbd5bb632316543b8a3a079dd918f1b60dfc9addcc7.mp3
+UPDATE audio_assets
+SET status = 'archived'
+WHERE entity_type = 'lexeme'
+  AND entity_id = UUID_TO_BIN('28f768b3-e271-53b8-a303-f7cb0c9c888b', 1)
+  AND voice_key = 'tr-tr.lexical.native-clear'
+  AND (entity_type NOT IN ('grammar_point','exercise') OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'lx_likes_and_specific_things_01')
+  AND source_text_hash IS NOT NULL
+  AND source_text_hash <> 'd0607f7ad2628b2af9158dfba06ce87166e66b15bf68f8f358f9aa27ccb7c321'
+  AND status <> 'archived';
+INSERT INTO audio_assets (
+  id, language_id, language_variant_id, entity_type, entity_id, source_text_hash,
+  voice_key, provider, provider_model, storage_url, duration_ms, generated_at, checksum, status, metadata
+) VALUES (
+  UUID_TO_BIN('c6dfc197-cc2d-5e9c-9f53-d41b1d0b87b7', 1), @audio_language_id, @audio_variant_id, 'lexeme', UUID_TO_BIN('28f768b3-e271-53b8-a303-f7cb0c9c888b', 1), 'd0607f7ad2628b2af9158dfba06ce87166e66b15bf68f8f358f9aa27ccb7c321',
+  'tr-tr.lexical.native-clear', 'elevenlabs', 'eleven_multilingual_v2', 'audio/generated/tr-TR/lexical/8fab46827601befd8be39bbd5bb632316543b8a3a079dd918f1b60dfc9addcc7.mp3', 1018, '2026-09-14 11:32:23.277884', 'ae21b58fd39f7bd57f1a0d6260c36d336c1099f78451970df2fc5e937c17682d', 'validated', '{"audio_key":"8fab46827601befd8be39bbd5bb632316543b8a3a079dd918f1b60dfc9addcc7","entity_key":"lx_likes_and_specific_things_01","voice_id":"FDs1ZX5J4e4f2c2erxtW","voice_name":"Fili - Warm Turkish Female ","voice_labels":{"gender":"female","accent":"istanbul","age":"young","category":"professional","language":"tr","use_case":"conversational","descriptive":"calm"},"output_format":"mp3_44100_192","file_sha256":"ae21b58fd39f7bd57f1a0d6260c36d336c1099f78451970df2fc5e937c17682d","settings":{"stability":0.72,"similarity_boost":0.88,"style":0.0,"use_speaker_boost":true,"speed":0.92},"relative_path":"audio/generated/tr-TR/lexical/8fab46827601befd8be39bbd5bb632316543b8a3a079dd918f1b60dfc9addcc7.mp3"}'
+) ON DUPLICATE KEY UPDATE
+  provider = VALUES(provider),
+  provider_model = VALUES(provider_model),
+  storage_url = VALUES(storage_url),
+  duration_ms = VALUES(duration_ms),
+  generated_at = VALUES(generated_at),
+  checksum = VALUES(checksum),
+  status = VALUES(status),
+  metadata = VALUES(metadata);
+
+-- wf_likes_and_specific_things_01 -> audio/generated/tr-TR/lexical/8fab46827601befd8be39bbd5bb632316543b8a3a079dd918f1b60dfc9addcc7.mp3
+UPDATE audio_assets
+SET status = 'archived'
+WHERE entity_type = 'word_form'
+  AND entity_id = UUID_TO_BIN('f30266b7-8f8b-52d5-ac4d-4302a4c6a389', 1)
+  AND voice_key = 'tr-tr.lexical.native-clear'
+  AND (entity_type NOT IN ('grammar_point','exercise') OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'wf_likes_and_specific_things_01')
+  AND source_text_hash IS NOT NULL
+  AND source_text_hash <> 'd0607f7ad2628b2af9158dfba06ce87166e66b15bf68f8f358f9aa27ccb7c321'
+  AND status <> 'archived';
+INSERT INTO audio_assets (
+  id, language_id, language_variant_id, entity_type, entity_id, source_text_hash,
+  voice_key, provider, provider_model, storage_url, duration_ms, generated_at, checksum, status, metadata
+) VALUES (
+  UUID_TO_BIN('3fc2c379-7bcb-545f-8600-5d3814cb4ca4', 1), @audio_language_id, @audio_variant_id, 'word_form', UUID_TO_BIN('f30266b7-8f8b-52d5-ac4d-4302a4c6a389', 1), 'd0607f7ad2628b2af9158dfba06ce87166e66b15bf68f8f358f9aa27ccb7c321',
+  'tr-tr.lexical.native-clear', 'elevenlabs', 'eleven_multilingual_v2', 'audio/generated/tr-TR/lexical/8fab46827601befd8be39bbd5bb632316543b8a3a079dd918f1b60dfc9addcc7.mp3', 1018, '2026-09-14 11:32:23.277884', 'ae21b58fd39f7bd57f1a0d6260c36d336c1099f78451970df2fc5e937c17682d', 'validated', '{"audio_key":"8fab46827601befd8be39bbd5bb632316543b8a3a079dd918f1b60dfc9addcc7","entity_key":"wf_likes_and_specific_things_01","voice_id":"FDs1ZX5J4e4f2c2erxtW","voice_name":"Fili - Warm Turkish Female ","voice_labels":{"gender":"female","accent":"istanbul","age":"young","category":"professional","language":"tr","use_case":"conversational","descriptive":"calm"},"output_format":"mp3_44100_192","file_sha256":"ae21b58fd39f7bd57f1a0d6260c36d336c1099f78451970df2fc5e937c17682d","settings":{"stability":0.72,"similarity_boost":0.88,"style":0.0,"use_speaker_boost":true,"speed":0.92},"relative_path":"audio/generated/tr-TR/lexical/8fab46827601befd8be39bbd5bb632316543b8a3a079dd918f1b60dfc9addcc7.mp3"}'
+) ON DUPLICATE KEY UPDATE
+  provider = VALUES(provider),
+  provider_model = VALUES(provider_model),
+  storage_url = VALUES(storage_url),
+  duration_ms = VALUES(duration_ms),
+  generated_at = VALUES(generated_at),
+  checksum = VALUES(checksum),
+  status = VALUES(status),
+  metadata = VALUES(metadata);
+
 -- lx_this_and_these_05 -> audio/generated/tr-TR/lexical/918fb11befa2f48aca8fb9eb9588f9a8ff733cb5c7581b2458664eac3a99bbf1.mp3
 UPDATE audio_assets
 SET status = 'archived'
@@ -3666,6 +7826,110 @@ INSERT INTO audio_assets (
 ) VALUES (
   UUID_TO_BIN('955d3773-b769-5b3d-983b-3c28db4c6766', 1), @audio_language_id, @audio_variant_id, 'word_form', UUID_TO_BIN('322f399f-daaf-59df-a142-440e7321d381', 1), 'd6e59015d008c12131533452d6ba5885aca9d1f087659529653dc8778ba84865',
   'tr-tr.lexical.native-clear', 'elevenlabs', 'eleven_multilingual_v2', 'audio/generated/tr-TR/lexical/918fb11befa2f48aca8fb9eb9588f9a8ff733cb5c7581b2458664eac3a99bbf1.mp3', 1201, '2026-09-13 15:55:25.894129', 'e702b7983196eca85c8d01786fec3ffaba1f32383d027f44ac5096b3e3d681b3', 'validated', '{"audio_key":"918fb11befa2f48aca8fb9eb9588f9a8ff733cb5c7581b2458664eac3a99bbf1","entity_key":"wf_this_and_these_05","voice_id":"FDs1ZX5J4e4f2c2erxtW","voice_name":"Fili - Warm Turkish Female ","voice_labels":{"gender":"female","accent":"istanbul","age":"young","category":"professional","language":"tr","use_case":"conversational","descriptive":"calm"},"output_format":"mp3_44100_192","file_sha256":"e702b7983196eca85c8d01786fec3ffaba1f32383d027f44ac5096b3e3d681b3","settings":{"stability":0.72,"similarity_boost":0.88,"style":0.0,"use_speaker_boost":true,"speed":0.92},"relative_path":"audio/generated/tr-TR/lexical/918fb11befa2f48aca8fb9eb9588f9a8ff733cb5c7581b2458664eac3a99bbf1.mp3"}'
+) ON DUPLICATE KEY UPDATE
+  provider = VALUES(provider),
+  provider_model = VALUES(provider_model),
+  storage_url = VALUES(storage_url),
+  duration_ms = VALUES(duration_ms),
+  generated_at = VALUES(generated_at),
+  checksum = VALUES(checksum),
+  status = VALUES(status),
+  metadata = VALUES(metadata);
+
+-- lx_everyday_routine_04 -> audio/generated/tr-TR/lexical/95618b912c34ed5acb2a9186a2d113876151fc6862a66974b191a73409e99dfb.mp3
+UPDATE audio_assets
+SET status = 'archived'
+WHERE entity_type = 'lexeme'
+  AND entity_id = UUID_TO_BIN('0b269589-5d27-5e03-a1ba-608612d76591', 1)
+  AND voice_key = 'tr-tr.lexical.native-clear'
+  AND (entity_type NOT IN ('grammar_point','exercise') OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'lx_everyday_routine_04')
+  AND source_text_hash IS NOT NULL
+  AND source_text_hash <> '94bd2049d4a8f5fa7d317c4657a01ffa62365f37041201dd97fd300065f9267c'
+  AND status <> 'archived';
+INSERT INTO audio_assets (
+  id, language_id, language_variant_id, entity_type, entity_id, source_text_hash,
+  voice_key, provider, provider_model, storage_url, duration_ms, generated_at, checksum, status, metadata
+) VALUES (
+  UUID_TO_BIN('308f70b3-ef65-53b5-9e60-5027a6382087', 1), @audio_language_id, @audio_variant_id, 'lexeme', UUID_TO_BIN('0b269589-5d27-5e03-a1ba-608612d76591', 1), '94bd2049d4a8f5fa7d317c4657a01ffa62365f37041201dd97fd300065f9267c',
+  'tr-tr.lexical.native-clear', 'elevenlabs', 'eleven_multilingual_v2', 'audio/generated/tr-TR/lexical/95618b912c34ed5acb2a9186a2d113876151fc6862a66974b191a73409e99dfb.mp3', 1149, '2026-09-14 11:32:23.422629', '9b53f53629aa4256d50860bc6a9163d98348b5daed1f7c12a4987f9b5a51bd6b', 'validated', '{"audio_key":"95618b912c34ed5acb2a9186a2d113876151fc6862a66974b191a73409e99dfb","entity_key":"lx_everyday_routine_04","voice_id":"FDs1ZX5J4e4f2c2erxtW","voice_name":"Fili - Warm Turkish Female ","voice_labels":{"gender":"female","accent":"istanbul","age":"young","category":"professional","language":"tr","use_case":"conversational","descriptive":"calm"},"output_format":"mp3_44100_192","file_sha256":"9b53f53629aa4256d50860bc6a9163d98348b5daed1f7c12a4987f9b5a51bd6b","settings":{"stability":0.72,"similarity_boost":0.88,"style":0.0,"use_speaker_boost":true,"speed":0.92},"relative_path":"audio/generated/tr-TR/lexical/95618b912c34ed5acb2a9186a2d113876151fc6862a66974b191a73409e99dfb.mp3"}'
+) ON DUPLICATE KEY UPDATE
+  provider = VALUES(provider),
+  provider_model = VALUES(provider_model),
+  storage_url = VALUES(storage_url),
+  duration_ms = VALUES(duration_ms),
+  generated_at = VALUES(generated_at),
+  checksum = VALUES(checksum),
+  status = VALUES(status),
+  metadata = VALUES(metadata);
+
+-- wf_everyday_routine_04 -> audio/generated/tr-TR/lexical/95618b912c34ed5acb2a9186a2d113876151fc6862a66974b191a73409e99dfb.mp3
+UPDATE audio_assets
+SET status = 'archived'
+WHERE entity_type = 'word_form'
+  AND entity_id = UUID_TO_BIN('c634c08f-91f5-553f-8f8d-d28840c5e36b', 1)
+  AND voice_key = 'tr-tr.lexical.native-clear'
+  AND (entity_type NOT IN ('grammar_point','exercise') OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'wf_everyday_routine_04')
+  AND source_text_hash IS NOT NULL
+  AND source_text_hash <> '94bd2049d4a8f5fa7d317c4657a01ffa62365f37041201dd97fd300065f9267c'
+  AND status <> 'archived';
+INSERT INTO audio_assets (
+  id, language_id, language_variant_id, entity_type, entity_id, source_text_hash,
+  voice_key, provider, provider_model, storage_url, duration_ms, generated_at, checksum, status, metadata
+) VALUES (
+  UUID_TO_BIN('a20caa40-ea5c-56a6-9294-daa866e98ef9', 1), @audio_language_id, @audio_variant_id, 'word_form', UUID_TO_BIN('c634c08f-91f5-553f-8f8d-d28840c5e36b', 1), '94bd2049d4a8f5fa7d317c4657a01ffa62365f37041201dd97fd300065f9267c',
+  'tr-tr.lexical.native-clear', 'elevenlabs', 'eleven_multilingual_v2', 'audio/generated/tr-TR/lexical/95618b912c34ed5acb2a9186a2d113876151fc6862a66974b191a73409e99dfb.mp3', 1149, '2026-09-14 11:32:23.422629', '9b53f53629aa4256d50860bc6a9163d98348b5daed1f7c12a4987f9b5a51bd6b', 'validated', '{"audio_key":"95618b912c34ed5acb2a9186a2d113876151fc6862a66974b191a73409e99dfb","entity_key":"wf_everyday_routine_04","voice_id":"FDs1ZX5J4e4f2c2erxtW","voice_name":"Fili - Warm Turkish Female ","voice_labels":{"gender":"female","accent":"istanbul","age":"young","category":"professional","language":"tr","use_case":"conversational","descriptive":"calm"},"output_format":"mp3_44100_192","file_sha256":"9b53f53629aa4256d50860bc6a9163d98348b5daed1f7c12a4987f9b5a51bd6b","settings":{"stability":0.72,"similarity_boost":0.88,"style":0.0,"use_speaker_boost":true,"speed":0.92},"relative_path":"audio/generated/tr-TR/lexical/95618b912c34ed5acb2a9186a2d113876151fc6862a66974b191a73409e99dfb.mp3"}'
+) ON DUPLICATE KEY UPDATE
+  provider = VALUES(provider),
+  provider_model = VALUES(provider_model),
+  storage_url = VALUES(storage_url),
+  duration_ms = VALUES(duration_ms),
+  generated_at = VALUES(generated_at),
+  checksum = VALUES(checksum),
+  status = VALUES(status),
+  metadata = VALUES(metadata);
+
+-- lx_from_here_to_there_04 -> audio/generated/tr-TR/lexical/98ca4eb8f621783e517f6269a6c5b54984f358ca7b0d6df04dbe7623ef7da826.mp3
+UPDATE audio_assets
+SET status = 'archived'
+WHERE entity_type = 'lexeme'
+  AND entity_id = UUID_TO_BIN('566e1f0e-d8aa-5014-b9d1-3edbf4dfe529', 1)
+  AND voice_key = 'tr-tr.lexical.native-clear'
+  AND (entity_type NOT IN ('grammar_point','exercise') OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'lx_from_here_to_there_04')
+  AND source_text_hash IS NOT NULL
+  AND source_text_hash <> '25cf022b5eced6ec6792d0d1ba98c3fbe51917384ae0a23d612ddb341f2e0312'
+  AND status <> 'archived';
+INSERT INTO audio_assets (
+  id, language_id, language_variant_id, entity_type, entity_id, source_text_hash,
+  voice_key, provider, provider_model, storage_url, duration_ms, generated_at, checksum, status, metadata
+) VALUES (
+  UUID_TO_BIN('445acbf0-ee42-5950-8ca3-307c34b2a95a', 1), @audio_language_id, @audio_variant_id, 'lexeme', UUID_TO_BIN('566e1f0e-d8aa-5014-b9d1-3edbf4dfe529', 1), '25cf022b5eced6ec6792d0d1ba98c3fbe51917384ae0a23d612ddb341f2e0312',
+  'tr-tr.lexical.native-clear', 'elevenlabs', 'eleven_multilingual_v2', 'audio/generated/tr-TR/lexical/98ca4eb8f621783e517f6269a6c5b54984f358ca7b0d6df04dbe7623ef7da826.mp3', 1018, '2026-09-14 11:32:24.223214', '8e0ef9c1996d7a93bff650c67e7bdd69ddc88ca5896ae784b40261f8edbf005a', 'validated', '{"audio_key":"98ca4eb8f621783e517f6269a6c5b54984f358ca7b0d6df04dbe7623ef7da826","entity_key":"lx_from_here_to_there_04","voice_id":"FDs1ZX5J4e4f2c2erxtW","voice_name":"Fili - Warm Turkish Female ","voice_labels":{"gender":"female","accent":"istanbul","age":"young","category":"professional","language":"tr","use_case":"conversational","descriptive":"calm"},"output_format":"mp3_44100_192","file_sha256":"8e0ef9c1996d7a93bff650c67e7bdd69ddc88ca5896ae784b40261f8edbf005a","settings":{"stability":0.72,"similarity_boost":0.88,"style":0.0,"use_speaker_boost":true,"speed":0.92},"relative_path":"audio/generated/tr-TR/lexical/98ca4eb8f621783e517f6269a6c5b54984f358ca7b0d6df04dbe7623ef7da826.mp3"}'
+) ON DUPLICATE KEY UPDATE
+  provider = VALUES(provider),
+  provider_model = VALUES(provider_model),
+  storage_url = VALUES(storage_url),
+  duration_ms = VALUES(duration_ms),
+  generated_at = VALUES(generated_at),
+  checksum = VALUES(checksum),
+  status = VALUES(status),
+  metadata = VALUES(metadata);
+
+-- wf_from_here_to_there_04 -> audio/generated/tr-TR/lexical/98ca4eb8f621783e517f6269a6c5b54984f358ca7b0d6df04dbe7623ef7da826.mp3
+UPDATE audio_assets
+SET status = 'archived'
+WHERE entity_type = 'word_form'
+  AND entity_id = UUID_TO_BIN('29e364c6-cd95-5a02-9b00-b0cc634348bb', 1)
+  AND voice_key = 'tr-tr.lexical.native-clear'
+  AND (entity_type NOT IN ('grammar_point','exercise') OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'wf_from_here_to_there_04')
+  AND source_text_hash IS NOT NULL
+  AND source_text_hash <> '25cf022b5eced6ec6792d0d1ba98c3fbe51917384ae0a23d612ddb341f2e0312'
+  AND status <> 'archived';
+INSERT INTO audio_assets (
+  id, language_id, language_variant_id, entity_type, entity_id, source_text_hash,
+  voice_key, provider, provider_model, storage_url, duration_ms, generated_at, checksum, status, metadata
+) VALUES (
+  UUID_TO_BIN('5368bba7-219e-5408-b1ea-680a84a7934f', 1), @audio_language_id, @audio_variant_id, 'word_form', UUID_TO_BIN('29e364c6-cd95-5a02-9b00-b0cc634348bb', 1), '25cf022b5eced6ec6792d0d1ba98c3fbe51917384ae0a23d612ddb341f2e0312',
+  'tr-tr.lexical.native-clear', 'elevenlabs', 'eleven_multilingual_v2', 'audio/generated/tr-TR/lexical/98ca4eb8f621783e517f6269a6c5b54984f358ca7b0d6df04dbe7623ef7da826.mp3', 1018, '2026-09-14 11:32:24.223214', '8e0ef9c1996d7a93bff650c67e7bdd69ddc88ca5896ae784b40261f8edbf005a', 'validated', '{"audio_key":"98ca4eb8f621783e517f6269a6c5b54984f358ca7b0d6df04dbe7623ef7da826","entity_key":"wf_from_here_to_there_04","voice_id":"FDs1ZX5J4e4f2c2erxtW","voice_name":"Fili - Warm Turkish Female ","voice_labels":{"gender":"female","accent":"istanbul","age":"young","category":"professional","language":"tr","use_case":"conversational","descriptive":"calm"},"output_format":"mp3_44100_192","file_sha256":"8e0ef9c1996d7a93bff650c67e7bdd69ddc88ca5896ae784b40261f8edbf005a","settings":{"stability":0.72,"similarity_boost":0.88,"style":0.0,"use_speaker_boost":true,"speed":0.92},"relative_path":"audio/generated/tr-TR/lexical/98ca4eb8f621783e517f6269a6c5b54984f358ca7b0d6df04dbe7623ef7da826.mp3"}'
 ) ON DUPLICATE KEY UPDATE
   provider = VALUES(provider),
   provider_model = VALUES(provider_model),
@@ -3832,6 +8096,110 @@ INSERT INTO audio_assets (
   status = VALUES(status),
   metadata = VALUES(metadata);
 
+-- lx_basic_health_06 -> audio/generated/tr-TR/lexical/a1e59ce9ebe7ad655a6ac0e609d887b2a69fdfaecf3a7e7dd4ba3433f8c058ae.mp3
+UPDATE audio_assets
+SET status = 'archived'
+WHERE entity_type = 'lexeme'
+  AND entity_id = UUID_TO_BIN('62e7012f-de3c-5e71-a73a-76faa144571b', 1)
+  AND voice_key = 'tr-tr.lexical.native-clear'
+  AND (entity_type NOT IN ('grammar_point','exercise') OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'lx_basic_health_06')
+  AND source_text_hash IS NOT NULL
+  AND source_text_hash <> '0a895725ba78104fa13670796be291d950ae3bb4b4bd060293bed1541326eb0f'
+  AND status <> 'archived';
+INSERT INTO audio_assets (
+  id, language_id, language_variant_id, entity_type, entity_id, source_text_hash,
+  voice_key, provider, provider_model, storage_url, duration_ms, generated_at, checksum, status, metadata
+) VALUES (
+  UUID_TO_BIN('2f5a4640-fbdd-55a3-ada4-b99543a76ec1', 1), @audio_language_id, @audio_variant_id, 'lexeme', UUID_TO_BIN('62e7012f-de3c-5e71-a73a-76faa144571b', 1), '0a895725ba78104fa13670796be291d950ae3bb4b4bd060293bed1541326eb0f',
+  'tr-tr.lexical.native-clear', 'elevenlabs', 'eleven_multilingual_v2', 'audio/generated/tr-TR/lexical/a1e59ce9ebe7ad655a6ac0e609d887b2a69fdfaecf3a7e7dd4ba3433f8c058ae.mp3', 1071, '2026-09-14 11:32:24.360888', '9e877963213466451849238397c195d3463df1e31df80b05b5008a6e26ee99ae', 'validated', '{"audio_key":"a1e59ce9ebe7ad655a6ac0e609d887b2a69fdfaecf3a7e7dd4ba3433f8c058ae","entity_key":"lx_basic_health_06","voice_id":"FDs1ZX5J4e4f2c2erxtW","voice_name":"Fili - Warm Turkish Female ","voice_labels":{"gender":"female","accent":"istanbul","age":"young","category":"professional","language":"tr","use_case":"conversational","descriptive":"calm"},"output_format":"mp3_44100_192","file_sha256":"9e877963213466451849238397c195d3463df1e31df80b05b5008a6e26ee99ae","settings":{"stability":0.72,"similarity_boost":0.88,"style":0.0,"use_speaker_boost":true,"speed":0.92},"relative_path":"audio/generated/tr-TR/lexical/a1e59ce9ebe7ad655a6ac0e609d887b2a69fdfaecf3a7e7dd4ba3433f8c058ae.mp3"}'
+) ON DUPLICATE KEY UPDATE
+  provider = VALUES(provider),
+  provider_model = VALUES(provider_model),
+  storage_url = VALUES(storage_url),
+  duration_ms = VALUES(duration_ms),
+  generated_at = VALUES(generated_at),
+  checksum = VALUES(checksum),
+  status = VALUES(status),
+  metadata = VALUES(metadata);
+
+-- wf_basic_health_06 -> audio/generated/tr-TR/lexical/a1e59ce9ebe7ad655a6ac0e609d887b2a69fdfaecf3a7e7dd4ba3433f8c058ae.mp3
+UPDATE audio_assets
+SET status = 'archived'
+WHERE entity_type = 'word_form'
+  AND entity_id = UUID_TO_BIN('fa65a2fd-597b-5c3c-89c5-4900ca7d3be7', 1)
+  AND voice_key = 'tr-tr.lexical.native-clear'
+  AND (entity_type NOT IN ('grammar_point','exercise') OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'wf_basic_health_06')
+  AND source_text_hash IS NOT NULL
+  AND source_text_hash <> '0a895725ba78104fa13670796be291d950ae3bb4b4bd060293bed1541326eb0f'
+  AND status <> 'archived';
+INSERT INTO audio_assets (
+  id, language_id, language_variant_id, entity_type, entity_id, source_text_hash,
+  voice_key, provider, provider_model, storage_url, duration_ms, generated_at, checksum, status, metadata
+) VALUES (
+  UUID_TO_BIN('eeb6a3bd-40c9-5cd1-b89b-402d5c469917', 1), @audio_language_id, @audio_variant_id, 'word_form', UUID_TO_BIN('fa65a2fd-597b-5c3c-89c5-4900ca7d3be7', 1), '0a895725ba78104fa13670796be291d950ae3bb4b4bd060293bed1541326eb0f',
+  'tr-tr.lexical.native-clear', 'elevenlabs', 'eleven_multilingual_v2', 'audio/generated/tr-TR/lexical/a1e59ce9ebe7ad655a6ac0e609d887b2a69fdfaecf3a7e7dd4ba3433f8c058ae.mp3', 1071, '2026-09-14 11:32:24.360888', '9e877963213466451849238397c195d3463df1e31df80b05b5008a6e26ee99ae', 'validated', '{"audio_key":"a1e59ce9ebe7ad655a6ac0e609d887b2a69fdfaecf3a7e7dd4ba3433f8c058ae","entity_key":"wf_basic_health_06","voice_id":"FDs1ZX5J4e4f2c2erxtW","voice_name":"Fili - Warm Turkish Female ","voice_labels":{"gender":"female","accent":"istanbul","age":"young","category":"professional","language":"tr","use_case":"conversational","descriptive":"calm"},"output_format":"mp3_44100_192","file_sha256":"9e877963213466451849238397c195d3463df1e31df80b05b5008a6e26ee99ae","settings":{"stability":0.72,"similarity_boost":0.88,"style":0.0,"use_speaker_boost":true,"speed":0.92},"relative_path":"audio/generated/tr-TR/lexical/a1e59ce9ebe7ad655a6ac0e609d887b2a69fdfaecf3a7e7dd4ba3433f8c058ae.mp3"}'
+) ON DUPLICATE KEY UPDATE
+  provider = VALUES(provider),
+  provider_model = VALUES(provider_model),
+  storage_url = VALUES(storage_url),
+  duration_ms = VALUES(duration_ms),
+  generated_at = VALUES(generated_at),
+  checksum = VALUES(checksum),
+  status = VALUES(status),
+  metadata = VALUES(metadata);
+
+-- lx_can_you_help_04 -> audio/generated/tr-TR/lexical/a49354354c8658501a556e25649261306e41528971d6f47a20ca8975ed1e1e81.mp3
+UPDATE audio_assets
+SET status = 'archived'
+WHERE entity_type = 'lexeme'
+  AND entity_id = UUID_TO_BIN('0b0456cf-03e5-5b92-beae-2cd23e4e952f', 1)
+  AND voice_key = 'tr-tr.lexical.native-clear'
+  AND (entity_type NOT IN ('grammar_point','exercise') OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'lx_can_you_help_04')
+  AND source_text_hash IS NOT NULL
+  AND source_text_hash <> 'bedfa621a3de48a354a0f044209cca6319a440282fe960e2dba5bf67e5290ad7'
+  AND status <> 'archived';
+INSERT INTO audio_assets (
+  id, language_id, language_variant_id, entity_type, entity_id, source_text_hash,
+  voice_key, provider, provider_model, storage_url, duration_ms, generated_at, checksum, status, metadata
+) VALUES (
+  UUID_TO_BIN('9d516d94-1df9-58bc-9dac-b7fdf317cde3', 1), @audio_language_id, @audio_variant_id, 'lexeme', UUID_TO_BIN('0b0456cf-03e5-5b92-beae-2cd23e4e952f', 1), 'bedfa621a3de48a354a0f044209cca6319a440282fe960e2dba5bf67e5290ad7',
+  'tr-tr.lexical.native-clear', 'elevenlabs', 'eleven_multilingual_v2', 'audio/generated/tr-TR/lexical/a49354354c8658501a556e25649261306e41528971d6f47a20ca8975ed1e1e81.mp3', 1097, '2026-09-13 17:08:32.101530', '383575b5d5498e6b3933075f98917b3f7b15a35186cd5422b4a89ec6320806b1', 'validated', '{"audio_key":"a49354354c8658501a556e25649261306e41528971d6f47a20ca8975ed1e1e81","entity_key":"lx_can_you_help_04","voice_id":"FDs1ZX5J4e4f2c2erxtW","voice_name":"Fili - Warm Turkish Female ","voice_labels":{"gender":"female","accent":"istanbul","age":"young","category":"professional","language":"tr","use_case":"conversational","descriptive":"calm"},"output_format":"mp3_44100_192","file_sha256":"383575b5d5498e6b3933075f98917b3f7b15a35186cd5422b4a89ec6320806b1","settings":{"stability":0.72,"similarity_boost":0.88,"style":0.0,"use_speaker_boost":true,"speed":0.92},"relative_path":"audio/generated/tr-TR/lexical/a49354354c8658501a556e25649261306e41528971d6f47a20ca8975ed1e1e81.mp3"}'
+) ON DUPLICATE KEY UPDATE
+  provider = VALUES(provider),
+  provider_model = VALUES(provider_model),
+  storage_url = VALUES(storage_url),
+  duration_ms = VALUES(duration_ms),
+  generated_at = VALUES(generated_at),
+  checksum = VALUES(checksum),
+  status = VALUES(status),
+  metadata = VALUES(metadata);
+
+-- wf_can_you_help_04 -> audio/generated/tr-TR/lexical/a49354354c8658501a556e25649261306e41528971d6f47a20ca8975ed1e1e81.mp3
+UPDATE audio_assets
+SET status = 'archived'
+WHERE entity_type = 'word_form'
+  AND entity_id = UUID_TO_BIN('2abde571-1749-5b5c-9b32-8c74868e4cc3', 1)
+  AND voice_key = 'tr-tr.lexical.native-clear'
+  AND (entity_type NOT IN ('grammar_point','exercise') OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'wf_can_you_help_04')
+  AND source_text_hash IS NOT NULL
+  AND source_text_hash <> 'bedfa621a3de48a354a0f044209cca6319a440282fe960e2dba5bf67e5290ad7'
+  AND status <> 'archived';
+INSERT INTO audio_assets (
+  id, language_id, language_variant_id, entity_type, entity_id, source_text_hash,
+  voice_key, provider, provider_model, storage_url, duration_ms, generated_at, checksum, status, metadata
+) VALUES (
+  UUID_TO_BIN('5ecec8b3-623a-566f-b240-62a9503ccaa7', 1), @audio_language_id, @audio_variant_id, 'word_form', UUID_TO_BIN('2abde571-1749-5b5c-9b32-8c74868e4cc3', 1), 'bedfa621a3de48a354a0f044209cca6319a440282fe960e2dba5bf67e5290ad7',
+  'tr-tr.lexical.native-clear', 'elevenlabs', 'eleven_multilingual_v2', 'audio/generated/tr-TR/lexical/a49354354c8658501a556e25649261306e41528971d6f47a20ca8975ed1e1e81.mp3', 1097, '2026-09-13 17:08:32.101530', '383575b5d5498e6b3933075f98917b3f7b15a35186cd5422b4a89ec6320806b1', 'validated', '{"audio_key":"a49354354c8658501a556e25649261306e41528971d6f47a20ca8975ed1e1e81","entity_key":"wf_can_you_help_04","voice_id":"FDs1ZX5J4e4f2c2erxtW","voice_name":"Fili - Warm Turkish Female ","voice_labels":{"gender":"female","accent":"istanbul","age":"young","category":"professional","language":"tr","use_case":"conversational","descriptive":"calm"},"output_format":"mp3_44100_192","file_sha256":"383575b5d5498e6b3933075f98917b3f7b15a35186cd5422b4a89ec6320806b1","settings":{"stability":0.72,"similarity_boost":0.88,"style":0.0,"use_speaker_boost":true,"speed":0.92},"relative_path":"audio/generated/tr-TR/lexical/a49354354c8658501a556e25649261306e41528971d6f47a20ca8975ed1e1e81.mp3"}'
+) ON DUPLICATE KEY UPDATE
+  provider = VALUES(provider),
+  provider_model = VALUES(provider_model),
+  storage_url = VALUES(storage_url),
+  duration_ms = VALUES(duration_ms),
+  generated_at = VALUES(generated_at),
+  checksum = VALUES(checksum),
+  status = VALUES(status),
+  metadata = VALUES(metadata);
+
 -- lx_shopping_basics_03 -> audio/generated/tr-TR/lexical/a7460c35e68c47535a9c076ec1d4d99d9d9354e96bbeb19b3a2082f5fb0bbb54.mp3
 UPDATE audio_assets
 SET status = 'archived'
@@ -3874,6 +8242,58 @@ INSERT INTO audio_assets (
 ) VALUES (
   UUID_TO_BIN('061b973a-ea4a-50fb-9717-29fb1463e93a', 1), @audio_language_id, @audio_variant_id, 'word_form', UUID_TO_BIN('3a7a8609-6d5f-5c75-aac9-7f36b9921dd4', 1), 'bf7d53f1768c33caa217e80d6b5f193961ca882ac98997283cdd2c09acb940ad',
   'tr-tr.lexical.native-clear', 'elevenlabs', 'eleven_multilingual_v2', 'audio/generated/tr-TR/lexical/a7460c35e68c47535a9c076ec1d4d99d9d9354e96bbeb19b3a2082f5fb0bbb54.mp3', 1149, '2026-09-13 15:55:28.021539', '97142ab3798d1ff3f5ff60b26f26bc68b18072f1bea90548ac715190597458dc', 'validated', '{"audio_key":"a7460c35e68c47535a9c076ec1d4d99d9d9354e96bbeb19b3a2082f5fb0bbb54","entity_key":"wf_shopping_basics_03","voice_id":"FDs1ZX5J4e4f2c2erxtW","voice_name":"Fili - Warm Turkish Female ","voice_labels":{"gender":"female","accent":"istanbul","age":"young","category":"professional","language":"tr","use_case":"conversational","descriptive":"calm"},"output_format":"mp3_44100_192","file_sha256":"97142ab3798d1ff3f5ff60b26f26bc68b18072f1bea90548ac715190597458dc","settings":{"stability":0.72,"similarity_boost":0.88,"style":0.0,"use_speaker_boost":true,"speed":0.92},"relative_path":"audio/generated/tr-TR/lexical/a7460c35e68c47535a9c076ec1d4d99d9d9354e96bbeb19b3a2082f5fb0bbb54.mp3"}'
+) ON DUPLICATE KEY UPDATE
+  provider = VALUES(provider),
+  provider_model = VALUES(provider_model),
+  storage_url = VALUES(storage_url),
+  duration_ms = VALUES(duration_ms),
+  generated_at = VALUES(generated_at),
+  checksum = VALUES(checksum),
+  status = VALUES(status),
+  metadata = VALUES(metadata);
+
+-- lx_near_future_plans_03 -> audio/generated/tr-TR/lexical/a79468874d0400bfc567f7aaf05cf76acf200997b7df6692205acd9c637a40a3.mp3
+UPDATE audio_assets
+SET status = 'archived'
+WHERE entity_type = 'lexeme'
+  AND entity_id = UUID_TO_BIN('4a93de21-35fe-533c-ae28-9bc411700617', 1)
+  AND voice_key = 'tr-tr.lexical.native-clear'
+  AND (entity_type NOT IN ('grammar_point','exercise') OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'lx_near_future_plans_03')
+  AND source_text_hash IS NOT NULL
+  AND source_text_hash <> '406ce0d831bfc966c86a59f2562eb4b87285784f68353fbc49172e69c845dc52'
+  AND status <> 'archived';
+INSERT INTO audio_assets (
+  id, language_id, language_variant_id, entity_type, entity_id, source_text_hash,
+  voice_key, provider, provider_model, storage_url, duration_ms, generated_at, checksum, status, metadata
+) VALUES (
+  UUID_TO_BIN('1d304557-6bc5-5273-89b8-ea168fc13d55', 1), @audio_language_id, @audio_variant_id, 'lexeme', UUID_TO_BIN('4a93de21-35fe-533c-ae28-9bc411700617', 1), '406ce0d831bfc966c86a59f2562eb4b87285784f68353fbc49172e69c845dc52',
+  'tr-tr.lexical.native-clear', 'elevenlabs', 'eleven_multilingual_v2', 'audio/generated/tr-TR/lexical/a79468874d0400bfc567f7aaf05cf76acf200997b7df6692205acd9c637a40a3.mp3', 1567, '2026-09-14 11:32:25.198915', '5a509d1067480cbe27a6fc8ca4a95afb9c0e3490c7e407566bffbd2c1512d06a', 'validated', '{"audio_key":"a79468874d0400bfc567f7aaf05cf76acf200997b7df6692205acd9c637a40a3","entity_key":"lx_near_future_plans_03","voice_id":"FDs1ZX5J4e4f2c2erxtW","voice_name":"Fili - Warm Turkish Female ","voice_labels":{"gender":"female","accent":"istanbul","age":"young","category":"professional","language":"tr","use_case":"conversational","descriptive":"calm"},"output_format":"mp3_44100_192","file_sha256":"5a509d1067480cbe27a6fc8ca4a95afb9c0e3490c7e407566bffbd2c1512d06a","settings":{"stability":0.72,"similarity_boost":0.88,"style":0.0,"use_speaker_boost":true,"speed":0.92},"relative_path":"audio/generated/tr-TR/lexical/a79468874d0400bfc567f7aaf05cf76acf200997b7df6692205acd9c637a40a3.mp3"}'
+) ON DUPLICATE KEY UPDATE
+  provider = VALUES(provider),
+  provider_model = VALUES(provider_model),
+  storage_url = VALUES(storage_url),
+  duration_ms = VALUES(duration_ms),
+  generated_at = VALUES(generated_at),
+  checksum = VALUES(checksum),
+  status = VALUES(status),
+  metadata = VALUES(metadata);
+
+-- wf_near_future_plans_03 -> audio/generated/tr-TR/lexical/a79468874d0400bfc567f7aaf05cf76acf200997b7df6692205acd9c637a40a3.mp3
+UPDATE audio_assets
+SET status = 'archived'
+WHERE entity_type = 'word_form'
+  AND entity_id = UUID_TO_BIN('74a3a15c-bf3d-51c4-ab85-95f3a744d75d', 1)
+  AND voice_key = 'tr-tr.lexical.native-clear'
+  AND (entity_type NOT IN ('grammar_point','exercise') OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'wf_near_future_plans_03')
+  AND source_text_hash IS NOT NULL
+  AND source_text_hash <> '406ce0d831bfc966c86a59f2562eb4b87285784f68353fbc49172e69c845dc52'
+  AND status <> 'archived';
+INSERT INTO audio_assets (
+  id, language_id, language_variant_id, entity_type, entity_id, source_text_hash,
+  voice_key, provider, provider_model, storage_url, duration_ms, generated_at, checksum, status, metadata
+) VALUES (
+  UUID_TO_BIN('686f2628-78e8-5b30-9f47-6697fc5df1a0', 1), @audio_language_id, @audio_variant_id, 'word_form', UUID_TO_BIN('74a3a15c-bf3d-51c4-ab85-95f3a744d75d', 1), '406ce0d831bfc966c86a59f2562eb4b87285784f68353fbc49172e69c845dc52',
+  'tr-tr.lexical.native-clear', 'elevenlabs', 'eleven_multilingual_v2', 'audio/generated/tr-TR/lexical/a79468874d0400bfc567f7aaf05cf76acf200997b7df6692205acd9c637a40a3.mp3', 1567, '2026-09-14 11:32:25.198915', '5a509d1067480cbe27a6fc8ca4a95afb9c0e3490c7e407566bffbd2c1512d06a', 'validated', '{"audio_key":"a79468874d0400bfc567f7aaf05cf76acf200997b7df6692205acd9c637a40a3","entity_key":"wf_near_future_plans_03","voice_id":"FDs1ZX5J4e4f2c2erxtW","voice_name":"Fili - Warm Turkish Female ","voice_labels":{"gender":"female","accent":"istanbul","age":"young","category":"professional","language":"tr","use_case":"conversational","descriptive":"calm"},"output_format":"mp3_44100_192","file_sha256":"5a509d1067480cbe27a6fc8ca4a95afb9c0e3490c7e407566bffbd2c1512d06a","settings":{"stability":0.72,"similarity_boost":0.88,"style":0.0,"use_speaker_boost":true,"speed":0.92},"relative_path":"audio/generated/tr-TR/lexical/a79468874d0400bfc567f7aaf05cf76acf200997b7df6692205acd9c637a40a3.mp3"}'
 ) ON DUPLICATE KEY UPDATE
   provider = VALUES(provider),
   provider_model = VALUES(provider_model),
@@ -3988,6 +8408,110 @@ INSERT INTO audio_assets (
   status = VALUES(status),
   metadata = VALUES(metadata);
 
+-- lx_a1_everyday_capstone_06 -> audio/generated/tr-TR/lexical/b425649c6453280eb0072ed26e87af765751e888b6b70091ffbb227be4e43056.mp3
+UPDATE audio_assets
+SET status = 'archived'
+WHERE entity_type = 'lexeme'
+  AND entity_id = UUID_TO_BIN('8cd1eec7-789c-5778-b37f-37facd6f4ed1', 1)
+  AND voice_key = 'tr-tr.lexical.native-clear'
+  AND (entity_type NOT IN ('grammar_point','exercise') OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'lx_a1_everyday_capstone_06')
+  AND source_text_hash IS NOT NULL
+  AND source_text_hash <> '4f9fd645925301baded2ddafe0fa81f1ce676547077b92ebc3e0ed96d41e2cc8'
+  AND status <> 'archived';
+INSERT INTO audio_assets (
+  id, language_id, language_variant_id, entity_type, entity_id, source_text_hash,
+  voice_key, provider, provider_model, storage_url, duration_ms, generated_at, checksum, status, metadata
+) VALUES (
+  UUID_TO_BIN('0f439dbe-db81-54f2-9a7b-0ca421c7fa29', 1), @audio_language_id, @audio_variant_id, 'lexeme', UUID_TO_BIN('8cd1eec7-789c-5778-b37f-37facd6f4ed1', 1), '4f9fd645925301baded2ddafe0fa81f1ce676547077b92ebc3e0ed96d41e2cc8',
+  'tr-tr.lexical.native-clear', 'elevenlabs', 'eleven_multilingual_v2', 'audio/generated/tr-TR/lexical/b425649c6453280eb0072ed26e87af765751e888b6b70091ffbb227be4e43056.mp3', 1097, '2026-09-14 11:32:25.318411', '2e35cd3870b700829458c10423f5b1405b55ca0e4b5baee8723752c179ecc58a', 'validated', '{"audio_key":"b425649c6453280eb0072ed26e87af765751e888b6b70091ffbb227be4e43056","entity_key":"lx_a1_everyday_capstone_06","voice_id":"FDs1ZX5J4e4f2c2erxtW","voice_name":"Fili - Warm Turkish Female ","voice_labels":{"gender":"female","accent":"istanbul","age":"young","category":"professional","language":"tr","use_case":"conversational","descriptive":"calm"},"output_format":"mp3_44100_192","file_sha256":"2e35cd3870b700829458c10423f5b1405b55ca0e4b5baee8723752c179ecc58a","settings":{"stability":0.72,"similarity_boost":0.88,"style":0.0,"use_speaker_boost":true,"speed":0.92},"relative_path":"audio/generated/tr-TR/lexical/b425649c6453280eb0072ed26e87af765751e888b6b70091ffbb227be4e43056.mp3"}'
+) ON DUPLICATE KEY UPDATE
+  provider = VALUES(provider),
+  provider_model = VALUES(provider_model),
+  storage_url = VALUES(storage_url),
+  duration_ms = VALUES(duration_ms),
+  generated_at = VALUES(generated_at),
+  checksum = VALUES(checksum),
+  status = VALUES(status),
+  metadata = VALUES(metadata);
+
+-- wf_a1_everyday_capstone_06 -> audio/generated/tr-TR/lexical/b425649c6453280eb0072ed26e87af765751e888b6b70091ffbb227be4e43056.mp3
+UPDATE audio_assets
+SET status = 'archived'
+WHERE entity_type = 'word_form'
+  AND entity_id = UUID_TO_BIN('22b122d1-d8a5-581f-9684-9e7257b9ffc7', 1)
+  AND voice_key = 'tr-tr.lexical.native-clear'
+  AND (entity_type NOT IN ('grammar_point','exercise') OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'wf_a1_everyday_capstone_06')
+  AND source_text_hash IS NOT NULL
+  AND source_text_hash <> '4f9fd645925301baded2ddafe0fa81f1ce676547077b92ebc3e0ed96d41e2cc8'
+  AND status <> 'archived';
+INSERT INTO audio_assets (
+  id, language_id, language_variant_id, entity_type, entity_id, source_text_hash,
+  voice_key, provider, provider_model, storage_url, duration_ms, generated_at, checksum, status, metadata
+) VALUES (
+  UUID_TO_BIN('d4567958-6290-5a20-93f2-e5bc201f4d51', 1), @audio_language_id, @audio_variant_id, 'word_form', UUID_TO_BIN('22b122d1-d8a5-581f-9684-9e7257b9ffc7', 1), '4f9fd645925301baded2ddafe0fa81f1ce676547077b92ebc3e0ed96d41e2cc8',
+  'tr-tr.lexical.native-clear', 'elevenlabs', 'eleven_multilingual_v2', 'audio/generated/tr-TR/lexical/b425649c6453280eb0072ed26e87af765751e888b6b70091ffbb227be4e43056.mp3', 1097, '2026-09-14 11:32:25.318411', '2e35cd3870b700829458c10423f5b1405b55ca0e4b5baee8723752c179ecc58a', 'validated', '{"audio_key":"b425649c6453280eb0072ed26e87af765751e888b6b70091ffbb227be4e43056","entity_key":"wf_a1_everyday_capstone_06","voice_id":"FDs1ZX5J4e4f2c2erxtW","voice_name":"Fili - Warm Turkish Female ","voice_labels":{"gender":"female","accent":"istanbul","age":"young","category":"professional","language":"tr","use_case":"conversational","descriptive":"calm"},"output_format":"mp3_44100_192","file_sha256":"2e35cd3870b700829458c10423f5b1405b55ca0e4b5baee8723752c179ecc58a","settings":{"stability":0.72,"similarity_boost":0.88,"style":0.0,"use_speaker_boost":true,"speed":0.92},"relative_path":"audio/generated/tr-TR/lexical/b425649c6453280eb0072ed26e87af765751e888b6b70091ffbb227be4e43056.mp3"}'
+) ON DUPLICATE KEY UPDATE
+  provider = VALUES(provider),
+  provider_model = VALUES(provider_model),
+  storage_url = VALUES(storage_url),
+  duration_ms = VALUES(duration_ms),
+  generated_at = VALUES(generated_at),
+  checksum = VALUES(checksum),
+  status = VALUES(status),
+  metadata = VALUES(metadata);
+
+-- lx_from_here_to_there_06 -> audio/generated/tr-TR/lexical/b6c691cbe3f06d699d3261c51989fab986d9d9236d6415052692d26234fdcb52.mp3
+UPDATE audio_assets
+SET status = 'archived'
+WHERE entity_type = 'lexeme'
+  AND entity_id = UUID_TO_BIN('a2127858-108f-52af-905a-fa26a82c96fd', 1)
+  AND voice_key = 'tr-tr.lexical.native-clear'
+  AND (entity_type NOT IN ('grammar_point','exercise') OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'lx_from_here_to_there_06')
+  AND source_text_hash IS NOT NULL
+  AND source_text_hash <> '920734710592e3bcce65f5dd7aa0e6e37d7766badea1549c261aa30bb3f66975'
+  AND status <> 'archived';
+INSERT INTO audio_assets (
+  id, language_id, language_variant_id, entity_type, entity_id, source_text_hash,
+  voice_key, provider, provider_model, storage_url, duration_ms, generated_at, checksum, status, metadata
+) VALUES (
+  UUID_TO_BIN('c18c8827-0a76-5e89-9e03-881e27ce2068', 1), @audio_language_id, @audio_variant_id, 'lexeme', UUID_TO_BIN('a2127858-108f-52af-905a-fa26a82c96fd', 1), '920734710592e3bcce65f5dd7aa0e6e37d7766badea1549c261aa30bb3f66975',
+  'tr-tr.lexical.native-clear', 'elevenlabs', 'eleven_multilingual_v2', 'audio/generated/tr-TR/lexical/b6c691cbe3f06d699d3261c51989fab986d9d9236d6415052692d26234fdcb52.mp3', 1018, '2026-09-14 11:32:26.127848', 'd13cb9e6a8237d1e23bd8766928e5bb8d855ec69edb360ec68c081eb2aba12af', 'validated', '{"audio_key":"b6c691cbe3f06d699d3261c51989fab986d9d9236d6415052692d26234fdcb52","entity_key":"lx_from_here_to_there_06","voice_id":"FDs1ZX5J4e4f2c2erxtW","voice_name":"Fili - Warm Turkish Female ","voice_labels":{"gender":"female","accent":"istanbul","age":"young","category":"professional","language":"tr","use_case":"conversational","descriptive":"calm"},"output_format":"mp3_44100_192","file_sha256":"d13cb9e6a8237d1e23bd8766928e5bb8d855ec69edb360ec68c081eb2aba12af","settings":{"stability":0.72,"similarity_boost":0.88,"style":0.0,"use_speaker_boost":true,"speed":0.92},"relative_path":"audio/generated/tr-TR/lexical/b6c691cbe3f06d699d3261c51989fab986d9d9236d6415052692d26234fdcb52.mp3"}'
+) ON DUPLICATE KEY UPDATE
+  provider = VALUES(provider),
+  provider_model = VALUES(provider_model),
+  storage_url = VALUES(storage_url),
+  duration_ms = VALUES(duration_ms),
+  generated_at = VALUES(generated_at),
+  checksum = VALUES(checksum),
+  status = VALUES(status),
+  metadata = VALUES(metadata);
+
+-- wf_from_here_to_there_06 -> audio/generated/tr-TR/lexical/b6c691cbe3f06d699d3261c51989fab986d9d9236d6415052692d26234fdcb52.mp3
+UPDATE audio_assets
+SET status = 'archived'
+WHERE entity_type = 'word_form'
+  AND entity_id = UUID_TO_BIN('37ff12ed-22c4-5538-9964-204e46cef53e', 1)
+  AND voice_key = 'tr-tr.lexical.native-clear'
+  AND (entity_type NOT IN ('grammar_point','exercise') OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'wf_from_here_to_there_06')
+  AND source_text_hash IS NOT NULL
+  AND source_text_hash <> '920734710592e3bcce65f5dd7aa0e6e37d7766badea1549c261aa30bb3f66975'
+  AND status <> 'archived';
+INSERT INTO audio_assets (
+  id, language_id, language_variant_id, entity_type, entity_id, source_text_hash,
+  voice_key, provider, provider_model, storage_url, duration_ms, generated_at, checksum, status, metadata
+) VALUES (
+  UUID_TO_BIN('a4dbd183-6b7f-522f-ae40-44fedaae1659', 1), @audio_language_id, @audio_variant_id, 'word_form', UUID_TO_BIN('37ff12ed-22c4-5538-9964-204e46cef53e', 1), '920734710592e3bcce65f5dd7aa0e6e37d7766badea1549c261aa30bb3f66975',
+  'tr-tr.lexical.native-clear', 'elevenlabs', 'eleven_multilingual_v2', 'audio/generated/tr-TR/lexical/b6c691cbe3f06d699d3261c51989fab986d9d9236d6415052692d26234fdcb52.mp3', 1018, '2026-09-14 11:32:26.127848', 'd13cb9e6a8237d1e23bd8766928e5bb8d855ec69edb360ec68c081eb2aba12af', 'validated', '{"audio_key":"b6c691cbe3f06d699d3261c51989fab986d9d9236d6415052692d26234fdcb52","entity_key":"wf_from_here_to_there_06","voice_id":"FDs1ZX5J4e4f2c2erxtW","voice_name":"Fili - Warm Turkish Female ","voice_labels":{"gender":"female","accent":"istanbul","age":"young","category":"professional","language":"tr","use_case":"conversational","descriptive":"calm"},"output_format":"mp3_44100_192","file_sha256":"d13cb9e6a8237d1e23bd8766928e5bb8d855ec69edb360ec68c081eb2aba12af","settings":{"stability":0.72,"similarity_boost":0.88,"style":0.0,"use_speaker_boost":true,"speed":0.92},"relative_path":"audio/generated/tr-TR/lexical/b6c691cbe3f06d699d3261c51989fab986d9d9236d6415052692d26234fdcb52.mp3"}'
+) ON DUPLICATE KEY UPDATE
+  provider = VALUES(provider),
+  provider_model = VALUES(provider_model),
+  storage_url = VALUES(storage_url),
+  duration_ms = VALUES(duration_ms),
+  generated_at = VALUES(generated_at),
+  checksum = VALUES(checksum),
+  status = VALUES(status),
+  metadata = VALUES(metadata);
+
 -- lx_this_and_these_01 -> audio/generated/tr-TR/lexical/b72fc166dd1dcec230c38d9d8fbfc61694570353f140c82662692c2332908321.mp3
 UPDATE audio_assets
 SET status = 'archived'
@@ -4030,6 +8554,58 @@ INSERT INTO audio_assets (
 ) VALUES (
   UUID_TO_BIN('2c6b31cb-e2c9-5972-9eb5-766363aa26ff', 1), @audio_language_id, @audio_variant_id, 'word_form', UUID_TO_BIN('03ed9da5-962f-5833-9e6f-d86074fe037a', 1), 'e2c462e3e1f260a9130d09c099a7220e83762adac65536eb38b3e09b81418343',
   'tr-tr.lexical.native-clear', 'elevenlabs', 'eleven_multilingual_v2', 'audio/generated/tr-TR/lexical/b72fc166dd1dcec230c38d9d8fbfc61694570353f140c82662692c2332908321.mp3', 1097, '2026-09-13 15:17:33.559042', 'ebdd9fcdcf89888df4e160981231ff4bb7c620658ef83d12d91f189a1e4b4f3a', 'validated', '{"audio_key":"b72fc166dd1dcec230c38d9d8fbfc61694570353f140c82662692c2332908321","entity_key":"wf_this_and_these_01","voice_id":"FDs1ZX5J4e4f2c2erxtW","voice_name":"Fili - Warm Turkish Female ","voice_labels":{"gender":"female","accent":"istanbul","age":"young","category":"professional","language":"tr","use_case":"conversational","descriptive":"calm"},"output_format":"mp3_44100_192","file_sha256":"ebdd9fcdcf89888df4e160981231ff4bb7c620658ef83d12d91f189a1e4b4f3a","settings":{"stability":0.72,"similarity_boost":0.88,"style":0.0,"use_speaker_boost":true,"speed":0.92},"relative_path":"audio/generated/tr-TR/lexical/b72fc166dd1dcec230c38d9d8fbfc61694570353f140c82662692c2332908321.mp3"}'
+) ON DUPLICATE KEY UPDATE
+  provider = VALUES(provider),
+  provider_model = VALUES(provider_model),
+  storage_url = VALUES(storage_url),
+  duration_ms = VALUES(duration_ms),
+  generated_at = VALUES(generated_at),
+  checksum = VALUES(checksum),
+  status = VALUES(status),
+  metadata = VALUES(metadata);
+
+-- lx_yesterday_04 -> audio/generated/tr-TR/lexical/bdef09479bbd43db3cf908a246322409be775e7bbc8e338e51d243c89e37ec68.mp3
+UPDATE audio_assets
+SET status = 'archived'
+WHERE entity_type = 'lexeme'
+  AND entity_id = UUID_TO_BIN('f294bb9b-4cea-5624-9414-9f7fed6e10e4', 1)
+  AND voice_key = 'tr-tr.lexical.native-clear'
+  AND (entity_type NOT IN ('grammar_point','exercise') OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'lx_yesterday_04')
+  AND source_text_hash IS NOT NULL
+  AND source_text_hash <> '425b134263a2256d0e498c1de0c2d07b452316ca2cf802c43b28d9178b4811e5'
+  AND status <> 'archived';
+INSERT INTO audio_assets (
+  id, language_id, language_variant_id, entity_type, entity_id, source_text_hash,
+  voice_key, provider, provider_model, storage_url, duration_ms, generated_at, checksum, status, metadata
+) VALUES (
+  UUID_TO_BIN('99304ba4-4c1e-5beb-8874-61ed5399b065', 1), @audio_language_id, @audio_variant_id, 'lexeme', UUID_TO_BIN('f294bb9b-4cea-5624-9414-9f7fed6e10e4', 1), '425b134263a2256d0e498c1de0c2d07b452316ca2cf802c43b28d9178b4811e5',
+  'tr-tr.lexical.native-clear', 'elevenlabs', 'eleven_multilingual_v2', 'audio/generated/tr-TR/lexical/bdef09479bbd43db3cf908a246322409be775e7bbc8e338e51d243c89e37ec68.mp3', 1253, '2026-09-14 11:32:26.256800', 'dcc0415243f6137eb61e5ad19eab6da0399968415f95ea9731bb754517438b19', 'validated', '{"audio_key":"bdef09479bbd43db3cf908a246322409be775e7bbc8e338e51d243c89e37ec68","entity_key":"lx_yesterday_04","voice_id":"FDs1ZX5J4e4f2c2erxtW","voice_name":"Fili - Warm Turkish Female ","voice_labels":{"gender":"female","accent":"istanbul","age":"young","category":"professional","language":"tr","use_case":"conversational","descriptive":"calm"},"output_format":"mp3_44100_192","file_sha256":"dcc0415243f6137eb61e5ad19eab6da0399968415f95ea9731bb754517438b19","settings":{"stability":0.72,"similarity_boost":0.88,"style":0.0,"use_speaker_boost":true,"speed":0.92},"relative_path":"audio/generated/tr-TR/lexical/bdef09479bbd43db3cf908a246322409be775e7bbc8e338e51d243c89e37ec68.mp3"}'
+) ON DUPLICATE KEY UPDATE
+  provider = VALUES(provider),
+  provider_model = VALUES(provider_model),
+  storage_url = VALUES(storage_url),
+  duration_ms = VALUES(duration_ms),
+  generated_at = VALUES(generated_at),
+  checksum = VALUES(checksum),
+  status = VALUES(status),
+  metadata = VALUES(metadata);
+
+-- wf_yesterday_04 -> audio/generated/tr-TR/lexical/bdef09479bbd43db3cf908a246322409be775e7bbc8e338e51d243c89e37ec68.mp3
+UPDATE audio_assets
+SET status = 'archived'
+WHERE entity_type = 'word_form'
+  AND entity_id = UUID_TO_BIN('6cfab697-2821-5383-a517-c4a9442f349e', 1)
+  AND voice_key = 'tr-tr.lexical.native-clear'
+  AND (entity_type NOT IN ('grammar_point','exercise') OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'wf_yesterday_04')
+  AND source_text_hash IS NOT NULL
+  AND source_text_hash <> '425b134263a2256d0e498c1de0c2d07b452316ca2cf802c43b28d9178b4811e5'
+  AND status <> 'archived';
+INSERT INTO audio_assets (
+  id, language_id, language_variant_id, entity_type, entity_id, source_text_hash,
+  voice_key, provider, provider_model, storage_url, duration_ms, generated_at, checksum, status, metadata
+) VALUES (
+  UUID_TO_BIN('a6f97616-c258-5035-ba30-74b144bba246', 1), @audio_language_id, @audio_variant_id, 'word_form', UUID_TO_BIN('6cfab697-2821-5383-a517-c4a9442f349e', 1), '425b134263a2256d0e498c1de0c2d07b452316ca2cf802c43b28d9178b4811e5',
+  'tr-tr.lexical.native-clear', 'elevenlabs', 'eleven_multilingual_v2', 'audio/generated/tr-TR/lexical/bdef09479bbd43db3cf908a246322409be775e7bbc8e338e51d243c89e37ec68.mp3', 1253, '2026-09-14 11:32:26.256800', 'dcc0415243f6137eb61e5ad19eab6da0399968415f95ea9731bb754517438b19', 'validated', '{"audio_key":"bdef09479bbd43db3cf908a246322409be775e7bbc8e338e51d243c89e37ec68","entity_key":"wf_yesterday_04","voice_id":"FDs1ZX5J4e4f2c2erxtW","voice_name":"Fili - Warm Turkish Female ","voice_labels":{"gender":"female","accent":"istanbul","age":"young","category":"professional","language":"tr","use_case":"conversational","descriptive":"calm"},"output_format":"mp3_44100_192","file_sha256":"dcc0415243f6137eb61e5ad19eab6da0399968415f95ea9731bb754517438b19","settings":{"stability":0.72,"similarity_boost":0.88,"style":0.0,"use_speaker_boost":true,"speed":0.92},"relative_path":"audio/generated/tr-TR/lexical/bdef09479bbd43db3cf908a246322409be775e7bbc8e338e51d243c89e37ec68.mp3"}'
 ) ON DUPLICATE KEY UPDATE
   provider = VALUES(provider),
   provider_model = VALUES(provider_model),
@@ -4352,6 +8928,110 @@ INSERT INTO audio_assets (
   status = VALUES(status),
   metadata = VALUES(metadata);
 
+-- lx_yesterday_02 -> audio/generated/tr-TR/lexical/cebf28f7ce5a32e25409e52643b29ca70a12998968f0a13d382f492aaa83dc34.mp3
+UPDATE audio_assets
+SET status = 'archived'
+WHERE entity_type = 'lexeme'
+  AND entity_id = UUID_TO_BIN('eb7621fa-18b8-5ae6-9840-c7ea820d6c8b', 1)
+  AND voice_key = 'tr-tr.lexical.native-clear'
+  AND (entity_type NOT IN ('grammar_point','exercise') OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'lx_yesterday_02')
+  AND source_text_hash IS NOT NULL
+  AND source_text_hash <> '64c63af03473cc265bea5312caf81af5df54810039af81b058b6aec4108c693d'
+  AND status <> 'archived';
+INSERT INTO audio_assets (
+  id, language_id, language_variant_id, entity_type, entity_id, source_text_hash,
+  voice_key, provider, provider_model, storage_url, duration_ms, generated_at, checksum, status, metadata
+) VALUES (
+  UUID_TO_BIN('a9bdf48b-4bd8-551e-951c-6a8ea872d717', 1), @audio_language_id, @audio_variant_id, 'lexeme', UUID_TO_BIN('eb7621fa-18b8-5ae6-9840-c7ea820d6c8b', 1), '64c63af03473cc265bea5312caf81af5df54810039af81b058b6aec4108c693d',
+  'tr-tr.lexical.native-clear', 'elevenlabs', 'eleven_multilingual_v2', 'audio/generated/tr-TR/lexical/cebf28f7ce5a32e25409e52643b29ca70a12998968f0a13d382f492aaa83dc34.mp3', 1149, '2026-09-14 11:32:27.054200', '824eabb239f252fd4e4f47fffd640ef0315db23e72f1ad11e90257e80fe0d7ae', 'validated', '{"audio_key":"cebf28f7ce5a32e25409e52643b29ca70a12998968f0a13d382f492aaa83dc34","entity_key":"lx_yesterday_02","voice_id":"FDs1ZX5J4e4f2c2erxtW","voice_name":"Fili - Warm Turkish Female ","voice_labels":{"gender":"female","accent":"istanbul","age":"young","category":"professional","language":"tr","use_case":"conversational","descriptive":"calm"},"output_format":"mp3_44100_192","file_sha256":"824eabb239f252fd4e4f47fffd640ef0315db23e72f1ad11e90257e80fe0d7ae","settings":{"stability":0.72,"similarity_boost":0.88,"style":0.0,"use_speaker_boost":true,"speed":0.92},"relative_path":"audio/generated/tr-TR/lexical/cebf28f7ce5a32e25409e52643b29ca70a12998968f0a13d382f492aaa83dc34.mp3"}'
+) ON DUPLICATE KEY UPDATE
+  provider = VALUES(provider),
+  provider_model = VALUES(provider_model),
+  storage_url = VALUES(storage_url),
+  duration_ms = VALUES(duration_ms),
+  generated_at = VALUES(generated_at),
+  checksum = VALUES(checksum),
+  status = VALUES(status),
+  metadata = VALUES(metadata);
+
+-- wf_yesterday_02 -> audio/generated/tr-TR/lexical/cebf28f7ce5a32e25409e52643b29ca70a12998968f0a13d382f492aaa83dc34.mp3
+UPDATE audio_assets
+SET status = 'archived'
+WHERE entity_type = 'word_form'
+  AND entity_id = UUID_TO_BIN('319b29e7-e47b-5cd2-a473-8d176c3969c3', 1)
+  AND voice_key = 'tr-tr.lexical.native-clear'
+  AND (entity_type NOT IN ('grammar_point','exercise') OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'wf_yesterday_02')
+  AND source_text_hash IS NOT NULL
+  AND source_text_hash <> '64c63af03473cc265bea5312caf81af5df54810039af81b058b6aec4108c693d'
+  AND status <> 'archived';
+INSERT INTO audio_assets (
+  id, language_id, language_variant_id, entity_type, entity_id, source_text_hash,
+  voice_key, provider, provider_model, storage_url, duration_ms, generated_at, checksum, status, metadata
+) VALUES (
+  UUID_TO_BIN('56ba9772-9f7a-57d2-9e6f-7c8accc7ad67', 1), @audio_language_id, @audio_variant_id, 'word_form', UUID_TO_BIN('319b29e7-e47b-5cd2-a473-8d176c3969c3', 1), '64c63af03473cc265bea5312caf81af5df54810039af81b058b6aec4108c693d',
+  'tr-tr.lexical.native-clear', 'elevenlabs', 'eleven_multilingual_v2', 'audio/generated/tr-TR/lexical/cebf28f7ce5a32e25409e52643b29ca70a12998968f0a13d382f492aaa83dc34.mp3', 1149, '2026-09-14 11:32:27.054200', '824eabb239f252fd4e4f47fffd640ef0315db23e72f1ad11e90257e80fe0d7ae', 'validated', '{"audio_key":"cebf28f7ce5a32e25409e52643b29ca70a12998968f0a13d382f492aaa83dc34","entity_key":"wf_yesterday_02","voice_id":"FDs1ZX5J4e4f2c2erxtW","voice_name":"Fili - Warm Turkish Female ","voice_labels":{"gender":"female","accent":"istanbul","age":"young","category":"professional","language":"tr","use_case":"conversational","descriptive":"calm"},"output_format":"mp3_44100_192","file_sha256":"824eabb239f252fd4e4f47fffd640ef0315db23e72f1ad11e90257e80fe0d7ae","settings":{"stability":0.72,"similarity_boost":0.88,"style":0.0,"use_speaker_boost":true,"speed":0.92},"relative_path":"audio/generated/tr-TR/lexical/cebf28f7ce5a32e25409e52643b29ca70a12998968f0a13d382f492aaa83dc34.mp3"}'
+) ON DUPLICATE KEY UPDATE
+  provider = VALUES(provider),
+  provider_model = VALUES(provider_model),
+  storage_url = VALUES(storage_url),
+  duration_ms = VALUES(duration_ms),
+  generated_at = VALUES(generated_at),
+  checksum = VALUES(checksum),
+  status = VALUES(status),
+  metadata = VALUES(metadata);
+
+-- lx_before_and_after_05 -> audio/generated/tr-TR/lexical/cec93f71e6f9827eb7a22ede98e96109d2997957846b49d3f02a0f428714143c.mp3
+UPDATE audio_assets
+SET status = 'archived'
+WHERE entity_type = 'lexeme'
+  AND entity_id = UUID_TO_BIN('942c8b8d-583e-5729-9abe-9c9b654c0dd0', 1)
+  AND voice_key = 'tr-tr.lexical.native-clear'
+  AND (entity_type NOT IN ('grammar_point','exercise') OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'lx_before_and_after_05')
+  AND source_text_hash IS NOT NULL
+  AND source_text_hash <> '21d0b8998eada74ad38174f78002d8c49f4197557bd0677a021c3930b87e97bd'
+  AND status <> 'archived';
+INSERT INTO audio_assets (
+  id, language_id, language_variant_id, entity_type, entity_id, source_text_hash,
+  voice_key, provider, provider_model, storage_url, duration_ms, generated_at, checksum, status, metadata
+) VALUES (
+  UUID_TO_BIN('968bb4b5-124e-5662-a601-e4d40d5af8bb', 1), @audio_language_id, @audio_variant_id, 'lexeme', UUID_TO_BIN('942c8b8d-583e-5729-9abe-9c9b654c0dd0', 1), '21d0b8998eada74ad38174f78002d8c49f4197557bd0677a021c3930b87e97bd',
+  'tr-tr.lexical.native-clear', 'elevenlabs', 'eleven_multilingual_v2', 'audio/generated/tr-TR/lexical/cec93f71e6f9827eb7a22ede98e96109d2997957846b49d3f02a0f428714143c.mp3', 1201, '2026-09-14 11:32:27.221312', '3b4935380a1fac16145eb3a21ae58d79205c48349df31259805a6194fc515963', 'validated', '{"audio_key":"cec93f71e6f9827eb7a22ede98e96109d2997957846b49d3f02a0f428714143c","entity_key":"lx_before_and_after_05","voice_id":"FDs1ZX5J4e4f2c2erxtW","voice_name":"Fili - Warm Turkish Female ","voice_labels":{"gender":"female","accent":"istanbul","age":"young","category":"professional","language":"tr","use_case":"conversational","descriptive":"calm"},"output_format":"mp3_44100_192","file_sha256":"3b4935380a1fac16145eb3a21ae58d79205c48349df31259805a6194fc515963","settings":{"stability":0.72,"similarity_boost":0.88,"style":0.0,"use_speaker_boost":true,"speed":0.92},"relative_path":"audio/generated/tr-TR/lexical/cec93f71e6f9827eb7a22ede98e96109d2997957846b49d3f02a0f428714143c.mp3"}'
+) ON DUPLICATE KEY UPDATE
+  provider = VALUES(provider),
+  provider_model = VALUES(provider_model),
+  storage_url = VALUES(storage_url),
+  duration_ms = VALUES(duration_ms),
+  generated_at = VALUES(generated_at),
+  checksum = VALUES(checksum),
+  status = VALUES(status),
+  metadata = VALUES(metadata);
+
+-- wf_before_and_after_05 -> audio/generated/tr-TR/lexical/cec93f71e6f9827eb7a22ede98e96109d2997957846b49d3f02a0f428714143c.mp3
+UPDATE audio_assets
+SET status = 'archived'
+WHERE entity_type = 'word_form'
+  AND entity_id = UUID_TO_BIN('53d596dd-361f-5548-bbf4-aff6fc5c05db', 1)
+  AND voice_key = 'tr-tr.lexical.native-clear'
+  AND (entity_type NOT IN ('grammar_point','exercise') OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'wf_before_and_after_05')
+  AND source_text_hash IS NOT NULL
+  AND source_text_hash <> '21d0b8998eada74ad38174f78002d8c49f4197557bd0677a021c3930b87e97bd'
+  AND status <> 'archived';
+INSERT INTO audio_assets (
+  id, language_id, language_variant_id, entity_type, entity_id, source_text_hash,
+  voice_key, provider, provider_model, storage_url, duration_ms, generated_at, checksum, status, metadata
+) VALUES (
+  UUID_TO_BIN('185dcacf-f01b-5bfd-a7d1-5244437866c4', 1), @audio_language_id, @audio_variant_id, 'word_form', UUID_TO_BIN('53d596dd-361f-5548-bbf4-aff6fc5c05db', 1), '21d0b8998eada74ad38174f78002d8c49f4197557bd0677a021c3930b87e97bd',
+  'tr-tr.lexical.native-clear', 'elevenlabs', 'eleven_multilingual_v2', 'audio/generated/tr-TR/lexical/cec93f71e6f9827eb7a22ede98e96109d2997957846b49d3f02a0f428714143c.mp3', 1201, '2026-09-14 11:32:27.221312', '3b4935380a1fac16145eb3a21ae58d79205c48349df31259805a6194fc515963', 'validated', '{"audio_key":"cec93f71e6f9827eb7a22ede98e96109d2997957846b49d3f02a0f428714143c","entity_key":"wf_before_and_after_05","voice_id":"FDs1ZX5J4e4f2c2erxtW","voice_name":"Fili - Warm Turkish Female ","voice_labels":{"gender":"female","accent":"istanbul","age":"young","category":"professional","language":"tr","use_case":"conversational","descriptive":"calm"},"output_format":"mp3_44100_192","file_sha256":"3b4935380a1fac16145eb3a21ae58d79205c48349df31259805a6194fc515963","settings":{"stability":0.72,"similarity_boost":0.88,"style":0.0,"use_speaker_boost":true,"speed":0.92},"relative_path":"audio/generated/tr-TR/lexical/cec93f71e6f9827eb7a22ede98e96109d2997957846b49d3f02a0f428714143c.mp3"}'
+) ON DUPLICATE KEY UPDATE
+  provider = VALUES(provider),
+  provider_model = VALUES(provider_model),
+  storage_url = VALUES(storage_url),
+  duration_ms = VALUES(duration_ms),
+  generated_at = VALUES(generated_at),
+  checksum = VALUES(checksum),
+  status = VALUES(status),
+  metadata = VALUES(metadata);
+
 -- lx_at_home_02 -> audio/generated/tr-TR/lexical/d0e9392d57407a8f9d58af1cd96f53f5c527fa4e930b22f636614e702f19ee5b.mp3
 UPDATE audio_assets
 SET status = 'archived'
@@ -4446,6 +9126,110 @@ INSERT INTO audio_assets (
 ) VALUES (
   UUID_TO_BIN('8c01584d-ef6a-50e8-8cdf-d7d5192bbf31', 1), @audio_language_id, @audio_variant_id, 'word_form', UUID_TO_BIN('b9f5f9a6-a41a-51e8-b4a2-c52d510fe50b', 1), '0a64ce10853f25cb3dc3f7d498f62d72b406be37ba8caf5aa7671414d9696049',
   'tr-tr.lexical.native-clear', 'elevenlabs', 'eleven_multilingual_v2', 'audio/generated/tr-TR/lexical/d2ca8a9c8539fd5487abe1a62d5bfa0807a3dd0d83a41ee97492c852ffa570b2.mp3', 914, '2026-09-13 15:55:32.178690', '1dff3590eb95dc4552c8217dcf1e5891c61c2e049af45911ca04d3d3592266de', 'validated', '{"audio_key":"d2ca8a9c8539fd5487abe1a62d5bfa0807a3dd0d83a41ee97492c852ffa570b2","entity_key":"wf_at_the_cafe_02","voice_id":"FDs1ZX5J4e4f2c2erxtW","voice_name":"Fili - Warm Turkish Female ","voice_labels":{"gender":"female","accent":"istanbul","age":"young","category":"professional","language":"tr","use_case":"conversational","descriptive":"calm"},"output_format":"mp3_44100_192","file_sha256":"1dff3590eb95dc4552c8217dcf1e5891c61c2e049af45911ca04d3d3592266de","settings":{"stability":0.72,"similarity_boost":0.88,"style":0.0,"use_speaker_boost":true,"speed":0.92},"relative_path":"audio/generated/tr-TR/lexical/d2ca8a9c8539fd5487abe1a62d5bfa0807a3dd0d83a41ee97492c852ffa570b2.mp3"}'
+) ON DUPLICATE KEY UPDATE
+  provider = VALUES(provider),
+  provider_model = VALUES(provider_model),
+  storage_url = VALUES(storage_url),
+  duration_ms = VALUES(duration_ms),
+  generated_at = VALUES(generated_at),
+  checksum = VALUES(checksum),
+  status = VALUES(status),
+  metadata = VALUES(metadata);
+
+-- lx_from_here_to_there_01 -> audio/generated/tr-TR/lexical/d6bd318a142a187220bb6e9c3e4640084ea6e57c253a5e37b237712735627557.mp3
+UPDATE audio_assets
+SET status = 'archived'
+WHERE entity_type = 'lexeme'
+  AND entity_id = UUID_TO_BIN('d6e16e80-19d1-5c4b-b36f-856e2f739256', 1)
+  AND voice_key = 'tr-tr.lexical.native-clear'
+  AND (entity_type NOT IN ('grammar_point','exercise') OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'lx_from_here_to_there_01')
+  AND source_text_hash IS NOT NULL
+  AND source_text_hash <> 'a9918e1db8012757340429f8340e8cf3c4d0e495782c3862255ccc0536fef7d7'
+  AND status <> 'archived';
+INSERT INTO audio_assets (
+  id, language_id, language_variant_id, entity_type, entity_id, source_text_hash,
+  voice_key, provider, provider_model, storage_url, duration_ms, generated_at, checksum, status, metadata
+) VALUES (
+  UUID_TO_BIN('8c6cfbca-d219-5ef2-8d62-297ef523a743', 1), @audio_language_id, @audio_variant_id, 'lexeme', UUID_TO_BIN('d6e16e80-19d1-5c4b-b36f-856e2f739256', 1), 'a9918e1db8012757340429f8340e8cf3c4d0e495782c3862255ccc0536fef7d7',
+  'tr-tr.lexical.native-clear', 'elevenlabs', 'eleven_multilingual_v2', 'audio/generated/tr-TR/lexical/d6bd318a142a187220bb6e9c3e4640084ea6e57c253a5e37b237712735627557.mp3', 1280, '2026-09-14 11:32:28.022931', 'e4857cc6a3449823ec4323eb604a874c2ee16c644468a7de4bfa7601e2df87cf', 'validated', '{"audio_key":"d6bd318a142a187220bb6e9c3e4640084ea6e57c253a5e37b237712735627557","entity_key":"lx_from_here_to_there_01","voice_id":"FDs1ZX5J4e4f2c2erxtW","voice_name":"Fili - Warm Turkish Female ","voice_labels":{"gender":"female","accent":"istanbul","age":"young","category":"professional","language":"tr","use_case":"conversational","descriptive":"calm"},"output_format":"mp3_44100_192","file_sha256":"e4857cc6a3449823ec4323eb604a874c2ee16c644468a7de4bfa7601e2df87cf","settings":{"stability":0.72,"similarity_boost":0.88,"style":0.0,"use_speaker_boost":true,"speed":0.92},"relative_path":"audio/generated/tr-TR/lexical/d6bd318a142a187220bb6e9c3e4640084ea6e57c253a5e37b237712735627557.mp3"}'
+) ON DUPLICATE KEY UPDATE
+  provider = VALUES(provider),
+  provider_model = VALUES(provider_model),
+  storage_url = VALUES(storage_url),
+  duration_ms = VALUES(duration_ms),
+  generated_at = VALUES(generated_at),
+  checksum = VALUES(checksum),
+  status = VALUES(status),
+  metadata = VALUES(metadata);
+
+-- wf_from_here_to_there_01 -> audio/generated/tr-TR/lexical/d6bd318a142a187220bb6e9c3e4640084ea6e57c253a5e37b237712735627557.mp3
+UPDATE audio_assets
+SET status = 'archived'
+WHERE entity_type = 'word_form'
+  AND entity_id = UUID_TO_BIN('ecc3dfec-cbaa-5647-8c1b-ad6a278bed2b', 1)
+  AND voice_key = 'tr-tr.lexical.native-clear'
+  AND (entity_type NOT IN ('grammar_point','exercise') OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'wf_from_here_to_there_01')
+  AND source_text_hash IS NOT NULL
+  AND source_text_hash <> 'a9918e1db8012757340429f8340e8cf3c4d0e495782c3862255ccc0536fef7d7'
+  AND status <> 'archived';
+INSERT INTO audio_assets (
+  id, language_id, language_variant_id, entity_type, entity_id, source_text_hash,
+  voice_key, provider, provider_model, storage_url, duration_ms, generated_at, checksum, status, metadata
+) VALUES (
+  UUID_TO_BIN('75a45aa5-5048-5c5a-bfa7-590ef4683512', 1), @audio_language_id, @audio_variant_id, 'word_form', UUID_TO_BIN('ecc3dfec-cbaa-5647-8c1b-ad6a278bed2b', 1), 'a9918e1db8012757340429f8340e8cf3c4d0e495782c3862255ccc0536fef7d7',
+  'tr-tr.lexical.native-clear', 'elevenlabs', 'eleven_multilingual_v2', 'audio/generated/tr-TR/lexical/d6bd318a142a187220bb6e9c3e4640084ea6e57c253a5e37b237712735627557.mp3', 1280, '2026-09-14 11:32:28.022931', 'e4857cc6a3449823ec4323eb604a874c2ee16c644468a7de4bfa7601e2df87cf', 'validated', '{"audio_key":"d6bd318a142a187220bb6e9c3e4640084ea6e57c253a5e37b237712735627557","entity_key":"wf_from_here_to_there_01","voice_id":"FDs1ZX5J4e4f2c2erxtW","voice_name":"Fili - Warm Turkish Female ","voice_labels":{"gender":"female","accent":"istanbul","age":"young","category":"professional","language":"tr","use_case":"conversational","descriptive":"calm"},"output_format":"mp3_44100_192","file_sha256":"e4857cc6a3449823ec4323eb604a874c2ee16c644468a7de4bfa7601e2df87cf","settings":{"stability":0.72,"similarity_boost":0.88,"style":0.0,"use_speaker_boost":true,"speed":0.92},"relative_path":"audio/generated/tr-TR/lexical/d6bd318a142a187220bb6e9c3e4640084ea6e57c253a5e37b237712735627557.mp3"}'
+) ON DUPLICATE KEY UPDATE
+  provider = VALUES(provider),
+  provider_model = VALUES(provider_model),
+  storage_url = VALUES(storage_url),
+  duration_ms = VALUES(duration_ms),
+  generated_at = VALUES(generated_at),
+  checksum = VALUES(checksum),
+  status = VALUES(status),
+  metadata = VALUES(metadata);
+
+-- lx_from_here_to_there_05 -> audio/generated/tr-TR/lexical/d951bde082555f57edea96c7b906630a8b1a2583fc0b25f6ff747c6ca1d83fdb.mp3
+UPDATE audio_assets
+SET status = 'archived'
+WHERE entity_type = 'lexeme'
+  AND entity_id = UUID_TO_BIN('9e2f0cfe-6722-5513-aa83-0f0794681b8f', 1)
+  AND voice_key = 'tr-tr.lexical.native-clear'
+  AND (entity_type NOT IN ('grammar_point','exercise') OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'lx_from_here_to_there_05')
+  AND source_text_hash IS NOT NULL
+  AND source_text_hash <> '13471f4474591aaa0ae3bf6136033e086427bfe41df9edc082673944f43dc2b9'
+  AND status <> 'archived';
+INSERT INTO audio_assets (
+  id, language_id, language_variant_id, entity_type, entity_id, source_text_hash,
+  voice_key, provider, provider_model, storage_url, duration_ms, generated_at, checksum, status, metadata
+) VALUES (
+  UUID_TO_BIN('dd279e75-2e0e-511a-87c9-4df2e09be6d9', 1), @audio_language_id, @audio_variant_id, 'lexeme', UUID_TO_BIN('9e2f0cfe-6722-5513-aa83-0f0794681b8f', 1), '13471f4474591aaa0ae3bf6136033e086427bfe41df9edc082673944f43dc2b9',
+  'tr-tr.lexical.native-clear', 'elevenlabs', 'eleven_multilingual_v2', 'audio/generated/tr-TR/lexical/d951bde082555f57edea96c7b906630a8b1a2583fc0b25f6ff747c6ca1d83fdb.mp3', 1097, '2026-09-14 11:32:28.151446', '31db2df3098b27eee06c74580a556415a515ca7990c626fb306b454669dffb6b', 'validated', '{"audio_key":"d951bde082555f57edea96c7b906630a8b1a2583fc0b25f6ff747c6ca1d83fdb","entity_key":"lx_from_here_to_there_05","voice_id":"FDs1ZX5J4e4f2c2erxtW","voice_name":"Fili - Warm Turkish Female ","voice_labels":{"gender":"female","accent":"istanbul","age":"young","category":"professional","language":"tr","use_case":"conversational","descriptive":"calm"},"output_format":"mp3_44100_192","file_sha256":"31db2df3098b27eee06c74580a556415a515ca7990c626fb306b454669dffb6b","settings":{"stability":0.72,"similarity_boost":0.88,"style":0.0,"use_speaker_boost":true,"speed":0.92},"relative_path":"audio/generated/tr-TR/lexical/d951bde082555f57edea96c7b906630a8b1a2583fc0b25f6ff747c6ca1d83fdb.mp3"}'
+) ON DUPLICATE KEY UPDATE
+  provider = VALUES(provider),
+  provider_model = VALUES(provider_model),
+  storage_url = VALUES(storage_url),
+  duration_ms = VALUES(duration_ms),
+  generated_at = VALUES(generated_at),
+  checksum = VALUES(checksum),
+  status = VALUES(status),
+  metadata = VALUES(metadata);
+
+-- wf_from_here_to_there_05 -> audio/generated/tr-TR/lexical/d951bde082555f57edea96c7b906630a8b1a2583fc0b25f6ff747c6ca1d83fdb.mp3
+UPDATE audio_assets
+SET status = 'archived'
+WHERE entity_type = 'word_form'
+  AND entity_id = UUID_TO_BIN('eb7cfa5e-8a81-5546-b172-78c5cbb40905', 1)
+  AND voice_key = 'tr-tr.lexical.native-clear'
+  AND (entity_type NOT IN ('grammar_point','exercise') OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'wf_from_here_to_there_05')
+  AND source_text_hash IS NOT NULL
+  AND source_text_hash <> '13471f4474591aaa0ae3bf6136033e086427bfe41df9edc082673944f43dc2b9'
+  AND status <> 'archived';
+INSERT INTO audio_assets (
+  id, language_id, language_variant_id, entity_type, entity_id, source_text_hash,
+  voice_key, provider, provider_model, storage_url, duration_ms, generated_at, checksum, status, metadata
+) VALUES (
+  UUID_TO_BIN('6880d2a3-5a71-5bc2-9a14-94ce21bd13e4', 1), @audio_language_id, @audio_variant_id, 'word_form', UUID_TO_BIN('eb7cfa5e-8a81-5546-b172-78c5cbb40905', 1), '13471f4474591aaa0ae3bf6136033e086427bfe41df9edc082673944f43dc2b9',
+  'tr-tr.lexical.native-clear', 'elevenlabs', 'eleven_multilingual_v2', 'audio/generated/tr-TR/lexical/d951bde082555f57edea96c7b906630a8b1a2583fc0b25f6ff747c6ca1d83fdb.mp3', 1097, '2026-09-14 11:32:28.151446', '31db2df3098b27eee06c74580a556415a515ca7990c626fb306b454669dffb6b', 'validated', '{"audio_key":"d951bde082555f57edea96c7b906630a8b1a2583fc0b25f6ff747c6ca1d83fdb","entity_key":"wf_from_here_to_there_05","voice_id":"FDs1ZX5J4e4f2c2erxtW","voice_name":"Fili - Warm Turkish Female ","voice_labels":{"gender":"female","accent":"istanbul","age":"young","category":"professional","language":"tr","use_case":"conversational","descriptive":"calm"},"output_format":"mp3_44100_192","file_sha256":"31db2df3098b27eee06c74580a556415a515ca7990c626fb306b454669dffb6b","settings":{"stability":0.72,"similarity_boost":0.88,"style":0.0,"use_speaker_boost":true,"speed":0.92},"relative_path":"audio/generated/tr-TR/lexical/d951bde082555f57edea96c7b906630a8b1a2583fc0b25f6ff747c6ca1d83fdb.mp3"}'
 ) ON DUPLICATE KEY UPDATE
   provider = VALUES(provider),
   provider_model = VALUES(provider_model),
@@ -4716,6 +9500,58 @@ INSERT INTO audio_assets (
   status = VALUES(status),
   metadata = VALUES(metadata);
 
+-- lx_everyday_routine_03 -> audio/generated/tr-TR/lexical/e345366b69a6da45351a89f36121a6e65f30d93a5dddd1fb0b08c447a1382b6a.mp3
+UPDATE audio_assets
+SET status = 'archived'
+WHERE entity_type = 'lexeme'
+  AND entity_id = UUID_TO_BIN('97650930-0573-5525-82e5-9d9fbfaf27b8', 1)
+  AND voice_key = 'tr-tr.lexical.native-clear'
+  AND (entity_type NOT IN ('grammar_point','exercise') OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'lx_everyday_routine_03')
+  AND source_text_hash IS NOT NULL
+  AND source_text_hash <> '9d3b7940ad82c26bdb9abb0b6f403556978d8712d114aeb28d6ed0181e7ddc2c'
+  AND status <> 'archived';
+INSERT INTO audio_assets (
+  id, language_id, language_variant_id, entity_type, entity_id, source_text_hash,
+  voice_key, provider, provider_model, storage_url, duration_ms, generated_at, checksum, status, metadata
+) VALUES (
+  UUID_TO_BIN('d012f7c8-171f-5344-a262-f2fc0068e652', 1), @audio_language_id, @audio_variant_id, 'lexeme', UUID_TO_BIN('97650930-0573-5525-82e5-9d9fbfaf27b8', 1), '9d3b7940ad82c26bdb9abb0b6f403556978d8712d114aeb28d6ed0181e7ddc2c',
+  'tr-tr.lexical.native-clear', 'elevenlabs', 'eleven_multilingual_v2', 'audio/generated/tr-TR/lexical/e345366b69a6da45351a89f36121a6e65f30d93a5dddd1fb0b08c447a1382b6a.mp3', 1201, '2026-09-14 11:32:29.000171', '46a2b23d090f25877e4e97d6cfb10f3e4d4f1374960049ac5b8e397c7bd2f110', 'validated', '{"audio_key":"e345366b69a6da45351a89f36121a6e65f30d93a5dddd1fb0b08c447a1382b6a","entity_key":"lx_everyday_routine_03","voice_id":"FDs1ZX5J4e4f2c2erxtW","voice_name":"Fili - Warm Turkish Female ","voice_labels":{"gender":"female","accent":"istanbul","age":"young","category":"professional","language":"tr","use_case":"conversational","descriptive":"calm"},"output_format":"mp3_44100_192","file_sha256":"46a2b23d090f25877e4e97d6cfb10f3e4d4f1374960049ac5b8e397c7bd2f110","settings":{"stability":0.72,"similarity_boost":0.88,"style":0.0,"use_speaker_boost":true,"speed":0.92},"relative_path":"audio/generated/tr-TR/lexical/e345366b69a6da45351a89f36121a6e65f30d93a5dddd1fb0b08c447a1382b6a.mp3"}'
+) ON DUPLICATE KEY UPDATE
+  provider = VALUES(provider),
+  provider_model = VALUES(provider_model),
+  storage_url = VALUES(storage_url),
+  duration_ms = VALUES(duration_ms),
+  generated_at = VALUES(generated_at),
+  checksum = VALUES(checksum),
+  status = VALUES(status),
+  metadata = VALUES(metadata);
+
+-- wf_everyday_routine_03 -> audio/generated/tr-TR/lexical/e345366b69a6da45351a89f36121a6e65f30d93a5dddd1fb0b08c447a1382b6a.mp3
+UPDATE audio_assets
+SET status = 'archived'
+WHERE entity_type = 'word_form'
+  AND entity_id = UUID_TO_BIN('17bc4749-9f19-587f-b9f2-b6370c3d9565', 1)
+  AND voice_key = 'tr-tr.lexical.native-clear'
+  AND (entity_type NOT IN ('grammar_point','exercise') OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'wf_everyday_routine_03')
+  AND source_text_hash IS NOT NULL
+  AND source_text_hash <> '9d3b7940ad82c26bdb9abb0b6f403556978d8712d114aeb28d6ed0181e7ddc2c'
+  AND status <> 'archived';
+INSERT INTO audio_assets (
+  id, language_id, language_variant_id, entity_type, entity_id, source_text_hash,
+  voice_key, provider, provider_model, storage_url, duration_ms, generated_at, checksum, status, metadata
+) VALUES (
+  UUID_TO_BIN('03cc2b1a-7907-5934-9964-cff4c1118a09', 1), @audio_language_id, @audio_variant_id, 'word_form', UUID_TO_BIN('17bc4749-9f19-587f-b9f2-b6370c3d9565', 1), '9d3b7940ad82c26bdb9abb0b6f403556978d8712d114aeb28d6ed0181e7ddc2c',
+  'tr-tr.lexical.native-clear', 'elevenlabs', 'eleven_multilingual_v2', 'audio/generated/tr-TR/lexical/e345366b69a6da45351a89f36121a6e65f30d93a5dddd1fb0b08c447a1382b6a.mp3', 1201, '2026-09-14 11:32:29.000171', '46a2b23d090f25877e4e97d6cfb10f3e4d4f1374960049ac5b8e397c7bd2f110', 'validated', '{"audio_key":"e345366b69a6da45351a89f36121a6e65f30d93a5dddd1fb0b08c447a1382b6a","entity_key":"wf_everyday_routine_03","voice_id":"FDs1ZX5J4e4f2c2erxtW","voice_name":"Fili - Warm Turkish Female ","voice_labels":{"gender":"female","accent":"istanbul","age":"young","category":"professional","language":"tr","use_case":"conversational","descriptive":"calm"},"output_format":"mp3_44100_192","file_sha256":"46a2b23d090f25877e4e97d6cfb10f3e4d4f1374960049ac5b8e397c7bd2f110","settings":{"stability":0.72,"similarity_boost":0.88,"style":0.0,"use_speaker_boost":true,"speed":0.92},"relative_path":"audio/generated/tr-TR/lexical/e345366b69a6da45351a89f36121a6e65f30d93a5dddd1fb0b08c447a1382b6a.mp3"}'
+) ON DUPLICATE KEY UPDATE
+  provider = VALUES(provider),
+  provider_model = VALUES(provider_model),
+  storage_url = VALUES(storage_url),
+  duration_ms = VALUES(duration_ms),
+  generated_at = VALUES(generated_at),
+  checksum = VALUES(checksum),
+  status = VALUES(status),
+  metadata = VALUES(metadata);
+
 -- lx_a1_first_day_capstone_03 -> audio/generated/tr-TR/lexical/e5ec88277380e70e457fd75fecfedca49592709b5f4c77186fa6005fc655408f.mp3
 UPDATE audio_assets
 SET status = 'archived'
@@ -4924,6 +9760,110 @@ INSERT INTO audio_assets (
   status = VALUES(status),
   metadata = VALUES(metadata);
 
+-- lx_a1_everyday_capstone_02 -> audio/generated/tr-TR/lexical/ea471eb877e697fdad0857c0be7e7a7a4899fed79ed1b3370362734c12c387a0.mp3
+UPDATE audio_assets
+SET status = 'archived'
+WHERE entity_type = 'lexeme'
+  AND entity_id = UUID_TO_BIN('b955044b-e519-5190-9937-4568d9181c8c', 1)
+  AND voice_key = 'tr-tr.lexical.native-clear'
+  AND (entity_type NOT IN ('grammar_point','exercise') OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'lx_a1_everyday_capstone_02')
+  AND source_text_hash IS NOT NULL
+  AND source_text_hash <> '7eb7b1f325e3120abebd421ffd175f65e7674c017cfea8064001fc4a7b7ff76d'
+  AND status <> 'archived';
+INSERT INTO audio_assets (
+  id, language_id, language_variant_id, entity_type, entity_id, source_text_hash,
+  voice_key, provider, provider_model, storage_url, duration_ms, generated_at, checksum, status, metadata
+) VALUES (
+  UUID_TO_BIN('d387bda6-93bc-5d2c-bb2c-0a0755b6084e', 1), @audio_language_id, @audio_variant_id, 'lexeme', UUID_TO_BIN('b955044b-e519-5190-9937-4568d9181c8c', 1), '7eb7b1f325e3120abebd421ffd175f65e7674c017cfea8064001fc4a7b7ff76d',
+  'tr-tr.lexical.native-clear', 'elevenlabs', 'eleven_multilingual_v2', 'audio/generated/tr-TR/lexical/ea471eb877e697fdad0857c0be7e7a7a4899fed79ed1b3370362734c12c387a0.mp3', 1097, '2026-09-13 17:08:38.462215', 'f5aa35ac8a6e1e09d0964eb47f15f1ff8cbae9914f0ab3180e6c16f28b677152', 'validated', '{"audio_key":"ea471eb877e697fdad0857c0be7e7a7a4899fed79ed1b3370362734c12c387a0","entity_key":"lx_a1_everyday_capstone_02","voice_id":"FDs1ZX5J4e4f2c2erxtW","voice_name":"Fili - Warm Turkish Female ","voice_labels":{"gender":"female","accent":"istanbul","age":"young","category":"professional","language":"tr","use_case":"conversational","descriptive":"calm"},"output_format":"mp3_44100_192","file_sha256":"f5aa35ac8a6e1e09d0964eb47f15f1ff8cbae9914f0ab3180e6c16f28b677152","settings":{"stability":0.72,"similarity_boost":0.88,"style":0.0,"use_speaker_boost":true,"speed":0.92},"relative_path":"audio/generated/tr-TR/lexical/ea471eb877e697fdad0857c0be7e7a7a4899fed79ed1b3370362734c12c387a0.mp3"}'
+) ON DUPLICATE KEY UPDATE
+  provider = VALUES(provider),
+  provider_model = VALUES(provider_model),
+  storage_url = VALUES(storage_url),
+  duration_ms = VALUES(duration_ms),
+  generated_at = VALUES(generated_at),
+  checksum = VALUES(checksum),
+  status = VALUES(status),
+  metadata = VALUES(metadata);
+
+-- wf_a1_everyday_capstone_02 -> audio/generated/tr-TR/lexical/ea471eb877e697fdad0857c0be7e7a7a4899fed79ed1b3370362734c12c387a0.mp3
+UPDATE audio_assets
+SET status = 'archived'
+WHERE entity_type = 'word_form'
+  AND entity_id = UUID_TO_BIN('ade7abad-c4f0-50b1-992d-36c860101acd', 1)
+  AND voice_key = 'tr-tr.lexical.native-clear'
+  AND (entity_type NOT IN ('grammar_point','exercise') OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'wf_a1_everyday_capstone_02')
+  AND source_text_hash IS NOT NULL
+  AND source_text_hash <> '7eb7b1f325e3120abebd421ffd175f65e7674c017cfea8064001fc4a7b7ff76d'
+  AND status <> 'archived';
+INSERT INTO audio_assets (
+  id, language_id, language_variant_id, entity_type, entity_id, source_text_hash,
+  voice_key, provider, provider_model, storage_url, duration_ms, generated_at, checksum, status, metadata
+) VALUES (
+  UUID_TO_BIN('0af27b35-28e7-5395-9402-c269bfe31cc7', 1), @audio_language_id, @audio_variant_id, 'word_form', UUID_TO_BIN('ade7abad-c4f0-50b1-992d-36c860101acd', 1), '7eb7b1f325e3120abebd421ffd175f65e7674c017cfea8064001fc4a7b7ff76d',
+  'tr-tr.lexical.native-clear', 'elevenlabs', 'eleven_multilingual_v2', 'audio/generated/tr-TR/lexical/ea471eb877e697fdad0857c0be7e7a7a4899fed79ed1b3370362734c12c387a0.mp3', 1097, '2026-09-13 17:08:38.462215', 'f5aa35ac8a6e1e09d0964eb47f15f1ff8cbae9914f0ab3180e6c16f28b677152', 'validated', '{"audio_key":"ea471eb877e697fdad0857c0be7e7a7a4899fed79ed1b3370362734c12c387a0","entity_key":"wf_a1_everyday_capstone_02","voice_id":"FDs1ZX5J4e4f2c2erxtW","voice_name":"Fili - Warm Turkish Female ","voice_labels":{"gender":"female","accent":"istanbul","age":"young","category":"professional","language":"tr","use_case":"conversational","descriptive":"calm"},"output_format":"mp3_44100_192","file_sha256":"f5aa35ac8a6e1e09d0964eb47f15f1ff8cbae9914f0ab3180e6c16f28b677152","settings":{"stability":0.72,"similarity_boost":0.88,"style":0.0,"use_speaker_boost":true,"speed":0.92},"relative_path":"audio/generated/tr-TR/lexical/ea471eb877e697fdad0857c0be7e7a7a4899fed79ed1b3370362734c12c387a0.mp3"}'
+) ON DUPLICATE KEY UPDATE
+  provider = VALUES(provider),
+  provider_model = VALUES(provider_model),
+  storage_url = VALUES(storage_url),
+  duration_ms = VALUES(duration_ms),
+  generated_at = VALUES(generated_at),
+  checksum = VALUES(checksum),
+  status = VALUES(status),
+  metadata = VALUES(metadata);
+
+-- lx_from_here_to_there_03 -> audio/generated/tr-TR/lexical/f0cea59886c647ae342a96a063594750c4839b9b3ebf7f1ffaf6b7da9f2fea94.mp3
+UPDATE audio_assets
+SET status = 'archived'
+WHERE entity_type = 'lexeme'
+  AND entity_id = UUID_TO_BIN('7d89150f-1ec5-5bf7-ac24-3e41dadb9bf7', 1)
+  AND voice_key = 'tr-tr.lexical.native-clear'
+  AND (entity_type NOT IN ('grammar_point','exercise') OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'lx_from_here_to_there_03')
+  AND source_text_hash IS NOT NULL
+  AND source_text_hash <> 'b079099f43e888e356a2259dfd64e464035d174ec93844c2c7d8edb990a54004'
+  AND status <> 'archived';
+INSERT INTO audio_assets (
+  id, language_id, language_variant_id, entity_type, entity_id, source_text_hash,
+  voice_key, provider, provider_model, storage_url, duration_ms, generated_at, checksum, status, metadata
+) VALUES (
+  UUID_TO_BIN('1676a957-7bfa-57cc-846d-da603176b163', 1), @audio_language_id, @audio_variant_id, 'lexeme', UUID_TO_BIN('7d89150f-1ec5-5bf7-ac24-3e41dadb9bf7', 1), 'b079099f43e888e356a2259dfd64e464035d174ec93844c2c7d8edb990a54004',
+  'tr-tr.lexical.native-clear', 'elevenlabs', 'eleven_multilingual_v2', 'audio/generated/tr-TR/lexical/f0cea59886c647ae342a96a063594750c4839b9b3ebf7f1ffaf6b7da9f2fea94.mp3', 1018, '2026-09-13 15:55:37.395444', 'c710398b20e8822ec11f7ff155b51332f2aa692ad72f3b55830cc0abfed9f5a7', 'validated', '{"audio_key":"f0cea59886c647ae342a96a063594750c4839b9b3ebf7f1ffaf6b7da9f2fea94","entity_key":"lx_from_here_to_there_03","voice_id":"FDs1ZX5J4e4f2c2erxtW","voice_name":"Fili - Warm Turkish Female ","voice_labels":{"gender":"female","accent":"istanbul","age":"young","category":"professional","language":"tr","use_case":"conversational","descriptive":"calm"},"output_format":"mp3_44100_192","file_sha256":"c710398b20e8822ec11f7ff155b51332f2aa692ad72f3b55830cc0abfed9f5a7","settings":{"stability":0.72,"similarity_boost":0.88,"style":0.0,"use_speaker_boost":true,"speed":0.92},"relative_path":"audio/generated/tr-TR/lexical/f0cea59886c647ae342a96a063594750c4839b9b3ebf7f1ffaf6b7da9f2fea94.mp3"}'
+) ON DUPLICATE KEY UPDATE
+  provider = VALUES(provider),
+  provider_model = VALUES(provider_model),
+  storage_url = VALUES(storage_url),
+  duration_ms = VALUES(duration_ms),
+  generated_at = VALUES(generated_at),
+  checksum = VALUES(checksum),
+  status = VALUES(status),
+  metadata = VALUES(metadata);
+
+-- wf_from_here_to_there_03 -> audio/generated/tr-TR/lexical/f0cea59886c647ae342a96a063594750c4839b9b3ebf7f1ffaf6b7da9f2fea94.mp3
+UPDATE audio_assets
+SET status = 'archived'
+WHERE entity_type = 'word_form'
+  AND entity_id = UUID_TO_BIN('952554f5-d0af-5295-a4ec-e997d3bdf9de', 1)
+  AND voice_key = 'tr-tr.lexical.native-clear'
+  AND (entity_type NOT IN ('grammar_point','exercise') OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'wf_from_here_to_there_03')
+  AND source_text_hash IS NOT NULL
+  AND source_text_hash <> 'b079099f43e888e356a2259dfd64e464035d174ec93844c2c7d8edb990a54004'
+  AND status <> 'archived';
+INSERT INTO audio_assets (
+  id, language_id, language_variant_id, entity_type, entity_id, source_text_hash,
+  voice_key, provider, provider_model, storage_url, duration_ms, generated_at, checksum, status, metadata
+) VALUES (
+  UUID_TO_BIN('b96a9123-81ce-5d46-8c1f-09b3bfbbfebb', 1), @audio_language_id, @audio_variant_id, 'word_form', UUID_TO_BIN('952554f5-d0af-5295-a4ec-e997d3bdf9de', 1), 'b079099f43e888e356a2259dfd64e464035d174ec93844c2c7d8edb990a54004',
+  'tr-tr.lexical.native-clear', 'elevenlabs', 'eleven_multilingual_v2', 'audio/generated/tr-TR/lexical/f0cea59886c647ae342a96a063594750c4839b9b3ebf7f1ffaf6b7da9f2fea94.mp3', 1018, '2026-09-13 15:55:37.395444', 'c710398b20e8822ec11f7ff155b51332f2aa692ad72f3b55830cc0abfed9f5a7', 'validated', '{"audio_key":"f0cea59886c647ae342a96a063594750c4839b9b3ebf7f1ffaf6b7da9f2fea94","entity_key":"wf_from_here_to_there_03","voice_id":"FDs1ZX5J4e4f2c2erxtW","voice_name":"Fili - Warm Turkish Female ","voice_labels":{"gender":"female","accent":"istanbul","age":"young","category":"professional","language":"tr","use_case":"conversational","descriptive":"calm"},"output_format":"mp3_44100_192","file_sha256":"c710398b20e8822ec11f7ff155b51332f2aa692ad72f3b55830cc0abfed9f5a7","settings":{"stability":0.72,"similarity_boost":0.88,"style":0.0,"use_speaker_boost":true,"speed":0.92},"relative_path":"audio/generated/tr-TR/lexical/f0cea59886c647ae342a96a063594750c4839b9b3ebf7f1ffaf6b7da9f2fea94.mp3"}'
+) ON DUPLICATE KEY UPDATE
+  provider = VALUES(provider),
+  provider_model = VALUES(provider_model),
+  storage_url = VALUES(storage_url),
+  duration_ms = VALUES(duration_ms),
+  generated_at = VALUES(generated_at),
+  checksum = VALUES(checksum),
+  status = VALUES(status),
+  metadata = VALUES(metadata);
+
 -- lx_getting_around_02 -> audio/generated/tr-TR/lexical/f0cea59886c647ae342a96a063594750c4839b9b3ebf7f1ffaf6b7da9f2fea94.mp3
 UPDATE audio_assets
 SET status = 'archived'
@@ -4966,6 +9906,110 @@ INSERT INTO audio_assets (
 ) VALUES (
   UUID_TO_BIN('c47f3a48-15e8-511e-abea-d107862b268f', 1), @audio_language_id, @audio_variant_id, 'word_form', UUID_TO_BIN('6c587a22-a5c8-56a5-8543-f3f743384a5a', 1), 'b079099f43e888e356a2259dfd64e464035d174ec93844c2c7d8edb990a54004',
   'tr-tr.lexical.native-clear', 'elevenlabs', 'eleven_multilingual_v2', 'audio/generated/tr-TR/lexical/f0cea59886c647ae342a96a063594750c4839b9b3ebf7f1ffaf6b7da9f2fea94.mp3', 1018, '2026-09-13 15:55:37.395444', 'c710398b20e8822ec11f7ff155b51332f2aa692ad72f3b55830cc0abfed9f5a7', 'validated', '{"audio_key":"f0cea59886c647ae342a96a063594750c4839b9b3ebf7f1ffaf6b7da9f2fea94","entity_key":"wf_getting_around_02","voice_id":"FDs1ZX5J4e4f2c2erxtW","voice_name":"Fili - Warm Turkish Female ","voice_labels":{"gender":"female","accent":"istanbul","age":"young","category":"professional","language":"tr","use_case":"conversational","descriptive":"calm"},"output_format":"mp3_44100_192","file_sha256":"c710398b20e8822ec11f7ff155b51332f2aa692ad72f3b55830cc0abfed9f5a7","settings":{"stability":0.72,"similarity_boost":0.88,"style":0.0,"use_speaker_boost":true,"speed":0.92},"relative_path":"audio/generated/tr-TR/lexical/f0cea59886c647ae342a96a063594750c4839b9b3ebf7f1ffaf6b7da9f2fea94.mp3"}'
+) ON DUPLICATE KEY UPDATE
+  provider = VALUES(provider),
+  provider_model = VALUES(provider_model),
+  storage_url = VALUES(storage_url),
+  duration_ms = VALUES(duration_ms),
+  generated_at = VALUES(generated_at),
+  checksum = VALUES(checksum),
+  status = VALUES(status),
+  metadata = VALUES(metadata);
+
+-- lx_likes_and_specific_things_06 -> audio/generated/tr-TR/lexical/f2c952e9df3f1adce2386220f7c1e3f1dbe0e6770a7d446e1e17e28c128880b0.mp3
+UPDATE audio_assets
+SET status = 'archived'
+WHERE entity_type = 'lexeme'
+  AND entity_id = UUID_TO_BIN('d5e00239-1728-55fb-8a5b-7e91c2f09fdb', 1)
+  AND voice_key = 'tr-tr.lexical.native-clear'
+  AND (entity_type NOT IN ('grammar_point','exercise') OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'lx_likes_and_specific_things_06')
+  AND source_text_hash IS NOT NULL
+  AND source_text_hash <> '44ffd8ace8fb8a663a8bac3014bc775df0c74a3ccf14c89b5029272ebae26606'
+  AND status <> 'archived';
+INSERT INTO audio_assets (
+  id, language_id, language_variant_id, entity_type, entity_id, source_text_hash,
+  voice_key, provider, provider_model, storage_url, duration_ms, generated_at, checksum, status, metadata
+) VALUES (
+  UUID_TO_BIN('2fc5f3a0-0187-565d-af2c-2583b596eee8', 1), @audio_language_id, @audio_variant_id, 'lexeme', UUID_TO_BIN('d5e00239-1728-55fb-8a5b-7e91c2f09fdb', 1), '44ffd8ace8fb8a663a8bac3014bc775df0c74a3ccf14c89b5029272ebae26606',
+  'tr-tr.lexical.native-clear', 'elevenlabs', 'eleven_multilingual_v2', 'audio/generated/tr-TR/lexical/f2c952e9df3f1adce2386220f7c1e3f1dbe0e6770a7d446e1e17e28c128880b0.mp3', 1201, '2026-09-14 11:32:29.127060', 'f9fef3ad0f588eb23db0ee951bfcddb717cb53f6f683dead4b3b6c2e7b3efab9', 'validated', '{"audio_key":"f2c952e9df3f1adce2386220f7c1e3f1dbe0e6770a7d446e1e17e28c128880b0","entity_key":"lx_likes_and_specific_things_06","voice_id":"FDs1ZX5J4e4f2c2erxtW","voice_name":"Fili - Warm Turkish Female ","voice_labels":{"gender":"female","accent":"istanbul","age":"young","category":"professional","language":"tr","use_case":"conversational","descriptive":"calm"},"output_format":"mp3_44100_192","file_sha256":"f9fef3ad0f588eb23db0ee951bfcddb717cb53f6f683dead4b3b6c2e7b3efab9","settings":{"stability":0.72,"similarity_boost":0.88,"style":0.0,"use_speaker_boost":true,"speed":0.92},"relative_path":"audio/generated/tr-TR/lexical/f2c952e9df3f1adce2386220f7c1e3f1dbe0e6770a7d446e1e17e28c128880b0.mp3"}'
+) ON DUPLICATE KEY UPDATE
+  provider = VALUES(provider),
+  provider_model = VALUES(provider_model),
+  storage_url = VALUES(storage_url),
+  duration_ms = VALUES(duration_ms),
+  generated_at = VALUES(generated_at),
+  checksum = VALUES(checksum),
+  status = VALUES(status),
+  metadata = VALUES(metadata);
+
+-- wf_likes_and_specific_things_06 -> audio/generated/tr-TR/lexical/f2c952e9df3f1adce2386220f7c1e3f1dbe0e6770a7d446e1e17e28c128880b0.mp3
+UPDATE audio_assets
+SET status = 'archived'
+WHERE entity_type = 'word_form'
+  AND entity_id = UUID_TO_BIN('dcf92d67-ca12-5376-8f1a-d5566ba212c6', 1)
+  AND voice_key = 'tr-tr.lexical.native-clear'
+  AND (entity_type NOT IN ('grammar_point','exercise') OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'wf_likes_and_specific_things_06')
+  AND source_text_hash IS NOT NULL
+  AND source_text_hash <> '44ffd8ace8fb8a663a8bac3014bc775df0c74a3ccf14c89b5029272ebae26606'
+  AND status <> 'archived';
+INSERT INTO audio_assets (
+  id, language_id, language_variant_id, entity_type, entity_id, source_text_hash,
+  voice_key, provider, provider_model, storage_url, duration_ms, generated_at, checksum, status, metadata
+) VALUES (
+  UUID_TO_BIN('84548085-660d-504e-ba96-e9f084d2ce68', 1), @audio_language_id, @audio_variant_id, 'word_form', UUID_TO_BIN('dcf92d67-ca12-5376-8f1a-d5566ba212c6', 1), '44ffd8ace8fb8a663a8bac3014bc775df0c74a3ccf14c89b5029272ebae26606',
+  'tr-tr.lexical.native-clear', 'elevenlabs', 'eleven_multilingual_v2', 'audio/generated/tr-TR/lexical/f2c952e9df3f1adce2386220f7c1e3f1dbe0e6770a7d446e1e17e28c128880b0.mp3', 1201, '2026-09-14 11:32:29.127060', 'f9fef3ad0f588eb23db0ee951bfcddb717cb53f6f683dead4b3b6c2e7b3efab9', 'validated', '{"audio_key":"f2c952e9df3f1adce2386220f7c1e3f1dbe0e6770a7d446e1e17e28c128880b0","entity_key":"wf_likes_and_specific_things_06","voice_id":"FDs1ZX5J4e4f2c2erxtW","voice_name":"Fili - Warm Turkish Female ","voice_labels":{"gender":"female","accent":"istanbul","age":"young","category":"professional","language":"tr","use_case":"conversational","descriptive":"calm"},"output_format":"mp3_44100_192","file_sha256":"f9fef3ad0f588eb23db0ee951bfcddb717cb53f6f683dead4b3b6c2e7b3efab9","settings":{"stability":0.72,"similarity_boost":0.88,"style":0.0,"use_speaker_boost":true,"speed":0.92},"relative_path":"audio/generated/tr-TR/lexical/f2c952e9df3f1adce2386220f7c1e3f1dbe0e6770a7d446e1e17e28c128880b0.mp3"}'
+) ON DUPLICATE KEY UPDATE
+  provider = VALUES(provider),
+  provider_model = VALUES(provider_model),
+  storage_url = VALUES(storage_url),
+  duration_ms = VALUES(duration_ms),
+  generated_at = VALUES(generated_at),
+  checksum = VALUES(checksum),
+  status = VALUES(status),
+  metadata = VALUES(metadata);
+
+-- lx_near_future_plans_05 -> audio/generated/tr-TR/lexical/f5203260415e0a46df76b85896cd9b8b498909540d756d089085d6dda289c129.mp3
+UPDATE audio_assets
+SET status = 'archived'
+WHERE entity_type = 'lexeme'
+  AND entity_id = UUID_TO_BIN('550266ef-196a-5376-b3ad-dd13df7e75fe', 1)
+  AND voice_key = 'tr-tr.lexical.native-clear'
+  AND (entity_type NOT IN ('grammar_point','exercise') OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'lx_near_future_plans_05')
+  AND source_text_hash IS NOT NULL
+  AND source_text_hash <> 'abec5068861f3acbcec1c83332840d23f77514a9b1d426c3a4c648e8fe0b484d'
+  AND status <> 'archived';
+INSERT INTO audio_assets (
+  id, language_id, language_variant_id, entity_type, entity_id, source_text_hash,
+  voice_key, provider, provider_model, storage_url, duration_ms, generated_at, checksum, status, metadata
+) VALUES (
+  UUID_TO_BIN('e1f7fe75-75af-5f9c-aaf2-323db81fac35', 1), @audio_language_id, @audio_variant_id, 'lexeme', UUID_TO_BIN('550266ef-196a-5376-b3ad-dd13df7e75fe', 1), 'abec5068861f3acbcec1c83332840d23f77514a9b1d426c3a4c648e8fe0b484d',
+  'tr-tr.lexical.native-clear', 'elevenlabs', 'eleven_multilingual_v2', 'audio/generated/tr-TR/lexical/f5203260415e0a46df76b85896cd9b8b498909540d756d089085d6dda289c129.mp3', 1097, '2026-09-14 11:32:29.974506', '4353ddaca969185812c66d161c0389a7213f59179e8dae6c0522b2ffe031a6b5', 'validated', '{"audio_key":"f5203260415e0a46df76b85896cd9b8b498909540d756d089085d6dda289c129","entity_key":"lx_near_future_plans_05","voice_id":"FDs1ZX5J4e4f2c2erxtW","voice_name":"Fili - Warm Turkish Female ","voice_labels":{"gender":"female","accent":"istanbul","age":"young","category":"professional","language":"tr","use_case":"conversational","descriptive":"calm"},"output_format":"mp3_44100_192","file_sha256":"4353ddaca969185812c66d161c0389a7213f59179e8dae6c0522b2ffe031a6b5","settings":{"stability":0.72,"similarity_boost":0.88,"style":0.0,"use_speaker_boost":true,"speed":0.92},"relative_path":"audio/generated/tr-TR/lexical/f5203260415e0a46df76b85896cd9b8b498909540d756d089085d6dda289c129.mp3"}'
+) ON DUPLICATE KEY UPDATE
+  provider = VALUES(provider),
+  provider_model = VALUES(provider_model),
+  storage_url = VALUES(storage_url),
+  duration_ms = VALUES(duration_ms),
+  generated_at = VALUES(generated_at),
+  checksum = VALUES(checksum),
+  status = VALUES(status),
+  metadata = VALUES(metadata);
+
+-- wf_near_future_plans_05 -> audio/generated/tr-TR/lexical/f5203260415e0a46df76b85896cd9b8b498909540d756d089085d6dda289c129.mp3
+UPDATE audio_assets
+SET status = 'archived'
+WHERE entity_type = 'word_form'
+  AND entity_id = UUID_TO_BIN('d14509c6-5b59-5aa7-bf75-8d7b374045e1', 1)
+  AND voice_key = 'tr-tr.lexical.native-clear'
+  AND (entity_type NOT IN ('grammar_point','exercise') OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'wf_near_future_plans_05')
+  AND source_text_hash IS NOT NULL
+  AND source_text_hash <> 'abec5068861f3acbcec1c83332840d23f77514a9b1d426c3a4c648e8fe0b484d'
+  AND status <> 'archived';
+INSERT INTO audio_assets (
+  id, language_id, language_variant_id, entity_type, entity_id, source_text_hash,
+  voice_key, provider, provider_model, storage_url, duration_ms, generated_at, checksum, status, metadata
+) VALUES (
+  UUID_TO_BIN('587acdff-01de-5562-93d5-c62212ac8fe4', 1), @audio_language_id, @audio_variant_id, 'word_form', UUID_TO_BIN('d14509c6-5b59-5aa7-bf75-8d7b374045e1', 1), 'abec5068861f3acbcec1c83332840d23f77514a9b1d426c3a4c648e8fe0b484d',
+  'tr-tr.lexical.native-clear', 'elevenlabs', 'eleven_multilingual_v2', 'audio/generated/tr-TR/lexical/f5203260415e0a46df76b85896cd9b8b498909540d756d089085d6dda289c129.mp3', 1097, '2026-09-14 11:32:29.974506', '4353ddaca969185812c66d161c0389a7213f59179e8dae6c0522b2ffe031a6b5', 'validated', '{"audio_key":"f5203260415e0a46df76b85896cd9b8b498909540d756d089085d6dda289c129","entity_key":"wf_near_future_plans_05","voice_id":"FDs1ZX5J4e4f2c2erxtW","voice_name":"Fili - Warm Turkish Female ","voice_labels":{"gender":"female","accent":"istanbul","age":"young","category":"professional","language":"tr","use_case":"conversational","descriptive":"calm"},"output_format":"mp3_44100_192","file_sha256":"4353ddaca969185812c66d161c0389a7213f59179e8dae6c0522b2ffe031a6b5","settings":{"stability":0.72,"similarity_boost":0.88,"style":0.0,"use_speaker_boost":true,"speed":0.92},"relative_path":"audio/generated/tr-TR/lexical/f5203260415e0a46df76b85896cd9b8b498909540d756d089085d6dda289c129.mp3"}'
 ) ON DUPLICATE KEY UPDATE
   provider = VALUES(provider),
   provider_model = VALUES(provider_model),
@@ -5080,6 +10124,110 @@ INSERT INTO audio_assets (
   status = VALUES(status),
   metadata = VALUES(metadata);
 
+-- lx_likes_and_specific_things_03 -> audio/generated/tr-TR/lexical/f720311cdb772c329d7b732e87ec5075bc40a435989ac8258acdf3c2c701b8c1.mp3
+UPDATE audio_assets
+SET status = 'archived'
+WHERE entity_type = 'lexeme'
+  AND entity_id = UUID_TO_BIN('6d6912fc-dcc1-5e49-b226-112adb01f9e7', 1)
+  AND voice_key = 'tr-tr.lexical.native-clear'
+  AND (entity_type NOT IN ('grammar_point','exercise') OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'lx_likes_and_specific_things_03')
+  AND source_text_hash IS NOT NULL
+  AND source_text_hash <> 'd6d7dcef894dc0d9e7dcff9dc603a7e0e60fdc1503b3a436c58be61019327db6'
+  AND status <> 'archived';
+INSERT INTO audio_assets (
+  id, language_id, language_variant_id, entity_type, entity_id, source_text_hash,
+  voice_key, provider, provider_model, storage_url, duration_ms, generated_at, checksum, status, metadata
+) VALUES (
+  UUID_TO_BIN('52211e92-7d31-5058-838d-d5ff9331393c', 1), @audio_language_id, @audio_variant_id, 'lexeme', UUID_TO_BIN('6d6912fc-dcc1-5e49-b226-112adb01f9e7', 1), 'd6d7dcef894dc0d9e7dcff9dc603a7e0e60fdc1503b3a436c58be61019327db6',
+  'tr-tr.lexical.native-clear', 'elevenlabs', 'eleven_multilingual_v2', 'audio/generated/tr-TR/lexical/f720311cdb772c329d7b732e87ec5075bc40a435989ac8258acdf3c2c701b8c1.mp3', 1097, '2026-09-14 11:32:30.068755', '5cefcab40614b91ca52a6689524df0d598a71b5d8c519e2737a65341b437c473', 'validated', '{"audio_key":"f720311cdb772c329d7b732e87ec5075bc40a435989ac8258acdf3c2c701b8c1","entity_key":"lx_likes_and_specific_things_03","voice_id":"FDs1ZX5J4e4f2c2erxtW","voice_name":"Fili - Warm Turkish Female ","voice_labels":{"gender":"female","accent":"istanbul","age":"young","category":"professional","language":"tr","use_case":"conversational","descriptive":"calm"},"output_format":"mp3_44100_192","file_sha256":"5cefcab40614b91ca52a6689524df0d598a71b5d8c519e2737a65341b437c473","settings":{"stability":0.72,"similarity_boost":0.88,"style":0.0,"use_speaker_boost":true,"speed":0.92},"relative_path":"audio/generated/tr-TR/lexical/f720311cdb772c329d7b732e87ec5075bc40a435989ac8258acdf3c2c701b8c1.mp3"}'
+) ON DUPLICATE KEY UPDATE
+  provider = VALUES(provider),
+  provider_model = VALUES(provider_model),
+  storage_url = VALUES(storage_url),
+  duration_ms = VALUES(duration_ms),
+  generated_at = VALUES(generated_at),
+  checksum = VALUES(checksum),
+  status = VALUES(status),
+  metadata = VALUES(metadata);
+
+-- wf_likes_and_specific_things_03 -> audio/generated/tr-TR/lexical/f720311cdb772c329d7b732e87ec5075bc40a435989ac8258acdf3c2c701b8c1.mp3
+UPDATE audio_assets
+SET status = 'archived'
+WHERE entity_type = 'word_form'
+  AND entity_id = UUID_TO_BIN('419cebc6-ec27-5639-8e91-f4939d9bc904', 1)
+  AND voice_key = 'tr-tr.lexical.native-clear'
+  AND (entity_type NOT IN ('grammar_point','exercise') OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'wf_likes_and_specific_things_03')
+  AND source_text_hash IS NOT NULL
+  AND source_text_hash <> 'd6d7dcef894dc0d9e7dcff9dc603a7e0e60fdc1503b3a436c58be61019327db6'
+  AND status <> 'archived';
+INSERT INTO audio_assets (
+  id, language_id, language_variant_id, entity_type, entity_id, source_text_hash,
+  voice_key, provider, provider_model, storage_url, duration_ms, generated_at, checksum, status, metadata
+) VALUES (
+  UUID_TO_BIN('9c132339-b585-52f2-9b87-b7abbfa92a46', 1), @audio_language_id, @audio_variant_id, 'word_form', UUID_TO_BIN('419cebc6-ec27-5639-8e91-f4939d9bc904', 1), 'd6d7dcef894dc0d9e7dcff9dc603a7e0e60fdc1503b3a436c58be61019327db6',
+  'tr-tr.lexical.native-clear', 'elevenlabs', 'eleven_multilingual_v2', 'audio/generated/tr-TR/lexical/f720311cdb772c329d7b732e87ec5075bc40a435989ac8258acdf3c2c701b8c1.mp3', 1097, '2026-09-14 11:32:30.068755', '5cefcab40614b91ca52a6689524df0d598a71b5d8c519e2737a65341b437c473', 'validated', '{"audio_key":"f720311cdb772c329d7b732e87ec5075bc40a435989ac8258acdf3c2c701b8c1","entity_key":"wf_likes_and_specific_things_03","voice_id":"FDs1ZX5J4e4f2c2erxtW","voice_name":"Fili - Warm Turkish Female ","voice_labels":{"gender":"female","accent":"istanbul","age":"young","category":"professional","language":"tr","use_case":"conversational","descriptive":"calm"},"output_format":"mp3_44100_192","file_sha256":"5cefcab40614b91ca52a6689524df0d598a71b5d8c519e2737a65341b437c473","settings":{"stability":0.72,"similarity_boost":0.88,"style":0.0,"use_speaker_boost":true,"speed":0.92},"relative_path":"audio/generated/tr-TR/lexical/f720311cdb772c329d7b732e87ec5075bc40a435989ac8258acdf3c2c701b8c1.mp3"}'
+) ON DUPLICATE KEY UPDATE
+  provider = VALUES(provider),
+  provider_model = VALUES(provider_model),
+  storage_url = VALUES(storage_url),
+  duration_ms = VALUES(duration_ms),
+  generated_at = VALUES(generated_at),
+  checksum = VALUES(checksum),
+  status = VALUES(status),
+  metadata = VALUES(metadata);
+
+-- lx_a1_everyday_capstone_01 -> audio/generated/tr-TR/lexical/f9875a5d4de10a2b0440380e081428cae0cd7107165bf487420ec29d99753d83.mp3
+UPDATE audio_assets
+SET status = 'archived'
+WHERE entity_type = 'lexeme'
+  AND entity_id = UUID_TO_BIN('3987c458-8465-5f79-a1a6-843936c1bc87', 1)
+  AND voice_key = 'tr-tr.lexical.native-clear'
+  AND (entity_type NOT IN ('grammar_point','exercise') OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'lx_a1_everyday_capstone_01')
+  AND source_text_hash IS NOT NULL
+  AND source_text_hash <> '90ccb74816866ce720a6b5bd2137ed1730e656426f2b60a35e0d9b1e93942dcd'
+  AND status <> 'archived';
+INSERT INTO audio_assets (
+  id, language_id, language_variant_id, entity_type, entity_id, source_text_hash,
+  voice_key, provider, provider_model, storage_url, duration_ms, generated_at, checksum, status, metadata
+) VALUES (
+  UUID_TO_BIN('1b9b68eb-ad2e-54d5-aa73-0afe400a0e71', 1), @audio_language_id, @audio_variant_id, 'lexeme', UUID_TO_BIN('3987c458-8465-5f79-a1a6-843936c1bc87', 1), '90ccb74816866ce720a6b5bd2137ed1730e656426f2b60a35e0d9b1e93942dcd',
+  'tr-tr.lexical.native-clear', 'elevenlabs', 'eleven_multilingual_v2', 'audio/generated/tr-TR/lexical/f9875a5d4de10a2b0440380e081428cae0cd7107165bf487420ec29d99753d83.mp3', 1018, '2026-09-14 11:32:30.936958', '04cac6734dd2d4297510a7cc1ebb343d01e213c53c7957594904c5550b210bbc', 'validated', '{"audio_key":"f9875a5d4de10a2b0440380e081428cae0cd7107165bf487420ec29d99753d83","entity_key":"lx_a1_everyday_capstone_01","voice_id":"FDs1ZX5J4e4f2c2erxtW","voice_name":"Fili - Warm Turkish Female ","voice_labels":{"gender":"female","accent":"istanbul","age":"young","category":"professional","language":"tr","use_case":"conversational","descriptive":"calm"},"output_format":"mp3_44100_192","file_sha256":"04cac6734dd2d4297510a7cc1ebb343d01e213c53c7957594904c5550b210bbc","settings":{"stability":0.72,"similarity_boost":0.88,"style":0.0,"use_speaker_boost":true,"speed":0.92},"relative_path":"audio/generated/tr-TR/lexical/f9875a5d4de10a2b0440380e081428cae0cd7107165bf487420ec29d99753d83.mp3"}'
+) ON DUPLICATE KEY UPDATE
+  provider = VALUES(provider),
+  provider_model = VALUES(provider_model),
+  storage_url = VALUES(storage_url),
+  duration_ms = VALUES(duration_ms),
+  generated_at = VALUES(generated_at),
+  checksum = VALUES(checksum),
+  status = VALUES(status),
+  metadata = VALUES(metadata);
+
+-- wf_a1_everyday_capstone_01 -> audio/generated/tr-TR/lexical/f9875a5d4de10a2b0440380e081428cae0cd7107165bf487420ec29d99753d83.mp3
+UPDATE audio_assets
+SET status = 'archived'
+WHERE entity_type = 'word_form'
+  AND entity_id = UUID_TO_BIN('b7c0acd1-a1e5-5f43-a9c8-4c911ccd586f', 1)
+  AND voice_key = 'tr-tr.lexical.native-clear'
+  AND (entity_type NOT IN ('grammar_point','exercise') OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'wf_a1_everyday_capstone_01')
+  AND source_text_hash IS NOT NULL
+  AND source_text_hash <> '90ccb74816866ce720a6b5bd2137ed1730e656426f2b60a35e0d9b1e93942dcd'
+  AND status <> 'archived';
+INSERT INTO audio_assets (
+  id, language_id, language_variant_id, entity_type, entity_id, source_text_hash,
+  voice_key, provider, provider_model, storage_url, duration_ms, generated_at, checksum, status, metadata
+) VALUES (
+  UUID_TO_BIN('93132c59-8327-53f3-b9a0-c1bf66ed589c', 1), @audio_language_id, @audio_variant_id, 'word_form', UUID_TO_BIN('b7c0acd1-a1e5-5f43-a9c8-4c911ccd586f', 1), '90ccb74816866ce720a6b5bd2137ed1730e656426f2b60a35e0d9b1e93942dcd',
+  'tr-tr.lexical.native-clear', 'elevenlabs', 'eleven_multilingual_v2', 'audio/generated/tr-TR/lexical/f9875a5d4de10a2b0440380e081428cae0cd7107165bf487420ec29d99753d83.mp3', 1018, '2026-09-14 11:32:30.936958', '04cac6734dd2d4297510a7cc1ebb343d01e213c53c7957594904c5550b210bbc', 'validated', '{"audio_key":"f9875a5d4de10a2b0440380e081428cae0cd7107165bf487420ec29d99753d83","entity_key":"wf_a1_everyday_capstone_01","voice_id":"FDs1ZX5J4e4f2c2erxtW","voice_name":"Fili - Warm Turkish Female ","voice_labels":{"gender":"female","accent":"istanbul","age":"young","category":"professional","language":"tr","use_case":"conversational","descriptive":"calm"},"output_format":"mp3_44100_192","file_sha256":"04cac6734dd2d4297510a7cc1ebb343d01e213c53c7957594904c5550b210bbc","settings":{"stability":0.72,"similarity_boost":0.88,"style":0.0,"use_speaker_boost":true,"speed":0.92},"relative_path":"audio/generated/tr-TR/lexical/f9875a5d4de10a2b0440380e081428cae0cd7107165bf487420ec29d99753d83.mp3"}'
+) ON DUPLICATE KEY UPDATE
+  provider = VALUES(provider),
+  provider_model = VALUES(provider_model),
+  storage_url = VALUES(storage_url),
+  duration_ms = VALUES(duration_ms),
+  generated_at = VALUES(generated_at),
+  checksum = VALUES(checksum),
+  status = VALUES(status),
+  metadata = VALUES(metadata);
+
 -- lx_getting_around_03 -> audio/generated/tr-TR/lexical/fc33e21de8e422d543239bf68f3c5c23dca6b7588e9bf02f5441087d0f0c0d5d.mp3
 UPDATE audio_assets
 SET status = 'archived'
@@ -5174,6 +10322,58 @@ INSERT INTO audio_assets (
 ) VALUES (
   UUID_TO_BIN('5a51e85b-b853-5d9d-b0be-595381d8cb5b', 1), @audio_language_id, @audio_variant_id, 'word_form', UUID_TO_BIN('fa3964a9-d65a-5ae2-815d-50af7b019f59', 1), '2a4d39fc910054099b18f111c73ed6ce311f2027f673644708256be3d3fe2e49',
   'tr-tr.lexical.native-clear', 'elevenlabs', 'eleven_multilingual_v2', 'audio/generated/tr-TR/lexical/fd1f765a202963dbc31ab2c34fb9d2490c63c88dced569f4e549f64729aa8371.mp3', 1149, '2026-09-13 15:55:38.779045', '9ca21f73376f838c3af440b7a3b8cf56ab071c9c1b2f587c5e30515fc9a2acf4', 'validated', '{"audio_key":"fd1f765a202963dbc31ab2c34fb9d2490c63c88dced569f4e549f64729aa8371","entity_key":"wf_my_family_03","voice_id":"FDs1ZX5J4e4f2c2erxtW","voice_name":"Fili - Warm Turkish Female ","voice_labels":{"gender":"female","accent":"istanbul","age":"young","category":"professional","language":"tr","use_case":"conversational","descriptive":"calm"},"output_format":"mp3_44100_192","file_sha256":"9ca21f73376f838c3af440b7a3b8cf56ab071c9c1b2f587c5e30515fc9a2acf4","settings":{"stability":0.72,"similarity_boost":0.88,"style":0.0,"use_speaker_boost":true,"speed":0.92},"relative_path":"audio/generated/tr-TR/lexical/fd1f765a202963dbc31ab2c34fb9d2490c63c88dced569f4e549f64729aa8371.mp3"}'
+) ON DUPLICATE KEY UPDATE
+  provider = VALUES(provider),
+  provider_model = VALUES(provider_model),
+  storage_url = VALUES(storage_url),
+  duration_ms = VALUES(duration_ms),
+  generated_at = VALUES(generated_at),
+  checksum = VALUES(checksum),
+  status = VALUES(status),
+  metadata = VALUES(metadata);
+
+-- lx_near_future_plans_04 -> audio/generated/tr-TR/lexical/fe57130c8ecf33169674c2ee637d88c482337451360159c4f7f5d0c51270feda.mp3
+UPDATE audio_assets
+SET status = 'archived'
+WHERE entity_type = 'lexeme'
+  AND entity_id = UUID_TO_BIN('b74ca510-17c7-5a42-8721-ff18222af9c5', 1)
+  AND voice_key = 'tr-tr.lexical.native-clear'
+  AND (entity_type NOT IN ('grammar_point','exercise') OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'lx_near_future_plans_04')
+  AND source_text_hash IS NOT NULL
+  AND source_text_hash <> '64879f7d6b960a01909762d911a32d4582c20010c5641ee90278b644a9e3b525'
+  AND status <> 'archived';
+INSERT INTO audio_assets (
+  id, language_id, language_variant_id, entity_type, entity_id, source_text_hash,
+  voice_key, provider, provider_model, storage_url, duration_ms, generated_at, checksum, status, metadata
+) VALUES (
+  UUID_TO_BIN('f8f52660-1433-5b7f-b267-3311ee65437d', 1), @audio_language_id, @audio_variant_id, 'lexeme', UUID_TO_BIN('b74ca510-17c7-5a42-8721-ff18222af9c5', 1), '64879f7d6b960a01909762d911a32d4582c20010c5641ee90278b644a9e3b525',
+  'tr-tr.lexical.native-clear', 'elevenlabs', 'eleven_multilingual_v2', 'audio/generated/tr-TR/lexical/fe57130c8ecf33169674c2ee637d88c482337451360159c4f7f5d0c51270feda.mp3', 966, '2026-09-13 17:08:40.623820', '5030fab4c2fe1598dc441a9521e4db5a7559b49abbc2101e9e95e99a817ebff2', 'validated', '{"audio_key":"fe57130c8ecf33169674c2ee637d88c482337451360159c4f7f5d0c51270feda","entity_key":"lx_near_future_plans_04","voice_id":"FDs1ZX5J4e4f2c2erxtW","voice_name":"Fili - Warm Turkish Female ","voice_labels":{"gender":"female","accent":"istanbul","age":"young","category":"professional","language":"tr","use_case":"conversational","descriptive":"calm"},"output_format":"mp3_44100_192","file_sha256":"5030fab4c2fe1598dc441a9521e4db5a7559b49abbc2101e9e95e99a817ebff2","settings":{"stability":0.72,"similarity_boost":0.88,"style":0.0,"use_speaker_boost":true,"speed":0.92},"relative_path":"audio/generated/tr-TR/lexical/fe57130c8ecf33169674c2ee637d88c482337451360159c4f7f5d0c51270feda.mp3"}'
+) ON DUPLICATE KEY UPDATE
+  provider = VALUES(provider),
+  provider_model = VALUES(provider_model),
+  storage_url = VALUES(storage_url),
+  duration_ms = VALUES(duration_ms),
+  generated_at = VALUES(generated_at),
+  checksum = VALUES(checksum),
+  status = VALUES(status),
+  metadata = VALUES(metadata);
+
+-- wf_near_future_plans_04 -> audio/generated/tr-TR/lexical/fe57130c8ecf33169674c2ee637d88c482337451360159c4f7f5d0c51270feda.mp3
+UPDATE audio_assets
+SET status = 'archived'
+WHERE entity_type = 'word_form'
+  AND entity_id = UUID_TO_BIN('a2ce26f4-2199-544c-b7fd-471093a8facf', 1)
+  AND voice_key = 'tr-tr.lexical.native-clear'
+  AND (entity_type NOT IN ('grammar_point','exercise') OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'wf_near_future_plans_04')
+  AND source_text_hash IS NOT NULL
+  AND source_text_hash <> '64879f7d6b960a01909762d911a32d4582c20010c5641ee90278b644a9e3b525'
+  AND status <> 'archived';
+INSERT INTO audio_assets (
+  id, language_id, language_variant_id, entity_type, entity_id, source_text_hash,
+  voice_key, provider, provider_model, storage_url, duration_ms, generated_at, checksum, status, metadata
+) VALUES (
+  UUID_TO_BIN('afd14031-a291-5bcc-ab48-22c00291f7a1', 1), @audio_language_id, @audio_variant_id, 'word_form', UUID_TO_BIN('a2ce26f4-2199-544c-b7fd-471093a8facf', 1), '64879f7d6b960a01909762d911a32d4582c20010c5641ee90278b644a9e3b525',
+  'tr-tr.lexical.native-clear', 'elevenlabs', 'eleven_multilingual_v2', 'audio/generated/tr-TR/lexical/fe57130c8ecf33169674c2ee637d88c482337451360159c4f7f5d0c51270feda.mp3', 966, '2026-09-13 17:08:40.623820', '5030fab4c2fe1598dc441a9521e4db5a7559b49abbc2101e9e95e99a817ebff2', 'validated', '{"audio_key":"fe57130c8ecf33169674c2ee637d88c482337451360159c4f7f5d0c51270feda","entity_key":"wf_near_future_plans_04","voice_id":"FDs1ZX5J4e4f2c2erxtW","voice_name":"Fili - Warm Turkish Female ","voice_labels":{"gender":"female","accent":"istanbul","age":"young","category":"professional","language":"tr","use_case":"conversational","descriptive":"calm"},"output_format":"mp3_44100_192","file_sha256":"5030fab4c2fe1598dc441a9521e4db5a7559b49abbc2101e9e95e99a817ebff2","settings":{"stability":0.72,"similarity_boost":0.88,"style":0.0,"use_speaker_boost":true,"speed":0.92},"relative_path":"audio/generated/tr-TR/lexical/fe57130c8ecf33169674c2ee637d88c482337451360159c4f7f5d0c51270feda.mp3"}'
 ) ON DUPLICATE KEY UPDATE
   provider = VALUES(provider),
   provider_model = VALUES(provider_model),
@@ -5314,6 +10514,84 @@ INSERT INTO audio_assets (
   status = VALUES(status),
   metadata = VALUES(metadata);
 
+-- u_near_future_plans_03 -> audio/generated/tr-TR/utterances/123c4153c9875f24163d0f31f41a185438c358ad410870b6c7277bcde14f4ded.mp3
+UPDATE audio_assets
+SET status = 'archived'
+WHERE entity_type = 'utterance'
+  AND entity_id = UUID_TO_BIN('a4a60573-ec33-50fc-9c1a-c93860fda05b', 1)
+  AND voice_key = 'tr-tr.sentence.native-clear'
+  AND (entity_type NOT IN ('grammar_point','exercise') OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'u_near_future_plans_03')
+  AND source_text_hash IS NOT NULL
+  AND source_text_hash <> '7b5e74c4a12d4338a8e2c4e96651d3eeb00744d4834af7aa3ee8d916c60a7747'
+  AND status <> 'archived';
+INSERT INTO audio_assets (
+  id, language_id, language_variant_id, entity_type, entity_id, source_text_hash,
+  voice_key, provider, provider_model, storage_url, duration_ms, generated_at, checksum, status, metadata
+) VALUES (
+  UUID_TO_BIN('06b65724-76e3-5396-a646-77c371b51e42', 1), @audio_language_id, @audio_variant_id, 'utterance', UUID_TO_BIN('a4a60573-ec33-50fc-9c1a-c93860fda05b', 1), '7b5e74c4a12d4338a8e2c4e96651d3eeb00744d4834af7aa3ee8d916c60a7747',
+  'tr-tr.sentence.native-clear', 'elevenlabs', 'eleven_multilingual_v2', 'audio/generated/tr-TR/utterances/123c4153c9875f24163d0f31f41a185438c358ad410870b6c7277bcde14f4ded.mp3', 1567, '2026-09-14 11:32:31.082232', 'ccb338a148a72d33e0c171d958224a5f351ced612fab3baa0aba345262628a4e', 'validated', '{"audio_key":"123c4153c9875f24163d0f31f41a185438c358ad410870b6c7277bcde14f4ded","entity_key":"u_near_future_plans_03","voice_id":"FDs1ZX5J4e4f2c2erxtW","voice_name":"Fili - Warm Turkish Female ","voice_labels":{"gender":"female","accent":"istanbul","age":"young","category":"professional","language":"tr","use_case":"conversational","descriptive":"calm"},"output_format":"mp3_44100_192","file_sha256":"ccb338a148a72d33e0c171d958224a5f351ced612fab3baa0aba345262628a4e","settings":{"stability":0.68,"similarity_boost":0.88,"style":0.0,"use_speaker_boost":true,"speed":0.95},"relative_path":"audio/generated/tr-TR/utterances/123c4153c9875f24163d0f31f41a185438c358ad410870b6c7277bcde14f4ded.mp3"}'
+) ON DUPLICATE KEY UPDATE
+  provider = VALUES(provider),
+  provider_model = VALUES(provider_model),
+  storage_url = VALUES(storage_url),
+  duration_ms = VALUES(duration_ms),
+  generated_at = VALUES(generated_at),
+  checksum = VALUES(checksum),
+  status = VALUES(status),
+  metadata = VALUES(metadata);
+
+-- u_everyday_routine_04 -> audio/generated/tr-TR/utterances/16bedc13cebd69e18cef5ca325642062f220bacad0316b9a9a8a31b52c7f98e0.mp3
+UPDATE audio_assets
+SET status = 'archived'
+WHERE entity_type = 'utterance'
+  AND entity_id = UUID_TO_BIN('91a9bd2a-1636-538e-b223-572aa9aa4bfc', 1)
+  AND voice_key = 'tr-tr.sentence.native-clear'
+  AND (entity_type NOT IN ('grammar_point','exercise') OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'u_everyday_routine_04')
+  AND source_text_hash IS NOT NULL
+  AND source_text_hash <> 'eb59379b8b12c89a1ecb5cb0fb6764b4d6504a407f78b772cf911afccc203d3f'
+  AND status <> 'archived';
+INSERT INTO audio_assets (
+  id, language_id, language_variant_id, entity_type, entity_id, source_text_hash,
+  voice_key, provider, provider_model, storage_url, duration_ms, generated_at, checksum, status, metadata
+) VALUES (
+  UUID_TO_BIN('d43b96ef-9c16-5d5a-a9c0-a908bc428c93', 1), @audio_language_id, @audio_variant_id, 'utterance', UUID_TO_BIN('91a9bd2a-1636-538e-b223-572aa9aa4bfc', 1), 'eb59379b8b12c89a1ecb5cb0fb6764b4d6504a407f78b772cf911afccc203d3f',
+  'tr-tr.sentence.native-clear', 'elevenlabs', 'eleven_multilingual_v2', 'audio/generated/tr-TR/utterances/16bedc13cebd69e18cef5ca325642062f220bacad0316b9a9a8a31b52c7f98e0.mp3', 1515, '2026-09-14 11:32:31.931505', 'bab3cf07516e1e7a7144b489deecf22f6634410a94f44e9bc3527c1aa7dea06b', 'validated', '{"audio_key":"16bedc13cebd69e18cef5ca325642062f220bacad0316b9a9a8a31b52c7f98e0","entity_key":"u_everyday_routine_04","voice_id":"FDs1ZX5J4e4f2c2erxtW","voice_name":"Fili - Warm Turkish Female ","voice_labels":{"gender":"female","accent":"istanbul","age":"young","category":"professional","language":"tr","use_case":"conversational","descriptive":"calm"},"output_format":"mp3_44100_192","file_sha256":"bab3cf07516e1e7a7144b489deecf22f6634410a94f44e9bc3527c1aa7dea06b","settings":{"stability":0.68,"similarity_boost":0.88,"style":0.0,"use_speaker_boost":true,"speed":0.95},"relative_path":"audio/generated/tr-TR/utterances/16bedc13cebd69e18cef5ca325642062f220bacad0316b9a9a8a31b52c7f98e0.mp3"}'
+) ON DUPLICATE KEY UPDATE
+  provider = VALUES(provider),
+  provider_model = VALUES(provider_model),
+  storage_url = VALUES(storage_url),
+  duration_ms = VALUES(duration_ms),
+  generated_at = VALUES(generated_at),
+  checksum = VALUES(checksum),
+  status = VALUES(status),
+  metadata = VALUES(metadata);
+
+-- e_everyday_routine_02_listen -> audio/generated/tr-TR/utterances/16bedc13cebd69e18cef5ca325642062f220bacad0316b9a9a8a31b52c7f98e0.mp3
+UPDATE audio_assets
+SET status = 'archived'
+WHERE entity_type = 'exercise'
+  AND entity_id = UUID_TO_BIN('6d0f28d0-d8a4-5a50-b530-c7ba94cfb5d8', 1)
+  AND voice_key = 'tr-tr.sentence.native-clear'
+  AND (entity_type NOT IN ('grammar_point','exercise') OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'e_everyday_routine_02_listen')
+  AND source_text_hash IS NOT NULL
+  AND source_text_hash <> 'eb59379b8b12c89a1ecb5cb0fb6764b4d6504a407f78b772cf911afccc203d3f'
+  AND status <> 'archived';
+INSERT INTO audio_assets (
+  id, language_id, language_variant_id, entity_type, entity_id, source_text_hash,
+  voice_key, provider, provider_model, storage_url, duration_ms, generated_at, checksum, status, metadata
+) VALUES (
+  UUID_TO_BIN('407cee16-0e92-5c95-b97f-291a35bb2d5a', 1), @audio_language_id, @audio_variant_id, 'exercise', UUID_TO_BIN('6d0f28d0-d8a4-5a50-b530-c7ba94cfb5d8', 1), 'eb59379b8b12c89a1ecb5cb0fb6764b4d6504a407f78b772cf911afccc203d3f',
+  'tr-tr.sentence.native-clear', 'elevenlabs', 'eleven_multilingual_v2', 'audio/generated/tr-TR/utterances/16bedc13cebd69e18cef5ca325642062f220bacad0316b9a9a8a31b52c7f98e0.mp3', 1515, '2026-09-14 11:32:31.931505', 'bab3cf07516e1e7a7144b489deecf22f6634410a94f44e9bc3527c1aa7dea06b', 'validated', '{"audio_key":"16bedc13cebd69e18cef5ca325642062f220bacad0316b9a9a8a31b52c7f98e0","entity_key":"e_everyday_routine_02_listen","voice_id":"FDs1ZX5J4e4f2c2erxtW","voice_name":"Fili - Warm Turkish Female ","voice_labels":{"gender":"female","accent":"istanbul","age":"young","category":"professional","language":"tr","use_case":"conversational","descriptive":"calm"},"output_format":"mp3_44100_192","file_sha256":"bab3cf07516e1e7a7144b489deecf22f6634410a94f44e9bc3527c1aa7dea06b","settings":{"stability":0.68,"similarity_boost":0.88,"style":0.0,"use_speaker_boost":true,"speed":0.95},"relative_path":"audio/generated/tr-TR/utterances/16bedc13cebd69e18cef5ca325642062f220bacad0316b9a9a8a31b52c7f98e0.mp3"}'
+) ON DUPLICATE KEY UPDATE
+  provider = VALUES(provider),
+  provider_model = VALUES(provider_model),
+  storage_url = VALUES(storage_url),
+  duration_ms = VALUES(duration_ms),
+  generated_at = VALUES(generated_at),
+  checksum = VALUES(checksum),
+  status = VALUES(status),
+  metadata = VALUES(metadata);
+
 -- u_shopping_basics_04 -> audio/generated/tr-TR/utterances/188e144a3246f4260c094116f42a756acdf2d06fcbf9e5ce761ea30550e9a01a.mp3
 UPDATE audio_assets
 SET status = 'archived'
@@ -5392,6 +10670,32 @@ INSERT INTO audio_assets (
   status = VALUES(status),
   metadata = VALUES(metadata);
 
+-- u_a1_everyday_capstone_01 -> audio/generated/tr-TR/utterances/1c5c76aae5a8bd0bc5753c8bffe9a6b29a191c6017772ed0850451c476dea73d.mp3
+UPDATE audio_assets
+SET status = 'archived'
+WHERE entity_type = 'utterance'
+  AND entity_id = UUID_TO_BIN('b066fd2a-009c-55a1-bc28-f3ce9c89cecd', 1)
+  AND voice_key = 'tr-tr.sentence.native-clear'
+  AND (entity_type NOT IN ('grammar_point','exercise') OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'u_a1_everyday_capstone_01')
+  AND source_text_hash IS NOT NULL
+  AND source_text_hash <> '4001b51f73f14ae97e66107716378df42bf5dd57ed1ec7f07e2181fa51707ad6'
+  AND status <> 'archived';
+INSERT INTO audio_assets (
+  id, language_id, language_variant_id, entity_type, entity_id, source_text_hash,
+  voice_key, provider, provider_model, storage_url, duration_ms, generated_at, checksum, status, metadata
+) VALUES (
+  UUID_TO_BIN('ec039c56-1d7f-5fe8-8990-1f004741ede8', 1), @audio_language_id, @audio_variant_id, 'utterance', UUID_TO_BIN('b066fd2a-009c-55a1-bc28-f3ce9c89cecd', 1), '4001b51f73f14ae97e66107716378df42bf5dd57ed1ec7f07e2181fa51707ad6',
+  'tr-tr.sentence.native-clear', 'elevenlabs', 'eleven_multilingual_v2', 'audio/generated/tr-TR/utterances/1c5c76aae5a8bd0bc5753c8bffe9a6b29a191c6017772ed0850451c476dea73d.mp3', 1567, '2026-09-14 11:32:32.106689', '9e4e0b5f84adee9f44dc3dbbd797ce8992a16f3ac60008ed20e1913553b8d3f4', 'validated', '{"audio_key":"1c5c76aae5a8bd0bc5753c8bffe9a6b29a191c6017772ed0850451c476dea73d","entity_key":"u_a1_everyday_capstone_01","voice_id":"FDs1ZX5J4e4f2c2erxtW","voice_name":"Fili - Warm Turkish Female ","voice_labels":{"gender":"female","accent":"istanbul","age":"young","category":"professional","language":"tr","use_case":"conversational","descriptive":"calm"},"output_format":"mp3_44100_192","file_sha256":"9e4e0b5f84adee9f44dc3dbbd797ce8992a16f3ac60008ed20e1913553b8d3f4","settings":{"stability":0.68,"similarity_boost":0.88,"style":0.0,"use_speaker_boost":true,"speed":0.95},"relative_path":"audio/generated/tr-TR/utterances/1c5c76aae5a8bd0bc5753c8bffe9a6b29a191c6017772ed0850451c476dea73d.mp3"}'
+) ON DUPLICATE KEY UPDATE
+  provider = VALUES(provider),
+  provider_model = VALUES(provider_model),
+  storage_url = VALUES(storage_url),
+  duration_ms = VALUES(duration_ms),
+  generated_at = VALUES(generated_at),
+  checksum = VALUES(checksum),
+  status = VALUES(status),
+  metadata = VALUES(metadata);
+
 -- u_shopping_basics_03 -> audio/generated/tr-TR/utterances/1c7690afa33a320fd5f652c6e1b8c49181288f4813c2586bbb6cfbd3423010c7.mp3
 UPDATE audio_assets
 SET status = 'archived'
@@ -5434,6 +10738,32 @@ INSERT INTO audio_assets (
 ) VALUES (
   UUID_TO_BIN('9ba2eff5-5ad8-5e4e-bca8-6ddde321c766', 1), @audio_language_id, @audio_variant_id, 'utterance', UUID_TO_BIN('375670d7-bd6e-5399-8e64-843e66f205a0', 1), 'ba39242092a78a178ee5fd142de23a257555cff3adb7dfb0a5e28c8c2b33ce9d',
   'tr-tr.sentence.native-clear', 'elevenlabs', 'eleven_multilingual_v2', 'audio/generated/tr-TR/utterances/1dfff3483be733e2fc16ef8a9ec42cf11e87c3a11159c90d466c0d3ca5f6466a.mp3', 1280, '2026-09-13 15:55:43.179637', 'bd9305a50a8482f279621a5a8703a5cdff68886eb04b6b641fa006cdda659b7a', 'validated', '{"audio_key":"1dfff3483be733e2fc16ef8a9ec42cf11e87c3a11159c90d466c0d3ca5f6466a","entity_key":"u_getting_around_01","voice_id":"FDs1ZX5J4e4f2c2erxtW","voice_name":"Fili - Warm Turkish Female ","voice_labels":{"gender":"female","accent":"istanbul","age":"young","category":"professional","language":"tr","use_case":"conversational","descriptive":"calm"},"output_format":"mp3_44100_192","file_sha256":"bd9305a50a8482f279621a5a8703a5cdff68886eb04b6b641fa006cdda659b7a","settings":{"stability":0.68,"similarity_boost":0.88,"style":0.0,"use_speaker_boost":true,"speed":0.95},"relative_path":"audio/generated/tr-TR/utterances/1dfff3483be733e2fc16ef8a9ec42cf11e87c3a11159c90d466c0d3ca5f6466a.mp3"}'
+) ON DUPLICATE KEY UPDATE
+  provider = VALUES(provider),
+  provider_model = VALUES(provider_model),
+  storage_url = VALUES(storage_url),
+  duration_ms = VALUES(duration_ms),
+  generated_at = VALUES(generated_at),
+  checksum = VALUES(checksum),
+  status = VALUES(status),
+  metadata = VALUES(metadata);
+
+-- u_weather_and_clothes_01 -> audio/generated/tr-TR/utterances/1f53a84a82bbf5bdbecb58da76236eb79adf3f22b69f90ae635dbe0133a83bf7.mp3
+UPDATE audio_assets
+SET status = 'archived'
+WHERE entity_type = 'utterance'
+  AND entity_id = UUID_TO_BIN('079fcf9b-9a2e-5b03-8283-c1f7d5be0081', 1)
+  AND voice_key = 'tr-tr.sentence.native-clear'
+  AND (entity_type NOT IN ('grammar_point','exercise') OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'u_weather_and_clothes_01')
+  AND source_text_hash IS NOT NULL
+  AND source_text_hash <> '4ed0e39ae71d856fef3657dc9d354602d8030dfa9cc6147931231e698515083f'
+  AND status <> 'archived';
+INSERT INTO audio_assets (
+  id, language_id, language_variant_id, entity_type, entity_id, source_text_hash,
+  voice_key, provider, provider_model, storage_url, duration_ms, generated_at, checksum, status, metadata
+) VALUES (
+  UUID_TO_BIN('45a2e4fd-8b05-5508-b36b-4a02f0963f99', 1), @audio_language_id, @audio_variant_id, 'utterance', UUID_TO_BIN('079fcf9b-9a2e-5b03-8283-c1f7d5be0081', 1), '4ed0e39ae71d856fef3657dc9d354602d8030dfa9cc6147931231e698515083f',
+  'tr-tr.sentence.native-clear', 'elevenlabs', 'eleven_multilingual_v2', 'audio/generated/tr-TR/utterances/1f53a84a82bbf5bdbecb58da76236eb79adf3f22b69f90ae635dbe0133a83bf7.mp3', 1619, '2026-09-14 11:32:32.944403', 'ea869f017fff58c3252f07872da1cca9ce6ae98b9f41f1456a561b15c60f5ef0', 'validated', '{"audio_key":"1f53a84a82bbf5bdbecb58da76236eb79adf3f22b69f90ae635dbe0133a83bf7","entity_key":"u_weather_and_clothes_01","voice_id":"FDs1ZX5J4e4f2c2erxtW","voice_name":"Fili - Warm Turkish Female ","voice_labels":{"gender":"female","accent":"istanbul","age":"young","category":"professional","language":"tr","use_case":"conversational","descriptive":"calm"},"output_format":"mp3_44100_192","file_sha256":"ea869f017fff58c3252f07872da1cca9ce6ae98b9f41f1456a561b15c60f5ef0","settings":{"stability":0.68,"similarity_boost":0.88,"style":0.0,"use_speaker_boost":true,"speed":0.95},"relative_path":"audio/generated/tr-TR/utterances/1f53a84a82bbf5bdbecb58da76236eb79adf3f22b69f90ae635dbe0133a83bf7.mp3"}'
 ) ON DUPLICATE KEY UPDATE
   provider = VALUES(provider),
   provider_model = VALUES(provider_model),
@@ -5522,6 +10852,58 @@ INSERT INTO audio_assets (
   status = VALUES(status),
   metadata = VALUES(metadata);
 
+-- u_can_you_help_02 -> audio/generated/tr-TR/utterances/28b9fb973d5acdd8d5433bac8f8144dd008e593e4a6ecb9d8f2584700c69296d.mp3
+UPDATE audio_assets
+SET status = 'archived'
+WHERE entity_type = 'utterance'
+  AND entity_id = UUID_TO_BIN('c79e9b33-809e-53b2-8192-c75b81f058f5', 1)
+  AND voice_key = 'tr-tr.sentence.native-clear'
+  AND (entity_type NOT IN ('grammar_point','exercise') OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'u_can_you_help_02')
+  AND source_text_hash IS NOT NULL
+  AND source_text_hash <> '40e7bcc4dec8cbceee042a31264f8fa823af45449a6b23caf711638d52e3bf9a'
+  AND status <> 'archived';
+INSERT INTO audio_assets (
+  id, language_id, language_variant_id, entity_type, entity_id, source_text_hash,
+  voice_key, provider, provider_model, storage_url, duration_ms, generated_at, checksum, status, metadata
+) VALUES (
+  UUID_TO_BIN('4a6d0051-0145-504a-94a5-e69a8fc7a365', 1), @audio_language_id, @audio_variant_id, 'utterance', UUID_TO_BIN('c79e9b33-809e-53b2-8192-c75b81f058f5', 1), '40e7bcc4dec8cbceee042a31264f8fa823af45449a6b23caf711638d52e3bf9a',
+  'tr-tr.sentence.native-clear', 'elevenlabs', 'eleven_multilingual_v2', 'audio/generated/tr-TR/utterances/28b9fb973d5acdd8d5433bac8f8144dd008e593e4a6ecb9d8f2584700c69296d.mp3', 1619, '2026-09-14 11:32:33.114904', '453f0be0ba890f53fd9858ae49ae8995bbafcdaabc7edea991b43a4f2729a6d3', 'validated', '{"audio_key":"28b9fb973d5acdd8d5433bac8f8144dd008e593e4a6ecb9d8f2584700c69296d","entity_key":"u_can_you_help_02","voice_id":"FDs1ZX5J4e4f2c2erxtW","voice_name":"Fili - Warm Turkish Female ","voice_labels":{"gender":"female","accent":"istanbul","age":"young","category":"professional","language":"tr","use_case":"conversational","descriptive":"calm"},"output_format":"mp3_44100_192","file_sha256":"453f0be0ba890f53fd9858ae49ae8995bbafcdaabc7edea991b43a4f2729a6d3","settings":{"stability":0.68,"similarity_boost":0.88,"style":0.0,"use_speaker_boost":true,"speed":0.95},"relative_path":"audio/generated/tr-TR/utterances/28b9fb973d5acdd8d5433bac8f8144dd008e593e4a6ecb9d8f2584700c69296d.mp3"}'
+) ON DUPLICATE KEY UPDATE
+  provider = VALUES(provider),
+  provider_model = VALUES(provider_model),
+  storage_url = VALUES(storage_url),
+  duration_ms = VALUES(duration_ms),
+  generated_at = VALUES(generated_at),
+  checksum = VALUES(checksum),
+  status = VALUES(status),
+  metadata = VALUES(metadata);
+
+-- e_can_you_help_01_listen -> audio/generated/tr-TR/utterances/28b9fb973d5acdd8d5433bac8f8144dd008e593e4a6ecb9d8f2584700c69296d.mp3
+UPDATE audio_assets
+SET status = 'archived'
+WHERE entity_type = 'exercise'
+  AND entity_id = UUID_TO_BIN('d46aa5d3-8736-52f2-b545-6e043a1a1ccb', 1)
+  AND voice_key = 'tr-tr.sentence.native-clear'
+  AND (entity_type NOT IN ('grammar_point','exercise') OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'e_can_you_help_01_listen')
+  AND source_text_hash IS NOT NULL
+  AND source_text_hash <> '40e7bcc4dec8cbceee042a31264f8fa823af45449a6b23caf711638d52e3bf9a'
+  AND status <> 'archived';
+INSERT INTO audio_assets (
+  id, language_id, language_variant_id, entity_type, entity_id, source_text_hash,
+  voice_key, provider, provider_model, storage_url, duration_ms, generated_at, checksum, status, metadata
+) VALUES (
+  UUID_TO_BIN('55733d87-4f5e-5f52-af20-f104777ab313', 1), @audio_language_id, @audio_variant_id, 'exercise', UUID_TO_BIN('d46aa5d3-8736-52f2-b545-6e043a1a1ccb', 1), '40e7bcc4dec8cbceee042a31264f8fa823af45449a6b23caf711638d52e3bf9a',
+  'tr-tr.sentence.native-clear', 'elevenlabs', 'eleven_multilingual_v2', 'audio/generated/tr-TR/utterances/28b9fb973d5acdd8d5433bac8f8144dd008e593e4a6ecb9d8f2584700c69296d.mp3', 1619, '2026-09-14 11:32:33.114904', '453f0be0ba890f53fd9858ae49ae8995bbafcdaabc7edea991b43a4f2729a6d3', 'validated', '{"audio_key":"28b9fb973d5acdd8d5433bac8f8144dd008e593e4a6ecb9d8f2584700c69296d","entity_key":"e_can_you_help_01_listen","voice_id":"FDs1ZX5J4e4f2c2erxtW","voice_name":"Fili - Warm Turkish Female ","voice_labels":{"gender":"female","accent":"istanbul","age":"young","category":"professional","language":"tr","use_case":"conversational","descriptive":"calm"},"output_format":"mp3_44100_192","file_sha256":"453f0be0ba890f53fd9858ae49ae8995bbafcdaabc7edea991b43a4f2729a6d3","settings":{"stability":0.68,"similarity_boost":0.88,"style":0.0,"use_speaker_boost":true,"speed":0.95},"relative_path":"audio/generated/tr-TR/utterances/28b9fb973d5acdd8d5433bac8f8144dd008e593e4a6ecb9d8f2584700c69296d.mp3"}'
+) ON DUPLICATE KEY UPDATE
+  provider = VALUES(provider),
+  provider_model = VALUES(provider_model),
+  storage_url = VALUES(storage_url),
+  duration_ms = VALUES(duration_ms),
+  generated_at = VALUES(generated_at),
+  checksum = VALUES(checksum),
+  status = VALUES(status),
+  metadata = VALUES(metadata);
+
 -- u_a1_first_day_capstone_04 -> audio/generated/tr-TR/utterances/3958921319e5ba338c7d15bf51a4577e827c66827262221fa86d4c6a53ede76c.mp3
 UPDATE audio_assets
 SET status = 'archived'
@@ -5564,6 +10946,58 @@ INSERT INTO audio_assets (
 ) VALUES (
   UUID_TO_BIN('ff3152c1-6a08-554a-85ee-848ad207ffad', 1), @audio_language_id, @audio_variant_id, 'exercise', UUID_TO_BIN('4831b454-6703-5435-9cec-a099e6d06c02', 1), '0f5bf4608062a178845eda10f7f5c8370d2c3a2b0790af5c94c7bd5959f45436',
   'tr-tr.sentence.native-clear', 'elevenlabs', 'eleven_multilingual_v2', 'audio/generated/tr-TR/utterances/3958921319e5ba338c7d15bf51a4577e827c66827262221fa86d4c6a53ede76c.mp3', 2168, '2026-09-13 15:55:45.194195', 'f51557231dccb69d1f7a94330344fd0f3c1bfb8dc01f40a7ec0e5a98620f2a10', 'validated', '{"audio_key":"3958921319e5ba338c7d15bf51a4577e827c66827262221fa86d4c6a53ede76c","entity_key":"e_a1_first_day_capstone_02_listen","voice_id":"FDs1ZX5J4e4f2c2erxtW","voice_name":"Fili - Warm Turkish Female ","voice_labels":{"gender":"female","accent":"istanbul","age":"young","category":"professional","language":"tr","use_case":"conversational","descriptive":"calm"},"output_format":"mp3_44100_192","file_sha256":"f51557231dccb69d1f7a94330344fd0f3c1bfb8dc01f40a7ec0e5a98620f2a10","settings":{"stability":0.68,"similarity_boost":0.88,"style":0.0,"use_speaker_boost":true,"speed":0.95},"relative_path":"audio/generated/tr-TR/utterances/3958921319e5ba338c7d15bf51a4577e827c66827262221fa86d4c6a53ede76c.mp3"}'
+) ON DUPLICATE KEY UPDATE
+  provider = VALUES(provider),
+  provider_model = VALUES(provider_model),
+  storage_url = VALUES(storage_url),
+  duration_ms = VALUES(duration_ms),
+  generated_at = VALUES(generated_at),
+  checksum = VALUES(checksum),
+  status = VALUES(status),
+  metadata = VALUES(metadata);
+
+-- u_basic_health_02 -> audio/generated/tr-TR/utterances/3bf7c3676a496cabced116f58ddabcfe8ab4a17673b849f7ce67617709e02a0f.mp3
+UPDATE audio_assets
+SET status = 'archived'
+WHERE entity_type = 'utterance'
+  AND entity_id = UUID_TO_BIN('87d6cf64-2b3b-5ea7-8b08-7df155185624', 1)
+  AND voice_key = 'tr-tr.sentence.native-clear'
+  AND (entity_type NOT IN ('grammar_point','exercise') OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'u_basic_health_02')
+  AND source_text_hash IS NOT NULL
+  AND source_text_hash <> 'a048665d0f942b4adc1099a2a2fe7e43772689c7caad54f302cb7a749c7ddb02'
+  AND status <> 'archived';
+INSERT INTO audio_assets (
+  id, language_id, language_variant_id, entity_type, entity_id, source_text_hash,
+  voice_key, provider, provider_model, storage_url, duration_ms, generated_at, checksum, status, metadata
+) VALUES (
+  UUID_TO_BIN('42a279c2-2f0b-5e50-8ce4-f140c0f48076', 1), @audio_language_id, @audio_variant_id, 'utterance', UUID_TO_BIN('87d6cf64-2b3b-5ea7-8b08-7df155185624', 1), 'a048665d0f942b4adc1099a2a2fe7e43772689c7caad54f302cb7a749c7ddb02',
+  'tr-tr.sentence.native-clear', 'elevenlabs', 'eleven_multilingual_v2', 'audio/generated/tr-TR/utterances/3bf7c3676a496cabced116f58ddabcfe8ab4a17673b849f7ce67617709e02a0f.mp3', 1671, '2026-09-14 11:32:33.934400', 'd2fae14c9ceef604fa8af874663532995ecba7e408eee35063612a26ec8db2b4', 'validated', '{"audio_key":"3bf7c3676a496cabced116f58ddabcfe8ab4a17673b849f7ce67617709e02a0f","entity_key":"u_basic_health_02","voice_id":"FDs1ZX5J4e4f2c2erxtW","voice_name":"Fili - Warm Turkish Female ","voice_labels":{"gender":"female","accent":"istanbul","age":"young","category":"professional","language":"tr","use_case":"conversational","descriptive":"calm"},"output_format":"mp3_44100_192","file_sha256":"d2fae14c9ceef604fa8af874663532995ecba7e408eee35063612a26ec8db2b4","settings":{"stability":0.68,"similarity_boost":0.88,"style":0.0,"use_speaker_boost":true,"speed":0.95},"relative_path":"audio/generated/tr-TR/utterances/3bf7c3676a496cabced116f58ddabcfe8ab4a17673b849f7ce67617709e02a0f.mp3"}'
+) ON DUPLICATE KEY UPDATE
+  provider = VALUES(provider),
+  provider_model = VALUES(provider_model),
+  storage_url = VALUES(storage_url),
+  duration_ms = VALUES(duration_ms),
+  generated_at = VALUES(generated_at),
+  checksum = VALUES(checksum),
+  status = VALUES(status),
+  metadata = VALUES(metadata);
+
+-- e_basic_health_01_listen -> audio/generated/tr-TR/utterances/3bf7c3676a496cabced116f58ddabcfe8ab4a17673b849f7ce67617709e02a0f.mp3
+UPDATE audio_assets
+SET status = 'archived'
+WHERE entity_type = 'exercise'
+  AND entity_id = UUID_TO_BIN('681251a0-0304-5ab8-87e7-18a1e4f0797d', 1)
+  AND voice_key = 'tr-tr.sentence.native-clear'
+  AND (entity_type NOT IN ('grammar_point','exercise') OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'e_basic_health_01_listen')
+  AND source_text_hash IS NOT NULL
+  AND source_text_hash <> 'a048665d0f942b4adc1099a2a2fe7e43772689c7caad54f302cb7a749c7ddb02'
+  AND status <> 'archived';
+INSERT INTO audio_assets (
+  id, language_id, language_variant_id, entity_type, entity_id, source_text_hash,
+  voice_key, provider, provider_model, storage_url, duration_ms, generated_at, checksum, status, metadata
+) VALUES (
+  UUID_TO_BIN('91d122fd-c1af-572b-b1c9-28e34563d3e5', 1), @audio_language_id, @audio_variant_id, 'exercise', UUID_TO_BIN('681251a0-0304-5ab8-87e7-18a1e4f0797d', 1), 'a048665d0f942b4adc1099a2a2fe7e43772689c7caad54f302cb7a749c7ddb02',
+  'tr-tr.sentence.native-clear', 'elevenlabs', 'eleven_multilingual_v2', 'audio/generated/tr-TR/utterances/3bf7c3676a496cabced116f58ddabcfe8ab4a17673b849f7ce67617709e02a0f.mp3', 1671, '2026-09-14 11:32:33.934400', 'd2fae14c9ceef604fa8af874663532995ecba7e408eee35063612a26ec8db2b4', 'validated', '{"audio_key":"3bf7c3676a496cabced116f58ddabcfe8ab4a17673b849f7ce67617709e02a0f","entity_key":"e_basic_health_01_listen","voice_id":"FDs1ZX5J4e4f2c2erxtW","voice_name":"Fili - Warm Turkish Female ","voice_labels":{"gender":"female","accent":"istanbul","age":"young","category":"professional","language":"tr","use_case":"conversational","descriptive":"calm"},"output_format":"mp3_44100_192","file_sha256":"d2fae14c9ceef604fa8af874663532995ecba7e408eee35063612a26ec8db2b4","settings":{"stability":0.68,"similarity_boost":0.88,"style":0.0,"use_speaker_boost":true,"speed":0.95},"relative_path":"audio/generated/tr-TR/utterances/3bf7c3676a496cabced116f58ddabcfe8ab4a17673b849f7ce67617709e02a0f.mp3"}'
 ) ON DUPLICATE KEY UPDATE
   provider = VALUES(provider),
   provider_model = VALUES(provider_model),
@@ -5626,6 +11060,84 @@ INSERT INTO audio_assets (
   status = VALUES(status),
   metadata = VALUES(metadata);
 
+-- u_near_future_plans_01 -> audio/generated/tr-TR/utterances/40b2e67421c021048fc077c342ac488f839bb1c92f69551fd797ee0cc381efe8.mp3
+UPDATE audio_assets
+SET status = 'archived'
+WHERE entity_type = 'utterance'
+  AND entity_id = UUID_TO_BIN('e3c5ff3a-be0a-5d06-a16c-0348941f8097', 1)
+  AND voice_key = 'tr-tr.sentence.native-clear'
+  AND (entity_type NOT IN ('grammar_point','exercise') OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'u_near_future_plans_01')
+  AND source_text_hash IS NOT NULL
+  AND source_text_hash <> 'ffce1d15d4ab72b1a5f73ca7c89c4a034a8a9975271a60f39784633d70d60376'
+  AND status <> 'archived';
+INSERT INTO audio_assets (
+  id, language_id, language_variant_id, entity_type, entity_id, source_text_hash,
+  voice_key, provider, provider_model, storage_url, duration_ms, generated_at, checksum, status, metadata
+) VALUES (
+  UUID_TO_BIN('f9549af0-87b2-507d-aeef-63f02467455d', 1), @audio_language_id, @audio_variant_id, 'utterance', UUID_TO_BIN('e3c5ff3a-be0a-5d06-a16c-0348941f8097', 1), 'ffce1d15d4ab72b1a5f73ca7c89c4a034a8a9975271a60f39784633d70d60376',
+  'tr-tr.sentence.native-clear', 'elevenlabs', 'eleven_multilingual_v2', 'audio/generated/tr-TR/utterances/40b2e67421c021048fc077c342ac488f839bb1c92f69551fd797ee0cc381efe8.mp3', 2507, '2026-09-14 11:32:34.216697', '06fa3116e22bd0338c590a9dde4ede7c875a62600f7582abb311771f7290b2d9', 'validated', '{"audio_key":"40b2e67421c021048fc077c342ac488f839bb1c92f69551fd797ee0cc381efe8","entity_key":"u_near_future_plans_01","voice_id":"FDs1ZX5J4e4f2c2erxtW","voice_name":"Fili - Warm Turkish Female ","voice_labels":{"gender":"female","accent":"istanbul","age":"young","category":"professional","language":"tr","use_case":"conversational","descriptive":"calm"},"output_format":"mp3_44100_192","file_sha256":"06fa3116e22bd0338c590a9dde4ede7c875a62600f7582abb311771f7290b2d9","settings":{"stability":0.68,"similarity_boost":0.88,"style":0.0,"use_speaker_boost":true,"speed":0.95},"relative_path":"audio/generated/tr-TR/utterances/40b2e67421c021048fc077c342ac488f839bb1c92f69551fd797ee0cc381efe8.mp3"}'
+) ON DUPLICATE KEY UPDATE
+  provider = VALUES(provider),
+  provider_model = VALUES(provider_model),
+  storage_url = VALUES(storage_url),
+  duration_ms = VALUES(duration_ms),
+  generated_at = VALUES(generated_at),
+  checksum = VALUES(checksum),
+  status = VALUES(status),
+  metadata = VALUES(metadata);
+
+-- u_a1_everyday_capstone_04 -> audio/generated/tr-TR/utterances/444cd7d1aa51ff7b56e12679236525a1ddcfc136ee1f71214c938f5d928f420e.mp3
+UPDATE audio_assets
+SET status = 'archived'
+WHERE entity_type = 'utterance'
+  AND entity_id = UUID_TO_BIN('9606fd24-5e51-550b-b3bf-29c28b15dd12', 1)
+  AND voice_key = 'tr-tr.sentence.native-clear'
+  AND (entity_type NOT IN ('grammar_point','exercise') OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'u_a1_everyday_capstone_04')
+  AND source_text_hash IS NOT NULL
+  AND source_text_hash <> '6952e000aa75ec20131f595f4649da2c869b41e1f452d1adad4b8b537e73000d'
+  AND status <> 'archived';
+INSERT INTO audio_assets (
+  id, language_id, language_variant_id, entity_type, entity_id, source_text_hash,
+  voice_key, provider, provider_model, storage_url, duration_ms, generated_at, checksum, status, metadata
+) VALUES (
+  UUID_TO_BIN('4637ab70-12fe-55ea-800b-448b9396c8c8', 1), @audio_language_id, @audio_variant_id, 'utterance', UUID_TO_BIN('9606fd24-5e51-550b-b3bf-29c28b15dd12', 1), '6952e000aa75ec20131f595f4649da2c869b41e1f452d1adad4b8b537e73000d',
+  'tr-tr.sentence.native-clear', 'elevenlabs', 'eleven_multilingual_v2', 'audio/generated/tr-TR/utterances/444cd7d1aa51ff7b56e12679236525a1ddcfc136ee1f71214c938f5d928f420e.mp3', 2403, '2026-09-14 11:32:35.020897', 'b0da9cd07274fb0eeed2baa63ea6e709ded08717e641cd81acbc7117b339c600', 'validated', '{"audio_key":"444cd7d1aa51ff7b56e12679236525a1ddcfc136ee1f71214c938f5d928f420e","entity_key":"u_a1_everyday_capstone_04","voice_id":"FDs1ZX5J4e4f2c2erxtW","voice_name":"Fili - Warm Turkish Female ","voice_labels":{"gender":"female","accent":"istanbul","age":"young","category":"professional","language":"tr","use_case":"conversational","descriptive":"calm"},"output_format":"mp3_44100_192","file_sha256":"b0da9cd07274fb0eeed2baa63ea6e709ded08717e641cd81acbc7117b339c600","settings":{"stability":0.68,"similarity_boost":0.88,"style":0.0,"use_speaker_boost":true,"speed":0.95},"relative_path":"audio/generated/tr-TR/utterances/444cd7d1aa51ff7b56e12679236525a1ddcfc136ee1f71214c938f5d928f420e.mp3"}'
+) ON DUPLICATE KEY UPDATE
+  provider = VALUES(provider),
+  provider_model = VALUES(provider_model),
+  storage_url = VALUES(storage_url),
+  duration_ms = VALUES(duration_ms),
+  generated_at = VALUES(generated_at),
+  checksum = VALUES(checksum),
+  status = VALUES(status),
+  metadata = VALUES(metadata);
+
+-- e_a1_everyday_capstone_02_listen -> audio/generated/tr-TR/utterances/444cd7d1aa51ff7b56e12679236525a1ddcfc136ee1f71214c938f5d928f420e.mp3
+UPDATE audio_assets
+SET status = 'archived'
+WHERE entity_type = 'exercise'
+  AND entity_id = UUID_TO_BIN('c030b4aa-0123-50ee-a9c7-99287ed8c11d', 1)
+  AND voice_key = 'tr-tr.sentence.native-clear'
+  AND (entity_type NOT IN ('grammar_point','exercise') OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'e_a1_everyday_capstone_02_listen')
+  AND source_text_hash IS NOT NULL
+  AND source_text_hash <> '6952e000aa75ec20131f595f4649da2c869b41e1f452d1adad4b8b537e73000d'
+  AND status <> 'archived';
+INSERT INTO audio_assets (
+  id, language_id, language_variant_id, entity_type, entity_id, source_text_hash,
+  voice_key, provider, provider_model, storage_url, duration_ms, generated_at, checksum, status, metadata
+) VALUES (
+  UUID_TO_BIN('3e537214-d5f5-5567-822f-1363cff80479', 1), @audio_language_id, @audio_variant_id, 'exercise', UUID_TO_BIN('c030b4aa-0123-50ee-a9c7-99287ed8c11d', 1), '6952e000aa75ec20131f595f4649da2c869b41e1f452d1adad4b8b537e73000d',
+  'tr-tr.sentence.native-clear', 'elevenlabs', 'eleven_multilingual_v2', 'audio/generated/tr-TR/utterances/444cd7d1aa51ff7b56e12679236525a1ddcfc136ee1f71214c938f5d928f420e.mp3', 2403, '2026-09-14 11:32:35.020897', 'b0da9cd07274fb0eeed2baa63ea6e709ded08717e641cd81acbc7117b339c600', 'validated', '{"audio_key":"444cd7d1aa51ff7b56e12679236525a1ddcfc136ee1f71214c938f5d928f420e","entity_key":"e_a1_everyday_capstone_02_listen","voice_id":"FDs1ZX5J4e4f2c2erxtW","voice_name":"Fili - Warm Turkish Female ","voice_labels":{"gender":"female","accent":"istanbul","age":"young","category":"professional","language":"tr","use_case":"conversational","descriptive":"calm"},"output_format":"mp3_44100_192","file_sha256":"b0da9cd07274fb0eeed2baa63ea6e709ded08717e641cd81acbc7117b339c600","settings":{"stability":0.68,"similarity_boost":0.88,"style":0.0,"use_speaker_boost":true,"speed":0.95},"relative_path":"audio/generated/tr-TR/utterances/444cd7d1aa51ff7b56e12679236525a1ddcfc136ee1f71214c938f5d928f420e.mp3"}'
+) ON DUPLICATE KEY UPDATE
+  provider = VALUES(provider),
+  provider_model = VALUES(provider_model),
+  storage_url = VALUES(storage_url),
+  duration_ms = VALUES(duration_ms),
+  generated_at = VALUES(generated_at),
+  checksum = VALUES(checksum),
+  status = VALUES(status),
+  metadata = VALUES(metadata);
+
 -- u_shopping_basics_01 -> audio/generated/tr-TR/utterances/470ba54bca4cd0e94705a25245119bcc7fc634a51e58eb7cfc709a156564feb3.mp3
 UPDATE audio_assets
 SET status = 'archived'
@@ -5642,6 +11154,84 @@ INSERT INTO audio_assets (
 ) VALUES (
   UUID_TO_BIN('17df3364-bd60-5594-9524-a1a330c8ac0f', 1), @audio_language_id, @audio_variant_id, 'utterance', UUID_TO_BIN('a5c56154-c465-55cc-afc6-662696d6bae0', 1), 'b8687dc79a33c1ea4e9e59b86a0cfef1a4c827ac358307b0cc2ef5c492206b3d',
   'tr-tr.sentence.native-clear', 'elevenlabs', 'eleven_multilingual_v2', 'audio/generated/tr-TR/utterances/470ba54bca4cd0e94705a25245119bcc7fc634a51e58eb7cfc709a156564feb3.mp3', 1201, '2026-09-13 15:55:46.328704', '12d223cdf1f1ad897ec0c1ce1b39c28ed9104bc73202c8573df25adf4687abe3', 'validated', '{"audio_key":"470ba54bca4cd0e94705a25245119bcc7fc634a51e58eb7cfc709a156564feb3","entity_key":"u_shopping_basics_01","voice_id":"FDs1ZX5J4e4f2c2erxtW","voice_name":"Fili - Warm Turkish Female ","voice_labels":{"gender":"female","accent":"istanbul","age":"young","category":"professional","language":"tr","use_case":"conversational","descriptive":"calm"},"output_format":"mp3_44100_192","file_sha256":"12d223cdf1f1ad897ec0c1ce1b39c28ed9104bc73202c8573df25adf4687abe3","settings":{"stability":0.68,"similarity_boost":0.88,"style":0.0,"use_speaker_boost":true,"speed":0.95},"relative_path":"audio/generated/tr-TR/utterances/470ba54bca4cd0e94705a25245119bcc7fc634a51e58eb7cfc709a156564feb3.mp3"}'
+) ON DUPLICATE KEY UPDATE
+  provider = VALUES(provider),
+  provider_model = VALUES(provider_model),
+  storage_url = VALUES(storage_url),
+  duration_ms = VALUES(duration_ms),
+  generated_at = VALUES(generated_at),
+  checksum = VALUES(checksum),
+  status = VALUES(status),
+  metadata = VALUES(metadata);
+
+-- u_everyday_routine_01 -> audio/generated/tr-TR/utterances/4ecfc89e8c7deea5627e68ffd060489700ff11d9888f045f935cc916ab0f3d34.mp3
+UPDATE audio_assets
+SET status = 'archived'
+WHERE entity_type = 'utterance'
+  AND entity_id = UUID_TO_BIN('0e0f375c-5bbe-5bcb-9a7e-77e0d159666c', 1)
+  AND voice_key = 'tr-tr.sentence.native-clear'
+  AND (entity_type NOT IN ('grammar_point','exercise') OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'u_everyday_routine_01')
+  AND source_text_hash IS NOT NULL
+  AND source_text_hash <> '13ea87e15baff0040eb050417dd453f94ec5693c272979ac6e3da01c64f761b3'
+  AND status <> 'archived';
+INSERT INTO audio_assets (
+  id, language_id, language_variant_id, entity_type, entity_id, source_text_hash,
+  voice_key, provider, provider_model, storage_url, duration_ms, generated_at, checksum, status, metadata
+) VALUES (
+  UUID_TO_BIN('12ce4a30-f26a-561c-9b54-1f061b6661a3', 1), @audio_language_id, @audio_variant_id, 'utterance', UUID_TO_BIN('0e0f375c-5bbe-5bcb-9a7e-77e0d159666c', 1), '13ea87e15baff0040eb050417dd453f94ec5693c272979ac6e3da01c64f761b3',
+  'tr-tr.sentence.native-clear', 'elevenlabs', 'eleven_multilingual_v2', 'audio/generated/tr-TR/utterances/4ecfc89e8c7deea5627e68ffd060489700ff11d9888f045f935cc916ab0f3d34.mp3', 1802, '2026-09-14 11:32:35.264609', 'a09b97062f46fdc8f4704534b7636f9b813d5028d9f33ebf18b7977a589ed249', 'validated', '{"audio_key":"4ecfc89e8c7deea5627e68ffd060489700ff11d9888f045f935cc916ab0f3d34","entity_key":"u_everyday_routine_01","voice_id":"FDs1ZX5J4e4f2c2erxtW","voice_name":"Fili - Warm Turkish Female ","voice_labels":{"gender":"female","accent":"istanbul","age":"young","category":"professional","language":"tr","use_case":"conversational","descriptive":"calm"},"output_format":"mp3_44100_192","file_sha256":"a09b97062f46fdc8f4704534b7636f9b813d5028d9f33ebf18b7977a589ed249","settings":{"stability":0.68,"similarity_boost":0.88,"style":0.0,"use_speaker_boost":true,"speed":0.95},"relative_path":"audio/generated/tr-TR/utterances/4ecfc89e8c7deea5627e68ffd060489700ff11d9888f045f935cc916ab0f3d34.mp3"}'
+) ON DUPLICATE KEY UPDATE
+  provider = VALUES(provider),
+  provider_model = VALUES(provider_model),
+  storage_url = VALUES(storage_url),
+  duration_ms = VALUES(duration_ms),
+  generated_at = VALUES(generated_at),
+  checksum = VALUES(checksum),
+  status = VALUES(status),
+  metadata = VALUES(metadata);
+
+-- u_near_future_plans_04 -> audio/generated/tr-TR/utterances/533425da1261e5192f72b369413c584b6bf17785ba68ee7c5f86ffd1f28c98f9.mp3
+UPDATE audio_assets
+SET status = 'archived'
+WHERE entity_type = 'utterance'
+  AND entity_id = UUID_TO_BIN('a0454718-259f-576c-9957-28a95fbe8e63', 1)
+  AND voice_key = 'tr-tr.sentence.native-clear'
+  AND (entity_type NOT IN ('grammar_point','exercise') OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'u_near_future_plans_04')
+  AND source_text_hash IS NOT NULL
+  AND source_text_hash <> '9dad310f0e108827427a57fd90ede1deac0a6c2f1a6b7a7ec88841507f5a72d5'
+  AND status <> 'archived';
+INSERT INTO audio_assets (
+  id, language_id, language_variant_id, entity_type, entity_id, source_text_hash,
+  voice_key, provider, provider_model, storage_url, duration_ms, generated_at, checksum, status, metadata
+) VALUES (
+  UUID_TO_BIN('4d7cc2f5-29d0-5460-864f-7105cfecf0c1', 1), @audio_language_id, @audio_variant_id, 'utterance', UUID_TO_BIN('a0454718-259f-576c-9957-28a95fbe8e63', 1), '9dad310f0e108827427a57fd90ede1deac0a6c2f1a6b7a7ec88841507f5a72d5',
+  'tr-tr.sentence.native-clear', 'elevenlabs', 'eleven_multilingual_v2', 'audio/generated/tr-TR/utterances/533425da1261e5192f72b369413c584b6bf17785ba68ee7c5f86ffd1f28c98f9.mp3', 2324, '2026-09-14 11:32:36.107913', 'afe12c29cbfeeb121abbb0563d20fe31a0f5c18913b3b57256bae4eedb59a424', 'validated', '{"audio_key":"533425da1261e5192f72b369413c584b6bf17785ba68ee7c5f86ffd1f28c98f9","entity_key":"u_near_future_plans_04","voice_id":"FDs1ZX5J4e4f2c2erxtW","voice_name":"Fili - Warm Turkish Female ","voice_labels":{"gender":"female","accent":"istanbul","age":"young","category":"professional","language":"tr","use_case":"conversational","descriptive":"calm"},"output_format":"mp3_44100_192","file_sha256":"afe12c29cbfeeb121abbb0563d20fe31a0f5c18913b3b57256bae4eedb59a424","settings":{"stability":0.68,"similarity_boost":0.88,"style":0.0,"use_speaker_boost":true,"speed":0.95},"relative_path":"audio/generated/tr-TR/utterances/533425da1261e5192f72b369413c584b6bf17785ba68ee7c5f86ffd1f28c98f9.mp3"}'
+) ON DUPLICATE KEY UPDATE
+  provider = VALUES(provider),
+  provider_model = VALUES(provider_model),
+  storage_url = VALUES(storage_url),
+  duration_ms = VALUES(duration_ms),
+  generated_at = VALUES(generated_at),
+  checksum = VALUES(checksum),
+  status = VALUES(status),
+  metadata = VALUES(metadata);
+
+-- e_near_future_plans_02_listen -> audio/generated/tr-TR/utterances/533425da1261e5192f72b369413c584b6bf17785ba68ee7c5f86ffd1f28c98f9.mp3
+UPDATE audio_assets
+SET status = 'archived'
+WHERE entity_type = 'exercise'
+  AND entity_id = UUID_TO_BIN('fc62e9f3-aba3-501a-9650-328adbc3cc0e', 1)
+  AND voice_key = 'tr-tr.sentence.native-clear'
+  AND (entity_type NOT IN ('grammar_point','exercise') OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'e_near_future_plans_02_listen')
+  AND source_text_hash IS NOT NULL
+  AND source_text_hash <> '9dad310f0e108827427a57fd90ede1deac0a6c2f1a6b7a7ec88841507f5a72d5'
+  AND status <> 'archived';
+INSERT INTO audio_assets (
+  id, language_id, language_variant_id, entity_type, entity_id, source_text_hash,
+  voice_key, provider, provider_model, storage_url, duration_ms, generated_at, checksum, status, metadata
+) VALUES (
+  UUID_TO_BIN('d12d3fcc-0dc2-54db-8962-3f5097536e03', 1), @audio_language_id, @audio_variant_id, 'exercise', UUID_TO_BIN('fc62e9f3-aba3-501a-9650-328adbc3cc0e', 1), '9dad310f0e108827427a57fd90ede1deac0a6c2f1a6b7a7ec88841507f5a72d5',
+  'tr-tr.sentence.native-clear', 'elevenlabs', 'eleven_multilingual_v2', 'audio/generated/tr-TR/utterances/533425da1261e5192f72b369413c584b6bf17785ba68ee7c5f86ffd1f28c98f9.mp3', 2324, '2026-09-14 11:32:36.107913', 'afe12c29cbfeeb121abbb0563d20fe31a0f5c18913b3b57256bae4eedb59a424', 'validated', '{"audio_key":"533425da1261e5192f72b369413c584b6bf17785ba68ee7c5f86ffd1f28c98f9","entity_key":"e_near_future_plans_02_listen","voice_id":"FDs1ZX5J4e4f2c2erxtW","voice_name":"Fili - Warm Turkish Female ","voice_labels":{"gender":"female","accent":"istanbul","age":"young","category":"professional","language":"tr","use_case":"conversational","descriptive":"calm"},"output_format":"mp3_44100_192","file_sha256":"afe12c29cbfeeb121abbb0563d20fe31a0f5c18913b3b57256bae4eedb59a424","settings":{"stability":0.68,"similarity_boost":0.88,"style":0.0,"use_speaker_boost":true,"speed":0.95},"relative_path":"audio/generated/tr-TR/utterances/533425da1261e5192f72b369413c584b6bf17785ba68ee7c5f86ffd1f28c98f9.mp3"}'
 ) ON DUPLICATE KEY UPDATE
   provider = VALUES(provider),
   provider_model = VALUES(provider_model),
@@ -5756,6 +11346,110 @@ INSERT INTO audio_assets (
   status = VALUES(status),
   metadata = VALUES(metadata);
 
+-- u_before_and_after_04 -> audio/generated/tr-TR/utterances/5adc85d3499d651946adf355a3eacf6bd968dfe51b6e9fb12ef2078d9975fb3a.mp3
+UPDATE audio_assets
+SET status = 'archived'
+WHERE entity_type = 'utterance'
+  AND entity_id = UUID_TO_BIN('dfc6dbc1-11fa-56d2-9ba9-039e59add8f5', 1)
+  AND voice_key = 'tr-tr.sentence.native-clear'
+  AND (entity_type NOT IN ('grammar_point','exercise') OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'u_before_and_after_04')
+  AND source_text_hash IS NOT NULL
+  AND source_text_hash <> '55b03ba1c9ab06c372faab6a25e90e7f5be74f34f808f4eb8fbc0e9adaa9737d'
+  AND status <> 'archived';
+INSERT INTO audio_assets (
+  id, language_id, language_variant_id, entity_type, entity_id, source_text_hash,
+  voice_key, provider, provider_model, storage_url, duration_ms, generated_at, checksum, status, metadata
+) VALUES (
+  UUID_TO_BIN('853b51e6-da78-5fa7-b992-ca71c3f85c67', 1), @audio_language_id, @audio_variant_id, 'utterance', UUID_TO_BIN('dfc6dbc1-11fa-56d2-9ba9-039e59add8f5', 1), '55b03ba1c9ab06c372faab6a25e90e7f5be74f34f808f4eb8fbc0e9adaa9737d',
+  'tr-tr.sentence.native-clear', 'elevenlabs', 'eleven_multilingual_v2', 'audio/generated/tr-TR/utterances/5adc85d3499d651946adf355a3eacf6bd968dfe51b6e9fb12ef2078d9975fb3a.mp3', 1906, '2026-09-14 11:32:36.327498', '8de5500d60df7b76b3f058aadc44e58ad58c9a54a48455594989d6a4fa140c23', 'validated', '{"audio_key":"5adc85d3499d651946adf355a3eacf6bd968dfe51b6e9fb12ef2078d9975fb3a","entity_key":"u_before_and_after_04","voice_id":"FDs1ZX5J4e4f2c2erxtW","voice_name":"Fili - Warm Turkish Female ","voice_labels":{"gender":"female","accent":"istanbul","age":"young","category":"professional","language":"tr","use_case":"conversational","descriptive":"calm"},"output_format":"mp3_44100_192","file_sha256":"8de5500d60df7b76b3f058aadc44e58ad58c9a54a48455594989d6a4fa140c23","settings":{"stability":0.68,"similarity_boost":0.88,"style":0.0,"use_speaker_boost":true,"speed":0.95},"relative_path":"audio/generated/tr-TR/utterances/5adc85d3499d651946adf355a3eacf6bd968dfe51b6e9fb12ef2078d9975fb3a.mp3"}'
+) ON DUPLICATE KEY UPDATE
+  provider = VALUES(provider),
+  provider_model = VALUES(provider_model),
+  storage_url = VALUES(storage_url),
+  duration_ms = VALUES(duration_ms),
+  generated_at = VALUES(generated_at),
+  checksum = VALUES(checksum),
+  status = VALUES(status),
+  metadata = VALUES(metadata);
+
+-- e_before_and_after_02_listen -> audio/generated/tr-TR/utterances/5adc85d3499d651946adf355a3eacf6bd968dfe51b6e9fb12ef2078d9975fb3a.mp3
+UPDATE audio_assets
+SET status = 'archived'
+WHERE entity_type = 'exercise'
+  AND entity_id = UUID_TO_BIN('731aa7ca-1c65-5092-8b79-2444625b6d17', 1)
+  AND voice_key = 'tr-tr.sentence.native-clear'
+  AND (entity_type NOT IN ('grammar_point','exercise') OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'e_before_and_after_02_listen')
+  AND source_text_hash IS NOT NULL
+  AND source_text_hash <> '55b03ba1c9ab06c372faab6a25e90e7f5be74f34f808f4eb8fbc0e9adaa9737d'
+  AND status <> 'archived';
+INSERT INTO audio_assets (
+  id, language_id, language_variant_id, entity_type, entity_id, source_text_hash,
+  voice_key, provider, provider_model, storage_url, duration_ms, generated_at, checksum, status, metadata
+) VALUES (
+  UUID_TO_BIN('7775e3a3-97c6-5003-ad0b-db256e5c7833', 1), @audio_language_id, @audio_variant_id, 'exercise', UUID_TO_BIN('731aa7ca-1c65-5092-8b79-2444625b6d17', 1), '55b03ba1c9ab06c372faab6a25e90e7f5be74f34f808f4eb8fbc0e9adaa9737d',
+  'tr-tr.sentence.native-clear', 'elevenlabs', 'eleven_multilingual_v2', 'audio/generated/tr-TR/utterances/5adc85d3499d651946adf355a3eacf6bd968dfe51b6e9fb12ef2078d9975fb3a.mp3', 1906, '2026-09-14 11:32:36.327498', '8de5500d60df7b76b3f058aadc44e58ad58c9a54a48455594989d6a4fa140c23', 'validated', '{"audio_key":"5adc85d3499d651946adf355a3eacf6bd968dfe51b6e9fb12ef2078d9975fb3a","entity_key":"e_before_and_after_02_listen","voice_id":"FDs1ZX5J4e4f2c2erxtW","voice_name":"Fili - Warm Turkish Female ","voice_labels":{"gender":"female","accent":"istanbul","age":"young","category":"professional","language":"tr","use_case":"conversational","descriptive":"calm"},"output_format":"mp3_44100_192","file_sha256":"8de5500d60df7b76b3f058aadc44e58ad58c9a54a48455594989d6a4fa140c23","settings":{"stability":0.68,"similarity_boost":0.88,"style":0.0,"use_speaker_boost":true,"speed":0.95},"relative_path":"audio/generated/tr-TR/utterances/5adc85d3499d651946adf355a3eacf6bd968dfe51b6e9fb12ef2078d9975fb3a.mp3"}'
+) ON DUPLICATE KEY UPDATE
+  provider = VALUES(provider),
+  provider_model = VALUES(provider_model),
+  storage_url = VALUES(storage_url),
+  duration_ms = VALUES(duration_ms),
+  generated_at = VALUES(generated_at),
+  checksum = VALUES(checksum),
+  status = VALUES(status),
+  metadata = VALUES(metadata);
+
+-- u_everyday_routine_02 -> audio/generated/tr-TR/utterances/5b297005c0cbad190a5f7c7eb7d6d29d35ea851c952e98722d22dd1083282f61.mp3
+UPDATE audio_assets
+SET status = 'archived'
+WHERE entity_type = 'utterance'
+  AND entity_id = UUID_TO_BIN('ff6e0760-907e-51b5-8eb5-0ef6565cc602', 1)
+  AND voice_key = 'tr-tr.sentence.native-clear'
+  AND (entity_type NOT IN ('grammar_point','exercise') OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'u_everyday_routine_02')
+  AND source_text_hash IS NOT NULL
+  AND source_text_hash <> 'b34fc56c0dde6876c1fed6124095ca19fa7e2326ecf33b47c92a19d0ad0da314'
+  AND status <> 'archived';
+INSERT INTO audio_assets (
+  id, language_id, language_variant_id, entity_type, entity_id, source_text_hash,
+  voice_key, provider, provider_model, storage_url, duration_ms, generated_at, checksum, status, metadata
+) VALUES (
+  UUID_TO_BIN('4127d810-69cc-5ae5-af09-563325e3dbb6', 1), @audio_language_id, @audio_variant_id, 'utterance', UUID_TO_BIN('ff6e0760-907e-51b5-8eb5-0ef6565cc602', 1), 'b34fc56c0dde6876c1fed6124095ca19fa7e2326ecf33b47c92a19d0ad0da314',
+  'tr-tr.sentence.native-clear', 'elevenlabs', 'eleven_multilingual_v2', 'audio/generated/tr-TR/utterances/5b297005c0cbad190a5f7c7eb7d6d29d35ea851c952e98722d22dd1083282f61.mp3', 2168, '2026-09-14 11:32:37.169112', '8021564823152369768de487baf5e88a5a10729510f679dd7bcda081f8616b5d', 'validated', '{"audio_key":"5b297005c0cbad190a5f7c7eb7d6d29d35ea851c952e98722d22dd1083282f61","entity_key":"u_everyday_routine_02","voice_id":"FDs1ZX5J4e4f2c2erxtW","voice_name":"Fili - Warm Turkish Female ","voice_labels":{"gender":"female","accent":"istanbul","age":"young","category":"professional","language":"tr","use_case":"conversational","descriptive":"calm"},"output_format":"mp3_44100_192","file_sha256":"8021564823152369768de487baf5e88a5a10729510f679dd7bcda081f8616b5d","settings":{"stability":0.68,"similarity_boost":0.88,"style":0.0,"use_speaker_boost":true,"speed":0.95},"relative_path":"audio/generated/tr-TR/utterances/5b297005c0cbad190a5f7c7eb7d6d29d35ea851c952e98722d22dd1083282f61.mp3"}'
+) ON DUPLICATE KEY UPDATE
+  provider = VALUES(provider),
+  provider_model = VALUES(provider_model),
+  storage_url = VALUES(storage_url),
+  duration_ms = VALUES(duration_ms),
+  generated_at = VALUES(generated_at),
+  checksum = VALUES(checksum),
+  status = VALUES(status),
+  metadata = VALUES(metadata);
+
+-- e_everyday_routine_01_listen -> audio/generated/tr-TR/utterances/5b297005c0cbad190a5f7c7eb7d6d29d35ea851c952e98722d22dd1083282f61.mp3
+UPDATE audio_assets
+SET status = 'archived'
+WHERE entity_type = 'exercise'
+  AND entity_id = UUID_TO_BIN('b565dc52-d8d4-5d82-b1e7-ff050303f9dd', 1)
+  AND voice_key = 'tr-tr.sentence.native-clear'
+  AND (entity_type NOT IN ('grammar_point','exercise') OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'e_everyday_routine_01_listen')
+  AND source_text_hash IS NOT NULL
+  AND source_text_hash <> 'b34fc56c0dde6876c1fed6124095ca19fa7e2326ecf33b47c92a19d0ad0da314'
+  AND status <> 'archived';
+INSERT INTO audio_assets (
+  id, language_id, language_variant_id, entity_type, entity_id, source_text_hash,
+  voice_key, provider, provider_model, storage_url, duration_ms, generated_at, checksum, status, metadata
+) VALUES (
+  UUID_TO_BIN('af147c94-4d01-57cc-8718-b45ab65dac26', 1), @audio_language_id, @audio_variant_id, 'exercise', UUID_TO_BIN('b565dc52-d8d4-5d82-b1e7-ff050303f9dd', 1), 'b34fc56c0dde6876c1fed6124095ca19fa7e2326ecf33b47c92a19d0ad0da314',
+  'tr-tr.sentence.native-clear', 'elevenlabs', 'eleven_multilingual_v2', 'audio/generated/tr-TR/utterances/5b297005c0cbad190a5f7c7eb7d6d29d35ea851c952e98722d22dd1083282f61.mp3', 2168, '2026-09-14 11:32:37.169112', '8021564823152369768de487baf5e88a5a10729510f679dd7bcda081f8616b5d', 'validated', '{"audio_key":"5b297005c0cbad190a5f7c7eb7d6d29d35ea851c952e98722d22dd1083282f61","entity_key":"e_everyday_routine_01_listen","voice_id":"FDs1ZX5J4e4f2c2erxtW","voice_name":"Fili - Warm Turkish Female ","voice_labels":{"gender":"female","accent":"istanbul","age":"young","category":"professional","language":"tr","use_case":"conversational","descriptive":"calm"},"output_format":"mp3_44100_192","file_sha256":"8021564823152369768de487baf5e88a5a10729510f679dd7bcda081f8616b5d","settings":{"stability":0.68,"similarity_boost":0.88,"style":0.0,"use_speaker_boost":true,"speed":0.95},"relative_path":"audio/generated/tr-TR/utterances/5b297005c0cbad190a5f7c7eb7d6d29d35ea851c952e98722d22dd1083282f61.mp3"}'
+) ON DUPLICATE KEY UPDATE
+  provider = VALUES(provider),
+  provider_model = VALUES(provider_model),
+  storage_url = VALUES(storage_url),
+  duration_ms = VALUES(duration_ms),
+  generated_at = VALUES(generated_at),
+  checksum = VALUES(checksum),
+  status = VALUES(status),
+  metadata = VALUES(metadata);
+
 -- u_at_the_cafe_03 -> audio/generated/tr-TR/utterances/5b45f38320f1975445dd32e35f567d06152d0b1211b22ce7eb7ec195f17f9bcc.mp3
 UPDATE audio_assets
 SET status = 'archived'
@@ -5772,6 +11466,58 @@ INSERT INTO audio_assets (
 ) VALUES (
   UUID_TO_BIN('cc000030-4c50-5f20-869b-563b4f42983a', 1), @audio_language_id, @audio_variant_id, 'utterance', UUID_TO_BIN('c7ad5292-df40-55c2-a5b7-9375e57e1fd9', 1), '5ecf58d65333ba8feeb333a11d513246a051b7adb7186b28705144418d1ecd65',
   'tr-tr.sentence.native-clear', 'elevenlabs', 'eleven_multilingual_v2', 'audio/generated/tr-TR/utterances/5b45f38320f1975445dd32e35f567d06152d0b1211b22ce7eb7ec195f17f9bcc.mp3', 1488, '2026-09-13 15:55:48.526076', '8433c924283487a67d8ff3e884588c5fdba8219c51bd04e8bb1ed0aefa4736fd', 'validated', '{"audio_key":"5b45f38320f1975445dd32e35f567d06152d0b1211b22ce7eb7ec195f17f9bcc","entity_key":"u_at_the_cafe_03","voice_id":"FDs1ZX5J4e4f2c2erxtW","voice_name":"Fili - Warm Turkish Female ","voice_labels":{"gender":"female","accent":"istanbul","age":"young","category":"professional","language":"tr","use_case":"conversational","descriptive":"calm"},"output_format":"mp3_44100_192","file_sha256":"8433c924283487a67d8ff3e884588c5fdba8219c51bd04e8bb1ed0aefa4736fd","settings":{"stability":0.68,"similarity_boost":0.88,"style":0.0,"use_speaker_boost":true,"speed":0.95},"relative_path":"audio/generated/tr-TR/utterances/5b45f38320f1975445dd32e35f567d06152d0b1211b22ce7eb7ec195f17f9bcc.mp3"}'
+) ON DUPLICATE KEY UPDATE
+  provider = VALUES(provider),
+  provider_model = VALUES(provider_model),
+  storage_url = VALUES(storage_url),
+  duration_ms = VALUES(duration_ms),
+  generated_at = VALUES(generated_at),
+  checksum = VALUES(checksum),
+  status = VALUES(status),
+  metadata = VALUES(metadata);
+
+-- u_can_you_help_04 -> audio/generated/tr-TR/utterances/5e1d09dfc0e4218362e32038a1001284ece228096fa53c8e7b4b1dc2615dc7b3.mp3
+UPDATE audio_assets
+SET status = 'archived'
+WHERE entity_type = 'utterance'
+  AND entity_id = UUID_TO_BIN('e1fbd624-fa68-5b1f-a29f-fef485f84e78', 1)
+  AND voice_key = 'tr-tr.sentence.native-clear'
+  AND (entity_type NOT IN ('grammar_point','exercise') OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'u_can_you_help_04')
+  AND source_text_hash IS NOT NULL
+  AND source_text_hash <> 'ae11a7f5489dcb26070133ab31456dddca6a936d369d051f0ccf9fd8a236290a'
+  AND status <> 'archived';
+INSERT INTO audio_assets (
+  id, language_id, language_variant_id, entity_type, entity_id, source_text_hash,
+  voice_key, provider, provider_model, storage_url, duration_ms, generated_at, checksum, status, metadata
+) VALUES (
+  UUID_TO_BIN('e4711cb0-1cef-554c-a2f6-38e6dc8c65af', 1), @audio_language_id, @audio_variant_id, 'utterance', UUID_TO_BIN('e1fbd624-fa68-5b1f-a29f-fef485f84e78', 1), 'ae11a7f5489dcb26070133ab31456dddca6a936d369d051f0ccf9fd8a236290a',
+  'tr-tr.sentence.native-clear', 'elevenlabs', 'eleven_multilingual_v2', 'audio/generated/tr-TR/utterances/5e1d09dfc0e4218362e32038a1001284ece228096fa53c8e7b4b1dc2615dc7b3.mp3', 1933, '2026-09-14 11:32:37.333828', '483f5ade7ad92f9db34c02ce03a64e118fee98986aa4f7539ee688564d9828ec', 'validated', '{"audio_key":"5e1d09dfc0e4218362e32038a1001284ece228096fa53c8e7b4b1dc2615dc7b3","entity_key":"u_can_you_help_04","voice_id":"FDs1ZX5J4e4f2c2erxtW","voice_name":"Fili - Warm Turkish Female ","voice_labels":{"gender":"female","accent":"istanbul","age":"young","category":"professional","language":"tr","use_case":"conversational","descriptive":"calm"},"output_format":"mp3_44100_192","file_sha256":"483f5ade7ad92f9db34c02ce03a64e118fee98986aa4f7539ee688564d9828ec","settings":{"stability":0.68,"similarity_boost":0.88,"style":0.0,"use_speaker_boost":true,"speed":0.95},"relative_path":"audio/generated/tr-TR/utterances/5e1d09dfc0e4218362e32038a1001284ece228096fa53c8e7b4b1dc2615dc7b3.mp3"}'
+) ON DUPLICATE KEY UPDATE
+  provider = VALUES(provider),
+  provider_model = VALUES(provider_model),
+  storage_url = VALUES(storage_url),
+  duration_ms = VALUES(duration_ms),
+  generated_at = VALUES(generated_at),
+  checksum = VALUES(checksum),
+  status = VALUES(status),
+  metadata = VALUES(metadata);
+
+-- e_can_you_help_02_listen -> audio/generated/tr-TR/utterances/5e1d09dfc0e4218362e32038a1001284ece228096fa53c8e7b4b1dc2615dc7b3.mp3
+UPDATE audio_assets
+SET status = 'archived'
+WHERE entity_type = 'exercise'
+  AND entity_id = UUID_TO_BIN('ad530023-ce2a-5656-9a67-5ddb0459762b', 1)
+  AND voice_key = 'tr-tr.sentence.native-clear'
+  AND (entity_type NOT IN ('grammar_point','exercise') OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'e_can_you_help_02_listen')
+  AND source_text_hash IS NOT NULL
+  AND source_text_hash <> 'ae11a7f5489dcb26070133ab31456dddca6a936d369d051f0ccf9fd8a236290a'
+  AND status <> 'archived';
+INSERT INTO audio_assets (
+  id, language_id, language_variant_id, entity_type, entity_id, source_text_hash,
+  voice_key, provider, provider_model, storage_url, duration_ms, generated_at, checksum, status, metadata
+) VALUES (
+  UUID_TO_BIN('2886e574-d689-5906-965e-77b4adf1d7be', 1), @audio_language_id, @audio_variant_id, 'exercise', UUID_TO_BIN('ad530023-ce2a-5656-9a67-5ddb0459762b', 1), 'ae11a7f5489dcb26070133ab31456dddca6a936d369d051f0ccf9fd8a236290a',
+  'tr-tr.sentence.native-clear', 'elevenlabs', 'eleven_multilingual_v2', 'audio/generated/tr-TR/utterances/5e1d09dfc0e4218362e32038a1001284ece228096fa53c8e7b4b1dc2615dc7b3.mp3', 1933, '2026-09-14 11:32:37.333828', '483f5ade7ad92f9db34c02ce03a64e118fee98986aa4f7539ee688564d9828ec', 'validated', '{"audio_key":"5e1d09dfc0e4218362e32038a1001284ece228096fa53c8e7b4b1dc2615dc7b3","entity_key":"e_can_you_help_02_listen","voice_id":"FDs1ZX5J4e4f2c2erxtW","voice_name":"Fili - Warm Turkish Female ","voice_labels":{"gender":"female","accent":"istanbul","age":"young","category":"professional","language":"tr","use_case":"conversational","descriptive":"calm"},"output_format":"mp3_44100_192","file_sha256":"483f5ade7ad92f9db34c02ce03a64e118fee98986aa4f7539ee688564d9828ec","settings":{"stability":0.68,"similarity_boost":0.88,"style":0.0,"use_speaker_boost":true,"speed":0.95},"relative_path":"audio/generated/tr-TR/utterances/5e1d09dfc0e4218362e32038a1001284ece228096fa53c8e7b4b1dc2615dc7b3.mp3"}'
 ) ON DUPLICATE KEY UPDATE
   provider = VALUES(provider),
   provider_model = VALUES(provider_model),
@@ -5834,6 +11580,32 @@ INSERT INTO audio_assets (
   status = VALUES(status),
   metadata = VALUES(metadata);
 
+-- u_before_and_after_01 -> audio/generated/tr-TR/utterances/637c49cbe4417e6d8ad50968dc1183e6694d961f6e9d462c2771649c29144a4d.mp3
+UPDATE audio_assets
+SET status = 'archived'
+WHERE entity_type = 'utterance'
+  AND entity_id = UUID_TO_BIN('580e0b80-1c53-58b8-b204-2a1bf6603fef', 1)
+  AND voice_key = 'tr-tr.sentence.native-clear'
+  AND (entity_type NOT IN ('grammar_point','exercise') OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'u_before_and_after_01')
+  AND source_text_hash IS NOT NULL
+  AND source_text_hash <> '7c820d20428210382006baaa7114eb627c70231f6e4cb2e2cb17c3458e511ff6'
+  AND status <> 'archived';
+INSERT INTO audio_assets (
+  id, language_id, language_variant_id, entity_type, entity_id, source_text_hash,
+  voice_key, provider, provider_model, storage_url, duration_ms, generated_at, checksum, status, metadata
+) VALUES (
+  UUID_TO_BIN('3c343fed-b3bb-5419-88c9-b32e87e1ffb3', 1), @audio_language_id, @audio_variant_id, 'utterance', UUID_TO_BIN('580e0b80-1c53-58b8-b204-2a1bf6603fef', 1), '7c820d20428210382006baaa7114eb627c70231f6e4cb2e2cb17c3458e511ff6',
+  'tr-tr.sentence.native-clear', 'elevenlabs', 'eleven_multilingual_v2', 'audio/generated/tr-TR/utterances/637c49cbe4417e6d8ad50968dc1183e6694d961f6e9d462c2771649c29144a4d.mp3', 1933, '2026-09-14 11:32:38.260757', '48b242adabeae9e8b4f768d6468ac2ad8c5e79a5f89f1e816d68269cd1b71e62', 'validated', '{"audio_key":"637c49cbe4417e6d8ad50968dc1183e6694d961f6e9d462c2771649c29144a4d","entity_key":"u_before_and_after_01","voice_id":"FDs1ZX5J4e4f2c2erxtW","voice_name":"Fili - Warm Turkish Female ","voice_labels":{"gender":"female","accent":"istanbul","age":"young","category":"professional","language":"tr","use_case":"conversational","descriptive":"calm"},"output_format":"mp3_44100_192","file_sha256":"48b242adabeae9e8b4f768d6468ac2ad8c5e79a5f89f1e816d68269cd1b71e62","settings":{"stability":0.68,"similarity_boost":0.88,"style":0.0,"use_speaker_boost":true,"speed":0.95},"relative_path":"audio/generated/tr-TR/utterances/637c49cbe4417e6d8ad50968dc1183e6694d961f6e9d462c2771649c29144a4d.mp3"}'
+) ON DUPLICATE KEY UPDATE
+  provider = VALUES(provider),
+  provider_model = VALUES(provider_model),
+  storage_url = VALUES(storage_url),
+  duration_ms = VALUES(duration_ms),
+  generated_at = VALUES(generated_at),
+  checksum = VALUES(checksum),
+  status = VALUES(status),
+  metadata = VALUES(metadata);
+
 -- u_at_the_cafe_01 -> audio/generated/tr-TR/utterances/6b20c844c54a7b3ec9005c19192792d0673922f561fca467dea33ccc48085dff.mp3
 UPDATE audio_assets
 SET status = 'archived'
@@ -5850,6 +11622,58 @@ INSERT INTO audio_assets (
 ) VALUES (
   UUID_TO_BIN('a5070347-8ccd-5bfa-b31b-63d153353c04', 1), @audio_language_id, @audio_variant_id, 'utterance', UUID_TO_BIN('aa7c344c-dee2-556d-ac4d-957314f7369b', 1), '18c9531e1e415436fd0ddc2c0ab2260b8c49c62c42ef1464f4e2aa2857245c27',
   'tr-tr.sentence.native-clear', 'elevenlabs', 'eleven_multilingual_v2', 'audio/generated/tr-TR/utterances/6b20c844c54a7b3ec9005c19192792d0673922f561fca467dea33ccc48085dff.mp3', 1619, '2026-09-13 15:55:49.691804', '717b978762ac66d3c18fbd5d13ea95aec572129cc88b3e7c498488426ed79036', 'validated', '{"audio_key":"6b20c844c54a7b3ec9005c19192792d0673922f561fca467dea33ccc48085dff","entity_key":"u_at_the_cafe_01","voice_id":"FDs1ZX5J4e4f2c2erxtW","voice_name":"Fili - Warm Turkish Female ","voice_labels":{"gender":"female","accent":"istanbul","age":"young","category":"professional","language":"tr","use_case":"conversational","descriptive":"calm"},"output_format":"mp3_44100_192","file_sha256":"717b978762ac66d3c18fbd5d13ea95aec572129cc88b3e7c498488426ed79036","settings":{"stability":0.68,"similarity_boost":0.88,"style":0.0,"use_speaker_boost":true,"speed":0.95},"relative_path":"audio/generated/tr-TR/utterances/6b20c844c54a7b3ec9005c19192792d0673922f561fca467dea33ccc48085dff.mp3"}'
+) ON DUPLICATE KEY UPDATE
+  provider = VALUES(provider),
+  provider_model = VALUES(provider_model),
+  storage_url = VALUES(storage_url),
+  duration_ms = VALUES(duration_ms),
+  generated_at = VALUES(generated_at),
+  checksum = VALUES(checksum),
+  status = VALUES(status),
+  metadata = VALUES(metadata);
+
+-- u_likes_and_specific_things_02 -> audio/generated/tr-TR/utterances/70b000d049143d9526e3c1c1a62ff59654a6ccf789c79c8311822bab0e2ee46e.mp3
+UPDATE audio_assets
+SET status = 'archived'
+WHERE entity_type = 'utterance'
+  AND entity_id = UUID_TO_BIN('01b3935e-d1f0-5aff-b50a-88781a1a8e55', 1)
+  AND voice_key = 'tr-tr.sentence.native-clear'
+  AND (entity_type NOT IN ('grammar_point','exercise') OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'u_likes_and_specific_things_02')
+  AND source_text_hash IS NOT NULL
+  AND source_text_hash <> '8148f48c93c74ec66a493fa8c7600593beb293eca624e92c50319f0cb4386707'
+  AND status <> 'archived';
+INSERT INTO audio_assets (
+  id, language_id, language_variant_id, entity_type, entity_id, source_text_hash,
+  voice_key, provider, provider_model, storage_url, duration_ms, generated_at, checksum, status, metadata
+) VALUES (
+  UUID_TO_BIN('8e277323-0ca9-5be9-a7b3-8f33581c45fb', 1), @audio_language_id, @audio_variant_id, 'utterance', UUID_TO_BIN('01b3935e-d1f0-5aff-b50a-88781a1a8e55', 1), '8148f48c93c74ec66a493fa8c7600593beb293eca624e92c50319f0cb4386707',
+  'tr-tr.sentence.native-clear', 'elevenlabs', 'eleven_multilingual_v2', 'audio/generated/tr-TR/utterances/70b000d049143d9526e3c1c1a62ff59654a6ccf789c79c8311822bab0e2ee46e.mp3', 1619, '2026-09-14 11:32:38.328294', '25fe0a0a2686194bf6cc091e6eab159dfc1e5ad59b1a4c3a091b992851003023', 'validated', '{"audio_key":"70b000d049143d9526e3c1c1a62ff59654a6ccf789c79c8311822bab0e2ee46e","entity_key":"u_likes_and_specific_things_02","voice_id":"FDs1ZX5J4e4f2c2erxtW","voice_name":"Fili - Warm Turkish Female ","voice_labels":{"gender":"female","accent":"istanbul","age":"young","category":"professional","language":"tr","use_case":"conversational","descriptive":"calm"},"output_format":"mp3_44100_192","file_sha256":"25fe0a0a2686194bf6cc091e6eab159dfc1e5ad59b1a4c3a091b992851003023","settings":{"stability":0.68,"similarity_boost":0.88,"style":0.0,"use_speaker_boost":true,"speed":0.95},"relative_path":"audio/generated/tr-TR/utterances/70b000d049143d9526e3c1c1a62ff59654a6ccf789c79c8311822bab0e2ee46e.mp3"}'
+) ON DUPLICATE KEY UPDATE
+  provider = VALUES(provider),
+  provider_model = VALUES(provider_model),
+  storage_url = VALUES(storage_url),
+  duration_ms = VALUES(duration_ms),
+  generated_at = VALUES(generated_at),
+  checksum = VALUES(checksum),
+  status = VALUES(status),
+  metadata = VALUES(metadata);
+
+-- e_likes_and_specific_things_01_listen -> audio/generated/tr-TR/utterances/70b000d049143d9526e3c1c1a62ff59654a6ccf789c79c8311822bab0e2ee46e.mp3
+UPDATE audio_assets
+SET status = 'archived'
+WHERE entity_type = 'exercise'
+  AND entity_id = UUID_TO_BIN('381dc087-c17f-58f6-ab88-6ff4e152be87', 1)
+  AND voice_key = 'tr-tr.sentence.native-clear'
+  AND (entity_type NOT IN ('grammar_point','exercise') OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'e_likes_and_specific_things_01_listen')
+  AND source_text_hash IS NOT NULL
+  AND source_text_hash <> '8148f48c93c74ec66a493fa8c7600593beb293eca624e92c50319f0cb4386707'
+  AND status <> 'archived';
+INSERT INTO audio_assets (
+  id, language_id, language_variant_id, entity_type, entity_id, source_text_hash,
+  voice_key, provider, provider_model, storage_url, duration_ms, generated_at, checksum, status, metadata
+) VALUES (
+  UUID_TO_BIN('521073b8-a9db-5f7f-ac41-ff0405ef0cb9', 1), @audio_language_id, @audio_variant_id, 'exercise', UUID_TO_BIN('381dc087-c17f-58f6-ab88-6ff4e152be87', 1), '8148f48c93c74ec66a493fa8c7600593beb293eca624e92c50319f0cb4386707',
+  'tr-tr.sentence.native-clear', 'elevenlabs', 'eleven_multilingual_v2', 'audio/generated/tr-TR/utterances/70b000d049143d9526e3c1c1a62ff59654a6ccf789c79c8311822bab0e2ee46e.mp3', 1619, '2026-09-14 11:32:38.328294', '25fe0a0a2686194bf6cc091e6eab159dfc1e5ad59b1a4c3a091b992851003023', 'validated', '{"audio_key":"70b000d049143d9526e3c1c1a62ff59654a6ccf789c79c8311822bab0e2ee46e","entity_key":"e_likes_and_specific_things_01_listen","voice_id":"FDs1ZX5J4e4f2c2erxtW","voice_name":"Fili - Warm Turkish Female ","voice_labels":{"gender":"female","accent":"istanbul","age":"young","category":"professional","language":"tr","use_case":"conversational","descriptive":"calm"},"output_format":"mp3_44100_192","file_sha256":"25fe0a0a2686194bf6cc091e6eab159dfc1e5ad59b1a4c3a091b992851003023","settings":{"stability":0.68,"similarity_boost":0.88,"style":0.0,"use_speaker_boost":true,"speed":0.95},"relative_path":"audio/generated/tr-TR/utterances/70b000d049143d9526e3c1c1a62ff59654a6ccf789c79c8311822bab0e2ee46e.mp3"}'
 ) ON DUPLICATE KEY UPDATE
   provider = VALUES(provider),
   provider_model = VALUES(provider_model),
@@ -5964,6 +11788,84 @@ INSERT INTO audio_assets (
   status = VALUES(status),
   metadata = VALUES(metadata);
 
+-- u_yesterday_04 -> audio/generated/tr-TR/utterances/7bc158da24fa50d54db49be3e315211ad76039b9daf551f2542f1bf679fddb0e.mp3
+UPDATE audio_assets
+SET status = 'archived'
+WHERE entity_type = 'utterance'
+  AND entity_id = UUID_TO_BIN('e92c5fb2-5ec5-55fb-8367-73b8166bc23c', 1)
+  AND voice_key = 'tr-tr.sentence.native-clear'
+  AND (entity_type NOT IN ('grammar_point','exercise') OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'u_yesterday_04')
+  AND source_text_hash IS NOT NULL
+  AND source_text_hash <> 'bf79f7e9b910ba67dd884b7a501ccda19dd28dc4d29855fae123a59b34b7e156'
+  AND status <> 'archived';
+INSERT INTO audio_assets (
+  id, language_id, language_variant_id, entity_type, entity_id, source_text_hash,
+  voice_key, provider, provider_model, storage_url, duration_ms, generated_at, checksum, status, metadata
+) VALUES (
+  UUID_TO_BIN('38559b06-f96c-56b3-8439-df7c4f259284', 1), @audio_language_id, @audio_variant_id, 'utterance', UUID_TO_BIN('e92c5fb2-5ec5-55fb-8367-73b8166bc23c', 1), 'bf79f7e9b910ba67dd884b7a501ccda19dd28dc4d29855fae123a59b34b7e156',
+  'tr-tr.sentence.native-clear', 'elevenlabs', 'eleven_multilingual_v2', 'audio/generated/tr-TR/utterances/7bc158da24fa50d54db49be3e315211ad76039b9daf551f2542f1bf679fddb0e.mp3', 2507, '2026-09-14 11:32:39.317580', 'fc69d6cc41c602df49682d2a7ee7a92271774d59cf48e6c78a764b074259eddf', 'validated', '{"audio_key":"7bc158da24fa50d54db49be3e315211ad76039b9daf551f2542f1bf679fddb0e","entity_key":"u_yesterday_04","voice_id":"FDs1ZX5J4e4f2c2erxtW","voice_name":"Fili - Warm Turkish Female ","voice_labels":{"gender":"female","accent":"istanbul","age":"young","category":"professional","language":"tr","use_case":"conversational","descriptive":"calm"},"output_format":"mp3_44100_192","file_sha256":"fc69d6cc41c602df49682d2a7ee7a92271774d59cf48e6c78a764b074259eddf","settings":{"stability":0.68,"similarity_boost":0.88,"style":0.0,"use_speaker_boost":true,"speed":0.95},"relative_path":"audio/generated/tr-TR/utterances/7bc158da24fa50d54db49be3e315211ad76039b9daf551f2542f1bf679fddb0e.mp3"}'
+) ON DUPLICATE KEY UPDATE
+  provider = VALUES(provider),
+  provider_model = VALUES(provider_model),
+  storage_url = VALUES(storage_url),
+  duration_ms = VALUES(duration_ms),
+  generated_at = VALUES(generated_at),
+  checksum = VALUES(checksum),
+  status = VALUES(status),
+  metadata = VALUES(metadata);
+
+-- e_yesterday_02_listen -> audio/generated/tr-TR/utterances/7bc158da24fa50d54db49be3e315211ad76039b9daf551f2542f1bf679fddb0e.mp3
+UPDATE audio_assets
+SET status = 'archived'
+WHERE entity_type = 'exercise'
+  AND entity_id = UUID_TO_BIN('be5774eb-e4ff-5ee6-8067-6efeb63ef2d3', 1)
+  AND voice_key = 'tr-tr.sentence.native-clear'
+  AND (entity_type NOT IN ('grammar_point','exercise') OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'e_yesterday_02_listen')
+  AND source_text_hash IS NOT NULL
+  AND source_text_hash <> 'bf79f7e9b910ba67dd884b7a501ccda19dd28dc4d29855fae123a59b34b7e156'
+  AND status <> 'archived';
+INSERT INTO audio_assets (
+  id, language_id, language_variant_id, entity_type, entity_id, source_text_hash,
+  voice_key, provider, provider_model, storage_url, duration_ms, generated_at, checksum, status, metadata
+) VALUES (
+  UUID_TO_BIN('19463d37-5c6e-57a6-913a-8d86733ffe7a', 1), @audio_language_id, @audio_variant_id, 'exercise', UUID_TO_BIN('be5774eb-e4ff-5ee6-8067-6efeb63ef2d3', 1), 'bf79f7e9b910ba67dd884b7a501ccda19dd28dc4d29855fae123a59b34b7e156',
+  'tr-tr.sentence.native-clear', 'elevenlabs', 'eleven_multilingual_v2', 'audio/generated/tr-TR/utterances/7bc158da24fa50d54db49be3e315211ad76039b9daf551f2542f1bf679fddb0e.mp3', 2507, '2026-09-14 11:32:39.317580', 'fc69d6cc41c602df49682d2a7ee7a92271774d59cf48e6c78a764b074259eddf', 'validated', '{"audio_key":"7bc158da24fa50d54db49be3e315211ad76039b9daf551f2542f1bf679fddb0e","entity_key":"e_yesterday_02_listen","voice_id":"FDs1ZX5J4e4f2c2erxtW","voice_name":"Fili - Warm Turkish Female ","voice_labels":{"gender":"female","accent":"istanbul","age":"young","category":"professional","language":"tr","use_case":"conversational","descriptive":"calm"},"output_format":"mp3_44100_192","file_sha256":"fc69d6cc41c602df49682d2a7ee7a92271774d59cf48e6c78a764b074259eddf","settings":{"stability":0.68,"similarity_boost":0.88,"style":0.0,"use_speaker_boost":true,"speed":0.95},"relative_path":"audio/generated/tr-TR/utterances/7bc158da24fa50d54db49be3e315211ad76039b9daf551f2542f1bf679fddb0e.mp3"}'
+) ON DUPLICATE KEY UPDATE
+  provider = VALUES(provider),
+  provider_model = VALUES(provider_model),
+  storage_url = VALUES(storage_url),
+  duration_ms = VALUES(duration_ms),
+  generated_at = VALUES(generated_at),
+  checksum = VALUES(checksum),
+  status = VALUES(status),
+  metadata = VALUES(metadata);
+
+-- u_basic_health_01 -> audio/generated/tr-TR/utterances/7fc7e81f0ed6f8a3a1b65cd8b3948c78c0aeb190415fb25b6cb7a3915bcf08b5.mp3
+UPDATE audio_assets
+SET status = 'archived'
+WHERE entity_type = 'utterance'
+  AND entity_id = UUID_TO_BIN('8cbd9827-55f3-516e-8ada-eac58b841e3d', 1)
+  AND voice_key = 'tr-tr.sentence.native-clear'
+  AND (entity_type NOT IN ('grammar_point','exercise') OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'u_basic_health_01')
+  AND source_text_hash IS NOT NULL
+  AND source_text_hash <> 'e69c0210833a7f56129980139000067595b98dd9ec6fc01feb2ae9e9d81c53b5'
+  AND status <> 'archived';
+INSERT INTO audio_assets (
+  id, language_id, language_variant_id, entity_type, entity_id, source_text_hash,
+  voice_key, provider, provider_model, storage_url, duration_ms, generated_at, checksum, status, metadata
+) VALUES (
+  UUID_TO_BIN('7d8922f8-c079-5ae3-a10c-db721b3b3369', 1), @audio_language_id, @audio_variant_id, 'utterance', UUID_TO_BIN('8cbd9827-55f3-516e-8ada-eac58b841e3d', 1), 'e69c0210833a7f56129980139000067595b98dd9ec6fc01feb2ae9e9d81c53b5',
+  'tr-tr.sentence.native-clear', 'elevenlabs', 'eleven_multilingual_v2', 'audio/generated/tr-TR/utterances/7fc7e81f0ed6f8a3a1b65cd8b3948c78c0aeb190415fb25b6cb7a3915bcf08b5.mp3', 1280, '2026-09-13 17:08:54.153095', 'b75dbde6e2876f4b3ac4fe2afebface2c513852b952c57b94d79aead750fb36d', 'validated', '{"audio_key":"7fc7e81f0ed6f8a3a1b65cd8b3948c78c0aeb190415fb25b6cb7a3915bcf08b5","entity_key":"u_basic_health_01","voice_id":"FDs1ZX5J4e4f2c2erxtW","voice_name":"Fili - Warm Turkish Female ","voice_labels":{"gender":"female","accent":"istanbul","age":"young","category":"professional","language":"tr","use_case":"conversational","descriptive":"calm"},"output_format":"mp3_44100_192","file_sha256":"b75dbde6e2876f4b3ac4fe2afebface2c513852b952c57b94d79aead750fb36d","settings":{"stability":0.68,"similarity_boost":0.88,"style":0.0,"use_speaker_boost":true,"speed":0.95},"relative_path":"audio/generated/tr-TR/utterances/7fc7e81f0ed6f8a3a1b65cd8b3948c78c0aeb190415fb25b6cb7a3915bcf08b5.mp3"}'
+) ON DUPLICATE KEY UPDATE
+  provider = VALUES(provider),
+  provider_model = VALUES(provider_model),
+  storage_url = VALUES(storage_url),
+  duration_ms = VALUES(duration_ms),
+  generated_at = VALUES(generated_at),
+  checksum = VALUES(checksum),
+  status = VALUES(status),
+  metadata = VALUES(metadata);
+
 -- u_at_home_01 -> audio/generated/tr-TR/utterances/7fce274376e225f7f4abcca51614a63dbebfe3b95f55f11cbb0d035e621df4f3.mp3
 UPDATE audio_assets
 SET status = 'archived'
@@ -5980,6 +11882,32 @@ INSERT INTO audio_assets (
 ) VALUES (
   UUID_TO_BIN('c5edba7b-e0d9-5108-9930-0c4b4a5723eb', 1), @audio_language_id, @audio_variant_id, 'utterance', UUID_TO_BIN('4e1ed135-027b-5df1-b419-e7281808fc82', 1), '9ca194e0a833631f942c2ce1cd486e00af39e037ae98ea9502da84a7ca14001d',
   'tr-tr.sentence.native-clear', 'elevenlabs', 'eleven_multilingual_v2', 'audio/generated/tr-TR/utterances/7fce274376e225f7f4abcca51614a63dbebfe3b95f55f11cbb0d035e621df4f3.mp3', 1515, '2026-09-13 15:55:50.758109', 'c5b8fb005db87e450d2afe21df9a27f1a157f00f0c1eb60c107f162b5bb0974d', 'validated', '{"audio_key":"7fce274376e225f7f4abcca51614a63dbebfe3b95f55f11cbb0d035e621df4f3","entity_key":"u_at_home_01","voice_id":"FDs1ZX5J4e4f2c2erxtW","voice_name":"Fili - Warm Turkish Female ","voice_labels":{"gender":"female","accent":"istanbul","age":"young","category":"professional","language":"tr","use_case":"conversational","descriptive":"calm"},"output_format":"mp3_44100_192","file_sha256":"c5b8fb005db87e450d2afe21df9a27f1a157f00f0c1eb60c107f162b5bb0974d","settings":{"stability":0.68,"similarity_boost":0.88,"style":0.0,"use_speaker_boost":true,"speed":0.95},"relative_path":"audio/generated/tr-TR/utterances/7fce274376e225f7f4abcca51614a63dbebfe3b95f55f11cbb0d035e621df4f3.mp3"}'
+) ON DUPLICATE KEY UPDATE
+  provider = VALUES(provider),
+  provider_model = VALUES(provider_model),
+  storage_url = VALUES(storage_url),
+  duration_ms = VALUES(duration_ms),
+  generated_at = VALUES(generated_at),
+  checksum = VALUES(checksum),
+  status = VALUES(status),
+  metadata = VALUES(metadata);
+
+-- u_can_you_help_03 -> audio/generated/tr-TR/utterances/814358ba9bbd669c08f5322800eeee68a44cfaa008591be8986cc3a54692a19d.mp3
+UPDATE audio_assets
+SET status = 'archived'
+WHERE entity_type = 'utterance'
+  AND entity_id = UUID_TO_BIN('c031d175-55a7-5e3f-9aea-57f99792f837', 1)
+  AND voice_key = 'tr-tr.sentence.native-clear'
+  AND (entity_type NOT IN ('grammar_point','exercise') OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'u_can_you_help_03')
+  AND source_text_hash IS NOT NULL
+  AND source_text_hash <> 'f57e364be3fc1bcfef16cc43d3d8d7d444eaf136b5c9d0083ee1500a2977a083'
+  AND status <> 'archived';
+INSERT INTO audio_assets (
+  id, language_id, language_variant_id, entity_type, entity_id, source_text_hash,
+  voice_key, provider, provider_model, storage_url, duration_ms, generated_at, checksum, status, metadata
+) VALUES (
+  UUID_TO_BIN('6298b4d3-3055-51c6-9b32-6d83945a723b', 1), @audio_language_id, @audio_variant_id, 'utterance', UUID_TO_BIN('c031d175-55a7-5e3f-9aea-57f99792f837', 1), 'f57e364be3fc1bcfef16cc43d3d8d7d444eaf136b5c9d0083ee1500a2977a083',
+  'tr-tr.sentence.native-clear', 'elevenlabs', 'eleven_multilingual_v2', 'audio/generated/tr-TR/utterances/814358ba9bbd669c08f5322800eeee68a44cfaa008591be8986cc3a54692a19d.mp3', 1933, '2026-09-14 11:32:39.501757', '81adb8ca88dc857ab218dee01135d873a2b21be1c70219b90e260a6aab02bb6a', 'validated', '{"audio_key":"814358ba9bbd669c08f5322800eeee68a44cfaa008591be8986cc3a54692a19d","entity_key":"u_can_you_help_03","voice_id":"FDs1ZX5J4e4f2c2erxtW","voice_name":"Fili - Warm Turkish Female ","voice_labels":{"gender":"female","accent":"istanbul","age":"young","category":"professional","language":"tr","use_case":"conversational","descriptive":"calm"},"output_format":"mp3_44100_192","file_sha256":"81adb8ca88dc857ab218dee01135d873a2b21be1c70219b90e260a6aab02bb6a","settings":{"stability":0.68,"similarity_boost":0.88,"style":0.0,"use_speaker_boost":true,"speed":0.95},"relative_path":"audio/generated/tr-TR/utterances/814358ba9bbd669c08f5322800eeee68a44cfaa008591be8986cc3a54692a19d.mp3"}'
 ) ON DUPLICATE KEY UPDATE
   provider = VALUES(provider),
   provider_model = VALUES(provider_model),
@@ -6120,6 +12048,84 @@ INSERT INTO audio_assets (
   status = VALUES(status),
   metadata = VALUES(metadata);
 
+-- u_before_and_after_02 -> audio/generated/tr-TR/utterances/8c5e6a185000238a05762f492156a471df1f37711a5ce5b1ee8d0f24cbb74a06.mp3
+UPDATE audio_assets
+SET status = 'archived'
+WHERE entity_type = 'utterance'
+  AND entity_id = UUID_TO_BIN('d5ed2bdd-4fd7-58c8-8f18-ad3e108d3b36', 1)
+  AND voice_key = 'tr-tr.sentence.native-clear'
+  AND (entity_type NOT IN ('grammar_point','exercise') OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'u_before_and_after_02')
+  AND source_text_hash IS NOT NULL
+  AND source_text_hash <> '695a9a9b6f778825057e3463f549c01b337194dfe1d148a5d813f83a10c95f59'
+  AND status <> 'archived';
+INSERT INTO audio_assets (
+  id, language_id, language_variant_id, entity_type, entity_id, source_text_hash,
+  voice_key, provider, provider_model, storage_url, duration_ms, generated_at, checksum, status, metadata
+) VALUES (
+  UUID_TO_BIN('f586d61b-5826-535b-ae87-4271c76dc081', 1), @audio_language_id, @audio_variant_id, 'utterance', UUID_TO_BIN('d5ed2bdd-4fd7-58c8-8f18-ad3e108d3b36', 1), '695a9a9b6f778825057e3463f549c01b337194dfe1d148a5d813f83a10c95f59',
+  'tr-tr.sentence.native-clear', 'elevenlabs', 'eleven_multilingual_v2', 'audio/generated/tr-TR/utterances/8c5e6a185000238a05762f492156a471df1f37711a5ce5b1ee8d0f24cbb74a06.mp3', 2115, '2026-09-14 11:32:40.475797', '9251623097a14b13092e0cba130abf0db6fba844020200ab65fab33d4ef1587e', 'validated', '{"audio_key":"8c5e6a185000238a05762f492156a471df1f37711a5ce5b1ee8d0f24cbb74a06","entity_key":"u_before_and_after_02","voice_id":"FDs1ZX5J4e4f2c2erxtW","voice_name":"Fili - Warm Turkish Female ","voice_labels":{"gender":"female","accent":"istanbul","age":"young","category":"professional","language":"tr","use_case":"conversational","descriptive":"calm"},"output_format":"mp3_44100_192","file_sha256":"9251623097a14b13092e0cba130abf0db6fba844020200ab65fab33d4ef1587e","settings":{"stability":0.68,"similarity_boost":0.88,"style":0.0,"use_speaker_boost":true,"speed":0.95},"relative_path":"audio/generated/tr-TR/utterances/8c5e6a185000238a05762f492156a471df1f37711a5ce5b1ee8d0f24cbb74a06.mp3"}'
+) ON DUPLICATE KEY UPDATE
+  provider = VALUES(provider),
+  provider_model = VALUES(provider_model),
+  storage_url = VALUES(storage_url),
+  duration_ms = VALUES(duration_ms),
+  generated_at = VALUES(generated_at),
+  checksum = VALUES(checksum),
+  status = VALUES(status),
+  metadata = VALUES(metadata);
+
+-- e_before_and_after_01_listen -> audio/generated/tr-TR/utterances/8c5e6a185000238a05762f492156a471df1f37711a5ce5b1ee8d0f24cbb74a06.mp3
+UPDATE audio_assets
+SET status = 'archived'
+WHERE entity_type = 'exercise'
+  AND entity_id = UUID_TO_BIN('a43c1e57-9f5b-588f-b9bc-6472c764d7b5', 1)
+  AND voice_key = 'tr-tr.sentence.native-clear'
+  AND (entity_type NOT IN ('grammar_point','exercise') OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'e_before_and_after_01_listen')
+  AND source_text_hash IS NOT NULL
+  AND source_text_hash <> '695a9a9b6f778825057e3463f549c01b337194dfe1d148a5d813f83a10c95f59'
+  AND status <> 'archived';
+INSERT INTO audio_assets (
+  id, language_id, language_variant_id, entity_type, entity_id, source_text_hash,
+  voice_key, provider, provider_model, storage_url, duration_ms, generated_at, checksum, status, metadata
+) VALUES (
+  UUID_TO_BIN('4b0f2dac-31a9-5798-89f8-4c6b0dda71c5', 1), @audio_language_id, @audio_variant_id, 'exercise', UUID_TO_BIN('a43c1e57-9f5b-588f-b9bc-6472c764d7b5', 1), '695a9a9b6f778825057e3463f549c01b337194dfe1d148a5d813f83a10c95f59',
+  'tr-tr.sentence.native-clear', 'elevenlabs', 'eleven_multilingual_v2', 'audio/generated/tr-TR/utterances/8c5e6a185000238a05762f492156a471df1f37711a5ce5b1ee8d0f24cbb74a06.mp3', 2115, '2026-09-14 11:32:40.475797', '9251623097a14b13092e0cba130abf0db6fba844020200ab65fab33d4ef1587e', 'validated', '{"audio_key":"8c5e6a185000238a05762f492156a471df1f37711a5ce5b1ee8d0f24cbb74a06","entity_key":"e_before_and_after_01_listen","voice_id":"FDs1ZX5J4e4f2c2erxtW","voice_name":"Fili - Warm Turkish Female ","voice_labels":{"gender":"female","accent":"istanbul","age":"young","category":"professional","language":"tr","use_case":"conversational","descriptive":"calm"},"output_format":"mp3_44100_192","file_sha256":"9251623097a14b13092e0cba130abf0db6fba844020200ab65fab33d4ef1587e","settings":{"stability":0.68,"similarity_boost":0.88,"style":0.0,"use_speaker_boost":true,"speed":0.95},"relative_path":"audio/generated/tr-TR/utterances/8c5e6a185000238a05762f492156a471df1f37711a5ce5b1ee8d0f24cbb74a06.mp3"}'
+) ON DUPLICATE KEY UPDATE
+  provider = VALUES(provider),
+  provider_model = VALUES(provider_model),
+  storage_url = VALUES(storage_url),
+  duration_ms = VALUES(duration_ms),
+  generated_at = VALUES(generated_at),
+  checksum = VALUES(checksum),
+  status = VALUES(status),
+  metadata = VALUES(metadata);
+
+-- u_before_and_after_03 -> audio/generated/tr-TR/utterances/8c8941d371cdd9d2243a3433decabf988ec831272b3cd824d76fed75ae9ef6e8.mp3
+UPDATE audio_assets
+SET status = 'archived'
+WHERE entity_type = 'utterance'
+  AND entity_id = UUID_TO_BIN('83ac03ea-ee4d-5d51-baad-711888419def', 1)
+  AND voice_key = 'tr-tr.sentence.native-clear'
+  AND (entity_type NOT IN ('grammar_point','exercise') OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'u_before_and_after_03')
+  AND source_text_hash IS NOT NULL
+  AND source_text_hash <> '1f829f5f7a1849da788623a50d4eedb22c457d349084042ab91cee68c3be3676'
+  AND status <> 'archived';
+INSERT INTO audio_assets (
+  id, language_id, language_variant_id, entity_type, entity_id, source_text_hash,
+  voice_key, provider, provider_model, storage_url, duration_ms, generated_at, checksum, status, metadata
+) VALUES (
+  UUID_TO_BIN('22af9ed4-fc4e-55fa-92e4-62bc15b8f214', 1), @audio_language_id, @audio_variant_id, 'utterance', UUID_TO_BIN('83ac03ea-ee4d-5d51-baad-711888419def', 1), '1f829f5f7a1849da788623a50d4eedb22c457d349084042ab91cee68c3be3676',
+  'tr-tr.sentence.native-clear', 'elevenlabs', 'eleven_multilingual_v2', 'audio/generated/tr-TR/utterances/8c8941d371cdd9d2243a3433decabf988ec831272b3cd824d76fed75ae9ef6e8.mp3', 2220, '2026-09-14 11:32:40.565255', '71f6e72c88f8658f45837903b644c06b3b9fd5b41279d6293c764b9f5f1b28a9', 'validated', '{"audio_key":"8c8941d371cdd9d2243a3433decabf988ec831272b3cd824d76fed75ae9ef6e8","entity_key":"u_before_and_after_03","voice_id":"FDs1ZX5J4e4f2c2erxtW","voice_name":"Fili - Warm Turkish Female ","voice_labels":{"gender":"female","accent":"istanbul","age":"young","category":"professional","language":"tr","use_case":"conversational","descriptive":"calm"},"output_format":"mp3_44100_192","file_sha256":"71f6e72c88f8658f45837903b644c06b3b9fd5b41279d6293c764b9f5f1b28a9","settings":{"stability":0.68,"similarity_boost":0.88,"style":0.0,"use_speaker_boost":true,"speed":0.95},"relative_path":"audio/generated/tr-TR/utterances/8c8941d371cdd9d2243a3433decabf988ec831272b3cd824d76fed75ae9ef6e8.mp3"}'
+) ON DUPLICATE KEY UPDATE
+  provider = VALUES(provider),
+  provider_model = VALUES(provider_model),
+  storage_url = VALUES(storage_url),
+  duration_ms = VALUES(duration_ms),
+  generated_at = VALUES(generated_at),
+  checksum = VALUES(checksum),
+  status = VALUES(status),
+  metadata = VALUES(metadata);
+
 -- u_a1_first_day_capstone_02 -> audio/generated/tr-TR/utterances/8ed917d7f64740618d045d2db84497ae69684765b8913afff992e555a7dcda9f.mp3
 UPDATE audio_assets
 SET status = 'archived'
@@ -6162,6 +12168,32 @@ INSERT INTO audio_assets (
 ) VALUES (
   UUID_TO_BIN('e584dc7d-76ac-57bb-a343-0a921f52f079', 1), @audio_language_id, @audio_variant_id, 'exercise', UUID_TO_BIN('a693460e-d98d-57a4-8102-27ebd636a97f', 1), 'f531fba455f7518e62081ffc52dd9227a261af3ba8d43323a2728a70cb5105e1',
   'tr-tr.sentence.native-clear', 'elevenlabs', 'eleven_multilingual_v2', 'audio/generated/tr-TR/utterances/8ed917d7f64740618d045d2db84497ae69684765b8913afff992e555a7dcda9f.mp3', 1280, '2026-09-13 15:55:52.980876', '3077adbce13f05e96008d4e1da8011c073ad260bee56eca0da5ca675e92fb89c', 'validated', '{"audio_key":"8ed917d7f64740618d045d2db84497ae69684765b8913afff992e555a7dcda9f","entity_key":"e_a1_first_day_capstone_01_listen","voice_id":"FDs1ZX5J4e4f2c2erxtW","voice_name":"Fili - Warm Turkish Female ","voice_labels":{"gender":"female","accent":"istanbul","age":"young","category":"professional","language":"tr","use_case":"conversational","descriptive":"calm"},"output_format":"mp3_44100_192","file_sha256":"3077adbce13f05e96008d4e1da8011c073ad260bee56eca0da5ca675e92fb89c","settings":{"stability":0.68,"similarity_boost":0.88,"style":0.0,"use_speaker_boost":true,"speed":0.95},"relative_path":"audio/generated/tr-TR/utterances/8ed917d7f64740618d045d2db84497ae69684765b8913afff992e555a7dcda9f.mp3"}'
+) ON DUPLICATE KEY UPDATE
+  provider = VALUES(provider),
+  provider_model = VALUES(provider_model),
+  storage_url = VALUES(storage_url),
+  duration_ms = VALUES(duration_ms),
+  generated_at = VALUES(generated_at),
+  checksum = VALUES(checksum),
+  status = VALUES(status),
+  metadata = VALUES(metadata);
+
+-- u_yesterday_01 -> audio/generated/tr-TR/utterances/8f3d6d5c0904666f097dafa6dcac86ff037f2b040b35873835e26c1bdbc9bee2.mp3
+UPDATE audio_assets
+SET status = 'archived'
+WHERE entity_type = 'utterance'
+  AND entity_id = UUID_TO_BIN('70e8cf78-abcf-503c-86b8-02e2f39f6d68', 1)
+  AND voice_key = 'tr-tr.sentence.native-clear'
+  AND (entity_type NOT IN ('grammar_point','exercise') OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'u_yesterday_01')
+  AND source_text_hash IS NOT NULL
+  AND source_text_hash <> '9d63e3af50972c43016010349c9655ccc99dda8ae6ef1cca92312d2818c3ef45'
+  AND status <> 'archived';
+INSERT INTO audio_assets (
+  id, language_id, language_variant_id, entity_type, entity_id, source_text_hash,
+  voice_key, provider, provider_model, storage_url, duration_ms, generated_at, checksum, status, metadata
+) VALUES (
+  UUID_TO_BIN('35a95f83-4b90-5a83-be93-afedcf8ee9ae', 1), @audio_language_id, @audio_variant_id, 'utterance', UUID_TO_BIN('70e8cf78-abcf-503c-86b8-02e2f39f6d68', 1), '9d63e3af50972c43016010349c9655ccc99dda8ae6ef1cca92312d2818c3ef45',
+  'tr-tr.sentence.native-clear', 'elevenlabs', 'eleven_multilingual_v2', 'audio/generated/tr-TR/utterances/8f3d6d5c0904666f097dafa6dcac86ff037f2b040b35873835e26c1bdbc9bee2.mp3', 1488, '2026-09-14 11:32:41.472665', '78f6ebc30e9baf8c8c1d6f84543e8802a179d095c8aac72dfd8c3eff1cbbe33b', 'validated', '{"audio_key":"8f3d6d5c0904666f097dafa6dcac86ff037f2b040b35873835e26c1bdbc9bee2","entity_key":"u_yesterday_01","voice_id":"FDs1ZX5J4e4f2c2erxtW","voice_name":"Fili - Warm Turkish Female ","voice_labels":{"gender":"female","accent":"istanbul","age":"young","category":"professional","language":"tr","use_case":"conversational","descriptive":"calm"},"output_format":"mp3_44100_192","file_sha256":"78f6ebc30e9baf8c8c1d6f84543e8802a179d095c8aac72dfd8c3eff1cbbe33b","settings":{"stability":0.68,"similarity_boost":0.88,"style":0.0,"use_speaker_boost":true,"speed":0.95},"relative_path":"audio/generated/tr-TR/utterances/8f3d6d5c0904666f097dafa6dcac86ff037f2b040b35873835e26c1bdbc9bee2.mp3"}'
 ) ON DUPLICATE KEY UPDATE
   provider = VALUES(provider),
   provider_model = VALUES(provider_model),
@@ -6224,6 +12256,110 @@ INSERT INTO audio_assets (
   status = VALUES(status),
   metadata = VALUES(metadata);
 
+-- u_a1_everyday_capstone_02 -> audio/generated/tr-TR/utterances/962227898ff91ba5adc3824957aa9b325878b3275e73f4c4377b4352a3c0939f.mp3
+UPDATE audio_assets
+SET status = 'archived'
+WHERE entity_type = 'utterance'
+  AND entity_id = UUID_TO_BIN('a1435fef-db41-59a8-8029-ba4b452d86f2', 1)
+  AND voice_key = 'tr-tr.sentence.native-clear'
+  AND (entity_type NOT IN ('grammar_point','exercise') OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'u_a1_everyday_capstone_02')
+  AND source_text_hash IS NOT NULL
+  AND source_text_hash <> 'c26e116199778880c363717ebb84284d7b82fd7e8c0808abf8d66e1a5ee4dd66'
+  AND status <> 'archived';
+INSERT INTO audio_assets (
+  id, language_id, language_variant_id, entity_type, entity_id, source_text_hash,
+  voice_key, provider, provider_model, storage_url, duration_ms, generated_at, checksum, status, metadata
+) VALUES (
+  UUID_TO_BIN('4e3163cd-0378-5316-a043-68cffabdc949', 1), @audio_language_id, @audio_variant_id, 'utterance', UUID_TO_BIN('a1435fef-db41-59a8-8029-ba4b452d86f2', 1), 'c26e116199778880c363717ebb84284d7b82fd7e8c0808abf8d66e1a5ee4dd66',
+  'tr-tr.sentence.native-clear', 'elevenlabs', 'eleven_multilingual_v2', 'audio/generated/tr-TR/utterances/962227898ff91ba5adc3824957aa9b325878b3275e73f4c4377b4352a3c0939f.mp3', 1802, '2026-09-14 11:32:41.612285', 'ab6c7b75691ff3813d675b723cd64e326aecbcdd1420c7841fe95486fac0efc3', 'validated', '{"audio_key":"962227898ff91ba5adc3824957aa9b325878b3275e73f4c4377b4352a3c0939f","entity_key":"u_a1_everyday_capstone_02","voice_id":"FDs1ZX5J4e4f2c2erxtW","voice_name":"Fili - Warm Turkish Female ","voice_labels":{"gender":"female","accent":"istanbul","age":"young","category":"professional","language":"tr","use_case":"conversational","descriptive":"calm"},"output_format":"mp3_44100_192","file_sha256":"ab6c7b75691ff3813d675b723cd64e326aecbcdd1420c7841fe95486fac0efc3","settings":{"stability":0.68,"similarity_boost":0.88,"style":0.0,"use_speaker_boost":true,"speed":0.95},"relative_path":"audio/generated/tr-TR/utterances/962227898ff91ba5adc3824957aa9b325878b3275e73f4c4377b4352a3c0939f.mp3"}'
+) ON DUPLICATE KEY UPDATE
+  provider = VALUES(provider),
+  provider_model = VALUES(provider_model),
+  storage_url = VALUES(storage_url),
+  duration_ms = VALUES(duration_ms),
+  generated_at = VALUES(generated_at),
+  checksum = VALUES(checksum),
+  status = VALUES(status),
+  metadata = VALUES(metadata);
+
+-- e_a1_everyday_capstone_01_listen -> audio/generated/tr-TR/utterances/962227898ff91ba5adc3824957aa9b325878b3275e73f4c4377b4352a3c0939f.mp3
+UPDATE audio_assets
+SET status = 'archived'
+WHERE entity_type = 'exercise'
+  AND entity_id = UUID_TO_BIN('7e4ce69b-92e3-52bc-9665-bf9d104dca4f', 1)
+  AND voice_key = 'tr-tr.sentence.native-clear'
+  AND (entity_type NOT IN ('grammar_point','exercise') OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'e_a1_everyday_capstone_01_listen')
+  AND source_text_hash IS NOT NULL
+  AND source_text_hash <> 'c26e116199778880c363717ebb84284d7b82fd7e8c0808abf8d66e1a5ee4dd66'
+  AND status <> 'archived';
+INSERT INTO audio_assets (
+  id, language_id, language_variant_id, entity_type, entity_id, source_text_hash,
+  voice_key, provider, provider_model, storage_url, duration_ms, generated_at, checksum, status, metadata
+) VALUES (
+  UUID_TO_BIN('2594cd9c-890d-5c09-b33c-6782a7972ab2', 1), @audio_language_id, @audio_variant_id, 'exercise', UUID_TO_BIN('7e4ce69b-92e3-52bc-9665-bf9d104dca4f', 1), 'c26e116199778880c363717ebb84284d7b82fd7e8c0808abf8d66e1a5ee4dd66',
+  'tr-tr.sentence.native-clear', 'elevenlabs', 'eleven_multilingual_v2', 'audio/generated/tr-TR/utterances/962227898ff91ba5adc3824957aa9b325878b3275e73f4c4377b4352a3c0939f.mp3', 1802, '2026-09-14 11:32:41.612285', 'ab6c7b75691ff3813d675b723cd64e326aecbcdd1420c7841fe95486fac0efc3', 'validated', '{"audio_key":"962227898ff91ba5adc3824957aa9b325878b3275e73f4c4377b4352a3c0939f","entity_key":"e_a1_everyday_capstone_01_listen","voice_id":"FDs1ZX5J4e4f2c2erxtW","voice_name":"Fili - Warm Turkish Female ","voice_labels":{"gender":"female","accent":"istanbul","age":"young","category":"professional","language":"tr","use_case":"conversational","descriptive":"calm"},"output_format":"mp3_44100_192","file_sha256":"ab6c7b75691ff3813d675b723cd64e326aecbcdd1420c7841fe95486fac0efc3","settings":{"stability":0.68,"similarity_boost":0.88,"style":0.0,"use_speaker_boost":true,"speed":0.95},"relative_path":"audio/generated/tr-TR/utterances/962227898ff91ba5adc3824957aa9b325878b3275e73f4c4377b4352a3c0939f.mp3"}'
+) ON DUPLICATE KEY UPDATE
+  provider = VALUES(provider),
+  provider_model = VALUES(provider_model),
+  storage_url = VALUES(storage_url),
+  duration_ms = VALUES(duration_ms),
+  generated_at = VALUES(generated_at),
+  checksum = VALUES(checksum),
+  status = VALUES(status),
+  metadata = VALUES(metadata);
+
+-- u_likes_and_specific_things_03 -> audio/generated/tr-TR/utterances/97e5322ab7b504a00e8783ac8d4e0334fe7d27fd0001b6a1afe347ce3cad4198.mp3
+UPDATE audio_assets
+SET status = 'archived'
+WHERE entity_type = 'utterance'
+  AND entity_id = UUID_TO_BIN('8da07e2b-3360-5d84-92d1-fc24c558e908', 1)
+  AND voice_key = 'tr-tr.sentence.native-clear'
+  AND (entity_type NOT IN ('grammar_point','exercise') OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'u_likes_and_specific_things_03')
+  AND source_text_hash IS NOT NULL
+  AND source_text_hash <> '435169a1054bbb0caac6a13964c61b3120716302f3f327b766c117a248b2114f'
+  AND status <> 'archived';
+INSERT INTO audio_assets (
+  id, language_id, language_variant_id, entity_type, entity_id, source_text_hash,
+  voice_key, provider, provider_model, storage_url, duration_ms, generated_at, checksum, status, metadata
+) VALUES (
+  UUID_TO_BIN('fe153191-205b-5f91-82b6-ee5c417d5a5c', 1), @audio_language_id, @audio_variant_id, 'utterance', UUID_TO_BIN('8da07e2b-3360-5d84-92d1-fc24c558e908', 1), '435169a1054bbb0caac6a13964c61b3120716302f3f327b766c117a248b2114f',
+  'tr-tr.sentence.native-clear', 'elevenlabs', 'eleven_multilingual_v2', 'audio/generated/tr-TR/utterances/97e5322ab7b504a00e8783ac8d4e0334fe7d27fd0001b6a1afe347ce3cad4198.mp3', 2115, '2026-09-14 11:32:42.523958', 'db814843b5321a3c35317b3de0886d3d97595a7330e95921f868e2045a006ff9', 'validated', '{"audio_key":"97e5322ab7b504a00e8783ac8d4e0334fe7d27fd0001b6a1afe347ce3cad4198","entity_key":"u_likes_and_specific_things_03","voice_id":"FDs1ZX5J4e4f2c2erxtW","voice_name":"Fili - Warm Turkish Female ","voice_labels":{"gender":"female","accent":"istanbul","age":"young","category":"professional","language":"tr","use_case":"conversational","descriptive":"calm"},"output_format":"mp3_44100_192","file_sha256":"db814843b5321a3c35317b3de0886d3d97595a7330e95921f868e2045a006ff9","settings":{"stability":0.68,"similarity_boost":0.88,"style":0.0,"use_speaker_boost":true,"speed":0.95},"relative_path":"audio/generated/tr-TR/utterances/97e5322ab7b504a00e8783ac8d4e0334fe7d27fd0001b6a1afe347ce3cad4198.mp3"}'
+) ON DUPLICATE KEY UPDATE
+  provider = VALUES(provider),
+  provider_model = VALUES(provider_model),
+  storage_url = VALUES(storage_url),
+  duration_ms = VALUES(duration_ms),
+  generated_at = VALUES(generated_at),
+  checksum = VALUES(checksum),
+  status = VALUES(status),
+  metadata = VALUES(metadata);
+
+-- u_from_here_to_there_01 -> audio/generated/tr-TR/utterances/996076227d87f4080a2335b192643b0a995b97e7315eb1619b6ebc1a6f9f5b80.mp3
+UPDATE audio_assets
+SET status = 'archived'
+WHERE entity_type = 'utterance'
+  AND entity_id = UUID_TO_BIN('70cf044a-dacc-5385-a6af-5212a868be28', 1)
+  AND voice_key = 'tr-tr.sentence.native-clear'
+  AND (entity_type NOT IN ('grammar_point','exercise') OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'u_from_here_to_there_01')
+  AND source_text_hash IS NOT NULL
+  AND source_text_hash <> '6ed7742c268ebc7e1ee2227306158baada80929c47d7d76aff81d02c75392cc7'
+  AND status <> 'archived';
+INSERT INTO audio_assets (
+  id, language_id, language_variant_id, entity_type, entity_id, source_text_hash,
+  voice_key, provider, provider_model, storage_url, duration_ms, generated_at, checksum, status, metadata
+) VALUES (
+  UUID_TO_BIN('fe038d4e-6e44-595e-9370-ece7b58ad6b3', 1), @audio_language_id, @audio_variant_id, 'utterance', UUID_TO_BIN('70cf044a-dacc-5385-a6af-5212a868be28', 1), '6ed7742c268ebc7e1ee2227306158baada80929c47d7d76aff81d02c75392cc7',
+  'tr-tr.sentence.native-clear', 'elevenlabs', 'eleven_multilingual_v2', 'audio/generated/tr-TR/utterances/996076227d87f4080a2335b192643b0a995b97e7315eb1619b6ebc1a6f9f5b80.mp3', 1515, '2026-09-14 11:32:42.611586', '2d67d0c1d7e087f99dd12e7b00860fab0023358117361731e2dfef24bb757b7d', 'validated', '{"audio_key":"996076227d87f4080a2335b192643b0a995b97e7315eb1619b6ebc1a6f9f5b80","entity_key":"u_from_here_to_there_01","voice_id":"FDs1ZX5J4e4f2c2erxtW","voice_name":"Fili - Warm Turkish Female ","voice_labels":{"gender":"female","accent":"istanbul","age":"young","category":"professional","language":"tr","use_case":"conversational","descriptive":"calm"},"output_format":"mp3_44100_192","file_sha256":"2d67d0c1d7e087f99dd12e7b00860fab0023358117361731e2dfef24bb757b7d","settings":{"stability":0.68,"similarity_boost":0.88,"style":0.0,"use_speaker_boost":true,"speed":0.95},"relative_path":"audio/generated/tr-TR/utterances/996076227d87f4080a2335b192643b0a995b97e7315eb1619b6ebc1a6f9f5b80.mp3"}'
+) ON DUPLICATE KEY UPDATE
+  provider = VALUES(provider),
+  provider_model = VALUES(provider_model),
+  storage_url = VALUES(storage_url),
+  duration_ms = VALUES(duration_ms),
+  generated_at = VALUES(generated_at),
+  checksum = VALUES(checksum),
+  status = VALUES(status),
+  metadata = VALUES(metadata);
+
 -- u_who_i_am_04 -> audio/generated/tr-TR/utterances/9a2097ca9885030dbd4d3a81edb0bd0992ee9af4a58fef650ba8fb6fae25c6c5.mp3
 UPDATE audio_assets
 SET status = 'archived'
@@ -6276,6 +12412,110 @@ INSERT INTO audio_assets (
   status = VALUES(status),
   metadata = VALUES(metadata);
 
+-- u_basic_health_04 -> audio/generated/tr-TR/utterances/9bcb3aeddd82e9681dc1b1870858c834d31d867c1d00f597d37516d858848782.mp3
+UPDATE audio_assets
+SET status = 'archived'
+WHERE entity_type = 'utterance'
+  AND entity_id = UUID_TO_BIN('57a8488f-7231-573d-b7ee-e7d448b7171e', 1)
+  AND voice_key = 'tr-tr.sentence.native-clear'
+  AND (entity_type NOT IN ('grammar_point','exercise') OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'u_basic_health_04')
+  AND source_text_hash IS NOT NULL
+  AND source_text_hash <> 'a36eb69f3e13cf7a8448cab3b278efa38381d36899b3f0d1d7373bebebbd22da'
+  AND status <> 'archived';
+INSERT INTO audio_assets (
+  id, language_id, language_variant_id, entity_type, entity_id, source_text_hash,
+  voice_key, provider, provider_model, storage_url, duration_ms, generated_at, checksum, status, metadata
+) VALUES (
+  UUID_TO_BIN('c11a6fc4-2558-5490-8cee-f917d1d1eabf', 1), @audio_language_id, @audio_variant_id, 'utterance', UUID_TO_BIN('57a8488f-7231-573d-b7ee-e7d448b7171e', 1), 'a36eb69f3e13cf7a8448cab3b278efa38381d36899b3f0d1d7373bebebbd22da',
+  'tr-tr.sentence.native-clear', 'elevenlabs', 'eleven_multilingual_v2', 'audio/generated/tr-TR/utterances/9bcb3aeddd82e9681dc1b1870858c834d31d867c1d00f597d37516d858848782.mp3', 2351, '2026-09-14 11:32:43.594263', '0920d7559175735fe061e15f48dc41acf70fda866e7ad719255b1132a50a30da', 'validated', '{"audio_key":"9bcb3aeddd82e9681dc1b1870858c834d31d867c1d00f597d37516d858848782","entity_key":"u_basic_health_04","voice_id":"FDs1ZX5J4e4f2c2erxtW","voice_name":"Fili - Warm Turkish Female ","voice_labels":{"gender":"female","accent":"istanbul","age":"young","category":"professional","language":"tr","use_case":"conversational","descriptive":"calm"},"output_format":"mp3_44100_192","file_sha256":"0920d7559175735fe061e15f48dc41acf70fda866e7ad719255b1132a50a30da","settings":{"stability":0.68,"similarity_boost":0.88,"style":0.0,"use_speaker_boost":true,"speed":0.95},"relative_path":"audio/generated/tr-TR/utterances/9bcb3aeddd82e9681dc1b1870858c834d31d867c1d00f597d37516d858848782.mp3"}'
+) ON DUPLICATE KEY UPDATE
+  provider = VALUES(provider),
+  provider_model = VALUES(provider_model),
+  storage_url = VALUES(storage_url),
+  duration_ms = VALUES(duration_ms),
+  generated_at = VALUES(generated_at),
+  checksum = VALUES(checksum),
+  status = VALUES(status),
+  metadata = VALUES(metadata);
+
+-- e_basic_health_02_listen -> audio/generated/tr-TR/utterances/9bcb3aeddd82e9681dc1b1870858c834d31d867c1d00f597d37516d858848782.mp3
+UPDATE audio_assets
+SET status = 'archived'
+WHERE entity_type = 'exercise'
+  AND entity_id = UUID_TO_BIN('094816c1-73d5-5fe1-8a58-c268f2f6b943', 1)
+  AND voice_key = 'tr-tr.sentence.native-clear'
+  AND (entity_type NOT IN ('grammar_point','exercise') OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'e_basic_health_02_listen')
+  AND source_text_hash IS NOT NULL
+  AND source_text_hash <> 'a36eb69f3e13cf7a8448cab3b278efa38381d36899b3f0d1d7373bebebbd22da'
+  AND status <> 'archived';
+INSERT INTO audio_assets (
+  id, language_id, language_variant_id, entity_type, entity_id, source_text_hash,
+  voice_key, provider, provider_model, storage_url, duration_ms, generated_at, checksum, status, metadata
+) VALUES (
+  UUID_TO_BIN('65cfe638-a55f-5c8c-bee8-50418fb0f5f2', 1), @audio_language_id, @audio_variant_id, 'exercise', UUID_TO_BIN('094816c1-73d5-5fe1-8a58-c268f2f6b943', 1), 'a36eb69f3e13cf7a8448cab3b278efa38381d36899b3f0d1d7373bebebbd22da',
+  'tr-tr.sentence.native-clear', 'elevenlabs', 'eleven_multilingual_v2', 'audio/generated/tr-TR/utterances/9bcb3aeddd82e9681dc1b1870858c834d31d867c1d00f597d37516d858848782.mp3', 2351, '2026-09-14 11:32:43.594263', '0920d7559175735fe061e15f48dc41acf70fda866e7ad719255b1132a50a30da', 'validated', '{"audio_key":"9bcb3aeddd82e9681dc1b1870858c834d31d867c1d00f597d37516d858848782","entity_key":"e_basic_health_02_listen","voice_id":"FDs1ZX5J4e4f2c2erxtW","voice_name":"Fili - Warm Turkish Female ","voice_labels":{"gender":"female","accent":"istanbul","age":"young","category":"professional","language":"tr","use_case":"conversational","descriptive":"calm"},"output_format":"mp3_44100_192","file_sha256":"0920d7559175735fe061e15f48dc41acf70fda866e7ad719255b1132a50a30da","settings":{"stability":0.68,"similarity_boost":0.88,"style":0.0,"use_speaker_boost":true,"speed":0.95},"relative_path":"audio/generated/tr-TR/utterances/9bcb3aeddd82e9681dc1b1870858c834d31d867c1d00f597d37516d858848782.mp3"}'
+) ON DUPLICATE KEY UPDATE
+  provider = VALUES(provider),
+  provider_model = VALUES(provider_model),
+  storage_url = VALUES(storage_url),
+  duration_ms = VALUES(duration_ms),
+  generated_at = VALUES(generated_at),
+  checksum = VALUES(checksum),
+  status = VALUES(status),
+  metadata = VALUES(metadata);
+
+-- u_basic_health_03 -> audio/generated/tr-TR/utterances/9c0437fbe1c6e3d63b4ab5922b3a3c7057f7f01ab35a13628e9f2c4d76976cbb.mp3
+UPDATE audio_assets
+SET status = 'archived'
+WHERE entity_type = 'utterance'
+  AND entity_id = UUID_TO_BIN('2f3e123f-f30b-539e-b74c-f097606b2e4e', 1)
+  AND voice_key = 'tr-tr.sentence.native-clear'
+  AND (entity_type NOT IN ('grammar_point','exercise') OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'u_basic_health_03')
+  AND source_text_hash IS NOT NULL
+  AND source_text_hash <> 'f72742458538fa555b11fe0f32b9aa8623e96eb160d92fe6016c18ed576a61de'
+  AND status <> 'archived';
+INSERT INTO audio_assets (
+  id, language_id, language_variant_id, entity_type, entity_id, source_text_hash,
+  voice_key, provider, provider_model, storage_url, duration_ms, generated_at, checksum, status, metadata
+) VALUES (
+  UUID_TO_BIN('d00bf9d7-70ca-54fc-a5ee-62013235f227', 1), @audio_language_id, @audio_variant_id, 'utterance', UUID_TO_BIN('2f3e123f-f30b-539e-b74c-f097606b2e4e', 1), 'f72742458538fa555b11fe0f32b9aa8623e96eb160d92fe6016c18ed576a61de',
+  'tr-tr.sentence.native-clear', 'elevenlabs', 'eleven_multilingual_v2', 'audio/generated/tr-TR/utterances/9c0437fbe1c6e3d63b4ab5922b3a3c7057f7f01ab35a13628e9f2c4d76976cbb.mp3', 1332, '2026-09-14 11:32:43.579088', '411b450afa927f19686933e4089097493ee3c1d35671be6c0435c6b98e44a889', 'validated', '{"audio_key":"9c0437fbe1c6e3d63b4ab5922b3a3c7057f7f01ab35a13628e9f2c4d76976cbb","entity_key":"u_basic_health_03","voice_id":"FDs1ZX5J4e4f2c2erxtW","voice_name":"Fili - Warm Turkish Female ","voice_labels":{"gender":"female","accent":"istanbul","age":"young","category":"professional","language":"tr","use_case":"conversational","descriptive":"calm"},"output_format":"mp3_44100_192","file_sha256":"411b450afa927f19686933e4089097493ee3c1d35671be6c0435c6b98e44a889","settings":{"stability":0.68,"similarity_boost":0.88,"style":0.0,"use_speaker_boost":true,"speed":0.95},"relative_path":"audio/generated/tr-TR/utterances/9c0437fbe1c6e3d63b4ab5922b3a3c7057f7f01ab35a13628e9f2c4d76976cbb.mp3"}'
+) ON DUPLICATE KEY UPDATE
+  provider = VALUES(provider),
+  provider_model = VALUES(provider_model),
+  storage_url = VALUES(storage_url),
+  duration_ms = VALUES(duration_ms),
+  generated_at = VALUES(generated_at),
+  checksum = VALUES(checksum),
+  status = VALUES(status),
+  metadata = VALUES(metadata);
+
+-- u_a1_everyday_capstone_03 -> audio/generated/tr-TR/utterances/9efd1962756847801b455c9852f7e279d3cfc72e3f90cbb85687201887a04c78.mp3
+UPDATE audio_assets
+SET status = 'archived'
+WHERE entity_type = 'utterance'
+  AND entity_id = UUID_TO_BIN('05e09359-18b7-5ad0-b38b-6d8089831642', 1)
+  AND voice_key = 'tr-tr.sentence.native-clear'
+  AND (entity_type NOT IN ('grammar_point','exercise') OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'u_a1_everyday_capstone_03')
+  AND source_text_hash IS NOT NULL
+  AND source_text_hash <> 'be988f2fbb9fbbdb49396f36fb00968a643d3712cfb54808dcc61e5993e81bdc'
+  AND status <> 'archived';
+INSERT INTO audio_assets (
+  id, language_id, language_variant_id, entity_type, entity_id, source_text_hash,
+  voice_key, provider, provider_model, storage_url, duration_ms, generated_at, checksum, status, metadata
+) VALUES (
+  UUID_TO_BIN('f096df1e-7803-593a-a006-48d08ff16e2d', 1), @audio_language_id, @audio_variant_id, 'utterance', UUID_TO_BIN('05e09359-18b7-5ad0-b38b-6d8089831642', 1), 'be988f2fbb9fbbdb49396f36fb00968a643d3712cfb54808dcc61e5993e81bdc',
+  'tr-tr.sentence.native-clear', 'elevenlabs', 'eleven_multilingual_v2', 'audio/generated/tr-TR/utterances/9efd1962756847801b455c9852f7e279d3cfc72e3f90cbb85687201887a04c78.mp3', 2272, '2026-09-14 11:32:44.676830', '9321976eab3893b84763be6803b3589573ef2216b6d8aaed0438eea8683deeb1', 'validated', '{"audio_key":"9efd1962756847801b455c9852f7e279d3cfc72e3f90cbb85687201887a04c78","entity_key":"u_a1_everyday_capstone_03","voice_id":"FDs1ZX5J4e4f2c2erxtW","voice_name":"Fili - Warm Turkish Female ","voice_labels":{"gender":"female","accent":"istanbul","age":"young","category":"professional","language":"tr","use_case":"conversational","descriptive":"calm"},"output_format":"mp3_44100_192","file_sha256":"9321976eab3893b84763be6803b3589573ef2216b6d8aaed0438eea8683deeb1","settings":{"stability":0.68,"similarity_boost":0.88,"style":0.0,"use_speaker_boost":true,"speed":0.95},"relative_path":"audio/generated/tr-TR/utterances/9efd1962756847801b455c9852f7e279d3cfc72e3f90cbb85687201887a04c78.mp3"}'
+) ON DUPLICATE KEY UPDATE
+  provider = VALUES(provider),
+  provider_model = VALUES(provider_model),
+  storage_url = VALUES(storage_url),
+  duration_ms = VALUES(duration_ms),
+  generated_at = VALUES(generated_at),
+  checksum = VALUES(checksum),
+  status = VALUES(status),
+  metadata = VALUES(metadata);
+
 -- u_who_i_am_03 -> audio/generated/tr-TR/utterances/a0923bb5aa9f29061f5afb96f78d074b35140fb3430527ad44a05e7d574cb9ae.mp3
 UPDATE audio_assets
 SET status = 'archived'
@@ -6302,6 +12542,32 @@ INSERT INTO audio_assets (
   status = VALUES(status),
   metadata = VALUES(metadata);
 
+-- u_likes_and_specific_things_01 -> audio/generated/tr-TR/utterances/a13667e483db2a77a2a98dd515122d47834d05eba29da8239db19ac87e88c9d2.mp3
+UPDATE audio_assets
+SET status = 'archived'
+WHERE entity_type = 'utterance'
+  AND entity_id = UUID_TO_BIN('d2b2cd8c-6e5e-59fc-a3ea-ba8aef2e2d3b', 1)
+  AND voice_key = 'tr-tr.sentence.native-clear'
+  AND (entity_type NOT IN ('grammar_point','exercise') OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'u_likes_and_specific_things_01')
+  AND source_text_hash IS NOT NULL
+  AND source_text_hash <> '72b9dbc2f475b6c8eb589e8b0949d305cfdd2bf7e10b7e4b0fde8040046471b4'
+  AND status <> 'archived';
+INSERT INTO audio_assets (
+  id, language_id, language_variant_id, entity_type, entity_id, source_text_hash,
+  voice_key, provider, provider_model, storage_url, duration_ms, generated_at, checksum, status, metadata
+) VALUES (
+  UUID_TO_BIN('10c1c142-c38f-5374-8060-906cda34871c', 1), @audio_language_id, @audio_variant_id, 'utterance', UUID_TO_BIN('d2b2cd8c-6e5e-59fc-a3ea-ba8aef2e2d3b', 1), '72b9dbc2f475b6c8eb589e8b0949d305cfdd2bf7e10b7e4b0fde8040046471b4',
+  'tr-tr.sentence.native-clear', 'elevenlabs', 'eleven_multilingual_v2', 'audio/generated/tr-TR/utterances/a13667e483db2a77a2a98dd515122d47834d05eba29da8239db19ac87e88c9d2.mp3', 1488, '2026-09-14 11:32:44.583974', '53511514b15d60ff1805c070a7bf9ebf02f0aa74cef68917d38cbd4aa99e5492', 'validated', '{"audio_key":"a13667e483db2a77a2a98dd515122d47834d05eba29da8239db19ac87e88c9d2","entity_key":"u_likes_and_specific_things_01","voice_id":"FDs1ZX5J4e4f2c2erxtW","voice_name":"Fili - Warm Turkish Female ","voice_labels":{"gender":"female","accent":"istanbul","age":"young","category":"professional","language":"tr","use_case":"conversational","descriptive":"calm"},"output_format":"mp3_44100_192","file_sha256":"53511514b15d60ff1805c070a7bf9ebf02f0aa74cef68917d38cbd4aa99e5492","settings":{"stability":0.68,"similarity_boost":0.88,"style":0.0,"use_speaker_boost":true,"speed":0.95},"relative_path":"audio/generated/tr-TR/utterances/a13667e483db2a77a2a98dd515122d47834d05eba29da8239db19ac87e88c9d2.mp3"}'
+) ON DUPLICATE KEY UPDATE
+  provider = VALUES(provider),
+  provider_model = VALUES(provider_model),
+  storage_url = VALUES(storage_url),
+  duration_ms = VALUES(duration_ms),
+  generated_at = VALUES(generated_at),
+  checksum = VALUES(checksum),
+  status = VALUES(status),
+  metadata = VALUES(metadata);
+
 -- u_this_and_these_01 -> audio/generated/tr-TR/utterances/a1f59a507290f5090fbf16100119033ab466bf0b464bc9bd72b6a9fbd1f6bd0b.mp3
 UPDATE audio_assets
 SET status = 'archived'
@@ -6318,6 +12584,58 @@ INSERT INTO audio_assets (
 ) VALUES (
   UUID_TO_BIN('f439e4a9-6276-50c5-a786-157d26ac5c8c', 1), @audio_language_id, @audio_variant_id, 'utterance', UUID_TO_BIN('ba72ef6d-b1b3-5034-9c0d-f66396d998e5', 1), 'eb3a780fc070e0fc744a29cc33f54c55d1504eb24456524c2d338acb9b23d3ef',
   'tr-tr.sentence.native-clear', 'elevenlabs', 'eleven_multilingual_v2', 'audio/generated/tr-TR/utterances/a1f59a507290f5090fbf16100119033ab466bf0b464bc9bd72b6a9fbd1f6bd0b.mp3', 1097, '2026-09-13 15:55:55.210000', '1b2322b298293de64f6bde45044ba4ff695788af9383cb30893e15d5528096f6', 'validated', '{"audio_key":"a1f59a507290f5090fbf16100119033ab466bf0b464bc9bd72b6a9fbd1f6bd0b","entity_key":"u_this_and_these_01","voice_id":"FDs1ZX5J4e4f2c2erxtW","voice_name":"Fili - Warm Turkish Female ","voice_labels":{"gender":"female","accent":"istanbul","age":"young","category":"professional","language":"tr","use_case":"conversational","descriptive":"calm"},"output_format":"mp3_44100_192","file_sha256":"1b2322b298293de64f6bde45044ba4ff695788af9383cb30893e15d5528096f6","settings":{"stability":0.68,"similarity_boost":0.88,"style":0.0,"use_speaker_boost":true,"speed":0.95},"relative_path":"audio/generated/tr-TR/utterances/a1f59a507290f5090fbf16100119033ab466bf0b464bc9bd72b6a9fbd1f6bd0b.mp3"}'
+) ON DUPLICATE KEY UPDATE
+  provider = VALUES(provider),
+  provider_model = VALUES(provider_model),
+  storage_url = VALUES(storage_url),
+  duration_ms = VALUES(duration_ms),
+  generated_at = VALUES(generated_at),
+  checksum = VALUES(checksum),
+  status = VALUES(status),
+  metadata = VALUES(metadata);
+
+-- u_from_here_to_there_04 -> audio/generated/tr-TR/utterances/b1d4e25f2d2dbf65a02c52b275483a00644abfb62d57c159e9a650c8a6dec83f.mp3
+UPDATE audio_assets
+SET status = 'archived'
+WHERE entity_type = 'utterance'
+  AND entity_id = UUID_TO_BIN('ba394fee-09a2-55c2-a1a5-2520a45d3426', 1)
+  AND voice_key = 'tr-tr.sentence.native-clear'
+  AND (entity_type NOT IN ('grammar_point','exercise') OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'u_from_here_to_there_04')
+  AND source_text_hash IS NOT NULL
+  AND source_text_hash <> '3e5f8a9f9b5997084fa0ce47fb483d5a4a73ac9591de588d608c11e08dffa8a5'
+  AND status <> 'archived';
+INSERT INTO audio_assets (
+  id, language_id, language_variant_id, entity_type, entity_id, source_text_hash,
+  voice_key, provider, provider_model, storage_url, duration_ms, generated_at, checksum, status, metadata
+) VALUES (
+  UUID_TO_BIN('95551d8b-35e3-5619-bc48-4d32a89a23d6', 1), @audio_language_id, @audio_variant_id, 'utterance', UUID_TO_BIN('ba394fee-09a2-55c2-a1a5-2520a45d3426', 1), '3e5f8a9f9b5997084fa0ce47fb483d5a4a73ac9591de588d608c11e08dffa8a5',
+  'tr-tr.sentence.native-clear', 'elevenlabs', 'eleven_multilingual_v2', 'audio/generated/tr-TR/utterances/b1d4e25f2d2dbf65a02c52b275483a00644abfb62d57c159e9a650c8a6dec83f.mp3', 1619, '2026-09-14 11:32:45.595282', '01da49f134d38a2c9b44d66ba151512f489691d3bc87cd740c93230ce969f810', 'validated', '{"audio_key":"b1d4e25f2d2dbf65a02c52b275483a00644abfb62d57c159e9a650c8a6dec83f","entity_key":"u_from_here_to_there_04","voice_id":"FDs1ZX5J4e4f2c2erxtW","voice_name":"Fili - Warm Turkish Female ","voice_labels":{"gender":"female","accent":"istanbul","age":"young","category":"professional","language":"tr","use_case":"conversational","descriptive":"calm"},"output_format":"mp3_44100_192","file_sha256":"01da49f134d38a2c9b44d66ba151512f489691d3bc87cd740c93230ce969f810","settings":{"stability":0.68,"similarity_boost":0.88,"style":0.0,"use_speaker_boost":true,"speed":0.95},"relative_path":"audio/generated/tr-TR/utterances/b1d4e25f2d2dbf65a02c52b275483a00644abfb62d57c159e9a650c8a6dec83f.mp3"}'
+) ON DUPLICATE KEY UPDATE
+  provider = VALUES(provider),
+  provider_model = VALUES(provider_model),
+  storage_url = VALUES(storage_url),
+  duration_ms = VALUES(duration_ms),
+  generated_at = VALUES(generated_at),
+  checksum = VALUES(checksum),
+  status = VALUES(status),
+  metadata = VALUES(metadata);
+
+-- e_from_here_to_there_02_listen -> audio/generated/tr-TR/utterances/b1d4e25f2d2dbf65a02c52b275483a00644abfb62d57c159e9a650c8a6dec83f.mp3
+UPDATE audio_assets
+SET status = 'archived'
+WHERE entity_type = 'exercise'
+  AND entity_id = UUID_TO_BIN('ea542e07-67ac-579a-bbc1-40c95dbb4ef5', 1)
+  AND voice_key = 'tr-tr.sentence.native-clear'
+  AND (entity_type NOT IN ('grammar_point','exercise') OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'e_from_here_to_there_02_listen')
+  AND source_text_hash IS NOT NULL
+  AND source_text_hash <> '3e5f8a9f9b5997084fa0ce47fb483d5a4a73ac9591de588d608c11e08dffa8a5'
+  AND status <> 'archived';
+INSERT INTO audio_assets (
+  id, language_id, language_variant_id, entity_type, entity_id, source_text_hash,
+  voice_key, provider, provider_model, storage_url, duration_ms, generated_at, checksum, status, metadata
+) VALUES (
+  UUID_TO_BIN('680c08d9-f5c1-5a4d-b4bb-8b7dd224c24b', 1), @audio_language_id, @audio_variant_id, 'exercise', UUID_TO_BIN('ea542e07-67ac-579a-bbc1-40c95dbb4ef5', 1), '3e5f8a9f9b5997084fa0ce47fb483d5a4a73ac9591de588d608c11e08dffa8a5',
+  'tr-tr.sentence.native-clear', 'elevenlabs', 'eleven_multilingual_v2', 'audio/generated/tr-TR/utterances/b1d4e25f2d2dbf65a02c52b275483a00644abfb62d57c159e9a650c8a6dec83f.mp3', 1619, '2026-09-14 11:32:45.595282', '01da49f134d38a2c9b44d66ba151512f489691d3bc87cd740c93230ce969f810', 'validated', '{"audio_key":"b1d4e25f2d2dbf65a02c52b275483a00644abfb62d57c159e9a650c8a6dec83f","entity_key":"e_from_here_to_there_02_listen","voice_id":"FDs1ZX5J4e4f2c2erxtW","voice_name":"Fili - Warm Turkish Female ","voice_labels":{"gender":"female","accent":"istanbul","age":"young","category":"professional","language":"tr","use_case":"conversational","descriptive":"calm"},"output_format":"mp3_44100_192","file_sha256":"01da49f134d38a2c9b44d66ba151512f489691d3bc87cd740c93230ce969f810","settings":{"stability":0.68,"similarity_boost":0.88,"style":0.0,"use_speaker_boost":true,"speed":0.95},"relative_path":"audio/generated/tr-TR/utterances/b1d4e25f2d2dbf65a02c52b275483a00644abfb62d57c159e9a650c8a6dec83f.mp3"}'
 ) ON DUPLICATE KEY UPDATE
   provider = VALUES(provider),
   provider_model = VALUES(provider_model),
@@ -6448,6 +12766,58 @@ INSERT INTO audio_assets (
 ) VALUES (
   UUID_TO_BIN('33332831-52bc-5175-9d26-9363af774456', 1), @audio_language_id, @audio_variant_id, 'exercise', UUID_TO_BIN('94de61ab-5366-56d3-b415-c69534d5df17', 1), '580101d35023ee8abba7bf8d5ad38610cf050d25f94fb45939920cc318be428b',
   'tr-tr.sentence.native-clear', 'elevenlabs', 'eleven_multilingual_v2', 'audio/generated/tr-TR/utterances/beeb0ee6cd2446e11e6495fa456e419ca7ececb5809ab25ece638de696c8bf50.mp3', 1619, '2026-09-13 15:55:57.562672', 'e66a92dae565f14bf04ebb16d1cf12a666a0947a88d6edba4f3f2a369215f30e', 'validated', '{"audio_key":"beeb0ee6cd2446e11e6495fa456e419ca7ececb5809ab25ece638de696c8bf50","entity_key":"e_at_the_cafe_02_listen","voice_id":"FDs1ZX5J4e4f2c2erxtW","voice_name":"Fili - Warm Turkish Female ","voice_labels":{"gender":"female","accent":"istanbul","age":"young","category":"professional","language":"tr","use_case":"conversational","descriptive":"calm"},"output_format":"mp3_44100_192","file_sha256":"e66a92dae565f14bf04ebb16d1cf12a666a0947a88d6edba4f3f2a369215f30e","settings":{"stability":0.68,"similarity_boost":0.88,"style":0.0,"use_speaker_boost":true,"speed":0.95},"relative_path":"audio/generated/tr-TR/utterances/beeb0ee6cd2446e11e6495fa456e419ca7ececb5809ab25ece638de696c8bf50.mp3"}'
+) ON DUPLICATE KEY UPDATE
+  provider = VALUES(provider),
+  provider_model = VALUES(provider_model),
+  storage_url = VALUES(storage_url),
+  duration_ms = VALUES(duration_ms),
+  generated_at = VALUES(generated_at),
+  checksum = VALUES(checksum),
+  status = VALUES(status),
+  metadata = VALUES(metadata);
+
+-- u_can_you_help_01 -> audio/generated/tr-TR/utterances/c1ad2fb07fd6c67f89828ac1acdf51dea34735423fe29db2066a0e2603775d9f.mp3
+UPDATE audio_assets
+SET status = 'archived'
+WHERE entity_type = 'utterance'
+  AND entity_id = UUID_TO_BIN('a2d7c242-366b-529c-a86b-25138a9761f2', 1)
+  AND voice_key = 'tr-tr.sentence.native-clear'
+  AND (entity_type NOT IN ('grammar_point','exercise') OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'u_can_you_help_01')
+  AND source_text_hash IS NOT NULL
+  AND source_text_hash <> 'fd408f0d43b84a55db5941e81221ce44054f48e87942dfc261035c3f2141ced5'
+  AND status <> 'archived';
+INSERT INTO audio_assets (
+  id, language_id, language_variant_id, entity_type, entity_id, source_text_hash,
+  voice_key, provider, provider_model, storage_url, duration_ms, generated_at, checksum, status, metadata
+) VALUES (
+  UUID_TO_BIN('66e32733-bb43-5903-a595-e60ad3f4ef34', 1), @audio_language_id, @audio_variant_id, 'utterance', UUID_TO_BIN('a2d7c242-366b-529c-a86b-25138a9761f2', 1), 'fd408f0d43b84a55db5941e81221ce44054f48e87942dfc261035c3f2141ced5',
+  'tr-tr.sentence.native-clear', 'elevenlabs', 'eleven_multilingual_v2', 'audio/generated/tr-TR/utterances/c1ad2fb07fd6c67f89828ac1acdf51dea34735423fe29db2066a0e2603775d9f.mp3', 1906, '2026-09-14 11:32:45.696227', 'f9aac0133814d1d3bc9fda6413929535e7ec948cf8d46dc1330c8db1687cf266', 'validated', '{"audio_key":"c1ad2fb07fd6c67f89828ac1acdf51dea34735423fe29db2066a0e2603775d9f","entity_key":"u_can_you_help_01","voice_id":"FDs1ZX5J4e4f2c2erxtW","voice_name":"Fili - Warm Turkish Female ","voice_labels":{"gender":"female","accent":"istanbul","age":"young","category":"professional","language":"tr","use_case":"conversational","descriptive":"calm"},"output_format":"mp3_44100_192","file_sha256":"f9aac0133814d1d3bc9fda6413929535e7ec948cf8d46dc1330c8db1687cf266","settings":{"stability":0.68,"similarity_boost":0.88,"style":0.0,"use_speaker_boost":true,"speed":0.95},"relative_path":"audio/generated/tr-TR/utterances/c1ad2fb07fd6c67f89828ac1acdf51dea34735423fe29db2066a0e2603775d9f.mp3"}'
+) ON DUPLICATE KEY UPDATE
+  provider = VALUES(provider),
+  provider_model = VALUES(provider_model),
+  storage_url = VALUES(storage_url),
+  duration_ms = VALUES(duration_ms),
+  generated_at = VALUES(generated_at),
+  checksum = VALUES(checksum),
+  status = VALUES(status),
+  metadata = VALUES(metadata);
+
+-- u_yesterday_03 -> audio/generated/tr-TR/utterances/c1c400e2174ba80acaac8106d279d1031a524bde6a7a9e14da39a4cbf9031cb7.mp3
+UPDATE audio_assets
+SET status = 'archived'
+WHERE entity_type = 'utterance'
+  AND entity_id = UUID_TO_BIN('12a19197-2443-5d81-910b-620a4fa7851f', 1)
+  AND voice_key = 'tr-tr.sentence.native-clear'
+  AND (entity_type NOT IN ('grammar_point','exercise') OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'u_yesterday_03')
+  AND source_text_hash IS NOT NULL
+  AND source_text_hash <> '60373198233e0e297b8583db29947a28a572fdfd7f1dfc38d61dcb6636928be5'
+  AND status <> 'archived';
+INSERT INTO audio_assets (
+  id, language_id, language_variant_id, entity_type, entity_id, source_text_hash,
+  voice_key, provider, provider_model, storage_url, duration_ms, generated_at, checksum, status, metadata
+) VALUES (
+  UUID_TO_BIN('3a9a536b-8f96-593c-9b3e-39c79a4f8536', 1), @audio_language_id, @audio_variant_id, 'utterance', UUID_TO_BIN('12a19197-2443-5d81-910b-620a4fa7851f', 1), '60373198233e0e297b8583db29947a28a572fdfd7f1dfc38d61dcb6636928be5',
+  'tr-tr.sentence.native-clear', 'elevenlabs', 'eleven_multilingual_v2', 'audio/generated/tr-TR/utterances/c1c400e2174ba80acaac8106d279d1031a524bde6a7a9e14da39a4cbf9031cb7.mp3', 1567, '2026-09-14 11:32:46.604324', 'e5cfa12df02ce32cab61fd7517097a9d41a21b2f5ee5984bc523be986c053b1a', 'validated', '{"audio_key":"c1c400e2174ba80acaac8106d279d1031a524bde6a7a9e14da39a4cbf9031cb7","entity_key":"u_yesterday_03","voice_id":"FDs1ZX5J4e4f2c2erxtW","voice_name":"Fili - Warm Turkish Female ","voice_labels":{"gender":"female","accent":"istanbul","age":"young","category":"professional","language":"tr","use_case":"conversational","descriptive":"calm"},"output_format":"mp3_44100_192","file_sha256":"e5cfa12df02ce32cab61fd7517097a9d41a21b2f5ee5984bc523be986c053b1a","settings":{"stability":0.68,"similarity_boost":0.88,"style":0.0,"use_speaker_boost":true,"speed":0.95},"relative_path":"audio/generated/tr-TR/utterances/c1c400e2174ba80acaac8106d279d1031a524bde6a7a9e14da39a4cbf9031cb7.mp3"}'
 ) ON DUPLICATE KEY UPDATE
   provider = VALUES(provider),
   provider_model = VALUES(provider_model),
@@ -6614,6 +12984,318 @@ INSERT INTO audio_assets (
   status = VALUES(status),
   metadata = VALUES(metadata);
 
+-- u_weather_and_clothes_02 -> audio/generated/tr-TR/utterances/ce63fa43a2dea5e1a5d459b107c0668dbb84de874fcb709e329f4098c4d2ee3b.mp3
+UPDATE audio_assets
+SET status = 'archived'
+WHERE entity_type = 'utterance'
+  AND entity_id = UUID_TO_BIN('d8622874-028b-5d4d-b351-b0bf055e24e7', 1)
+  AND voice_key = 'tr-tr.sentence.native-clear'
+  AND (entity_type NOT IN ('grammar_point','exercise') OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'u_weather_and_clothes_02')
+  AND source_text_hash IS NOT NULL
+  AND source_text_hash <> '606777dffff4bce169af1e0e07a8f58b7d757d9f35043f9bbaf416ae3ac48229'
+  AND status <> 'archived';
+INSERT INTO audio_assets (
+  id, language_id, language_variant_id, entity_type, entity_id, source_text_hash,
+  voice_key, provider, provider_model, storage_url, duration_ms, generated_at, checksum, status, metadata
+) VALUES (
+  UUID_TO_BIN('e1bed7a2-fc98-5577-b566-ad7974cb4307', 1), @audio_language_id, @audio_variant_id, 'utterance', UUID_TO_BIN('d8622874-028b-5d4d-b351-b0bf055e24e7', 1), '606777dffff4bce169af1e0e07a8f58b7d757d9f35043f9bbaf416ae3ac48229',
+  'tr-tr.sentence.native-clear', 'elevenlabs', 'eleven_multilingual_v2', 'audio/generated/tr-TR/utterances/ce63fa43a2dea5e1a5d459b107c0668dbb84de874fcb709e329f4098c4d2ee3b.mp3', 1697, '2026-09-14 11:32:46.686025', '492ffe7cebf6b95e31c070aff81bb2af217219a36b92c112eebe109e9c002081', 'validated', '{"audio_key":"ce63fa43a2dea5e1a5d459b107c0668dbb84de874fcb709e329f4098c4d2ee3b","entity_key":"u_weather_and_clothes_02","voice_id":"FDs1ZX5J4e4f2c2erxtW","voice_name":"Fili - Warm Turkish Female ","voice_labels":{"gender":"female","accent":"istanbul","age":"young","category":"professional","language":"tr","use_case":"conversational","descriptive":"calm"},"output_format":"mp3_44100_192","file_sha256":"492ffe7cebf6b95e31c070aff81bb2af217219a36b92c112eebe109e9c002081","settings":{"stability":0.68,"similarity_boost":0.88,"style":0.0,"use_speaker_boost":true,"speed":0.95},"relative_path":"audio/generated/tr-TR/utterances/ce63fa43a2dea5e1a5d459b107c0668dbb84de874fcb709e329f4098c4d2ee3b.mp3"}'
+) ON DUPLICATE KEY UPDATE
+  provider = VALUES(provider),
+  provider_model = VALUES(provider_model),
+  storage_url = VALUES(storage_url),
+  duration_ms = VALUES(duration_ms),
+  generated_at = VALUES(generated_at),
+  checksum = VALUES(checksum),
+  status = VALUES(status),
+  metadata = VALUES(metadata);
+
+-- e_weather_and_clothes_01_listen -> audio/generated/tr-TR/utterances/ce63fa43a2dea5e1a5d459b107c0668dbb84de874fcb709e329f4098c4d2ee3b.mp3
+UPDATE audio_assets
+SET status = 'archived'
+WHERE entity_type = 'exercise'
+  AND entity_id = UUID_TO_BIN('241ab37c-b599-592c-ab80-4c8e4f17132a', 1)
+  AND voice_key = 'tr-tr.sentence.native-clear'
+  AND (entity_type NOT IN ('grammar_point','exercise') OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'e_weather_and_clothes_01_listen')
+  AND source_text_hash IS NOT NULL
+  AND source_text_hash <> '606777dffff4bce169af1e0e07a8f58b7d757d9f35043f9bbaf416ae3ac48229'
+  AND status <> 'archived';
+INSERT INTO audio_assets (
+  id, language_id, language_variant_id, entity_type, entity_id, source_text_hash,
+  voice_key, provider, provider_model, storage_url, duration_ms, generated_at, checksum, status, metadata
+) VALUES (
+  UUID_TO_BIN('411521c8-3e77-5ae9-946c-4abd8672f4ed', 1), @audio_language_id, @audio_variant_id, 'exercise', UUID_TO_BIN('241ab37c-b599-592c-ab80-4c8e4f17132a', 1), '606777dffff4bce169af1e0e07a8f58b7d757d9f35043f9bbaf416ae3ac48229',
+  'tr-tr.sentence.native-clear', 'elevenlabs', 'eleven_multilingual_v2', 'audio/generated/tr-TR/utterances/ce63fa43a2dea5e1a5d459b107c0668dbb84de874fcb709e329f4098c4d2ee3b.mp3', 1697, '2026-09-14 11:32:46.686025', '492ffe7cebf6b95e31c070aff81bb2af217219a36b92c112eebe109e9c002081', 'validated', '{"audio_key":"ce63fa43a2dea5e1a5d459b107c0668dbb84de874fcb709e329f4098c4d2ee3b","entity_key":"e_weather_and_clothes_01_listen","voice_id":"FDs1ZX5J4e4f2c2erxtW","voice_name":"Fili - Warm Turkish Female ","voice_labels":{"gender":"female","accent":"istanbul","age":"young","category":"professional","language":"tr","use_case":"conversational","descriptive":"calm"},"output_format":"mp3_44100_192","file_sha256":"492ffe7cebf6b95e31c070aff81bb2af217219a36b92c112eebe109e9c002081","settings":{"stability":0.68,"similarity_boost":0.88,"style":0.0,"use_speaker_boost":true,"speed":0.95},"relative_path":"audio/generated/tr-TR/utterances/ce63fa43a2dea5e1a5d459b107c0668dbb84de874fcb709e329f4098c4d2ee3b.mp3"}'
+) ON DUPLICATE KEY UPDATE
+  provider = VALUES(provider),
+  provider_model = VALUES(provider_model),
+  storage_url = VALUES(storage_url),
+  duration_ms = VALUES(duration_ms),
+  generated_at = VALUES(generated_at),
+  checksum = VALUES(checksum),
+  status = VALUES(status),
+  metadata = VALUES(metadata);
+
+-- u_near_future_plans_02 -> audio/generated/tr-TR/utterances/ce94763f327ce3513f653485aea3a09dc4b039fc58a71d442c4722b9189aea61.mp3
+UPDATE audio_assets
+SET status = 'archived'
+WHERE entity_type = 'utterance'
+  AND entity_id = UUID_TO_BIN('d50a89d9-9636-5974-8858-7d735cfc99bf', 1)
+  AND voice_key = 'tr-tr.sentence.native-clear'
+  AND (entity_type NOT IN ('grammar_point','exercise') OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'u_near_future_plans_02')
+  AND source_text_hash IS NOT NULL
+  AND source_text_hash <> '558a7c06cd90f77579fa16340a3912d6136998a40aa640336e559ae995d66c56'
+  AND status <> 'archived';
+INSERT INTO audio_assets (
+  id, language_id, language_variant_id, entity_type, entity_id, source_text_hash,
+  voice_key, provider, provider_model, storage_url, duration_ms, generated_at, checksum, status, metadata
+) VALUES (
+  UUID_TO_BIN('a0b34f50-b19f-532e-8e53-fbb6c3a9416f', 1), @audio_language_id, @audio_variant_id, 'utterance', UUID_TO_BIN('d50a89d9-9636-5974-8858-7d735cfc99bf', 1), '558a7c06cd90f77579fa16340a3912d6136998a40aa640336e559ae995d66c56',
+  'tr-tr.sentence.native-clear', 'elevenlabs', 'eleven_multilingual_v2', 'audio/generated/tr-TR/utterances/ce94763f327ce3513f653485aea3a09dc4b039fc58a71d442c4722b9189aea61.mp3', 1671, '2026-09-14 11:32:47.595590', '6fdeb68198de0bb95694e55f906189e7164c463daf68ffbef1f39d34dbb6630b', 'validated', '{"audio_key":"ce94763f327ce3513f653485aea3a09dc4b039fc58a71d442c4722b9189aea61","entity_key":"u_near_future_plans_02","voice_id":"FDs1ZX5J4e4f2c2erxtW","voice_name":"Fili - Warm Turkish Female ","voice_labels":{"gender":"female","accent":"istanbul","age":"young","category":"professional","language":"tr","use_case":"conversational","descriptive":"calm"},"output_format":"mp3_44100_192","file_sha256":"6fdeb68198de0bb95694e55f906189e7164c463daf68ffbef1f39d34dbb6630b","settings":{"stability":0.68,"similarity_boost":0.88,"style":0.0,"use_speaker_boost":true,"speed":0.95},"relative_path":"audio/generated/tr-TR/utterances/ce94763f327ce3513f653485aea3a09dc4b039fc58a71d442c4722b9189aea61.mp3"}'
+) ON DUPLICATE KEY UPDATE
+  provider = VALUES(provider),
+  provider_model = VALUES(provider_model),
+  storage_url = VALUES(storage_url),
+  duration_ms = VALUES(duration_ms),
+  generated_at = VALUES(generated_at),
+  checksum = VALUES(checksum),
+  status = VALUES(status),
+  metadata = VALUES(metadata);
+
+-- e_near_future_plans_01_listen -> audio/generated/tr-TR/utterances/ce94763f327ce3513f653485aea3a09dc4b039fc58a71d442c4722b9189aea61.mp3
+UPDATE audio_assets
+SET status = 'archived'
+WHERE entity_type = 'exercise'
+  AND entity_id = UUID_TO_BIN('36be180c-36a7-5b2e-ba6b-2395c5771449', 1)
+  AND voice_key = 'tr-tr.sentence.native-clear'
+  AND (entity_type NOT IN ('grammar_point','exercise') OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'e_near_future_plans_01_listen')
+  AND source_text_hash IS NOT NULL
+  AND source_text_hash <> '558a7c06cd90f77579fa16340a3912d6136998a40aa640336e559ae995d66c56'
+  AND status <> 'archived';
+INSERT INTO audio_assets (
+  id, language_id, language_variant_id, entity_type, entity_id, source_text_hash,
+  voice_key, provider, provider_model, storage_url, duration_ms, generated_at, checksum, status, metadata
+) VALUES (
+  UUID_TO_BIN('af731790-b062-5ba6-a106-89e0c68bb3d3', 1), @audio_language_id, @audio_variant_id, 'exercise', UUID_TO_BIN('36be180c-36a7-5b2e-ba6b-2395c5771449', 1), '558a7c06cd90f77579fa16340a3912d6136998a40aa640336e559ae995d66c56',
+  'tr-tr.sentence.native-clear', 'elevenlabs', 'eleven_multilingual_v2', 'audio/generated/tr-TR/utterances/ce94763f327ce3513f653485aea3a09dc4b039fc58a71d442c4722b9189aea61.mp3', 1671, '2026-09-14 11:32:47.595590', '6fdeb68198de0bb95694e55f906189e7164c463daf68ffbef1f39d34dbb6630b', 'validated', '{"audio_key":"ce94763f327ce3513f653485aea3a09dc4b039fc58a71d442c4722b9189aea61","entity_key":"e_near_future_plans_01_listen","voice_id":"FDs1ZX5J4e4f2c2erxtW","voice_name":"Fili - Warm Turkish Female ","voice_labels":{"gender":"female","accent":"istanbul","age":"young","category":"professional","language":"tr","use_case":"conversational","descriptive":"calm"},"output_format":"mp3_44100_192","file_sha256":"6fdeb68198de0bb95694e55f906189e7164c463daf68ffbef1f39d34dbb6630b","settings":{"stability":0.68,"similarity_boost":0.88,"style":0.0,"use_speaker_boost":true,"speed":0.95},"relative_path":"audio/generated/tr-TR/utterances/ce94763f327ce3513f653485aea3a09dc4b039fc58a71d442c4722b9189aea61.mp3"}'
+) ON DUPLICATE KEY UPDATE
+  provider = VALUES(provider),
+  provider_model = VALUES(provider_model),
+  storage_url = VALUES(storage_url),
+  duration_ms = VALUES(duration_ms),
+  generated_at = VALUES(generated_at),
+  checksum = VALUES(checksum),
+  status = VALUES(status),
+  metadata = VALUES(metadata);
+
+-- u_from_here_to_there_02 -> audio/generated/tr-TR/utterances/d16f2d259862f36e9179704804021a71d59ede6f351e0adf24ac40e309e8439b.mp3
+UPDATE audio_assets
+SET status = 'archived'
+WHERE entity_type = 'utterance'
+  AND entity_id = UUID_TO_BIN('d9e7df41-d61e-5362-bfc1-1bafbd483a38', 1)
+  AND voice_key = 'tr-tr.sentence.native-clear'
+  AND (entity_type NOT IN ('grammar_point','exercise') OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'u_from_here_to_there_02')
+  AND source_text_hash IS NOT NULL
+  AND source_text_hash <> '41fa36ad010fdd2ab4bbe7cdc21600030f4d7f8d84bb21b1f38df8b78fab9810'
+  AND status <> 'archived';
+INSERT INTO audio_assets (
+  id, language_id, language_variant_id, entity_type, entity_id, source_text_hash,
+  voice_key, provider, provider_model, storage_url, duration_ms, generated_at, checksum, status, metadata
+) VALUES (
+  UUID_TO_BIN('8fc5b6da-374f-5e27-a0b7-d37f91e7b59c', 1), @audio_language_id, @audio_variant_id, 'utterance', UUID_TO_BIN('d9e7df41-d61e-5362-bfc1-1bafbd483a38', 1), '41fa36ad010fdd2ab4bbe7cdc21600030f4d7f8d84bb21b1f38df8b78fab9810',
+  'tr-tr.sentence.native-clear', 'elevenlabs', 'eleven_multilingual_v2', 'audio/generated/tr-TR/utterances/d16f2d259862f36e9179704804021a71d59ede6f351e0adf24ac40e309e8439b.mp3', 1697, '2026-09-14 11:32:47.696468', 'c7570d857c8237b3dab9f8b4577c781b86ff51bfe9953a54638397ca7e6a86f8', 'validated', '{"audio_key":"d16f2d259862f36e9179704804021a71d59ede6f351e0adf24ac40e309e8439b","entity_key":"u_from_here_to_there_02","voice_id":"FDs1ZX5J4e4f2c2erxtW","voice_name":"Fili - Warm Turkish Female ","voice_labels":{"gender":"female","accent":"istanbul","age":"young","category":"professional","language":"tr","use_case":"conversational","descriptive":"calm"},"output_format":"mp3_44100_192","file_sha256":"c7570d857c8237b3dab9f8b4577c781b86ff51bfe9953a54638397ca7e6a86f8","settings":{"stability":0.68,"similarity_boost":0.88,"style":0.0,"use_speaker_boost":true,"speed":0.95},"relative_path":"audio/generated/tr-TR/utterances/d16f2d259862f36e9179704804021a71d59ede6f351e0adf24ac40e309e8439b.mp3"}'
+) ON DUPLICATE KEY UPDATE
+  provider = VALUES(provider),
+  provider_model = VALUES(provider_model),
+  storage_url = VALUES(storage_url),
+  duration_ms = VALUES(duration_ms),
+  generated_at = VALUES(generated_at),
+  checksum = VALUES(checksum),
+  status = VALUES(status),
+  metadata = VALUES(metadata);
+
+-- e_from_here_to_there_01_listen -> audio/generated/tr-TR/utterances/d16f2d259862f36e9179704804021a71d59ede6f351e0adf24ac40e309e8439b.mp3
+UPDATE audio_assets
+SET status = 'archived'
+WHERE entity_type = 'exercise'
+  AND entity_id = UUID_TO_BIN('7a8355e9-862c-5d51-b194-434c72f617cd', 1)
+  AND voice_key = 'tr-tr.sentence.native-clear'
+  AND (entity_type NOT IN ('grammar_point','exercise') OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'e_from_here_to_there_01_listen')
+  AND source_text_hash IS NOT NULL
+  AND source_text_hash <> '41fa36ad010fdd2ab4bbe7cdc21600030f4d7f8d84bb21b1f38df8b78fab9810'
+  AND status <> 'archived';
+INSERT INTO audio_assets (
+  id, language_id, language_variant_id, entity_type, entity_id, source_text_hash,
+  voice_key, provider, provider_model, storage_url, duration_ms, generated_at, checksum, status, metadata
+) VALUES (
+  UUID_TO_BIN('e5be0624-80e8-5b7d-9341-48c507c42b94', 1), @audio_language_id, @audio_variant_id, 'exercise', UUID_TO_BIN('7a8355e9-862c-5d51-b194-434c72f617cd', 1), '41fa36ad010fdd2ab4bbe7cdc21600030f4d7f8d84bb21b1f38df8b78fab9810',
+  'tr-tr.sentence.native-clear', 'elevenlabs', 'eleven_multilingual_v2', 'audio/generated/tr-TR/utterances/d16f2d259862f36e9179704804021a71d59ede6f351e0adf24ac40e309e8439b.mp3', 1697, '2026-09-14 11:32:47.696468', 'c7570d857c8237b3dab9f8b4577c781b86ff51bfe9953a54638397ca7e6a86f8', 'validated', '{"audio_key":"d16f2d259862f36e9179704804021a71d59ede6f351e0adf24ac40e309e8439b","entity_key":"e_from_here_to_there_01_listen","voice_id":"FDs1ZX5J4e4f2c2erxtW","voice_name":"Fili - Warm Turkish Female ","voice_labels":{"gender":"female","accent":"istanbul","age":"young","category":"professional","language":"tr","use_case":"conversational","descriptive":"calm"},"output_format":"mp3_44100_192","file_sha256":"c7570d857c8237b3dab9f8b4577c781b86ff51bfe9953a54638397ca7e6a86f8","settings":{"stability":0.68,"similarity_boost":0.88,"style":0.0,"use_speaker_boost":true,"speed":0.95},"relative_path":"audio/generated/tr-TR/utterances/d16f2d259862f36e9179704804021a71d59ede6f351e0adf24ac40e309e8439b.mp3"}'
+) ON DUPLICATE KEY UPDATE
+  provider = VALUES(provider),
+  provider_model = VALUES(provider_model),
+  storage_url = VALUES(storage_url),
+  duration_ms = VALUES(duration_ms),
+  generated_at = VALUES(generated_at),
+  checksum = VALUES(checksum),
+  status = VALUES(status),
+  metadata = VALUES(metadata);
+
+-- u_weather_and_clothes_04 -> audio/generated/tr-TR/utterances/d65ebec90e91742b38fa9c690281bff1a4934e8e516cdbfad316d78ab0897d1b.mp3
+UPDATE audio_assets
+SET status = 'archived'
+WHERE entity_type = 'utterance'
+  AND entity_id = UUID_TO_BIN('dd95e43d-0ee2-5783-9e3f-60b6dfabbcde', 1)
+  AND voice_key = 'tr-tr.sentence.native-clear'
+  AND (entity_type NOT IN ('grammar_point','exercise') OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'u_weather_and_clothes_04')
+  AND source_text_hash IS NOT NULL
+  AND source_text_hash <> '1051d2ea5d0ff99bedfe5f4d5079b93c545a07f11cfec91bb96fd46cd384a9d4'
+  AND status <> 'archived';
+INSERT INTO audio_assets (
+  id, language_id, language_variant_id, entity_type, entity_id, source_text_hash,
+  voice_key, provider, provider_model, storage_url, duration_ms, generated_at, checksum, status, metadata
+) VALUES (
+  UUID_TO_BIN('23d634b5-2da9-5319-8281-e5b5efc98513', 1), @audio_language_id, @audio_variant_id, 'utterance', UUID_TO_BIN('dd95e43d-0ee2-5783-9e3f-60b6dfabbcde', 1), '1051d2ea5d0ff99bedfe5f4d5079b93c545a07f11cfec91bb96fd46cd384a9d4',
+  'tr-tr.sentence.native-clear', 'elevenlabs', 'eleven_multilingual_v2', 'audio/generated/tr-TR/utterances/d65ebec90e91742b38fa9c690281bff1a4934e8e516cdbfad316d78ab0897d1b.mp3', 1906, '2026-09-14 11:32:48.619854', 'e01921d44c3590d84c6edb71130c92aee5e03f8c53bb6a134959ec19f2918895', 'validated', '{"audio_key":"d65ebec90e91742b38fa9c690281bff1a4934e8e516cdbfad316d78ab0897d1b","entity_key":"u_weather_and_clothes_04","voice_id":"FDs1ZX5J4e4f2c2erxtW","voice_name":"Fili - Warm Turkish Female ","voice_labels":{"gender":"female","accent":"istanbul","age":"young","category":"professional","language":"tr","use_case":"conversational","descriptive":"calm"},"output_format":"mp3_44100_192","file_sha256":"e01921d44c3590d84c6edb71130c92aee5e03f8c53bb6a134959ec19f2918895","settings":{"stability":0.68,"similarity_boost":0.88,"style":0.0,"use_speaker_boost":true,"speed":0.95},"relative_path":"audio/generated/tr-TR/utterances/d65ebec90e91742b38fa9c690281bff1a4934e8e516cdbfad316d78ab0897d1b.mp3"}'
+) ON DUPLICATE KEY UPDATE
+  provider = VALUES(provider),
+  provider_model = VALUES(provider_model),
+  storage_url = VALUES(storage_url),
+  duration_ms = VALUES(duration_ms),
+  generated_at = VALUES(generated_at),
+  checksum = VALUES(checksum),
+  status = VALUES(status),
+  metadata = VALUES(metadata);
+
+-- e_weather_and_clothes_02_listen -> audio/generated/tr-TR/utterances/d65ebec90e91742b38fa9c690281bff1a4934e8e516cdbfad316d78ab0897d1b.mp3
+UPDATE audio_assets
+SET status = 'archived'
+WHERE entity_type = 'exercise'
+  AND entity_id = UUID_TO_BIN('886821cd-1415-5e40-9ad9-a69bf1238095', 1)
+  AND voice_key = 'tr-tr.sentence.native-clear'
+  AND (entity_type NOT IN ('grammar_point','exercise') OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'e_weather_and_clothes_02_listen')
+  AND source_text_hash IS NOT NULL
+  AND source_text_hash <> '1051d2ea5d0ff99bedfe5f4d5079b93c545a07f11cfec91bb96fd46cd384a9d4'
+  AND status <> 'archived';
+INSERT INTO audio_assets (
+  id, language_id, language_variant_id, entity_type, entity_id, source_text_hash,
+  voice_key, provider, provider_model, storage_url, duration_ms, generated_at, checksum, status, metadata
+) VALUES (
+  UUID_TO_BIN('e26dcf9d-ff93-578f-a7c7-a5eece952b19', 1), @audio_language_id, @audio_variant_id, 'exercise', UUID_TO_BIN('886821cd-1415-5e40-9ad9-a69bf1238095', 1), '1051d2ea5d0ff99bedfe5f4d5079b93c545a07f11cfec91bb96fd46cd384a9d4',
+  'tr-tr.sentence.native-clear', 'elevenlabs', 'eleven_multilingual_v2', 'audio/generated/tr-TR/utterances/d65ebec90e91742b38fa9c690281bff1a4934e8e516cdbfad316d78ab0897d1b.mp3', 1906, '2026-09-14 11:32:48.619854', 'e01921d44c3590d84c6edb71130c92aee5e03f8c53bb6a134959ec19f2918895', 'validated', '{"audio_key":"d65ebec90e91742b38fa9c690281bff1a4934e8e516cdbfad316d78ab0897d1b","entity_key":"e_weather_and_clothes_02_listen","voice_id":"FDs1ZX5J4e4f2c2erxtW","voice_name":"Fili - Warm Turkish Female ","voice_labels":{"gender":"female","accent":"istanbul","age":"young","category":"professional","language":"tr","use_case":"conversational","descriptive":"calm"},"output_format":"mp3_44100_192","file_sha256":"e01921d44c3590d84c6edb71130c92aee5e03f8c53bb6a134959ec19f2918895","settings":{"stability":0.68,"similarity_boost":0.88,"style":0.0,"use_speaker_boost":true,"speed":0.95},"relative_path":"audio/generated/tr-TR/utterances/d65ebec90e91742b38fa9c690281bff1a4934e8e516cdbfad316d78ab0897d1b.mp3"}'
+) ON DUPLICATE KEY UPDATE
+  provider = VALUES(provider),
+  provider_model = VALUES(provider_model),
+  storage_url = VALUES(storage_url),
+  duration_ms = VALUES(duration_ms),
+  generated_at = VALUES(generated_at),
+  checksum = VALUES(checksum),
+  status = VALUES(status),
+  metadata = VALUES(metadata);
+
+-- u_from_here_to_there_03 -> audio/generated/tr-TR/utterances/d7df3aa1754ab53573f58667ac8f6b5880a5edc83b94e80c65393a56e8a036c7.mp3
+UPDATE audio_assets
+SET status = 'archived'
+WHERE entity_type = 'utterance'
+  AND entity_id = UUID_TO_BIN('851d8364-a8d0-5b10-949b-cceaba2c01a9', 1)
+  AND voice_key = 'tr-tr.sentence.native-clear'
+  AND (entity_type NOT IN ('grammar_point','exercise') OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'u_from_here_to_there_03')
+  AND source_text_hash IS NOT NULL
+  AND source_text_hash <> '4e35fab29606fd5cf0331c7f622c45d3da18fca5fb886345263c68abe29fe971'
+  AND status <> 'archived';
+INSERT INTO audio_assets (
+  id, language_id, language_variant_id, entity_type, entity_id, source_text_hash,
+  voice_key, provider, provider_model, storage_url, duration_ms, generated_at, checksum, status, metadata
+) VALUES (
+  UUID_TO_BIN('41405b0b-d40e-5af9-977a-ce141f88e743', 1), @audio_language_id, @audio_variant_id, 'utterance', UUID_TO_BIN('851d8364-a8d0-5b10-949b-cceaba2c01a9', 1), '4e35fab29606fd5cf0331c7f622c45d3da18fca5fb886345263c68abe29fe971',
+  'tr-tr.sentence.native-clear', 'elevenlabs', 'eleven_multilingual_v2', 'audio/generated/tr-TR/utterances/d7df3aa1754ab53573f58667ac8f6b5880a5edc83b94e80c65393a56e8a036c7.mp3', 1567, '2026-09-14 11:32:48.696917', '464e788429cbf61229dcbab40455356bae4b86ddb226a9b52e0654fa3b02bacf', 'validated', '{"audio_key":"d7df3aa1754ab53573f58667ac8f6b5880a5edc83b94e80c65393a56e8a036c7","entity_key":"u_from_here_to_there_03","voice_id":"FDs1ZX5J4e4f2c2erxtW","voice_name":"Fili - Warm Turkish Female ","voice_labels":{"gender":"female","accent":"istanbul","age":"young","category":"professional","language":"tr","use_case":"conversational","descriptive":"calm"},"output_format":"mp3_44100_192","file_sha256":"464e788429cbf61229dcbab40455356bae4b86ddb226a9b52e0654fa3b02bacf","settings":{"stability":0.68,"similarity_boost":0.88,"style":0.0,"use_speaker_boost":true,"speed":0.95},"relative_path":"audio/generated/tr-TR/utterances/d7df3aa1754ab53573f58667ac8f6b5880a5edc83b94e80c65393a56e8a036c7.mp3"}'
+) ON DUPLICATE KEY UPDATE
+  provider = VALUES(provider),
+  provider_model = VALUES(provider_model),
+  storage_url = VALUES(storage_url),
+  duration_ms = VALUES(duration_ms),
+  generated_at = VALUES(generated_at),
+  checksum = VALUES(checksum),
+  status = VALUES(status),
+  metadata = VALUES(metadata);
+
+-- u_yesterday_02 -> audio/generated/tr-TR/utterances/d7e5c60a182cc5f2843daf04e3fb8578ba1723bdef393039902ea9ad30d5cdfe.mp3
+UPDATE audio_assets
+SET status = 'archived'
+WHERE entity_type = 'utterance'
+  AND entity_id = UUID_TO_BIN('5799ff45-84dc-5430-859f-a5f011879b6a', 1)
+  AND voice_key = 'tr-tr.sentence.native-clear'
+  AND (entity_type NOT IN ('grammar_point','exercise') OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'u_yesterday_02')
+  AND source_text_hash IS NOT NULL
+  AND source_text_hash <> 'ba8ab4ae934a1aca4855379ec321fb364c782ec33e7bd5ededc0b0e1e3200056'
+  AND status <> 'archived';
+INSERT INTO audio_assets (
+  id, language_id, language_variant_id, entity_type, entity_id, source_text_hash,
+  voice_key, provider, provider_model, storage_url, duration_ms, generated_at, checksum, status, metadata
+) VALUES (
+  UUID_TO_BIN('28187f44-7d66-5d41-8530-6e4586040844', 1), @audio_language_id, @audio_variant_id, 'utterance', UUID_TO_BIN('5799ff45-84dc-5430-859f-a5f011879b6a', 1), 'ba8ab4ae934a1aca4855379ec321fb364c782ec33e7bd5ededc0b0e1e3200056',
+  'tr-tr.sentence.native-clear', 'elevenlabs', 'eleven_multilingual_v2', 'audio/generated/tr-TR/utterances/d7e5c60a182cc5f2843daf04e3fb8578ba1723bdef393039902ea9ad30d5cdfe.mp3', 1567, '2026-09-14 11:32:49.609588', 'cb6345ce323670fa236b3d7da7035664cd230054a02b9e716bf21ea7d3e29255', 'validated', '{"audio_key":"d7e5c60a182cc5f2843daf04e3fb8578ba1723bdef393039902ea9ad30d5cdfe","entity_key":"u_yesterday_02","voice_id":"FDs1ZX5J4e4f2c2erxtW","voice_name":"Fili - Warm Turkish Female ","voice_labels":{"gender":"female","accent":"istanbul","age":"young","category":"professional","language":"tr","use_case":"conversational","descriptive":"calm"},"output_format":"mp3_44100_192","file_sha256":"cb6345ce323670fa236b3d7da7035664cd230054a02b9e716bf21ea7d3e29255","settings":{"stability":0.68,"similarity_boost":0.88,"style":0.0,"use_speaker_boost":true,"speed":0.95},"relative_path":"audio/generated/tr-TR/utterances/d7e5c60a182cc5f2843daf04e3fb8578ba1723bdef393039902ea9ad30d5cdfe.mp3"}'
+) ON DUPLICATE KEY UPDATE
+  provider = VALUES(provider),
+  provider_model = VALUES(provider_model),
+  storage_url = VALUES(storage_url),
+  duration_ms = VALUES(duration_ms),
+  generated_at = VALUES(generated_at),
+  checksum = VALUES(checksum),
+  status = VALUES(status),
+  metadata = VALUES(metadata);
+
+-- e_yesterday_01_listen -> audio/generated/tr-TR/utterances/d7e5c60a182cc5f2843daf04e3fb8578ba1723bdef393039902ea9ad30d5cdfe.mp3
+UPDATE audio_assets
+SET status = 'archived'
+WHERE entity_type = 'exercise'
+  AND entity_id = UUID_TO_BIN('74fa3584-73f5-5877-839d-9328d2710056', 1)
+  AND voice_key = 'tr-tr.sentence.native-clear'
+  AND (entity_type NOT IN ('grammar_point','exercise') OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'e_yesterday_01_listen')
+  AND source_text_hash IS NOT NULL
+  AND source_text_hash <> 'ba8ab4ae934a1aca4855379ec321fb364c782ec33e7bd5ededc0b0e1e3200056'
+  AND status <> 'archived';
+INSERT INTO audio_assets (
+  id, language_id, language_variant_id, entity_type, entity_id, source_text_hash,
+  voice_key, provider, provider_model, storage_url, duration_ms, generated_at, checksum, status, metadata
+) VALUES (
+  UUID_TO_BIN('0a04cc1d-b5ac-573a-8e78-5bef3dcec6d2', 1), @audio_language_id, @audio_variant_id, 'exercise', UUID_TO_BIN('74fa3584-73f5-5877-839d-9328d2710056', 1), 'ba8ab4ae934a1aca4855379ec321fb364c782ec33e7bd5ededc0b0e1e3200056',
+  'tr-tr.sentence.native-clear', 'elevenlabs', 'eleven_multilingual_v2', 'audio/generated/tr-TR/utterances/d7e5c60a182cc5f2843daf04e3fb8578ba1723bdef393039902ea9ad30d5cdfe.mp3', 1567, '2026-09-14 11:32:49.609588', 'cb6345ce323670fa236b3d7da7035664cd230054a02b9e716bf21ea7d3e29255', 'validated', '{"audio_key":"d7e5c60a182cc5f2843daf04e3fb8578ba1723bdef393039902ea9ad30d5cdfe","entity_key":"e_yesterday_01_listen","voice_id":"FDs1ZX5J4e4f2c2erxtW","voice_name":"Fili - Warm Turkish Female ","voice_labels":{"gender":"female","accent":"istanbul","age":"young","category":"professional","language":"tr","use_case":"conversational","descriptive":"calm"},"output_format":"mp3_44100_192","file_sha256":"cb6345ce323670fa236b3d7da7035664cd230054a02b9e716bf21ea7d3e29255","settings":{"stability":0.68,"similarity_boost":0.88,"style":0.0,"use_speaker_boost":true,"speed":0.95},"relative_path":"audio/generated/tr-TR/utterances/d7e5c60a182cc5f2843daf04e3fb8578ba1723bdef393039902ea9ad30d5cdfe.mp3"}'
+) ON DUPLICATE KEY UPDATE
+  provider = VALUES(provider),
+  provider_model = VALUES(provider_model),
+  storage_url = VALUES(storage_url),
+  duration_ms = VALUES(duration_ms),
+  generated_at = VALUES(generated_at),
+  checksum = VALUES(checksum),
+  status = VALUES(status),
+  metadata = VALUES(metadata);
+
+-- u_everyday_routine_03 -> audio/generated/tr-TR/utterances/d7f4f6ca18ad341642782e6ee538a23294616f4595eb93762fec45c442a4603d.mp3
+UPDATE audio_assets
+SET status = 'archived'
+WHERE entity_type = 'utterance'
+  AND entity_id = UUID_TO_BIN('29b5995d-e312-5abb-b2de-fea94edbbe46', 1)
+  AND voice_key = 'tr-tr.sentence.native-clear'
+  AND (entity_type NOT IN ('grammar_point','exercise') OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'u_everyday_routine_03')
+  AND source_text_hash IS NOT NULL
+  AND source_text_hash <> '41c17be932dc355c6bd7b295c799f651c8c617a4409633544af71713b6cff08e'
+  AND status <> 'archived';
+INSERT INTO audio_assets (
+  id, language_id, language_variant_id, entity_type, entity_id, source_text_hash,
+  voice_key, provider, provider_model, storage_url, duration_ms, generated_at, checksum, status, metadata
+) VALUES (
+  UUID_TO_BIN('66753d89-4d05-5e86-a958-85ef6349f16d', 1), @audio_language_id, @audio_variant_id, 'utterance', UUID_TO_BIN('29b5995d-e312-5abb-b2de-fea94edbbe46', 1), '41c17be932dc355c6bd7b295c799f651c8c617a4409633544af71713b6cff08e',
+  'tr-tr.sentence.native-clear', 'elevenlabs', 'eleven_multilingual_v2', 'audio/generated/tr-TR/utterances/d7f4f6ca18ad341642782e6ee538a23294616f4595eb93762fec45c442a4603d.mp3', 1619, '2026-09-14 11:32:49.682293', 'cbe44af7afa6836651f80fba0b4fb5d68e00f5689cfc807de737633cc12b252e', 'validated', '{"audio_key":"d7f4f6ca18ad341642782e6ee538a23294616f4595eb93762fec45c442a4603d","entity_key":"u_everyday_routine_03","voice_id":"FDs1ZX5J4e4f2c2erxtW","voice_name":"Fili - Warm Turkish Female ","voice_labels":{"gender":"female","accent":"istanbul","age":"young","category":"professional","language":"tr","use_case":"conversational","descriptive":"calm"},"output_format":"mp3_44100_192","file_sha256":"cbe44af7afa6836651f80fba0b4fb5d68e00f5689cfc807de737633cc12b252e","settings":{"stability":0.68,"similarity_boost":0.88,"style":0.0,"use_speaker_boost":true,"speed":0.95},"relative_path":"audio/generated/tr-TR/utterances/d7f4f6ca18ad341642782e6ee538a23294616f4595eb93762fec45c442a4603d.mp3"}'
+) ON DUPLICATE KEY UPDATE
+  provider = VALUES(provider),
+  provider_model = VALUES(provider_model),
+  storage_url = VALUES(storage_url),
+  duration_ms = VALUES(duration_ms),
+  generated_at = VALUES(generated_at),
+  checksum = VALUES(checksum),
+  status = VALUES(status),
+  metadata = VALUES(metadata);
+
 -- u_who_i_am_02 -> audio/generated/tr-TR/utterances/da7b87fda0cfcda0edbbb73c8300ec1dc1e541c5447b6cee0aee26854ecadabc.mp3
 UPDATE audio_assets
 SET status = 'archived'
@@ -6692,6 +13374,58 @@ INSERT INTO audio_assets (
   status = VALUES(status),
   metadata = VALUES(metadata);
 
+-- u_likes_and_specific_things_04 -> audio/generated/tr-TR/utterances/e33622ba069a4587b5ac9eb1bdc09e5871ec7e2da7650a960ff431aa2cefa1c6.mp3
+UPDATE audio_assets
+SET status = 'archived'
+WHERE entity_type = 'utterance'
+  AND entity_id = UUID_TO_BIN('890a356c-72f3-5676-a633-6bbbdc620ade', 1)
+  AND voice_key = 'tr-tr.sentence.native-clear'
+  AND (entity_type NOT IN ('grammar_point','exercise') OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'u_likes_and_specific_things_04')
+  AND source_text_hash IS NOT NULL
+  AND source_text_hash <> 'da614c0e40115fad7b3e8e5a269ac3ee8e2dfe28b3bfab486f7821c9c3d9b7be'
+  AND status <> 'archived';
+INSERT INTO audio_assets (
+  id, language_id, language_variant_id, entity_type, entity_id, source_text_hash,
+  voice_key, provider, provider_model, storage_url, duration_ms, generated_at, checksum, status, metadata
+) VALUES (
+  UUID_TO_BIN('b032de2e-faa3-50f9-b785-61d3e9b541ad', 1), @audio_language_id, @audio_variant_id, 'utterance', UUID_TO_BIN('890a356c-72f3-5676-a633-6bbbdc620ade', 1), 'da614c0e40115fad7b3e8e5a269ac3ee8e2dfe28b3bfab486f7821c9c3d9b7be',
+  'tr-tr.sentence.native-clear', 'elevenlabs', 'eleven_multilingual_v2', 'audio/generated/tr-TR/utterances/e33622ba069a4587b5ac9eb1bdc09e5871ec7e2da7650a960ff431aa2cefa1c6.mp3', 1933, '2026-09-14 11:32:50.659899', '416a3d58a9655108f1eb5d0b2ca1d1cb43b0235c6d3cf5a9d7d1ec8d0293abd2', 'validated', '{"audio_key":"e33622ba069a4587b5ac9eb1bdc09e5871ec7e2da7650a960ff431aa2cefa1c6","entity_key":"u_likes_and_specific_things_04","voice_id":"FDs1ZX5J4e4f2c2erxtW","voice_name":"Fili - Warm Turkish Female ","voice_labels":{"gender":"female","accent":"istanbul","age":"young","category":"professional","language":"tr","use_case":"conversational","descriptive":"calm"},"output_format":"mp3_44100_192","file_sha256":"416a3d58a9655108f1eb5d0b2ca1d1cb43b0235c6d3cf5a9d7d1ec8d0293abd2","settings":{"stability":0.68,"similarity_boost":0.88,"style":0.0,"use_speaker_boost":true,"speed":0.95},"relative_path":"audio/generated/tr-TR/utterances/e33622ba069a4587b5ac9eb1bdc09e5871ec7e2da7650a960ff431aa2cefa1c6.mp3"}'
+) ON DUPLICATE KEY UPDATE
+  provider = VALUES(provider),
+  provider_model = VALUES(provider_model),
+  storage_url = VALUES(storage_url),
+  duration_ms = VALUES(duration_ms),
+  generated_at = VALUES(generated_at),
+  checksum = VALUES(checksum),
+  status = VALUES(status),
+  metadata = VALUES(metadata);
+
+-- e_likes_and_specific_things_02_listen -> audio/generated/tr-TR/utterances/e33622ba069a4587b5ac9eb1bdc09e5871ec7e2da7650a960ff431aa2cefa1c6.mp3
+UPDATE audio_assets
+SET status = 'archived'
+WHERE entity_type = 'exercise'
+  AND entity_id = UUID_TO_BIN('22234eb7-1685-5386-9e66-e55fea20a3c4', 1)
+  AND voice_key = 'tr-tr.sentence.native-clear'
+  AND (entity_type NOT IN ('grammar_point','exercise') OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'e_likes_and_specific_things_02_listen')
+  AND source_text_hash IS NOT NULL
+  AND source_text_hash <> 'da614c0e40115fad7b3e8e5a269ac3ee8e2dfe28b3bfab486f7821c9c3d9b7be'
+  AND status <> 'archived';
+INSERT INTO audio_assets (
+  id, language_id, language_variant_id, entity_type, entity_id, source_text_hash,
+  voice_key, provider, provider_model, storage_url, duration_ms, generated_at, checksum, status, metadata
+) VALUES (
+  UUID_TO_BIN('36146269-d764-58c0-8536-3ffaa19aba94', 1), @audio_language_id, @audio_variant_id, 'exercise', UUID_TO_BIN('22234eb7-1685-5386-9e66-e55fea20a3c4', 1), 'da614c0e40115fad7b3e8e5a269ac3ee8e2dfe28b3bfab486f7821c9c3d9b7be',
+  'tr-tr.sentence.native-clear', 'elevenlabs', 'eleven_multilingual_v2', 'audio/generated/tr-TR/utterances/e33622ba069a4587b5ac9eb1bdc09e5871ec7e2da7650a960ff431aa2cefa1c6.mp3', 1933, '2026-09-14 11:32:50.659899', '416a3d58a9655108f1eb5d0b2ca1d1cb43b0235c6d3cf5a9d7d1ec8d0293abd2', 'validated', '{"audio_key":"e33622ba069a4587b5ac9eb1bdc09e5871ec7e2da7650a960ff431aa2cefa1c6","entity_key":"e_likes_and_specific_things_02_listen","voice_id":"FDs1ZX5J4e4f2c2erxtW","voice_name":"Fili - Warm Turkish Female ","voice_labels":{"gender":"female","accent":"istanbul","age":"young","category":"professional","language":"tr","use_case":"conversational","descriptive":"calm"},"output_format":"mp3_44100_192","file_sha256":"416a3d58a9655108f1eb5d0b2ca1d1cb43b0235c6d3cf5a9d7d1ec8d0293abd2","settings":{"stability":0.68,"similarity_boost":0.88,"style":0.0,"use_speaker_boost":true,"speed":0.95},"relative_path":"audio/generated/tr-TR/utterances/e33622ba069a4587b5ac9eb1bdc09e5871ec7e2da7650a960ff431aa2cefa1c6.mp3"}'
+) ON DUPLICATE KEY UPDATE
+  provider = VALUES(provider),
+  provider_model = VALUES(provider_model),
+  storage_url = VALUES(storage_url),
+  duration_ms = VALUES(duration_ms),
+  generated_at = VALUES(generated_at),
+  checksum = VALUES(checksum),
+  status = VALUES(status),
+  metadata = VALUES(metadata);
+
 -- u_who_i_am_01 -> audio/generated/tr-TR/utterances/f2efc4699c6ea7bd0065d741d4fdab3be920df6a262f6905bf73b414af4e35cc.mp3
 UPDATE audio_assets
 SET status = 'archived'
@@ -6760,6 +13494,32 @@ INSERT INTO audio_assets (
 ) VALUES (
   UUID_TO_BIN('087648ff-10c9-51bc-9969-ecee5a255950', 1), @audio_language_id, @audio_variant_id, 'exercise', UUID_TO_BIN('627b5bde-a1cb-5151-b97f-23f21e556df9', 1), '3bff75616c10502441151cb846209a33269b5cbb7df09bf49ba8000f492563f6',
   'tr-tr.sentence.native-clear', 'elevenlabs', 'eleven_multilingual_v2', 'audio/generated/tr-TR/utterances/f4fd3f3181fea69eec5a3721f846c362cb0789853a5832e59d1a0a97403cd178.mp3', 1280, '2026-09-13 15:56:00.813298', '2397da228be93a1f14624ac7f687ed8ab3609f8158652b7b5d3d7eef64f628d1', 'validated', '{"audio_key":"f4fd3f3181fea69eec5a3721f846c362cb0789853a5832e59d1a0a97403cd178","entity_key":"e_at_home_01_listen","voice_id":"FDs1ZX5J4e4f2c2erxtW","voice_name":"Fili - Warm Turkish Female ","voice_labels":{"gender":"female","accent":"istanbul","age":"young","category":"professional","language":"tr","use_case":"conversational","descriptive":"calm"},"output_format":"mp3_44100_192","file_sha256":"2397da228be93a1f14624ac7f687ed8ab3609f8158652b7b5d3d7eef64f628d1","settings":{"stability":0.68,"similarity_boost":0.88,"style":0.0,"use_speaker_boost":true,"speed":0.95},"relative_path":"audio/generated/tr-TR/utterances/f4fd3f3181fea69eec5a3721f846c362cb0789853a5832e59d1a0a97403cd178.mp3"}'
+) ON DUPLICATE KEY UPDATE
+  provider = VALUES(provider),
+  provider_model = VALUES(provider_model),
+  storage_url = VALUES(storage_url),
+  duration_ms = VALUES(duration_ms),
+  generated_at = VALUES(generated_at),
+  checksum = VALUES(checksum),
+  status = VALUES(status),
+  metadata = VALUES(metadata);
+
+-- u_weather_and_clothes_03 -> audio/generated/tr-TR/utterances/fd27f0c17028250c465888ba7642b093394208c765eb417bd288ace9a032ece2.mp3
+UPDATE audio_assets
+SET status = 'archived'
+WHERE entity_type = 'utterance'
+  AND entity_id = UUID_TO_BIN('79661759-219e-5559-b909-c49f979f1a77', 1)
+  AND voice_key = 'tr-tr.sentence.native-clear'
+  AND (entity_type NOT IN ('grammar_point','exercise') OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'u_weather_and_clothes_03')
+  AND source_text_hash IS NOT NULL
+  AND source_text_hash <> '40c65012fcd06fdc6888e89dbc16b5e698ab482209b1bf76619aca7413ad0b09'
+  AND status <> 'archived';
+INSERT INTO audio_assets (
+  id, language_id, language_variant_id, entity_type, entity_id, source_text_hash,
+  voice_key, provider, provider_model, storage_url, duration_ms, generated_at, checksum, status, metadata
+) VALUES (
+  UUID_TO_BIN('ce680932-0ae4-54e8-9eb0-0c0d824b723e', 1), @audio_language_id, @audio_variant_id, 'utterance', UUID_TO_BIN('79661759-219e-5559-b909-c49f979f1a77', 1), '40c65012fcd06fdc6888e89dbc16b5e698ab482209b1bf76619aca7413ad0b09',
+  'tr-tr.sentence.native-clear', 'elevenlabs', 'eleven_multilingual_v2', 'audio/generated/tr-TR/utterances/fd27f0c17028250c465888ba7642b093394208c765eb417bd288ace9a032ece2.mp3', 1854, '2026-09-14 11:32:50.730320', '900361478f55afdf6b97caca1b97404818678e2a88b094fcdc2164b0d55a53d5', 'validated', '{"audio_key":"fd27f0c17028250c465888ba7642b093394208c765eb417bd288ace9a032ece2","entity_key":"u_weather_and_clothes_03","voice_id":"FDs1ZX5J4e4f2c2erxtW","voice_name":"Fili - Warm Turkish Female ","voice_labels":{"gender":"female","accent":"istanbul","age":"young","category":"professional","language":"tr","use_case":"conversational","descriptive":"calm"},"output_format":"mp3_44100_192","file_sha256":"900361478f55afdf6b97caca1b97404818678e2a88b094fcdc2164b0d55a53d5","settings":{"stability":0.68,"similarity_boost":0.88,"style":0.0,"use_speaker_boost":true,"speed":0.95},"relative_path":"audio/generated/tr-TR/utterances/fd27f0c17028250c465888ba7642b093394208c765eb417bd288ace9a032ece2.mp3"}'
 ) ON DUPLICATE KEY UPDATE
   provider = VALUES(provider),
   provider_model = VALUES(provider_model),

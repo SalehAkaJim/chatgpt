@@ -1,0 +1,36 @@
+{
+  "source_text_hash": "606777dffff4bce169af1e0e07a8f58b7d757d9f35043f9bbaf416ae3ac48229",
+  "voice_id": "D6QpOJ61ltQ3whot6iJZ",
+  "model": "eleven_multilingual_v2",
+  "settings": {
+    "stability": 0.52,
+    "similarity_boost": 0.86,
+    "style": 0.2,
+    "use_speaker_boost": true,
+    "speed": 0.99
+  },
+  "provider": "elevenlabs",
+  "audio_key": "4b9b58b2c44d651d08b095f8425b9cf2fa7f7938a5c14022269662d5411a9b52",
+  "voice_key": "character:selin:female_bright",
+  "voice_name": "Tugba",
+  "voice_labels": {
+    "gender": "female",
+    "accent": "istanbul",
+    "age": "young",
+    "category": "professional",
+    "language": "tr",
+    "use_case": "conversational",
+    "descriptive": "calm"
+  },
+  "output_format": "mp3_44100_192",
+  "file_sha256": "468110ae741c83d1284bf7a3ab3f227bbef84fa48ce6011c7945a208f595a986",
+  "duration_ms": 1567,
+  "generated_at": "2026-09-14T11:31:40.502679+00:00",
+  "entity_refs": [
+    {
+      "entity_type": "dialogue_turn",
+      "entity_uuid": "6385cb41-87eb-5623-a283-5c0f13e8117c",
+      "entity_key": "d_weather_and_clothes_02:1"
+    }
+  ]
+}
