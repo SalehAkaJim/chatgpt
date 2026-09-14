@@ -1,0 +1,36 @@
+{
+  "source_text_hash": "bab000c4500c5973c0020d147c3611715207c493a53c1e91f15028bb8140935d",
+  "voice_id": "fBpCO0Kf0krKLYGOu65w",
+  "model": "eleven_multilingual_v2",
+  "settings": {
+    "stability": 0.52,
+    "similarity_boost": 0.86,
+    "style": 0.2,
+    "use_speaker_boost": true,
+    "speed": 0.99
+  },
+  "provider": "elevenlabs",
+  "audio_key": "60527a687bcbac5bc7ecc60246651aa6ff4792cb73e85d7af82ee389a6cc561c",
+  "voice_key": "character:léa:female_bright",
+  "voice_name": "Émilie - Customer service advisor",
+  "voice_labels": {
+    "gender": "female",
+    "accent": "standard",
+    "age": "young",
+    "category": "professional",
+    "language": "fr",
+    "use_case": "conversational",
+    "descriptive": "confident"
+  },
+  "output_format": "mp3_44100_192",
+  "file_sha256": "638549b7258bd11083be279d2fe264a31fb8ebdc72a9f947dd683198eaab94a4",
+  "duration_ms": 1071,
+  "generated_at": "2026-09-14T10:38:16.706137+00:00",
+  "entity_refs": [
+    {
+      "entity_type": "dialogue_turn",
+      "entity_uuid": "4e60d404-3172-5f4b-9e3f-5529e95e57a9",
+      "entity_key": "d_yesterday_and_past_02:3"
+    }
+  ]
+}

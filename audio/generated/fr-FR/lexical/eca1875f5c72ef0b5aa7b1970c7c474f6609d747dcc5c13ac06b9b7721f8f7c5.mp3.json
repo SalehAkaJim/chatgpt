@@ -1,0 +1,41 @@
+{
+  "source_text_hash": "7dd63aacc0e19159089a209ed9cd0cff123edea3f6c13c207193130bf7f4d41d",
+  "voice_id": "6FXyooAOTqUK8m2HWm32",
+  "model": "eleven_multilingual_v2",
+  "settings": {
+    "stability": 0.72,
+    "similarity_boost": 0.88,
+    "style": 0.0,
+    "use_speaker_boost": true,
+    "speed": 0.92
+  },
+  "provider": "elevenlabs",
+  "audio_key": "eca1875f5c72ef0b5aa7b1970c7c474f6609d747dcc5c13ac06b9b7721f8f7c5",
+  "voice_key": "fr-fr.lexical.native-clear",
+  "voice_name": "Marine - Premium Conversational AI",
+  "voice_labels": {
+    "gender": "female",
+    "accent": "parisian",
+    "age": "young",
+    "category": "professional",
+    "language": "fr",
+    "use_case": "conversational",
+    "descriptive": "casual"
+  },
+  "output_format": "mp3_44100_192",
+  "file_sha256": "a9049b62127e8cc8455aaf7df132e67045d1b8396ae40831ff2e3d144aaac013",
+  "duration_ms": 966,
+  "generated_at": "2026-09-14T10:39:12.580155+00:00",
+  "entity_refs": [
+    {
+      "entity_type": "lexeme",
+      "entity_uuid": "ce1f4f43-a83f-5486-9b51-dbe9bddcaf13",
+      "entity_key": "lx_health_and_pharmacy_01"
+    },
+    {
+      "entity_type": "word_form",
+      "entity_uuid": "a9aaf168-c9be-5a8e-8fa1-939044d27d6d",
+      "entity_key": "wf_health_and_pharmacy_01"
+    }
+  ]
+}

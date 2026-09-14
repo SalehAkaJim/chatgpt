@@ -1,0 +1,36 @@
+{
+  "source_text_hash": "74cc66db994667918bb95716c1aef2a217d4ccb4395864f3331d5606b0922873",
+  "voice_id": "xO2Q4ARMEd4BI2sGDH9c",
+  "model": "eleven_multilingual_v2",
+  "settings": {
+    "stability": 0.71,
+    "similarity_boost": 0.9,
+    "style": 0.05,
+    "use_speaker_boost": true,
+    "speed": 0.96
+  },
+  "provider": "elevenlabs",
+  "audio_key": "e080325ba22066de85e8ab6c0a952319664b97d8fe46423770c3b5c6a6df95e7",
+  "voice_key": "character:julien:male_professional",
+  "voice_name": "Edouard - Confident and Polished",
+  "voice_labels": {
+    "gender": "male",
+    "accent": "standard",
+    "age": "young",
+    "category": "professional",
+    "language": "fr",
+    "use_case": "conversational",
+    "descriptive": "confident"
+  },
+  "output_format": "mp3_44100_192",
+  "file_sha256": "f176ca0c5bdc65500750ea063b84120ce8caa622211d50f1fb502c1fac43a1bc",
+  "duration_ms": 1280,
+  "generated_at": "2026-09-14T10:38:42.156412+00:00",
+  "entity_refs": [
+    {
+      "entity_type": "dialogue_turn",
+      "entity_uuid": "3126c797-d017-5f4c-b7b4-ad6acbe4ff95",
+      "entity_key": "d_health_and_pharmacy_01:2"
+    }
+  ]
+}

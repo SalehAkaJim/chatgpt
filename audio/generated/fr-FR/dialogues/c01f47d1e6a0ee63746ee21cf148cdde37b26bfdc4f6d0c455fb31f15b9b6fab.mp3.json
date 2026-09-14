@@ -1,0 +1,36 @@
+{
+  "source_text_hash": "2074feba6e2a7958867fb969afb06171862668da536a726ce8eab69d6eae083a",
+  "voice_id": "FRY6vOtGqwamgAf39SwP",
+  "model": "eleven_multilingual_v2",
+  "settings": {
+    "stability": 0.52,
+    "similarity_boost": 0.86,
+    "style": 0.2,
+    "use_speaker_boost": true,
+    "speed": 0.99
+  },
+  "provider": "elevenlabs",
+  "audio_key": "c01f47d1e6a0ee63746ee21cf148cdde37b26bfdc4f6d0c455fb31f15b9b6fab",
+  "voice_key": "character:hugo:male_bright",
+  "voice_name": "Yanis",
+  "voice_labels": {
+    "gender": "male",
+    "accent": "standard",
+    "age": "young",
+    "category": "professional",
+    "language": "fr",
+    "use_case": "conversational",
+    "descriptive": "casual"
+  },
+  "output_format": "mp3_44100_192",
+  "file_sha256": "7407744de23dfda0a206b1ee21e3e452c3c5ed0a887ea6e0b686aa512f2fcbde",
+  "duration_ms": 1567,
+  "generated_at": "2026-09-14T10:38:34.358294+00:00",
+  "entity_refs": [
+    {
+      "entity_type": "dialogue_turn",
+      "entity_uuid": "53bf396b-21c7-578b-bf1f-c060da886534",
+      "entity_key": "d_hotel_and_stay_01:4"
+    }
+  ]
+}

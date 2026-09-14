@@ -1,0 +1,36 @@
+{
+  "source_text_hash": "a359bf6a31bee584797132e8fb755f91cd5b1bbb50063ef1471f129333ec4e61",
+  "voice_id": "fBpCO0Kf0krKLYGOu65w",
+  "model": "eleven_multilingual_v2",
+  "settings": {
+    "stability": 0.52,
+    "similarity_boost": 0.86,
+    "style": 0.2,
+    "use_speaker_boost": true,
+    "speed": 0.99
+  },
+  "provider": "elevenlabs",
+  "audio_key": "3e585c41d56fb1c70faed1caeac66af0e8715c4d138baa1d13d8df069a96c2e2",
+  "voice_key": "character:léa:female_bright",
+  "voice_name": "Émilie - Customer service advisor",
+  "voice_labels": {
+    "gender": "female",
+    "accent": "standard",
+    "age": "young",
+    "category": "professional",
+    "language": "fr",
+    "use_case": "conversational",
+    "descriptive": "confident"
+  },
+  "output_format": "mp3_44100_192",
+  "file_sha256": "8e9b9a276c42eb770b5fe3c80cb804765a1ae638053ec08176bb6d10d8bb72c0",
+  "duration_ms": 1933,
+  "generated_at": "2026-09-14T10:38:12.271639+00:00",
+  "entity_refs": [
+    {
+      "entity_type": "dialogue_turn",
+      "entity_uuid": "4012456c-db00-5e45-b969-2fa2df1c4ddd",
+      "entity_key": "d_hotel_and_stay_02:3"
+    }
+  ]
+}

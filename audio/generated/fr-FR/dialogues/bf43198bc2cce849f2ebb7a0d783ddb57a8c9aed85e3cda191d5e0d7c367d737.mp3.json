@@ -1,0 +1,36 @@
+{
+  "source_text_hash": "57f62476f3a5b72595857e1c6f1ca5c57141454ef56f3614c72f91110898453c",
+  "voice_id": "lvQdCgwZfBuOzxyV5pxu",
+  "model": "eleven_multilingual_v2",
+  "settings": {
+    "stability": 0.58,
+    "similarity_boost": 0.87,
+    "style": 0.14,
+    "use_speaker_boost": true,
+    "speed": 0.97
+  },
+  "provider": "elevenlabs",
+  "audio_key": "bf43198bc2cce849f2ebb7a0d783ddb57a8c9aed85e3cda191d5e0d7c367d737",
+  "voice_key": "character:camille:female_warm",
+  "voice_name": "Audia - Customer Support",
+  "voice_labels": {
+    "gender": "female",
+    "accent": "parisian",
+    "age": "young",
+    "category": "professional",
+    "language": "fr",
+    "use_case": "conversational",
+    "descriptive": "casual"
+  },
+  "output_format": "mp3_44100_192",
+  "file_sha256": "17fa41be9c5b9fb5b96b6b9bb53f62cad7d9706e56eaebd6cc07fd8b171ee4e9",
+  "duration_ms": 2742,
+  "generated_at": "2026-09-14T10:38:33.687474+00:00",
+  "entity_refs": [
+    {
+      "entity_type": "dialogue_turn",
+      "entity_uuid": "5102dad2-06be-5f54-94bc-038fed794b42",
+      "entity_key": "d_hotel_and_stay_01:1"
+    }
+  ]
+}

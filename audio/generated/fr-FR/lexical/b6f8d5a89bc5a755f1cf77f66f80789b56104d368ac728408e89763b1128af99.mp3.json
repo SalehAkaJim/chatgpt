@@ -1,0 +1,41 @@
+{
+  "source_text_hash": "190ceac190149744b35b5068e77f23f90eb51bbcd64909e9a8efd96c7e4a7425",
+  "voice_id": "6FXyooAOTqUK8m2HWm32",
+  "model": "eleven_multilingual_v2",
+  "settings": {
+    "stability": 0.72,
+    "similarity_boost": 0.88,
+    "style": 0.0,
+    "use_speaker_boost": true,
+    "speed": 0.92
+  },
+  "provider": "elevenlabs",
+  "audio_key": "b6f8d5a89bc5a755f1cf77f66f80789b56104d368ac728408e89763b1128af99",
+  "voice_key": "fr-fr.lexical.native-clear",
+  "voice_name": "Marine - Premium Conversational AI",
+  "voice_labels": {
+    "gender": "female",
+    "accent": "parisian",
+    "age": "young",
+    "category": "professional",
+    "language": "fr",
+    "use_case": "conversational",
+    "descriptive": "casual"
+  },
+  "output_format": "mp3_44100_192",
+  "file_sha256": "e9588e5ee7fd08bfd680695ab009fb9bff1382a2e53bd83bff8d6f40e9f11e30",
+  "duration_ms": 1018,
+  "generated_at": "2026-09-14T10:39:06.372764+00:00",
+  "entity_refs": [
+    {
+      "entity_type": "lexeme",
+      "entity_uuid": "9a8c5d06-5051-5350-948d-58a3fa812cba",
+      "entity_key": "lx_food_and_quantities_01"
+    },
+    {
+      "entity_type": "word_form",
+      "entity_uuid": "fbba2205-d182-5428-8222-0399289ffea2",
+      "entity_key": "wf_food_and_quantities_01"
+    }
+  ]
+}

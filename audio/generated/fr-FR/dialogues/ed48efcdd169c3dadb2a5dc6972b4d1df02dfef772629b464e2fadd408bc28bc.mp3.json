@@ -1,0 +1,36 @@
+{
+  "source_text_hash": "4ab4fe37dec10137c2048ae1c3b2a697879e656bb9f1fb0dc32556543cb75097",
+  "voice_id": "yatuMX0k4Dh41R64sbGj",
+  "model": "eleven_multilingual_v2",
+  "settings": {
+    "stability": 0.71,
+    "similarity_boost": 0.9,
+    "style": 0.05,
+    "use_speaker_boost": true,
+    "speed": 0.96
+  },
+  "provider": "elevenlabs",
+  "audio_key": "ed48efcdd169c3dadb2a5dc6972b4d1df02dfef772629b464e2fadd408bc28bc",
+  "voice_key": "character:claire:female_professional",
+  "voice_name": "Cécile - Interactive Customer Support",
+  "voice_labels": {
+    "gender": "female",
+    "accent": "standard",
+    "age": "young",
+    "category": "professional",
+    "language": "fr",
+    "use_case": "conversational",
+    "descriptive": "pleasant"
+  },
+  "output_format": "mp3_44100_192",
+  "file_sha256": "94334ffdd4dbfc74abbc78a869f49981fdd6042777005301929aff48f497e90f",
+  "duration_ms": 2115,
+  "generated_at": "2026-09-14T10:38:45.556379+00:00",
+  "entity_refs": [
+    {
+      "entity_type": "dialogue_turn",
+      "entity_uuid": "7d9d02d8-bf41-5f56-87d3-00472693223e",
+      "entity_key": "d_health_and_pharmacy_02:3"
+    }
+  ]
+}

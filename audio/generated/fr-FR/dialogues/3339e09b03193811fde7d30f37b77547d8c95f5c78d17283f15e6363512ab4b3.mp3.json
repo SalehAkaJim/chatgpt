@@ -1,0 +1,36 @@
+{
+  "source_text_hash": "5a66b881978200e3923a3b5021df0d8a82657e39bffc9faac4b9d822b8869e50",
+  "voice_id": "mNu8EQcIlFZdOJs7yfhe",
+  "model": "eleven_multilingual_v2",
+  "settings": {
+    "stability": 0.68,
+    "similarity_boost": 0.89,
+    "style": 0.06,
+    "use_speaker_boost": true,
+    "speed": 0.95
+  },
+  "provider": "elevenlabs",
+  "audio_key": "3339e09b03193811fde7d30f37b77547d8c95f5c78d17283f15e6363512ab4b3",
+  "voice_key": "character:inès:female_calm",
+  "voice_name": "Julia - Warm French Narrator",
+  "voice_labels": {
+    "gender": "female",
+    "accent": "parisian",
+    "age": "young",
+    "category": "professional",
+    "language": "fr",
+    "use_case": "narrative_story",
+    "descriptive": "calm"
+  },
+  "output_format": "mp3_44100_192",
+  "file_sha256": "97b20bf8731b6a6fd2de9e0de68efc67a9e2a3b01bc4eac432082eb5f0b2451b",
+  "duration_ms": 1697,
+  "generated_at": "2026-09-14T10:38:11.254908+00:00",
+  "entity_refs": [
+    {
+      "entity_type": "dialogue_turn",
+      "entity_uuid": "fb62e9ce-aa20-5032-97d4-76ed5dfb7eec",
+      "entity_key": "d_plans_and_invitations_01:1"
+    }
+  ]
+}

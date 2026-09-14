@@ -1,0 +1,41 @@
+{
+  "source_text_hash": "d1b42043db1b5e4a0343152823340b0271daf721f014b4413046986c790de61e",
+  "voice_id": "6FXyooAOTqUK8m2HWm32",
+  "model": "eleven_multilingual_v2",
+  "settings": {
+    "stability": 0.72,
+    "similarity_boost": 0.88,
+    "style": 0.0,
+    "use_speaker_boost": true,
+    "speed": 0.92
+  },
+  "provider": "elevenlabs",
+  "audio_key": "f4c0a96b1459af3148dafa844caad95af0198d34908c88eb99bd8988e5695441",
+  "voice_key": "fr-fr.lexical.native-clear",
+  "voice_name": "Marine - Premium Conversational AI",
+  "voice_labels": {
+    "gender": "female",
+    "accent": "parisian",
+    "age": "young",
+    "category": "professional",
+    "language": "fr",
+    "use_case": "conversational",
+    "descriptive": "casual"
+  },
+  "output_format": "mp3_44100_192",
+  "file_sha256": "555c3b7294047c68ca891725e3f96324b7ca461c143e72d43d6bcfc2558eddd4",
+  "duration_ms": 1071,
+  "generated_at": "2026-09-14T10:39:13.008591+00:00",
+  "entity_refs": [
+    {
+      "entity_type": "lexeme",
+      "entity_uuid": "bbe6141e-01d9-533b-9278-3ee8ffb72b04",
+      "entity_key": "lx_hotel_and_stay_03"
+    },
+    {
+      "entity_type": "word_form",
+      "entity_uuid": "903741bc-28ac-5f51-a27e-5b78c55bb652",
+      "entity_key": "wf_hotel_and_stay_03"
+    }
+  ]
+}

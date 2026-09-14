@@ -1,0 +1,36 @@
+{
+  "source_text_hash": "19721b7472b62f2b1c8b7521c18f52d82ee9f474dcfc7e55bbbaf4baa91c91ba",
+  "voice_id": "FRY6vOtGqwamgAf39SwP",
+  "model": "eleven_multilingual_v2",
+  "settings": {
+    "stability": 0.52,
+    "similarity_boost": 0.86,
+    "style": 0.2,
+    "use_speaker_boost": true,
+    "speed": 0.99
+  },
+  "provider": "elevenlabs",
+  "audio_key": "aa5e42d0c0ce3fd150f6311846864a597416892e75b1b8da379e840846210471",
+  "voice_key": "character:hugo:male_bright",
+  "voice_name": "Yanis",
+  "voice_labels": {
+    "gender": "male",
+    "accent": "standard",
+    "age": "young",
+    "category": "professional",
+    "language": "fr",
+    "use_case": "conversational",
+    "descriptive": "casual"
+  },
+  "output_format": "mp3_44100_192",
+  "file_sha256": "fef95d8fb50c3520674e688f9b3a0f0d00c68cdbe775137eb8a883b1d7639c35",
+  "duration_ms": 1332,
+  "generated_at": "2026-09-14T10:38:29.381071+00:00",
+  "entity_refs": [
+    {
+      "entity_type": "dialogue_turn",
+      "entity_uuid": "e453ca20-c257-5b09-8aa1-ee436426f89f",
+      "entity_key": "d_food_and_quantities_02:3"
+    }
+  ]
+}

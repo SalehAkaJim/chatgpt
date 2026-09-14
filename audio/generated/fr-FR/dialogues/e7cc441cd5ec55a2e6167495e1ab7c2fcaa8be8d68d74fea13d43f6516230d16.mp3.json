@@ -1,0 +1,36 @@
+{
+  "source_text_hash": "6bece023ebef7f499b40c0fdf673ee1b9af40ff3cf171c513935fc81347f95ac",
+  "voice_id": "lvQdCgwZfBuOzxyV5pxu",
+  "model": "eleven_multilingual_v2",
+  "settings": {
+    "stability": 0.58,
+    "similarity_boost": 0.87,
+    "style": 0.14,
+    "use_speaker_boost": true,
+    "speed": 0.97
+  },
+  "provider": "elevenlabs",
+  "audio_key": "e7cc441cd5ec55a2e6167495e1ab7c2fcaa8be8d68d74fea13d43f6516230d16",
+  "voice_key": "character:camille:female_warm",
+  "voice_name": "Audia - Customer Support",
+  "voice_labels": {
+    "gender": "female",
+    "accent": "parisian",
+    "age": "young",
+    "category": "professional",
+    "language": "fr",
+    "use_case": "conversational",
+    "descriptive": "casual"
+  },
+  "output_format": "mp3_44100_192",
+  "file_sha256": "b216dc0304475d375f89996e864d9ae6925205d2f21d3ebc2165287be94f9b04",
+  "duration_ms": 1515,
+  "generated_at": "2026-09-14T10:38:44.496518+00:00",
+  "entity_refs": [
+    {
+      "entity_type": "dialogue_turn",
+      "entity_uuid": "b1812fec-9292-5f67-ad3b-b35204dc0973",
+      "entity_key": "d_clothes_and_comparisons_02:4"
+    }
+  ]
+}

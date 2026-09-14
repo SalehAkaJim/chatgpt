@@ -1,0 +1,36 @@
+{
+  "source_text_hash": "958b2b04b5f8b6d4b995f1d359ae0410bdc28b8d844204e799ab924b62fa4a2e",
+  "voice_id": "1WQXvbtj0rUYuB5yhY3N",
+  "model": "eleven_multilingual_v2",
+  "settings": {
+    "stability": 0.58,
+    "similarity_boost": 0.87,
+    "style": 0.14,
+    "use_speaker_boost": true,
+    "speed": 0.97
+  },
+  "provider": "elevenlabs",
+  "audio_key": "791bb43778bbaf46f3de3ed88d104a9598df64b8e635994f324e366f5a7e46c8",
+  "voice_key": "character:thomas:male_warm",
+  "voice_name": "Skel - Calm and Professional",
+  "voice_labels": {
+    "gender": "male",
+    "accent": "standard",
+    "age": "middle_aged",
+    "category": "professional",
+    "language": "fr",
+    "use_case": "conversational",
+    "descriptive": "calm"
+  },
+  "output_format": "mp3_44100_192",
+  "file_sha256": "a378435b81c64c6538e9e36ca59dbe770ab57180604fdc86c854b0d2628e86ff",
+  "duration_ms": 1906,
+  "generated_at": "2026-09-14T10:38:19.966327+00:00",
+  "entity_refs": [
+    {
+      "entity_type": "dialogue_turn",
+      "entity_uuid": "a19b5199-e165-516d-b65f-8104f7cb6c39",
+      "entity_key": "d_health_and_pharmacy_02:2"
+    }
+  ]
+}

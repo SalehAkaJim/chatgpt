@@ -1,0 +1,36 @@
+{
+  "source_text_hash": "ae4c38966c8fec95197d2686bd7eb3cca588f2b723fc59e732b62a49af3e9fb7",
+  "voice_id": "yatuMX0k4Dh41R64sbGj",
+  "model": "eleven_multilingual_v2",
+  "settings": {
+    "stability": 0.71,
+    "similarity_boost": 0.9,
+    "style": 0.05,
+    "use_speaker_boost": true,
+    "speed": 0.96
+  },
+  "provider": "elevenlabs",
+  "audio_key": "a06d65858f09f54444eff9e8d4e91a92d164f836808567409087e186c41d8e83",
+  "voice_key": "character:claire:female_professional",
+  "voice_name": "Cécile - Interactive Customer Support",
+  "voice_labels": {
+    "gender": "female",
+    "accent": "standard",
+    "age": "young",
+    "category": "professional",
+    "language": "fr",
+    "use_case": "conversational",
+    "descriptive": "pleasant"
+  },
+  "output_format": "mp3_44100_192",
+  "file_sha256": "e278ea114ef73324d0fd53d7cb0e4ccb84fa24574b728ec0365489cf5cd52a06",
+  "duration_ms": 2272,
+  "generated_at": "2026-09-14T10:38:27.301731+00:00",
+  "entity_refs": [
+    {
+      "entity_type": "dialogue_turn",
+      "entity_uuid": "d60a45b5-8846-5935-83fc-4a223ccec24b",
+      "entity_key": "d_clothes_and_comparisons_01:2"
+    }
+  ]
+}
