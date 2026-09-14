@@ -1,6 +1,6 @@
 -- Generated audio link import for de-DE Pre-A1
 -- Source manifest: audio/manifests/de/Pre-A1.json
--- Generated rows: 280
+-- Generated rows: 320
 -- Storage mode: relative_path
 -- storage_url is intentionally portable; prepend your server/CDN base URL at runtime.
 -- Run AFTER the matching level content import.
@@ -114,6 +114,32 @@ INSERT INTO audio_assets (
   status = VALUES(status),
   metadata = VALUES(metadata);
 
+-- d_de_meaning_help:3 -> audio/generated/de-DE/dialogues/09725f3f67fbfc96f58d7024a8a38713441b01600c57801bb1f5cf7944629c0c.mp3
+UPDATE audio_assets
+SET status = 'archived'
+WHERE entity_type = 'dialogue_turn'
+  AND entity_id = UUID_TO_BIN('ca1b495e-5808-53bf-bd26-159708386f7e', 1)
+  AND voice_key = 'character:sofia:female_professional'
+  AND (entity_type NOT IN ('grammar_point','exercise') OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'd_de_meaning_help:3')
+  AND source_text_hash IS NOT NULL
+  AND source_text_hash <> '9eb4b98155d108972c42a9f46cc4d42142a69ab49d4cb18d9fece9c398db28d2'
+  AND status <> 'archived';
+INSERT INTO audio_assets (
+  id, language_id, language_variant_id, entity_type, entity_id, source_text_hash,
+  voice_key, provider, provider_model, storage_url, duration_ms, generated_at, checksum, status, metadata
+) VALUES (
+  UUID_TO_BIN('b8c3c668-998f-55a9-b499-30ed8979c3eb', 1), @audio_language_id, @audio_variant_id, 'dialogue_turn', UUID_TO_BIN('ca1b495e-5808-53bf-bd26-159708386f7e', 1), '9eb4b98155d108972c42a9f46cc4d42142a69ab49d4cb18d9fece9c398db28d2',
+  'character:sofia:female_professional', 'elevenlabs', 'eleven_multilingual_v2', 'audio/generated/de-DE/dialogues/09725f3f67fbfc96f58d7024a8a38713441b01600c57801bb1f5cf7944629c0c.mp3', 914, '2026-09-14 11:56:50.493821', 'dfd022f9299f7b5bc3a81d01dca99dee05d74c4ef5246df887058886fc491907', 'validated', '{"audio_key":"09725f3f67fbfc96f58d7024a8a38713441b01600c57801bb1f5cf7944629c0c","entity_key":"d_de_meaning_help:3","voice_id":"MTTjXkEpZepLTqO0xH0f","voice_name":"Marlena Lark – Warm German Narrator","voice_labels":{"gender":"female","accent":"standard","age":"middle_aged","category":"professional","language":"de","use_case":"conversational","descriptive":"professional"},"output_format":"mp3_44100_192","file_sha256":"dfd022f9299f7b5bc3a81d01dca99dee05d74c4ef5246df887058886fc491907","settings":{"stability":0.71,"similarity_boost":0.9,"style":0.05,"use_speaker_boost":true,"speed":0.96},"relative_path":"audio/generated/de-DE/dialogues/09725f3f67fbfc96f58d7024a8a38713441b01600c57801bb1f5cf7944629c0c.mp3"}'
+) ON DUPLICATE KEY UPDATE
+  provider = VALUES(provider),
+  provider_model = VALUES(provider_model),
+  storage_url = VALUES(storage_url),
+  duration_ms = VALUES(duration_ms),
+  generated_at = VALUES(generated_at),
+  checksum = VALUES(checksum),
+  status = VALUES(status),
+  metadata = VALUES(metadata);
+
 -- d_alphabet_01:3 -> audio/generated/de-DE/dialogues/09b27f88f0be7c4c9b05ff8dd13e936a0e0741101e3988d346a07a73d9441506.mp3
 UPDATE audio_assets
 SET status = 'archived'
@@ -140,6 +166,32 @@ INSERT INTO audio_assets (
   status = VALUES(status),
   metadata = VALUES(metadata);
 
+-- d_de_ready_intro:2 -> audio/generated/de-DE/dialogues/0b466e64a2741e2fb705f859b4856a2fe76df879a7e786ec971b9f4a1af161b8.mp3
+UPDATE audio_assets
+SET status = 'archived'
+WHERE entity_type = 'dialogue_turn'
+  AND entity_id = UUID_TO_BIN('eaef9fb3-6269-5ebc-98c6-02940e9d204d', 1)
+  AND voice_key = 'character:jonas:male_bright'
+  AND (entity_type NOT IN ('grammar_point','exercise') OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'd_de_ready_intro:2')
+  AND source_text_hash IS NOT NULL
+  AND source_text_hash <> '073435d05fbcd32e30531fcc0553e6906945d4dcd7089ad7222244efbc84fb91'
+  AND status <> 'archived';
+INSERT INTO audio_assets (
+  id, language_id, language_variant_id, entity_type, entity_id, source_text_hash,
+  voice_key, provider, provider_model, storage_url, duration_ms, generated_at, checksum, status, metadata
+) VALUES (
+  UUID_TO_BIN('21b573bc-9d01-5e2c-b50a-6d2048afd81b', 1), @audio_language_id, @audio_variant_id, 'dialogue_turn', UUID_TO_BIN('eaef9fb3-6269-5ebc-98c6-02940e9d204d', 1), '073435d05fbcd32e30531fcc0553e6906945d4dcd7089ad7222244efbc84fb91',
+  'character:jonas:male_bright', 'elevenlabs', 'eleven_multilingual_v2', 'audio/generated/de-DE/dialogues/0b466e64a2741e2fb705f859b4856a2fe76df879a7e786ec971b9f4a1af161b8.mp3', 1018, '2026-09-14 11:56:50.474038', '9c51e28caa2770c2a0cf61de14321c7382da4ff071192876244e203d74e436f3', 'validated', '{"audio_key":"0b466e64a2741e2fb705f859b4856a2fe76df879a7e786ec971b9f4a1af161b8","entity_key":"d_de_ready_intro:2","voice_id":"K5ZVtkkBnuPY6YqXs70E","voice_name":"Simon - Relatable and Normal","voice_labels":{"gender":"male","accent":"standard","age":"young","category":"high_quality","language":"de","use_case":"conversational","descriptive":"chill"},"output_format":"mp3_44100_192","file_sha256":"9c51e28caa2770c2a0cf61de14321c7382da4ff071192876244e203d74e436f3","settings":{"stability":0.52,"similarity_boost":0.86,"style":0.2,"use_speaker_boost":true,"speed":0.99},"relative_path":"audio/generated/de-DE/dialogues/0b466e64a2741e2fb705f859b4856a2fe76df879a7e786ec971b9f4a1af161b8.mp3"}'
+) ON DUPLICATE KEY UPDATE
+  provider = VALUES(provider),
+  provider_model = VALUES(provider_model),
+  storage_url = VALUES(storage_url),
+  duration_ms = VALUES(duration_ms),
+  generated_at = VALUES(generated_at),
+  checksum = VALUES(checksum),
+  status = VALUES(status),
+  metadata = VALUES(metadata);
+
 -- d_letter_names_02:3 -> audio/generated/de-DE/dialogues/0e71191d0c036e6d3ad475566dce08bdeb92c732acea0cbd58a32bb8e332cd2b.mp3
 UPDATE audio_assets
 SET status = 'archived'
@@ -156,6 +208,32 @@ INSERT INTO audio_assets (
 ) VALUES (
   UUID_TO_BIN('15f6b0ac-691d-5fe7-9df5-3eba1c7ef2d4', 1), @audio_language_id, @audio_variant_id, 'dialogue_turn', UUID_TO_BIN('842c82a6-1567-5261-8ffe-70d0e52174f7', 1), 'abfdf0a404dc52c9265cbee35f96299f70936d08c158d04a5a1280a23a7d3eba',
   'character:sofia:female_professional', 'elevenlabs', 'eleven_multilingual_v2', 'audio/generated/de-DE/dialogues/0e71191d0c036e6d3ad475566dce08bdeb92c732acea0cbd58a32bb8e332cd2b.mp3', 862, '2026-09-13 04:03:52.954542', '550e24b9f496b485c929a62bdb6b6e8846afef3d5412d9d9d1a7dc1b25f6ba0d', 'validated', '{"audio_key":"0e71191d0c036e6d3ad475566dce08bdeb92c732acea0cbd58a32bb8e332cd2b","entity_key":"d_letter_names_02:3","voice_id":"MTTjXkEpZepLTqO0xH0f","voice_name":"Marlena Lark – Warm German Narrator","voice_labels":{"gender":"female","accent":"standard","age":"middle_aged","category":"professional","language":"de","use_case":"conversational","descriptive":"professional"},"output_format":"mp3_44100_192","file_sha256":"550e24b9f496b485c929a62bdb6b6e8846afef3d5412d9d9d1a7dc1b25f6ba0d","settings":{"stability":0.71,"similarity_boost":0.9,"style":0.05,"use_speaker_boost":true,"speed":0.96},"relative_path":"audio/generated/de-DE/dialogues/0e71191d0c036e6d3ad475566dce08bdeb92c732acea0cbd58a32bb8e332cd2b.mp3"}'
+) ON DUPLICATE KEY UPDATE
+  provider = VALUES(provider),
+  provider_model = VALUES(provider_model),
+  storage_url = VALUES(storage_url),
+  duration_ms = VALUES(duration_ms),
+  generated_at = VALUES(generated_at),
+  checksum = VALUES(checksum),
+  status = VALUES(status),
+  metadata = VALUES(metadata);
+
+-- d_de_ready_repair:3 -> audio/generated/de-DE/dialogues/10b3d27ddf3264a44cdbdddc082b8c65f678167ac26426328b23bad187f9d24e.mp3
+UPDATE audio_assets
+SET status = 'archived'
+WHERE entity_type = 'dialogue_turn'
+  AND entity_id = UUID_TO_BIN('45b2d6cb-09f6-5027-aecf-5b33e5c4dc34', 1)
+  AND voice_key = 'character:lea:female_calm'
+  AND (entity_type NOT IN ('grammar_point','exercise') OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'd_de_ready_repair:3')
+  AND source_text_hash IS NOT NULL
+  AND source_text_hash <> '1ba884afe1d5a52d19bc85ec00409ea772dd791b23efe0ecd174916b50682931'
+  AND status <> 'archived';
+INSERT INTO audio_assets (
+  id, language_id, language_variant_id, entity_type, entity_id, source_text_hash,
+  voice_key, provider, provider_model, storage_url, duration_ms, generated_at, checksum, status, metadata
+) VALUES (
+  UUID_TO_BIN('8fbd4349-2be9-5ca0-85ff-17989f000469', 1), @audio_language_id, @audio_variant_id, 'dialogue_turn', UUID_TO_BIN('45b2d6cb-09f6-5027-aecf-5b33e5c4dc34', 1), '1ba884afe1d5a52d19bc85ec00409ea772dd791b23efe0ecd174916b50682931',
+  'character:lea:female_calm', 'elevenlabs', 'eleven_multilingual_v2', 'audio/generated/de-DE/dialogues/10b3d27ddf3264a44cdbdddc082b8c65f678167ac26426328b23bad187f9d24e.mp3', 1097, '2026-09-14 11:56:51.495352', '063d44b48c110a7b400e0b1e38a61803c5088e98df55993bd023c72cfaea6474', 'validated', '{"audio_key":"10b3d27ddf3264a44cdbdddc082b8c65f678167ac26426328b23bad187f9d24e","entity_key":"d_de_ready_repair:3","voice_id":"SJJe86Va82zRzg6zi2dX","voice_name":"Ela - Empathetic & Warm","voice_labels":{"gender":"female","accent":"standard","age":"young","category":"high_quality","language":"de","use_case":"conversational","descriptive":"pleasant"},"output_format":"mp3_44100_192","file_sha256":"063d44b48c110a7b400e0b1e38a61803c5088e98df55993bd023c72cfaea6474","settings":{"stability":0.68,"similarity_boost":0.89,"style":0.06,"use_speaker_boost":true,"speed":0.95},"relative_path":"audio/generated/de-DE/dialogues/10b3d27ddf3264a44cdbdddc082b8c65f678167ac26426328b23bad187f9d24e.mp3"}'
 ) ON DUPLICATE KEY UPDATE
   provider = VALUES(provider),
   provider_model = VALUES(provider_model),
@@ -260,6 +338,32 @@ INSERT INTO audio_assets (
 ) VALUES (
   UUID_TO_BIN('0cdb3524-5012-58fc-9bdc-8fc64fb3335d', 1), @audio_language_id, @audio_variant_id, 'dialogue_turn', UUID_TO_BIN('8db4bc53-d642-5398-8c58-c44fbec31301', 1), '7837135726b93ef1fa1743a98810fee6ebe214c5abafe05727b1880ce77eb7cb',
   'character:noah:male_professional', 'elevenlabs', 'eleven_multilingual_v2', 'audio/generated/de-DE/dialogues/1b76394bae2ee41293523d99ba98c58670613f8d623811a7bf04b5dd0b24f01d.mp3', 835, '2026-09-13 04:03:56.854396', 'd83d61bef1278de5d7fb6091e1eedbb5438e7550ddda8d1e1e53d9f9826db826', 'validated', '{"audio_key":"1b76394bae2ee41293523d99ba98c58670613f8d623811a7bf04b5dd0b24f01d","entity_key":"d_letter_names_01:2","voice_id":"MbbPUteESkJWr4IAaW35","voice_name":"Felix - Direct and Clear","voice_labels":{"gender":"male","accent":"standard","age":"middle_aged","category":"high_quality","language":"de","use_case":"conversational","descriptive":"professional"},"output_format":"mp3_44100_192","file_sha256":"d83d61bef1278de5d7fb6091e1eedbb5438e7550ddda8d1e1e53d9f9826db826","settings":{"stability":0.71,"similarity_boost":0.9,"style":0.05,"use_speaker_boost":true,"speed":0.96},"relative_path":"audio/generated/de-DE/dialogues/1b76394bae2ee41293523d99ba98c58670613f8d623811a7bf04b5dd0b24f01d.mp3"}'
+) ON DUPLICATE KEY UPDATE
+  provider = VALUES(provider),
+  provider_model = VALUES(provider_model),
+  storage_url = VALUES(storage_url),
+  duration_ms = VALUES(duration_ms),
+  generated_at = VALUES(generated_at),
+  checksum = VALUES(checksum),
+  status = VALUES(status),
+  metadata = VALUES(metadata);
+
+-- d_de_ready_intro:3 -> audio/generated/de-DE/dialogues/1e0ebb6c588ae3c6fa7ae119f7dfc9796841937c00ae9330093c602e2f351a7e.mp3
+UPDATE audio_assets
+SET status = 'archived'
+WHERE entity_type = 'dialogue_turn'
+  AND entity_id = UUID_TO_BIN('6e115874-015e-5b80-8528-71d2753e2209', 1)
+  AND voice_key = 'character:mia:female_bright'
+  AND (entity_type NOT IN ('grammar_point','exercise') OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'd_de_ready_intro:3')
+  AND source_text_hash IS NOT NULL
+  AND source_text_hash <> '2753e4860651be83bea82179f42ddb29947635c5ea61b047a06924f8c758f042'
+  AND status <> 'archived';
+INSERT INTO audio_assets (
+  id, language_id, language_variant_id, entity_type, entity_id, source_text_hash,
+  voice_key, provider, provider_model, storage_url, duration_ms, generated_at, checksum, status, metadata
+) VALUES (
+  UUID_TO_BIN('42caa523-b61a-53f6-adc8-d6f1b563aeb3', 1), @audio_language_id, @audio_variant_id, 'dialogue_turn', UUID_TO_BIN('6e115874-015e-5b80-8528-71d2753e2209', 1), '2753e4860651be83bea82179f42ddb29947635c5ea61b047a06924f8c758f042',
+  'character:mia:female_bright', 'elevenlabs', 'eleven_multilingual_v2', 'audio/generated/de-DE/dialogues/1e0ebb6c588ae3c6fa7ae119f7dfc9796841937c00ae9330093c602e2f351a7e.mp3', 1201, '2026-09-14 11:56:51.478665', '1d0f6efa078c85e0df61c992b6511da3a3db1481bf48d3bab82aebde8997e292', 'validated', '{"audio_key":"1e0ebb6c588ae3c6fa7ae119f7dfc9796841937c00ae9330093c602e2f351a7e","entity_key":"d_de_ready_intro:3","voice_id":"NE7AIW5DoJ7lUosXV2KR","voice_name":"Ela - Cheerful and Happy","voice_labels":{"gender":"female","accent":"standard","age":"young","category":"high_quality","language":"de","use_case":"conversational","descriptive":"casual"},"output_format":"mp3_44100_192","file_sha256":"1d0f6efa078c85e0df61c992b6511da3a3db1481bf48d3bab82aebde8997e292","settings":{"stability":0.52,"similarity_boost":0.86,"style":0.2,"use_speaker_boost":true,"speed":0.99},"relative_path":"audio/generated/de-DE/dialogues/1e0ebb6c588ae3c6fa7ae119f7dfc9796841937c00ae9330093c602e2f351a7e.mp3"}'
 ) ON DUPLICATE KEY UPDATE
   provider = VALUES(provider),
   provider_model = VALUES(provider_model),
@@ -660,6 +764,32 @@ INSERT INTO audio_assets (
   status = VALUES(status),
   metadata = VALUES(metadata);
 
+-- d_de_ready_repair:1 -> audio/generated/de-DE/dialogues/44b1f96deddd8c7452df19c7a20dcfe175cb346abad695db07d84fb0863f75e0.mp3
+UPDATE audio_assets
+SET status = 'archived'
+WHERE entity_type = 'dialogue_turn'
+  AND entity_id = UUID_TO_BIN('1833538e-6bb2-5756-b2bc-1afd51256adb', 1)
+  AND voice_key = 'character:lea:female_calm'
+  AND (entity_type NOT IN ('grammar_point','exercise') OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'd_de_ready_repair:1')
+  AND source_text_hash IS NOT NULL
+  AND source_text_hash <> 'c97675919c5415fb4c7f4eb1aaaffe4beca754987f6ed65ea7425727718b841e'
+  AND status <> 'archived';
+INSERT INTO audio_assets (
+  id, language_id, language_variant_id, entity_type, entity_id, source_text_hash,
+  voice_key, provider, provider_model, storage_url, duration_ms, generated_at, checksum, status, metadata
+) VALUES (
+  UUID_TO_BIN('4c009b7e-9dac-5e70-b527-cee12aab28e3', 1), @audio_language_id, @audio_variant_id, 'dialogue_turn', UUID_TO_BIN('1833538e-6bb2-5756-b2bc-1afd51256adb', 1), 'c97675919c5415fb4c7f4eb1aaaffe4beca754987f6ed65ea7425727718b841e',
+  'character:lea:female_calm', 'elevenlabs', 'eleven_multilingual_v2', 'audio/generated/de-DE/dialogues/44b1f96deddd8c7452df19c7a20dcfe175cb346abad695db07d84fb0863f75e0.mp3', 1515, '2026-09-14 11:56:52.486952', '92a033bf1586f2652c78bc6108f54369d723d2e37f13dedb4ace8d4df1935bda', 'validated', '{"audio_key":"44b1f96deddd8c7452df19c7a20dcfe175cb346abad695db07d84fb0863f75e0","entity_key":"d_de_ready_repair:1","voice_id":"SJJe86Va82zRzg6zi2dX","voice_name":"Ela - Empathetic & Warm","voice_labels":{"gender":"female","accent":"standard","age":"young","category":"high_quality","language":"de","use_case":"conversational","descriptive":"pleasant"},"output_format":"mp3_44100_192","file_sha256":"92a033bf1586f2652c78bc6108f54369d723d2e37f13dedb4ace8d4df1935bda","settings":{"stability":0.68,"similarity_boost":0.89,"style":0.06,"use_speaker_boost":true,"speed":0.95},"relative_path":"audio/generated/de-DE/dialogues/44b1f96deddd8c7452df19c7a20dcfe175cb346abad695db07d84fb0863f75e0.mp3"}'
+) ON DUPLICATE KEY UPDATE
+  provider = VALUES(provider),
+  provider_model = VALUES(provider_model),
+  storage_url = VALUES(storage_url),
+  duration_ms = VALUES(duration_ms),
+  generated_at = VALUES(generated_at),
+  checksum = VALUES(checksum),
+  status = VALUES(status),
+  metadata = VALUES(metadata);
+
 -- d_first_conversation_01:1 -> audio/generated/de-DE/dialogues/4cebb9cbf09d58f24b48faaf3fa9122c8ca8171ccab6f85deaa3f8b8ee278c22.mp3
 UPDATE audio_assets
 SET status = 'archived'
@@ -920,6 +1050,32 @@ INSERT INTO audio_assets (
   status = VALUES(status),
   metadata = VALUES(metadata);
 
+-- d_de_meaning_help:2 -> audio/generated/de-DE/dialogues/6515f5288cd73d6ec051081c65ef0063d40ea07b92dc82d1f9b9d435e20952bf.mp3
+UPDATE audio_assets
+SET status = 'archived'
+WHERE entity_type = 'dialogue_turn'
+  AND entity_id = UUID_TO_BIN('7b12a72b-5738-528b-9e92-ce8987ef07a4', 1)
+  AND voice_key = 'character:noah:male_professional'
+  AND (entity_type NOT IN ('grammar_point','exercise') OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'd_de_meaning_help:2')
+  AND source_text_hash IS NOT NULL
+  AND source_text_hash <> '073435d05fbcd32e30531fcc0553e6906945d4dcd7089ad7222244efbc84fb91'
+  AND status <> 'archived';
+INSERT INTO audio_assets (
+  id, language_id, language_variant_id, entity_type, entity_id, source_text_hash,
+  voice_key, provider, provider_model, storage_url, duration_ms, generated_at, checksum, status, metadata
+) VALUES (
+  UUID_TO_BIN('e705aa84-bce7-5adb-8c2d-a56ffc06cea1', 1), @audio_language_id, @audio_variant_id, 'dialogue_turn', UUID_TO_BIN('7b12a72b-5738-528b-9e92-ce8987ef07a4', 1), '073435d05fbcd32e30531fcc0553e6906945d4dcd7089ad7222244efbc84fb91',
+  'character:noah:male_professional', 'elevenlabs', 'eleven_multilingual_v2', 'audio/generated/de-DE/dialogues/6515f5288cd73d6ec051081c65ef0063d40ea07b92dc82d1f9b9d435e20952bf.mp3', 914, '2026-09-14 11:56:52.598647', 'dc1b741df2384a6075b591689e24420d41abde99a830ae3c53bce26e68c5b146', 'validated', '{"audio_key":"6515f5288cd73d6ec051081c65ef0063d40ea07b92dc82d1f9b9d435e20952bf","entity_key":"d_de_meaning_help:2","voice_id":"MbbPUteESkJWr4IAaW35","voice_name":"Felix - Direct and Clear","voice_labels":{"gender":"male","accent":"standard","age":"middle_aged","category":"high_quality","language":"de","use_case":"conversational","descriptive":"professional"},"output_format":"mp3_44100_192","file_sha256":"dc1b741df2384a6075b591689e24420d41abde99a830ae3c53bce26e68c5b146","settings":{"stability":0.71,"similarity_boost":0.9,"style":0.05,"use_speaker_boost":true,"speed":0.96},"relative_path":"audio/generated/de-DE/dialogues/6515f5288cd73d6ec051081c65ef0063d40ea07b92dc82d1f9b9d435e20952bf.mp3"}'
+) ON DUPLICATE KEY UPDATE
+  provider = VALUES(provider),
+  provider_model = VALUES(provider_model),
+  storage_url = VALUES(storage_url),
+  duration_ms = VALUES(duration_ms),
+  generated_at = VALUES(generated_at),
+  checksum = VALUES(checksum),
+  status = VALUES(status),
+  metadata = VALUES(metadata);
+
 -- d_survival_words_02:4 -> audio/generated/de-DE/dialogues/6744fc1555eb2c2b52d62cb27d4576226a52d8249e6630dc3b6db8a837a8dba2.mp3
 UPDATE audio_assets
 SET status = 'archived'
@@ -962,6 +1118,32 @@ INSERT INTO audio_assets (
 ) VALUES (
   UUID_TO_BIN('74cbdcdb-f0fa-58d5-a5a1-bbdd685be10b', 1), @audio_language_id, @audio_variant_id, 'dialogue_turn', UUID_TO_BIN('2f6aebc5-183f-5b27-adb6-12b55297b67c', 1), 'd8fcfdbdd51c12e43bfe500e065983dfb4e7ad7e49c204b94cc00eecf83418e8',
   'character:lukas:male_warm', 'elevenlabs', 'eleven_multilingual_v2', 'audio/generated/de-DE/dialogues/69bc4d738923ed709d1528c604a542c1519379308598a8683803d72b1d1f5bbc.mp3', 1149, '2026-09-13 04:04:31.697826', '2d1b022334dad1b6290f3ac91c53a58b37ddb86f7f7be08dc5313705cede9836', 'validated', '{"audio_key":"69bc4d738923ed709d1528c604a542c1519379308598a8683803d72b1d1f5bbc","entity_key":"d_first_greetings_01:4","voice_id":"fmj9wTxZg3ta4xR75kgB","voice_name":"Peter Stern – Friendly Agent","voice_labels":{"gender":"male","accent":"standard","age":"middle_aged","category":"high_quality","language":"de","use_case":"conversational","descriptive":"pleasant"},"output_format":"mp3_44100_192","file_sha256":"2d1b022334dad1b6290f3ac91c53a58b37ddb86f7f7be08dc5313705cede9836","settings":{"stability":0.58,"similarity_boost":0.87,"style":0.14,"use_speaker_boost":true,"speed":0.97},"relative_path":"audio/generated/de-DE/dialogues/69bc4d738923ed709d1528c604a542c1519379308598a8683803d72b1d1f5bbc.mp3"}'
+) ON DUPLICATE KEY UPDATE
+  provider = VALUES(provider),
+  provider_model = VALUES(provider_model),
+  storage_url = VALUES(storage_url),
+  duration_ms = VALUES(duration_ms),
+  generated_at = VALUES(generated_at),
+  checksum = VALUES(checksum),
+  status = VALUES(status),
+  metadata = VALUES(metadata);
+
+-- d_de_ready_repair:2 -> audio/generated/de-DE/dialogues/6f4a8fa561abaedec9b0e98e7e0cf8cb63c43c98c226521e34de81e10ccc2d2c.mp3
+UPDATE audio_assets
+SET status = 'archived'
+WHERE entity_type = 'dialogue_turn'
+  AND entity_id = UUID_TO_BIN('8fd375c2-9f84-573d-beee-51350e6061a4', 1)
+  AND voice_key = 'character:emil:male_calm'
+  AND (entity_type NOT IN ('grammar_point','exercise') OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'd_de_ready_repair:2')
+  AND source_text_hash IS NOT NULL
+  AND source_text_hash <> '00ce4057749e17d331310c133d47ace93b17e7e8d529d65bda60d44d1617ede0'
+  AND status <> 'archived';
+INSERT INTO audio_assets (
+  id, language_id, language_variant_id, entity_type, entity_id, source_text_hash,
+  voice_key, provider, provider_model, storage_url, duration_ms, generated_at, checksum, status, metadata
+) VALUES (
+  UUID_TO_BIN('31ff8153-5270-538a-ac8b-58a92f3c1e93', 1), @audio_language_id, @audio_variant_id, 'dialogue_turn', UUID_TO_BIN('8fd375c2-9f84-573d-beee-51350e6061a4', 1), '00ce4057749e17d331310c133d47ace93b17e7e8d529d65bda60d44d1617ede0',
+  'character:emil:male_calm', 'elevenlabs', 'eleven_multilingual_v2', 'audio/generated/de-DE/dialogues/6f4a8fa561abaedec9b0e98e7e0cf8cb63c43c98c226521e34de81e10ccc2d2c.mp3', 1253, '2026-09-14 11:56:53.552061', '4fed199d29494778184204b6a75b5c2b4724e2db207cfd253557457e72d09fe3', 'validated', '{"audio_key":"6f4a8fa561abaedec9b0e98e7e0cf8cb63c43c98c226521e34de81e10ccc2d2c","entity_key":"d_de_ready_repair:2","voice_id":"MMwckqU477oQxnAk1SgA","voice_name":"Ben - Conversational Voice","voice_labels":{"gender":"male","accent":"standard","age":"middle_aged","category":"high_quality","language":"de","use_case":"conversational","descriptive":"pleasant"},"output_format":"mp3_44100_192","file_sha256":"4fed199d29494778184204b6a75b5c2b4724e2db207cfd253557457e72d09fe3","settings":{"stability":0.68,"similarity_boost":0.89,"style":0.06,"use_speaker_boost":true,"speed":0.95},"relative_path":"audio/generated/de-DE/dialogues/6f4a8fa561abaedec9b0e98e7e0cf8cb63c43c98c226521e34de81e10ccc2d2c.mp3"}'
 ) ON DUPLICATE KEY UPDATE
   provider = VALUES(provider),
   provider_model = VALUES(provider_model),
@@ -1066,6 +1248,32 @@ INSERT INTO audio_assets (
 ) VALUES (
   UUID_TO_BIN('371d6d9e-0151-580f-9505-eb76be1f7329', 1), @audio_language_id, @audio_variant_id, 'dialogue_turn', UUID_TO_BIN('2db4f847-fd81-555a-bba4-a88f05265de6', 1), '357a57fe73d6c63bb1923e970f79a924db3a3609eb9797547784a94ee38fc3df',
   'character:lukas:male_warm', 'elevenlabs', 'eleven_multilingual_v2', 'audio/generated/de-DE/dialogues/7f01136c37e910f9374a3c6f370e7ab6c8260790c07897cd2ab94c97140a1294.mp3', 835, '2026-09-13 04:04:33.884361', 'b791aaebbe96b6cdc08ae4fe6ca8fb30e68f6e78ac6ee9804b9a9f9e4cc0d404', 'validated', '{"audio_key":"7f01136c37e910f9374a3c6f370e7ab6c8260790c07897cd2ab94c97140a1294","entity_key":"d_first_greetings_01:2","voice_id":"fmj9wTxZg3ta4xR75kgB","voice_name":"Peter Stern – Friendly Agent","voice_labels":{"gender":"male","accent":"standard","age":"middle_aged","category":"high_quality","language":"de","use_case":"conversational","descriptive":"pleasant"},"output_format":"mp3_44100_192","file_sha256":"b791aaebbe96b6cdc08ae4fe6ca8fb30e68f6e78ac6ee9804b9a9f9e4cc0d404","settings":{"stability":0.58,"similarity_boost":0.87,"style":0.14,"use_speaker_boost":true,"speed":0.97},"relative_path":"audio/generated/de-DE/dialogues/7f01136c37e910f9374a3c6f370e7ab6c8260790c07897cd2ab94c97140a1294.mp3"}'
+) ON DUPLICATE KEY UPDATE
+  provider = VALUES(provider),
+  provider_model = VALUES(provider_model),
+  storage_url = VALUES(storage_url),
+  duration_ms = VALUES(duration_ms),
+  generated_at = VALUES(generated_at),
+  checksum = VALUES(checksum),
+  status = VALUES(status),
+  metadata = VALUES(metadata);
+
+-- d_de_meaning_help:4 -> audio/generated/de-DE/dialogues/80393272ce62dff7298df0e1c4bed2c995ec69ce8ae05326cb2b4cc5eee40ad2.mp3
+UPDATE audio_assets
+SET status = 'archived'
+WHERE entity_type = 'dialogue_turn'
+  AND entity_id = UUID_TO_BIN('a443f1cb-0e1b-57ef-b23f-0a81baf79d29', 1)
+  AND voice_key = 'character:noah:male_professional'
+  AND (entity_type NOT IN ('grammar_point','exercise') OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'd_de_meaning_help:4')
+  AND source_text_hash IS NOT NULL
+  AND source_text_hash <> '1990ca0bd26dac277b9481471e58b5bda9260d624d1283d18f9a774ec3c82c4a'
+  AND status <> 'archived';
+INSERT INTO audio_assets (
+  id, language_id, language_variant_id, entity_type, entity_id, source_text_hash,
+  voice_key, provider, provider_model, storage_url, duration_ms, generated_at, checksum, status, metadata
+) VALUES (
+  UUID_TO_BIN('61eb55e7-4743-54f6-8927-a5bd6d78b309', 1), @audio_language_id, @audio_variant_id, 'dialogue_turn', UUID_TO_BIN('a443f1cb-0e1b-57ef-b23f-0a81baf79d29', 1), '1990ca0bd26dac277b9481471e58b5bda9260d624d1283d18f9a774ec3c82c4a',
+  'character:noah:male_professional', 'elevenlabs', 'eleven_multilingual_v2', 'audio/generated/de-DE/dialogues/80393272ce62dff7298df0e1c4bed2c995ec69ce8ae05326cb2b4cc5eee40ad2.mp3', 1280, '2026-09-14 11:56:53.604747', '3577e543a6e112f72496777d01ac5c41475b4d08b80ec3289e79f616a27006d2', 'validated', '{"audio_key":"80393272ce62dff7298df0e1c4bed2c995ec69ce8ae05326cb2b4cc5eee40ad2","entity_key":"d_de_meaning_help:4","voice_id":"MbbPUteESkJWr4IAaW35","voice_name":"Felix - Direct and Clear","voice_labels":{"gender":"male","accent":"standard","age":"middle_aged","category":"high_quality","language":"de","use_case":"conversational","descriptive":"professional"},"output_format":"mp3_44100_192","file_sha256":"3577e543a6e112f72496777d01ac5c41475b4d08b80ec3289e79f616a27006d2","settings":{"stability":0.71,"similarity_boost":0.9,"style":0.05,"use_speaker_boost":true,"speed":0.96},"relative_path":"audio/generated/de-DE/dialogues/80393272ce62dff7298df0e1c4bed2c995ec69ce8ae05326cb2b4cc5eee40ad2.mp3"}'
 ) ON DUPLICATE KEY UPDATE
   provider = VALUES(provider),
   provider_model = VALUES(provider_model),
@@ -1336,6 +1544,32 @@ INSERT INTO audio_assets (
   status = VALUES(status),
   metadata = VALUES(metadata);
 
+-- d_de_ready_repair:4 -> audio/generated/de-DE/dialogues/9a2e1ff7b1a3310c6ecdb8469df42647b284bfc53c1376db958b89b93a4a2aec.mp3
+UPDATE audio_assets
+SET status = 'archived'
+WHERE entity_type = 'dialogue_turn'
+  AND entity_id = UUID_TO_BIN('61559bd0-2a0e-51b4-83cb-c47851744c73', 1)
+  AND voice_key = 'character:emil:male_calm'
+  AND (entity_type NOT IN ('grammar_point','exercise') OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'd_de_ready_repair:4')
+  AND source_text_hash IS NOT NULL
+  AND source_text_hash <> '1990ca0bd26dac277b9481471e58b5bda9260d624d1283d18f9a774ec3c82c4a'
+  AND status <> 'archived';
+INSERT INTO audio_assets (
+  id, language_id, language_variant_id, entity_type, entity_id, source_text_hash,
+  voice_key, provider, provider_model, storage_url, duration_ms, generated_at, checksum, status, metadata
+) VALUES (
+  UUID_TO_BIN('94aaa29c-2c4f-56fd-ab8c-91168cd8cf11', 1), @audio_language_id, @audio_variant_id, 'dialogue_turn', UUID_TO_BIN('61559bd0-2a0e-51b4-83cb-c47851744c73', 1), '1990ca0bd26dac277b9481471e58b5bda9260d624d1283d18f9a774ec3c82c4a',
+  'character:emil:male_calm', 'elevenlabs', 'eleven_multilingual_v2', 'audio/generated/de-DE/dialogues/9a2e1ff7b1a3310c6ecdb8469df42647b284bfc53c1376db958b89b93a4a2aec.mp3', 1253, '2026-09-14 11:56:54.505314', '619c9463632d585f8819514270b0bf5c552506a893bb62ee4844dcfcab319f38', 'validated', '{"audio_key":"9a2e1ff7b1a3310c6ecdb8469df42647b284bfc53c1376db958b89b93a4a2aec","entity_key":"d_de_ready_repair:4","voice_id":"MMwckqU477oQxnAk1SgA","voice_name":"Ben - Conversational Voice","voice_labels":{"gender":"male","accent":"standard","age":"middle_aged","category":"high_quality","language":"de","use_case":"conversational","descriptive":"pleasant"},"output_format":"mp3_44100_192","file_sha256":"619c9463632d585f8819514270b0bf5c552506a893bb62ee4844dcfcab319f38","settings":{"stability":0.68,"similarity_boost":0.89,"style":0.06,"use_speaker_boost":true,"speed":0.95},"relative_path":"audio/generated/de-DE/dialogues/9a2e1ff7b1a3310c6ecdb8469df42647b284bfc53c1376db958b89b93a4a2aec.mp3"}'
+) ON DUPLICATE KEY UPDATE
+  provider = VALUES(provider),
+  provider_model = VALUES(provider_model),
+  storage_url = VALUES(storage_url),
+  duration_ms = VALUES(duration_ms),
+  generated_at = VALUES(generated_at),
+  checksum = VALUES(checksum),
+  status = VALUES(status),
+  metadata = VALUES(metadata);
+
 -- d_first_objects_02:3 -> audio/generated/de-DE/dialogues/a0f860531ae11703657cf16149ac63bbcb2367a3e7ee22e952ed2b1bc69e96f8.mp3
 UPDATE audio_assets
 SET status = 'archived'
@@ -1352,6 +1586,32 @@ INSERT INTO audio_assets (
 ) VALUES (
   UUID_TO_BIN('8a84d9ed-6004-565a-ba41-d9b408b6cf91', 1), @audio_language_id, @audio_variant_id, 'dialogue_turn', UUID_TO_BIN('403c6ee5-50fe-53d1-bd5d-baf6ef327183', 1), '69af01fb533c580b7335c127b978fbd886c0fadd97f055e319f8ee4a2e989812',
   'character:mia:female_bright', 'elevenlabs', 'eleven_multilingual_v2', 'audio/generated/de-DE/dialogues/a0f860531ae11703657cf16149ac63bbcb2367a3e7ee22e952ed2b1bc69e96f8.mp3', 1253, '2026-09-13 04:04:39.068443', 'd12ab2cd3ebb44b8a55c0f7496c3487c6253837541e84c3673008e22a1fb4be1', 'validated', '{"audio_key":"a0f860531ae11703657cf16149ac63bbcb2367a3e7ee22e952ed2b1bc69e96f8","entity_key":"d_first_objects_02:3","voice_id":"NE7AIW5DoJ7lUosXV2KR","voice_name":"Ela - Cheerful and Happy","voice_labels":{"gender":"female","accent":"standard","age":"young","category":"high_quality","language":"de","use_case":"conversational","descriptive":"casual"},"output_format":"mp3_44100_192","file_sha256":"d12ab2cd3ebb44b8a55c0f7496c3487c6253837541e84c3673008e22a1fb4be1","settings":{"stability":0.52,"similarity_boost":0.86,"style":0.2,"use_speaker_boost":true,"speed":0.99},"relative_path":"audio/generated/de-DE/dialogues/a0f860531ae11703657cf16149ac63bbcb2367a3e7ee22e952ed2b1bc69e96f8.mp3"}'
+) ON DUPLICATE KEY UPDATE
+  provider = VALUES(provider),
+  provider_model = VALUES(provider_model),
+  storage_url = VALUES(storage_url),
+  duration_ms = VALUES(duration_ms),
+  generated_at = VALUES(generated_at),
+  checksum = VALUES(checksum),
+  status = VALUES(status),
+  metadata = VALUES(metadata);
+
+-- d_de_ready_intro:1 -> audio/generated/de-DE/dialogues/a21614af719a69f41d9fc3ebb47deafc82bd8134ae6486a11ae75afe9beb487f.mp3
+UPDATE audio_assets
+SET status = 'archived'
+WHERE entity_type = 'dialogue_turn'
+  AND entity_id = UUID_TO_BIN('73d7ef28-0c79-5d24-b9f6-4d11f70d8bfa', 1)
+  AND voice_key = 'character:mia:female_bright'
+  AND (entity_type NOT IN ('grammar_point','exercise') OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'd_de_ready_intro:1')
+  AND source_text_hash IS NOT NULL
+  AND source_text_hash <> 'c4524024558d0724f0930c3cab3c11233d443360b2bc33a991a96855b2aeac4f'
+  AND status <> 'archived';
+INSERT INTO audio_assets (
+  id, language_id, language_variant_id, entity_type, entity_id, source_text_hash,
+  voice_key, provider, provider_model, storage_url, duration_ms, generated_at, checksum, status, metadata
+) VALUES (
+  UUID_TO_BIN('a4d12eb3-592e-55ed-8efc-4024b27c0bb0', 1), @audio_language_id, @audio_variant_id, 'dialogue_turn', UUID_TO_BIN('73d7ef28-0c79-5d24-b9f6-4d11f70d8bfa', 1), 'c4524024558d0724f0930c3cab3c11233d443360b2bc33a991a96855b2aeac4f',
+  'character:mia:female_bright', 'elevenlabs', 'eleven_multilingual_v2', 'audio/generated/de-DE/dialogues/a21614af719a69f41d9fc3ebb47deafc82bd8134ae6486a11ae75afe9beb487f.mp3', 1697, '2026-09-14 11:56:54.602785', '93cfaa71ffbf9c1c1fe437ab7a2b7ea9cbff06bae272ff409850e04608833330', 'validated', '{"audio_key":"a21614af719a69f41d9fc3ebb47deafc82bd8134ae6486a11ae75afe9beb487f","entity_key":"d_de_ready_intro:1","voice_id":"NE7AIW5DoJ7lUosXV2KR","voice_name":"Ela - Cheerful and Happy","voice_labels":{"gender":"female","accent":"standard","age":"young","category":"high_quality","language":"de","use_case":"conversational","descriptive":"casual"},"output_format":"mp3_44100_192","file_sha256":"93cfaa71ffbf9c1c1fe437ab7a2b7ea9cbff06bae272ff409850e04608833330","settings":{"stability":0.52,"similarity_boost":0.86,"style":0.2,"use_speaker_boost":true,"speed":0.99},"relative_path":"audio/generated/de-DE/dialogues/a21614af719a69f41d9fc3ebb47deafc82bd8134ae6486a11ae75afe9beb487f.mp3"}'
 ) ON DUPLICATE KEY UPDATE
   provider = VALUES(provider),
   provider_model = VALUES(provider_model),
@@ -1648,6 +1908,32 @@ INSERT INTO audio_assets (
   status = VALUES(status),
   metadata = VALUES(metadata);
 
+-- d_de_meaning_help:1 -> audio/generated/de-DE/dialogues/d193c7aecc6ce18a4b93a2bfab8f9f67ded592e5ff425524ba27edb602ceef3b.mp3
+UPDATE audio_assets
+SET status = 'archived'
+WHERE entity_type = 'dialogue_turn'
+  AND entity_id = UUID_TO_BIN('c354c576-3053-531d-92c3-6725647d7e2b', 1)
+  AND voice_key = 'character:sofia:female_professional'
+  AND (entity_type NOT IN ('grammar_point','exercise') OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'd_de_meaning_help:1')
+  AND source_text_hash IS NOT NULL
+  AND source_text_hash <> 'b71ba810509465f2b34b383718ca755e1fa3bad4fa5a128fe6bea7c88639a662'
+  AND status <> 'archived';
+INSERT INTO audio_assets (
+  id, language_id, language_variant_id, entity_type, entity_id, source_text_hash,
+  voice_key, provider, provider_model, storage_url, duration_ms, generated_at, checksum, status, metadata
+) VALUES (
+  UUID_TO_BIN('8fca9c81-e0a3-5edc-92fe-ccc0e058b975', 1), @audio_language_id, @audio_variant_id, 'dialogue_turn', UUID_TO_BIN('c354c576-3053-531d-92c3-6725647d7e2b', 1), 'b71ba810509465f2b34b383718ca755e1fa3bad4fa5a128fe6bea7c88639a662',
+  'character:sofia:female_professional', 'elevenlabs', 'eleven_multilingual_v2', 'audio/generated/de-DE/dialogues/d193c7aecc6ce18a4b93a2bfab8f9f67ded592e5ff425524ba27edb602ceef3b.mp3', 1253, '2026-09-14 11:56:55.517672', '1a78e5c42b7179df1c096f011b7eb6523a6434959ed4c05801d2dead61b09c19', 'validated', '{"audio_key":"d193c7aecc6ce18a4b93a2bfab8f9f67ded592e5ff425524ba27edb602ceef3b","entity_key":"d_de_meaning_help:1","voice_id":"MTTjXkEpZepLTqO0xH0f","voice_name":"Marlena Lark – Warm German Narrator","voice_labels":{"gender":"female","accent":"standard","age":"middle_aged","category":"professional","language":"de","use_case":"conversational","descriptive":"professional"},"output_format":"mp3_44100_192","file_sha256":"1a78e5c42b7179df1c096f011b7eb6523a6434959ed4c05801d2dead61b09c19","settings":{"stability":0.71,"similarity_boost":0.9,"style":0.05,"use_speaker_boost":true,"speed":0.96},"relative_path":"audio/generated/de-DE/dialogues/d193c7aecc6ce18a4b93a2bfab8f9f67ded592e5ff425524ba27edb602ceef3b.mp3"}'
+) ON DUPLICATE KEY UPDATE
+  provider = VALUES(provider),
+  provider_model = VALUES(provider_model),
+  storage_url = VALUES(storage_url),
+  duration_ms = VALUES(duration_ms),
+  generated_at = VALUES(generated_at),
+  checksum = VALUES(checksum),
+  status = VALUES(status),
+  metadata = VALUES(metadata);
+
 -- d_survival_words_01:2 -> audio/generated/de-DE/dialogues/d2af368402cf9aad16761939e497dc558082ff817c05110a0d99f371a77d77b0.mp3
 UPDATE audio_assets
 SET status = 'archived'
@@ -1742,6 +2028,32 @@ INSERT INTO audio_assets (
 ) VALUES (
   UUID_TO_BIN('2f9dfa09-6080-51cd-bbeb-81197211e404', 1), @audio_language_id, @audio_variant_id, 'dialogue_turn', UUID_TO_BIN('85e1b4e0-ab80-5499-8ef5-e1b0e5b176ec', 1), '5854c887d19bd674a5357c830fbfd6ed36135b46c0ab1e632a92ac252634185a',
   'character:mia:female_bright', 'elevenlabs', 'eleven_multilingual_v2', 'audio/generated/de-DE/dialogues/db689f55455cdcfc9af9f35c5faa69bff0561d35dc887e08375f512ebc27e807.mp3', 1018, '2026-09-13 04:04:47.259954', '7aae4256ec98ed54c588605ea0602c5bcd0dcfca4083176b5fb9472a99812503', 'validated', '{"audio_key":"db689f55455cdcfc9af9f35c5faa69bff0561d35dc887e08375f512ebc27e807","entity_key":"d_first_conversation_02:3","voice_id":"NE7AIW5DoJ7lUosXV2KR","voice_name":"Ela - Cheerful and Happy","voice_labels":{"gender":"female","accent":"standard","age":"young","category":"high_quality","language":"de","use_case":"conversational","descriptive":"casual"},"output_format":"mp3_44100_192","file_sha256":"7aae4256ec98ed54c588605ea0602c5bcd0dcfca4083176b5fb9472a99812503","settings":{"stability":0.52,"similarity_boost":0.86,"style":0.2,"use_speaker_boost":true,"speed":0.99},"relative_path":"audio/generated/de-DE/dialogues/db689f55455cdcfc9af9f35c5faa69bff0561d35dc887e08375f512ebc27e807.mp3"}'
+) ON DUPLICATE KEY UPDATE
+  provider = VALUES(provider),
+  provider_model = VALUES(provider_model),
+  storage_url = VALUES(storage_url),
+  duration_ms = VALUES(duration_ms),
+  generated_at = VALUES(generated_at),
+  checksum = VALUES(checksum),
+  status = VALUES(status),
+  metadata = VALUES(metadata);
+
+-- d_de_ready_intro:4 -> audio/generated/de-DE/dialogues/dcc784cc76abf9378fa2903c48982de359e1bd22f9f42a498b1187bebb62d4ba.mp3
+UPDATE audio_assets
+SET status = 'archived'
+WHERE entity_type = 'dialogue_turn'
+  AND entity_id = UUID_TO_BIN('4b146863-d1b8-5420-8549-6957f1c47de1', 1)
+  AND voice_key = 'character:jonas:male_bright'
+  AND (entity_type NOT IN ('grammar_point','exercise') OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'd_de_ready_intro:4')
+  AND source_text_hash IS NOT NULL
+  AND source_text_hash <> '0716801bdcc17e49fef795d260df211a46fbe4abfca8a8e41d823aee22c31d82'
+  AND status <> 'archived';
+INSERT INTO audio_assets (
+  id, language_id, language_variant_id, entity_type, entity_id, source_text_hash,
+  voice_key, provider, provider_model, storage_url, duration_ms, generated_at, checksum, status, metadata
+) VALUES (
+  UUID_TO_BIN('c3a7639a-7c96-5abd-a092-a673efd11eda', 1), @audio_language_id, @audio_variant_id, 'dialogue_turn', UUID_TO_BIN('4b146863-d1b8-5420-8549-6957f1c47de1', 1), '0716801bdcc17e49fef795d260df211a46fbe4abfca8a8e41d823aee22c31d82',
+  'character:jonas:male_bright', 'elevenlabs', 'eleven_multilingual_v2', 'audio/generated/de-DE/dialogues/dcc784cc76abf9378fa2903c48982de359e1bd22f9f42a498b1187bebb62d4ba.mp3', 1436, '2026-09-14 11:56:55.580674', '46f4f69791bd207a987045a680daadb8128c42381e0dbc50eca39e93b5f61f39', 'validated', '{"audio_key":"dcc784cc76abf9378fa2903c48982de359e1bd22f9f42a498b1187bebb62d4ba","entity_key":"d_de_ready_intro:4","voice_id":"K5ZVtkkBnuPY6YqXs70E","voice_name":"Simon - Relatable and Normal","voice_labels":{"gender":"male","accent":"standard","age":"young","category":"high_quality","language":"de","use_case":"conversational","descriptive":"chill"},"output_format":"mp3_44100_192","file_sha256":"46f4f69791bd207a987045a680daadb8128c42381e0dbc50eca39e93b5f61f39","settings":{"stability":0.52,"similarity_boost":0.86,"style":0.2,"use_speaker_boost":true,"speed":0.99},"relative_path":"audio/generated/de-DE/dialogues/dcc784cc76abf9378fa2903c48982de359e1bd22f9f42a498b1187bebb62d4ba.mp3"}'
 ) ON DUPLICATE KEY UPDATE
   provider = VALUES(provider),
   provider_model = VALUES(provider_model),
@@ -5340,6 +5652,32 @@ INSERT INTO audio_assets (
   status = VALUES(status),
   metadata = VALUES(metadata);
 
+-- g_de_ready_gate:example:1 -> audio/generated/de-DE/utterances/0cee4b6ad9675697b925117572fe8c816b7951d744075c05c98d6c5e216587cc.mp3
+UPDATE audio_assets
+SET status = 'archived'
+WHERE entity_type = 'grammar_point'
+  AND entity_id = UUID_TO_BIN('3120e331-9825-59b9-99a0-15bcff94668a', 1)
+  AND voice_key = 'de-de.sentence.native-clear'
+  AND (entity_type NOT IN ('grammar_point','exercise') OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'g_de_ready_gate:example:1')
+  AND source_text_hash IS NOT NULL
+  AND source_text_hash <> '00ce4057749e17d331310c133d47ace93b17e7e8d529d65bda60d44d1617ede0'
+  AND status <> 'archived';
+INSERT INTO audio_assets (
+  id, language_id, language_variant_id, entity_type, entity_id, source_text_hash,
+  voice_key, provider, provider_model, storage_url, duration_ms, generated_at, checksum, status, metadata
+) VALUES (
+  UUID_TO_BIN('c3969719-971a-55c9-8231-6b5b6fa30ada', 1), @audio_language_id, @audio_variant_id, 'grammar_point', UUID_TO_BIN('3120e331-9825-59b9-99a0-15bcff94668a', 1), '00ce4057749e17d331310c133d47ace93b17e7e8d529d65bda60d44d1617ede0',
+  'de-de.sentence.native-clear', 'elevenlabs', 'eleven_multilingual_v2', 'audio/generated/de-DE/utterances/0cee4b6ad9675697b925117572fe8c816b7951d744075c05c98d6c5e216587cc.mp3', 1332, '2026-09-13 04:05:29.541361', '59cea304edce8aec86c7805d7ba56c793a88a4251d76d7ddcdadb8eeb7cbbf39', 'validated', '{"audio_key":"0cee4b6ad9675697b925117572fe8c816b7951d744075c05c98d6c5e216587cc","entity_key":"g_de_ready_gate:example:1","voice_id":"v3V1d2rk6528UrLKRuy8","voice_name":"Susi - Effortless and Confident","voice_labels":{"gender":"female","accent":"standard","age":"middle_aged","category":"high_quality","language":"de","use_case":"conversational","descriptive":"calm"},"output_format":"mp3_44100_192","file_sha256":"59cea304edce8aec86c7805d7ba56c793a88a4251d76d7ddcdadb8eeb7cbbf39","settings":{"stability":0.68,"similarity_boost":0.88,"style":0.0,"use_speaker_boost":true,"speed":0.95},"relative_path":"audio/generated/de-DE/utterances/0cee4b6ad9675697b925117572fe8c816b7951d744075c05c98d6c5e216587cc.mp3"}'
+) ON DUPLICATE KEY UPDATE
+  provider = VALUES(provider),
+  provider_model = VALUES(provider_model),
+  storage_url = VALUES(storage_url),
+  duration_ms = VALUES(duration_ms),
+  generated_at = VALUES(generated_at),
+  checksum = VALUES(checksum),
+  status = VALUES(status),
+  metadata = VALUES(metadata);
+
 -- u_survival_words_05 -> audio/generated/de-DE/utterances/0eab6bfd4061dd350edd959613154ed7d6b64c0d4dc6ced83bb288139c3266bd.mp3
 UPDATE audio_assets
 SET status = 'archived'
@@ -5408,6 +5746,110 @@ INSERT INTO audio_assets (
 ) VALUES (
   UUID_TO_BIN('726a9619-7677-520d-8e6f-9a88e05cab65', 1), @audio_language_id, @audio_variant_id, 'utterance', UUID_TO_BIN('19c72fbd-1656-5637-99d1-02da33478923', 1), 'c7bbefd8110f8991d7b2a76dfbcdfdc91d00bcb807e315d50dfe5ee17783c076',
   'de-de.sentence.native-clear', 'elevenlabs', 'eleven_multilingual_v2', 'audio/generated/de-DE/utterances/14da75a4fb285eea879aa0c61db9be75eb4d488f5ad67d150de74c05c0771513.mp3', 1018, '2026-09-13 04:05:30.519777', '3c856394c2333d330b97bd40b9a518d071f78d7f0f54f1f3c0a6308ea390fd4e', 'validated', '{"audio_key":"14da75a4fb285eea879aa0c61db9be75eb4d488f5ad67d150de74c05c0771513","entity_key":"u_first_sounds_03","voice_id":"v3V1d2rk6528UrLKRuy8","voice_name":"Susi - Effortless and Confident","voice_labels":{"gender":"female","accent":"standard","age":"middle_aged","category":"high_quality","language":"de","use_case":"conversational","descriptive":"calm"},"output_format":"mp3_44100_192","file_sha256":"3c856394c2333d330b97bd40b9a518d071f78d7f0f54f1f3c0a6308ea390fd4e","settings":{"stability":0.68,"similarity_boost":0.88,"style":0.0,"use_speaker_boost":true,"speed":0.95},"relative_path":"audio/generated/de-DE/utterances/14da75a4fb285eea879aa0c61db9be75eb4d488f5ad67d150de74c05c0771513.mp3"}'
+) ON DUPLICATE KEY UPDATE
+  provider = VALUES(provider),
+  provider_model = VALUES(provider_model),
+  storage_url = VALUES(storage_url),
+  duration_ms = VALUES(duration_ms),
+  generated_at = VALUES(generated_at),
+  checksum = VALUES(checksum),
+  status = VALUES(status),
+  metadata = VALUES(metadata);
+
+-- u_de_liebe_sound -> audio/generated/de-DE/utterances/14da75a4fb285eea879aa0c61db9be75eb4d488f5ad67d150de74c05c0771513.mp3
+UPDATE audio_assets
+SET status = 'archived'
+WHERE entity_type = 'utterance'
+  AND entity_id = UUID_TO_BIN('2ade8529-e941-5007-b854-bb50dcae13f2', 1)
+  AND voice_key = 'de-de.sentence.native-clear'
+  AND (entity_type NOT IN ('grammar_point','exercise') OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'u_de_liebe_sound')
+  AND source_text_hash IS NOT NULL
+  AND source_text_hash <> 'c7bbefd8110f8991d7b2a76dfbcdfdc91d00bcb807e315d50dfe5ee17783c076'
+  AND status <> 'archived';
+INSERT INTO audio_assets (
+  id, language_id, language_variant_id, entity_type, entity_id, source_text_hash,
+  voice_key, provider, provider_model, storage_url, duration_ms, generated_at, checksum, status, metadata
+) VALUES (
+  UUID_TO_BIN('e4b61b36-61b5-5520-8404-ce5e9aafc8a6', 1), @audio_language_id, @audio_variant_id, 'utterance', UUID_TO_BIN('2ade8529-e941-5007-b854-bb50dcae13f2', 1), 'c7bbefd8110f8991d7b2a76dfbcdfdc91d00bcb807e315d50dfe5ee17783c076',
+  'de-de.sentence.native-clear', 'elevenlabs', 'eleven_multilingual_v2', 'audio/generated/de-DE/utterances/14da75a4fb285eea879aa0c61db9be75eb4d488f5ad67d150de74c05c0771513.mp3', 1018, '2026-09-13 04:05:30.519777', '3c856394c2333d330b97bd40b9a518d071f78d7f0f54f1f3c0a6308ea390fd4e', 'validated', '{"audio_key":"14da75a4fb285eea879aa0c61db9be75eb4d488f5ad67d150de74c05c0771513","entity_key":"u_de_liebe_sound","voice_id":"v3V1d2rk6528UrLKRuy8","voice_name":"Susi - Effortless and Confident","voice_labels":{"gender":"female","accent":"standard","age":"middle_aged","category":"high_quality","language":"de","use_case":"conversational","descriptive":"calm"},"output_format":"mp3_44100_192","file_sha256":"3c856394c2333d330b97bd40b9a518d071f78d7f0f54f1f3c0a6308ea390fd4e","settings":{"stability":0.68,"similarity_boost":0.88,"style":0.0,"use_speaker_boost":true,"speed":0.95},"relative_path":"audio/generated/de-DE/utterances/14da75a4fb285eea879aa0c61db9be75eb4d488f5ad67d150de74c05c0771513.mp3"}'
+) ON DUPLICATE KEY UPDATE
+  provider = VALUES(provider),
+  provider_model = VALUES(provider_model),
+  storage_url = VALUES(storage_url),
+  duration_ms = VALUES(duration_ms),
+  generated_at = VALUES(generated_at),
+  checksum = VALUES(checksum),
+  status = VALUES(status),
+  metadata = VALUES(metadata);
+
+-- g_de_ei_ie:example:2 -> audio/generated/de-DE/utterances/14da75a4fb285eea879aa0c61db9be75eb4d488f5ad67d150de74c05c0771513.mp3
+UPDATE audio_assets
+SET status = 'archived'
+WHERE entity_type = 'grammar_point'
+  AND entity_id = UUID_TO_BIN('e61d16c6-fe8a-56a9-a951-1a371e5579e3', 1)
+  AND voice_key = 'de-de.sentence.native-clear'
+  AND (entity_type NOT IN ('grammar_point','exercise') OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'g_de_ei_ie:example:2')
+  AND source_text_hash IS NOT NULL
+  AND source_text_hash <> 'c7bbefd8110f8991d7b2a76dfbcdfdc91d00bcb807e315d50dfe5ee17783c076'
+  AND status <> 'archived';
+INSERT INTO audio_assets (
+  id, language_id, language_variant_id, entity_type, entity_id, source_text_hash,
+  voice_key, provider, provider_model, storage_url, duration_ms, generated_at, checksum, status, metadata
+) VALUES (
+  UUID_TO_BIN('5e290acc-a32c-5f86-bcf0-f39d85b3632b', 1), @audio_language_id, @audio_variant_id, 'grammar_point', UUID_TO_BIN('e61d16c6-fe8a-56a9-a951-1a371e5579e3', 1), 'c7bbefd8110f8991d7b2a76dfbcdfdc91d00bcb807e315d50dfe5ee17783c076',
+  'de-de.sentence.native-clear', 'elevenlabs', 'eleven_multilingual_v2', 'audio/generated/de-DE/utterances/14da75a4fb285eea879aa0c61db9be75eb4d488f5ad67d150de74c05c0771513.mp3', 1018, '2026-09-13 04:05:30.519777', '3c856394c2333d330b97bd40b9a518d071f78d7f0f54f1f3c0a6308ea390fd4e', 'validated', '{"audio_key":"14da75a4fb285eea879aa0c61db9be75eb4d488f5ad67d150de74c05c0771513","entity_key":"g_de_ei_ie:example:2","voice_id":"v3V1d2rk6528UrLKRuy8","voice_name":"Susi - Effortless and Confident","voice_labels":{"gender":"female","accent":"standard","age":"middle_aged","category":"high_quality","language":"de","use_case":"conversational","descriptive":"calm"},"output_format":"mp3_44100_192","file_sha256":"3c856394c2333d330b97bd40b9a518d071f78d7f0f54f1f3c0a6308ea390fd4e","settings":{"stability":0.68,"similarity_boost":0.88,"style":0.0,"use_speaker_boost":true,"speed":0.95},"relative_path":"audio/generated/de-DE/utterances/14da75a4fb285eea879aa0c61db9be75eb4d488f5ad67d150de74c05c0771513.mp3"}'
+) ON DUPLICATE KEY UPDATE
+  provider = VALUES(provider),
+  provider_model = VALUES(provider_model),
+  storage_url = VALUES(storage_url),
+  duration_ms = VALUES(duration_ms),
+  generated_at = VALUES(generated_at),
+  checksum = VALUES(checksum),
+  status = VALUES(status),
+  metadata = VALUES(metadata);
+
+-- u_de_wie_bitte -> audio/generated/de-DE/utterances/164590b3852879d99ba249f1d3d7be7e5be98bddcc11439fc3f75aaa24298727.mp3
+UPDATE audio_assets
+SET status = 'archived'
+WHERE entity_type = 'utterance'
+  AND entity_id = UUID_TO_BIN('dc626955-c928-5c31-9884-48f07920dced', 1)
+  AND voice_key = 'de-de.sentence.native-clear'
+  AND (entity_type NOT IN ('grammar_point','exercise') OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'u_de_wie_bitte')
+  AND source_text_hash IS NOT NULL
+  AND source_text_hash <> '073435d05fbcd32e30531fcc0553e6906945d4dcd7089ad7222244efbc84fb91'
+  AND status <> 'archived';
+INSERT INTO audio_assets (
+  id, language_id, language_variant_id, entity_type, entity_id, source_text_hash,
+  voice_key, provider, provider_model, storage_url, duration_ms, generated_at, checksum, status, metadata
+) VALUES (
+  UUID_TO_BIN('cd2601ae-caed-5cb6-8690-557d80ff953e', 1), @audio_language_id, @audio_variant_id, 'utterance', UUID_TO_BIN('dc626955-c928-5c31-9884-48f07920dced', 1), '073435d05fbcd32e30531fcc0553e6906945d4dcd7089ad7222244efbc84fb91',
+  'de-de.sentence.native-clear', 'elevenlabs', 'eleven_multilingual_v2', 'audio/generated/de-DE/utterances/164590b3852879d99ba249f1d3d7be7e5be98bddcc11439fc3f75aaa24298727.mp3', 1018, '2026-09-14 11:56:56.520169', '277409fde6f15434a34e51af73606b3ca431722806909fe0dd5291624feb09e5', 'validated', '{"audio_key":"164590b3852879d99ba249f1d3d7be7e5be98bddcc11439fc3f75aaa24298727","entity_key":"u_de_wie_bitte","voice_id":"v3V1d2rk6528UrLKRuy8","voice_name":"Susi - Effortless and Confident","voice_labels":{"gender":"female","accent":"standard","age":"middle_aged","category":"high_quality","language":"de","use_case":"conversational","descriptive":"calm"},"output_format":"mp3_44100_192","file_sha256":"277409fde6f15434a34e51af73606b3ca431722806909fe0dd5291624feb09e5","settings":{"stability":0.68,"similarity_boost":0.88,"style":0.0,"use_speaker_boost":true,"speed":0.95},"relative_path":"audio/generated/de-DE/utterances/164590b3852879d99ba249f1d3d7be7e5be98bddcc11439fc3f75aaa24298727.mp3"}'
+) ON DUPLICATE KEY UPDATE
+  provider = VALUES(provider),
+  provider_model = VALUES(provider_model),
+  storage_url = VALUES(storage_url),
+  duration_ms = VALUES(duration_ms),
+  generated_at = VALUES(generated_at),
+  checksum = VALUES(checksum),
+  status = VALUES(status),
+  metadata = VALUES(metadata);
+
+-- ex_de_wie_bitte_listen -> audio/generated/de-DE/utterances/164590b3852879d99ba249f1d3d7be7e5be98bddcc11439fc3f75aaa24298727.mp3
+UPDATE audio_assets
+SET status = 'archived'
+WHERE entity_type = 'exercise'
+  AND entity_id = UUID_TO_BIN('ad288ba2-7af7-5f3a-849c-d5b8c4674987', 1)
+  AND voice_key = 'de-de.sentence.native-clear'
+  AND (entity_type NOT IN ('grammar_point','exercise') OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'ex_de_wie_bitte_listen')
+  AND source_text_hash IS NOT NULL
+  AND source_text_hash <> '073435d05fbcd32e30531fcc0553e6906945d4dcd7089ad7222244efbc84fb91'
+  AND status <> 'archived';
+INSERT INTO audio_assets (
+  id, language_id, language_variant_id, entity_type, entity_id, source_text_hash,
+  voice_key, provider, provider_model, storage_url, duration_ms, generated_at, checksum, status, metadata
+) VALUES (
+  UUID_TO_BIN('ee67f282-42d0-5814-b84b-dc99411f234c', 1), @audio_language_id, @audio_variant_id, 'exercise', UUID_TO_BIN('ad288ba2-7af7-5f3a-849c-d5b8c4674987', 1), '073435d05fbcd32e30531fcc0553e6906945d4dcd7089ad7222244efbc84fb91',
+  'de-de.sentence.native-clear', 'elevenlabs', 'eleven_multilingual_v2', 'audio/generated/de-DE/utterances/164590b3852879d99ba249f1d3d7be7e5be98bddcc11439fc3f75aaa24298727.mp3', 1018, '2026-09-14 11:56:56.520169', '277409fde6f15434a34e51af73606b3ca431722806909fe0dd5291624feb09e5', 'validated', '{"audio_key":"164590b3852879d99ba249f1d3d7be7e5be98bddcc11439fc3f75aaa24298727","entity_key":"ex_de_wie_bitte_listen","voice_id":"v3V1d2rk6528UrLKRuy8","voice_name":"Susi - Effortless and Confident","voice_labels":{"gender":"female","accent":"standard","age":"middle_aged","category":"high_quality","language":"de","use_case":"conversational","descriptive":"calm"},"output_format":"mp3_44100_192","file_sha256":"277409fde6f15434a34e51af73606b3ca431722806909fe0dd5291624feb09e5","settings":{"stability":0.68,"similarity_boost":0.88,"style":0.0,"use_speaker_boost":true,"speed":0.95},"relative_path":"audio/generated/de-DE/utterances/164590b3852879d99ba249f1d3d7be7e5be98bddcc11439fc3f75aaa24298727.mp3"}'
 ) ON DUPLICATE KEY UPDATE
   provider = VALUES(provider),
   provider_model = VALUES(provider_model),
@@ -5782,6 +6224,84 @@ INSERT INTO audio_assets (
   status = VALUES(status),
   metadata = VALUES(metadata);
 
+-- u_de_wasser -> audio/generated/de-DE/utterances/266e6c6d21d8f14b6bfd51817cbb86b2718e4688029c855c3219c6618759ecc4.mp3
+UPDATE audio_assets
+SET status = 'archived'
+WHERE entity_type = 'utterance'
+  AND entity_id = UUID_TO_BIN('24a4f4af-b07e-559e-860d-d730682dcaaa', 1)
+  AND voice_key = 'de-de.sentence.native-clear'
+  AND (entity_type NOT IN ('grammar_point','exercise') OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'u_de_wasser')
+  AND source_text_hash IS NOT NULL
+  AND source_text_hash <> 'f942c0f4855b900888eb405e844e519e79c5309d4b204862e0ae535d14f4060c'
+  AND status <> 'archived';
+INSERT INTO audio_assets (
+  id, language_id, language_variant_id, entity_type, entity_id, source_text_hash,
+  voice_key, provider, provider_model, storage_url, duration_ms, generated_at, checksum, status, metadata
+) VALUES (
+  UUID_TO_BIN('4bec0acc-36e9-538b-93c2-198b8732c12f', 1), @audio_language_id, @audio_variant_id, 'utterance', UUID_TO_BIN('24a4f4af-b07e-559e-860d-d730682dcaaa', 1), 'f942c0f4855b900888eb405e844e519e79c5309d4b204862e0ae535d14f4060c',
+  'de-de.sentence.native-clear', 'elevenlabs', 'eleven_multilingual_v2', 'audio/generated/de-DE/utterances/266e6c6d21d8f14b6bfd51817cbb86b2718e4688029c855c3219c6618759ecc4.mp3', 1071, '2026-09-13 04:05:34.496495', '9f5d4970f3c3a9f878a9305e8d868d62181fcbd7313080d4c27b49c793f0cf89', 'validated', '{"audio_key":"266e6c6d21d8f14b6bfd51817cbb86b2718e4688029c855c3219c6618759ecc4","entity_key":"u_de_wasser","voice_id":"v3V1d2rk6528UrLKRuy8","voice_name":"Susi - Effortless and Confident","voice_labels":{"gender":"female","accent":"standard","age":"middle_aged","category":"high_quality","language":"de","use_case":"conversational","descriptive":"calm"},"output_format":"mp3_44100_192","file_sha256":"9f5d4970f3c3a9f878a9305e8d868d62181fcbd7313080d4c27b49c793f0cf89","settings":{"stability":0.68,"similarity_boost":0.88,"style":0.0,"use_speaker_boost":true,"speed":0.95},"relative_path":"audio/generated/de-DE/utterances/266e6c6d21d8f14b6bfd51817cbb86b2718e4688029c855c3219c6618759ecc4.mp3"}'
+) ON DUPLICATE KEY UPDATE
+  provider = VALUES(provider),
+  provider_model = VALUES(provider_model),
+  storage_url = VALUES(storage_url),
+  duration_ms = VALUES(duration_ms),
+  generated_at = VALUES(generated_at),
+  checksum = VALUES(checksum),
+  status = VALUES(status),
+  metadata = VALUES(metadata);
+
+-- ex_de_wasser_listen -> audio/generated/de-DE/utterances/266e6c6d21d8f14b6bfd51817cbb86b2718e4688029c855c3219c6618759ecc4.mp3
+UPDATE audio_assets
+SET status = 'archived'
+WHERE entity_type = 'exercise'
+  AND entity_id = UUID_TO_BIN('40911ab0-cf1b-555d-b8e4-c8bbb847bccb', 1)
+  AND voice_key = 'de-de.sentence.native-clear'
+  AND (entity_type NOT IN ('grammar_point','exercise') OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'ex_de_wasser_listen')
+  AND source_text_hash IS NOT NULL
+  AND source_text_hash <> 'f942c0f4855b900888eb405e844e519e79c5309d4b204862e0ae535d14f4060c'
+  AND status <> 'archived';
+INSERT INTO audio_assets (
+  id, language_id, language_variant_id, entity_type, entity_id, source_text_hash,
+  voice_key, provider, provider_model, storage_url, duration_ms, generated_at, checksum, status, metadata
+) VALUES (
+  UUID_TO_BIN('6595dfb0-a2f1-59b4-ac1c-d7146463bb6a', 1), @audio_language_id, @audio_variant_id, 'exercise', UUID_TO_BIN('40911ab0-cf1b-555d-b8e4-c8bbb847bccb', 1), 'f942c0f4855b900888eb405e844e519e79c5309d4b204862e0ae535d14f4060c',
+  'de-de.sentence.native-clear', 'elevenlabs', 'eleven_multilingual_v2', 'audio/generated/de-DE/utterances/266e6c6d21d8f14b6bfd51817cbb86b2718e4688029c855c3219c6618759ecc4.mp3', 1071, '2026-09-13 04:05:34.496495', '9f5d4970f3c3a9f878a9305e8d868d62181fcbd7313080d4c27b49c793f0cf89', 'validated', '{"audio_key":"266e6c6d21d8f14b6bfd51817cbb86b2718e4688029c855c3219c6618759ecc4","entity_key":"ex_de_wasser_listen","voice_id":"v3V1d2rk6528UrLKRuy8","voice_name":"Susi - Effortless and Confident","voice_labels":{"gender":"female","accent":"standard","age":"middle_aged","category":"high_quality","language":"de","use_case":"conversational","descriptive":"calm"},"output_format":"mp3_44100_192","file_sha256":"9f5d4970f3c3a9f878a9305e8d868d62181fcbd7313080d4c27b49c793f0cf89","settings":{"stability":0.68,"similarity_boost":0.88,"style":0.0,"use_speaker_boost":true,"speed":0.95},"relative_path":"audio/generated/de-DE/utterances/266e6c6d21d8f14b6bfd51817cbb86b2718e4688029c855c3219c6618759ecc4.mp3"}'
+) ON DUPLICATE KEY UPDATE
+  provider = VALUES(provider),
+  provider_model = VALUES(provider_model),
+  storage_url = VALUES(storage_url),
+  duration_ms = VALUES(duration_ms),
+  generated_at = VALUES(generated_at),
+  checksum = VALUES(checksum),
+  status = VALUES(status),
+  metadata = VALUES(metadata);
+
+-- g_de_wvz:example:1 -> audio/generated/de-DE/utterances/266e6c6d21d8f14b6bfd51817cbb86b2718e4688029c855c3219c6618759ecc4.mp3
+UPDATE audio_assets
+SET status = 'archived'
+WHERE entity_type = 'grammar_point'
+  AND entity_id = UUID_TO_BIN('13ec0470-2f7e-5298-99d0-407a03fb29e9', 1)
+  AND voice_key = 'de-de.sentence.native-clear'
+  AND (entity_type NOT IN ('grammar_point','exercise') OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'g_de_wvz:example:1')
+  AND source_text_hash IS NOT NULL
+  AND source_text_hash <> 'f942c0f4855b900888eb405e844e519e79c5309d4b204862e0ae535d14f4060c'
+  AND status <> 'archived';
+INSERT INTO audio_assets (
+  id, language_id, language_variant_id, entity_type, entity_id, source_text_hash,
+  voice_key, provider, provider_model, storage_url, duration_ms, generated_at, checksum, status, metadata
+) VALUES (
+  UUID_TO_BIN('acced47e-af16-54f1-a198-6690ca480678', 1), @audio_language_id, @audio_variant_id, 'grammar_point', UUID_TO_BIN('13ec0470-2f7e-5298-99d0-407a03fb29e9', 1), 'f942c0f4855b900888eb405e844e519e79c5309d4b204862e0ae535d14f4060c',
+  'de-de.sentence.native-clear', 'elevenlabs', 'eleven_multilingual_v2', 'audio/generated/de-DE/utterances/266e6c6d21d8f14b6bfd51817cbb86b2718e4688029c855c3219c6618759ecc4.mp3', 1071, '2026-09-13 04:05:34.496495', '9f5d4970f3c3a9f878a9305e8d868d62181fcbd7313080d4c27b49c793f0cf89', 'validated', '{"audio_key":"266e6c6d21d8f14b6bfd51817cbb86b2718e4688029c855c3219c6618759ecc4","entity_key":"g_de_wvz:example:1","voice_id":"v3V1d2rk6528UrLKRuy8","voice_name":"Susi - Effortless and Confident","voice_labels":{"gender":"female","accent":"standard","age":"middle_aged","category":"high_quality","language":"de","use_case":"conversational","descriptive":"calm"},"output_format":"mp3_44100_192","file_sha256":"9f5d4970f3c3a9f878a9305e8d868d62181fcbd7313080d4c27b49c793f0cf89","settings":{"stability":0.68,"similarity_boost":0.88,"style":0.0,"use_speaker_boost":true,"speed":0.95},"relative_path":"audio/generated/de-DE/utterances/266e6c6d21d8f14b6bfd51817cbb86b2718e4688029c855c3219c6618759ecc4.mp3"}'
+) ON DUPLICATE KEY UPDATE
+  provider = VALUES(provider),
+  provider_model = VALUES(provider_model),
+  storage_url = VALUES(storage_url),
+  duration_ms = VALUES(duration_ms),
+  generated_at = VALUES(generated_at),
+  checksum = VALUES(checksum),
+  status = VALUES(status),
+  metadata = VALUES(metadata);
+
 -- u_first_objects_02 -> audio/generated/de-DE/utterances/27fe874905d8b391ce399d9d7af9dc33ef854d264aeef1dbebd79731e4643299.mp3
 UPDATE audio_assets
 SET status = 'archived'
@@ -5928,6 +6448,84 @@ INSERT INTO audio_assets (
 ) VALUES (
   UUID_TO_BIN('90825a4d-ef80-5c24-91ad-763e40ca157f', 1), @audio_language_id, @audio_variant_id, 'utterance', UUID_TO_BIN('c4766e0e-7f26-5452-9673-23d73f3c536d', 1), '645644f67714effe70feb39f650b7a1502a2e236a90af96aa37b78135dc2d90b',
   'de-de.sentence.native-clear', 'elevenlabs', 'eleven_multilingual_v2', 'audio/generated/de-DE/utterances/3437e228e1fcb93946a62dead6b0609c09dddbebd0a942f7695a17cbde49d2f4.mp3', 1515, '2026-09-13 04:05:37.070842', '4803155bf100501597186feb5b84956853202624ea487beaa5a26f2d9fdb9c27', 'validated', '{"audio_key":"3437e228e1fcb93946a62dead6b0609c09dddbebd0a942f7695a17cbde49d2f4","entity_key":"u_first_conversation_01","voice_id":"v3V1d2rk6528UrLKRuy8","voice_name":"Susi - Effortless and Confident","voice_labels":{"gender":"female","accent":"standard","age":"middle_aged","category":"high_quality","language":"de","use_case":"conversational","descriptive":"calm"},"output_format":"mp3_44100_192","file_sha256":"4803155bf100501597186feb5b84956853202624ea487beaa5a26f2d9fdb9c27","settings":{"stability":0.68,"similarity_boost":0.88,"style":0.0,"use_speaker_boost":true,"speed":0.95},"relative_path":"audio/generated/de-DE/utterances/3437e228e1fcb93946a62dead6b0609c09dddbebd0a942f7695a17cbde49d2f4.mp3"}'
+) ON DUPLICATE KEY UPDATE
+  provider = VALUES(provider),
+  provider_model = VALUES(provider_model),
+  storage_url = VALUES(storage_url),
+  duration_ms = VALUES(duration_ms),
+  generated_at = VALUES(generated_at),
+  checksum = VALUES(checksum),
+  status = VALUES(status),
+  metadata = VALUES(metadata);
+
+-- u_de_ich_sound -> audio/generated/de-DE/utterances/34b3242beef0f44c99310bff56ed193f1b2fefbaedeb5751c0a0b37fde34523c.mp3
+UPDATE audio_assets
+SET status = 'archived'
+WHERE entity_type = 'utterance'
+  AND entity_id = UUID_TO_BIN('9d299bc6-df69-50fc-aeb1-8bf769d2b4f1', 1)
+  AND voice_key = 'de-de.sentence.native-clear'
+  AND (entity_type NOT IN ('grammar_point','exercise') OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'u_de_ich_sound')
+  AND source_text_hash IS NOT NULL
+  AND source_text_hash <> '84c92d8abf326bdb52f1fc6cd6856c41ae9bc1ef4f6056c2672e3d9d301782e1'
+  AND status <> 'archived';
+INSERT INTO audio_assets (
+  id, language_id, language_variant_id, entity_type, entity_id, source_text_hash,
+  voice_key, provider, provider_model, storage_url, duration_ms, generated_at, checksum, status, metadata
+) VALUES (
+  UUID_TO_BIN('f355cb09-191c-5a4b-91de-ced590e994c8', 1), @audio_language_id, @audio_variant_id, 'utterance', UUID_TO_BIN('9d299bc6-df69-50fc-aeb1-8bf769d2b4f1', 1), '84c92d8abf326bdb52f1fc6cd6856c41ae9bc1ef4f6056c2672e3d9d301782e1',
+  'de-de.sentence.native-clear', 'elevenlabs', 'eleven_multilingual_v2', 'audio/generated/de-DE/utterances/34b3242beef0f44c99310bff56ed193f1b2fefbaedeb5751c0a0b37fde34523c.mp3', 679, '2026-09-14 11:56:56.531790', '520b3a02efac2b28ea5567775483343d5b2a0f4e5e045400962d0c7c19811a26', 'validated', '{"audio_key":"34b3242beef0f44c99310bff56ed193f1b2fefbaedeb5751c0a0b37fde34523c","entity_key":"u_de_ich_sound","voice_id":"v3V1d2rk6528UrLKRuy8","voice_name":"Susi - Effortless and Confident","voice_labels":{"gender":"female","accent":"standard","age":"middle_aged","category":"high_quality","language":"de","use_case":"conversational","descriptive":"calm"},"output_format":"mp3_44100_192","file_sha256":"520b3a02efac2b28ea5567775483343d5b2a0f4e5e045400962d0c7c19811a26","settings":{"stability":0.68,"similarity_boost":0.88,"style":0.0,"use_speaker_boost":true,"speed":0.95},"relative_path":"audio/generated/de-DE/utterances/34b3242beef0f44c99310bff56ed193f1b2fefbaedeb5751c0a0b37fde34523c.mp3"}'
+) ON DUPLICATE KEY UPDATE
+  provider = VALUES(provider),
+  provider_model = VALUES(provider_model),
+  storage_url = VALUES(storage_url),
+  duration_ms = VALUES(duration_ms),
+  generated_at = VALUES(generated_at),
+  checksum = VALUES(checksum),
+  status = VALUES(status),
+  metadata = VALUES(metadata);
+
+-- ex_de_ch_listen -> audio/generated/de-DE/utterances/34b3242beef0f44c99310bff56ed193f1b2fefbaedeb5751c0a0b37fde34523c.mp3
+UPDATE audio_assets
+SET status = 'archived'
+WHERE entity_type = 'exercise'
+  AND entity_id = UUID_TO_BIN('1baae841-e94c-5ebc-b0f0-f96a105ade6b', 1)
+  AND voice_key = 'de-de.sentence.native-clear'
+  AND (entity_type NOT IN ('grammar_point','exercise') OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'ex_de_ch_listen')
+  AND source_text_hash IS NOT NULL
+  AND source_text_hash <> '84c92d8abf326bdb52f1fc6cd6856c41ae9bc1ef4f6056c2672e3d9d301782e1'
+  AND status <> 'archived';
+INSERT INTO audio_assets (
+  id, language_id, language_variant_id, entity_type, entity_id, source_text_hash,
+  voice_key, provider, provider_model, storage_url, duration_ms, generated_at, checksum, status, metadata
+) VALUES (
+  UUID_TO_BIN('c14cebe2-d938-579d-a6d0-ddd2199e48ec', 1), @audio_language_id, @audio_variant_id, 'exercise', UUID_TO_BIN('1baae841-e94c-5ebc-b0f0-f96a105ade6b', 1), '84c92d8abf326bdb52f1fc6cd6856c41ae9bc1ef4f6056c2672e3d9d301782e1',
+  'de-de.sentence.native-clear', 'elevenlabs', 'eleven_multilingual_v2', 'audio/generated/de-DE/utterances/34b3242beef0f44c99310bff56ed193f1b2fefbaedeb5751c0a0b37fde34523c.mp3', 679, '2026-09-14 11:56:56.531790', '520b3a02efac2b28ea5567775483343d5b2a0f4e5e045400962d0c7c19811a26', 'validated', '{"audio_key":"34b3242beef0f44c99310bff56ed193f1b2fefbaedeb5751c0a0b37fde34523c","entity_key":"ex_de_ch_listen","voice_id":"v3V1d2rk6528UrLKRuy8","voice_name":"Susi - Effortless and Confident","voice_labels":{"gender":"female","accent":"standard","age":"middle_aged","category":"high_quality","language":"de","use_case":"conversational","descriptive":"calm"},"output_format":"mp3_44100_192","file_sha256":"520b3a02efac2b28ea5567775483343d5b2a0f4e5e045400962d0c7c19811a26","settings":{"stability":0.68,"similarity_boost":0.88,"style":0.0,"use_speaker_boost":true,"speed":0.95},"relative_path":"audio/generated/de-DE/utterances/34b3242beef0f44c99310bff56ed193f1b2fefbaedeb5751c0a0b37fde34523c.mp3"}'
+) ON DUPLICATE KEY UPDATE
+  provider = VALUES(provider),
+  provider_model = VALUES(provider_model),
+  storage_url = VALUES(storage_url),
+  duration_ms = VALUES(duration_ms),
+  generated_at = VALUES(generated_at),
+  checksum = VALUES(checksum),
+  status = VALUES(status),
+  metadata = VALUES(metadata);
+
+-- g_de_ch_two_sounds:example:1 -> audio/generated/de-DE/utterances/34b3242beef0f44c99310bff56ed193f1b2fefbaedeb5751c0a0b37fde34523c.mp3
+UPDATE audio_assets
+SET status = 'archived'
+WHERE entity_type = 'grammar_point'
+  AND entity_id = UUID_TO_BIN('21e92604-7103-525d-bd09-0b6ac2e2f15f', 1)
+  AND voice_key = 'de-de.sentence.native-clear'
+  AND (entity_type NOT IN ('grammar_point','exercise') OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'g_de_ch_two_sounds:example:1')
+  AND source_text_hash IS NOT NULL
+  AND source_text_hash <> '84c92d8abf326bdb52f1fc6cd6856c41ae9bc1ef4f6056c2672e3d9d301782e1'
+  AND status <> 'archived';
+INSERT INTO audio_assets (
+  id, language_id, language_variant_id, entity_type, entity_id, source_text_hash,
+  voice_key, provider, provider_model, storage_url, duration_ms, generated_at, checksum, status, metadata
+) VALUES (
+  UUID_TO_BIN('47764c2e-bbda-52aa-b68c-08fd6b6e964d', 1), @audio_language_id, @audio_variant_id, 'grammar_point', UUID_TO_BIN('21e92604-7103-525d-bd09-0b6ac2e2f15f', 1), '84c92d8abf326bdb52f1fc6cd6856c41ae9bc1ef4f6056c2672e3d9d301782e1',
+  'de-de.sentence.native-clear', 'elevenlabs', 'eleven_multilingual_v2', 'audio/generated/de-DE/utterances/34b3242beef0f44c99310bff56ed193f1b2fefbaedeb5751c0a0b37fde34523c.mp3', 679, '2026-09-14 11:56:56.531790', '520b3a02efac2b28ea5567775483343d5b2a0f4e5e045400962d0c7c19811a26', 'validated', '{"audio_key":"34b3242beef0f44c99310bff56ed193f1b2fefbaedeb5751c0a0b37fde34523c","entity_key":"g_de_ch_two_sounds:example:1","voice_id":"v3V1d2rk6528UrLKRuy8","voice_name":"Susi - Effortless and Confident","voice_labels":{"gender":"female","accent":"standard","age":"middle_aged","category":"high_quality","language":"de","use_case":"conversational","descriptive":"calm"},"output_format":"mp3_44100_192","file_sha256":"520b3a02efac2b28ea5567775483343d5b2a0f4e5e045400962d0c7c19811a26","settings":{"stability":0.68,"similarity_boost":0.88,"style":0.0,"use_speaker_boost":true,"speed":0.95},"relative_path":"audio/generated/de-DE/utterances/34b3242beef0f44c99310bff56ed193f1b2fefbaedeb5751c0a0b37fde34523c.mp3"}'
 ) ON DUPLICATE KEY UPDATE
   provider = VALUES(provider),
   provider_model = VALUES(provider_model),
@@ -6406,6 +7004,58 @@ INSERT INTO audio_assets (
   status = VALUES(status),
   metadata = VALUES(metadata);
 
+-- u_de_muede -> audio/generated/de-DE/utterances/5e8ac62091be32a7b998bcc0ce53dc74dee0f98a8346fb6350d06c972cc86757.mp3
+UPDATE audio_assets
+SET status = 'archived'
+WHERE entity_type = 'utterance'
+  AND entity_id = UUID_TO_BIN('5b8ad8e7-457b-5da6-a741-d3a633711352', 1)
+  AND voice_key = 'de-de.sentence.native-clear'
+  AND (entity_type NOT IN ('grammar_point','exercise') OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'u_de_muede')
+  AND source_text_hash IS NOT NULL
+  AND source_text_hash <> '2b7186b5bfe89b064fd53b9dea2574644eb7c40fece1c01335fe4a1e788611e1'
+  AND status <> 'archived';
+INSERT INTO audio_assets (
+  id, language_id, language_variant_id, entity_type, entity_id, source_text_hash,
+  voice_key, provider, provider_model, storage_url, duration_ms, generated_at, checksum, status, metadata
+) VALUES (
+  UUID_TO_BIN('7494feef-ec42-5820-aaaa-890b69dd2a79', 1), @audio_language_id, @audio_variant_id, 'utterance', UUID_TO_BIN('5b8ad8e7-457b-5da6-a741-d3a633711352', 1), '2b7186b5bfe89b064fd53b9dea2574644eb7c40fece1c01335fe4a1e788611e1',
+  'de-de.sentence.native-clear', 'elevenlabs', 'eleven_multilingual_v2', 'audio/generated/de-DE/utterances/5e8ac62091be32a7b998bcc0ce53dc74dee0f98a8346fb6350d06c972cc86757.mp3', 1018, '2026-09-14 11:56:57.471652', 'a37c3353ed2fbe2059677776f366e890283c4eec5d7c6d16e06ce7b5d7b86421', 'validated', '{"audio_key":"5e8ac62091be32a7b998bcc0ce53dc74dee0f98a8346fb6350d06c972cc86757","entity_key":"u_de_muede","voice_id":"v3V1d2rk6528UrLKRuy8","voice_name":"Susi - Effortless and Confident","voice_labels":{"gender":"female","accent":"standard","age":"middle_aged","category":"high_quality","language":"de","use_case":"conversational","descriptive":"calm"},"output_format":"mp3_44100_192","file_sha256":"a37c3353ed2fbe2059677776f366e890283c4eec5d7c6d16e06ce7b5d7b86421","settings":{"stability":0.68,"similarity_boost":0.88,"style":0.0,"use_speaker_boost":true,"speed":0.95},"relative_path":"audio/generated/de-DE/utterances/5e8ac62091be32a7b998bcc0ce53dc74dee0f98a8346fb6350d06c972cc86757.mp3"}'
+) ON DUPLICATE KEY UPDATE
+  provider = VALUES(provider),
+  provider_model = VALUES(provider_model),
+  storage_url = VALUES(storage_url),
+  duration_ms = VALUES(duration_ms),
+  generated_at = VALUES(generated_at),
+  checksum = VALUES(checksum),
+  status = VALUES(status),
+  metadata = VALUES(metadata);
+
+-- g_de_umlaut_eszett:example:2 -> audio/generated/de-DE/utterances/5e8ac62091be32a7b998bcc0ce53dc74dee0f98a8346fb6350d06c972cc86757.mp3
+UPDATE audio_assets
+SET status = 'archived'
+WHERE entity_type = 'grammar_point'
+  AND entity_id = UUID_TO_BIN('736ffb38-c730-5170-977f-5531cb0fa481', 1)
+  AND voice_key = 'de-de.sentence.native-clear'
+  AND (entity_type NOT IN ('grammar_point','exercise') OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'g_de_umlaut_eszett:example:2')
+  AND source_text_hash IS NOT NULL
+  AND source_text_hash <> '2b7186b5bfe89b064fd53b9dea2574644eb7c40fece1c01335fe4a1e788611e1'
+  AND status <> 'archived';
+INSERT INTO audio_assets (
+  id, language_id, language_variant_id, entity_type, entity_id, source_text_hash,
+  voice_key, provider, provider_model, storage_url, duration_ms, generated_at, checksum, status, metadata
+) VALUES (
+  UUID_TO_BIN('7015e5ab-21c3-5d38-8e41-d0c500e48498', 1), @audio_language_id, @audio_variant_id, 'grammar_point', UUID_TO_BIN('736ffb38-c730-5170-977f-5531cb0fa481', 1), '2b7186b5bfe89b064fd53b9dea2574644eb7c40fece1c01335fe4a1e788611e1',
+  'de-de.sentence.native-clear', 'elevenlabs', 'eleven_multilingual_v2', 'audio/generated/de-DE/utterances/5e8ac62091be32a7b998bcc0ce53dc74dee0f98a8346fb6350d06c972cc86757.mp3', 1018, '2026-09-14 11:56:57.471652', 'a37c3353ed2fbe2059677776f366e890283c4eec5d7c6d16e06ce7b5d7b86421', 'validated', '{"audio_key":"5e8ac62091be32a7b998bcc0ce53dc74dee0f98a8346fb6350d06c972cc86757","entity_key":"g_de_umlaut_eszett:example:2","voice_id":"v3V1d2rk6528UrLKRuy8","voice_name":"Susi - Effortless and Confident","voice_labels":{"gender":"female","accent":"standard","age":"middle_aged","category":"high_quality","language":"de","use_case":"conversational","descriptive":"calm"},"output_format":"mp3_44100_192","file_sha256":"a37c3353ed2fbe2059677776f366e890283c4eec5d7c6d16e06ce7b5d7b86421","settings":{"stability":0.68,"similarity_boost":0.88,"style":0.0,"use_speaker_boost":true,"speed":0.95},"relative_path":"audio/generated/de-DE/utterances/5e8ac62091be32a7b998bcc0ce53dc74dee0f98a8346fb6350d06c972cc86757.mp3"}'
+) ON DUPLICATE KEY UPDATE
+  provider = VALUES(provider),
+  provider_model = VALUES(provider_model),
+  storage_url = VALUES(storage_url),
+  duration_ms = VALUES(duration_ms),
+  generated_at = VALUES(generated_at),
+  checksum = VALUES(checksum),
+  status = VALUES(status),
+  metadata = VALUES(metadata);
+
 -- u_classroom_02 -> audio/generated/de-DE/utterances/6fe162a844bc2011f8672ca26628760713b7e8b877698c5c4849b9b7d4dc4ba4.mp3
 UPDATE audio_assets
 SET status = 'archived'
@@ -6562,6 +7212,58 @@ INSERT INTO audio_assets (
   status = VALUES(status),
   metadata = VALUES(metadata);
 
+-- u_de_was_bedeutet_das -> audio/generated/de-DE/utterances/876b9aca9cc2b856bcfb4eba1085a39ff12ee2242fe23d3f7ad89f65e70e373f.mp3
+UPDATE audio_assets
+SET status = 'archived'
+WHERE entity_type = 'utterance'
+  AND entity_id = UUID_TO_BIN('0ae0d80a-41d6-5c52-a9d2-6007a3c6279e', 1)
+  AND voice_key = 'de-de.sentence.native-clear'
+  AND (entity_type NOT IN ('grammar_point','exercise') OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'u_de_was_bedeutet_das')
+  AND source_text_hash IS NOT NULL
+  AND source_text_hash <> '1990ca0bd26dac277b9481471e58b5bda9260d624d1283d18f9a774ec3c82c4a'
+  AND status <> 'archived';
+INSERT INTO audio_assets (
+  id, language_id, language_variant_id, entity_type, entity_id, source_text_hash,
+  voice_key, provider, provider_model, storage_url, duration_ms, generated_at, checksum, status, metadata
+) VALUES (
+  UUID_TO_BIN('89b90034-d878-5273-a923-0582ab06d383', 1), @audio_language_id, @audio_variant_id, 'utterance', UUID_TO_BIN('0ae0d80a-41d6-5c52-a9d2-6007a3c6279e', 1), '1990ca0bd26dac277b9481471e58b5bda9260d624d1283d18f9a774ec3c82c4a',
+  'de-de.sentence.native-clear', 'elevenlabs', 'eleven_multilingual_v2', 'audio/generated/de-DE/utterances/876b9aca9cc2b856bcfb4eba1085a39ff12ee2242fe23d3f7ad89f65e70e373f.mp3', 1384, '2026-09-14 11:56:57.571423', '647fd71e6669dae9b12368f60558c09de457a656e6e13e1dda7ff3e68e2d20f8', 'validated', '{"audio_key":"876b9aca9cc2b856bcfb4eba1085a39ff12ee2242fe23d3f7ad89f65e70e373f","entity_key":"u_de_was_bedeutet_das","voice_id":"v3V1d2rk6528UrLKRuy8","voice_name":"Susi - Effortless and Confident","voice_labels":{"gender":"female","accent":"standard","age":"middle_aged","category":"high_quality","language":"de","use_case":"conversational","descriptive":"calm"},"output_format":"mp3_44100_192","file_sha256":"647fd71e6669dae9b12368f60558c09de457a656e6e13e1dda7ff3e68e2d20f8","settings":{"stability":0.68,"similarity_boost":0.88,"style":0.0,"use_speaker_boost":true,"speed":0.95},"relative_path":"audio/generated/de-DE/utterances/876b9aca9cc2b856bcfb4eba1085a39ff12ee2242fe23d3f7ad89f65e70e373f.mp3"}'
+) ON DUPLICATE KEY UPDATE
+  provider = VALUES(provider),
+  provider_model = VALUES(provider_model),
+  storage_url = VALUES(storage_url),
+  duration_ms = VALUES(duration_ms),
+  generated_at = VALUES(generated_at),
+  checksum = VALUES(checksum),
+  status = VALUES(status),
+  metadata = VALUES(metadata);
+
+-- g_de_ready_gate:example:2 -> audio/generated/de-DE/utterances/876b9aca9cc2b856bcfb4eba1085a39ff12ee2242fe23d3f7ad89f65e70e373f.mp3
+UPDATE audio_assets
+SET status = 'archived'
+WHERE entity_type = 'grammar_point'
+  AND entity_id = UUID_TO_BIN('3120e331-9825-59b9-99a0-15bcff94668a', 1)
+  AND voice_key = 'de-de.sentence.native-clear'
+  AND (entity_type NOT IN ('grammar_point','exercise') OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'g_de_ready_gate:example:2')
+  AND source_text_hash IS NOT NULL
+  AND source_text_hash <> '1990ca0bd26dac277b9481471e58b5bda9260d624d1283d18f9a774ec3c82c4a'
+  AND status <> 'archived';
+INSERT INTO audio_assets (
+  id, language_id, language_variant_id, entity_type, entity_id, source_text_hash,
+  voice_key, provider, provider_model, storage_url, duration_ms, generated_at, checksum, status, metadata
+) VALUES (
+  UUID_TO_BIN('e2588fbd-4f03-51a2-a9b4-385790fb44e6', 1), @audio_language_id, @audio_variant_id, 'grammar_point', UUID_TO_BIN('3120e331-9825-59b9-99a0-15bcff94668a', 1), '1990ca0bd26dac277b9481471e58b5bda9260d624d1283d18f9a774ec3c82c4a',
+  'de-de.sentence.native-clear', 'elevenlabs', 'eleven_multilingual_v2', 'audio/generated/de-DE/utterances/876b9aca9cc2b856bcfb4eba1085a39ff12ee2242fe23d3f7ad89f65e70e373f.mp3', 1384, '2026-09-14 11:56:57.571423', '647fd71e6669dae9b12368f60558c09de457a656e6e13e1dda7ff3e68e2d20f8', 'validated', '{"audio_key":"876b9aca9cc2b856bcfb4eba1085a39ff12ee2242fe23d3f7ad89f65e70e373f","entity_key":"g_de_ready_gate:example:2","voice_id":"v3V1d2rk6528UrLKRuy8","voice_name":"Susi - Effortless and Confident","voice_labels":{"gender":"female","accent":"standard","age":"middle_aged","category":"high_quality","language":"de","use_case":"conversational","descriptive":"calm"},"output_format":"mp3_44100_192","file_sha256":"647fd71e6669dae9b12368f60558c09de457a656e6e13e1dda7ff3e68e2d20f8","settings":{"stability":0.68,"similarity_boost":0.88,"style":0.0,"use_speaker_boost":true,"speed":0.95},"relative_path":"audio/generated/de-DE/utterances/876b9aca9cc2b856bcfb4eba1085a39ff12ee2242fe23d3f7ad89f65e70e373f.mp3"}'
+) ON DUPLICATE KEY UPDATE
+  provider = VALUES(provider),
+  provider_model = VALUES(provider_model),
+  storage_url = VALUES(storage_url),
+  duration_ms = VALUES(duration_ms),
+  generated_at = VALUES(generated_at),
+  checksum = VALUES(checksum),
+  status = VALUES(status),
+  metadata = VALUES(metadata);
+
 -- u_first_conversation_05 -> audio/generated/de-DE/utterances/87889faaa4fb111f4a55c338506f1c4232d0db5a6601b86e25f4707db8dc2970.mp3
 UPDATE audio_assets
 SET status = 'archived'
@@ -6656,6 +7358,110 @@ INSERT INTO audio_assets (
 ) VALUES (
   UUID_TO_BIN('189a10f5-d9e1-5f74-9e21-3e9248c72339', 1), @audio_language_id, @audio_variant_id, 'exercise', UUID_TO_BIN('90fb94ff-fa55-58d6-96e0-ddff7e5c4e0f', 1), '8bbd4b3c19db08c90c23a5850086ff56ca97de8fba4cca38cdaa5f490b950b7e',
   'de-de.sentence.native-clear', 'elevenlabs', 'eleven_multilingual_v2', 'audio/generated/de-DE/utterances/87889faaa4fb111f4a55c338506f1c4232d0db5a6601b86e25f4707db8dc2970.mp3', 966, '2026-09-13 04:05:45.924388', '934e9949c2de904b5da2ee80096a91fb1ab147e5932e3cc2aee02e8f5e6150d2', 'validated', '{"audio_key":"87889faaa4fb111f4a55c338506f1c4232d0db5a6601b86e25f4707db8dc2970","entity_key":"e_my_name_02_listen","voice_id":"v3V1d2rk6528UrLKRuy8","voice_name":"Susi - Effortless and Confident","voice_labels":{"gender":"female","accent":"standard","age":"middle_aged","category":"high_quality","language":"de","use_case":"conversational","descriptive":"calm"},"output_format":"mp3_44100_192","file_sha256":"934e9949c2de904b5da2ee80096a91fb1ab147e5932e3cc2aee02e8f5e6150d2","settings":{"stability":0.68,"similarity_boost":0.88,"style":0.0,"use_speaker_boost":true,"speed":0.95},"relative_path":"audio/generated/de-DE/utterances/87889faaa4fb111f4a55c338506f1c4232d0db5a6601b86e25f4707db8dc2970.mp3"}'
+) ON DUPLICATE KEY UPDATE
+  provider = VALUES(provider),
+  provider_model = VALUES(provider_model),
+  storage_url = VALUES(storage_url),
+  duration_ms = VALUES(duration_ms),
+  generated_at = VALUES(generated_at),
+  checksum = VALUES(checksum),
+  status = VALUES(status),
+  metadata = VALUES(metadata);
+
+-- u_de_vater -> audio/generated/de-DE/utterances/89aa054ec31618e6a732d220076307fcff0deb6e34c9794c6e0d079a3e587e87.mp3
+UPDATE audio_assets
+SET status = 'archived'
+WHERE entity_type = 'utterance'
+  AND entity_id = UUID_TO_BIN('3a3ecd2b-d001-525c-a1ad-e05ef8b3a91a', 1)
+  AND voice_key = 'de-de.sentence.native-clear'
+  AND (entity_type NOT IN ('grammar_point','exercise') OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'u_de_vater')
+  AND source_text_hash IS NOT NULL
+  AND source_text_hash <> '695cc3dcacc2b0f9ad8d259973ab902b2dd090148c0e77fcf38ac4dd07d65dd6'
+  AND status <> 'archived';
+INSERT INTO audio_assets (
+  id, language_id, language_variant_id, entity_type, entity_id, source_text_hash,
+  voice_key, provider, provider_model, storage_url, duration_ms, generated_at, checksum, status, metadata
+) VALUES (
+  UUID_TO_BIN('1c36ca8c-a3ca-5617-b6e1-150e16f7b055', 1), @audio_language_id, @audio_variant_id, 'utterance', UUID_TO_BIN('3a3ecd2b-d001-525c-a1ad-e05ef8b3a91a', 1), '695cc3dcacc2b0f9ad8d259973ab902b2dd090148c0e77fcf38ac4dd07d65dd6',
+  'de-de.sentence.native-clear', 'elevenlabs', 'eleven_multilingual_v2', 'audio/generated/de-DE/utterances/89aa054ec31618e6a732d220076307fcff0deb6e34c9794c6e0d079a3e587e87.mp3', 1018, '2026-09-14 11:56:58.383666', '63b1561fb8e9816912e27a65ae36e8b17f83fa8d69b3ba37d54026e2a0193315', 'validated', '{"audio_key":"89aa054ec31618e6a732d220076307fcff0deb6e34c9794c6e0d079a3e587e87","entity_key":"u_de_vater","voice_id":"v3V1d2rk6528UrLKRuy8","voice_name":"Susi - Effortless and Confident","voice_labels":{"gender":"female","accent":"standard","age":"middle_aged","category":"high_quality","language":"de","use_case":"conversational","descriptive":"calm"},"output_format":"mp3_44100_192","file_sha256":"63b1561fb8e9816912e27a65ae36e8b17f83fa8d69b3ba37d54026e2a0193315","settings":{"stability":0.68,"similarity_boost":0.88,"style":0.0,"use_speaker_boost":true,"speed":0.95},"relative_path":"audio/generated/de-DE/utterances/89aa054ec31618e6a732d220076307fcff0deb6e34c9794c6e0d079a3e587e87.mp3"}'
+) ON DUPLICATE KEY UPDATE
+  provider = VALUES(provider),
+  provider_model = VALUES(provider_model),
+  storage_url = VALUES(storage_url),
+  duration_ms = VALUES(duration_ms),
+  generated_at = VALUES(generated_at),
+  checksum = VALUES(checksum),
+  status = VALUES(status),
+  metadata = VALUES(metadata);
+
+-- g_de_wvz:example:2 -> audio/generated/de-DE/utterances/89aa054ec31618e6a732d220076307fcff0deb6e34c9794c6e0d079a3e587e87.mp3
+UPDATE audio_assets
+SET status = 'archived'
+WHERE entity_type = 'grammar_point'
+  AND entity_id = UUID_TO_BIN('13ec0470-2f7e-5298-99d0-407a03fb29e9', 1)
+  AND voice_key = 'de-de.sentence.native-clear'
+  AND (entity_type NOT IN ('grammar_point','exercise') OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'g_de_wvz:example:2')
+  AND source_text_hash IS NOT NULL
+  AND source_text_hash <> '695cc3dcacc2b0f9ad8d259973ab902b2dd090148c0e77fcf38ac4dd07d65dd6'
+  AND status <> 'archived';
+INSERT INTO audio_assets (
+  id, language_id, language_variant_id, entity_type, entity_id, source_text_hash,
+  voice_key, provider, provider_model, storage_url, duration_ms, generated_at, checksum, status, metadata
+) VALUES (
+  UUID_TO_BIN('a0240e0b-7ee3-5b6d-aab7-96dffdd0d290', 1), @audio_language_id, @audio_variant_id, 'grammar_point', UUID_TO_BIN('13ec0470-2f7e-5298-99d0-407a03fb29e9', 1), '695cc3dcacc2b0f9ad8d259973ab902b2dd090148c0e77fcf38ac4dd07d65dd6',
+  'de-de.sentence.native-clear', 'elevenlabs', 'eleven_multilingual_v2', 'audio/generated/de-DE/utterances/89aa054ec31618e6a732d220076307fcff0deb6e34c9794c6e0d079a3e587e87.mp3', 1018, '2026-09-14 11:56:58.383666', '63b1561fb8e9816912e27a65ae36e8b17f83fa8d69b3ba37d54026e2a0193315', 'validated', '{"audio_key":"89aa054ec31618e6a732d220076307fcff0deb6e34c9794c6e0d079a3e587e87","entity_key":"g_de_wvz:example:2","voice_id":"v3V1d2rk6528UrLKRuy8","voice_name":"Susi - Effortless and Confident","voice_labels":{"gender":"female","accent":"standard","age":"middle_aged","category":"high_quality","language":"de","use_case":"conversational","descriptive":"calm"},"output_format":"mp3_44100_192","file_sha256":"63b1561fb8e9816912e27a65ae36e8b17f83fa8d69b3ba37d54026e2a0193315","settings":{"stability":0.68,"similarity_boost":0.88,"style":0.0,"use_speaker_boost":true,"speed":0.95},"relative_path":"audio/generated/de-DE/utterances/89aa054ec31618e6a732d220076307fcff0deb6e34c9794c6e0d079a3e587e87.mp3"}'
+) ON DUPLICATE KEY UPDATE
+  provider = VALUES(provider),
+  provider_model = VALUES(provider_model),
+  storage_url = VALUES(storage_url),
+  duration_ms = VALUES(duration_ms),
+  generated_at = VALUES(generated_at),
+  checksum = VALUES(checksum),
+  status = VALUES(status),
+  metadata = VALUES(metadata);
+
+-- u_de_buch_sound -> audio/generated/de-DE/utterances/90790c6a9d1056860607b406b4b1e5dc80e9aa47f11c9e2e887f7412c4edbe8f.mp3
+UPDATE audio_assets
+SET status = 'archived'
+WHERE entity_type = 'utterance'
+  AND entity_id = UUID_TO_BIN('035fbf04-681b-5294-ac3b-848fe0a05fe2', 1)
+  AND voice_key = 'de-de.sentence.native-clear'
+  AND (entity_type NOT IN ('grammar_point','exercise') OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'u_de_buch_sound')
+  AND source_text_hash IS NOT NULL
+  AND source_text_hash <> '5f36321c429928f458b772bbf5d63c4e51236c98f80144303c2541e4a3e1a55c'
+  AND status <> 'archived';
+INSERT INTO audio_assets (
+  id, language_id, language_variant_id, entity_type, entity_id, source_text_hash,
+  voice_key, provider, provider_model, storage_url, duration_ms, generated_at, checksum, status, metadata
+) VALUES (
+  UUID_TO_BIN('3cac87c7-b51b-556e-b904-4249567d6c53', 1), @audio_language_id, @audio_variant_id, 'utterance', UUID_TO_BIN('035fbf04-681b-5294-ac3b-848fe0a05fe2', 1), '5f36321c429928f458b772bbf5d63c4e51236c98f80144303c2541e4a3e1a55c',
+  'de-de.sentence.native-clear', 'elevenlabs', 'eleven_multilingual_v2', 'audio/generated/de-DE/utterances/90790c6a9d1056860607b406b4b1e5dc80e9aa47f11c9e2e887f7412c4edbe8f.mp3', 862, '2026-09-14 11:56:58.508632', 'e8d818fed871ec8b78bc63f667e06fa2a90c7193bbe9018e8420833df6252405', 'validated', '{"audio_key":"90790c6a9d1056860607b406b4b1e5dc80e9aa47f11c9e2e887f7412c4edbe8f","entity_key":"u_de_buch_sound","voice_id":"v3V1d2rk6528UrLKRuy8","voice_name":"Susi - Effortless and Confident","voice_labels":{"gender":"female","accent":"standard","age":"middle_aged","category":"high_quality","language":"de","use_case":"conversational","descriptive":"calm"},"output_format":"mp3_44100_192","file_sha256":"e8d818fed871ec8b78bc63f667e06fa2a90c7193bbe9018e8420833df6252405","settings":{"stability":0.68,"similarity_boost":0.88,"style":0.0,"use_speaker_boost":true,"speed":0.95},"relative_path":"audio/generated/de-DE/utterances/90790c6a9d1056860607b406b4b1e5dc80e9aa47f11c9e2e887f7412c4edbe8f.mp3"}'
+) ON DUPLICATE KEY UPDATE
+  provider = VALUES(provider),
+  provider_model = VALUES(provider_model),
+  storage_url = VALUES(storage_url),
+  duration_ms = VALUES(duration_ms),
+  generated_at = VALUES(generated_at),
+  checksum = VALUES(checksum),
+  status = VALUES(status),
+  metadata = VALUES(metadata);
+
+-- g_de_ch_two_sounds:example:2 -> audio/generated/de-DE/utterances/90790c6a9d1056860607b406b4b1e5dc80e9aa47f11c9e2e887f7412c4edbe8f.mp3
+UPDATE audio_assets
+SET status = 'archived'
+WHERE entity_type = 'grammar_point'
+  AND entity_id = UUID_TO_BIN('21e92604-7103-525d-bd09-0b6ac2e2f15f', 1)
+  AND voice_key = 'de-de.sentence.native-clear'
+  AND (entity_type NOT IN ('grammar_point','exercise') OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'g_de_ch_two_sounds:example:2')
+  AND source_text_hash IS NOT NULL
+  AND source_text_hash <> '5f36321c429928f458b772bbf5d63c4e51236c98f80144303c2541e4a3e1a55c'
+  AND status <> 'archived';
+INSERT INTO audio_assets (
+  id, language_id, language_variant_id, entity_type, entity_id, source_text_hash,
+  voice_key, provider, provider_model, storage_url, duration_ms, generated_at, checksum, status, metadata
+) VALUES (
+  UUID_TO_BIN('6a46e6ff-8ef8-56a1-a42e-1bca4f701f43', 1), @audio_language_id, @audio_variant_id, 'grammar_point', UUID_TO_BIN('21e92604-7103-525d-bd09-0b6ac2e2f15f', 1), '5f36321c429928f458b772bbf5d63c4e51236c98f80144303c2541e4a3e1a55c',
+  'de-de.sentence.native-clear', 'elevenlabs', 'eleven_multilingual_v2', 'audio/generated/de-DE/utterances/90790c6a9d1056860607b406b4b1e5dc80e9aa47f11c9e2e887f7412c4edbe8f.mp3', 862, '2026-09-14 11:56:58.508632', 'e8d818fed871ec8b78bc63f667e06fa2a90c7193bbe9018e8420833df6252405', 'validated', '{"audio_key":"90790c6a9d1056860607b406b4b1e5dc80e9aa47f11c9e2e887f7412c4edbe8f","entity_key":"g_de_ch_two_sounds:example:2","voice_id":"v3V1d2rk6528UrLKRuy8","voice_name":"Susi - Effortless and Confident","voice_labels":{"gender":"female","accent":"standard","age":"middle_aged","category":"high_quality","language":"de","use_case":"conversational","descriptive":"calm"},"output_format":"mp3_44100_192","file_sha256":"e8d818fed871ec8b78bc63f667e06fa2a90c7193bbe9018e8420833df6252405","settings":{"stability":0.68,"similarity_boost":0.88,"style":0.0,"use_speaker_boost":true,"speed":0.95},"relative_path":"audio/generated/de-DE/utterances/90790c6a9d1056860607b406b4b1e5dc80e9aa47f11c9e2e887f7412c4edbe8f.mp3"}'
 ) ON DUPLICATE KEY UPDATE
   provider = VALUES(provider),
   provider_model = VALUES(provider_model),
@@ -7056,6 +7862,84 @@ INSERT INTO audio_assets (
   status = VALUES(status),
   metadata = VALUES(metadata);
 
+-- ex_de_ready_listen -> audio/generated/de-DE/utterances/e4bd10bd426fbef882d9656972b4137f429d74a828d77f43eeb5276f21c150c8.mp3
+UPDATE audio_assets
+SET status = 'archived'
+WHERE entity_type = 'exercise'
+  AND entity_id = UUID_TO_BIN('828f0d78-636d-501a-8d2b-230e6b6998b8', 1)
+  AND voice_key = 'de-de.sentence.native-clear'
+  AND (entity_type NOT IN ('grammar_point','exercise') OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'ex_de_ready_listen')
+  AND source_text_hash IS NOT NULL
+  AND source_text_hash <> 'bedd6f98909f0da2622f39ce0312e19bf85886fef4fcbe81aee8a343fc0aa763'
+  AND status <> 'archived';
+INSERT INTO audio_assets (
+  id, language_id, language_variant_id, entity_type, entity_id, source_text_hash,
+  voice_key, provider, provider_model, storage_url, duration_ms, generated_at, checksum, status, metadata
+) VALUES (
+  UUID_TO_BIN('a6c1bfde-afe2-55f5-b8db-bd213bc480a8', 1), @audio_language_id, @audio_variant_id, 'exercise', UUID_TO_BIN('828f0d78-636d-501a-8d2b-230e6b6998b8', 1), 'bedd6f98909f0da2622f39ce0312e19bf85886fef4fcbe81aee8a343fc0aa763',
+  'de-de.sentence.native-clear', 'elevenlabs', 'eleven_multilingual_v2', 'audio/generated/de-DE/utterances/e4bd10bd426fbef882d9656972b4137f429d74a828d77f43eeb5276f21c150c8.mp3', 862, '2026-09-13 04:05:52.579306', '2cf1419b662f651dc71ea0fe2f63b011125b8fecd7efc9e24ee0d2d8fae87955', 'validated', '{"audio_key":"e4bd10bd426fbef882d9656972b4137f429d74a828d77f43eeb5276f21c150c8","entity_key":"ex_de_ready_listen","voice_id":"v3V1d2rk6528UrLKRuy8","voice_name":"Susi - Effortless and Confident","voice_labels":{"gender":"female","accent":"standard","age":"middle_aged","category":"high_quality","language":"de","use_case":"conversational","descriptive":"calm"},"output_format":"mp3_44100_192","file_sha256":"2cf1419b662f651dc71ea0fe2f63b011125b8fecd7efc9e24ee0d2d8fae87955","settings":{"stability":0.68,"similarity_boost":0.88,"style":0.0,"use_speaker_boost":true,"speed":0.95},"relative_path":"audio/generated/de-DE/utterances/e4bd10bd426fbef882d9656972b4137f429d74a828d77f43eeb5276f21c150c8.mp3"}'
+) ON DUPLICATE KEY UPDATE
+  provider = VALUES(provider),
+  provider_model = VALUES(provider_model),
+  storage_url = VALUES(storage_url),
+  duration_ms = VALUES(duration_ms),
+  generated_at = VALUES(generated_at),
+  checksum = VALUES(checksum),
+  status = VALUES(status),
+  metadata = VALUES(metadata);
+
+-- u_de_zehn -> audio/generated/de-DE/utterances/e4bd10bd426fbef882d9656972b4137f429d74a828d77f43eeb5276f21c150c8.mp3
+UPDATE audio_assets
+SET status = 'archived'
+WHERE entity_type = 'utterance'
+  AND entity_id = UUID_TO_BIN('23446be5-73bd-57a6-b8bb-5b14646dce5a', 1)
+  AND voice_key = 'de-de.sentence.native-clear'
+  AND (entity_type NOT IN ('grammar_point','exercise') OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'u_de_zehn')
+  AND source_text_hash IS NOT NULL
+  AND source_text_hash <> 'bedd6f98909f0da2622f39ce0312e19bf85886fef4fcbe81aee8a343fc0aa763'
+  AND status <> 'archived';
+INSERT INTO audio_assets (
+  id, language_id, language_variant_id, entity_type, entity_id, source_text_hash,
+  voice_key, provider, provider_model, storage_url, duration_ms, generated_at, checksum, status, metadata
+) VALUES (
+  UUID_TO_BIN('4a5de533-b933-5a8a-8ca9-50155aa9088f', 1), @audio_language_id, @audio_variant_id, 'utterance', UUID_TO_BIN('23446be5-73bd-57a6-b8bb-5b14646dce5a', 1), 'bedd6f98909f0da2622f39ce0312e19bf85886fef4fcbe81aee8a343fc0aa763',
+  'de-de.sentence.native-clear', 'elevenlabs', 'eleven_multilingual_v2', 'audio/generated/de-DE/utterances/e4bd10bd426fbef882d9656972b4137f429d74a828d77f43eeb5276f21c150c8.mp3', 862, '2026-09-13 04:05:52.579306', '2cf1419b662f651dc71ea0fe2f63b011125b8fecd7efc9e24ee0d2d8fae87955', 'validated', '{"audio_key":"e4bd10bd426fbef882d9656972b4137f429d74a828d77f43eeb5276f21c150c8","entity_key":"u_de_zehn","voice_id":"v3V1d2rk6528UrLKRuy8","voice_name":"Susi - Effortless and Confident","voice_labels":{"gender":"female","accent":"standard","age":"middle_aged","category":"high_quality","language":"de","use_case":"conversational","descriptive":"calm"},"output_format":"mp3_44100_192","file_sha256":"2cf1419b662f651dc71ea0fe2f63b011125b8fecd7efc9e24ee0d2d8fae87955","settings":{"stability":0.68,"similarity_boost":0.88,"style":0.0,"use_speaker_boost":true,"speed":0.95},"relative_path":"audio/generated/de-DE/utterances/e4bd10bd426fbef882d9656972b4137f429d74a828d77f43eeb5276f21c150c8.mp3"}'
+) ON DUPLICATE KEY UPDATE
+  provider = VALUES(provider),
+  provider_model = VALUES(provider_model),
+  storage_url = VALUES(storage_url),
+  duration_ms = VALUES(duration_ms),
+  generated_at = VALUES(generated_at),
+  checksum = VALUES(checksum),
+  status = VALUES(status),
+  metadata = VALUES(metadata);
+
+-- g_de_wvz:example:3 -> audio/generated/de-DE/utterances/e4bd10bd426fbef882d9656972b4137f429d74a828d77f43eeb5276f21c150c8.mp3
+UPDATE audio_assets
+SET status = 'archived'
+WHERE entity_type = 'grammar_point'
+  AND entity_id = UUID_TO_BIN('13ec0470-2f7e-5298-99d0-407a03fb29e9', 1)
+  AND voice_key = 'de-de.sentence.native-clear'
+  AND (entity_type NOT IN ('grammar_point','exercise') OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'g_de_wvz:example:3')
+  AND source_text_hash IS NOT NULL
+  AND source_text_hash <> 'bedd6f98909f0da2622f39ce0312e19bf85886fef4fcbe81aee8a343fc0aa763'
+  AND status <> 'archived';
+INSERT INTO audio_assets (
+  id, language_id, language_variant_id, entity_type, entity_id, source_text_hash,
+  voice_key, provider, provider_model, storage_url, duration_ms, generated_at, checksum, status, metadata
+) VALUES (
+  UUID_TO_BIN('92ca81ec-a138-5f5e-86ff-e6707e9dc5f7', 1), @audio_language_id, @audio_variant_id, 'grammar_point', UUID_TO_BIN('13ec0470-2f7e-5298-99d0-407a03fb29e9', 1), 'bedd6f98909f0da2622f39ce0312e19bf85886fef4fcbe81aee8a343fc0aa763',
+  'de-de.sentence.native-clear', 'elevenlabs', 'eleven_multilingual_v2', 'audio/generated/de-DE/utterances/e4bd10bd426fbef882d9656972b4137f429d74a828d77f43eeb5276f21c150c8.mp3', 862, '2026-09-13 04:05:52.579306', '2cf1419b662f651dc71ea0fe2f63b011125b8fecd7efc9e24ee0d2d8fae87955', 'validated', '{"audio_key":"e4bd10bd426fbef882d9656972b4137f429d74a828d77f43eeb5276f21c150c8","entity_key":"g_de_wvz:example:3","voice_id":"v3V1d2rk6528UrLKRuy8","voice_name":"Susi - Effortless and Confident","voice_labels":{"gender":"female","accent":"standard","age":"middle_aged","category":"high_quality","language":"de","use_case":"conversational","descriptive":"calm"},"output_format":"mp3_44100_192","file_sha256":"2cf1419b662f651dc71ea0fe2f63b011125b8fecd7efc9e24ee0d2d8fae87955","settings":{"stability":0.68,"similarity_boost":0.88,"style":0.0,"use_speaker_boost":true,"speed":0.95},"relative_path":"audio/generated/de-DE/utterances/e4bd10bd426fbef882d9656972b4137f429d74a828d77f43eeb5276f21c150c8.mp3"}'
+) ON DUPLICATE KEY UPDATE
+  provider = VALUES(provider),
+  provider_model = VALUES(provider_model),
+  storage_url = VALUES(storage_url),
+  duration_ms = VALUES(duration_ms),
+  generated_at = VALUES(generated_at),
+  checksum = VALUES(checksum),
+  status = VALUES(status),
+  metadata = VALUES(metadata);
+
 -- u_classroom_06 -> audio/generated/de-DE/utterances/e7cccb7dcc2b51c868a019df3e973394a92cf6481f7845f2c9c4c1f3030b3222.mp3
 UPDATE audio_assets
 SET status = 'archived'
@@ -7098,6 +7982,58 @@ INSERT INTO audio_assets (
 ) VALUES (
   UUID_TO_BIN('1e37d66b-22b1-5321-81ec-4671688fbd57', 1), @audio_language_id, @audio_variant_id, 'exercise', UUID_TO_BIN('cb5b75af-a328-51a0-b085-78ef0c358954', 1), '3d0688394ab2d1186c239c68e87bf48c5ba1ef77337d0091a476bb2fc8c531d1',
   'de-de.sentence.native-clear', 'elevenlabs', 'eleven_multilingual_v2', 'audio/generated/de-DE/utterances/e7cccb7dcc2b51c868a019df3e973394a92cf6481f7845f2c9c4c1f3030b3222.mp3', 1097, '2026-09-13 04:05:53.058424', '921941fe2be32805af77b0b72e3e70357bc74704864f4e939561bc28efed9797', 'validated', '{"audio_key":"e7cccb7dcc2b51c868a019df3e973394a92cf6481f7845f2c9c4c1f3030b3222","entity_key":"e_classroom_02_listen","voice_id":"v3V1d2rk6528UrLKRuy8","voice_name":"Susi - Effortless and Confident","voice_labels":{"gender":"female","accent":"standard","age":"middle_aged","category":"high_quality","language":"de","use_case":"conversational","descriptive":"calm"},"output_format":"mp3_44100_192","file_sha256":"921941fe2be32805af77b0b72e3e70357bc74704864f4e939561bc28efed9797","settings":{"stability":0.68,"similarity_boost":0.88,"style":0.0,"use_speaker_boost":true,"speed":0.95},"relative_path":"audio/generated/de-DE/utterances/e7cccb7dcc2b51c868a019df3e973394a92cf6481f7845f2c9c4c1f3030b3222.mp3"}'
+) ON DUPLICATE KEY UPDATE
+  provider = VALUES(provider),
+  provider_model = VALUES(provider_model),
+  storage_url = VALUES(storage_url),
+  duration_ms = VALUES(duration_ms),
+  generated_at = VALUES(generated_at),
+  checksum = VALUES(checksum),
+  status = VALUES(status),
+  metadata = VALUES(metadata);
+
+-- u_de_strasse -> audio/generated/de-DE/utterances/e8a47de43ac4e5007a73724926d7bed4d3bda7a91192a15348a18525dafe33e2.mp3
+UPDATE audio_assets
+SET status = 'archived'
+WHERE entity_type = 'utterance'
+  AND entity_id = UUID_TO_BIN('391f8480-13cc-5f1e-9dbc-33817f10f55f', 1)
+  AND voice_key = 'de-de.sentence.native-clear'
+  AND (entity_type NOT IN ('grammar_point','exercise') OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'u_de_strasse')
+  AND source_text_hash IS NOT NULL
+  AND source_text_hash <> '58a3778c18c41726cd53c2a4c77dcbed8512f962d7e616717abee95ca41d0029'
+  AND status <> 'archived';
+INSERT INTO audio_assets (
+  id, language_id, language_variant_id, entity_type, entity_id, source_text_hash,
+  voice_key, provider, provider_model, storage_url, duration_ms, generated_at, checksum, status, metadata
+) VALUES (
+  UUID_TO_BIN('450da1ab-a502-5a0d-9132-7b0e2a0a52d5', 1), @audio_language_id, @audio_variant_id, 'utterance', UUID_TO_BIN('391f8480-13cc-5f1e-9dbc-33817f10f55f', 1), '58a3778c18c41726cd53c2a4c77dcbed8512f962d7e616717abee95ca41d0029',
+  'de-de.sentence.native-clear', 'elevenlabs', 'eleven_multilingual_v2', 'audio/generated/de-DE/utterances/e8a47de43ac4e5007a73724926d7bed4d3bda7a91192a15348a18525dafe33e2.mp3', 1018, '2026-09-14 11:56:59.332115', 'd1e84eea60c3907f189245b21cd08c59549ae202d554f3fa8a9ad7414258f587', 'validated', '{"audio_key":"e8a47de43ac4e5007a73724926d7bed4d3bda7a91192a15348a18525dafe33e2","entity_key":"u_de_strasse","voice_id":"v3V1d2rk6528UrLKRuy8","voice_name":"Susi - Effortless and Confident","voice_labels":{"gender":"female","accent":"standard","age":"middle_aged","category":"high_quality","language":"de","use_case":"conversational","descriptive":"calm"},"output_format":"mp3_44100_192","file_sha256":"d1e84eea60c3907f189245b21cd08c59549ae202d554f3fa8a9ad7414258f587","settings":{"stability":0.68,"similarity_boost":0.88,"style":0.0,"use_speaker_boost":true,"speed":0.95},"relative_path":"audio/generated/de-DE/utterances/e8a47de43ac4e5007a73724926d7bed4d3bda7a91192a15348a18525dafe33e2.mp3"}'
+) ON DUPLICATE KEY UPDATE
+  provider = VALUES(provider),
+  provider_model = VALUES(provider_model),
+  storage_url = VALUES(storage_url),
+  duration_ms = VALUES(duration_ms),
+  generated_at = VALUES(generated_at),
+  checksum = VALUES(checksum),
+  status = VALUES(status),
+  metadata = VALUES(metadata);
+
+-- g_de_umlaut_eszett:example:3 -> audio/generated/de-DE/utterances/e8a47de43ac4e5007a73724926d7bed4d3bda7a91192a15348a18525dafe33e2.mp3
+UPDATE audio_assets
+SET status = 'archived'
+WHERE entity_type = 'grammar_point'
+  AND entity_id = UUID_TO_BIN('736ffb38-c730-5170-977f-5531cb0fa481', 1)
+  AND voice_key = 'de-de.sentence.native-clear'
+  AND (entity_type NOT IN ('grammar_point','exercise') OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'g_de_umlaut_eszett:example:3')
+  AND source_text_hash IS NOT NULL
+  AND source_text_hash <> '58a3778c18c41726cd53c2a4c77dcbed8512f962d7e616717abee95ca41d0029'
+  AND status <> 'archived';
+INSERT INTO audio_assets (
+  id, language_id, language_variant_id, entity_type, entity_id, source_text_hash,
+  voice_key, provider, provider_model, storage_url, duration_ms, generated_at, checksum, status, metadata
+) VALUES (
+  UUID_TO_BIN('3c7b768e-4ce4-5ac6-b94d-178177169b57', 1), @audio_language_id, @audio_variant_id, 'grammar_point', UUID_TO_BIN('736ffb38-c730-5170-977f-5531cb0fa481', 1), '58a3778c18c41726cd53c2a4c77dcbed8512f962d7e616717abee95ca41d0029',
+  'de-de.sentence.native-clear', 'elevenlabs', 'eleven_multilingual_v2', 'audio/generated/de-DE/utterances/e8a47de43ac4e5007a73724926d7bed4d3bda7a91192a15348a18525dafe33e2.mp3', 1018, '2026-09-14 11:56:59.332115', 'd1e84eea60c3907f189245b21cd08c59549ae202d554f3fa8a9ad7414258f587', 'validated', '{"audio_key":"e8a47de43ac4e5007a73724926d7bed4d3bda7a91192a15348a18525dafe33e2","entity_key":"g_de_umlaut_eszett:example:3","voice_id":"v3V1d2rk6528UrLKRuy8","voice_name":"Susi - Effortless and Confident","voice_labels":{"gender":"female","accent":"standard","age":"middle_aged","category":"high_quality","language":"de","use_case":"conversational","descriptive":"calm"},"output_format":"mp3_44100_192","file_sha256":"d1e84eea60c3907f189245b21cd08c59549ae202d554f3fa8a9ad7414258f587","settings":{"stability":0.68,"similarity_boost":0.88,"style":0.0,"use_speaker_boost":true,"speed":0.95},"relative_path":"audio/generated/de-DE/utterances/e8a47de43ac4e5007a73724926d7bed4d3bda7a91192a15348a18525dafe33e2.mp3"}'
 ) ON DUPLICATE KEY UPDATE
   provider = VALUES(provider),
   provider_model = VALUES(provider_model),
@@ -7212,6 +8148,58 @@ INSERT INTO audio_assets (
   status = VALUES(status),
   metadata = VALUES(metadata);
 
+-- u_de_schoen -> audio/generated/de-DE/utterances/f664b715d36013c01eaf780d9df95f6ae4f28e4bb16b382a335ed099890e8eaa.mp3
+UPDATE audio_assets
+SET status = 'archived'
+WHERE entity_type = 'utterance'
+  AND entity_id = UUID_TO_BIN('9d3135ab-d041-5915-ab7f-92147843adfe', 1)
+  AND voice_key = 'de-de.sentence.native-clear'
+  AND (entity_type NOT IN ('grammar_point','exercise') OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'u_de_schoen')
+  AND source_text_hash IS NOT NULL
+  AND source_text_hash <> '1a028e829b255703ecd9ade6ac712e048486eecfbf49d89994839481c772937d'
+  AND status <> 'archived';
+INSERT INTO audio_assets (
+  id, language_id, language_variant_id, entity_type, entity_id, source_text_hash,
+  voice_key, provider, provider_model, storage_url, duration_ms, generated_at, checksum, status, metadata
+) VALUES (
+  UUID_TO_BIN('57be3c09-52ab-5888-a7d0-8759420a1c63', 1), @audio_language_id, @audio_variant_id, 'utterance', UUID_TO_BIN('9d3135ab-d041-5915-ab7f-92147843adfe', 1), '1a028e829b255703ecd9ade6ac712e048486eecfbf49d89994839481c772937d',
+  'de-de.sentence.native-clear', 'elevenlabs', 'eleven_multilingual_v2', 'audio/generated/de-DE/utterances/f664b715d36013c01eaf780d9df95f6ae4f28e4bb16b382a335ed099890e8eaa.mp3', 1018, '2026-09-14 11:56:59.440534', '314ec87588243acc2083bd5399276738d756655f94b815a268832211f1f1da4b', 'validated', '{"audio_key":"f664b715d36013c01eaf780d9df95f6ae4f28e4bb16b382a335ed099890e8eaa","entity_key":"u_de_schoen","voice_id":"v3V1d2rk6528UrLKRuy8","voice_name":"Susi - Effortless and Confident","voice_labels":{"gender":"female","accent":"standard","age":"middle_aged","category":"high_quality","language":"de","use_case":"conversational","descriptive":"calm"},"output_format":"mp3_44100_192","file_sha256":"314ec87588243acc2083bd5399276738d756655f94b815a268832211f1f1da4b","settings":{"stability":0.68,"similarity_boost":0.88,"style":0.0,"use_speaker_boost":true,"speed":0.95},"relative_path":"audio/generated/de-DE/utterances/f664b715d36013c01eaf780d9df95f6ae4f28e4bb16b382a335ed099890e8eaa.mp3"}'
+) ON DUPLICATE KEY UPDATE
+  provider = VALUES(provider),
+  provider_model = VALUES(provider_model),
+  storage_url = VALUES(storage_url),
+  duration_ms = VALUES(duration_ms),
+  generated_at = VALUES(generated_at),
+  checksum = VALUES(checksum),
+  status = VALUES(status),
+  metadata = VALUES(metadata);
+
+-- g_de_umlaut_eszett:example:1 -> audio/generated/de-DE/utterances/f664b715d36013c01eaf780d9df95f6ae4f28e4bb16b382a335ed099890e8eaa.mp3
+UPDATE audio_assets
+SET status = 'archived'
+WHERE entity_type = 'grammar_point'
+  AND entity_id = UUID_TO_BIN('736ffb38-c730-5170-977f-5531cb0fa481', 1)
+  AND voice_key = 'de-de.sentence.native-clear'
+  AND (entity_type NOT IN ('grammar_point','exercise') OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'g_de_umlaut_eszett:example:1')
+  AND source_text_hash IS NOT NULL
+  AND source_text_hash <> '1a028e829b255703ecd9ade6ac712e048486eecfbf49d89994839481c772937d'
+  AND status <> 'archived';
+INSERT INTO audio_assets (
+  id, language_id, language_variant_id, entity_type, entity_id, source_text_hash,
+  voice_key, provider, provider_model, storage_url, duration_ms, generated_at, checksum, status, metadata
+) VALUES (
+  UUID_TO_BIN('43552e64-f002-5bbd-a4fb-e194882ceb1c', 1), @audio_language_id, @audio_variant_id, 'grammar_point', UUID_TO_BIN('736ffb38-c730-5170-977f-5531cb0fa481', 1), '1a028e829b255703ecd9ade6ac712e048486eecfbf49d89994839481c772937d',
+  'de-de.sentence.native-clear', 'elevenlabs', 'eleven_multilingual_v2', 'audio/generated/de-DE/utterances/f664b715d36013c01eaf780d9df95f6ae4f28e4bb16b382a335ed099890e8eaa.mp3', 1018, '2026-09-14 11:56:59.440534', '314ec87588243acc2083bd5399276738d756655f94b815a268832211f1f1da4b', 'validated', '{"audio_key":"f664b715d36013c01eaf780d9df95f6ae4f28e4bb16b382a335ed099890e8eaa","entity_key":"g_de_umlaut_eszett:example:1","voice_id":"v3V1d2rk6528UrLKRuy8","voice_name":"Susi - Effortless and Confident","voice_labels":{"gender":"female","accent":"standard","age":"middle_aged","category":"high_quality","language":"de","use_case":"conversational","descriptive":"calm"},"output_format":"mp3_44100_192","file_sha256":"314ec87588243acc2083bd5399276738d756655f94b815a268832211f1f1da4b","settings":{"stability":0.68,"similarity_boost":0.88,"style":0.0,"use_speaker_boost":true,"speed":0.95},"relative_path":"audio/generated/de-DE/utterances/f664b715d36013c01eaf780d9df95f6ae4f28e4bb16b382a335ed099890e8eaa.mp3"}'
+) ON DUPLICATE KEY UPDATE
+  provider = VALUES(provider),
+  provider_model = VALUES(provider_model),
+  storage_url = VALUES(storage_url),
+  duration_ms = VALUES(duration_ms),
+  generated_at = VALUES(generated_at),
+  checksum = VALUES(checksum),
+  status = VALUES(status),
+  metadata = VALUES(metadata);
+
 -- u_survival_words_06 -> audio/generated/de-DE/utterances/f7dbb21443efb34530327bc0bc65a2449a7ff003231ec86912a6f4b13f4f3c2e.mp3
 UPDATE audio_assets
 SET status = 'archived'
@@ -7280,6 +8268,58 @@ INSERT INTO audio_assets (
 ) VALUES (
   UUID_TO_BIN('784ddc01-a95d-57e2-8a42-79625d65c1a7', 1), @audio_language_id, @audio_variant_id, 'utterance', UUID_TO_BIN('efed185b-ad49-52cf-a72a-f44c3fc2b6ab', 1), '25352d33fff0003db2f3df1f4211b8d04eb3e63779d5af061943a0fe05d9f2ee',
   'de-de.sentence.native-clear', 'elevenlabs', 'eleven_multilingual_v2', 'audio/generated/de-DE/utterances/f8453ea865c9c45b2c7b3b33d6d826f596ea54d02ddf4ffbe6c979799b650892.mp3', 1018, '2026-09-13 04:05:56.282364', '1f5f2006d1b500fd71b73cad44a28cb6599a4ef2b93cdcc860a7f2a4f0294a50', 'validated', '{"audio_key":"f8453ea865c9c45b2c7b3b33d6d826f596ea54d02ddf4ffbe6c979799b650892","entity_key":"u_first_sounds_02","voice_id":"v3V1d2rk6528UrLKRuy8","voice_name":"Susi - Effortless and Confident","voice_labels":{"gender":"female","accent":"standard","age":"middle_aged","category":"high_quality","language":"de","use_case":"conversational","descriptive":"calm"},"output_format":"mp3_44100_192","file_sha256":"1f5f2006d1b500fd71b73cad44a28cb6599a4ef2b93cdcc860a7f2a4f0294a50","settings":{"stability":0.68,"similarity_boost":0.88,"style":0.0,"use_speaker_boost":true,"speed":0.95},"relative_path":"audio/generated/de-DE/utterances/f8453ea865c9c45b2c7b3b33d6d826f596ea54d02ddf4ffbe6c979799b650892.mp3"}'
+) ON DUPLICATE KEY UPDATE
+  provider = VALUES(provider),
+  provider_model = VALUES(provider_model),
+  storage_url = VALUES(storage_url),
+  duration_ms = VALUES(duration_ms),
+  generated_at = VALUES(generated_at),
+  checksum = VALUES(checksum),
+  status = VALUES(status),
+  metadata = VALUES(metadata);
+
+-- u_de_mein_sound -> audio/generated/de-DE/utterances/f8453ea865c9c45b2c7b3b33d6d826f596ea54d02ddf4ffbe6c979799b650892.mp3
+UPDATE audio_assets
+SET status = 'archived'
+WHERE entity_type = 'utterance'
+  AND entity_id = UUID_TO_BIN('e38f3512-2d04-5db6-ac1e-83ae69041e35', 1)
+  AND voice_key = 'de-de.sentence.native-clear'
+  AND (entity_type NOT IN ('grammar_point','exercise') OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'u_de_mein_sound')
+  AND source_text_hash IS NOT NULL
+  AND source_text_hash <> '25352d33fff0003db2f3df1f4211b8d04eb3e63779d5af061943a0fe05d9f2ee'
+  AND status <> 'archived';
+INSERT INTO audio_assets (
+  id, language_id, language_variant_id, entity_type, entity_id, source_text_hash,
+  voice_key, provider, provider_model, storage_url, duration_ms, generated_at, checksum, status, metadata
+) VALUES (
+  UUID_TO_BIN('8a2bbe74-db4a-5a0c-bd4c-7ae1bc24b610', 1), @audio_language_id, @audio_variant_id, 'utterance', UUID_TO_BIN('e38f3512-2d04-5db6-ac1e-83ae69041e35', 1), '25352d33fff0003db2f3df1f4211b8d04eb3e63779d5af061943a0fe05d9f2ee',
+  'de-de.sentence.native-clear', 'elevenlabs', 'eleven_multilingual_v2', 'audio/generated/de-DE/utterances/f8453ea865c9c45b2c7b3b33d6d826f596ea54d02ddf4ffbe6c979799b650892.mp3', 1018, '2026-09-13 04:05:56.282364', '1f5f2006d1b500fd71b73cad44a28cb6599a4ef2b93cdcc860a7f2a4f0294a50', 'validated', '{"audio_key":"f8453ea865c9c45b2c7b3b33d6d826f596ea54d02ddf4ffbe6c979799b650892","entity_key":"u_de_mein_sound","voice_id":"v3V1d2rk6528UrLKRuy8","voice_name":"Susi - Effortless and Confident","voice_labels":{"gender":"female","accent":"standard","age":"middle_aged","category":"high_quality","language":"de","use_case":"conversational","descriptive":"calm"},"output_format":"mp3_44100_192","file_sha256":"1f5f2006d1b500fd71b73cad44a28cb6599a4ef2b93cdcc860a7f2a4f0294a50","settings":{"stability":0.68,"similarity_boost":0.88,"style":0.0,"use_speaker_boost":true,"speed":0.95},"relative_path":"audio/generated/de-DE/utterances/f8453ea865c9c45b2c7b3b33d6d826f596ea54d02ddf4ffbe6c979799b650892.mp3"}'
+) ON DUPLICATE KEY UPDATE
+  provider = VALUES(provider),
+  provider_model = VALUES(provider_model),
+  storage_url = VALUES(storage_url),
+  duration_ms = VALUES(duration_ms),
+  generated_at = VALUES(generated_at),
+  checksum = VALUES(checksum),
+  status = VALUES(status),
+  metadata = VALUES(metadata);
+
+-- g_de_ei_ie:example:1 -> audio/generated/de-DE/utterances/f8453ea865c9c45b2c7b3b33d6d826f596ea54d02ddf4ffbe6c979799b650892.mp3
+UPDATE audio_assets
+SET status = 'archived'
+WHERE entity_type = 'grammar_point'
+  AND entity_id = UUID_TO_BIN('e61d16c6-fe8a-56a9-a951-1a371e5579e3', 1)
+  AND voice_key = 'de-de.sentence.native-clear'
+  AND (entity_type NOT IN ('grammar_point','exercise') OR JSON_UNQUOTE(JSON_EXTRACT(metadata, '$.entity_key')) = 'g_de_ei_ie:example:1')
+  AND source_text_hash IS NOT NULL
+  AND source_text_hash <> '25352d33fff0003db2f3df1f4211b8d04eb3e63779d5af061943a0fe05d9f2ee'
+  AND status <> 'archived';
+INSERT INTO audio_assets (
+  id, language_id, language_variant_id, entity_type, entity_id, source_text_hash,
+  voice_key, provider, provider_model, storage_url, duration_ms, generated_at, checksum, status, metadata
+) VALUES (
+  UUID_TO_BIN('cf9e219d-cfb5-53b8-8af1-6ca67f8bdb00', 1), @audio_language_id, @audio_variant_id, 'grammar_point', UUID_TO_BIN('e61d16c6-fe8a-56a9-a951-1a371e5579e3', 1), '25352d33fff0003db2f3df1f4211b8d04eb3e63779d5af061943a0fe05d9f2ee',
+  'de-de.sentence.native-clear', 'elevenlabs', 'eleven_multilingual_v2', 'audio/generated/de-DE/utterances/f8453ea865c9c45b2c7b3b33d6d826f596ea54d02ddf4ffbe6c979799b650892.mp3', 1018, '2026-09-13 04:05:56.282364', '1f5f2006d1b500fd71b73cad44a28cb6599a4ef2b93cdcc860a7f2a4f0294a50', 'validated', '{"audio_key":"f8453ea865c9c45b2c7b3b33d6d826f596ea54d02ddf4ffbe6c979799b650892","entity_key":"g_de_ei_ie:example:1","voice_id":"v3V1d2rk6528UrLKRuy8","voice_name":"Susi - Effortless and Confident","voice_labels":{"gender":"female","accent":"standard","age":"middle_aged","category":"high_quality","language":"de","use_case":"conversational","descriptive":"calm"},"output_format":"mp3_44100_192","file_sha256":"1f5f2006d1b500fd71b73cad44a28cb6599a4ef2b93cdcc860a7f2a4f0294a50","settings":{"stability":0.68,"similarity_boost":0.88,"style":0.0,"use_speaker_boost":true,"speed":0.95},"relative_path":"audio/generated/de-DE/utterances/f8453ea865c9c45b2c7b3b33d6d826f596ea54d02ddf4ffbe6c979799b650892.mp3"}'
 ) ON DUPLICATE KEY UPDATE
   provider = VALUES(provider),
   provider_model = VALUES(provider_model),
