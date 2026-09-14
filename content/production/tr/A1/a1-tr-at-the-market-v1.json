@@ -1,0 +1,858 @@
+{
+  "batch_id": "tr-tr-a1-b03-at-the-market-v1",
+  "course": "fa-tr-tr",
+  "learner_language": "fa",
+  "learner_variant": "fa-IR",
+  "target_language": "tr",
+  "target_variant": "tr-TR",
+  "cefr": "A1",
+  "curriculum_unit": "a1-tr-at-the-market",
+  "generator": "gpt-5.6-sol:turkish-a1-batch-03-v1",
+  "items": [
+    {
+      "kind": "concept",
+      "external_id": "c_at_the_market_01",
+      "data": {
+        "slug": "tr_a1_at_the_market_domates",
+        "lesson_key": "a1-tr-at-the-market-01",
+        "concept_type": "lexical",
+        "part_of_speech": "noun",
+        "forms": {
+          "tr": "domates"
+        },
+        "translations": {
+          "fa": "گوجه‌فرنگی"
+        },
+        "cefr": "A1",
+        "topic": "food-basics",
+        "tags": [
+          "core",
+          "a1",
+          "high_frequency"
+        ],
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_at_the_market_01",
+      "data": {
+        "lesson_key": "a1-tr-at-the-market-01",
+        "lemma": "domates",
+        "display_lemma": "domates",
+        "language": "tr",
+        "language_variant": "tr-TR",
+        "part_of_speech": "noun",
+        "concept_refs": [
+          "tr_a1_at_the_market_domates"
+        ],
+        "cefr": "A1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_at_the_market_01",
+      "data": {
+        "lesson_key": "a1-tr-at-the-market-01",
+        "lexeme_ref": "lx_at_the_market_01",
+        "surface_form": "domates",
+        "display_form": "domates",
+        "grammatical_features": {},
+        "is_lemma": true,
+        "is_preferred": true,
+        "cefr": "A1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_at_the_market_02",
+      "data": {
+        "slug": "tr_a1_at_the_market_elma",
+        "lesson_key": "a1-tr-at-the-market-01",
+        "concept_type": "lexical",
+        "part_of_speech": "noun",
+        "forms": {
+          "tr": "elma"
+        },
+        "translations": {
+          "fa": "سیب"
+        },
+        "cefr": "A1",
+        "topic": "food-basics",
+        "tags": [
+          "core",
+          "a1",
+          "high_frequency"
+        ],
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_at_the_market_02",
+      "data": {
+        "lesson_key": "a1-tr-at-the-market-01",
+        "lemma": "elma",
+        "display_lemma": "elma",
+        "language": "tr",
+        "language_variant": "tr-TR",
+        "part_of_speech": "noun",
+        "concept_refs": [
+          "tr_a1_at_the_market_elma"
+        ],
+        "cefr": "A1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_at_the_market_02",
+      "data": {
+        "lesson_key": "a1-tr-at-the-market-01",
+        "lexeme_ref": "lx_at_the_market_02",
+        "surface_form": "elma",
+        "display_form": "elma",
+        "grammatical_features": {},
+        "is_lemma": true,
+        "is_preferred": true,
+        "cefr": "A1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_at_the_market_03",
+      "data": {
+        "slug": "tr_a1_at_the_market_peynir",
+        "lesson_key": "a1-tr-at-the-market-01",
+        "concept_type": "lexical",
+        "part_of_speech": "noun",
+        "forms": {
+          "tr": "peynir"
+        },
+        "translations": {
+          "fa": "پنیر"
+        },
+        "cefr": "A1",
+        "topic": "food-basics",
+        "tags": [
+          "core",
+          "a1",
+          "high_frequency"
+        ],
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_at_the_market_03",
+      "data": {
+        "lesson_key": "a1-tr-at-the-market-01",
+        "lemma": "peynir",
+        "display_lemma": "peynir",
+        "language": "tr",
+        "language_variant": "tr-TR",
+        "part_of_speech": "noun",
+        "concept_refs": [
+          "tr_a1_at_the_market_peynir"
+        ],
+        "cefr": "A1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_at_the_market_03",
+      "data": {
+        "lesson_key": "a1-tr-at-the-market-01",
+        "lexeme_ref": "lx_at_the_market_03",
+        "surface_form": "peynir",
+        "display_form": "peynir",
+        "grammatical_features": {},
+        "is_lemma": true,
+        "is_preferred": true,
+        "cefr": "A1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_at_the_market_04",
+      "data": {
+        "slug": "tr_a1_at_the_market_kilo",
+        "lesson_key": "a1-tr-at-the-market-02",
+        "concept_type": "lexical",
+        "part_of_speech": "noun",
+        "forms": {
+          "tr": "kilo"
+        },
+        "translations": {
+          "fa": "کیلو"
+        },
+        "cefr": "A1",
+        "topic": "food-basics",
+        "tags": [
+          "core",
+          "a1",
+          "high_frequency"
+        ],
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_at_the_market_04",
+      "data": {
+        "lesson_key": "a1-tr-at-the-market-02",
+        "lemma": "kilo",
+        "display_lemma": "kilo",
+        "language": "tr",
+        "language_variant": "tr-TR",
+        "part_of_speech": "noun",
+        "concept_refs": [
+          "tr_a1_at_the_market_kilo"
+        ],
+        "cefr": "A1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_at_the_market_04",
+      "data": {
+        "lesson_key": "a1-tr-at-the-market-02",
+        "lexeme_ref": "lx_at_the_market_04",
+        "surface_form": "kilo",
+        "display_form": "kilo",
+        "grammatical_features": {},
+        "is_lemma": true,
+        "is_preferred": true,
+        "cefr": "A1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_at_the_market_05",
+      "data": {
+        "slug": "tr_a1_at_the_market_yarim",
+        "lesson_key": "a1-tr-at-the-market-02",
+        "concept_type": "lexical",
+        "part_of_speech": "adjective",
+        "forms": {
+          "tr": "yarım"
+        },
+        "translations": {
+          "fa": "نیم"
+        },
+        "cefr": "A1",
+        "topic": "food-basics",
+        "tags": [
+          "core",
+          "a1",
+          "high_frequency"
+        ],
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_at_the_market_05",
+      "data": {
+        "lesson_key": "a1-tr-at-the-market-02",
+        "lemma": "yarım",
+        "display_lemma": "yarım",
+        "language": "tr",
+        "language_variant": "tr-TR",
+        "part_of_speech": "adjective",
+        "concept_refs": [
+          "tr_a1_at_the_market_yarim"
+        ],
+        "cefr": "A1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_at_the_market_05",
+      "data": {
+        "lesson_key": "a1-tr-at-the-market-02",
+        "lexeme_ref": "lx_at_the_market_05",
+        "surface_form": "yarım",
+        "display_form": "yarım",
+        "grammatical_features": {},
+        "is_lemma": true,
+        "is_preferred": true,
+        "cefr": "A1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_at_the_market_06",
+      "data": {
+        "slug": "tr_a1_at_the_market_taze",
+        "lesson_key": "a1-tr-at-the-market-02",
+        "concept_type": "lexical",
+        "part_of_speech": "adjective",
+        "forms": {
+          "tr": "taze"
+        },
+        "translations": {
+          "fa": "تازه"
+        },
+        "cefr": "A1",
+        "topic": "food-basics",
+        "tags": [
+          "core",
+          "a1",
+          "high_frequency"
+        ],
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_at_the_market_06",
+      "data": {
+        "lesson_key": "a1-tr-at-the-market-02",
+        "lemma": "taze",
+        "display_lemma": "taze",
+        "language": "tr",
+        "language_variant": "tr-TR",
+        "part_of_speech": "adjective",
+        "concept_refs": [
+          "tr_a1_at_the_market_taze"
+        ],
+        "cefr": "A1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_at_the_market_06",
+      "data": {
+        "lesson_key": "a1-tr-at-the-market-02",
+        "lexeme_ref": "lx_at_the_market_06",
+        "surface_form": "taze",
+        "display_form": "taze",
+        "grammatical_features": {},
+        "is_lemma": true,
+        "is_preferred": true,
+        "cefr": "A1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_at_the_market_01",
+      "data": {
+        "lesson_key": "a1-tr-at-the-market-01",
+        "text": {
+          "tr": "Bir kilo domates istiyorum."
+        },
+        "translations": {
+          "fa": "یک کیلو گوجه می‌خواهم."
+        },
+        "intent": "buy_quantity",
+        "concept_refs": [
+          "tr_a1_at_the_market_kilo",
+          "tr_a1_at_the_market_domates"
+        ],
+        "cefr": "A1",
+        "topic": "food-basics",
+        "register": "neutral",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_at_the_market_02",
+      "data": {
+        "lesson_key": "a1-tr-at-the-market-01",
+        "text": {
+          "tr": "Yarım kilo elma alabilir miyim?"
+        },
+        "translations": {
+          "fa": "می‌توانم نیم کیلو سیب بگیرم؟"
+        },
+        "intent": "buy_quantity",
+        "concept_refs": [
+          "tr_a1_at_the_market_yarim",
+          "tr_a1_at_the_market_kilo",
+          "tr_a1_at_the_market_elma"
+        ],
+        "cefr": "A1",
+        "topic": "food-basics",
+        "register": "neutral",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_at_the_market_03",
+      "data": {
+        "lesson_key": "a1-tr-at-the-market-02",
+        "text": {
+          "tr": "Bu peynir taze mi?"
+        },
+        "translations": {
+          "fa": "این پنیر تازه است؟"
+        },
+        "intent": "ask_quality",
+        "concept_refs": [
+          "tr_a1_at_the_market_peynir",
+          "tr_a1_at_the_market_taze"
+        ],
+        "cefr": "A1",
+        "topic": "food-basics",
+        "register": "neutral",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_at_the_market_04",
+      "data": {
+        "lesson_key": "a1-tr-at-the-market-02",
+        "text": {
+          "tr": "Evet, bugün geldi."
+        },
+        "translations": {
+          "fa": "بله، امروز رسیده."
+        },
+        "intent": "respond_quality",
+        "concept_refs": [
+          "tr_a1_at_the_market_taze"
+        ],
+        "cefr": "A1",
+        "topic": "food-basics",
+        "register": "neutral",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "grammar_point",
+      "external_id": "g_at_the_market_core",
+      "data": {
+        "lesson_key": "a1-tr-at-the-market-01",
+        "slug": "a1-tr-at-the-market-grammar",
+        "title": "Miktar + isim",
+        "rule_summary": "After quantity expressions Turkish normally keeps the following noun unmarked for plural: bir kilo domates, iki şişe su.",
+        "explanation": {
+          "fa": "بعد از مقدار، اسم معمولاً جمع بسته نمی‌شود: «bir kilo domates» یعنی یک کیلو گوجه. این همان الگویی است که قبلاً بعد از عدد دیده‌ای، حالا در خرید واقعی استفاده می‌شود."
+        },
+        "examples": [
+          {
+            "tr": "Bir kilo domates.",
+            "fa": "یک کیلو گوجه."
+          },
+          {
+            "tr": "Yarım kilo elma.",
+            "fa": "نیم کیلو سیب."
+          }
+        ],
+        "cefr": "A1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "dialogue",
+      "external_id": "d_at_the_market_01",
+      "data": {
+        "lesson_key": "a1-tr-at-the-market-01",
+        "title": "Sebze almak",
+        "setting": "",
+        "cefr": "A1",
+        "topic": "food-basics",
+        "characters": [
+          "Mert",
+          "Zeynep"
+        ],
+        "turns": [
+          {
+            "order": 1,
+            "speaker": "Mert",
+            "text": "Bir kilo domates istiyorum.",
+            "translation_fa": "یک کیلو گوجه می‌خواهم."
+          },
+          {
+            "order": 2,
+            "speaker": "Zeynep",
+            "text": "Tabii. Başka?",
+            "translation_fa": "حتماً. چیز دیگری؟"
+          },
+          {
+            "order": 3,
+            "speaker": "Mert",
+            "text": "Yarım kilo elma da lütfen.",
+            "translation_fa": "نیم کیلو سیب هم لطفاً."
+          },
+          {
+            "order": 4,
+            "speaker": "Zeynep",
+            "text": "Tamam.",
+            "translation_fa": "باشه."
+          }
+        ],
+        "qa": {
+          "character_pair_unique_within_unit": true,
+          "naturalness": "passed",
+          "single_situation": true
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "dialogue",
+      "external_id": "d_at_the_market_02",
+      "data": {
+        "lesson_key": "a1-tr-at-the-market-02",
+        "title": "Taze mi?",
+        "setting": "",
+        "cefr": "A1",
+        "topic": "food-basics",
+        "characters": [
+          "Burak",
+          "Selin"
+        ],
+        "turns": [
+          {
+            "order": 1,
+            "speaker": "Burak",
+            "text": "Bu peynir taze mi?",
+            "translation_fa": "این پنیر تازه است؟"
+          },
+          {
+            "order": 2,
+            "speaker": "Selin",
+            "text": "Evet, bugün geldi.",
+            "translation_fa": "بله، امروز رسیده."
+          },
+          {
+            "order": 3,
+            "speaker": "Burak",
+            "text": "Ne kadar?",
+            "translation_fa": "چقدر است؟"
+          },
+          {
+            "order": 4,
+            "speaker": "Selin",
+            "text": "Yüz lira.",
+            "translation_fa": "صد لیر."
+          }
+        ],
+        "qa": {
+          "character_pair_unique_within_unit": true,
+          "naturalness": "passed",
+          "single_situation": true
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_at_the_market_01_meaning",
+      "data": {
+        "lesson_key": "a1-tr-at-the-market-01",
+        "exercise_type": "multiple_choice",
+        "prompt": {
+          "instruction_fa": "معنی درست این عبارت ترکی را انتخاب کن.",
+          "value": "Bir kilo domates istiyorum."
+        },
+        "answer": {
+          "value": "یک کیلو گوجه می‌خواهم."
+        },
+        "options": [
+          "یک کیلو گوجه می‌خواهم.",
+          "می‌توانم نیم کیلو سیب بگیرم؟",
+          "این پنیر تازه است؟",
+          "بله، امروز رسیده."
+        ],
+        "difficulty": 1,
+        "cefr": "A1",
+        "topic": "food-basics",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت و پسوندهای عبارت ترکی دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: Bir kilo domates istiyorum. — یک کیلو گوجه می‌خواهم.",
+          "model_answer": "Bir kilo domates istiyorum."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_at_the_market_01_listen",
+      "data": {
+        "lesson_key": "a1-tr-at-the-market-01",
+        "exercise_type": "listening",
+        "prompt": {
+          "instruction_fa": "گوش کن و عبارتی را که شنیدی انتخاب کن.",
+          "audio_text": "Yarım kilo elma alabilir miyim?"
+        },
+        "answer": {
+          "value": "Yarım kilo elma alabilir miyim?"
+        },
+        "options": [
+          "Yarım kilo elma alabilir miyim?",
+          "Bir kilo domates istiyorum.",
+          "Bu peynir taze mi?",
+          "Evet, bugün geldi."
+        ],
+        "difficulty": 1,
+        "cefr": "A1",
+        "topic": "food-basics",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت و پسوندهای عبارت ترکی دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: Yarım kilo elma alabilir miyim? — می‌توانم نیم کیلو سیب بگیرم؟",
+          "model_answer": "Yarım kilo elma alabilir miyim?",
+          "transcript_tr": "Yarım kilo elma alabilir miyim?"
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_at_the_market_01_speak",
+      "data": {
+        "lesson_key": "a1-tr-at-the-market-01",
+        "exercise_type": "speaking",
+        "prompt": {
+          "instruction_fa": "عبارت را با صدای بلند و با ریتم طبیعی تکرار کن.",
+          "value": "Bir kilo domates istiyorum."
+        },
+        "answer": {
+          "expected_text": "Bir kilo domates istiyorum."
+        },
+        "difficulty": 1,
+        "cefr": "A1",
+        "topic": "food-basics",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت و پسوندهای عبارت ترکی دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: Bir kilo domates istiyorum. — یک کیلو گوجه می‌خواهم.",
+          "model_answer": "Bir kilo domates istiyorum."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_at_the_market_01_build",
+      "data": {
+        "lesson_key": "a1-tr-at-the-market-01",
+        "exercise_type": "sentence_building",
+        "prompt": {
+          "instruction_fa": "کلمه‌ها را لمس کن تا عبارت درست ساخته شود.",
+          "tokens": [
+            "kilo",
+            "elma",
+            "alabilir",
+            "miyim?",
+            "Yarım"
+          ]
+        },
+        "answer": {
+          "tokens": [
+            "Yarım",
+            "kilo",
+            "elma",
+            "alabilir",
+            "miyim?"
+          ],
+          "value": "Yarım kilo elma alabilir miyim?"
+        },
+        "difficulty": 1,
+        "cefr": "A1",
+        "topic": "food-basics",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت و پسوندهای عبارت ترکی دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: Yarım kilo elma alabilir miyim? — می‌توانم نیم کیلو سیب بگیرم؟",
+          "model_answer": "Yarım kilo elma alabilir miyim?"
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_at_the_market_01_dialogue",
+      "data": {
+        "lesson_key": "a1-tr-at-the-market-01",
+        "exercise_type": "dialogue_comprehension",
+        "prompt": {
+          "instruction_fa": "با توجه به گفت‌وگو، پاسخ مناسب را انتخاب کن.",
+          "source_dialogue_ref": "d_at_the_market_01",
+          "question_fa": "کدام گزینه با معنی «یک کیلو گوجه می‌خواهم.» هماهنگ است؟"
+        },
+        "answer": {
+          "value": "Bir kilo domates istiyorum."
+        },
+        "options": [
+          "Bir kilo domates istiyorum.",
+          "Yarım kilo elma alabilir miyim?",
+          "Bu peynir taze mi?",
+          "Evet, bugün geldi."
+        ],
+        "difficulty": 1,
+        "cefr": "A1",
+        "topic": "food-basics",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت و پسوندهای عبارت ترکی دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: Bir kilo domates istiyorum. — یک کیلو گوجه می‌خواهم.",
+          "model_answer": "Bir kilo domates istiyorum."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_at_the_market_02_meaning",
+      "data": {
+        "lesson_key": "a1-tr-at-the-market-02",
+        "exercise_type": "multiple_choice",
+        "prompt": {
+          "instruction_fa": "معنی درست این عبارت ترکی را انتخاب کن.",
+          "value": "Bu peynir taze mi?"
+        },
+        "answer": {
+          "value": "این پنیر تازه است؟"
+        },
+        "options": [
+          "این پنیر تازه است؟",
+          "یک کیلو گوجه می‌خواهم.",
+          "می‌توانم نیم کیلو سیب بگیرم؟",
+          "بله، امروز رسیده."
+        ],
+        "difficulty": 1,
+        "cefr": "A1",
+        "topic": "food-basics",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت و پسوندهای عبارت ترکی دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: Bu peynir taze mi? — این پنیر تازه است؟",
+          "model_answer": "Bu peynir taze mi?"
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_at_the_market_02_listen",
+      "data": {
+        "lesson_key": "a1-tr-at-the-market-02",
+        "exercise_type": "listening",
+        "prompt": {
+          "instruction_fa": "گوش کن و عبارتی را که شنیدی انتخاب کن.",
+          "audio_text": "Evet, bugün geldi."
+        },
+        "answer": {
+          "value": "Evet, bugün geldi."
+        },
+        "options": [
+          "Evet, bugün geldi.",
+          "Bu peynir taze mi?",
+          "Bir kilo domates istiyorum.",
+          "Yarım kilo elma alabilir miyim?"
+        ],
+        "difficulty": 1,
+        "cefr": "A1",
+        "topic": "food-basics",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت و پسوندهای عبارت ترکی دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: Evet, bugün geldi. — بله، امروز رسیده.",
+          "model_answer": "Evet, bugün geldi.",
+          "transcript_tr": "Evet, bugün geldi."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_at_the_market_02_speak",
+      "data": {
+        "lesson_key": "a1-tr-at-the-market-02",
+        "exercise_type": "speaking",
+        "prompt": {
+          "instruction_fa": "عبارت را با صدای بلند و با ریتم طبیعی تکرار کن.",
+          "value": "Bu peynir taze mi?"
+        },
+        "answer": {
+          "expected_text": "Bu peynir taze mi?"
+        },
+        "difficulty": 1,
+        "cefr": "A1",
+        "topic": "food-basics",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت و پسوندهای عبارت ترکی دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: Bu peynir taze mi? — این پنیر تازه است؟",
+          "model_answer": "Bu peynir taze mi?"
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_at_the_market_02_build",
+      "data": {
+        "lesson_key": "a1-tr-at-the-market-02",
+        "exercise_type": "sentence_building",
+        "prompt": {
+          "instruction_fa": "کلمه‌ها را لمس کن تا عبارت درست ساخته شود.",
+          "tokens": [
+            "bugün",
+            "geldi.",
+            "Evet,"
+          ]
+        },
+        "answer": {
+          "tokens": [
+            "Evet,",
+            "bugün",
+            "geldi."
+          ],
+          "value": "Evet, bugün geldi."
+        },
+        "difficulty": 1,
+        "cefr": "A1",
+        "topic": "food-basics",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت و پسوندهای عبارت ترکی دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: Evet, bugün geldi. — بله، امروز رسیده.",
+          "model_answer": "Evet, bugün geldi."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_at_the_market_02_dialogue",
+      "data": {
+        "lesson_key": "a1-tr-at-the-market-02",
+        "exercise_type": "dialogue_comprehension",
+        "prompt": {
+          "instruction_fa": "با توجه به گفت‌وگو، پاسخ مناسب را انتخاب کن.",
+          "source_dialogue_ref": "d_at_the_market_02",
+          "question_fa": "کدام گزینه با معنی «این پنیر تازه است؟» هماهنگ است؟"
+        },
+        "answer": {
+          "value": "Bu peynir taze mi?"
+        },
+        "options": [
+          "Bu peynir taze mi?",
+          "Bir kilo domates istiyorum.",
+          "Yarım kilo elma alabilir miyim?",
+          "Evet, bugün geldi."
+        ],
+        "difficulty": 1,
+        "cefr": "A1",
+        "topic": "food-basics",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت و پسوندهای عبارت ترکی دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: Bu peynir taze mi? — این پنیر تازه است؟",
+          "model_answer": "Bu peynir taze mi?"
+        },
+        "status": "validated"
+      }
+    }
+  ]
+}

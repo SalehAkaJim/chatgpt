@@ -1,0 +1,853 @@
+{
+  "batch_id": "tr-tr-a1-b03-school-and-work-v1",
+  "course": "fa-tr-tr",
+  "learner_language": "fa",
+  "learner_variant": "fa-IR",
+  "target_language": "tr",
+  "target_variant": "tr-TR",
+  "cefr": "A1",
+  "curriculum_unit": "a1-tr-school-and-work",
+  "generator": "gpt-5.6-sol:turkish-a1-batch-03-v1",
+  "items": [
+    {
+      "kind": "concept",
+      "external_id": "c_school_and_work_01",
+      "data": {
+        "slug": "tr_a1_school_and_work_ders",
+        "lesson_key": "a1-tr-school-and-work-01",
+        "concept_type": "lexical",
+        "part_of_speech": "noun",
+        "forms": {
+          "tr": "ders"
+        },
+        "translations": {
+          "fa": "درس / کلاس"
+        },
+        "cefr": "A1",
+        "topic": "school-study",
+        "tags": [
+          "core",
+          "a1",
+          "high_frequency"
+        ],
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_school_and_work_01",
+      "data": {
+        "lesson_key": "a1-tr-school-and-work-01",
+        "lemma": "ders",
+        "display_lemma": "ders",
+        "language": "tr",
+        "language_variant": "tr-TR",
+        "part_of_speech": "noun",
+        "concept_refs": [
+          "tr_a1_school_and_work_ders"
+        ],
+        "cefr": "A1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_school_and_work_01",
+      "data": {
+        "lesson_key": "a1-tr-school-and-work-01",
+        "lexeme_ref": "lx_school_and_work_01",
+        "surface_form": "ders",
+        "display_form": "ders",
+        "grammatical_features": {},
+        "is_lemma": true,
+        "is_preferred": true,
+        "cefr": "A1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_school_and_work_02",
+      "data": {
+        "slug": "tr_a1_school_and_work_odev",
+        "lesson_key": "a1-tr-school-and-work-01",
+        "concept_type": "lexical",
+        "part_of_speech": "noun",
+        "forms": {
+          "tr": "ödev"
+        },
+        "translations": {
+          "fa": "تکلیف"
+        },
+        "cefr": "A1",
+        "topic": "school-study",
+        "tags": [
+          "core",
+          "a1",
+          "high_frequency"
+        ],
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_school_and_work_02",
+      "data": {
+        "lesson_key": "a1-tr-school-and-work-01",
+        "lemma": "ödev",
+        "display_lemma": "ödev",
+        "language": "tr",
+        "language_variant": "tr-TR",
+        "part_of_speech": "noun",
+        "concept_refs": [
+          "tr_a1_school_and_work_odev"
+        ],
+        "cefr": "A1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_school_and_work_02",
+      "data": {
+        "lesson_key": "a1-tr-school-and-work-01",
+        "lexeme_ref": "lx_school_and_work_02",
+        "surface_form": "ödev",
+        "display_form": "ödev",
+        "grammatical_features": {},
+        "is_lemma": true,
+        "is_preferred": true,
+        "cefr": "A1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_school_and_work_03",
+      "data": {
+        "slug": "tr_a1_school_and_work_sinav",
+        "lesson_key": "a1-tr-school-and-work-01",
+        "concept_type": "lexical",
+        "part_of_speech": "noun",
+        "forms": {
+          "tr": "sınav"
+        },
+        "translations": {
+          "fa": "امتحان"
+        },
+        "cefr": "A1",
+        "topic": "school-study",
+        "tags": [
+          "core",
+          "a1",
+          "high_frequency"
+        ],
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_school_and_work_03",
+      "data": {
+        "lesson_key": "a1-tr-school-and-work-01",
+        "lemma": "sınav",
+        "display_lemma": "sınav",
+        "language": "tr",
+        "language_variant": "tr-TR",
+        "part_of_speech": "noun",
+        "concept_refs": [
+          "tr_a1_school_and_work_sinav"
+        ],
+        "cefr": "A1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_school_and_work_03",
+      "data": {
+        "lesson_key": "a1-tr-school-and-work-01",
+        "lexeme_ref": "lx_school_and_work_03",
+        "surface_form": "sınav",
+        "display_form": "sınav",
+        "grammatical_features": {},
+        "is_lemma": true,
+        "is_preferred": true,
+        "cefr": "A1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_school_and_work_04",
+      "data": {
+        "slug": "tr_a1_school_and_work_calismak",
+        "lesson_key": "a1-tr-school-and-work-02",
+        "concept_type": "lexical",
+        "part_of_speech": "verb",
+        "forms": {
+          "tr": "çalışmak"
+        },
+        "translations": {
+          "fa": "کار / مطالعه کردن"
+        },
+        "cefr": "A1",
+        "topic": "school-study",
+        "tags": [
+          "core",
+          "a1",
+          "high_frequency"
+        ],
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_school_and_work_04",
+      "data": {
+        "lesson_key": "a1-tr-school-and-work-02",
+        "lemma": "çalışmak",
+        "display_lemma": "çalışmak",
+        "language": "tr",
+        "language_variant": "tr-TR",
+        "part_of_speech": "verb",
+        "concept_refs": [
+          "tr_a1_school_and_work_calismak"
+        ],
+        "cefr": "A1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_school_and_work_04",
+      "data": {
+        "lesson_key": "a1-tr-school-and-work-02",
+        "lexeme_ref": "lx_school_and_work_04",
+        "surface_form": "çalışmak",
+        "display_form": "çalışmak",
+        "grammatical_features": {},
+        "is_lemma": true,
+        "is_preferred": true,
+        "cefr": "A1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_school_and_work_05",
+      "data": {
+        "slug": "tr_a1_school_and_work_ofis",
+        "lesson_key": "a1-tr-school-and-work-02",
+        "concept_type": "lexical",
+        "part_of_speech": "noun",
+        "forms": {
+          "tr": "ofis"
+        },
+        "translations": {
+          "fa": "دفتر"
+        },
+        "cefr": "A1",
+        "topic": "school-study",
+        "tags": [
+          "core",
+          "a1",
+          "high_frequency"
+        ],
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_school_and_work_05",
+      "data": {
+        "lesson_key": "a1-tr-school-and-work-02",
+        "lemma": "ofis",
+        "display_lemma": "ofis",
+        "language": "tr",
+        "language_variant": "tr-TR",
+        "part_of_speech": "noun",
+        "concept_refs": [
+          "tr_a1_school_and_work_ofis"
+        ],
+        "cefr": "A1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_school_and_work_05",
+      "data": {
+        "lesson_key": "a1-tr-school-and-work-02",
+        "lexeme_ref": "lx_school_and_work_05",
+        "surface_form": "ofis",
+        "display_form": "ofis",
+        "grammatical_features": {},
+        "is_lemma": true,
+        "is_preferred": true,
+        "cefr": "A1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "concept",
+      "external_id": "c_school_and_work_06",
+      "data": {
+        "slug": "tr_a1_school_and_work_musteri",
+        "lesson_key": "a1-tr-school-and-work-02",
+        "concept_type": "lexical",
+        "part_of_speech": "noun",
+        "forms": {
+          "tr": "müşteri"
+        },
+        "translations": {
+          "fa": "مشتری"
+        },
+        "cefr": "A1",
+        "topic": "school-study",
+        "tags": [
+          "core",
+          "a1",
+          "high_frequency"
+        ],
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "lexeme",
+      "external_id": "lx_school_and_work_06",
+      "data": {
+        "lesson_key": "a1-tr-school-and-work-02",
+        "lemma": "müşteri",
+        "display_lemma": "müşteri",
+        "language": "tr",
+        "language_variant": "tr-TR",
+        "part_of_speech": "noun",
+        "concept_refs": [
+          "tr_a1_school_and_work_musteri"
+        ],
+        "cefr": "A1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "word_form",
+      "external_id": "wf_school_and_work_06",
+      "data": {
+        "lesson_key": "a1-tr-school-and-work-02",
+        "lexeme_ref": "lx_school_and_work_06",
+        "surface_form": "müşteri",
+        "display_form": "müşteri",
+        "grammatical_features": {},
+        "is_lemma": true,
+        "is_preferred": true,
+        "cefr": "A1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_school_and_work_01",
+      "data": {
+        "lesson_key": "a1-tr-school-and-work-01",
+        "text": {
+          "tr": "Bugün iki dersim var."
+        },
+        "translations": {
+          "fa": "امروز دو کلاس دارم."
+        },
+        "intent": "state_schedule",
+        "concept_refs": [
+          "tr_a1_school_and_work_ders"
+        ],
+        "cefr": "A1",
+        "topic": "school-study",
+        "register": "neutral",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_school_and_work_02",
+      "data": {
+        "lesson_key": "a1-tr-school-and-work-01",
+        "text": {
+          "tr": "Akşam ödev yapacağım."
+        },
+        "translations": {
+          "fa": "عصر تکلیف انجام می‌دهم."
+        },
+        "intent": "state_plan",
+        "concept_refs": [
+          "tr_a1_school_and_work_odev"
+        ],
+        "cefr": "A1",
+        "topic": "school-study",
+        "register": "neutral",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_school_and_work_03",
+      "data": {
+        "lesson_key": "a1-tr-school-and-work-02",
+        "text": {
+          "tr": "Ofiste çalışıyorum."
+        },
+        "translations": {
+          "fa": "در دفتر کار می‌کنم."
+        },
+        "intent": "state_work",
+        "concept_refs": [
+          "tr_a1_school_and_work_ofis",
+          "tr_a1_school_and_work_calismak"
+        ],
+        "cefr": "A1",
+        "topic": "school-study",
+        "register": "neutral",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "utterance",
+      "external_id": "u_school_and_work_04",
+      "data": {
+        "lesson_key": "a1-tr-school-and-work-02",
+        "text": {
+          "tr": "Bugün bir müşteriyle görüşeceğim."
+        },
+        "translations": {
+          "fa": "امروز با یک مشتری ملاقات می‌کنم."
+        },
+        "intent": "state_work_plan",
+        "concept_refs": [
+          "tr_a1_school_and_work_musteri"
+        ],
+        "cefr": "A1",
+        "topic": "school-study",
+        "register": "neutral",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "grammar_point",
+      "external_id": "g_school_and_work_core",
+      "data": {
+        "lesson_key": "a1-tr-school-and-work-01",
+        "slug": "a1-tr-school-and-work-grammar",
+        "title": "Ne? Nerede? Ne zaman?",
+        "rule_summary": "A1 questions recycle question words with known predicates rather than requiring a new word order: Ne çalışıyorsun? Nerede çalışıyorsun?",
+        "explanation": {
+          "fa": "در پرسش‌های A1، واژهٔ پرسشی معمولاً همان جایی می‌آید که پاسخ می‌توانست بیاید. با فعل‌های آشنا تمرین کن: «Nerede çalışıyorsun?» یعنی «کجا کار می‌کنی؟»."
+        },
+        "examples": [
+          {
+            "tr": "Nerede çalışıyorsun?",
+            "fa": "کجا کار می‌کنی؟"
+          },
+          {
+            "tr": "Sınav ne zaman?",
+            "fa": "امتحان چه زمانی است؟"
+          }
+        ],
+        "cefr": "A1",
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "dialogue",
+      "external_id": "d_school_and_work_01",
+      "data": {
+        "lesson_key": "a1-tr-school-and-work-01",
+        "title": "Ders programı",
+        "setting": "",
+        "cefr": "A1",
+        "topic": "school-study",
+        "characters": [
+          "Emre",
+          "Burak"
+        ],
+        "turns": [
+          {
+            "order": 1,
+            "speaker": "Emre",
+            "text": "Bugün kaç dersin var?",
+            "translation_fa": "امروز چند کلاس داری؟"
+          },
+          {
+            "order": 2,
+            "speaker": "Burak",
+            "text": "İki dersim var.",
+            "translation_fa": "دو کلاس دارم."
+          },
+          {
+            "order": 3,
+            "speaker": "Emre",
+            "text": "Sınav ne zaman?",
+            "translation_fa": "امتحان چه زمانی است؟"
+          },
+          {
+            "order": 4,
+            "speaker": "Burak",
+            "text": "Cuma günü.",
+            "translation_fa": "روز جمعه."
+          }
+        ],
+        "qa": {
+          "character_pair_unique_within_unit": true,
+          "naturalness": "passed",
+          "single_situation": true
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "dialogue",
+      "external_id": "d_school_and_work_02",
+      "data": {
+        "lesson_key": "a1-tr-school-and-work-02",
+        "title": "Ofiste bir gün",
+        "setting": "",
+        "cefr": "A1",
+        "topic": "school-study",
+        "characters": [
+          "Selin",
+          "Mert"
+        ],
+        "turns": [
+          {
+            "order": 1,
+            "speaker": "Selin",
+            "text": "Nerede çalışıyorsun?",
+            "translation_fa": "کجا کار می‌کنی؟"
+          },
+          {
+            "order": 2,
+            "speaker": "Mert",
+            "text": "Şehir merkezinde bir ofiste.",
+            "translation_fa": "در یک دفتر در مرکز شهر."
+          },
+          {
+            "order": 3,
+            "speaker": "Selin",
+            "text": "Bugün yoğun musun?",
+            "translation_fa": "امروز سرت شلوغ است؟"
+          },
+          {
+            "order": 4,
+            "speaker": "Mert",
+            "text": "Evet, bir müşteriyle görüşeceğim.",
+            "translation_fa": "بله، با یک مشتری ملاقات می‌کنم."
+          }
+        ],
+        "qa": {
+          "character_pair_unique_within_unit": true,
+          "naturalness": "passed",
+          "single_situation": true
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_school_and_work_01_meaning",
+      "data": {
+        "lesson_key": "a1-tr-school-and-work-01",
+        "exercise_type": "multiple_choice",
+        "prompt": {
+          "instruction_fa": "معنی درست این عبارت ترکی را انتخاب کن.",
+          "value": "Bugün iki dersim var."
+        },
+        "answer": {
+          "value": "امروز دو کلاس دارم."
+        },
+        "options": [
+          "امروز دو کلاس دارم.",
+          "عصر تکلیف انجام می‌دهم.",
+          "در دفتر کار می‌کنم.",
+          "امروز با یک مشتری ملاقات می‌کنم."
+        ],
+        "difficulty": 1,
+        "cefr": "A1",
+        "topic": "school-study",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت و پسوندهای عبارت ترکی دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: Bugün iki dersim var. — امروز دو کلاس دارم.",
+          "model_answer": "Bugün iki dersim var."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_school_and_work_01_listen",
+      "data": {
+        "lesson_key": "a1-tr-school-and-work-01",
+        "exercise_type": "listening",
+        "prompt": {
+          "instruction_fa": "گوش کن و عبارتی را که شنیدی انتخاب کن.",
+          "audio_text": "Akşam ödev yapacağım."
+        },
+        "answer": {
+          "value": "Akşam ödev yapacağım."
+        },
+        "options": [
+          "Akşam ödev yapacağım.",
+          "Bugün iki dersim var.",
+          "Ofiste çalışıyorum.",
+          "Bugün bir müşteriyle görüşeceğim."
+        ],
+        "difficulty": 1,
+        "cefr": "A1",
+        "topic": "school-study",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت و پسوندهای عبارت ترکی دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: Akşam ödev yapacağım. — عصر تکلیف انجام می‌دهم.",
+          "model_answer": "Akşam ödev yapacağım.",
+          "transcript_tr": "Akşam ödev yapacağım."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_school_and_work_01_speak",
+      "data": {
+        "lesson_key": "a1-tr-school-and-work-01",
+        "exercise_type": "speaking",
+        "prompt": {
+          "instruction_fa": "عبارت را با صدای بلند و با ریتم طبیعی تکرار کن.",
+          "value": "Bugün iki dersim var."
+        },
+        "answer": {
+          "expected_text": "Bugün iki dersim var."
+        },
+        "difficulty": 1,
+        "cefr": "A1",
+        "topic": "school-study",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت و پسوندهای عبارت ترکی دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: Bugün iki dersim var. — امروز دو کلاس دارم.",
+          "model_answer": "Bugün iki dersim var."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_school_and_work_01_build",
+      "data": {
+        "lesson_key": "a1-tr-school-and-work-01",
+        "exercise_type": "sentence_building",
+        "prompt": {
+          "instruction_fa": "کلمه‌ها را لمس کن تا عبارت درست ساخته شود.",
+          "tokens": [
+            "ödev",
+            "yapacağım.",
+            "Akşam"
+          ]
+        },
+        "answer": {
+          "tokens": [
+            "Akşam",
+            "ödev",
+            "yapacağım."
+          ],
+          "value": "Akşam ödev yapacağım."
+        },
+        "difficulty": 1,
+        "cefr": "A1",
+        "topic": "school-study",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت و پسوندهای عبارت ترکی دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: Akşam ödev yapacağım. — عصر تکلیف انجام می‌دهم.",
+          "model_answer": "Akşam ödev yapacağım."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_school_and_work_01_dialogue",
+      "data": {
+        "lesson_key": "a1-tr-school-and-work-01",
+        "exercise_type": "dialogue_comprehension",
+        "prompt": {
+          "instruction_fa": "با توجه به گفت‌وگو، پاسخ مناسب را انتخاب کن.",
+          "source_dialogue_ref": "d_school_and_work_01",
+          "question_fa": "کدام گزینه با معنی «امروز دو کلاس دارم.» هماهنگ است؟"
+        },
+        "answer": {
+          "value": "Bugün iki dersim var."
+        },
+        "options": [
+          "Bugün iki dersim var.",
+          "Akşam ödev yapacağım.",
+          "Ofiste çalışıyorum.",
+          "Bugün bir müşteriyle görüşeceğim."
+        ],
+        "difficulty": 1,
+        "cefr": "A1",
+        "topic": "school-study",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت و پسوندهای عبارت ترکی دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: Bugün iki dersim var. — امروز دو کلاس دارم.",
+          "model_answer": "Bugün iki dersim var."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_school_and_work_02_meaning",
+      "data": {
+        "lesson_key": "a1-tr-school-and-work-02",
+        "exercise_type": "multiple_choice",
+        "prompt": {
+          "instruction_fa": "معنی درست این عبارت ترکی را انتخاب کن.",
+          "value": "Ofiste çalışıyorum."
+        },
+        "answer": {
+          "value": "در دفتر کار می‌کنم."
+        },
+        "options": [
+          "در دفتر کار می‌کنم.",
+          "امروز دو کلاس دارم.",
+          "عصر تکلیف انجام می‌دهم.",
+          "امروز با یک مشتری ملاقات می‌کنم."
+        ],
+        "difficulty": 1,
+        "cefr": "A1",
+        "topic": "school-study",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت و پسوندهای عبارت ترکی دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: Ofiste çalışıyorum. — در دفتر کار می‌کنم.",
+          "model_answer": "Ofiste çalışıyorum."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_school_and_work_02_listen",
+      "data": {
+        "lesson_key": "a1-tr-school-and-work-02",
+        "exercise_type": "listening",
+        "prompt": {
+          "instruction_fa": "گوش کن و عبارتی را که شنیدی انتخاب کن.",
+          "audio_text": "Bugün bir müşteriyle görüşeceğim."
+        },
+        "answer": {
+          "value": "Bugün bir müşteriyle görüşeceğim."
+        },
+        "options": [
+          "Bugün bir müşteriyle görüşeceğim.",
+          "Ofiste çalışıyorum.",
+          "Bugün iki dersim var.",
+          "Akşam ödev yapacağım."
+        ],
+        "difficulty": 1,
+        "cefr": "A1",
+        "topic": "school-study",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت و پسوندهای عبارت ترکی دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: Bugün bir müşteriyle görüşeceğim. — امروز با یک مشتری ملاقات می‌کنم.",
+          "model_answer": "Bugün bir müşteriyle görüşeceğim.",
+          "transcript_tr": "Bugün bir müşteriyle görüşeceğim."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_school_and_work_02_speak",
+      "data": {
+        "lesson_key": "a1-tr-school-and-work-02",
+        "exercise_type": "speaking",
+        "prompt": {
+          "instruction_fa": "عبارت را با صدای بلند و با ریتم طبیعی تکرار کن.",
+          "value": "Ofiste çalışıyorum."
+        },
+        "answer": {
+          "expected_text": "Ofiste çalışıyorum."
+        },
+        "difficulty": 1,
+        "cefr": "A1",
+        "topic": "school-study",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت و پسوندهای عبارت ترکی دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: Ofiste çalışıyorum. — در دفتر کار می‌کنم.",
+          "model_answer": "Ofiste çalışıyorum."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_school_and_work_02_build",
+      "data": {
+        "lesson_key": "a1-tr-school-and-work-02",
+        "exercise_type": "sentence_building",
+        "prompt": {
+          "instruction_fa": "کلمه‌ها را لمس کن تا عبارت درست ساخته شود.",
+          "tokens": [
+            "bir",
+            "müşteriyle",
+            "görüşeceğim.",
+            "Bugün"
+          ]
+        },
+        "answer": {
+          "tokens": [
+            "Bugün",
+            "bir",
+            "müşteriyle",
+            "görüşeceğim."
+          ],
+          "value": "Bugün bir müşteriyle görüşeceğim."
+        },
+        "difficulty": 1,
+        "cefr": "A1",
+        "topic": "school-study",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت و پسوندهای عبارت ترکی دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: Bugün bir müşteriyle görüşeceğim. — امروز با یک مشتری ملاقات می‌کنم.",
+          "model_answer": "Bugün bir müşteriyle görüşeceğim."
+        },
+        "status": "validated"
+      }
+    },
+    {
+      "kind": "exercise",
+      "external_id": "e_school_and_work_02_dialogue",
+      "data": {
+        "lesson_key": "a1-tr-school-and-work-02",
+        "exercise_type": "dialogue_comprehension",
+        "prompt": {
+          "instruction_fa": "با توجه به گفت‌وگو، پاسخ مناسب را انتخاب کن.",
+          "source_dialogue_ref": "d_school_and_work_02",
+          "question_fa": "کدام گزینه با معنی «در دفتر کار می‌کنم.» هماهنگ است؟"
+        },
+        "answer": {
+          "value": "Ofiste çalışıyorum."
+        },
+        "options": [
+          "Ofiste çalışıyorum.",
+          "Bugün iki dersim var.",
+          "Akşam ödev yapacağım.",
+          "Bugün bir müşteriyle görüşeceğim."
+        ],
+        "difficulty": 1,
+        "cefr": "A1",
+        "topic": "school-study",
+        "feedback": {
+          "retry_tip_fa": "به معنی، موقعیت و پسوندهای عبارت ترکی دقت کن و دوباره امتحان کن.",
+          "explanation_fa": "مدل طبیعی این درس: Ofiste çalışıyorum. — در دفتر کار می‌کنم.",
+          "model_answer": "Ofiste çalışıyorum."
+        },
+        "status": "validated"
+      }
+    }
+  ]
+}
