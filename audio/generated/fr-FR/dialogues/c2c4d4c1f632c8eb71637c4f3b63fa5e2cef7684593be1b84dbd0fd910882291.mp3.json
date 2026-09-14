@@ -1,0 +1,36 @@
+{
+  "source_text_hash": "956a3e5267eb22507c83ec5efedd896765aefdc811cb99f815aa604b8df62e82",
+  "voice_id": "xO2Q4ARMEd4BI2sGDH9c",
+  "model": "eleven_multilingual_v2",
+  "settings": {
+    "stability": 0.71,
+    "similarity_boost": 0.9,
+    "style": 0.05,
+    "use_speaker_boost": true,
+    "speed": 0.96
+  },
+  "provider": "elevenlabs",
+  "audio_key": "c2c4d4c1f632c8eb71637c4f3b63fa5e2cef7684593be1b84dbd0fd910882291",
+  "voice_key": "character:julien:male_professional",
+  "voice_name": "Edouard - Confident and Polished",
+  "voice_labels": {
+    "gender": "male",
+    "accent": "standard",
+    "age": "young",
+    "category": "professional",
+    "language": "fr",
+    "use_case": "conversational",
+    "descriptive": "confident"
+  },
+  "output_format": "mp3_44100_192",
+  "file_sha256": "52fa43c611e077ea495918c286fa6f8a9ba509f2badcc1d3baf42f52a800f4f5",
+  "duration_ms": 1280,
+  "generated_at": "2026-09-14T08:52:18.979892+00:00",
+  "entity_refs": [
+    {
+      "entity_type": "dialogue_turn",
+      "entity_uuid": "5ea96d3c-edb0-5cb1-9e16-f7f0f1dbc766",
+      "entity_key": "d_first_sounds_02:2"
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "source_text_hash": "4933751d204ac2229dd5d9afe6b0bc499f11031e300c6c5b835da6fa02696228",
+  "voice_id": "FRY6vOtGqwamgAf39SwP",
+  "model": "eleven_multilingual_v2",
+  "settings": {
+    "stability": 0.52,
+    "similarity_boost": 0.86,
+    "style": 0.2,
+    "use_speaker_boost": true,
+    "speed": 0.99
+  },
+  "provider": "elevenlabs",
+  "audio_key": "6b2623ec3fa7b5056d41026cdde7edc84b04faa6650d45d823f5b88da3c0e32b",
+  "voice_key": "character:hugo:male_bright",
+  "voice_name": "Yanis",
+  "voice_labels": {
+    "gender": "male",
+    "accent": "standard",
+    "age": "young",
+    "category": "professional",
+    "language": "fr",
+    "use_case": "conversational",
+    "descriptive": "casual"
+  },
+  "output_format": "mp3_44100_192",
+  "file_sha256": "4f9ba77681fa8dec5a9eb457e45e271ce9a02360977e2210f59aa9df0fe397d2",
+  "duration_ms": 783,
+  "generated_at": "2026-09-14T08:52:04.215288+00:00",
+  "entity_refs": [
+    {
+      "entity_type": "dialogue_turn",
+      "entity_uuid": "74fe7b45-dfdc-52e1-84de-3eeb2aafdcd2",
+      "entity_key": "d_how_are_you_02:4"
+    }
+  ]
+}

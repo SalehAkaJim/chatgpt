@@ -1,0 +1,36 @@
+{
+  "source_text_hash": "301a74b108e6bc2504c20be01ef6db601089e1e3671451e1f755d669780885ea",
+  "voice_id": "7Pm7442WzqlfkW9vjmO9",
+  "model": "eleven_multilingual_v2",
+  "settings": {
+    "stability": 0.68,
+    "similarity_boost": 0.89,
+    "style": 0.06,
+    "use_speaker_boost": true,
+    "speed": 0.95
+  },
+  "provider": "elevenlabs",
+  "audio_key": "ee97c6606ee28630580c32f30c614ed2871dc63f800fbf6c451f62173851fc69",
+  "voice_key": "character:nicolas:male_calm",
+  "voice_name": "Maxime - Dynamic and Natural",
+  "voice_labels": {
+    "gender": "male",
+    "accent": "standard",
+    "age": "middle_aged",
+    "category": "professional",
+    "language": "fr",
+    "use_case": "conversational",
+    "descriptive": "casual"
+  },
+  "output_format": "mp3_44100_192",
+  "file_sha256": "4c0b7886893e6303814e6eb504f30cdc9486c2c0753a42ca5beff3779774925f",
+  "duration_ms": 653,
+  "generated_at": "2026-09-14T08:52:27.632920+00:00",
+  "entity_refs": [
+    {
+      "entity_type": "dialogue_turn",
+      "entity_uuid": "eb77c1aa-218d-5148-86e3-8863eb0a114b",
+      "entity_key": "d_polite_words_02:2"
+    }
+  ]
+}
