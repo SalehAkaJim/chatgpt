@@ -1,5 +1,5 @@
 -- Language Learning App - MySQL Content Schema v1
--- Target: MySQL 8.0.16+
+-- Target: MySQL 9.0.1
 -- Purpose: source-backed, CEFR-aligned, conversation-first language learning content.
 -- Notes:
 --   * Lesson length and activity count are intentionally dynamic.
@@ -361,7 +361,6 @@ CREATE TABLE IF NOT EXISTS activities (
   KEY idx_activities_type (type_code),
   KEY idx_activities_dialogue (dialogue_id),
   CONSTRAINT chk_activities_position_positive CHECK (position >= 1),
-  CONSTRAINT chk_first_activity_conversation CHECK (position <> 1 OR type_code = 'conversation_speaking'),
   CONSTRAINT fk_activities_lesson
     FOREIGN KEY (lesson_id) REFERENCES lessons(id)
     ON UPDATE CASCADE ON DELETE CASCADE,
@@ -372,6 +371,33 @@ CREATE TABLE IF NOT EXISTS activities (
     FOREIGN KEY (dialogue_id) REFERENCES dialogues(id)
     ON UPDATE CASCADE ON DELETE SET NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+
+-- MySQL 9.0.1 does not allow type_code to participate in both the former CHECK
+-- constraint and an FK with referential actions. Preserve the invariant with triggers.
+DROP TRIGGER IF EXISTS trg_activities_first_conversation_insert;
+DROP TRIGGER IF EXISTS trg_activities_first_conversation_update;
+
+DELIMITER $$
+CREATE TRIGGER trg_activities_first_conversation_insert
+BEFORE INSERT ON activities
+FOR EACH ROW
+BEGIN
+  IF NEW.position = 1 AND NEW.type_code <> 'conversation_speaking' THEN
+    SIGNAL SQLSTATE '45000'
+      SET MESSAGE_TEXT = 'Activity position 1 must be conversation_speaking';
+  END IF;
+END$$
+
+CREATE TRIGGER trg_activities_first_conversation_update
+BEFORE UPDATE ON activities
+FOR EACH ROW
+BEGIN
+  IF NEW.position = 1 AND NEW.type_code <> 'conversation_speaking' THEN
+    SIGNAL SQLSTATE '45000'
+      SET MESSAGE_TEXT = 'Activity position 1 must be conversation_speaking';
+  END IF;
+END$$
+DELIMITER ;
 
 CREATE TABLE IF NOT EXISTS activity_items (
   id BIGINT UNSIGNED NOT NULL AUTO_INCREMENT,
@@ -578,16 +604,23 @@ SELECT
   ll.status,
   ll.planned_lesson_count,
   ll.lesson_count_status,
-  COUNT(DISTINCT l.id) AS current_lesson_count,
-  SUM(CASE WHEN l.status = 'final' THEN 1 ELSE 0 END) AS final_lesson_count,
-  COUNT(DISTINCT ct.id) AS curriculum_target_count,
-  SUM(CASE WHEN ct.coverage_status IN ('covered','verified') THEN 1 ELSE 0 END) AS covered_target_count
+  (SELECT COUNT(*)
+     FROM lessons l
+    WHERE l.language_level_id = ll.id) AS current_lesson_count,
+  (SELECT COUNT(*)
+     FROM lessons l
+    WHERE l.language_level_id = ll.id
+      AND l.status = 'final') AS final_lesson_count,
+  (SELECT COUNT(*)
+     FROM curriculum_targets ct
+    WHERE ct.language_level_id = ll.id) AS curriculum_target_count,
+  (SELECT COUNT(*)
+     FROM curriculum_targets ct
+    WHERE ct.language_level_id = ll.id
+      AND ct.coverage_status IN ('covered','verified')) AS covered_target_count
 FROM language_levels ll
 JOIN languages lang ON lang.id = ll.language_id
-JOIN cefr_levels c ON c.id = ll.cefr_level_id
-LEFT JOIN lessons l ON l.language_level_id = ll.id
-LEFT JOIN curriculum_targets ct ON ct.language_level_id = ll.id
-GROUP BY ll.id, lang.code, c.code, ll.status, ll.planned_lesson_count, ll.lesson_count_status;
+JOIN cefr_levels c ON c.id = ll.cefr_level_id;
 
 INSERT INTO schema_migrations (version)
 VALUES ('content_schema_v1')
