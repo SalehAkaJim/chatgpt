@@ -245,7 +245,11 @@ def enrich_batch(batch):
             item['data']['audio_examples'] = True
         if item['kind'] == 'exercise':
             d = item['data']
-            d['feedback'] = overrides.get(item['external_id']) or authored_feedback.get(item['external_id']) or feedback_for(item, batch['items'])
+            forced_feedback = overrides.get(item['external_id']) or authored_feedback.get(item['external_id'])
+            if forced_feedback:
+                d['feedback'] = forced_feedback
+            elif not d.get('feedback'):
+                d['feedback'] = feedback_for(item, batch['items'])
     return batch
 
 def main():
