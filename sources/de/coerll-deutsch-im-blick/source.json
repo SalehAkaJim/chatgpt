@@ -1,0 +1,23 @@
+{
+  "source_id": "coerll-deutsch-im-blick",
+  "title": "Deutsch im Blick",
+  "author": "Dr. Zsuzsanna Abrams",
+  "publisher": "Center for Open Educational Resources and Language Learning (COERLL), The University of Texas at Austin",
+  "language": "de",
+  "source_level": "first-year German",
+  "license": "CC BY 4.0",
+  "license_url": "https://creativecommons.org/licenses/by/4.0/",
+  "catalog_url": "https://coerll.utexas.edu/coerll/oer/deutsch-im-blick/",
+  "content_url_template": "https://coerll.utexas.edu/dib/voc.php?k={chapter}",
+  "chapters": 10,
+  "import_scope": {
+    "include": ["publisher-authored vocabulary pages"],
+    "exclude": ["audio", "songs", "third-party media", "externally linked copyrighted material"]
+  },
+  "transformation": {
+    "chapter": "unit",
+    "vocabulary_section": "lesson",
+    "source_vocabulary_pair": "concept item",
+    "educational_text_policy": "copy source content only; do not generate, rewrite, complete, or paraphrase educational content"
+  }
+}

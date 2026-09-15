@@ -1,0 +1,49 @@
+{
+  "batch_id": "de-coerll-dib-k01-v1",
+  "course": "coerll-deutsch-im-blick",
+  "target_language": "de",
+  "target_variant": "de-DE",
+  "cefr": null,
+  "source_level": "first-year German",
+  "curriculum_unit": "coerll-dib-k01",
+  "generator": "source-import:coerll-deutsch-im-blick-v1",
+  "source": {
+    "source_id": "coerll-deutsch-im-blick",
+    "title": "Deutsch im Blick",
+    "publisher": "COERLL, The University of Texas at Austin",
+    "author": "Dr. Zsuzsanna Abrams",
+    "source_url": "https://coerll.utexas.edu/dib/voc.php?k=1",
+    "license": "CC BY 4.0",
+    "license_url": "https://creativecommons.org/licenses/by/4.0/",
+    "retrieved_at": "2026-09-15"
+  },
+  "unit": {
+    "external_id": "coerll-dib-k01",
+    "title": "Kapitel 1: Willkommen in Würzburg!",
+    "sort_order": 1
+  },
+  "lessons": [
+    {
+      "key": "coerll-dib-k01-begruessungen",
+      "title": "Begrüßungen",
+      "source_translation": "Greetings",
+      "sort_order": 1,
+      "source_url": "https://coerll.utexas.edu/dib/voc.php?k=1"
+    }
+  ],
+  "items": [
+    {"kind":"concept","external_id":"coerll-dib-k01-s01-i001","data":{"lesson_key":"coerll-dib-k01-begruessungen","forms":{"de":"Hallo!"},"translations":{"en":"Hello!"},"source_order":1}},
+    {"kind":"concept","external_id":"coerll-dib-k01-s01-i002","data":{"lesson_key":"coerll-dib-k01-begruessungen","forms":{"de":"Guten Morgen!"},"translations":{"en":"Good morning."},"source_order":2}},
+    {"kind":"concept","external_id":"coerll-dib-k01-s01-i003","data":{"lesson_key":"coerll-dib-k01-begruessungen","forms":{"de":"Guten Tag!"},"translations":{"en":"Hello (“good day”)."},"source_order":3}},
+    {"kind":"concept","external_id":"coerll-dib-k01-s01-i004","data":{"lesson_key":"coerll-dib-k01-begruessungen","forms":{"de":"Guten Abend!"},"translations":{"en":"Good evening."},"source_order":4}},
+    {"kind":"concept","external_id":"coerll-dib-k01-s01-i005","data":{"lesson_key":"coerll-dib-k01-begruessungen","forms":{"de":"Gute Nacht."},"translations":{"en":"Good night."},"source_order":5}},
+    {"kind":"concept","external_id":"coerll-dib-k01-s01-i006","data":{"lesson_key":"coerll-dib-k01-begruessungen","forms":{"de":"Tschüss!"},"translations":{"en":"Bye!"},"source_order":6}},
+    {"kind":"concept","external_id":"coerll-dib-k01-s01-i007","data":{"lesson_key":"coerll-dib-k01-begruessungen","forms":{"de":"Auf Wiedersehen!"},"translations":{"en":"Goodbye! (Formal)"},"source_order":7}},
+    {"kind":"concept","external_id":"coerll-dib-k01-s01-i008","data":{"lesson_key":"coerll-dib-k01-begruessungen","forms":{"de":"Mach’s gut!"},"translations":{"en":"Take care!"},"source_order":8}},
+    {"kind":"concept","external_id":"coerll-dib-k01-s01-i009","data":{"lesson_key":"coerll-dib-k01-begruessungen","forms":{"de":"Bis bald!"},"translations":{"en":"See you soon!"},"source_order":9}},
+    {"kind":"concept","external_id":"coerll-dib-k01-s01-i010","data":{"lesson_key":"coerll-dib-k01-begruessungen","forms":{"de":"Bis morgen."},"translations":{"en":"See you tomorrow."},"source_order":10}},
+    {"kind":"concept","external_id":"coerll-dib-k01-s01-i011","data":{"lesson_key":"coerll-dib-k01-begruessungen","forms":{"de":"Bis nächste Woche."},"translations":{"en":"See you next week."},"source_order":11}},
+    {"kind":"concept","external_id":"coerll-dib-k01-s01-i012","data":{"lesson_key":"coerll-dib-k01-begruessungen","forms":{"de":"Bis Samstag."},"translations":{"en":"See you Saturday."},"source_order":12}},
+    {"kind":"concept","external_id":"coerll-dib-k01-s01-i013","data":{"lesson_key":"coerll-dib-k01-begruessungen","forms":{"de":"Bis dann! / Bis später!"},"translations":{"en":"See you later!"},"source_order":13}}
+  ]
+}
