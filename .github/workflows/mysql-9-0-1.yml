@@ -1,0 +1,93 @@
+name: MySQL 9.0.1 schema test
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'database/**'
+      - '.github/workflows/mysql-9-0-1.yml'
+  workflow_dispatch:
+
+jobs:
+  mysql-schema-test:
+    runs-on: ubuntu-latest
+    services:
+      mysql:
+        image: mysql:9.0.1
+        env:
+          MYSQL_ROOT_PASSWORD: root
+          MYSQL_DATABASE: language_app
+        ports:
+          - 3306:3306
+        options: >-
+          --health-cmd="mysqladmin ping -h 127.0.0.1 -proot --silent"
+          --health-interval=5s
+          --health-timeout=5s
+          --health-retries=30
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Verify exact MySQL version
+        run: |
+          set -euo pipefail
+          version=$(docker run --rm --network host mysql:9.0.1 mysql -N -s -h127.0.0.1 -uroot -proot -e "SELECT VERSION();")
+          echo "Server version: $version"
+          test "$version" = "9.0.1"
+
+      - name: Apply schema
+        run: |
+          set -euo pipefail
+          docker run --rm --network host -i mysql:9.0.1 mysql --show-warnings -h127.0.0.1 -uroot -proot language_app < database/schema.sql
+
+      - name: Apply migrations
+        run: |
+          set -euo pipefail
+          shopt -s nullglob
+          for f in database/migrations/*.sql; do
+            echo "Applying $f"
+            docker run --rm --network host -i mysql:9.0.1 mysql --show-warnings -h127.0.0.1 -uroot -proot language_app < "$f"
+          done
+
+      - name: Apply reference seed twice to verify idempotency
+        run: |
+          set -euo pipefail
+          for i in 1 2; do
+            echo "Seed pass $i"
+            docker run --rm --network host -i mysql:9.0.1 mysql --show-warnings -h127.0.0.1 -uroot -proot language_app < database/seed_reference.sql
+          done
+
+      - name: Run QA queries for SQL compatibility
+        run: |
+          set -euo pipefail
+          docker run --rm --network host -i mysql:9.0.1 mysql --show-warnings -h127.0.0.1 -uroot -proot language_app < database/qa_queries.sql > /tmp/qa-output.txt
+          cat /tmp/qa-output.txt
+
+      - name: Validate expected reference rows and views
+        run: |
+          set -euo pipefail
+          docker run --rm --network host mysql:9.0.1 mysql -N -s -h127.0.0.1 -uroot -proot language_app -e "
+            SELECT CASE WHEN COUNT(*) = 7 THEN 'OK' ELSE CONCAT('FAIL:', COUNT(*)) END FROM cefr_levels;
+            SELECT CASE WHEN COUNT(*) = 2 THEN 'OK' ELSE CONCAT('FAIL:', COUNT(*)) END FROM languages;
+            SELECT CASE WHEN COUNT(*) = 14 THEN 'OK' ELSE CONCAT('FAIL:', COUNT(*)) END FROM language_levels;
+            SELECT CASE WHEN COUNT(*) = 13 THEN 'OK' ELSE CONCAT('FAIL:', COUNT(*)) END FROM activity_types;
+            SELECT COUNT(*) FROM v_lesson_activity_counts;
+            SELECT COUNT(*) FROM v_language_level_content_status;
+          " | tee /tmp/assertions.txt
+          test "$(sed -n '1p' /tmp/assertions.txt)" = "OK"
+          test "$(sed -n '2p' /tmp/assertions.txt)" = "OK"
+          test "$(sed -n '3p' /tmp/assertions.txt)" = "OK"
+          test "$(sed -n '4p' /tmp/assertions.txt)" = "OK"
+
+      - name: Check all base tables
+        run: |
+          set -euo pipefail
+          tables=$(docker run --rm --network host mysql:9.0.1 mysql -N -s -h127.0.0.1 -uroot -proot language_app -e "SELECT GROUP_CONCAT(TABLE_NAME SEPARATOR ' ') FROM information_schema.TABLES WHERE TABLE_SCHEMA='language_app' AND TABLE_TYPE='BASE TABLE';")
+          test -n "$tables"
+          for table in $tables; do
+            docker run --rm --network host mysql:9.0.1 mysql -N -s -h127.0.0.1 -uroot -proot language_app -e "CHECK TABLE \`$table\`;" | tee -a /tmp/check-table.txt
+          done
+          if grep -E $'\terror\t|\tError\t' /tmp/check-table.txt; then
+            exit 1
+          fi
