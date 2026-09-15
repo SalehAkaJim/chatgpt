@@ -1,41 +1,22 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
   "language": "en",
   "variant": "en-US",
+  "dictionary": "content/dictionary/en-US/core.json",
   "levels": {
     "Pre-A1": {
       "text_sources_scanned": 429,
-      "text_sources_annotated": 157,
-      "annotations": 258,
+      "text_sources_annotated": 244,
+      "annotations": 515,
       "tokens": 817,
-      "linked_tokens": 258,
-      "token_coverage": 0.315789,
-      "ambiguous_tokens": 0,
-      "unresolved_tokens": 559,
+      "linked_tokens": 515,
+      "token_coverage": 0.630355,
+      "ambiguous_tokens": 1,
+      "unresolved_tokens": 302,
       "top_unresolved": [
-        [
-          "i'm",
-          37
-        ],
-        [
-          "is",
-          29
-        ],
-        [
-          "a",
-          22
-        ],
         [
           "name",
           19
-        ],
-        [
-          "again",
-          16
-        ],
-        [
-          "this",
-          15
         ],
         [
           "exit",
@@ -46,10 +27,6 @@
           13
         ],
         [
-          "you",
-          12
-        ],
-        [
           "sara",
           12
         ],
@@ -58,39 +35,11 @@
           12
         ],
         [
-          "the",
-          12
-        ],
-        [
-          "my",
-          11
-        ],
-        [
-          "i",
-          11
-        ],
-        [
-          "from",
-          10
-        ],
-        [
           "arman",
           10
         ],
         [
-          "your",
-          9
-        ],
-        [
-          "good",
-          8
-        ],
-        [
           "g",
-          8
-        ],
-        [
-          "what's",
           8
         ],
         [
@@ -102,18 +51,6 @@
           7
         ],
         [
-          "it's",
-          7
-        ],
-        [
-          "are",
-          6
-        ],
-        [
-          "how",
-          6
-        ],
-        [
           "b",
           6
         ],
@@ -123,10 +60,6 @@
         ],
         [
           "w",
-          6
-        ],
-        [
-          "that",
           6
         ],
         [
@@ -210,19 +143,7 @@
           4
         ],
         [
-          "there",
-          4
-        ],
-        [
           "slowly",
-          4
-        ],
-        [
-          "does",
-          4
-        ],
-        [
-          "mean",
           4
         ],
         [
@@ -254,23 +175,11 @@
           3
         ],
         [
-          "don't",
-          3
-        ],
-        [
           "understand",
           3
         ],
         [
-          "can",
-          3
-        ],
-        [
           "s-a-m",
-          3
-        ],
-        [
-          "it",
           3
         ],
         [
@@ -322,23 +231,11 @@
           2
         ],
         [
-          "to",
-          2
-        ],
-        [
           "pre",
           2
         ],
         [
           "ready",
-          2
-        ],
-        [
-          "here",
-          2
-        ],
-        [
-          "may",
           2
         ],
         [
@@ -350,11 +247,11 @@
           2
         ],
         [
-          "much",
-          2
+          "nina",
+          1
         ],
         [
-          "nina",
+          "first",
           1
         ],
         [
@@ -382,15 +279,7 @@
           1
         ],
         [
-          "or",
-          1
-        ],
-        [
           "entry",
-          1
-        ],
-        [
-          "of",
           1
         ],
         [
@@ -402,200 +291,72 @@
           1
         ],
         [
-          "do",
-          1
-        ],
-        [
           "amy",
           1
         ],
         [
           "mia",
           1
+        ],
+        [
+          "sun",
+          1
+        ],
+        [
+          "vowel",
+          1
+        ],
+        [
+          "omid",
+          1
+        ],
+        [
+          "ali",
+          1
+        ],
+        [
+          "intro",
+          1
+        ],
+        [
+          "cafe",
+          1
+        ],
+        [
+          "ben",
+          1
+        ],
+        [
+          "exact-match",
+          1
         ]
       ]
     },
     "A1": {
       "text_sources_scanned": 1001,
-      "text_sources_annotated": 639,
-      "annotations": 931,
+      "text_sources_annotated": 915,
+      "annotations": 2464,
       "tokens": 2873,
-      "linked_tokens": 932,
-      "token_coverage": 0.3244,
-      "ambiguous_tokens": 5,
-      "unresolved_tokens": 1941,
+      "linked_tokens": 2465,
+      "token_coverage": 0.857988,
+      "ambiguous_tokens": 15,
+      "unresolved_tokens": 408,
       "top_unresolved": [
-        [
-          "is",
-          152
-        ],
-        [
-          "i",
-          133
-        ],
-        [
-          "you",
-          121
-        ],
-        [
-          "the",
-          103
-        ],
-        [
-          "a",
-          69
-        ],
-        [
-          "do",
-          62
-        ],
-        [
-          "my",
-          59
-        ],
-        [
-          "this",
-          59
-        ],
-        [
-          "i'm",
-          54
-        ],
-        [
-          "to",
-          52
-        ],
-        [
-          "at",
-          43
-        ],
-        [
-          "it's",
-          40
-        ],
-        [
-          "on",
-          34
-        ],
-        [
-          "can",
-          31
-        ],
-        [
-          "are",
-          26
-        ],
         [
           "name",
           26
-        ],
-        [
-          "how",
-          24
-        ],
-        [
-          "it",
-          23
-        ],
-        [
-          "and",
-          22
         ],
         [
           "nice",
           22
         ],
         [
-          "she",
-          22
-        ],
-        [
-          "your",
-          21
-        ],
-        [
-          "in",
-          21
-        ],
-        [
-          "don't",
-          20
-        ],
-        [
-          "there",
-          20
-        ],
-        [
-          "work",
-          15
-        ],
-        [
-          "good",
-          15
-        ],
-        [
-          "from",
-          14
-        ],
-        [
-          "me",
-          14
-        ],
-        [
-          "get",
-          13
-        ],
-        [
-          "what's",
-          13
-        ],
-        [
-          "that",
-          13
-        ],
-        [
-          "too",
-          13
-        ],
-        [
-          "time",
-          13
-        ],
-        [
           "up",
           13
         ],
         [
-          "near",
-          12
-        ],
-        [
           "turn",
           11
-        ],
-        [
-          "here",
-          11
-        ],
-        [
-          "sure",
-          11
-        ],
-        [
-          "today",
-          10
-        ],
-        [
-          "that's",
-          10
-        ],
-        [
-          "tomorrow",
-          9
-        ],
-        [
-          "for",
-          9
         ],
         [
           "hurts",
@@ -603,14 +364,6 @@
         ],
         [
           "free",
-          9
-        ],
-        [
-          "he",
-          9
-        ],
-        [
-          "by",
           9
         ],
         [
@@ -622,27 +375,11 @@
           8
         ],
         [
-          "want",
-          8
-        ],
-        [
           "sam",
           8
         ],
         [
-          "feel",
-          7
-        ],
-        [
-          "very",
-          7
-        ],
-        [
           "room",
-          7
-        ],
-        [
-          "an",
           7
         ],
         [
@@ -686,23 +423,11 @@
           6
         ],
         [
-          "i'd",
-          6
-        ],
-        [
           "saturday",
           5
         ],
         [
-          "problem",
-          5
-        ],
-        [
           "bye",
-          5
-        ],
-        [
-          "you're",
           5
         ],
         [
@@ -715,10 +440,6 @@
         ],
         [
           "years",
-          5
-        ],
-        [
-          "much",
           5
         ],
         [
@@ -738,19 +459,11 @@
           4
         ],
         [
-          "about",
-          4
-        ],
-        [
           "her",
           4
         ],
         [
           "box",
-          4
-        ],
-        [
-          "which",
           4
         ],
         [
@@ -771,6 +484,10 @@
         ],
         [
           "fa",
+          4
+        ],
+        [
+          "first",
           4
         ],
         [
@@ -810,247 +527,247 @@
           4
         ],
         [
-          "okay",
-          3
-        ],
-        [
-          "little",
-          3
-        ],
-        [
-          "need",
-          3
-        ],
-        [
           "amir",
           3
+        ],
+        [
+          "hello",
+          3
+        ],
+        [
+          "goodbye",
+          3
+        ],
+        [
+          "d",
+          3
+        ],
+        [
+          "friends",
+          3
+        ],
+        [
+          "tanaka",
+          3
+        ],
+        [
+          "p-r-i-y-a",
+          3
+        ],
+        [
+          "noura",
+          3
+        ],
+        [
+          "thirty-five",
+          3
+        ],
+        [
+          "sounds",
+          3
+        ],
+        [
+          "medium",
+          3
+        ],
+        [
+          "street",
+          3
+        ],
+        [
+          "third",
+          3
+        ],
+        [
+          "friday",
+          2
+        ],
+        [
+          "english",
+          2
+        ],
+        [
+          "sunday",
+          2
+        ],
+        [
+          "far",
+          2
+        ],
+        [
+          "photo",
+          2
+        ],
+        [
+          "heavy",
+          2
+        ],
+        [
+          "lina",
+          2
+        ],
+        [
+          "evening",
+          2
+        ],
+        [
+          "pronunciation",
+          2
+        ],
+        [
+          "oh",
+          2
+        ],
+        [
+          "yuki",
+          2
+        ],
+        [
+          "priya",
+          2
+        ],
+        [
+          "right",
+          2
+        ],
+        [
+          "study",
+          2
+        ],
+        [
+          "seat",
+          2
+        ],
+        [
+          "late",
+          2
+        ],
+        [
+          "word",
+          2
+        ],
+        [
+          "anything",
+          2
+        ],
+        [
+          "else",
+          2
+        ],
+        [
+          "course",
+          2
+        ],
+        [
+          "downtown",
+          2
+        ],
+        [
+          "tuesday",
+          1
+        ],
+        [
+          "when",
+          1
+        ],
+        [
+          "minutes",
+          1
+        ],
+        [
+          "green",
+          1
+        ],
+        [
+          "sit",
+          1
+        ],
+        [
+          "down",
+          1
+        ],
+        [
+          "cup",
+          1
+        ],
+        [
+          "upstairs",
+          1
+        ],
+        [
+          "emma",
+          1
+        ],
+        [
+          "omar's",
+          1
+        ],
+        [
+          "who's",
+          1
+        ],
+        [
+          "ben",
+          1
+        ],
+        [
+          "garden",
+          1
+        ],
+        [
+          "lovely",
+          1
+        ],
+        [
+          "family",
+          1
+        ],
+        [
+          "ali",
+          1
+        ],
+        [
+          "s",
+          1
+        ],
+        [
+          "reed",
+          1
+        ],
+        [
+          "l-i-n-a",
+          1
+        ],
+        [
+          "form",
+          1
         ]
       ]
     },
     "A2": {
       "text_sources_scanned": 1448,
-      "text_sources_annotated": 933,
-      "annotations": 1707,
+      "text_sources_annotated": 1324,
+      "annotations": 4980,
       "tokens": 6194,
-      "linked_tokens": 1798,
-      "token_coverage": 0.290281,
-      "ambiguous_tokens": 23,
-      "unresolved_tokens": 4396,
+      "linked_tokens": 5071,
+      "token_coverage": 0.818696,
+      "ambiguous_tokens": 75,
+      "unresolved_tokens": 1123,
       "top_unresolved": [
-        [
-          "the",
-          317
-        ],
-        [
-          "i",
-          219
-        ],
-        [
-          "you",
-          163
-        ],
-        [
-          "a",
-          159
-        ],
-        [
-          "to",
-          140
-        ],
-        [
-          "is",
-          131
-        ],
-        [
-          "my",
-          74
-        ],
-        [
-          "we",
-          67
-        ],
-        [
-          "for",
-          66
-        ],
-        [
-          "this",
-          63
-        ],
-        [
-          "on",
-          63
-        ],
-        [
-          "it",
-          62
-        ],
-        [
-          "do",
-          61
-        ],
-        [
-          "and",
-          57
-        ],
-        [
-          "in",
-          50
-        ],
-        [
-          "how",
-          47
-        ],
-        [
-          "but",
-          44
-        ],
-        [
-          "i'm",
-          43
-        ],
-        [
-          "at",
-          43
-        ],
-        [
-          "me",
-          42
-        ],
-        [
-          "get",
-          38
-        ],
-        [
-          "of",
-          36
-        ],
-        [
-          "should",
-          35
-        ],
-        [
-          "with",
-          34
-        ],
-        [
-          "are",
-          34
-        ],
-        [
-          "can",
-          32
-        ],
-        [
-          "could",
-          32
-        ],
-        [
-          "it's",
-          27
-        ],
         [
           "minutes",
           27
-        ],
-        [
-          "was",
-          26
-        ],
-        [
-          "about",
-          26
-        ],
-        [
-          "more",
-          26
-        ],
-        [
-          "too",
-          26
-        ],
-        [
-          "i'd",
-          25
-        ],
-        [
-          "your",
-          24
-        ],
-        [
-          "work",
-          24
-        ],
-        [
-          "need",
-          23
-        ],
-        [
-          "that",
-          23
-        ],
-        [
-          "did",
-          23
-        ],
-        [
-          "than",
-          22
-        ],
-        [
-          "i'll",
-          22
-        ],
-        [
-          "time",
-          20
         ],
         [
           "friday",
           20
         ],
         [
-          "we're",
-          20
-        ],
-        [
-          "an",
-          18
-        ],
-        [
-          "there",
-          18
-        ],
-        [
-          "next",
-          17
-        ],
-        [
-          "because",
-          17
-        ],
-        [
-          "little",
-          16
-        ],
-        [
           "late",
           16
         ],
         [
-          "what's",
-          16
-        ],
-        [
-          "not",
-          15
-        ],
-        [
-          "very",
-          15
-        ],
-        [
-          "if",
+          "before",
           15
         ],
         [
@@ -1058,56 +775,12 @@
           15
         ],
         [
-          "be",
-          15
-        ],
-        [
-          "let's",
-          14
-        ],
-        [
           "sunday",
           14
         ],
         [
-          "every",
-          14
-        ],
-        [
-          "she",
-          13
-        ],
-        [
-          "good",
-          13
-        ],
-        [
-          "so",
-          13
-        ],
-        [
-          "don't",
-          13
-        ],
-        [
           "lunch",
           13
-        ],
-        [
-          "call",
-          13
-        ],
-        [
-          "i've",
-          12
-        ],
-        [
-          "working",
-          12
-        ],
-        [
-          "she's",
-          12
         ],
         [
           "downtown",
@@ -1115,14 +788,6 @@
         ],
         [
           "city",
-          12
-        ],
-        [
-          "usually",
-          12
-        ],
-        [
-          "really",
           12
         ],
         [
@@ -1134,19 +799,7 @@
           11
         ],
         [
-          "better",
-          11
-        ],
-        [
-          "from",
-          11
-        ],
-        [
           "quieter",
-          11
-        ],
-        [
-          "last",
           11
         ],
         [
@@ -1154,31 +807,7 @@
           11
         ],
         [
-          "isn't",
-          10
-        ],
-        [
-          "come",
-          10
-        ],
-        [
-          "okay",
-          10
-        ],
-        [
-          "which",
-          10
-        ],
-        [
-          "think",
-          10
-        ],
-        [
-          "here",
-          10
-        ],
-        [
-          "again",
+          "first",
           10
         ],
         [
@@ -1190,11 +819,7 @@
           10
         ],
         [
-          "got",
-          10
-        ],
-        [
-          "does",
+          "back",
           10
         ],
         [
@@ -1206,351 +831,363 @@
           9
         ],
         [
-          "doing",
+          "after",
           9
-        ],
-        [
-          "near",
-          9
-        ],
-        [
-          "by",
-          9
-        ],
-        [
-          "often",
-          9
-        ],
-        [
-          "now",
-          8
-        ],
-        [
-          "much",
-          8
-        ],
-        [
-          "today",
-          8
         ],
         [
           "afternoon",
           8
+        ],
+        [
+          "nice",
+          8
+        ],
+        [
+          "sounds",
+          8
+        ],
+        [
+          "evening",
+          8
+        ],
+        [
+          "jacket",
+          8
+        ],
+        [
+          "up",
+          8
+        ],
+        [
+          "night",
+          8
+        ],
+        [
+          "green",
+          8
+        ],
+        [
+          "street",
+          8
+        ],
+        [
+          "museum",
+          8
+        ],
+        [
+          "later",
+          8
+        ],
+        [
+          "design",
+          7
+        ],
+        [
+          "room",
+          7
+        ],
+        [
+          "course",
+          7
+        ],
+        [
+          "larger",
+          7
+        ],
+        [
+          "central",
+          7
+        ],
+        [
+          "ago",
+          7
+        ],
+        [
+          "live",
+          7
+        ],
+        [
+          "maya",
+          7
+        ],
+        [
+          "instead",
+          7
+        ],
+        [
+          "salad",
+          7
+        ],
+        [
+          "wear",
+          7
+        ],
+        [
+          "pretty",
+          6
+        ],
+        [
+          "lot",
+          6
+        ],
+        [
+          "name",
+          6
+        ],
+        [
+          "subway",
+          6
+        ],
+        [
+          "apartment",
+          6
+        ],
+        [
+          "eggs",
+          6
+        ],
+        [
+          "rice",
+          6
+        ],
+        [
+          "trip",
+          6
+        ],
+        [
+          "great",
+          6
+        ],
+        [
+          "tonight",
+          6
+        ],
+        [
+          "inside",
+          6
+        ],
+        [
+          "fries",
+          6
+        ],
+        [
+          "drink",
+          6
+        ],
+        [
+          "eat",
+          6
+        ],
+        [
+          "weekdays",
+          6
+        ],
+        [
+          "speaking",
+          6
+        ],
+        [
+          "hi",
+          5
+        ],
+        [
+          "anything",
+          5
+        ],
+        [
+          "bigger",
+          5
+        ],
+        [
+          "travel",
+          5
+        ],
+        [
+          "pasta",
+          5
+        ],
+        [
+          "town",
+          5
+        ],
+        [
+          "area",
+          5
+        ],
+        [
+          "food",
+          5
+        ],
+        [
+          "years",
+          5
+        ],
+        [
+          "month",
+          5
+        ],
+        [
+          "restaurant",
+          5
+        ],
+        [
+          "transfer",
+          5
+        ],
+        [
+          "arrive",
+          5
+        ],
+        [
+          "quick",
+          5
+        ],
+        [
+          "born",
+          5
+        ],
+        [
+          "taller",
+          5
+        ],
+        [
+          "cool",
+          5
+        ],
+        [
+          "round-trip",
+          5
+        ],
+        [
+          "prices",
+          5
+        ],
+        [
+          "program",
+          4
+        ],
+        [
+          "speak",
+          4
+        ],
+        [
+          "faster",
+          4
+        ],
+        [
+          "price",
+          4
+        ],
+        [
+          "served",
+          4
+        ],
+        [
+          "longer",
+          4
+        ],
+        [
+          "life",
+          4
+        ],
+        [
+          "brighter",
+          4
+        ],
+        [
+          "tomatoes",
+          4
+        ],
+        [
+          "long",
+          4
+        ],
+        [
+          "turn",
+          4
+        ],
+        [
+          "second",
+          4
+        ],
+        [
+          "library",
+          4
+        ],
+        [
+          "year",
+          4
+        ],
+        [
+          "seattle",
+          4
+        ],
+        [
+          "plenty",
+          4
+        ],
+        [
+          "friend",
+          4
+        ],
+        [
+          "free",
+          4
+        ],
+        [
+          "out",
+          4
+        ],
+        [
+          "store",
+          4
+        ],
+        [
+          "building",
+          4
+        ],
+        [
+          "gym",
+          4
+        ],
+        [
+          "market",
+          4
         ]
       ]
     },
     "B1": {
       "text_sources_scanned": 3096,
-      "text_sources_annotated": 1578,
-      "annotations": 3392,
+      "text_sources_annotated": 2634,
+      "annotations": 10212,
       "tokens": 13329,
-      "linked_tokens": 3495,
-      "token_coverage": 0.26221,
-      "ambiguous_tokens": 98,
-      "unresolved_tokens": 9834,
+      "linked_tokens": 10315,
+      "token_coverage": 0.773877,
+      "ambiguous_tokens": 257,
+      "unresolved_tokens": 3014,
       "top_unresolved": [
         [
-          "the",
-          801
-        ],
-        [
-          "i",
-          337
-        ],
-        [
-          "to",
-          294
-        ],
-        [
-          "a",
-          281
-        ],
-        [
-          "is",
-          226
-        ],
-        [
-          "you",
-          190
-        ],
-        [
-          "but",
-          161
-        ],
-        [
-          "it",
-          157
-        ],
-        [
-          "for",
-          155
-        ],
-        [
-          "we",
-          145
-        ],
-        [
-          "my",
-          137
-        ],
-        [
-          "that",
-          133
-        ],
-        [
-          "and",
-          127
-        ],
-        [
-          "if",
-          110
-        ],
-        [
-          "in",
-          106
-        ],
-        [
-          "more",
-          96
-        ],
-        [
-          "i'm",
-          84
-        ],
-        [
-          "of",
-          75
-        ],
-        [
-          "was",
-          73
-        ],
-        [
-          "me",
-          71
-        ],
-        [
-          "on",
-          68
-        ],
-        [
-          "i'd",
-          64
-        ],
-        [
-          "at",
-          61
-        ],
-        [
-          "could",
-          55
-        ],
-        [
-          "work",
-          54
-        ],
-        [
-          "are",
-          54
-        ],
-        [
-          "were",
-          53
-        ],
-        [
-          "be",
-          53
-        ],
-        [
-          "need",
-          53
-        ],
-        [
-          "so",
-          50
-        ],
-        [
-          "can",
-          50
-        ],
-        [
-          "do",
-          49
-        ],
-        [
-          "time",
-          49
-        ],
-        [
-          "by",
-          49
-        ],
-        [
-          "with",
-          47
-        ],
-        [
-          "this",
+          "before",
           46
         ],
         [
-          "because",
+          "first",
           45
-        ],
-        [
-          "i've",
-          43
-        ],
-        [
-          "about",
-          43
-        ],
-        [
-          "not",
-          42
-        ],
-        [
-          "than",
-          42
         ],
         [
           "when",
           41
         ],
         [
-          "should",
-          40
-        ],
-        [
-          "been",
-          39
-        ],
-        [
-          "it's",
-          38
-        ],
-        [
-          "i'll",
-          38
-        ],
-        [
-          "your",
-          37
-        ],
-        [
-          "think",
-          36
-        ],
-        [
-          "don't",
-          36
-        ],
-        [
-          "an",
-          35
-        ],
-        [
-          "how",
-          34
-        ],
-        [
-          "keep",
-          32
-        ],
-        [
-          "they",
-          32
-        ],
-        [
-          "tomorrow",
-          31
-        ],
-        [
-          "better",
-          29
-        ],
-        [
-          "still",
-          28
-        ],
-        [
-          "now",
-          28
-        ],
-        [
-          "next",
-          28
-        ],
-        [
-          "from",
-          27
-        ],
-        [
-          "every",
-          26
-        ],
-        [
-          "that's",
-          26
-        ],
-        [
-          "let's",
-          26
-        ],
-        [
-          "most",
-          26
-        ],
-        [
-          "as",
-          26
-        ],
-        [
-          "use",
-          25
-        ],
-        [
-          "much",
-          24
-        ],
-        [
-          "people",
-          24
-        ],
-        [
-          "will",
-          24
-        ],
-        [
-          "just",
-          23
-        ],
-        [
-          "less",
-          23
+          "after",
+          30
         ],
         [
           "main",
           23
         ],
         [
-          "over",
-          23
-        ],
-        [
-          "we're",
-          23
-        ],
-        [
-          "even",
-          22
-        ],
-        [
           "afternoon",
-          22
-        ],
-        [
-          "feel",
           22
         ],
         [
@@ -1558,59 +1195,15 @@
           22
         ],
         [
-          "really",
-          21
-        ],
-        [
           "friday",
           21
-        ],
-        [
-          "our",
-          21
-        ],
-        [
-          "started",
-          21
-        ],
-        [
-          "didn't",
-          21
-        ],
-        [
-          "would",
-          20
-        ],
-        [
-          "only",
-          20
-        ],
-        [
-          "another",
-          20
         ],
         [
           "anything",
           20
         ],
         [
-          "last",
-          20
-        ],
-        [
-          "enough",
-          19
-        ],
-        [
-          "good",
-          19
-        ],
-        [
           "up",
-          19
-        ],
-        [
-          "want",
           19
         ],
         [
@@ -1618,248 +1211,380 @@
           19
         ],
         [
-          "start",
-          19
-        ],
-        [
-          "problem",
-          18
-        ],
-        [
-          "isn't",
-          18
-        ],
-        [
-          "today",
-          18
-        ],
-        [
           "tonight",
           18
         ],
         [
-          "there's",
-          18
-        ],
-        [
-          "she",
-          18
-        ],
-        [
-          "may",
+          "free",
           17
+        ],
+        [
+          "matters",
+          17
+        ],
+        [
+          "review",
+          17
+        ],
+        [
+          "minutes",
+          17
+        ],
+        [
+          "market",
+          17
+        ],
+        [
+          "end",
+          16
+        ],
+        [
+          "longer",
+          15
+        ],
+        [
+          "evening",
+          15
+        ],
+        [
+          "once",
+          15
+        ],
+        [
+          "long",
+          15
+        ],
+        [
+          "lot",
+          15
+        ],
+        [
+          "changed",
+          15
+        ],
+        [
+          "late",
+          15
+        ],
+        [
+          "museum",
+          15
+        ],
+        [
+          "role",
+          14
+        ],
+        [
+          "year",
+          14
+        ],
+        [
+          "dinner",
+          14
+        ],
+        [
+          "something",
+          14
+        ],
+        [
+          "team",
+          14
+        ],
+        [
+          "around",
+          14
+        ],
+        [
+          "hours",
+          13
+        ],
+        [
+          "hour",
+          13
+        ],
+        [
+          "pay",
+          13
+        ],
+        [
+          "sounds",
+          13
+        ],
+        [
+          "hotel",
+          13
+        ],
+        [
+          "city",
+          12
+        ],
+        [
+          "everyone",
+          12
+        ],
+        [
+          "client",
+          12
+        ],
+        [
+          "food",
+          12
+        ],
+        [
+          "clear",
+          12
+        ],
+        [
+          "biggest",
+          11
+        ],
+        [
+          "early",
+          11
+        ],
+        [
+          "her",
+          11
+        ],
+        [
+          "maya",
+          11
+        ],
+        [
+          "extra",
+          11
+        ],
+        [
+          "whole",
+          11
+        ],
+        [
+          "finish",
+          11
+        ],
+        [
+          "book",
+          11
+        ],
+        [
+          "decide",
+          10
+        ],
+        [
+          "smaller",
+          10
+        ],
+        [
+          "difficult",
+          10
+        ],
+        [
+          "exactly",
+          10
+        ],
+        [
+          "event",
+          10
+        ],
+        [
+          "weather",
+          10
+        ],
+        [
+          "instead",
+          10
+        ],
+        [
+          "room",
+          10
+        ],
+        [
+          "given",
+          10
+        ],
+        [
+          "right",
+          10
+        ],
+        [
+          "ready",
+          10
+        ],
+        [
+          "wear",
+          10
+        ],
+        [
+          "apartment",
+          9
+        ],
+        [
+          "monday",
+          9
+        ],
+        [
+          "saturday",
+          9
+        ],
+        [
+          "price",
+          9
+        ],
+        [
+          "everything",
+          9
+        ],
+        [
+          "full",
+          9
+        ],
+        [
+          "home",
+          9
+        ],
+        [
+          "out",
+          9
+        ],
+        [
+          "focused",
+          9
+        ],
+        [
+          "study",
+          9
+        ],
+        [
+          "give",
+          9
+        ],
+        [
+          "later",
+          9
+        ],
+        [
+          "years",
+          9
+        ],
+        [
+          "live",
+          9
+        ],
+        [
+          "twice",
+          9
+        ],
+        [
+          "commute",
+          8
+        ],
+        [
+          "manager",
+          8
+        ],
+        [
+          "especially",
+          8
+        ],
+        [
+          "worse",
+          8
+        ],
+        [
+          "spring",
+          8
+        ],
+        [
+          "actually",
+          8
+        ],
+        [
+          "properly",
+          8
+        ],
+        [
+          "downtown",
+          8
+        ],
+        [
+          "off",
+          8
+        ],
+        [
+          "finished",
+          8
+        ],
+        [
+          "restaurant",
+          8
+        ],
+        [
+          "trip",
+          8
+        ],
+        [
+          "sunday",
+          8
+        ],
+        [
+          "proud",
+          8
+        ],
+        [
+          "course",
+          7
+        ],
+        [
+          "choose",
+          7
+        ],
+        [
+          "noon",
+          7
+        ],
+        [
+          "unless",
+          7
+        ],
+        [
+          "talked",
+          7
+        ],
+        [
+          "arrive",
+          7
+        ],
+        [
+          "laptop",
+          7
+        ],
+        [
+          "contact",
+          7
+        ],
+        [
+          "rain",
+          7
         ]
       ]
     },
     "B2": {
       "text_sources_scanned": 4117,
-      "text_sources_annotated": 1970,
-      "annotations": 4979,
+      "text_sources_annotated": 3437,
+      "annotations": 14636,
       "tokens": 19028,
-      "linked_tokens": 5075,
-      "token_coverage": 0.266712,
-      "ambiguous_tokens": 89,
-      "unresolved_tokens": 13953,
+      "linked_tokens": 14732,
+      "token_coverage": 0.774227,
+      "ambiguous_tokens": 347,
+      "unresolved_tokens": 4296,
       "top_unresolved": [
         [
-          "the",
-          1455
-        ],
-        [
-          "to",
-          478
-        ],
-        [
-          "a",
-          401
-        ],
-        [
-          "i",
-          390
-        ],
-        [
-          "is",
-          386
-        ],
-        [
-          "that",
-          273
-        ],
-        [
-          "you",
-          241
-        ],
-        [
-          "it",
-          208
-        ],
-        [
-          "but",
-          201
-        ],
-        [
-          "and",
-          199
-        ],
-        [
-          "if",
-          192
-        ],
-        [
-          "more",
-          174
-        ],
-        [
-          "for",
-          168
-        ],
-        [
-          "we",
-          155
-        ],
-        [
-          "would",
-          127
-        ],
-        [
-          "i'd",
-          127
-        ],
-        [
-          "than",
-          120
-        ],
-        [
-          "my",
-          114
-        ],
-        [
-          "was",
-          104
-        ],
-        [
-          "be",
-          99
-        ],
-        [
-          "so",
-          97
-        ],
-        [
-          "on",
-          91
-        ],
-        [
-          "with",
-          89
-        ],
-        [
-          "because",
-          88
-        ],
-        [
-          "in",
-          88
-        ],
-        [
-          "work",
-          87
+          "before",
+          158
         ],
         [
           "main",
           82
-        ],
-        [
-          "can",
-          78
-        ],
-        [
-          "still",
-          75
-        ],
-        [
-          "of",
-          74
-        ],
-        [
-          "could",
-          73
-        ],
-        [
-          "time",
-          71
-        ],
-        [
-          "how",
-          68
-        ],
-        [
-          "are",
-          62
-        ],
-        [
-          "this",
-          60
-        ],
-        [
-          "i'm",
-          60
-        ],
-        [
-          "by",
-          58
-        ],
-        [
-          "as",
-          57
-        ],
-        [
-          "not",
-          56
-        ],
-        [
-          "most",
-          53
-        ],
-        [
-          "think",
-          52
-        ],
-        [
-          "at",
-          52
-        ],
-        [
-          "need",
-          52
-        ],
-        [
-          "been",
-          51
-        ],
-        [
-          "an",
-          50
-        ],
-        [
-          "better",
-          50
-        ],
-        [
-          "me",
-          50
-        ],
-        [
-          "every",
-          48
-        ],
-        [
-          "want",
-          47
-        ],
-        [
-          "another",
-          46
         ],
         [
           "changed",
@@ -1870,63 +1595,11 @@
           46
         ],
         [
-          "next",
-          45
-        ],
-        [
-          "which",
-          45
-        ],
-        [
-          "makes",
-          45
-        ],
-        [
-          "should",
-          45
-        ],
-        [
-          "seems",
+          "first",
           43
-        ],
-        [
-          "same",
-          43
-        ],
-        [
-          "why",
-          42
-        ],
-        [
-          "problem",
-          41
-        ],
-        [
-          "about",
-          41
-        ],
-        [
-          "i've",
-          40
-        ],
-        [
-          "only",
-          40
-        ],
-        [
-          "here",
-          40
-        ],
-        [
-          "important",
-          40
         ],
         [
           "handle",
-          38
-        ],
-        [
-          "do",
           38
         ],
         [
@@ -1934,55 +1607,15 @@
           37
         ],
         [
-          "from",
-          37
-        ],
-        [
           "effect",
           36
-        ],
-        [
-          "our",
-          36
-        ],
-        [
-          "were",
-          36
-        ],
-        [
-          "several",
-          36
-        ],
-        [
-          "does",
-          35
-        ],
-        [
-          "make",
-          35
         ],
         [
           "room",
           33
         ],
         [
-          "whether",
-          33
-        ],
-        [
           "deciding",
-          33
-        ],
-        [
-          "now",
-          33
-        ],
-        [
-          "much",
-          33
-        ],
-        [
-          "keep",
           33
         ],
         [
@@ -1994,48 +1627,16 @@
           32
         ],
         [
-          "there",
-          31
-        ],
-        [
-          "may",
-          31
-        ],
-        [
-          "what's",
-          30
-        ],
-        [
           "compared",
           30
         ],
         [
-          "less",
-          30
-        ],
-        [
-          "enough",
+          "after",
           30
         ],
         [
           "extra",
           29
-        ],
-        [
-          "your",
-          29
-        ],
-        [
-          "part",
-          29
-        ],
-        [
-          "doesn't",
-          27
-        ],
-        [
-          "it's",
-          27
         ],
         [
           "longer",
@@ -2046,136 +1647,352 @@
           27
         ],
         [
-          "or",
-          26
+          "biggest",
+          22
         ],
         [
-          "us",
-          26
+          "second",
+          22
         ],
         [
-          "even",
-          25
+          "out",
+          21
         ],
         [
-          "needs",
-          24
+          "year",
+          21
+        ],
+        [
+          "earlier",
+          21
+        ],
+        [
+          "review",
+          20
+        ],
+        [
+          "quickly",
+          20
+        ],
+        [
+          "role",
+          20
+        ],
+        [
+          "everyone",
+          20
+        ],
+        [
+          "original",
+          19
+        ],
+        [
+          "process",
+          19
+        ],
+        [
+          "late",
+          19
+        ],
+        [
+          "itself",
+          19
+        ],
+        [
+          "full",
+          19
+        ],
+        [
+          "matters",
+          19
+        ],
+        [
+          "long",
+          19
+        ],
+        [
+          "once",
+          18
+        ],
+        [
+          "real",
+          18
+        ],
+        [
+          "least",
+          18
+        ],
+        [
+          "version",
+          18
+        ],
+        [
+          "friday",
+          18
+        ],
+        [
+          "higher",
+          17
+        ],
+        [
+          "clear",
+          17
+        ],
+        [
+          "waiting",
+          17
+        ],
+        [
+          "trial",
+          17
+        ],
+        [
+          "faster",
+          16
+        ],
+        [
+          "months",
+          16
+        ],
+        [
+          "clearly",
+          16
+        ],
+        [
+          "evening",
+          16
+        ],
+        [
+          "regular",
+          16
+        ],
+        [
+          "understand",
+          15
+        ],
+        [
+          "current",
+          15
+        ],
+        [
+          "up",
+          15
+        ],
+        [
+          "cause",
+          15
+        ],
+        [
+          "whole",
+          15
+        ],
+        [
+          "section",
+          15
+        ],
+        [
+          "give",
+          14
+        ],
+        [
+          "sauce",
+          14
+        ],
+        [
+          "avoid",
+          14
+        ],
+        [
+          "afternoon",
+          14
+        ],
+        [
+          "supplier",
+          14
+        ],
+        [
+          "test",
+          13
+        ],
+        [
+          "anything",
+          13
+        ],
+        [
+          "month",
+          13
+        ],
+        [
+          "temporarily",
+          13
+        ],
+        [
+          "creates",
+          13
+        ],
+        [
+          "slower",
+          13
+        ],
+        [
+          "core",
+          13
+        ],
+        [
+          "automatically",
+          12
+        ],
+        [
+          "city",
+          12
+        ],
+        [
+          "smaller",
+          12
+        ],
+        [
+          "staff",
+          12
+        ],
+        [
+          "twice",
+          12
+        ],
+        [
+          "information",
+          12
+        ],
+        [
+          "flexibility",
+          12
+        ],
+        [
+          "pilot",
+          12
+        ],
+        [
+          "contains",
+          12
+        ],
+        [
+          "choosing",
+          12
+        ],
+        [
+          "daily",
+          12
+        ],
+        [
+          "depends",
+          12
+        ],
+        [
+          "action",
+          12
+        ],
+        [
+          "hotel",
+          11
+        ],
+        [
+          "overnight",
+          11
+        ],
+        [
+          "minutes",
+          11
+        ],
+        [
+          "easier",
+          11
+        ],
+        [
+          "perfect",
+          11
+        ],
+        [
+          "major",
+          11
+        ],
+        [
+          "despite",
+          11
+        ],
+        [
+          "life",
+          11
+        ],
+        [
+          "sections",
+          11
+        ],
+        [
+          "given",
+          10
+        ],
+        [
+          "create",
+          10
+        ],
+        [
+          "properly",
+          10
+        ],
+        [
+          "price",
+          10
+        ],
+        [
+          "cancel",
+          10
+        ],
+        [
+          "confirmed",
+          10
+        ],
+        [
+          "technical",
+          10
+        ],
+        [
+          "remain",
+          10
+        ],
+        [
+          "risky",
+          10
+        ],
+        [
+          "quality",
+          10
+        ],
+        [
+          "monday",
+          10
+        ],
+        [
+          "approval",
+          10
+        ],
+        [
+          "understood",
+          10
         ]
       ]
     },
     "C1": {
       "text_sources_scanned": 4944,
-      "text_sources_annotated": 2371,
-      "annotations": 7547,
+      "text_sources_annotated": 3969,
+      "annotations": 21463,
       "tokens": 30149,
-      "linked_tokens": 7608,
-      "token_coverage": 0.252347,
-      "ambiguous_tokens": 201,
-      "unresolved_tokens": 22541,
+      "linked_tokens": 21524,
+      "token_coverage": 0.713921,
+      "ambiguous_tokens": 475,
+      "unresolved_tokens": 8625,
       "top_unresolved": [
-        [
-          "the",
-          2477
-        ],
-        [
-          "a",
-          677
-        ],
-        [
-          "to",
-          546
-        ],
-        [
-          "is",
-          475
-        ],
-        [
-          "and",
-          462
-        ],
-        [
-          "that",
-          430
-        ],
-        [
-          "i",
-          375
-        ],
-        [
-          "it",
-          369
-        ],
-        [
-          "not",
-          334
-        ],
-        [
-          "we",
-          315
-        ],
-        [
-          "but",
-          287
-        ],
-        [
-          "would",
-          252
-        ],
-        [
-          "can",
-          250
-        ],
-        [
-          "of",
-          231
-        ],
-        [
-          "in",
-          222
-        ],
-        [
-          "for",
-          213
-        ],
-        [
-          "than",
-          204
-        ],
-        [
-          "on",
-          175
-        ],
-        [
-          "should",
-          173
-        ],
-        [
-          "be",
-          172
-        ],
-        [
-          "if",
-          161
-        ],
-        [
-          "an",
-          154
-        ],
         [
           "c",
           152
-        ],
-        [
-          "as",
-          151
-        ],
-        [
-          "you",
-          149
-        ],
-        [
-          "with",
-          129
         ],
         [
           "scene",
@@ -2186,183 +2003,35 @@
           126
         ],
         [
-          "may",
-          111
-        ],
-        [
-          "more",
-          110
-        ],
-        [
-          "about",
-          102
-        ],
-        [
-          "are",
-          94
-        ],
-        [
-          "so",
-          94
-        ],
-        [
-          "from",
-          93
-        ],
-        [
-          "could",
-          93
-        ],
-        [
-          "how",
-          88
-        ],
-        [
-          "make",
-          86
-        ],
-        [
-          "which",
-          84
-        ],
-        [
-          "was",
-          83
+          "before",
+          113
         ],
         [
           "when",
           78
         ],
         [
-          "because",
-          74
-        ],
-        [
-          "same",
-          73
-        ],
-        [
-          "by",
-          72
-        ],
-        [
-          "my",
-          72
-        ],
-        [
-          "or",
-          72
-        ],
-        [
-          "only",
-          71
-        ],
-        [
-          "whether",
-          70
-        ],
-        [
-          "this",
-          68
-        ],
-        [
-          "i'll",
-          68
-        ],
-        [
-          "does",
-          68
-        ],
-        [
-          "will",
-          65
-        ],
-        [
-          "they",
-          64
-        ],
-        [
-          "at",
-          63
-        ],
-        [
           "response",
           62
-        ],
-        [
-          "people",
-          59
-        ],
-        [
-          "each",
-          59
-        ],
-        [
-          "its",
-          58
-        ],
-        [
-          "problem",
-          56
-        ],
-        [
-          "enough",
-          52
-        ],
-        [
-          "time",
-          52
-        ],
-        [
-          "need",
-          52
         ],
         [
           "rubric",
           50
         ],
         [
-          "work",
-          50
-        ],
-        [
-          "our",
-          48
-        ],
-        [
-          "still",
-          47
-        ],
-        [
-          "there",
-          46
-        ],
-        [
-          "those",
-          46
-        ],
-        [
-          "every",
-          46
-        ],
-        [
           "words",
           44
         ],
         [
-          "let's",
-          43
-        ],
-        [
-          "your",
-          42
+          "first",
+          41
         ],
         [
           "explanation",
           40
         ],
         [
-          "were",
+          "after",
           40
         ],
         [
@@ -2370,64 +2039,16 @@
           39
         ],
         [
-          "their",
-          38
-        ],
-        [
           "trial",
           38
-        ],
-        [
-          "us",
-          37
         ],
         [
           "review",
           37
         ],
         [
-          "why",
-          36
-        ],
-        [
-          "do",
-          36
-        ],
-        [
-          "me",
-          36
-        ],
-        [
           "users",
           35
-        ],
-        [
-          "other",
-          34
-        ],
-        [
-          "less",
-          34
-        ],
-        [
-          "i'd",
-          33
-        ],
-        [
-          "also",
-          33
-        ],
-        [
-          "across",
-          32
-        ],
-        [
-          "even",
-          32
-        ],
-        [
-          "them",
-          32
         ],
         [
           "shared",
@@ -2442,28 +2063,12 @@
           32
         ],
         [
-          "some",
-          31
-        ],
-        [
           "disagreement",
-          31
-        ],
-        [
-          "been",
           31
         ],
         [
           "visible",
           31
-        ],
-        [
-          "needs",
-          30
-        ],
-        [
-          "becomes",
-          30
         ],
         [
           "simply",
@@ -2472,309 +2077,357 @@
         [
           "additional",
           30
+        ],
+        [
+          "evening",
+          29
+        ],
+        [
+          "conversation",
+          28
+        ],
+        [
+          "current",
+          27
+        ],
+        [
+          "final",
+          27
+        ],
+        [
+          "compare",
+          27
+        ],
+        [
+          "survey",
+          27
+        ],
+        [
+          "fictional",
+          27
+        ],
+        [
+          "exactly",
+          26
+        ],
+        [
+          "strongest",
+          26
+        ],
+        [
+          "identify",
+          26
+        ],
+        [
+          "merely",
+          26
+        ],
+        [
+          "address",
+          26
+        ],
+        [
+          "alone",
+          25
+        ],
+        [
+          "room",
+          25
+        ],
+        [
+          "understanding",
+          25
+        ],
+        [
+          "credible",
+          25
+        ],
+        [
+          "staff",
+          25
+        ],
+        [
+          "matters",
+          25
+        ],
+        [
+          "s",
+          25
+        ],
+        [
+          "actually",
+          23
+        ],
+        [
+          "original",
+          23
+        ],
+        [
+          "establish",
+          23
+        ],
+        [
+          "requires",
+          23
+        ],
+        [
+          "earlier",
+          23
+        ],
+        [
+          "separate",
+          23
+        ],
+        [
+          "itself",
+          22
+        ],
+        [
+          "cannot",
+          22
+        ],
+        [
+          "pounds",
+          22
+        ],
+        [
+          "hours",
+          21
+        ],
+        [
+          "effect",
+          21
+        ],
+        [
+          "right",
+          21
+        ],
+        [
+          "demand",
+          21
+        ],
+        [
+          "material",
+          21
+        ],
+        [
+          "discussion",
+          20
+        ],
+        [
+          "seconds",
+          20
+        ],
+        [
+          "respond",
+          20
+        ],
+        [
+          "staffing",
+          20
+        ],
+        [
+          "teaching",
+          20
+        ],
+        [
+          "caused",
+          19
+        ],
+        [
+          "individual",
+          19
+        ],
+        [
+          "contact",
+          19
+        ],
+        [
+          "describe",
+          19
+        ],
+        [
+          "around",
+          19
+        ],
+        [
+          "confirmed",
+          19
+        ],
+        [
+          "state",
+          19
+        ],
+        [
+          "failed",
+          19
+        ],
+        [
+          "depends",
+          19
+        ],
+        [
+          "criteria",
+          18
+        ],
+        [
+          "once",
+          18
+        ],
+        [
+          "conditions",
+          18
+        ],
+        [
+          "something",
+          18
+        ],
+        [
+          "b",
+          18
+        ],
+        [
+          "longer",
+          17
+        ],
+        [
+          "figures",
+          17
+        ],
+        [
+          "participants",
+          17
+        ],
+        [
+          "test",
+          17
+        ],
+        [
+          "either",
+          17
+        ],
+        [
+          "notice",
+          17
+        ],
+        [
+          "case",
+          17
+        ],
+        [
+          "own",
+          17
+        ],
+        [
+          "remaining",
+          17
+        ],
+        [
+          "close",
+          17
+        ],
+        [
+          "later",
+          17
+        ],
+        [
+          "remains",
+          17
+        ],
+        [
+          "stated",
+          16
+        ],
+        [
+          "directly",
+          16
+        ],
+        [
+          "understand",
+          16
+        ],
+        [
+          "sentence",
+          16
+        ],
+        [
+          "distinguish",
+          15
+        ],
+        [
+          "remain",
+          15
+        ],
+        [
+          "someone",
+          15
+        ],
+        [
+          "group",
+          15
+        ],
+        [
+          "visitors",
+          15
+        ],
+        [
+          "early",
+          15
+        ],
+        [
+          "event",
+          15
+        ],
+        [
+          "cautious",
+          15
+        ],
+        [
+          "stronger",
+          14
+        ],
+        [
+          "include",
+          14
         ]
       ]
     },
     "C2": {
       "text_sources_scanned": 4680,
-      "text_sources_annotated": 2269,
-      "annotations": 6752,
+      "text_sources_annotated": 3596,
+      "annotations": 18498,
       "tokens": 26048,
-      "linked_tokens": 6833,
-      "token_coverage": 0.262323,
-      "ambiguous_tokens": 178,
-      "unresolved_tokens": 19215,
+      "linked_tokens": 18579,
+      "token_coverage": 0.71326,
+      "ambiguous_tokens": 379,
+      "unresolved_tokens": 7469,
       "top_unresolved": [
-        [
-          "the",
-          1934
-        ],
-        [
-          "a",
-          683
-        ],
-        [
-          "is",
-          596
-        ],
-        [
-          "and",
-          433
-        ],
-        [
-          "to",
-          429
-        ],
-        [
-          "that",
-          349
-        ],
-        [
-          "it",
-          324
-        ],
-        [
-          "not",
-          287
-        ],
-        [
-          "of",
-          268
-        ],
-        [
-          "i",
-          255
-        ],
-        [
-          "but",
-          201
-        ],
-        [
-          "would",
-          199
-        ],
-        [
-          "in",
-          198
-        ],
-        [
-          "we",
-          192
-        ],
-        [
-          "can",
-          179
-        ],
-        [
-          "than",
-          175
-        ],
-        [
-          "you",
-          163
-        ],
-        [
-          "for",
-          156
-        ],
-        [
-          "if",
-          150
-        ],
-        [
-          "on",
-          147
-        ],
-        [
-          "because",
-          142
-        ],
-        [
-          "as",
-          139
-        ],
-        [
-          "be",
-          131
-        ],
-        [
-          "should",
-          122
-        ],
-        [
-          "with",
-          113
-        ],
-        [
-          "an",
-          106
-        ],
-        [
-          "may",
-          105
-        ],
         [
           "when",
           104
         ],
         [
-          "from",
-          96
-        ],
-        [
-          "which",
-          94
-        ],
-        [
-          "does",
-          91
-        ],
-        [
-          "more",
-          90
-        ],
-        [
-          "how",
-          86
-        ],
-        [
-          "this",
-          78
-        ],
-        [
-          "same",
-          77
-        ],
-        [
-          "or",
-          73
-        ],
-        [
-          "make",
-          73
-        ],
-        [
-          "so",
-          73
-        ],
-        [
-          "are",
-          71
-        ],
-        [
-          "about",
-          71
+          "before",
+          87
         ],
         [
           "matters",
           69
         ],
         [
-          "its",
-          64
-        ],
-        [
-          "still",
-          59
-        ],
-        [
-          "here",
-          59
-        ],
-        [
-          "most",
-          57
-        ],
-        [
-          "only",
-          54
-        ],
-        [
-          "your",
-          53
-        ],
-        [
-          "by",
-          53
-        ],
-        [
           "disagreement",
           52
-        ],
-        [
-          "do",
-          52
-        ],
-        [
-          "need",
-          50
-        ],
-        [
-          "could",
-          49
         ],
         [
           "case",
           49
         ],
         [
-          "enough",
-          43
-        ],
-        [
-          "each",
-          43
-        ],
-        [
-          "another",
-          42
-        ],
-        [
-          "makes",
-          42
-        ],
-        [
-          "was",
-          42
-        ],
-        [
-          "being",
-          41
-        ],
-        [
-          "every",
-          41
-        ],
-        [
-          "time",
-          39
-        ],
-        [
-          "at",
-          39
-        ],
-        [
-          "will",
-          39
-        ],
-        [
           "relationship",
           38
         ],
         [
-          "my",
-          37
-        ],
-        [
-          "making",
-          35
-        ],
-        [
-          "whether",
-          34
-        ],
-        [
-          "there",
-          34
-        ],
-        [
-          "people",
-          33
-        ],
-        [
-          "other",
-          33
-        ],
-        [
           "merely",
-          32
-        ],
-        [
-          "us",
-          32
-        ],
-        [
-          "less",
           32
         ],
         [
@@ -2786,20 +2439,8 @@
           32
         ],
         [
-          "their",
-          32
-        ],
-        [
           "visible",
           31
-        ],
-        [
-          "means",
-          30
-        ],
-        [
-          "our",
-          29
         ],
         [
           "information",
@@ -2810,36 +2451,12 @@
           28
         ],
         [
-          "keep",
-          28
-        ],
-        [
           "strong",
           28
         ],
         [
-          "several",
+          "first",
           28
-        ],
-        [
-          "they",
-          28
-        ],
-        [
-          "me",
-          28
-        ],
-        [
-          "work",
-          27
-        ],
-        [
-          "let",
-          27
-        ],
-        [
-          "person",
-          27
         ],
         [
           "cannot",
@@ -2847,14 +2464,6 @@
         ],
         [
           "real",
-          26
-        ],
-        [
-          "now",
-          26
-        ],
-        [
-          "want",
           26
         ],
         [
@@ -2870,326 +2479,359 @@
           25
         ],
         [
-          "part",
-          25
-        ],
-        [
-          "way",
-          24
-        ],
-        [
-          "needs",
-          24
-        ],
-        [
           "separate",
           24
+        ],
+        [
+          "personal",
+          23
+        ],
+        [
+          "sound",
+          23
+        ],
+        [
+          "remains",
+          23
+        ],
+        [
+          "later",
+          23
+        ],
+        [
+          "preserves",
+          23
+        ],
+        [
+          "justify",
+          22
+        ],
+        [
+          "framed",
+          22
+        ],
+        [
+          "actually",
+          22
+        ],
+        [
+          "review",
+          22
+        ],
+        [
+          "her",
+          22
+        ],
+        [
+          "analysis",
+          21
+        ],
+        [
+          "failed",
+          21
+        ],
+        [
+          "final",
+          21
+        ],
+        [
+          "language",
+          21
+        ],
+        [
+          "room",
+          21
+        ],
+        [
+          "differently",
+          21
+        ],
+        [
+          "authority",
+          20
+        ],
+        [
+          "weak",
+          20
+        ],
+        [
+          "material",
+          20
+        ],
+        [
+          "simply",
+          20
+        ],
+        [
+          "advanced",
+          20
+        ],
+        [
+          "earlier",
+          19
+        ],
+        [
+          "shared",
+          19
+        ],
+        [
+          "agreement",
+          19
+        ],
+        [
+          "choosing",
+          19
+        ],
+        [
+          "group",
+          19
+        ],
+        [
+          "stronger",
+          18
+        ],
+        [
+          "carries",
+          18
+        ],
+        [
+          "records",
+          18
+        ],
+        [
+          "pretending",
+          18
+        ],
+        [
+          "original",
+          18
+        ],
+        [
+          "failure",
+          17
+        ],
+        [
+          "far",
+          17
+        ],
+        [
+          "treating",
+          17
+        ],
+        [
+          "requires",
+          17
+        ],
+        [
+          "criteria",
+          17
+        ],
+        [
+          "side",
+          17
+        ],
+        [
+          "preserving",
+          17
+        ],
+        [
+          "flexibility",
+          17
+        ],
+        [
+          "either",
+          16
+        ],
+        [
+          "effect",
+          16
+        ],
+        [
+          "alone",
+          16
+        ],
+        [
+          "credible",
+          16
+        ],
+        [
+          "social",
+          16
+        ],
+        [
+          "identical",
+          16
+        ],
+        [
+          "categories",
+          16
+        ],
+        [
+          "human",
+          15
+        ],
+        [
+          "reasoning",
+          15
+        ],
+        [
+          "hours",
+          15
+        ],
+        [
+          "remain",
+          15
+        ],
+        [
+          "current",
+          15
+        ],
+        [
+          "behavior",
+          15
+        ],
+        [
+          "attendance",
+          15
+        ],
+        [
+          "individual",
+          15
+        ],
+        [
+          "otherwise",
+          15
+        ],
+        [
+          "b",
+          15
+        ],
+        [
+          "changing",
+          15
+        ],
+        [
+          "around",
+          15
+        ],
+        [
+          "everyone",
+          15
+        ],
+        [
+          "cause",
+          14
+        ],
+        [
+          "after",
+          14
+        ],
+        [
+          "state",
+          14
+        ],
+        [
+          "institutional",
+          14
+        ],
+        [
+          "carrier",
+          14
+        ],
+        [
+          "deliberately",
+          14
+        ],
+        [
+          "movement",
+          14
+        ],
+        [
+          "gives",
+          14
+        ],
+        [
+          "system",
+          13
+        ],
+        [
+          "out",
+          13
+        ],
+        [
+          "trial",
+          13
+        ],
+        [
+          "theory",
+          13
+        ],
+        [
+          "answer",
+          13
+        ],
+        [
+          "process",
+          13
+        ],
+        [
+          "sides",
+          13
+        ],
+        [
+          "repeatedly",
+          13
+        ],
+        [
+          "emotional",
+          13
+        ],
+        [
+          "carefully",
+          13
+        ],
+        [
+          "discuss",
+          13
+        ],
+        [
+          "responsible",
+          12
+        ],
+        [
+          "central",
+          12
         ]
       ]
     }
   },
   "inventory": {
-    "concepts": 2008,
-    "lexemes": 1165,
-    "word_forms": 1174,
-    "candidate_surfaces": 2286
+    "concepts": 2248,
+    "lexemes": 1372,
+    "word_forms": 1398,
+    "candidate_surfaces": 2595,
+    "app_dictionary_entries": 240
   },
   "totals": {
     "tokens": 98438,
-    "linked_tokens": 25999,
-    "token_coverage": 0.264115,
+    "linked_tokens": 73201,
+    "token_coverage": 0.743625,
     "top_unresolved": [
       [
-        "the",
-        7099
-      ],
-      [
-        "a",
-        2292
-      ],
-      [
-        "is",
-        1995
-      ],
-      [
-        "to",
-        1941
-      ],
-      [
-        "i",
-        1720
-      ],
-      [
-        "and",
-        1300
-      ],
-      [
-        "that",
-        1227
-      ],
-      [
-        "it",
-        1146
-      ],
-      [
-        "you",
-        1039
-      ],
-      [
-        "but",
-        895
-      ],
-      [
-        "we",
-        874
-      ],
-      [
-        "for",
-        767
-      ],
-      [
-        "not",
-        735
-      ],
-      [
-        "of",
-        687
-      ],
-      [
-        "in",
-        685
-      ],
-      [
-        "if",
-        628
-      ],
-      [
-        "can",
-        623
-      ],
-      [
-        "would",
-        607
-      ],
-      [
-        "on",
-        578
-      ],
-      [
-        "than",
-        563
-      ],
-      [
-        "my",
-        504
-      ],
-      [
-        "more",
-        496
-      ],
-      [
-        "be",
-        470
-      ],
-      [
-        "should",
-        417
-      ],
-      [
-        "with",
-        414
-      ],
-      [
-        "this",
-        389
-      ],
-      [
-        "as",
-        373
-      ],
-      [
-        "an",
-        370
-      ],
-      [
-        "because",
-        366
-      ],
-      [
-        "how",
-        353
-      ],
-      [
-        "are",
-        347
-      ],
-      [
-        "was",
-        328
-      ],
-      [
-        "so",
-        327
-      ],
-      [
-        "could",
-        303
-      ],
-      [
-        "at",
-        301
-      ],
-      [
-        "do",
-        299
-      ],
-      [
-        "i'm",
-        294
-      ],
-      [
-        "from",
-        288
-      ],
-      [
-        "about",
-        287
+        "before",
+        419
       ],
       [
         "when",
         281
       ],
       [
-        "may",
-        270
-      ],
-      [
-        "i'd",
-        260
-      ],
-      [
-        "work",
-        257
-      ],
-      [
-        "by",
-        250
-      ],
-      [
-        "which",
-        245
-      ],
-      [
-        "time",
-        244
-      ],
-      [
-        "me",
-        241
-      ],
-      [
-        "need",
-        233
-      ],
-      [
-        "does",
-        220
-      ],
-      [
-        "your",
-        215
-      ],
-      [
-        "still",
-        214
-      ],
-      [
-        "same",
-        211
-      ],
-      [
-        "make",
-        210
-      ],
-      [
-        "or",
-        192
-      ],
-      [
-        "only",
-        190
-      ],
-      [
-        "every",
-        175
-      ],
-      [
-        "most",
-        171
-      ],
-      [
-        "there",
-        170
+        "first",
+        172
       ],
       [
         "c",
         164
-      ],
-      [
-        "will",
-        153
-      ],
-      [
-        "enough",
-        150
-      ],
-      [
-        "i'll",
-        148
-      ],
-      [
-        "it's",
-        146
-      ],
-      [
-        "whether",
-        146
-      ],
-      [
-        "been",
-        145
-      ],
-      [
-        "they",
-        144
-      ],
-      [
-        "were",
-        143
-      ],
-      [
-        "another",
-        140
-      ],
-      [
-        "problem",
-        138
-      ],
-      [
-        "its",
-        138
-      ],
-      [
-        "our",
-        137
-      ],
-      [
-        "people",
-        137
-      ],
-      [
-        "here",
-        134
       ],
       [
         "d",
@@ -3200,64 +2842,16 @@
         131
       ],
       [
-        "think",
-        129
-      ],
-      [
         "scene",
         129
       ],
       [
-        "want",
-        127
-      ],
-      [
-        "next",
-        126
-      ],
-      [
-        "each",
-        125
+        "after",
+        123
       ],
       [
         "main",
         122
-      ],
-      [
-        "less",
-        120
-      ],
-      [
-        "better",
-        119
-      ],
-      [
-        "now",
-        117
-      ],
-      [
-        "much",
-        113
-      ],
-      [
-        "why",
-        112
-      ],
-      [
-        "makes",
-        112
-      ],
-      [
-        "us",
-        112
-      ],
-      [
-        "don't",
-        111
-      ],
-      [
-        "keep",
-        109
       ],
       [
         "room",
@@ -3268,48 +2862,12 @@
         102
       ],
       [
-        "too",
-        101
-      ],
-      [
-        "even",
-        100
-      ],
-      [
-        "good",
-        99
-      ],
-      [
-        "i've",
-        98
-      ],
-      [
         "response",
         98
       ],
       [
-        "several",
-        96
-      ],
-      [
         "review",
         96
-      ],
-      [
-        "let's",
-        93
-      ],
-      [
-        "other",
-        92
-      ],
-      [
-        "part",
-        92
-      ],
-      [
-        "she",
-        91
       ],
       [
         "later",
@@ -3324,14 +2882,6 @@
         87
       ],
       [
-        "also",
-        86
-      ],
-      [
-        "needs",
-        84
-      ],
-      [
         "final",
         82
       ],
@@ -3340,39 +2890,11 @@
         81
       ],
       [
-        "being",
-        81
-      ],
-      [
-        "what's",
-        80
-      ],
-      [
-        "use",
-        80
-      ],
-      [
         "case",
         80
       ],
       [
-        "that's",
-        78
-      ],
-      [
-        "their",
-        78
-      ],
-      [
-        "making",
-        77
-      ],
-      [
         "minutes",
-        76
-      ],
-      [
-        "we're",
         76
       ],
       [
@@ -3392,32 +2914,8 @@
         72
       ],
       [
-        "get",
-        72
-      ],
-      [
-        "some",
-        72
-      ],
-      [
-        "tomorrow",
-        70
-      ],
-      [
-        "last",
-        70
-      ],
-      [
-        "them",
-        70
-      ],
-      [
         "earlier",
         69
-      ],
-      [
-        "know",
-        68
       ],
       [
         "itself",
@@ -3429,10 +2927,6 @@
       ],
       [
         "depends",
-        67
-      ],
-      [
-        "just",
         67
       ],
       [
@@ -3456,47 +2950,11 @@
         64
       ],
       [
-        "becomes",
-        64
-      ],
-      [
-        "today",
-        63
-      ],
-      [
-        "across",
-        63
-      ],
-      [
-        "all",
-        63
-      ],
-      [
-        "important",
-        63
-      ],
-      [
-        "said",
-        63
-      ],
-      [
-        "means",
-        63
-      ],
-      [
         "visible",
         62
       ],
       [
-        "over",
-        61
-      ],
-      [
         "extra",
-        61
-      ],
-      [
-        "those",
         61
       ],
       [
@@ -3504,15 +2962,7 @@
         61
       ],
       [
-        "let",
-        60
-      ],
-      [
         "hours",
-        60
-      ],
-      [
-        "between",
         60
       ],
       [
@@ -3524,11 +2974,7 @@
         59
       ],
       [
-        "again",
-        59
-      ],
-      [
-        "person",
+        "around",
         59
       ],
       [
@@ -3544,44 +2990,16 @@
         58
       ],
       [
-        "doesn't",
-        58
-      ],
-      [
         "merely",
         58
-      ],
-      [
-        "isn't",
-        56
       ],
       [
         "real",
         56
       ],
       [
-        "ask",
-        55
-      ],
-      [
         "explanation",
         55
-      ],
-      [
-        "usually",
-        54
-      ],
-      [
-        "any",
-        54
-      ],
-      [
-        "seems",
-        54
-      ],
-      [
-        "did",
-        53
       ],
       [
         "respond",
@@ -3604,11 +3022,11 @@
         51
       ],
       [
-        "long",
+        "right",
         51
       ],
       [
-        "become",
+        "long",
         51
       ],
       [
@@ -3620,14 +3038,6 @@
         51
       ],
       [
-        "feel",
-        50
-      ],
-      [
-        "into",
-        50
-      ],
-      [
         "second",
         50
       ],
@@ -3636,19 +3046,11 @@
         50
       ],
       [
-        "tell",
-        50
-      ],
-      [
         "separate",
         50
       ],
       [
         "anything",
-        49
-      ],
-      [
-        "though",
         49
       ],
       [
@@ -3664,10 +3066,6 @@
         48
       ],
       [
-        "often",
-        47
-      ],
-      [
         "sounds",
         47
       ],
@@ -3680,24 +3078,544 @@
         47
       ],
       [
-        "leaves",
-        47
-      ],
-      [
         "exactly",
         47
-      ],
-      [
-        "start",
-        46
       ],
       [
         "deciding",
         46
       ],
       [
-        "way",
-        46
+        "compare",
+        45
+      ],
+      [
+        "cause",
+        45
+      ],
+      [
+        "users",
+        45
+      ],
+      [
+        "additional",
+        45
+      ],
+      [
+        "afternoon",
+        44
+      ],
+      [
+        "remain",
+        44
+      ],
+      [
+        "version",
+        44
+      ],
+      [
+        "process",
+        44
+      ],
+      [
+        "conversation",
+        43
+      ],
+      [
+        "avoid",
+        43
+      ],
+      [
+        "something",
+        43
+      ],
+      [
+        "price",
+        42
+      ],
+      [
+        "give",
+        42
+      ],
+      [
+        "material",
+        42
+      ],
+      [
+        "s",
+        41
+      ],
+      [
+        "smaller",
+        41
+      ],
+      [
+        "back",
+        41
+      ],
+      [
+        "event",
+        41
+      ],
+      [
+        "months",
+        41
+      ],
+      [
+        "testing",
+        41
+      ],
+      [
+        "strong",
+        41
+      ],
+      [
+        "group",
+        41
+      ],
+      [
+        "confirmed",
+        41
+      ],
+      [
+        "credible",
+        41
+      ],
+      [
+        "handle",
+        40
+      ],
+      [
+        "requires",
+        40
+      ],
+      [
+        "failed",
+        40
+      ],
+      [
+        "remains",
+        40
+      ],
+      [
+        "b",
+        39
+      ],
+      [
+        "free",
+        39
+      ],
+      [
+        "test",
+        39
+      ],
+      [
+        "either",
+        39
+      ],
+      [
+        "city",
+        38
+      ],
+      [
+        "early",
+        38
+      ],
+      [
+        "individual",
+        38
+      ],
+      [
+        "sound",
+        38
+      ],
+      [
+        "criteria",
+        38
+      ],
+      [
+        "fictional",
+        38
+      ],
+      [
+        "role",
+        37
+      ],
+      [
+        "system",
+        37
+      ],
+      [
+        "whole",
+        37
+      ],
+      [
+        "flexibility",
+        37
+      ],
+      [
+        "saturday",
+        36
+      ],
+      [
+        "side",
+        36
+      ],
+      [
+        "differently",
+        36
+      ],
+      [
+        "full",
+        36
+      ],
+      [
+        "waiting",
+        36
+      ],
+      [
+        "agreement",
+        36
+      ],
+      [
+        "demand",
+        36
+      ],
+      [
+        "identify",
+        36
+      ],
+      [
+        "nice",
+        35
+      ],
+      [
+        "monday",
+        35
+      ],
+      [
+        "years",
+        35
+      ],
+      [
+        "quickly",
+        35
+      ],
+      [
+        "address",
+        35
+      ],
+      [
+        "twice",
+        35
+      ],
+      [
+        "understanding",
+        35
+      ],
+      [
+        "caused",
+        35
+      ],
+      [
+        "compared",
+        35
+      ],
+      [
+        "tonight",
+        34
+      ],
+      [
+        "larger",
+        34
+      ],
+      [
+        "everything",
+        34
+      ],
+      [
+        "directly",
+        34
+      ],
+      [
+        "biggest",
+        34
+      ],
+      [
+        "action",
+        34
+      ],
+      [
+        "draft",
+        34
+      ],
+      [
+        "design",
+        33
+      ],
+      [
+        "difficult",
+        33
+      ],
+      [
+        "sentence",
+        33
+      ],
+      [
+        "treating",
+        33
+      ],
+      [
+        "choosing",
+        33
+      ],
+      [
+        "conditions",
+        33
+      ],
+      [
+        "state",
+        33
+      ],
+      [
+        "form",
+        32
+      ],
+      [
+        "faster",
+        32
+      ],
+      [
+        "lot",
+        32
+      ],
+      [
+        "finish",
+        32
+      ],
+      [
+        "answer",
+        32
+      ],
+      [
+        "least",
+        32
+      ],
+      [
+        "clearly",
+        32
+      ],
+      [
+        "discussion",
+        32
+      ],
+      [
+        "analysis",
+        32
+      ],
+      [
+        "gives",
+        32
+      ],
+      [
+        "own",
+        32
+      ],
+      [
+        "stronger",
+        32
+      ],
+      [
+        "establish",
+        32
+      ],
+      [
+        "home",
+        31
+      ],
+      [
+        "easier",
+        31
+      ],
+      [
+        "accept",
+        31
+      ],
+      [
+        "notice",
+        31
+      ],
+      [
+        "language",
+        31
+      ],
+      [
+        "remaining",
+        31
+      ],
+      [
+        "attendance",
+        31
+      ],
+      [
+        "survey",
+        31
+      ],
+      [
+        "museum",
+        30
+      ],
+      [
+        "hour",
+        30
+      ],
+      [
+        "instead",
+        30
+      ],
+      [
+        "higher",
+        30
+      ],
+      [
+        "share",
+        30
+      ],
+      [
+        "technical",
+        30
+      ],
+      [
+        "visitors",
+        30
+      ],
+      [
+        "personal",
+        30
+      ],
+      [
+        "teaching",
+        30
+      ],
+      [
+        "food",
+        29
+      ],
+      [
+        "month",
+        29
+      ],
+      [
+        "market",
+        29
+      ],
+      [
+        "hotel",
+        29
+      ],
+      [
+        "someone",
+        29
+      ],
+      [
+        "given",
+        29
+      ],
+      [
+        "social",
+        29
+      ],
+      [
+        "failure",
+        29
+      ],
+      [
+        "behavior",
+        29
+      ],
+      [
+        "central",
+        28
+      ],
+      [
+        "supplier",
+        28
+      ],
+      [
+        "create",
+        28
+      ],
+      [
+        "discuss",
+        28
+      ],
+      [
+        "participants",
+        28
+      ],
+      [
+        "precisely",
+        28
+      ],
+      [
+        "reasoning",
+        28
+      ],
+      [
+        "m",
+        27
+      ],
+      [
+        "decide",
+        27
+      ],
+      [
+        "client",
+        27
+      ],
+      [
+        "contact",
+        27
+      ],
+      [
+        "fully",
+        27
+      ],
+      [
+        "changing",
+        27
+      ],
+      [
+        "effects",
+        27
+      ],
+      [
+        "automatically",
+        27
+      ],
+      [
+        "staffing",
+        27
+      ],
+      [
+        "justify",
+        27
+      ],
+      [
+        "preserves",
+        27
+      ],
+      [
+        "turn",
+        26
+      ],
+      [
+        "quality",
+        26
+      ],
+      [
+        "launch",
+        26
       ]
     ]
   }

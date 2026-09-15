@@ -4,6 +4,7 @@
   "variant": "en-US",
   "level": "Pre-A1",
   "offset_unit": "unicode_code_point",
+  "dictionary": "content/dictionary/en-US/core.json",
   "generated_from": [
     {
       "path": "content/production/en/Pre-A1/prea1-en-about-me-v1.json",
@@ -104,6 +105,32 @@
       "text_sha256": "5dfce23c275fa6fab08233cefbad28edad8515795b3e7d9e445c869c89469fe1",
       "annotations": [
         {
+          "start": 0,
+          "end": 3,
+          "surface": "I'm",
+          "annotation_type": "word",
+          "lexeme_key": "en-US|i'm|contraction",
+          "lemma": "I'm",
+          "part_of_speech": "contraction",
+          "concept_slug": "dict_en_i-m-contraction",
+          "word_form_key": "en-US|i'm|contraction|i'm|{\"form\":\"base\"}",
+          "confidence": 1.0,
+          "provenance": "deterministic"
+        },
+        {
+          "start": 4,
+          "end": 8,
+          "surface": "from",
+          "annotation_type": "word",
+          "lexeme_key": "en-US|from|preposition",
+          "lemma": "from",
+          "part_of_speech": "preposition",
+          "concept_slug": "dict_en_from-preposition",
+          "word_form_key": "en-US|from|preposition|from|{\"form\":\"base\"}",
+          "confidence": 1.0,
+          "provenance": "deterministic"
+        },
+        {
           "start": 9,
           "end": 13,
           "surface": "Iran",
@@ -129,6 +156,19 @@
       "text": "I'm twenty.",
       "text_sha256": "0225ee7dc6c8daf134912bba13bf8ea9cda4c389b3ec3f642af0b1851752b1f2",
       "annotations": [
+        {
+          "start": 0,
+          "end": 3,
+          "surface": "I'm",
+          "annotation_type": "word",
+          "lexeme_key": "en-US|i'm|contraction",
+          "lemma": "I'm",
+          "part_of_speech": "contraction",
+          "concept_slug": "dict_en_i-m-contraction",
+          "word_form_key": "en-US|i'm|contraction|i'm|{\"form\":\"base\"}",
+          "confidence": 1.0,
+          "provenance": "deterministic"
+        },
         {
           "start": 4,
           "end": 10,
@@ -156,6 +196,32 @@
       "text_sha256": "3e67e2821cdebe3708f9a5388ba59dbed8dd82e3f8befa978078a3f5730a563f",
       "annotations": [
         {
+          "start": 0,
+          "end": 3,
+          "surface": "I'm",
+          "annotation_type": "word",
+          "lexeme_key": "en-US|i'm|contraction",
+          "lemma": "I'm",
+          "part_of_speech": "contraction",
+          "concept_slug": "dict_en_i-m-contraction",
+          "word_form_key": "en-US|i'm|contraction|i'm|{\"form\":\"base\"}",
+          "confidence": 1.0,
+          "provenance": "deterministic"
+        },
+        {
+          "start": 4,
+          "end": 8,
+          "surface": "good",
+          "annotation_type": "word",
+          "lexeme_key": "en-US|good|adjective",
+          "lemma": "good",
+          "part_of_speech": "adjective",
+          "concept_slug": "dict_en_good-adjective",
+          "word_form_key": "en-US|good|adjective|good|{\"form\":\"base\"}",
+          "confidence": 1.0,
+          "provenance": "deterministic"
+        },
+        {
           "start": 10,
           "end": 16,
           "surface": "thanks",
@@ -181,6 +247,48 @@
       "text": "This is my sister.",
       "text_sha256": "cac74dd36ef41a909971a47efb23215bc52a2e911708ee47167620d42cbda532",
       "annotations": [
+        {
+          "start": 0,
+          "end": 4,
+          "surface": "This",
+          "annotation_type": "word",
+          "lexeme_key": "en-US|this|determiner",
+          "lemma": "this",
+          "part_of_speech": "determiner",
+          "concept_slug": "dict_en_this-determiner",
+          "word_form_key": "en-US|this|determiner|this|{\"form\":\"base\"}",
+          "confidence": 1.0,
+          "provenance": "deterministic"
+        },
+        {
+          "start": 5,
+          "end": 7,
+          "surface": "is",
+          "annotation_type": "word",
+          "lexeme_key": "en-US|be|verb",
+          "lemma": "be",
+          "part_of_speech": "verb",
+          "concept_slug": "dict_en_be-verb",
+          "word_form_key": null,
+          "confidence": 0.92,
+          "provenance": "deterministic",
+          "morphology": {
+            "inferred_by": "core_dictionary:irregular"
+          }
+        },
+        {
+          "start": 8,
+          "end": 10,
+          "surface": "my",
+          "annotation_type": "word",
+          "lexeme_key": "en-US|my|determiner",
+          "lemma": "my",
+          "part_of_speech": "determiner",
+          "concept_slug": "dict_en_my-determiner",
+          "word_form_key": "en-US|my|determiner|my|{\"form\":\"base\"}",
+          "confidence": 1.0,
+          "provenance": "deterministic"
+        },
         {
           "start": 11,
           "end": 17,
@@ -215,8 +323,50 @@
           "lexeme_key": "en-US|where|adverb",
           "lemma": "where",
           "part_of_speech": "adverb",
-          "concept_slug": "question_word_where",
-          "word_form_key": "en-US|where|adverb|where|{}",
+          "concept_slug": "dict_en_where-adverb",
+          "word_form_key": "en-US|where|adverb|where|{\"form\":\"base\"}",
+          "confidence": 1.0,
+          "provenance": "deterministic"
+        },
+        {
+          "start": 6,
+          "end": 9,
+          "surface": "are",
+          "annotation_type": "word",
+          "lexeme_key": "en-US|be|verb",
+          "lemma": "be",
+          "part_of_speech": "verb",
+          "concept_slug": "dict_en_be-verb",
+          "word_form_key": null,
+          "confidence": 0.92,
+          "provenance": "deterministic",
+          "morphology": {
+            "inferred_by": "core_dictionary:irregular"
+          }
+        },
+        {
+          "start": 10,
+          "end": 13,
+          "surface": "you",
+          "annotation_type": "word",
+          "lexeme_key": "en-US|you|pronoun",
+          "lemma": "you",
+          "part_of_speech": "pronoun",
+          "concept_slug": "dict_en_you-pronoun",
+          "word_form_key": "en-US|you|pronoun|you|{\"form\":\"base\"}",
+          "confidence": 1.0,
+          "provenance": "deterministic"
+        },
+        {
+          "start": 14,
+          "end": 18,
+          "surface": "from",
+          "annotation_type": "word",
+          "lexeme_key": "en-US|from|preposition",
+          "lemma": "from",
+          "part_of_speech": "preposition",
+          "concept_slug": "dict_en_from-preposition",
+          "word_form_key": "en-US|from|preposition|from|{\"form\":\"base\"}",
           "confidence": 1.0,
           "provenance": "deterministic"
         }
@@ -233,6 +383,32 @@
       "text": "I'm from Iran.",
       "text_sha256": "5dfce23c275fa6fab08233cefbad28edad8515795b3e7d9e445c869c89469fe1",
       "annotations": [
+        {
+          "start": 0,
+          "end": 3,
+          "surface": "I'm",
+          "annotation_type": "word",
+          "lexeme_key": "en-US|i'm|contraction",
+          "lemma": "I'm",
+          "part_of_speech": "contraction",
+          "concept_slug": "dict_en_i-m-contraction",
+          "word_form_key": "en-US|i'm|contraction|i'm|{\"form\":\"base\"}",
+          "confidence": 1.0,
+          "provenance": "deterministic"
+        },
+        {
+          "start": 4,
+          "end": 8,
+          "surface": "from",
+          "annotation_type": "word",
+          "lexeme_key": "en-US|from|preposition",
+          "lemma": "from",
+          "part_of_speech": "preposition",
+          "concept_slug": "dict_en_from-preposition",
+          "word_form_key": "en-US|from|preposition|from|{\"form\":\"base\"}",
+          "confidence": 1.0,
+          "provenance": "deterministic"
+        },
         {
           "start": 9,
           "end": 13,
@@ -260,6 +436,19 @@
       "text_sha256": "9b181de483e0da61391cd385f16383f953401fdfee8ca2c46297bd812f3e0b5d",
       "annotations": [
         {
+          "start": 0,
+          "end": 3,
+          "surface": "How",
+          "annotation_type": "word",
+          "lexeme_key": "en-US|how|adverb",
+          "lemma": "how",
+          "part_of_speech": "adverb",
+          "concept_slug": "dict_en_how-adverb",
+          "word_form_key": "en-US|how|adverb|how|{\"form\":\"base\"}",
+          "confidence": 1.0,
+          "provenance": "deterministic"
+        },
+        {
           "start": 4,
           "end": 7,
           "surface": "old",
@@ -269,6 +458,35 @@
           "part_of_speech": "adjective",
           "concept_slug": "quality_old",
           "word_form_key": "en-US|old|adjective|old|{\"degree\":\"positive\"}",
+          "confidence": 1.0,
+          "provenance": "deterministic"
+        },
+        {
+          "start": 8,
+          "end": 11,
+          "surface": "are",
+          "annotation_type": "word",
+          "lexeme_key": "en-US|be|verb",
+          "lemma": "be",
+          "part_of_speech": "verb",
+          "concept_slug": "dict_en_be-verb",
+          "word_form_key": null,
+          "confidence": 0.92,
+          "provenance": "deterministic",
+          "morphology": {
+            "inferred_by": "core_dictionary:irregular"
+          }
+        },
+        {
+          "start": 12,
+          "end": 15,
+          "surface": "you",
+          "annotation_type": "word",
+          "lexeme_key": "en-US|you|pronoun",
+          "lemma": "you",
+          "part_of_speech": "pronoun",
+          "concept_slug": "dict_en_you-pronoun",
+          "word_form_key": "en-US|you|pronoun|you|{\"form\":\"base\"}",
           "confidence": 1.0,
           "provenance": "deterministic"
         }
@@ -285,6 +503,19 @@
       "text": "I'm twenty.",
       "text_sha256": "0225ee7dc6c8daf134912bba13bf8ea9cda4c389b3ec3f642af0b1851752b1f2",
       "annotations": [
+        {
+          "start": 0,
+          "end": 3,
+          "surface": "I'm",
+          "annotation_type": "word",
+          "lexeme_key": "en-US|i'm|contraction",
+          "lemma": "I'm",
+          "part_of_speech": "contraction",
+          "concept_slug": "dict_en_i-m-contraction",
+          "word_form_key": "en-US|i'm|contraction|i'm|{\"form\":\"base\"}",
+          "confidence": 1.0,
+          "provenance": "deterministic"
+        },
         {
           "start": 4,
           "end": 10,
@@ -304,6 +535,61 @@
       "source": {
         "kind": "dialogue_turn",
         "external_id": "d_en_en-about-me_feeling_family",
+        "turn_order": 1
+      },
+      "batch_id": "en-us-prea1-en-about-me-v1",
+      "lesson_key": "prea1-en-en-about-me-02",
+      "text": "How are you?",
+      "text_sha256": "df287dfc1406ed2b692e1c2c783bb5cec97eac53151ee1d9810397aa0afa0d89",
+      "annotations": [
+        {
+          "start": 0,
+          "end": 3,
+          "surface": "How",
+          "annotation_type": "word",
+          "lexeme_key": "en-US|how|adverb",
+          "lemma": "how",
+          "part_of_speech": "adverb",
+          "concept_slug": "dict_en_how-adverb",
+          "word_form_key": "en-US|how|adverb|how|{\"form\":\"base\"}",
+          "confidence": 1.0,
+          "provenance": "deterministic"
+        },
+        {
+          "start": 4,
+          "end": 7,
+          "surface": "are",
+          "annotation_type": "word",
+          "lexeme_key": "en-US|be|verb",
+          "lemma": "be",
+          "part_of_speech": "verb",
+          "concept_slug": "dict_en_be-verb",
+          "word_form_key": null,
+          "confidence": 0.92,
+          "provenance": "deterministic",
+          "morphology": {
+            "inferred_by": "core_dictionary:irregular"
+          }
+        },
+        {
+          "start": 8,
+          "end": 11,
+          "surface": "you",
+          "annotation_type": "word",
+          "lexeme_key": "en-US|you|pronoun",
+          "lemma": "you",
+          "part_of_speech": "pronoun",
+          "concept_slug": "dict_en_you-pronoun",
+          "word_form_key": "en-US|you|pronoun|you|{\"form\":\"base\"}",
+          "confidence": 1.0,
+          "provenance": "deterministic"
+        }
+      ]
+    },
+    {
+      "source": {
+        "kind": "dialogue_turn",
+        "external_id": "d_en_en-about-me_feeling_family",
         "turn_order": 2
       },
       "batch_id": "en-us-prea1-en-about-me-v1",
@@ -311,6 +597,32 @@
       "text": "I'm good, thanks.",
       "text_sha256": "3e67e2821cdebe3708f9a5388ba59dbed8dd82e3f8befa978078a3f5730a563f",
       "annotations": [
+        {
+          "start": 0,
+          "end": 3,
+          "surface": "I'm",
+          "annotation_type": "word",
+          "lexeme_key": "en-US|i'm|contraction",
+          "lemma": "I'm",
+          "part_of_speech": "contraction",
+          "concept_slug": "dict_en_i-m-contraction",
+          "word_form_key": "en-US|i'm|contraction|i'm|{\"form\":\"base\"}",
+          "confidence": 1.0,
+          "provenance": "deterministic"
+        },
+        {
+          "start": 4,
+          "end": 8,
+          "surface": "good",
+          "annotation_type": "word",
+          "lexeme_key": "en-US|good|adjective",
+          "lemma": "good",
+          "part_of_speech": "adjective",
+          "concept_slug": "dict_en_good-adjective",
+          "word_form_key": "en-US|good|adjective|good|{\"form\":\"base\"}",
+          "confidence": 1.0,
+          "provenance": "deterministic"
+        },
         {
           "start": 10,
           "end": 16,
@@ -338,6 +650,48 @@
       "text_sha256": "cac74dd36ef41a909971a47efb23215bc52a2e911708ee47167620d42cbda532",
       "annotations": [
         {
+          "start": 0,
+          "end": 4,
+          "surface": "This",
+          "annotation_type": "word",
+          "lexeme_key": "en-US|this|determiner",
+          "lemma": "this",
+          "part_of_speech": "determiner",
+          "concept_slug": "dict_en_this-determiner",
+          "word_form_key": "en-US|this|determiner|this|{\"form\":\"base\"}",
+          "confidence": 1.0,
+          "provenance": "deterministic"
+        },
+        {
+          "start": 5,
+          "end": 7,
+          "surface": "is",
+          "annotation_type": "word",
+          "lexeme_key": "en-US|be|verb",
+          "lemma": "be",
+          "part_of_speech": "verb",
+          "concept_slug": "dict_en_be-verb",
+          "word_form_key": null,
+          "confidence": 0.92,
+          "provenance": "deterministic",
+          "morphology": {
+            "inferred_by": "core_dictionary:irregular"
+          }
+        },
+        {
+          "start": 8,
+          "end": 10,
+          "surface": "my",
+          "annotation_type": "word",
+          "lexeme_key": "en-US|my|determiner",
+          "lemma": "my",
+          "part_of_speech": "determiner",
+          "concept_slug": "dict_en_my-determiner",
+          "word_form_key": "en-US|my|determiner|my|{\"form\":\"base\"}",
+          "confidence": 1.0,
+          "provenance": "deterministic"
+        },
+        {
           "start": 11,
           "end": 17,
           "surface": "sister",
@@ -363,6 +717,32 @@
       "text": "I'm good, thanks.",
       "text_sha256": "3e67e2821cdebe3708f9a5388ba59dbed8dd82e3f8befa978078a3f5730a563f",
       "annotations": [
+        {
+          "start": 0,
+          "end": 3,
+          "surface": "I'm",
+          "annotation_type": "word",
+          "lexeme_key": "en-US|i'm|contraction",
+          "lemma": "I'm",
+          "part_of_speech": "contraction",
+          "concept_slug": "dict_en_i-m-contraction",
+          "word_form_key": "en-US|i'm|contraction|i'm|{\"form\":\"base\"}",
+          "confidence": 1.0,
+          "provenance": "deterministic"
+        },
+        {
+          "start": 4,
+          "end": 8,
+          "surface": "good",
+          "annotation_type": "word",
+          "lexeme_key": "en-US|good|adjective",
+          "lemma": "good",
+          "part_of_speech": "adjective",
+          "concept_slug": "dict_en_good-adjective",
+          "word_form_key": "en-US|good|adjective|good|{\"form\":\"base\"}",
+          "confidence": 1.0,
+          "provenance": "deterministic"
+        },
         {
           "start": 10,
           "end": 16,
@@ -390,6 +770,32 @@
       "text_sha256": "5dfce23c275fa6fab08233cefbad28edad8515795b3e7d9e445c869c89469fe1",
       "annotations": [
         {
+          "start": 0,
+          "end": 3,
+          "surface": "I'm",
+          "annotation_type": "word",
+          "lexeme_key": "en-US|i'm|contraction",
+          "lemma": "I'm",
+          "part_of_speech": "contraction",
+          "concept_slug": "dict_en_i-m-contraction",
+          "word_form_key": "en-US|i'm|contraction|i'm|{\"form\":\"base\"}",
+          "confidence": 1.0,
+          "provenance": "deterministic"
+        },
+        {
+          "start": 4,
+          "end": 8,
+          "surface": "from",
+          "annotation_type": "word",
+          "lexeme_key": "en-US|from|preposition",
+          "lemma": "from",
+          "part_of_speech": "preposition",
+          "concept_slug": "dict_en_from-preposition",
+          "word_form_key": "en-US|from|preposition|from|{\"form\":\"base\"}",
+          "confidence": 1.0,
+          "provenance": "deterministic"
+        },
+        {
           "start": 9,
           "end": 13,
           "surface": "Iran",
@@ -416,6 +822,32 @@
       "text_sha256": "5dfce23c275fa6fab08233cefbad28edad8515795b3e7d9e445c869c89469fe1",
       "annotations": [
         {
+          "start": 0,
+          "end": 3,
+          "surface": "I'm",
+          "annotation_type": "word",
+          "lexeme_key": "en-US|i'm|contraction",
+          "lemma": "I'm",
+          "part_of_speech": "contraction",
+          "concept_slug": "dict_en_i-m-contraction",
+          "word_form_key": "en-US|i'm|contraction|i'm|{\"form\":\"base\"}",
+          "confidence": 1.0,
+          "provenance": "deterministic"
+        },
+        {
+          "start": 4,
+          "end": 8,
+          "surface": "from",
+          "annotation_type": "word",
+          "lexeme_key": "en-US|from|preposition",
+          "lemma": "from",
+          "part_of_speech": "preposition",
+          "concept_slug": "dict_en_from-preposition",
+          "word_form_key": "en-US|from|preposition|from|{\"form\":\"base\"}",
+          "confidence": 1.0,
+          "provenance": "deterministic"
+        },
+        {
           "start": 9,
           "end": 13,
           "surface": "Iran",
@@ -441,6 +873,19 @@
       "text": "I'm twenty.",
       "text_sha256": "0225ee7dc6c8daf134912bba13bf8ea9cda4c389b3ec3f642af0b1851752b1f2",
       "annotations": [
+        {
+          "start": 0,
+          "end": 3,
+          "surface": "I'm",
+          "annotation_type": "word",
+          "lexeme_key": "en-US|i'm|contraction",
+          "lemma": "I'm",
+          "part_of_speech": "contraction",
+          "concept_slug": "dict_en_i-m-contraction",
+          "word_form_key": "en-US|i'm|contraction|i'm|{\"form\":\"base\"}",
+          "confidence": 1.0,
+          "provenance": "deterministic"
+        },
         {
           "start": 4,
           "end": 10,
@@ -468,6 +913,19 @@
       "text_sha256": "0225ee7dc6c8daf134912bba13bf8ea9cda4c389b3ec3f642af0b1851752b1f2",
       "annotations": [
         {
+          "start": 0,
+          "end": 3,
+          "surface": "I'm",
+          "annotation_type": "word",
+          "lexeme_key": "en-US|i'm|contraction",
+          "lemma": "I'm",
+          "part_of_speech": "contraction",
+          "concept_slug": "dict_en_i-m-contraction",
+          "word_form_key": "en-US|i'm|contraction|i'm|{\"form\":\"base\"}",
+          "confidence": 1.0,
+          "provenance": "deterministic"
+        },
+        {
           "start": 4,
           "end": 10,
           "surface": "twenty",
@@ -493,6 +951,32 @@
       "text": "I'm good, thanks.",
       "text_sha256": "3e67e2821cdebe3708f9a5388ba59dbed8dd82e3f8befa978078a3f5730a563f",
       "annotations": [
+        {
+          "start": 0,
+          "end": 3,
+          "surface": "I'm",
+          "annotation_type": "word",
+          "lexeme_key": "en-US|i'm|contraction",
+          "lemma": "I'm",
+          "part_of_speech": "contraction",
+          "concept_slug": "dict_en_i-m-contraction",
+          "word_form_key": "en-US|i'm|contraction|i'm|{\"form\":\"base\"}",
+          "confidence": 1.0,
+          "provenance": "deterministic"
+        },
+        {
+          "start": 4,
+          "end": 8,
+          "surface": "good",
+          "annotation_type": "word",
+          "lexeme_key": "en-US|good|adjective",
+          "lemma": "good",
+          "part_of_speech": "adjective",
+          "concept_slug": "dict_en_good-adjective",
+          "word_form_key": "en-US|good|adjective|good|{\"form\":\"base\"}",
+          "confidence": 1.0,
+          "provenance": "deterministic"
+        },
         {
           "start": 10,
           "end": 16,
@@ -520,6 +1004,32 @@
       "text_sha256": "3e67e2821cdebe3708f9a5388ba59dbed8dd82e3f8befa978078a3f5730a563f",
       "annotations": [
         {
+          "start": 0,
+          "end": 3,
+          "surface": "I'm",
+          "annotation_type": "word",
+          "lexeme_key": "en-US|i'm|contraction",
+          "lemma": "I'm",
+          "part_of_speech": "contraction",
+          "concept_slug": "dict_en_i-m-contraction",
+          "word_form_key": "en-US|i'm|contraction|i'm|{\"form\":\"base\"}",
+          "confidence": 1.0,
+          "provenance": "deterministic"
+        },
+        {
+          "start": 4,
+          "end": 8,
+          "surface": "good",
+          "annotation_type": "word",
+          "lexeme_key": "en-US|good|adjective",
+          "lemma": "good",
+          "part_of_speech": "adjective",
+          "concept_slug": "dict_en_good-adjective",
+          "word_form_key": "en-US|good|adjective|good|{\"form\":\"base\"}",
+          "confidence": 1.0,
+          "provenance": "deterministic"
+        },
+        {
           "start": 10,
           "end": 16,
           "surface": "thanks",
@@ -546,6 +1056,61 @@
       "text_sha256": "1168e6e448004a5a20c13619fbcdcb4643c6d6ba96a5999c4efc486646dc425f",
       "annotations": [
         {
+          "start": 0,
+          "end": 2,
+          "surface": "My",
+          "annotation_type": "word",
+          "lexeme_key": "en-US|my|determiner",
+          "lemma": "my",
+          "part_of_speech": "determiner",
+          "concept_slug": "dict_en_my-determiner",
+          "word_form_key": "en-US|my|determiner|my|{\"form\":\"base\"}",
+          "confidence": 1.0,
+          "provenance": "deterministic"
+        },
+        {
+          "start": 8,
+          "end": 10,
+          "surface": "is",
+          "annotation_type": "word",
+          "lexeme_key": "en-US|be|verb",
+          "lemma": "be",
+          "part_of_speech": "verb",
+          "concept_slug": "dict_en_be-verb",
+          "word_form_key": null,
+          "confidence": 0.92,
+          "provenance": "deterministic",
+          "morphology": {
+            "inferred_by": "core_dictionary:irregular"
+          }
+        },
+        {
+          "start": 17,
+          "end": 20,
+          "surface": "I'm",
+          "annotation_type": "word",
+          "lexeme_key": "en-US|i'm|contraction",
+          "lemma": "I'm",
+          "part_of_speech": "contraction",
+          "concept_slug": "dict_en_i-m-contraction",
+          "word_form_key": "en-US|i'm|contraction|i'm|{\"form\":\"base\"}",
+          "confidence": 1.0,
+          "provenance": "deterministic"
+        },
+        {
+          "start": 21,
+          "end": 25,
+          "surface": "from",
+          "annotation_type": "word",
+          "lexeme_key": "en-US|from|preposition",
+          "lemma": "from",
+          "part_of_speech": "preposition",
+          "concept_slug": "dict_en_from-preposition",
+          "word_form_key": "en-US|from|preposition|from|{\"form\":\"base\"}",
+          "confidence": 1.0,
+          "provenance": "deterministic"
+        },
+        {
           "start": 26,
           "end": 30,
           "surface": "Iran",
@@ -555,6 +1120,214 @@
           "part_of_speech": "proper_noun",
           "concept_slug": "country_iran",
           "word_form_key": "en-US|iran|proper_noun|iran|{\"type\":\"country_name\"}",
+          "confidence": 1.0,
+          "provenance": "deterministic"
+        },
+        {
+          "start": 32,
+          "end": 35,
+          "surface": "I'm",
+          "annotation_type": "word",
+          "lexeme_key": "en-US|i'm|contraction",
+          "lemma": "I'm",
+          "part_of_speech": "contraction",
+          "concept_slug": "dict_en_i-m-contraction",
+          "word_form_key": "en-US|i'm|contraction|i'm|{\"form\":\"base\"}",
+          "confidence": 1.0,
+          "provenance": "deterministic"
+        },
+        {
+          "start": 36,
+          "end": 40,
+          "surface": "good",
+          "annotation_type": "word",
+          "lexeme_key": "en-US|good|adjective",
+          "lemma": "good",
+          "part_of_speech": "adjective",
+          "concept_slug": "dict_en_good-adjective",
+          "word_form_key": "en-US|good|adjective|good|{\"form\":\"base\"}",
+          "confidence": 1.0,
+          "provenance": "deterministic"
+        }
+      ]
+    },
+    {
+      "source": {
+        "kind": "exercise",
+        "external_id": "ex_alpha_match_a",
+        "source_path": "prompt.instruction_fa"
+      },
+      "batch_id": "en-us-prea1-alphabet-v1",
+      "lesson_key": "prea1-en-alphabet-01",
+      "text": "حرف کوچک A کدام است؟",
+      "text_sha256": "59cfbf64142756989d7f86525e324b617d5c36fe66debccb15a61b240dec976e",
+      "annotations": [
+        {
+          "start": 9,
+          "end": 10,
+          "surface": "A",
+          "annotation_type": "word",
+          "lexeme_key": "en-US|a|article",
+          "lemma": "a",
+          "part_of_speech": "article",
+          "concept_slug": "dict_en_a-article",
+          "word_form_key": "en-US|a|article|a|{\"form\":\"base\"}",
+          "confidence": 1.0,
+          "provenance": "deterministic"
+        }
+      ]
+    },
+    {
+      "source": {
+        "kind": "exercise",
+        "external_id": "ex_alpha_match_a",
+        "source_path": "prompt.value"
+      },
+      "batch_id": "en-us-prea1-alphabet-v1",
+      "lesson_key": "prea1-en-alphabet-01",
+      "text": "A",
+      "text_sha256": "559aead08264d5795d3909718cdd05abd49572e84fe55590eef31a88a08fdffd",
+      "annotations": [
+        {
+          "start": 0,
+          "end": 1,
+          "surface": "A",
+          "annotation_type": "word",
+          "lexeme_key": "en-US|a|article",
+          "lemma": "a",
+          "part_of_speech": "article",
+          "concept_slug": "dict_en_a-article",
+          "word_form_key": "en-US|a|article|a|{\"form\":\"base\"}",
+          "confidence": 1.0,
+          "provenance": "deterministic"
+        }
+      ]
+    },
+    {
+      "source": {
+        "kind": "exercise",
+        "external_id": "ex_alpha_match_a",
+        "source_path": "answer.value"
+      },
+      "batch_id": "en-us-prea1-alphabet-v1",
+      "lesson_key": "prea1-en-alphabet-01",
+      "text": "a",
+      "text_sha256": "ca978112ca1bbdcafac231b39a23dc4da786eff8147c4e72b9807785afee48bb",
+      "annotations": [
+        {
+          "start": 0,
+          "end": 1,
+          "surface": "a",
+          "annotation_type": "word",
+          "lexeme_key": "en-US|a|article",
+          "lemma": "a",
+          "part_of_speech": "article",
+          "concept_slug": "dict_en_a-article",
+          "word_form_key": "en-US|a|article|a|{\"form\":\"base\"}",
+          "confidence": 1.0,
+          "provenance": "deterministic"
+        }
+      ]
+    },
+    {
+      "source": {
+        "kind": "exercise",
+        "external_id": "ex_alpha_listen_i",
+        "source_path": "prompt.audio_text"
+      },
+      "batch_id": "en-us-prea1-alphabet-v1",
+      "lesson_key": "prea1-en-alphabet-01",
+      "text": "I",
+      "text_sha256": "a83dd0ccbffe39d071cc317ddf6e97f5c6b1c87af91919271f9fa140b0508c6c",
+      "annotations": [
+        {
+          "start": 0,
+          "end": 1,
+          "surface": "I",
+          "annotation_type": "word",
+          "lexeme_key": "en-US|i|pronoun",
+          "lemma": "I",
+          "part_of_speech": "pronoun",
+          "concept_slug": "dict_en_i-pronoun",
+          "word_form_key": "en-US|i|pronoun|i|{\"form\":\"base\"}",
+          "confidence": 1.0,
+          "provenance": "deterministic"
+        }
+      ]
+    },
+    {
+      "source": {
+        "kind": "exercise",
+        "external_id": "ex_alpha_listen_i",
+        "source_path": "answer.value"
+      },
+      "batch_id": "en-us-prea1-alphabet-v1",
+      "lesson_key": "prea1-en-alphabet-01",
+      "text": "I",
+      "text_sha256": "a83dd0ccbffe39d071cc317ddf6e97f5c6b1c87af91919271f9fa140b0508c6c",
+      "annotations": [
+        {
+          "start": 0,
+          "end": 1,
+          "surface": "I",
+          "annotation_type": "word",
+          "lexeme_key": "en-US|i|pronoun",
+          "lemma": "I",
+          "part_of_speech": "pronoun",
+          "concept_slug": "dict_en_i-pronoun",
+          "word_form_key": "en-US|i|pronoun|i|{\"form\":\"base\"}",
+          "confidence": 1.0,
+          "provenance": "deterministic"
+        }
+      ]
+    },
+    {
+      "source": {
+        "kind": "utterance",
+        "external_id": "u_fix_letter_a",
+        "language": "en"
+      },
+      "batch_id": "en-us-prea1-alphabet-v1",
+      "lesson_key": "prea1-en-alphabet-01",
+      "text": "A",
+      "text_sha256": "559aead08264d5795d3909718cdd05abd49572e84fe55590eef31a88a08fdffd",
+      "annotations": [
+        {
+          "start": 0,
+          "end": 1,
+          "surface": "A",
+          "annotation_type": "word",
+          "lexeme_key": "en-US|a|article",
+          "lemma": "a",
+          "part_of_speech": "article",
+          "concept_slug": "dict_en_a-article",
+          "word_form_key": "en-US|a|article|a|{\"form\":\"base\"}",
+          "confidence": 1.0,
+          "provenance": "deterministic"
+        }
+      ]
+    },
+    {
+      "source": {
+        "kind": "utterance",
+        "external_id": "u_fix_letter_i",
+        "language": "en"
+      },
+      "batch_id": "en-us-prea1-alphabet-v1",
+      "lesson_key": "prea1-en-alphabet-01",
+      "text": "I",
+      "text_sha256": "a83dd0ccbffe39d071cc317ddf6e97f5c6b1c87af91919271f9fa140b0508c6c",
+      "annotations": [
+        {
+          "start": 0,
+          "end": 1,
+          "surface": "I",
+          "annotation_type": "word",
+          "lexeme_key": "en-US|i|pronoun",
+          "lemma": "I",
+          "part_of_speech": "pronoun",
+          "concept_slug": "dict_en_i-pronoun",
+          "word_form_key": "en-US|i|pronoun|i|{\"form\":\"base\"}",
           "confidence": 1.0,
           "provenance": "deterministic"
         }
@@ -952,6 +1725,97 @@
     },
     {
       "source": {
+        "kind": "dialogue_turn",
+        "external_id": "d_pre_capstone_meeting",
+        "turn_order": 3
+      },
+      "batch_id": "en-us-prea1-first-conversation-v1",
+      "lesson_key": "prea1-en-first-conversation-01",
+      "text": "What's your name?",
+      "text_sha256": "56e8908ad76682304d68ca9cd055ca9d6b96ff2f8077d1041567dde66aed9724",
+      "annotations": [
+        {
+          "start": 0,
+          "end": 6,
+          "surface": "What's",
+          "annotation_type": "word",
+          "lexeme_key": "en-US|what's|contraction",
+          "lemma": "what's",
+          "part_of_speech": "contraction",
+          "concept_slug": "dict_en_what-s-contraction",
+          "word_form_key": "en-US|what's|contraction|what's|{\"form\":\"base\"}",
+          "confidence": 1.0,
+          "provenance": "deterministic"
+        },
+        {
+          "start": 7,
+          "end": 11,
+          "surface": "your",
+          "annotation_type": "word",
+          "lexeme_key": "en-US|your|determiner",
+          "lemma": "your",
+          "part_of_speech": "determiner",
+          "concept_slug": "dict_en_your-determiner",
+          "word_form_key": "en-US|your|determiner|your|{\"form\":\"base\"}",
+          "confidence": 1.0,
+          "provenance": "deterministic"
+        }
+      ]
+    },
+    {
+      "source": {
+        "kind": "dialogue_turn",
+        "external_id": "d_pre_capstone_meeting",
+        "turn_order": 4
+      },
+      "batch_id": "en-us-prea1-first-conversation-v1",
+      "lesson_key": "prea1-en-first-conversation-01",
+      "text": "I'm Arman.",
+      "text_sha256": "494a28cc9c5410225d951a27c8feddc3bb1417be0a5375c648f4e131d3640ea0",
+      "annotations": [
+        {
+          "start": 0,
+          "end": 3,
+          "surface": "I'm",
+          "annotation_type": "word",
+          "lexeme_key": "en-US|i'm|contraction",
+          "lemma": "I'm",
+          "part_of_speech": "contraction",
+          "concept_slug": "dict_en_i-m-contraction",
+          "word_form_key": "en-US|i'm|contraction|i'm|{\"form\":\"base\"}",
+          "confidence": 1.0,
+          "provenance": "deterministic"
+        }
+      ]
+    },
+    {
+      "source": {
+        "kind": "dialogue_turn",
+        "external_id": "d_pre_capstone_meeting",
+        "turn_order": 5
+      },
+      "batch_id": "en-us-prea1-first-conversation-v1",
+      "lesson_key": "prea1-en-first-conversation-01",
+      "text": "I'm Nina.",
+      "text_sha256": "ff70c7ac95663d0237a01a5adb17b6a3517ac255fd062b0ccec372a024db6c30",
+      "annotations": [
+        {
+          "start": 0,
+          "end": 3,
+          "surface": "I'm",
+          "annotation_type": "word",
+          "lexeme_key": "en-US|i'm|contraction",
+          "lemma": "I'm",
+          "part_of_speech": "contraction",
+          "concept_slug": "dict_en_i-m-contraction",
+          "word_form_key": "en-US|i'm|contraction|i'm|{\"form\":\"base\"}",
+          "confidence": 1.0,
+          "provenance": "deterministic"
+        }
+      ]
+    },
+    {
+      "source": {
         "kind": "exercise",
         "external_id": "ex_pre_capstone_first_line",
         "source_path": "prompt.value"
@@ -962,15 +1826,145 @@
       "text_sha256": "625be8384421e8772a2fe6777836c10bd1c725cb6eb920d5dd3f6a0f53071d65",
       "annotations": [
         {
-          "start": 5,
-          "end": 10,
-          "surface": "first",
+          "start": 0,
+          "end": 4,
+          "surface": "Your",
           "annotation_type": "word",
-          "lexeme_key": "en-US|first|adverb",
-          "lemma": "first",
-          "part_of_speech": "adverb",
-          "concept_slug": "a2_first_sequence",
-          "word_form_key": "en-US|first|adverb|first|{\"type\":\"sequence_marker\"}",
+          "lexeme_key": "en-US|your|determiner",
+          "lemma": "your",
+          "part_of_speech": "determiner",
+          "concept_slug": "dict_en_your-determiner",
+          "word_form_key": "en-US|your|determiner|your|{\"form\":\"base\"}",
+          "confidence": 1.0,
+          "provenance": "deterministic"
+        }
+      ]
+    },
+    {
+      "source": {
+        "kind": "exercise",
+        "external_id": "ex_pre_capstone_name",
+        "source_path": "prompt.audio_text"
+      },
+      "batch_id": "en-us-prea1-first-conversation-v1",
+      "lesson_key": "prea1-en-first-conversation-01",
+      "text": "I'm Arman.",
+      "text_sha256": "494a28cc9c5410225d951a27c8feddc3bb1417be0a5375c648f4e131d3640ea0",
+      "annotations": [
+        {
+          "start": 0,
+          "end": 3,
+          "surface": "I'm",
+          "annotation_type": "word",
+          "lexeme_key": "en-US|i'm|contraction",
+          "lemma": "I'm",
+          "part_of_speech": "contraction",
+          "concept_slug": "dict_en_i-m-contraction",
+          "word_form_key": "en-US|i'm|contraction|i'm|{\"form\":\"base\"}",
+          "confidence": 1.0,
+          "provenance": "deterministic"
+        }
+      ]
+    },
+    {
+      "source": {
+        "kind": "exercise",
+        "external_id": "ex_pre_capstone_build_name",
+        "source_path": "prompt.tokens[1]"
+      },
+      "batch_id": "en-us-prea1-first-conversation-v1",
+      "lesson_key": "prea1-en-first-conversation-01",
+      "text": "I'm",
+      "text_sha256": "c9d7ed34ba7890f69090bd0612643736348055d85f90ae7bba6fd4175dc482c9",
+      "annotations": [
+        {
+          "start": 0,
+          "end": 3,
+          "surface": "I'm",
+          "annotation_type": "word",
+          "lexeme_key": "en-US|i'm|contraction",
+          "lemma": "I'm",
+          "part_of_speech": "contraction",
+          "concept_slug": "dict_en_i-m-contraction",
+          "word_form_key": "en-US|i'm|contraction|i'm|{\"form\":\"base\"}",
+          "confidence": 1.0,
+          "provenance": "deterministic"
+        }
+      ]
+    },
+    {
+      "source": {
+        "kind": "exercise",
+        "external_id": "ex_pre_capstone_build_name",
+        "source_path": "answer.tokens[0]"
+      },
+      "batch_id": "en-us-prea1-first-conversation-v1",
+      "lesson_key": "prea1-en-first-conversation-01",
+      "text": "I'm",
+      "text_sha256": "c9d7ed34ba7890f69090bd0612643736348055d85f90ae7bba6fd4175dc482c9",
+      "annotations": [
+        {
+          "start": 0,
+          "end": 3,
+          "surface": "I'm",
+          "annotation_type": "word",
+          "lexeme_key": "en-US|i'm|contraction",
+          "lemma": "I'm",
+          "part_of_speech": "contraction",
+          "concept_slug": "dict_en_i-m-contraction",
+          "word_form_key": "en-US|i'm|contraction|i'm|{\"form\":\"base\"}",
+          "confidence": 1.0,
+          "provenance": "deterministic"
+        }
+      ]
+    },
+    {
+      "source": {
+        "kind": "exercise",
+        "external_id": "ex_pre_capstone_name_speak",
+        "source_path": "prompt.value"
+      },
+      "batch_id": "en-us-prea1-first-conversation-v1",
+      "lesson_key": "prea1-en-first-conversation-01",
+      "text": "I'm Arman.",
+      "text_sha256": "494a28cc9c5410225d951a27c8feddc3bb1417be0a5375c648f4e131d3640ea0",
+      "annotations": [
+        {
+          "start": 0,
+          "end": 3,
+          "surface": "I'm",
+          "annotation_type": "word",
+          "lexeme_key": "en-US|i'm|contraction",
+          "lemma": "I'm",
+          "part_of_speech": "contraction",
+          "concept_slug": "dict_en_i-m-contraction",
+          "word_form_key": "en-US|i'm|contraction|i'm|{\"form\":\"base\"}",
+          "confidence": 1.0,
+          "provenance": "deterministic"
+        }
+      ]
+    },
+    {
+      "source": {
+        "kind": "exercise",
+        "external_id": "ex_pre_capstone_name_speak",
+        "source_path": "answer.expected_text"
+      },
+      "batch_id": "en-us-prea1-first-conversation-v1",
+      "lesson_key": "prea1-en-first-conversation-01",
+      "text": "I'm Arman",
+      "text_sha256": "f2fd4e2abd9d8621a1baa7344b2a9ff2908c27d36a22ca5c0a4144a64035eae3",
+      "annotations": [
+        {
+          "start": 0,
+          "end": 3,
+          "surface": "I'm",
+          "annotation_type": "word",
+          "lexeme_key": "en-US|i'm|contraction",
+          "lemma": "I'm",
+          "part_of_speech": "contraction",
+          "concept_slug": "dict_en_i-m-contraction",
+          "word_form_key": "en-US|i'm|contraction|i'm|{\"form\":\"base\"}",
           "confidence": 1.0,
           "provenance": "deterministic"
         }
@@ -987,6 +1981,48 @@
       "text": "This is a book.",
       "text_sha256": "83a30d3fbd93cbb9d1e91256c8854475c41498e48de9ee6d80820a4f40168bf8",
       "annotations": [
+        {
+          "start": 0,
+          "end": 4,
+          "surface": "This",
+          "annotation_type": "word",
+          "lexeme_key": "en-US|this|determiner",
+          "lemma": "this",
+          "part_of_speech": "determiner",
+          "concept_slug": "dict_en_this-determiner",
+          "word_form_key": "en-US|this|determiner|this|{\"form\":\"base\"}",
+          "confidence": 1.0,
+          "provenance": "deterministic"
+        },
+        {
+          "start": 5,
+          "end": 7,
+          "surface": "is",
+          "annotation_type": "word",
+          "lexeme_key": "en-US|be|verb",
+          "lemma": "be",
+          "part_of_speech": "verb",
+          "concept_slug": "dict_en_be-verb",
+          "word_form_key": null,
+          "confidence": 0.92,
+          "provenance": "deterministic",
+          "morphology": {
+            "inferred_by": "core_dictionary:irregular"
+          }
+        },
+        {
+          "start": 8,
+          "end": 9,
+          "surface": "a",
+          "annotation_type": "word",
+          "lexeme_key": "en-US|a|article",
+          "lemma": "a",
+          "part_of_speech": "article",
+          "concept_slug": "dict_en_a-article",
+          "word_form_key": "en-US|a|article|a|{\"form\":\"base\"}",
+          "confidence": 1.0,
+          "provenance": "deterministic"
+        },
         {
           "start": 10,
           "end": 14,
@@ -1013,6 +2049,48 @@
       "text": "That is a bag.",
       "text_sha256": "a47addc3f303e423e3f81b3fa503b4ab8f524bd821a3e1670aca52c816f2c4ec",
       "annotations": [
+        {
+          "start": 0,
+          "end": 4,
+          "surface": "That",
+          "annotation_type": "word",
+          "lexeme_key": "en-US|that|determiner",
+          "lemma": "that",
+          "part_of_speech": "determiner",
+          "concept_slug": "dict_en_that-determiner",
+          "word_form_key": "en-US|that|determiner|that|{\"form\":\"base\"}",
+          "confidence": 1.0,
+          "provenance": "deterministic"
+        },
+        {
+          "start": 5,
+          "end": 7,
+          "surface": "is",
+          "annotation_type": "word",
+          "lexeme_key": "en-US|be|verb",
+          "lemma": "be",
+          "part_of_speech": "verb",
+          "concept_slug": "dict_en_be-verb",
+          "word_form_key": null,
+          "confidence": 0.92,
+          "provenance": "deterministic",
+          "morphology": {
+            "inferred_by": "core_dictionary:irregular"
+          }
+        },
+        {
+          "start": 8,
+          "end": 9,
+          "surface": "a",
+          "annotation_type": "word",
+          "lexeme_key": "en-US|a|article",
+          "lemma": "a",
+          "part_of_speech": "article",
+          "concept_slug": "dict_en_a-article",
+          "word_form_key": "en-US|a|article|a|{\"form\":\"base\"}",
+          "confidence": 1.0,
+          "provenance": "deterministic"
+        },
         {
           "start": 10,
           "end": 13,
@@ -1162,6 +2240,168 @@
       "source": {
         "kind": "exercise",
         "external_id": "ex_pre_this_book_build",
+        "source_path": "prompt.tokens[1]"
+      },
+      "batch_id": "en-us-prea1-first-objects-v1",
+      "lesson_key": "prea1-en-first-objects-02",
+      "text": "a",
+      "text_sha256": "ca978112ca1bbdcafac231b39a23dc4da786eff8147c4e72b9807785afee48bb",
+      "annotations": [
+        {
+          "start": 0,
+          "end": 1,
+          "surface": "a",
+          "annotation_type": "word",
+          "lexeme_key": "en-US|a|article",
+          "lemma": "a",
+          "part_of_speech": "article",
+          "concept_slug": "dict_en_a-article",
+          "word_form_key": "en-US|a|article|a|{\"form\":\"base\"}",
+          "confidence": 1.0,
+          "provenance": "deterministic"
+        }
+      ]
+    },
+    {
+      "source": {
+        "kind": "exercise",
+        "external_id": "ex_pre_this_book_build",
+        "source_path": "prompt.tokens[2]"
+      },
+      "batch_id": "en-us-prea1-first-objects-v1",
+      "lesson_key": "prea1-en-first-objects-02",
+      "text": "This",
+      "text_sha256": "86e1de74820a9b252ba33b2eed445b0cd02c445b5f4b8007205aff1762d7301a",
+      "annotations": [
+        {
+          "start": 0,
+          "end": 4,
+          "surface": "This",
+          "annotation_type": "word",
+          "lexeme_key": "en-US|this|determiner",
+          "lemma": "this",
+          "part_of_speech": "determiner",
+          "concept_slug": "dict_en_this-determiner",
+          "word_form_key": "en-US|this|determiner|this|{\"form\":\"base\"}",
+          "confidence": 1.0,
+          "provenance": "deterministic"
+        }
+      ]
+    },
+    {
+      "source": {
+        "kind": "exercise",
+        "external_id": "ex_pre_this_book_build",
+        "source_path": "prompt.tokens[3]"
+      },
+      "batch_id": "en-us-prea1-first-objects-v1",
+      "lesson_key": "prea1-en-first-objects-02",
+      "text": "is",
+      "text_sha256": "fa51fd49abf67705d6a35d18218c115ff5633aec1f9ebfdc9d5d4956416f57f6",
+      "annotations": [
+        {
+          "start": 0,
+          "end": 2,
+          "surface": "is",
+          "annotation_type": "word",
+          "lexeme_key": "en-US|be|verb",
+          "lemma": "be",
+          "part_of_speech": "verb",
+          "concept_slug": "dict_en_be-verb",
+          "word_form_key": null,
+          "confidence": 0.92,
+          "provenance": "deterministic",
+          "morphology": {
+            "inferred_by": "core_dictionary:irregular"
+          }
+        }
+      ]
+    },
+    {
+      "source": {
+        "kind": "exercise",
+        "external_id": "ex_pre_this_book_build",
+        "source_path": "answer.tokens[0]"
+      },
+      "batch_id": "en-us-prea1-first-objects-v1",
+      "lesson_key": "prea1-en-first-objects-02",
+      "text": "This",
+      "text_sha256": "86e1de74820a9b252ba33b2eed445b0cd02c445b5f4b8007205aff1762d7301a",
+      "annotations": [
+        {
+          "start": 0,
+          "end": 4,
+          "surface": "This",
+          "annotation_type": "word",
+          "lexeme_key": "en-US|this|determiner",
+          "lemma": "this",
+          "part_of_speech": "determiner",
+          "concept_slug": "dict_en_this-determiner",
+          "word_form_key": "en-US|this|determiner|this|{\"form\":\"base\"}",
+          "confidence": 1.0,
+          "provenance": "deterministic"
+        }
+      ]
+    },
+    {
+      "source": {
+        "kind": "exercise",
+        "external_id": "ex_pre_this_book_build",
+        "source_path": "answer.tokens[1]"
+      },
+      "batch_id": "en-us-prea1-first-objects-v1",
+      "lesson_key": "prea1-en-first-objects-02",
+      "text": "is",
+      "text_sha256": "fa51fd49abf67705d6a35d18218c115ff5633aec1f9ebfdc9d5d4956416f57f6",
+      "annotations": [
+        {
+          "start": 0,
+          "end": 2,
+          "surface": "is",
+          "annotation_type": "word",
+          "lexeme_key": "en-US|be|verb",
+          "lemma": "be",
+          "part_of_speech": "verb",
+          "concept_slug": "dict_en_be-verb",
+          "word_form_key": null,
+          "confidence": 0.92,
+          "provenance": "deterministic",
+          "morphology": {
+            "inferred_by": "core_dictionary:irregular"
+          }
+        }
+      ]
+    },
+    {
+      "source": {
+        "kind": "exercise",
+        "external_id": "ex_pre_this_book_build",
+        "source_path": "answer.tokens[2]"
+      },
+      "batch_id": "en-us-prea1-first-objects-v1",
+      "lesson_key": "prea1-en-first-objects-02",
+      "text": "a",
+      "text_sha256": "ca978112ca1bbdcafac231b39a23dc4da786eff8147c4e72b9807785afee48bb",
+      "annotations": [
+        {
+          "start": 0,
+          "end": 1,
+          "surface": "a",
+          "annotation_type": "word",
+          "lexeme_key": "en-US|a|article",
+          "lemma": "a",
+          "part_of_speech": "article",
+          "concept_slug": "dict_en_a-article",
+          "word_form_key": "en-US|a|article|a|{\"form\":\"base\"}",
+          "confidence": 1.0,
+          "provenance": "deterministic"
+        }
+      ]
+    },
+    {
+      "source": {
+        "kind": "exercise",
+        "external_id": "ex_pre_this_book_build",
         "source_path": "answer.tokens[3]"
       },
       "batch_id": "en-us-prea1-first-objects-v1",
@@ -1196,6 +2436,48 @@
       "text_sha256": "a47addc3f303e423e3f81b3fa503b4ab8f524bd821a3e1670aca52c816f2c4ec",
       "annotations": [
         {
+          "start": 0,
+          "end": 4,
+          "surface": "That",
+          "annotation_type": "word",
+          "lexeme_key": "en-US|that|determiner",
+          "lemma": "that",
+          "part_of_speech": "determiner",
+          "concept_slug": "dict_en_that-determiner",
+          "word_form_key": "en-US|that|determiner|that|{\"form\":\"base\"}",
+          "confidence": 1.0,
+          "provenance": "deterministic"
+        },
+        {
+          "start": 5,
+          "end": 7,
+          "surface": "is",
+          "annotation_type": "word",
+          "lexeme_key": "en-US|be|verb",
+          "lemma": "be",
+          "part_of_speech": "verb",
+          "concept_slug": "dict_en_be-verb",
+          "word_form_key": null,
+          "confidence": 0.92,
+          "provenance": "deterministic",
+          "morphology": {
+            "inferred_by": "core_dictionary:irregular"
+          }
+        },
+        {
+          "start": 8,
+          "end": 9,
+          "surface": "a",
+          "annotation_type": "word",
+          "lexeme_key": "en-US|a|article",
+          "lemma": "a",
+          "part_of_speech": "article",
+          "concept_slug": "dict_en_a-article",
+          "word_form_key": "en-US|a|article|a|{\"form\":\"base\"}",
+          "confidence": 1.0,
+          "provenance": "deterministic"
+        },
+        {
           "start": 10,
           "end": 13,
           "surface": "bag",
@@ -1221,6 +2503,48 @@
       "text": "That is a bag",
       "text_sha256": "02ac1941e1bbc490936fcad02a5a1d58fe34891d3c490d812b5e40c43853e2ed",
       "annotations": [
+        {
+          "start": 0,
+          "end": 4,
+          "surface": "That",
+          "annotation_type": "word",
+          "lexeme_key": "en-US|that|determiner",
+          "lemma": "that",
+          "part_of_speech": "determiner",
+          "concept_slug": "dict_en_that-determiner",
+          "word_form_key": "en-US|that|determiner|that|{\"form\":\"base\"}",
+          "confidence": 1.0,
+          "provenance": "deterministic"
+        },
+        {
+          "start": 5,
+          "end": 7,
+          "surface": "is",
+          "annotation_type": "word",
+          "lexeme_key": "en-US|be|verb",
+          "lemma": "be",
+          "part_of_speech": "verb",
+          "concept_slug": "dict_en_be-verb",
+          "word_form_key": null,
+          "confidence": 0.92,
+          "provenance": "deterministic",
+          "morphology": {
+            "inferred_by": "core_dictionary:irregular"
+          }
+        },
+        {
+          "start": 8,
+          "end": 9,
+          "surface": "a",
+          "annotation_type": "word",
+          "lexeme_key": "en-US|a|article",
+          "lemma": "a",
+          "part_of_speech": "article",
+          "concept_slug": "dict_en_a-article",
+          "word_form_key": "en-US|a|article|a|{\"form\":\"base\"}",
+          "confidence": 1.0,
+          "provenance": "deterministic"
+        },
         {
           "start": 10,
           "end": 13,
@@ -1317,6 +2641,136 @@
     {
       "source": {
         "kind": "utterance",
+        "external_id": "u_fix_sound_this",
+        "language": "en"
+      },
+      "batch_id": "en-us-prea1-first-sounds-v1",
+      "lesson_key": "prea1-en-first-sounds-01",
+      "text": "this",
+      "text_sha256": "1eb79602411ef02cf6fe117897015fff89f80face4eccd50425c45149b148408",
+      "annotations": [
+        {
+          "start": 0,
+          "end": 4,
+          "surface": "this",
+          "annotation_type": "word",
+          "lexeme_key": "en-US|this|determiner",
+          "lemma": "this",
+          "part_of_speech": "determiner",
+          "concept_slug": "dict_en_this-determiner",
+          "word_form_key": "en-US|this|determiner|this|{\"form\":\"base\"}",
+          "confidence": 1.0,
+          "provenance": "deterministic"
+        }
+      ]
+    },
+    {
+      "source": {
+        "kind": "exercise",
+        "external_id": "ex_fix_sound_listen_2",
+        "source_path": "prompt.audio_text"
+      },
+      "batch_id": "en-us-prea1-first-sounds-v1",
+      "lesson_key": "prea1-en-first-sounds-01",
+      "text": "this",
+      "text_sha256": "1eb79602411ef02cf6fe117897015fff89f80face4eccd50425c45149b148408",
+      "annotations": [
+        {
+          "start": 0,
+          "end": 4,
+          "surface": "this",
+          "annotation_type": "word",
+          "lexeme_key": "en-US|this|determiner",
+          "lemma": "this",
+          "part_of_speech": "determiner",
+          "concept_slug": "dict_en_this-determiner",
+          "word_form_key": "en-US|this|determiner|this|{\"form\":\"base\"}",
+          "confidence": 1.0,
+          "provenance": "deterministic"
+        }
+      ]
+    },
+    {
+      "source": {
+        "kind": "exercise",
+        "external_id": "ex_fix_sound_listen_2",
+        "source_path": "answer.value"
+      },
+      "batch_id": "en-us-prea1-first-sounds-v1",
+      "lesson_key": "prea1-en-first-sounds-01",
+      "text": "this",
+      "text_sha256": "1eb79602411ef02cf6fe117897015fff89f80face4eccd50425c45149b148408",
+      "annotations": [
+        {
+          "start": 0,
+          "end": 4,
+          "surface": "this",
+          "annotation_type": "word",
+          "lexeme_key": "en-US|this|determiner",
+          "lemma": "this",
+          "part_of_speech": "determiner",
+          "concept_slug": "dict_en_this-determiner",
+          "word_form_key": "en-US|this|determiner|this|{\"form\":\"base\"}",
+          "confidence": 1.0,
+          "provenance": "deterministic"
+        }
+      ]
+    },
+    {
+      "source": {
+        "kind": "exercise",
+        "external_id": "ex_fix_sound_speak_this",
+        "source_path": "prompt.value"
+      },
+      "batch_id": "en-us-prea1-first-sounds-v1",
+      "lesson_key": "prea1-en-first-sounds-01",
+      "text": "this",
+      "text_sha256": "1eb79602411ef02cf6fe117897015fff89f80face4eccd50425c45149b148408",
+      "annotations": [
+        {
+          "start": 0,
+          "end": 4,
+          "surface": "this",
+          "annotation_type": "word",
+          "lexeme_key": "en-US|this|determiner",
+          "lemma": "this",
+          "part_of_speech": "determiner",
+          "concept_slug": "dict_en_this-determiner",
+          "word_form_key": "en-US|this|determiner|this|{\"form\":\"base\"}",
+          "confidence": 1.0,
+          "provenance": "deterministic"
+        }
+      ]
+    },
+    {
+      "source": {
+        "kind": "exercise",
+        "external_id": "ex_fix_sound_speak_this",
+        "source_path": "answer.expected_text"
+      },
+      "batch_id": "en-us-prea1-first-sounds-v1",
+      "lesson_key": "prea1-en-first-sounds-01",
+      "text": "this",
+      "text_sha256": "1eb79602411ef02cf6fe117897015fff89f80face4eccd50425c45149b148408",
+      "annotations": [
+        {
+          "start": 0,
+          "end": 4,
+          "surface": "this",
+          "annotation_type": "word",
+          "lexeme_key": "en-US|this|determiner",
+          "lemma": "this",
+          "part_of_speech": "determiner",
+          "concept_slug": "dict_en_this-determiner",
+          "word_form_key": "en-US|this|determiner|this|{\"form\":\"base\"}",
+          "confidence": 1.0,
+          "provenance": "deterministic"
+        }
+      ]
+    },
+    {
+      "source": {
+        "kind": "utterance",
         "external_id": "u_en_en-forms-signs_exit_q",
         "language": "en"
       },
@@ -1333,10 +2787,136 @@
           "lexeme_key": "en-US|where|adverb",
           "lemma": "where",
           "part_of_speech": "adverb",
-          "concept_slug": "question_word_where",
-          "word_form_key": "en-US|where|adverb|where|{}",
+          "concept_slug": "dict_en_where-adverb",
+          "word_form_key": "en-US|where|adverb|where|{\"form\":\"base\"}",
           "confidence": 1.0,
           "provenance": "deterministic"
+        },
+        {
+          "start": 6,
+          "end": 8,
+          "surface": "is",
+          "annotation_type": "word",
+          "lexeme_key": "en-US|be|verb",
+          "lemma": "be",
+          "part_of_speech": "verb",
+          "concept_slug": "dict_en_be-verb",
+          "word_form_key": null,
+          "confidence": 0.92,
+          "provenance": "deterministic",
+          "morphology": {
+            "inferred_by": "core_dictionary:irregular"
+          }
+        },
+        {
+          "start": 9,
+          "end": 12,
+          "surface": "the",
+          "annotation_type": "word",
+          "lexeme_key": "en-US|the|article",
+          "lemma": "the",
+          "part_of_speech": "article",
+          "concept_slug": "dict_en_the-article",
+          "word_form_key": "en-US|the|article|the|{\"form\":\"base\"}",
+          "confidence": 1.0,
+          "provenance": "deterministic"
+        }
+      ]
+    },
+    {
+      "source": {
+        "kind": "utterance",
+        "external_id": "u_en_en-forms-signs_exit_a",
+        "language": "en"
+      },
+      "batch_id": "en-us-prea1-en-forms-signs-v1",
+      "lesson_key": "prea1-en-en-forms-signs-02",
+      "text": "The exit is there.",
+      "text_sha256": "abb7d9a3328215471331dc69b689b5a47762fc21868e733e43199648057af95a",
+      "annotations": [
+        {
+          "start": 0,
+          "end": 3,
+          "surface": "The",
+          "annotation_type": "word",
+          "lexeme_key": "en-US|the|article",
+          "lemma": "the",
+          "part_of_speech": "article",
+          "concept_slug": "dict_en_the-article",
+          "word_form_key": "en-US|the|article|the|{\"form\":\"base\"}",
+          "confidence": 1.0,
+          "provenance": "deterministic"
+        },
+        {
+          "start": 9,
+          "end": 11,
+          "surface": "is",
+          "annotation_type": "word",
+          "lexeme_key": "en-US|be|verb",
+          "lemma": "be",
+          "part_of_speech": "verb",
+          "concept_slug": "dict_en_be-verb",
+          "word_form_key": null,
+          "confidence": 0.92,
+          "provenance": "deterministic",
+          "morphology": {
+            "inferred_by": "core_dictionary:irregular"
+          }
+        },
+        {
+          "start": 12,
+          "end": 17,
+          "surface": "there",
+          "annotation_type": "word",
+          "lexeme_key": "en-US|there|adverb",
+          "lemma": "there",
+          "part_of_speech": "adverb",
+          "concept_slug": "dict_en_there-adverb",
+          "word_form_key": "en-US|there|adverb|there|{\"form\":\"base\"}",
+          "confidence": 1.0,
+          "provenance": "deterministic"
+        }
+      ]
+    },
+    {
+      "source": {
+        "kind": "dialogue_turn",
+        "external_id": "d_en_en-forms-signs_form",
+        "turn_order": 2
+      },
+      "batch_id": "en-us-prea1-en-forms-signs-v1",
+      "lesson_key": "prea1-en-en-forms-signs-01",
+      "text": "My name is Sara.",
+      "text_sha256": "662d09b13a6716665a000bd5656714f552776d7bd5ccdc533e14c4798fb2c5cd",
+      "annotations": [
+        {
+          "start": 0,
+          "end": 2,
+          "surface": "My",
+          "annotation_type": "word",
+          "lexeme_key": "en-US|my|determiner",
+          "lemma": "my",
+          "part_of_speech": "determiner",
+          "concept_slug": "dict_en_my-determiner",
+          "word_form_key": "en-US|my|determiner|my|{\"form\":\"base\"}",
+          "confidence": 1.0,
+          "provenance": "deterministic"
+        },
+        {
+          "start": 8,
+          "end": 10,
+          "surface": "is",
+          "annotation_type": "word",
+          "lexeme_key": "en-US|be|verb",
+          "lemma": "be",
+          "part_of_speech": "verb",
+          "concept_slug": "dict_en_be-verb",
+          "word_form_key": null,
+          "confidence": 0.92,
+          "provenance": "deterministic",
+          "morphology": {
+            "inferred_by": "core_dictionary:irregular"
+          }
         }
       ]
     },
@@ -1378,6 +2958,32 @@
       "text_sha256": "5dfce23c275fa6fab08233cefbad28edad8515795b3e7d9e445c869c89469fe1",
       "annotations": [
         {
+          "start": 0,
+          "end": 3,
+          "surface": "I'm",
+          "annotation_type": "word",
+          "lexeme_key": "en-US|i'm|contraction",
+          "lemma": "I'm",
+          "part_of_speech": "contraction",
+          "concept_slug": "dict_en_i-m-contraction",
+          "word_form_key": "en-US|i'm|contraction|i'm|{\"form\":\"base\"}",
+          "confidence": 1.0,
+          "provenance": "deterministic"
+        },
+        {
+          "start": 4,
+          "end": 8,
+          "surface": "from",
+          "annotation_type": "word",
+          "lexeme_key": "en-US|from|preposition",
+          "lemma": "from",
+          "part_of_speech": "preposition",
+          "concept_slug": "dict_en_from-preposition",
+          "word_form_key": "en-US|from|preposition|from|{\"form\":\"base\"}",
+          "confidence": 1.0,
+          "provenance": "deterministic"
+        },
+        {
           "start": 9,
           "end": 13,
           "surface": "Iran",
@@ -1411,8 +3017,92 @@
           "lexeme_key": "en-US|where|adverb",
           "lemma": "where",
           "part_of_speech": "adverb",
-          "concept_slug": "question_word_where",
-          "word_form_key": "en-US|where|adverb|where|{}",
+          "concept_slug": "dict_en_where-adverb",
+          "word_form_key": "en-US|where|adverb|where|{\"form\":\"base\"}",
+          "confidence": 1.0,
+          "provenance": "deterministic"
+        },
+        {
+          "start": 6,
+          "end": 8,
+          "surface": "is",
+          "annotation_type": "word",
+          "lexeme_key": "en-US|be|verb",
+          "lemma": "be",
+          "part_of_speech": "verb",
+          "concept_slug": "dict_en_be-verb",
+          "word_form_key": null,
+          "confidence": 0.92,
+          "provenance": "deterministic",
+          "morphology": {
+            "inferred_by": "core_dictionary:irregular"
+          }
+        },
+        {
+          "start": 9,
+          "end": 12,
+          "surface": "the",
+          "annotation_type": "word",
+          "lexeme_key": "en-US|the|article",
+          "lemma": "the",
+          "part_of_speech": "article",
+          "concept_slug": "dict_en_the-article",
+          "word_form_key": "en-US|the|article|the|{\"form\":\"base\"}",
+          "confidence": 1.0,
+          "provenance": "deterministic"
+        }
+      ]
+    },
+    {
+      "source": {
+        "kind": "dialogue_turn",
+        "external_id": "d_en_en-forms-signs_sign",
+        "turn_order": 2
+      },
+      "batch_id": "en-us-prea1-en-forms-signs-v1",
+      "lesson_key": "prea1-en-en-forms-signs-02",
+      "text": "The exit is there.",
+      "text_sha256": "abb7d9a3328215471331dc69b689b5a47762fc21868e733e43199648057af95a",
+      "annotations": [
+        {
+          "start": 0,
+          "end": 3,
+          "surface": "The",
+          "annotation_type": "word",
+          "lexeme_key": "en-US|the|article",
+          "lemma": "the",
+          "part_of_speech": "article",
+          "concept_slug": "dict_en_the-article",
+          "word_form_key": "en-US|the|article|the|{\"form\":\"base\"}",
+          "confidence": 1.0,
+          "provenance": "deterministic"
+        },
+        {
+          "start": 9,
+          "end": 11,
+          "surface": "is",
+          "annotation_type": "word",
+          "lexeme_key": "en-US|be|verb",
+          "lemma": "be",
+          "part_of_speech": "verb",
+          "concept_slug": "dict_en_be-verb",
+          "word_form_key": null,
+          "confidence": 0.92,
+          "provenance": "deterministic",
+          "morphology": {
+            "inferred_by": "core_dictionary:irregular"
+          }
+        },
+        {
+          "start": 12,
+          "end": 17,
+          "surface": "there",
+          "annotation_type": "word",
+          "lexeme_key": "en-US|there|adverb",
+          "lemma": "there",
+          "part_of_speech": "adverb",
+          "concept_slug": "dict_en_there-adverb",
+          "word_form_key": "en-US|there|adverb|there|{\"form\":\"base\"}",
           "confidence": 1.0,
           "provenance": "deterministic"
         }
@@ -1430,6 +3120,19 @@
       "text_sha256": "308c8f3227d091b723f87fd5f5b463f4dd329fbe57b9d7384ab2559c8df2bf0f",
       "annotations": [
         {
+          "start": 0,
+          "end": 5,
+          "surface": "Again",
+          "annotation_type": "word",
+          "lexeme_key": "en-US|again|adverb",
+          "lemma": "again",
+          "part_of_speech": "adverb",
+          "concept_slug": "dict_en_again-adverb",
+          "word_form_key": "en-US|again|adverb|again|{\"form\":\"base\"}",
+          "confidence": 1.0,
+          "provenance": "deterministic"
+        },
+        {
           "start": 7,
           "end": 13,
           "surface": "please",
@@ -1439,6 +3142,61 @@
           "part_of_speech": "adverb",
           "concept_slug": "polite_please",
           "word_form_key": "en-US|please|adverb|please|{\"register\":\"polite\"}",
+          "confidence": 1.0,
+          "provenance": "deterministic"
+        }
+      ]
+    },
+    {
+      "source": {
+        "kind": "dialogue_turn",
+        "external_id": "d_en_en-forms-signs_sign",
+        "turn_order": 4
+      },
+      "batch_id": "en-us-prea1-en-forms-signs-v1",
+      "lesson_key": "prea1-en-en-forms-signs-02",
+      "text": "The exit is there.",
+      "text_sha256": "abb7d9a3328215471331dc69b689b5a47762fc21868e733e43199648057af95a",
+      "annotations": [
+        {
+          "start": 0,
+          "end": 3,
+          "surface": "The",
+          "annotation_type": "word",
+          "lexeme_key": "en-US|the|article",
+          "lemma": "the",
+          "part_of_speech": "article",
+          "concept_slug": "dict_en_the-article",
+          "word_form_key": "en-US|the|article|the|{\"form\":\"base\"}",
+          "confidence": 1.0,
+          "provenance": "deterministic"
+        },
+        {
+          "start": 9,
+          "end": 11,
+          "surface": "is",
+          "annotation_type": "word",
+          "lexeme_key": "en-US|be|verb",
+          "lemma": "be",
+          "part_of_speech": "verb",
+          "concept_slug": "dict_en_be-verb",
+          "word_form_key": null,
+          "confidence": 0.92,
+          "provenance": "deterministic",
+          "morphology": {
+            "inferred_by": "core_dictionary:irregular"
+          }
+        },
+        {
+          "start": 12,
+          "end": 17,
+          "surface": "there",
+          "annotation_type": "word",
+          "lexeme_key": "en-US|there|adverb",
+          "lemma": "there",
+          "part_of_speech": "adverb",
+          "concept_slug": "dict_en_there-adverb",
+          "word_form_key": "en-US|there|adverb|there|{\"form\":\"base\"}",
           "confidence": 1.0,
           "provenance": "deterministic"
         }
@@ -1515,8 +3273,37 @@
           "lexeme_key": "en-US|where|adverb",
           "lemma": "where",
           "part_of_speech": "adverb",
-          "concept_slug": "question_word_where",
-          "word_form_key": "en-US|where|adverb|where|{}",
+          "concept_slug": "dict_en_where-adverb",
+          "word_form_key": "en-US|where|adverb|where|{\"form\":\"base\"}",
+          "confidence": 1.0,
+          "provenance": "deterministic"
+        },
+        {
+          "start": 6,
+          "end": 8,
+          "surface": "is",
+          "annotation_type": "word",
+          "lexeme_key": "en-US|be|verb",
+          "lemma": "be",
+          "part_of_speech": "verb",
+          "concept_slug": "dict_en_be-verb",
+          "word_form_key": null,
+          "confidence": 0.92,
+          "provenance": "deterministic",
+          "morphology": {
+            "inferred_by": "core_dictionary:irregular"
+          }
+        },
+        {
+          "start": 9,
+          "end": 12,
+          "surface": "the",
+          "annotation_type": "word",
+          "lexeme_key": "en-US|the|article",
+          "lemma": "the",
+          "part_of_speech": "article",
+          "concept_slug": "dict_en_the-article",
+          "word_form_key": "en-US|the|article|the|{\"form\":\"base\"}",
           "confidence": 1.0,
           "provenance": "deterministic"
         }
@@ -1541,8 +3328,37 @@
           "lexeme_key": "en-US|where|adverb",
           "lemma": "where",
           "part_of_speech": "adverb",
-          "concept_slug": "question_word_where",
-          "word_form_key": "en-US|where|adverb|where|{}",
+          "concept_slug": "dict_en_where-adverb",
+          "word_form_key": "en-US|where|adverb|where|{\"form\":\"base\"}",
+          "confidence": 1.0,
+          "provenance": "deterministic"
+        },
+        {
+          "start": 6,
+          "end": 8,
+          "surface": "is",
+          "annotation_type": "word",
+          "lexeme_key": "en-US|be|verb",
+          "lemma": "be",
+          "part_of_speech": "verb",
+          "concept_slug": "dict_en_be-verb",
+          "word_form_key": null,
+          "confidence": 0.92,
+          "provenance": "deterministic",
+          "morphology": {
+            "inferred_by": "core_dictionary:irregular"
+          }
+        },
+        {
+          "start": 9,
+          "end": 12,
+          "surface": "the",
+          "annotation_type": "word",
+          "lexeme_key": "en-US|the|article",
+          "lemma": "the",
+          "part_of_speech": "article",
+          "concept_slug": "dict_en_the-article",
+          "word_form_key": "en-US|the|article|the|{\"form\":\"base\"}",
           "confidence": 1.0,
           "provenance": "deterministic"
         }
@@ -1649,6 +3465,19 @@
           "word_form_key": "en-US|open|verb|open|{\"form\":\"base\"}",
           "confidence": 1.0,
           "provenance": "deterministic"
+        },
+        {
+          "start": 5,
+          "end": 7,
+          "surface": "or",
+          "annotation_type": "word",
+          "lexeme_key": "en-US|or|conjunction",
+          "lemma": "or",
+          "part_of_speech": "conjunction",
+          "concept_slug": "dict_en_or-conjunction",
+          "word_form_key": "en-US|or|conjunction|or|{\"form\":\"base\"}",
+          "confidence": 1.0,
+          "provenance": "deterministic"
         }
       ]
     },
@@ -1681,6 +3510,45 @@
     {
       "source": {
         "kind": "utterance",
+        "external_id": "u_dont_understand",
+        "language": "en"
+      },
+      "batch_id": "en-us-prea1-learning-survival-v1",
+      "lesson_key": "prea1-en-learning-survival-01",
+      "text": "I don't understand.",
+      "text_sha256": "906248d9ffd63d8b8c54443d728446a5d5fb598e5c2134e1f2a05ed4b23a7460",
+      "annotations": [
+        {
+          "start": 0,
+          "end": 1,
+          "surface": "I",
+          "annotation_type": "word",
+          "lexeme_key": "en-US|i|pronoun",
+          "lemma": "I",
+          "part_of_speech": "pronoun",
+          "concept_slug": "dict_en_i-pronoun",
+          "word_form_key": "en-US|i|pronoun|i|{\"form\":\"base\"}",
+          "confidence": 1.0,
+          "provenance": "deterministic"
+        },
+        {
+          "start": 2,
+          "end": 7,
+          "surface": "don't",
+          "annotation_type": "word",
+          "lexeme_key": "en-US|don't|contraction",
+          "lemma": "don't",
+          "part_of_speech": "contraction",
+          "concept_slug": "dict_en_don-t-contraction",
+          "word_form_key": "en-US|don't|contraction|don't|{\"form\":\"base\"}",
+          "confidence": 1.0,
+          "provenance": "deterministic"
+        }
+      ]
+    },
+    {
+      "source": {
+        "kind": "utterance",
         "external_id": "u_again_please",
         "language": "en"
       },
@@ -1689,6 +3557,19 @@
       "text": "Again, please.",
       "text_sha256": "308c8f3227d091b723f87fd5f5b463f4dd329fbe57b9d7384ab2559c8df2bf0f",
       "annotations": [
+        {
+          "start": 0,
+          "end": 5,
+          "surface": "Again",
+          "annotation_type": "word",
+          "lexeme_key": "en-US|again|adverb",
+          "lemma": "again",
+          "part_of_speech": "adverb",
+          "concept_slug": "dict_en_again-adverb",
+          "word_form_key": "en-US|again|adverb|again|{\"form\":\"base\"}",
+          "confidence": 1.0,
+          "provenance": "deterministic"
+        },
         {
           "start": 7,
           "end": 13,
@@ -1742,6 +3623,32 @@
       "text_sha256": "0006b6926947b91ba80222f8d1257b0dcf9b90d49eef4150483002b21e146886",
       "annotations": [
         {
+          "start": 0,
+          "end": 3,
+          "surface": "Can",
+          "annotation_type": "word",
+          "lexeme_key": "en-US|can|modal",
+          "lemma": "can",
+          "part_of_speech": "modal",
+          "concept_slug": "dict_en_can-modal",
+          "word_form_key": "en-US|can|modal|can|{\"form\":\"base\"}",
+          "confidence": 1.0,
+          "provenance": "deterministic"
+        },
+        {
+          "start": 4,
+          "end": 7,
+          "surface": "you",
+          "annotation_type": "word",
+          "lexeme_key": "en-US|you|pronoun",
+          "lemma": "you",
+          "part_of_speech": "pronoun",
+          "concept_slug": "dict_en_you-pronoun",
+          "word_form_key": "en-US|you|pronoun|you|{\"form\":\"base\"}",
+          "confidence": 1.0,
+          "provenance": "deterministic"
+        },
+        {
           "start": 8,
           "end": 14,
           "surface": "repeat",
@@ -1752,6 +3659,19 @@
           "concept_slug": null,
           "word_form_key": null,
           "confidence": 0.98,
+          "provenance": "deterministic"
+        },
+        {
+          "start": 15,
+          "end": 19,
+          "surface": "that",
+          "annotation_type": "word",
+          "lexeme_key": "en-US|that|determiner",
+          "lemma": "that",
+          "part_of_speech": "determiner",
+          "concept_slug": "dict_en_that-determiner",
+          "word_form_key": "en-US|that|determiner|that|{\"form\":\"base\"}",
+          "confidence": 1.0,
           "provenance": "deterministic"
         }
       ]
@@ -1775,8 +3695,50 @@
           "lexeme_key": "en-US|what|pronoun",
           "lemma": "what",
           "part_of_speech": "pronoun",
-          "concept_slug": "question_word_what",
-          "word_form_key": "en-US|what|pronoun|what|{}",
+          "concept_slug": "dict_en_what-pronoun",
+          "word_form_key": "en-US|what|pronoun|what|{\"form\":\"base\"}",
+          "confidence": 1.0,
+          "provenance": "deterministic"
+        },
+        {
+          "start": 5,
+          "end": 9,
+          "surface": "does",
+          "annotation_type": "word",
+          "lexeme_key": "en-US|do|verb",
+          "lemma": "do",
+          "part_of_speech": "verb",
+          "concept_slug": "dict_en_do-verb",
+          "word_form_key": null,
+          "confidence": 0.92,
+          "provenance": "deterministic",
+          "morphology": {
+            "inferred_by": "core_dictionary:irregular"
+          }
+        },
+        {
+          "start": 10,
+          "end": 14,
+          "surface": "this",
+          "annotation_type": "word",
+          "lexeme_key": "en-US|this|determiner",
+          "lemma": "this",
+          "part_of_speech": "determiner",
+          "concept_slug": "dict_en_this-determiner",
+          "word_form_key": "en-US|this|determiner|this|{\"form\":\"base\"}",
+          "confidence": 1.0,
+          "provenance": "deterministic"
+        },
+        {
+          "start": 15,
+          "end": 19,
+          "surface": "mean",
+          "annotation_type": "word",
+          "lexeme_key": "en-US|mean|verb",
+          "lemma": "mean",
+          "part_of_speech": "verb",
+          "concept_slug": "dict_en_mean-verb",
+          "word_form_key": "en-US|mean|verb|mean|{\"form\":\"base\"}",
           "confidence": 1.0,
           "provenance": "deterministic"
         }
@@ -1844,6 +3806,32 @@
           "word_form_key": null,
           "confidence": 0.98,
           "provenance": "deterministic"
+        },
+        {
+          "start": 7,
+          "end": 8,
+          "surface": "I",
+          "annotation_type": "word",
+          "lexeme_key": "en-US|i|pronoun",
+          "lemma": "I",
+          "part_of_speech": "pronoun",
+          "concept_slug": "dict_en_i-pronoun",
+          "word_form_key": "en-US|i|pronoun|i|{\"form\":\"base\"}",
+          "confidence": 1.0,
+          "provenance": "deterministic"
+        },
+        {
+          "start": 9,
+          "end": 14,
+          "surface": "don't",
+          "annotation_type": "word",
+          "lexeme_key": "en-US|don't|contraction",
+          "lemma": "don't",
+          "part_of_speech": "contraction",
+          "concept_slug": "dict_en_don-t-contraction",
+          "word_form_key": "en-US|don't|contraction|don't|{\"form\":\"base\"}",
+          "confidence": 1.0,
+          "provenance": "deterministic"
         }
       ]
     },
@@ -1859,6 +3847,19 @@
       "text_sha256": "308c8f3227d091b723f87fd5f5b463f4dd329fbe57b9d7384ab2559c8df2bf0f",
       "annotations": [
         {
+          "start": 0,
+          "end": 5,
+          "surface": "Again",
+          "annotation_type": "word",
+          "lexeme_key": "en-US|again|adverb",
+          "lemma": "again",
+          "part_of_speech": "adverb",
+          "concept_slug": "dict_en_again-adverb",
+          "word_form_key": "en-US|again|adverb|again|{\"form\":\"base\"}",
+          "confidence": 1.0,
+          "provenance": "deterministic"
+        },
+        {
           "start": 7,
           "end": 13,
           "surface": "please",
@@ -1868,6 +3869,87 @@
           "part_of_speech": "adverb",
           "concept_slug": "polite_please",
           "word_form_key": "en-US|please|adverb|please|{\"register\":\"polite\"}",
+          "confidence": 1.0,
+          "provenance": "deterministic"
+        }
+      ]
+    },
+    {
+      "source": {
+        "kind": "dialogue_turn",
+        "external_id": "d_pre_learning_help_01",
+        "turn_order": 4
+      },
+      "batch_id": "en-us-prea1-learning-survival-v1",
+      "lesson_key": "prea1-en-learning-survival-01",
+      "text": "Of course.",
+      "text_sha256": "404cba15a4acdcfea85caa97d009b1042d20f0967c26f9a1abf59aecbeddf9bd",
+      "annotations": [
+        {
+          "start": 0,
+          "end": 2,
+          "surface": "Of",
+          "annotation_type": "word",
+          "lexeme_key": "en-US|of|preposition",
+          "lemma": "of",
+          "part_of_speech": "preposition",
+          "concept_slug": "dict_en_of-preposition",
+          "word_form_key": "en-US|of|preposition|of|{\"form\":\"base\"}",
+          "confidence": 1.0,
+          "provenance": "deterministic"
+        }
+      ]
+    },
+    {
+      "source": {
+        "kind": "dialogue_turn",
+        "external_id": "d_pre_learning_help_02",
+        "turn_order": 1
+      },
+      "batch_id": "en-us-prea1-learning-survival-v1",
+      "lesson_key": "prea1-en-learning-survival-02",
+      "text": "This is a map.",
+      "text_sha256": "2249eb5ad3c07c3446f391f7b9163a6d88416eaca6723d37eb6ee5c2beeb21d7",
+      "annotations": [
+        {
+          "start": 0,
+          "end": 4,
+          "surface": "This",
+          "annotation_type": "word",
+          "lexeme_key": "en-US|this|determiner",
+          "lemma": "this",
+          "part_of_speech": "determiner",
+          "concept_slug": "dict_en_this-determiner",
+          "word_form_key": "en-US|this|determiner|this|{\"form\":\"base\"}",
+          "confidence": 1.0,
+          "provenance": "deterministic"
+        },
+        {
+          "start": 5,
+          "end": 7,
+          "surface": "is",
+          "annotation_type": "word",
+          "lexeme_key": "en-US|be|verb",
+          "lemma": "be",
+          "part_of_speech": "verb",
+          "concept_slug": "dict_en_be-verb",
+          "word_form_key": null,
+          "confidence": 0.92,
+          "provenance": "deterministic",
+          "morphology": {
+            "inferred_by": "core_dictionary:irregular"
+          }
+        },
+        {
+          "start": 8,
+          "end": 9,
+          "surface": "a",
+          "annotation_type": "word",
+          "lexeme_key": "en-US|a|article",
+          "lemma": "a",
+          "part_of_speech": "article",
+          "concept_slug": "dict_en_a-article",
+          "word_form_key": "en-US|a|article|a|{\"form\":\"base\"}",
           "confidence": 1.0,
           "provenance": "deterministic"
         }
@@ -1905,8 +3987,76 @@
           "lexeme_key": "en-US|what|pronoun",
           "lemma": "what",
           "part_of_speech": "pronoun",
-          "concept_slug": "question_word_what",
-          "word_form_key": "en-US|what|pronoun|what|{}",
+          "concept_slug": "dict_en_what-pronoun",
+          "word_form_key": "en-US|what|pronoun|what|{\"form\":\"base\"}",
+          "confidence": 1.0,
+          "provenance": "deterministic"
+        },
+        {
+          "start": 12,
+          "end": 16,
+          "surface": "does",
+          "annotation_type": "word",
+          "lexeme_key": "en-US|do|verb",
+          "lemma": "do",
+          "part_of_speech": "verb",
+          "concept_slug": "dict_en_do-verb",
+          "word_form_key": null,
+          "confidence": 0.92,
+          "provenance": "deterministic",
+          "morphology": {
+            "inferred_by": "core_dictionary:irregular"
+          }
+        },
+        {
+          "start": 17,
+          "end": 21,
+          "surface": "this",
+          "annotation_type": "word",
+          "lexeme_key": "en-US|this|determiner",
+          "lemma": "this",
+          "part_of_speech": "determiner",
+          "concept_slug": "dict_en_this-determiner",
+          "word_form_key": "en-US|this|determiner|this|{\"form\":\"base\"}",
+          "confidence": 1.0,
+          "provenance": "deterministic"
+        },
+        {
+          "start": 22,
+          "end": 26,
+          "surface": "mean",
+          "annotation_type": "word",
+          "lexeme_key": "en-US|mean|verb",
+          "lemma": "mean",
+          "part_of_speech": "verb",
+          "concept_slug": "dict_en_mean-verb",
+          "word_form_key": "en-US|mean|verb|mean|{\"form\":\"base\"}",
+          "confidence": 1.0,
+          "provenance": "deterministic"
+        }
+      ]
+    },
+    {
+      "source": {
+        "kind": "dialogue_turn",
+        "external_id": "d_pre_learning_help_02",
+        "turn_order": 3
+      },
+      "batch_id": "en-us-prea1-learning-survival-v1",
+      "lesson_key": "prea1-en-learning-survival-02",
+      "text": "Map. A map.",
+      "text_sha256": "5721705a55b2166ca7f0e9dd72619ebce7e40821ccae3858236f925eaa8926f6",
+      "annotations": [
+        {
+          "start": 5,
+          "end": 6,
+          "surface": "A",
+          "annotation_type": "word",
+          "lexeme_key": "en-US|a|article",
+          "lemma": "a",
+          "part_of_speech": "article",
+          "concept_slug": "dict_en_a-article",
+          "word_form_key": "en-US|a|article|a|{\"form\":\"base\"}",
           "confidence": 1.0,
           "provenance": "deterministic"
         }
@@ -1941,6 +4091,45 @@
     {
       "source": {
         "kind": "exercise",
+        "external_id": "ex_pre_dont_understand_meaning",
+        "source_path": "answer.value"
+      },
+      "batch_id": "en-us-prea1-learning-survival-v1",
+      "lesson_key": "prea1-en-learning-survival-01",
+      "text": "I don't understand.",
+      "text_sha256": "906248d9ffd63d8b8c54443d728446a5d5fb598e5c2134e1f2a05ed4b23a7460",
+      "annotations": [
+        {
+          "start": 0,
+          "end": 1,
+          "surface": "I",
+          "annotation_type": "word",
+          "lexeme_key": "en-US|i|pronoun",
+          "lemma": "I",
+          "part_of_speech": "pronoun",
+          "concept_slug": "dict_en_i-pronoun",
+          "word_form_key": "en-US|i|pronoun|i|{\"form\":\"base\"}",
+          "confidence": 1.0,
+          "provenance": "deterministic"
+        },
+        {
+          "start": 2,
+          "end": 7,
+          "surface": "don't",
+          "annotation_type": "word",
+          "lexeme_key": "en-US|don't|contraction",
+          "lemma": "don't",
+          "part_of_speech": "contraction",
+          "concept_slug": "dict_en_don-t-contraction",
+          "word_form_key": "en-US|don't|contraction|don't|{\"form\":\"base\"}",
+          "confidence": 1.0,
+          "provenance": "deterministic"
+        }
+      ]
+    },
+    {
+      "source": {
+        "kind": "exercise",
         "external_id": "ex_pre_again_listen",
         "source_path": "prompt.audio_text"
       },
@@ -1949,6 +4138,19 @@
       "text": "Again, please.",
       "text_sha256": "308c8f3227d091b723f87fd5f5b463f4dd329fbe57b9d7384ab2559c8df2bf0f",
       "annotations": [
+        {
+          "start": 0,
+          "end": 5,
+          "surface": "Again",
+          "annotation_type": "word",
+          "lexeme_key": "en-US|again|adverb",
+          "lemma": "again",
+          "part_of_speech": "adverb",
+          "concept_slug": "dict_en_again-adverb",
+          "word_form_key": "en-US|again|adverb|again|{\"form\":\"base\"}",
+          "confidence": 1.0,
+          "provenance": "deterministic"
+        },
         {
           "start": 7,
           "end": 13,
@@ -1976,6 +4178,19 @@
       "text_sha256": "308c8f3227d091b723f87fd5f5b463f4dd329fbe57b9d7384ab2559c8df2bf0f",
       "annotations": [
         {
+          "start": 0,
+          "end": 5,
+          "surface": "Again",
+          "annotation_type": "word",
+          "lexeme_key": "en-US|again|adverb",
+          "lemma": "again",
+          "part_of_speech": "adverb",
+          "concept_slug": "dict_en_again-adverb",
+          "word_form_key": "en-US|again|adverb|again|{\"form\":\"base\"}",
+          "confidence": 1.0,
+          "provenance": "deterministic"
+        },
+        {
           "start": 7,
           "end": 13,
           "surface": "please",
@@ -2002,6 +4217,19 @@
       "text_sha256": "308c8f3227d091b723f87fd5f5b463f4dd329fbe57b9d7384ab2559c8df2bf0f",
       "annotations": [
         {
+          "start": 0,
+          "end": 5,
+          "surface": "Again",
+          "annotation_type": "word",
+          "lexeme_key": "en-US|again|adverb",
+          "lemma": "again",
+          "part_of_speech": "adverb",
+          "concept_slug": "dict_en_again-adverb",
+          "word_form_key": "en-US|again|adverb|again|{\"form\":\"base\"}",
+          "confidence": 1.0,
+          "provenance": "deterministic"
+        },
+        {
           "start": 7,
           "end": 13,
           "surface": "please",
@@ -2027,6 +4255,19 @@
       "text": "Again, please.",
       "text_sha256": "308c8f3227d091b723f87fd5f5b463f4dd329fbe57b9d7384ab2559c8df2bf0f",
       "annotations": [
+        {
+          "start": 0,
+          "end": 5,
+          "surface": "Again",
+          "annotation_type": "word",
+          "lexeme_key": "en-US|again|adverb",
+          "lemma": "again",
+          "part_of_speech": "adverb",
+          "concept_slug": "dict_en_again-adverb",
+          "word_form_key": "en-US|again|adverb|again|{\"form\":\"base\"}",
+          "confidence": 1.0,
+          "provenance": "deterministic"
+        },
         {
           "start": 7,
           "end": 13,
@@ -2072,6 +4313,136 @@
       "source": {
         "kind": "exercise",
         "external_id": "ex_pre_repeat_build",
+        "source_path": "prompt.tokens[1]"
+      },
+      "batch_id": "en-us-prea1-learning-survival-v1",
+      "lesson_key": "prea1-en-learning-survival-02",
+      "text": "Can",
+      "text_sha256": "2dba9a8763b19b87cce58613b83100b36406a8b47304e8c7578717e4f9e86bc3",
+      "annotations": [
+        {
+          "start": 0,
+          "end": 3,
+          "surface": "Can",
+          "annotation_type": "word",
+          "lexeme_key": "en-US|can|modal",
+          "lemma": "can",
+          "part_of_speech": "modal",
+          "concept_slug": "dict_en_can-modal",
+          "word_form_key": "en-US|can|modal|can|{\"form\":\"base\"}",
+          "confidence": 1.0,
+          "provenance": "deterministic"
+        }
+      ]
+    },
+    {
+      "source": {
+        "kind": "exercise",
+        "external_id": "ex_pre_repeat_build",
+        "source_path": "prompt.tokens[2]"
+      },
+      "batch_id": "en-us-prea1-learning-survival-v1",
+      "lesson_key": "prea1-en-learning-survival-02",
+      "text": "that?",
+      "text_sha256": "1f8c10fd7ae8c3fb34eb3e455c1ebb47dfccf955273012cf7387951b0903f5b6",
+      "annotations": [
+        {
+          "start": 0,
+          "end": 4,
+          "surface": "that",
+          "annotation_type": "word",
+          "lexeme_key": "en-US|that|determiner",
+          "lemma": "that",
+          "part_of_speech": "determiner",
+          "concept_slug": "dict_en_that-determiner",
+          "word_form_key": "en-US|that|determiner|that|{\"form\":\"base\"}",
+          "confidence": 1.0,
+          "provenance": "deterministic"
+        }
+      ]
+    },
+    {
+      "source": {
+        "kind": "exercise",
+        "external_id": "ex_pre_repeat_build",
+        "source_path": "prompt.tokens[3]"
+      },
+      "batch_id": "en-us-prea1-learning-survival-v1",
+      "lesson_key": "prea1-en-learning-survival-02",
+      "text": "you",
+      "text_sha256": "bb0347a468d97e98a9c00e37cebec1ab930f6f1221cae0f1fbb92b07e1900ba2",
+      "annotations": [
+        {
+          "start": 0,
+          "end": 3,
+          "surface": "you",
+          "annotation_type": "word",
+          "lexeme_key": "en-US|you|pronoun",
+          "lemma": "you",
+          "part_of_speech": "pronoun",
+          "concept_slug": "dict_en_you-pronoun",
+          "word_form_key": "en-US|you|pronoun|you|{\"form\":\"base\"}",
+          "confidence": 1.0,
+          "provenance": "deterministic"
+        }
+      ]
+    },
+    {
+      "source": {
+        "kind": "exercise",
+        "external_id": "ex_pre_repeat_build",
+        "source_path": "answer.tokens[0]"
+      },
+      "batch_id": "en-us-prea1-learning-survival-v1",
+      "lesson_key": "prea1-en-learning-survival-02",
+      "text": "Can",
+      "text_sha256": "2dba9a8763b19b87cce58613b83100b36406a8b47304e8c7578717e4f9e86bc3",
+      "annotations": [
+        {
+          "start": 0,
+          "end": 3,
+          "surface": "Can",
+          "annotation_type": "word",
+          "lexeme_key": "en-US|can|modal",
+          "lemma": "can",
+          "part_of_speech": "modal",
+          "concept_slug": "dict_en_can-modal",
+          "word_form_key": "en-US|can|modal|can|{\"form\":\"base\"}",
+          "confidence": 1.0,
+          "provenance": "deterministic"
+        }
+      ]
+    },
+    {
+      "source": {
+        "kind": "exercise",
+        "external_id": "ex_pre_repeat_build",
+        "source_path": "answer.tokens[1]"
+      },
+      "batch_id": "en-us-prea1-learning-survival-v1",
+      "lesson_key": "prea1-en-learning-survival-02",
+      "text": "you",
+      "text_sha256": "bb0347a468d97e98a9c00e37cebec1ab930f6f1221cae0f1fbb92b07e1900ba2",
+      "annotations": [
+        {
+          "start": 0,
+          "end": 3,
+          "surface": "you",
+          "annotation_type": "word",
+          "lexeme_key": "en-US|you|pronoun",
+          "lemma": "you",
+          "part_of_speech": "pronoun",
+          "concept_slug": "dict_en_you-pronoun",
+          "word_form_key": "en-US|you|pronoun|you|{\"form\":\"base\"}",
+          "confidence": 1.0,
+          "provenance": "deterministic"
+        }
+      ]
+    },
+    {
+      "source": {
+        "kind": "exercise",
+        "external_id": "ex_pre_repeat_build",
         "source_path": "answer.tokens[2]"
       },
       "batch_id": "en-us-prea1-learning-survival-v1",
@@ -2090,6 +4461,32 @@
           "concept_slug": null,
           "word_form_key": null,
           "confidence": 0.98,
+          "provenance": "deterministic"
+        }
+      ]
+    },
+    {
+      "source": {
+        "kind": "exercise",
+        "external_id": "ex_pre_repeat_build",
+        "source_path": "answer.tokens[3]"
+      },
+      "batch_id": "en-us-prea1-learning-survival-v1",
+      "lesson_key": "prea1-en-learning-survival-02",
+      "text": "that?",
+      "text_sha256": "1f8c10fd7ae8c3fb34eb3e455c1ebb47dfccf955273012cf7387951b0903f5b6",
+      "annotations": [
+        {
+          "start": 0,
+          "end": 4,
+          "surface": "that",
+          "annotation_type": "word",
+          "lexeme_key": "en-US|that|determiner",
+          "lemma": "that",
+          "part_of_speech": "determiner",
+          "concept_slug": "dict_en_that-determiner",
+          "word_form_key": "en-US|that|determiner|that|{\"form\":\"base\"}",
+          "confidence": 1.0,
           "provenance": "deterministic"
         }
       ]
@@ -2165,8 +4562,50 @@
           "lexeme_key": "en-US|what|pronoun",
           "lemma": "what",
           "part_of_speech": "pronoun",
-          "concept_slug": "question_word_what",
-          "word_form_key": "en-US|what|pronoun|what|{}",
+          "concept_slug": "dict_en_what-pronoun",
+          "word_form_key": "en-US|what|pronoun|what|{\"form\":\"base\"}",
+          "confidence": 1.0,
+          "provenance": "deterministic"
+        },
+        {
+          "start": 5,
+          "end": 9,
+          "surface": "does",
+          "annotation_type": "word",
+          "lexeme_key": "en-US|do|verb",
+          "lemma": "do",
+          "part_of_speech": "verb",
+          "concept_slug": "dict_en_do-verb",
+          "word_form_key": null,
+          "confidence": 0.92,
+          "provenance": "deterministic",
+          "morphology": {
+            "inferred_by": "core_dictionary:irregular"
+          }
+        },
+        {
+          "start": 10,
+          "end": 14,
+          "surface": "this",
+          "annotation_type": "word",
+          "lexeme_key": "en-US|this|determiner",
+          "lemma": "this",
+          "part_of_speech": "determiner",
+          "concept_slug": "dict_en_this-determiner",
+          "word_form_key": "en-US|this|determiner|this|{\"form\":\"base\"}",
+          "confidence": 1.0,
+          "provenance": "deterministic"
+        },
+        {
+          "start": 15,
+          "end": 19,
+          "surface": "mean",
+          "annotation_type": "word",
+          "lexeme_key": "en-US|mean|verb",
+          "lemma": "mean",
+          "part_of_speech": "verb",
+          "concept_slug": "dict_en_mean-verb",
+          "word_form_key": "en-US|mean|verb|mean|{\"form\":\"base\"}",
           "confidence": 1.0,
           "provenance": "deterministic"
         }
@@ -2191,8 +4630,128 @@
           "lexeme_key": "en-US|what|pronoun",
           "lemma": "what",
           "part_of_speech": "pronoun",
-          "concept_slug": "question_word_what",
-          "word_form_key": "en-US|what|pronoun|what|{}",
+          "concept_slug": "dict_en_what-pronoun",
+          "word_form_key": "en-US|what|pronoun|what|{\"form\":\"base\"}",
+          "confidence": 1.0,
+          "provenance": "deterministic"
+        },
+        {
+          "start": 5,
+          "end": 9,
+          "surface": "does",
+          "annotation_type": "word",
+          "lexeme_key": "en-US|do|verb",
+          "lemma": "do",
+          "part_of_speech": "verb",
+          "concept_slug": "dict_en_do-verb",
+          "word_form_key": null,
+          "confidence": 0.92,
+          "provenance": "deterministic",
+          "morphology": {
+            "inferred_by": "core_dictionary:irregular"
+          }
+        },
+        {
+          "start": 10,
+          "end": 14,
+          "surface": "this",
+          "annotation_type": "word",
+          "lexeme_key": "en-US|this|determiner",
+          "lemma": "this",
+          "part_of_speech": "determiner",
+          "concept_slug": "dict_en_this-determiner",
+          "word_form_key": "en-US|this|determiner|this|{\"form\":\"base\"}",
+          "confidence": 1.0,
+          "provenance": "deterministic"
+        },
+        {
+          "start": 15,
+          "end": 19,
+          "surface": "mean",
+          "annotation_type": "word",
+          "lexeme_key": "en-US|mean|verb",
+          "lemma": "mean",
+          "part_of_speech": "verb",
+          "concept_slug": "dict_en_mean-verb",
+          "word_form_key": "en-US|mean|verb|mean|{\"form\":\"base\"}",
+          "confidence": 1.0,
+          "provenance": "deterministic"
+        }
+      ]
+    },
+    {
+      "source": {
+        "kind": "exercise",
+        "external_id": "ex_pre_spell_sam_order",
+        "source_path": "prompt.tokens[2]"
+      },
+      "batch_id": "en-us-prea1-letter-names-v1",
+      "lesson_key": "prea1-en-letter-names-01",
+      "text": "A",
+      "text_sha256": "559aead08264d5795d3909718cdd05abd49572e84fe55590eef31a88a08fdffd",
+      "annotations": [
+        {
+          "start": 0,
+          "end": 1,
+          "surface": "A",
+          "annotation_type": "word",
+          "lexeme_key": "en-US|a|article",
+          "lemma": "a",
+          "part_of_speech": "article",
+          "concept_slug": "dict_en_a-article",
+          "word_form_key": "en-US|a|article|a|{\"form\":\"base\"}",
+          "confidence": 1.0,
+          "provenance": "deterministic"
+        }
+      ]
+    },
+    {
+      "source": {
+        "kind": "exercise",
+        "external_id": "ex_pre_spell_sam_order",
+        "source_path": "answer.tokens[1]"
+      },
+      "batch_id": "en-us-prea1-letter-names-v1",
+      "lesson_key": "prea1-en-letter-names-01",
+      "text": "A",
+      "text_sha256": "559aead08264d5795d3909718cdd05abd49572e84fe55590eef31a88a08fdffd",
+      "annotations": [
+        {
+          "start": 0,
+          "end": 1,
+          "surface": "A",
+          "annotation_type": "word",
+          "lexeme_key": "en-US|a|article",
+          "lemma": "a",
+          "part_of_speech": "article",
+          "concept_slug": "dict_en_a-article",
+          "word_form_key": "en-US|a|article|a|{\"form\":\"base\"}",
+          "confidence": 1.0,
+          "provenance": "deterministic"
+        }
+      ]
+    },
+    {
+      "source": {
+        "kind": "exercise",
+        "external_id": "ex_pre_spell_sam_speak",
+        "source_path": "answer.expected_text"
+      },
+      "batch_id": "en-us-prea1-letter-names-v1",
+      "lesson_key": "prea1-en-letter-names-01",
+      "text": "S A M",
+      "text_sha256": "578ee0aef9ea04d7cdf5e48770cf4bb1f62eacbe7bc95d9db7fa2244eb82e96a",
+      "annotations": [
+        {
+          "start": 2,
+          "end": 3,
+          "surface": "A",
+          "annotation_type": "word",
+          "lexeme_key": "en-US|a|article",
+          "lemma": "a",
+          "part_of_speech": "article",
+          "concept_slug": "dict_en_a-article",
+          "word_form_key": "en-US|a|article|a|{\"form\":\"base\"}",
           "confidence": 1.0,
           "provenance": "deterministic"
         }
@@ -2210,6 +4769,45 @@
       "text_sha256": "099eca0c2efa8ee3b45f2c111ec5f0feaf33337e9c712495b002f53ae029c939",
       "annotations": [
         {
+          "start": 0,
+          "end": 3,
+          "surface": "How",
+          "annotation_type": "word",
+          "lexeme_key": "en-US|how|adverb",
+          "lemma": "how",
+          "part_of_speech": "adverb",
+          "concept_slug": "dict_en_how-adverb",
+          "word_form_key": "en-US|how|adverb|how|{\"form\":\"base\"}",
+          "confidence": 1.0,
+          "provenance": "deterministic"
+        },
+        {
+          "start": 4,
+          "end": 6,
+          "surface": "do",
+          "annotation_type": "word",
+          "lexeme_key": "en-US|do|verb",
+          "lemma": "do",
+          "part_of_speech": "verb",
+          "concept_slug": "dict_en_do-verb",
+          "word_form_key": "en-US|do|verb|do|{\"form\":\"base\"}",
+          "confidence": 1.0,
+          "provenance": "deterministic"
+        },
+        {
+          "start": 7,
+          "end": 10,
+          "surface": "you",
+          "annotation_type": "word",
+          "lexeme_key": "en-US|you|pronoun",
+          "lemma": "you",
+          "part_of_speech": "pronoun",
+          "concept_slug": "dict_en_you-pronoun",
+          "word_form_key": "en-US|you|pronoun|you|{\"form\":\"base\"}",
+          "confidence": 1.0,
+          "provenance": "deterministic"
+        },
+        {
           "start": 11,
           "end": 16,
           "surface": "spell",
@@ -2219,6 +4817,19 @@
           "part_of_speech": "verb",
           "concept_slug": "a2_phone_messages_spell",
           "word_form_key": "en-US|spell|verb|spell|{\"form\":\"base\"}",
+          "confidence": 1.0,
+          "provenance": "deterministic"
+        },
+        {
+          "start": 17,
+          "end": 19,
+          "surface": "it",
+          "annotation_type": "word",
+          "lexeme_key": "en-US|it|pronoun",
+          "lemma": "it",
+          "part_of_speech": "pronoun",
+          "concept_slug": "dict_en_it-pronoun",
+          "word_form_key": "en-US|it|pronoun|it|{\"form\":\"base\"}",
           "confidence": 1.0,
           "provenance": "deterministic"
         }
@@ -2252,6 +4863,188 @@
     },
     {
       "source": {
+        "kind": "exercise",
+        "external_id": "ex_pre_spell_amy_listen",
+        "source_path": "prompt.audio_text"
+      },
+      "batch_id": "en-us-prea1-letter-names-v1",
+      "lesson_key": "prea1-en-letter-names-02",
+      "text": "A M Y",
+      "text_sha256": "ed7fe81fa15d2daad912d66249acd2de6950d474b7305c31cd8b76368cb7bbe1",
+      "annotations": [
+        {
+          "start": 0,
+          "end": 1,
+          "surface": "A",
+          "annotation_type": "word",
+          "lexeme_key": "en-US|a|article",
+          "lemma": "a",
+          "part_of_speech": "article",
+          "concept_slug": "dict_en_a-article",
+          "word_form_key": "en-US|a|article|a|{\"form\":\"base\"}",
+          "confidence": 1.0,
+          "provenance": "deterministic"
+        }
+      ]
+    },
+    {
+      "source": {
+        "kind": "exercise",
+        "external_id": "ex_pre_spell_mia_order",
+        "source_path": "prompt.tokens[0]"
+      },
+      "batch_id": "en-us-prea1-letter-names-v1",
+      "lesson_key": "prea1-en-letter-names-02",
+      "text": "A",
+      "text_sha256": "559aead08264d5795d3909718cdd05abd49572e84fe55590eef31a88a08fdffd",
+      "annotations": [
+        {
+          "start": 0,
+          "end": 1,
+          "surface": "A",
+          "annotation_type": "word",
+          "lexeme_key": "en-US|a|article",
+          "lemma": "a",
+          "part_of_speech": "article",
+          "concept_slug": "dict_en_a-article",
+          "word_form_key": "en-US|a|article|a|{\"form\":\"base\"}",
+          "confidence": 1.0,
+          "provenance": "deterministic"
+        }
+      ]
+    },
+    {
+      "source": {
+        "kind": "exercise",
+        "external_id": "ex_pre_spell_mia_order",
+        "source_path": "prompt.tokens[2]"
+      },
+      "batch_id": "en-us-prea1-letter-names-v1",
+      "lesson_key": "prea1-en-letter-names-02",
+      "text": "I",
+      "text_sha256": "a83dd0ccbffe39d071cc317ddf6e97f5c6b1c87af91919271f9fa140b0508c6c",
+      "annotations": [
+        {
+          "start": 0,
+          "end": 1,
+          "surface": "I",
+          "annotation_type": "word",
+          "lexeme_key": "en-US|i|pronoun",
+          "lemma": "I",
+          "part_of_speech": "pronoun",
+          "concept_slug": "dict_en_i-pronoun",
+          "word_form_key": "en-US|i|pronoun|i|{\"form\":\"base\"}",
+          "confidence": 1.0,
+          "provenance": "deterministic"
+        }
+      ]
+    },
+    {
+      "source": {
+        "kind": "exercise",
+        "external_id": "ex_pre_spell_mia_order",
+        "source_path": "answer.tokens[1]"
+      },
+      "batch_id": "en-us-prea1-letter-names-v1",
+      "lesson_key": "prea1-en-letter-names-02",
+      "text": "I",
+      "text_sha256": "a83dd0ccbffe39d071cc317ddf6e97f5c6b1c87af91919271f9fa140b0508c6c",
+      "annotations": [
+        {
+          "start": 0,
+          "end": 1,
+          "surface": "I",
+          "annotation_type": "word",
+          "lexeme_key": "en-US|i|pronoun",
+          "lemma": "I",
+          "part_of_speech": "pronoun",
+          "concept_slug": "dict_en_i-pronoun",
+          "word_form_key": "en-US|i|pronoun|i|{\"form\":\"base\"}",
+          "confidence": 1.0,
+          "provenance": "deterministic"
+        }
+      ]
+    },
+    {
+      "source": {
+        "kind": "exercise",
+        "external_id": "ex_pre_spell_mia_order",
+        "source_path": "answer.tokens[2]"
+      },
+      "batch_id": "en-us-prea1-letter-names-v1",
+      "lesson_key": "prea1-en-letter-names-02",
+      "text": "A",
+      "text_sha256": "559aead08264d5795d3909718cdd05abd49572e84fe55590eef31a88a08fdffd",
+      "annotations": [
+        {
+          "start": 0,
+          "end": 1,
+          "surface": "A",
+          "annotation_type": "word",
+          "lexeme_key": "en-US|a|article",
+          "lemma": "a",
+          "part_of_speech": "article",
+          "concept_slug": "dict_en_a-article",
+          "word_form_key": "en-US|a|article|a|{\"form\":\"base\"}",
+          "confidence": 1.0,
+          "provenance": "deterministic"
+        }
+      ]
+    },
+    {
+      "source": {
+        "kind": "utterance",
+        "external_id": "u_pre_alpha_a_g",
+        "language": "en"
+      },
+      "batch_id": "en-us-prea1-letter-sound-bridge-v1",
+      "lesson_key": "prea1-en-letter-sound-bridge-01",
+      "text": "A, B, C, D, E, F, G.",
+      "text_sha256": "b35ba1772d906d1046b433555e21b154790af9a79919c065d86ac5d0c5ebdef0",
+      "annotations": [
+        {
+          "start": 0,
+          "end": 1,
+          "surface": "A",
+          "annotation_type": "word",
+          "lexeme_key": "en-US|a|article",
+          "lemma": "a",
+          "part_of_speech": "article",
+          "concept_slug": "dict_en_a-article",
+          "word_form_key": "en-US|a|article|a|{\"form\":\"base\"}",
+          "confidence": 1.0,
+          "provenance": "deterministic"
+        }
+      ]
+    },
+    {
+      "source": {
+        "kind": "utterance",
+        "external_id": "u_pre_alpha_h_m",
+        "language": "en"
+      },
+      "batch_id": "en-us-prea1-letter-sound-bridge-v1",
+      "lesson_key": "prea1-en-letter-sound-bridge-01",
+      "text": "H, I, J, K, L, M.",
+      "text_sha256": "596943b9edb89663cb2fa213469a9e56250143b65503bae7deecd51605b2b41d",
+      "annotations": [
+        {
+          "start": 3,
+          "end": 4,
+          "surface": "I",
+          "annotation_type": "word",
+          "lexeme_key": "en-US|i|pronoun",
+          "lemma": "I",
+          "part_of_speech": "pronoun",
+          "concept_slug": "dict_en_i-pronoun",
+          "word_form_key": "en-US|i|pronoun|i|{\"form\":\"base\"}",
+          "confidence": 1.0,
+          "provenance": "deterministic"
+        }
+      ]
+    },
+    {
+      "source": {
         "kind": "utterance",
         "external_id": "u_pre_ten",
         "language": "en"
@@ -2272,6 +5065,162 @@
           "concept_slug": null,
           "word_form_key": null,
           "confidence": 0.98,
+          "provenance": "deterministic"
+        }
+      ]
+    },
+    {
+      "source": {
+        "kind": "exercise",
+        "external_id": "ex_pre_hear_h",
+        "source_path": "prompt.audio_text"
+      },
+      "batch_id": "en-us-prea1-letter-sound-bridge-v1",
+      "lesson_key": "prea1-en-letter-sound-bridge-01",
+      "text": "The letter H.",
+      "text_sha256": "ae7a15c6ed43c462411d9a6290744da2daad4a0202e00d73a5633cae73fff65b",
+      "annotations": [
+        {
+          "start": 0,
+          "end": 3,
+          "surface": "The",
+          "annotation_type": "word",
+          "lexeme_key": "en-US|the|article",
+          "lemma": "the",
+          "part_of_speech": "article",
+          "concept_slug": "dict_en_the-article",
+          "word_form_key": "en-US|the|article|the|{\"form\":\"base\"}",
+          "confidence": 1.0,
+          "provenance": "deterministic"
+        }
+      ]
+    },
+    {
+      "source": {
+        "kind": "exercise",
+        "external_id": "ex_pre_spell_mina",
+        "source_path": "answer.expected_text"
+      },
+      "batch_id": "en-us-prea1-letter-sound-bridge-v1",
+      "lesson_key": "prea1-en-letter-sound-bridge-01",
+      "text": "M I N A",
+      "text_sha256": "b9fdf0b7e8ce495dcd05f3cf772cd84ffdf060631e0f0df9aca136cabe28a56c",
+      "annotations": [
+        {
+          "start": 2,
+          "end": 3,
+          "surface": "I",
+          "annotation_type": "word",
+          "lexeme_key": "en-US|i|pronoun",
+          "lemma": "I",
+          "part_of_speech": "pronoun",
+          "concept_slug": "dict_en_i-pronoun",
+          "word_form_key": "en-US|i|pronoun|i|{\"form\":\"base\"}",
+          "confidence": 1.0,
+          "provenance": "deterministic"
+        },
+        {
+          "start": 6,
+          "end": 7,
+          "surface": "A",
+          "annotation_type": "word",
+          "lexeme_key": "en-US|a|article",
+          "lemma": "a",
+          "part_of_speech": "article",
+          "concept_slug": "dict_en_a-article",
+          "word_form_key": "en-US|a|article|a|{\"form\":\"base\"}",
+          "confidence": 1.0,
+          "provenance": "deterministic"
+        }
+      ]
+    },
+    {
+      "source": {
+        "kind": "utterance",
+        "external_id": "u_pre_vowels",
+        "language": "en"
+      },
+      "batch_id": "en-us-prea1-letter-sound-bridge-v1",
+      "lesson_key": "prea1-en-letter-sound-bridge-02",
+      "text": "A, E, I, O, U.",
+      "text_sha256": "b4d26850e351de39eda4a75b8cd69a24008726cae04f46b7c485e41617259f6e",
+      "annotations": [
+        {
+          "start": 0,
+          "end": 1,
+          "surface": "A",
+          "annotation_type": "word",
+          "lexeme_key": "en-US|a|article",
+          "lemma": "a",
+          "part_of_speech": "article",
+          "concept_slug": "dict_en_a-article",
+          "word_form_key": "en-US|a|article|a|{\"form\":\"base\"}",
+          "confidence": 1.0,
+          "provenance": "deterministic"
+        },
+        {
+          "start": 6,
+          "end": 7,
+          "surface": "I",
+          "annotation_type": "word",
+          "lexeme_key": "en-US|i|pronoun",
+          "lemma": "I",
+          "part_of_speech": "pronoun",
+          "concept_slug": "dict_en_i-pronoun",
+          "word_form_key": "en-US|i|pronoun|i|{\"form\":\"base\"}",
+          "confidence": 1.0,
+          "provenance": "deterministic"
+        }
+      ]
+    },
+    {
+      "source": {
+        "kind": "exercise",
+        "external_id": "ex_pre_hear_r",
+        "source_path": "prompt.audio_text"
+      },
+      "batch_id": "en-us-prea1-letter-sound-bridge-v1",
+      "lesson_key": "prea1-en-letter-sound-bridge-02",
+      "text": "The letter R.",
+      "text_sha256": "a76d5d7cdfd0a3d8ad4bc641a2a05ed7b5aea095434f8edf32792abed079a0ae",
+      "annotations": [
+        {
+          "start": 0,
+          "end": 3,
+          "surface": "The",
+          "annotation_type": "word",
+          "lexeme_key": "en-US|the|article",
+          "lemma": "the",
+          "part_of_speech": "article",
+          "concept_slug": "dict_en_the-article",
+          "word_form_key": "en-US|the|article|the|{\"form\":\"base\"}",
+          "confidence": 1.0,
+          "provenance": "deterministic"
+        }
+      ]
+    },
+    {
+      "source": {
+        "kind": "exercise",
+        "external_id": "ex_pre_vowel_a",
+        "source_path": "answer.value"
+      },
+      "batch_id": "en-us-prea1-letter-sound-bridge-v1",
+      "lesson_key": "prea1-en-letter-sound-bridge-02",
+      "text": "A",
+      "text_sha256": "559aead08264d5795d3909718cdd05abd49572e84fe55590eef31a88a08fdffd",
+      "annotations": [
+        {
+          "start": 0,
+          "end": 1,
+          "surface": "A",
+          "annotation_type": "word",
+          "lexeme_key": "en-US|a|article",
+          "lemma": "a",
+          "part_of_speech": "article",
+          "concept_slug": "dict_en_a-article",
+          "word_form_key": "en-US|a|article|a|{\"form\":\"base\"}",
+          "confidence": 1.0,
           "provenance": "deterministic"
         }
       ]
@@ -2325,6 +5274,476 @@
           "word_form_key": null,
           "confidence": 0.98,
           "provenance": "deterministic"
+        }
+      ]
+    },
+    {
+      "source": {
+        "kind": "utterance",
+        "external_id": "u_pre_name_whats",
+        "language": "en"
+      },
+      "batch_id": "en-us-prea1-my-name-v1",
+      "lesson_key": "prea1-en-my-name-01",
+      "text": "What's your name?",
+      "text_sha256": "56e8908ad76682304d68ca9cd055ca9d6b96ff2f8077d1041567dde66aed9724",
+      "annotations": [
+        {
+          "start": 0,
+          "end": 6,
+          "surface": "What's",
+          "annotation_type": "word",
+          "lexeme_key": "en-US|what's|contraction",
+          "lemma": "what's",
+          "part_of_speech": "contraction",
+          "concept_slug": "dict_en_what-s-contraction",
+          "word_form_key": "en-US|what's|contraction|what's|{\"form\":\"base\"}",
+          "confidence": 1.0,
+          "provenance": "deterministic"
+        },
+        {
+          "start": 7,
+          "end": 11,
+          "surface": "your",
+          "annotation_type": "word",
+          "lexeme_key": "en-US|your|determiner",
+          "lemma": "your",
+          "part_of_speech": "determiner",
+          "concept_slug": "dict_en_your-determiner",
+          "word_form_key": "en-US|your|determiner|your|{\"form\":\"base\"}",
+          "confidence": 1.0,
+          "provenance": "deterministic"
+        }
+      ]
+    },
+    {
+      "source": {
+        "kind": "utterance",
+        "external_id": "u_pre_name_im",
+        "language": "en"
+      },
+      "batch_id": "en-us-prea1-my-name-v1",
+      "lesson_key": "prea1-en-my-name-01",
+      "text": "I'm Sara.",
+      "text_sha256": "8dc9ca760d4456473b66bbe5730fae606785743e662f7bae79013c077d916726",
+      "annotations": [
+        {
+          "start": 0,
+          "end": 3,
+          "surface": "I'm",
+          "annotation_type": "word",
+          "lexeme_key": "en-US|i'm|contraction",
+          "lemma": "I'm",
+          "part_of_speech": "contraction",
+          "concept_slug": "dict_en_i-m-contraction",
+          "word_form_key": "en-US|i'm|contraction|i'm|{\"form\":\"base\"}",
+          "confidence": 1.0,
+          "provenance": "deterministic"
+        }
+      ]
+    },
+    {
+      "source": {
+        "kind": "utterance",
+        "external_id": "u_pre_name_myname",
+        "language": "en"
+      },
+      "batch_id": "en-us-prea1-my-name-v1",
+      "lesson_key": "prea1-en-my-name-02",
+      "text": "My name is Amir.",
+      "text_sha256": "e124c1a5c5c3e430bc6f0d0f9e47eeae894403d13a41eb8c42a58075d952c8c7",
+      "annotations": [
+        {
+          "start": 0,
+          "end": 2,
+          "surface": "My",
+          "annotation_type": "word",
+          "lexeme_key": "en-US|my|determiner",
+          "lemma": "my",
+          "part_of_speech": "determiner",
+          "concept_slug": "dict_en_my-determiner",
+          "word_form_key": "en-US|my|determiner|my|{\"form\":\"base\"}",
+          "confidence": 1.0,
+          "provenance": "deterministic"
+        },
+        {
+          "start": 8,
+          "end": 10,
+          "surface": "is",
+          "annotation_type": "word",
+          "lexeme_key": "en-US|be|verb",
+          "lemma": "be",
+          "part_of_speech": "verb",
+          "concept_slug": "dict_en_be-verb",
+          "word_form_key": null,
+          "confidence": 0.92,
+          "provenance": "deterministic",
+          "morphology": {
+            "inferred_by": "core_dictionary:irregular"
+          }
+        }
+      ]
+    },
+    {
+      "source": {
+        "kind": "dialogue_turn",
+        "external_id": "d_pre_names_one",
+        "turn_order": 1
+      },
+      "batch_id": "en-us-prea1-my-name-v1",
+      "lesson_key": "prea1-en-my-name-01",
+      "text": "Hi! I'm Sara.",
+      "text_sha256": "dd15818e7b84e73730d2bad3aed9f4d132edfe6a4782327d38828d5153196d24",
+      "annotations": [
+        {
+          "start": 4,
+          "end": 7,
+          "surface": "I'm",
+          "annotation_type": "word",
+          "lexeme_key": "en-US|i'm|contraction",
+          "lemma": "I'm",
+          "part_of_speech": "contraction",
+          "concept_slug": "dict_en_i-m-contraction",
+          "word_form_key": "en-US|i'm|contraction|i'm|{\"form\":\"base\"}",
+          "confidence": 1.0,
+          "provenance": "deterministic"
+        }
+      ]
+    },
+    {
+      "source": {
+        "kind": "dialogue_turn",
+        "external_id": "d_pre_names_one",
+        "turn_order": 2
+      },
+      "batch_id": "en-us-prea1-my-name-v1",
+      "lesson_key": "prea1-en-my-name-01",
+      "text": "Hi! I'm Omid.",
+      "text_sha256": "696fb64b000936b6e5ab2db9740ee4d9c8536f0bbc86200a50ee6733b1d17e37",
+      "annotations": [
+        {
+          "start": 4,
+          "end": 7,
+          "surface": "I'm",
+          "annotation_type": "word",
+          "lexeme_key": "en-US|i'm|contraction",
+          "lemma": "I'm",
+          "part_of_speech": "contraction",
+          "concept_slug": "dict_en_i-m-contraction",
+          "word_form_key": "en-US|i'm|contraction|i'm|{\"form\":\"base\"}",
+          "confidence": 1.0,
+          "provenance": "deterministic"
+        }
+      ]
+    },
+    {
+      "source": {
+        "kind": "dialogue_turn",
+        "external_id": "d_pre_names_two",
+        "turn_order": 1
+      },
+      "batch_id": "en-us-prea1-my-name-v1",
+      "lesson_key": "prea1-en-my-name-02",
+      "text": "What's your name?",
+      "text_sha256": "56e8908ad76682304d68ca9cd055ca9d6b96ff2f8077d1041567dde66aed9724",
+      "annotations": [
+        {
+          "start": 0,
+          "end": 6,
+          "surface": "What's",
+          "annotation_type": "word",
+          "lexeme_key": "en-US|what's|contraction",
+          "lemma": "what's",
+          "part_of_speech": "contraction",
+          "concept_slug": "dict_en_what-s-contraction",
+          "word_form_key": "en-US|what's|contraction|what's|{\"form\":\"base\"}",
+          "confidence": 1.0,
+          "provenance": "deterministic"
+        },
+        {
+          "start": 7,
+          "end": 11,
+          "surface": "your",
+          "annotation_type": "word",
+          "lexeme_key": "en-US|your|determiner",
+          "lemma": "your",
+          "part_of_speech": "determiner",
+          "concept_slug": "dict_en_your-determiner",
+          "word_form_key": "en-US|your|determiner|your|{\"form\":\"base\"}",
+          "confidence": 1.0,
+          "provenance": "deterministic"
+        }
+      ]
+    },
+    {
+      "source": {
+        "kind": "dialogue_turn",
+        "external_id": "d_pre_names_two",
+        "turn_order": 2
+      },
+      "batch_id": "en-us-prea1-my-name-v1",
+      "lesson_key": "prea1-en-my-name-02",
+      "text": "My name is Ali.",
+      "text_sha256": "93dcd29592078477d5e87c6289a33f7dbc8711eeed28451a2d626fbc10c287dc",
+      "annotations": [
+        {
+          "start": 0,
+          "end": 2,
+          "surface": "My",
+          "annotation_type": "word",
+          "lexeme_key": "en-US|my|determiner",
+          "lemma": "my",
+          "part_of_speech": "determiner",
+          "concept_slug": "dict_en_my-determiner",
+          "word_form_key": "en-US|my|determiner|my|{\"form\":\"base\"}",
+          "confidence": 1.0,
+          "provenance": "deterministic"
+        },
+        {
+          "start": 8,
+          "end": 10,
+          "surface": "is",
+          "annotation_type": "word",
+          "lexeme_key": "en-US|be|verb",
+          "lemma": "be",
+          "part_of_speech": "verb",
+          "concept_slug": "dict_en_be-verb",
+          "word_form_key": null,
+          "confidence": 0.92,
+          "provenance": "deterministic",
+          "morphology": {
+            "inferred_by": "core_dictionary:irregular"
+          }
+        }
+      ]
+    },
+    {
+      "source": {
+        "kind": "exercise",
+        "external_id": "ex_pre_name_meaning",
+        "source_path": "prompt.instruction_fa"
+      },
+      "batch_id": "en-us-prea1-my-name-v1",
+      "lesson_key": "prea1-en-my-name-01",
+      "text": "I'm Sara یعنی چه؟",
+      "text_sha256": "69d639a3bae5bf411f8d74a8b5b4c6213e4f98b7aa45125204fe3ef97970e6f3",
+      "annotations": [
+        {
+          "start": 0,
+          "end": 3,
+          "surface": "I'm",
+          "annotation_type": "word",
+          "lexeme_key": "en-US|i'm|contraction",
+          "lemma": "I'm",
+          "part_of_speech": "contraction",
+          "concept_slug": "dict_en_i-m-contraction",
+          "word_form_key": "en-US|i'm|contraction|i'm|{\"form\":\"base\"}",
+          "confidence": 1.0,
+          "provenance": "deterministic"
+        }
+      ]
+    },
+    {
+      "source": {
+        "kind": "exercise",
+        "external_id": "ex_pre_name_meaning",
+        "source_path": "prompt.value"
+      },
+      "batch_id": "en-us-prea1-my-name-v1",
+      "lesson_key": "prea1-en-my-name-01",
+      "text": "I'm Sara.",
+      "text_sha256": "8dc9ca760d4456473b66bbe5730fae606785743e662f7bae79013c077d916726",
+      "annotations": [
+        {
+          "start": 0,
+          "end": 3,
+          "surface": "I'm",
+          "annotation_type": "word",
+          "lexeme_key": "en-US|i'm|contraction",
+          "lemma": "I'm",
+          "part_of_speech": "contraction",
+          "concept_slug": "dict_en_i-m-contraction",
+          "word_form_key": "en-US|i'm|contraction|i'm|{\"form\":\"base\"}",
+          "confidence": 1.0,
+          "provenance": "deterministic"
+        }
+      ]
+    },
+    {
+      "source": {
+        "kind": "exercise",
+        "external_id": "ex_pre_name_build",
+        "source_path": "prompt.tokens[1]"
+      },
+      "batch_id": "en-us-prea1-my-name-v1",
+      "lesson_key": "prea1-en-my-name-01",
+      "text": "I'm",
+      "text_sha256": "c9d7ed34ba7890f69090bd0612643736348055d85f90ae7bba6fd4175dc482c9",
+      "annotations": [
+        {
+          "start": 0,
+          "end": 3,
+          "surface": "I'm",
+          "annotation_type": "word",
+          "lexeme_key": "en-US|i'm|contraction",
+          "lemma": "I'm",
+          "part_of_speech": "contraction",
+          "concept_slug": "dict_en_i-m-contraction",
+          "word_form_key": "en-US|i'm|contraction|i'm|{\"form\":\"base\"}",
+          "confidence": 1.0,
+          "provenance": "deterministic"
+        }
+      ]
+    },
+    {
+      "source": {
+        "kind": "exercise",
+        "external_id": "ex_pre_name_build",
+        "source_path": "answer.tokens[0]"
+      },
+      "batch_id": "en-us-prea1-my-name-v1",
+      "lesson_key": "prea1-en-my-name-01",
+      "text": "I'm",
+      "text_sha256": "c9d7ed34ba7890f69090bd0612643736348055d85f90ae7bba6fd4175dc482c9",
+      "annotations": [
+        {
+          "start": 0,
+          "end": 3,
+          "surface": "I'm",
+          "annotation_type": "word",
+          "lexeme_key": "en-US|i'm|contraction",
+          "lemma": "I'm",
+          "part_of_speech": "contraction",
+          "concept_slug": "dict_en_i-m-contraction",
+          "word_form_key": "en-US|i'm|contraction|i'm|{\"form\":\"base\"}",
+          "confidence": 1.0,
+          "provenance": "deterministic"
+        }
+      ]
+    },
+    {
+      "source": {
+        "kind": "exercise",
+        "external_id": "ex_pre_name_listen",
+        "source_path": "prompt.audio_text"
+      },
+      "batch_id": "en-us-prea1-my-name-v1",
+      "lesson_key": "prea1-en-my-name-02",
+      "text": "My name is Amir",
+      "text_sha256": "55bc3809a9d7c0d16eec8d0cd8ac479a4ab3c1327beb88b1dd7fbd1724f7529b",
+      "annotations": [
+        {
+          "start": 0,
+          "end": 2,
+          "surface": "My",
+          "annotation_type": "word",
+          "lexeme_key": "en-US|my|determiner",
+          "lemma": "my",
+          "part_of_speech": "determiner",
+          "concept_slug": "dict_en_my-determiner",
+          "word_form_key": "en-US|my|determiner|my|{\"form\":\"base\"}",
+          "confidence": 1.0,
+          "provenance": "deterministic"
+        },
+        {
+          "start": 8,
+          "end": 10,
+          "surface": "is",
+          "annotation_type": "word",
+          "lexeme_key": "en-US|be|verb",
+          "lemma": "be",
+          "part_of_speech": "verb",
+          "concept_slug": "dict_en_be-verb",
+          "word_form_key": null,
+          "confidence": 0.92,
+          "provenance": "deterministic",
+          "morphology": {
+            "inferred_by": "core_dictionary:irregular"
+          }
+        }
+      ]
+    },
+    {
+      "source": {
+        "kind": "exercise",
+        "external_id": "ex_pre_name_speak",
+        "source_path": "prompt.value"
+      },
+      "batch_id": "en-us-prea1-my-name-v1",
+      "lesson_key": "prea1-en-my-name-02",
+      "text": "My name is Amir.",
+      "text_sha256": "e124c1a5c5c3e430bc6f0d0f9e47eeae894403d13a41eb8c42a58075d952c8c7",
+      "annotations": [
+        {
+          "start": 0,
+          "end": 2,
+          "surface": "My",
+          "annotation_type": "word",
+          "lexeme_key": "en-US|my|determiner",
+          "lemma": "my",
+          "part_of_speech": "determiner",
+          "concept_slug": "dict_en_my-determiner",
+          "word_form_key": "en-US|my|determiner|my|{\"form\":\"base\"}",
+          "confidence": 1.0,
+          "provenance": "deterministic"
+        },
+        {
+          "start": 8,
+          "end": 10,
+          "surface": "is",
+          "annotation_type": "word",
+          "lexeme_key": "en-US|be|verb",
+          "lemma": "be",
+          "part_of_speech": "verb",
+          "concept_slug": "dict_en_be-verb",
+          "word_form_key": null,
+          "confidence": 0.92,
+          "provenance": "deterministic",
+          "morphology": {
+            "inferred_by": "core_dictionary:irregular"
+          }
+        }
+      ]
+    },
+    {
+      "source": {
+        "kind": "exercise",
+        "external_id": "ex_pre_name_speak",
+        "source_path": "answer.expected_text"
+      },
+      "batch_id": "en-us-prea1-my-name-v1",
+      "lesson_key": "prea1-en-my-name-02",
+      "text": "My name is Amir",
+      "text_sha256": "55bc3809a9d7c0d16eec8d0cd8ac479a4ab3c1327beb88b1dd7fbd1724f7529b",
+      "annotations": [
+        {
+          "start": 0,
+          "end": 2,
+          "surface": "My",
+          "annotation_type": "word",
+          "lexeme_key": "en-US|my|determiner",
+          "lemma": "my",
+          "part_of_speech": "determiner",
+          "concept_slug": "dict_en_my-determiner",
+          "word_form_key": "en-US|my|determiner|my|{\"form\":\"base\"}",
+          "confidence": 1.0,
+          "provenance": "deterministic"
+        },
+        {
+          "start": 8,
+          "end": 10,
+          "surface": "is",
+          "annotation_type": "word",
+          "lexeme_key": "en-US|be|verb",
+          "lemma": "be",
+          "part_of_speech": "verb",
+          "concept_slug": "dict_en_be-verb",
+          "word_form_key": null,
+          "confidence": 0.92,
+          "provenance": "deterministic",
+          "morphology": {
+            "inferred_by": "core_dictionary:irregular"
+          }
         }
       ]
     },
@@ -2618,6 +6037,45 @@
       "source": {
         "kind": "dialogue_turn",
         "external_id": "d_pre_ready_intro",
+        "turn_order": 1
+      },
+      "batch_id": "en-us-prea1-ready-for-a1-v1",
+      "lesson_key": "prea1-en-ready-for-a1-01",
+      "text": "Hello! What's your name?",
+      "text_sha256": "5dcee9bdca119172f74efe0a5d17eb255f5e6f5d9081287ac6d7f47f434f32ec",
+      "annotations": [
+        {
+          "start": 7,
+          "end": 13,
+          "surface": "What's",
+          "annotation_type": "word",
+          "lexeme_key": "en-US|what's|contraction",
+          "lemma": "what's",
+          "part_of_speech": "contraction",
+          "concept_slug": "dict_en_what-s-contraction",
+          "word_form_key": "en-US|what's|contraction|what's|{\"form\":\"base\"}",
+          "confidence": 1.0,
+          "provenance": "deterministic"
+        },
+        {
+          "start": 14,
+          "end": 18,
+          "surface": "your",
+          "annotation_type": "word",
+          "lexeme_key": "en-US|your|determiner",
+          "lemma": "your",
+          "part_of_speech": "determiner",
+          "concept_slug": "dict_en_your-determiner",
+          "word_form_key": "en-US|your|determiner|your|{\"form\":\"base\"}",
+          "confidence": 1.0,
+          "provenance": "deterministic"
+        }
+      ]
+    },
+    {
+      "source": {
+        "kind": "dialogue_turn",
+        "external_id": "d_pre_ready_intro",
         "turn_order": 2
       },
       "batch_id": "en-us-prea1-ready-for-a1-v1",
@@ -2639,6 +6097,19 @@
           "provenance": "deterministic"
         },
         {
+          "start": 7,
+          "end": 12,
+          "surface": "Again",
+          "annotation_type": "word",
+          "lexeme_key": "en-US|again|adverb",
+          "lemma": "again",
+          "part_of_speech": "adverb",
+          "concept_slug": "dict_en_again-adverb",
+          "word_form_key": "en-US|again|adverb|again|{\"form\":\"base\"}",
+          "confidence": 1.0,
+          "provenance": "deterministic"
+        },
+        {
           "start": 14,
           "end": 20,
           "surface": "please",
@@ -2657,6 +6128,71 @@
       "source": {
         "kind": "dialogue_turn",
         "external_id": "d_pre_ready_intro",
+        "turn_order": 3
+      },
+      "batch_id": "en-us-prea1-ready-for-a1-v1",
+      "lesson_key": "prea1-en-ready-for-a1-01",
+      "text": "What's your name?",
+      "text_sha256": "56e8908ad76682304d68ca9cd055ca9d6b96ff2f8077d1041567dde66aed9724",
+      "annotations": [
+        {
+          "start": 0,
+          "end": 6,
+          "surface": "What's",
+          "annotation_type": "word",
+          "lexeme_key": "en-US|what's|contraction",
+          "lemma": "what's",
+          "part_of_speech": "contraction",
+          "concept_slug": "dict_en_what-s-contraction",
+          "word_form_key": "en-US|what's|contraction|what's|{\"form\":\"base\"}",
+          "confidence": 1.0,
+          "provenance": "deterministic"
+        },
+        {
+          "start": 7,
+          "end": 11,
+          "surface": "your",
+          "annotation_type": "word",
+          "lexeme_key": "en-US|your|determiner",
+          "lemma": "your",
+          "part_of_speech": "determiner",
+          "concept_slug": "dict_en_your-determiner",
+          "word_form_key": "en-US|your|determiner|your|{\"form\":\"base\"}",
+          "confidence": 1.0,
+          "provenance": "deterministic"
+        }
+      ]
+    },
+    {
+      "source": {
+        "kind": "dialogue_turn",
+        "external_id": "d_pre_ready_intro",
+        "turn_order": 4
+      },
+      "batch_id": "en-us-prea1-ready-for-a1-v1",
+      "lesson_key": "prea1-en-ready-for-a1-01",
+      "text": "I'm Arman.",
+      "text_sha256": "494a28cc9c5410225d951a27c8feddc3bb1417be0a5375c648f4e131d3640ea0",
+      "annotations": [
+        {
+          "start": 0,
+          "end": 3,
+          "surface": "I'm",
+          "annotation_type": "word",
+          "lexeme_key": "en-US|i'm|contraction",
+          "lemma": "I'm",
+          "part_of_speech": "contraction",
+          "concept_slug": "dict_en_i-m-contraction",
+          "word_form_key": "en-US|i'm|contraction|i'm|{\"form\":\"base\"}",
+          "confidence": 1.0,
+          "provenance": "deterministic"
+        }
+      ]
+    },
+    {
+      "source": {
+        "kind": "dialogue_turn",
+        "external_id": "d_pre_ready_intro",
         "turn_order": 5
       },
       "batch_id": "en-us-prea1-ready-for-a1-v1",
@@ -2664,6 +6200,19 @@
       "text": "Nice to meet you.",
       "text_sha256": "39954823f73a76e35ec7280de44b2eb4b26399ecdc00a2b3640db22375d3a4b3",
       "annotations": [
+        {
+          "start": 5,
+          "end": 7,
+          "surface": "to",
+          "annotation_type": "word",
+          "lexeme_key": "en-US|to|preposition",
+          "lemma": "to",
+          "part_of_speech": "preposition",
+          "concept_slug": "dict_en_to-preposition",
+          "word_form_key": "en-US|to|preposition|to|{\"form\":\"base\"}",
+          "confidence": 1.0,
+          "provenance": "deterministic"
+        },
         {
           "start": 8,
           "end": 12,
@@ -2674,6 +6223,19 @@
           "part_of_speech": "verb",
           "concept_slug": "plan_meet",
           "word_form_key": "en-US|meet|verb|meet|{\"form\":\"base\"}",
+          "confidence": 1.0,
+          "provenance": "deterministic"
+        },
+        {
+          "start": 13,
+          "end": 16,
+          "surface": "you",
+          "annotation_type": "word",
+          "lexeme_key": "en-US|you|pronoun",
+          "lemma": "you",
+          "part_of_speech": "pronoun",
+          "concept_slug": "dict_en_you-pronoun",
+          "word_form_key": "en-US|you|pronoun|you|{\"form\":\"base\"}",
           "confidence": 1.0,
           "provenance": "deterministic"
         }
@@ -2691,6 +6253,19 @@
       "text_sha256": "e2489b9631535568f5a0daec5b30534b893e3ce8fac8c1aed06af327a4f70b80",
       "annotations": [
         {
+          "start": 5,
+          "end": 7,
+          "surface": "to",
+          "annotation_type": "word",
+          "lexeme_key": "en-US|to|preposition",
+          "lemma": "to",
+          "part_of_speech": "preposition",
+          "concept_slug": "dict_en_to-preposition",
+          "word_form_key": "en-US|to|preposition|to|{\"form\":\"base\"}",
+          "confidence": 1.0,
+          "provenance": "deterministic"
+        },
+        {
           "start": 8,
           "end": 12,
           "surface": "meet",
@@ -2700,6 +6275,58 @@
           "part_of_speech": "verb",
           "concept_slug": "plan_meet",
           "word_form_key": "en-US|meet|verb|meet|{\"form\":\"base\"}",
+          "confidence": 1.0,
+          "provenance": "deterministic"
+        },
+        {
+          "start": 13,
+          "end": 16,
+          "surface": "you",
+          "annotation_type": "word",
+          "lexeme_key": "en-US|you|pronoun",
+          "lemma": "you",
+          "part_of_speech": "pronoun",
+          "concept_slug": "dict_en_you-pronoun",
+          "word_form_key": "en-US|you|pronoun|you|{\"form\":\"base\"}",
+          "confidence": 1.0,
+          "provenance": "deterministic"
+        },
+        {
+          "start": 18,
+          "end": 21,
+          "surface": "too",
+          "annotation_type": "word",
+          "lexeme_key": "en-US|too|adverb",
+          "lemma": "too",
+          "part_of_speech": "adverb",
+          "concept_slug": "dict_en_too-adverb",
+          "word_form_key": "en-US|too|adverb|too|{\"form\":\"base\"}",
+          "confidence": 1.0,
+          "provenance": "deterministic"
+        }
+      ]
+    },
+    {
+      "source": {
+        "kind": "exercise",
+        "external_id": "ex_pre_ready_hear_b",
+        "source_path": "prompt.audio_text"
+      },
+      "batch_id": "en-us-prea1-ready-for-a1-v1",
+      "lesson_key": "prea1-en-ready-for-a1-01",
+      "text": "The letter B.",
+      "text_sha256": "aac56402ffea16545bb15e6bdc7ad6930facb2cf34773408ab48a8a6d88175fe",
+      "annotations": [
+        {
+          "start": 0,
+          "end": 3,
+          "surface": "The",
+          "annotation_type": "word",
+          "lexeme_key": "en-US|the|article",
+          "lemma": "the",
+          "part_of_speech": "article",
+          "concept_slug": "dict_en_the-article",
+          "word_form_key": "en-US|the|article|the|{\"form\":\"base\"}",
           "confidence": 1.0,
           "provenance": "deterministic"
         }
@@ -2730,6 +6357,19 @@
           "provenance": "deterministic"
         },
         {
+          "start": 7,
+          "end": 12,
+          "surface": "Again",
+          "annotation_type": "word",
+          "lexeme_key": "en-US|again|adverb",
+          "lemma": "again",
+          "part_of_speech": "adverb",
+          "concept_slug": "dict_en_again-adverb",
+          "word_form_key": "en-US|again|adverb|again|{\"form\":\"base\"}",
+          "confidence": 1.0,
+          "provenance": "deterministic"
+        },
+        {
           "start": 14,
           "end": 20,
           "surface": "please",
@@ -2756,6 +6396,19 @@
       "text_sha256": "308c8f3227d091b723f87fd5f5b463f4dd329fbe57b9d7384ab2559c8df2bf0f",
       "annotations": [
         {
+          "start": 0,
+          "end": 5,
+          "surface": "Again",
+          "annotation_type": "word",
+          "lexeme_key": "en-US|again|adverb",
+          "lemma": "again",
+          "part_of_speech": "adverb",
+          "concept_slug": "dict_en_again-adverb",
+          "word_form_key": "en-US|again|adverb|again|{\"form\":\"base\"}",
+          "confidence": 1.0,
+          "provenance": "deterministic"
+        },
+        {
           "start": 7,
           "end": 13,
           "surface": "please",
@@ -2781,6 +6434,19 @@
       "text": "Again, please.",
       "text_sha256": "308c8f3227d091b723f87fd5f5b463f4dd329fbe57b9d7384ab2559c8df2bf0f",
       "annotations": [
+        {
+          "start": 0,
+          "end": 5,
+          "surface": "Again",
+          "annotation_type": "word",
+          "lexeme_key": "en-US|again|adverb",
+          "lemma": "again",
+          "part_of_speech": "adverb",
+          "concept_slug": "dict_en_again-adverb",
+          "word_form_key": "en-US|again|adverb|again|{\"form\":\"base\"}",
+          "confidence": 1.0,
+          "provenance": "deterministic"
+        },
         {
           "start": 7,
           "end": 13,
@@ -2930,6 +6596,61 @@
       "source": {
         "kind": "dialogue_turn",
         "external_id": "d_pre_ready_cafe",
+        "turn_order": 5
+      },
+      "batch_id": "en-us-prea1-ready-for-a1-v1",
+      "lesson_key": "prea1-en-ready-for-a1-02",
+      "text": "Here you are.",
+      "text_sha256": "3f3d9f370444b48214a7eddc525b0847455ca7707a1cb058691cf343411a1134",
+      "annotations": [
+        {
+          "start": 0,
+          "end": 4,
+          "surface": "Here",
+          "annotation_type": "word",
+          "lexeme_key": "en-US|here|adverb",
+          "lemma": "here",
+          "part_of_speech": "adverb",
+          "concept_slug": "dict_en_here-adverb",
+          "word_form_key": "en-US|here|adverb|here|{\"form\":\"base\"}",
+          "confidence": 1.0,
+          "provenance": "deterministic"
+        },
+        {
+          "start": 5,
+          "end": 8,
+          "surface": "you",
+          "annotation_type": "word",
+          "lexeme_key": "en-US|you|pronoun",
+          "lemma": "you",
+          "part_of_speech": "pronoun",
+          "concept_slug": "dict_en_you-pronoun",
+          "word_form_key": "en-US|you|pronoun|you|{\"form\":\"base\"}",
+          "confidence": 1.0,
+          "provenance": "deterministic"
+        },
+        {
+          "start": 9,
+          "end": 12,
+          "surface": "are",
+          "annotation_type": "word",
+          "lexeme_key": "en-US|be|verb",
+          "lemma": "be",
+          "part_of_speech": "verb",
+          "concept_slug": "dict_en_be-verb",
+          "word_form_key": null,
+          "confidence": 0.92,
+          "provenance": "deterministic",
+          "morphology": {
+            "inferred_by": "core_dictionary:irregular"
+          }
+        }
+      ]
+    },
+    {
+      "source": {
+        "kind": "dialogue_turn",
+        "external_id": "d_pre_ready_cafe",
         "turn_order": 6
       },
       "batch_id": "en-us-prea1-ready-for-a1-v1",
@@ -3012,6 +6733,58 @@
           "part_of_speech": "adverb",
           "concept_slug": "polite_please",
           "word_form_key": "en-US|please|adverb|please|{\"register\":\"polite\"}",
+          "confidence": 1.0,
+          "provenance": "deterministic"
+        }
+      ]
+    },
+    {
+      "source": {
+        "kind": "exercise",
+        "external_id": "ex_pre_ready_name_build",
+        "source_path": "prompt.tokens[1]"
+      },
+      "batch_id": "en-us-prea1-ready-for-a1-v1",
+      "lesson_key": "prea1-en-ready-for-a1-02",
+      "text": "I'm",
+      "text_sha256": "c9d7ed34ba7890f69090bd0612643736348055d85f90ae7bba6fd4175dc482c9",
+      "annotations": [
+        {
+          "start": 0,
+          "end": 3,
+          "surface": "I'm",
+          "annotation_type": "word",
+          "lexeme_key": "en-US|i'm|contraction",
+          "lemma": "I'm",
+          "part_of_speech": "contraction",
+          "concept_slug": "dict_en_i-m-contraction",
+          "word_form_key": "en-US|i'm|contraction|i'm|{\"form\":\"base\"}",
+          "confidence": 1.0,
+          "provenance": "deterministic"
+        }
+      ]
+    },
+    {
+      "source": {
+        "kind": "exercise",
+        "external_id": "ex_pre_ready_name_build",
+        "source_path": "answer.tokens[0]"
+      },
+      "batch_id": "en-us-prea1-ready-for-a1-v1",
+      "lesson_key": "prea1-en-ready-for-a1-02",
+      "text": "I'm",
+      "text_sha256": "c9d7ed34ba7890f69090bd0612643736348055d85f90ae7bba6fd4175dc482c9",
+      "annotations": [
+        {
+          "start": 0,
+          "end": 3,
+          "surface": "I'm",
+          "annotation_type": "word",
+          "lexeme_key": "en-US|i'm|contraction",
+          "lemma": "I'm",
+          "part_of_speech": "contraction",
+          "concept_slug": "dict_en_i-m-contraction",
+          "word_form_key": "en-US|i'm|contraction|i'm|{\"form\":\"base\"}",
           "confidence": 1.0,
           "provenance": "deterministic"
         }
@@ -3289,6 +7062,19 @@
       "text_sha256": "f322c03bd85e8fa1611af28d52e968ffe8c9ec6a473548e8502f65d0a62bdec7",
       "annotations": [
         {
+          "start": 0,
+          "end": 4,
+          "surface": "It's",
+          "annotation_type": "word",
+          "lexeme_key": "en-US|it's|contraction",
+          "lemma": "it's",
+          "part_of_speech": "contraction",
+          "concept_slug": "dict_en_it-s-contraction",
+          "word_form_key": "en-US|it's|contraction|it's|{\"form\":\"base\"}",
+          "confidence": 1.0,
+          "provenance": "deterministic"
+        },
+        {
           "start": 5,
           "end": 9,
           "surface": "five",
@@ -3318,6 +7104,32 @@
     },
     {
       "source": {
+        "kind": "utterance",
+        "external_id": "u_en_en-real-life-numbers_date",
+        "language": "en"
+      },
+      "batch_id": "en-us-prea1-en-real-life-numbers-v1",
+      "lesson_key": "prea1-en-en-real-life-numbers-02",
+      "text": "May fifth",
+      "text_sha256": "aa9ed96c8c4fe21722702cf0edfdc8a3502053670f7fbcc9226263e1063f2dc8",
+      "annotations": [
+        {
+          "start": 0,
+          "end": 3,
+          "surface": "May",
+          "annotation_type": "word",
+          "lexeme_key": "en-US|may|modal",
+          "lemma": "may",
+          "part_of_speech": "modal",
+          "concept_slug": "dict_en_may-modal",
+          "word_form_key": "en-US|may|modal|may|{\"form\":\"base\"}",
+          "confidence": 1.0,
+          "provenance": "deterministic"
+        }
+      ]
+    },
+    {
+      "source": {
         "kind": "dialogue_turn",
         "external_id": "d_en_en-real-life-numbers_phone",
         "turn_order": 1
@@ -3327,6 +7139,32 @@
       "text": "What's your phone number?",
       "text_sha256": "b696981a1f4f5ad2c8d5e782488344b7a063f167438a92260716008444f8139e",
       "annotations": [
+        {
+          "start": 0,
+          "end": 6,
+          "surface": "What's",
+          "annotation_type": "word",
+          "lexeme_key": "en-US|what's|contraction",
+          "lemma": "what's",
+          "part_of_speech": "contraction",
+          "concept_slug": "dict_en_what-s-contraction",
+          "word_form_key": "en-US|what's|contraction|what's|{\"form\":\"base\"}",
+          "confidence": 1.0,
+          "provenance": "deterministic"
+        },
+        {
+          "start": 7,
+          "end": 11,
+          "surface": "your",
+          "annotation_type": "word",
+          "lexeme_key": "en-US|your|determiner",
+          "lemma": "your",
+          "part_of_speech": "determiner",
+          "concept_slug": "dict_en_your-determiner",
+          "word_form_key": "en-US|your|determiner|your|{\"form\":\"base\"}",
+          "confidence": 1.0,
+          "provenance": "deterministic"
+        },
         {
           "start": 12,
           "end": 17,
@@ -3510,6 +7348,19 @@
       "text_sha256": "308c8f3227d091b723f87fd5f5b463f4dd329fbe57b9d7384ab2559c8df2bf0f",
       "annotations": [
         {
+          "start": 0,
+          "end": 5,
+          "surface": "Again",
+          "annotation_type": "word",
+          "lexeme_key": "en-US|again|adverb",
+          "lemma": "again",
+          "part_of_speech": "adverb",
+          "concept_slug": "dict_en_again-adverb",
+          "word_form_key": "en-US|again|adverb|again|{\"form\":\"base\"}",
+          "confidence": 1.0,
+          "provenance": "deterministic"
+        },
+        {
           "start": 7,
           "end": 13,
           "surface": "please",
@@ -3684,6 +7535,74 @@
       "source": {
         "kind": "dialogue_turn",
         "external_id": "d_en_en-real-life-numbers_price_day",
+        "turn_order": 1
+      },
+      "batch_id": "en-us-prea1-en-real-life-numbers-v1",
+      "lesson_key": "prea1-en-en-real-life-numbers-02",
+      "text": "How much is it?",
+      "text_sha256": "abdfbb3951b780a174166d38d10acc3920b5e8f4712cc6014104161424c3b2f8",
+      "annotations": [
+        {
+          "start": 0,
+          "end": 3,
+          "surface": "How",
+          "annotation_type": "word",
+          "lexeme_key": "en-US|how|adverb",
+          "lemma": "how",
+          "part_of_speech": "adverb",
+          "concept_slug": "dict_en_how-adverb",
+          "word_form_key": "en-US|how|adverb|how|{\"form\":\"base\"}",
+          "confidence": 1.0,
+          "provenance": "deterministic"
+        },
+        {
+          "start": 4,
+          "end": 8,
+          "surface": "much",
+          "annotation_type": "word",
+          "lexeme_key": "en-US|much|determiner",
+          "lemma": "much",
+          "part_of_speech": "determiner",
+          "concept_slug": "dict_en_much-determiner",
+          "word_form_key": "en-US|much|determiner|much|{\"form\":\"base\"}",
+          "confidence": 1.0,
+          "provenance": "deterministic"
+        },
+        {
+          "start": 9,
+          "end": 11,
+          "surface": "is",
+          "annotation_type": "word",
+          "lexeme_key": "en-US|be|verb",
+          "lemma": "be",
+          "part_of_speech": "verb",
+          "concept_slug": "dict_en_be-verb",
+          "word_form_key": null,
+          "confidence": 0.92,
+          "provenance": "deterministic",
+          "morphology": {
+            "inferred_by": "core_dictionary:irregular"
+          }
+        },
+        {
+          "start": 12,
+          "end": 14,
+          "surface": "it",
+          "annotation_type": "word",
+          "lexeme_key": "en-US|it|pronoun",
+          "lemma": "it",
+          "part_of_speech": "pronoun",
+          "concept_slug": "dict_en_it-pronoun",
+          "word_form_key": "en-US|it|pronoun|it|{\"form\":\"base\"}",
+          "confidence": 1.0,
+          "provenance": "deterministic"
+        }
+      ]
+    },
+    {
+      "source": {
+        "kind": "dialogue_turn",
+        "external_id": "d_en_en-real-life-numbers_price_day",
         "turn_order": 2
       },
       "batch_id": "en-us-prea1-en-real-life-numbers-v1",
@@ -3691,6 +7610,19 @@
       "text": "It's five dollars.",
       "text_sha256": "f322c03bd85e8fa1611af28d52e968ffe8c9ec6a473548e8502f65d0a62bdec7",
       "annotations": [
+        {
+          "start": 0,
+          "end": 4,
+          "surface": "It's",
+          "annotation_type": "word",
+          "lexeme_key": "en-US|it's|contraction",
+          "lemma": "it's",
+          "part_of_speech": "contraction",
+          "concept_slug": "dict_en_it-s-contraction",
+          "word_form_key": "en-US|it's|contraction|it's|{\"form\":\"base\"}",
+          "confidence": 1.0,
+          "provenance": "deterministic"
+        },
         {
           "start": 5,
           "end": 9,
@@ -3714,6 +7646,32 @@
           "part_of_speech": "noun",
           "concept_slug": "money_dollar",
           "word_form_key": "en-US|dollar|noun|dollars|{\"number\":\"plural\"}",
+          "confidence": 1.0,
+          "provenance": "deterministic"
+        }
+      ]
+    },
+    {
+      "source": {
+        "kind": "dialogue_turn",
+        "external_id": "d_en_en-real-life-numbers_price_day",
+        "turn_order": 4
+      },
+      "batch_id": "en-us-prea1-en-real-life-numbers-v1",
+      "lesson_key": "prea1-en-en-real-life-numbers-02",
+      "text": "May fifth",
+      "text_sha256": "aa9ed96c8c4fe21722702cf0edfdc8a3502053670f7fbcc9226263e1063f2dc8",
+      "annotations": [
+        {
+          "start": 0,
+          "end": 3,
+          "surface": "May",
+          "annotation_type": "word",
+          "lexeme_key": "en-US|may|modal",
+          "lemma": "may",
+          "part_of_speech": "modal",
+          "concept_slug": "dict_en_may-modal",
+          "word_form_key": "en-US|may|modal|may|{\"form\":\"base\"}",
           "confidence": 1.0,
           "provenance": "deterministic"
         }
@@ -4095,6 +8053,19 @@
       "text_sha256": "f322c03bd85e8fa1611af28d52e968ffe8c9ec6a473548e8502f65d0a62bdec7",
       "annotations": [
         {
+          "start": 0,
+          "end": 4,
+          "surface": "It's",
+          "annotation_type": "word",
+          "lexeme_key": "en-US|it's|contraction",
+          "lemma": "it's",
+          "part_of_speech": "contraction",
+          "concept_slug": "dict_en_it-s-contraction",
+          "word_form_key": "en-US|it's|contraction|it's|{\"form\":\"base\"}",
+          "confidence": 1.0,
+          "provenance": "deterministic"
+        },
+        {
           "start": 5,
           "end": 9,
           "surface": "five",
@@ -4133,6 +8104,19 @@
       "text": "It's five dollars.",
       "text_sha256": "f322c03bd85e8fa1611af28d52e968ffe8c9ec6a473548e8502f65d0a62bdec7",
       "annotations": [
+        {
+          "start": 0,
+          "end": 4,
+          "surface": "It's",
+          "annotation_type": "word",
+          "lexeme_key": "en-US|it's|contraction",
+          "lemma": "it's",
+          "part_of_speech": "contraction",
+          "concept_slug": "dict_en_it-s-contraction",
+          "word_form_key": "en-US|it's|contraction|it's|{\"form\":\"base\"}",
+          "confidence": 1.0,
+          "provenance": "deterministic"
+        },
         {
           "start": 5,
           "end": 9,
@@ -4173,6 +8157,19 @@
       "text_sha256": "f322c03bd85e8fa1611af28d52e968ffe8c9ec6a473548e8502f65d0a62bdec7",
       "annotations": [
         {
+          "start": 0,
+          "end": 4,
+          "surface": "It's",
+          "annotation_type": "word",
+          "lexeme_key": "en-US|it's|contraction",
+          "lemma": "it's",
+          "part_of_speech": "contraction",
+          "concept_slug": "dict_en_it-s-contraction",
+          "word_form_key": "en-US|it's|contraction|it's|{\"form\":\"base\"}",
+          "confidence": 1.0,
+          "provenance": "deterministic"
+        },
+        {
           "start": 5,
           "end": 9,
           "surface": "five",
@@ -4212,6 +8209,19 @@
       "text_sha256": "f322c03bd85e8fa1611af28d52e968ffe8c9ec6a473548e8502f65d0a62bdec7",
       "annotations": [
         {
+          "start": 0,
+          "end": 4,
+          "surface": "It's",
+          "annotation_type": "word",
+          "lexeme_key": "en-US|it's|contraction",
+          "lemma": "it's",
+          "part_of_speech": "contraction",
+          "concept_slug": "dict_en_it-s-contraction",
+          "word_form_key": "en-US|it's|contraction|it's|{\"form\":\"base\"}",
+          "confidence": 1.0,
+          "provenance": "deterministic"
+        },
+        {
           "start": 5,
           "end": 9,
           "surface": "five",
@@ -4243,6 +8253,87 @@
       "source": {
         "kind": "dialogue_turn",
         "external_id": "d_en_en-real-world-gate_meet",
+        "turn_order": 1
+      },
+      "batch_id": "en-us-prea1-en-real-world-gate-v1",
+      "lesson_key": "prea1-en-en-real-world-gate-01",
+      "text": "What's your name?",
+      "text_sha256": "56e8908ad76682304d68ca9cd055ca9d6b96ff2f8077d1041567dde66aed9724",
+      "annotations": [
+        {
+          "start": 0,
+          "end": 6,
+          "surface": "What's",
+          "annotation_type": "word",
+          "lexeme_key": "en-US|what's|contraction",
+          "lemma": "what's",
+          "part_of_speech": "contraction",
+          "concept_slug": "dict_en_what-s-contraction",
+          "word_form_key": "en-US|what's|contraction|what's|{\"form\":\"base\"}",
+          "confidence": 1.0,
+          "provenance": "deterministic"
+        },
+        {
+          "start": 7,
+          "end": 11,
+          "surface": "your",
+          "annotation_type": "word",
+          "lexeme_key": "en-US|your|determiner",
+          "lemma": "your",
+          "part_of_speech": "determiner",
+          "concept_slug": "dict_en_your-determiner",
+          "word_form_key": "en-US|your|determiner|your|{\"form\":\"base\"}",
+          "confidence": 1.0,
+          "provenance": "deterministic"
+        }
+      ]
+    },
+    {
+      "source": {
+        "kind": "dialogue_turn",
+        "external_id": "d_en_en-real-world-gate_meet",
+        "turn_order": 2
+      },
+      "batch_id": "en-us-prea1-en-real-world-gate-v1",
+      "lesson_key": "prea1-en-en-real-world-gate-01",
+      "text": "My name is Sara.",
+      "text_sha256": "662d09b13a6716665a000bd5656714f552776d7bd5ccdc533e14c4798fb2c5cd",
+      "annotations": [
+        {
+          "start": 0,
+          "end": 2,
+          "surface": "My",
+          "annotation_type": "word",
+          "lexeme_key": "en-US|my|determiner",
+          "lemma": "my",
+          "part_of_speech": "determiner",
+          "concept_slug": "dict_en_my-determiner",
+          "word_form_key": "en-US|my|determiner|my|{\"form\":\"base\"}",
+          "confidence": 1.0,
+          "provenance": "deterministic"
+        },
+        {
+          "start": 8,
+          "end": 10,
+          "surface": "is",
+          "annotation_type": "word",
+          "lexeme_key": "en-US|be|verb",
+          "lemma": "be",
+          "part_of_speech": "verb",
+          "concept_slug": "dict_en_be-verb",
+          "word_form_key": null,
+          "confidence": 0.92,
+          "provenance": "deterministic",
+          "morphology": {
+            "inferred_by": "core_dictionary:irregular"
+          }
+        }
+      ]
+    },
+    {
+      "source": {
+        "kind": "dialogue_turn",
+        "external_id": "d_en_en-real-world-gate_meet",
         "turn_order": 3
       },
       "batch_id": "en-us-prea1-en-real-world-gate-v1",
@@ -4258,8 +8349,50 @@
           "lexeme_key": "en-US|where|adverb",
           "lemma": "where",
           "part_of_speech": "adverb",
-          "concept_slug": "question_word_where",
-          "word_form_key": "en-US|where|adverb|where|{}",
+          "concept_slug": "dict_en_where-adverb",
+          "word_form_key": "en-US|where|adverb|where|{\"form\":\"base\"}",
+          "confidence": 1.0,
+          "provenance": "deterministic"
+        },
+        {
+          "start": 6,
+          "end": 9,
+          "surface": "are",
+          "annotation_type": "word",
+          "lexeme_key": "en-US|be|verb",
+          "lemma": "be",
+          "part_of_speech": "verb",
+          "concept_slug": "dict_en_be-verb",
+          "word_form_key": null,
+          "confidence": 0.92,
+          "provenance": "deterministic",
+          "morphology": {
+            "inferred_by": "core_dictionary:irregular"
+          }
+        },
+        {
+          "start": 10,
+          "end": 13,
+          "surface": "you",
+          "annotation_type": "word",
+          "lexeme_key": "en-US|you|pronoun",
+          "lemma": "you",
+          "part_of_speech": "pronoun",
+          "concept_slug": "dict_en_you-pronoun",
+          "word_form_key": "en-US|you|pronoun|you|{\"form\":\"base\"}",
+          "confidence": 1.0,
+          "provenance": "deterministic"
+        },
+        {
+          "start": 14,
+          "end": 18,
+          "surface": "from",
+          "annotation_type": "word",
+          "lexeme_key": "en-US|from|preposition",
+          "lemma": "from",
+          "part_of_speech": "preposition",
+          "concept_slug": "dict_en_from-preposition",
+          "word_form_key": "en-US|from|preposition|from|{\"form\":\"base\"}",
           "confidence": 1.0,
           "provenance": "deterministic"
         }
@@ -4276,6 +8409,32 @@
       "text": "I'm from Iran.",
       "text_sha256": "5dfce23c275fa6fab08233cefbad28edad8515795b3e7d9e445c869c89469fe1",
       "annotations": [
+        {
+          "start": 0,
+          "end": 3,
+          "surface": "I'm",
+          "annotation_type": "word",
+          "lexeme_key": "en-US|i'm|contraction",
+          "lemma": "I'm",
+          "part_of_speech": "contraction",
+          "concept_slug": "dict_en_i-m-contraction",
+          "word_form_key": "en-US|i'm|contraction|i'm|{\"form\":\"base\"}",
+          "confidence": 1.0,
+          "provenance": "deterministic"
+        },
+        {
+          "start": 4,
+          "end": 8,
+          "surface": "from",
+          "annotation_type": "word",
+          "lexeme_key": "en-US|from|preposition",
+          "lemma": "from",
+          "part_of_speech": "preposition",
+          "concept_slug": "dict_en_from-preposition",
+          "word_form_key": "en-US|from|preposition|from|{\"form\":\"base\"}",
+          "confidence": 1.0,
+          "provenance": "deterministic"
+        },
         {
           "start": 9,
           "end": 13,
@@ -4295,6 +8454,61 @@
       "source": {
         "kind": "dialogue_turn",
         "external_id": "d_en_en-real-world-gate_meet",
+        "turn_order": 5
+      },
+      "batch_id": "en-us-prea1-en-real-world-gate-v1",
+      "lesson_key": "prea1-en-en-real-world-gate-01",
+      "text": "How are you?",
+      "text_sha256": "df287dfc1406ed2b692e1c2c783bb5cec97eac53151ee1d9810397aa0afa0d89",
+      "annotations": [
+        {
+          "start": 0,
+          "end": 3,
+          "surface": "How",
+          "annotation_type": "word",
+          "lexeme_key": "en-US|how|adverb",
+          "lemma": "how",
+          "part_of_speech": "adverb",
+          "concept_slug": "dict_en_how-adverb",
+          "word_form_key": "en-US|how|adverb|how|{\"form\":\"base\"}",
+          "confidence": 1.0,
+          "provenance": "deterministic"
+        },
+        {
+          "start": 4,
+          "end": 7,
+          "surface": "are",
+          "annotation_type": "word",
+          "lexeme_key": "en-US|be|verb",
+          "lemma": "be",
+          "part_of_speech": "verb",
+          "concept_slug": "dict_en_be-verb",
+          "word_form_key": null,
+          "confidence": 0.92,
+          "provenance": "deterministic",
+          "morphology": {
+            "inferred_by": "core_dictionary:irregular"
+          }
+        },
+        {
+          "start": 8,
+          "end": 11,
+          "surface": "you",
+          "annotation_type": "word",
+          "lexeme_key": "en-US|you|pronoun",
+          "lemma": "you",
+          "part_of_speech": "pronoun",
+          "concept_slug": "dict_en_you-pronoun",
+          "word_form_key": "en-US|you|pronoun|you|{\"form\":\"base\"}",
+          "confidence": 1.0,
+          "provenance": "deterministic"
+        }
+      ]
+    },
+    {
+      "source": {
+        "kind": "dialogue_turn",
+        "external_id": "d_en_en-real-world-gate_meet",
         "turn_order": 6
       },
       "batch_id": "en-us-prea1-en-real-world-gate-v1",
@@ -4302,6 +8516,32 @@
       "text": "I'm good, thanks.",
       "text_sha256": "3e67e2821cdebe3708f9a5388ba59dbed8dd82e3f8befa978078a3f5730a563f",
       "annotations": [
+        {
+          "start": 0,
+          "end": 3,
+          "surface": "I'm",
+          "annotation_type": "word",
+          "lexeme_key": "en-US|i'm|contraction",
+          "lemma": "I'm",
+          "part_of_speech": "contraction",
+          "concept_slug": "dict_en_i-m-contraction",
+          "word_form_key": "en-US|i'm|contraction|i'm|{\"form\":\"base\"}",
+          "confidence": 1.0,
+          "provenance": "deterministic"
+        },
+        {
+          "start": 4,
+          "end": 8,
+          "surface": "good",
+          "annotation_type": "word",
+          "lexeme_key": "en-US|good|adjective",
+          "lemma": "good",
+          "part_of_speech": "adjective",
+          "concept_slug": "dict_en_good-adjective",
+          "word_form_key": "en-US|good|adjective|good|{\"form\":\"base\"}",
+          "confidence": 1.0,
+          "provenance": "deterministic"
+        },
         {
           "start": 10,
           "end": 16,
@@ -4328,6 +8568,32 @@
       "text": "What's your phone number?",
       "text_sha256": "b696981a1f4f5ad2c8d5e782488344b7a063f167438a92260716008444f8139e",
       "annotations": [
+        {
+          "start": 0,
+          "end": 6,
+          "surface": "What's",
+          "annotation_type": "word",
+          "lexeme_key": "en-US|what's|contraction",
+          "lemma": "what's",
+          "part_of_speech": "contraction",
+          "concept_slug": "dict_en_what-s-contraction",
+          "word_form_key": "en-US|what's|contraction|what's|{\"form\":\"base\"}",
+          "confidence": 1.0,
+          "provenance": "deterministic"
+        },
+        {
+          "start": 7,
+          "end": 11,
+          "surface": "your",
+          "annotation_type": "word",
+          "lexeme_key": "en-US|your|determiner",
+          "lemma": "your",
+          "part_of_speech": "determiner",
+          "concept_slug": "dict_en_your-determiner",
+          "word_form_key": "en-US|your|determiner|your|{\"form\":\"base\"}",
+          "confidence": 1.0,
+          "provenance": "deterministic"
+        },
         {
           "start": 12,
           "end": 17,
@@ -4503,6 +8769,74 @@
       "source": {
         "kind": "dialogue_turn",
         "external_id": "d_en_en-real-world-gate_public_task",
+        "turn_order": 3
+      },
+      "batch_id": "en-us-prea1-en-real-world-gate-v1",
+      "lesson_key": "prea1-en-en-real-world-gate-02",
+      "text": "How much is it?",
+      "text_sha256": "abdfbb3951b780a174166d38d10acc3920b5e8f4712cc6014104161424c3b2f8",
+      "annotations": [
+        {
+          "start": 0,
+          "end": 3,
+          "surface": "How",
+          "annotation_type": "word",
+          "lexeme_key": "en-US|how|adverb",
+          "lemma": "how",
+          "part_of_speech": "adverb",
+          "concept_slug": "dict_en_how-adverb",
+          "word_form_key": "en-US|how|adverb|how|{\"form\":\"base\"}",
+          "confidence": 1.0,
+          "provenance": "deterministic"
+        },
+        {
+          "start": 4,
+          "end": 8,
+          "surface": "much",
+          "annotation_type": "word",
+          "lexeme_key": "en-US|much|determiner",
+          "lemma": "much",
+          "part_of_speech": "determiner",
+          "concept_slug": "dict_en_much-determiner",
+          "word_form_key": "en-US|much|determiner|much|{\"form\":\"base\"}",
+          "confidence": 1.0,
+          "provenance": "deterministic"
+        },
+        {
+          "start": 9,
+          "end": 11,
+          "surface": "is",
+          "annotation_type": "word",
+          "lexeme_key": "en-US|be|verb",
+          "lemma": "be",
+          "part_of_speech": "verb",
+          "concept_slug": "dict_en_be-verb",
+          "word_form_key": null,
+          "confidence": 0.92,
+          "provenance": "deterministic",
+          "morphology": {
+            "inferred_by": "core_dictionary:irregular"
+          }
+        },
+        {
+          "start": 12,
+          "end": 14,
+          "surface": "it",
+          "annotation_type": "word",
+          "lexeme_key": "en-US|it|pronoun",
+          "lemma": "it",
+          "part_of_speech": "pronoun",
+          "concept_slug": "dict_en_it-pronoun",
+          "word_form_key": "en-US|it|pronoun|it|{\"form\":\"base\"}",
+          "confidence": 1.0,
+          "provenance": "deterministic"
+        }
+      ]
+    },
+    {
+      "source": {
+        "kind": "dialogue_turn",
+        "external_id": "d_en_en-real-world-gate_public_task",
         "turn_order": 4
       },
       "batch_id": "en-us-prea1-en-real-world-gate-v1",
@@ -4510,6 +8844,19 @@
       "text": "It's five dollars.",
       "text_sha256": "f322c03bd85e8fa1611af28d52e968ffe8c9ec6a473548e8502f65d0a62bdec7",
       "annotations": [
+        {
+          "start": 0,
+          "end": 4,
+          "surface": "It's",
+          "annotation_type": "word",
+          "lexeme_key": "en-US|it's|contraction",
+          "lemma": "it's",
+          "part_of_speech": "contraction",
+          "concept_slug": "dict_en_it-s-contraction",
+          "word_form_key": "en-US|it's|contraction|it's|{\"form\":\"base\"}",
+          "confidence": 1.0,
+          "provenance": "deterministic"
+        },
         {
           "start": 5,
           "end": 9,
@@ -4557,8 +8904,92 @@
           "lexeme_key": "en-US|where|adverb",
           "lemma": "where",
           "part_of_speech": "adverb",
-          "concept_slug": "question_word_where",
-          "word_form_key": "en-US|where|adverb|where|{}",
+          "concept_slug": "dict_en_where-adverb",
+          "word_form_key": "en-US|where|adverb|where|{\"form\":\"base\"}",
+          "confidence": 1.0,
+          "provenance": "deterministic"
+        },
+        {
+          "start": 6,
+          "end": 8,
+          "surface": "is",
+          "annotation_type": "word",
+          "lexeme_key": "en-US|be|verb",
+          "lemma": "be",
+          "part_of_speech": "verb",
+          "concept_slug": "dict_en_be-verb",
+          "word_form_key": null,
+          "confidence": 0.92,
+          "provenance": "deterministic",
+          "morphology": {
+            "inferred_by": "core_dictionary:irregular"
+          }
+        },
+        {
+          "start": 9,
+          "end": 12,
+          "surface": "the",
+          "annotation_type": "word",
+          "lexeme_key": "en-US|the|article",
+          "lemma": "the",
+          "part_of_speech": "article",
+          "concept_slug": "dict_en_the-article",
+          "word_form_key": "en-US|the|article|the|{\"form\":\"base\"}",
+          "confidence": 1.0,
+          "provenance": "deterministic"
+        }
+      ]
+    },
+    {
+      "source": {
+        "kind": "dialogue_turn",
+        "external_id": "d_en_en-real-world-gate_public_task",
+        "turn_order": 6
+      },
+      "batch_id": "en-us-prea1-en-real-world-gate-v1",
+      "lesson_key": "prea1-en-en-real-world-gate-02",
+      "text": "The exit is there.",
+      "text_sha256": "abb7d9a3328215471331dc69b689b5a47762fc21868e733e43199648057af95a",
+      "annotations": [
+        {
+          "start": 0,
+          "end": 3,
+          "surface": "The",
+          "annotation_type": "word",
+          "lexeme_key": "en-US|the|article",
+          "lemma": "the",
+          "part_of_speech": "article",
+          "concept_slug": "dict_en_the-article",
+          "word_form_key": "en-US|the|article|the|{\"form\":\"base\"}",
+          "confidence": 1.0,
+          "provenance": "deterministic"
+        },
+        {
+          "start": 9,
+          "end": 11,
+          "surface": "is",
+          "annotation_type": "word",
+          "lexeme_key": "en-US|be|verb",
+          "lemma": "be",
+          "part_of_speech": "verb",
+          "concept_slug": "dict_en_be-verb",
+          "word_form_key": null,
+          "confidence": 0.92,
+          "provenance": "deterministic",
+          "morphology": {
+            "inferred_by": "core_dictionary:irregular"
+          }
+        },
+        {
+          "start": 12,
+          "end": 17,
+          "surface": "there",
+          "annotation_type": "word",
+          "lexeme_key": "en-US|there|adverb",
+          "lemma": "there",
+          "part_of_speech": "adverb",
+          "concept_slug": "dict_en_there-adverb",
+          "word_form_key": "en-US|there|adverb|there|{\"form\":\"base\"}",
           "confidence": 1.0,
           "provenance": "deterministic"
         }
@@ -4576,6 +9007,61 @@
       "text_sha256": "1168e6e448004a5a20c13619fbcdcb4643c6d6ba96a5999c4efc486646dc425f",
       "annotations": [
         {
+          "start": 0,
+          "end": 2,
+          "surface": "My",
+          "annotation_type": "word",
+          "lexeme_key": "en-US|my|determiner",
+          "lemma": "my",
+          "part_of_speech": "determiner",
+          "concept_slug": "dict_en_my-determiner",
+          "word_form_key": "en-US|my|determiner|my|{\"form\":\"base\"}",
+          "confidence": 1.0,
+          "provenance": "deterministic"
+        },
+        {
+          "start": 8,
+          "end": 10,
+          "surface": "is",
+          "annotation_type": "word",
+          "lexeme_key": "en-US|be|verb",
+          "lemma": "be",
+          "part_of_speech": "verb",
+          "concept_slug": "dict_en_be-verb",
+          "word_form_key": null,
+          "confidence": 0.92,
+          "provenance": "deterministic",
+          "morphology": {
+            "inferred_by": "core_dictionary:irregular"
+          }
+        },
+        {
+          "start": 17,
+          "end": 20,
+          "surface": "I'm",
+          "annotation_type": "word",
+          "lexeme_key": "en-US|i'm|contraction",
+          "lemma": "I'm",
+          "part_of_speech": "contraction",
+          "concept_slug": "dict_en_i-m-contraction",
+          "word_form_key": "en-US|i'm|contraction|i'm|{\"form\":\"base\"}",
+          "confidence": 1.0,
+          "provenance": "deterministic"
+        },
+        {
+          "start": 21,
+          "end": 25,
+          "surface": "from",
+          "annotation_type": "word",
+          "lexeme_key": "en-US|from|preposition",
+          "lemma": "from",
+          "part_of_speech": "preposition",
+          "concept_slug": "dict_en_from-preposition",
+          "word_form_key": "en-US|from|preposition|from|{\"form\":\"base\"}",
+          "confidence": 1.0,
+          "provenance": "deterministic"
+        },
+        {
           "start": 26,
           "end": 30,
           "surface": "Iran",
@@ -4585,6 +9071,32 @@
           "part_of_speech": "proper_noun",
           "concept_slug": "country_iran",
           "word_form_key": "en-US|iran|proper_noun|iran|{\"type\":\"country_name\"}",
+          "confidence": 1.0,
+          "provenance": "deterministic"
+        },
+        {
+          "start": 32,
+          "end": 35,
+          "surface": "I'm",
+          "annotation_type": "word",
+          "lexeme_key": "en-US|i'm|contraction",
+          "lemma": "I'm",
+          "part_of_speech": "contraction",
+          "concept_slug": "dict_en_i-m-contraction",
+          "word_form_key": "en-US|i'm|contraction|i'm|{\"form\":\"base\"}",
+          "confidence": 1.0,
+          "provenance": "deterministic"
+        },
+        {
+          "start": 36,
+          "end": 40,
+          "surface": "good",
+          "annotation_type": "word",
+          "lexeme_key": "en-US|good|adjective",
+          "lemma": "good",
+          "part_of_speech": "adjective",
+          "concept_slug": "dict_en_good-adjective",
+          "word_form_key": "en-US|good|adjective|good|{\"form\":\"base\"}",
           "confidence": 1.0,
           "provenance": "deterministic"
         }
@@ -4966,6 +9478,19 @@
       "text_sha256": "308c8f3227d091b723f87fd5f5b463f4dd329fbe57b9d7384ab2559c8df2bf0f",
       "annotations": [
         {
+          "start": 0,
+          "end": 5,
+          "surface": "Again",
+          "annotation_type": "word",
+          "lexeme_key": "en-US|again|adverb",
+          "lemma": "again",
+          "part_of_speech": "adverb",
+          "concept_slug": "dict_en_again-adverb",
+          "word_form_key": "en-US|again|adverb|again|{\"form\":\"base\"}",
+          "confidence": 1.0,
+          "provenance": "deterministic"
+        },
+        {
           "start": 7,
           "end": 13,
           "surface": "please",
@@ -4991,6 +9516,19 @@
       "text": "Again, please.",
       "text_sha256": "308c8f3227d091b723f87fd5f5b463f4dd329fbe57b9d7384ab2559c8df2bf0f",
       "annotations": [
+        {
+          "start": 0,
+          "end": 5,
+          "surface": "Again",
+          "annotation_type": "word",
+          "lexeme_key": "en-US|again|adverb",
+          "lemma": "again",
+          "part_of_speech": "adverb",
+          "concept_slug": "dict_en_again-adverb",
+          "word_form_key": "en-US|again|adverb|again|{\"form\":\"base\"}",
+          "confidence": 1.0,
+          "provenance": "deterministic"
+        },
         {
           "start": 7,
           "end": 13,
@@ -5018,6 +9556,19 @@
       "text_sha256": "308c8f3227d091b723f87fd5f5b463f4dd329fbe57b9d7384ab2559c8df2bf0f",
       "annotations": [
         {
+          "start": 0,
+          "end": 5,
+          "surface": "Again",
+          "annotation_type": "word",
+          "lexeme_key": "en-US|again|adverb",
+          "lemma": "again",
+          "part_of_speech": "adverb",
+          "concept_slug": "dict_en_again-adverb",
+          "word_form_key": "en-US|again|adverb|again|{\"form\":\"base\"}",
+          "confidence": 1.0,
+          "provenance": "deterministic"
+        },
+        {
           "start": 7,
           "end": 13,
           "surface": "please",
@@ -5043,6 +9594,19 @@
       "text": "Again, please.",
       "text_sha256": "308c8f3227d091b723f87fd5f5b463f4dd329fbe57b9d7384ab2559c8df2bf0f",
       "annotations": [
+        {
+          "start": 0,
+          "end": 5,
+          "surface": "Again",
+          "annotation_type": "word",
+          "lexeme_key": "en-US|again|adverb",
+          "lemma": "again",
+          "part_of_speech": "adverb",
+          "concept_slug": "dict_en_again-adverb",
+          "word_form_key": "en-US|again|adverb|again|{\"form\":\"base\"}",
+          "confidence": 1.0,
+          "provenance": "deterministic"
+        },
         {
           "start": 7,
           "end": 13,
@@ -5197,6 +9761,32 @@
           "concept_slug": null,
           "word_form_key": null,
           "confidence": 0.98,
+          "provenance": "deterministic"
+        }
+      ]
+    },
+    {
+      "source": {
+        "kind": "dialogue_turn",
+        "external_id": "d_pre_water_offer",
+        "turn_order": 3
+      },
+      "batch_id": "en-us-prea1-survival-words-v1",
+      "lesson_key": "prea1-en-survival-words-01",
+      "text": "Here.",
+      "text_sha256": "2e25cc8c6bc71f7ea45a4d02973326d901a43b14491a7458d3bac6fe8b5a1086",
+      "annotations": [
+        {
+          "start": 0,
+          "end": 4,
+          "surface": "Here",
+          "annotation_type": "word",
+          "lexeme_key": "en-US|here|adverb",
+          "lemma": "here",
+          "part_of_speech": "adverb",
+          "concept_slug": "dict_en_here-adverb",
+          "word_form_key": "en-US|here|adverb|here|{\"form\":\"base\"}",
+          "confidence": 1.0,
           "provenance": "deterministic"
         }
       ]
@@ -5490,37 +10080,17 @@
   ],
   "stats": {
     "text_sources_scanned": 429,
-    "text_sources_annotated": 157,
-    "annotations": 258,
+    "text_sources_annotated": 244,
+    "annotations": 515,
     "tokens": 817,
-    "linked_tokens": 258,
-    "token_coverage": 0.315789,
-    "ambiguous_tokens": 0,
-    "unresolved_tokens": 559,
+    "linked_tokens": 515,
+    "token_coverage": 0.630355,
+    "ambiguous_tokens": 1,
+    "unresolved_tokens": 302,
     "top_unresolved": [
-      [
-        "i'm",
-        37
-      ],
-      [
-        "is",
-        29
-      ],
-      [
-        "a",
-        22
-      ],
       [
         "name",
         19
-      ],
-      [
-        "again",
-        16
-      ],
-      [
-        "this",
-        15
       ],
       [
         "exit",
@@ -5531,10 +10101,6 @@
         13
       ],
       [
-        "you",
-        12
-      ],
-      [
         "sara",
         12
       ],
@@ -5543,39 +10109,11 @@
         12
       ],
       [
-        "the",
-        12
-      ],
-      [
-        "my",
-        11
-      ],
-      [
-        "i",
-        11
-      ],
-      [
-        "from",
-        10
-      ],
-      [
         "arman",
         10
       ],
       [
-        "your",
-        9
-      ],
-      [
-        "good",
-        8
-      ],
-      [
         "g",
-        8
-      ],
-      [
-        "what's",
         8
       ],
       [
@@ -5587,18 +10125,6 @@
         7
       ],
       [
-        "it's",
-        7
-      ],
-      [
-        "are",
-        6
-      ],
-      [
-        "how",
-        6
-      ],
-      [
         "b",
         6
       ],
@@ -5608,10 +10134,6 @@
       ],
       [
         "w",
-        6
-      ],
-      [
-        "that",
         6
       ],
       [
@@ -5695,19 +10217,7 @@
         4
       ],
       [
-        "there",
-        4
-      ],
-      [
         "slowly",
-        4
-      ],
-      [
-        "does",
-        4
-      ],
-      [
-        "mean",
         4
       ],
       [
@@ -5739,23 +10249,11 @@
         3
       ],
       [
-        "don't",
-        3
-      ],
-      [
         "understand",
         3
       ],
       [
-        "can",
-        3
-      ],
-      [
         "s-a-m",
-        3
-      ],
-      [
-        "it",
         3
       ],
       [
@@ -5807,23 +10305,11 @@
         2
       ],
       [
-        "to",
-        2
-      ],
-      [
         "pre",
         2
       ],
       [
         "ready",
-        2
-      ],
-      [
-        "here",
-        2
-      ],
-      [
-        "may",
         2
       ],
       [
@@ -5835,11 +10321,11 @@
         2
       ],
       [
-        "much",
-        2
+        "nina",
+        1
       ],
       [
-        "nina",
+        "first",
         1
       ],
       [
@@ -5867,15 +10353,7 @@
         1
       ],
       [
-        "or",
-        1
-      ],
-      [
         "entry",
-        1
-      ],
-      [
-        "of",
         1
       ],
       [
@@ -5887,15 +10365,43 @@
         1
       ],
       [
-        "do",
-        1
-      ],
-      [
         "amy",
         1
       ],
       [
         "mia",
+        1
+      ],
+      [
+        "sun",
+        1
+      ],
+      [
+        "vowel",
+        1
+      ],
+      [
+        "omid",
+        1
+      ],
+      [
+        "ali",
+        1
+      ],
+      [
+        "intro",
+        1
+      ],
+      [
+        "cafe",
+        1
+      ],
+      [
+        "ben",
+        1
+      ],
+      [
+        "exact-match",
         1
       ]
     ]
