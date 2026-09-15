@@ -42,12 +42,14 @@ jobs:
         run: |
           python -m py_compile \
             api/lesson_payload.py \
+            api/frontend_repository.py \
             api/server.py \
             scripts/validate_content.py \
             scripts/materialize_level.py \
             scripts/lesson_flow.py \
             scripts/materialize_lesson_delivery.py \
             scripts/validate_english_reference_flow.py \
+            scripts/test_english_reference_database.py \
             scripts/sync_character_cast.py \
             scripts/build_audio_manifest.py \
             scripts/resolve_audio_voices.py \
