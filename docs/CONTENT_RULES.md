@@ -8,6 +8,7 @@ Permitted editorial work includes:
 - selecting source material;
 - assigning it to an appropriate CEFR level;
 - grouping source material into lessons;
+- combining compatible source-backed utterances into a coherent app scene when every target-language turn remains individually traceable;
 - transforming source material into app-friendly activities;
 - translating required content into Persian;
 - creating metadata, IDs, character assignments and UI-only instructions.
@@ -34,7 +35,45 @@ When a source cannot be directly reused, it may still inform curriculum coverage
 - Avoid repeating the same activity type back-to-back without a pedagogical reason.
 - Across neighboring lessons, vary practice patterns to reduce predictability and fatigue.
 
-## 4. Activity integrity
+### Opening-conversation depth
+
+`conversation_speaking` is a real mini-scene, not merely a two-line prompt/answer wrapper.
+
+- Conversation length is dynamic and source-driven.
+- For normal course lessons, a two-turn dialogue is considered insufficient and must be replaced by a more complete source-backed scene.
+- A typical beginner opening should contain several alternating turns and multiple learner-speaking turns so the learner participates more than once.
+- Early zero-beginner lessons should normally expose the learner to the same small language set repeatedly inside one coherent scene instead of introducing many unrelated words.
+- Prefer one source's continuous dialogue when suitable. A composite scene is allowed only when its source-backed turns are mutually compatible and every turn keeps exact provenance.
+- Do not lengthen a dialogue by inventing target-language filler.
+- Dialogue length must follow the scene: a greeting may be compact, while a cafe, shopping, directions or registration scene may be substantially longer.
+
+## 4. Zero-beginner progression
+
+Pre-A1 must be designed for a learner who can start with zero German knowledge.
+
+The beginning of a language should favor immediately understandable, reusable communication before administrative or travel-heavy material. A sensible progression is:
+
+1. hello / good morning / goodbye;
+2. how are you and fixed short responses;
+3. yes / no / please / thanks / excuse me and repair phrases;
+4. giving and asking a name;
+5. very simple identity/origin/residence;
+6. very simple preferences such as liking familiar food;
+7. simple wants/choices such as water, coffee or food;
+8. numbers and age;
+9. family and familiar people;
+10. only then broader time/date/place/transaction/form tasks as coverage requires.
+
+This is a progression principle rather than a globally fixed lesson list. Source availability and language-specific structure may change the exact grouping.
+
+For the earliest lessons:
+- assume no unexplained German vocabulary;
+- keep each lesson's new productive load small;
+- recycle previously introduced phrases heavily;
+- prioritize concrete familiar words and visually supportable meanings;
+- avoid starting the course with passport control, registration bureaucracy, formal travel procedures or other contexts that require unnecessary world knowledge when simpler communicative material is available.
+
+## 5. Activity integrity
 
 Activities should reinforce material introduced by the lesson rather than introduce unrelated target-language content.
 
@@ -45,7 +84,7 @@ For transformed activities:
 - `matching`: pair source-backed words/phrases with faithful Persian meanings or source-backed equivalents;
 - grammar activities must trace back to a cited grammar source.
 
-## 5. Words and phrases
+## 6. Words and phrases
 
 Every reusable word or phrase should have a stable ID. This enables:
 - tap-for-help inside lessons;
@@ -57,7 +96,7 @@ Every reusable word or phrase should have a stable ID. This enables:
 
 A lesson references lexeme IDs rather than duplicating educational metadata wherever possible.
 
-## 6. Audio policy
+## 7. Audio policy
 
 Audio is not produced during initial content assembly.
 
@@ -69,7 +108,7 @@ Future audio rules:
 - voices should be clear, calm, low-stress, non-aggressive and relatively consistent in overall tone;
 - speech should remain easy for learners to understand.
 
-## 7. Source provenance
+## 8. Source provenance
 
 Every reusable teaching item must be traceable to one or more source records. Store, when available:
 - source ID;
@@ -80,10 +119,12 @@ Every reusable teaching item must be traceable to one or more source records. St
 - retrieval date;
 - transformation notes.
 
-## 8. QA invariants
+## 9. QA invariants
 
 Before a lesson is final:
 - first activity is conversation speaking;
+- opening conversation is a meaningful multi-turn mini-scene rather than a token two-line exchange;
+- the learner speaks more than once in ordinary opening scenes;
 - source references resolve;
 - CEFR assignment is justified;
 - Persian translations preserve meaning;
