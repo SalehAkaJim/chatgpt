@@ -1,0 +1,62 @@
+name: German Pre-A1 semantic audit
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'database/**'
+      - '.github/workflows/debug-pre-a1-semantic-audit.yml'
+  workflow_dispatch:
+
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    services:
+      mysql:
+        image: mysql:9.0.1
+        env:
+          MYSQL_ROOT_PASSWORD: root
+          MYSQL_DATABASE: language_app
+        ports: ['3306:3306']
+        options: >-
+          --health-cmd="mysqladmin ping -h 127.0.0.1 -proot --silent"
+          --health-interval=5s --health-timeout=5s --health-retries=30
+    steps:
+      - uses: actions/checkout@v4
+      - name: Build final database state
+        run: |
+          set -euo pipefail
+          db='docker run --rm --network host -i mysql:9.0.1 mysql --show-warnings -h127.0.0.1 -uroot -proot language_app'
+          $db < database/schema.sql
+          shopt -s nullglob
+          for f in database/migrations/*.sql; do $db < "$f"; done
+          for i in 1 2; do
+            $db < database/seed_reference.sql
+            for f in database/plans/*.sql; do $db < "$f"; done
+            for f in database/content/*.sql; do $db < "$f"; done
+          done
+      - name: Export final semantic state
+        run: |
+          set -euo pipefail
+          sql() { docker run --rm --network host mysql:9.0.1 mysql -N -s -h127.0.0.1 -uroot -proot language_app -e "$1"; }
+          {
+            echo '=== LESSONS ==='
+            sql "SELECT l.sequence_number,l.public_id,l.title_fa,COALESCE(l.unit_or_topic,''),l.status,COALESCE(l.source_title,''),COALESCE(l.activity_count_rationale,''),COALESCE(l.sequence_rationale,''),COALESCE(l.template_signature,''),COALESCE((SELECT GROUP_CONCAT(CONCAT(ct.public_id,': ',ct.description) ORDER BY ct.id SEPARATOR ' || ') FROM lesson_targets lt JOIN curriculum_targets ct ON ct.id=lt.curriculum_target_id WHERE lt.lesson_id=l.id),'') FROM lessons l WHERE l.public_id LIKE 'de_pre_a1_l%' ORDER BY l.sequence_number;"
+            echo '=== DIALOGUE_TURNS ==='
+            sql "SELECT l.sequence_number,l.public_id,d.public_id,d.scenario,dt.position,ch.public_id,ch.name,ch.origin,ch.gender,ch.age_band,dt.speaker_identity_origin,dt.speaker_gender_evidence,dt.learner_turn,dt.text_target,dt.translation_fa,COALESCE((SELECT GROUP_CONCAT(si.public_id ORDER BY si.public_id SEPARATOR ',') FROM dialogue_turn_sources dts JOIN source_items si ON si.id=dts.source_item_id WHERE dts.dialogue_turn_id=dt.id),'') FROM activities a JOIN lessons l ON l.id=a.lesson_id JOIN dialogues d ON d.id=a.dialogue_id JOIN dialogue_turns dt ON dt.dialogue_id=d.id JOIN characters ch ON ch.id=dt.speaker_character_id WHERE l.public_id LIKE 'de_pre_a1_l%' AND a.position=1 ORDER BY l.sequence_number,dt.position;"
+            echo '=== ACTIVITIES ==='
+            sql "SELECT l.sequence_number,l.public_id,a.position,a.public_id,a.type_code,COALESCE(a.instruction_fa,''),COALESCE(a.selection_reason,''),CAST(COALESCE(a.payload,JSON_OBJECT()) AS CHAR),CAST(COALESCE(a.transformations,JSON_OBJECT()) AS CHAR),COALESCE((SELECT GROUP_CONCAT(si.public_id ORDER BY si.public_id SEPARATOR ',') FROM activity_sources acs JOIN source_items si ON si.id=acs.source_item_id WHERE acs.activity_id=a.id),'') FROM activities a JOIN lessons l ON l.id=a.lesson_id WHERE l.public_id LIKE 'de_pre_a1_l%' ORDER BY l.sequence_number,a.position;"
+            echo '=== ACTIVITY_ITEMS ==='
+            sql "SELECT l.sequence_number,l.public_id,a.public_id,ai.position,ai.item_role,COALESCE(ai.text_target,''),COALESCE(ai.text_fa,''),COALESCE(CAST(ai.is_correct AS CHAR),''),COALESCE(ai.group_key,''),CAST(COALESCE(ai.metadata,JSON_OBJECT()) AS CHAR),COALESCE((SELECT GROUP_CONCAT(si.public_id ORDER BY si.public_id SEPARATOR ',') FROM activity_item_sources ais JOIN source_items si ON si.id=ais.source_item_id WHERE ais.activity_item_id=ai.id),'') FROM activity_items ai JOIN activities a ON a.id=ai.activity_id JOIN lessons l ON l.id=a.lesson_id WHERE l.public_id LIKE 'de_pre_a1_l%' ORDER BY l.sequence_number,a.position,ai.position;"
+            echo '=== LEXEMES ==='
+            sql "SELECT lx.public_id,lx.lexeme_type,lx.surface,COALESCE(lx.lemma,''),COALESCE(lx.part_of_speech,''),lx.translation_fa,COALESCE(lx.usage_note_fa,''),COALESCE((SELECT GROUP_CONCAT(DISTINCT l.public_id ORDER BY l.sequence_number SEPARATOR ',') FROM lesson_lexemes llx JOIN lessons l ON l.id=llx.lesson_id WHERE llx.lexeme_id=lx.id AND l.public_id LIKE 'de_pre_a1_l%'),''),COALESCE((SELECT GROUP_CONCAT(si.public_id ORDER BY si.public_id SEPARATOR ',') FROM lexeme_sources lxs JOIN source_items si ON si.id=lxs.source_item_id WHERE lxs.lexeme_id=lx.id),'') FROM lexemes lx WHERE EXISTS (SELECT 1 FROM lesson_lexemes llx JOIN lessons l ON l.id=llx.lesson_id WHERE llx.lexeme_id=lx.id AND l.public_id LIKE 'de_pre_a1_l%') ORDER BY lx.public_id;"
+            echo '=== GRAMMAR_NOTES ==='
+            sql "SELECT gn.public_id,gn.title_fa,gn.source_text,gn.translation_fa,COALESCE((SELECT GROUP_CONCAT(DISTINCT l.public_id ORDER BY l.sequence_number SEPARATOR ',') FROM lesson_grammar_notes lgn JOIN lessons l ON l.id=lgn.lesson_id WHERE lgn.grammar_note_id=gn.id AND l.public_id LIKE 'de_pre_a1_l%'),''),COALESCE((SELECT GROUP_CONCAT(si.public_id ORDER BY si.public_id SEPARATOR ',') FROM grammar_note_sources gns JOIN source_items si ON si.id=gns.source_item_id WHERE gns.grammar_note_id=gn.id),'') FROM grammar_notes gn WHERE EXISTS (SELECT 1 FROM lesson_grammar_notes lgn JOIN lessons l ON l.id=lgn.lesson_id WHERE lgn.grammar_note_id=gn.id AND l.public_id LIKE 'de_pre_a1_l%') ORDER BY gn.public_id;"
+            echo '=== EXAMPLES ==='
+            sql "SELECT es.public_id,es.text_target,es.translation_fa,COALESCE((SELECT GROUP_CONCAT(si.public_id ORDER BY si.public_id SEPARATOR ',') FROM example_sentence_sources ess JOIN source_items si ON si.id=ess.source_item_id WHERE ess.example_sentence_id=es.id),'') FROM example_sentences es WHERE (EXISTS (SELECT 1 FROM lexeme_examples le JOIN lesson_lexemes llx ON llx.lexeme_id=le.lexeme_id JOIN lessons l ON l.id=llx.lesson_id WHERE le.example_sentence_id=es.id AND l.public_id LIKE 'de_pre_a1_l%') OR EXISTS (SELECT 1 FROM grammar_note_examples gne JOIN lesson_grammar_notes lgn ON lgn.grammar_note_id=gne.grammar_note_id JOIN lessons l ON l.id=lgn.lesson_id WHERE gne.example_sentence_id=es.id AND l.public_id LIKE 'de_pre_a1_l%')) ORDER BY es.public_id;"
+          } | tee /tmp/pre-a1-semantic-audit.txt
+      - uses: actions/upload-artifact@v4
+        with:
+          name: pre-a1-semantic-audit
+          path: /tmp/pre-a1-semantic-audit.txt
+          retention-days: 1
