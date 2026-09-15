@@ -7,6 +7,8 @@ These checks are intended for future automated validation plus editorial review.
 A lesson fails QA when any of the following is true:
 
 - activity #1 is not `conversation_speaking`;
+- an ordinary course opening dialogue contains only one prompt/response pair and has no approved editorial exception;
+- an opening dialogue has no learner turn, or the learner participates only once in a scene that is meant to be a normal multi-turn lesson conversation;
 - a reusable target-language teaching item has no source reference;
 - a grammar explanation has no source-backed origin;
 - a required Persian translation is missing;
@@ -15,6 +17,38 @@ A lesson fails QA when any of the following is true:
 - referenced lexeme, character, dialogue or source IDs do not resolve;
 - audio is generated before the full language reaches final content status;
 - an activity introduces unrelated target-language material only to satisfy a template.
+
+## Conversation-depth checks
+
+Conversation length is dynamic; QA must not force every lesson to the same turn count. It must, however, reject token conversations that do not function as a real scene.
+
+For every opening dialogue, review:
+- total turn count;
+- learner-turn count;
+- alternation between speakers;
+- whether the scene has a clear beginning, progression and natural stopping point;
+- whether repeated phrases are pedagogically useful rather than filler;
+- whether every target-language turn remains source-backed;
+- whether a composite dialogue combines compatible utterances without changing their German text.
+
+For zero-beginner Pre-A1, flag strongly when:
+- the opening has fewer than four total turns;
+- the learner has fewer than two speaking turns;
+- the first ten lessons repeatedly use the same two-turn or four-turn micro-pattern;
+- a supposedly introductory lesson assumes unexplained vocabulary or a bureaucratic/travel context before simpler everyday communication has been introduced.
+
+The preferred pattern for early lessons is several short turns with a very small recycled language set. Longer transactional scenes may naturally contain more turns.
+
+## Zero-beginner progression checks
+
+For the opening run of Pre-A1 lessons, verify that the learner can plausibly begin with no prior German.
+
+Flag for editorial review when:
+- a lesson depends on words or structures that have not appeared earlier and are not immediately supported by context;
+- passport, registration, complex travel, prices, dates or directions are introduced before basic greetings, name, courtesy, simple preferences and very simple personal information;
+- productive vocabulary load increases sharply without recycling;
+- a later lesson fails to reuse high-value beginner chunks introduced earlier;
+- the course teaches isolated labels for too long without giving the learner simple conversational use.
 
 ## Dynamic activity checks
 
