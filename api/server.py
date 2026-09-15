@@ -14,11 +14,11 @@ from urllib.parse import parse_qs, unquote, urlparse
 
 import mysql.connector
 
+from api.frontend_repository import LessonRepository
 from api.lesson_payload import (
     DeliveryNotMaterialized,
     ExerciseNotFound,
     LessonNotFound,
-    LessonRepository,
 )
 from scripts.materialize_level import db_config
 
