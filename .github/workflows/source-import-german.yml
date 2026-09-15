@@ -30,12 +30,12 @@ jobs:
         run: python scripts/build_german_pre_a1.py
       - name: Commit source snapshots and curriculum mappings
         run: |
-          if git diff --quiet -- content/production/de/coerll-deutsch-im-blick content/production/de/pre-a1 content/production/de/a1; then
+          git add content/production/de/coerll-deutsch-im-blick content/production/de/pre-a1 content/production/de/a1
+          if git diff --cached --quiet; then
             echo 'No source or curriculum changes.'
             exit 0
           fi
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git add content/production/de/coerll-deutsch-im-blick content/production/de/pre-a1 content/production/de/a1
           git commit -m 'content(de): build source-only Pre-A1 and A1 [skip ci]'
           git push
