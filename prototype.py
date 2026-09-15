@@ -192,28 +192,27 @@ def load_model():
      aid,pos=value(f[0]),value(f[1])
      if isinstance(aid,str) and isinstance(pos,int) and aid.startswith('de_pre_a1_a'):
       items[(aid,pos)]={'activity_id':aid,'position':pos,'item_role':value(f[2]),'text_target':value(f[3]),'text_fa':value(f[4]),'is_correct':value(f[5]),'group_key':value(f[6]),'metadata':value(f[7]) if len(f)>7 else {},'origin_file':path.name}
-  # Single-row activity inserts, e.g. the later age-production activity.
   for st in statements(sql):
    if re.match(r'\s*INSERT\s+INTO\s+activities\b',st,re.I) and not re.search(r'FROM\s*\(',st,re.I):
-    m=re.search(r"SELECT\s+(.*)\s+FROM\s+lessons\s+l\s+WHERE\s+l\.public_id\s*=\s*'(de_pre_a1_l\d+)'",st,re.I|re.S)
+    m=re.search(r"SELECT\s+(.*?)\s+FROM\s+lessons\s+l\s+WHERE\s+l\.public_id\s*=\s*'(de_pre_a1_l\d+)'",st,re.I|re.S)
     if m:
      f=split_top(m.group(1)); aid=value(f[0])
      if len(f)>=9 and isinstance(aid,str) and aid.startswith('de_pre_a1_a'):
       activities[aid]={'public_id':aid,'lesson_id':m.group(2),'position':value(f[2]),'type_code':value(f[3]),'instruction_fa':value(f[4]),'selection_reason':value(f[5]),'dialogue_id':value(f[6]),'payload':value(f[7]),'transformations':value(f[8]),'origin_file':path.name}
-  # Apply later modernization/fix UPDATE statements in filename order.
   for st in statements(sql):
    flat=re.sub(r'\s+',' ',st).strip(); up=flat.upper(); a=assignments(st)
    if up.startswith('UPDATE LESSONS'):
-    ids=re.findall(r"'(de_pre_a1_l\d+)'",re.search(r"(?:public_id\s*=\s*'ae_pre_a1_l\d+'|public_id\s+IN\s*\(.*?\))","st",re.I|re.S).group(0)) if re.search(r"(?:public_id\s*=\s*'de_pre_a1_l\d+'|public_id\s+IN\s*\(.*?\))",st,re.I|re.S) else []
-   for lid in ids:
-    if lid in lessons: apply(lessons[lid],a,{'status','template_signature','activity_count_rationale','sequence_rationale','source_title','title_fa','unit_or_topic'})
+    match=re.search(r"(?:public_id\s*=\s*'de_pre_a1_l\d+'|public_id\s+IN\s*\(.*?\))",st,re.I|re.S)
+    ids=re.findall(r"'(de_pre_a1_l\d+)'",match.group(0)) if match else []
+    for lid in ids:
+     if lid in lessons: apply(lessons[lid],a,{'status','template_signature','activity_count_rationale','sequence_rationale','source_title','title_fa','unit_or_topic'})
    elif up.startswith('UPDATE DIALOGUES'):
     m=re.search(r"public_id\s*=\s*'(de_pre_a1_dlg_\d+)'",st,re.I)
-    if m: apply(dialogs.setdefault(m.group(1),{'public_id':m.group(1)}),a,{'status','scenario'})
+    if m: apply(dialogs.setdefault(m.group(1),{'public_id':m.group(1)}),a,{'scenario','status'})
    elif up.startswith('UPDATE DIALOGUE_TURNS'):
     d=re.search(r"d\.public_id\s*=\s*'(de_pre_a1_dlg_\d+)'",st,re.I); p=re.search(r'dt\.position\s*=\s*(\d+)',st,re.I)
     if d and p:
-     key=(d.group(1),int(p.group(1)); target=turns.setdefault(key,{'dialogue_id':key[0],'position':key[1]})
+     key=(d.group(1),int(p.group(1))); target=turns.setdefault(key,{'dialogue_id':key[0],'position':key[1]})
      c=re.search(r"ch\.public_id\s*=\s*'(de_char_[^']+)'",st,re.I)
      if c: target['character_id']=c.group(1)
      apply(target,a,{'text_target','translation_fa','learner_turn'}); target['learner_turn']=bool(target.get('learner_turn')); target['origin_file']=path.name
@@ -223,8 +222,8 @@ def load_model():
     if not targets:
      lid=re.search(r"l\.public_id\s*=\s*'(de_pre_a1_l\d+)'",st,re.I); pos=re.search(r'a\.position\s*=\s*(\d+)',st,re.I)
      if lid:
-     targets=[x for x in activities.values() if x.get('lesson_id')==lid.group(1)]
-     if pos: targets=[x for x in targets if x.get('position')==int(pos.group(1))]
+      targets=[x for x in activities.values() if x.get('lesson_id')==lid.group(1)]
+      if pos: targets=[x for x in targets if x.get('position')==int(pos.group(1))]
     for target in targets:
      apply(target,a,{'type_code','instruction_fa','selection_reason','payload','transformations','dialogue_id'}); target['origin_file']=path.name
    elif up.startswith('UPDATE ACTIVITY_ITEMS'):
@@ -263,8 +262,35 @@ def structural_check(m):
   if acts[0].get('type_code')!='conversation_speaking': problems.append(f"{l['public_id']}: first activity is {acts[0].get('type_code')}")
   for a in acts:
    if a.get('type_code') not in LABELS: problems.append(f"{a['public_id']}: unknown type {a.get('type_code')}")
-   if a.get('type_code')=='conversation_speaking' and not a.get('dialogue_turns'): problems.append(f"{[a['public_id']}: no dialogue turns")
-   if a.get('type_code') in {'form_fill','guided_writing'} and not isinstance(a.get('payload'),dict): problems.append(f"{[a['public_id']}: bad payload")
+   if a.get('type_code')=='conversation_speaking' and not a.get('dialogue_turns'): problems.append(f"{a['public_id']}: no dialogue turns")
+   if a.get('type_code') in {'form_fill','guided_writing'} and not isinstance(a.get('payload'),dict): problems.append(f"{a['public_id']}: bad payload")
  return problems
 
-HTML=r'''<!doctype html><html lang="fa" dir="rtl"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Prototype</title><style>
+UI_FILE=ROOT/'prototype_ui.html'
+
+class Handler(BaseHTTPRequestHandler):
+ model={}
+ def log_message(self,fmt,*args): print('[prototype] '+fmt%args)
+ def send_data(self,data,ctype,status=200):
+  self.send_response(status); self.send_header('Content-Type',ctype); self.send_header('Content-Length',str(len(data))); self.send_header('Cache-Control','no-store'); self.end_headers(); self.wfile.write(data)
+ def do_GET(self):
+  p=urlparse(self.path).path
+  if p=='/api/model': return self.send_data(json.dumps(self.model,ensure_ascii=False).encode(),'application/json; charset=utf-8')
+  if p=='/api/health': return self.send_data(json.dumps({'ok':True,'lessons':len(self.model.get('lessons',[]))}).encode(),'application/json')
+  if p in {'/','/index.html'}:
+   return self.send_data(UI_FILE.read_bytes(),'text/html; charset=utf-8')
+  self.send_data(b'not found','text/plain',404)
+
+def main():
+ ap=argparse.ArgumentParser(); ap.add_argument('--host',default='127.0.0.1'); ap.add_argument('--port',type=int,default=8000); ap.add_argument('--no-browser',action='store_true'); ap.add_argument('--check',action='store_true'); args=ap.parse_args()
+ try: m=load_model()
+ except Exception as e: print('Prototype parse failed:',e,file=sys.stderr); return 2
+ problems=structural_check(m); total=sum(len(l['activities']) for l in m['lessons']); print(f"Parsed {len(m['lessons'])} lessons, {total} activities, {len(m['parsed_files'])} SQL files."); print('Activity types:',m['activity_type_counts']); print('Structural check: OK' if not problems else 'Structural warnings:\n  - '+'\n  - '.join(problems))
+ if args.check: return 1 if problems else 0
+ Handler.model=m; server=ThreadingHTTPServer((args.host,args.port),Handler); url=f'http://{args.host}:{args.port}'; print('Prototype running at',url)
+ if not args.no_browser: threading.Timer(.4,lambda:webbrowser.open(url)).start()
+ try: server.serve_forever()
+ except KeyboardInterrupt: pass
+ finally: server.server_close()
+ return 0
+if __name__=='__main__': raise SystemExit(main())
