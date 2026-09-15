@@ -133,15 +133,29 @@ jobs:
         run: |
           set -euo pipefail
           sql() { docker run --rm --network host mysql:9.0.1 mysql -N -s -h127.0.0.1 -uroot -proot language_app -e "$1"; }
-          # The opening partner must speak first; learner must speak on a later turn.
           test "$(sql "SELECT COUNT(*) FROM activities a JOIN lessons l ON l.id=a.lesson_id JOIN dialogues d ON d.id=a.dialogue_id JOIN dialogue_turns dt ON dt.dialogue_id=d.id AND dt.position=1 WHERE l.public_id LIKE 'de_pre_a1_l%' AND a.position=1 AND dt.learner_turn=1;")" = "0"
           test "$(sql "SELECT COUNT(DISTINCT d.id) FROM activities a JOIN lessons l ON l.id=a.lesson_id JOIN dialogues d ON d.id=a.dialogue_id JOIN dialogue_turns dt ON dt.dialogue_id=d.id WHERE l.public_id LIKE 'de_pre_a1_l%' AND a.position=1 AND dt.learner_turn=1 AND dt.position>1;")" = "30"
-          # Adjacent lessons must not repeat the exact same activity signature.
           test "$(sql "SELECT COUNT(*) FROM lessons a JOIN lessons b ON b.language_level_id=a.language_level_id AND b.sequence_number=a.sequence_number+1 WHERE a.public_id LIKE 'de_pre_a1_l%' AND b.public_id LIKE 'de_pre_a1_l%' AND a.template_signature=b.template_signature;")" = "0"
-          # Lesson activity counts must genuinely vary rather than follow a fixed quota.
           test "$(sql "SELECT COUNT(DISTINCT activity_count) FROM v_lesson_activity_counts WHERE public_id LIKE 'de_pre_a1_l%';")" -ge "4"
           test "$(sql "SELECT MIN(activity_count) FROM v_lesson_activity_counts WHERE public_id LIKE 'de_pre_a1_l%';")" -le "2"
           test "$(sql "SELECT MAX(activity_count) FROM v_lesson_activity_counts WHERE public_id LIKE 'de_pre_a1_l%';")" -ge "5"
+
+      - name: Reject dated or pre-reform German in active Pre-A1 content
+        run: |
+          set -euo pipefail
+          sql() { docker run --rm --network host mysql:9.0.1 mysql -N -s -h127.0.0.1 -uroot -proot language_app -e "$1"; }
+          legacy='Fräulein|D-Mark|(^|[^A-Za-z])DM([^A-Za-z]|$)|heisse|heissen|grosse|Schloß|muß|daß|auf deutsch'
+          dialogue_count=$(sql "SELECT COUNT(*) FROM dialogue_turns dt JOIN dialogues d ON d.id=dt.dialogue_id WHERE d.public_id LIKE 'de_pre_a1_dlg_%' AND dt.text_target REGEXP '$legacy';")
+          item_count=$(sql "SELECT COUNT(*) FROM activity_items ai JOIN activities a ON a.id=ai.activity_id JOIN lessons l ON l.id=a.lesson_id WHERE l.public_id LIKE 'de_pre_a1_l%' AND COALESCE(ai.text_target,'') REGEXP '$legacy';")
+          payload_count=$(sql "SELECT COUNT(*) FROM activities a JOIN lessons l ON l.id=a.lesson_id WHERE l.public_id LIKE 'de_pre_a1_l%' AND CAST(COALESCE(a.payload,JSON_OBJECT()) AS CHAR) REGEXP '$legacy';")
+          lexeme_count=$(sql "SELECT COUNT(DISTINCT lx.id) FROM lexemes lx JOIN lesson_lexemes ll ON ll.lexeme_id=lx.id JOIN lessons l ON l.id=ll.lesson_id WHERE l.public_id LIKE 'de_pre_a1_l%' AND lx.surface REGEXP '$legacy';")
+          echo "legacy dialogue=$dialogue_count items=$item_count payload=$payload_count active_lexemes=$lexeme_count"
+          test "$dialogue_count" = "0"
+          test "$item_count" = "0"
+          test "$payload_count" = "0"
+          test "$lexeme_count" = "0"
+          # Dated Headstart restaurant/DM and old FAST invitation are no longer active sources on replaced lessons.
+          test "$(sql "SELECT COUNT(*) FROM lesson_sources ls JOIN lessons l ON l.id=ls.lesson_id JOIN source_items si ON si.id=ls.source_item_id WHERE l.public_id IN ('de_pre_a1_l023','de_pre_a1_l024','de_pre_a1_l025','de_pre_a1_l026','de_pre_a1_l027') AND si.public_id IN ('srcitem_headstart_m3_u1_restaurant','srcitem_headstart_m6_u1_purchase','srcitem_headstart_m3_u1_menu_visual','srcitem_fast_l9_invitation');")" = "0"
 
       - name: Check all base tables
         run: |
