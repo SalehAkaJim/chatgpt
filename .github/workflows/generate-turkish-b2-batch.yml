@@ -1,58 +1,128 @@
-name: Generate Turkish B2 Batch
+name: Generate Turkish B2 Content
+
 on:
   push:
     branches: [main]
-    paths: ['.github/turkish-b2-batch-trigger']
+    paths:
+      - '.github/turkish-b2-batch-trigger'
   workflow_dispatch:
+
 permissions:
   contents: write
+
 concurrency:
-  group: turkish-b2-content-generation-v1
+  group: turkish-b2-content-generation-v2
   cancel-in-progress: false
+
 jobs:
-  generate-batch:
+  generate:
     runs-on: ubuntu-latest
+    timeout-minutes: 30
     steps:
-      - uses: actions/checkout@v4
-        with: {ref: main, fetch-depth: 0}
-      - uses: actions/setup-python@v5
-        with: {python-version: '3.12'}
-      - run: pip install -r requirements.txt
-      - name: Generate Turkish B2 batch 1
+      - name: Checkout main
+        uses: actions/checkout@v7
+        with:
+          ref: main
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v7
+        with:
+          python-version: '3.12'
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Generate cumulative Turkish B2 production
         run: python scripts/generate_turkish_b2_batch.py
-      - name: Validate complete Turkish B2 batch
+
+      - name: Validate cumulative Turkish B2 content
         run: |
           set -euo pipefail
-          test "$(find content/production/tr/B2 -maxdepth 1 -name '*.json' | wc -l)" -eq 10
-          for f in content/production/tr/B2/*.json; do python scripts/validate_content.py "$f"; done
+          for f in content/production/tr/B2/*.json; do
+            python scripts/validate_content.py "$f"
+          done
+          python scripts/validate_turkish_b2_cefr_boundary.py
           python scripts/validate_character_cast.py --cast audio/cast/tr-TR.json
           python database/import/tr/b2.py --dry-run
-      - name: Educational batch summary
+
+      - name: Verify dynamic spec and production coverage
         run: |
           python - <<'PY'
-          import collections,json
+          import json
+          import re
           from pathlib import Path
-          counts=collections.Counter(); lessons=set(); ordered=[]; pairs=[]
-          units=json.loads(Path('content/specs/tr/B2/batch-01.json').read_text())['units']
-          for unit in units:
-              b=json.loads((Path('content/production/tr/B2')/f"b2-tr-{unit['slug']}-v1.json").read_text()); dialogues=[]
-              for item in b['items']:
-                  counts[item['kind']]+=1; lk=item.get('data',{}).get('lesson_key')
-                  if lk: lessons.add(lk)
-                  if item['kind']=='dialogue': dialogues.append(item)
-              for item in sorted(dialogues,key=lambda x:x['data']['lesson_key']):
-                  chars=tuple(item['data'].get('characters',[])[:2]); pairs.append((item['data']['lesson_key'],chars)); ordered.append(chars)
-          assert len(lessons)==20, len(lessons)
-          assert len(set(pairs))==len(pairs)
-          for previous,current in zip(ordered,ordered[1:]): assert set(previous)!=set(current), f'consecutive dialogue pair repeated: {previous}'
-          assert counts['concept']==60 and counts['utterance']==40 and counts['dialogue']==20 and counts['exercise']==100, counts
-          print({'units':10,'lessons':len(lessons),'counts':dict(counts)})
+
+          spec_dir = Path('content/specs/tr/B2')
+          prod_dir = Path('content/production/tr/B2')
+          spec_rows = []
+          seen = set()
+          for path in sorted(spec_dir.glob('batch-*.json')):
+              m = re.fullmatch(r'batch-(\d+)\.json', path.name)
+              if not m:
+                  continue
+              payload = json.loads(path.read_text(encoding='utf-8'))
+              batch = int(payload.get('batch', int(m.group(1))))
+              for unit in payload.get('units', []):
+                  slug = unit['slug']
+                  if slug in seen:
+                      raise SystemExit(f'duplicate B2 unit slug: {slug}')
+                  seen.add(slug)
+                  lessons = sorted({int(row[-1]) for row in unit.get('utterances', [])})
+                  if batch >= 2:
+                      if len(lessons) < 3:
+                          raise SystemExit(f'{path.name}:{slug}: expansion unit has fewer than 3 lessons')
+                      production = unit.get('production') or {}
+                      if int(production.get('lesson', 0)) != lessons[-1]:
+                          raise SystemExit(f'{path.name}:{slug}: expansion unit lacks final-lesson production')
+                  spec_rows.append((batch, slug, lessons))
+
+          production = {}
+          lesson_count = 0
+          kind_counts = {}
+          for path in sorted(prod_dir.glob('*.json')):
+              data = json.loads(path.read_text(encoding='utf-8'))
+              slug = data['curriculum_unit'].removeprefix('b2-tr-')
+              production[slug] = path.name
+              lesson_keys = set()
+              for item in data['items']:
+                  kind = item['kind']
+                  kind_counts[kind] = kind_counts.get(kind, 0) + 1
+                  lk = item.get('data', {}).get('lesson_key')
+                  if lk:
+                      lesson_keys.add(lk)
+              lesson_count += len(lesson_keys)
+
+          expected = {slug for _batch, slug, _lessons in spec_rows}
+          actual = set(production)
+          missing = sorted(expected - actual)
+          extra = sorted(actual - expected)
+          if missing or extra:
+              raise SystemExit(f'B2 spec/production mismatch: missing={missing} extra={extra}')
+
+          expansion_units = sum(1 for batch, _slug, _lessons in spec_rows if batch >= 2)
+          if expansion_units == 0:
+              raise SystemExit('Turkish B2 is known incomplete but no expansion units are present')
+
+          print({
+              'spec_units': len(spec_rows),
+              'production_units': len(production),
+              'lessons': lesson_count,
+              'expansion_units': expansion_units,
+              'kind_counts': kind_counts,
+          })
           PY
-      - name: Commit Turkish B2 production content
+
+      - name: Commit cumulative Turkish B2 production content
         run: |
-          git config user.name 'github-actions[bot]'; git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
           git add content/production/tr/B2
-          if git diff --cached --quiet; then echo 'No generated content changes.'; else
-            git commit -m 'Generate Turkish B2 batch 1 production content [skip ci]'
-            git fetch origin main; git rebase origin/main; git push origin HEAD:main
+          if git diff --cached --quiet; then
+            echo 'No generated Turkish B2 production changes.'
+            exit 0
           fi
+          git commit -m 'Generate cumulative Turkish B2 production content [skip ci]'
+          git fetch origin main
+          git rebase origin/main
+          git push origin HEAD:main
