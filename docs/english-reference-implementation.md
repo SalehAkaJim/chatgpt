@@ -156,7 +156,14 @@ A lesson payload has this shape (abbreviated):
             "target": {
               "value": "What day is it today?",
               "annotations": [
-                {"start": 0, "end": 4, "surface": "What", "entry": {"lemma": "what", "meaning": "چه"}}
+                {
+                  "start": 0,
+                  "end": 4,
+                  "utf16_start": 0,
+                  "utf16_end": 4,
+                  "surface": "What",
+                  "entry": {"lemma": "what", "meaning": "چه"}
+                }
               ],
               "audio": {"url": "..."}
             }
@@ -170,7 +177,14 @@ A lesson payload has this shape (abbreviated):
 
 ## Lexical tap contract
 
-Offsets in `lexical_annotations` are Unicode code-point offsets in `[start, end)` form. The API re-checks `source_text[start:end] == surface_text` on every read and drops stale annotations instead of sending broken ranges to the frontend.
+Offsets stored in `lexical_annotations` remain Unicode code-point offsets in `[start, end)` form. The canonical read model re-checks `source_text[start:end] == surface_text` on every read and drops stale annotations instead of sending broken ranges to the frontend.
+
+The public frontend payload exposes both coordinate systems:
+
+- `start` / `end` — Unicode code-point offsets; these preserve the language-independent canonical annotation contract.
+- `utf16_start` / `utf16_end` — UTF-16 code-unit offsets; browser and React Native JavaScript can use these directly with normal string slicing/range APIs even when the text contains non-BMP characters such as emoji.
+
+`api/frontend_repository.py` is the public adapter that performs this conversion. The database does not duplicate UTF-16 indexes.
 
 Each annotation returns a compact app dictionary entry containing the available canonical IDs plus lemma, POS, pronunciation/transliteration, concrete word form/features and the learner-language meaning.
 
@@ -189,9 +203,11 @@ Automatic exercises return correctness and the solution after submission. Rubric
 
 ## CI contract
 
-`.github/workflows/content-validation.yml` now treats the reference architecture as release-critical. It compiles the API and delivery tooling, validates the complete English source graph, and dry-runs the single English reference importer in addition to the existing content/audio/educational checks.
+`.github/workflows/content-validation.yml` treats the reference architecture as release-critical. It compiles the API and delivery tooling, validates the complete English source graph, and dry-runs the single English reference importer in addition to the existing content/audio/educational checks.
 
-A change to `api/**`, delivery tooling, importers, migrations, content or audio therefore cannot silently drift away from the reference contract.
+`.github/workflows/mysql-import-integration.yml` is the clean-database contract test. It boots MySQL 9.0.1 from an empty database, applies migrations through `007`, imports the complete English reference chain, validates persisted delivery/link integrity and JSON Schema payloads, smoke-tests the HTTP API, reruns the reference importer and verifies that canonical table counts remain unchanged.
+
+A change to the API, delivery tooling, importers, migrations, English dictionary, lexical links or English production content therefore cannot silently drift away from the reference contract.
 
 ## Frontend integration rules
 
@@ -200,7 +216,7 @@ The production frontend should:
 - render `steps` in API order and never infer flow from raw item kinds;
 - use `role` to choose a component variant, not to identify canonical content;
 - render `vocabulary` generically from the returned content kind (`concept`, `lexeme`, or `word_form`);
-- use lexical annotation offsets to create tappable spans;
+- use `utf16_start` / `utf16_end` for JavaScript tappable ranges and keep `start` / `end` as canonical Unicode coordinates;
 - keep answer checking behind the grading endpoint;
 - use payload audio URLs directly and not rebuild TTS paths;
 - store progress against lesson/step IDs, while treating content IDs as reusable canonical entities.
