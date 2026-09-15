@@ -167,7 +167,7 @@ def load_expansion_units() -> list[tuple[dict, Path, int]]:
 def materialize_legacy(spec: dict) -> str:
     legacy_engine.LEVEL = LEVEL
     normalized = normalize_legacy_lessons(spec)
-    batch = rename_b2(legacy_engine.build_unit(normalized))
+    batch = rename_b2(legacy_engine.build_unit(normalized, 1))
     slug = normalized["slug"]
     batch["batch_id"] = f"tr-tr-b2-{slug}-v1"
     batch["cefr"] = LEVEL
