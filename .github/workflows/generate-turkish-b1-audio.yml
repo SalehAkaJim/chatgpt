@@ -49,6 +49,10 @@ jobs:
               raise SystemExit('No Turkish B1 batch specs found')
           if len(spec_slugs) != len(set(spec_slugs)):
               raise SystemExit('Duplicate Turkish B1 unit slug across batch specs')
+          expected_prod_slugs = [
+              slug if slug.startswith('b1-tr-') else f'b1-tr-{slug}'
+              for slug in spec_slugs
+          ]
 
           files = sorted(Path('content/production/tr/B1').glob('*.json'))
           prod_slugs = []
@@ -59,11 +63,11 @@ jobs:
                   raise SystemExit(f'Missing curriculum_unit in {p}')
               prod_slugs.append(slug)
 
-          missing = sorted(set(spec_slugs) - set(prod_slugs))
-          extra = sorted(set(prod_slugs) - set(spec_slugs))
-          if missing or extra or len(files) != len(spec_slugs):
+          missing = sorted(set(expected_prod_slugs) - set(prod_slugs))
+          extra = sorted(set(prod_slugs) - set(expected_prod_slugs))
+          if missing or extra or len(files) != len(expected_prod_slugs):
               raise SystemExit(
-                  f'Turkish B1 spec/production mismatch: specs={len(spec_slugs)} production={len(files)} '
+                  f'Turkish B1 spec/production mismatch: specs={len(expected_prod_slugs)} production={len(files)} '
                   f'missing={missing} extra={extra}'
               )
           print(f'Turkish B1 cumulative units ready for audio: {len(files)}')
