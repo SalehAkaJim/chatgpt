@@ -1,14 +1,16 @@
 # Nova Language Roadmap
 
-Updated: 2026-09-14
+Updated: 2026-09-15
 
 ## Purpose
 
-This file defines execution policy and language priority only. It must not become a source of hard-coded curriculum sizes, batch counts, deadlines, or completion assumptions.
+This file defines execution policy and language priority only. It must not become a source of hard-coded curriculum sizes, batch counts, deadlines, scheduling cadence, or completion assumptions.
 
 ## Scheduling policy
 
-- Timed/scheduled execution is disabled. Work starts only from an explicit product-owner request.
+- Timed/scheduled execution may be driven by an external automation approved by the product owner. This roadmap neither enables nor disables that automation and must not hard-code its cadence.
+- On every scheduled or explicitly requested run, resolve the current repository state first and continue from the first genuinely incomplete priority scope rather than from a hard-coded current language, level, batch, or count.
+- An explicit product-owner request may reprioritize work or change the external schedule without changing the educational completion rules below.
 - No CEFR level has a fixed unit count, lesson count, batch count, or target multiple.
 - No batch has a fixed size. Batch size is chosen from educational scope, dependency boundaries, QA risk, and practical execution limits.
 - A level ends when its language-specific coverage is educationally complete and its required validation gates are green.
