@@ -58,6 +58,18 @@ jobs:
             docker run --rm --network host -i mysql:9.0.1 mysql --show-warnings -h127.0.0.1 -uroot -proot language_app < database/seed_reference.sql
           done
 
+      - name: Apply curriculum plans twice to verify idempotency
+        run: |
+          set -euo pipefail
+          shopt -s nullglob
+          for i in 1 2; do
+            echo "Plan pass $i"
+            for f in database/plans/*.sql; do
+              echo "Applying $f"
+              docker run --rm --network host -i mysql:9.0.1 mysql --show-warnings -h127.0.0.1 -uroot -proot language_app < "$f"
+            done
+          done
+
       - name: Run QA queries for SQL compatibility
         run: |
           set -euo pipefail
@@ -79,6 +91,18 @@ jobs:
           test "$(sed -n '2p' /tmp/assertions.txt)" = "OK"
           test "$(sed -n '3p' /tmp/assertions.txt)" = "OK"
           test "$(sed -n '4p' /tmp/assertions.txt)" = "OK"
+
+      - name: Validate German Pre-A1 plan
+        run: |
+          set -euo pipefail
+          targets=$(docker run --rm --network host mysql:9.0.1 mysql -N -s -h127.0.0.1 -uroot -proot language_app -e "SELECT COUNT(*) FROM curriculum_targets ct JOIN language_levels ll ON ll.id=ct.language_level_id JOIN languages l ON l.id=ll.language_id JOIN cefr_levels c ON c.id=ll.cefr_level_id WHERE l.code='de' AND c.code='Pre-A1' AND ct.is_mandatory=1;")
+          planned=$(docker run --rm --network host mysql:9.0.1 mysql -N -s -h127.0.0.1 -uroot -proot language_app -e "SELECT ll.planned_lesson_count FROM language_levels ll JOIN languages l ON l.id=ll.language_id JOIN cefr_levels c ON c.id=ll.cefr_level_id WHERE l.code='de' AND c.code='Pre-A1';")
+          status=$(docker run --rm --network host mysql:9.0.1 mysql -N -s -h127.0.0.1 -uroot -proot language_app -e "SELECT ll.lesson_count_status FROM language_levels ll JOIN languages l ON l.id=ll.language_id JOIN cefr_levels c ON c.id=ll.cefr_level_id WHERE l.code='de' AND c.code='Pre-A1';")
+          sources=$(docker run --rm --network host mysql:9.0.1 mysql -N -s -h127.0.0.1 -uroot -proot language_app -e "SELECT COUNT(*) FROM sources WHERE public_id IN ('src_cefr_2020','src_fsi_de_programmed_intro','src_dli_de_headstart','src_fsi_de_basic','src_tatoeba_de');")
+          test "$targets" = "30"
+          test "$planned" = "30"
+          test "$status" = "provisional"
+          test "$sources" = "5"
 
       - name: Check all base tables
         run: |
