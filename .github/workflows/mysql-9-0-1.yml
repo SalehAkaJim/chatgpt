@@ -144,11 +144,12 @@ jobs:
         run: |
           set -euo pipefail
           sql() { docker run --rm --network host mysql:9.0.1 mysql -N -s -h127.0.0.1 -uroot -proot language_app -e "$1"; }
-          legacy='Fräulein|D-Mark|(^|[^A-Za-z])DM([^A-Za-z]|$)|heisse|heissen|grosse|Schloß|muß|daß|auf deutsch'
-          dialogue_count=$(sql "SELECT COUNT(*) FROM dialogue_turns dt JOIN dialogues d ON d.id=dt.dialogue_id WHERE d.public_id LIKE 'de_pre_a1_dlg_%' AND dt.text_target REGEXP '$legacy';")
-          item_count=$(sql "SELECT COUNT(*) FROM activity_items ai JOIN activities a ON a.id=ai.activity_id JOIN lessons l ON l.id=a.lesson_id WHERE l.public_id LIKE 'de_pre_a1_l%' AND COALESCE(ai.text_target,'') REGEXP '$legacy';")
-          payload_count=$(sql "SELECT COUNT(*) FROM activities a JOIN lessons l ON l.id=a.lesson_id WHERE l.public_id LIKE 'de_pre_a1_l%' AND CAST(COALESCE(a.payload,JSON_OBJECT()) AS CHAR) REGEXP '$legacy';")
-          lexeme_count=$(sql "SELECT COUNT(DISTINCT lx.id) FROM lexemes lx JOIN lesson_lexemes ll ON ll.lexeme_id=lx.id JOIN lessons l ON l.id=ll.lesson_id WHERE l.public_id LIKE 'de_pre_a1_l%' AND lx.surface REGEXP '$legacy';")
+          legacy='Fräulein|D-Mark|(^|[^A-Za-z])DM([^A-Za-z]|$)|heisse|heissen|grosse|Schloß|muß|daß'
+          lowercase_legacy='auf deutsch'
+          dialogue_count=$(sql "SELECT COUNT(*) FROM dialogue_turns dt JOIN dialogues d ON d.id=dt.dialogue_id WHERE d.public_id LIKE 'de_pre_a1_dlg_%' AND (dt.text_target REGEXP '$legacy' OR REGEXP_LIKE(dt.text_target, '$lowercase_legacy', 'c'));")
+          item_count=$(sql "SELECT COUNT(*) FROM activity_items ai JOIN activities a ON a.id=ai.activity_id JOIN lessons l ON l.id=a.lesson_id WHERE l.public_id LIKE 'de_pre_a1_l%' AND (COALESCE(ai.text_target,'') REGEXP '$legacy' OR REGEXP_LIKE(COALESCE(ai.text_target,''), '$lowercase_legacy', 'c'));")
+          payload_count=$(sql "SELECT COUNT(*) FROM activities a JOIN lessons l ON l.id=a.lesson_id WHERE l.public_id LIKE 'de_pre_a1_l%' AND (CAST(COALESCE(a.payload,JSON_OBJECT()) AS CHAR) REGEXP '$legacy' OR REGEXP_LIKE(CAST(COALESCE(a.payload,JSON_OBJECT()) AS CHAR), '$lowercase_legacy', 'c'));")
+          lexeme_count=$(sql "SELECT COUNT(DISTINCT lx.id) FROM lexemes lx JOIN lesson_lexemes ll ON ll.lexeme_id=lx.id JOIN lessons l ON l.id=ll.lesson_id WHERE l.public_id LIKE 'de_pre_a1_l%' AND (lx.surface REGEXP '$legacy' OR REGEXP_LIKE(lx.surface, '$lowercase_legacy', 'c'));")
           echo "legacy dialogue=$dialogue_count items=$item_count payload=$payload_count active_lexemes=$lexeme_count"
           test "$dialogue_count" = "0"
           test "$item_count" = "0"
