@@ -6,6 +6,7 @@ on:
     branches: [main]
     paths:
       - 'scripts/import_coerll_deutsch_im_blick.py'
+      - 'scripts/build_german_pre_a1.py'
       - 'sources/de/coerll-deutsch-im-blick/**'
       - 'content/batch.schema.json'
       - '.github/workflows/source-import-german.yml'
@@ -25,14 +26,16 @@ jobs:
         run: pip install 'requests>=2.32,<3' 'beautifulsoup4>=4.12,<5' 'jsonschema>=4.23,<5'
       - name: Import publisher-authored German content
         run: python scripts/import_coerll_deutsch_im_blick.py --chapters 1-10
-      - name: Commit source snapshot
+      - name: Build Nova Pre-A1 and A1 mappings
+        run: python scripts/build_german_pre_a1.py
+      - name: Commit source snapshots and curriculum mappings
         run: |
-          if git diff --quiet -- content/production/de/coerll-deutsch-im-blick; then
-            echo 'No source changes.'
+          if git diff --quiet -- content/production/de/coerll-deutsch-im-blick content/production/de/pre-a1 content/production/de/a1; then
+            echo 'No source or curriculum changes.'
             exit 0
           fi
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git add content/production/de/coerll-deutsch-im-blick
-          git commit -m 'content(de): import COERLL Deutsch im Blick vocabulary [skip ci]'
+          git add content/production/de/coerll-deutsch-im-blick content/production/de/pre-a1 content/production/de/a1
+          git commit -m 'content(de): build source-only Pre-A1 and A1 [skip ci]'
           git push
