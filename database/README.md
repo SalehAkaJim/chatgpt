@@ -1,6 +1,8 @@
 # Database
 
-MySQL 8.0.16+ content database for the language-learning app.
+Target database: **MySQL 9.0.1**.
+
+This content database is designed and CI-tested specifically against MySQL 9.0.1 for the language-learning app.
 
 ## Files
 
@@ -8,6 +10,7 @@ MySQL 8.0.16+ content database for the language-learning app.
 - `seed_reference.sql` — CEFR levels, German/English language rows and supported activity types.
 - `qa_queries.sql` — editorial/content QA checks.
 - `migrations/002_fix_level_status_view.sql` — corrected level-status helper view.
+- `.github/workflows/mysql-9-0-1.yml` — real integration test using the official `mysql:9.0.1` image.
 
 ## Fresh database setup
 
@@ -20,6 +23,12 @@ SOURCE database/seed_reference.sql;
 ```
 
 Then import finalized content data.
+
+## Compatibility policy
+
+MySQL 9.0.1 is the canonical runtime version for this project. Database changes should pass the MySQL 9.0.1 CI workflow before they are considered ready.
+
+The CI test creates a clean MySQL 9.0.1 database, applies the schema and migrations, applies the seed twice to verify idempotency, executes the QA queries, validates expected reference rows/views, and runs `CHECK TABLE` across all base tables.
 
 ## Final content export
 
