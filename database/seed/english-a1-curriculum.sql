@@ -1,4 +1,8 @@
+-- English (en-US) A1 curriculum for Persian-speaking learners.
+-- Course-specific baseline; requires language-variants-courses.sql.
+
 INSERT IGNORE INTO curriculum_units (
+  course_id,
   target_language_id,
   cefr_level_id,
   skill_id,
@@ -11,7 +15,8 @@ INSERT IGNORE INTO curriculum_units (
   status
 )
 SELECT
-  lang.id,
+  c.id,
+  c.target_language_id,
   lvl.id,
   s.id,
   t.id,
@@ -53,7 +58,7 @@ FROM (
   UNION ALL SELECT 290,'time-plans','dates-calendar','a1-calendar','Days & Dates','Talk about days of the week, simple dates, and recurring activities.',2
   UNION ALL SELECT 300,'time-plans','future-plans','a1-plans','Simple Plans','Talk about immediate plans and simple future intentions.',3
 ) AS u
-JOIN languages AS lang ON lang.code = 'en'
+JOIN courses AS c ON c.slug = 'fa-en-us'
 JOIN cefr_levels AS lvl ON lvl.code = 'A1'
 JOIN skills AS s ON s.slug = u.skill_slug
 JOIN topics AS t ON t.slug = u.topic_slug;
