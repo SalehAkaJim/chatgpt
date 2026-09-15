@@ -8,6 +8,13 @@
 SET NAMES utf8mb4 COLLATE utf8mb4_0900_ai_ci;
 SET time_zone = '+00:00';
 
+-- language_variant_id was added after the original dialogue uniqueness rule.
+-- Include it now so the same semantic dialogue can have en-US/en-GB (and other)
+-- target realizations without colliding at the broad-language level.
+ALTER TABLE dialogue_versions
+  DROP INDEX uq_dialogue_versions_language,
+  ADD UNIQUE KEY uq_dialogue_versions_variant (dialogue_id, language_id, language_variant_id);
+
 -- Never silently delete annotations because a lexical target was removed.
 -- Source deletion still cascades because the annotation has no meaning without
 -- its exact source text.
@@ -77,8 +84,9 @@ CREATE TABLE lesson_step_exercises (
 
 -- Dialogue translations were previously stored in a single translation_hint
 -- field. Keep that column for compatibility, but normalize translations so the
--- same dialogue can serve courses with different learner languages.
+-- same dialogue can serve courses with different learner languages/variants.
 CREATE TABLE dialogue_turn_translations (
+  id BINARY(16) NOT NULL DEFAULT (UUID_TO_BIN(UUID(), 1)),
   dialogue_turn_id BINARY(16) NOT NULL,
   language_id BINARY(16) NOT NULL,
   language_variant_id BINARY(16) NULL,
@@ -86,7 +94,8 @@ CREATE TABLE dialogue_turn_translations (
   metadata JSON NOT NULL DEFAULT (JSON_OBJECT()),
   created_at DATETIME(6) NOT NULL DEFAULT CURRENT_TIMESTAMP(6),
   updated_at DATETIME(6) NOT NULL DEFAULT CURRENT_TIMESTAMP(6) ON UPDATE CURRENT_TIMESTAMP(6),
-  PRIMARY KEY (dialogue_turn_id, language_id),
+  PRIMARY KEY (id),
+  UNIQUE KEY uq_dialogue_turn_translations_variant (dialogue_turn_id, language_id, language_variant_id),
   KEY idx_dialogue_turn_translations_language (language_id, language_variant_id),
   CONSTRAINT fk_dialogue_turn_translations_turn
     FOREIGN KEY (dialogue_turn_id) REFERENCES dialogue_turns(id) ON DELETE CASCADE,
