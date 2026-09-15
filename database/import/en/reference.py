@@ -2,10 +2,11 @@
 """Build the complete English reference implementation in canonical MySQL.
 
 Order matters:
-1. shared app dictionary
-2. canonical course content for Pre-A1..C2
-3. explicit lesson-delivery graph for every imported level
-4. lexical tap annotations after every source row exists
+1. source-level delivery contract validation
+2. shared app dictionary
+3. canonical course content for Pre-A1..C2
+4. explicit lesson-delivery graph for every imported level
+5. lexical tap annotations after every source row exists
 
 Audio metadata SQL remains a separate deployment step because the generated audio
 files already exist independently of this canonical-content transaction chain.
@@ -43,6 +44,11 @@ def main() -> None:
     ap.add_argument("--skip-dictionary", action="store_true")
     ap.add_argument("--skip-lexical-annotations", action="store_true")
     args = ap.parse_args()
+
+    run(
+        "delivery_contract",
+        [sys.executable, "scripts/validate_english_reference_flow.py"],
+    )
 
     common: list[str] = []
     if args.dry_run:
