@@ -15,7 +15,7 @@ from typing import Any
 import mysql.connector
 from jsonschema import Draft202012Validator, FormatChecker
 
-from api.lesson_payload import LessonRepository
+from api.frontend_repository import LessonRepository, utf16_offset
 from scripts.lesson_flow import STAGE_ORDER
 from scripts.materialize_level import db_config
 
@@ -39,6 +39,11 @@ def sample_lessons(rows: list[dict[str, Any]]) -> list[dict[str, Any]]:
 
 
 def main() -> None:
+    # Guard the browser-facing coordinate conversion with a non-BMP fixture.
+    offset_fixture = "A😀B"
+    if [utf16_offset(offset_fixture, index) for index in range(4)] != [0, 1, 3, 4]:
+        raise AssertionError("UTF-16 annotation offset conversion is incorrect")
+
     conn = mysql.connector.connect(**db_config())
     report: dict[str, Any] = {"course": COURSE, "levels": {}, "checks": {}}
     try:
@@ -208,6 +213,7 @@ def main() -> None:
             "dictionary_primary_links": dictionary_primary_links,
             "stale_utterance_spans": stale_utterance_spans,
             "stale_dialogue_spans": stale_dialogue_spans,
+            "utf16_fixture": "passed",
         })
         cur.close()
 
