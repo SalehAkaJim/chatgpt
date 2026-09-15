@@ -26,7 +26,7 @@ jobs:
       - name: Build final database state
         run: |
           set -euo pipefail
-          db='docker run --rm --network host -i mysql:9.0.1 mysql --show-warnings -h127.0.0.1 -uroot -proot language_app'
+          db='docker run --rm --network host -i mysql:9.0.1 mysql --default-character-set=utf8mb4 --show-warnings -h127.0.0.1 -uroot -proot language_app'
           $db < database/schema.sql
           shopt -s nullglob
           for f in database/migrations/*.sql; do $db < "$f"; done
@@ -38,7 +38,7 @@ jobs:
       - name: Export final semantic state
         run: |
           set -euo pipefail
-          sql() { docker run --rm --network host mysql:9.0.1 mysql -N -s -h127.0.0.1 -uroot -proot language_app -e "$1"; }
+          sql() { docker run --rm --network host mysql:9.0.1 mysql --default-character-set=utf8mb4 -N -s -h127.0.0.1 -uroot -proot language_app -e "$1"; }
           {
             echo '=== LESSONS ==='
             sql "SELECT l.sequence_number,l.public_id,l.title_fa,COALESCE(l.unit_or_topic,''),l.status,COALESCE(l.source_title,''),COALESCE(l.activity_count_rationale,''),COALESCE(l.sequence_rationale,''),COALESCE(l.template_signature,''),COALESCE((SELECT GROUP_CONCAT(CONCAT(ct.public_id,': ',ct.description) ORDER BY ct.id SEPARATOR ' || ') FROM lesson_targets lt JOIN curriculum_targets ct ON ct.id=lt.curriculum_target_id WHERE lt.lesson_id=l.id),'') FROM lessons l WHERE l.public_id LIKE 'de_pre_a1_l%' ORDER BY l.sequence_number;"
