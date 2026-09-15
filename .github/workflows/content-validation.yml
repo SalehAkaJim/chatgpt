@@ -59,6 +59,7 @@ jobs:
             database/import/en/reference.py \
             database/import/en/reference_level.py \
             database/import/en/dictionary.py \
+            database/import/en/normalize_lexical_rows.py \
             database/import/en/lexical_annotations.py \
             database/import/en/pre_a1.py \
             database/import/en/a1.py \
@@ -67,6 +68,19 @@ jobs:
             database/import/en/b2.py \
             database/import/en/c1.py \
             database/import/en/c2.py
+
+      - name: Validate lesson payload JSON Schema
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          from jsonschema import Draft202012Validator
+
+          path = Path('api/lesson-payload.schema.json')
+          schema = json.loads(path.read_text(encoding='utf-8'))
+          Draft202012Validator.check_schema(schema)
+          print(f'{path}: valid Draft 2020-12 JSON Schema')
+          PY
 
       - name: Validate production batches
         shell: bash
