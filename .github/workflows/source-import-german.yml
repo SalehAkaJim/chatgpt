@@ -23,19 +23,19 @@ jobs:
         with:
           python-version: '3.12'
       - name: Install importer dependencies
-        run: pip install 'requests>=2.32,<3' 'beautifulsoup4>=4.12,<5' 'jsonschema>=4.23,<5'
+        run: pip install 'requests>=2.32,<3' 'beautifulsoup4>=4.12,<5' 'jsonschema>=4.23,<5' 'deep-translator>=1.11,<2'
       - name: Import publisher-authored German content
         run: python scripts/import_coerll_deutsch_im_blick.py --chapters 1-10
-      - name: Build Nova Pre-A1 and A1 mappings
+      - name: Build Persian-base Nova Pre-A1 and A1 mappings
         run: python scripts/build_german_pre_a1.py
-      - name: Commit source snapshots and curriculum mappings
+      - name: Commit source snapshots, Persian translations and curriculum mappings
         run: |
-          git add content/production/de/coerll-deutsch-im-blick content/production/de/pre-a1 content/production/de/a1
+          git add content/production/de/coerll-deutsch-im-blick content/production/de/pre-a1 content/production/de/a1 sources/de/coerll-deutsch-im-blick/fa-translation-cache.json
           if git diff --cached --quiet; then
-            echo 'No source or curriculum changes.'
+            echo 'No source, translation or curriculum changes.'
             exit 0
           fi
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git commit -m 'content(de): build source-only Pre-A1 and A1 [skip ci]'
+          git commit -m 'content(de): build Persian-base Pre-A1 and A1 [skip ci]'
           git push
