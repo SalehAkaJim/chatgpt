@@ -98,11 +98,21 @@ jobs:
           targets=$(docker run --rm --network host mysql:9.0.1 mysql -N -s -h127.0.0.1 -uroot -proot language_app -e "SELECT COUNT(*) FROM curriculum_targets ct JOIN language_levels ll ON ll.id=ct.language_level_id JOIN languages l ON l.id=ll.language_id JOIN cefr_levels c ON c.id=ll.cefr_level_id WHERE l.code='de' AND c.code='Pre-A1' AND ct.is_mandatory=1;")
           planned=$(docker run --rm --network host mysql:9.0.1 mysql -N -s -h127.0.0.1 -uroot -proot language_app -e "SELECT ll.planned_lesson_count FROM language_levels ll JOIN languages l ON l.id=ll.language_id JOIN cefr_levels c ON c.id=ll.cefr_level_id WHERE l.code='de' AND c.code='Pre-A1';")
           status=$(docker run --rm --network host mysql:9.0.1 mysql -N -s -h127.0.0.1 -uroot -proot language_app -e "SELECT ll.lesson_count_status FROM language_levels ll JOIN languages l ON l.id=ll.language_id JOIN cefr_levels c ON c.id=ll.cefr_level_id WHERE l.code='de' AND c.code='Pre-A1';")
-          sources=$(docker run --rm --network host mysql:9.0.1 mysql -N -s -h127.0.0.1 -uroot -proot language_app -e "SELECT COUNT(*) FROM sources WHERE public_id IN ('src_cefr_2020','src_fsi_de_programmed_intro','src_dli_de_headstart','src_fsi_de_basic','src_tatoeba_de');")
+          sources=$(docker run --rm --network host mysql:9.0.1 mysql -N -s -h127.0.0.1 -uroot -proot language_app -e "SELECT COUNT(*) FROM sources WHERE public_id IN ('src_cefr_2020','src_fsi_de_programmed_intro','src_dli_de_headstart','src_fsi_de_basic','src_tatoeba_de','src_fsi_de_fast');")
+          lessons=$(docker run --rm --network host mysql:9.0.1 mysql -N -s -h127.0.0.1 -uroot -proot language_app -e "SELECT COUNT(*) FROM lessons l JOIN language_levels ll ON ll.id=l.language_level_id JOIN languages lang ON lang.id=ll.language_id JOIN cefr_levels c ON c.id=ll.cefr_level_id WHERE lang.code='de' AND c.code='Pre-A1';")
+          sourced_lessons=$(docker run --rm --network host mysql:9.0.1 mysql -N -s -h127.0.0.1 -uroot -proot language_app -e "SELECT COUNT(DISTINCT l.id) FROM lessons l JOIN language_levels ll ON ll.id=l.language_level_id JOIN languages lang ON lang.id=ll.language_id JOIN cefr_levels c ON c.id=ll.cefr_level_id JOIN lesson_sources ls ON ls.lesson_id=l.id WHERE lang.code='de' AND c.code='Pre-A1';")
+          targeted_lessons=$(docker run --rm --network host mysql:9.0.1 mysql -N -s -h127.0.0.1 -uroot -proot language_app -e "SELECT COUNT(DISTINCT l.id) FROM lessons l JOIN language_levels ll ON ll.id=l.language_level_id JOIN languages lang ON lang.id=ll.language_id JOIN cefr_levels c ON c.id=ll.cefr_level_id JOIN lesson_targets lt ON lt.lesson_id=l.id WHERE lang.code='de' AND c.code='Pre-A1';")
+          final_lessons=$(docker run --rm --network host mysql:9.0.1 mysql -N -s -h127.0.0.1 -uroot -proot language_app -e "SELECT COUNT(*) FROM lessons l JOIN language_levels ll ON ll.id=l.language_level_id JOIN languages lang ON lang.id=ll.language_id JOIN cefr_levels c ON c.id=ll.cefr_level_id WHERE lang.code='de' AND c.code='Pre-A1' AND l.status='final';")
+          bad_restaurant_fallback=$(docker run --rm --network host mysql:9.0.1 mysql -N -s -h127.0.0.1 -uroot -proot language_app -e "SELECT COUNT(*) FROM lesson_sources ls JOIN lessons l ON l.id=ls.lesson_id JOIN source_items si ON si.id=ls.source_item_id WHERE l.public_id='de_pre_a1_l023' AND si.public_id='srcitem_fast_l2_registration';")
           test "$targets" = "30"
           test "$planned" = "30"
           test "$status" = "provisional"
-          test "$sources" = "5"
+          test "$sources" = "6"
+          test "$lessons" = "30"
+          test "$sourced_lessons" = "30"
+          test "$targeted_lessons" = "30"
+          test "$final_lessons" = "0"
+          test "$bad_restaurant_fallback" = "0"
 
       - name: Check all base tables
         run: |
