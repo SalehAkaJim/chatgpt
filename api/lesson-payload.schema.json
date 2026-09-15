@@ -66,8 +66,8 @@
         "order": {"type": "integer", "minimum": 1}, "stage": {"type": "string"},
         "type": {"type": "string"}, "label_key": {"type": ["string", "null"]},
         "required": {"type": "boolean"},
-        "items": {"type": "array", "items": {"type": "object", "required": ["role", "content"], "properties": {"role": {"type": "string"}, "content": {"type": "object", "required": ["kind", "id"]}}},
-        "exercises": {"type": "array", "items": {"type": "object", "required": ["role", "exercise"], "properties": {"role": {"type": "string"}, "exercise": {"$ref": "#/$defs/exercise"}}},
+        "items": {"type": "array", "items": {"type": "object", "required": ["role", "content"], "properties": {"role": {"type": "string"}, "content": {"type": "object", "required": ["kind", "id"]}}}},
+        "exercises": {"type": "array", "items": {"type": "object", "required": ["role", "exercise"], "properties": {"role": {"type": "string"}, "exercise": {"$ref": "#/$defs/exercise"}}}},
         "metadata": {"type": "object"}
       },
       "additionalProperties": false
