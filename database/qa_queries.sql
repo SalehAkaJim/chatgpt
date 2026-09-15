@@ -1,5 +1,5 @@
 -- Content QA queries for MySQL Content Schema v1
--- These queries are editorial checks; they do not modify data.
+-- These queries are editorial checks; they do not modify content data.
 
 -- 1) Every lesson must have an opening conversation_speaking activity at position 1.
 SELECT
@@ -180,3 +180,127 @@ FROM language_levels ll
 JOIN languages lang ON lang.id = ll.language_id
 JOIN cefr_levels c ON c.id = ll.cefr_level_id
 ORDER BY lang.code, c.sort_order;
+
+-- 17) Hard source-reuse gate for user-facing teaching content.
+-- Analysis-only sources such as CEFR may support curriculum_targets, but they must
+-- never become provenance for lesson text, activities, dialogue, lexemes, grammar
+-- notes or examples shown to learners. This gate is intentionally global so every
+-- future language inherits the same rule.
+DROP PROCEDURE IF EXISTS assert_active_source_reuse_policy;
+DELIMITER $$
+CREATE PROCEDURE assert_active_source_reuse_policy()
+BEGIN
+  DECLARE blocked_source_count INT DEFAULT 0;
+  DECLARE attribution_gap_count INT DEFAULT 0;
+  DECLARE source_metadata_gap_count INT DEFAULT 0;
+
+  SELECT COUNT(DISTINCT s.id) INTO blocked_source_count
+  FROM sources s
+  JOIN source_items si ON si.source_id = s.id
+  JOIN (
+    SELECT ls.source_item_id
+      FROM lesson_sources ls
+      JOIN lessons l ON l.id = ls.lesson_id
+    UNION
+    SELECT aus.source_item_id
+      FROM activity_sources aus
+      JOIN activities a ON a.id = aus.activity_id
+      JOIN lessons l ON l.id = a.lesson_id
+    UNION
+    SELECT ais.source_item_id
+      FROM activity_item_sources ais
+      JOIN activity_items ai ON ai.id = ais.activity_item_id
+      JOIN activities a ON a.id = ai.activity_id
+      JOIN lessons l ON l.id = a.lesson_id
+    UNION
+    SELECT ds.source_item_id
+      FROM dialogue_sources ds
+      JOIN dialogues d ON d.id = ds.dialogue_id
+      JOIN activities a ON a.dialogue_id = d.id
+      JOIN lessons l ON l.id = a.lesson_id
+    UNION
+    SELECT dts.source_item_id
+      FROM dialogue_turn_sources dts
+      JOIN dialogue_turns dt ON dt.id = dts.dialogue_turn_id
+      JOIN dialogues d ON d.id = dt.dialogue_id
+      JOIN activities a ON a.dialogue_id = d.id
+      JOIN lessons l ON l.id = a.lesson_id
+    UNION
+    SELECT lxs.source_item_id
+      FROM lexeme_sources lxs
+      JOIN lesson_lexemes llx ON llx.lexeme_id = lxs.lexeme_id
+      JOIN lessons l ON l.id = llx.lesson_id
+    UNION
+    SELECT gns.source_item_id
+      FROM grammar_note_sources gns
+      JOIN lesson_grammar_notes lgn ON lgn.grammar_note_id = gns.grammar_note_id
+      JOIN lessons l ON l.id = lgn.lesson_id
+    UNION
+    SELECT ess.source_item_id
+      FROM example_sentence_sources ess
+      JOIN lexeme_examples le ON le.example_sentence_id = ess.example_sentence_id
+      JOIN lesson_lexemes llx ON llx.lexeme_id = le.lexeme_id
+      JOIN lessons l ON l.id = llx.lesson_id
+    UNION
+    SELECT ess.source_item_id
+      FROM example_sentence_sources ess
+      JOIN grammar_note_examples gne ON gne.example_sentence_id = ess.example_sentence_id
+      JOIN lesson_grammar_notes lgn ON lgn.grammar_note_id = gne.grammar_note_id
+      JOIN lessons l ON l.id = lgn.lesson_id
+  ) active_source_items ON active_source_items.source_item_id = si.id
+  WHERE s.reuse_status IN ('analysis_only','needs_review');
+
+  IF blocked_source_count <> 0 THEN
+    SIGNAL SQLSTATE '45000'
+      SET MESSAGE_TEXT = 'QA failed: analysis_only/needs_review source is linked to active teaching content';
+  END IF;
+
+  SELECT COUNT(DISTINCT s.id) INTO attribution_gap_count
+  FROM sources s
+  JOIN source_items si ON si.source_id = s.id
+  JOIN (
+    SELECT ls.source_item_id FROM lesson_sources ls JOIN lessons l ON l.id=ls.lesson_id
+    UNION SELECT aus.source_item_id FROM activity_sources aus JOIN activities a ON a.id=aus.activity_id JOIN lessons l ON l.id=a.lesson_id
+    UNION SELECT ais.source_item_id FROM activity_item_sources ais JOIN activity_items ai ON ai.id=ais.activity_item_id JOIN activities a ON a.id=ai.activity_id JOIN lessons l ON l.id=a.lesson_id
+    UNION SELECT ds.source_item_id FROM dialogue_sources ds JOIN dialogues d ON d.id=ds.dialogue_id JOIN activities a ON a.dialogue_id=d.id JOIN lessons l ON l.id=a.lesson_id
+    UNION SELECT dts.source_item_id FROM dialogue_turn_sources dts JOIN dialogue_turns dt ON dt.id=dts.dialogue_turn_id JOIN dialogues d ON d.id=dt.dialogue_id JOIN activities a ON a.dialogue_id=d.id JOIN lessons l ON l.id=a.lesson_id
+    UNION SELECT lxs.source_item_id FROM lexeme_sources lxs JOIN lesson_lexemes llx ON llx.lexeme_id=lxs.lexeme_id JOIN lessons l ON l.id=llx.lesson_id
+    UNION SELECT gns.source_item_id FROM grammar_note_sources gns JOIN lesson_grammar_notes lgn ON lgn.grammar_note_id=gns.grammar_note_id JOIN lessons l ON l.id=lgn.lesson_id
+    UNION SELECT ess.source_item_id FROM example_sentence_sources ess JOIN lexeme_examples le ON le.example_sentence_id=ess.example_sentence_id JOIN lesson_lexemes llx ON llx.lexeme_id=le.lexeme_id JOIN lessons l ON l.id=llx.lesson_id
+    UNION SELECT ess.source_item_id FROM example_sentence_sources ess JOIN grammar_note_examples gne ON gne.example_sentence_id=ess.example_sentence_id JOIN lesson_grammar_notes lgn ON lgn.grammar_note_id=gne.grammar_note_id JOIN lessons l ON l.id=lgn.lesson_id
+  ) active_source_items ON active_source_items.source_item_id = si.id
+  WHERE s.reuse_status='reuse_with_attribution'
+    AND (s.attribution_text IS NULL OR TRIM(s.attribution_text)='');
+
+  IF attribution_gap_count <> 0 THEN
+    SIGNAL SQLSTATE '45000'
+      SET MESSAGE_TEXT = 'QA failed: attribution-required active source has no attribution text';
+  END IF;
+
+  SELECT COUNT(DISTINCT s.id) INTO source_metadata_gap_count
+  FROM sources s
+  JOIN source_items si ON si.source_id = s.id
+  JOIN (
+    SELECT ls.source_item_id FROM lesson_sources ls JOIN lessons l ON l.id=ls.lesson_id
+    UNION SELECT aus.source_item_id FROM activity_sources aus JOIN activities a ON a.id=aus.activity_id JOIN lessons l ON l.id=a.lesson_id
+    UNION SELECT ais.source_item_id FROM activity_item_sources ais JOIN activity_items ai ON ai.id=ais.activity_item_id JOIN activities a ON a.id=ai.activity_id JOIN lessons l ON l.id=a.lesson_id
+    UNION SELECT ds.source_item_id FROM dialogue_sources ds JOIN dialogues d ON d.id=ds.dialogue_id JOIN activities a ON a.dialogue_id=d.id JOIN lessons l ON l.id=a.lesson_id
+    UNION SELECT dts.source_item_id FROM dialogue_turn_sources dts JOIN dialogue_turns dt ON dt.id=dts.dialogue_turn_id JOIN dialogues d ON d.id=dt.dialogue_id JOIN activities a ON a.dialogue_id=d.id JOIN lessons l ON l.id=a.lesson_id
+    UNION SELECT lxs.source_item_id FROM lexeme_sources lxs JOIN lesson_lexemes llx ON llx.lexeme_id=lxs.lexeme_id JOIN lessons l ON l.id=llx.lesson_id
+    UNION SELECT gns.source_item_id FROM grammar_note_sources gns JOIN lesson_grammar_notes lgn ON lgn.grammar_note_id=gns.grammar_note_id JOIN lessons l ON l.id=lgn.lesson_id
+    UNION SELECT ess.source_item_id FROM example_sentence_sources ess JOIN lexeme_examples le ON le.example_sentence_id=ess.example_sentence_id JOIN lesson_lexemes llx ON llx.lexeme_id=le.lexeme_id JOIN lessons l ON l.id=llx.lesson_id
+    UNION SELECT ess.source_item_id FROM example_sentence_sources ess JOIN grammar_note_examples gne ON gne.example_sentence_id=ess.example_sentence_id JOIN lesson_grammar_notes lgn ON lgn.grammar_note_id=gne.grammar_note_id JOIN lessons l ON l.id=lgn.lesson_id
+  ) active_source_items ON active_source_items.source_item_id = si.id
+  WHERE s.base_url IS NULL OR TRIM(s.base_url)=''
+     OR s.license_name IS NULL OR TRIM(s.license_name)=''
+     OR (s.reuse_status='reuse_with_attribution' AND (s.license_url IS NULL OR TRIM(s.license_url)=''));
+
+  IF source_metadata_gap_count <> 0 THEN
+    SIGNAL SQLSTATE '45000'
+      SET MESSAGE_TEXT = 'QA failed: active teaching source is missing required URL/license metadata';
+  END IF;
+END$$
+DELIMITER ;
+
+CALL assert_active_source_reuse_policy();
+DROP PROCEDURE assert_active_source_reuse_policy;
