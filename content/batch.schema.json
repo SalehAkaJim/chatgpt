@@ -15,6 +15,18 @@
     "source_level": {"type": ["string", "null"]},
     "curriculum_unit": {"type": "string", "minLength": 1},
     "generator": {"type": "string"},
+    "translation": {
+      "type": "object",
+      "properties": {
+        "language": {"type": "string"},
+        "variant": {"type": "string"},
+        "method": {"type": "string"},
+        "provider": {"type": "string"},
+        "source_languages": {"type": "array", "items": {"type": "string"}},
+        "review_status": {"type": "string"}
+      },
+      "additionalProperties": true
+    },
     "source": {
       "type": "object",
       "required": ["source_id", "title", "publisher", "source_url", "license"],
