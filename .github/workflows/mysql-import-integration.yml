@@ -99,7 +99,7 @@ jobs:
         run: python database/import/en/reference.py --allow-unreviewed
 
       - name: Verify database and frontend payload contract
-        run: python scripts/test_english_reference_database.py
+        run: python -m scripts.test_english_reference_database
 
       - name: Smoke-test HTTP lesson API
         env:
@@ -170,4 +170,4 @@ jobs:
           after=$(counts)
           echo "After rerun:  $after"
           test "$before" = "$after"
-          python scripts/test_english_reference_database.py
+          python -m scripts.test_english_reference_database
