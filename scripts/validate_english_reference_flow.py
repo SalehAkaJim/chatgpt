@@ -9,12 +9,15 @@ and semantic stages never regress.
 from __future__ import annotations
 
 import json
+import sys
 from collections import Counter
 from pathlib import Path
 
-from scripts.lesson_flow import STAGE_ORDER, build_batch_lesson_flows
-
 ROOT = Path(__file__).resolve().parents[1]
+sys.path.insert(0, str(ROOT))
+
+from scripts.lesson_flow import STAGE_ORDER, build_batch_lesson_flows  # noqa: E402
+
 CONTENT_ROOT = ROOT / "content" / "production" / "en"
 LEVELS = ["Pre-A1", "A1", "A2", "B1", "B2", "C1", "C2"]
 
@@ -95,7 +98,7 @@ def validate_batch(path: Path) -> tuple[list[str], Counter]:
                 delivered_exercises[ext] += 1
 
         support_only = support_only_concepts(items)
-        for (kind, ext), item in source_items.items():
+        for (kind, ext), _item in source_items.items():
             if kind == "exercise":
                 if delivered_exercises[ext] != 1:
                     errors.append(
