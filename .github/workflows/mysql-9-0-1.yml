@@ -70,6 +70,18 @@ jobs:
             done
           done
 
+      - name: Apply content batches twice to verify idempotency
+        run: |
+          set -euo pipefail
+          shopt -s nullglob
+          for i in 1 2; do
+            echo "Content pass $i"
+            for f in database/content/*.sql; do
+              echo "Applying $f"
+              docker run --rm --network host -i mysql:9.0.1 mysql --show-warnings -h127.0.0.1 -uroot -proot language_app < "$f"
+            done
+          done
+
       - name: Run QA queries for SQL compatibility
         run: |
           set -euo pipefail
@@ -113,6 +125,31 @@ jobs:
           test "$targeted_lessons" = "30"
           test "$final_lessons" = "0"
           test "$bad_restaurant_fallback" = "0"
+
+      - name: Validate German Pre-A1 content batch 001
+        run: |
+          set -euo pipefail
+          checked=$(docker run --rm --network host mysql:9.0.1 mysql -N -s -h127.0.0.1 -uroot -proot language_app -e "SELECT COUNT(*) FROM lessons WHERE public_id BETWEEN 'de_pre_a1_l001' AND 'de_pre_a1_l005' AND status='source_checked';")
+          activities=$(docker run --rm --network host mysql:9.0.1 mysql -N -s -h127.0.0.1 -uroot -proot language_app -e "SELECT COUNT(*) FROM activities a JOIN lessons l ON l.id=a.lesson_id WHERE l.public_id BETWEEN 'de_pre_a1_l001' AND 'de_pre_a1_l005';")
+          openings=$(docker run --rm --network host mysql:9.0.1 mysql -N -s -h127.0.0.1 -uroot -proot language_app -e "SELECT COUNT(*) FROM activities a JOIN lessons l ON l.id=a.lesson_id WHERE l.public_id BETWEEN 'de_pre_a1_l001' AND 'de_pre_a1_l005' AND a.position=1 AND a.type_code='conversation_speaking' AND a.dialogue_id IS NOT NULL;")
+          dialogues=$(docker run --rm --network host mysql:9.0.1 mysql -N -s -h127.0.0.1 -uroot -proot language_app -e "SELECT COUNT(*) FROM dialogues WHERE public_id BETWEEN 'de_pre_a1_dlg_001' AND 'de_pre_a1_dlg_005' AND status='source_checked';")
+          learner_dialogues=$(docker run --rm --network host mysql:9.0.1 mysql -N -s -h127.0.0.1 -uroot -proot language_app -e "SELECT COUNT(DISTINCT d.id) FROM dialogues d JOIN dialogue_turns dt ON dt.dialogue_id=d.id AND dt.learner_turn=1 WHERE d.public_id BETWEEN 'de_pre_a1_dlg_001' AND 'de_pre_a1_dlg_005';")
+          sourced_turns=$(docker run --rm --network host mysql:9.0.1 mysql -N -s -h127.0.0.1 -uroot -proot language_app -e "SELECT COUNT(DISTINCT dt.id) FROM dialogue_turns dt JOIN dialogues d ON d.id=dt.dialogue_id JOIN dialogue_turn_sources dts ON dts.dialogue_turn_id=dt.id WHERE d.public_id BETWEEN 'de_pre_a1_dlg_001' AND 'de_pre_a1_dlg_005';")
+          all_turns=$(docker run --rm --network host mysql:9.0.1 mysql -N -s -h127.0.0.1 -uroot -proot language_app -e "SELECT COUNT(*) FROM dialogue_turns dt JOIN dialogues d ON d.id=dt.dialogue_id WHERE d.public_id BETWEEN 'de_pre_a1_dlg_001' AND 'de_pre_a1_dlg_005';")
+          gender_conflicts=$(docker run --rm --network host mysql:9.0.1 mysql -N -s -h127.0.0.1 -uroot -proot language_app -e "SELECT COUNT(*) FROM dialogue_turns dt JOIN dialogues d ON d.id=dt.dialogue_id JOIN characters ch ON ch.id=dt.speaker_character_id WHERE d.public_id BETWEEN 'de_pre_a1_dlg_001' AND 'de_pre_a1_dlg_005' AND dt.speaker_gender_evidence IN ('female','male') AND ch.gender IN ('female','male') AND dt.speaker_gender_evidence<>ch.gender;")
+          lexemes=$(docker run --rm --network host mysql:9.0.1 mysql -N -s -h127.0.0.1 -uroot -proot language_app -e "SELECT COUNT(*) FROM lexemes WHERE public_id IN ('de_lex_guten_tag','de_lex_guten_morgen','de_lex_guten_abend','de_lex_gute_nacht','de_lex_auf_wiedersehen','de_lex_bis_montag','de_lex_danke','de_lex_bitte','de_lex_wie_geht_es_ihnen','de_lex_heissen');")
+          generated_audio=$(docker run --rm --network host mysql:9.0.1 mysql -N -s -h127.0.0.1 -uroot -proot language_app -e "SELECT COUNT(*) FROM audio_files WHERE status IN ('generated','approved');")
+          test "$checked" = "5"
+          test "$activities" = "14"
+          test "$openings" = "5"
+          test "$dialogues" = "5"
+          test "$learner_dialogues" = "5"
+          test "$sourced_turns" = "$all_turns"
+          test "$gender_conflicts" = "0"
+          test "$lexemes" = "10"
+          test "$generated_audio" = "0"
+          counts=$(docker run --rm --network host mysql:9.0.1 mysql -N -s -h127.0.0.1 -uroot -proot language_app -e "SELECT GROUP_CONCAT(cnt ORDER BY sequence_number SEPARATOR ',') FROM (SELECT l.sequence_number,COUNT(a.id) cnt FROM lessons l JOIN activities a ON a.lesson_id=l.id WHERE l.public_id BETWEEN 'de_pre_a1_l001' AND 'de_pre_a1_l005' GROUP BY l.id,l.sequence_number) q;")
+          test "$counts" = "3,3,2,3,3"
 
       - name: Check all base tables
         run: |
