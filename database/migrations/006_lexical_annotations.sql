@@ -13,12 +13,13 @@ CREATE TABLE lexical_annotations (
   language_id BINARY(16) NOT NULL,
   language_variant_id BINARY(16) NULL,
 
-  -- Exactly one source should be populated. This is enforced by the importer
-  -- because MySQL CHECK constraints and FK referential actions are a poor fit.
+  -- Exactly one source is populated. source_path is used for text nested in an
+  -- exercise JSON payload and is deliberately non-null so the exercise unique
+  -- key remains effective under MySQL NULL semantics.
   utterance_text_id BINARY(16) NULL,
   dialogue_turn_id BINARY(16) NULL,
   exercise_id BINARY(16) NULL,
-  source_path VARCHAR(190) NULL COMMENT 'JSON path for text nested inside an exercise payload',
+  source_path VARCHAR(190) NOT NULL DEFAULT '' COMMENT 'JSON path for text nested inside an exercise payload',
 
   -- Unicode code-point offsets: [start_offset, end_offset).
   start_offset INT UNSIGNED NOT NULL,
@@ -26,8 +27,8 @@ CREATE TABLE lexical_annotations (
   surface_text VARCHAR(512) COLLATE utf8mb4_0900_bin NOT NULL,
   annotation_type ENUM('word','phrase','expression','morpheme') NOT NULL DEFAULT 'word',
 
-  -- At least one target should be populated. A phrase may intentionally point
-  -- only to a concept; an inflected token can point to all three.
+  -- At least one target is required. A phrase may intentionally point only to
+  -- a concept; an inflected token can point to concept + lexeme + word_form.
   concept_id BINARY(16) NULL,
   lexeme_id BINARY(16) NULL,
   word_form_id BINARY(16) NULL,
@@ -47,6 +48,18 @@ CREATE TABLE lexical_annotations (
   KEY idx_lexical_annotations_concept (concept_id),
   KEY idx_lexical_annotations_lexeme (lexeme_id),
   KEY idx_lexical_annotations_word_form (word_form_id),
+
+  CONSTRAINT chk_lexical_annotations_one_source CHECK (
+    (utterance_text_id IS NOT NULL) +
+    (dialogue_turn_id IS NOT NULL) +
+    (exercise_id IS NOT NULL) = 1
+  ),
+  CONSTRAINT chk_lexical_annotations_valid_span CHECK (start_offset < end_offset),
+  CONSTRAINT chk_lexical_annotations_has_target CHECK (
+    concept_id IS NOT NULL OR lexeme_id IS NOT NULL OR word_form_id IS NOT NULL
+  ),
+  CONSTRAINT chk_lexical_annotations_confidence CHECK (confidence > 0.0000 AND confidence <= 1.0000),
+  CONSTRAINT chk_lexical_annotations_source_path CHECK (exercise_id IS NOT NULL OR source_path = ''),
 
   CONSTRAINT fk_lexical_annotations_language
     FOREIGN KEY (language_id) REFERENCES languages(id) ON DELETE CASCADE,
