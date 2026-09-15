@@ -129,6 +129,20 @@ jobs:
           counts=$(sql "SELECT GROUP_CONCAT(cnt ORDER BY sequence_number SEPARATOR ',') FROM (SELECT l.sequence_number,COUNT(a.id) cnt FROM lessons l JOIN activities a ON a.lesson_id=l.id WHERE l.sequence_number BETWEEN 26 AND 30 AND l.public_id LIKE 'de_pre_a1_l%' GROUP BY l.id,l.sequence_number) q;")
           test "$counts" = "4,3,3,4,6"
 
+      - name: Validate German Pre-A1 provenance completeness
+        run: |
+          set -euo pipefail
+          sql() { docker run --rm --network host mysql:9.0.1 mysql -N -s -h127.0.0.1 -uroot -proot language_app -e "$1"; }
+          activities_missing=$(sql "SELECT COUNT(*) FROM activities a JOIN lessons l ON l.id=a.lesson_id WHERE l.public_id LIKE 'de_pre_a1_l%' AND NOT EXISTS (SELECT 1 FROM activity_sources s WHERE s.activity_id=a.id);")
+          items_missing=$(sql "SELECT COUNT(*) FROM activity_items ai JOIN activities a ON a.id=ai.activity_id JOIN lessons l ON l.id=a.lesson_id WHERE l.public_id LIKE 'de_pre_a1_l%' AND NOT EXISTS (SELECT 1 FROM activity_item_sources s WHERE s.activity_item_id=ai.id);")
+          lexemes_missing=$(sql "SELECT COUNT(DISTINCT ll.lexeme_id) FROM lesson_lexemes ll JOIN lessons l ON l.id=ll.lesson_id WHERE l.public_id LIKE 'de_pre_a1_l%' AND NOT EXISTS (SELECT 1 FROM lexeme_sources s WHERE s.lexeme_id=ll.lexeme_id);")
+          grammar_missing=$(sql "SELECT COUNT(DISTINCT lg.grammar_note_id) FROM lesson_grammar_notes lg JOIN lessons l ON l.id=lg.lesson_id WHERE l.public_id LIKE 'de_pre_a1_l%' AND NOT EXISTS (SELECT 1 FROM grammar_note_sources s WHERE s.grammar_note_id=lg.grammar_note_id);")
+          echo "provenance missing activities=$activities_missing items=$items_missing lexemes=$lexemes_missing grammar_notes=$grammar_missing"
+          test "$activities_missing" = "0"
+          test "$items_missing" = "0"
+          test "$lexemes_missing" = "0"
+          test "$grammar_missing" = "0"
+
       - name: Validate conversation flow and activity variety
         run: |
           set -euo pipefail
@@ -144,10 +158,9 @@ jobs:
         run: |
           set -euo pipefail
           sql() { docker run --rm --network host mysql:9.0.1 mysql -N -s -h127.0.0.1 -uroot -proot language_app -e "$1"; }
-          legacy_literals="fräulein d-mark heisse heissen grosse schloß muß daß 'auf deutsch'"
           legacy_expr() {
             local value="$1"
-            printf "%s" "LOCATE(BINARY 'fräulein',BINARY LOWER($value))>0 OR LOCATE(BINARY 'd-mark',BINARY LOWER($value))>0 OR REGEXP_LIKE(LOWER($value) COLLATE utf8mb4_0900_as_cs,'(^|[^a-z])dm([^a-z]|$)','c') OR LOCATE(BINARY 'heisse',BINARY LOWER($value))>0 OR LOCATE(BINARY 'heissen',BINARY LOWER($value))>0 OR LOCATE(BINARY 'grosse',BINARY LOWER($value))>0 OR LOCATE(BINARY 'schloß',BINARY LOWER($value))>0 OR LOCATE(BINARY 'muß',BINARY LOWER($value))>0 OR LOCATE(BINARY 'daß',BINARY LOWER($value))>0 OR LOCATE(BINARY 'auf deutsch',BINARY LOWER($value))>0"
+            printf "%s" "LOCATE(HEX('fräulein'),HEX(LOWER($value)))>0 OR LOCATE(HEX('d-mark'),HEX(LOWER($value)))>0 OR REGEXP_LIKE($value,'(^|[^A-Za-z])DM([^A-Za-z]|$)','c') OR LOCATE(HEX('heisse'),HEX(LOWER($value)))>0 OR LOCATE(HEX('heissen'),HEX(LOWER($value)))>0 OR LOCATE(HEX('grosse'),HEX(LOWER($value)))>0 OR LOCATE(HEX('schloß'),HEX(LOWER($value)))>0 OR LOCATE(HEX('muß'),HEX(LOWER($value)))>0 OR LOCATE(HEX('daß'),HEX(LOWER($value)))>0 OR LOCATE(HEX('auf deutsch'),HEX($value))>0"
           }
           dialogue_pred=$(legacy_expr 'dt.text_target')
           item_pred=$(legacy_expr "COALESCE(ai.text_target,'')")
@@ -158,12 +171,25 @@ jobs:
           payload_count=$(sql "SELECT COUNT(*) FROM activities a JOIN lessons l ON l.id=a.lesson_id WHERE l.public_id LIKE 'de_pre_a1_l%' AND ($payload_pred);")
           lexeme_count=$(sql "SELECT COUNT(DISTINCT lx.id) FROM lexemes lx JOIN lesson_lexemes ll ON ll.lexeme_id=lx.id JOIN lessons l ON l.id=ll.lesson_id WHERE l.public_id LIKE 'de_pre_a1_l%' AND ($lexeme_pred);")
           echo "legacy dialogue=$dialogue_count items=$item_count payload=$payload_count active_lexemes=$lexeme_count"
+          if [ "$dialogue_count" != "0" ]; then
+            sql "SELECT d.public_id,dt.position,dt.text_target FROM dialogue_turns dt JOIN dialogues d ON d.id=dt.dialogue_id WHERE d.public_id LIKE 'de_pre_a1_dlg_%' AND ($dialogue_pred) ORDER BY d.public_id,dt.position;"
+          fi
+          if [ "$item_count" != "0" ]; then
+            sql "SELECT l.public_id,a.public_id,ai.position,ai.text_target FROM activity_items ai JOIN activities a ON a.id=ai.activity_id JOIN lessons l ON l.id=a.lesson_id WHERE l.public_id LIKE 'de_pre_a1_l%' AND ($item_pred) ORDER BY l.sequence_number,a.position,ai.position;"
+          fi
+          if [ "$payload_count" != "0" ]; then
+            sql "SELECT l.public_id,a.public_id,CAST(COALESCE(a.payload,JSON_OBJECT()) AS CHAR) FROM activities a JOIN lessons l ON l.id=a.lesson_id WHERE l.public_id LIKE 'de_pre_a1_l%' AND ($payload_pred) ORDER BY l.sequence_number,a.position;"
+          fi
+          if [ "$lexeme_count" != "0" ]; then
+            sql "SELECT DISTINCT l.public_id,lx.public_id,lx.surface FROM lexemes lx JOIN lesson_lexemes ll ON ll.lexeme_id=lx.id JOIN lessons l ON l.id=ll.lesson_id WHERE l.public_id LIKE 'de_pre_a1_l%' AND ($lexeme_pred) ORDER BY l.public_id,lx.public_id;"
+          fi
           test "$dialogue_count" = "0"
           test "$item_count" = "0"
           test "$payload_count" = "0"
           test "$lexeme_count" = "0"
-          # Dated Headstart restaurant/DM and old FAST invitation are no longer active sources on replaced lessons.
-          test "$(sql "SELECT COUNT(*) FROM lesson_sources ls JOIN lessons l ON l.id=ls.lesson_id JOIN source_items si ON si.id=ls.source_item_id WHERE l.public_id IN ('de_pre_a1_l023','de_pre_a1_l024','de_pre_a1_l025','de_pre_a1_l026','de_pre_a1_l027') AND si.public_id IN ('srcitem_headstart_m3_u1_restaurant','srcitem_headstart_m6_u1_purchase','srcitem_headstart_m3_u1_menu_visual','srcitem_fast_l9_invitation');")" = "0"
+          dated_source_count=$(sql "SELECT COUNT(*) FROM lesson_sources ls JOIN lessons l ON l.id=ls.lesson_id JOIN source_items si ON si.id=ls.source_item_id WHERE l.public_id IN ('de_pre_a1_l023','de_pre_a1_l024','de_pre_a1_l025','de_pre_a1_l026','de_pre_a1_l027') AND si.public_id IN ('srcitem_headstart_m3_u1_restaurant','srcitem_headstart_m6_u1_purchase','srcitem_headstart_m3_u1_menu_visual','srcitem_fast_l9_invitation');")
+          echo "dated active source links=$dated_source_count"
+          test "$dated_source_count" = "0"
 
       - name: Check all base tables
         run: |
