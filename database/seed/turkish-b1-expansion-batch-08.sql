@@ -1,0 +1,10 @@
+-- Istanbul Turkish B1 expansion batch 8: class catch-up, volunteer coordination, delivery-damage resolution, family-event mediation.
+INSERT IGNORE INTO curriculum_units (course_id,target_language_id,cefr_level_id,skill_id,topic_id,slug,title,learning_objective,sort_order,expected_lessons,status,metadata)
+SELECT c.id,c.target_language_id,lvl.id,s.id,t.id,u.slug,u.title,u.objective,u.sort_order,3,'approved',JSON_OBJECT('language_specific',TRUE,'target_variant','tr-TR','batch',8,'grammar_focus',u.grammar_focus,'third_lesson','independent-production-mediation')
+FROM (
+ SELECT 650 sort_order,'work-study' skill_slug,'school-study' topic_slug,'b1-tr-class-absence-catchup' slug,'Kaçırılan dersi telafi etmek' title,'Explain an absence, ask a classmate for key information and make a practical catch-up plan.' objective,'past-event account, reported information, sequencing and realistic conditions' grammar_focus
+ UNION ALL SELECT 660,'communication','simple-messages','b1-tr-volunteer-event-coordination','Gönüllü etkinliğini koordine etmek','Coordinate a small volunteer activity, relay responsibilities and solve a practical staffing problem.','reported instructions, sequencing, polite negotiation and realistic conditions'
+ UNION ALL SELECT 670,'shopping-money','shopping','b1-tr-delivery-damage-resolution','Hasarlı teslimatı çözüme kavuşturmak','Describe a damaged delivery, report customer-service information and negotiate a concrete replacement plan.','past-event description, reported information, polite request and realistic condition'
+ UNION ALL SELECT 680,'family-home','family-people','b1-tr-family-event-plan-mediation','Aile etkinliği planını uzlaştırmak','Relay different family members'' practical preferences, explain constraints and help the group agree on a workable event plan.','reported preferences, reasons, sequencing, polite mediation and realistic conditions'
+) u
+JOIN courses c ON c.slug='fa-tr-tr' JOIN cefr_levels lvl ON lvl.code='B1' JOIN skills s ON s.slug=u.skill_slug JOIN topics t ON t.slug=u.topic_slug AND t.skill_id=s.id;
