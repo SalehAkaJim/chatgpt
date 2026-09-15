@@ -51,6 +51,6 @@ jobs:
             exit 0
           fi
           git commit -m 'Generate English lexical span annotations [skip ci]'
-          git fetch origin main
+          git fetch origin main:refs/remotes/origin/main
           git rebase origin/main
           git push origin HEAD:main
