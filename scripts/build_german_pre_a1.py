@@ -81,3 +81,4 @@ def main():
         totals[cefr]={"units":len(config["chapters"]),"lessons":lt,"items":it}
     save_cache(cache); print("SUMMARY "+json.dumps(totals,ensure_ascii=False,sort_keys=True),flush=True)
 if __name__=="__main__": main()
+# retry marker: Persian translation build
