@@ -103,8 +103,10 @@ jobs:
           test "$(sql "SELECT COUNT(*) FROM curriculum_targets ct JOIN language_levels ll ON ll.id=ct.language_level_id JOIN languages l ON l.id=ll.language_id JOIN cefr_levels c ON c.id=ll.cefr_level_id WHERE l.code='de' AND c.code='Pre-A1' AND ct.is_mandatory=1;")" = "30"
           test "$(sql "SELECT ll.planned_lesson_count FROM language_levels ll JOIN languages l ON l.id=ll.language_id JOIN cefr_levels c ON c.id=ll.cefr_level_id WHERE l.code='de' AND c.code='Pre-A1';")" = "30"
           test "$(sql "SELECT ll.lesson_count_status FROM language_levels ll JOIN languages l ON l.id=ll.language_id JOIN cefr_levels c ON c.id=ll.cefr_level_id WHERE l.code='de' AND c.code='Pre-A1';")" = "provisional"
+          test "$(sql "SELECT ll.status FROM language_levels ll JOIN languages l ON l.id=ll.language_id JOIN cefr_levels c ON c.id=ll.cefr_level_id WHERE l.code='de' AND c.code='Pre-A1';")" = "review"
           test "$(sql "SELECT COUNT(*) FROM sources WHERE public_id IN ('src_cefr_2020','src_fsi_de_programmed_intro','src_dli_de_headstart','src_fsi_de_basic','src_tatoeba_de','src_fsi_de_fast','src_dli_de_solt');")" = "7"
           test "$(sql "SELECT COUNT(DISTINCT ct.id) FROM curriculum_targets ct JOIN language_levels ll ON ll.id=ct.language_level_id JOIN languages lang ON lang.id=ll.language_id JOIN cefr_levels c ON c.id=ll.cefr_level_id JOIN lesson_targets lt ON lt.curriculum_target_id=ct.id WHERE lang.code='de' AND c.code='Pre-A1' AND ct.is_mandatory=1;")" = "30"
+          test "$(sql "SELECT COUNT(*) FROM curriculum_targets ct JOIN language_levels ll ON ll.id=ct.language_level_id JOIN languages lang ON lang.id=ll.language_id JOIN cefr_levels c ON c.id=ll.cefr_level_id WHERE lang.code='de' AND c.code='Pre-A1' AND ct.is_mandatory=1 AND ct.coverage_status='covered';")" = "30"
           test "$(sql "SELECT COUNT(*) FROM (SELECT l.id,SUM(lt.is_primary=1) n FROM lessons l JOIN language_levels ll ON ll.id=l.language_level_id JOIN languages lang ON lang.id=ll.language_id JOIN cefr_levels c ON c.id=ll.cefr_level_id LEFT JOIN lesson_targets lt ON lt.lesson_id=l.id WHERE lang.code='de' AND c.code='Pre-A1' GROUP BY l.id HAVING n<>1) q;")" = "0"
 
       - name: Validate complete German Pre-A1 source-backed draft
@@ -126,6 +128,20 @@ jobs:
           test "$(sql "SELECT COUNT(*) FROM activities WHERE type_code='guided_writing';")" -ge "1"
           counts=$(sql "SELECT GROUP_CONCAT(cnt ORDER BY sequence_number SEPARATOR ',') FROM (SELECT l.sequence_number,COUNT(a.id) cnt FROM lessons l JOIN activities a ON a.lesson_id=l.id WHERE l.sequence_number BETWEEN 26 AND 30 AND l.public_id LIKE 'de_pre_a1_l%' GROUP BY l.id,l.sequence_number) q;")
           test "$counts" = "4,3,3,4,6"
+
+      - name: Validate conversation flow and activity variety
+        run: |
+          set -euo pipefail
+          sql() { docker run --rm --network host mysql:9.0.1 mysql -N -s -h127.0.0.1 -uroot -proot language_app -e "$1"; }
+          # The opening partner must speak first; learner must speak on a later turn.
+          test "$(sql "SELECT COUNT(*) FROM activities a JOIN lessons l ON l.id=a.lesson_id JOIN dialogues d ON d.id=a.dialogue_id JOIN dialogue_turns dt ON dt.dialogue_id=d.id AND dt.position=1 WHERE l.public_id LIKE 'de_pre_a1_l%' AND a.position=1 AND dt.learner_turn=1;")" = "0"
+          test "$(sql "SELECT COUNT(DISTINCT d.id) FROM activities a JOIN lessons l ON l.id=a.lesson_id JOIN dialogues d ON d.id=a.dialogue_id JOIN dialogue_turns dt ON dt.dialogue_id=d.id WHERE l.public_id LIKE 'de_pre_a1_l%' AND a.position=1 AND dt.learner_turn=1 AND dt.position>1;")" = "30"
+          # Adjacent lessons must not repeat the exact same activity signature.
+          test "$(sql "SELECT COUNT(*) FROM lessons a JOIN lessons b ON b.language_level_id=a.language_level_id AND b.sequence_number=a.sequence_number+1 WHERE a.public_id LIKE 'de_pre_a1_l%' AND b.public_id LIKE 'de_pre_a1_l%' AND a.template_signature=b.template_signature;")" = "0"
+          # Lesson activity counts must genuinely vary rather than follow a fixed quota.
+          test "$(sql "SELECT COUNT(DISTINCT activity_count) FROM v_lesson_activity_counts WHERE public_id LIKE 'de_pre_a1_l%';")" -ge "4"
+          test "$(sql "SELECT MIN(activity_count) FROM v_lesson_activity_counts WHERE public_id LIKE 'de_pre_a1_l%';")" -le "2"
+          test "$(sql "SELECT MAX(activity_count) FROM v_lesson_activity_counts WHERE public_id LIKE 'de_pre_a1_l%';")" -ge "5"
 
       - name: Check all base tables
         run: |
