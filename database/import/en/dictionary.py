@@ -141,10 +141,14 @@ def main() -> None:
                 lex = one(cur, "SELECT UUID_TO_BIN(%s,1)", (luid,))
                 stats["lexemes_inserted"] += 1
 
+            # Dictionary concepts are app-wide fallback senses. Lesson-authored
+            # concepts link the same lexeme as `primary`, so contextual lesson
+            # vocabulary wins when the read model needs one meaning while the
+            # dictionary sense remains available to explicit tap annotations.
             cur.execute("""
                 INSERT IGNORE INTO concept_lexemes(concept_id,lexeme_id,relation_type,metadata)
-                VALUES(%s,%s,'primary',%s)
-            """, (cid, lex, json.dumps({"source":"app_dictionary"})))
+                VALUES(%s,%s,'related',%s)
+            """, (cid, lex, json.dumps({"source":"app_dictionary","scope":"fallback"})))
             if cur.rowcount == 1: stats["links_added"] += 1
 
             features = {"form":"base"}
