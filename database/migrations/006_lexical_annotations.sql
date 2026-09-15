@@ -65,6 +65,9 @@ CREATE TABLE lexical_annotations (
     FOREIGN KEY (language_id) REFERENCES languages(id) ON DELETE CASCADE,
   CONSTRAINT fk_lexical_annotations_variant
     FOREIGN KEY (language_variant_id) REFERENCES language_variants(id) ON DELETE SET NULL,
+  -- Source deletion cascades: a span is meaningless when its exact source text
+  -- disappears. Canonical lexical targets are protected instead; deleting a
+  -- concept/lexeme/form must first resolve or intentionally remove its links.
   CONSTRAINT fk_lexical_annotations_utterance_text
     FOREIGN KEY (utterance_text_id) REFERENCES utterance_texts(id) ON DELETE CASCADE,
   CONSTRAINT fk_lexical_annotations_dialogue_turn
@@ -72,9 +75,9 @@ CREATE TABLE lexical_annotations (
   CONSTRAINT fk_lexical_annotations_exercise
     FOREIGN KEY (exercise_id) REFERENCES exercises(id) ON DELETE CASCADE,
   CONSTRAINT fk_lexical_annotations_concept
-    FOREIGN KEY (concept_id) REFERENCES concepts(id) ON DELETE CASCADE,
+    FOREIGN KEY (concept_id) REFERENCES concepts(id) ON DELETE RESTRICT,
   CONSTRAINT fk_lexical_annotations_lexeme
-    FOREIGN KEY (lexeme_id) REFERENCES lexemes(id) ON DELETE CASCADE,
+    FOREIGN KEY (lexeme_id) REFERENCES lexemes(id) ON DELETE RESTRICT,
   CONSTRAINT fk_lexical_annotations_word_form
-    FOREIGN KEY (word_form_id) REFERENCES word_forms(id) ON DELETE CASCADE
+    FOREIGN KEY (word_form_id) REFERENCES word_forms(id) ON DELETE RESTRICT
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
