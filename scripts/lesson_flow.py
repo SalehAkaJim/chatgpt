@@ -12,6 +12,15 @@ from collections import OrderedDict
 from typing import Any, Iterable
 
 EARLY_LEVELS = {"Pre-A1", "A1"}
+STAGE_ORDER = {
+    "context": 0,
+    "understand": 1,
+    "learn": 2,
+    "speak": 3,
+    "practice": 4,
+    "conversation": 5,
+    "review": 6,
+}
 
 
 def _item_id(item: dict[str, Any]) -> str:
@@ -45,9 +54,45 @@ def _step(
     }
 
 
+def _vocabulary_items(items: list[dict[str, Any]]) -> list[dict[str, Any]]:
+    """Return learner-facing lexical rows without duplicating concept + lexeme.
+
+    A concept is still the semantic anchor, but when a lesson contains an
+    explicit lexeme we render that canonical dictionary row instead of the
+    compatibility concept form. Explicit word forms are kept as first-class
+    teaching items so morphology can reach the frontend without being flattened
+    back into a concept string.
+    """
+    represented_concepts: set[str] = set()
+    for item in items:
+        if item.get("kind") != "lexeme":
+            continue
+        for ref in (item.get("data") or {}).get("concept_refs", []):
+            represented_concepts.add(str(ref))
+
+    result: list[dict[str, Any]] = []
+    for item in items:
+        kind = item.get("kind")
+        data = item.get("data") or {}
+        if kind in {"lexeme", "word_form"}:
+            result.append(item)
+            continue
+        if kind != "concept" or not data.get("forms"):
+            continue
+        concept_keys = {str(data.get("slug") or ""), _item_id(item)}
+        if represented_concepts.isdisjoint(concept_keys):
+            result.append(item)
+    return result
+
+
 def build_lesson_steps(items: list[dict[str, Any]], cefr: str) -> list[dict[str, Any]]:
-    """Build the stable Nova lesson flow for one lesson's source items."""
-    concepts = [item for item in items if item.get("kind") == "concept" and (item.get("data") or {}).get("forms")]
+    """Build the stable Nova lesson flow for one lesson's source items.
+
+    Stage order is deliberately monotonic. A frontend may safely drive a stage
+    rail from the stored sequence without handling regressions such as
+    practice -> learn or conversation -> speak.
+    """
+    vocabulary = _vocabulary_items(items)
     utterances = [item for item in items if item.get("kind") == "utterance" and (item.get("data") or {}).get("text")]
     grammar = [item for item in items if item.get("kind") == "grammar_point"]
     dialogues = [item for item in items if item.get("kind") == "dialogue" and (item.get("data") or {}).get("turns")]
@@ -80,27 +125,29 @@ def build_lesson_steps(items: list[dict[str, Any]], cefr: str) -> list[dict[str,
         used_exercises.add(_item_id(item))
         add("exercise", "understand", exercises=[item], role="comprehension")
 
-    for group_index, group in enumerate(_chunks(concepts, 4 if early else 5), start=1):
-        add("concepts", "learn", items=group, role="key_vocabulary", metadata={"group": group_index})
+    for group_index, group in enumerate(_chunks(vocabulary, 4 if early else 5), start=1):
+        add("vocabulary", "learn", items=group, role="key_vocabulary", metadata={"group": group_index})
 
     for group_index, group in enumerate(_chunks(utterances, 3), start=1):
         add("phrases", "learn", items=group, role="useful_phrase", metadata={"group": group_index})
-        add("repeat", "speak", items=group, role="repeat_target", metadata={"group": group_index})
-
-    remaining_comprehension = [item for item in comprehension if _item_id(item) not in used_exercises]
-    practice_pool = [*remaining_comprehension, *controlled]
-    before_grammar = practice_pool[: min(2, len(practice_pool))] if grammar else practice_pool
-    for item in before_grammar:
-        used_exercises.add(_item_id(item))
-        add("exercise", "practice", exercises=[item], role="practice")
 
     for item in grammar:
         add("grammar", "learn", items=[item], role="language_tip")
 
+    for group_index, group in enumerate(_chunks(utterances, 3), start=1):
+        add("repeat", "speak", items=group, role="repeat_target", metadata={"group": group_index})
+
+    for item in speaking:
+        used_exercises.add(_item_id(item))
+        add("exercise", "speak", exercises=[item], role="speaking")
+
+    remaining_comprehension = [item for item in comprehension if _item_id(item) not in used_exercises]
+    practice_pool = [*remaining_comprehension, *controlled]
     for item in practice_pool:
-        if _item_id(item) not in used_exercises:
-            used_exercises.add(_item_id(item))
-            add("exercise", "practice", exercises=[item], role="practice")
+        if _item_id(item) in used_exercises:
+            continue
+        used_exercises.add(_item_id(item))
+        add("exercise", "practice", exercises=[item], role="practice")
 
     if primary_dialogue:
         add("roleplay", "conversation", items=[primary_dialogue], role="roleplay_source")
@@ -108,10 +155,11 @@ def build_lesson_steps(items: list[dict[str, Any]], cefr: str) -> list[dict[str,
     if challenge_dialogue:
         add("dialogue_challenge", "conversation", items=[challenge_dialogue], role="transfer_challenge")
 
-    for item in speaking:
-        add("exercise", "speak", exercises=[item], role="speaking")
-
     add("review", "review", metadata={"source_item_count": len(items)})
+
+    stage_indexes = [STAGE_ORDER[step["stage"]] for step in result]
+    if stage_indexes != sorted(stage_indexes):
+        raise ValueError(f"Lesson delivery stage regression: {stage_indexes}")
     return result
 
 
