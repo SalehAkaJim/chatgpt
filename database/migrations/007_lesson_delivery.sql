@@ -1,9 +1,12 @@
--- Frontend delivery/read-model layer + lexical annotation integrity.
+-- Frontend delivery/read-model layer.
 -- MySQL 9.0.1
 --
 -- Canonical lesson_items continue to describe *what* belongs to a lesson.
 -- lesson_steps describes *how* the approved content is delivered. The same
 -- canonical item may appear in multiple steps (for example phrase + repeat).
+--
+-- Lexical annotation target integrity is defined directly by migration 006 so
+-- a fresh database never needs to drop/recreate same-named foreign keys here.
 
 SET NAMES utf8mb4 COLLATE utf8mb4_0900_ai_ci;
 SET time_zone = '+00:00';
@@ -14,20 +17,6 @@ SET time_zone = '+00:00';
 ALTER TABLE dialogue_versions
   DROP INDEX uq_dialogue_versions_language,
   ADD UNIQUE KEY uq_dialogue_versions_variant (dialogue_id, language_id, language_variant_id);
-
--- Never silently delete annotations because a lexical target was removed.
--- Source deletion still cascades because the annotation has no meaning without
--- its exact source text.
-ALTER TABLE lexical_annotations
-  DROP FOREIGN KEY fk_lexical_annotations_concept,
-  DROP FOREIGN KEY fk_lexical_annotations_lexeme,
-  DROP FOREIGN KEY fk_lexical_annotations_word_form,
-  ADD CONSTRAINT fk_lexical_annotations_concept
-    FOREIGN KEY (concept_id) REFERENCES concepts(id) ON DELETE RESTRICT,
-  ADD CONSTRAINT fk_lexical_annotations_lexeme
-    FOREIGN KEY (lexeme_id) REFERENCES lexemes(id) ON DELETE RESTRICT,
-  ADD CONSTRAINT fk_lexical_annotations_word_form
-    FOREIGN KEY (word_form_id) REFERENCES word_forms(id) ON DELETE RESTRICT;
 
 CREATE TABLE lesson_steps (
   id BINARY(16) NOT NULL,
