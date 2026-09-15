@@ -86,9 +86,10 @@
     },
     "annotation": {
       "type": "object",
-      "required": ["start", "end", "surface", "type", "confidence", "provenance", "entry"],
+      "required": ["start", "end", "utf16_start", "utf16_end", "surface", "type", "confidence", "provenance", "entry"],
       "properties": {
         "start": {"type": "integer", "minimum": 0}, "end": {"type": "integer", "minimum": 1},
+        "utf16_start": {"type": "integer", "minimum": 0}, "utf16_end": {"type": "integer", "minimum": 1},
         "surface": {"type": "string"}, "type": {"enum": ["word", "phrase", "expression", "morpheme"]},
         "confidence": {"type": "number", "exclusiveMinimum": 0, "maximum": 1}, "provenance": {"type": "string"},
         "entry": {"type": "object", "properties": {
