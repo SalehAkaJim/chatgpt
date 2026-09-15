@@ -8,3 +8,6 @@ FROM (
  UNION ALL SELECT 640,'work-study','school-study','b1-tr-course-project-coordination','Grup projesini planlayıp değişikliği aktarmak','Coordinate a familiar group project, relay a teacher''s instructions, explain a schedule change and agree on responsibilities.','reported instructions, purpose, sequencing, reasons and realistic conditions'
 ) u
 JOIN courses c ON c.slug='fa-tr-tr' JOIN cefr_levels lvl ON lvl.code='B1' JOIN skills s ON s.slug=u.skill_slug JOIN topics t ON t.slug=u.topic_slug AND t.skill_id=s.id;
+
+-- Legacy bootstrap compatibility until the workflow is migrated to dynamic seed discovery.
+SOURCE database/seed/turkish-b1-expansion-batch-08.sql;
