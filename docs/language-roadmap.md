@@ -4,7 +4,22 @@ Updated: 2026-09-15
 
 ## Purpose
 
-This file defines execution policy and language priority only. It must not become a source of hard-coded curriculum sizes, batch counts, deadlines, scheduling cadence, or completion assumptions.
+This file defines execution policy, launch-language scope, and language priority only. It must not become a source of hard-coded curriculum sizes, batch counts, deadlines, scheduling cadence, or completion assumptions.
+
+## Product scope
+
+The active production scope is intentionally limited to four launch languages:
+
+1. English (`fa -> en`)
+2. German (`fa -> de-DE`)
+3. Turkish (`fa -> tr-TR`)
+4. Korean (`fa -> ko-KR`)
+
+No additional language should be created, expanded, repaired, scheduled, or treated as active production scope unless the product owner explicitly changes this decision later.
+
+Historical or experimental files for Italian, French, Spanish, Japanese, Arabic, Mandarin, Russian, or any other language may remain in the repository, but they are outside the current product scope and must not cause the production pipeline to continue past Korean.
+
+The objective of the current phase is to finish these four languages completely enough to support application development and integration. After all four languages are genuinely release-ready, content production stops and the project moves to database, API, frontend, dictionary/lexical enrichment, application behavior, and product integration work.
 
 ## Scheduling policy
 
@@ -27,6 +42,7 @@ A level may be treated as complete only when the checks required for that langua
 
 - language-specific educational/coverage audit,
 - structural content validation,
+- CEFR level-boundary validation,
 - canonical level import / dry-run validation,
 - database integration and idempotency checks,
 - cast and voice-lock validation,
@@ -35,39 +51,36 @@ A level may be treated as complete only when the checks required for that langua
 - audio SQL export / database-link validation,
 - final gap audit and capstone/readiness check when appropriate.
 
-If a validation path does not yet exist for a new language, create the smallest language-appropriate validation path before declaring that level complete.
+If a validation path does not yet exist for a language, create the smallest language-appropriate validation path before declaring that level complete.
 
 ## Execution rule
 
 For each active language:
 
 1. Inspect the existing repository state before authoring or overwriting anything.
-2. Build a language-specific coverage map for the level being worked on.
+2. Build or verify a language-specific coverage map for the level being worked on.
 3. Reuse existing content only after it passes current quality requirements.
 4. Add, revise, split, merge, or remove units based on educational need; do not preserve a historical count for its own sake.
 5. Run cumulative QA after each meaningful batch.
 6. Near the end of a level, run a gap audit instead of assuming a planned number of units is sufficient.
 7. Close the level only after all required validation gates are green.
 8. Move to the next level/language only after the current scope is genuinely complete, unless the product owner explicitly reprioritizes.
+9. After Korean is complete through the intended terminal level and all four launch languages have passed their release gates, stop content production. Do not continue to a fifth language.
 
 ## Language priority
 
 English is the baseline/reference course and remains maintenance-only unless QA or the product owner requires changes.
 
-For expansion work, use this priority order unless explicitly overridden:
+The active production order is:
 
-1. German (`fa -> de-DE`)
-2. Turkish (`fa -> tr-TR`)
-3. Korean (`fa -> ko-KR`)
-4. Italian (`fa -> it-IT`)
-5. French (`fa -> fr-FR`)
-6. Spanish (`fa -> es-ES`)
-7. Japanese (`fa -> ja-JP`)
-8. Arabic (`fa -> ar-MSA` unless another variant is explicitly selected)
-9. Mandarin (`fa -> zh-CN` unless another variant is explicitly selected)
-10. Russian (`fa -> ru-RU`)
+1. English (`fa -> en`) — maintain only unless a real gap is found
+2. German (`fa -> de-DE`) — maintain only unless a real gap is found
+3. Turkish (`fa -> tr-TR`) — complete remaining levels and full-stack gates
+4. Korean (`fa -> ko-KR`) — complete remaining levels and full-stack gates
 
-The active language is the first language in this priority sequence whose requested scope has not yet passed its required completion gates. This pointer must be resolved from repository state, not from a hard-coded "current language" field.
+The active language is the first language in this sequence whose requested scope has not yet passed its required completion gates. This pointer must be resolved from repository state, not from a hard-coded "current language" field.
+
+After Korean is complete and all four languages are release-ready, there is no next language in the current roadmap.
 
 ## Language-specific design rule
 
@@ -88,9 +101,9 @@ At minimum, each language should make explicit decisions for:
 
 ## Existing-content safety rule
 
-Some future-priority languages may already contain production folders, older generated content, workflows, seeds, audio, or experiments. Treat those artifacts as candidates for audit, not as proof that the language or level is finished.
+Out-of-scope languages may already contain production folders, older generated content, workflows, seeds, audio, or experiments. Treat those artifacts as historical/inactive for the current product phase. Do not audit or expand them merely because they exist.
 
-Before continuing such a language:
+For the four active languages, existing artifacts are candidates for audit, not automatic proof that a language or level is finished. Before continuing an active language:
 
 - inventory what already exists,
 - identify which artifacts are current versus legacy,
@@ -99,4 +112,4 @@ Before continuing such a language:
 - replace only what fails current requirements,
 - regenerate dependent audio/database artifacts when source content changes.
 
-This rule is especially important when beginning the next language: audit first, then build from the validated state rather than blindly starting from zero or blindly trusting old output.
+The governing principle for the current phase is: finish English, German, Turkish, and Korean well enough to build the application on top of them, then stop language production and improve the shared product/data platform around those four languages.
