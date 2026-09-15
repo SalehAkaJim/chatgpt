@@ -1,0 +1,51 @@
+{
+  "source_text_hash": "aecf3d89dffe28571195b07c9e1c0125046ba75a79624fca3184d59a074fac1b",
+  "voice_id": "FDs1ZX5J4e4f2c2erxtW",
+  "model": "eleven_multilingual_v2",
+  "settings": {
+    "stability": 0.72,
+    "similarity_boost": 0.88,
+    "style": 0.0,
+    "use_speaker_boost": true,
+    "speed": 0.92
+  },
+  "provider": "elevenlabs",
+  "audio_key": "979c570b5323c98b31bc620e18d9e0846f2ebdbb8135aeaea87231655914b941",
+  "voice_key": "tr-tr.lexical.native-clear",
+  "voice_name": "Fili - Warm Turkish Female ",
+  "voice_labels": {
+    "gender": "female",
+    "accent": "istanbul",
+    "age": "young",
+    "category": "professional",
+    "language": "tr",
+    "use_case": "conversational",
+    "descriptive": "calm"
+  },
+  "output_format": "mp3_44100_192",
+  "file_sha256": "ea5b7a40f5f8123e592a7014ab9af30d2f00fb64f9a8971f9e74ac4809c37cb1",
+  "duration_ms": 1201,
+  "generated_at": "2026-09-15T07:54:22.057183+00:00",
+  "entity_refs": [
+    {
+      "entity_type": "lexeme",
+      "entity_uuid": "fef31715-5a15-5472-946d-196b463d9923",
+      "entity_key": "lx_course_project_coordination_03"
+    },
+    {
+      "entity_type": "word_form",
+      "entity_uuid": "ef78c44b-1c79-5d2d-a5e5-46d040a20f8e",
+      "entity_key": "wf_course_project_coordination_03"
+    },
+    {
+      "entity_type": "lexeme",
+      "entity_uuid": "fef31715-5a15-5472-946d-196b463d9923",
+      "entity_key": "lx_study_group_mediation_06"
+    },
+    {
+      "entity_type": "word_form",
+      "entity_uuid": "553f79db-e45c-5059-a48d-165534411689",
+      "entity_key": "wf_study_group_mediation_06"
+    }
+  ]
+}

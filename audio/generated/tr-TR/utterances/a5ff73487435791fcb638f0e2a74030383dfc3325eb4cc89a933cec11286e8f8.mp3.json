@@ -1,0 +1,41 @@
+{
+  "source_text_hash": "ba0a2415ad22e81c02a2ebf41349833056c5a7ea2e42ad5b0f8bcb991f6c4170",
+  "voice_id": "FDs1ZX5J4e4f2c2erxtW",
+  "model": "eleven_multilingual_v2",
+  "settings": {
+    "stability": 0.68,
+    "similarity_boost": 0.88,
+    "style": 0.0,
+    "use_speaker_boost": true,
+    "speed": 0.95
+  },
+  "provider": "elevenlabs",
+  "audio_key": "a5ff73487435791fcb638f0e2a74030383dfc3325eb4cc89a933cec11286e8f8",
+  "voice_key": "tr-tr.sentence.native-clear",
+  "voice_name": "Fili - Warm Turkish Female ",
+  "voice_labels": {
+    "gender": "female",
+    "accent": "istanbul",
+    "age": "young",
+    "category": "professional",
+    "language": "tr",
+    "use_case": "conversational",
+    "descriptive": "calm"
+  },
+  "output_format": "mp3_44100_192",
+  "file_sha256": "28a6df893df52ff8d0daeb2cd37851fcef78c6e44043c3f137c48c53e32da92f",
+  "duration_ms": 12904,
+  "generated_at": "2026-09-15T07:58:29.479150+00:00",
+  "entity_refs": [
+    {
+      "entity_type": "exercise",
+      "entity_uuid": "bffd74de-6d3c-5fbc-8c5f-73c447fda442",
+      "entity_key": "e_invitation_and_polite_alternative_03_open_write:model"
+    },
+    {
+      "entity_type": "exercise",
+      "entity_uuid": "7411b075-f7f4-5c18-b4e7-defd6fca6da8",
+      "entity_key": "e_invitation_and_polite_alternative_03_personal_speak:model"
+    }
+  ]
+}

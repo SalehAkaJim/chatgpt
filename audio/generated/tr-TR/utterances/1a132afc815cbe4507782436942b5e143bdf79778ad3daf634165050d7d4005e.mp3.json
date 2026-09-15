@@ -1,0 +1,41 @@
+{
+  "source_text_hash": "c3b2dea436d4f84f414e8492e57e60d69152a9b263d4c6413af35d69c59e2e34",
+  "voice_id": "FDs1ZX5J4e4f2c2erxtW",
+  "model": "eleven_multilingual_v2",
+  "settings": {
+    "stability": 0.68,
+    "similarity_boost": 0.88,
+    "style": 0.0,
+    "use_speaker_boost": true,
+    "speed": 0.95
+  },
+  "provider": "elevenlabs",
+  "audio_key": "1a132afc815cbe4507782436942b5e143bdf79778ad3daf634165050d7d4005e",
+  "voice_key": "tr-tr.sentence.native-clear",
+  "voice_name": "Fili - Warm Turkish Female ",
+  "voice_labels": {
+    "gender": "female",
+    "accent": "istanbul",
+    "age": "young",
+    "category": "professional",
+    "language": "tr",
+    "use_case": "conversational",
+    "descriptive": "calm"
+  },
+  "output_format": "mp3_44100_192",
+  "file_sha256": "c393f0c03fb898f5d2d6880e201d0f232640a4c5206875d08dbf18834a91458b",
+  "duration_ms": 4257,
+  "generated_at": "2026-09-15T07:55:14.390304+00:00",
+  "entity_refs": [
+    {
+      "entity_type": "utterance",
+      "entity_uuid": "7791d0e6-5313-5bdf-8bb6-c1e212f601d9",
+      "entity_key": "u_bank_card_payment_dispute_04"
+    },
+    {
+      "entity_type": "exercise",
+      "entity_uuid": "87404cbd-2d6b-5c30-955c-cc76928f115a",
+      "entity_key": "e_bank_card_payment_dispute_02_listen"
+    }
+  ]
+}

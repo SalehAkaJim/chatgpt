@@ -1,0 +1,36 @@
+{
+  "source_text_hash": "34417aa92efa896e6217444964693c22a0c303d570ecaa5623f7488e7350b64b",
+  "voice_id": "D6QpOJ61ltQ3whot6iJZ",
+  "model": "eleven_multilingual_v2",
+  "settings": {
+    "stability": 0.52,
+    "similarity_boost": 0.86,
+    "style": 0.2,
+    "use_speaker_boost": true,
+    "speed": 0.99
+  },
+  "provider": "elevenlabs",
+  "audio_key": "09620b7f698b8d86f96822c54888cb6b1b61c9fe18b45c7700d851750c2296ab",
+  "voice_key": "character:selin:female_bright",
+  "voice_name": "Tugba",
+  "voice_labels": {
+    "gender": "female",
+    "accent": "istanbul",
+    "age": "young",
+    "category": "professional",
+    "language": "tr",
+    "use_case": "conversational",
+    "descriptive": "calm"
+  },
+  "output_format": "mp3_44100_192",
+  "file_sha256": "2ec407955685d3ed232c5d59b3aa05c1a9f469ddbf6ddf77ce0598f529a07128",
+  "duration_ms": 1253,
+  "generated_at": "2026-09-15T07:46:20.002859+00:00",
+  "entity_refs": [
+    {
+      "entity_type": "dialogue_turn",
+      "entity_uuid": "367baccf-e36a-5d71-8075-8230d47e476a",
+      "entity_key": "d_b1_city_project_capstone_03:3"
+    }
+  ]
+}

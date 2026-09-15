@@ -1,0 +1,41 @@
+{
+  "source_text_hash": "3196a7d6acfe5126280094b235ffd4bdacc06c61695cf5d458eb8919ad7cfa97",
+  "voice_id": "FDs1ZX5J4e4f2c2erxtW",
+  "model": "eleven_multilingual_v2",
+  "settings": {
+    "stability": 0.72,
+    "similarity_boost": 0.88,
+    "style": 0.0,
+    "use_speaker_boost": true,
+    "speed": 0.92
+  },
+  "provider": "elevenlabs",
+  "audio_key": "e975e464947c00e20974db04a5420f3e6838a11d9aa0aa5fd9bc3851c10b0015",
+  "voice_key": "tr-tr.lexical.native-clear",
+  "voice_name": "Fili - Warm Turkish Female ",
+  "voice_labels": {
+    "gender": "female",
+    "accent": "istanbul",
+    "age": "young",
+    "category": "professional",
+    "language": "tr",
+    "use_case": "conversational",
+    "descriptive": "calm"
+  },
+  "output_format": "mp3_44100_192",
+  "file_sha256": "a075cdf6f5704208f8a1da74f964d00a2778bd4a97b0464cc812d562f613d2b4",
+  "duration_ms": 1097,
+  "generated_at": "2026-09-15T07:54:42.341710+00:00",
+  "entity_refs": [
+    {
+      "entity_type": "lexeme",
+      "entity_uuid": "766de252-9b32-5324-ac25-b1f60d9d6731",
+      "entity_key": "lx_health_followup_and_advice_02"
+    },
+    {
+      "entity_type": "word_form",
+      "entity_uuid": "247f5ec9-f697-53b0-8837-213f415f41e0",
+      "entity_key": "wf_health_followup_and_advice_02"
+    }
+  ]
+}

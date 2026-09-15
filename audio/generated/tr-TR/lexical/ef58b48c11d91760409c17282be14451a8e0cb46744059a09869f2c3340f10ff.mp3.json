@@ -1,0 +1,71 @@
+{
+  "source_text_hash": "c9e12f4c078de4c54de1e1e3ef8688097872a4bff23a0d705d6ef98740ea5d35",
+  "voice_id": "FDs1ZX5J4e4f2c2erxtW",
+  "model": "eleven_multilingual_v2",
+  "settings": {
+    "stability": 0.72,
+    "similarity_boost": 0.88,
+    "style": 0.0,
+    "use_speaker_boost": true,
+    "speed": 0.92
+  },
+  "provider": "elevenlabs",
+  "audio_key": "ef58b48c11d91760409c17282be14451a8e0cb46744059a09869f2c3340f10ff",
+  "voice_key": "tr-tr.lexical.native-clear",
+  "voice_name": "Fili - Warm Turkish Female ",
+  "voice_labels": {
+    "gender": "female",
+    "accent": "istanbul",
+    "age": "young",
+    "category": "professional",
+    "language": "tr",
+    "use_case": "conversational",
+    "descriptive": "calm"
+  },
+  "output_format": "mp3_44100_192",
+  "file_sha256": "1b33fd63b5d5277b30640dc159d9e93f4b04f5a04736e788855ab127b7f60e06",
+  "duration_ms": 1071,
+  "generated_at": "2026-09-15T07:54:44.229790+00:00",
+  "entity_refs": [
+    {
+      "entity_type": "lexeme",
+      "entity_uuid": "7a75a83e-9945-5051-8e2b-ce373426dcc8",
+      "entity_key": "lx_b1_independent_day_capstone_01"
+    },
+    {
+      "entity_type": "word_form",
+      "entity_uuid": "b6d256a1-26d7-5916-b4d8-8cefac7cc322",
+      "entity_key": "wf_b1_independent_day_capstone_01"
+    },
+    {
+      "entity_type": "lexeme",
+      "entity_uuid": "7a75a83e-9945-5051-8e2b-ce373426dcc8",
+      "entity_key": "lx_community_event_coordination_04"
+    },
+    {
+      "entity_type": "word_form",
+      "entity_uuid": "b43cc77f-6c70-5dfc-8c7f-8bca1942ddf7",
+      "entity_key": "wf_community_event_coordination_04"
+    },
+    {
+      "entity_type": "lexeme",
+      "entity_uuid": "7a75a83e-9945-5051-8e2b-ce373426dcc8",
+      "entity_key": "lx_event_notice_and_plan_change_01"
+    },
+    {
+      "entity_type": "word_form",
+      "entity_uuid": "6218e28e-6cb3-5781-9425-0535773f15cc",
+      "entity_key": "wf_event_notice_and_plan_change_01"
+    },
+    {
+      "entity_type": "lexeme",
+      "entity_uuid": "7a75a83e-9945-5051-8e2b-ce373426dcc8",
+      "entity_key": "lx_volunteer_event_mediation_04"
+    },
+    {
+      "entity_type": "word_form",
+      "entity_uuid": "cb3af2aa-5081-52ec-8be9-d989702dd30f",
+      "entity_key": "wf_volunteer_event_mediation_04"
+    }
+  ]
+}

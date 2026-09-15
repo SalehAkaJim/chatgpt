@@ -1,0 +1,61 @@
+{
+  "source_text_hash": "21f7bf16c21e252e4cf06d05c3698f7e2c61ece23fe42e50ce233d668fa9cbc3",
+  "voice_id": "FDs1ZX5J4e4f2c2erxtW",
+  "model": "eleven_multilingual_v2",
+  "settings": {
+    "stability": 0.72,
+    "similarity_boost": 0.88,
+    "style": 0.0,
+    "use_speaker_boost": true,
+    "speed": 0.92
+  },
+  "provider": "elevenlabs",
+  "audio_key": "8d1cf6dd180539d65ef3a6c7501a01f8d78a594506beb15fe053e83054af359b",
+  "voice_key": "tr-tr.lexical.native-clear",
+  "voice_name": "Fili - Warm Turkish Female ",
+  "voice_labels": {
+    "gender": "female",
+    "accent": "istanbul",
+    "age": "young",
+    "category": "professional",
+    "language": "tr",
+    "use_case": "conversational",
+    "descriptive": "calm"
+  },
+  "output_format": "mp3_44100_192",
+  "file_sha256": "b562765333785e73d8df7cb920d6fe18b48725d07bcea891e2265d88b5da0b59",
+  "duration_ms": 1149,
+  "generated_at": "2026-09-15T07:54:18.220188+00:00",
+  "entity_refs": [
+    {
+      "entity_type": "lexeme",
+      "entity_uuid": "2748fc35-0629-5740-9e8c-60f31a7dbf30",
+      "entity_key": "lx_bank_card_payment_dispute_03"
+    },
+    {
+      "entity_type": "word_form",
+      "entity_uuid": "425f8313-1de1-52b9-897d-ab3c4a98f158",
+      "entity_key": "wf_bank_card_payment_dispute_03"
+    },
+    {
+      "entity_type": "lexeme",
+      "entity_uuid": "2748fc35-0629-5740-9e8c-60f31a7dbf30",
+      "entity_key": "lx_payment_problem_resolution_02"
+    },
+    {
+      "entity_type": "word_form",
+      "entity_uuid": "d6637f21-dd5d-56b5-b20c-802a61e360d3",
+      "entity_key": "wf_payment_problem_resolution_02"
+    },
+    {
+      "entity_type": "lexeme",
+      "entity_uuid": "2748fc35-0629-5740-9e8c-60f31a7dbf30",
+      "entity_key": "lx_public_service_appointment_06"
+    },
+    {
+      "entity_type": "word_form",
+      "entity_uuid": "9763d272-6557-5981-824e-cb05c0c4be71",
+      "entity_key": "wf_public_service_appointment_06"
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "source_text_hash": "f9870488a0fd24f4db5adad79191030dd2937f3c6ff565e52e9c7a1ae48e06e4",
+  "voice_id": "5HEFEBb9WCCpCdgZE77B",
+  "model": "eleven_multilingual_v2",
+  "settings": {
+    "stability": 0.71,
+    "similarity_boost": 0.9,
+    "style": 0.05,
+    "use_speaker_boost": true,
+    "speed": 0.96
+  },
+  "provider": "elevenlabs",
+  "audio_key": "a0b7599d49fca6093474ca43402a0f9ea4a92f3d34847b17ae141801b8fd6d0e",
+  "voice_key": "character:burak:male_professional",
+  "voice_name": "Eyüp Tulûhan Etker - Deep and Rich",
+  "voice_labels": {
+    "gender": "male",
+    "accent": "istanbul",
+    "age": "middle_aged",
+    "category": "professional",
+    "language": "tr",
+    "use_case": "conversational",
+    "descriptive": "neutral"
+  },
+  "output_format": "mp3_44100_192",
+  "file_sha256": "68e0aee9073b8c0b028e4d6d53221ec3d32b58dee1a464aef00ea4727ae03cee",
+  "duration_ms": 2272,
+  "generated_at": "2026-09-15T07:50:46.653404+00:00",
+  "entity_refs": [
+    {
+      "entity_type": "dialogue_turn",
+      "entity_uuid": "4c6ededd-90ce-541b-bfdb-e1120c512280",
+      "entity_key": "d_travel_disruption_replanning_03:1"
+    }
+  ]
+}

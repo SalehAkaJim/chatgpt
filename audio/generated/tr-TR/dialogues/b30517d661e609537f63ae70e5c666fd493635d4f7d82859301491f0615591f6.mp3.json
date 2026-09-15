@@ -1,0 +1,36 @@
+{
+  "source_text_hash": "9efe2620b2eaa121668b5c46242790ce17b05ca35cd0ea21249d3e42d38dd890",
+  "voice_id": "rstA752XNcJHV3KFLRON",
+  "model": "eleven_multilingual_v2",
+  "settings": {
+    "stability": 0.68,
+    "similarity_boost": 0.89,
+    "style": 0.06,
+    "use_speaker_boost": true,
+    "speed": 0.95
+  },
+  "provider": "elevenlabs",
+  "audio_key": "b30517d661e609537f63ae70e5c666fd493635d4f7d82859301491f0615591f6",
+  "voice_key": "character:deniz:female_calm",
+  "voice_name": "Seth - Bright, Sincere and Clean",
+  "voice_labels": {
+    "gender": "female",
+    "accent": "standard",
+    "age": "young",
+    "category": "professional",
+    "language": "tr",
+    "use_case": "conversational",
+    "descriptive": "calm"
+  },
+  "output_format": "mp3_44100_192",
+  "file_sha256": "7f0c3f3a95a441f4c2b2492960b512725a67a1d804de1a98745b8c78ee29c6cb",
+  "duration_ms": 1567,
+  "generated_at": "2026-09-15T07:51:18.806042+00:00",
+  "entity_refs": [
+    {
+      "entity_type": "dialogue_turn",
+      "entity_uuid": "aa4ff25e-86fe-5c7c-98cc-e0310c08349d",
+      "entity_key": "d_work_deadline_update_01:3"
+    }
+  ]
+}

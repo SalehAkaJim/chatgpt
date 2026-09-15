@@ -1,0 +1,71 @@
+{
+  "source_text_hash": "d1b13d4a8f866f20e15cad435ec28ff066e6bb45bc8f4a907f36ab4b4891d2c6",
+  "voice_id": "FDs1ZX5J4e4f2c2erxtW",
+  "model": "eleven_multilingual_v2",
+  "settings": {
+    "stability": 0.72,
+    "similarity_boost": 0.88,
+    "style": 0.0,
+    "use_speaker_boost": true,
+    "speed": 0.92
+  },
+  "provider": "elevenlabs",
+  "audio_key": "92b36e26f40deb028a57d8db20327d58981a250d6a884ab19a080a8bbf59f4fa",
+  "voice_key": "tr-tr.lexical.native-clear",
+  "voice_name": "Fili - Warm Turkish Female ",
+  "voice_labels": {
+    "gender": "female",
+    "accent": "istanbul",
+    "age": "young",
+    "category": "professional",
+    "language": "tr",
+    "use_case": "conversational",
+    "descriptive": "calm"
+  },
+  "output_format": "mp3_44100_192",
+  "file_sha256": "a14ab624660806e613937d97e65918429c295d534db2d8f4dba174ad1d3dac87",
+  "duration_ms": 1071,
+  "generated_at": "2026-09-15T07:54:19.163329+00:00",
+  "entity_refs": [
+    {
+      "entity_type": "lexeme",
+      "entity_uuid": "9fbe39df-b591-511c-a718-198780079895",
+      "entity_key": "lx_community_event_coordination_03"
+    },
+    {
+      "entity_type": "word_form",
+      "entity_uuid": "ce930731-17a4-50d3-9996-3e40d70d6c4d",
+      "entity_key": "wf_community_event_coordination_03"
+    },
+    {
+      "entity_type": "lexeme",
+      "entity_uuid": "9fbe39df-b591-511c-a718-198780079895",
+      "entity_key": "lx_volunteer_event_coordination_02"
+    },
+    {
+      "entity_type": "word_form",
+      "entity_uuid": "01ca1a4f-f533-54c9-9e90-dede25806a1d",
+      "entity_key": "wf_volunteer_event_coordination_02"
+    },
+    {
+      "entity_type": "lexeme",
+      "entity_uuid": "9fbe39df-b591-511c-a718-198780079895",
+      "entity_key": "lx_volunteer_event_mediation_02"
+    },
+    {
+      "entity_type": "word_form",
+      "entity_uuid": "396d3815-e217-5902-b6ed-39a368a58470",
+      "entity_key": "wf_volunteer_event_mediation_02"
+    },
+    {
+      "entity_type": "lexeme",
+      "entity_uuid": "9fbe39df-b591-511c-a718-198780079895",
+      "entity_key": "lx_volunteer_orientation_relay_02"
+    },
+    {
+      "entity_type": "word_form",
+      "entity_uuid": "30be4c09-06e5-5b33-a1e9-50178c768765",
+      "entity_key": "wf_volunteer_orientation_relay_02"
+    }
+  ]
+}
