@@ -6,7 +6,8 @@ Order matters:
 2. shared app dictionary
 3. canonical course content for Pre-A1..C2
 4. explicit lesson-delivery graph for every imported level
-5. lexical tap annotations after every source row exists
+5. canonical English lexical normalization
+6. lexical tap annotations after every source row exists
 
 Audio metadata SQL remains a separate deployment step because the generated audio
 files already exist independently of this canonical-content transaction chain.
@@ -83,6 +84,11 @@ def main() -> None:
         if args.dry_run:
             delivery_args.append("--dry-run")
         run(f"delivery_{level}", delivery_args)
+
+    normalize_args = [sys.executable, "database/import/en/normalize_lexical_rows.py"]
+    if args.dry_run:
+        normalize_args.append("--dry-run")
+    run("canonical_lexical_normalization", normalize_args)
 
     if not args.skip_lexical_annotations:
         lexical_args = [sys.executable, "database/import/en/lexical_annotations.py"]
