@@ -1,37 +1,41 @@
-name: MySQL Level Import Integration
+name: English Reference MySQL Integration
 
 on:
   push:
     paths:
+      - 'api/**'
       - 'database/**'
       - 'scripts/materialize_level.py'
-      - 'scripts/audit_prea1_cefr_readiness.py'
-      - 'content/production/en/Pre-A1/**'
-      - 'content/production/en/A1/**'
-      - 'content/production/en/A2/**'
-      - 'content/production/en/B1/**'
-      - 'content/production/en/B2/**'
-      - 'content/production/en/C1/**'
-      - 'content/production/en/C2/**'
+      - 'scripts/lexical_identity.py'
+      - 'scripts/english_lexical_identity_patch.py'
+      - 'scripts/lesson_flow.py'
+      - 'scripts/materialize_lesson_delivery.py'
+      - 'scripts/validate_english_reference_flow.py'
+      - 'scripts/test_english_reference_database.py'
+      - 'content/dictionary/en-US/**'
+      - 'content/lexical-links/en/**'
+      - 'content/production/en/**'
       - '.github/workflows/mysql-import-integration.yml'
       - 'requirements.txt'
   pull_request:
     paths:
+      - 'api/**'
       - 'database/**'
       - 'scripts/materialize_level.py'
-      - 'scripts/audit_prea1_cefr_readiness.py'
-      - 'content/production/en/Pre-A1/**'
-      - 'content/production/en/A1/**'
-      - 'content/production/en/A2/**'
-      - 'content/production/en/B1/**'
-      - 'content/production/en/B2/**'
-      - 'content/production/en/C1/**'
-      - 'content/production/en/C2/**'
+      - 'scripts/lexical_identity.py'
+      - 'scripts/english_lexical_identity_patch.py'
+      - 'scripts/lesson_flow.py'
+      - 'scripts/materialize_lesson_delivery.py'
+      - 'scripts/validate_english_reference_flow.py'
+      - 'scripts/test_english_reference_database.py'
+      - 'content/dictionary/en-US/**'
+      - 'content/lexical-links/en/**'
+      - 'content/production/en/**'
       - '.github/workflows/mysql-import-integration.yml'
       - 'requirements.txt'
 
 jobs:
-  mysql-9-import:
+  english-reference:
     runs-on: ubuntu-latest
     services:
       mysql:
@@ -49,19 +53,25 @@ jobs:
     env:
       DATABASE_URL: mysql://root:rootpass@127.0.0.1:3306/language_learning
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-python@v5
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
         with:
           python-version: '3.12'
+
       - name: Install dependencies
         run: |
           pip install -r requirements.txt
           sudo apt-get update -qq
           sudo apt-get install -y default-mysql-client
-      - name: Bootstrap MySQL 9.0.1 schema and curricula
+
+      - name: Bootstrap clean MySQL 9.0.1 reference schema
         env:
           MYSQL_PWD: rootpass
         run: |
+          set -euo pipefail
           DB="mysql -h127.0.0.1 -P3306 -uroot language_learning"
           $DB < database/schema.sql
           $DB < database/migrations/001_curriculum.sql
@@ -69,66 +79,95 @@ jobs:
           $DB < database/migrations/003_lesson_item_lexemes.sql
           $DB < database/migrations/004_level_import_audio.sql
           $DB < database/migrations/005_writing_exercises.sql
+          $DB < database/migrations/006_lexical_annotations.sql
+          $DB < database/migrations/007_lesson_delivery.sql
+
           $DB < database/seed/cefr.sql
           $DB < database/seed/languages.sql
           $DB < database/seed/skills-topics.sql
-          $DB < database/seed/english-a1-curriculum.sql
           $DB < database/seed/language-variants-courses.sql
+
           $DB < database/seed/english-prea1-curriculum.sql
+          $DB < database/seed/english-a1-curriculum.sql
           $DB < database/seed/english-a2-curriculum.sql
           $DB < database/seed/english-b1-curriculum.sql
           $DB < database/seed/english-b2-curriculum.sql
           $DB < database/seed/english-c1-curriculum.sql
           $DB < database/seed/english-c2-curriculum.sql
-          $DB < database/seed/turkish-prea1-curriculum.sql
-      - name: Verify expanded Pre-A1 foundations
+
+      - name: Import complete English reference implementation
+        run: python database/import/en/reference.py --allow-unreviewed
+
+      - name: Verify database and frontend payload contract
+        run: python scripts/test_english_reference_database.py
+
+      - name: Smoke-test HTTP lesson API
         env:
           MYSQL_PWD: rootpass
         run: |
-          python scripts/audit_prea1_cefr_readiness.py
-          english=$(mysql -N -s -h127.0.0.1 -P3306 -uroot language_learning -e "SELECT COUNT(*) FROM curriculum_units cu JOIN courses c ON c.id=cu.course_id AND c.slug='fa-en-us' JOIN cefr_levels lvl ON lvl.id=cu.cefr_level_id AND lvl.code='Pre-A1';")
-          turkish=$(mysql -N -s -h127.0.0.1 -P3306 -uroot language_learning -e "SELECT COUNT(*) FROM curriculum_units cu JOIN courses c ON c.id=cu.course_id AND c.slug='fa-tr-tr' JOIN cefr_levels lvl ON lvl.id=cu.cefr_level_id AND lvl.code='Pre-A1';")
-          echo "English Pre-A1 units=$english Turkish Pre-A1 units=$turkish"
-          test "$english" = "17"
-          test "$turkish" = "18"
-      - name: Import complete English Pre-A1 through C2
-        run: |
-          python database/import/en/pre_a1.py --allow-unreviewed
-          python database/import/en/a1.py --allow-unreviewed
-          python database/import/en/a2.py --allow-unreviewed
-          python database/import/en/b1.py --allow-unreviewed
-          python database/import/en/b2.py --allow-unreviewed
-          python database/import/en/c1.py --allow-unreviewed
-          python database/import/en/c2.py --allow-unreviewed
-      - name: Apply educational corrections twice and verify persisted feedback
+          set -euo pipefail
+          python -m api.server --host 127.0.0.1 --port 8787 >/tmp/nova-api.log 2>&1 &
+          api_pid=$!
+          trap 'kill $api_pid 2>/dev/null || true' EXIT
+
+          for attempt in $(seq 1 20); do
+            if curl -fsS http://127.0.0.1:8787/api/v1/health >/tmp/health.json; then
+              break
+            fi
+            sleep 1
+          done
+          python - <<'PY'
+          import json
+          payload = json.load(open('/tmp/health.json', encoding='utf-8'))
+          assert payload == {'ok': True, 'api_version': 1}, payload
+          PY
+
+          lesson=$(mysql -N -s -h127.0.0.1 -P3306 -uroot language_learning -e "
+            SELECT l.slug
+            FROM lessons l JOIN courses c ON c.id=l.course_id
+            WHERE c.slug='fa-en-us'
+            ORDER BY l.sort_order, l.slug LIMIT 1;
+          ")
+          test -n "$lesson"
+          curl -fsS "http://127.0.0.1:8787/api/v1/lessons/${lesson}?course=fa-en-us" >/tmp/lesson.json
+          python - <<'PY'
+          import json
+          payload = json.load(open('/tmp/lesson.json', encoding='utf-8'))
+          assert payload['schema_version'] == 1
+          assert payload['course']['slug'] == 'fa-en-us'
+          assert payload['steps']
+          assert payload['steps'][0]['type'] == 'intro'
+          assert payload['steps'][-1]['type'] == 'review'
+          PY
+
+      - name: Verify idempotent reference rebuild
         env:
           MYSQL_PWD: rootpass
         run: |
-          python scripts/test_english_database_fixes.py --seed-stale-fixture
-          python scripts/export_english_content_updates.py
-          python scripts/export_english_quality_updates.py
-          mysql -h127.0.0.1 -P3306 -uroot language_learning < database/import/en/educational_content_updates.sql
-          mysql -h127.0.0.1 -P3306 -uroot language_learning < database/import/en/educational_content_updates.sql
-          mysql -h127.0.0.1 -P3306 -uroot language_learning < database/import/en/educational_quality_updates.sql
-          mysql -h127.0.0.1 -P3306 -uroot language_learning < database/import/en/educational_quality_updates.sql
-          python scripts/test_english_database_fixes.py
-      - name: Verify canonical rows and idempotency through C2
-        env:
-          MYSQL_PWD: rootpass
-        run: |
-          python database/import/en/pre_a1.py --allow-unreviewed
-          python database/import/en/a1.py --allow-unreviewed
-          python database/import/en/a2.py --allow-unreviewed
-          python database/import/en/b1.py --allow-unreviewed
-          python database/import/en/b2.py --allow-unreviewed
-          python database/import/en/c1.py --allow-unreviewed
-          python database/import/en/c2.py --allow-unreviewed
-          mysql -h127.0.0.1 -P3306 -uroot language_learning -e "
-            SELECT COUNT(*) AS lessons FROM lessons;
-            SELECT COUNT(*) AS concepts FROM concepts;
-            SELECT COUNT(*) AS lexemes FROM lexemes;
-            SELECT COUNT(*) AS utterances FROM utterances;
-            SELECT COUNT(*) AS dialogues FROM dialogues;
-            SELECT COUNT(*) AS dialogue_turns FROM dialogue_turns;
-            SELECT COUNT(*) AS exercises FROM exercises;
-          "
+          set -euo pipefail
+          counts() {
+            mysql -N -s -h127.0.0.1 -P3306 -uroot language_learning -e "
+              SELECT CONCAT_WS(',',
+                (SELECT COUNT(*) FROM concepts),
+                (SELECT COUNT(*) FROM lexemes),
+                (SELECT COUNT(*) FROM word_forms),
+                (SELECT COUNT(*) FROM lessons),
+                (SELECT COUNT(*) FROM lesson_items),
+                (SELECT COUNT(*) FROM lesson_steps),
+                (SELECT COUNT(*) FROM lesson_step_items),
+                (SELECT COUNT(*) FROM lesson_step_exercises),
+                (SELECT COUNT(*) FROM utterances),
+                (SELECT COUNT(*) FROM dialogues),
+                (SELECT COUNT(*) FROM dialogue_turns),
+                (SELECT COUNT(*) FROM exercises),
+                (SELECT COUNT(*) FROM lexical_annotations)
+              );
+            "
+          }
+          before=$(counts)
+          echo "Before rerun: $before"
+          python database/import/en/reference.py --allow-unreviewed
+          after=$(counts)
+          echo "After rerun:  $after"
+          test "$before" = "$after"
+          python scripts/test_english_reference_database.py
