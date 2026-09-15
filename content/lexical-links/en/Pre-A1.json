@@ -1,0 +1,5903 @@
+{
+  "schema_version": 1,
+  "language": "en",
+  "variant": "en-US",
+  "level": "Pre-A1",
+  "offset_unit": "unicode_code_point",
+  "generated_from": [
+    {
+      "path": "content/production/en/Pre-A1/prea1-en-about-me-v1.json",
+      "sha256": "c96ef1df514090e668baf2821775c769d4b712556be9a6b1e0f60a1226161504",
+      "batch_id": "en-us-prea1-en-about-me-v1"
+    },
+    {
+      "path": "content/production/en/Pre-A1/prea1-en-alphabet-v1.json",
+      "sha256": "12552a8e9e281138ea2af5efca95ddbbca0cbb4436588cea4dc61c8f01a0ec3c",
+      "batch_id": "en-us-prea1-alphabet-v1"
+    },
+    {
+      "path": "content/production/en/Pre-A1/prea1-en-classroom-v1.json",
+      "sha256": "d0c5fe9e758dedee768168fc0e4b00234858a4a237a6a896a8d4c771c1569e65",
+      "batch_id": "en-us-prea1-classroom-v1"
+    },
+    {
+      "path": "content/production/en/Pre-A1/prea1-en-first-conversation-v1.json",
+      "sha256": "873a6600dcb9594725b61164928551c0920b2faae96a30ddcd43a39420a112ec",
+      "batch_id": "en-us-prea1-first-conversation-v1"
+    },
+    {
+      "path": "content/production/en/Pre-A1/prea1-en-first-greetings-v1.json",
+      "sha256": "1726579ab4fd2fd3661dd7dd731880f6e0c9e8b678e046b4ad4be2aa3e1264b8",
+      "batch_id": "en-us-prea1-first-greetings-v1"
+    },
+    {
+      "path": "content/production/en/Pre-A1/prea1-en-first-objects-v1.json",
+      "sha256": "805b53f90420e935cf83966e9874b56e6daafa24e9be1300d26255fa44cbcda0",
+      "batch_id": "en-us-prea1-first-objects-v1"
+    },
+    {
+      "path": "content/production/en/Pre-A1/prea1-en-first-sounds-v1.json",
+      "sha256": "b63e2aa654dd0c766dab901c6a11954e9d9120531d84ee5bccf2c7342441cbf5",
+      "batch_id": "en-us-prea1-first-sounds-v1"
+    },
+    {
+      "path": "content/production/en/Pre-A1/prea1-en-forms-signs-v1.json",
+      "sha256": "ea8d4dbe33ca94655e1c407d5852469ebe04d58be721b431b02ca258233113ce",
+      "batch_id": "en-us-prea1-en-forms-signs-v1"
+    },
+    {
+      "path": "content/production/en/Pre-A1/prea1-en-learning-survival-v1.json",
+      "sha256": "4a490505adabf636f5fe94e320e826502066156c85abe377cb91d526ca24ddf3",
+      "batch_id": "en-us-prea1-learning-survival-v1"
+    },
+    {
+      "path": "content/production/en/Pre-A1/prea1-en-letter-names-v1.json",
+      "sha256": "4a6e0e6499568b8c7208ac2ae9caf2403100bf6e935453ad9a76d68c5d2b8289",
+      "batch_id": "en-us-prea1-letter-names-v1"
+    },
+    {
+      "path": "content/production/en/Pre-A1/prea1-en-letter-sound-bridge-v1.json",
+      "sha256": "88ba9a843839733ab4b2d653949d67b0d5c521bfd1127f2756b5954ffa60e15a",
+      "batch_id": "en-us-prea1-letter-sound-bridge-v1"
+    },
+    {
+      "path": "content/production/en/Pre-A1/prea1-en-my-name-v1.json",
+      "sha256": "6d35df7822d9b52086175ed41c9fb0c6444438bd5c98ff64e875c7d2beb3a6c9",
+      "batch_id": "en-us-prea1-my-name-v1"
+    },
+    {
+      "path": "content/production/en/Pre-A1/prea1-en-numbers-0-10-v1.json",
+      "sha256": "53718a4098d3402e3df5d923344bcd20cd1ad64b4fbcee766f1288662346b752",
+      "batch_id": "en-us-prea1-numbers-0-10-v1"
+    },
+    {
+      "path": "content/production/en/Pre-A1/prea1-en-ready-for-a1-v1.json",
+      "sha256": "d45d887e9f54a7ed3f316d9cc74b139b538faa07cc75283d2045f8594992c6b5",
+      "batch_id": "en-us-prea1-ready-for-a1-v1"
+    },
+    {
+      "path": "content/production/en/Pre-A1/prea1-en-real-life-numbers-v1.json",
+      "sha256": "4d26ebba55a058eb9f7253200e952c486f259c7d789134b680f7401c9d1c7a32",
+      "batch_id": "en-us-prea1-en-real-life-numbers-v1"
+    },
+    {
+      "path": "content/production/en/Pre-A1/prea1-en-real-world-gate-v1.json",
+      "sha256": "f3f7d1dba4bed6443a3a553376fe94f32ca6687cf33cfd19342d21b7f95faa55",
+      "batch_id": "en-us-prea1-en-real-world-gate-v1"
+    },
+    {
+      "path": "content/production/en/Pre-A1/prea1-en-survival-words-v1.json",
+      "sha256": "aab224a763b203df058668ea0e18e3a1dc436bab3d471358c1fe2e6c5e9801c8",
+      "batch_id": "en-us-prea1-survival-words-v1"
+    }
+  ],
+  "sources": [
+    {
+      "source": {
+        "kind": "utterance",
+        "external_id": "u_en_en-about-me_origin",
+        "language": "en"
+      },
+      "batch_id": "en-us-prea1-en-about-me-v1",
+      "lesson_key": "prea1-en-en-about-me-01",
+      "text": "I'm from Iran.",
+      "text_sha256": "5dfce23c275fa6fab08233cefbad28edad8515795b3e7d9e445c869c89469fe1",
+      "annotations": [
+        {
+          "start": 9,
+          "end": 13,
+          "surface": "Iran",
+          "annotation_type": "word",
+          "lexeme_key": "en-US|iran|proper_noun",
+          "lemma": "Iran",
+          "part_of_speech": "proper_noun",
+          "concept_slug": "country_iran",
+          "word_form_key": "en-US|iran|proper_noun|iran|{\"type\":\"country_name\"}",
+          "confidence": 1.0,
+          "provenance": "deterministic"
+        }
+      ]
+    },
+    {
+      "source": {
+        "kind": "utterance",
+        "external_id": "u_en_en-about-me_age",
+        "language": "en"
+      },
+      "batch_id": "en-us-prea1-en-about-me-v1",
+      "lesson_key": "prea1-en-en-about-me-01",
+      "text": "I'm twenty.",
+      "text_sha256": "0225ee7dc6c8daf134912bba13bf8ea9cda4c389b3ec3f642af0b1851752b1f2",
+      "annotations": [
+        {
+          "start": 4,
+          "end": 10,
+          "surface": "twenty",
+          "annotation_type": "word",
+          "lexeme_key": "en-US|twenty|numeral",
+          "lemma": "twenty",
+          "part_of_speech": "numeral",
+          "concept_slug": "number_20",
+          "word_form_key": "en-US|twenty|numeral|twenty|{\"value\":20}",
+          "confidence": 1.0,
+          "provenance": "deterministic"
+        }
+      ]
+    },
+    {
+      "source": {
+        "kind": "utterance",
+        "external_id": "u_en_en-about-me_feeling",
+        "language": "en"
+      },
+      "batch_id": "en-us-prea1-en-about-me-v1",
+      "lesson_key": "prea1-en-en-about-me-02",
+      "text": "I'm good, thanks.",
+      "text_sha256": "3e67e2821cdebe3708f9a5388ba59dbed8dd82e3f8befa978078a3f5730a563f",
+      "annotations": [
+        {
+          "start": 10,
+          "end": 16,
+          "surface": "thanks",
+          "annotation_type": "word",
+          "lexeme_key": "en-US|thanks|interjection",
+          "lemma": "thanks",
+          "part_of_speech": "interjection",
+          "concept_slug": null,
+          "word_form_key": null,
+          "confidence": 0.98,
+          "provenance": "deterministic"
+        }
+      ]
+    },
+    {
+      "source": {
+        "kind": "utterance",
+        "external_id": "u_en_en-about-me_family",
+        "language": "en"
+      },
+      "batch_id": "en-us-prea1-en-about-me-v1",
+      "lesson_key": "prea1-en-en-about-me-02",
+      "text": "This is my sister.",
+      "text_sha256": "cac74dd36ef41a909971a47efb23215bc52a2e911708ee47167620d42cbda532",
+      "annotations": [
+        {
+          "start": 11,
+          "end": 17,
+          "surface": "sister",
+          "annotation_type": "word",
+          "lexeme_key": "en-US|sister|noun",
+          "lemma": "sister",
+          "part_of_speech": "noun",
+          "concept_slug": "family_sister",
+          "word_form_key": "en-US|sister|noun|sister|{\"number\":\"singular\"}",
+          "confidence": 1.0,
+          "provenance": "deterministic"
+        }
+      ]
+    },
+    {
+      "source": {
+        "kind": "dialogue_turn",
+        "external_id": "d_en_en-about-me_origin_age",
+        "turn_order": 3
+      },
+      "batch_id": "en-us-prea1-en-about-me-v1",
+      "lesson_key": "prea1-en-en-about-me-01",
+      "text": "Where are you from?",
+      "text_sha256": "63265a79774350462d4ce11d5a90687ff8e6f2511bb512e0409be568b6be7046",
+      "annotations": [
+        {
+          "start": 0,
+          "end": 5,
+          "surface": "Where",
+          "annotation_type": "word",
+          "lexeme_key": "en-US|where|adverb",
+          "lemma": "where",
+          "part_of_speech": "adverb",
+          "concept_slug": "question_word_where",
+          "word_form_key": "en-US|where|adverb|where|{}",
+          "confidence": 1.0,
+          "provenance": "deterministic"
+        }
+      ]
+    },
+    {
+      "source": {
+        "kind": "dialogue_turn",
+        "external_id": "d_en_en-about-me_origin_age",
+        "turn_order": 4
+      },
+      "batch_id": "en-us-prea1-en-about-me-v1",
+      "lesson_key": "prea1-en-en-about-me-01",
+      "text": "I'm from Iran.",
+      "text_sha256": "5dfce23c275fa6fab08233cefbad28edad8515795b3e7d9e445c869c89469fe1",
+      "annotations": [
+        {
+          "start": 9,
+          "end": 13,
+          "surface": "Iran",
+          "annotation_type": "word",
+          "lexeme_key": "en-US|iran|proper_noun",
+          "lemma": "Iran",
+          "part_of_speech": "proper_noun",
+          "concept_slug": "country_iran",
+          "word_form_key": "en-US|iran|proper_noun|iran|{\"type\":\"country_name\"}",
+          "confidence": 1.0,
+          "provenance": "deterministic"
+        }
+      ]
+    },
+    {
+      "source": {
+        "kind": "dialogue_turn",
+        "external_id": "d_en_en-about-me_origin_age",
+        "turn_order": 5
+      },
+      "batch_id": "en-us-prea1-en-about-me-v1",
+      "lesson_key": "prea1-en-en-about-me-01",
+      "text": "How old are you?",
+      "text_sha256": "9b181de483e0da61391cd385f16383f953401fdfee8ca2c46297bd812f3e0b5d",
+      "annotations": [
+        {
+          "start": 4,
+          "end": 7,
+          "surface": "old",
+          "annotation_type": "word",
+          "lexeme_key": "en-US|old|adjective",
+          "lemma": "old",
+          "part_of_speech": "adjective",
+          "concept_slug": "quality_old",
+          "word_form_key": "en-US|old|adjective|old|{\"degree\":\"positive\"}",
+          "confidence": 1.0,
+          "provenance": "deterministic"
+        }
+      ]
+    },
+    {
+      "source": {
+        "kind": "dialogue_turn",
+        "external_id": "d_en_en-about-me_origin_age",
+        "turn_order": 6
+      },
+      "batch_id": "en-us-prea1-en-about-me-v1",
+      "lesson_key": "prea1-en-en-about-me-01",
+      "text": "I'm twenty.",
+      "text_sha256": "0225ee7dc6c8daf134912bba13bf8ea9cda4c389b3ec3f642af0b1851752b1f2",
+      "annotations": [
+        {
+          "start": 4,
+          "end": 10,
+          "surface": "twenty",
+          "annotation_type": "word",
+          "lexeme_key": "en-US|twenty|numeral",
+          "lemma": "twenty",
+          "part_of_speech": "numeral",
+          "concept_slug": "number_20",
+          "word_form_key": "en-US|twenty|numeral|twenty|{\"value\":20}",
+          "confidence": 1.0,
+          "provenance": "deterministic"
+        }
+      ]
+    },
+    {
+      "source": {
+        "kind": "dialogue_turn",
+        "external_id": "d_en_en-about-me_feeling_family",
+        "turn_order": 2
+      },
+      "batch_id": "en-us-prea1-en-about-me-v1",
+      "lesson_key": "prea1-en-en-about-me-02",
+      "text": "I'm good, thanks.",
+      "text_sha256": "3e67e2821cdebe3708f9a5388ba59dbed8dd82e3f8befa978078a3f5730a563f",
+      "annotations": [
+        {
+          "start": 10,
+          "end": 16,
+          "surface": "thanks",
+          "annotation_type": "word",
+          "lexeme_key": "en-US|thanks|interjection",
+          "lemma": "thanks",
+          "part_of_speech": "interjection",
+          "concept_slug": null,
+          "word_form_key": null,
+          "confidence": 0.98,
+          "provenance": "deterministic"
+        }
+      ]
+    },
+    {
+      "source": {
+        "kind": "dialogue_turn",
+        "external_id": "d_en_en-about-me_feeling_family",
+        "turn_order": 3
+      },
+      "batch_id": "en-us-prea1-en-about-me-v1",
+      "lesson_key": "prea1-en-en-about-me-02",
+      "text": "This is my sister.",
+      "text_sha256": "cac74dd36ef41a909971a47efb23215bc52a2e911708ee47167620d42cbda532",
+      "annotations": [
+        {
+          "start": 11,
+          "end": 17,
+          "surface": "sister",
+          "annotation_type": "word",
+          "lexeme_key": "en-US|sister|noun",
+          "lemma": "sister",
+          "part_of_speech": "noun",
+          "concept_slug": "family_sister",
+          "word_form_key": "en-US|sister|noun|sister|{\"number\":\"singular\"}",
+          "confidence": 1.0,
+          "provenance": "deterministic"
+        }
+      ]
+    },
+    {
+      "source": {
+        "kind": "dialogue_turn",
+        "external_id": "d_en_en-about-me_feeling_family",
+        "turn_order": 4
+      },
+      "batch_id": "en-us-prea1-en-about-me-v1",
+      "lesson_key": "prea1-en-en-about-me-02",
+      "text": "I'm good, thanks.",
+      "text_sha256": "3e67e2821cdebe3708f9a5388ba59dbed8dd82e3f8befa978078a3f5730a563f",
+      "annotations": [
+        {
+          "start": 10,
+          "end": 16,
+          "surface": "thanks",
+          "annotation_type": "word",
+          "lexeme_key": "en-US|thanks|interjection",
+          "lemma": "thanks",
+          "part_of_speech": "interjection",
+          "concept_slug": null,
+          "word_form_key": null,
+          "confidence": 0.98,
+          "provenance": "deterministic"
+        }
+      ]
+    },
+    {
+      "source": {
+        "kind": "exercise",
+        "external_id": "ex_en_en-about-me_origin_listen",
+        "source_path": "prompt.audio_text"
+      },
+      "batch_id": "en-us-prea1-en-about-me-v1",
+      "lesson_key": "prea1-en-en-about-me-01",
+      "text": "I'm from Iran.",
+      "text_sha256": "5dfce23c275fa6fab08233cefbad28edad8515795b3e7d9e445c869c89469fe1",
+      "annotations": [
+        {
+          "start": 9,
+          "end": 13,
+          "surface": "Iran",
+          "annotation_type": "word",
+          "lexeme_key": "en-US|iran|proper_noun",
+          "lemma": "Iran",
+          "part_of_speech": "proper_noun",
+          "concept_slug": "country_iran",
+          "word_form_key": "en-US|iran|proper_noun|iran|{\"type\":\"country_name\"}",
+          "confidence": 1.0,
+          "provenance": "deterministic"
+        }
+      ]
+    },
+    {
+      "source": {
+        "kind": "exercise",
+        "external_id": "ex_en_en-about-me_origin_listen",
+        "source_path": "answer.value"
+      },
+      "batch_id": "en-us-prea1-en-about-me-v1",
+      "lesson_key": "prea1-en-en-about-me-01",
+      "text": "I'm from Iran.",
+      "text_sha256": "5dfce23c275fa6fab08233cefbad28edad8515795b3e7d9e445c869c89469fe1",
+      "annotations": [
+        {
+          "start": 9,
+          "end": 13,
+          "surface": "Iran",
+          "annotation_type": "word",
+          "lexeme_key": "en-US|iran|proper_noun",
+          "lemma": "Iran",
+          "part_of_speech": "proper_noun",
+          "concept_slug": "country_iran",
+          "word_form_key": "en-US|iran|proper_noun|iran|{\"type\":\"country_name\"}",
+          "confidence": 1.0,
+          "provenance": "deterministic"
+        }
+      ]
+    },
+    {
+      "source": {
+        "kind": "exercise",
+        "external_id": "ex_en_en-about-me_age_speak",
+        "source_path": "prompt.value"
+      },
+      "batch_id": "en-us-prea1-en-about-me-v1",
+      "lesson_key": "prea1-en-en-about-me-01",
+      "text": "I'm twenty.",
+      "text_sha256": "0225ee7dc6c8daf134912bba13bf8ea9cda4c389b3ec3f642af0b1851752b1f2",
+      "annotations": [
+        {
+          "start": 4,
+          "end": 10,
+          "surface": "twenty",
+          "annotation_type": "word",
+          "lexeme_key": "en-US|twenty|numeral",
+          "lemma": "twenty",
+          "part_of_speech": "numeral",
+          "concept_slug": "number_20",
+          "word_form_key": "en-US|twenty|numeral|twenty|{\"value\":20}",
+          "confidence": 1.0,
+          "provenance": "deterministic"
+        }
+      ]
+    },
+    {
+      "source": {
+        "kind": "exercise",
+        "external_id": "ex_en_en-about-me_age_speak",
+        "source_path": "answer.expected_text"
+      },
+      "batch_id": "en-us-prea1-en-about-me-v1",
+      "lesson_key": "prea1-en-en-about-me-01",
+      "text": "I'm twenty.",
+      "text_sha256": "0225ee7dc6c8daf134912bba13bf8ea9cda4c389b3ec3f642af0b1851752b1f2",
+      "annotations": [
+        {
+          "start": 4,
+          "end": 10,
+          "surface": "twenty",
+          "annotation_type": "word",
+          "lexeme_key": "en-US|twenty|numeral",
+          "lemma": "twenty",
+          "part_of_speech": "numeral",
+          "concept_slug": "number_20",
+          "word_form_key": "en-US|twenty|numeral|twenty|{\"value\":20}",
+          "confidence": 1.0,
+          "provenance": "deterministic"
+        }
+      ]
+    },
+    {
+      "source": {
+        "kind": "exercise",
+        "external_id": "ex_en_en-about-me_feeling_choice",
+        "source_path": "prompt.value"
+      },
+      "batch_id": "en-us-prea1-en-about-me-v1",
+      "lesson_key": "prea1-en-en-about-me-02",
+      "text": "I'm good, thanks.",
+      "text_sha256": "3e67e2821cdebe3708f9a5388ba59dbed8dd82e3f8befa978078a3f5730a563f",
+      "annotations": [
+        {
+          "start": 10,
+          "end": 16,
+          "surface": "thanks",
+          "annotation_type": "word",
+          "lexeme_key": "en-US|thanks|interjection",
+          "lemma": "thanks",
+          "part_of_speech": "interjection",
+          "concept_slug": null,
+          "word_form_key": null,
+          "confidence": 0.98,
+          "provenance": "deterministic"
+        }
+      ]
+    },
+    {
+      "source": {
+        "kind": "exercise",
+        "external_id": "ex_en_en-about-me_feeling_choice",
+        "source_path": "answer.value"
+      },
+      "batch_id": "en-us-prea1-en-about-me-v1",
+      "lesson_key": "prea1-en-en-about-me-02",
+      "text": "I'm good, thanks.",
+      "text_sha256": "3e67e2821cdebe3708f9a5388ba59dbed8dd82e3f8befa978078a3f5730a563f",
+      "annotations": [
+        {
+          "start": 10,
+          "end": 16,
+          "surface": "thanks",
+          "annotation_type": "word",
+          "lexeme_key": "en-US|thanks|interjection",
+          "lemma": "thanks",
+          "part_of_speech": "interjection",
+          "concept_slug": null,
+          "word_form_key": null,
+          "confidence": 0.98,
+          "provenance": "deterministic"
+        }
+      ]
+    },
+    {
+      "source": {
+        "kind": "exercise",
+        "external_id": "ex_en_en-about-me_about_write",
+        "source_path": "answer.model_text"
+      },
+      "batch_id": "en-us-prea1-en-about-me-v1",
+      "lesson_key": "prea1-en-en-about-me-02",
+      "text": "My name is Sara. I'm from Iran. I'm good.",
+      "text_sha256": "1168e6e448004a5a20c13619fbcdcb4643c6d6ba96a5999c4efc486646dc425f",
+      "annotations": [
+        {
+          "start": 26,
+          "end": 30,
+          "surface": "Iran",
+          "annotation_type": "word",
+          "lexeme_key": "en-US|iran|proper_noun",
+          "lemma": "Iran",
+          "part_of_speech": "proper_noun",
+          "concept_slug": "country_iran",
+          "word_form_key": "en-US|iran|proper_noun|iran|{\"type\":\"country_name\"}",
+          "confidence": 1.0,
+          "provenance": "deterministic"
+        }
+      ]
+    },
+    {
+      "source": {
+        "kind": "utterance",
+        "external_id": "u_pre_listen",
+        "language": "en"
+      },
+      "batch_id": "en-us-prea1-classroom-v1",
+      "lesson_key": "prea1-en-classroom-01",
+      "text": "Listen.",
+      "text_sha256": "64df403570548cf0d3fbc42eeaa82612d5f224b0b05586984aa2a2abac9b0434",
+      "annotations": [
+        {
+          "start": 0,
+          "end": 6,
+          "surface": "Listen",
+          "annotation_type": "word",
+          "lexeme_key": "en-US|listen|verb",
+          "lemma": "listen",
+          "part_of_speech": "verb",
+          "concept_slug": null,
+          "word_form_key": null,
+          "confidence": 0.98,
+          "provenance": "deterministic"
+        }
+      ]
+    },
+    {
+      "source": {
+        "kind": "utterance",
+        "external_id": "u_pre_repeat",
+        "language": "en"
+      },
+      "batch_id": "en-us-prea1-classroom-v1",
+      "lesson_key": "prea1-en-classroom-01",
+      "text": "Repeat.",
+      "text_sha256": "e906f2bb5a2a0bac0f760d4ca07102055e6f18e5d96383d56bc643dff532c00a",
+      "annotations": [
+        {
+          "start": 0,
+          "end": 6,
+          "surface": "Repeat",
+          "annotation_type": "word",
+          "lexeme_key": "en-US|repeat|verb",
+          "lemma": "repeat",
+          "part_of_speech": "verb",
+          "concept_slug": null,
+          "word_form_key": null,
+          "confidence": 0.98,
+          "provenance": "deterministic"
+        }
+      ]
+    },
+    {
+      "source": {
+        "kind": "utterance",
+        "external_id": "u_pre_read",
+        "language": "en"
+      },
+      "batch_id": "en-us-prea1-classroom-v1",
+      "lesson_key": "prea1-en-classroom-02",
+      "text": "Read.",
+      "text_sha256": "b00ccb589bcef337db8a18fd57cd64007a14fd351dc7f56e832feb56171d10d6",
+      "annotations": [
+        {
+          "start": 0,
+          "end": 4,
+          "surface": "Read",
+          "annotation_type": "word",
+          "lexeme_key": "en-US|read|verb",
+          "lemma": "read",
+          "part_of_speech": "verb",
+          "concept_slug": null,
+          "word_form_key": null,
+          "confidence": 0.98,
+          "provenance": "deterministic"
+        }
+      ]
+    },
+    {
+      "source": {
+        "kind": "utterance",
+        "external_id": "u_pre_write",
+        "language": "en"
+      },
+      "batch_id": "en-us-prea1-classroom-v1",
+      "lesson_key": "prea1-en-classroom-02",
+      "text": "Write.",
+      "text_sha256": "76050b6862606edfa19c0bc54339d800c6f7016d89c55c539ff58d21a462d2a1",
+      "annotations": [
+        {
+          "start": 0,
+          "end": 5,
+          "surface": "Write",
+          "annotation_type": "word",
+          "lexeme_key": "en-US|write|verb",
+          "lemma": "write",
+          "part_of_speech": "verb",
+          "concept_slug": null,
+          "word_form_key": null,
+          "confidence": 0.98,
+          "provenance": "deterministic"
+        }
+      ]
+    },
+    {
+      "source": {
+        "kind": "utterance",
+        "external_id": "u_pre_look",
+        "language": "en"
+      },
+      "batch_id": "en-us-prea1-classroom-v1",
+      "lesson_key": "prea1-en-classroom-02",
+      "text": "Look.",
+      "text_sha256": "de5176e3d6e25344fb5d17ca4f9a8f08cdafe73796e4c23f4cc047643d1d7ae9",
+      "annotations": [
+        {
+          "start": 0,
+          "end": 4,
+          "surface": "Look",
+          "annotation_type": "word",
+          "lexeme_key": "en-US|look|verb",
+          "lemma": "look",
+          "part_of_speech": "verb",
+          "concept_slug": null,
+          "word_form_key": null,
+          "confidence": 0.98,
+          "provenance": "deterministic"
+        }
+      ]
+    },
+    {
+      "source": {
+        "kind": "exercise",
+        "external_id": "ex_pre_listen_command",
+        "source_path": "prompt.audio_text"
+      },
+      "batch_id": "en-us-prea1-classroom-v1",
+      "lesson_key": "prea1-en-classroom-01",
+      "text": "Listen",
+      "text_sha256": "225d29f6201e1a635684a6dc0e7a65d164c7ffe48588a421fc27b067a55bb02e",
+      "annotations": [
+        {
+          "start": 0,
+          "end": 6,
+          "surface": "Listen",
+          "annotation_type": "word",
+          "lexeme_key": "en-US|listen|verb",
+          "lemma": "listen",
+          "part_of_speech": "verb",
+          "concept_slug": null,
+          "word_form_key": null,
+          "confidence": 0.98,
+          "provenance": "deterministic"
+        }
+      ]
+    },
+    {
+      "source": {
+        "kind": "exercise",
+        "external_id": "ex_pre_listen_command",
+        "source_path": "answer.value"
+      },
+      "batch_id": "en-us-prea1-classroom-v1",
+      "lesson_key": "prea1-en-classroom-01",
+      "text": "Listen",
+      "text_sha256": "225d29f6201e1a635684a6dc0e7a65d164c7ffe48588a421fc27b067a55bb02e",
+      "annotations": [
+        {
+          "start": 0,
+          "end": 6,
+          "surface": "Listen",
+          "annotation_type": "word",
+          "lexeme_key": "en-US|listen|verb",
+          "lemma": "listen",
+          "part_of_speech": "verb",
+          "concept_slug": null,
+          "word_form_key": null,
+          "confidence": 0.98,
+          "provenance": "deterministic"
+        }
+      ]
+    },
+    {
+      "source": {
+        "kind": "exercise",
+        "external_id": "ex_pre_repeat_meaning",
+        "source_path": "prompt.instruction_fa"
+      },
+      "batch_id": "en-us-prea1-classroom-v1",
+      "lesson_key": "prea1-en-classroom-01",
+      "text": "Repeat یعنی چه؟",
+      "text_sha256": "42c7c8ebc24a8c6e3ba20fa4a068cde818ec15c7b14a5abe9509637af58d8d76",
+      "annotations": [
+        {
+          "start": 0,
+          "end": 6,
+          "surface": "Repeat",
+          "annotation_type": "word",
+          "lexeme_key": "en-US|repeat|verb",
+          "lemma": "repeat",
+          "part_of_speech": "verb",
+          "concept_slug": null,
+          "word_form_key": null,
+          "confidence": 0.98,
+          "provenance": "deterministic"
+        }
+      ]
+    },
+    {
+      "source": {
+        "kind": "exercise",
+        "external_id": "ex_pre_repeat_meaning",
+        "source_path": "prompt.value"
+      },
+      "batch_id": "en-us-prea1-classroom-v1",
+      "lesson_key": "prea1-en-classroom-01",
+      "text": "Repeat",
+      "text_sha256": "b6b7a0065808a62e7d5781b356c5ddba4e000433c34b5d561d200158a4443eb1",
+      "annotations": [
+        {
+          "start": 0,
+          "end": 6,
+          "surface": "Repeat",
+          "annotation_type": "word",
+          "lexeme_key": "en-US|repeat|verb",
+          "lemma": "repeat",
+          "part_of_speech": "verb",
+          "concept_slug": null,
+          "word_form_key": null,
+          "confidence": 0.98,
+          "provenance": "deterministic"
+        }
+      ]
+    },
+    {
+      "source": {
+        "kind": "exercise",
+        "external_id": "ex_pre_read_speak",
+        "source_path": "prompt.value"
+      },
+      "batch_id": "en-us-prea1-classroom-v1",
+      "lesson_key": "prea1-en-classroom-02",
+      "text": "Read",
+      "text_sha256": "9b9a8d05a7ec353bda84f9c1bb3178c299de3001b5e970508ddc889c487f92ca",
+      "annotations": [
+        {
+          "start": 0,
+          "end": 4,
+          "surface": "Read",
+          "annotation_type": "word",
+          "lexeme_key": "en-US|read|verb",
+          "lemma": "read",
+          "part_of_speech": "verb",
+          "concept_slug": null,
+          "word_form_key": null,
+          "confidence": 0.98,
+          "provenance": "deterministic"
+        }
+      ]
+    },
+    {
+      "source": {
+        "kind": "exercise",
+        "external_id": "ex_pre_read_speak",
+        "source_path": "answer.expected_text"
+      },
+      "batch_id": "en-us-prea1-classroom-v1",
+      "lesson_key": "prea1-en-classroom-02",
+      "text": "Read",
+      "text_sha256": "9b9a8d05a7ec353bda84f9c1bb3178c299de3001b5e970508ddc889c487f92ca",
+      "annotations": [
+        {
+          "start": 0,
+          "end": 4,
+          "surface": "Read",
+          "annotation_type": "word",
+          "lexeme_key": "en-US|read|verb",
+          "lemma": "read",
+          "part_of_speech": "verb",
+          "concept_slug": null,
+          "word_form_key": null,
+          "confidence": 0.98,
+          "provenance": "deterministic"
+        }
+      ]
+    },
+    {
+      "source": {
+        "kind": "exercise",
+        "external_id": "ex_pre_write_meaning",
+        "source_path": "prompt.instruction_fa"
+      },
+      "batch_id": "en-us-prea1-classroom-v1",
+      "lesson_key": "prea1-en-classroom-02",
+      "text": "Write یعنی چه؟",
+      "text_sha256": "44729b0261d2c9186f3619539a70eb891e08b48b3f6d214729ed94bbfcf77aa7",
+      "annotations": [
+        {
+          "start": 0,
+          "end": 5,
+          "surface": "Write",
+          "annotation_type": "word",
+          "lexeme_key": "en-US|write|verb",
+          "lemma": "write",
+          "part_of_speech": "verb",
+          "concept_slug": null,
+          "word_form_key": null,
+          "confidence": 0.98,
+          "provenance": "deterministic"
+        }
+      ]
+    },
+    {
+      "source": {
+        "kind": "exercise",
+        "external_id": "ex_pre_write_meaning",
+        "source_path": "prompt.value"
+      },
+      "batch_id": "en-us-prea1-classroom-v1",
+      "lesson_key": "prea1-en-classroom-02",
+      "text": "Write",
+      "text_sha256": "3f00927a719345edd4a8316599d3b328857987547f8884306861161ffa09647e",
+      "annotations": [
+        {
+          "start": 0,
+          "end": 5,
+          "surface": "Write",
+          "annotation_type": "word",
+          "lexeme_key": "en-US|write|verb",
+          "lemma": "write",
+          "part_of_speech": "verb",
+          "concept_slug": null,
+          "word_form_key": null,
+          "confidence": 0.98,
+          "provenance": "deterministic"
+        }
+      ]
+    },
+    {
+      "source": {
+        "kind": "exercise",
+        "external_id": "ex_pre_look_listen",
+        "source_path": "prompt.audio_text"
+      },
+      "batch_id": "en-us-prea1-classroom-v1",
+      "lesson_key": "prea1-en-classroom-02",
+      "text": "Look",
+      "text_sha256": "a0de5719f595fbf5ffe3b6d594962c0a9c25083f1b13363efa57264ae21f93a0",
+      "annotations": [
+        {
+          "start": 0,
+          "end": 4,
+          "surface": "Look",
+          "annotation_type": "word",
+          "lexeme_key": "en-US|look|verb",
+          "lemma": "look",
+          "part_of_speech": "verb",
+          "concept_slug": null,
+          "word_form_key": null,
+          "confidence": 0.98,
+          "provenance": "deterministic"
+        }
+      ]
+    },
+    {
+      "source": {
+        "kind": "exercise",
+        "external_id": "ex_pre_look_listen",
+        "source_path": "answer.value"
+      },
+      "batch_id": "en-us-prea1-classroom-v1",
+      "lesson_key": "prea1-en-classroom-02",
+      "text": "Look",
+      "text_sha256": "a0de5719f595fbf5ffe3b6d594962c0a9c25083f1b13363efa57264ae21f93a0",
+      "annotations": [
+        {
+          "start": 0,
+          "end": 4,
+          "surface": "Look",
+          "annotation_type": "word",
+          "lexeme_key": "en-US|look|verb",
+          "lemma": "look",
+          "part_of_speech": "verb",
+          "concept_slug": null,
+          "word_form_key": null,
+          "confidence": 0.98,
+          "provenance": "deterministic"
+        }
+      ]
+    },
+    {
+      "source": {
+        "kind": "exercise",
+        "external_id": "ex_pre_capstone_first_line",
+        "source_path": "prompt.value"
+      },
+      "batch_id": "en-us-prea1-first-conversation-v1",
+      "lesson_key": "prea1-en-first-conversation-01",
+      "text": "Your first conversation",
+      "text_sha256": "625be8384421e8772a2fe6777836c10bd1c725cb6eb920d5dd3f6a0f53071d65",
+      "annotations": [
+        {
+          "start": 5,
+          "end": 10,
+          "surface": "first",
+          "annotation_type": "word",
+          "lexeme_key": "en-US|first|adverb",
+          "lemma": "first",
+          "part_of_speech": "adverb",
+          "concept_slug": "a2_first_sequence",
+          "word_form_key": "en-US|first|adverb|first|{\"type\":\"sequence_marker\"}",
+          "confidence": 1.0,
+          "provenance": "deterministic"
+        }
+      ]
+    },
+    {
+      "source": {
+        "kind": "utterance",
+        "external_id": "u_pre_this_book",
+        "language": "en"
+      },
+      "batch_id": "en-us-prea1-first-objects-v1",
+      "lesson_key": "prea1-en-first-objects-02",
+      "text": "This is a book.",
+      "text_sha256": "83a30d3fbd93cbb9d1e91256c8854475c41498e48de9ee6d80820a4f40168bf8",
+      "annotations": [
+        {
+          "start": 10,
+          "end": 14,
+          "surface": "book",
+          "annotation_type": "word",
+          "lexeme_key": "en-US|book|noun",
+          "lemma": "book",
+          "part_of_speech": "noun",
+          "concept_slug": null,
+          "word_form_key": null,
+          "confidence": 0.98,
+          "provenance": "deterministic"
+        }
+      ]
+    },
+    {
+      "source": {
+        "kind": "utterance",
+        "external_id": "u_pre_that_bag",
+        "language": "en"
+      },
+      "batch_id": "en-us-prea1-first-objects-v1",
+      "lesson_key": "prea1-en-first-objects-02",
+      "text": "That is a bag.",
+      "text_sha256": "a47addc3f303e423e3f81b3fa503b4ab8f524bd821a3e1670aca52c816f2c4ec",
+      "annotations": [
+        {
+          "start": 10,
+          "end": 13,
+          "surface": "bag",
+          "annotation_type": "word",
+          "lexeme_key": "en-US|bag|noun",
+          "lemma": "bag",
+          "part_of_speech": "noun",
+          "concept_slug": null,
+          "word_form_key": null,
+          "confidence": 0.98,
+          "provenance": "deterministic"
+        }
+      ]
+    },
+    {
+      "source": {
+        "kind": "exercise",
+        "external_id": "ex_pre_book_meaning",
+        "source_path": "prompt.instruction_fa"
+      },
+      "batch_id": "en-us-prea1-first-objects-v1",
+      "lesson_key": "prea1-en-first-objects-01",
+      "text": "book یعنی چه؟",
+      "text_sha256": "5dfecd4f87e7a5611da3f197c06505a0b8c5520a41b592e2288e9690dff49b24",
+      "annotations": [
+        {
+          "start": 0,
+          "end": 4,
+          "surface": "book",
+          "annotation_type": "word",
+          "lexeme_key": "en-US|book|noun",
+          "lemma": "book",
+          "part_of_speech": "noun",
+          "concept_slug": null,
+          "word_form_key": null,
+          "confidence": 0.98,
+          "provenance": "deterministic"
+        }
+      ]
+    },
+    {
+      "source": {
+        "kind": "exercise",
+        "external_id": "ex_pre_book_meaning",
+        "source_path": "prompt.value"
+      },
+      "batch_id": "en-us-prea1-first-objects-v1",
+      "lesson_key": "prea1-en-first-objects-01",
+      "text": "book",
+      "text_sha256": "92719fe0cf8cd51592af31ee8a5736d79f7273777fa3f7b70bfe993a4cd32180",
+      "annotations": [
+        {
+          "start": 0,
+          "end": 4,
+          "surface": "book",
+          "annotation_type": "word",
+          "lexeme_key": "en-US|book|noun",
+          "lemma": "book",
+          "part_of_speech": "noun",
+          "concept_slug": null,
+          "word_form_key": null,
+          "confidence": 0.98,
+          "provenance": "deterministic"
+        }
+      ]
+    },
+    {
+      "source": {
+        "kind": "exercise",
+        "external_id": "ex_pre_phone_listen",
+        "source_path": "prompt.audio_text"
+      },
+      "batch_id": "en-us-prea1-first-objects-v1",
+      "lesson_key": "prea1-en-first-objects-01",
+      "text": "phone",
+      "text_sha256": "45569da57f4b7bf472d7a864ef4781451cae6383fee9fb0ae40c59aa1ce475b7",
+      "annotations": [
+        {
+          "start": 0,
+          "end": 5,
+          "surface": "phone",
+          "annotation_type": "word",
+          "lexeme_key": "en-US|phone|noun",
+          "lemma": "phone",
+          "part_of_speech": "noun",
+          "concept_slug": null,
+          "word_form_key": null,
+          "confidence": 0.98,
+          "provenance": "deterministic"
+        }
+      ]
+    },
+    {
+      "source": {
+        "kind": "exercise",
+        "external_id": "ex_pre_phone_listen",
+        "source_path": "answer.value"
+      },
+      "batch_id": "en-us-prea1-first-objects-v1",
+      "lesson_key": "prea1-en-first-objects-01",
+      "text": "phone",
+      "text_sha256": "45569da57f4b7bf472d7a864ef4781451cae6383fee9fb0ae40c59aa1ce475b7",
+      "annotations": [
+        {
+          "start": 0,
+          "end": 5,
+          "surface": "phone",
+          "annotation_type": "word",
+          "lexeme_key": "en-US|phone|noun",
+          "lemma": "phone",
+          "part_of_speech": "noun",
+          "concept_slug": null,
+          "word_form_key": null,
+          "confidence": 0.98,
+          "provenance": "deterministic"
+        }
+      ]
+    },
+    {
+      "source": {
+        "kind": "exercise",
+        "external_id": "ex_pre_this_book_build",
+        "source_path": "prompt.tokens[0]"
+      },
+      "batch_id": "en-us-prea1-first-objects-v1",
+      "lesson_key": "prea1-en-first-objects-02",
+      "text": "book",
+      "text_sha256": "92719fe0cf8cd51592af31ee8a5736d79f7273777fa3f7b70bfe993a4cd32180",
+      "annotations": [
+        {
+          "start": 0,
+          "end": 4,
+          "surface": "book",
+          "annotation_type": "word",
+          "lexeme_key": "en-US|book|noun",
+          "lemma": "book",
+          "part_of_speech": "noun",
+          "concept_slug": null,
+          "word_form_key": null,
+          "confidence": 0.98,
+          "provenance": "deterministic"
+        }
+      ]
+    },
+    {
+      "source": {
+        "kind": "exercise",
+        "external_id": "ex_pre_this_book_build",
+        "source_path": "answer.tokens[3]"
+      },
+      "batch_id": "en-us-prea1-first-objects-v1",
+      "lesson_key": "prea1-en-first-objects-02",
+      "text": "book",
+      "text_sha256": "92719fe0cf8cd51592af31ee8a5736d79f7273777fa3f7b70bfe993a4cd32180",
+      "annotations": [
+        {
+          "start": 0,
+          "end": 4,
+          "surface": "book",
+          "annotation_type": "word",
+          "lexeme_key": "en-US|book|noun",
+          "lemma": "book",
+          "part_of_speech": "noun",
+          "concept_slug": null,
+          "word_form_key": null,
+          "confidence": 0.98,
+          "provenance": "deterministic"
+        }
+      ]
+    },
+    {
+      "source": {
+        "kind": "exercise",
+        "external_id": "ex_pre_that_bag_speak",
+        "source_path": "prompt.value"
+      },
+      "batch_id": "en-us-prea1-first-objects-v1",
+      "lesson_key": "prea1-en-first-objects-02",
+      "text": "That is a bag.",
+      "text_sha256": "a47addc3f303e423e3f81b3fa503b4ab8f524bd821a3e1670aca52c816f2c4ec",
+      "annotations": [
+        {
+          "start": 10,
+          "end": 13,
+          "surface": "bag",
+          "annotation_type": "word",
+          "lexeme_key": "en-US|bag|noun",
+          "lemma": "bag",
+          "part_of_speech": "noun",
+          "concept_slug": null,
+          "word_form_key": null,
+          "confidence": 0.98,
+          "provenance": "deterministic"
+        }
+      ]
+    },
+    {
+      "source": {
+        "kind": "exercise",
+        "external_id": "ex_pre_that_bag_speak",
+        "source_path": "answer.expected_text"
+      },
+      "batch_id": "en-us-prea1-first-objects-v1",
+      "lesson_key": "prea1-en-first-objects-02",
+      "text": "That is a bag",
+      "text_sha256": "02ac1941e1bbc490936fcad02a5a1d58fe34891d3c490d812b5e40c43853e2ed",
+      "annotations": [
+        {
+          "start": 10,
+          "end": 13,
+          "surface": "bag",
+          "annotation_type": "word",
+          "lexeme_key": "en-US|bag|noun",
+          "lemma": "bag",
+          "part_of_speech": "noun",
+          "concept_slug": null,
+          "word_form_key": null,
+          "confidence": 0.98,
+          "provenance": "deterministic"
+        }
+      ]
+    },
+    {
+      "source": {
+        "kind": "utterance",
+        "external_id": "u_pre_three",
+        "language": "en"
+      },
+      "batch_id": "en-us-prea1-first-sounds-v1",
+      "lesson_key": "prea1-en-first-sounds-01",
+      "text": "three",
+      "text_sha256": "8b5b9db0c13db24256c829aa364aa90c6d2eba318b9232a4ab9313b954d3555f",
+      "annotations": [
+        {
+          "start": 0,
+          "end": 5,
+          "surface": "three",
+          "annotation_type": "word",
+          "lexeme_key": "en-US|three|number",
+          "lemma": "three",
+          "part_of_speech": "number",
+          "concept_slug": null,
+          "word_form_key": null,
+          "confidence": 0.98,
+          "provenance": "deterministic"
+        }
+      ]
+    },
+    {
+      "source": {
+        "kind": "exercise",
+        "external_id": "ex_pre_sound_th_speak",
+        "source_path": "prompt.value"
+      },
+      "batch_id": "en-us-prea1-first-sounds-v1",
+      "lesson_key": "prea1-en-first-sounds-01",
+      "text": "three",
+      "text_sha256": "8b5b9db0c13db24256c829aa364aa90c6d2eba318b9232a4ab9313b954d3555f",
+      "annotations": [
+        {
+          "start": 0,
+          "end": 5,
+          "surface": "three",
+          "annotation_type": "word",
+          "lexeme_key": "en-US|three|number",
+          "lemma": "three",
+          "part_of_speech": "number",
+          "concept_slug": null,
+          "word_form_key": null,
+          "confidence": 0.98,
+          "provenance": "deterministic"
+        }
+      ]
+    },
+    {
+      "source": {
+        "kind": "exercise",
+        "external_id": "ex_pre_sound_th_speak",
+        "source_path": "answer.expected_text"
+      },
+      "batch_id": "en-us-prea1-first-sounds-v1",
+      "lesson_key": "prea1-en-first-sounds-01",
+      "text": "three",
+      "text_sha256": "8b5b9db0c13db24256c829aa364aa90c6d2eba318b9232a4ab9313b954d3555f",
+      "annotations": [
+        {
+          "start": 0,
+          "end": 5,
+          "surface": "three",
+          "annotation_type": "word",
+          "lexeme_key": "en-US|three|number",
+          "lemma": "three",
+          "part_of_speech": "number",
+          "concept_slug": null,
+          "word_form_key": null,
+          "confidence": 0.98,
+          "provenance": "deterministic"
+        }
+      ]
+    },
+    {
+      "source": {
+        "kind": "utterance",
+        "external_id": "u_en_en-forms-signs_exit_q",
+        "language": "en"
+      },
+      "batch_id": "en-us-prea1-en-forms-signs-v1",
+      "lesson_key": "prea1-en-en-forms-signs-02",
+      "text": "Where is the exit?",
+      "text_sha256": "b602b92d39a89095dd69a6984525a5011ffb934d22586a4630988b9675b197ee",
+      "annotations": [
+        {
+          "start": 0,
+          "end": 5,
+          "surface": "Where",
+          "annotation_type": "word",
+          "lexeme_key": "en-US|where|adverb",
+          "lemma": "where",
+          "part_of_speech": "adverb",
+          "concept_slug": "question_word_where",
+          "word_form_key": "en-US|where|adverb|where|{}",
+          "confidence": 1.0,
+          "provenance": "deterministic"
+        }
+      ]
+    },
+    {
+      "source": {
+        "kind": "dialogue_turn",
+        "external_id": "d_en_en-forms-signs_form",
+        "turn_order": 3
+      },
+      "batch_id": "en-us-prea1-en-forms-signs-v1",
+      "lesson_key": "prea1-en-en-forms-signs-01",
+      "text": "Country?",
+      "text_sha256": "3bce799dae6eab8bec384521c42582f43a54fb9360ca31f2a65b09443e27dd67",
+      "annotations": [
+        {
+          "start": 0,
+          "end": 7,
+          "surface": "Country",
+          "annotation_type": "word",
+          "lexeme_key": "en-US|country|noun",
+          "lemma": "country",
+          "part_of_speech": "noun",
+          "concept_slug": "country",
+          "word_form_key": "en-US|country|noun|country|{\"number\":\"singular\"}",
+          "confidence": 1.0,
+          "provenance": "deterministic"
+        }
+      ]
+    },
+    {
+      "source": {
+        "kind": "dialogue_turn",
+        "external_id": "d_en_en-forms-signs_form",
+        "turn_order": 4
+      },
+      "batch_id": "en-us-prea1-en-forms-signs-v1",
+      "lesson_key": "prea1-en-en-forms-signs-01",
+      "text": "I'm from Iran.",
+      "text_sha256": "5dfce23c275fa6fab08233cefbad28edad8515795b3e7d9e445c869c89469fe1",
+      "annotations": [
+        {
+          "start": 9,
+          "end": 13,
+          "surface": "Iran",
+          "annotation_type": "word",
+          "lexeme_key": "en-US|iran|proper_noun",
+          "lemma": "Iran",
+          "part_of_speech": "proper_noun",
+          "concept_slug": "country_iran",
+          "word_form_key": "en-US|iran|proper_noun|iran|{\"type\":\"country_name\"}",
+          "confidence": 1.0,
+          "provenance": "deterministic"
+        }
+      ]
+    },
+    {
+      "source": {
+        "kind": "dialogue_turn",
+        "external_id": "d_en_en-forms-signs_sign",
+        "turn_order": 1
+      },
+      "batch_id": "en-us-prea1-en-forms-signs-v1",
+      "lesson_key": "prea1-en-en-forms-signs-02",
+      "text": "Where is the exit?",
+      "text_sha256": "b602b92d39a89095dd69a6984525a5011ffb934d22586a4630988b9675b197ee",
+      "annotations": [
+        {
+          "start": 0,
+          "end": 5,
+          "surface": "Where",
+          "annotation_type": "word",
+          "lexeme_key": "en-US|where|adverb",
+          "lemma": "where",
+          "part_of_speech": "adverb",
+          "concept_slug": "question_word_where",
+          "word_form_key": "en-US|where|adverb|where|{}",
+          "confidence": 1.0,
+          "provenance": "deterministic"
+        }
+      ]
+    },
+    {
+      "source": {
+        "kind": "dialogue_turn",
+        "external_id": "d_en_en-forms-signs_sign",
+        "turn_order": 3
+      },
+      "batch_id": "en-us-prea1-en-forms-signs-v1",
+      "lesson_key": "prea1-en-en-forms-signs-02",
+      "text": "Again, please.",
+      "text_sha256": "308c8f3227d091b723f87fd5f5b463f4dd329fbe57b9d7384ab2559c8df2bf0f",
+      "annotations": [
+        {
+          "start": 7,
+          "end": 13,
+          "surface": "please",
+          "annotation_type": "word",
+          "lexeme_key": "en-US|please|adverb",
+          "lemma": "please",
+          "part_of_speech": "adverb",
+          "concept_slug": "polite_please",
+          "word_form_key": "en-US|please|adverb|please|{\"register\":\"polite\"}",
+          "confidence": 1.0,
+          "provenance": "deterministic"
+        }
+      ]
+    },
+    {
+      "source": {
+        "kind": "exercise",
+        "external_id": "ex_en_en-forms-signs_field_listen",
+        "source_path": "prompt.audio_text"
+      },
+      "batch_id": "en-us-prea1-en-forms-signs-v1",
+      "lesson_key": "prea1-en-en-forms-signs-01",
+      "text": "Phone",
+      "text_sha256": "63dceb8800b2dd4af9567a1f54f03b7c3dbdc27fac4799091ebfcc4928899ee5",
+      "annotations": [
+        {
+          "start": 0,
+          "end": 5,
+          "surface": "Phone",
+          "annotation_type": "word",
+          "lexeme_key": "en-US|phone|noun",
+          "lemma": "phone",
+          "part_of_speech": "noun",
+          "concept_slug": null,
+          "word_form_key": null,
+          "confidence": 0.98,
+          "provenance": "deterministic"
+        }
+      ]
+    },
+    {
+      "source": {
+        "kind": "exercise",
+        "external_id": "ex_en_en-forms-signs_field_listen",
+        "source_path": "answer.value"
+      },
+      "batch_id": "en-us-prea1-en-forms-signs-v1",
+      "lesson_key": "prea1-en-en-forms-signs-01",
+      "text": "Phone",
+      "text_sha256": "63dceb8800b2dd4af9567a1f54f03b7c3dbdc27fac4799091ebfcc4928899ee5",
+      "annotations": [
+        {
+          "start": 0,
+          "end": 5,
+          "surface": "Phone",
+          "annotation_type": "word",
+          "lexeme_key": "en-US|phone|noun",
+          "lemma": "phone",
+          "part_of_speech": "noun",
+          "concept_slug": null,
+          "word_form_key": null,
+          "confidence": 0.98,
+          "provenance": "deterministic"
+        }
+      ]
+    },
+    {
+      "source": {
+        "kind": "exercise",
+        "external_id": "ex_en_en-forms-signs_exit_speak",
+        "source_path": "prompt.value"
+      },
+      "batch_id": "en-us-prea1-en-forms-signs-v1",
+      "lesson_key": "prea1-en-en-forms-signs-02",
+      "text": "Where is the exit?",
+      "text_sha256": "b602b92d39a89095dd69a6984525a5011ffb934d22586a4630988b9675b197ee",
+      "annotations": [
+        {
+          "start": 0,
+          "end": 5,
+          "surface": "Where",
+          "annotation_type": "word",
+          "lexeme_key": "en-US|where|adverb",
+          "lemma": "where",
+          "part_of_speech": "adverb",
+          "concept_slug": "question_word_where",
+          "word_form_key": "en-US|where|adverb|where|{}",
+          "confidence": 1.0,
+          "provenance": "deterministic"
+        }
+      ]
+    },
+    {
+      "source": {
+        "kind": "exercise",
+        "external_id": "ex_en_en-forms-signs_exit_speak",
+        "source_path": "answer.expected_text"
+      },
+      "batch_id": "en-us-prea1-en-forms-signs-v1",
+      "lesson_key": "prea1-en-en-forms-signs-02",
+      "text": "Where is the exit?",
+      "text_sha256": "b602b92d39a89095dd69a6984525a5011ffb934d22586a4630988b9675b197ee",
+      "annotations": [
+        {
+          "start": 0,
+          "end": 5,
+          "surface": "Where",
+          "annotation_type": "word",
+          "lexeme_key": "en-US|where|adverb",
+          "lemma": "where",
+          "part_of_speech": "adverb",
+          "concept_slug": "question_word_where",
+          "word_form_key": "en-US|where|adverb|where|{}",
+          "confidence": 1.0,
+          "provenance": "deterministic"
+        }
+      ]
+    },
+    {
+      "source": {
+        "kind": "exercise",
+        "external_id": "ex_en_en-forms-signs_form_write",
+        "source_path": "answer.model_text"
+      },
+      "batch_id": "en-us-prea1-en-forms-signs-v1",
+      "lesson_key": "prea1-en-en-forms-signs-01",
+      "text": "Name: Sara\nCountry: Iran\nPhone: 0912 345 6789",
+      "text_sha256": "49104e9b6c6132cc7cfc237f6fdd39fbc2321a2609a0bfd3ef9722487f2fc507",
+      "annotations": [
+        {
+          "start": 11,
+          "end": 18,
+          "surface": "Country",
+          "annotation_type": "word",
+          "lexeme_key": "en-US|country|noun",
+          "lemma": "country",
+          "part_of_speech": "noun",
+          "concept_slug": "country",
+          "word_form_key": "en-US|country|noun|country|{\"number\":\"singular\"}",
+          "confidence": 1.0,
+          "provenance": "deterministic"
+        },
+        {
+          "start": 20,
+          "end": 24,
+          "surface": "Iran",
+          "annotation_type": "word",
+          "lexeme_key": "en-US|iran|proper_noun",
+          "lemma": "Iran",
+          "part_of_speech": "proper_noun",
+          "concept_slug": "country_iran",
+          "word_form_key": "en-US|iran|proper_noun|iran|{\"type\":\"country_name\"}",
+          "confidence": 1.0,
+          "provenance": "deterministic"
+        },
+        {
+          "start": 25,
+          "end": 30,
+          "surface": "Phone",
+          "annotation_type": "word",
+          "lexeme_key": "en-US|phone|noun",
+          "lemma": "phone",
+          "part_of_speech": "noun",
+          "concept_slug": null,
+          "word_form_key": null,
+          "confidence": 0.98,
+          "provenance": "deterministic"
+        }
+      ]
+    },
+    {
+      "source": {
+        "kind": "exercise",
+        "external_id": "ex_en_en-forms-signs_visual_open",
+        "source_path": "prompt.value"
+      },
+      "batch_id": "en-us-prea1-en-forms-signs-v1",
+      "lesson_key": "prea1-en-en-forms-signs-02",
+      "text": "OPEN",
+      "text_sha256": "6e10953f3e4ca159285c03a116d60c5086727c958dc25b31c39848ffea1dcdfe",
+      "annotations": [
+        {
+          "start": 0,
+          "end": 4,
+          "surface": "OPEN",
+          "annotation_type": "word",
+          "lexeme_key": "en-US|open|verb",
+          "lemma": "open",
+          "part_of_speech": "verb",
+          "concept_slug": "request_open",
+          "word_form_key": "en-US|open|verb|open|{\"form\":\"base\"}",
+          "confidence": 1.0,
+          "provenance": "deterministic"
+        }
+      ]
+    },
+    {
+      "source": {
+        "kind": "exercise",
+        "external_id": "ex_en_en-forms-signs_visual_open",
+        "source_path": "prompt.visual_asset.semantic"
+      },
+      "batch_id": "en-us-prea1-en-forms-signs-v1",
+      "lesson_key": "prea1-en-en-forms-signs-02",
+      "text": "open_or_entry",
+      "text_sha256": "b134da342cdda1db94e02b2e7aa7111b69eb08e5994288619a0db47816841c87",
+      "annotations": [
+        {
+          "start": 0,
+          "end": 4,
+          "surface": "open",
+          "annotation_type": "word",
+          "lexeme_key": "en-US|open|verb",
+          "lemma": "open",
+          "part_of_speech": "verb",
+          "concept_slug": "request_open",
+          "word_form_key": "en-US|open|verb|open|{\"form\":\"base\"}",
+          "confidence": 1.0,
+          "provenance": "deterministic"
+        }
+      ]
+    },
+    {
+      "source": {
+        "kind": "exercise",
+        "external_id": "ex_en_en-forms-signs_visual_open",
+        "source_path": "answer.value"
+      },
+      "batch_id": "en-us-prea1-en-forms-signs-v1",
+      "lesson_key": "prea1-en-en-forms-signs-02",
+      "text": "OPEN",
+      "text_sha256": "6e10953f3e4ca159285c03a116d60c5086727c958dc25b31c39848ffea1dcdfe",
+      "annotations": [
+        {
+          "start": 0,
+          "end": 4,
+          "surface": "OPEN",
+          "annotation_type": "word",
+          "lexeme_key": "en-US|open|verb",
+          "lemma": "open",
+          "part_of_speech": "verb",
+          "concept_slug": "request_open",
+          "word_form_key": "en-US|open|verb|open|{\"form\":\"base\"}",
+          "confidence": 1.0,
+          "provenance": "deterministic"
+        }
+      ]
+    },
+    {
+      "source": {
+        "kind": "utterance",
+        "external_id": "u_again_please",
+        "language": "en"
+      },
+      "batch_id": "en-us-prea1-learning-survival-v1",
+      "lesson_key": "prea1-en-learning-survival-01",
+      "text": "Again, please.",
+      "text_sha256": "308c8f3227d091b723f87fd5f5b463f4dd329fbe57b9d7384ab2559c8df2bf0f",
+      "annotations": [
+        {
+          "start": 7,
+          "end": 13,
+          "surface": "please",
+          "annotation_type": "word",
+          "lexeme_key": "en-US|please|adverb",
+          "lemma": "please",
+          "part_of_speech": "adverb",
+          "concept_slug": "polite_please",
+          "word_form_key": "en-US|please|adverb|please|{\"register\":\"polite\"}",
+          "confidence": 1.0,
+          "provenance": "deterministic"
+        }
+      ]
+    },
+    {
+      "source": {
+        "kind": "utterance",
+        "external_id": "u_slowly_please",
+        "language": "en"
+      },
+      "batch_id": "en-us-prea1-learning-survival-v1",
+      "lesson_key": "prea1-en-learning-survival-01",
+      "text": "Slowly, please.",
+      "text_sha256": "fa5c66ef1ed857b657b2df2484ffa5cb0d2c6cb8981cfdfb656670dd0fb872dc",
+      "annotations": [
+        {
+          "start": 8,
+          "end": 14,
+          "surface": "please",
+          "annotation_type": "word",
+          "lexeme_key": "en-US|please|adverb",
+          "lemma": "please",
+          "part_of_speech": "adverb",
+          "concept_slug": "polite_please",
+          "word_form_key": "en-US|please|adverb|please|{\"register\":\"polite\"}",
+          "confidence": 1.0,
+          "provenance": "deterministic"
+        }
+      ]
+    },
+    {
+      "source": {
+        "kind": "utterance",
+        "external_id": "u_repeat_that",
+        "language": "en"
+      },
+      "batch_id": "en-us-prea1-learning-survival-v1",
+      "lesson_key": "prea1-en-learning-survival-02",
+      "text": "Can you repeat that?",
+      "text_sha256": "0006b6926947b91ba80222f8d1257b0dcf9b90d49eef4150483002b21e146886",
+      "annotations": [
+        {
+          "start": 8,
+          "end": 14,
+          "surface": "repeat",
+          "annotation_type": "word",
+          "lexeme_key": "en-US|repeat|verb",
+          "lemma": "repeat",
+          "part_of_speech": "verb",
+          "concept_slug": null,
+          "word_form_key": null,
+          "confidence": 0.98,
+          "provenance": "deterministic"
+        }
+      ]
+    },
+    {
+      "source": {
+        "kind": "utterance",
+        "external_id": "u_what_mean",
+        "language": "en"
+      },
+      "batch_id": "en-us-prea1-learning-survival-v1",
+      "lesson_key": "prea1-en-learning-survival-02",
+      "text": "What does this mean?",
+      "text_sha256": "97873dee88f2660d38931aec1ca7f6bfb94969c6caf7cd1ecadeee99838aa7fb",
+      "annotations": [
+        {
+          "start": 0,
+          "end": 4,
+          "surface": "What",
+          "annotation_type": "word",
+          "lexeme_key": "en-US|what|pronoun",
+          "lemma": "what",
+          "part_of_speech": "pronoun",
+          "concept_slug": "question_word_what",
+          "word_form_key": "en-US|what|pronoun|what|{}",
+          "confidence": 1.0,
+          "provenance": "deterministic"
+        }
+      ]
+    },
+    {
+      "source": {
+        "kind": "dialogue_turn",
+        "external_id": "d_pre_learning_help_01",
+        "turn_order": 1
+      },
+      "batch_id": "en-us-prea1-learning-survival-v1",
+      "lesson_key": "prea1-en-learning-survival-01",
+      "text": "Listen, please.",
+      "text_sha256": "2f8aff474b3304664106e7b7f197c4e85255925733df19aa44e749bcb3c07eb7",
+      "annotations": [
+        {
+          "start": 0,
+          "end": 6,
+          "surface": "Listen",
+          "annotation_type": "word",
+          "lexeme_key": "en-US|listen|verb",
+          "lemma": "listen",
+          "part_of_speech": "verb",
+          "concept_slug": null,
+          "word_form_key": null,
+          "confidence": 0.98,
+          "provenance": "deterministic"
+        },
+        {
+          "start": 8,
+          "end": 14,
+          "surface": "please",
+          "annotation_type": "word",
+          "lexeme_key": "en-US|please|adverb",
+          "lemma": "please",
+          "part_of_speech": "adverb",
+          "concept_slug": "polite_please",
+          "word_form_key": "en-US|please|adverb|please|{\"register\":\"polite\"}",
+          "confidence": 1.0,
+          "provenance": "deterministic"
+        }
+      ]
+    },
+    {
+      "source": {
+        "kind": "dialogue_turn",
+        "external_id": "d_pre_learning_help_01",
+        "turn_order": 2
+      },
+      "batch_id": "en-us-prea1-learning-survival-v1",
+      "lesson_key": "prea1-en-learning-survival-01",
+      "text": "Sorry. I don't understand.",
+      "text_sha256": "bc1f3caaae311578b519050997eb30970dec2780a9e46426a0a4b2c1d4b50720",
+      "annotations": [
+        {
+          "start": 0,
+          "end": 5,
+          "surface": "Sorry",
+          "annotation_type": "word",
+          "lexeme_key": "en-US|sorry|adjective",
+          "lemma": "sorry",
+          "part_of_speech": "adjective",
+          "concept_slug": null,
+          "word_form_key": null,
+          "confidence": 0.98,
+          "provenance": "deterministic"
+        }
+      ]
+    },
+    {
+      "source": {
+        "kind": "dialogue_turn",
+        "external_id": "d_pre_learning_help_01",
+        "turn_order": 3
+      },
+      "batch_id": "en-us-prea1-learning-survival-v1",
+      "lesson_key": "prea1-en-learning-survival-01",
+      "text": "Again, please.",
+      "text_sha256": "308c8f3227d091b723f87fd5f5b463f4dd329fbe57b9d7384ab2559c8df2bf0f",
+      "annotations": [
+        {
+          "start": 7,
+          "end": 13,
+          "surface": "please",
+          "annotation_type": "word",
+          "lexeme_key": "en-US|please|adverb",
+          "lemma": "please",
+          "part_of_speech": "adverb",
+          "concept_slug": "polite_please",
+          "word_form_key": "en-US|please|adverb|please|{\"register\":\"polite\"}",
+          "confidence": 1.0,
+          "provenance": "deterministic"
+        }
+      ]
+    },
+    {
+      "source": {
+        "kind": "dialogue_turn",
+        "external_id": "d_pre_learning_help_02",
+        "turn_order": 2
+      },
+      "batch_id": "en-us-prea1-learning-survival-v1",
+      "lesson_key": "prea1-en-learning-survival-02",
+      "text": "Sorry. What does this mean?",
+      "text_sha256": "d3f1dc360a18d92a4406a496787a7951adb686803aebcafacadac55bd83e2b22",
+      "annotations": [
+        {
+          "start": 0,
+          "end": 5,
+          "surface": "Sorry",
+          "annotation_type": "word",
+          "lexeme_key": "en-US|sorry|adjective",
+          "lemma": "sorry",
+          "part_of_speech": "adjective",
+          "concept_slug": null,
+          "word_form_key": null,
+          "confidence": 0.98,
+          "provenance": "deterministic"
+        },
+        {
+          "start": 7,
+          "end": 11,
+          "surface": "What",
+          "annotation_type": "word",
+          "lexeme_key": "en-US|what|pronoun",
+          "lemma": "what",
+          "part_of_speech": "pronoun",
+          "concept_slug": "question_word_what",
+          "word_form_key": "en-US|what|pronoun|what|{}",
+          "confidence": 1.0,
+          "provenance": "deterministic"
+        }
+      ]
+    },
+    {
+      "source": {
+        "kind": "dialogue_turn",
+        "external_id": "d_pre_learning_help_02",
+        "turn_order": 4
+      },
+      "batch_id": "en-us-prea1-learning-survival-v1",
+      "lesson_key": "prea1-en-learning-survival-02",
+      "text": "Slowly, please.",
+      "text_sha256": "fa5c66ef1ed857b657b2df2484ffa5cb0d2c6cb8981cfdfb656670dd0fb872dc",
+      "annotations": [
+        {
+          "start": 8,
+          "end": 14,
+          "surface": "please",
+          "annotation_type": "word",
+          "lexeme_key": "en-US|please|adverb",
+          "lemma": "please",
+          "part_of_speech": "adverb",
+          "concept_slug": "polite_please",
+          "word_form_key": "en-US|please|adverb|please|{\"register\":\"polite\"}",
+          "confidence": 1.0,
+          "provenance": "deterministic"
+        }
+      ]
+    },
+    {
+      "source": {
+        "kind": "exercise",
+        "external_id": "ex_pre_again_listen",
+        "source_path": "prompt.audio_text"
+      },
+      "batch_id": "en-us-prea1-learning-survival-v1",
+      "lesson_key": "prea1-en-learning-survival-01",
+      "text": "Again, please.",
+      "text_sha256": "308c8f3227d091b723f87fd5f5b463f4dd329fbe57b9d7384ab2559c8df2bf0f",
+      "annotations": [
+        {
+          "start": 7,
+          "end": 13,
+          "surface": "please",
+          "annotation_type": "word",
+          "lexeme_key": "en-US|please|adverb",
+          "lemma": "please",
+          "part_of_speech": "adverb",
+          "concept_slug": "polite_please",
+          "word_form_key": "en-US|please|adverb|please|{\"register\":\"polite\"}",
+          "confidence": 1.0,
+          "provenance": "deterministic"
+        }
+      ]
+    },
+    {
+      "source": {
+        "kind": "exercise",
+        "external_id": "ex_pre_again_listen",
+        "source_path": "answer.value"
+      },
+      "batch_id": "en-us-prea1-learning-survival-v1",
+      "lesson_key": "prea1-en-learning-survival-01",
+      "text": "Again, please.",
+      "text_sha256": "308c8f3227d091b723f87fd5f5b463f4dd329fbe57b9d7384ab2559c8df2bf0f",
+      "annotations": [
+        {
+          "start": 7,
+          "end": 13,
+          "surface": "please",
+          "annotation_type": "word",
+          "lexeme_key": "en-US|please|adverb",
+          "lemma": "please",
+          "part_of_speech": "adverb",
+          "concept_slug": "polite_please",
+          "word_form_key": "en-US|please|adverb|please|{\"register\":\"polite\"}",
+          "confidence": 1.0,
+          "provenance": "deterministic"
+        }
+      ]
+    },
+    {
+      "source": {
+        "kind": "exercise",
+        "external_id": "ex_pre_again_speak",
+        "source_path": "prompt.value"
+      },
+      "batch_id": "en-us-prea1-learning-survival-v1",
+      "lesson_key": "prea1-en-learning-survival-01",
+      "text": "Again, please.",
+      "text_sha256": "308c8f3227d091b723f87fd5f5b463f4dd329fbe57b9d7384ab2559c8df2bf0f",
+      "annotations": [
+        {
+          "start": 7,
+          "end": 13,
+          "surface": "please",
+          "annotation_type": "word",
+          "lexeme_key": "en-US|please|adverb",
+          "lemma": "please",
+          "part_of_speech": "adverb",
+          "concept_slug": "polite_please",
+          "word_form_key": "en-US|please|adverb|please|{\"register\":\"polite\"}",
+          "confidence": 1.0,
+          "provenance": "deterministic"
+        }
+      ]
+    },
+    {
+      "source": {
+        "kind": "exercise",
+        "external_id": "ex_pre_again_speak",
+        "source_path": "answer.expected_text"
+      },
+      "batch_id": "en-us-prea1-learning-survival-v1",
+      "lesson_key": "prea1-en-learning-survival-01",
+      "text": "Again, please.",
+      "text_sha256": "308c8f3227d091b723f87fd5f5b463f4dd329fbe57b9d7384ab2559c8df2bf0f",
+      "annotations": [
+        {
+          "start": 7,
+          "end": 13,
+          "surface": "please",
+          "annotation_type": "word",
+          "lexeme_key": "en-US|please|adverb",
+          "lemma": "please",
+          "part_of_speech": "adverb",
+          "concept_slug": "polite_please",
+          "word_form_key": "en-US|please|adverb|please|{\"register\":\"polite\"}",
+          "confidence": 1.0,
+          "provenance": "deterministic"
+        }
+      ]
+    },
+    {
+      "source": {
+        "kind": "exercise",
+        "external_id": "ex_pre_repeat_build",
+        "source_path": "prompt.tokens[0]"
+      },
+      "batch_id": "en-us-prea1-learning-survival-v1",
+      "lesson_key": "prea1-en-learning-survival-02",
+      "text": "repeat",
+      "text_sha256": "25e2b6b106523880e27763084ffa6a0756335be0d7106022535365b9ad39b4b1",
+      "annotations": [
+        {
+          "start": 0,
+          "end": 6,
+          "surface": "repeat",
+          "annotation_type": "word",
+          "lexeme_key": "en-US|repeat|verb",
+          "lemma": "repeat",
+          "part_of_speech": "verb",
+          "concept_slug": null,
+          "word_form_key": null,
+          "confidence": 0.98,
+          "provenance": "deterministic"
+        }
+      ]
+    },
+    {
+      "source": {
+        "kind": "exercise",
+        "external_id": "ex_pre_repeat_build",
+        "source_path": "answer.tokens[2]"
+      },
+      "batch_id": "en-us-prea1-learning-survival-v1",
+      "lesson_key": "prea1-en-learning-survival-02",
+      "text": "repeat",
+      "text_sha256": "25e2b6b106523880e27763084ffa6a0756335be0d7106022535365b9ad39b4b1",
+      "annotations": [
+        {
+          "start": 0,
+          "end": 6,
+          "surface": "repeat",
+          "annotation_type": "word",
+          "lexeme_key": "en-US|repeat|verb",
+          "lemma": "repeat",
+          "part_of_speech": "verb",
+          "concept_slug": null,
+          "word_form_key": null,
+          "confidence": 0.98,
+          "provenance": "deterministic"
+        }
+      ]
+    },
+    {
+      "source": {
+        "kind": "exercise",
+        "external_id": "ex_pre_slowly_listen",
+        "source_path": "prompt.audio_text"
+      },
+      "batch_id": "en-us-prea1-learning-survival-v1",
+      "lesson_key": "prea1-en-learning-survival-02",
+      "text": "Slowly, please.",
+      "text_sha256": "fa5c66ef1ed857b657b2df2484ffa5cb0d2c6cb8981cfdfb656670dd0fb872dc",
+      "annotations": [
+        {
+          "start": 8,
+          "end": 14,
+          "surface": "please",
+          "annotation_type": "word",
+          "lexeme_key": "en-US|please|adverb",
+          "lemma": "please",
+          "part_of_speech": "adverb",
+          "concept_slug": "polite_please",
+          "word_form_key": "en-US|please|adverb|please|{\"register\":\"polite\"}",
+          "confidence": 1.0,
+          "provenance": "deterministic"
+        }
+      ]
+    },
+    {
+      "source": {
+        "kind": "exercise",
+        "external_id": "ex_pre_slowly_listen",
+        "source_path": "answer.value"
+      },
+      "batch_id": "en-us-prea1-learning-survival-v1",
+      "lesson_key": "prea1-en-learning-survival-02",
+      "text": "Slowly, please.",
+      "text_sha256": "fa5c66ef1ed857b657b2df2484ffa5cb0d2c6cb8981cfdfb656670dd0fb872dc",
+      "annotations": [
+        {
+          "start": 8,
+          "end": 14,
+          "surface": "please",
+          "annotation_type": "word",
+          "lexeme_key": "en-US|please|adverb",
+          "lemma": "please",
+          "part_of_speech": "adverb",
+          "concept_slug": "polite_please",
+          "word_form_key": "en-US|please|adverb|please|{\"register\":\"polite\"}",
+          "confidence": 1.0,
+          "provenance": "deterministic"
+        }
+      ]
+    },
+    {
+      "source": {
+        "kind": "exercise",
+        "external_id": "ex_pre_what_mean_speak",
+        "source_path": "prompt.value"
+      },
+      "batch_id": "en-us-prea1-learning-survival-v1",
+      "lesson_key": "prea1-en-learning-survival-02",
+      "text": "What does this mean?",
+      "text_sha256": "97873dee88f2660d38931aec1ca7f6bfb94969c6caf7cd1ecadeee99838aa7fb",
+      "annotations": [
+        {
+          "start": 0,
+          "end": 4,
+          "surface": "What",
+          "annotation_type": "word",
+          "lexeme_key": "en-US|what|pronoun",
+          "lemma": "what",
+          "part_of_speech": "pronoun",
+          "concept_slug": "question_word_what",
+          "word_form_key": "en-US|what|pronoun|what|{}",
+          "confidence": 1.0,
+          "provenance": "deterministic"
+        }
+      ]
+    },
+    {
+      "source": {
+        "kind": "exercise",
+        "external_id": "ex_pre_what_mean_speak",
+        "source_path": "answer.expected_text"
+      },
+      "batch_id": "en-us-prea1-learning-survival-v1",
+      "lesson_key": "prea1-en-learning-survival-02",
+      "text": "What does this mean?",
+      "text_sha256": "97873dee88f2660d38931aec1ca7f6bfb94969c6caf7cd1ecadeee99838aa7fb",
+      "annotations": [
+        {
+          "start": 0,
+          "end": 4,
+          "surface": "What",
+          "annotation_type": "word",
+          "lexeme_key": "en-US|what|pronoun",
+          "lemma": "what",
+          "part_of_speech": "pronoun",
+          "concept_slug": "question_word_what",
+          "word_form_key": "en-US|what|pronoun|what|{}",
+          "confidence": 1.0,
+          "provenance": "deterministic"
+        }
+      ]
+    },
+    {
+      "source": {
+        "kind": "utterance",
+        "external_id": "u_pre_how_spell",
+        "language": "en"
+      },
+      "batch_id": "en-us-prea1-letter-names-v1",
+      "lesson_key": "prea1-en-letter-names-02",
+      "text": "How do you spell it?",
+      "text_sha256": "099eca0c2efa8ee3b45f2c111ec5f0feaf33337e9c712495b002f53ae029c939",
+      "annotations": [
+        {
+          "start": 11,
+          "end": 16,
+          "surface": "spell",
+          "annotation_type": "word",
+          "lexeme_key": "en-US|spell|verb",
+          "lemma": "spell",
+          "part_of_speech": "verb",
+          "concept_slug": "a2_phone_messages_spell",
+          "word_form_key": "en-US|spell|verb|spell|{\"form\":\"base\"}",
+          "confidence": 1.0,
+          "provenance": "deterministic"
+        }
+      ]
+    },
+    {
+      "source": {
+        "kind": "dialogue_turn",
+        "external_id": "d_pre_spell_name",
+        "turn_order": 2
+      },
+      "batch_id": "en-us-prea1-letter-names-v1",
+      "lesson_key": "prea1-en-letter-names-02",
+      "text": "Yes. S-A-M.",
+      "text_sha256": "f06cb7d99930fb835b0b34f8f15022cd51c51bf050ea17bfb25631bca32daf74",
+      "annotations": [
+        {
+          "start": 0,
+          "end": 3,
+          "surface": "Yes",
+          "annotation_type": "word",
+          "lexeme_key": "en-US|yes|interjection",
+          "lemma": "yes",
+          "part_of_speech": "interjection",
+          "concept_slug": null,
+          "word_form_key": null,
+          "confidence": 0.98,
+          "provenance": "deterministic"
+        }
+      ]
+    },
+    {
+      "source": {
+        "kind": "utterance",
+        "external_id": "u_pre_ten",
+        "language": "en"
+      },
+      "batch_id": "en-us-prea1-letter-sound-bridge-v1",
+      "lesson_key": "prea1-en-letter-sound-bridge-01",
+      "text": "ten",
+      "text_sha256": "e4432baa90819aaef51d2a7f8e148bf7e679610f3173752fabb4dcb2d0f418d3",
+      "annotations": [
+        {
+          "start": 0,
+          "end": 3,
+          "surface": "ten",
+          "annotation_type": "word",
+          "lexeme_key": "en-US|ten|number",
+          "lemma": "ten",
+          "part_of_speech": "number",
+          "concept_slug": null,
+          "word_form_key": null,
+          "confidence": 0.98,
+          "provenance": "deterministic"
+        }
+      ]
+    },
+    {
+      "source": {
+        "kind": "exercise",
+        "external_id": "ex_pre_sound_ten",
+        "source_path": "prompt.audio_text"
+      },
+      "batch_id": "en-us-prea1-letter-sound-bridge-v1",
+      "lesson_key": "prea1-en-letter-sound-bridge-02",
+      "text": "ten",
+      "text_sha256": "e4432baa90819aaef51d2a7f8e148bf7e679610f3173752fabb4dcb2d0f418d3",
+      "annotations": [
+        {
+          "start": 0,
+          "end": 3,
+          "surface": "ten",
+          "annotation_type": "word",
+          "lexeme_key": "en-US|ten|number",
+          "lemma": "ten",
+          "part_of_speech": "number",
+          "concept_slug": null,
+          "word_form_key": null,
+          "confidence": 0.98,
+          "provenance": "deterministic"
+        }
+      ]
+    },
+    {
+      "source": {
+        "kind": "exercise",
+        "external_id": "ex_pre_sound_ten",
+        "source_path": "answer.value"
+      },
+      "batch_id": "en-us-prea1-letter-sound-bridge-v1",
+      "lesson_key": "prea1-en-letter-sound-bridge-02",
+      "text": "ten",
+      "text_sha256": "e4432baa90819aaef51d2a7f8e148bf7e679610f3173752fabb4dcb2d0f418d3",
+      "annotations": [
+        {
+          "start": 0,
+          "end": 3,
+          "surface": "ten",
+          "annotation_type": "word",
+          "lexeme_key": "en-US|ten|number",
+          "lemma": "ten",
+          "part_of_speech": "number",
+          "concept_slug": null,
+          "word_form_key": null,
+          "confidence": 0.98,
+          "provenance": "deterministic"
+        }
+      ]
+    },
+    {
+      "source": {
+        "kind": "exercise",
+        "external_id": "ex_pre_num_3_listen",
+        "source_path": "prompt.audio_text"
+      },
+      "batch_id": "en-us-prea1-numbers-0-10-v1",
+      "lesson_key": "prea1-en-numbers-0-10-01",
+      "text": "three",
+      "text_sha256": "8b5b9db0c13db24256c829aa364aa90c6d2eba318b9232a4ab9313b954d3555f",
+      "annotations": [
+        {
+          "start": 0,
+          "end": 5,
+          "surface": "three",
+          "annotation_type": "word",
+          "lexeme_key": "en-US|three|number",
+          "lemma": "three",
+          "part_of_speech": "number",
+          "concept_slug": null,
+          "word_form_key": null,
+          "confidence": 0.98,
+          "provenance": "deterministic"
+        }
+      ]
+    },
+    {
+      "source": {
+        "kind": "exercise",
+        "external_id": "ex_pre_num_5_match",
+        "source_path": "prompt.instruction_fa"
+      },
+      "batch_id": "en-us-prea1-numbers-0-10-v1",
+      "lesson_key": "prea1-en-numbers-0-10-01",
+      "text": "five کدام عدد است؟",
+      "text_sha256": "a73e37deafc761e5bf39ffe46c940d180baeb8899fd3df97bad8ac5b5cb24718",
+      "annotations": [
+        {
+          "start": 0,
+          "end": 4,
+          "surface": "five",
+          "annotation_type": "word",
+          "lexeme_key": "en-US|five|number",
+          "lemma": "five",
+          "part_of_speech": "number",
+          "concept_slug": null,
+          "word_form_key": null,
+          "confidence": 0.98,
+          "provenance": "deterministic"
+        }
+      ]
+    },
+    {
+      "source": {
+        "kind": "exercise",
+        "external_id": "ex_pre_num_5_match",
+        "source_path": "prompt.value"
+      },
+      "batch_id": "en-us-prea1-numbers-0-10-v1",
+      "lesson_key": "prea1-en-numbers-0-10-01",
+      "text": "five",
+      "text_sha256": "222b0bd51fcef7e65c2e62db2ed65457013bab56be6fafeb19ee11d453153c80",
+      "annotations": [
+        {
+          "start": 0,
+          "end": 4,
+          "surface": "five",
+          "annotation_type": "word",
+          "lexeme_key": "en-US|five|number",
+          "lemma": "five",
+          "part_of_speech": "number",
+          "concept_slug": null,
+          "word_form_key": null,
+          "confidence": 0.98,
+          "provenance": "deterministic"
+        }
+      ]
+    },
+    {
+      "source": {
+        "kind": "exercise",
+        "external_id": "ex_pre_num_8_listen",
+        "source_path": "prompt.audio_text"
+      },
+      "batch_id": "en-us-prea1-numbers-0-10-v1",
+      "lesson_key": "prea1-en-numbers-0-10-02",
+      "text": "eight",
+      "text_sha256": "c195d2d8756234367242ba7616c5c60369bc25ced2dcb5b92808d31b58ef217a",
+      "annotations": [
+        {
+          "start": 0,
+          "end": 5,
+          "surface": "eight",
+          "annotation_type": "word",
+          "lexeme_key": "en-US|eight|number",
+          "lemma": "eight",
+          "part_of_speech": "number",
+          "concept_slug": null,
+          "word_form_key": null,
+          "confidence": 0.98,
+          "provenance": "deterministic"
+        }
+      ]
+    },
+    {
+      "source": {
+        "kind": "exercise",
+        "external_id": "ex_pre_num_10_speak",
+        "source_path": "answer.expected_text"
+      },
+      "batch_id": "en-us-prea1-numbers-0-10-v1",
+      "lesson_key": "prea1-en-numbers-0-10-02",
+      "text": "ten",
+      "text_sha256": "e4432baa90819aaef51d2a7f8e148bf7e679610f3173752fabb4dcb2d0f418d3",
+      "annotations": [
+        {
+          "start": 0,
+          "end": 3,
+          "surface": "ten",
+          "annotation_type": "word",
+          "lexeme_key": "en-US|ten|number",
+          "lemma": "ten",
+          "part_of_speech": "number",
+          "concept_slug": null,
+          "word_form_key": null,
+          "confidence": 0.98,
+          "provenance": "deterministic"
+        }
+      ]
+    },
+    {
+      "source": {
+        "kind": "exercise",
+        "external_id": "ex_pre_num_order",
+        "source_path": "prompt.tokens[0]"
+      },
+      "batch_id": "en-us-prea1-numbers-0-10-v1",
+      "lesson_key": "prea1-en-numbers-0-10-02",
+      "text": "eight",
+      "text_sha256": "c195d2d8756234367242ba7616c5c60369bc25ced2dcb5b92808d31b58ef217a",
+      "annotations": [
+        {
+          "start": 0,
+          "end": 5,
+          "surface": "eight",
+          "annotation_type": "word",
+          "lexeme_key": "en-US|eight|number",
+          "lemma": "eight",
+          "part_of_speech": "number",
+          "concept_slug": null,
+          "word_form_key": null,
+          "confidence": 0.98,
+          "provenance": "deterministic"
+        }
+      ]
+    },
+    {
+      "source": {
+        "kind": "exercise",
+        "external_id": "ex_pre_num_order",
+        "source_path": "prompt.tokens[1]"
+      },
+      "batch_id": "en-us-prea1-numbers-0-10-v1",
+      "lesson_key": "prea1-en-numbers-0-10-02",
+      "text": "six",
+      "text_sha256": "44778d82365e4af681c40d5f0eef5cf6f5899d3f0ac335050a7ed6779cf3f674",
+      "annotations": [
+        {
+          "start": 0,
+          "end": 3,
+          "surface": "six",
+          "annotation_type": "word",
+          "lexeme_key": "en-US|six|number",
+          "lemma": "six",
+          "part_of_speech": "number",
+          "concept_slug": null,
+          "word_form_key": null,
+          "confidence": 0.98,
+          "provenance": "deterministic"
+        }
+      ]
+    },
+    {
+      "source": {
+        "kind": "exercise",
+        "external_id": "ex_pre_num_order",
+        "source_path": "prompt.tokens[2]"
+      },
+      "batch_id": "en-us-prea1-numbers-0-10-v1",
+      "lesson_key": "prea1-en-numbers-0-10-02",
+      "text": "seven",
+      "text_sha256": "3ba8d02b16fd2a01c1a8ba1a1f036d7ce386ed953696fa57331c2ac48a80b255",
+      "annotations": [
+        {
+          "start": 0,
+          "end": 5,
+          "surface": "seven",
+          "annotation_type": "word",
+          "lexeme_key": "en-US|seven|number",
+          "lemma": "seven",
+          "part_of_speech": "number",
+          "concept_slug": null,
+          "word_form_key": null,
+          "confidence": 0.98,
+          "provenance": "deterministic"
+        }
+      ]
+    },
+    {
+      "source": {
+        "kind": "exercise",
+        "external_id": "ex_pre_num_order",
+        "source_path": "answer.tokens[0]"
+      },
+      "batch_id": "en-us-prea1-numbers-0-10-v1",
+      "lesson_key": "prea1-en-numbers-0-10-02",
+      "text": "six",
+      "text_sha256": "44778d82365e4af681c40d5f0eef5cf6f5899d3f0ac335050a7ed6779cf3f674",
+      "annotations": [
+        {
+          "start": 0,
+          "end": 3,
+          "surface": "six",
+          "annotation_type": "word",
+          "lexeme_key": "en-US|six|number",
+          "lemma": "six",
+          "part_of_speech": "number",
+          "concept_slug": null,
+          "word_form_key": null,
+          "confidence": 0.98,
+          "provenance": "deterministic"
+        }
+      ]
+    },
+    {
+      "source": {
+        "kind": "exercise",
+        "external_id": "ex_pre_num_order",
+        "source_path": "answer.tokens[1]"
+      },
+      "batch_id": "en-us-prea1-numbers-0-10-v1",
+      "lesson_key": "prea1-en-numbers-0-10-02",
+      "text": "seven",
+      "text_sha256": "3ba8d02b16fd2a01c1a8ba1a1f036d7ce386ed953696fa57331c2ac48a80b255",
+      "annotations": [
+        {
+          "start": 0,
+          "end": 5,
+          "surface": "seven",
+          "annotation_type": "word",
+          "lexeme_key": "en-US|seven|number",
+          "lemma": "seven",
+          "part_of_speech": "number",
+          "concept_slug": null,
+          "word_form_key": null,
+          "confidence": 0.98,
+          "provenance": "deterministic"
+        }
+      ]
+    },
+    {
+      "source": {
+        "kind": "exercise",
+        "external_id": "ex_pre_num_order",
+        "source_path": "answer.tokens[2]"
+      },
+      "batch_id": "en-us-prea1-numbers-0-10-v1",
+      "lesson_key": "prea1-en-numbers-0-10-02",
+      "text": "eight",
+      "text_sha256": "c195d2d8756234367242ba7616c5c60369bc25ced2dcb5b92808d31b58ef217a",
+      "annotations": [
+        {
+          "start": 0,
+          "end": 5,
+          "surface": "eight",
+          "annotation_type": "word",
+          "lexeme_key": "en-US|eight|number",
+          "lemma": "eight",
+          "part_of_speech": "number",
+          "concept_slug": null,
+          "word_form_key": null,
+          "confidence": 0.98,
+          "provenance": "deterministic"
+        }
+      ]
+    },
+    {
+      "source": {
+        "kind": "dialogue_turn",
+        "external_id": "d_pre_ready_intro",
+        "turn_order": 2
+      },
+      "batch_id": "en-us-prea1-ready-for-a1-v1",
+      "lesson_key": "prea1-en-ready-for-a1-01",
+      "text": "Sorry. Again, please.",
+      "text_sha256": "b95d72695f2efae6f006c8b83e2288804f7b454741313cc9e836a55f8ceab677",
+      "annotations": [
+        {
+          "start": 0,
+          "end": 5,
+          "surface": "Sorry",
+          "annotation_type": "word",
+          "lexeme_key": "en-US|sorry|adjective",
+          "lemma": "sorry",
+          "part_of_speech": "adjective",
+          "concept_slug": null,
+          "word_form_key": null,
+          "confidence": 0.98,
+          "provenance": "deterministic"
+        },
+        {
+          "start": 14,
+          "end": 20,
+          "surface": "please",
+          "annotation_type": "word",
+          "lexeme_key": "en-US|please|adverb",
+          "lemma": "please",
+          "part_of_speech": "adverb",
+          "concept_slug": "polite_please",
+          "word_form_key": "en-US|please|adverb|please|{\"register\":\"polite\"}",
+          "confidence": 1.0,
+          "provenance": "deterministic"
+        }
+      ]
+    },
+    {
+      "source": {
+        "kind": "dialogue_turn",
+        "external_id": "d_pre_ready_intro",
+        "turn_order": 5
+      },
+      "batch_id": "en-us-prea1-ready-for-a1-v1",
+      "lesson_key": "prea1-en-ready-for-a1-01",
+      "text": "Nice to meet you.",
+      "text_sha256": "39954823f73a76e35ec7280de44b2eb4b26399ecdc00a2b3640db22375d3a4b3",
+      "annotations": [
+        {
+          "start": 8,
+          "end": 12,
+          "surface": "meet",
+          "annotation_type": "word",
+          "lexeme_key": "en-US|meet|verb",
+          "lemma": "meet",
+          "part_of_speech": "verb",
+          "concept_slug": "plan_meet",
+          "word_form_key": "en-US|meet|verb|meet|{\"form\":\"base\"}",
+          "confidence": 1.0,
+          "provenance": "deterministic"
+        }
+      ]
+    },
+    {
+      "source": {
+        "kind": "dialogue_turn",
+        "external_id": "d_pre_ready_intro",
+        "turn_order": 6
+      },
+      "batch_id": "en-us-prea1-ready-for-a1-v1",
+      "lesson_key": "prea1-en-ready-for-a1-01",
+      "text": "Nice to meet you, too.",
+      "text_sha256": "e2489b9631535568f5a0daec5b30534b893e3ce8fac8c1aed06af327a4f70b80",
+      "annotations": [
+        {
+          "start": 8,
+          "end": 12,
+          "surface": "meet",
+          "annotation_type": "word",
+          "lexeme_key": "en-US|meet|verb",
+          "lemma": "meet",
+          "part_of_speech": "verb",
+          "concept_slug": "plan_meet",
+          "word_form_key": "en-US|meet|verb|meet|{\"form\":\"base\"}",
+          "confidence": 1.0,
+          "provenance": "deterministic"
+        }
+      ]
+    },
+    {
+      "source": {
+        "kind": "exercise",
+        "external_id": "ex_pre_ready_intro_comp",
+        "source_path": "answer.value"
+      },
+      "batch_id": "en-us-prea1-ready-for-a1-v1",
+      "lesson_key": "prea1-en-ready-for-a1-01",
+      "text": "Sorry. Again, please.",
+      "text_sha256": "b95d72695f2efae6f006c8b83e2288804f7b454741313cc9e836a55f8ceab677",
+      "annotations": [
+        {
+          "start": 0,
+          "end": 5,
+          "surface": "Sorry",
+          "annotation_type": "word",
+          "lexeme_key": "en-US|sorry|adjective",
+          "lemma": "sorry",
+          "part_of_speech": "adjective",
+          "concept_slug": null,
+          "word_form_key": null,
+          "confidence": 0.98,
+          "provenance": "deterministic"
+        },
+        {
+          "start": 14,
+          "end": 20,
+          "surface": "please",
+          "annotation_type": "word",
+          "lexeme_key": "en-US|please|adverb",
+          "lemma": "please",
+          "part_of_speech": "adverb",
+          "concept_slug": "polite_please",
+          "word_form_key": "en-US|please|adverb|please|{\"register\":\"polite\"}",
+          "confidence": 1.0,
+          "provenance": "deterministic"
+        }
+      ]
+    },
+    {
+      "source": {
+        "kind": "exercise",
+        "external_id": "ex_pre_ready_again_speak",
+        "source_path": "prompt.value"
+      },
+      "batch_id": "en-us-prea1-ready-for-a1-v1",
+      "lesson_key": "prea1-en-ready-for-a1-01",
+      "text": "Again, please.",
+      "text_sha256": "308c8f3227d091b723f87fd5f5b463f4dd329fbe57b9d7384ab2559c8df2bf0f",
+      "annotations": [
+        {
+          "start": 7,
+          "end": 13,
+          "surface": "please",
+          "annotation_type": "word",
+          "lexeme_key": "en-US|please|adverb",
+          "lemma": "please",
+          "part_of_speech": "adverb",
+          "concept_slug": "polite_please",
+          "word_form_key": "en-US|please|adverb|please|{\"register\":\"polite\"}",
+          "confidence": 1.0,
+          "provenance": "deterministic"
+        }
+      ]
+    },
+    {
+      "source": {
+        "kind": "exercise",
+        "external_id": "ex_pre_ready_again_speak",
+        "source_path": "answer.expected_text"
+      },
+      "batch_id": "en-us-prea1-ready-for-a1-v1",
+      "lesson_key": "prea1-en-ready-for-a1-01",
+      "text": "Again, please.",
+      "text_sha256": "308c8f3227d091b723f87fd5f5b463f4dd329fbe57b9d7384ab2559c8df2bf0f",
+      "annotations": [
+        {
+          "start": 7,
+          "end": 13,
+          "surface": "please",
+          "annotation_type": "word",
+          "lexeme_key": "en-US|please|adverb",
+          "lemma": "please",
+          "part_of_speech": "adverb",
+          "concept_slug": "polite_please",
+          "word_form_key": "en-US|please|adverb|please|{\"register\":\"polite\"}",
+          "confidence": 1.0,
+          "provenance": "deterministic"
+        }
+      ]
+    },
+    {
+      "source": {
+        "kind": "dialogue_turn",
+        "external_id": "d_pre_ready_cafe",
+        "turn_order": 1
+      },
+      "batch_id": "en-us-prea1-ready-for-a1-v1",
+      "lesson_key": "prea1-en-ready-for-a1-02",
+      "text": "Water?",
+      "text_sha256": "68b84dafd06bb7ac0b411d0bc4c0a4a982423ab56831bcbf63e797255dcebee0",
+      "annotations": [
+        {
+          "start": 0,
+          "end": 5,
+          "surface": "Water",
+          "annotation_type": "word",
+          "lexeme_key": "en-US|water|noun",
+          "lemma": "water",
+          "part_of_speech": "noun",
+          "concept_slug": "food_water",
+          "word_form_key": null,
+          "confidence": 0.98,
+          "provenance": "deterministic"
+        }
+      ]
+    },
+    {
+      "source": {
+        "kind": "dialogue_turn",
+        "external_id": "d_pre_ready_cafe",
+        "turn_order": 2
+      },
+      "batch_id": "en-us-prea1-ready-for-a1-v1",
+      "lesson_key": "prea1-en-ready-for-a1-02",
+      "text": "Yes, please.",
+      "text_sha256": "2fa98e4d3bdb2c5d0c5bfc3d0da3126aab14ae1c8676a538b6098883e0e71ec8",
+      "annotations": [
+        {
+          "start": 0,
+          "end": 3,
+          "surface": "Yes",
+          "annotation_type": "word",
+          "lexeme_key": "en-US|yes|interjection",
+          "lemma": "yes",
+          "part_of_speech": "interjection",
+          "concept_slug": null,
+          "word_form_key": null,
+          "confidence": 0.98,
+          "provenance": "deterministic"
+        },
+        {
+          "start": 5,
+          "end": 11,
+          "surface": "please",
+          "annotation_type": "word",
+          "lexeme_key": "en-US|please|adverb",
+          "lemma": "please",
+          "part_of_speech": "adverb",
+          "concept_slug": "polite_please",
+          "word_form_key": "en-US|please|adverb|please|{\"register\":\"polite\"}",
+          "confidence": 1.0,
+          "provenance": "deterministic"
+        }
+      ]
+    },
+    {
+      "source": {
+        "kind": "dialogue_turn",
+        "external_id": "d_pre_ready_cafe",
+        "turn_order": 3
+      },
+      "batch_id": "en-us-prea1-ready-for-a1-v1",
+      "lesson_key": "prea1-en-ready-for-a1-02",
+      "text": "One?",
+      "text_sha256": "588216e42df797f32f64588591fbb1c3263c4b59c11e34ed2bec4732eef3e380",
+      "annotations": [
+        {
+          "start": 0,
+          "end": 3,
+          "surface": "One",
+          "annotation_type": "word",
+          "lexeme_key": "en-US|one|number",
+          "lemma": "one",
+          "part_of_speech": "number",
+          "concept_slug": null,
+          "word_form_key": null,
+          "confidence": 0.98,
+          "provenance": "deterministic"
+        }
+      ]
+    },
+    {
+      "source": {
+        "kind": "dialogue_turn",
+        "external_id": "d_pre_ready_cafe",
+        "turn_order": 4
+      },
+      "batch_id": "en-us-prea1-ready-for-a1-v1",
+      "lesson_key": "prea1-en-ready-for-a1-02",
+      "text": "Yes. One.",
+      "text_sha256": "cc6eb334a8b49a0a3e478ad0a527cc74b94a082922197e86d9fee7b081621be4",
+      "annotations": [
+        {
+          "start": 0,
+          "end": 3,
+          "surface": "Yes",
+          "annotation_type": "word",
+          "lexeme_key": "en-US|yes|interjection",
+          "lemma": "yes",
+          "part_of_speech": "interjection",
+          "concept_slug": null,
+          "word_form_key": null,
+          "confidence": 0.98,
+          "provenance": "deterministic"
+        },
+        {
+          "start": 5,
+          "end": 8,
+          "surface": "One",
+          "annotation_type": "word",
+          "lexeme_key": "en-US|one|number",
+          "lemma": "one",
+          "part_of_speech": "number",
+          "concept_slug": null,
+          "word_form_key": null,
+          "confidence": 0.98,
+          "provenance": "deterministic"
+        }
+      ]
+    },
+    {
+      "source": {
+        "kind": "dialogue_turn",
+        "external_id": "d_pre_ready_cafe",
+        "turn_order": 6
+      },
+      "batch_id": "en-us-prea1-ready-for-a1-v1",
+      "lesson_key": "prea1-en-ready-for-a1-02",
+      "text": "Thanks.",
+      "text_sha256": "f51bead488e14b656af3a13e33eb1d6fa9580832cbb9d7a20061f84c4b1c160f",
+      "annotations": [
+        {
+          "start": 0,
+          "end": 6,
+          "surface": "Thanks",
+          "annotation_type": "word",
+          "lexeme_key": "en-US|thanks|interjection",
+          "lemma": "thanks",
+          "part_of_speech": "interjection",
+          "concept_slug": null,
+          "word_form_key": null,
+          "confidence": 0.98,
+          "provenance": "deterministic"
+        }
+      ]
+    },
+    {
+      "source": {
+        "kind": "exercise",
+        "external_id": "ex_pre_ready_number",
+        "source_path": "prompt.audio_text"
+      },
+      "batch_id": "en-us-prea1-ready-for-a1-v1",
+      "lesson_key": "prea1-en-ready-for-a1-02",
+      "text": "three",
+      "text_sha256": "8b5b9db0c13db24256c829aa364aa90c6d2eba318b9232a4ab9313b954d3555f",
+      "annotations": [
+        {
+          "start": 0,
+          "end": 5,
+          "surface": "three",
+          "annotation_type": "word",
+          "lexeme_key": "en-US|three|number",
+          "lemma": "three",
+          "part_of_speech": "number",
+          "concept_slug": null,
+          "word_form_key": null,
+          "confidence": 0.98,
+          "provenance": "deterministic"
+        }
+      ]
+    },
+    {
+      "source": {
+        "kind": "exercise",
+        "external_id": "ex_pre_ready_yes_please",
+        "source_path": "answer.value"
+      },
+      "batch_id": "en-us-prea1-ready-for-a1-v1",
+      "lesson_key": "prea1-en-ready-for-a1-02",
+      "text": "Yes, please.",
+      "text_sha256": "2fa98e4d3bdb2c5d0c5bfc3d0da3126aab14ae1c8676a538b6098883e0e71ec8",
+      "annotations": [
+        {
+          "start": 0,
+          "end": 3,
+          "surface": "Yes",
+          "annotation_type": "word",
+          "lexeme_key": "en-US|yes|interjection",
+          "lemma": "yes",
+          "part_of_speech": "interjection",
+          "concept_slug": null,
+          "word_form_key": null,
+          "confidence": 0.98,
+          "provenance": "deterministic"
+        },
+        {
+          "start": 5,
+          "end": 11,
+          "surface": "please",
+          "annotation_type": "word",
+          "lexeme_key": "en-US|please|adverb",
+          "lemma": "please",
+          "part_of_speech": "adverb",
+          "concept_slug": "polite_please",
+          "word_form_key": "en-US|please|adverb|please|{\"register\":\"polite\"}",
+          "confidence": 1.0,
+          "provenance": "deterministic"
+        }
+      ]
+    },
+    {
+      "source": {
+        "kind": "exercise",
+        "external_id": "ex_pre_ready_cafe_comp",
+        "source_path": "answer.value"
+      },
+      "batch_id": "en-us-prea1-ready-for-a1-v1",
+      "lesson_key": "prea1-en-ready-for-a1-02",
+      "text": "One",
+      "text_sha256": "8b12507783d5becacbf2ebe5b01a60024d8728a8f86dcc818bce699e8b3320bc",
+      "annotations": [
+        {
+          "start": 0,
+          "end": 3,
+          "surface": "One",
+          "annotation_type": "word",
+          "lexeme_key": "en-US|one|number",
+          "lemma": "one",
+          "part_of_speech": "number",
+          "concept_slug": null,
+          "word_form_key": null,
+          "confidence": 0.98,
+          "provenance": "deterministic"
+        }
+      ]
+    },
+    {
+      "source": {
+        "kind": "utterance",
+        "external_id": "u_en_en-real-life-numbers_n11",
+        "language": "en"
+      },
+      "batch_id": "en-us-prea1-en-real-life-numbers-v1",
+      "lesson_key": "prea1-en-en-real-life-numbers-01",
+      "text": "eleven",
+      "text_sha256": "e979074ebd5633a7263aa48c4b7dea055a769115fbc0a7de459f8a74cd2efd2b",
+      "annotations": [
+        {
+          "start": 0,
+          "end": 6,
+          "surface": "eleven",
+          "annotation_type": "word",
+          "lexeme_key": "en-US|eleven|numeral",
+          "lemma": "eleven",
+          "part_of_speech": "numeral",
+          "concept_slug": "number_11",
+          "word_form_key": "en-US|eleven|numeral|eleven|{\"value\":11}",
+          "confidence": 1.0,
+          "provenance": "deterministic"
+        }
+      ]
+    },
+    {
+      "source": {
+        "kind": "utterance",
+        "external_id": "u_en_en-real-life-numbers_n15",
+        "language": "en"
+      },
+      "batch_id": "en-us-prea1-en-real-life-numbers-v1",
+      "lesson_key": "prea1-en-en-real-life-numbers-01",
+      "text": "fifteen",
+      "text_sha256": "c463967e5708cab7f980855e14042ddbcfd1c3556d520ad4dacdfb4a115c67a5",
+      "annotations": [
+        {
+          "start": 0,
+          "end": 7,
+          "surface": "fifteen",
+          "annotation_type": "word",
+          "lexeme_key": "en-US|fifteen|numeral",
+          "lemma": "fifteen",
+          "part_of_speech": "numeral",
+          "concept_slug": "number_15",
+          "word_form_key": "en-US|fifteen|numeral|fifteen|{\"value\":15}",
+          "confidence": 1.0,
+          "provenance": "deterministic"
+        }
+      ]
+    },
+    {
+      "source": {
+        "kind": "utterance",
+        "external_id": "u_en_en-real-life-numbers_n20",
+        "language": "en"
+      },
+      "batch_id": "en-us-prea1-en-real-life-numbers-v1",
+      "lesson_key": "prea1-en-en-real-life-numbers-01",
+      "text": "twenty",
+      "text_sha256": "7c2c4df740f720b0c861920dc27692c4d4b5daa65d6330a593c931d35f8ac737",
+      "annotations": [
+        {
+          "start": 0,
+          "end": 6,
+          "surface": "twenty",
+          "annotation_type": "word",
+          "lexeme_key": "en-US|twenty|numeral",
+          "lemma": "twenty",
+          "part_of_speech": "numeral",
+          "concept_slug": "number_20",
+          "word_form_key": "en-US|twenty|numeral|twenty|{\"value\":20}",
+          "confidence": 1.0,
+          "provenance": "deterministic"
+        }
+      ]
+    },
+    {
+      "source": {
+        "kind": "utterance",
+        "external_id": "u_en_en-real-life-numbers_phone",
+        "language": "en"
+      },
+      "batch_id": "en-us-prea1-en-real-life-numbers-v1",
+      "lesson_key": "prea1-en-en-real-life-numbers-01",
+      "text": "Zero nine one two, three four five, six seven eight nine.",
+      "text_sha256": "43e161a2195125f2e3e30f0669f6b1b8f3c5b0a6ce681eec77d686bc9f811fb5",
+      "annotations": [
+        {
+          "start": 0,
+          "end": 4,
+          "surface": "Zero",
+          "annotation_type": "word",
+          "lexeme_key": "en-US|zero|number",
+          "lemma": "zero",
+          "part_of_speech": "number",
+          "concept_slug": null,
+          "word_form_key": null,
+          "confidence": 0.98,
+          "provenance": "deterministic"
+        },
+        {
+          "start": 5,
+          "end": 9,
+          "surface": "nine",
+          "annotation_type": "word",
+          "lexeme_key": "en-US|nine|number",
+          "lemma": "nine",
+          "part_of_speech": "number",
+          "concept_slug": null,
+          "word_form_key": null,
+          "confidence": 0.98,
+          "provenance": "deterministic"
+        },
+        {
+          "start": 10,
+          "end": 13,
+          "surface": "one",
+          "annotation_type": "word",
+          "lexeme_key": "en-US|one|number",
+          "lemma": "one",
+          "part_of_speech": "number",
+          "concept_slug": null,
+          "word_form_key": null,
+          "confidence": 0.98,
+          "provenance": "deterministic"
+        },
+        {
+          "start": 14,
+          "end": 17,
+          "surface": "two",
+          "annotation_type": "word",
+          "lexeme_key": "en-US|two|number",
+          "lemma": "two",
+          "part_of_speech": "number",
+          "concept_slug": null,
+          "word_form_key": null,
+          "confidence": 0.98,
+          "provenance": "deterministic"
+        },
+        {
+          "start": 19,
+          "end": 24,
+          "surface": "three",
+          "annotation_type": "word",
+          "lexeme_key": "en-US|three|number",
+          "lemma": "three",
+          "part_of_speech": "number",
+          "concept_slug": null,
+          "word_form_key": null,
+          "confidence": 0.98,
+          "provenance": "deterministic"
+        },
+        {
+          "start": 25,
+          "end": 29,
+          "surface": "four",
+          "annotation_type": "word",
+          "lexeme_key": "en-US|four|number",
+          "lemma": "four",
+          "part_of_speech": "number",
+          "concept_slug": null,
+          "word_form_key": null,
+          "confidence": 0.98,
+          "provenance": "deterministic"
+        },
+        {
+          "start": 30,
+          "end": 34,
+          "surface": "five",
+          "annotation_type": "word",
+          "lexeme_key": "en-US|five|number",
+          "lemma": "five",
+          "part_of_speech": "number",
+          "concept_slug": null,
+          "word_form_key": null,
+          "confidence": 0.98,
+          "provenance": "deterministic"
+        },
+        {
+          "start": 36,
+          "end": 39,
+          "surface": "six",
+          "annotation_type": "word",
+          "lexeme_key": "en-US|six|number",
+          "lemma": "six",
+          "part_of_speech": "number",
+          "concept_slug": null,
+          "word_form_key": null,
+          "confidence": 0.98,
+          "provenance": "deterministic"
+        },
+        {
+          "start": 40,
+          "end": 45,
+          "surface": "seven",
+          "annotation_type": "word",
+          "lexeme_key": "en-US|seven|number",
+          "lemma": "seven",
+          "part_of_speech": "number",
+          "concept_slug": null,
+          "word_form_key": null,
+          "confidence": 0.98,
+          "provenance": "deterministic"
+        },
+        {
+          "start": 46,
+          "end": 51,
+          "surface": "eight",
+          "annotation_type": "word",
+          "lexeme_key": "en-US|eight|number",
+          "lemma": "eight",
+          "part_of_speech": "number",
+          "concept_slug": null,
+          "word_form_key": null,
+          "confidence": 0.98,
+          "provenance": "deterministic"
+        },
+        {
+          "start": 52,
+          "end": 56,
+          "surface": "nine",
+          "annotation_type": "word",
+          "lexeme_key": "en-US|nine|number",
+          "lemma": "nine",
+          "part_of_speech": "number",
+          "concept_slug": null,
+          "word_form_key": null,
+          "confidence": 0.98,
+          "provenance": "deterministic"
+        }
+      ]
+    },
+    {
+      "source": {
+        "kind": "utterance",
+        "external_id": "u_en_en-real-life-numbers_price",
+        "language": "en"
+      },
+      "batch_id": "en-us-prea1-en-real-life-numbers-v1",
+      "lesson_key": "prea1-en-en-real-life-numbers-02",
+      "text": "It's five dollars.",
+      "text_sha256": "f322c03bd85e8fa1611af28d52e968ffe8c9ec6a473548e8502f65d0a62bdec7",
+      "annotations": [
+        {
+          "start": 5,
+          "end": 9,
+          "surface": "five",
+          "annotation_type": "word",
+          "lexeme_key": "en-US|five|number",
+          "lemma": "five",
+          "part_of_speech": "number",
+          "concept_slug": null,
+          "word_form_key": null,
+          "confidence": 0.98,
+          "provenance": "deterministic"
+        },
+        {
+          "start": 10,
+          "end": 17,
+          "surface": "dollars",
+          "annotation_type": "word",
+          "lexeme_key": "en-US|dollar|noun",
+          "lemma": "dollar",
+          "part_of_speech": "noun",
+          "concept_slug": "money_dollar",
+          "word_form_key": "en-US|dollar|noun|dollars|{\"number\":\"plural\"}",
+          "confidence": 1.0,
+          "provenance": "deterministic"
+        }
+      ]
+    },
+    {
+      "source": {
+        "kind": "dialogue_turn",
+        "external_id": "d_en_en-real-life-numbers_phone",
+        "turn_order": 1
+      },
+      "batch_id": "en-us-prea1-en-real-life-numbers-v1",
+      "lesson_key": "prea1-en-en-real-life-numbers-01",
+      "text": "What's your phone number?",
+      "text_sha256": "b696981a1f4f5ad2c8d5e782488344b7a063f167438a92260716008444f8139e",
+      "annotations": [
+        {
+          "start": 12,
+          "end": 17,
+          "surface": "phone",
+          "annotation_type": "word",
+          "lexeme_key": "en-US|phone|noun",
+          "lemma": "phone",
+          "part_of_speech": "noun",
+          "concept_slug": null,
+          "word_form_key": null,
+          "confidence": 0.98,
+          "provenance": "deterministic"
+        }
+      ]
+    },
+    {
+      "source": {
+        "kind": "dialogue_turn",
+        "external_id": "d_en_en-real-life-numbers_phone",
+        "turn_order": 2
+      },
+      "batch_id": "en-us-prea1-en-real-life-numbers-v1",
+      "lesson_key": "prea1-en-en-real-life-numbers-01",
+      "text": "Zero nine one two, three four five, six seven eight nine.",
+      "text_sha256": "43e161a2195125f2e3e30f0669f6b1b8f3c5b0a6ce681eec77d686bc9f811fb5",
+      "annotations": [
+        {
+          "start": 0,
+          "end": 4,
+          "surface": "Zero",
+          "annotation_type": "word",
+          "lexeme_key": "en-US|zero|number",
+          "lemma": "zero",
+          "part_of_speech": "number",
+          "concept_slug": null,
+          "word_form_key": null,
+          "confidence": 0.98,
+          "provenance": "deterministic"
+        },
+        {
+          "start": 5,
+          "end": 9,
+          "surface": "nine",
+          "annotation_type": "word",
+          "lexeme_key": "en-US|nine|number",
+          "lemma": "nine",
+          "part_of_speech": "number",
+          "concept_slug": null,
+          "word_form_key": null,
+          "confidence": 0.98,
+          "provenance": "deterministic"
+        },
+        {
+          "start": 10,
+          "end": 13,
+          "surface": "one",
+          "annotation_type": "word",
+          "lexeme_key": "en-US|one|number",
+          "lemma": "one",
+          "part_of_speech": "number",
+          "concept_slug": null,
+          "word_form_key": null,
+          "confidence": 0.98,
+          "provenance": "deterministic"
+        },
+        {
+          "start": 14,
+          "end": 17,
+          "surface": "two",
+          "annotation_type": "word",
+          "lexeme_key": "en-US|two|number",
+          "lemma": "two",
+          "part_of_speech": "number",
+          "concept_slug": null,
+          "word_form_key": null,
+          "confidence": 0.98,
+          "provenance": "deterministic"
+        },
+        {
+          "start": 19,
+          "end": 24,
+          "surface": "three",
+          "annotation_type": "word",
+          "lexeme_key": "en-US|three|number",
+          "lemma": "three",
+          "part_of_speech": "number",
+          "concept_slug": null,
+          "word_form_key": null,
+          "confidence": 0.98,
+          "provenance": "deterministic"
+        },
+        {
+          "start": 25,
+          "end": 29,
+          "surface": "four",
+          "annotation_type": "word",
+          "lexeme_key": "en-US|four|number",
+          "lemma": "four",
+          "part_of_speech": "number",
+          "concept_slug": null,
+          "word_form_key": null,
+          "confidence": 0.98,
+          "provenance": "deterministic"
+        },
+        {
+          "start": 30,
+          "end": 34,
+          "surface": "five",
+          "annotation_type": "word",
+          "lexeme_key": "en-US|five|number",
+          "lemma": "five",
+          "part_of_speech": "number",
+          "concept_slug": null,
+          "word_form_key": null,
+          "confidence": 0.98,
+          "provenance": "deterministic"
+        },
+        {
+          "start": 36,
+          "end": 39,
+          "surface": "six",
+          "annotation_type": "word",
+          "lexeme_key": "en-US|six|number",
+          "lemma": "six",
+          "part_of_speech": "number",
+          "concept_slug": null,
+          "word_form_key": null,
+          "confidence": 0.98,
+          "provenance": "deterministic"
+        },
+        {
+          "start": 40,
+          "end": 45,
+          "surface": "seven",
+          "annotation_type": "word",
+          "lexeme_key": "en-US|seven|number",
+          "lemma": "seven",
+          "part_of_speech": "number",
+          "concept_slug": null,
+          "word_form_key": null,
+          "confidence": 0.98,
+          "provenance": "deterministic"
+        },
+        {
+          "start": 46,
+          "end": 51,
+          "surface": "eight",
+          "annotation_type": "word",
+          "lexeme_key": "en-US|eight|number",
+          "lemma": "eight",
+          "part_of_speech": "number",
+          "concept_slug": null,
+          "word_form_key": null,
+          "confidence": 0.98,
+          "provenance": "deterministic"
+        },
+        {
+          "start": 52,
+          "end": 56,
+          "surface": "nine",
+          "annotation_type": "word",
+          "lexeme_key": "en-US|nine|number",
+          "lemma": "nine",
+          "part_of_speech": "number",
+          "concept_slug": null,
+          "word_form_key": null,
+          "confidence": 0.98,
+          "provenance": "deterministic"
+        }
+      ]
+    },
+    {
+      "source": {
+        "kind": "dialogue_turn",
+        "external_id": "d_en_en-real-life-numbers_phone",
+        "turn_order": 3
+      },
+      "batch_id": "en-us-prea1-en-real-life-numbers-v1",
+      "lesson_key": "prea1-en-en-real-life-numbers-01",
+      "text": "Again, please.",
+      "text_sha256": "308c8f3227d091b723f87fd5f5b463f4dd329fbe57b9d7384ab2559c8df2bf0f",
+      "annotations": [
+        {
+          "start": 7,
+          "end": 13,
+          "surface": "please",
+          "annotation_type": "word",
+          "lexeme_key": "en-US|please|adverb",
+          "lemma": "please",
+          "part_of_speech": "adverb",
+          "concept_slug": "polite_please",
+          "word_form_key": "en-US|please|adverb|please|{\"register\":\"polite\"}",
+          "confidence": 1.0,
+          "provenance": "deterministic"
+        }
+      ]
+    },
+    {
+      "source": {
+        "kind": "dialogue_turn",
+        "external_id": "d_en_en-real-life-numbers_phone",
+        "turn_order": 4
+      },
+      "batch_id": "en-us-prea1-en-real-life-numbers-v1",
+      "lesson_key": "prea1-en-en-real-life-numbers-01",
+      "text": "Zero nine one two, three four five, six seven eight nine.",
+      "text_sha256": "43e161a2195125f2e3e30f0669f6b1b8f3c5b0a6ce681eec77d686bc9f811fb5",
+      "annotations": [
+        {
+          "start": 0,
+          "end": 4,
+          "surface": "Zero",
+          "annotation_type": "word",
+          "lexeme_key": "en-US|zero|number",
+          "lemma": "zero",
+          "part_of_speech": "number",
+          "concept_slug": null,
+          "word_form_key": null,
+          "confidence": 0.98,
+          "provenance": "deterministic"
+        },
+        {
+          "start": 5,
+          "end": 9,
+          "surface": "nine",
+          "annotation_type": "word",
+          "lexeme_key": "en-US|nine|number",
+          "lemma": "nine",
+          "part_of_speech": "number",
+          "concept_slug": null,
+          "word_form_key": null,
+          "confidence": 0.98,
+          "provenance": "deterministic"
+        },
+        {
+          "start": 10,
+          "end": 13,
+          "surface": "one",
+          "annotation_type": "word",
+          "lexeme_key": "en-US|one|number",
+          "lemma": "one",
+          "part_of_speech": "number",
+          "concept_slug": null,
+          "word_form_key": null,
+          "confidence": 0.98,
+          "provenance": "deterministic"
+        },
+        {
+          "start": 14,
+          "end": 17,
+          "surface": "two",
+          "annotation_type": "word",
+          "lexeme_key": "en-US|two|number",
+          "lemma": "two",
+          "part_of_speech": "number",
+          "concept_slug": null,
+          "word_form_key": null,
+          "confidence": 0.98,
+          "provenance": "deterministic"
+        },
+        {
+          "start": 19,
+          "end": 24,
+          "surface": "three",
+          "annotation_type": "word",
+          "lexeme_key": "en-US|three|number",
+          "lemma": "three",
+          "part_of_speech": "number",
+          "concept_slug": null,
+          "word_form_key": null,
+          "confidence": 0.98,
+          "provenance": "deterministic"
+        },
+        {
+          "start": 25,
+          "end": 29,
+          "surface": "four",
+          "annotation_type": "word",
+          "lexeme_key": "en-US|four|number",
+          "lemma": "four",
+          "part_of_speech": "number",
+          "concept_slug": null,
+          "word_form_key": null,
+          "confidence": 0.98,
+          "provenance": "deterministic"
+        },
+        {
+          "start": 30,
+          "end": 34,
+          "surface": "five",
+          "annotation_type": "word",
+          "lexeme_key": "en-US|five|number",
+          "lemma": "five",
+          "part_of_speech": "number",
+          "concept_slug": null,
+          "word_form_key": null,
+          "confidence": 0.98,
+          "provenance": "deterministic"
+        },
+        {
+          "start": 36,
+          "end": 39,
+          "surface": "six",
+          "annotation_type": "word",
+          "lexeme_key": "en-US|six|number",
+          "lemma": "six",
+          "part_of_speech": "number",
+          "concept_slug": null,
+          "word_form_key": null,
+          "confidence": 0.98,
+          "provenance": "deterministic"
+        },
+        {
+          "start": 40,
+          "end": 45,
+          "surface": "seven",
+          "annotation_type": "word",
+          "lexeme_key": "en-US|seven|number",
+          "lemma": "seven",
+          "part_of_speech": "number",
+          "concept_slug": null,
+          "word_form_key": null,
+          "confidence": 0.98,
+          "provenance": "deterministic"
+        },
+        {
+          "start": 46,
+          "end": 51,
+          "surface": "eight",
+          "annotation_type": "word",
+          "lexeme_key": "en-US|eight|number",
+          "lemma": "eight",
+          "part_of_speech": "number",
+          "concept_slug": null,
+          "word_form_key": null,
+          "confidence": 0.98,
+          "provenance": "deterministic"
+        },
+        {
+          "start": 52,
+          "end": 56,
+          "surface": "nine",
+          "annotation_type": "word",
+          "lexeme_key": "en-US|nine|number",
+          "lemma": "nine",
+          "part_of_speech": "number",
+          "concept_slug": null,
+          "word_form_key": null,
+          "confidence": 0.98,
+          "provenance": "deterministic"
+        }
+      ]
+    },
+    {
+      "source": {
+        "kind": "dialogue_turn",
+        "external_id": "d_en_en-real-life-numbers_price_day",
+        "turn_order": 2
+      },
+      "batch_id": "en-us-prea1-en-real-life-numbers-v1",
+      "lesson_key": "prea1-en-en-real-life-numbers-02",
+      "text": "It's five dollars.",
+      "text_sha256": "f322c03bd85e8fa1611af28d52e968ffe8c9ec6a473548e8502f65d0a62bdec7",
+      "annotations": [
+        {
+          "start": 5,
+          "end": 9,
+          "surface": "five",
+          "annotation_type": "word",
+          "lexeme_key": "en-US|five|number",
+          "lemma": "five",
+          "part_of_speech": "number",
+          "concept_slug": null,
+          "word_form_key": null,
+          "confidence": 0.98,
+          "provenance": "deterministic"
+        },
+        {
+          "start": 10,
+          "end": 17,
+          "surface": "dollars",
+          "annotation_type": "word",
+          "lexeme_key": "en-US|dollar|noun",
+          "lemma": "dollar",
+          "part_of_speech": "noun",
+          "concept_slug": "money_dollar",
+          "word_form_key": "en-US|dollar|noun|dollars|{\"number\":\"plural\"}",
+          "confidence": 1.0,
+          "provenance": "deterministic"
+        }
+      ]
+    },
+    {
+      "source": {
+        "kind": "exercise",
+        "external_id": "ex_en_en-real-life-numbers_number_listen",
+        "source_path": "prompt.audio_text"
+      },
+      "batch_id": "en-us-prea1-en-real-life-numbers-v1",
+      "lesson_key": "prea1-en-en-real-life-numbers-01",
+      "text": "fifteen",
+      "text_sha256": "c463967e5708cab7f980855e14042ddbcfd1c3556d520ad4dacdfb4a115c67a5",
+      "annotations": [
+        {
+          "start": 0,
+          "end": 7,
+          "surface": "fifteen",
+          "annotation_type": "word",
+          "lexeme_key": "en-US|fifteen|numeral",
+          "lemma": "fifteen",
+          "part_of_speech": "numeral",
+          "concept_slug": "number_15",
+          "word_form_key": "en-US|fifteen|numeral|fifteen|{\"value\":15}",
+          "confidence": 1.0,
+          "provenance": "deterministic"
+        }
+      ]
+    },
+    {
+      "source": {
+        "kind": "exercise",
+        "external_id": "ex_en_en-real-life-numbers_number_listen",
+        "source_path": "answer.value"
+      },
+      "batch_id": "en-us-prea1-en-real-life-numbers-v1",
+      "lesson_key": "prea1-en-en-real-life-numbers-01",
+      "text": "fifteen",
+      "text_sha256": "c463967e5708cab7f980855e14042ddbcfd1c3556d520ad4dacdfb4a115c67a5",
+      "annotations": [
+        {
+          "start": 0,
+          "end": 7,
+          "surface": "fifteen",
+          "annotation_type": "word",
+          "lexeme_key": "en-US|fifteen|numeral",
+          "lemma": "fifteen",
+          "part_of_speech": "numeral",
+          "concept_slug": "number_15",
+          "word_form_key": "en-US|fifteen|numeral|fifteen|{\"value\":15}",
+          "confidence": 1.0,
+          "provenance": "deterministic"
+        }
+      ]
+    },
+    {
+      "source": {
+        "kind": "exercise",
+        "external_id": "ex_en_en-real-life-numbers_phone_speak",
+        "source_path": "prompt.value"
+      },
+      "batch_id": "en-us-prea1-en-real-life-numbers-v1",
+      "lesson_key": "prea1-en-en-real-life-numbers-01",
+      "text": "Zero nine one two, three four five, six seven eight nine.",
+      "text_sha256": "43e161a2195125f2e3e30f0669f6b1b8f3c5b0a6ce681eec77d686bc9f811fb5",
+      "annotations": [
+        {
+          "start": 0,
+          "end": 4,
+          "surface": "Zero",
+          "annotation_type": "word",
+          "lexeme_key": "en-US|zero|number",
+          "lemma": "zero",
+          "part_of_speech": "number",
+          "concept_slug": null,
+          "word_form_key": null,
+          "confidence": 0.98,
+          "provenance": "deterministic"
+        },
+        {
+          "start": 5,
+          "end": 9,
+          "surface": "nine",
+          "annotation_type": "word",
+          "lexeme_key": "en-US|nine|number",
+          "lemma": "nine",
+          "part_of_speech": "number",
+          "concept_slug": null,
+          "word_form_key": null,
+          "confidence": 0.98,
+          "provenance": "deterministic"
+        },
+        {
+          "start": 10,
+          "end": 13,
+          "surface": "one",
+          "annotation_type": "word",
+          "lexeme_key": "en-US|one|number",
+          "lemma": "one",
+          "part_of_speech": "number",
+          "concept_slug": null,
+          "word_form_key": null,
+          "confidence": 0.98,
+          "provenance": "deterministic"
+        },
+        {
+          "start": 14,
+          "end": 17,
+          "surface": "two",
+          "annotation_type": "word",
+          "lexeme_key": "en-US|two|number",
+          "lemma": "two",
+          "part_of_speech": "number",
+          "concept_slug": null,
+          "word_form_key": null,
+          "confidence": 0.98,
+          "provenance": "deterministic"
+        },
+        {
+          "start": 19,
+          "end": 24,
+          "surface": "three",
+          "annotation_type": "word",
+          "lexeme_key": "en-US|three|number",
+          "lemma": "three",
+          "part_of_speech": "number",
+          "concept_slug": null,
+          "word_form_key": null,
+          "confidence": 0.98,
+          "provenance": "deterministic"
+        },
+        {
+          "start": 25,
+          "end": 29,
+          "surface": "four",
+          "annotation_type": "word",
+          "lexeme_key": "en-US|four|number",
+          "lemma": "four",
+          "part_of_speech": "number",
+          "concept_slug": null,
+          "word_form_key": null,
+          "confidence": 0.98,
+          "provenance": "deterministic"
+        },
+        {
+          "start": 30,
+          "end": 34,
+          "surface": "five",
+          "annotation_type": "word",
+          "lexeme_key": "en-US|five|number",
+          "lemma": "five",
+          "part_of_speech": "number",
+          "concept_slug": null,
+          "word_form_key": null,
+          "confidence": 0.98,
+          "provenance": "deterministic"
+        },
+        {
+          "start": 36,
+          "end": 39,
+          "surface": "six",
+          "annotation_type": "word",
+          "lexeme_key": "en-US|six|number",
+          "lemma": "six",
+          "part_of_speech": "number",
+          "concept_slug": null,
+          "word_form_key": null,
+          "confidence": 0.98,
+          "provenance": "deterministic"
+        },
+        {
+          "start": 40,
+          "end": 45,
+          "surface": "seven",
+          "annotation_type": "word",
+          "lexeme_key": "en-US|seven|number",
+          "lemma": "seven",
+          "part_of_speech": "number",
+          "concept_slug": null,
+          "word_form_key": null,
+          "confidence": 0.98,
+          "provenance": "deterministic"
+        },
+        {
+          "start": 46,
+          "end": 51,
+          "surface": "eight",
+          "annotation_type": "word",
+          "lexeme_key": "en-US|eight|number",
+          "lemma": "eight",
+          "part_of_speech": "number",
+          "concept_slug": null,
+          "word_form_key": null,
+          "confidence": 0.98,
+          "provenance": "deterministic"
+        },
+        {
+          "start": 52,
+          "end": 56,
+          "surface": "nine",
+          "annotation_type": "word",
+          "lexeme_key": "en-US|nine|number",
+          "lemma": "nine",
+          "part_of_speech": "number",
+          "concept_slug": null,
+          "word_form_key": null,
+          "confidence": 0.98,
+          "provenance": "deterministic"
+        }
+      ]
+    },
+    {
+      "source": {
+        "kind": "exercise",
+        "external_id": "ex_en_en-real-life-numbers_phone_speak",
+        "source_path": "answer.expected_text"
+      },
+      "batch_id": "en-us-prea1-en-real-life-numbers-v1",
+      "lesson_key": "prea1-en-en-real-life-numbers-01",
+      "text": "Zero nine one two, three four five, six seven eight nine.",
+      "text_sha256": "43e161a2195125f2e3e30f0669f6b1b8f3c5b0a6ce681eec77d686bc9f811fb5",
+      "annotations": [
+        {
+          "start": 0,
+          "end": 4,
+          "surface": "Zero",
+          "annotation_type": "word",
+          "lexeme_key": "en-US|zero|number",
+          "lemma": "zero",
+          "part_of_speech": "number",
+          "concept_slug": null,
+          "word_form_key": null,
+          "confidence": 0.98,
+          "provenance": "deterministic"
+        },
+        {
+          "start": 5,
+          "end": 9,
+          "surface": "nine",
+          "annotation_type": "word",
+          "lexeme_key": "en-US|nine|number",
+          "lemma": "nine",
+          "part_of_speech": "number",
+          "concept_slug": null,
+          "word_form_key": null,
+          "confidence": 0.98,
+          "provenance": "deterministic"
+        },
+        {
+          "start": 10,
+          "end": 13,
+          "surface": "one",
+          "annotation_type": "word",
+          "lexeme_key": "en-US|one|number",
+          "lemma": "one",
+          "part_of_speech": "number",
+          "concept_slug": null,
+          "word_form_key": null,
+          "confidence": 0.98,
+          "provenance": "deterministic"
+        },
+        {
+          "start": 14,
+          "end": 17,
+          "surface": "two",
+          "annotation_type": "word",
+          "lexeme_key": "en-US|two|number",
+          "lemma": "two",
+          "part_of_speech": "number",
+          "concept_slug": null,
+          "word_form_key": null,
+          "confidence": 0.98,
+          "provenance": "deterministic"
+        },
+        {
+          "start": 19,
+          "end": 24,
+          "surface": "three",
+          "annotation_type": "word",
+          "lexeme_key": "en-US|three|number",
+          "lemma": "three",
+          "part_of_speech": "number",
+          "concept_slug": null,
+          "word_form_key": null,
+          "confidence": 0.98,
+          "provenance": "deterministic"
+        },
+        {
+          "start": 25,
+          "end": 29,
+          "surface": "four",
+          "annotation_type": "word",
+          "lexeme_key": "en-US|four|number",
+          "lemma": "four",
+          "part_of_speech": "number",
+          "concept_slug": null,
+          "word_form_key": null,
+          "confidence": 0.98,
+          "provenance": "deterministic"
+        },
+        {
+          "start": 30,
+          "end": 34,
+          "surface": "five",
+          "annotation_type": "word",
+          "lexeme_key": "en-US|five|number",
+          "lemma": "five",
+          "part_of_speech": "number",
+          "concept_slug": null,
+          "word_form_key": null,
+          "confidence": 0.98,
+          "provenance": "deterministic"
+        },
+        {
+          "start": 36,
+          "end": 39,
+          "surface": "six",
+          "annotation_type": "word",
+          "lexeme_key": "en-US|six|number",
+          "lemma": "six",
+          "part_of_speech": "number",
+          "concept_slug": null,
+          "word_form_key": null,
+          "confidence": 0.98,
+          "provenance": "deterministic"
+        },
+        {
+          "start": 40,
+          "end": 45,
+          "surface": "seven",
+          "annotation_type": "word",
+          "lexeme_key": "en-US|seven|number",
+          "lemma": "seven",
+          "part_of_speech": "number",
+          "concept_slug": null,
+          "word_form_key": null,
+          "confidence": 0.98,
+          "provenance": "deterministic"
+        },
+        {
+          "start": 46,
+          "end": 51,
+          "surface": "eight",
+          "annotation_type": "word",
+          "lexeme_key": "en-US|eight|number",
+          "lemma": "eight",
+          "part_of_speech": "number",
+          "concept_slug": null,
+          "word_form_key": null,
+          "confidence": 0.98,
+          "provenance": "deterministic"
+        },
+        {
+          "start": 52,
+          "end": 56,
+          "surface": "nine",
+          "annotation_type": "word",
+          "lexeme_key": "en-US|nine|number",
+          "lemma": "nine",
+          "part_of_speech": "number",
+          "concept_slug": null,
+          "word_form_key": null,
+          "confidence": 0.98,
+          "provenance": "deterministic"
+        }
+      ]
+    },
+    {
+      "source": {
+        "kind": "exercise",
+        "external_id": "ex_en_en-real-life-numbers_price_choice",
+        "source_path": "prompt.value"
+      },
+      "batch_id": "en-us-prea1-en-real-life-numbers-v1",
+      "lesson_key": "prea1-en-en-real-life-numbers-02",
+      "text": "It's five dollars.",
+      "text_sha256": "f322c03bd85e8fa1611af28d52e968ffe8c9ec6a473548e8502f65d0a62bdec7",
+      "annotations": [
+        {
+          "start": 5,
+          "end": 9,
+          "surface": "five",
+          "annotation_type": "word",
+          "lexeme_key": "en-US|five|number",
+          "lemma": "five",
+          "part_of_speech": "number",
+          "concept_slug": null,
+          "word_form_key": null,
+          "confidence": 0.98,
+          "provenance": "deterministic"
+        },
+        {
+          "start": 10,
+          "end": 17,
+          "surface": "dollars",
+          "annotation_type": "word",
+          "lexeme_key": "en-US|dollar|noun",
+          "lemma": "dollar",
+          "part_of_speech": "noun",
+          "concept_slug": "money_dollar",
+          "word_form_key": "en-US|dollar|noun|dollars|{\"number\":\"plural\"}",
+          "confidence": 1.0,
+          "provenance": "deterministic"
+        }
+      ]
+    },
+    {
+      "source": {
+        "kind": "exercise",
+        "external_id": "ex_en_en-real-life-numbers_price_choice",
+        "source_path": "answer.value"
+      },
+      "batch_id": "en-us-prea1-en-real-life-numbers-v1",
+      "lesson_key": "prea1-en-en-real-life-numbers-02",
+      "text": "It's five dollars.",
+      "text_sha256": "f322c03bd85e8fa1611af28d52e968ffe8c9ec6a473548e8502f65d0a62bdec7",
+      "annotations": [
+        {
+          "start": 5,
+          "end": 9,
+          "surface": "five",
+          "annotation_type": "word",
+          "lexeme_key": "en-US|five|number",
+          "lemma": "five",
+          "part_of_speech": "number",
+          "concept_slug": null,
+          "word_form_key": null,
+          "confidence": 0.98,
+          "provenance": "deterministic"
+        },
+        {
+          "start": 10,
+          "end": 17,
+          "surface": "dollars",
+          "annotation_type": "word",
+          "lexeme_key": "en-US|dollar|noun",
+          "lemma": "dollar",
+          "part_of_speech": "noun",
+          "concept_slug": "money_dollar",
+          "word_form_key": "en-US|dollar|noun|dollars|{\"number\":\"plural\"}",
+          "confidence": 1.0,
+          "provenance": "deterministic"
+        }
+      ]
+    },
+    {
+      "source": {
+        "kind": "exercise",
+        "external_id": "ex_en_en-real-life-numbers_price_speak",
+        "source_path": "prompt.value"
+      },
+      "batch_id": "en-us-prea1-en-real-life-numbers-v1",
+      "lesson_key": "prea1-en-en-real-life-numbers-02",
+      "text": "It's five dollars.",
+      "text_sha256": "f322c03bd85e8fa1611af28d52e968ffe8c9ec6a473548e8502f65d0a62bdec7",
+      "annotations": [
+        {
+          "start": 5,
+          "end": 9,
+          "surface": "five",
+          "annotation_type": "word",
+          "lexeme_key": "en-US|five|number",
+          "lemma": "five",
+          "part_of_speech": "number",
+          "concept_slug": null,
+          "word_form_key": null,
+          "confidence": 0.98,
+          "provenance": "deterministic"
+        },
+        {
+          "start": 10,
+          "end": 17,
+          "surface": "dollars",
+          "annotation_type": "word",
+          "lexeme_key": "en-US|dollar|noun",
+          "lemma": "dollar",
+          "part_of_speech": "noun",
+          "concept_slug": "money_dollar",
+          "word_form_key": "en-US|dollar|noun|dollars|{\"number\":\"plural\"}",
+          "confidence": 1.0,
+          "provenance": "deterministic"
+        }
+      ]
+    },
+    {
+      "source": {
+        "kind": "exercise",
+        "external_id": "ex_en_en-real-life-numbers_price_speak",
+        "source_path": "answer.expected_text"
+      },
+      "batch_id": "en-us-prea1-en-real-life-numbers-v1",
+      "lesson_key": "prea1-en-en-real-life-numbers-02",
+      "text": "It's five dollars.",
+      "text_sha256": "f322c03bd85e8fa1611af28d52e968ffe8c9ec6a473548e8502f65d0a62bdec7",
+      "annotations": [
+        {
+          "start": 5,
+          "end": 9,
+          "surface": "five",
+          "annotation_type": "word",
+          "lexeme_key": "en-US|five|number",
+          "lemma": "five",
+          "part_of_speech": "number",
+          "concept_slug": null,
+          "word_form_key": null,
+          "confidence": 0.98,
+          "provenance": "deterministic"
+        },
+        {
+          "start": 10,
+          "end": 17,
+          "surface": "dollars",
+          "annotation_type": "word",
+          "lexeme_key": "en-US|dollar|noun",
+          "lemma": "dollar",
+          "part_of_speech": "noun",
+          "concept_slug": "money_dollar",
+          "word_form_key": "en-US|dollar|noun|dollars|{\"number\":\"plural\"}",
+          "confidence": 1.0,
+          "provenance": "deterministic"
+        }
+      ]
+    },
+    {
+      "source": {
+        "kind": "dialogue_turn",
+        "external_id": "d_en_en-real-world-gate_meet",
+        "turn_order": 3
+      },
+      "batch_id": "en-us-prea1-en-real-world-gate-v1",
+      "lesson_key": "prea1-en-en-real-world-gate-01",
+      "text": "Where are you from?",
+      "text_sha256": "63265a79774350462d4ce11d5a90687ff8e6f2511bb512e0409be568b6be7046",
+      "annotations": [
+        {
+          "start": 0,
+          "end": 5,
+          "surface": "Where",
+          "annotation_type": "word",
+          "lexeme_key": "en-US|where|adverb",
+          "lemma": "where",
+          "part_of_speech": "adverb",
+          "concept_slug": "question_word_where",
+          "word_form_key": "en-US|where|adverb|where|{}",
+          "confidence": 1.0,
+          "provenance": "deterministic"
+        }
+      ]
+    },
+    {
+      "source": {
+        "kind": "dialogue_turn",
+        "external_id": "d_en_en-real-world-gate_meet",
+        "turn_order": 4
+      },
+      "batch_id": "en-us-prea1-en-real-world-gate-v1",
+      "lesson_key": "prea1-en-en-real-world-gate-01",
+      "text": "I'm from Iran.",
+      "text_sha256": "5dfce23c275fa6fab08233cefbad28edad8515795b3e7d9e445c869c89469fe1",
+      "annotations": [
+        {
+          "start": 9,
+          "end": 13,
+          "surface": "Iran",
+          "annotation_type": "word",
+          "lexeme_key": "en-US|iran|proper_noun",
+          "lemma": "Iran",
+          "part_of_speech": "proper_noun",
+          "concept_slug": "country_iran",
+          "word_form_key": "en-US|iran|proper_noun|iran|{\"type\":\"country_name\"}",
+          "confidence": 1.0,
+          "provenance": "deterministic"
+        }
+      ]
+    },
+    {
+      "source": {
+        "kind": "dialogue_turn",
+        "external_id": "d_en_en-real-world-gate_meet",
+        "turn_order": 6
+      },
+      "batch_id": "en-us-prea1-en-real-world-gate-v1",
+      "lesson_key": "prea1-en-en-real-world-gate-01",
+      "text": "I'm good, thanks.",
+      "text_sha256": "3e67e2821cdebe3708f9a5388ba59dbed8dd82e3f8befa978078a3f5730a563f",
+      "annotations": [
+        {
+          "start": 10,
+          "end": 16,
+          "surface": "thanks",
+          "annotation_type": "word",
+          "lexeme_key": "en-US|thanks|interjection",
+          "lemma": "thanks",
+          "part_of_speech": "interjection",
+          "concept_slug": null,
+          "word_form_key": null,
+          "confidence": 0.98,
+          "provenance": "deterministic"
+        }
+      ]
+    },
+    {
+      "source": {
+        "kind": "dialogue_turn",
+        "external_id": "d_en_en-real-world-gate_public_task",
+        "turn_order": 1
+      },
+      "batch_id": "en-us-prea1-en-real-world-gate-v1",
+      "lesson_key": "prea1-en-en-real-world-gate-02",
+      "text": "What's your phone number?",
+      "text_sha256": "b696981a1f4f5ad2c8d5e782488344b7a063f167438a92260716008444f8139e",
+      "annotations": [
+        {
+          "start": 12,
+          "end": 17,
+          "surface": "phone",
+          "annotation_type": "word",
+          "lexeme_key": "en-US|phone|noun",
+          "lemma": "phone",
+          "part_of_speech": "noun",
+          "concept_slug": null,
+          "word_form_key": null,
+          "confidence": 0.98,
+          "provenance": "deterministic"
+        }
+      ]
+    },
+    {
+      "source": {
+        "kind": "dialogue_turn",
+        "external_id": "d_en_en-real-world-gate_public_task",
+        "turn_order": 2
+      },
+      "batch_id": "en-us-prea1-en-real-world-gate-v1",
+      "lesson_key": "prea1-en-en-real-world-gate-02",
+      "text": "Zero nine one two, three four five, six seven eight nine.",
+      "text_sha256": "43e161a2195125f2e3e30f0669f6b1b8f3c5b0a6ce681eec77d686bc9f811fb5",
+      "annotations": [
+        {
+          "start": 0,
+          "end": 4,
+          "surface": "Zero",
+          "annotation_type": "word",
+          "lexeme_key": "en-US|zero|number",
+          "lemma": "zero",
+          "part_of_speech": "number",
+          "concept_slug": null,
+          "word_form_key": null,
+          "confidence": 0.98,
+          "provenance": "deterministic"
+        },
+        {
+          "start": 5,
+          "end": 9,
+          "surface": "nine",
+          "annotation_type": "word",
+          "lexeme_key": "en-US|nine|number",
+          "lemma": "nine",
+          "part_of_speech": "number",
+          "concept_slug": null,
+          "word_form_key": null,
+          "confidence": 0.98,
+          "provenance": "deterministic"
+        },
+        {
+          "start": 10,
+          "end": 13,
+          "surface": "one",
+          "annotation_type": "word",
+          "lexeme_key": "en-US|one|number",
+          "lemma": "one",
+          "part_of_speech": "number",
+          "concept_slug": null,
+          "word_form_key": null,
+          "confidence": 0.98,
+          "provenance": "deterministic"
+        },
+        {
+          "start": 14,
+          "end": 17,
+          "surface": "two",
+          "annotation_type": "word",
+          "lexeme_key": "en-US|two|number",
+          "lemma": "two",
+          "part_of_speech": "number",
+          "concept_slug": null,
+          "word_form_key": null,
+          "confidence": 0.98,
+          "provenance": "deterministic"
+        },
+        {
+          "start": 19,
+          "end": 24,
+          "surface": "three",
+          "annotation_type": "word",
+          "lexeme_key": "en-US|three|number",
+          "lemma": "three",
+          "part_of_speech": "number",
+          "concept_slug": null,
+          "word_form_key": null,
+          "confidence": 0.98,
+          "provenance": "deterministic"
+        },
+        {
+          "start": 25,
+          "end": 29,
+          "surface": "four",
+          "annotation_type": "word",
+          "lexeme_key": "en-US|four|number",
+          "lemma": "four",
+          "part_of_speech": "number",
+          "concept_slug": null,
+          "word_form_key": null,
+          "confidence": 0.98,
+          "provenance": "deterministic"
+        },
+        {
+          "start": 30,
+          "end": 34,
+          "surface": "five",
+          "annotation_type": "word",
+          "lexeme_key": "en-US|five|number",
+          "lemma": "five",
+          "part_of_speech": "number",
+          "concept_slug": null,
+          "word_form_key": null,
+          "confidence": 0.98,
+          "provenance": "deterministic"
+        },
+        {
+          "start": 36,
+          "end": 39,
+          "surface": "six",
+          "annotation_type": "word",
+          "lexeme_key": "en-US|six|number",
+          "lemma": "six",
+          "part_of_speech": "number",
+          "concept_slug": null,
+          "word_form_key": null,
+          "confidence": 0.98,
+          "provenance": "deterministic"
+        },
+        {
+          "start": 40,
+          "end": 45,
+          "surface": "seven",
+          "annotation_type": "word",
+          "lexeme_key": "en-US|seven|number",
+          "lemma": "seven",
+          "part_of_speech": "number",
+          "concept_slug": null,
+          "word_form_key": null,
+          "confidence": 0.98,
+          "provenance": "deterministic"
+        },
+        {
+          "start": 46,
+          "end": 51,
+          "surface": "eight",
+          "annotation_type": "word",
+          "lexeme_key": "en-US|eight|number",
+          "lemma": "eight",
+          "part_of_speech": "number",
+          "concept_slug": null,
+          "word_form_key": null,
+          "confidence": 0.98,
+          "provenance": "deterministic"
+        },
+        {
+          "start": 52,
+          "end": 56,
+          "surface": "nine",
+          "annotation_type": "word",
+          "lexeme_key": "en-US|nine|number",
+          "lemma": "nine",
+          "part_of_speech": "number",
+          "concept_slug": null,
+          "word_form_key": null,
+          "confidence": 0.98,
+          "provenance": "deterministic"
+        }
+      ]
+    },
+    {
+      "source": {
+        "kind": "dialogue_turn",
+        "external_id": "d_en_en-real-world-gate_public_task",
+        "turn_order": 4
+      },
+      "batch_id": "en-us-prea1-en-real-world-gate-v1",
+      "lesson_key": "prea1-en-en-real-world-gate-02",
+      "text": "It's five dollars.",
+      "text_sha256": "f322c03bd85e8fa1611af28d52e968ffe8c9ec6a473548e8502f65d0a62bdec7",
+      "annotations": [
+        {
+          "start": 5,
+          "end": 9,
+          "surface": "five",
+          "annotation_type": "word",
+          "lexeme_key": "en-US|five|number",
+          "lemma": "five",
+          "part_of_speech": "number",
+          "concept_slug": null,
+          "word_form_key": null,
+          "confidence": 0.98,
+          "provenance": "deterministic"
+        },
+        {
+          "start": 10,
+          "end": 17,
+          "surface": "dollars",
+          "annotation_type": "word",
+          "lexeme_key": "en-US|dollar|noun",
+          "lemma": "dollar",
+          "part_of_speech": "noun",
+          "concept_slug": "money_dollar",
+          "word_form_key": "en-US|dollar|noun|dollars|{\"number\":\"plural\"}",
+          "confidence": 1.0,
+          "provenance": "deterministic"
+        }
+      ]
+    },
+    {
+      "source": {
+        "kind": "dialogue_turn",
+        "external_id": "d_en_en-real-world-gate_public_task",
+        "turn_order": 5
+      },
+      "batch_id": "en-us-prea1-en-real-world-gate-v1",
+      "lesson_key": "prea1-en-en-real-world-gate-02",
+      "text": "Where is the exit?",
+      "text_sha256": "b602b92d39a89095dd69a6984525a5011ffb934d22586a4630988b9675b197ee",
+      "annotations": [
+        {
+          "start": 0,
+          "end": 5,
+          "surface": "Where",
+          "annotation_type": "word",
+          "lexeme_key": "en-US|where|adverb",
+          "lemma": "where",
+          "part_of_speech": "adverb",
+          "concept_slug": "question_word_where",
+          "word_form_key": "en-US|where|adverb|where|{}",
+          "confidence": 1.0,
+          "provenance": "deterministic"
+        }
+      ]
+    },
+    {
+      "source": {
+        "kind": "exercise",
+        "external_id": "ex_en_en-real-world-gate_personal_speaking",
+        "source_path": "answer.model_text"
+      },
+      "batch_id": "en-us-prea1-en-real-world-gate-v1",
+      "lesson_key": "prea1-en-en-real-world-gate-01",
+      "text": "My name is Sara. I'm from Iran. I'm good.",
+      "text_sha256": "1168e6e448004a5a20c13619fbcdcb4643c6d6ba96a5999c4efc486646dc425f",
+      "annotations": [
+        {
+          "start": 26,
+          "end": 30,
+          "surface": "Iran",
+          "annotation_type": "word",
+          "lexeme_key": "en-US|iran|proper_noun",
+          "lemma": "Iran",
+          "part_of_speech": "proper_noun",
+          "concept_slug": "country_iran",
+          "word_form_key": "en-US|iran|proper_noun|iran|{\"type\":\"country_name\"}",
+          "confidence": 1.0,
+          "provenance": "deterministic"
+        }
+      ]
+    },
+    {
+      "source": {
+        "kind": "exercise",
+        "external_id": "ex_en_en-real-world-gate_personal_form",
+        "source_path": "answer.model_text"
+      },
+      "batch_id": "en-us-prea1-en-real-world-gate-v1",
+      "lesson_key": "prea1-en-en-real-world-gate-02",
+      "text": "Name: Sara\nCountry: Iran\nPhone: 0912 345 6789",
+      "text_sha256": "49104e9b6c6132cc7cfc237f6fdd39fbc2321a2609a0bfd3ef9722487f2fc507",
+      "annotations": [
+        {
+          "start": 11,
+          "end": 18,
+          "surface": "Country",
+          "annotation_type": "word",
+          "lexeme_key": "en-US|country|noun",
+          "lemma": "country",
+          "part_of_speech": "noun",
+          "concept_slug": "country",
+          "word_form_key": "en-US|country|noun|country|{\"number\":\"singular\"}",
+          "confidence": 1.0,
+          "provenance": "deterministic"
+        },
+        {
+          "start": 20,
+          "end": 24,
+          "surface": "Iran",
+          "annotation_type": "word",
+          "lexeme_key": "en-US|iran|proper_noun",
+          "lemma": "Iran",
+          "part_of_speech": "proper_noun",
+          "concept_slug": "country_iran",
+          "word_form_key": "en-US|iran|proper_noun|iran|{\"type\":\"country_name\"}",
+          "confidence": 1.0,
+          "provenance": "deterministic"
+        },
+        {
+          "start": 25,
+          "end": 30,
+          "surface": "Phone",
+          "annotation_type": "word",
+          "lexeme_key": "en-US|phone|noun",
+          "lemma": "phone",
+          "part_of_speech": "noun",
+          "concept_slug": null,
+          "word_form_key": null,
+          "confidence": 0.98,
+          "provenance": "deterministic"
+        }
+      ]
+    },
+    {
+      "source": {
+        "kind": "exercise",
+        "external_id": "ex_en_en-real-world-gate_phone_listen",
+        "source_path": "prompt.audio_text"
+      },
+      "batch_id": "en-us-prea1-en-real-world-gate-v1",
+      "lesson_key": "prea1-en-en-real-world-gate-02",
+      "text": "Zero nine one two, three four five, six seven eight nine.",
+      "text_sha256": "43e161a2195125f2e3e30f0669f6b1b8f3c5b0a6ce681eec77d686bc9f811fb5",
+      "annotations": [
+        {
+          "start": 0,
+          "end": 4,
+          "surface": "Zero",
+          "annotation_type": "word",
+          "lexeme_key": "en-US|zero|number",
+          "lemma": "zero",
+          "part_of_speech": "number",
+          "concept_slug": null,
+          "word_form_key": null,
+          "confidence": 0.98,
+          "provenance": "deterministic"
+        },
+        {
+          "start": 5,
+          "end": 9,
+          "surface": "nine",
+          "annotation_type": "word",
+          "lexeme_key": "en-US|nine|number",
+          "lemma": "nine",
+          "part_of_speech": "number",
+          "concept_slug": null,
+          "word_form_key": null,
+          "confidence": 0.98,
+          "provenance": "deterministic"
+        },
+        {
+          "start": 10,
+          "end": 13,
+          "surface": "one",
+          "annotation_type": "word",
+          "lexeme_key": "en-US|one|number",
+          "lemma": "one",
+          "part_of_speech": "number",
+          "concept_slug": null,
+          "word_form_key": null,
+          "confidence": 0.98,
+          "provenance": "deterministic"
+        },
+        {
+          "start": 14,
+          "end": 17,
+          "surface": "two",
+          "annotation_type": "word",
+          "lexeme_key": "en-US|two|number",
+          "lemma": "two",
+          "part_of_speech": "number",
+          "concept_slug": null,
+          "word_form_key": null,
+          "confidence": 0.98,
+          "provenance": "deterministic"
+        },
+        {
+          "start": 19,
+          "end": 24,
+          "surface": "three",
+          "annotation_type": "word",
+          "lexeme_key": "en-US|three|number",
+          "lemma": "three",
+          "part_of_speech": "number",
+          "concept_slug": null,
+          "word_form_key": null,
+          "confidence": 0.98,
+          "provenance": "deterministic"
+        },
+        {
+          "start": 25,
+          "end": 29,
+          "surface": "four",
+          "annotation_type": "word",
+          "lexeme_key": "en-US|four|number",
+          "lemma": "four",
+          "part_of_speech": "number",
+          "concept_slug": null,
+          "word_form_key": null,
+          "confidence": 0.98,
+          "provenance": "deterministic"
+        },
+        {
+          "start": 30,
+          "end": 34,
+          "surface": "five",
+          "annotation_type": "word",
+          "lexeme_key": "en-US|five|number",
+          "lemma": "five",
+          "part_of_speech": "number",
+          "concept_slug": null,
+          "word_form_key": null,
+          "confidence": 0.98,
+          "provenance": "deterministic"
+        },
+        {
+          "start": 36,
+          "end": 39,
+          "surface": "six",
+          "annotation_type": "word",
+          "lexeme_key": "en-US|six|number",
+          "lemma": "six",
+          "part_of_speech": "number",
+          "concept_slug": null,
+          "word_form_key": null,
+          "confidence": 0.98,
+          "provenance": "deterministic"
+        },
+        {
+          "start": 40,
+          "end": 45,
+          "surface": "seven",
+          "annotation_type": "word",
+          "lexeme_key": "en-US|seven|number",
+          "lemma": "seven",
+          "part_of_speech": "number",
+          "concept_slug": null,
+          "word_form_key": null,
+          "confidence": 0.98,
+          "provenance": "deterministic"
+        },
+        {
+          "start": 46,
+          "end": 51,
+          "surface": "eight",
+          "annotation_type": "word",
+          "lexeme_key": "en-US|eight|number",
+          "lemma": "eight",
+          "part_of_speech": "number",
+          "concept_slug": null,
+          "word_form_key": null,
+          "confidence": 0.98,
+          "provenance": "deterministic"
+        },
+        {
+          "start": 52,
+          "end": 56,
+          "surface": "nine",
+          "annotation_type": "word",
+          "lexeme_key": "en-US|nine|number",
+          "lemma": "nine",
+          "part_of_speech": "number",
+          "concept_slug": null,
+          "word_form_key": null,
+          "confidence": 0.98,
+          "provenance": "deterministic"
+        }
+      ]
+    },
+    {
+      "source": {
+        "kind": "exercise",
+        "external_id": "ex_en_en-real-world-gate_phone_listen",
+        "source_path": "answer.value"
+      },
+      "batch_id": "en-us-prea1-en-real-world-gate-v1",
+      "lesson_key": "prea1-en-en-real-world-gate-02",
+      "text": "Zero nine one two, three four five, six seven eight nine.",
+      "text_sha256": "43e161a2195125f2e3e30f0669f6b1b8f3c5b0a6ce681eec77d686bc9f811fb5",
+      "annotations": [
+        {
+          "start": 0,
+          "end": 4,
+          "surface": "Zero",
+          "annotation_type": "word",
+          "lexeme_key": "en-US|zero|number",
+          "lemma": "zero",
+          "part_of_speech": "number",
+          "concept_slug": null,
+          "word_form_key": null,
+          "confidence": 0.98,
+          "provenance": "deterministic"
+        },
+        {
+          "start": 5,
+          "end": 9,
+          "surface": "nine",
+          "annotation_type": "word",
+          "lexeme_key": "en-US|nine|number",
+          "lemma": "nine",
+          "part_of_speech": "number",
+          "concept_slug": null,
+          "word_form_key": null,
+          "confidence": 0.98,
+          "provenance": "deterministic"
+        },
+        {
+          "start": 10,
+          "end": 13,
+          "surface": "one",
+          "annotation_type": "word",
+          "lexeme_key": "en-US|one|number",
+          "lemma": "one",
+          "part_of_speech": "number",
+          "concept_slug": null,
+          "word_form_key": null,
+          "confidence": 0.98,
+          "provenance": "deterministic"
+        },
+        {
+          "start": 14,
+          "end": 17,
+          "surface": "two",
+          "annotation_type": "word",
+          "lexeme_key": "en-US|two|number",
+          "lemma": "two",
+          "part_of_speech": "number",
+          "concept_slug": null,
+          "word_form_key": null,
+          "confidence": 0.98,
+          "provenance": "deterministic"
+        },
+        {
+          "start": 19,
+          "end": 24,
+          "surface": "three",
+          "annotation_type": "word",
+          "lexeme_key": "en-US|three|number",
+          "lemma": "three",
+          "part_of_speech": "number",
+          "concept_slug": null,
+          "word_form_key": null,
+          "confidence": 0.98,
+          "provenance": "deterministic"
+        },
+        {
+          "start": 25,
+          "end": 29,
+          "surface": "four",
+          "annotation_type": "word",
+          "lexeme_key": "en-US|four|number",
+          "lemma": "four",
+          "part_of_speech": "number",
+          "concept_slug": null,
+          "word_form_key": null,
+          "confidence": 0.98,
+          "provenance": "deterministic"
+        },
+        {
+          "start": 30,
+          "end": 34,
+          "surface": "five",
+          "annotation_type": "word",
+          "lexeme_key": "en-US|five|number",
+          "lemma": "five",
+          "part_of_speech": "number",
+          "concept_slug": null,
+          "word_form_key": null,
+          "confidence": 0.98,
+          "provenance": "deterministic"
+        },
+        {
+          "start": 36,
+          "end": 39,
+          "surface": "six",
+          "annotation_type": "word",
+          "lexeme_key": "en-US|six|number",
+          "lemma": "six",
+          "part_of_speech": "number",
+          "concept_slug": null,
+          "word_form_key": null,
+          "confidence": 0.98,
+          "provenance": "deterministic"
+        },
+        {
+          "start": 40,
+          "end": 45,
+          "surface": "seven",
+          "annotation_type": "word",
+          "lexeme_key": "en-US|seven|number",
+          "lemma": "seven",
+          "part_of_speech": "number",
+          "concept_slug": null,
+          "word_form_key": null,
+          "confidence": 0.98,
+          "provenance": "deterministic"
+        },
+        {
+          "start": 46,
+          "end": 51,
+          "surface": "eight",
+          "annotation_type": "word",
+          "lexeme_key": "en-US|eight|number",
+          "lemma": "eight",
+          "part_of_speech": "number",
+          "concept_slug": null,
+          "word_form_key": null,
+          "confidence": 0.98,
+          "provenance": "deterministic"
+        },
+        {
+          "start": 52,
+          "end": 56,
+          "surface": "nine",
+          "annotation_type": "word",
+          "lexeme_key": "en-US|nine|number",
+          "lemma": "nine",
+          "part_of_speech": "number",
+          "concept_slug": null,
+          "word_form_key": null,
+          "confidence": 0.98,
+          "provenance": "deterministic"
+        }
+      ]
+    },
+    {
+      "source": {
+        "kind": "exercise",
+        "external_id": "ex_en_en-real-world-gate_repair_choice",
+        "source_path": "prompt.value"
+      },
+      "batch_id": "en-us-prea1-en-real-world-gate-v1",
+      "lesson_key": "prea1-en-en-real-world-gate-01",
+      "text": "Again, please.",
+      "text_sha256": "308c8f3227d091b723f87fd5f5b463f4dd329fbe57b9d7384ab2559c8df2bf0f",
+      "annotations": [
+        {
+          "start": 7,
+          "end": 13,
+          "surface": "please",
+          "annotation_type": "word",
+          "lexeme_key": "en-US|please|adverb",
+          "lemma": "please",
+          "part_of_speech": "adverb",
+          "concept_slug": "polite_please",
+          "word_form_key": "en-US|please|adverb|please|{\"register\":\"polite\"}",
+          "confidence": 1.0,
+          "provenance": "deterministic"
+        }
+      ]
+    },
+    {
+      "source": {
+        "kind": "exercise",
+        "external_id": "ex_en_en-real-world-gate_repair_choice",
+        "source_path": "answer.value"
+      },
+      "batch_id": "en-us-prea1-en-real-world-gate-v1",
+      "lesson_key": "prea1-en-en-real-world-gate-01",
+      "text": "Again, please.",
+      "text_sha256": "308c8f3227d091b723f87fd5f5b463f4dd329fbe57b9d7384ab2559c8df2bf0f",
+      "annotations": [
+        {
+          "start": 7,
+          "end": 13,
+          "surface": "please",
+          "annotation_type": "word",
+          "lexeme_key": "en-US|please|adverb",
+          "lemma": "please",
+          "part_of_speech": "adverb",
+          "concept_slug": "polite_please",
+          "word_form_key": "en-US|please|adverb|please|{\"register\":\"polite\"}",
+          "confidence": 1.0,
+          "provenance": "deterministic"
+        }
+      ]
+    },
+    {
+      "source": {
+        "kind": "exercise",
+        "external_id": "ex_en_en-real-world-gate_repair_speak",
+        "source_path": "prompt.value"
+      },
+      "batch_id": "en-us-prea1-en-real-world-gate-v1",
+      "lesson_key": "prea1-en-en-real-world-gate-02",
+      "text": "Again, please.",
+      "text_sha256": "308c8f3227d091b723f87fd5f5b463f4dd329fbe57b9d7384ab2559c8df2bf0f",
+      "annotations": [
+        {
+          "start": 7,
+          "end": 13,
+          "surface": "please",
+          "annotation_type": "word",
+          "lexeme_key": "en-US|please|adverb",
+          "lemma": "please",
+          "part_of_speech": "adverb",
+          "concept_slug": "polite_please",
+          "word_form_key": "en-US|please|adverb|please|{\"register\":\"polite\"}",
+          "confidence": 1.0,
+          "provenance": "deterministic"
+        }
+      ]
+    },
+    {
+      "source": {
+        "kind": "exercise",
+        "external_id": "ex_en_en-real-world-gate_repair_speak",
+        "source_path": "answer.expected_text"
+      },
+      "batch_id": "en-us-prea1-en-real-world-gate-v1",
+      "lesson_key": "prea1-en-en-real-world-gate-02",
+      "text": "Again, please.",
+      "text_sha256": "308c8f3227d091b723f87fd5f5b463f4dd329fbe57b9d7384ab2559c8df2bf0f",
+      "annotations": [
+        {
+          "start": 7,
+          "end": 13,
+          "surface": "please",
+          "annotation_type": "word",
+          "lexeme_key": "en-US|please|adverb",
+          "lemma": "please",
+          "part_of_speech": "adverb",
+          "concept_slug": "polite_please",
+          "word_form_key": "en-US|please|adverb|please|{\"register\":\"polite\"}",
+          "confidence": 1.0,
+          "provenance": "deterministic"
+        }
+      ]
+    },
+    {
+      "source": {
+        "kind": "utterance",
+        "external_id": "u_pre_yes_please",
+        "language": "en"
+      },
+      "batch_id": "en-us-prea1-survival-words-v1",
+      "lesson_key": "prea1-en-survival-words-01",
+      "text": "Yes, please.",
+      "text_sha256": "2fa98e4d3bdb2c5d0c5bfc3d0da3126aab14ae1c8676a538b6098883e0e71ec8",
+      "annotations": [
+        {
+          "start": 0,
+          "end": 3,
+          "surface": "Yes",
+          "annotation_type": "word",
+          "lexeme_key": "en-US|yes|interjection",
+          "lemma": "yes",
+          "part_of_speech": "interjection",
+          "concept_slug": null,
+          "word_form_key": null,
+          "confidence": 0.98,
+          "provenance": "deterministic"
+        },
+        {
+          "start": 5,
+          "end": 11,
+          "surface": "please",
+          "annotation_type": "word",
+          "lexeme_key": "en-US|please|adverb",
+          "lemma": "please",
+          "part_of_speech": "adverb",
+          "concept_slug": null,
+          "word_form_key": null,
+          "confidence": 0.98,
+          "provenance": "deterministic"
+        }
+      ]
+    },
+    {
+      "source": {
+        "kind": "utterance",
+        "external_id": "u_pre_no_thanks",
+        "language": "en"
+      },
+      "batch_id": "en-us-prea1-survival-words-v1",
+      "lesson_key": "prea1-en-survival-words-01",
+      "text": "No, thanks.",
+      "text_sha256": "b91d613f300c3bcc2c23ef2b53de52452a7b0e297e3e615026872452e27a2116",
+      "annotations": [
+        {
+          "start": 0,
+          "end": 2,
+          "surface": "No",
+          "annotation_type": "word",
+          "lexeme_key": "en-US|no|interjection",
+          "lemma": "no",
+          "part_of_speech": "interjection",
+          "concept_slug": null,
+          "word_form_key": null,
+          "confidence": 0.98,
+          "provenance": "deterministic"
+        },
+        {
+          "start": 4,
+          "end": 10,
+          "surface": "thanks",
+          "annotation_type": "word",
+          "lexeme_key": "en-US|thanks|interjection",
+          "lemma": "thanks",
+          "part_of_speech": "interjection",
+          "concept_slug": null,
+          "word_form_key": null,
+          "confidence": 0.98,
+          "provenance": "deterministic"
+        }
+      ]
+    },
+    {
+      "source": {
+        "kind": "dialogue_turn",
+        "external_id": "d_pre_water_offer",
+        "turn_order": 1
+      },
+      "batch_id": "en-us-prea1-survival-words-v1",
+      "lesson_key": "prea1-en-survival-words-01",
+      "text": "Water?",
+      "text_sha256": "68b84dafd06bb7ac0b411d0bc4c0a4a982423ab56831bcbf63e797255dcebee0",
+      "annotations": [
+        {
+          "start": 0,
+          "end": 5,
+          "surface": "Water",
+          "annotation_type": "word",
+          "lexeme_key": "en-US|water|noun",
+          "lemma": "water",
+          "part_of_speech": "noun",
+          "concept_slug": "food_water",
+          "word_form_key": null,
+          "confidence": 0.98,
+          "provenance": "deterministic"
+        }
+      ]
+    },
+    {
+      "source": {
+        "kind": "dialogue_turn",
+        "external_id": "d_pre_water_offer",
+        "turn_order": 2
+      },
+      "batch_id": "en-us-prea1-survival-words-v1",
+      "lesson_key": "prea1-en-survival-words-01",
+      "text": "Yes, please.",
+      "text_sha256": "2fa98e4d3bdb2c5d0c5bfc3d0da3126aab14ae1c8676a538b6098883e0e71ec8",
+      "annotations": [
+        {
+          "start": 0,
+          "end": 3,
+          "surface": "Yes",
+          "annotation_type": "word",
+          "lexeme_key": "en-US|yes|interjection",
+          "lemma": "yes",
+          "part_of_speech": "interjection",
+          "concept_slug": null,
+          "word_form_key": null,
+          "confidence": 0.98,
+          "provenance": "deterministic"
+        },
+        {
+          "start": 5,
+          "end": 11,
+          "surface": "please",
+          "annotation_type": "word",
+          "lexeme_key": "en-US|please|adverb",
+          "lemma": "please",
+          "part_of_speech": "adverb",
+          "concept_slug": null,
+          "word_form_key": null,
+          "confidence": 0.98,
+          "provenance": "deterministic"
+        }
+      ]
+    },
+    {
+      "source": {
+        "kind": "dialogue_turn",
+        "external_id": "d_pre_water_offer",
+        "turn_order": 4
+      },
+      "batch_id": "en-us-prea1-survival-words-v1",
+      "lesson_key": "prea1-en-survival-words-01",
+      "text": "Thanks.",
+      "text_sha256": "f51bead488e14b656af3a13e33eb1d6fa9580832cbb9d7a20061f84c4b1c160f",
+      "annotations": [
+        {
+          "start": 0,
+          "end": 6,
+          "surface": "Thanks",
+          "annotation_type": "word",
+          "lexeme_key": "en-US|thanks|interjection",
+          "lemma": "thanks",
+          "part_of_speech": "interjection",
+          "concept_slug": null,
+          "word_form_key": null,
+          "confidence": 0.98,
+          "provenance": "deterministic"
+        }
+      ]
+    },
+    {
+      "source": {
+        "kind": "exercise",
+        "external_id": "ex_pre_yes_meaning",
+        "source_path": "prompt.instruction_fa"
+      },
+      "batch_id": "en-us-prea1-survival-words-v1",
+      "lesson_key": "prea1-en-survival-words-01",
+      "text": "Yes یعنی چه؟",
+      "text_sha256": "0bc0225d7fbd09ad4d6b8e6b2bff458d6970212927771f3945d4b944285dd8ce",
+      "annotations": [
+        {
+          "start": 0,
+          "end": 3,
+          "surface": "Yes",
+          "annotation_type": "word",
+          "lexeme_key": "en-US|yes|interjection",
+          "lemma": "yes",
+          "part_of_speech": "interjection",
+          "concept_slug": null,
+          "word_form_key": null,
+          "confidence": 0.98,
+          "provenance": "deterministic"
+        }
+      ]
+    },
+    {
+      "source": {
+        "kind": "exercise",
+        "external_id": "ex_pre_yes_meaning",
+        "source_path": "prompt.value"
+      },
+      "batch_id": "en-us-prea1-survival-words-v1",
+      "lesson_key": "prea1-en-survival-words-01",
+      "text": "Yes",
+      "text_sha256": "85a39ab345d672ff8ca9b9c6876f3adcacf45ee7c1e2dbd2408fd338bd55e07e",
+      "annotations": [
+        {
+          "start": 0,
+          "end": 3,
+          "surface": "Yes",
+          "annotation_type": "word",
+          "lexeme_key": "en-US|yes|interjection",
+          "lemma": "yes",
+          "part_of_speech": "interjection",
+          "concept_slug": null,
+          "word_form_key": null,
+          "confidence": 0.98,
+          "provenance": "deterministic"
+        }
+      ]
+    },
+    {
+      "source": {
+        "kind": "exercise",
+        "external_id": "ex_pre_no_listen",
+        "source_path": "prompt.audio_text"
+      },
+      "batch_id": "en-us-prea1-survival-words-v1",
+      "lesson_key": "prea1-en-survival-words-01",
+      "text": "No",
+      "text_sha256": "1ea442a134b2a184bd5d40104401f2a37fbc09ccf3f4bc9da161c6099be3691d",
+      "annotations": [
+        {
+          "start": 0,
+          "end": 2,
+          "surface": "No",
+          "annotation_type": "word",
+          "lexeme_key": "en-US|no|interjection",
+          "lemma": "no",
+          "part_of_speech": "interjection",
+          "concept_slug": null,
+          "word_form_key": null,
+          "confidence": 0.98,
+          "provenance": "deterministic"
+        }
+      ]
+    },
+    {
+      "source": {
+        "kind": "exercise",
+        "external_id": "ex_pre_no_listen",
+        "source_path": "answer.value"
+      },
+      "batch_id": "en-us-prea1-survival-words-v1",
+      "lesson_key": "prea1-en-survival-words-01",
+      "text": "No",
+      "text_sha256": "1ea442a134b2a184bd5d40104401f2a37fbc09ccf3f4bc9da161c6099be3691d",
+      "annotations": [
+        {
+          "start": 0,
+          "end": 2,
+          "surface": "No",
+          "annotation_type": "word",
+          "lexeme_key": "en-US|no|interjection",
+          "lemma": "no",
+          "part_of_speech": "interjection",
+          "concept_slug": null,
+          "word_form_key": null,
+          "confidence": 0.98,
+          "provenance": "deterministic"
+        }
+      ]
+    },
+    {
+      "source": {
+        "kind": "exercise",
+        "external_id": "ex_pre_please_speak",
+        "source_path": "prompt.value"
+      },
+      "batch_id": "en-us-prea1-survival-words-v1",
+      "lesson_key": "prea1-en-survival-words-01",
+      "text": "please",
+      "text_sha256": "56ccc4dcfc96534b06fc0c08a301be24f13b491484d5d984953cc0dba9bbb89a",
+      "annotations": [
+        {
+          "start": 0,
+          "end": 6,
+          "surface": "please",
+          "annotation_type": "word",
+          "lexeme_key": "en-US|please|adverb",
+          "lemma": "please",
+          "part_of_speech": "adverb",
+          "concept_slug": null,
+          "word_form_key": null,
+          "confidence": 0.98,
+          "provenance": "deterministic"
+        }
+      ]
+    },
+    {
+      "source": {
+        "kind": "exercise",
+        "external_id": "ex_pre_please_speak",
+        "source_path": "answer.expected_text"
+      },
+      "batch_id": "en-us-prea1-survival-words-v1",
+      "lesson_key": "prea1-en-survival-words-01",
+      "text": "please",
+      "text_sha256": "56ccc4dcfc96534b06fc0c08a301be24f13b491484d5d984953cc0dba9bbb89a",
+      "annotations": [
+        {
+          "start": 0,
+          "end": 6,
+          "surface": "please",
+          "annotation_type": "word",
+          "lexeme_key": "en-US|please|adverb",
+          "lemma": "please",
+          "part_of_speech": "adverb",
+          "concept_slug": null,
+          "word_form_key": null,
+          "confidence": 0.98,
+          "provenance": "deterministic"
+        }
+      ]
+    },
+    {
+      "source": {
+        "kind": "exercise",
+        "external_id": "ex_pre_no_thanks_build",
+        "source_path": "prompt.tokens[0]"
+      },
+      "batch_id": "en-us-prea1-survival-words-v1",
+      "lesson_key": "prea1-en-survival-words-01",
+      "text": "thanks",
+      "text_sha256": "a6a2729cbf6bcadce577a31f7f76201d5ce63c57d6c53318000d67714bb354ef",
+      "annotations": [
+        {
+          "start": 0,
+          "end": 6,
+          "surface": "thanks",
+          "annotation_type": "word",
+          "lexeme_key": "en-US|thanks|interjection",
+          "lemma": "thanks",
+          "part_of_speech": "interjection",
+          "concept_slug": null,
+          "word_form_key": null,
+          "confidence": 0.98,
+          "provenance": "deterministic"
+        }
+      ]
+    },
+    {
+      "source": {
+        "kind": "exercise",
+        "external_id": "ex_pre_no_thanks_build",
+        "source_path": "prompt.tokens[1]"
+      },
+      "batch_id": "en-us-prea1-survival-words-v1",
+      "lesson_key": "prea1-en-survival-words-01",
+      "text": "No",
+      "text_sha256": "1ea442a134b2a184bd5d40104401f2a37fbc09ccf3f4bc9da161c6099be3691d",
+      "annotations": [
+        {
+          "start": 0,
+          "end": 2,
+          "surface": "No",
+          "annotation_type": "word",
+          "lexeme_key": "en-US|no|interjection",
+          "lemma": "no",
+          "part_of_speech": "interjection",
+          "concept_slug": null,
+          "word_form_key": null,
+          "confidence": 0.98,
+          "provenance": "deterministic"
+        }
+      ]
+    },
+    {
+      "source": {
+        "kind": "exercise",
+        "external_id": "ex_pre_no_thanks_build",
+        "source_path": "answer.tokens[0]"
+      },
+      "batch_id": "en-us-prea1-survival-words-v1",
+      "lesson_key": "prea1-en-survival-words-01",
+      "text": "No",
+      "text_sha256": "1ea442a134b2a184bd5d40104401f2a37fbc09ccf3f4bc9da161c6099be3691d",
+      "annotations": [
+        {
+          "start": 0,
+          "end": 2,
+          "surface": "No",
+          "annotation_type": "word",
+          "lexeme_key": "en-US|no|interjection",
+          "lemma": "no",
+          "part_of_speech": "interjection",
+          "concept_slug": null,
+          "word_form_key": null,
+          "confidence": 0.98,
+          "provenance": "deterministic"
+        }
+      ]
+    },
+    {
+      "source": {
+        "kind": "exercise",
+        "external_id": "ex_pre_no_thanks_build",
+        "source_path": "answer.tokens[1]"
+      },
+      "batch_id": "en-us-prea1-survival-words-v1",
+      "lesson_key": "prea1-en-survival-words-01",
+      "text": "thanks",
+      "text_sha256": "a6a2729cbf6bcadce577a31f7f76201d5ce63c57d6c53318000d67714bb354ef",
+      "annotations": [
+        {
+          "start": 0,
+          "end": 6,
+          "surface": "thanks",
+          "annotation_type": "word",
+          "lexeme_key": "en-US|thanks|interjection",
+          "lemma": "thanks",
+          "part_of_speech": "interjection",
+          "concept_slug": null,
+          "word_form_key": null,
+          "confidence": 0.98,
+          "provenance": "deterministic"
+        }
+      ]
+    }
+  ],
+  "stats": {
+    "text_sources_scanned": 429,
+    "text_sources_annotated": 157,
+    "annotations": 258,
+    "tokens": 817,
+    "linked_tokens": 258,
+    "token_coverage": 0.315789,
+    "ambiguous_tokens": 0,
+    "unresolved_tokens": 559,
+    "top_unresolved": [
+      [
+        "i'm",
+        37
+      ],
+      [
+        "is",
+        29
+      ],
+      [
+        "a",
+        22
+      ],
+      [
+        "name",
+        19
+      ],
+      [
+        "again",
+        16
+      ],
+      [
+        "this",
+        15
+      ],
+      [
+        "exit",
+        15
+      ],
+      [
+        "hello",
+        13
+      ],
+      [
+        "you",
+        12
+      ],
+      [
+        "sara",
+        12
+      ],
+      [
+        "m",
+        12
+      ],
+      [
+        "the",
+        12
+      ],
+      [
+        "my",
+        11
+      ],
+      [
+        "i",
+        11
+      ],
+      [
+        "from",
+        10
+      ],
+      [
+        "arman",
+        10
+      ],
+      [
+        "your",
+        9
+      ],
+      [
+        "good",
+        8
+      ],
+      [
+        "g",
+        8
+      ],
+      [
+        "what's",
+        8
+      ],
+      [
+        "bye",
+        8
+      ],
+      [
+        "hi",
+        7
+      ],
+      [
+        "it's",
+        7
+      ],
+      [
+        "are",
+        6
+      ],
+      [
+        "how",
+        6
+      ],
+      [
+        "b",
+        6
+      ],
+      [
+        "n",
+        6
+      ],
+      [
+        "w",
+        6
+      ],
+      [
+        "that",
+        6
+      ],
+      [
+        "map",
+        6
+      ],
+      [
+        "q",
+        5
+      ],
+      [
+        "e",
+        5
+      ],
+      [
+        "s",
+        5
+      ],
+      [
+        "goodbye",
+        5
+      ],
+      [
+        "ship",
+        5
+      ],
+      [
+        "green",
+        5
+      ],
+      [
+        "food",
+        5
+      ],
+      [
+        "wet",
+        5
+      ],
+      [
+        "sheep",
+        5
+      ],
+      [
+        "foot",
+        5
+      ],
+      [
+        "sam",
+        5
+      ],
+      [
+        "amir",
+        5
+      ],
+      [
+        "rubric",
+        4
+      ],
+      [
+        "v",
+        4
+      ],
+      [
+        "z",
+        4
+      ],
+      [
+        "d",
+        4
+      ],
+      [
+        "h",
+        4
+      ],
+      [
+        "j",
+        4
+      ],
+      [
+        "r",
+        4
+      ],
+      [
+        "there",
+        4
+      ],
+      [
+        "slowly",
+        4
+      ],
+      [
+        "does",
+        4
+      ],
+      [
+        "mean",
+        4
+      ],
+      [
+        "letter",
+        4
+      ],
+      [
+        "monday",
+        4
+      ],
+      [
+        "o",
+        3
+      ],
+      [
+        "u",
+        3
+      ],
+      [
+        "y",
+        3
+      ],
+      [
+        "thin",
+        3
+      ],
+      [
+        "vet",
+        3
+      ],
+      [
+        "don't",
+        3
+      ],
+      [
+        "understand",
+        3
+      ],
+      [
+        "can",
+        3
+      ],
+      [
+        "s-a-m",
+        3
+      ],
+      [
+        "it",
+        3
+      ],
+      [
+        "c",
+        2
+      ],
+      [
+        "f",
+        2
+      ],
+      [
+        "k",
+        2
+      ],
+      [
+        "l",
+        2
+      ],
+      [
+        "p",
+        2
+      ],
+      [
+        "t",
+        2
+      ],
+      [
+        "x",
+        2
+      ],
+      [
+        "chair",
+        2
+      ],
+      [
+        "ch",
+        2
+      ],
+      [
+        "icon",
+        2
+      ],
+      [
+        "mina",
+        2
+      ],
+      [
+        "nice",
+        2
+      ],
+      [
+        "to",
+        2
+      ],
+      [
+        "pre",
+        2
+      ],
+      [
+        "ready",
+        2
+      ],
+      [
+        "here",
+        2
+      ],
+      [
+        "may",
+        2
+      ],
+      [
+        "fifth",
+        2
+      ],
+      [
+        "number",
+        2
+      ],
+      [
+        "much",
+        2
+      ],
+      [
+        "nina",
+        1
+      ],
+      [
+        "conversation",
+        1
+      ],
+      [
+        "farewell",
+        1
+      ],
+      [
+        "sh",
+        1
+      ],
+      [
+        "tin",
+        1
+      ],
+      [
+        "chip",
+        1
+      ],
+      [
+        "sign",
+        1
+      ],
+      [
+        "or",
+        1
+      ],
+      [
+        "entry",
+        1
+      ],
+      [
+        "of",
+        1
+      ],
+      [
+        "course",
+        1
+      ],
+      [
+        "a-m-y",
+        1
+      ],
+      [
+        "do",
+        1
+      ],
+      [
+        "amy",
+        1
+      ],
+      [
+        "mia",
+        1
+      ]
+    ]
+  }
+}
