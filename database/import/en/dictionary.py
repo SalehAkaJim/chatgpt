@@ -99,15 +99,14 @@ def main() -> None:
                 cuid = stable_uuid("concept", cslug)
                 cur.execute("""
                     INSERT INTO concepts(id,slug,concept_type,cefr_level_id,definition,metadata,status)
-                    VALUES(UUID_TO_BIN(%s,1),%s,'lexical',%s,%s,%s,'validated')
+                    VALUES(UUID_TO_BIN(%s,1),%s,'lexical',%s,NULL,%s,'validated')
                 """, (
-                    cuid, cslug, level_id, fa_meaning,
+                    cuid, cslug, level_id,
                     json.dumps({"source":"app_dictionary","dictionary":"en-US/core.json"}, ensure_ascii=False),
                 ))
                 cid = one(cur, "SELECT UUID_TO_BIN(%s,1)", (cuid,))
                 stats["concepts_inserted"] += 1
 
-            before = cur.rowcount
             cur.execute("""
                 INSERT IGNORE INTO concept_terms
                   (concept_id,language_id,term,normalized_term,part_of_speech,is_primary,status,metadata)
