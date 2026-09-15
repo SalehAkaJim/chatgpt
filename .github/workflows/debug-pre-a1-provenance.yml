@@ -1,0 +1,65 @@
+name: German Pre-A1 provenance diagnostics
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'database/**'
+      - '.github/workflows/debug-pre-a1-provenance.yml'
+  workflow_dispatch:
+
+jobs:
+  diagnose:
+    runs-on: ubuntu-latest
+    services:
+      mysql:
+        image: mysql:9.0.1
+        env:
+          MYSQL_ROOT_PASSWORD: root
+          MYSQL_DATABASE: language_app
+        ports: ['3306:3306']
+        options: >-
+          --health-cmd="mysqladmin ping -h 127.0.0.1 -proot --silent"
+          --health-interval=5s --health-timeout=5s --health-retries=30
+    steps:
+      - uses: actions/checkout@v4
+      - name: Build final database state
+        run: |
+          set -euo pipefail
+          db='docker run --rm --network host -i mysql:9.0.1 mysql --show-warnings -h127.0.0.1 -uroot -proot language_app'
+          $db < database/schema.sql
+          shopt -s nullglob
+          for f in database/migrations/*.sql; do $db < "$f"; done
+          for i in 1 2; do
+            $db < database/seed_reference.sql
+            for f in database/plans/*.sql; do $db < "$f"; done
+            for f in database/content/*.sql; do $db < "$f"; done
+          done
+      - name: Capture provenance gaps
+        run: |
+          set -euo pipefail
+          sql() { docker run --rm --network host mysql:9.0.1 mysql -N -s -h127.0.0.1 -uroot -proot language_app -e "$1"; }
+          {
+            echo '=== COUNTS ==='
+            sql "SELECT 'activities',COUNT(*) FROM activities a JOIN lessons l ON l.id=a.lesson_id LEFT JOIN activity_sources s ON s.activity_id=a.id WHERE l.public_id LIKE 'de_pre_a1_l%' GROUP BY 1;"
+            sql "SELECT 'activities_missing',COUNT(*) FROM activities a JOIN lessons l ON l.id=a.lesson_id LEFT JOIN activity_sources s ON s.activity_id=a.id WHERE l.public_id LIKE 'de_pre_a1_l%' AND s.activity_id IS NULL GROUP BY 1;"
+            sql "SELECT 'items',COUNT(*) FROM activity_items ai JOIN activities a ON a.id=ai.activity_id JOIN lessons l ON l.id=a.lesson_id WHERE l.public_id LIKE 'de_pre_a1_l%';"
+            sql "SELECT 'items_missing',COUNT(*) FROM activity_items ai JOIN activities a ON a.id=ai.activity_id JOIN lessons l ON l.id=a.lesson_id LEFT JOIN activity_item_sources s ON s.activity_item_id=ai.id WHERE l.public_id LIKE 'de_pre_a1_l%' AND s.activity_item_id IS NULL GROUP BY 1;"
+            sql "SELECT 'active_lexemes',COUNT(DISTINCT ll.lexeme_id) FROM lesson_lexemes ll JOIN lessons l ON l.id=ll.lesson_id WHERE l.public_id LIKE 'de_pre_a1_l%';"
+            sql "SELECT 'active_lexemes_missing',COUNT(DISTINCT ll.lexeme_id) FROM lesson_lexemes ll JOIN lessons l ON l.id=ll.lesson_id LEFT JOIN lexeme_sources s ON s.lexeme_id=ll.lexeme_id WHERE l.public_id LIKE 'de_pre_a1_l%' AND s.lexeme_id IS NULL GROUP BY 1;"
+            sql "SELECT 'active_grammar_notes',COUNT(DISTINCT lg.grammar_note_id) FROM lesson_grammar_notes lg JOIN lessons l ON l.id=lg.lesson_id WHERE l.public_id LIKE 'de_pre_a1_l%';"
+            sql "SELECT 'active_grammar_notes_missing',COUNT(DISTINCT lg.grammar_note_id) FROM lesson_grammar_notes lg JOIN lessons l ON l.id=lg.lesson_id LEFT JOIN grammar_note_sources s ON s.grammar_note_id=lg.grammar_note_id WHERE l.public_id LIKE 'de_pre_a1_l%' AND s.grammar_note_id IS NULL GROUP BY 1;"
+            echo '=== MISSING_ACTIVITIES ==='
+            sql "SELECT l.public_id,a.id,a.position,a.type_code FROM activities a JOIN lessons l ON l.id=a.lesson_id LEFT JOIN activity_sources s ON s.activity_id=a.id WHERE l.public_id LIKE 'de_pre_a1_l%' AND s.activity_id IS NULL ORDER BY l.sequence_number,a.position;"
+            echo '=== MISSING_ITEMS ==='
+            sql "SELECT l.public_id,a.id,ai.id,ai.position,ai.item_role,COALESCE(ai.text_target,'') FROM activity_items ai JOIN activities a ON a.id=ai.activity_id JOIN lessons l ON l.id=a.lesson_id LEFT JOIN activity_item_sources s ON s.activity_item_id=ai.id WHERE l.public_id LIKE 'de_pre_a1_l%' AND s.activity_item_id IS NULL ORDER BY l.sequence_number,a.position,ai.position;"
+            echo '=== MISSING_LEXEMES ==='
+            sql "SELECT DISTINCT lx.id,lx.public_id,lx.surface FROM lesson_lexemes ll JOIN lessons l ON l.id=ll.lesson_id JOIN lexemes lx ON lx.id=ll.lexeme_id LEFT JOIN lexeme_sources s ON s.lexeme_id=lx.id WHERE l.public_id LIKE 'de_pre_a1_l%' AND s.lexeme_id IS NULL ORDER BY lx.id;"
+            echo '=== MISSING_GRAMMAR ==='
+            sql "SELECT DISTINCT gn.id,gn.public_id,gn.title_fa FROM lesson_grammar_notes lg JOIN lessons l ON l.id=lg.lesson_id JOIN grammar_notes gn ON gn.id=lg.grammar_note_id LEFT JOIN grammar_note_sources s ON s.grammar_note_id=gn.id WHERE l.public_id LIKE 'de_pre_a1_l%' AND s.grammar_note_id IS NULL ORDER BY gn.id;"
+          } | tee /tmp/pre-a1-provenance.txt
+      - uses: actions/upload-artifact@v4
+        with:
+          name: pre-a1-provenance
+          path: /tmp/pre-a1-provenance.txt
+          retention-days: 1
